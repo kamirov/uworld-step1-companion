@@ -1448,6 +1448,33 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Increase warfarin effect",
     ],
   },
+  {
+    id: "tacrolimus",
+    name: "Tacrolimus",
+    aliases: ["tacrolimus", "fk506", "prograf", "advagraf", "astagraf"],
+    drugClass: "Calcineurin inhibitor (immunosuppressant)",
+    mechanism:
+      "Binds FKBP-12 → inhibits calcineurin → blocks NFAT dephosphorylation → ↓ IL-2 transcription → ↓ T-cell activation and proliferation.",
+    indications: [
+      "Solid organ transplant rejection prophylaxis (kidney, liver, heart, lung)",
+      "Topical formulation for atopic dermatitis (lower systemic exposure)",
+      "Steroid-sparing immunosuppression in some autoimmune diseases",
+    ],
+    adverseEffects: [
+      "Nephrotoxicity (vasoconstriction, acute and chronic kidney injury)",
+      "Neurotoxicity (tremor, headache, posterior reversible encephalopathy syndrome)",
+      "Hyperglycemia / new-onset diabetes after transplant",
+      "Hypertension, hyperkalemia, hypomagnesemia",
+      "Increased infection and malignancy risk (EBV → PTLD)",
+    ],
+    boardsPearls: [
+      "Calcineurin inhibitor — same pathway as cyclosporine; tacrolimus more potent",
+      "Monitor trough levels; nephrotoxicity is dose- and level-dependent",
+      "CYP3A4 substrate — levels ↑ with azoles, macrolides, grapefruit; ↓ with rifampin",
+      "vs cyclosporine — both inhibit calcineurin; tacrolimus more commonly used in modern transplant regimens",
+      "Peds: used in pediatric transplant; growth and infection monitoring essential",
+    ],
+  },
 ];
 
 const medicationById = new Map(MEDICATIONS.map((m) => [m.id, m]));

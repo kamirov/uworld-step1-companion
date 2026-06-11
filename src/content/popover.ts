@@ -209,17 +209,15 @@ function renderHeartMurmurPopover(heartMurmurId: string): boolean {
   const audioCaption = getHeartMurmurAudioCaptionForId(heartMurmurId);
   const audioAttribution = getHeartMurmurAudioAttributionForId(heartMurmurId);
 
-  const list = `<ul class="usmle-organ-popover__list">${murmur.conditions
-    .map((item) => `<li>${item}</li>`)
-    .join("")}</ul>`;
-
-  const bodyContent = `
+  const header = `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--heart">${murmur.name}</div>
     <div class="usmle-organ-popover__meaning">${murmur.meaning}</div>
-    <div class="usmle-organ-popover__section-label">Classic associations</div>
-    ${list}
+  `;
+  const sections = `
+    ${renderListSection("Classic associations", murmur.conditions)}
     ${murmur.pediatrics ? renderPediatricsSection(murmur.pediatrics) : ""}
   `;
+  const bodyContent = renderRichPopoverContent(header, sections);
 
   popoverEl.classList.add("usmle-organ-popover--rich");
   if (audioSrc && audioCaption && audioAttribution) {
@@ -256,11 +254,20 @@ function renderHemodynamicPopover(hemodynamicId: string): boolean {
 function renderListSection(label: string, items: string[]): string {
   if (items.length === 0) return "";
   return `
-    <div class="usmle-organ-popover__section-label">${label}</div>
-    <ul class="usmle-organ-popover__list">${items
-      .map((item) => `<li>${item}</li>`)
-      .join("")}</ul>
+    <div class="usmle-organ-popover__section">
+      <div class="usmle-organ-popover__section-label">${label}</div>
+      <ul class="usmle-organ-popover__list">${items
+        .map((item) => `<li>${item}</li>`)
+        .join("")}</ul>
+    </div>
   `;
+}
+
+function renderRichPopoverContent(header: string, sections: string): string {
+  const wrappedSections = sections.trim()
+    ? `<div class="usmle-organ-popover__sections">${sections}</div>`
+    : "";
+  return `${header}${wrappedSections}`;
 }
 
 function renderMediaAttribution(attribution: MediaAttribution): string {
@@ -311,15 +318,19 @@ function renderSymptomPopover(symptomId: string): boolean {
   if (!symptom || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--symptom">${symptom.name}</div>
     <div class="usmle-organ-popover__meaning">${symptom.definition}</div>
     <div class="usmle-organ-popover__section-label">Mechanism</div>
     <div class="usmle-organ-popover__mechanism">${symptom.mechanism}</div>
+  `,
+    `
     ${renderListSection("Think of", symptom.thinkOf)}
     ${renderListSection("Pair with", symptom.pairWith)}
     ${renderListSection("Distinguish from", symptom.distinguishFrom ?? [])}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -332,15 +343,19 @@ function renderMedicationPopover(medicationId: string): boolean {
   const actionPotentialAttribution =
     getAntiarrhythmicAttributionForMedication(medicationId);
 
-  const bodyContent = `
+  const bodyContent = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--medication">${medication.name}</div>
     <div class="usmle-organ-popover__layer"><strong>Class:</strong> ${medication.drugClass}</div>
     <div class="usmle-organ-popover__section-label">Mechanism</div>
     <div class="usmle-organ-popover__mechanism">${medication.mechanism}</div>
+  `,
+    `
     ${renderListSection("Indications", medication.indications)}
     ${renderListSection("Adverse effects", medication.adverseEffects)}
     ${renderListSection("Boards pearls", medication.boardsPearls)}
-  `;
+  `,
+  );
 
   popoverEl.classList.add("usmle-organ-popover--rich");
   if (actionPotentialImage && antiarrhythmicClass && actionPotentialAttribution) {
@@ -367,15 +382,19 @@ function renderLabValuePopover(labValueId: string): boolean {
   if (!lab || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--lab">${lab.name}</div>
     <div class="usmle-organ-popover__meaning">${lab.measures}</div>
     <div class="usmle-organ-popover__layer"><strong>Normal range:</strong> ${lab.normalRange}</div>
+  `,
+    `
     ${renderListSection("↑ Causes", lab.increasedCauses)}
     ${renderListSection("↓ Causes", lab.decreasedCauses)}
     ${renderListSection("Pair with", lab.pairWith ?? [])}
     ${renderListSection("Boards pearls", lab.boardsPearls)}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -384,21 +403,27 @@ function renderNephronPopover(nephronSegmentId: string): boolean {
   if (!segment || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--nephron">${segment.name}</div>
     <div class="usmle-organ-popover__section-label">Function</div>
     <div class="usmle-organ-popover__mechanism">${segment.function}</div>
+  `,
+    `
     ${renderListSection("Reabsorbs", segment.reabsorbs)}
     ${renderListSection("Secretes", segment.secretes)}
     ${renderListSection("Boards pearls", segment.boardsPearls)}
-  `;
+  `,
+  );
   return true;
 }
 
 function renderPediatricsSection(note: string): string {
   return `
-    <div class="usmle-organ-popover__section-label">Pediatrics</div>
-    <div class="usmle-organ-popover__mechanism">${note}</div>
+    <div class="usmle-organ-popover__section">
+      <div class="usmle-organ-popover__section-label">Pediatrics</div>
+      <div class="usmle-organ-popover__mechanism">${note}</div>
+    </div>
   `;
 }
 
@@ -407,11 +432,14 @@ function renderConditionPopover(conditionId: string): boolean {
   if (!condition || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--condition">${condition.name}</div>
     <div class="usmle-organ-popover__meaning">${condition.definition}</div>
     <div class="usmle-organ-popover__section-label">Pathophysiology</div>
     <div class="usmle-organ-popover__mechanism">${condition.pathophysiology}</div>
+  `,
+    `
     ${renderListSection("Classic presentation", condition.classicPresentation)}
     ${renderListSection("Key findings", condition.keyFindings ?? [])}
     ${renderListSection("Key labs", condition.keyLabs ?? [])}
@@ -421,7 +449,8 @@ function renderConditionPopover(conditionId: string): boolean {
     ${renderListSection("Treatment", condition.treatment)}
     ${renderListSection("Boards pearls", condition.boardsPearls)}
     ${condition.pediatrics ? renderPediatricsSection(condition.pediatrics) : ""}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -433,15 +462,19 @@ function renderEcgFindingPopover(ecgFindingId: string): boolean {
   const imageCaption = getEcgFindingImageCaptionForId(ecgFindingId);
   const imageAttribution = getEcgFindingImageAttributionForId(ecgFindingId);
 
-  const bodyContent = `
+  const bodyContent = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--ecg">${finding.name}</div>
     <div class="usmle-organ-popover__meaning">${finding.interpretation}</div>
     <div class="usmle-organ-popover__layer"><strong>Territory:</strong> ${finding.territory}</div>
+  `,
+    `
     ${renderListSection("Think of", finding.thinkOf)}
     ${renderListSection("Distinguish from", finding.distinguishFrom ?? [])}
     ${renderListSection("Boards pearls", finding.boardsPearls)}
     ${finding.pediatrics ? renderPediatricsSection(finding.pediatrics) : ""}
-  `;
+  `,
+  );
 
   popoverEl.classList.add("usmle-organ-popover--rich");
   if (imageSrc && imageCaption && imageAttribution) {
@@ -468,13 +501,17 @@ function renderClinicalStrategyPopover(clinicalStrategyId: string): boolean {
   if (!strategy || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--clinical-strategy">${strategy.name}</div>
     <div class="usmle-organ-popover__meaning">${strategy.definition}</div>
+  `,
+    `
     ${renderListSection("Key points", strategy.details)}
     ${renderListSection("Boards pearls", strategy.boardsPearls)}
     ${strategy.pediatrics ? renderPediatricsSection(strategy.pediatrics) : ""}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -483,15 +520,19 @@ function renderCellPopover(cellId: string): boolean {
   if (!cell || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--cell">${cell.name}</div>
     <div class="usmle-organ-popover__meaning">${cell.definition}</div>
+  `,
+    `
     ${renderListSection("Characteristics", cell.characteristics)}
     ${renderListSection("Clinical relevance", cell.clinicalRelevance)}
     ${renderListSection("Distinguish from", cell.distinguishFrom ?? [])}
     ${renderListSection("Boards pearls", cell.boardsPearls)}
     ${cell.pediatrics ? renderPediatricsSection(cell.pediatrics) : ""}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -500,14 +541,18 @@ function renderPathogenesisPopover(pathogenesisId: string): boolean {
   if (!entry || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--pathogenesis">${entry.name}</div>
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
+  `,
+    `
     ${renderListSection("Examples", entry.examples)}
     ${renderListSection("Distinguish from", entry.distinguishFrom ?? [])}
     ${renderListSection("Boards pearls", entry.boardsPearls)}
     ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -526,10 +571,13 @@ function renderMicrobiologyPopover(microbiologyId: string): boolean {
   const imageCaption = getMicrobiologyImageCaptionForId(microbiologyId);
   const imageAttribution = getMicrobiologyImageAttributionForId(microbiologyId);
 
-  const bodyContent = `
+  const bodyContent = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--microbiology">${entry.name}</div>
     <div class="usmle-organ-popover__layer"><strong>Type:</strong> ${formatMicrobeType(entry.type)}</div>
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
+  `,
+    `
     ${renderListSection("Morphology", entry.morphology ?? [])}
     ${renderListSection("Virulence factors", entry.virulenceFactors ?? [])}
     ${renderListSection("Transmission", entry.transmission ?? [])}
@@ -540,7 +588,8 @@ function renderMicrobiologyPopover(microbiologyId: string): boolean {
     ${renderListSection("Distinguish from", entry.distinguishFrom ?? [])}
     ${renderListSection("Boards pearls", entry.boardsPearls)}
     ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
-  `;
+  `,
+  );
 
   popoverEl.classList.add("usmle-organ-popover--rich");
   if (imageSrc && imageCaption && imageAttribution) {
@@ -567,15 +616,19 @@ function renderProcedurePopover(procedureId: string): boolean {
   if (!procedure || !popoverEl) return false;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--procedure">${procedure.name}</div>
     <div class="usmle-organ-popover__meaning">${procedure.definition}</div>
+  `,
+    `
     ${renderListSection("Indications", procedure.indications)}
     ${renderListSection("Key measurements", procedure.keyMeasurements ?? [])}
     ${renderListSection("Complications", procedure.complications)}
     ${renderListSection("Boards pearls", procedure.boardsPearls)}
     ${procedure.pediatrics ? renderPediatricsSection(procedure.pediatrics) : ""}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -592,16 +645,20 @@ function renderSignalingPopover(signalingId: string): boolean {
     .join(" · ");
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--signaling">${molecule.name}</div>
     ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
     <div class="usmle-organ-popover__section-label">Function</div>
     <div class="usmle-organ-popover__mechanism">${molecule.function}</div>
+  `,
+    `
     ${renderListSection("Clinical relevance", molecule.clinicalRelevance)}
     ${renderListSection("Distinguish from", molecule.distinguishFrom ?? [])}
     ${renderListSection("Boards pearls", molecule.boardsPearls)}
     ${molecule.pediatrics ? renderPediatricsSection(molecule.pediatrics) : ""}
-  `;
+  `,
+  );
   return true;
 }
 
@@ -617,15 +674,19 @@ function renderProteinPopover(proteinId: string): boolean {
     .join(" · ");
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = `
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--protein">${protein.name}</div>
     ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
     <div class="usmle-organ-popover__section-label">Function</div>
     <div class="usmle-organ-popover__mechanism">${protein.function}</div>
+  `,
+    `
     ${renderListSection("Mutation causes", protein.mutationCauses)}
     ${renderListSection("Distinguish from", protein.distinguishFrom ?? [])}
     ${renderListSection("Boards pearls", protein.boardsPearls)}
-  `;
+  `,
+  );
   return true;
 }
 

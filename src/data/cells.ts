@@ -238,6 +238,243 @@ export const CELLS: CellEntry[] = [
     pediatrics:
       "HIV-infected children: CD4 percentage often used alongside absolute count because total lymphocyte numbers differ by age.",
   },
+  {
+    id: "b-lymphocyte",
+    name: "B Lymphocyte",
+    aliases: [
+      "b-lymphocyte",
+      "b lymphocyte",
+      "b lymphocytes",
+      "b cell",
+      "b cells",
+      "b-lymphocytes",
+    ],
+    definition:
+      "Adaptive immune lymphocyte responsible for humoral immunity; differentiates into antibody-secreting plasma cells and memory B cells after antigen encounter.",
+    characteristics: [
+      "Surface markers: CD19, CD20, CD21 (CR2 — EBV receptor), CD22",
+      "B-cell receptor (membrane-bound IgM/IgD) recognizes native antigen",
+      "Activated by T helper cells (CD40–CD40L) and cytokines; class-switch recombination in germinal centers",
+      "Plasma cells — terminally differentiated antibody factories (CD19−, CD20−)",
+    ],
+    clinicalRelevance: [
+      "Humoral immunodeficiency (X-linked agammaglobulinemia, CVID) → recurrent sinopulmonary bacterial infections",
+      "EBV infects B cells via CD21 → infectious mononucleosis; B-cell lymphomas in immunosuppression",
+      "B-cell neoplasms: CLL/SLL, Burkitt lymphoma, multiple myeloma (plasma cell)",
+      "Rituximab (anti-CD20) depletes B cells — RA, lymphoma, autoimmune cytopenias",
+    ],
+    boardsPearls: [
+      "B cells = humoral immunity (antibody); T cells = cell-mediated immunity",
+      "CD21 on B cells = EBV entry receptor — atypical lymphocytes are CD8+ T cells attacking infected B cells",
+      "X-linked agammaglobulinemia (Bruton): no mature B cells, ↓ all immunoglobulin isotypes",
+      "vs plasma cell — B cell has surface Ig; plasma cell secretes antibody, no surface Ig",
+    ],
+    distinguishFrom: [
+      "CD4+ T lymphocyte — cell-mediated immunity; CD4 marker, not CD19/CD20",
+      "Plasma cell — antibody-secreting end-stage B cell; eccentric clock-face nucleus",
+      "NK cell — innate cytotoxicity; CD16/CD56, no antigen receptor",
+    ],
+    pediatrics:
+      "X-linked agammaglobulinemia presents after 6 months when maternal IgG wanes — recurrent otitis, pneumonia; live vaccines contraindicated.",
+  },
+  {
+    id: "desmosome",
+    name: "Desmosome",
+    aliases: ["desmosome", "desmosomes", "macula adherens"],
+    definition:
+      "Strong adhesive cell–cell junction anchoring intermediate filaments (keratin in epithelia, desmin in cardiac muscle) between adjacent cells via cadherin family proteins (desmogleins, desmocollins).",
+    characteristics: [
+      "Cadherins linked to keratin via plakoglobin and desmoplakin",
+      "Spot-weld morphology — stratum spinosum spines are desmosomal attachments",
+      "Cardiomyocyte desmosomes at intercalated discs maintain mechanical coupling",
+      "Loss of adhesion → acantholysis (cells detach while basement membrane intact)",
+    ],
+    clinicalRelevance: [
+      "Pemphigus vulgaris — IgG against desmoglein 3 (± desmoglein 1) → flaccid bullae, oral mucosa",
+      "Arrhythmogenic cardiomyopathy — desmosomal gene mutations (plakophilin-2, desmoplakin) → fibrofatty replacement, ventricular arrhythmias",
+      "Staphylococcal scalded skin syndrome — exfoliative toxin cleaves desmoglein 1",
+    ],
+    boardsPearls: [
+      "Desmosome = cadherins + intermediate filaments; adherens junction = cadherins + actin",
+      "Pemphigus: intraepidermal, acantholysis, + Nikolsky sign; bullous pemphigoid is subepidermal",
+      "Stratum spinosum — desmosomes create intercellular bridges",
+    ],
+    distinguishFrom: [
+      "Adherens junction — E-cadherin + actin, not keratin intermediate filaments",
+      "Hemidesmosome — cell to basement membrane, not cell to cell",
+      "Tight junction — seals paracellular space; no filament anchoring",
+    ],
+    pediatrics:
+      "Pemphigus vulgaris rare in children; staphylococcal scalded skin syndrome common in infants — desmoglein 1 cleavage causes superficial desquamation.",
+  },
+  {
+    id: "adherens-junction",
+    name: "Adherens Junction",
+    aliases: [
+      "adherens junction",
+      "adherens junctions",
+      "adhesion belt",
+      "zonula adherens",
+    ],
+    definition:
+      "Cadherin-based cell–cell junction linking the actin cytoskeleton of adjacent cells; forms a continuous belt below tight junctions in epithelia.",
+    characteristics: [
+      "E-cadherin (epithelial) or N-cadherin (neural/mesenchymal) binds homophilically",
+      "Cytoplasmic tail binds β-catenin and α-catenin → actin filaments",
+      "β-catenin also functions in Wnt signaling (gene transcription when stabilized)",
+      "Loss of E-cadherin promotes epithelial–mesenchymal transition (EMT)",
+    ],
+    clinicalRelevance: [
+      "↓ E-cadherin expression → tumor invasion and metastasis (EMT)",
+      "APC mutations in FAP — β-catenin/Wnt pathway dysregulation → colonic polyps",
+      "Cadherin switching (E→N) in cancer progression",
+    ],
+    boardsPearls: [
+      "Adherens junction: cadherin + actin; desmosome: cadherin + intermediate filaments",
+      "β-catenin links adherens junctions to Wnt pathway — two roles on boards",
+      "Wnt → stabilized β-catenin → TCF/LEF transcription (proliferation)",
+    ],
+    distinguishFrom: [
+      "Desmosome — intermediate filament attachment (keratin), stronger spot welds",
+      "Tight junction — paracellular seal; apical to adherens belt",
+      "Gap junction — connexin channels, not adhesive belt",
+    ],
+    pediatrics:
+      "FAP and Gardner syndrome can present in adolescence — APC/β-catenin pathway links adherens junction biology to early-onset polyposis.",
+  },
+  {
+    id: "hemidesmosome",
+    name: "Hemidesmosome",
+    aliases: ["hemidesmosome", "hemidesmosomes"],
+    definition:
+      "Half-desmosome anchoring basal keratinocytes to the basement membrane via integrins (α6β4) and bullous pemphigoid antigens (BP180/BP230), linking keratin intermediate filaments to the extracellular matrix.",
+    characteristics: [
+      "Integrin α6β4 binds laminin in basement membrane",
+      "BP180 (type XVII collagen) and BP230 are hemidesmosomal components",
+      "Connects intracellular keratin to extracellular matrix — basal cell adhesion",
+      "Distinct from full desmosome (cell–cell, not cell–matrix)",
+    ],
+    clinicalRelevance: [
+      "Bullous pemphigoid — autoantibodies against BP180/BP230 → subepidermal tense bullae, eosinophils",
+      "Epidermolysis bullosa — integrin or plectin mutations → mechanical fragility",
+      "Linear IgA bullous dermatosis — similar subepidermal blistering pattern",
+    ],
+    boardsPearls: [
+      "Hemidesmosome = basal cell to basement membrane; desmosome = cell to cell",
+      "Bullous pemphigoid: elderly, tense bullae, subepidermal, eosinophilic infiltrate",
+      "Pemphigus vulgaris is intraepidermal (desmosome) — flaccid bullae, acantholysis",
+    ],
+    distinguishFrom: [
+      "Desmosome — cell–cell junction in spinous layer, not basement membrane",
+      "Focal adhesion — fibroblast integrin–actin links, not keratin hemidesmosomes",
+      "Tight junction — apical seal, not basal anchoring",
+    ],
+    pediatrics:
+      "Epidermolysis bullosa simplex or junctional subtypes present at birth with friction-induced blisters — hemidesmosome/integrin defects.",
+  },
+  {
+    id: "tight-junction",
+    name: "Tight Junction",
+    aliases: [
+      "tight junction",
+      "tight junctions",
+      "zonula occludens",
+      "occluding junction",
+    ],
+    definition:
+      "Apical intercellular seal forming a continuous belt that blocks paracellular diffusion; composed of claudins, occludin, and ZO scaffold proteins.",
+    characteristics: [
+      "Most apical junction — creates selective paracellular barrier",
+      "\"Leaky\" epithelia (proximal tubule) vs \"tight\" epithelia (distal colon, bladder)",
+      "Maintains cell polarity by fencing apical vs basolateral membrane domains",
+      "Claudin isoforms determine pore size and charge selectivity",
+    ],
+    clinicalRelevance: [
+      "Blood–brain barrier integrity — endothelial tight junctions restrict paracellular passage",
+      "Celiac disease — zonulin pathway increases intestinal tight junction permeability",
+      "Clostridium difficile toxin disrupts tight junctions → fluid secretion",
+      "Mutations in claudin-16 (paracellin) → familial hypomagnesemia with hypercalciuria",
+    ],
+    boardsPearls: [
+      "Tight junction = paracellular seal; adherens below; desmosomes provide mechanical strength",
+      "Blood–brain barrier: tight junctions + no fenestrae + efflux transporters",
+      "Proximal tubule has leaky tight junctions — allows paracellular reabsorption",
+    ],
+    distinguishFrom: [
+      "Adherens junction — cadherin belt below tight junction; not primary paracellular seal",
+      "Gap junction — permits intercellular communication, not sealing",
+      "Fenestrae — transcellular pores in endothelium, not intercellular junctions",
+    ],
+    pediatrics:
+      "Necrotizing enterocolitis involves gut barrier failure; immature tight junctions in preterm gut increase translocation risk.",
+  },
+  {
+    id: "fenestrae",
+    name: "Fenestrae",
+    aliases: ["fenestrae", "fenestra", "fenestrated endothelium", "fenestrations"],
+    definition:
+      "Circular transcellular pores (~60–80 nm) in fenestrated endothelial cells permitting rapid passage of water and small solutes; diaphragm-covered in some tissues, absent in glomerulus.",
+    characteristics: [
+      "Found in glomerular capillaries, liver sinusoids, endocrine glands, choroid plexus",
+      "No continuous basement membrane barrier alone — paired with other filtration layers in kidney",
+      "Continuous (muscle, lung), fenestrated (kidney, endocrine), and discontinuous (liver, spleen, bone marrow) capillary types",
+      "Plasmalemmal vesicles (caveolae) are distinct membrane invaginations, not fenestrae",
+    ],
+    clinicalRelevance: [
+      "Glomerular filtration barrier: fenestrated endothelium + GBM + podocyte slit diaphragm",
+      "Liver sinusoids — fenestrated/discontinuous endothelium allows plasma exchange with hepatocytes",
+      "Endocrine glands — fenestrated capillaries facilitate hormone delivery to blood",
+      "Diabetic nephropathy and glomerular disease disrupt filtration barrier components",
+    ],
+    boardsPearls: [
+      "Three capillary types: continuous, fenestrated, discontinuous (sinusoidal)",
+      "Glomerular fenestrae lack diaphragms — part of high-flux filtration",
+      "Blood–brain barrier uses continuous non-fenestrated endothelium with tight junctions",
+    ],
+    distinguishFrom: [
+      "Tight junction — seals between cells; fenestrae are pores through a single endothelial cell",
+      "Podocyte slit diaphragm — final filtration layer in glomerulus, not endothelial pore",
+      "Gap junction — intercellular channel, not transcellular fenestration",
+    ],
+    pediatrics:
+      "Neonatal glomerular filtration is immature (lower GFR) despite fenestrated endothelium present from development — function matures over weeks.",
+  },
+  {
+    id: "gap-junction",
+    name: "Gap Junction",
+    aliases: [
+      "gap junction",
+      "gap junctions",
+      "nexus",
+      "electrical synapse",
+    ],
+    definition:
+      "Intercellular channel formed by paired connexons (hexameric connexin proteins) allowing direct cytoplasmic exchange of ions and small molecules (<1 kDa) between adjacent cells.",
+    characteristics: [
+      "Connexin isoforms tissue-specific (e.g., connexin 43 in heart, connexin 26 in cochlea)",
+      "Electrical synapse in cardiac muscle and smooth muscle — rapid coordinated depolarization",
+      "Permits metabolic coupling (glucose, amino acids, second messengers)",
+      "At intercalated discs in cardiomyocytes alongside desmosomes and adherens junctions",
+    ],
+    clinicalRelevance: [
+      "Heart — gap junctions propagate action potentials for synchronized contraction",
+      "Connexin 26 mutations → autosomal recessive nonsyndromic hearing loss (GJB2)",
+      "Visceromegaly and arrhythmia when gap junction assembly impaired",
+      "Gap junction blockade (e.g., heptanol) uncouples cardiac cells experimentally",
+    ],
+    boardsPearls: [
+      "Gap junction = connexins; tight junction = claudins/occludin — different families",
+      "Cardiac intercalated disc: desmosomes (mechanical) + gap junctions (electrical)",
+      "Connexin 26 — most common genetic cause of congenital deafness",
+    ],
+    distinguishFrom: [
+      "Tight junction — seals paracellular space; no cytoplasmic continuity",
+      "Desmosome — mechanical adhesion via keratin, not ion channel",
+      "Synaptic cleft — chemical neurotransmission across extracellular space",
+    ],
+    pediatrics:
+      "GJB2 (connexin 26) screening is standard in newborn hearing loss workup; often nonsyndromic but may pair with palmoplantar keratoderma (Vohwinkel).",
+  },
 ];
 
 const cellById = new Map(CELLS.map((entry) => [entry.id, entry]));

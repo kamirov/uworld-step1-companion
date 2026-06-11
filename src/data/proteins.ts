@@ -698,6 +698,32 @@ export const PROTEINS: ProteinEntry[] = [
       "Alzheimer — slower course, amyloid/tau pathology",
     ],
   },
+  {
+    id: "hoxd13",
+    name: "HOXD13",
+    aliases: ["hoxd13", "hox d13", "hox-d13"],
+    gene: "HOXD13",
+    location: "HOX gene cluster on chromosome 2q31; expressed in developing distal limbs and urogenital tract",
+    function:
+      "Homeobox transcription factor patterning distal limb buds (digits, wrists/ankles) and external genitalia during embryogenesis.",
+    mutationCauses: [
+      "Hand-foot-genital syndrome (HFGS) — autosomal dominant",
+      "Short great toe, shortened thumbs, limited thumb opposition",
+      "Urogenital malformations: bicornuate uterus, hypospadias, uterovaginal septum",
+      "Wrist fusion (carpal coalition) in some alleles",
+    ],
+    boardsPearls: [
+      "HOX genes — anterior-posterior limb patterning; HOXD13 = distal limb + genital development",
+      "HFGS vignette: limb anomalies + Müllerian duct or hypospadias + family history",
+      "Polyalanine tract expansions in HOXD13 are a classic boards genetics association",
+      "Peds: congenital thumb/toe malformations with urogenital anomalies → consider HOXD13",
+    ],
+    distinguishFrom: [
+      "HOXA13 — similar limb/genital phenotype (hand-foot-uterus syndrome); different HOX cluster",
+      "Fibrillin-1 — Marfan (aortic root, lens dislocation), not thumb/uterine malformations",
+      "Androgen insensitivity — 46,XY female phenotype, not structural thumb shortening",
+    ],
+  },
 ];
 
 const proteinById = new Map(PROTEINS.map((p) => [p.id, p]));

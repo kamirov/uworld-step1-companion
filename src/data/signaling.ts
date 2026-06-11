@@ -458,6 +458,36 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     pediatrics:
       "Same aspirin/COX-1 mechanism in children; Reye syndrome risk with aspirin in viral illness — use alternatives for fever in pediatrics.",
   },
+  {
+    id: "oxytocin",
+    name: "Oxytocin",
+    aliases: ["oxytocin", "pitocin"],
+    type: "Peptide hormone",
+    source:
+      "Synthesized in hypothalamic paraventricular and supraoptic nuclei; stored and released from posterior pituitary (neurohypophysis)",
+    receptor: "Oxytocin receptor (OTR; Gq-coupled GPCR) on myometrium and mammary myoepithelial cells",
+    function:
+      "Stimulates uterine smooth muscle contraction during labor; triggers milk ejection (let-down reflex) by contracting myoepithelial cells around alveoli.",
+    clinicalRelevance: [
+      "Exogenous oxytocin (Pitocin) for labor induction and augmentation",
+      "Milk ejection reflex — suckling afferents → posterior pituitary oxytocin release",
+      "Uterine atony postpartum — oxytocin first-line to reduce hemorrhage",
+      "May modulate social bonding and uterine involution (secondary boards context)",
+    ],
+    boardsPearls: [
+      "Posterior pituitary hormones: oxytocin + ADH (vasopressin) — both made in hypothalamus",
+      "Oxytocin → uterine contraction + milk ejection; ADH → water reabsorption",
+      "Pitocin augments labor; monitor for uterine tachysystole and fetal distress",
+      "Suckling triggers oxytocin — prolactin drives milk production (anterior pituitary)",
+    ],
+    distinguishFrom: [
+      "ADH (vasopressin) — water retention via V2 receptors; diabetes insipidus when deficient",
+      "Prolactin — anterior pituitary; milk synthesis, not ejection",
+      "Prostaglandin F₂α — also uterotonic; used for cervical ripening and abortion",
+    ],
+    pediatrics:
+      "Neonatal breastfeeding establishes suckling reflex → maternal oxytocin release; preterm infants may need lactation support but same hormonal axis.",
+  },
 ];
 
 const signalingById = new Map(
