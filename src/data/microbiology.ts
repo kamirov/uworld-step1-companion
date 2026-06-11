@@ -864,6 +864,481 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
     pediatrics:
       "Common daycare pathogen; may cause failure to thrive with chronic infection; treat household contacts if symptomatic.",
   },
+  {
+    id: "klebsiella-pneumoniae",
+    name: "Klebsiella pneumoniae",
+    aliases: [
+      "klebsiella pneumoniae",
+      "k. pneumoniae",
+      "klebsiella",
+    ],
+    type: "gram-negative-rod",
+    definition:
+      "Encapsulated Gram-negative rod; lactose fermenter. Classic cause of lobar pneumonia in alcoholics and nosocomial UTIs/pneumonia; hypervirulent strains cause liver abscess (especially in East Asia).",
+    morphology: [
+      "Gram− bacilli",
+      "Thick polysaccharide capsule → mucoid colonies",
+      "Lactose fermenter (pink on MacConkey)",
+      "Non-motile",
+    ],
+    virulenceFactors: [
+      "Capsule — antiphagocytic (major virulence factor)",
+      "Urease (some strains)",
+      "Hypervirulent K1/K2 capsular types — invasive liver abscess syndrome",
+      "Extended-spectrum β-lactamases (ESBL) and carbapenemases (KPC)",
+    ],
+    transmission: [
+      "Endogenous (GI/colonization) in nosocomial infection",
+      "Aspiration in alcoholics/aspiration pneumonia",
+    ],
+    diseases: [
+      "Community-acquired pneumonia (currant jelly sputum in alcoholics)",
+      "Nosocomial pneumonia and UTI",
+      "Liver abscess (hypervirulent strains; bacteremia + eye involvement)",
+      "Neonatal sepsis",
+    ],
+    classicPresentation: [
+      "Alcoholic with lobar pneumonia and thick blood-tinged (currant jelly) sputum",
+      "Nosocomial pneumonia after antibiotics in ICU",
+      "Diabetic/Asian male with liver abscess and endophthalmitis (hypervirulent K1)",
+    ],
+    diagnosis: [
+      "Gram stain/culture; mucoid colonies",
+      "Suspect ESBL/KPC in health care–associated infections",
+      "Imaging for liver abscess if bacteremic with right upper quadrant symptoms",
+    ],
+    treatment: [
+      "Community: ceftriaxone, fluoroquinolone (local resistance patterns)",
+      "ESBL: carbapenems",
+      "KPC (carbapenem-resistant): ceftazidime-avibactam, meropenem-vaborbactam",
+    ],
+    distinguishFrom: [
+      "E. coli — also lactose fermenter; less mucoid; different capsular types",
+      "S. pneumoniae — Gram+ diplococci; community pneumonia in non-alcoholics",
+      "Enterobacter — also ESBL producers; inducible ampC",
+    ],
+    boardsPearls: [
+      "Currant jelly sputum + alcoholic = Klebsiella pneumonia",
+      "Mucoid colonies = heavy capsule",
+      "Hypervirulent K. pneumoniae liver abscess — think if bacteremia + eye findings",
+    ],
+    pediatrics:
+      "Neonatal Klebsiella sepsis in NICU; ESBL strains increasingly reported in pediatric nosocomial infections.",
+  },
+  {
+    id: "pseudomonas-aeruginosa",
+    name: "Pseudomonas aeruginosa",
+    aliases: [
+      "pseudomonas aeruginosa",
+      "p. aeruginosa",
+      "pseudomonas",
+    ],
+    type: "gram-negative-rod",
+    definition:
+      "Oxidase-positive, non-lactose-fermenting Gram-negative rod. Opportunist causing severe nosocomial, burn, cystic fibrosis, and ventilator-associated infections; blue-green pigment and grape-like odor.",
+    morphology: [
+      "Gram− rods",
+      "Oxidase positive",
+      "Non-lactose fermenter (colorless on MacConkey)",
+      "Blue-green pyocyanin pigment; grape-like odor",
+      "Motile (single polar flagellum)",
+    ],
+    virulenceFactors: [
+      "Exotoxin A — inhibits EF-2 (like diphtheria)",
+      "Phospholipase C and elastase — tissue destruction",
+      "Biofilm formation (catheters, CF airways, contact lenses)",
+      "Alginate capsule in CF chronic infection",
+    ],
+    transmission: [
+      "Hospital water sources, ventilators, contaminated solutions",
+      "Colonization in CF, burns, immunocompromise",
+    ],
+    diseases: [
+      "Ventilator-associated and hospital-acquired pneumonia",
+      "UTI (catheter-associated)",
+      "Ecthyma gangrenosum (immunocompromised)",
+      "Hot tub folliculitis",
+      "CF chronic pulmonary infection and exacerbations",
+      "Malignant otitis externa (diabetics)",
+      "Corneal keratitis (contact lens)",
+    ],
+    classicPresentation: [
+      "CF patient with worsening pulmonary function and purulent sputum",
+      "Neutropenic fever with ecthyma gangrenosum (hemorrhagic bullae)",
+      "Diabetic with severe ear pain and granulation tissue (malignant otitis externa)",
+    ],
+    diagnosis: [
+      "Culture — oxidase+ Gram− rod, fruity/grape odor",
+      "Non-lactose fermenter on MacConkey",
+      "CF sputum chronically colonized; treat exacerbations not colonization alone",
+    ],
+    treatment: [
+      "Antipseudomonal β-lactam (piperacillin-tazobactam, ceftazidime, cefepime) ± aminoglycoside or fluoroquinolone",
+      "CF: inhaled tobramycin, colistin for chronic suppression",
+      "Multidrug-resistant: colistin, ceftolozane-tazobactam, ceftazidime-avibactam",
+    ],
+    distinguishFrom: [
+      "E. coli — lactose fermenter; oxidase negative",
+      "Burkholderia cepacia — CF pathogen; can be misidentified",
+      "Stenotrophomonas — also health care associated; TMP-SMX treatment",
+    ],
+    boardsPearls: [
+      "Oxidase+ Gram− rod = Pseudomonas (and other non-fermenters)",
+      "CF + Pseudomonas colonization = chronic biofilm disease",
+      "Ecthyma gangrenosum in neutropenia — Pseudomonas until proven otherwise",
+      "Aminoglycosides need oxygen for uptake — poor activity in anaerobic environments",
+    ],
+    pediatrics:
+      "CF children colonized early with P. aeruginosa — eradication protocols with inhaled antibiotics; hot tub folliculitis in healthy children.",
+  },
+  {
+    id: "legionella-pneumophila",
+    name: "Legionella pneumophila",
+    aliases: [
+      "legionella pneumophila",
+      "l. pneumophila",
+      "legionella",
+      "legionnaires disease",
+      "legionnaires' disease",
+    ],
+    type: "gram-negative-rod",
+    definition:
+      "Gram-negative rod requiring cysteine and iron for growth; stains poorly. Causes atypical pneumonia from contaminated water aerosols (AC, hot tubs, hospital water systems).",
+    morphology: [
+      "Gram− bacilli (often faint/poor on Gram stain)",
+      "Requires charcoal yeast extract (CYE) agar with cysteine and iron",
+      "Silver stain (Dieterle) better than Gram in tissue",
+      "Facultative intracellular (amoebae in environment; macrophages in host)",
+    ],
+    virulenceFactors: [
+      "Dot/Icm type IV secretion — prevents phagolysosome fusion",
+      "Lipopolysaccharide",
+      "Proteases and phospholipases",
+    ],
+    transmission: [
+      "Inhalation of aerosols from contaminated water (not person-to-person)",
+      "Cooling towers, AC, showers, hot tubs",
+    ],
+    diseases: [
+      "Legionnaires disease (severe atypical pneumonia)",
+      "Pontiac fever (mild flu-like, no pneumonia)",
+    ],
+    classicPresentation: [
+      "Severe pneumonia with high fever, confusion, diarrhea, hyponatremia",
+      "Exposure to hotel/ hospital water or recent plumbing work",
+      "Relative bradycardia (Faget sign) sometimes noted",
+    ],
+    diagnosis: [
+      "Urinary Legionella antigen (L. pneumophila serogroup 1) — rapid",
+      "Culture on BCYE agar (special media)",
+      "CXR: patchy unilateral infiltrates progressing to consolidation",
+    ],
+    treatment: [
+      "Fluoroquinolone (levofloxacin) or macrolide (azithromycin)",
+      "Add rifampin in severe disease (some guidelines)",
+      "β-lactams ineffective — drug does not penetrate macrophages well alone",
+    ],
+    distinguishFrom: [
+      "Mycoplasma — younger, walking pneumonia; no hyponatremia/diarrhea cluster",
+      "S. pneumoniae — typical lobar pneumonia; responds to β-lactams",
+      "Chlamydia pneumoniae — atypical pneumonia; different epidemiology",
+    ],
+    boardsPearls: [
+      "Hyponatremia + diarrhea + severe pneumonia = Legionella",
+      "Outbreaks linked to water systems — not contagious person-to-person",
+      "Treat with macrolide or fluoroquinolone, not penicillin alone",
+    ],
+    pediatrics:
+      "Rare in healthy children; consider in immunocompromised or hospital-acquired pneumonia with water exposure.",
+  },
+  {
+    id: "bordetella-pertussis",
+    name: "Bordetella pertussis",
+    aliases: [
+      "bordetella pertussis",
+      "b. pertussis",
+      "bordetella",
+      "pertussis",
+      "whooping cough",
+    ],
+    type: "gram-negative-rod",
+    definition:
+      "Gram-negative coccobacillus causing pertussis (whooping cough). Requires special media (Regan-Lowe, Bordet-Gengou); produces pertussis toxin and other adhesins.",
+    morphology: [
+      "Gram− coccobacilli",
+      "Strict aerobe; slow-growing",
+      "Regan-Lowe or Bordet-Gengou agar (often with cephalexin to suppress flora)",
+      "Bordet-Gengou — mercury-containing (historical)",
+    ],
+    virulenceFactors: [
+      "Pertussis toxin — ADP-ribosylation of Gi → lymphocytosis",
+      "Adenylate cyclase toxin — ↑ cAMP",
+      "Filamentous hemagglutinin, pertactin, fimbriae — adhesion",
+      "Tracheal cytotoxin — ciliated cell damage",
+    ],
+    transmission: ["Respiratory droplets — highly contagious in catarrhal stage"],
+    diseases: ["Pertussis (whooping cough)"],
+    classicPresentation: [
+      "Catarrhal stage (1–2 weeks): URI symptoms, most contagious",
+      "Paroxysmal stage: paroxysms of cough → inspiratory whoop, post-tussive vomiting",
+      "Convalescent stage: weeks to months of gradual improvement",
+      "Marked lymphocytosis (pertussis toxin effect)",
+    ],
+    diagnosis: [
+      "Nasopharyngeal PCR (preferred)",
+      "Culture on Regan-Lowe/charcoal cephalexin agar",
+      "Marked lymphocytosis supports diagnosis",
+    ],
+    treatment: [
+      "Macrolide (azithromycin) — treat early; limits transmission more than symptom duration",
+      "TMP-SMX alternative in macrolide allergy",
+      "Post-exposure prophylaxis for close contacts",
+    ],
+    distinguishFrom: [
+      "B. parapertussis — milder pertussis-like illness",
+      "Mycoplasma pneumoniae — cough but no whoop; different lymphocyte pattern",
+      "Viral URI/bronchiolitis — no pertussis toxin lymphocytosis",
+    ],
+    boardsPearls: [
+      "Pertussis toxin → ↑ cAMP → lymphocytosis (can mimic leukemia in infants)",
+      "Whoop may be absent in infants — apnea and cyanosis instead",
+      "Tdap booster for adolescents/adults; cocooning around newborns",
+    ],
+    pediatrics:
+      "Infants <6 months highest mortality — apnea, no whoop; treat household contacts; DTaP series prevention.",
+  },
+  {
+    id: "epstein-barr-virus",
+    name: "Epstein-Barr Virus",
+    aliases: [
+      "epstein-barr virus",
+      "epstein barr virus",
+      "ebv",
+      "human herpesvirus 4",
+      "hhv-4",
+    ],
+    type: "virus",
+    definition:
+      "Herpesvirus (HHV-4) infecting B cells via CD21. Causes infectious mononucleosis in adolescents; associated with Burkitt lymphoma, nasopharyngeal carcinoma, and lymphoproliferative disorders.",
+    morphology: [
+      "Enveloped dsDNA herpesvirus",
+      "Infects B lymphocytes via CD21 (CR2)",
+      "Latent in memory B cells after acute infection",
+    ],
+    virulenceFactors: [
+      "EBNA and LMP proteins — latency and B-cell growth",
+      "Infectious mononucleosis — atypical (reactive) CD8+ T-cell response",
+      "Associated malignancies in immunocompromised and endemic settings",
+    ],
+    transmission: ["Saliva (kissing disease)", "Blood transfusion (rare)"],
+    diseases: [
+      "Infectious mononucleosis",
+      "Burkitt lymphoma (c-myc translocation; jaw in endemic Africa, abdomen in sporadic)",
+      "Nasopharyngeal carcinoma",
+      "Post-transplant lymphoproliferative disorder (PTLD)",
+      "Oral hairy leukoplakia (HIV)",
+    ],
+    classicPresentation: [
+      "Adolescent with fever, pharyngitis, posterior cervical LAD, fatigue",
+      "Atypical lymphocytes on smear",
+      "Maculopapular rash if given ampicillin/amoxicillin",
+    ],
+    diagnosis: [
+      "Monospot (heterophile antibody) — rapid; false negative in young children",
+      "EBV VCA IgM (acute), VCA IgG, EBNA (past infection)",
+      "Atypical lymphocytes on peripheral smear",
+    ],
+    treatment: [
+      "Supportive care for mono",
+      "Avoid ampicillin/amoxicillin (rash)",
+      "Avoid contact sports for ~3 weeks (splenic rupture risk)",
+      "PTLD/malignancy — reduce immunosuppression, rituximab, chemotherapy as indicated",
+    ],
+    distinguishFrom: [
+      "CMV mono-like illness — heterophile negative; CMV IgM",
+      "Strep pharyngitis — anterior LAD, no atypical lymphocytes",
+      "HIV acute retroviral syndrome — HIV Ag/Ab, viral load",
+    ],
+    boardsPearls: [
+      "Ampicillin rash in mono — classic boards trap",
+      "Downey cells = atypical lymphocytes (CD8+ T cells responding to infected B cells)",
+      "Burkitt — t(8;14) c-myc; starry sky histology",
+      "Post-transplant EBV → PTLD",
+    ],
+    pediatrics:
+      "Mono often mild/subclinical in young children; heterophile antibody less sensitive <4 years — use EBV serology.",
+  },
+  {
+    id: "cytomegalovirus",
+    name: "Cytomegalovirus",
+    aliases: [
+      "cytomegalovirus",
+      "cmv",
+      "human herpesvirus 5",
+      "hhv-5",
+    ],
+    type: "virus",
+    definition:
+      "Herpesvirus (HHV-5) causing congenital infection, mono-like illness in immunocompetent adults, and severe disease in transplant/AIDS patients. Characteristic owl's eye intranuclear inclusions.",
+    morphology: [
+      "Enveloped dsDNA herpesvirus",
+      "Owl's eye intranuclear inclusions on histology",
+      "Infects many cell types (endothelial, epithelial, leukocytes)",
+    ],
+    virulenceFactors: [
+      "Latency in monocytes and endothelial cells",
+      "Immune evasion — inhibits MHC, NK recognition",
+      "Congenital infection — disrupts neurogenesis (periventricular calcifications)",
+    ],
+    transmission: [
+      "Body fluids (saliva, urine, blood, breast milk, sexual contact)",
+      "Vertical (congenital — highest risk with primary maternal infection)",
+      "Transplant/transfusion",
+    ],
+    diseases: [
+      "Congenital CMV (leading infectious cause of congenital sensorineural hearing loss)",
+      "Mononucleosis-like illness (heterophile negative)",
+      "Retinitis, esophagitis, colitis in AIDS (CD4 <50)",
+      "CMV pneumonia and disease in transplant recipients",
+    ],
+    classicPresentation: [
+      "Congenital: petechiae, jaundice, hepatosplenomegaly, periventricular calcifications, hearing loss",
+      "AIDS: painless vision loss (retinitis), GI ulcerations",
+      "Transplant: fever, leukopenia, organ dysfunction",
+    ],
+    diagnosis: [
+      "CMV IgM/IgG serology",
+      "CMV PCR (blood, CSF, tissue) — quantitative for transplant monitoring",
+      "Owl's eye inclusions on biopsy",
+      "Congenital: urine/ saliva PCR within 3 weeks of birth",
+    ],
+    treatment: [
+      "Immunocompetent: usually supportive",
+      "Ganciclovir or valganciclovir for severe/immunocompromised disease",
+      "Foscarnet or cidofovir for ganciclovir-resistant retinitis",
+      "Congenital: valganciclovir may improve hearing outcomes (specialist-guided)",
+    ],
+    distinguishFrom: [
+      "EBV mono — heterophile positive; EBV serology",
+      "Toxoplasmosis congenital — diffuse intracranial calcifications, chorioretinitis",
+      "HSV congenital — skin/eye/brain; different inclusions",
+    ],
+    boardsPearls: [
+      "Owl's eye inclusions = CMV on boards",
+      "Heterophile-negative mono = CMV or HIV",
+      "Congenital CMV — periventricular (not diffuse) calcifications vs toxoplasmosis",
+      "Ganciclovir — myelosuppression; monitor CBC",
+    ],
+    pediatrics:
+      "Congenital CMV common; most asymptomatic at birth but sensorineural hearing loss may develop; screen failed newborn hearing tests.",
+  },
+  {
+    id: "cryptosporidium-parvum",
+    name: "Cryptosporidium parvum",
+    aliases: [
+      "cryptosporidium parvum",
+      "cryptosporidium",
+      "crypto",
+    ],
+    type: "parasite",
+    definition:
+      "Apicomplexan protozoan causing watery diarrhea. Acid-fast oocysts in stool; chlorine-resistant — common in waterborne outbreaks and AIDS chronic diarrhea.",
+    morphology: [
+      "Acid-fast oocysts (modified Kinyoun stain — red on green background)",
+      "4 sporozoites per oocyst",
+      "Small (4–6 µm) — smaller than Giardia cysts",
+    ],
+    virulenceFactors: [
+      "Oocyst wall resists chlorination",
+      "Intracellular development in brush border (extracytoplasmic)",
+    ],
+    transmission: [
+      "Fecal-oral; contaminated water (pools, day care)",
+      "Oocysts chlorine-resistant",
+    ],
+    diseases: ["Cryptosporidiosis — watery diarrhea"],
+    classicPresentation: [
+      "Watery diarrhea after swimming or day care exposure",
+      "Chronic severe diarrhea in AIDS (CD4 low)",
+      "May be self-limited in immunocompetent hosts",
+    ],
+    diagnosis: [
+      "Modified acid-fast stain of stool (oocysts)",
+      "Stool antigen/PCR",
+      "Often need multiple samples",
+    ],
+    treatment: [
+      "Immunocompetent: supportive; nitazoxanide may shorten illness",
+      "AIDS: ART to restore immunity primary; nitazoxanide adjunct",
+    ],
+    distinguishFrom: [
+      "Giardia — cysts larger; fatty stools; not acid-fast",
+      "Cyclospora — also acid-fast; larger oocysts; needs prolonged TMP-SMX",
+      "Isospora — acid-fast; TMP-SMX treatment in AIDS",
+    ],
+    boardsPearls: [
+      "Acid-fast oocysts in stool = Cryptosporidium (and Cyclospora/Isospora)",
+      "Chlorine-resistant — pool outbreaks",
+      "AIDS chronic diarrhea — Cryptosporidium until proven otherwise; fix immunity with ART",
+    ],
+    pediatrics:
+      "Day care and pool outbreaks in toddlers; can cause dehydration; nitazoxanide approved in children.",
+  },
+  {
+    id: "entamoeba-histolytica",
+    name: "Entamoeba histolytica",
+    aliases: [
+      "entamoeba histolytica",
+      "e. histolytica",
+      "entamoeba",
+      "amebiasis",
+    ],
+    type: "parasite",
+    definition:
+      "Invasive protozoan causing dysentery and liver abscess. Trophozoites ingest RBCs (pathognomonic); cysts transmitted fecal-orally.",
+    morphology: [
+      "Trophozoites with ingested erythrocytes (diagnostic)",
+      "Cysts with 1–4 nuclei (mature cyst = 4)",
+      "Trichrome stain on stool or biopsy",
+    ],
+    virulenceFactors: [
+      "Gal/GalNAc lectin — adhesion to colonic mucosa",
+      "Amoebapores — cell lysis",
+      "Cysteine proteases — tissue invasion",
+    ],
+    transmission: ["Fecal-oral; cysts in contaminated food/water"],
+    diseases: [
+      "Amebic dysentery (bloody diarrhea, flask-shaped ulcers)",
+      "Amebic liver abscess (right lobe; anchovy paste aspirate)",
+      "Cutaneous amebiasis",
+    ],
+    classicPresentation: [
+      "Traveler/endemic area with bloody diarrhea + right upper quadrant pain (liver abscess)",
+      "Liver abscess with fever, hepatomegaly; may lack significant diarrhea",
+      "Trophozoites with engulfed RBCs in stool",
+    ],
+    diagnosis: [
+      "Stool antigen or PCR (distinguishes E. histolytica from E. dispar)",
+      "Serology positive in invasive disease (especially liver abscess)",
+      "Imaging: liver abscess — ultrasound/CT",
+    ],
+    treatment: [
+      "Metronidazole or tinidazole (tissue invasion) + paromomycin or iodoquinol (luminal cysts)",
+      "Aspiration of liver abscess if large, left lobe, or no response (debated)",
+    ],
+    distinguishFrom: [
+      "E. dispar — morphologically identical but nonpathogenic; PCR/antigen distinguishes",
+      "Giardia — fatty diarrhea, no blood, no liver abscess",
+      "Pyogenic liver abscess — bacterial; different epidemiology and aspirate",
+    ],
+    boardsPearls: [
+      "Trophozoite with ingested RBC = E. histolytica (not E. dispar)",
+      "Liver abscess — serology often positive; treat metronidazole + luminal agent",
+      "Flask-shaped colonic ulcers on histology",
+    ],
+    pediatrics:
+      "Amebic dysentery in endemic areas; treat children with same agents (weight-based dosing); liver abscess less common but occurs.",
+  },
 ];
 
 const microbiologyById = new Map(

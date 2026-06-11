@@ -1,16 +1,24 @@
 import type { MediaAttribution } from "./media";
 import type { MicrobiologyEntry } from "./microbiology";
 
+import bordetellaPertussis from "../media/images/microbiology/bordetella-pertussis.jpg?url";
 import candidaAlbicans from "../media/images/microbiology/candida-albicans.jpg?url";
 import clostridiumPerfringens from "../media/images/microbiology/clostridium-perfringens.jpg?url";
+import cryptosporidiumParvum from "../media/images/microbiology/cryptosporidium-parvum.jpg?url";
 import cryptococcusNeoformans from "../media/images/microbiology/cryptococcus-neoformans.jpg?url";
+import cytomegalovirus from "../media/images/microbiology/cytomegalovirus.jpg?url";
+import entamoebaHistolytica from "../media/images/microbiology/entamoeba-histolytica.jpg?url";
+import epsteinBarrVirus from "../media/images/microbiology/epstein-barr-virus.jpg?url";
 import escherichiaColi from "../media/images/microbiology/escherichia-coli.jpg?url";
 import giardiaLamblia from "../media/images/microbiology/giardia-lamblia.jpg?url";
 import haemophilusInfluenzae from "../media/images/microbiology/haemophilus-influenzae.jpg?url";
 import hiv from "../media/images/microbiology/hiv.jpg?url";
+import klebsiellaPneumoniae from "../media/images/microbiology/klebsiella-pneumoniae.jpg?url";
+import legionellaPneumophila from "../media/images/microbiology/legionella-pneumophila.jpg?url";
 import mycobacteriumTuberculosis from "../media/images/microbiology/mycobacterium-tuberculosis.jpg?url";
 import neisseriaMeningitidis from "../media/images/microbiology/neisseria-meningitidis.jpg?url";
 import plasmodiumFalciparum from "../media/images/microbiology/plasmodium-falciparum.jpg?url";
+import pseudomonasAeruginosa from "../media/images/microbiology/pseudomonas-aeruginosa.jpg?url";
 import staphylococcusAureus from "../media/images/microbiology/staphylococcus-aureus.jpg?url";
 import streptococcusPneumoniae from "../media/images/microbiology/streptococcus-pneumoniae.jpg?url";
 import streptococcusPyogenes from "../media/images/microbiology/streptococcus-pyogenes.jpg?url";
@@ -39,6 +47,14 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "cryptococcus-neoformans": extensionAssetUrl(cryptococcusNeoformans),
     "plasmodium-falciparum": extensionAssetUrl(plasmodiumFalciparum),
     "giardia-lamblia": extensionAssetUrl(giardiaLamblia),
+    "klebsiella-pneumoniae": extensionAssetUrl(klebsiellaPneumoniae),
+    "pseudomonas-aeruginosa": extensionAssetUrl(pseudomonasAeruginosa),
+    "legionella-pneumophila": extensionAssetUrl(legionellaPneumophila),
+    "bordetella-pertussis": extensionAssetUrl(bordetellaPertussis),
+    "epstein-barr-virus": extensionAssetUrl(epsteinBarrVirus),
+    cytomegalovirus: extensionAssetUrl(cytomegalovirus),
+    "cryptosporidium-parvum": extensionAssetUrl(cryptosporidiumParvum),
+    "entamoeba-histolytica": extensionAssetUrl(entamoebaHistolytica),
   };
 
 export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
@@ -100,6 +116,38 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Ajay Kumar Chaurasiya)",
     url: "https://commons.wikimedia.org/wiki/File:Cysts_of_Giardia_lamblia.jpg",
   },
+  "klebsiella-pneumoniae": {
+    label: "Wikimedia Commons (Ajay Kumar Chaurasiya)",
+    url: "https://commons.wikimedia.org/wiki/File:Gram_Negative_bacilli_of_Klebsiella_in_Gram_stained_smear_of_culture.jpg",
+  },
+  "pseudomonas-aeruginosa": {
+    label: "Wikimedia Commons (Paulo Henrique Orlandi Mourao)",
+    url: "https://commons.wikimedia.org/wiki/File:Pseudomonas_aeruginosa_smear_Gram_2010-02-10.JPG",
+  },
+  "legionella-pneumophila": {
+    label: "CDC PHIL #11150",
+    url: "https://phil.cdc.gov/Details.aspx?pid=11150",
+  },
+  "bordetella-pertussis": {
+    label: "Wikimedia Commons (Nathan Reading, CC BY-SA 2.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Bordetella_pertussis_on_Charcoal_Agar_supplemented_with_Cephalexin_-_Detail.jpg",
+  },
+  "epstein-barr-virus": {
+    label: "CDC PHIL #2984",
+    url: "https://phil.cdc.gov/Details.aspx?pid=2984",
+  },
+  cytomegalovirus: {
+    label: "Wikimedia Commons (Jensflorian, CC BY-SA 4.0)",
+    url: "https://commons.wikimedia.org/wiki/File:CMV_encephalitis_owl_eye_inclusions_HE_stain.jpg",
+  },
+  "cryptosporidium-parvum": {
+    label: "CDC PHIL #4384",
+    url: "https://phil.cdc.gov/Details.aspx?pid=4384",
+  },
+  "entamoeba-histolytica": {
+    label: "CDC PHIL #14544",
+    url: "https://phil.cdc.gov/Details.aspx?pid=14544",
+  },
 };
 
 export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
@@ -123,6 +171,19 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
   "plasmodium-falciparum":
     "Giemsa thin smear: ring forms and gametocytes",
   "giardia-lamblia": "Cysts in saline wet mount (1600×)",
+  "klebsiella-pneumoniae": "Gram stain: Gram-negative bacilli from culture",
+  "pseudomonas-aeruginosa":
+    "Gram stain: P. aeruginosa phagocytosed by neutrophil in bloodstream infection",
+  "legionella-pneumophila":
+    "Scanning EM: Gram-negative L. pneumophila (8000×, colorized)",
+  "bordetella-pertussis": "Colonies on charcoal agar with cephalexin (7 days)",
+  "epstein-barr-virus":
+    "FA stain: leukemia cells containing Epstein-Barr virus",
+  cytomegalovirus:
+    "H&E: owl's eye intranuclear inclusions in CMV encephalitis",
+  "cryptosporidium-parvum": "Stool smear with Cryptosporidium parvum oocysts",
+  "entamoeba-histolytica":
+    "Trichrome stain: trophozoite with ingested erythrocytes",
 };
 
 export function getMicrobiologyImageForId(

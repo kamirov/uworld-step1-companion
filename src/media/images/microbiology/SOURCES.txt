@@ -100,3 +100,64 @@ giardia-lamblia.jpg
   Author: Ajay Kumar Chaurasiya
   Description: Giardia lamblia cysts in saline wet mount, 1600×
   Page: https://commons.wikimedia.org/wiki/File:Cysts_of_Giardia_lamblia.jpg
+
+klebsiella-pneumoniae.jpg
+  Source: Wikimedia Commons — Gram Negative bacilli of Klebsiella in Gram stained smear of culture.jpg
+  Author: Ajay Kumar Chaurasiya
+  Description: Gram-negative bacilli of Klebsiella in Gram-stained culture smear
+  Page: https://commons.wikimedia.org/wiki/File:Gram_Negative_bacilli_of_Klebsiella_in_Gram_stained_smear_of_culture.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gram_Negative_bacilli_of_Klebsiella_in_Gram_stained_smear_of_culture.jpg?width=1280
+
+pseudomonas-aeruginosa.jpg
+  Source: Wikimedia Commons — Pseudomonas aeruginosa smear Gram 2010-02-10.JPG
+  Author: Paulo Henrique Orlandi Mourao
+  Description: Gram stain showing P. aeruginosa phagocytosed by neutrophil in bloodstream infection
+  Page: https://commons.wikimedia.org/wiki/File:Pseudomonas_aeruginosa_smear_Gram_2010-02-10.JPG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Pseudomonas_aeruginosa_smear_Gram_2010-02-10.JPG?width=1280
+
+legionella-pneumophila.jpg
+  Source: CDC PHIL #11150
+  Author: CDC/Margaret Williams, PhD; Claressa Lucas, PhD; Tatiana Travis, BS
+  Description: Colorized SEM of Gram-negative Legionella pneumophila (8000×)
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=11150
+  Commons: https://commons.wikimedia.org/wiki/File:Legionella_pneumophila_(SEM).jpg
+
+bordetella-pertussis.jpg
+  Source: Wikimedia Commons — Bordetella pertussis on Charcoal Agar supplemented with Cephalexin - Detail.jpg
+  Author: Nathan Reading (via Flickr)
+  Description: B. pertussis colonies on charcoal agar with cephalexin after 7 days
+  License: Creative Commons Attribution-Share Alike 2.0 Generic
+  Page: https://commons.wikimedia.org/wiki/File:Bordetella_pertussis_on_Charcoal_Agar_supplemented_with_Cephalexin_-_Detail.jpg
+  Flickr: https://www.flickr.com/photos/nathanreading/5906025606/
+
+epstein-barr-virus.jpg
+  Source: CDC PHIL #2984
+  Author: CDC/Dr. Paul M. Feorino
+  Description: FA stain of leukemia cells containing Epstein-Barr virus
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2984
+  Commons: https://commons.wikimedia.org/wiki/File:Leukemia_cells_that_contain_Epstein_Barrvirus_using_a_FA_staining_technique_PHIL_2984_lores.jpg
+
+cytomegalovirus.jpg
+  Source: Wikimedia Commons — CMV encephalitis owl eye inclusions HE stain.jpg
+  Author: Jensflorian
+  Description: H&E histology showing owl's eye intranuclear inclusions in CMV encephalitis
+  License: Creative Commons Attribution-Share Alike 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:CMV_encephalitis_owl_eye_inclusions_HE_stain.jpg
+
+cryptosporidium-parvum.jpg
+  Source: CDC PHIL #4384
+  Author: CDC/Dr. Peter Drotman
+  Description: Stool smear photomicrograph with Cryptosporidium parvum oocysts
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=4384
+  Commons: https://commons.wikimedia.org/wiki/File:Fotomicrografia_de_Cryptosporidium_parvum.jpg
+
+entamoeba-histolytica.jpg
+  Source: CDC PHIL #14544
+  Author: CDC/Dr. Mae Melvin; Dr. Greene
+  Description: Trichrome stain of E. histolytica trophozoite with phagocytized erythrocytes
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=14544
+  Commons: https://commons.wikimedia.org/wiki/File:Micrograph_of_Entamoeba_histolytica.jpg
