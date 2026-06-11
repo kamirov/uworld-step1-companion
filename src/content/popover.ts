@@ -10,10 +10,11 @@ import { getMedicationById } from "../data/medications";
 import { getNephronSegmentById } from "../data/nephron";
 import { getOrganById } from "../data/organs";
 import { getProteinById } from "../data/proteins";
+import { getSignalingById } from "../data/signaling";
 import { getSymptomById } from "../data/symptoms";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
 
@@ -273,6 +274,32 @@ function renderConditionPopover(conditionId: string): boolean {
   return true;
 }
 
+function renderSignalingPopover(signalingId: string): boolean {
+  const molecule = getSignalingById(signalingId);
+  if (!molecule || !popoverEl) return false;
+
+  const meta = [
+    `<strong>Type:</strong> ${molecule.type}`,
+    molecule.source ? `<strong>Source:</strong> ${molecule.source}` : "",
+    molecule.receptor ? `<strong>Receptor:</strong> ${molecule.receptor}` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  popoverEl.innerHTML = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--signaling">${molecule.name}</div>
+    ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
+    <div class="usmle-organ-popover__section-label">Function</div>
+    <div class="usmle-organ-popover__mechanism">${molecule.function}</div>
+    ${renderListSection("Clinical relevance", molecule.clinicalRelevance)}
+    ${renderListSection("Distinguish from", molecule.distinguishFrom ?? [])}
+    ${renderListSection("Boards pearls", molecule.boardsPearls)}
+    ${molecule.pediatrics ? renderPediatricsSection(molecule.pediatrics) : ""}
+  `;
+  return true;
+}
+
 function renderProteinPopover(proteinId: string): boolean {
   const protein = getProteinById(proteinId);
   if (!protein || !popoverEl) return false;
@@ -307,6 +334,7 @@ function showPopover(chip: HTMLElement): void {
   const nephronSegmentId = chip.dataset.nephronSegmentId;
   const conditionId = chip.dataset.conditionId;
   const proteinId = chip.dataset.proteinId;
+  const signalingId = chip.dataset.signalingId;
   if (
     !organId &&
     !heartSoundId &&
@@ -316,7 +344,8 @@ function showPopover(chip: HTMLElement): void {
     !labValueId &&
     !nephronSegmentId &&
     !conditionId &&
-    !proteinId
+    !proteinId &&
+    !signalingId
   )
     return;
 
@@ -346,7 +375,9 @@ function showPopover(chip: HTMLElement): void {
                 ? renderNephronPopover(nephronSegmentId)
                 : conditionId
                   ? renderConditionPopover(conditionId)
-                  : renderProteinPopover(proteinId!);
+                  : proteinId
+                    ? renderProteinPopover(proteinId)
+                    : renderSignalingPopover(signalingId!);
   if (!rendered) return;
 
   activeChip = chip;

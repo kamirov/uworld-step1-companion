@@ -229,6 +229,28 @@
   outline-offset: 1px;
 }
 
+.usmle-signaling-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(20, 184, 166, 0.12);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(20, 184, 166, 0.6);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-signaling-chip:hover,
+.usmle-signaling-chip:focus-visible {
+  background: rgba(20, 184, 166, 0.22);
+  outline: 1px solid rgba(20, 184, 166, 0.5);
+  outline-offset: 1px;
+}
+
 .usmle-organ-popover--rich {
   max-width: 360px;
   max-height: min(70vh, 480px);
@@ -304,6 +326,10 @@
 
 .usmle-organ-popover__title--protein {
   color: #be185d;
+}
+
+.usmle-organ-popover__title--signaling {
+  color: #0f766e;
 }
 
 .usmle-organ-popover__meaning {

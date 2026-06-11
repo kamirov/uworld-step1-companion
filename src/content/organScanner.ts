@@ -6,6 +6,7 @@ import { buildMedicationAliasIndex } from "../data/medications";
 import { buildNephronAliasIndex } from "../data/nephron";
 import { buildAliasIndex } from "../data/organs";
 import { buildProteinAliasIndex } from "../data/proteins";
+import { buildSignalingAliasIndex } from "../data/signaling";
 import { buildSymptomAliasIndex } from "../data/symptoms";
 
 const ORGAN_CHIP_CLASS = "usmle-organ-chip";
@@ -17,7 +18,8 @@ const LAB_CHIP_CLASS = "usmle-lab-chip";
 const NEPHRON_CHIP_CLASS = "usmle-nephron-chip";
 const CONDITION_CHIP_CLASS = "usmle-condition-chip";
 const PROTEIN_CHIP_CLASS = "usmle-protein-chip";
-const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}`;
+const SIGNALING_CHIP_CLASS = "usmle-signaling-chip";
+const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}`;
 const OUR_CHIP_CLASSES = [
   ORGAN_CHIP_CLASS,
   HEART_SOUND_CHIP_CLASS,
@@ -28,6 +30,7 @@ const OUR_CHIP_CLASSES = [
   NEPHRON_CHIP_CLASS,
   CONDITION_CHIP_CLASS,
   PROTEIN_CHIP_CLASS,
+  SIGNALING_CHIP_CLASS,
 ] as const;
 const POPOVER_CLASS = "usmle-organ-popover";
 const SKIP_TAGS = new Set([
@@ -49,7 +52,8 @@ type TermKind =
   | "lab"
   | "nephron"
   | "condition"
-  | "protein";
+  | "protein"
+  | "signaling";
 
 interface TermMatch {
   alias: string;
@@ -208,6 +212,8 @@ function chipSelectorForTerm(term: TermMatch): string {
       return `[data-condition-id="${CSS.escape(term.id)}"]`;
     case "protein":
       return `[data-protein-id="${CSS.escape(term.id)}"]`;
+    case "signaling":
+      return `[data-signaling-id="${CSS.escape(term.id)}"]`;
     default:
       return `[data-organ-id="${CSS.escape(term.id)}"]`;
   }
@@ -379,6 +385,13 @@ function buildTermIndex(): TermMatch[] {
       id: proteinId,
     }),
   );
+  const signalingMatches: TermMatch[] = buildSignalingAliasIndex().map(
+    ({ alias, signalingId }) => ({
+      alias,
+      kind: "signaling" as const,
+      id: signalingId,
+    }),
+  );
   return [
     ...organMatches,
     ...heartSoundMatches,
@@ -389,6 +402,7 @@ function buildTermIndex(): TermMatch[] {
     ...nephronMatches,
     ...conditionMatches,
     ...proteinMatches,
+    ...signalingMatches,
   ].sort(
     (a, b) => b.alias.length - a.alias.length || a.alias.localeCompare(b.alias),
   );
@@ -516,6 +530,9 @@ function createChip(
   } else if (term.kind === "protein") {
     button.className = PROTEIN_CHIP_CLASS;
     button.dataset.proteinId = term.id;
+  } else if (term.kind === "signaling") {
+    button.className = SIGNALING_CHIP_CLASS;
+    button.dataset.signalingId = term.id;
   } else {
     button.className = ORGAN_CHIP_CLASS;
     button.dataset.organId = term.id;
