@@ -1914,6 +1914,117 @@ export const LAB_VALUES: LabValueEntry[] = [
       "High BMI + Acanthosis nigricans → insulin resistance",
     ],
   },
+  {
+    id: "cholesterol",
+    name: "Total Cholesterol",
+    aliases: [
+      "cholesterol",
+      "total cholesterol",
+      "serum cholesterol",
+      "fasting cholesterol",
+      "cholesterol level",
+    ],
+    measures:
+      "Sum of cholesterol carried in all lipoproteins (LDL, HDL, VLDL); screening component of the fasting lipid panel.",
+    normalRange: "Desirable <200 mg/dL; 200–239 borderline; ≥240 high (with LDL/HDL context)",
+    increasedCauses: [
+      "Primary hyperlipidemia (familial, polygenic)",
+      "Hypothyroidism",
+      "Nephrotic syndrome",
+      "Obstructive liver disease / cholestasis",
+      "Diet high in saturated fat, diabetes, obesity",
+    ],
+    decreasedCauses: [
+      "Malnutrition",
+      "Severe liver disease (↓ synthesis)",
+      "Hyperthyroidism",
+      "Malabsorption",
+    ],
+    boardsPearls: [
+      "Always interpret with LDL, HDL, and triglycerides — total cholesterol alone is incomplete",
+      "ASCVD risk guides statin therapy (LDL target), not total cholesterol in isolation",
+      "Secondary causes: check TSH before treating primary dyslipidemia",
+      "Peds: screen children with obesity, diabetes, FH, or family history of premature CAD",
+    ],
+    pairWith: [
+      "↑ cholesterol + ↑ LDL + tendon xanthomas → familial hypercholesterolemia",
+      "↑ cholesterol + heavy proteinuria → nephrotic syndrome",
+    ],
+  },
+  {
+    id: "ldl",
+    name: "LDL Cholesterol",
+    aliases: [
+      "ldl",
+      "ldl cholesterol",
+      "ldl-c",
+      "ldl-c cholesterol",
+      "low-density lipoprotein",
+      "low-density lipoprotein cholesterol",
+    ],
+    measures:
+      "Cholesterol in low-density lipoprotein particles; primary atherogenic lipoprotein driving foam cell formation and plaque.",
+    normalRange: "Optimal <100 mg/dL; <70 mg/dL for high ASCVD risk (guideline-dependent)",
+    increasedCauses: [
+      "Familial hypercholesterolemia (LDLR, ApoB, PCSK9 mutations)",
+      "Diet, obesity, sedentary lifestyle",
+      "Hypothyroidism, nephrotic syndrome, diabetes",
+      "Cholestasis",
+    ],
+    decreasedCauses: [
+      "Statin, ezetimibe, PCSK9 inhibitor therapy",
+      "Malnutrition, hyperthyroidism",
+      "Severe liver disease",
+    ],
+    boardsPearls: [
+      "LDL is primary target for atherosclerosis prevention — statins ↓ LDL and reduce ASCVD events",
+      "Statins inhibit HMG-CoA reductase (rate-limiting step in hepatic cholesterol synthesis)",
+      "Homozygous FH: LDL often >500 mg/dL, tendon xanthomas, premature CAD — LDL apheresis",
+      "PCSK9 degrades LDL receptor — gain-of-function PCSK9 → ↑ LDL; PCSK9 inhibitors ↓ LDL",
+      "Peds: heterozygous FH may need statins in childhood; homozygous FH presents early",
+    ],
+    pairWith: [
+      "↑ LDL + premature MI in family → familial hypercholesterolemia",
+      "↑ LDL + hypothyroid symptoms → check TSH before statin",
+    ],
+  },
+  {
+    id: "hdl",
+    name: "HDL Cholesterol",
+    aliases: [
+      "hdl",
+      "hdl cholesterol",
+      "hdl-c",
+      "high-density lipoprotein",
+      "high-density lipoprotein cholesterol",
+    ],
+    measures:
+      "Cholesterol in high-density lipoprotein particles; participates in reverse cholesterol transport from periphery to liver.",
+    normalRange: "≥60 mg/dL protective; <40 mg/dL (M) or <50 (F) = low HDL risk factor",
+    increasedCauses: [
+      "Regular aerobic exercise",
+      "Moderate alcohol intake (not a treatment recommendation)",
+      "Estrogen therapy",
+      "Chronic liver disease (sometimes)",
+    ],
+    decreasedCauses: [
+      "Smoking, sedentary lifestyle, obesity",
+      "Type 2 diabetes, metabolic syndrome",
+      "Hypertriglyceridemia",
+      "Tangier disease (ABCA1 defect — very low HDL)",
+    ],
+    boardsPearls: [
+      "Low HDL is independent ASCVD risk factor — lifestyle modification first",
+      "HDL raising drugs (niacin, CETP inhibitors) have not consistently improved outcomes",
+      "Reverse cholesterol transport: HDL picks up cholesterol from macrophages → liver excretion",
+      "Tangier disease: orange tonsils, very low HDL, neuropathy",
+      "Peds: low HDL common in obesity and metabolic syndrome in adolescents",
+    ],
+    pairWith: [
+      "Low HDL + ↑ TG + central obesity → metabolic syndrome",
+      "Very low HDL + orange tonsils → Tangier disease",
+    ],
+  },
 ];
 
 const labValueById = new Map(LAB_VALUES.map((l) => [l.id, l]));
