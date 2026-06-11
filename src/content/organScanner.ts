@@ -35,6 +35,7 @@ interface TermMatch {
 
 let termIndex: TermMatch[] | null = null;
 const highlightedOnQuestion = new Set<string>();
+const highlightedWordsOnQuestion = new Set<string>();
 let questionFingerprint = "";
 let isApplyingHighlights = false;
 
@@ -42,7 +43,23 @@ const QUESTION_HEADER_RE =
   /(?:Question|Q\.?|Item)\s*\d+(?:\s*(?:of|\/)\s*\d+)?/i;
 
 function termKey(term: TermMatch): string {
-  return `${term.kind}:${term.id}`;
+  return `${term.kind}:${term.id.toLowerCase()}`;
+}
+
+function normalizedWordKey(matchText: string): string {
+  return matchText.toLowerCase();
+}
+
+function isAlreadyHighlighted(term: TermMatch, matchText: string): boolean {
+  return (
+    highlightedOnQuestion.has(termKey(term)) ||
+    highlightedWordsOnQuestion.has(normalizedWordKey(matchText))
+  );
+}
+
+function recordHighlight(term: TermMatch, matchText: string): void {
+  highlightedOnQuestion.add(termKey(term));
+  highlightedWordsOnQuestion.add(normalizedWordKey(matchText));
 }
 
 function getQuestionTextSnapshot(): string {
@@ -63,6 +80,7 @@ function getQuestionFingerprint(): string {
 
 function resetQuestionHighlights(): void {
   highlightedOnQuestion.clear();
+  highlightedWordsOnQuestion.clear();
   questionFingerprint = "";
 }
 
@@ -70,6 +88,7 @@ function syncQuestionContext(): void {
   const next = getQuestionFingerprint();
   if (questionFingerprint && next !== questionFingerprint) {
     highlightedOnQuestion.clear();
+    highlightedWordsOnQuestion.clear();
   }
   questionFingerprint = next;
 }
@@ -173,18 +192,18 @@ function matchedLengthAt(
 
 function findNextMatch(
   text: string,
-  skipTerms: ReadonlySet<string> = highlightedOnQuestion,
 ): { index: number; matchText: string; term: TermMatch } | null {
   const index = getTermIndex();
   let leftmost = text.length;
 
   for (let i = 0; i < text.length; i++) {
     for (const entry of index) {
-      if (skipTerms.has(termKey(entry))) continue;
-      if (matchedLengthAt(text, i, entry) !== null) {
-        leftmost = i;
-        break;
-      }
+      const len = matchedLengthAt(text, i, entry);
+      if (len === null) continue;
+      const matchText = text.slice(i, i + len);
+      if (isAlreadyHighlighted(entry, matchText)) continue;
+      leftmost = i;
+      break;
     }
     if (leftmost < text.length) break;
   }
@@ -194,12 +213,13 @@ function findNextMatch(
   let best: { matchText: string; term: TermMatch; length: number } | null =
     null;
   for (const entry of index) {
-    if (skipTerms.has(termKey(entry))) continue;
     const len = matchedLengthAt(text, leftmost, entry);
     if (len === null) continue;
+    const matchText = text.slice(leftmost, leftmost + len);
+    if (isAlreadyHighlighted(entry, matchText)) continue;
     if (!best || len > best.length) {
       best = {
-        matchText: text.slice(leftmost, leftmost + len),
+        matchText,
         term: entry,
         length: len,
       };
@@ -273,7 +293,7 @@ function highlightTextNode(textNode: Text): boolean {
     }
 
     fragment.appendChild(createChip(doc, next.matchText, next.term));
-    highlightedOnQuestion.add(termKey(next.term));
+    recordHighlight(next.term, next.matchText);
     changed = true;
     remaining = remaining.slice(next.index + next.matchText.length);
   }
