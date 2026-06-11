@@ -2148,6 +2148,131 @@ export const CONDITIONS: ConditionEntry[] = [
       "Classic disease of prematurity; antenatal corticosteroids accelerate fetal surfactant production and reduce incidence.",
   },
   {
+    id: "tetralogy-of-fallot",
+    name: "Tetralogy of Fallot",
+    aliases: [
+      "tetralogy of fallot",
+      "tetralogy of fallot's",
+      "tof",
+      "tet spell",
+      "tet spells",
+      "hypercyanotic spell",
+      "rvot obstruction",
+      "right ventricular outflow tract obstruction",
+      "infundibular septum",
+      "anterior malalignment of infundibular septum",
+      "overriding aorta",
+      "boot-shaped heart",
+    ],
+    definition:
+      "Most common cyanotic congenital heart disease in children, defined by four features: VSD, RVOT obstruction, overriding aorta, and right ventricular hypertrophy.",
+    pathophysiology:
+      "Anterior malalignment of the infundibular septum → RVOT obstruction + large malalignment VSD + aorta overrides the septal defect → right-to-left shunt with hypoxemia; chronic RV pressure overload → concentric RVH.",
+    classicPresentation: [
+      "Cyanotic infant or child; tet spells with crying, feeding, or agitation",
+      "Squatting to relieve cyanosis (older children)",
+      "Harsh systolic ejection murmur at LLSB (RVOT obstruction)",
+      "Single S2 (A2 only; pulmonic component soft/absent)",
+    ],
+    keyFindings: [
+      "Central cyanosis and hypoxemia",
+      "Harsh systolic ejection murmur at left lower sternal border",
+      "Concentric RVH with parasternal heave",
+      "Boot-shaped heart on CXR (↑ RV, concave PA segment)",
+    ],
+    keyLabs: [
+      "Pulse oximetry — desaturation",
+      "ECG: right axis deviation, RVH (tall R in V1)",
+      "Echocardiography — defines anatomy and severity of RVOT obstruction",
+    ],
+    associations: [
+      "22q11 deletion (DiGeorge) in some cases",
+      "Hypercyanotic (tet) spells with infundibular spasm",
+    ],
+    complications: [
+      "Hypercyanotic spells and syncope",
+      "Polycythemia and stroke risk",
+      "Infective endocarditis",
+      "Delayed development if chronic hypoxemia untreated",
+    ],
+    distinguishFrom: [
+      "Isolated VSD — acyanotic left-to-right shunt, holosystolic murmur at LLSB",
+      "Transposition of great arteries — parallel circulation, severe cyanosis at birth",
+      "Pulmonary atresia with VSD — similar cyanosis; no antegrade pulmonary flow",
+    ],
+    treatment: [
+      "Hypercyanotic spell: knee-chest/squatting, O₂, morphine, IV fluids, phenylephrine (↑ SVR); β-blockers may ↓ infundibular spasm",
+      "Definitive repair: surgical closure of VSD and relief of RVOT obstruction",
+      "Prostaglandins not for ToF (unlike ductal-dependent lesions)",
+    ],
+    boardsPearls: [
+      "4 features: VSD + RVOT obstruction + overriding aorta + RVH",
+      "RVOT obstruction drives cyanosis; VSD is usually silent on auscultation",
+      "Squatting ↑ SVR → ↓ R→L shunt during tet spell",
+      "Boot-shaped heart + harsh systolic ejection murmur + cyanosis = ToF",
+      "Anterior malalignment of infundibular septum is the embryologic key",
+    ],
+    pediatrics:
+      "Most common cyanotic CHD beyond infancy; infants may have pink tets if mild RVOT obstruction. Endocarditis prophylaxis when indicated.",
+  },
+  {
+    id: "ventricular-septal-defect",
+    name: "Ventricular Septal Defect",
+    aliases: [
+      "ventricular septal defect",
+      "vsd",
+      "membranous vsd",
+      "muscular vsd",
+    ],
+    definition:
+      "Congenital opening in the ventricular septum allowing shunting between ventricles; most common congenital heart defect.",
+    pathophysiology:
+      "Left-to-right shunt (higher LV pressure) → ↑ pulmonary blood flow; large defects cause LV volume overload and pulmonary hypertension; component of tetralogy of Fallot when combined with RVOT obstruction and overriding aorta.",
+    classicPresentation: [
+      "Holosystolic murmur at LLSB (small to moderate VSD)",
+      "Asymptomatic small VSD or heart failure signs with large shunt",
+      "Failure to thrive, tachypnea, recurrent pneumonias in infants with large VSD",
+    ],
+    keyFindings: [
+      "Holosystolic (pansystolic) murmur at left lower sternal border",
+      "Hyperdynamic precordium with large shunts",
+      "Cyanosis only if Eisenmenger or part of ToF physiology",
+    ],
+    keyLabs: [
+      "Echocardiography — size, location, shunt direction, pulmonary pressures",
+      "CXR: cardiomegaly and ↑ pulmonary vascular markings with large left-to-right shunt",
+    ],
+    associations: [
+      "Part of tetralogy of Fallot (malalignment VSD)",
+      "Trisomy 21, fetal alcohol syndrome",
+      "Spontaneous closure common for small muscular VSDs",
+    ],
+    complications: [
+      "Heart failure in infancy (large VSD)",
+      "Eisenmenger syndrome (irreversible PAH with shunt reversal)",
+      "Aortic regurgitation (membranous VSD with prolapse)",
+      "Infective endocarditis",
+    ],
+    distinguishFrom: [
+      "ToF — cyanotic with RVOT murmur; VSD murmur often absent",
+      "Mitral regurgitation — holosystolic murmur at apex radiating to axilla",
+      "Tricuspid regurgitation — LLSB murmur ↑ with inspiration",
+    ],
+    treatment: [
+      "Small asymptomatic VSD: observe (many close spontaneously)",
+      "Large VSD with failure: diuretics, afterload reduction; surgical or device closure",
+      "Eisenmenger: avoid closure; pulmonary vasodilators; transplant in severe disease",
+    ],
+    boardsPearls: [
+      "Most common congenital heart defect",
+      "Small VSD: loud holosystolic murmur, often asymptomatic",
+      "Large VSD: left-to-right shunt → CHF in infancy, not cyanotic initially",
+      "In ToF the VSD is large but murmur is from RVOT obstruction, not the defect itself",
+    ],
+    pediatrics:
+      "Muscular VSDs often close by age 5–10; membranous VSDs less likely to close. Monitor for failure to thrive and pulmonary hypertension.",
+  },
+  {
     id: "emphysema",
     name: "Emphysema",
     aliases: ["emphysema", "pulmonary emphysema"],

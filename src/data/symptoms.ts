@@ -605,6 +605,38 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "hypoxemia",
+    name: "Hypoxemia",
+    aliases: [
+      "hypoxemia",
+      "hypoxaemia",
+      "low oxygen saturation",
+      "decreased pao2",
+    ],
+    definition:
+      "Low partial pressure of oxygen in arterial blood (PaO₂), leading to tissue hypoxia and, when severe, central cyanosis.",
+    mechanism:
+      "↓ alveolar oxygenation (V/Q mismatch, shunt, hypoventilation), diffusion limitation, or low inspired O₂ → ↓ PaO₂; fixed anatomic shunts (e.g., ToF) cause hypoxemia refractory to supplemental O₂ alone.",
+    thinkOf: [
+      "Right-to-left shunt (tetralogy of Fallot, Eisenmenger)",
+      "Pulmonary embolism, pneumonia, ARDS",
+      "COPD, hypoventilation, high altitude",
+      "Methemoglobinemia (normal PaO₂ but low O₂ carrying capacity)",
+    ],
+    pairWith: [
+      "Cyanosis → significant hypoxemia or abnormal hemoglobin",
+      "Hypercyanotic spell in infant → ToF with RVOT spasm",
+      "PaO₂ fails to rise with 100% O₂ → intracardiac shunt",
+      "Polycythemia → chronic hypoxemia compensation",
+      "Peds: feeding, crying, or agitation worsens hypoxemia in ToF by ↑ R→L shunt",
+    ],
+    distinguishFrom: [
+      "Anemia — low Hb but normal PaO₂; may cause tissue hypoxia without cyanosis until severe",
+      "Peripheral vasoconstriction — cold extremities without true arterial hypoxemia",
+      "Pulse oximetry artifact or methemoglobin — verify with ABG/co-oximetry when discordant",
+    ],
+  },
+  {
     id: "clubbing",
     name: "Clubbing",
     aliases: ["clubbing", "digital clubbing"],

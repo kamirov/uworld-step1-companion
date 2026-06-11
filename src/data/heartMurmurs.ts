@@ -63,6 +63,26 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
     pediatrics:
       "Pulmonic ejection click in ToF; bicuspid aortic valve click may precede a murmur for years.",
   },
+  {
+    id: "harsh-systolic-ejection-murmur",
+    name: "Harsh Systolic Ejection Murmur",
+    aliases: [
+      "harsh systolic ejection murmur",
+      "harsh systolic murmur",
+      "systolic ejection murmur",
+      "ejection murmur",
+      "harsh crescendo-decrescendo murmur",
+    ],
+    meaning:
+      "Rough, loud systolic murmur from turbulent flow across a narrowed right or left ventricular outflow tract or stenotic semilunar valve; best heard at LLSB in RVOT obstruction.",
+    conditions: [
+      "Tetralogy of Fallot: harsh systolic ejection murmur at LLSB from RVOT obstruction (VSD itself is usually silent)",
+      "Pulmonic stenosis: LUSB with possible ejection click",
+      "HOCM: harsh murmur ↑ with Valsalva/standing, ↓ with squatting",
+    ],
+    pediatrics:
+      "ToF is the classic cyanotic CHD with harsh RVOT murmur; murmur intensity may ↓ during hypercyanotic (tet) spells when RVOT spasm worsens.",
+  },
 ];
 
 const heartMurmurById = new Map(HEART_MURMURS.map((m) => [m.id, m]));

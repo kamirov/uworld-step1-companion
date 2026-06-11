@@ -53,6 +53,26 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     pediatrics:
       "Rhythm control in children often involves cardioversion for hemodynamically significant AF; antiarrhythmic choice is specialist-guided.",
   },
+  {
+    id: "squatting",
+    name: "Squatting",
+    aliases: ["squatting", "squatting maneuver", "squats"],
+    definition:
+      "Physical maneuver that increases systemic vascular resistance (SVR) and venous return; used instinctively by children with tetralogy of Fallot during hypercyanotic spells.",
+    details: [
+      "↑ SVR → ↑ systemic afterload → favors left-to-right flow or reduces right-to-left shunt across VSD",
+      "In ToF tet spell: squatting ↑ SVR, ↓ R→L shunt, improves pulmonary blood flow and oxygenation",
+      "Opposite of Valsalva/standing in HOCM (which ↓ preload and worsens LVOT obstruction)",
+      "Knee-chest position in infants provides similar ↑ SVR effect",
+    ],
+    boardsPearls: [
+      "Child with cyanosis who squats → think tetralogy of Fallot",
+      "Squatting ↓ murmur intensity in HOCM (↑ preload) but helps cyanosis in ToF (↑ SVR)",
+      "Hypercyanotic spell treatment: knee-chest, O₂, morphine, phenylephrine (↑ SVR), fluids",
+    ],
+    pediatrics:
+      "Toddlers with ToF may assume squatting during play to relieve cyanosis — pathognomonic behavior on boards.",
+  },
 ];
 
 const strategyById = new Map(

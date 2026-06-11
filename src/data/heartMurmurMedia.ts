@@ -5,6 +5,7 @@ import { getHeartMurmurById } from "./heartMurmurs";
 import crescendoDecrescendo from "../media/audio/heart-murmurs/crescendo-decrescendo.mp3?url";
 import diastolicRumble from "../media/audio/heart-murmurs/diastolic-rumble.mp3?url";
 import ejectionClick from "../media/audio/heart-murmurs/ejection-click.mp3?url";
+import harshSystolicEjectionMurmur from "../media/audio/heart-murmurs/harsh-systolic-ejection-murmur.mp3?url";
 
 export type HeartMurmurAudioId = HeartMurmurEntry["id"];
 
@@ -17,6 +18,7 @@ export const HEART_MURMUR_AUDIO: Record<HeartMurmurAudioId, string> = {
   "crescendo-decrescendo": extensionAssetUrl(crescendoDecrescendo),
   "diastolic-rumble": extensionAssetUrl(diastolicRumble),
   "ejection-click": extensionAssetUrl(ejectionClick),
+  "harsh-systolic-ejection-murmur": extensionAssetUrl(harshSystolicEjectionMurmur),
 };
 
 export const HEART_MURMUR_AUDIO_ATTRIBUTIONS: Record<
@@ -35,6 +37,10 @@ export const HEART_MURMUR_AUDIO_ATTRIBUTIONS: Record<
     label: "Teaching Heart Auscultation (Case 6)",
     url: "https://teachingheartauscultation.com/download/1114/",
   },
+  "harsh-systolic-ejection-murmur": {
+    label: "Teaching Heart Auscultation (Congenital Case 2)",
+    url: "https://teachingheartauscultation.com/download/1110/",
+  },
 };
 
 export const HEART_MURMUR_AUDIO_CAPTIONS: Record<HeartMurmurAudioId, string> =
@@ -42,6 +48,7 @@ export const HEART_MURMUR_AUDIO_CAPTIONS: Record<HeartMurmurAudioId, string> =
     "crescendo-decrescendo": "Aortic stenosis (diamond murmur)",
     "diastolic-rumble": "Mitral stenosis (rumble)",
     "ejection-click": "Bicuspid aortic valve (click)",
+    "harsh-systolic-ejection-murmur": "Pulmonary stenosis / RVOT (harsh ejection murmur)",
   };
 
 export function getHeartMurmurAudioForId(

@@ -74,6 +74,68 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "PCWP ≈ LAP (except mitral stenosis — gradient between wedge and LV)",
     ],
   },
+  {
+    id: "left-to-right-shunt",
+    name: "Left-to-Right Shunt",
+    aliases: [
+      "left-to-right shunt",
+      "left to right shunt",
+      "left-to-right shunting",
+      "left to right shunting",
+    ],
+    definition:
+      "Abnormal flow from the higher-pressure systemic (left) side to the lower-pressure pulmonary (right) side through a congenital or acquired communication.",
+    factors: [
+      "Examples: VSD, ASD, PDA in infancy (acyanotic CHD)",
+      "↑ pulmonary blood flow → volume overload of LA/LV and pulmonary arteries",
+      "Chronic ↑ flow → pulmonary vascular remodeling and pulmonary hypertension",
+      "Irreversible PAH → Eisenmenger syndrome with shunt reversal to right-to-left",
+      "Peds: failure to thrive, recurrent respiratory infections, CHF signs with large shunts",
+    ],
+  },
+  {
+    id: "right-to-left-shunt",
+    name: "Right-to-Left Shunt",
+    aliases: [
+      "right-to-left shunt",
+      "right to left shunt",
+      "right-to-left shunting",
+      "right to left shunting",
+    ],
+    definition:
+      "Deoxygenated blood bypasses the pulmonary circulation and enters the systemic circulation, causing hypoxemia and cyanosis.",
+    factors: [
+      "Cyanotic CHD: tetralogy of Fallot, TGA, tricuspid atresia, truncus arteriosus",
+      "Eisenmenger syndrome — end-stage reversal of initially left-to-right shunt",
+      "Shunt across VSD when RVOT obstruction raises RV pressure (ToF)",
+      "Hypoxemia poorly responsive to supplemental O₂ when fixed anatomic shunt",
+      "Peds: cyanosis, clubbing, polycythemia with chronic right-to-left shunting",
+    ],
+  },
+  {
+    id: "right-ventricular-hypertrophy",
+    name: "Right Ventricular Hypertrophy",
+    aliases: [
+      "right ventricular hypertrophy",
+      "right ventricle hypertrophy",
+      "rv hypertrophy",
+      "rvh",
+      "concentric rvh",
+      "concentric right ventricular hypertrophy",
+      "rv pressure overload",
+    ],
+    definition:
+      "Thickening of the right ventricular myocardium from chronic pressure overload, often producing a parasternal heave and characteristic ECG changes; the fourth feature of tetralogy of Fallot.",
+    factors: [
+      "Pressure overload: pulmonary stenosis, pulmonary hypertension, tetralogy of Fallot (RVOT obstruction), chronic PE",
+      "Concentric RVH: thickened RV wall with pressure overload (vs eccentric dilation in volume overload from ASD/VSD)",
+      "Clinical: parasternal lift/heave, sustained RV impulse",
+      "ECG: right axis deviation, tall R in V1, R>S in V1 after infancy, P pulmonale",
+      "CXR: enlarged RV silhouette; boot-shaped heart in ToF (↓ pulmonary vascular markings + upturned apex)",
+      "Volume overload RV dilation (not true hypertrophy): ASD, PR — may have RV enlargement without pressure-pattern RVH",
+      "Peds: RVH on ECG in cyanotic CHD — think ToF or severe pulmonic stenosis",
+    ],
+  },
 ];
 
 const hemodynamicById = new Map(HEMODYNAMICS.map((h) => [h.id, h]));

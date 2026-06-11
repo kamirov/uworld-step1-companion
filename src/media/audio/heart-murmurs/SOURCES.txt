@@ -20,3 +20,9 @@ ejection-click.mp3
   Download: https://teachingheartauscultation.com/download/1114/
   Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
   Trimmed from 1 s offset, 6 s duration; mono 22.05 kHz.
+
+harsh-systolic-ejection-murmur.mp3
+  Source recording: Congenital Case 2 — Pulmonary stenosis
+  Download: https://teachingheartauscultation.com/download/1110/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from 1 s offset, 7 s duration; mono 22.05 kHz.

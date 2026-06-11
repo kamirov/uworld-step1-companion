@@ -560,6 +560,9 @@ function findAllMatches(
       matchText: next.matchText,
       term: next.term,
     });
+    // Reserve this term (and all its aliases) before searching further so only
+    // one synonym is highlighted per question (e.g. "lips turn blue" vs "cyanotic").
+    recordHighlight(next.term, next.matchText, zone);
     const advance = next.index + next.matchText.length;
     offset += advance;
     remaining = remaining.slice(advance);
