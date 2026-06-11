@@ -568,6 +568,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "peripheral cyanosis",
       "cyanotic heart disease",
       "cyanotic spell",
+      "blue lips",
+      "bluish lips",
+      "lips turn blue",
+      "lips turning blue",
+      "blue discoloration of lips",
     ],
     definition:
       "Bluish discoloration of skin or mucous membranes from increased deoxygenated hemoglobin in capillaries; a cyanotic patient has clinically apparent cyanosis.",
@@ -575,6 +580,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Visible when reduced (deoxygenated) Hb ≥ ~5 g/dL in capillaries; reflects hypoxemia, right-to-left shunting, poor perfusion, or abnormal hemoglobin (methemoglobin, sulfhemoglobin).",
     thinkOf: [
       "Cyanotic congenital heart disease (tetralogy of Fallot, TGA, truncus arteriosus, tricuspid atresia)",
+      "Infant heart failure or critical CHD (poor feeding, tachypnea, diaphoresis with feeds)",
       "Right-to-left shunt with Eisenmenger syndrome",
       "Severe lung disease (COPD, ARDS)",
       "Pulmonary embolism",
@@ -582,11 +588,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Cold exposure / peripheral vasoconstriction",
     ],
     pairWith: [
+      "Blue lips or tongue → central cyanosis (not benign acrocyanosis of hands/feet alone)",
       "Clubbing → chronic hypoxemia (CF, cyanotic congenital heart disease)",
       "Polycythemia → chronic hypoxic drive",
       "Chocolate-colored blood → methemoglobinemia",
       "Differential cyanosis → PDA with R→L shunt (lower body cyanotic, upper body pink)",
       "Hyperoxia test: PaO₂ fails to rise with 100% O₂ → cardiac shunt (vs lung disease)",
+      "Peds: infant with feeding difficulty, diaphoresis, or tiring with feeds + blue lips → congenital heart disease until proven otherwise",
       "Peds: cyanotic spell in tetralogy of Fallot — squatting ↑ SVR, ↓ R→L shunt",
     ],
     distinguishFrom: [

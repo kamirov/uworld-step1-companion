@@ -1,0 +1,22 @@
+Heart murmur audio clips for USMLE Study Tools popovers.
+Source: Teaching Heart Auscultation to Health Professionals
+(https://teachingheartauscultation.com/)
+License: Site permits reproduction with attribution.
+
+crescendo-decrescendo.mp3
+  Source recording: Adult Case 4 — Bicuspid aortic valve with aortic stenosis and insufficiency
+  Download: https://teachingheartauscultation.com/download/1734/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from full recording (~7 s); mono 22.05 kHz.
+
+diastolic-rumble.mp3
+  Source recording: Adult Case 3 — Mitral valve stenosis
+  Download: https://teachingheartauscultation.com/download/1721/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from 2 s offset, 7 s duration; mono 22.05 kHz.
+
+ejection-click.mp3
+  Source recording: Congenital Case 6 — Bicuspid aortic valve
+  Download: https://teachingheartauscultation.com/download/1114/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from 1 s offset, 6 s duration; mono 22.05 kHz.

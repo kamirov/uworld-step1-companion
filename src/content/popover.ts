@@ -7,6 +7,12 @@ import type { MediaAttribution } from "../data/media";
 import { getClinicalStrategyById } from "../data/clinicalStrategies";
 import { getConditionById } from "../data/conditions";
 import { getEcgFindingById } from "../data/ecgFindings";
+import {
+  getHeartMurmurAudioAttributionForId,
+  getHeartMurmurAudioCaptionForId,
+  getHeartMurmurAudioForId,
+} from "../data/heartMurmurMedia";
+import { getHeartMurmurById } from "../data/heartMurmurs";
 import { getHeartSoundById } from "../data/heartSounds";
 import { getProcedureById } from "../data/procedures";
 import { getHemodynamicById } from "../data/hemodynamics";
@@ -19,7 +25,8 @@ import { getSignalingById } from "../data/signaling";
 import { getSymptomById } from "../data/symptoms";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip";
+const POPOVER_AUDIO_SELECTOR = ".usmle-organ-popover__audio";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
 
@@ -58,7 +65,24 @@ function scheduleHide(): void {
   }, HIDE_DELAY_MS);
 }
 
+function stopPopoverAudio(): void {
+  const audio = popoverEl?.querySelector<HTMLAudioElement>(POPOVER_AUDIO_SELECTOR);
+  if (!audio) return;
+  audio.pause();
+  audio.currentTime = 0;
+}
+
+function playPopoverAudio(): void {
+  const audio = popoverEl?.querySelector<HTMLAudioElement>(POPOVER_AUDIO_SELECTOR);
+  if (!audio) return;
+  audio.currentTime = 0;
+  void audio.play().catch(() => {
+    // Autoplay may be blocked until the user has interacted with the page.
+  });
+}
+
 function hidePopover(): void {
+  stopPopoverAudio();
   if (popoverEl) popoverEl.hidden = true;
   activeChip = null;
 }
@@ -164,6 +188,45 @@ function renderHeartSoundPopover(heartSoundId: string): boolean {
   );
 }
 
+function renderHeartMurmurPopover(heartMurmurId: string): boolean {
+  const murmur = getHeartMurmurById(heartMurmurId);
+  if (!murmur || !popoverEl) return false;
+
+  const audioSrc = getHeartMurmurAudioForId(heartMurmurId);
+  const audioCaption = getHeartMurmurAudioCaptionForId(heartMurmurId);
+  const audioAttribution = getHeartMurmurAudioAttributionForId(heartMurmurId);
+
+  const list = `<ul class="usmle-organ-popover__list">${murmur.conditions
+    .map((item) => `<li>${item}</li>`)
+    .join("")}</ul>`;
+
+  const bodyContent = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--heart">${murmur.name}</div>
+    <div class="usmle-organ-popover__meaning">${murmur.meaning}</div>
+    <div class="usmle-organ-popover__section-label">Classic associations</div>
+    ${list}
+    ${murmur.pediatrics ? renderPediatricsSection(murmur.pediatrics) : ""}
+  `;
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  if (audioSrc && audioCaption && audioAttribution) {
+    popoverEl.classList.add("usmle-organ-popover--with-media");
+    popoverEl.innerHTML = `
+      <div class="usmle-organ-popover__layout">
+        <div class="usmle-organ-popover__body">${bodyContent}</div>
+        ${renderPopoverAudioBlock({
+          src: audioSrc,
+          caption: audioCaption,
+          attribution: audioAttribution,
+        })}
+      </div>
+    `;
+  } else {
+    popoverEl.innerHTML = bodyContent;
+  }
+  return true;
+}
+
 function renderHemodynamicPopover(hemodynamicId: string): boolean {
   const term = getHemodynamicById(hemodynamicId);
   if (!term) return false;
@@ -204,6 +267,26 @@ function renderPopoverMediaBlock(options: {
   return `
     <div class="usmle-organ-popover__media">
       <img src="${options.src}" alt="${options.alt}" />
+      <div class="usmle-organ-popover__media-caption">${options.caption}</div>
+      ${renderMediaAttribution(options.attribution)}
+    </div>
+  `;
+}
+
+function renderPopoverAudioBlock(options: {
+  src: string;
+  caption: string;
+  attribution: MediaAttribution;
+}): string {
+  return `
+    <div class="usmle-organ-popover__media">
+      <audio
+        class="usmle-organ-popover__audio"
+        controls
+        autoplay
+        preload="auto"
+        src="${options.src}"
+      ></audio>
       <div class="usmle-organ-popover__media-caption">${options.caption}</div>
       ${renderMediaAttribution(options.attribution)}
     </div>
@@ -431,6 +514,7 @@ function renderProteinPopover(proteinId: string): boolean {
 function showPopover(chip: HTMLElement): void {
   const organId = chip.dataset.organId;
   const heartSoundId = chip.dataset.heartSoundId;
+  const heartMurmurId = chip.dataset.heartMurmurId;
   const hemodynamicId = chip.dataset.hemodynamicId;
   const symptomId = chip.dataset.symptomId;
   const medicationId = chip.dataset.medicationId;
@@ -445,6 +529,7 @@ function showPopover(chip: HTMLElement): void {
   if (
     !organId &&
     !heartSoundId &&
+    !heartMurmurId &&
     !hemodynamicId &&
     !symptomId &&
     !medicationId &&
@@ -473,7 +558,9 @@ function showPopover(chip: HTMLElement): void {
     ? renderOrganPopover(organId)
     : heartSoundId
       ? renderHeartSoundPopover(heartSoundId)
-      : hemodynamicId
+      : heartMurmurId
+        ? renderHeartMurmurPopover(heartMurmurId)
+        : hemodynamicId
         ? renderHemodynamicPopover(hemodynamicId)
         : symptomId
           ? renderSymptomPopover(symptomId)
@@ -498,6 +585,7 @@ function showPopover(chip: HTMLElement): void {
 
   activeChip = chip;
   positionPopover(chip, popover);
+  playPopoverAudio();
 }
 
 export function startPopoverController(): void {

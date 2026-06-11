@@ -1,6 +1,7 @@
 import { buildClinicalStrategyAliasIndex } from "../data/clinicalStrategies";
 import { buildConditionAliasIndex } from "../data/conditions";
 import { buildEcgFindingAliasIndex } from "../data/ecgFindings";
+import { buildHeartMurmurAliasIndex } from "../data/heartMurmurs";
 import { buildHeartSoundAliasIndex } from "../data/heartSounds";
 import { buildHemodynamicAliasIndex } from "../data/hemodynamics";
 import { buildProcedureAliasIndex } from "../data/procedures";
@@ -14,6 +15,7 @@ import { buildSymptomAliasIndex } from "../data/symptoms";
 
 const ORGAN_CHIP_CLASS = "usmle-organ-chip";
 const HEART_SOUND_CHIP_CLASS = "usmle-heart-sound-chip";
+const HEART_MURMUR_CHIP_CLASS = "usmle-heart-murmur-chip";
 const HEMODYNAMIC_CHIP_CLASS = "usmle-hemodynamic-chip";
 const SYMPTOM_CHIP_CLASS = "usmle-symptom-chip";
 const MEDICATION_CHIP_CLASS = "usmle-medication-chip";
@@ -25,10 +27,11 @@ const SIGNALING_CHIP_CLASS = "usmle-signaling-chip";
 const ECG_CHIP_CLASS = "usmle-ecg-chip";
 const PROCEDURE_CHIP_CLASS = "usmle-procedure-chip";
 const CLINICAL_STRATEGY_CHIP_CLASS = "usmle-clinical-strategy-chip";
-const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}, .${CLINICAL_STRATEGY_CHIP_CLASS}`;
+const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEART_MURMUR_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}, .${CLINICAL_STRATEGY_CHIP_CLASS}`;
 const OUR_CHIP_CLASSES = [
   ORGAN_CHIP_CLASS,
   HEART_SOUND_CHIP_CLASS,
+  HEART_MURMUR_CHIP_CLASS,
   HEMODYNAMIC_CHIP_CLASS,
   SYMPTOM_CHIP_CLASS,
   MEDICATION_CHIP_CLASS,
@@ -92,6 +95,7 @@ interface CoalescedTextView {
 type TermKind =
   | "organ"
   | "heart-sound"
+  | "heart-murmur"
   | "hemodynamic"
   | "symptom"
   | "medication"
@@ -248,6 +252,8 @@ function chipSelectorForTerm(term: TermMatch): string {
   switch (term.kind) {
     case "heart-sound":
       return `[data-heart-sound-id="${CSS.escape(term.id)}"]`;
+    case "heart-murmur":
+      return `[data-heart-murmur-id="${CSS.escape(term.id)}"]`;
     case "hemodynamic":
       return `[data-hemodynamic-id="${CSS.escape(term.id)}"]`;
     case "symptom":
@@ -392,6 +398,13 @@ function buildTermIndex(): TermMatch[] {
       id: heartSoundId,
     }),
   );
+  const heartMurmurMatches: TermMatch[] = buildHeartMurmurAliasIndex().map(
+    ({ alias, heartMurmurId }) => ({
+      alias,
+      kind: "heart-murmur" as const,
+      id: heartMurmurId,
+    }),
+  );
   const hemodynamicMatches: TermMatch[] = buildHemodynamicAliasIndex().map(
     ({ alias, hemodynamicId }) => ({
       alias,
@@ -471,6 +484,7 @@ function buildTermIndex(): TermMatch[] {
   return [
     ...organMatches,
     ...heartSoundMatches,
+    ...heartMurmurMatches,
     ...hemodynamicMatches,
     ...symptomMatches,
     ...medicationMatches,
@@ -619,6 +633,9 @@ function createChip(
   if (term.kind === "heart-sound") {
     button.className = HEART_SOUND_CHIP_CLASS;
     button.dataset.heartSoundId = term.id;
+  } else if (term.kind === "heart-murmur") {
+    button.className = HEART_MURMUR_CHIP_CLASS;
+    button.dataset.heartMurmurId = term.id;
   } else if (term.kind === "hemodynamic") {
     button.className = HEMODYNAMIC_CHIP_CLASS;
     button.dataset.hemodynamicId = term.id;
