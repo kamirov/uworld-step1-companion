@@ -1,9 +1,10 @@
 import { getHeartSoundById } from "../data/heartSounds";
 import { getHemodynamicById } from "../data/hemodynamics";
 import { getOrganById } from "../data/organs";
+import { getSymptomById } from "../data/symptoms";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
 
@@ -138,11 +139,39 @@ function renderHemodynamicPopover(hemodynamicId: string): boolean {
   );
 }
 
+function renderListSection(label: string, items: string[]): string {
+  if (items.length === 0) return "";
+  return `
+    <div class="usmle-organ-popover__section-label">${label}</div>
+    <ul class="usmle-organ-popover__list">${items
+      .map((item) => `<li>${item}</li>`)
+      .join("")}</ul>
+  `;
+}
+
+function renderSymptomPopover(symptomId: string): boolean {
+  const symptom = getSymptomById(symptomId);
+  if (!symptom || !popoverEl) return false;
+
+  popoverEl.classList.add("usmle-organ-popover--symptom");
+  popoverEl.innerHTML = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--symptom">${symptom.name}</div>
+    <div class="usmle-organ-popover__meaning">${symptom.definition}</div>
+    <div class="usmle-organ-popover__section-label">Mechanism</div>
+    <div class="usmle-organ-popover__mechanism">${symptom.mechanism}</div>
+    ${renderListSection("Think of", symptom.thinkOf)}
+    ${renderListSection("Pair with", symptom.pairWith)}
+    ${renderListSection("Distinguish from", symptom.distinguishFrom ?? [])}
+  `;
+  return true;
+}
+
 function showPopover(chip: HTMLElement): void {
   const organId = chip.dataset.organId;
   const heartSoundId = chip.dataset.heartSoundId;
   const hemodynamicId = chip.dataset.hemodynamicId;
-  if (!organId && !heartSoundId && !hemodynamicId) return;
+  const symptomId = chip.dataset.symptomId;
+  if (!organId && !heartSoundId && !hemodynamicId && !symptomId) return;
 
   if (hideTimer) {
     clearTimeout(hideTimer);
@@ -150,11 +179,14 @@ function showPopover(chip: HTMLElement): void {
   }
 
   const popover = ensurePopover();
+  popover.classList.remove("usmle-organ-popover--symptom");
   const rendered = organId
     ? renderOrganPopover(organId)
     : heartSoundId
       ? renderHeartSoundPopover(heartSoundId)
-      : renderHemodynamicPopover(hemodynamicId!);
+      : hemodynamicId
+        ? renderHemodynamicPopover(hemodynamicId)
+        : renderSymptomPopover(symptomId!);
   if (!rendered) return;
 
   activeChip = chip;
