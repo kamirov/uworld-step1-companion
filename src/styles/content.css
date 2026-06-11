@@ -141,6 +141,28 @@
   outline-offset: 1px;
 }
 
+.usmle-lab-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(14, 116, 144, 0.12);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(14, 116, 144, 0.6);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-lab-chip:hover,
+.usmle-lab-chip:focus-visible {
+  background: rgba(14, 116, 144, 0.22);
+  outline: 1px solid rgba(14, 116, 144, 0.5);
+  outline-offset: 1px;
+}
+
 .usmle-organ-popover--rich {
   max-width: 360px;
   max-height: min(70vh, 480px);
@@ -161,6 +183,10 @@
 
 .usmle-organ-popover__title--medication {
   color: #6d28d9;
+}
+
+.usmle-organ-popover__title--lab {
+  color: #0e7490;
 }
 
 .usmle-organ-popover__meaning {

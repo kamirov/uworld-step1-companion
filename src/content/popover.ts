@@ -1,11 +1,12 @@
 import { getHeartSoundById } from "../data/heartSounds";
 import { getHemodynamicById } from "../data/hemodynamics";
+import { getLabValueById } from "../data/labValues";
 import { getMedicationById } from "../data/medications";
 import { getOrganById } from "../data/organs";
 import { getSymptomById } from "../data/symptoms";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
 
@@ -184,13 +185,38 @@ function renderMedicationPopover(medicationId: string): boolean {
   return true;
 }
 
+function renderLabValuePopover(labValueId: string): boolean {
+  const lab = getLabValueById(labValueId);
+  if (!lab || !popoverEl) return false;
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  popoverEl.innerHTML = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--lab">${lab.name}</div>
+    <div class="usmle-organ-popover__meaning">${lab.measures}</div>
+    <div class="usmle-organ-popover__layer"><strong>Normal range:</strong> ${lab.normalRange}</div>
+    ${renderListSection("↑ Causes", lab.increasedCauses)}
+    ${renderListSection("↓ Causes", lab.decreasedCauses)}
+    ${renderListSection("Pair with", lab.pairWith ?? [])}
+    ${renderListSection("Boards pearls", lab.boardsPearls)}
+  `;
+  return true;
+}
+
 function showPopover(chip: HTMLElement): void {
   const organId = chip.dataset.organId;
   const heartSoundId = chip.dataset.heartSoundId;
   const hemodynamicId = chip.dataset.hemodynamicId;
   const symptomId = chip.dataset.symptomId;
   const medicationId = chip.dataset.medicationId;
-  if (!organId && !heartSoundId && !hemodynamicId && !symptomId && !medicationId)
+  const labValueId = chip.dataset.labValueId;
+  if (
+    !organId &&
+    !heartSoundId &&
+    !hemodynamicId &&
+    !symptomId &&
+    !medicationId &&
+    !labValueId
+  )
     return;
 
   if (hideTimer) {
@@ -208,7 +234,9 @@ function showPopover(chip: HTMLElement): void {
         ? renderHemodynamicPopover(hemodynamicId)
         : symptomId
           ? renderSymptomPopover(symptomId)
-          : renderMedicationPopover(medicationId!);
+          : medicationId
+            ? renderMedicationPopover(medicationId)
+            : renderLabValuePopover(labValueId!);
   if (!rendered) return;
 
   activeChip = chip;

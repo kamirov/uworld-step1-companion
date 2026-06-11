@@ -1,5 +1,6 @@
 import { buildHeartSoundAliasIndex } from "../data/heartSounds";
 import { buildHemodynamicAliasIndex } from "../data/hemodynamics";
+import { buildLabValueAliasIndex } from "../data/labValues";
 import { buildMedicationAliasIndex } from "../data/medications";
 import { buildAliasIndex } from "../data/organs";
 import { buildSymptomAliasIndex } from "../data/symptoms";
@@ -9,13 +10,15 @@ const HEART_SOUND_CHIP_CLASS = "usmle-heart-sound-chip";
 const HEMODYNAMIC_CHIP_CLASS = "usmle-hemodynamic-chip";
 const SYMPTOM_CHIP_CLASS = "usmle-symptom-chip";
 const MEDICATION_CHIP_CLASS = "usmle-medication-chip";
-const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}`;
+const LAB_CHIP_CLASS = "usmle-lab-chip";
+const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}`;
 const OUR_CHIP_CLASSES = [
   ORGAN_CHIP_CLASS,
   HEART_SOUND_CHIP_CLASS,
   HEMODYNAMIC_CHIP_CLASS,
   SYMPTOM_CHIP_CLASS,
   MEDICATION_CHIP_CLASS,
+  LAB_CHIP_CLASS,
 ] as const;
 const POPOVER_CLASS = "usmle-organ-popover";
 const SKIP_TAGS = new Set([
@@ -28,7 +31,13 @@ const SKIP_TAGS = new Set([
   "NOSCRIPT",
 ]);
 
-type TermKind = "organ" | "heart-sound" | "hemodynamic" | "symptom" | "medication";
+type TermKind =
+  | "organ"
+  | "heart-sound"
+  | "hemodynamic"
+  | "symptom"
+  | "medication"
+  | "lab";
 
 interface TermMatch {
   alias: string;
@@ -154,12 +163,20 @@ function buildTermIndex(): TermMatch[] {
       id: medicationId,
     }),
   );
+  const labMatches: TermMatch[] = buildLabValueAliasIndex().map(
+    ({ alias, labValueId }) => ({
+      alias,
+      kind: "lab" as const,
+      id: labValueId,
+    }),
+  );
   return [
     ...organMatches,
     ...heartSoundMatches,
     ...hemodynamicMatches,
     ...symptomMatches,
     ...medicationMatches,
+    ...labMatches,
   ].sort(
     (a, b) => b.alias.length - a.alias.length || a.alias.localeCompare(b.alias),
   );
@@ -274,6 +291,9 @@ function createChip(
   } else if (term.kind === "medication") {
     button.className = MEDICATION_CHIP_CLASS;
     button.dataset.medicationId = term.id;
+  } else if (term.kind === "lab") {
+    button.className = LAB_CHIP_CLASS;
+    button.dataset.labValueId = term.id;
   } else {
     button.className = ORGAN_CHIP_CLASS;
     button.dataset.organId = term.id;
