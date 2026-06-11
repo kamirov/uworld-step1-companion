@@ -1886,6 +1886,547 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
     pediatrics:
       "Disseminated histoplasmosis in infant immunocompromise; endemic exposure in children often mild; amphotericin B for severe disease.",
   },
+  {
+    id: "campylobacter-jejuni",
+    name: "Campylobacter jejuni",
+    aliases: [
+      "campylobacter jejuni",
+      "campylobacter",
+      "c. jejuni",
+    ],
+    type: "gram-negative-rod",
+    definition:
+      "Curved (gull-wing) Gram-negative rod; microaerophilic. Leading bacterial cause of gastroenteritis worldwide; strongly associated with Guillain-Barré syndrome via molecular mimicry.",
+    morphology: [
+      "Gram− curved or S-shaped rods (\"gull wing\")",
+      "Microaerophilic; grows at 42°C (thermophilic — use Campy blood agar)",
+      "Oxidase-positive",
+      "Motile (polar flagella)",
+    ],
+    virulenceFactors: [
+      "Invasion of intestinal epithelium",
+      "Cytolethal distending toxin (CDT)",
+      "LPS — triggers inflammatory diarrhea",
+      "Molecular mimicry of ganglioside GM1 → Guillain-Barré",
+    ],
+    transmission: [
+      "Undercooked poultry (most common)",
+      "Unpasteurized milk, contaminated water",
+      "Contact with infected animals (puppies, farm animals)",
+    ],
+    diseases: [
+      "Acute inflammatory diarrhea (often bloody)",
+      "Bacteremia (immunocompromised, sickle cell)",
+      "Guillain-Barré syndrome (post-infectious)",
+      "Reactive arthritis (Reiter syndrome)",
+    ],
+    classicPresentation: [
+      "Bloody diarrhea 2–5 days after undercooked chicken exposure",
+      "Fever, crampy abdominal pain, tenesmus",
+      "Ascending weakness days to weeks later → think Guillain-Barré",
+    ],
+    diagnosis: [
+      "Stool culture on selective media at 42°C (Campy agar)",
+      "Oxidase test positive",
+      "Usually self-limited — culture if severe, bloody, or immunocompromised",
+    ],
+    treatment: [
+      "Mild: supportive (fluids); often no antibiotics needed",
+      "Severe/high-risk: azithromycin or fluoroquinolone (rising resistance)",
+      "Avoid antibiotics if uncomplicated — may not shorten illness",
+    ],
+    distinguishFrom: [
+      "Salmonella/Shigella — also bloody diarrhea; different culture/growth",
+      "E. coli O157:H7 — HUS risk; do not give antibiotics",
+      "Yersinia — pseudoappendicitis; cold agglutinins not typical",
+    ],
+    boardsPearls: [
+      "Curved Gram− rod + poultry = Campylobacter",
+      "Post-diarrheal ascending paralysis = Guillain-Barré (Campylobacter association)",
+      "Culture at 42°C on Campy agar",
+    ],
+    pediatrics:
+      "Common in children; puppies as exposure source; Guillain-Barré can follow pediatric Campylobacter infection — monitor for weakness after diarrhea.",
+  },
+  {
+    id: "helicobacter-pylori",
+    name: "Helicobacter pylori",
+    aliases: [
+      "helicobacter pylori",
+      "h. pylori",
+      "h pylori",
+      "helicobacter",
+    ],
+    type: "gram-negative-rod",
+    definition:
+      "Spiral Gram-negative rod adapted to gastric mucosa. Causes chronic gastritis, peptic ulcer disease, and increases gastric adenocarcinoma and MALT lymphoma risk.",
+    morphology: [
+      "Spiral/curved Gram− rod",
+      "Microaerophilic",
+      "Urease-positive (converts urea → ammonia — neutralizes acid)",
+      "Flagella for motility in mucus layer",
+    ],
+    virulenceFactors: [
+      "Urease — survival in acidic stomach",
+      "CagA and VacA virulence factors (cagA+ strains more virulent)",
+      "Chronic inflammation → atrophic gastritis, intestinal metaplasia",
+      "Biofilm in mucus layer",
+    ],
+    transmission: [
+      "Fecal-oral or oral-oral (person-to-person, especially in childhood)",
+      "Endemic in developing countries; household clustering",
+    ],
+    diseases: [
+      "Chronic gastritis",
+      "Peptic ulcer disease (gastric and duodenal)",
+      "Gastric adenocarcinoma",
+      "MALT lymphoma",
+      "Iron deficiency anemia (chronic blood loss)",
+    ],
+    classicPresentation: [
+      "Epigastric pain improved with food (duodenal ulcer) or worsened (gastric ulcer)",
+      "Dyspepsia in endemic area or immigrant from high-prevalence region",
+      "Ulcer in young patient without NSAID use → test for H. pylori",
+    ],
+    diagnosis: [
+      "Urea breath test or stool antigen (non-invasive, test of choice for active infection)",
+      "Endoscopy with biopsy — urease (CLO) test, histology, culture",
+      "Serology detects exposure but not active infection (avoid for treatment confirmation)",
+    ],
+    treatment: [
+      "Triple therapy: PPI + clarithromycin + amoxicillin (or metronidazole)",
+      "Bismuth quadruple therapy if macrolide resistance or prior failure",
+      "Confirm eradication with urea breath test or stool antigen ≥4 weeks after therapy",
+    ],
+    distinguishFrom: [
+      "NSAID-induced ulcer — no H. pylori; history of NSAID use",
+      "Zollinger-Ellison — gastrinoma; refractory/multiple ulcers",
+      "Gastric cancer — alarm features (weight loss, bleeding, mass)",
+    ],
+    boardsPearls: [
+      "Urease+ spiral rod in stomach = H. pylori",
+      "Treat H. pylori to cure peptic ulcer and reduce cancer risk",
+      "Test-and-treat dyspepsia in young patients without alarm features",
+    ],
+    pediatrics:
+      "Usually acquired in childhood; peptic ulcer disease in children — test and treat H. pylori; bismuth quadruple or amoxicillin-based regimens used in pediatrics.",
+  },
+  {
+    id: "corynebacterium-diphtheriae",
+    name: "Corynebacterium diphtheriae",
+    aliases: [
+      "corynebacterium diphtheriae",
+      "c. diphtheriae",
+      "corynebacterium",
+    ],
+    type: "gram-positive-rod",
+    definition:
+      "Gram-positive rod with metachromatic (volutin) granules. Produces diphtheria exotoxin (AB toxin inhibiting EF-2 via ADP-ribosylation). Toxin gene encoded by β-prophage — toxigenic strains cause systemic disease.",
+    morphology: [
+      "Gram+ pleomorphic rods (club-shaped, palisades)",
+      "Metachromatic granules (Albert stain)",
+      "Tellurite agar — black colonies",
+      "Non-spore-forming",
+    ],
+    virulenceFactors: [
+      "Diphtheria exotoxin — ADP-ribosylates EF-2 → protein synthesis arrest",
+      "Pseudomembrane (fibrin, necrotic epithelium, bacteria)",
+      "Only toxigenic strains (lysogenized with β-phage) cause classic diphtheria",
+    ],
+    transmission: [
+      "Respiratory droplets",
+      "Contact with skin lesions (cutaneous diphtheria)",
+      "Unvaccinated/travel to endemic areas",
+    ],
+    diseases: [
+      "Pharyngeal diphtheria (pseudomembrane, bull neck)",
+      "Laryngeal diphtheria (stridor, airway obstruction)",
+      "Cutaneous diphtheria",
+      "Myocarditis and neuropathy (toxin-mediated)",
+    ],
+    classicPresentation: [
+      "Gray pseudomembrane on tonsils/pharynx that bleeds when scraped",
+      "Bull neck (cervical lymphadenopathy)",
+      "Low-grade fever, malaise; toxin causes systemic complications",
+    ],
+    diagnosis: [
+      "Clinical suspicion in unvaccinated patient with pseudomembrane",
+      "Culture on Löffler or tellurite agar; toxin assay (Elek test) for toxigenicity",
+      "ECG for myocarditis; monitor airway",
+    ],
+    treatment: [
+      "Diphtheria antitoxin (horse serum) — give early before culture confirmation if suspected",
+      "Antibiotics: penicillin G or erythromycin to eradicate organism",
+      "Airway management; cardiac monitoring",
+    ],
+    distinguishFrom: [
+      "Strep pharyngitis — no pseudomembrane; exudate scrapes off easily",
+      "Infectious mononucleosis — posterior adenopathy, no pseudomembrane",
+      "Epiglottitis (H. influenzae) — drooling, no pseudomembrane",
+    ],
+    boardsPearls: [
+      "Pseudomembrane + bull neck + unvaccinated = diphtheria — give antitoxin immediately",
+      "Toxin inhibits EF-2 (same target as Pseudomonas exotoxin A)",
+      "DTaP/Tdap vaccine prevents toxin-mediated disease",
+    ],
+    pediatrics:
+      "Routine DTaP vaccination; unvaccinated immigrant children at risk; antitoxin and antibiotics in suspected cases; cutaneous diphtheria in tropics.",
+  },
+  {
+    id: "mycoplasma-pneumoniae",
+    name: "Mycoplasma pneumoniae",
+    aliases: [
+      "mycoplasma pneumoniae",
+      "mycoplasma",
+      "m. pneumoniae",
+    ],
+    type: "atypical-bacteria",
+    definition:
+      "Smallest free-living bacterium; lacks cell wall (not visible on Gram stain). Causes atypical \"walking pneumonia,\" especially in young adults; associated with cold agglutinins and extrapulmonary manifestations.",
+    morphology: [
+      "No cell wall — pleomorphic; not seen on Gram stain",
+      "Sterols in membrane for stability",
+      "Grows slowly; requires enriched media ( Eaton agar)",
+      "One of the \"atypical pneumonias\" (along with Chlamydia, Legionella)",
+    ],
+    virulenceFactors: [
+      "Adherence via P1 adhesin to respiratory epithelium",
+      "Community-acquired pneumonia in closed settings (dorms, military)",
+      "Immune-mediated extras (Stevens-Johnson, hemolysis from cold agglutinins)",
+    ],
+    transmission: ["Respiratory droplets; prolonged close contact"],
+    diseases: [
+      "Atypical pneumonia (\"walking pneumonia\")",
+      "Bullous myringitis",
+      "Erythema multiforme / Stevens-Johnson syndrome",
+      "Hemolytic anemia (cold agglutinin-mediated)",
+      "Rare: encephalitis, rash (Mycoplasma-induced rash and mucositis — MIRM)",
+    ],
+    classicPresentation: [
+      "Young adult with persistent dry cough out of proportion to exam findings",
+      "Patchy interstitial infiltrate on chest X-ray",
+      "Low-grade fever; patient ambulatory (\"walking pneumonia\")",
+    ],
+    diagnosis: [
+      "Clinical + CXR (patchy infiltrates)",
+      "PCR of nasopharyngeal swab (preferred)",
+      "Cold agglutinins (IgM) — supportive, not specific",
+      "Culture slow and rarely done clinically",
+    ],
+    treatment: [
+      "Macrolides (azithromycin) — first line",
+      "Doxycycline or fluoroquinolones (alternative/resistance)",
+      "β-lactams ineffective (no cell wall)",
+    ],
+    distinguishFrom: [
+      "Streptococcus pneumoniae — lobar consolidation, sick patient, responds to β-lactams",
+      "Legionella — hyponatremia, GI symptoms, urinary antigen",
+      "Chlamydia pneumoniae — similar atypical picture; PCR distinguishes",
+    ],
+    boardsPearls: [
+      "No cell wall → β-lactams don't work; use macrolide or doxycycline",
+      "Walking pneumonia in college student = Mycoplasma",
+      "Cold agglutinins (IgM) associated — hemolysis at low temperature",
+    ],
+    pediatrics:
+      "Common cause of pneumonia in school-age children and adolescents; macrolides first line; bullous myringitis in children; avoid tetracyclines in young children when alternatives exist.",
+  },
+  {
+    id: "coccidioides-immitis",
+    name: "Coccidioides immitis",
+    aliases: [
+      "coccidioides immitis",
+      "coccidioides",
+      "c. immitis",
+    ],
+    type: "fungus",
+    definition:
+      "Dimorphic fungus endemic to Southwestern US (San Joaquin/Sonoran desert). Mold in soil (arthroconidia); spherules with endospores in tissue at 37°C. Causes valley fever.",
+    morphology: [
+      "Tissue: thick-walled spherules containing endospores (not yeast)",
+      "Environment: septate mold with barrel-shaped arthroconidia",
+      "Eosinophilia common in acute disease",
+    ],
+    virulenceFactors: [
+      "Arthroconidia inhaled from disturbed desert soil (earthquakes, construction)",
+      "Spherule rupture releases endospores → dissemination",
+      "Cell-mediated immunity contains infection",
+    ],
+    transmission: ["Inhalation of arthroconidia from soil (Southwest endemic)"],
+    diseases: [
+      "Valley fever (acute pulmonary coccidioidomycosis)",
+      "Chronic pulmonary coccidioidomycosis (cavitary disease)",
+      "Disseminated coccidioidomycosis (skin, bone, meningitis)",
+      "Erythema nodosum (desert rheumatism — immune complex)",
+    ],
+    classicPresentation: [
+      "Southwest exposure + flu-like illness + arthralgia + erythema nodosum",
+      "Pulmonary nodule or cavity on imaging months later",
+      "Meningitis in disseminated disease (especially immunocompromised)",
+    ],
+    diagnosis: [
+      "Serology (IgM/IgG) — primary diagnostic tool",
+      "Spherules with endospores on biopsy (avoid fine-needle aspirate — risk of spread)",
+      "Culture on mycology media (highly infectious in lab — Biosafety precautions)",
+      "CSF serology/ antigen for coccidioidal meningitis",
+    ],
+    treatment: [
+      "Mild acute pulmonary: often self-limited; fluconazole if persistent",
+      "Disseminated/severe/meningitis: fluconazole or itraconazole; amphotericin B for severe",
+      "Meningitis requires lifelong azole suppression",
+    ],
+    distinguishFrom: [
+      "Histoplasma — yeast in macrophages; Ohio/Mississippi valleys",
+      "Blastomyces — broad-based budding yeast; different endemic overlap",
+      "TB — acid-fast bacilli; different epidemiology and treatment",
+    ],
+    boardsPearls: [
+      "Spherules with endospores (not yeast) = Coccidioides",
+      "Desert exposure + erythema nodosum = valley fever",
+      "Coccidioidal meningitis needs lifelong fluconazole",
+    ],
+    pediatrics:
+      "Children in endemic areas often mild pulmonary disease; disseminated disease in infant immunocompromise; fluconazole dosing weight-based.",
+  },
+  {
+    id: "blastomyces-dermatitidis",
+    name: "Blastomyces dermatitidis",
+    aliases: [
+      "blastomyces dermatitidis",
+      "blastomyces",
+      "b. dermatitidis",
+    ],
+    type: "fungus",
+    definition:
+      "Dimorphic fungus endemic to Ohio/Mississippi River valleys and Great Lakes. Mold in soil; broad-based budding yeast in tissue at 37°C. Causes pulmonary and disseminated blastomycosis.",
+    morphology: [
+      "Tissue/37°C: broad-based budding yeast (8–15 µm)",
+      "Environment: mold with conidia",
+      "Double-contoured wall on silver stain",
+      "Same size or larger than RBCs",
+    ],
+    virulenceFactors: [
+      "Conidia inhaled from moist soil near waterways",
+      "Yeast phase resists phagocytosis (thick wall)",
+      "Can disseminate to skin, bone, GU tract, CNS",
+    ],
+    transmission: ["Inhalation of conidia from endemic soil (rivers, lakes, decaying vegetation)"],
+    diseases: [
+      "Acute pulmonary blastomycosis",
+      "Chronic pulmonary blastomycosis",
+      "Disseminated blastomycosis (verrucous skin lesions, osteomyelitis)",
+      "Blastomycosis meningitis (rare)",
+    ],
+    classicPresentation: [
+      "Midwestern/endemic exposure + pneumonia mimicking TB or cancer",
+      "Verrucous, ulcerated skin lesions with heaped borders (disseminated)",
+      "Male GU involvement (epididymo-orchitis) in endemic areas",
+    ],
+    diagnosis: [
+      "KOH or tissue biopsy — broad-based budding yeast",
+      "Urinary Blastomyces antigen (cross-reacts with Histoplasma)",
+      "Culture (dimorphic; slow growing)",
+      "Serology less reliable than Histoplasma/Coccidioides",
+    ],
+    treatment: [
+      "Mild-moderate: itraconazole",
+      "Severe/disseminated/CNS: liposomal amphotericin B induction, then itraconazole",
+      "Prolonged course (6–12 months for disseminated)",
+    ],
+    distinguishFrom: [
+      "Histoplasma — smaller yeast inside macrophages; narrow budding",
+      "Coccidioides — spherules with endospores; Southwest",
+      "Squamous cell carcinoma — verrucous skin lesion; biopsy distinguishes",
+    ],
+    boardsPearls: [
+      "Broad-based budding yeast = Blastomyces (vs narrow budding Histoplasma)",
+      "Verrucous skin lesions + Midwest pneumonia = disseminated blastomycosis",
+      "Itraconazole for mild; amphotericin B for severe/CNS",
+    ],
+    pediatrics:
+      "Disseminated blastomycosis in infants/immunocompromised children; endemic outdoor exposure in older children; itraconazole or amphotericin B per severity.",
+  },
+  {
+    id: "plasmodium-vivax",
+    name: "Plasmodium vivax",
+    aliases: [
+      "plasmodium vivax",
+      "p. vivax",
+    ],
+    type: "parasite",
+    definition:
+      "Plasmodium species causing relapsing malaria via hypnozoites in liver. Invades only reticulocytes (Duffy antigen receptor). Less severe than P. falciparum but causes significant morbidity in endemic regions.",
+    morphology: [
+      "Ring forms in RBCs (early trophozoites)",
+      "Enlarged infected RBCs with Schüffner dots (fine stippling)",
+      "Amoeboid trophozoites; gametocytes round",
+      "No banana-shaped gametocytes (unlike P. falciparum)",
+    ],
+    virulenceFactors: [
+      "Hypnozoites in hepatocytes — cause relapse months to years later",
+      "Duffy antigen (Fy) required for RBC invasion — explains resistance in West Africans",
+      "Less cytoadherence than P. falciparum — no cerebral malaria pattern",
+    ],
+    transmission: ["Anopheles mosquito bite; blood transfusion (rare)"],
+    diseases: [
+      "Benign tertian malaria (48-hour fever cycles)",
+      "Relapsing malaria (hypnozoite reactivation)",
+      "Splenic rupture (rare)",
+      "Severe anemia in chronic/recurrent infection",
+    ],
+    classicPresentation: [
+      "Travel to endemic area + fever every 48 hours (tertian pattern)",
+      "Relapse after treatment if hypnozoites not eradicated",
+      "Enlarged RBCs with Schüffner dots on thin smear",
+    ],
+    diagnosis: [
+      "Giemsa/Wright thin and thick blood smears",
+      "Schüffner dots + enlarged RBCs suggest P. vivax",
+      "Rapid diagnostic tests (HRP-2 may miss vivax; pLDH tests species)",
+      "PCR for species confirmation",
+    ],
+    treatment: [
+      "Blood stage: chloroquine (or artemisinin combination if resistant)",
+      "Eradicate hypnozoites: primaquine (check G6PD first — hemolysis risk)",
+      "Alternative: tafenoquine (single dose; G6PD testing required)",
+    ],
+    distinguishFrom: [
+      "P. falciparum — no Schüffner dots; banana gametocytes; cerebral malaria",
+      "P. ovale — similar hypnozoites; James dots; less common",
+      "Babesia — endemic US; maltese cross; no hepatic hypnozoites",
+    ],
+    boardsPearls: [
+      "Schüffner dots + enlarged RBCs = P. vivax/ovale",
+      "Primaquine for hypnozoites — always check G6PD",
+      "Duffy-negative individuals resistant to P. vivax invasion",
+    ],
+    pediatrics:
+      "Children in endemic areas suffer recurrent anemia; weight-based chloroquine and primaquine; G6PD testing mandatory before primaquine in all ages.",
+  },
+  {
+    id: "strongyloides-stercoralis",
+    name: "Strongyloides stercoralis",
+    aliases: [
+      "strongyloides stercoralis",
+      "strongyloides",
+      "s. stercoralis",
+    ],
+    type: "parasite",
+    definition:
+      "Soil-transmitted nematode with unique autoinfection cycle. Larvae penetrate skin, migrate to lungs, ascend trachea, swallowed to intestine. Can persist decades; hyperinfection syndrome in immunosuppression.",
+    morphology: [
+      "Rhabditiform larvae in stool (short buccal cavity — distinguishes from hookworm)",
+      "Filariiform infective larvae in soil",
+      "Female worms embed in duodenal/jejunal mucosa ( rarely seen in stool)",
+      "Autoinfection: larvae develop into infective form within host",
+    ],
+    virulenceFactors: [
+      "Autoinfection cycle — lifelong persistence without treatment",
+      "Hyperinfection syndrome with corticosteroids/HTLV-1/HIV — massive larval burden",
+      "Disseminated strongyloidiasis — larvae in organs, Gram− bacteremia (larvae carry gut flora)",
+      "Eosinophilia in acute/chronic infection (may disappear in hyperinfection)",
+    ],
+    transmission: [
+      "Skin contact with contaminated soil (bare feet in tropics)",
+      "Autoinfection perpetuates infection",
+      "Fecal-oral in institutional settings (rare)",
+    ],
+    diseases: [
+      "Chronic intestinal strongyloidiasis (abdominal pain, urticaria, larva currens)",
+      "Pulmonary symptoms during migration (Löffler syndrome)",
+      "Hyperinfection syndrome",
+      "Disseminated strongyloidiasis (immunocompromised)",
+    ],
+    classicPresentation: [
+      "Veteran/immigrant from tropics with eosinophilia and abdominal symptoms",
+      "Serpiginous urticarial track (larva currens) — pathognomonic, moves fast (inches/hour)",
+      "Hyperinfection after corticosteroids — sepsis with enteric Gram− rods",
+    ],
+    diagnosis: [
+      "Stool O&P — rhabditiform larvae (may need repeated samples)",
+      "Serology (ELISA) sensitive for chronic infection",
+      "Sputum may show larvae in hyperinfection",
+    ],
+    treatment: [
+      "Ivermectin — drug of choice (repeat doses)",
+      "Albendazole alternative",
+      "Screen and treat before immunosuppression (especially corticosteroids) in endemic exposure",
+    ],
+    distinguishFrom: [
+      "Hookworm — longer buccal cavity in rhabditiform larva; no autoinfection",
+      "Ascaris — large roundworm eggs in stool; different lifecycle",
+      "Cutaneous larva migrans (hookworm) — slower creeping eruption in skin only",
+    ],
+    boardsPearls: [
+      "Larva currens (fast-moving urticaria) = Strongyloides autoinfection",
+      "Steroids + eosinophilia + sepsis in immigrant = hyperinfection — ivermectin emergently",
+      "Short buccal cavity in rhabditiform larva vs hookworm",
+    ],
+    pediatrics:
+      "Children in endemic areas with bare-foot exposure; eosinophilia on screening; treat before chemotherapy or chronic steroids if exposure history.",
+  },
+  {
+    id: "schistosoma-mansoni",
+    name: "Schistosoma mansoni",
+    aliases: [
+      "schistosoma mansoni",
+      "schistosoma",
+      "s. mansoni",
+    ],
+    type: "parasite",
+    definition:
+      "Blood fluke (trematode) causing intestinal/hepatosplenic schistosomiasis. Freshwater snail intermediate host; cercariae penetrate skin. Eggs with lateral spine; granulomatous inflammation in liver and gut.",
+    morphology: [
+      "Adult worms in mesenteric venules (pairs: male carries female)",
+      "Eggs with lateral spine (S. mansoni) — distinguishes from S. haematobium (terminal spine)",
+      "Cercariae penetrate skin from freshwater",
+      "No red cell invasion (unlike Plasmodium)",
+    ],
+    virulenceFactors: [
+      "Egg granulomas in liver → periportal fibrosis (\"clay pipe stem\")",
+      "Portal hypertension with preserved hepatocellular function (early)",
+      "Chronic inflammation in colon (bloody diarrhea, polyps)",
+      "Immune evasion by adult worms",
+    ],
+    transmission: [
+      "Skin contact with freshwater harboring infected snails (Africa, Brazil, Caribbean)",
+      "Not saltwater; not chlorinated pools",
+    ],
+    diseases: [
+      "Acute schistosomiasis (Katayama fever — fever, urticaria, eosinophilia)",
+      "Chronic hepatosplenic schistosomiasis (portal hypertension, splenomegaly)",
+      "Intestinal schistosomiasis (bloody diarrhea, colonic polyps)",
+      "Pulmonary hypertension (hepatopulmonary schistosomiasis — rare)",
+    ],
+    classicPresentation: [
+      "Traveler/swimmer in endemic freshwater + fever, cough, urticaria (Katayama)",
+      "Chronic: hepatosplomegaly, portal hypertension, preserved LFTs",
+      "Eggs with lateral spine in stool or rectal biopsy",
+    ],
+    diagnosis: [
+      "Stool or urine O&P for eggs (species by spine location/shape)",
+      "Rectal snip biopsy if stool negative but high suspicion",
+      "Serology for travelers/exposed individuals",
+      "Eosinophilia in acute/chronic phases",
+    ],
+    treatment: [
+      "Praziquantel — drug of choice for all schistosome species",
+      "Treat acute Katayama — corticosteroids for severe symptoms, then praziquantel",
+      "Manage portal hypertension complications",
+    ],
+    distinguishFrom: [
+      "S. haematobium — terminal-spine eggs in urine; bladder cancer risk",
+      "Hepatitis B/C cirrhosis — different LFT pattern and etiology",
+      "Malaria — blood smear parasites, not egg granulomas",
+    ],
+    boardsPearls: [
+      "Lateral spine egg = S. mansoni; terminal spine = S. haematobium",
+      "Portal hypertension with preserved liver function → schistosomiasis",
+      "Praziquantel treats all Schistosoma species",
+    ],
+    pediatrics:
+      "Children in endemic areas with freshwater exposure; Katayama fever in acute infection; praziquantel safe in school-age children (weight-based); chronic disease causes growth delay and anemia.",
+  },
 ];
 
 const microbiologyById = new Map(

@@ -229,3 +229,68 @@ histoplasma-capsulatum.jpg
   License: Public domain (U.S. federal government)
   Page: https://phil.cdc.gov/Details.aspx?pid=4223
   Commons: https://commons.wikimedia.org/wiki/File:Histoplasmosis_capsulatum.jpg
+
+campylobacter-jejuni.jpg
+  Source: CDC PHIL #5778
+  Description: Scanning electron micrograph of Campylobacter jejuni on chicken skin
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=5778
+  Commons: https://commons.wikimedia.org/wiki/File:Campylobacter_jejuni_5778_lores.jpg
+
+helicobacter-pylori.jpg
+  Source: Wikimedia Commons — Helicobacter pylori, Gastric Mucosa, Giemsa stain (390307643).jpg
+  Author: Ed Uthman (via Flickr)
+  Description: H. pylori organisms on gastric mucosa, Giemsa stain, 1000×
+  License: Creative Commons Attribution-Share Alike 2.0 Generic
+  Page: https://commons.wikimedia.org/wiki/File:Helicobacter_pylori,_Gastric_Mucosa,_Giemsa_stain_(390307643).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Helicobacter_pylori,_Gastric_Mucosa,_Giemsa_stain_(390307643).jpg?width=1280
+
+corynebacterium-diphtheriae.jpg
+  Source: CDC PHIL #7323
+  Description: Gram stain of Corynebacterium diphtheriae, 1000× magnification
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=7323
+  Commons: https://commons.wikimedia.org/wiki/File:Corynebacterium_diphtheriae_Gram_stain.jpg
+
+mycoplasma-pneumoniae.jpeg
+  Source: Wikimedia Commons — Mycoplasma pneumoniae cells attached to ciliated mucosal cells.jpeg
+  Author: Rottem et al.
+  Description: M. pneumoniae attached to ciliated mucosal cells
+  License: Creative Commons Attribution 3.0 Unported
+  Page: https://commons.wikimedia.org/wiki/File:Mycoplasma_pneumoniae_cells_attached_to_ciliated_mucosal_cells.jpeg
+
+coccidioides-immitis.jpg
+  Source: CDC PHIL #480
+  Description: Mature spherule with endospores of Coccidioides immitis
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=480
+  Commons: https://commons.wikimedia.org/wiki/File:Mature_spherule_with_endospores_of_Coccidioides_immitis_PHIL_480_lores.jpg
+
+blastomyces-dermatitidis.jpeg
+  Source: Wikimedia Commons — Blastomyces dermatitidis yeast form.jpeg
+  Author: James Scott (via Medmyco)
+  Description: B. dermatitidis yeast form on blood agar at 37°C (Nomarski DIC)
+  License: Creative Commons CC0 1.0 Universal (public domain dedication)
+  Page: https://commons.wikimedia.org/wiki/File:Blastomyces_dermatitidis_yeast_form.jpeg
+
+plasmodium-vivax.jpg
+  Source: CDC PHIL #2720
+  Description: Immature and mature trophozoites of Plasmodium vivax in Giemsa smear
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2720
+  Commons: https://commons.wikimedia.org/wiki/File:Immature_and_mature_trophozoites_of_the_Plasmodium_vivax_parasite_PHIL_2720_lores.jpg
+
+strongyloides-stercoralis.jpg
+  Source: Wikimedia Commons — Strongyloides Stercoralis in sputum.jpg
+  Author: Por Chandharakool
+  Description: Strongyloides stercoralis larvae in sputum specimen
+  License: Creative Commons Attribution 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:Strongyloides_Stercoralis_in_sputum.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Strongyloides_Stercoralis_in_sputum.jpg?width=1280
+
+schistosoma-mansoni.jpg
+  Source: CDC PHIL #5252
+  Description: Schistosoma mansoni adult trematodes
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=5252
+  Commons: https://commons.wikimedia.org/wiki/File:Schistosoma_mansoni_trematodes.jpg

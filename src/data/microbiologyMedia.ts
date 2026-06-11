@@ -2,10 +2,14 @@ import type { MediaAttribution } from "./media";
 import type { MicrobiologyEntry } from "./microbiology";
 
 import aspergillusFumigatus from "../media/images/microbiology/aspergillus-fumigatus.jpg?url";
+import blastomycesDermatitidis from "../media/images/microbiology/blastomyces-dermatitidis.jpeg?url";
 import bordetellaPertussis from "../media/images/microbiology/bordetella-pertussis.jpg?url";
+import campylobacterJejuni from "../media/images/microbiology/campylobacter-jejuni.jpg?url";
 import borreliaBurgdorferi from "../media/images/microbiology/borrelia-burgdorferi.jpg?url";
 import candidaAlbicans from "../media/images/microbiology/candida-albicans.jpg?url";
 import clostridiumPerfringens from "../media/images/microbiology/clostridium-perfringens.jpg?url";
+import coccidioidesImmitis from "../media/images/microbiology/coccidioides-immitis.jpg?url";
+import corynebacteriumDiphtheriae from "../media/images/microbiology/corynebacterium-diphtheriae.jpg?url";
 import cryptosporidiumParvum from "../media/images/microbiology/cryptosporidium-parvum.jpg?url";
 import cryptococcusNeoformans from "../media/images/microbiology/cryptococcus-neoformans.jpg?url";
 import cytomegalovirus from "../media/images/microbiology/cytomegalovirus.jpg?url";
@@ -14,6 +18,7 @@ import epsteinBarrVirus from "../media/images/microbiology/epstein-barr-virus.jp
 import escherichiaColi from "../media/images/microbiology/escherichia-coli.jpg?url";
 import giardiaLamblia from "../media/images/microbiology/giardia-lamblia.jpg?url";
 import haemophilusInfluenzae from "../media/images/microbiology/haemophilus-influenzae.jpg?url";
+import helicobacterPylori from "../media/images/microbiology/helicobacter-pylori.jpg?url";
 import herpesSimplexVirus from "../media/images/microbiology/herpes-simplex-virus.jpg?url";
 import histoplasmaCapsulatum from "../media/images/microbiology/histoplasma-capsulatum.jpg?url";
 import hiv from "../media/images/microbiology/hiv.jpg?url";
@@ -21,14 +26,18 @@ import klebsiellaPneumoniae from "../media/images/microbiology/klebsiella-pneumo
 import legionellaPneumophila from "../media/images/microbiology/legionella-pneumophila.jpg?url";
 import listeriaMonocytogenes from "../media/images/microbiology/listeria-monocytogenes.jpg?url";
 import mycobacteriumTuberculosis from "../media/images/microbiology/mycobacterium-tuberculosis.jpg?url";
+import mycoplasmaPneumoniae from "../media/images/microbiology/mycoplasma-pneumoniae.jpeg?url";
 import neisseriaMeningitidis from "../media/images/microbiology/neisseria-meningitidis.jpg?url";
 import plasmodiumFalciparum from "../media/images/microbiology/plasmodium-falciparum.jpg?url";
+import plasmodiumVivax from "../media/images/microbiology/plasmodium-vivax.jpg?url";
 import pseudomonasAeruginosa from "../media/images/microbiology/pseudomonas-aeruginosa.jpg?url";
 import salmonellaEnterica from "../media/images/microbiology/salmonella-enterica.jpg?url";
+import schistosomaMansoni from "../media/images/microbiology/schistosoma-mansoni.jpg?url";
 import shigellaFlexneri from "../media/images/microbiology/shigella-flexneri.jpg?url";
 import staphylococcusAureus from "../media/images/microbiology/staphylococcus-aureus.jpg?url";
 import streptococcusPneumoniae from "../media/images/microbiology/streptococcus-pneumoniae.jpg?url";
 import streptococcusPyogenes from "../media/images/microbiology/streptococcus-pyogenes.jpg?url";
+import strongyloidesStercoralis from "../media/images/microbiology/strongyloides-stercoralis.jpg?url";
 import treponemaPallidum from "../media/images/microbiology/treponema-pallidum.jpg?url";
 import toxoplasmaGondii from "../media/images/microbiology/toxoplasma-gondii.jpg?url";
 import varicellaZosterVirus from "../media/images/microbiology/varicella-zoster-virus.jpg?url";
@@ -73,6 +82,15 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "borrelia-burgdorferi": extensionAssetUrl(borreliaBurgdorferi),
     "aspergillus-fumigatus": extensionAssetUrl(aspergillusFumigatus),
     "histoplasma-capsulatum": extensionAssetUrl(histoplasmaCapsulatum),
+    "campylobacter-jejuni": extensionAssetUrl(campylobacterJejuni),
+    "helicobacter-pylori": extensionAssetUrl(helicobacterPylori),
+    "corynebacterium-diphtheriae": extensionAssetUrl(corynebacteriumDiphtheriae),
+    "mycoplasma-pneumoniae": extensionAssetUrl(mycoplasmaPneumoniae),
+    "coccidioides-immitis": extensionAssetUrl(coccidioidesImmitis),
+    "blastomyces-dermatitidis": extensionAssetUrl(blastomycesDermatitidis),
+    "plasmodium-vivax": extensionAssetUrl(plasmodiumVivax),
+    "strongyloides-stercoralis": extensionAssetUrl(strongyloidesStercoralis),
+    "schistosoma-mansoni": extensionAssetUrl(schistosomaMansoni),
   };
 
 export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
@@ -202,6 +220,42 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #4223",
     url: "https://phil.cdc.gov/Details.aspx?pid=4223",
   },
+  "campylobacter-jejuni": {
+    label: "CDC PHIL #5778",
+    url: "https://phil.cdc.gov/Details.aspx?pid=5778",
+  },
+  "helicobacter-pylori": {
+    label: "Wikimedia Commons (Ed Uthman, CC BY-SA 2.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Helicobacter_pylori,_Gastric_Mucosa,_Giemsa_stain_(390307643).jpg",
+  },
+  "corynebacterium-diphtheriae": {
+    label: "CDC PHIL #7323",
+    url: "https://phil.cdc.gov/Details.aspx?pid=7323",
+  },
+  "mycoplasma-pneumoniae": {
+    label: "Wikimedia Commons (Rottem et al., CC BY 3.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Mycoplasma_pneumoniae_cells_attached_to_ciliated_mucosal_cells.jpeg",
+  },
+  "coccidioides-immitis": {
+    label: "CDC PHIL #480",
+    url: "https://phil.cdc.gov/Details.aspx?pid=480",
+  },
+  "blastomyces-dermatitidis": {
+    label: "Wikimedia Commons (James Scott / Medmyco, CC0)",
+    url: "https://commons.wikimedia.org/wiki/File:Blastomyces_dermatitidis_yeast_form.jpeg",
+  },
+  "plasmodium-vivax": {
+    label: "CDC PHIL #2720",
+    url: "https://phil.cdc.gov/Details.aspx?pid=2720",
+  },
+  "strongyloides-stercoralis": {
+    label: "Wikimedia Commons (Por Chandharakool, CC BY 4.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Strongyloides_Stercoralis_in_sputum.jpg",
+  },
+  "schistosoma-mansoni": {
+    label: "CDC PHIL #5252",
+    url: "https://phil.cdc.gov/Details.aspx?pid=5252",
+  },
 };
 
 export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
@@ -252,6 +306,24 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "H&E: septate hyphae branching at 45° in pulmonary aspergillosis",
   "histoplasma-capsulatum":
     "GMS stain: budding yeast cells in histoplasmosis tissue",
+  "campylobacter-jejuni":
+    "SEM: Campylobacter jejuni on surface of chicken skin",
+  "helicobacter-pylori":
+    "Giemsa stain: H. pylori on gastric mucosa (1000×)",
+  "corynebacterium-diphtheriae":
+    "Gram stain: Corynebacterium diphtheriae (1000×)",
+  "mycoplasma-pneumoniae":
+    "M. pneumoniae attached to ciliated respiratory epithelium",
+  "coccidioides-immitis":
+    "Mature spherule with endospores of Coccidioides immitis",
+  "blastomyces-dermatitidis":
+    "Broad-based budding yeast form (Nomarski DIC, 37°C culture)",
+  "plasmodium-vivax":
+    "Giemsa smear: immature and mature P. vivax trophozoites",
+  "strongyloides-stercoralis":
+    "Strongyloides stercoralis larvae in sputum specimen",
+  "schistosoma-mansoni":
+    "Schistosoma mansoni adult trematodes (male and female)",
 };
 
 export function getMicrobiologyImageForId(
