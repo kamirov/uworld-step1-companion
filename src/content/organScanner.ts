@@ -34,38 +34,61 @@ interface TermMatch {
 }
 
 let termIndex: TermMatch[] | null = null;
-const highlightedOnPage = new Set<string>();
-let trackedPageUrl = location.href;
+const highlightedOnQuestion = new Set<string>();
+let questionFingerprint = "";
+let isApplyingHighlights = false;
+
+const QUESTION_HEADER_RE =
+  /(?:Question|Q\.?|Item)\s*\d+(?:\s*(?:of|\/)\s*\d+)?/i;
 
 function termKey(term: TermMatch): string {
   return `${term.kind}:${term.id}`;
 }
 
-function resetPageHighlights(): void {
-  highlightedOnPage.clear();
-  trackedPageUrl = location.href;
+function getQuestionTextSnapshot(): string {
+  const clone = document.body.cloneNode(true) as HTMLElement;
+  for (const el of clone.querySelectorAll(
+    `.${POPOVER_CLASS}, ${CHIP_SELECTOR}`,
+  )) {
+    el.remove();
+  }
+  return clone.innerText.replace(/\s+/g, " ").trim();
 }
 
-function resetPageHighlightsIfNavigated(): void {
-  if (location.href !== trackedPageUrl) {
-    resetPageHighlights();
-  }
+function getQuestionFingerprint(): string {
+  const text = getQuestionTextSnapshot();
+  const header = text.match(QUESTION_HEADER_RE)?.[0] ?? "";
+  return `${header}::${text.slice(0, 600)}`;
 }
 
-function watchHistoryNavigation(): void {
-  const onNavigate = () => resetPageHighlights();
-  window.addEventListener("popstate", onNavigate);
-  window.addEventListener("hashchange", onNavigate);
+function resetQuestionHighlights(): void {
+  highlightedOnQuestion.clear();
+  questionFingerprint = "";
+}
 
-  for (const method of ["pushState", "replaceState"] as const) {
-    const original = history[method].bind(history);
-    history[method] = (...args: Parameters<History["pushState"]>) => {
-      const previousUrl = location.href;
-      const result = original(...args);
-      if (location.href !== previousUrl) onNavigate();
-      return result;
-    };
+function syncQuestionContext(): void {
+  const next = getQuestionFingerprint();
+  if (questionFingerprint && next !== questionFingerprint) {
+    highlightedOnQuestion.clear();
   }
+  questionFingerprint = next;
+}
+
+function nodeContainsOurChip(node: Node): boolean {
+  if (!(node instanceof Element)) return false;
+  for (const cls of OUR_CHIP_CLASSES) {
+    if (node.classList.contains(cls)) return true;
+  }
+  return node.querySelector(CHIP_SELECTOR) !== null;
+}
+
+function mutationsRemovedOurChips(mutations: MutationRecord[]): boolean {
+  for (const mutation of mutations) {
+    for (const node of mutation.removedNodes) {
+      if (nodeContainsOurChip(node)) return true;
+    }
+  }
+  return false;
 }
 
 function getTermIndex(): TermMatch[] {
@@ -150,7 +173,7 @@ function matchedLengthAt(
 
 function findNextMatch(
   text: string,
-  skipTerms: ReadonlySet<string> = highlightedOnPage,
+  skipTerms: ReadonlySet<string> = highlightedOnQuestion,
 ): { index: number; matchText: string; term: TermMatch } | null {
   const index = getTermIndex();
   let leftmost = text.length;
@@ -250,7 +273,7 @@ function highlightTextNode(textNode: Text): boolean {
     }
 
     fragment.appendChild(createChip(doc, next.matchText, next.term));
-    highlightedOnPage.add(termKey(next.term));
+    highlightedOnQuestion.add(termKey(next.term));
     changed = true;
     remaining = remaining.slice(next.index + next.matchText.length);
   }
@@ -271,7 +294,7 @@ function isInsidePopover(node: Node): boolean {
 
 export function scanRoot(root: Node): void {
   if (isInsidePopover(root)) return;
-  resetPageHighlightsIfNavigated();
+  syncQuestionContext();
 
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
@@ -289,23 +312,31 @@ export function scanRoot(root: Node): void {
     current = walker.nextNode();
   }
 
-  for (const textNode of textNodes) {
-    if (!textNode.parentNode || shouldSkipNode(textNode)) continue;
-    highlightTextNode(textNode);
+  isApplyingHighlights = true;
+  try {
+    for (const textNode of textNodes) {
+      if (!textNode.parentNode || shouldSkipNode(textNode)) continue;
+      highlightTextNode(textNode);
+    }
+  } finally {
+    isApplyingHighlights = false;
   }
 }
 
 export function startOrganScanner(): void {
   if (!document.body) return;
 
-  resetPageHighlights();
-  watchHistoryNavigation();
+  resetQuestionHighlights();
   scanRoot(document.body);
 
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
   const pendingRoots = new Set<Node>();
 
   const observer = new MutationObserver((mutations) => {
+    if (!isApplyingHighlights && mutationsRemovedOurChips(mutations)) {
+      resetQuestionHighlights();
+    }
+
     for (const mutation of mutations) {
       if (mutation.type === "characterData") {
         const parent = mutation.target.parentNode;
@@ -338,6 +369,7 @@ export function startOrganScanner(): void {
     if (pendingRoots.size === 0) return;
     if (debounceTimer) clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
+      syncQuestionContext();
       for (const root of pendingRoots) {
         if (root.isConnected) scanRoot(root);
       }
