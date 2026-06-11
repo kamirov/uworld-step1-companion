@@ -509,6 +509,32 @@
   color: #b45309;
 }
 
+.usmle-microbiology-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(13, 148, 136, 0.06);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(13, 148, 136, 0.35);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-microbiology-chip:hover,
+.usmle-microbiology-chip:focus-visible {
+  background: rgba(13, 148, 136, 0.12);
+  outline: 1px solid rgba(13, 148, 136, 0.3);
+  outline-offset: 1px;
+}
+
+.usmle-organ-popover__title--microbiology {
+  color: #0f766e;
+}
+
 .usmle-organ-popover__meaning {
   margin-bottom: 8px;
 }

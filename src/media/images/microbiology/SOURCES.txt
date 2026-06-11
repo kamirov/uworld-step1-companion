@@ -1,0 +1,102 @@
+Microbiology images for USMLE Study Tools popovers.
+
+All images resized to ≤1280 px width where applicable for popover display.
+
+staphylococcus-aureus.jpg
+  Source: Wikimedia Commons — Staphylococcus aureus Gram stain.jpg
+  Author: Dr Graham Beards
+  Description: Gram stain of Staphylococcus aureus
+  Page: https://commons.wikimedia.org/wiki/File:Staphylococcus_aureus_Gram_stain.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Staphylococcus_aureus_Gram_stain.jpg?width=1280
+
+streptococcus-pyogenes.jpg
+  Source: CDC Public Health Image Library (PHIL) #2110
+  Description: Streptococcus pyogenes bacteria, 900× magnification
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2110
+  Commons: https://commons.wikimedia.org/wiki/File:Streptococcus_pyogenes.jpg
+
+streptococcus-pneumoniae.jpg
+  Source: CDC PHIL #262
+  Author: CDC/Janice Carr; Dr. Richard Facklam
+  Description: Scanning electron micrograph of Streptococcus pneumoniae diplococci
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=262
+  Commons: https://commons.wikimedia.org/wiki/File:Streptococcus_pneumoniae.jpg
+
+escherichia-coli.jpg
+  Source: Wikimedia Commons — Escherichia coli Gram.jpg
+  Author: Y tambe
+  Description: Gram stain of E. coli (ATCC 11775), 1000×
+  Page: https://commons.wikimedia.org/wiki/File:Escherichia_coli_Gram.jpg
+
+haemophilus-influenzae.jpg
+  Source: Wikimedia Commons — Haemophilus influenzae.jpg
+  Author: Stefan Walkowski
+  Description: H. influenzae colonies on chocolate agar
+  License: Creative Commons Attribution-Share Alike 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:Haemophilus_influenzae.jpg
+
+neisseria-meningitidis.jpg
+  Source: Wikimedia Commons — Neisseria meningitidis CSF Gram 1000.jpg
+  Author: Microman12345
+  Description: Gram stain of CSF showing N. meningitidis diplococci, 1000×
+  Page: https://commons.wikimedia.org/wiki/File:Neisseria_meningitidis_CSF_Gram_1000.jpg
+
+clostridium-perfringens.jpg
+  Source: CDC PHIL #2995
+  Author: CDC/Don Stalons
+  Description: Gram stain of Clostridium perfringens in Schaedler's broth
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2995
+  Commons: https://commons.wikimedia.org/wiki/File:Clostridium_perfringens.jpg
+
+mycobacterium-tuberculosis.jpg
+  Source: CDC PHIL #5789 (via Wikimedia Commons)
+  Author: CDC/Dr. George P. Kubica
+  Description: M. tuberculosis acid-fast Ziehl-Neelsen stain, 1000×
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=5789
+  Commons: https://commons.wikimedia.org/wiki/File:Mycobacterium_tuberculosis_Ziehl-Neelsen_stain_02.jpg
+
+treponema-pallidum.jpg
+  Source: CDC PHIL #1977
+  Author: CDC/Dr. David Cox
+  Description: Electron micrograph of Treponema pallidum on rabbit epithelium
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=1977
+  Commons: https://commons.wikimedia.org/wiki/File:Treponema_pallidum.jpg
+
+hiv.jpg
+  Source: CDC PHIL #10000
+  Author: CDC/C. Goldsmith, P. Feorino, E. L. Palmer, W. R. McManus
+  Description: Scanning EM of HIV-1 budding from cultured lymphocyte (colored)
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=10000
+  Commons: https://commons.wikimedia.org/wiki/File:HIV-budding-Color.jpg
+
+candida-albicans.jpg
+  Source: Wikimedia Commons — Candida Gram stain.jpg
+  Author: Dr Graham Beards
+  Description: Gram stain of Candida albicans yeast and pseudohyphae
+  Page: https://commons.wikimedia.org/wiki/File:Candida_Gram_stain.jpg
+
+cryptococcus-neoformans.jpg
+  Source: Wikimedia Commons — Cryptococcus neoformans.jpg
+  Author: Dr Graham Beards
+  Description: India ink stain showing encapsulated yeast
+  License: Creative Commons Attribution-Share Alike 3.0 Unported
+  Page: https://commons.wikimedia.org/wiki/File:Cryptococcus_neoformans.jpg
+
+plasmodium-falciparum.jpg
+  Source: CDC PHIL #5856
+  Description: Giemsa thin smear with P. falciparum ring forms and gametocytes
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=5856
+  Commons: https://commons.wikimedia.org/wiki/File:Plasmodium.jpg
+
+giardia-lamblia.jpg
+  Source: Wikimedia Commons — Cysts of Giardia lamblia.jpg
+  Author: Ajay Kumar Chaurasiya
+  Description: Giardia lamblia cysts in saline wet mount, 1600×
+  Page: https://commons.wikimedia.org/wiki/File:Cysts_of_Giardia_lamblia.jpg

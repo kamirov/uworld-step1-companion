@@ -8,6 +8,7 @@ import { buildHemodynamicAliasIndex } from "../data/hemodynamics";
 import { buildPathogenesisAliasIndex } from "../data/pathogenesis";
 import { buildProcedureAliasIndex } from "../data/procedures";
 import { buildLabValueAliasIndex } from "../data/labValues";
+import { buildMicrobiologyAliasIndex } from "../data/microbiology";
 import { buildMedicationAliasIndex } from "../data/medications";
 import { buildNephronAliasIndex } from "../data/nephron";
 import { buildAliasIndex } from "../data/organs";
@@ -31,7 +32,8 @@ const PROCEDURE_CHIP_CLASS = "usmle-procedure-chip";
 const CLINICAL_STRATEGY_CHIP_CLASS = "usmle-clinical-strategy-chip";
 const CELL_CHIP_CLASS = "usmle-cell-chip";
 const PATHOGENESIS_CHIP_CLASS = "usmle-pathogenesis-chip";
-const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEART_MURMUR_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}, .${CLINICAL_STRATEGY_CHIP_CLASS}, .${CELL_CHIP_CLASS}, .${PATHOGENESIS_CHIP_CLASS}`;
+const MICROBIOLOGY_CHIP_CLASS = "usmle-microbiology-chip";
+const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEART_MURMUR_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}, .${CLINICAL_STRATEGY_CHIP_CLASS}, .${CELL_CHIP_CLASS}, .${PATHOGENESIS_CHIP_CLASS}, .${MICROBIOLOGY_CHIP_CLASS}`;
 const OUR_CHIP_CLASSES = [
   ORGAN_CHIP_CLASS,
   HEART_SOUND_CHIP_CLASS,
@@ -49,6 +51,7 @@ const OUR_CHIP_CLASSES = [
   CLINICAL_STRATEGY_CHIP_CLASS,
   CELL_CHIP_CLASS,
   PATHOGENESIS_CHIP_CLASS,
+  MICROBIOLOGY_CHIP_CLASS,
 ] as const;
 const POPOVER_CLASS = "usmle-organ-popover";
 const SKIP_TAGS = new Set([
@@ -114,7 +117,8 @@ type TermKind =
   | "procedure"
   | "clinical-strategy"
   | "cell"
-  | "pathogenesis";
+  | "pathogenesis"
+  | "microbiology";
 
 interface TermMatch {
   alias: string;
@@ -275,6 +279,8 @@ function chipSelectorForTerm(term: TermMatch): string {
       return `[data-cell-id="${CSS.escape(term.id)}"]`;
     case "pathogenesis":
       return `[data-pathogenesis-id="${CSS.escape(term.id)}"]`;
+    case "microbiology":
+      return `[data-microbiology-id="${CSS.escape(term.id)}"]`;
     default:
       return `[data-organ-id="${CSS.escape(term.id)}"]`;
   }
@@ -510,6 +516,13 @@ function buildTermIndex(): TermMatch[] {
       id: pathogenesisId,
     }),
   );
+  const microbiologyMatches: TermMatch[] = buildMicrobiologyAliasIndex().map(
+    ({ alias, microbiologyId }) => ({
+      alias,
+      kind: "microbiology" as const,
+      id: microbiologyId,
+    }),
+  );
   return [
     ...organMatches,
     ...heartSoundMatches,
@@ -527,6 +540,7 @@ function buildTermIndex(): TermMatch[] {
     ...clinicalStrategyMatches,
     ...cellMatches,
     ...pathogenesisMatches,
+    ...microbiologyMatches,
   ].sort(
     (a, b) => b.alias.length - a.alias.length || a.alias.localeCompare(b.alias),
   );
@@ -709,6 +723,9 @@ function createChip(
   } else if (term.kind === "pathogenesis") {
     button.className = PATHOGENESIS_CHIP_CLASS;
     button.dataset.pathogenesisId = term.id;
+  } else if (term.kind === "microbiology") {
+    button.className = MICROBIOLOGY_CHIP_CLASS;
+    button.dataset.microbiologyId = term.id;
   } else {
     button.className = ORGAN_CHIP_CLASS;
     button.dataset.organId = term.id;

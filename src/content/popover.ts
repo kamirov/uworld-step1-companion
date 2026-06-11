@@ -24,6 +24,12 @@ import { getPathogenesisById } from "../data/pathogenesis";
 import { getProcedureById } from "../data/procedures";
 import { getHemodynamicById } from "../data/hemodynamics";
 import { getLabValueById } from "../data/labValues";
+import { getMicrobiologyById } from "../data/microbiology";
+import {
+  getMicrobiologyImageAttributionForId,
+  getMicrobiologyImageCaptionForId,
+  getMicrobiologyImageForId,
+} from "../data/microbiologyMedia";
 import { getMedicationById } from "../data/medications";
 import { getNephronSegmentById } from "../data/nephron";
 import { getOrganById } from "../data/organs";
@@ -32,7 +38,7 @@ import { getSignalingById } from "../data/signaling";
 import { getSymptomById } from "../data/symptoms";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip, .usmle-microbiology-chip";
 const POPOVER_AUDIO_SELECTOR = ".usmle-organ-popover__audio";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
@@ -505,6 +511,57 @@ function renderPathogenesisPopover(pathogenesisId: string): boolean {
   return true;
 }
 
+function formatMicrobeType(type: string): string {
+  return type
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+function renderMicrobiologyPopover(microbiologyId: string): boolean {
+  const entry = getMicrobiologyById(microbiologyId);
+  if (!entry || !popoverEl) return false;
+
+  const imageSrc = getMicrobiologyImageForId(microbiologyId);
+  const imageCaption = getMicrobiologyImageCaptionForId(microbiologyId);
+  const imageAttribution = getMicrobiologyImageAttributionForId(microbiologyId);
+
+  const bodyContent = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--microbiology">${entry.name}</div>
+    <div class="usmle-organ-popover__layer"><strong>Type:</strong> ${formatMicrobeType(entry.type)}</div>
+    <div class="usmle-organ-popover__meaning">${entry.definition}</div>
+    ${renderListSection("Morphology", entry.morphology ?? [])}
+    ${renderListSection("Virulence factors", entry.virulenceFactors ?? [])}
+    ${renderListSection("Transmission", entry.transmission ?? [])}
+    ${renderListSection("Diseases", entry.diseases)}
+    ${renderListSection("Classic presentation", entry.classicPresentation ?? [])}
+    ${renderListSection("Diagnosis", entry.diagnosis ?? [])}
+    ${renderListSection("Treatment", entry.treatment ?? [])}
+    ${renderListSection("Distinguish from", entry.distinguishFrom ?? [])}
+    ${renderListSection("Boards pearls", entry.boardsPearls)}
+    ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
+  `;
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  if (imageSrc && imageCaption && imageAttribution) {
+    popoverEl.classList.add("usmle-organ-popover--with-media");
+    popoverEl.innerHTML = `
+      <div class="usmle-organ-popover__layout">
+        <div class="usmle-organ-popover__body">${bodyContent}</div>
+        ${renderPopoverMediaBlock({
+          src: imageSrc,
+          alt: `${entry.name} micrograph`,
+          caption: imageCaption,
+          attribution: imageAttribution,
+        })}
+      </div>
+    `;
+  } else {
+    popoverEl.innerHTML = bodyContent;
+  }
+  return true;
+}
+
 function renderProcedurePopover(procedureId: string): boolean {
   const procedure = getProcedureById(procedureId);
   if (!procedure || !popoverEl) return false;
@@ -589,6 +646,7 @@ function showPopover(chip: HTMLElement): void {
   const clinicalStrategyId = chip.dataset.clinicalStrategyId;
   const cellId = chip.dataset.cellId;
   const pathogenesisId = chip.dataset.pathogenesisId;
+  const microbiologyId = chip.dataset.microbiologyId;
   if (
     !organId &&
     !heartSoundId &&
@@ -605,7 +663,8 @@ function showPopover(chip: HTMLElement): void {
     !procedureId &&
     !clinicalStrategyId &&
     !cellId &&
-    !pathogenesisId
+    !pathogenesisId &&
+    !microbiologyId
   )
     return;
 
@@ -649,7 +708,9 @@ function showPopover(chip: HTMLElement): void {
                             ? renderClinicalStrategyPopover(clinicalStrategyId)
                             : cellId
                               ? renderCellPopover(cellId)
-                              : renderPathogenesisPopover(pathogenesisId!);
+                              : pathogenesisId
+                                ? renderPathogenesisPopover(pathogenesisId)
+                                : renderMicrobiologyPopover(microbiologyId!);
   if (!rendered) return;
 
   activeChip = chip;
