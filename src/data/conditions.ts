@@ -1056,6 +1056,673 @@ export const CONDITIONS: ConditionEntry[] = [
       "Adenocarcinoma: most common in nonsmokers and women",
     ],
   },
+  {
+    id: "cystic-fibrosis",
+    name: "Cystic Fibrosis",
+    aliases: ["cystic fibrosis", "cf"],
+    definition:
+      "Autosomal recessive disorder from CFTR chloride channel dysfunction causing thick secretions in lungs, pancreas, and other organs.",
+    pathophysiology:
+      "CFTR mutation (ΔF508 most common) → defective chloride transport → dehydrated mucus → airway obstruction, recurrent infections, pancreatic insufficiency.",
+    classicPresentation: [
+      "Recurrent pulmonary infections (Staph aureus early, Pseudomonas later)",
+      "Steatorrhea, failure to thrive",
+      "Meconium ileus in newborn",
+    ],
+    keyLabs: [
+      "↑ sweat chloride (>60 mEq/L diagnostic)",
+      "CFTR genetic testing",
+      "↓ fecal elastase (pancreatic insufficiency)",
+    ],
+    associations: ["Autosomal recessive", "ΔF508 mutation"],
+    complications: [
+      "Bronchiectasis",
+      "Cor pulmonale",
+      "Diabetes (CF-related)",
+      "Infertility (males — absent vas deferens)",
+    ],
+    distinguishFrom: [
+      "Primary ciliary dyskinesia — situs inversus, normal sweat chloride",
+      "Celiac disease — malabsorption with normal lungs",
+    ],
+    boardsPearls: [
+      "Sweat chloride test is diagnostic gold standard",
+      "Pseudomonas colonization is hallmark of chronic lung disease",
+      "Absent vas deferens → infertility in males without obstruction",
+    ],
+    pediatrics:
+      "Meconium ileus in newborn is virtually pathognomonic; newborn screen increasingly detects CF before symptoms.",
+  },
+  {
+    id: "asthma",
+    name: "Asthma",
+    aliases: ["asthma", "bronchial asthma", "reactive airway disease"],
+    definition:
+      "Chronic inflammatory airway disease with reversible bronchoconstriction, airway hyperresponsiveness, and variable expiratory airflow obstruction.",
+    pathophysiology:
+      "Type I hypersensitivity and eosinophilic inflammation → bronchial smooth muscle hyperreactivity → episodic bronchoconstriction; airway remodeling with chronic disease.",
+    classicPresentation: [
+      "Episodic wheezing, cough, dyspnea",
+      "Nocturnal symptoms, exercise-induced symptoms",
+      "Atopy, allergic rhinitis, eczema",
+    ],
+    keyFindings: [
+      "Expiratory wheeze",
+      "↓ FEV1/FVC ratio, reversibility with bronchodilator",
+      "Hyperinflation on CXR",
+    ],
+    associations: ["Atopy", "Family history", "Occupational exposures"],
+    complications: ["Status asthmaticus", "Respiratory failure", "Airway remodeling"],
+    distinguishFrom: [
+      "COPD — older, smokers, incomplete reversibility",
+      "Cardiac asthma — heart failure with wheeze",
+      "Vocal cord dysfunction — normal spirometry between episodes",
+    ],
+    boardsPearls: [
+      "Reversible obstruction: FEV1 improves ≥12% with bronchodilator",
+      "First-line: inhaled corticosteroids for persistent disease",
+      "Leukotriene modifiers (montelukast) for mild disease or aspirin-exacerbated respiratory disease",
+    ],
+    pediatrics:
+      "Most common chronic disease of childhood; viral URIs are common triggers; watch for atypical presentations (cough-only asthma).",
+  },
+  {
+    id: "sarcoidosis",
+    name: "Sarcoidosis",
+    aliases: ["sarcoidosis", "sarcoid"],
+    definition:
+      "Multisystem granulomatous disease of unknown cause, most commonly affecting lungs and lymph nodes.",
+    pathophysiology:
+      "Noncaseating granulomas in affected organs → CD4+ Th1 response; elevated ACE from epithelioid macrophages; hypercalcemia from macrophage 1α-hydroxylase activity.",
+    classicPresentation: [
+      "Young African American woman with dyspnea, cough",
+      "Bilateral hilar lymphadenopathy on CXR",
+      "Erythema nodosum, uveitis, skin lesions",
+    ],
+    keyFindings: [
+      "Bilateral hilar lymphadenopathy (BHL)",
+      "Noncaseating granulomas on biopsy",
+      "Löfgren syndrome: BHL + erythema nodosum + arthritis",
+    ],
+    keyLabs: ["↑ ACE (nonspecific)", "Hypercalcemia/hypercalciuria"],
+    associations: ["African American ethnicity", "Female sex"],
+    complications: ["Pulmonary fibrosis", "Cardiac sarcoid (arrhythmias)", "Neurosarcoidosis"],
+    distinguishFrom: [
+      "Tuberculosis — caseating granulomas, positive AFB",
+      "Lymphoma — B symptoms, mediastinal mass without granulomas",
+      "Berylliosis — identical histology, occupational exposure",
+    ],
+    boardsPearls: [
+      "Noncaseating granulomas + bilateral hilar lymphadenopathy",
+      "↑ ACE from epithelioid cells (also used to track activity)",
+      "Schirrmann bodies: concentric calcified lamellae in granulomas",
+    ],
+  },
+  {
+    id: "neonatal-respiratory-distress-syndrome",
+    name: "Neonatal Respiratory Distress Syndrome",
+    aliases: [
+      "neonatal respiratory distress syndrome",
+      "nrds",
+      "respiratory distress syndrome",
+      "hyaline membrane disease",
+    ],
+    definition:
+      "Respiratory failure in premature neonates from surfactant deficiency and immature lungs.",
+    pathophysiology:
+      "Insufficient surfactant (type II pneumocytes) → ↑ alveolar surface tension → atelectasis → hypoxemia and respiratory acidosis; hyaline membranes form.",
+    classicPresentation: [
+      "Premature infant with tachypnea, grunting, retractions within hours of birth",
+      "Worsening distress over first 48 h",
+      "Cesarean delivery without labor (↓ cortisol/surfactant)",
+    ],
+    keyFindings: [
+      "Ground-glass appearance, air bronchograms on CXR",
+      "Grunting (maintains PEEP)",
+      "Hypoxemia, respiratory acidosis",
+    ],
+    associations: ["Prematurity", "Maternal diabetes", "Male sex", "Cesarean delivery"],
+    complications: ["Pneumothorax", "Persistent pulmonary hypertension", "Bronchopulmonary dysplasia"],
+    distinguishFrom: [
+      "Transient tachypnea of newborn — term/near-term, fluid in lungs, resolves in 24–72 h",
+      "Meconium aspiration — post-term, meconium-stained fluid",
+    ],
+    boardsPearls: [
+      "Surfactant deficiency in premature infants",
+      "Lecithin/sphingomyelin ratio ≥2 indicates lung maturity",
+      "Treat with surfactant replacement and respiratory support",
+    ],
+    pediatrics:
+      "Classic disease of prematurity; antenatal corticosteroids accelerate fetal surfactant production and reduce incidence.",
+  },
+  {
+    id: "emphysema",
+    name: "Emphysema",
+    aliases: ["emphysema", "pulmonary emphysema"],
+    definition:
+      "COPD phenotype with permanent enlargement of airspaces distal to terminal bronchioles due to alveolar wall destruction.",
+    pathophysiology:
+      "Smoke/elastase injury → loss of alveolar walls → ↓ elastic recoil → air trapping; α1-antitrypsin deficiency in panacinar form.",
+    classicPresentation: [
+      "Long smoking history, dyspnea, minimal cough",
+      "Barrel chest, pursed-lip breathing",
+      "Weight loss, cachexia",
+    ],
+    keyFindings: [
+      "Hyperinflation, flattened diaphragm on CXR",
+      "↓ breath sounds, prolonged expiration",
+      "↓ DLCO",
+    ],
+    associations: ["Smoking", "α1-antitrypsin deficiency (panacinar)"],
+    complications: ["Cor pulmonale", "Pneumothorax (especially bullae)", "Respiratory failure"],
+    distinguishFrom: [
+      "Chronic bronchitis — productive cough prominent, less hyperinflation",
+      "Asthma — reversible obstruction, younger onset",
+    ],
+    boardsPearls: [
+      "Centriacinar (centrilobular): smoking, upper lobes",
+      "Panacinar: α1-antitrypsin deficiency, lower lobes",
+      "Pink puffer (emphysema) vs blue bloater (chronic bronchitis)",
+    ],
+  },
+  {
+    id: "pneumoconiosis",
+    name: "Pneumoconiosis",
+    aliases: ["pneumoconiosis", "pneumoconioses", "silicosis", "asbestosis", "coal workers pneumoconiosis"],
+    definition:
+      "Interstitial lung disease from inhalation of mineral dusts (silica, asbestos, coal) causing fibrosis and restrictive physiology.",
+    pathophysiology:
+      "Inhaled particles → macrophage activation and fibrosis → restrictive lung disease; silica impairs macrophage function → ↑ TB risk; asbestos → pleural plaques, mesothelioma.",
+    classicPresentation: [
+      "Occupational exposure (mining, construction, shipyard)",
+      "Progressive dyspnea",
+      "Asbestos: pleural plaques, decades latency for mesothelioma",
+    ],
+    keyFindings: [
+      "Small rounded opacities on CXR (silicosis)",
+      "Eggshell calcification of hilar lymph nodes (silicosis)",
+      "Pleural plaques (asbestos)",
+    ],
+    associations: [
+      "Silica exposure → ↑ tuberculosis risk",
+      "Asbestos + smoking → synergistic lung cancer risk",
+    ],
+    complications: ["Progressive massive fibrosis", "Mesothelioma (asbestos)", "Lung cancer"],
+    distinguishFrom: [
+      "Sarcoidosis — noncaseating granulomas, BHL, no occupational history",
+      "Idiopathic pulmonary fibrosis — no dust exposure",
+    ],
+    boardsPearls: [
+      "Silicosis: upper lobe fibrosis, eggshell hilar calcification, ↑ TB",
+      "Asbestos: pleural plaques, mesothelioma (not lung cancer alone)",
+      "Berylliosis mimics sarcoidosis histologically",
+    ],
+  },
+  {
+    id: "pulmonary-hypertension",
+    name: "Pulmonary Hypertension",
+    aliases: ["pulmonary hypertension", "pah", "pulmonary arterial hypertension"],
+    definition:
+      "Elevated mean pulmonary arterial pressure (≥20 mmHg at rest) from varied etiologies, leading to right heart strain and failure.",
+    pathophysiology:
+      "↑ pulmonary vascular resistance → right ventricular pressure overload → RV hypertrophy and eventual failure; etiologies include idiopathic, left heart disease, hypoxemia, chronic thromboembolism.",
+    classicPresentation: [
+      "Progressive dyspnea, exertional syncope",
+      "Underlying connective tissue disease or CHD",
+      "Insidious onset over months",
+    ],
+    keyFindings: [
+      "Loud P2 (pulmonic component of S2)",
+      "Parasternal heave (RV hypertrophy)",
+      "Elevated JVP, peripheral edema (late)",
+    ],
+    keyLabs: ["Echo: elevated RVSP, RV dilation", "Right heart catheterization — definitive"],
+    associations: [
+      "Idiopathic PAH",
+      "Scleroderma",
+      "Left heart failure",
+      "Chronic thromboembolic disease",
+      "COPD/hypoxemia (Eisenmenger)",
+    ],
+    complications: ["Right heart failure", "Sudden death", "Syncope (poor prognostic sign)"],
+    distinguishFrom: [
+      "Left heart failure — pulmonary edema, ↓ EF",
+      "Asthma/COPD — obstructive pattern on PFTs",
+    ],
+    boardsPearls: [
+      "Loud P2 suggests pulmonary hypertension",
+      "Eisenmenger: left-to-right shunt → irreversible PAH → right-to-left shunt",
+      "Syncope in PAH indicates advanced disease",
+    ],
+  },
+  {
+    id: "chronic-bronchitis",
+    name: "Chronic Bronchitis",
+    aliases: ["chronic bronchitis"],
+    definition:
+      "COPD phenotype defined clinically as productive cough for ≥3 months in ≥2 consecutive years, with airway inflammation and mucus hypersecretion.",
+    pathophysiology:
+      "Chronic irritant exposure (smoking) → goblet cell hyperplasia and mucus hypersecretion → airway obstruction and recurrent infections; Reid index >0.5 (gland/wall thickness).",
+    classicPresentation: [
+      "Chronic productive cough (daily sputum)",
+      "Long smoking history",
+      "Recurrent respiratory infections",
+    ],
+    keyFindings: [
+      "Prolonged expiration, wheeze",
+      "Cyanosis (blue bloater phenotype)",
+      "Hypercapnia, polycythemia",
+    ],
+    associations: ["Smoking", "Air pollution", "Occupational dusts"],
+    complications: ["Cor pulmonale", "Respiratory failure", "Secondary polycythemia"],
+    distinguishFrom: [
+      "Emphysema — dyspnea predominant, hyperinflation, pink puffer",
+      "Bronchiectasis — copious purulent sputum, dilated bronchi on CT",
+    ],
+    boardsPearls: [
+      "Clinical definition: productive cough ≥3 months × 2 years",
+      "Reid index >0.5 (gland layer thickness / bronchial wall thickness)",
+      "Blue bloater: chronic bronchitis with hypercapnia and cyanosis",
+    ],
+  },
+  {
+    id: "nephritic-syndrome",
+    name: "Nephritic Syndrome",
+    aliases: ["nephritic syndrome", "nephritic"],
+    definition:
+      "Glomerular disease presenting with hematuria, RBC casts, oliguria, hypertension, and variable proteinuria (<3.5 g/day).",
+    pathophysiology:
+      "Glomerular inflammation → GBM damage → RBC leakage into urine → RBC casts; ↓ GFR → oliguria, fluid retention, hypertension.",
+    classicPresentation: [
+      "Cola-colored urine (hematuria)",
+      "Periorbital edema, hypertension",
+      "Recent streptococcal infection (post-streptococcal GN)",
+    ],
+    keyLabs: [
+      "RBC casts on urinalysis",
+      "↑ creatinine, ↓ GFR",
+      "↑ anti-streptolysin O (post-strep GN)",
+      "↓ C3 (post-strep GN, MPGN)",
+    ],
+    associations: [
+      "Post-streptococcal glomerulonephritis",
+      "IgA nephropathy (Berger disease)",
+      "Rapidly progressive GN (Goodpasture, ANCA vasculitis)",
+    ],
+    complications: ["Acute kidney injury", "Chronic kidney disease", "Hypertensive emergency"],
+    distinguishFrom: [
+      "Nephrotic syndrome — heavy proteinuria (>3.5 g/day), fatty casts, minimal hematuria",
+      "UTI — WBC casts, dysuria, positive culture",
+    ],
+    boardsPearls: [
+      "RBC casts = glomerular origin of hematuria",
+      "Post-strep GN: low C3, normal C4, resolves in 6–8 weeks",
+      "Nephritic = inflammation; nephrotic = podocyte damage/leak",
+    ],
+    pediatrics:
+      "Post-streptococcal GN common in children 1–3 weeks after pharyngitis or skin infection; usually self-limited.",
+  },
+  {
+    id: "nephrotic-syndrome",
+    name: "Nephrotic Syndrome",
+    aliases: ["nephrotic syndrome", "nephrotic"],
+    definition:
+      "Glomerular disease with heavy proteinuria (>3.5 g/day), hypoalbuminemia, edema, hyperlipidemia, and lipiduria.",
+    pathophysiology:
+      "Podocyte/GBM damage → massive protein loss → ↓ oncotic pressure → edema; liver compensates with lipoprotein synthesis → hyperlipidemia.",
+    classicPresentation: [
+      "Periorbital and peripheral edema",
+      "Foamy urine",
+      "Hypercoagulability (renal vein thrombosis)",
+    ],
+    keyLabs: [
+      "Proteinuria >3.5 g/day",
+      "↓ albumin",
+      "Fatty casts (Maltese cross on polarized light)",
+      "↑ LDL cholesterol",
+    ],
+    associations: [
+      "Minimal change disease (children)",
+      "Focal segmental glomerulosclerosis",
+      "Membranous nephropathy (adults)",
+      "Diabetic nephropathy",
+      "Amyloidosis",
+    ],
+    complications: [
+      "Renal vein thrombosis",
+      "Infection (loss of immunoglobulins)",
+      "Hypercoagulability",
+    ],
+    distinguishFrom: [
+      "Nephritic syndrome — RBC casts, hypertension, oliguria",
+      "Heart failure edema — JVD, pulmonary congestion",
+    ],
+    boardsPearls: [
+      "Minimal change disease: selective albuminuria, responds to steroids, most common in children",
+      "FSGS: common in African Americans, HIV-associated",
+      "Hypercoagulable state — lose antithrombin III in urine",
+    ],
+    pediatrics:
+      "Minimal change disease is most common cause in children; dramatic response to corticosteroids.",
+  },
+  {
+    id: "nephrolithiasis",
+    name: "Nephrolithiasis",
+    aliases: ["nephrolithiasis", "kidney stones", "renal calculi", "urolithiasis"],
+    definition:
+      "Formation of crystalline concretions in the urinary tract causing colicky flank pain and hematuria.",
+    pathophysiology:
+      "Supersaturation of urine with stone-forming salts → crystal nucleation and growth; calcium oxalate most common; staghorn calculi from struvite (infection stones).",
+    classicPresentation: [
+      "Sudden severe flank pain radiating to groin",
+      "Hematuria",
+      "Restlessness (cannot find comfortable position)",
+    ],
+    keyLabs: [
+      "Hematuria on urinalysis",
+      "CT abdomen/pelvis without contrast — gold standard",
+      "24-h urine collection for metabolic workup",
+    ],
+    associations: [
+      "Hypercalciuria",
+      "Hyperoxaluria",
+      "Hyperuricemia (gout)",
+      "UTI with urease-positive organisms (struvite)",
+    ],
+    complications: ["Hydronephrosis", "Pyelonephritis", "Obstructive uropathy"],
+    distinguishFrom: [
+      "Pyelonephritis — fever, WBC casts, less colicky pain",
+      "AAA — pulsatile mass, older hypertensive patient",
+    ],
+    boardsPearls: [
+      "Calcium oxalate: envelope-shaped crystals, most common",
+      "Struvite (ammonium magnesium phosphate): staghorn calculi, Proteus/Morganella",
+      "Uric acid stones: radiolucent on X-ray, associated with gout",
+    ],
+  },
+  {
+    id: "urinary-tract-infection",
+    name: "Urinary Tract Infection",
+    aliases: ["urinary tract infection", "uti", "cystitis", "pyelonephritis"],
+    definition:
+      "Bacterial infection of the urinary tract, ranging from uncomplicated cystitis to pyelonephritis and urosepsis.",
+    pathophysiology:
+      "Ascension of uropathogens (E. coli most common) from perineum → bladder (cystitis) or kidneys (pyelonephritis); virulence factors include fimbriae (P pili).",
+    classicPresentation: [
+      "Cystitis: dysuria, frequency, urgency, suprapubic pain",
+      "Pyelonephritis: fever, flank pain, CVA tenderness",
+      "Women, sexually active, catheter use risk factors",
+    ],
+    keyLabs: [
+      "Positive urine culture (>10⁵ CFU/mL)",
+      "Pyuria, bacteriuria on urinalysis",
+      "WBC casts suggest pyelonephritis",
+    ],
+    associations: ["Female sex", "Sexual activity", "Catheterization", "Diabetes", "Pregnancy"],
+    complications: ["Pyelonephritis", "Urosepsis", "Emphysematous pyelonephritis (diabetics)"],
+    distinguishFrom: [
+      "Vaginitis — external dysuria, discharge, normal urine culture",
+      "Acute urethritis (GC/Chlamydia) — discharge, urethral inflammation",
+    ],
+    boardsPearls: [
+      "E. coli = #1 cause (uropathogenic strains with P fimbriae)",
+      "Nitrites on dipstick = gram-negative organisms with nitrate reductase",
+      "Staghorn calculi + Proteus → struvite stones",
+    ],
+    pediatrics:
+      "Febrile UTI in young children requires imaging for reflux/anatomy; boys with first UTI need workup.",
+  },
+  {
+    id: "rheumatoid-arthritis",
+    name: "Rheumatoid Arthritis",
+    aliases: ["rheumatoid arthritis", "ra"],
+    definition:
+      "Chronic autoimmune inflammatory arthritis with symmetric polyarticular involvement and systemic features, often leading to joint destruction.",
+    pathophysiology:
+      "Autoimmune synovitis → pannus formation → cartilage and bone erosion; RF and anti-CCP antibodies reflect immune dysregulation.",
+    classicPresentation: [
+      "Symmetric polyarthritis of small joints (MCP, PIP, wrists)",
+      "Morning stiffness >1 hour",
+      "Fatigue, low-grade fever",
+    ],
+    keyFindings: [
+      "Swelling and tenderness of MCP/PIP joints",
+      "Ulnar deviation, swan-neck/boutonnière deformities (late)",
+      "Subcutaneous rheumatoid nodules",
+    ],
+    keyLabs: ["↑ RF", "↑ anti-CCP (more specific)", "↑ ESR/CRP"],
+    associations: ["HLA-DR4", "Smoking", "Pulmonary fibrosis", "Felty syndrome"],
+    complications: [
+      "Joint destruction and deformity",
+      "Atlantoaxial subluxation",
+      "Interstitial lung disease",
+      "Cardiovascular disease",
+    ],
+    distinguishFrom: [
+      "Osteoarthritis — DIP involvement, no systemic features, minimal morning stiffness",
+      "SLE — malar rash, anti-dsDNA, less erosive arthritis",
+    ],
+    boardsPearls: [
+      "Anti-CCP more specific than rheumatoid factor",
+      "Spares DIPs (unlike osteoarthritis)",
+      "Methotrexate is anchor DMARD; TNF inhibitors for refractory disease",
+    ],
+  },
+  {
+    id: "turner-syndrome",
+    name: "Turner Syndrome",
+    aliases: ["turner syndrome", "turner's syndrome", "45,x"],
+    definition:
+      "Chromosomal disorder in females (45,X or mosaic) with short stature, ovarian dysgenesis, and characteristic physical features.",
+    pathophysiology:
+      "Complete or partial monosomy X → ovarian failure (streak gonads) → estrogen deficiency; lymphatic dysplasia → webbed neck, lymphedema.",
+    classicPresentation: [
+      "Short stature girl with webbed neck",
+      "Primary amenorrhea, lack of secondary sexual characteristics",
+      "Coarctation of aorta, bicuspid aortic valve",
+    ],
+    keyFindings: [
+      "Webbed neck, low posterior hairline",
+      "Widely spaced nipples (shield chest)",
+      "Short fourth metacarpal",
+    ],
+    keyLabs: ["Karyotype: 45,X or mosaic (45,X/46,XX)"],
+    associations: ["Coarctation of aorta", "Bicuspid aortic valve", "Horseshoe kidney"],
+    complications: ["Infertility", "Aortic dissection", "Osteoporosis", "Hypothyroidism (autoimmune)"],
+    distinguishFrom: [
+      "Noonan syndrome — 46,XY or XX, pulmonary stenosis, normal ovaries",
+      "Constitutional growth delay — normal karyotype",
+    ],
+    boardsPearls: [
+      "45,X — most common cause of primary amenorrhea",
+      "Streak gonads; cannot conceive without assisted reproduction",
+      "Coarctation + bicuspid valve — screen with echo",
+    ],
+    pediatrics:
+      "Diagnosed in infancy (lymphedema, webbed neck) or adolescence (short stature, absent puberty); growth hormone and estrogen replacement.",
+  },
+  {
+    id: "systemic-lupus-erythematosus",
+    name: "Systemic Lupus Erythematosus",
+    aliases: ["systemic lupus erythematosus", "sle", "lupus"],
+    definition:
+      "Multisystem autoimmune disease with autoantibodies against nuclear antigens, causing inflammation of skin, joints, kidneys, and other organs.",
+    pathophysiology:
+      "Loss of self-tolerance → immune complexes deposit in tissues → type III hypersensitivity → complement consumption and organ damage.",
+    classicPresentation: [
+      "Young woman with joint pain, rash, fatigue",
+      "Photosensitive malar (butterfly) rash",
+      "Oral ulcers, Raynaud phenomenon",
+    ],
+    keyFindings: [
+      "Malar rash sparing nasolabial folds",
+      "Oral ulcers",
+      "Nonerosive arthritis",
+    ],
+    keyLabs: [
+      "ANA positive (sensitive)",
+      "Anti-dsDNA (specific, correlates with renal disease)",
+      "Anti-Smith (specific)",
+      "↓ C3/C4 (active disease)",
+    ],
+    associations: ["HLA-DR2/DR3", "Drug-induced lupus (hydralazine, procainamide, isoniazid)"],
+    complications: ["Lupus nephritis", "Libman-Sacks endocarditis", "Antiphospholipid syndrome"],
+    distinguishFrom: [
+      "Rheumatoid arthritis — erosive, anti-CCP, spares malar rash",
+      "Rosacea — centrofacial erythema, no systemic features",
+    ],
+    boardsPearls: [
+      "Anti-dsDNA correlates with renal disease activity",
+      "↓ complement (C3/C4) during flares",
+      "Drug-induced lupus: anti-histone antibodies, resolves when drug stopped",
+    ],
+    pediatrics:
+      "Childhood SLE often more severe with higher renal involvement; monitor closely for nephritis.",
+  },
+  {
+    id: "schizophrenia",
+    name: "Schizophrenia",
+    aliases: ["schizophrenia"],
+    definition:
+      "Chronic psychotic disorder with positive symptoms (hallucinations, delusions), negative symptoms, and cognitive dysfunction lasting ≥6 months.",
+    pathophysiology:
+      "Dopamine hypothesis: ↑ mesolimbic dopamine (positive symptoms); ↓ mesocortical dopamine (negative/cognitive symptoms); structural brain changes and genetic predisposition.",
+    classicPresentation: [
+      "Young adult with auditory hallucinations, persecutory delusions",
+      "Social withdrawal, flat affect, avolition",
+      "Decline in functioning over months",
+    ],
+    keyFindings: [
+      "Auditory hallucinations (commenting or command type)",
+      "Bizarre delusions",
+      "Disorganized speech or behavior",
+    ],
+    associations: ["Family history", "Cannabis use (adolescence)", "Urban upbringing"],
+    complications: ["Suicide", "Substance abuse", "Treatment nonadherence"],
+    distinguishFrom: [
+      "Schizophreniform — symptoms 1–6 months",
+      "Brief psychotic disorder — <1 month",
+      "Schizoaffective — mood episode concurrent with psychosis",
+    ],
+    boardsPearls: [
+      "Diagnosis requires ≥6 months of symptoms including ≥1 month active phase",
+      "Positive symptoms respond better to antipsychotics than negative",
+      "Typical antipsychotics: D2 blockade → extrapyramidal symptoms",
+    ],
+  },
+  {
+    id: "major-depressive-disorder",
+    name: "Major Depressive Disorder",
+    aliases: [
+      "major depressive disorder",
+      "depression",
+      "mdd",
+      "clinical depression",
+    ],
+    definition:
+      "Mood disorder with persistent depressed mood or anhedonia plus associated neurovegetative symptoms causing significant functional impairment.",
+    pathophysiology:
+      "Multifactorial: monoamine deficiency hypothesis, HPA axis dysregulation, neuroplasticity changes; serotonin, norepinephrine, and dopamine pathways implicated.",
+    classicPresentation: [
+      "Depressed mood or anhedonia ≥2 weeks",
+      "Sleep disturbance, appetite change, fatigue",
+      "Guilt, poor concentration, psychomotor changes",
+    ],
+    keyFindings: [
+      "SIGECAPS: Sleep, Interest, Guilt, Energy, Concentration, Appetite, Psychomotor, Suicidality",
+      "Psychomotor retardation or agitation",
+    ],
+    associations: ["Family history", "Chronic medical illness", "Substance use"],
+    complications: ["Suicide", "Treatment-resistant depression", "Medical comorbidity"],
+    distinguishFrom: [
+      "Persistent depressive disorder (dysthymia) — chronic low mood ≥2 years",
+      "Bipolar depression — history of manic/hypomanic episodes",
+      "Adjustment disorder — clear stressor, symptoms <6 months",
+    ],
+    boardsPearls: [
+      "≥5 SIGECAPS symptoms for ≥2 weeks, one must be depressed mood or anhedonia",
+      "SSRIs first-line; do not start until bipolar disorder ruled out",
+      "Electroconvulsive therapy for severe/refractory or psychotic depression",
+    ],
+  },
+  {
+    id: "hiv-infection",
+    name: "HIV Infection",
+    aliases: ["hiv infection", "hiv", "aids", "human immunodeficiency virus"],
+    definition:
+      "Retroviral infection of CD4+ T lymphocytes causing progressive immunodeficiency and opportunistic infections when advanced (AIDS).",
+    pathophysiology:
+      "HIV binds CD4 and CCR5/CXCR4 → viral integration into host genome → CD4+ T-cell depletion → impaired cell-mediated immunity → opportunistic infections and malignancies.",
+    classicPresentation: [
+      "Acute retroviral syndrome (mononucleosis-like illness)",
+      "Opportunistic infections at low CD4 (PJP, toxoplasmosis, MAC)",
+      "Weight loss, fever, lymphadenopathy",
+    ],
+    keyLabs: [
+      "HIV antibody/p24 antigen (4th generation ELISA)",
+      "HIV RNA viral load",
+      "CD4 count",
+    ],
+    keyFindings: [
+      "Oral thrush, oral hairy leukoplakia",
+      "Kaposi sarcoma (HHV-8)",
+      "Dementia, peripheral neuropathy",
+    ],
+    associations: ["IV drug use", "Unprotected sex", "Vertical transmission"],
+    complications: [
+      "AIDS-defining illnesses (CD4 <200)",
+      "HIV-associated nephropathy",
+      "Cardiovascular disease",
+    ],
+    distinguishFrom: [
+      "Acute mono — heterophile negative in HIV; test both",
+      "Immunodeficiency from other causes — check HIV first",
+    ],
+    boardsPearls: [
+      "CD4 <200 = AIDS; PJP prophylaxis with TMP-SMX",
+      "CCR5 antagonists (maraviroc) only if tropism test shows R5 virus",
+      "Integrase inhibitors now preferred in initial ART regimens",
+    ],
+    pediatrics:
+      "Vertical transmission prevented with maternal ART and peripartum/neonatal prophylaxis; breast milk transmission risk.",
+  },
+  {
+    id: "tuberculosis",
+    name: "Tuberculosis",
+    aliases: ["tuberculosis", "tb", "pulmonary tuberculosis"],
+    definition:
+      "Chronic granulomatous infection caused by Mycobacterium tuberculosis, most commonly affecting lungs but capable of disseminating.",
+    pathophysiology:
+      "Inhaled bacilli → alveolar macrophage infection → granuloma formation (caseating) → latent TB (dormant) or active disease with tissue destruction and cavitation.",
+    classicPresentation: [
+      "Weight loss, night sweats, fever, hemoptysis",
+      "Immigrant or immunocompromised host (HIV)",
+      "Upper lobe cavitary lesion on CXR",
+    ],
+    keyFindings: [
+      "Upper lobe cavitary infiltrate on CXR",
+      "Caseating granulomas on biopsy",
+      "Ghon complex (primary TB: Ghon focus + hilar nodes)",
+    ],
+    keyLabs: [
+      "PPD or interferon-gamma release assay (latent TB)",
+      "Acid-fast bacilli on sputum smear",
+      "Mycobacterial culture (gold standard)",
+    ],
+    associations: ["HIV coinfection", "Silicosis", "Diabetes", "Homelessness, incarceration"],
+    complications: ["Miliary TB", "TB meningitis", "Pott disease (vertebral)", "Drug resistance (MDR-TB)"],
+    distinguishFrom: [
+      "Sarcoidosis — noncaseating granulomas, bilateral hilar lymphadenopathy",
+      "Lung cancer — mass without infectious symptoms",
+    ],
+    boardsPearls: [
+      "Caseating granulomas = TB (vs noncaseating in sarcoidosis)",
+      "RIPE therapy: rifampin, isoniazid, pyrazinamide, ethambutol",
+      "Isoniazid + rifampin cause orange body fluids; INH causes B6 deficiency neuropathy",
+    ],
+    pediatrics:
+      "Primary TB in children may present with hilar lymphadenopathy without cavitation; miliary TB in infants.",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

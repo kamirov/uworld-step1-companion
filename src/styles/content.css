@@ -185,6 +185,50 @@
   outline-offset: 1px;
 }
 
+.usmle-condition-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(225, 29, 72, 0.12);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(225, 29, 72, 0.6);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-condition-chip:hover,
+.usmle-condition-chip:focus-visible {
+  background: rgba(225, 29, 72, 0.22);
+  outline: 1px solid rgba(225, 29, 72, 0.5);
+  outline-offset: 1px;
+}
+
+.usmle-protein-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(190, 24, 93, 0.12);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(190, 24, 93, 0.6);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-protein-chip:hover,
+.usmle-protein-chip:focus-visible {
+  background: rgba(190, 24, 93, 0.22);
+  outline: 1px solid rgba(190, 24, 93, 0.5);
+  outline-offset: 1px;
+}
+
 .usmle-organ-popover--rich {
   max-width: 360px;
   max-height: min(70vh, 480px);
@@ -213,6 +257,14 @@
 
 .usmle-organ-popover__title--nephron {
   color: #a21caf;
+}
+
+.usmle-organ-popover__title--condition {
+  color: #be123c;
+}
+
+.usmle-organ-popover__title--protein {
+  color: #be185d;
 }
 
 .usmle-organ-popover__meaning {
