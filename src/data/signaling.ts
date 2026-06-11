@@ -3,6 +3,8 @@ export type SignalingType =
   | "Cytokine"
   | "Growth factor"
   | "Neurotransmitter"
+  | "Second messenger"
+  | "Gasotransmitter"
   | "Hormone";
 
 export interface SignalingEntry {
@@ -179,6 +181,99 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Wound healing same PDGF pathway; PDGF-receptor mutations rare in juvenile myelomonocytic leukemia context.",
+  },
+  {
+    id: "acetylcholine",
+    name: "Acetylcholine (ACh)",
+    aliases: [
+      "acetylcholine",
+      "ach",
+    ],
+    type: "Neurotransmitter",
+    source:
+      "Cholinergic neurons (CNS), preganglionic sympathetic/parasympathetic fibers, postganglionic parasympathetic fibers, neuromuscular junction (motor end plate)",
+    receptor: "Nicotinic (Nm at NMJ; Nn in autonomic ganglia) and muscarinic (M1–M5)",
+    function:
+      "Primary neurotransmitter of the parasympathetic nervous system; mediates neuromuscular transmission, autonomic ganglia signaling, and cognitive/arousal effects in the CNS.",
+    clinicalRelevance: [
+      "Myasthenia gravis — autoantibodies to nicotinic ACh receptors at NMJ",
+      "Organophosphate poisoning — AChE inhibition → ↑ synaptic ACh → SLUDGE + nicotinic effects",
+      "Atropine blocks muscarinic ACh receptors; neuromuscular blockers act at nicotinic NMJ receptors",
+    ],
+    boardsPearls: [
+      "Nicotinic = ion channel (depolarization); muscarinic = GPCR (M3 → IP3/DAG, M2 → ↓ cAMP)",
+      "ACh at NMJ: released from motor neuron → binds Nm receptor → muscle contraction",
+      "Botulinum toxin ↓ ACh release; organophosphates ↑ ACh (inhibit AChE)",
+    ],
+    distinguishFrom: [
+      "Dopamine, norepinephrine — catecholamine neurotransmitters, not cholinergic",
+      "Acetylcholinesterase — enzyme that degrades ACh, not the transmitter itself",
+    ],
+    pediatrics:
+      "Neonatal myasthenia gravis from transplacental anti-AChR antibodies — hypotonia, poor feeding, respiratory weakness.",
+  },
+  {
+    id: "nitric-oxide",
+    name: "Nitric oxide (NO)",
+    aliases: [
+      "nitric oxide",
+      "endothelium-derived relaxing factor",
+      "edrf",
+    ],
+    type: "Gasotransmitter",
+    source:
+      "Endothelial cells (eNOS), macrophages (iNOS), neurons (nNOS); synthesized from L-arginine by nitric oxide synthase (NOS)",
+    receptor: "Soluble guanylyl cyclase (intracellular; not a membrane receptor)",
+    function:
+      "Diffuses into vascular smooth muscle → activates guanylyl cyclase → ↑ cGMP → smooth muscle relaxation and vasodilation.",
+    clinicalRelevance: [
+      "Nitrates (nitroglycerin) → donate NO → vasodilation in angina",
+      "Sildenafil ↑ cGMP by inhibiting PDE-5 — contraindicated with nitrates (severe hypotension)",
+      "Pulmonary hypertension treated with NO inhalation or PDE-5 inhibitors",
+    ],
+    boardsPearls: [
+      "NO → guanylyl cyclase → cGMP → vasodilation (opposite of endothelin pathway)",
+      "Nitrates + PDE-5 inhibitors = absolute contraindication",
+      "NOS requires O₂, NADPH, and arginine — inhibited by asymmetric dimethylarginine (ADMA)",
+    ],
+    distinguishFrom: [
+      "Nitrous oxide (N₂O) — inhaled anesthetic, not the endogenous vasodilator NO",
+      "Nitroglycerin — prodrug that releases NO; not the same as endogenous NO signaling molecule",
+    ],
+    pediatrics:
+      "Inhaled NO for persistent pulmonary hypertension of the newborn (PPHN) — selective pulmonary vasodilation.",
+  },
+  {
+    id: "cgmp",
+    name: "Cyclic GMP (cGMP)",
+    aliases: [
+      "cgmp",
+      "cyclic gmp",
+      "cyclic guanosine monophosphate",
+      "3',5'-cyclic gmp",
+    ],
+    type: "Second messenger",
+    source:
+      "Synthesized from GTP by guanylyl cyclase (soluble, activated by NO; or natriuretic peptide receptor–linked membrane form)",
+    receptor: "Protein kinase G (PKG), cGMP-gated ion channels, phosphodiesterases",
+    function:
+      "Second messenger mediating vasodilation, natriuresis, and smooth muscle relaxation; degraded by phosphodiesterases (PDE-5 in vascular smooth muscle).",
+    clinicalRelevance: [
+      "↑ cGMP → vascular smooth muscle relaxation (NO and natriuretic peptide pathways)",
+      "PDE-5 inhibitors (sildenafil) block cGMP degradation → prolonged vasodilation",
+      "Natriuretic peptides (ANP/BNP) activate membrane guanylyl cyclase → ↑ cGMP → natriuresis",
+    ],
+    boardsPearls: [
+      "NO → ↑ cGMP; PDE-5 breaks down cGMP — sildenafil inhibits PDE-5",
+      "cGMP vs cAMP: cAMP from adenylyl cyclase (β-receptors, glucagon); cGMP from guanylyl cyclase (NO, ANP/BNP)",
+      "Blue-tinged vision with sildenafil — PDE-6 (retina) also degraded when PDE-5 inhibited",
+    ],
+    distinguishFrom: [
+      "cAMP — adenylyl cyclase second messenger (β-adrenergic, glucagon, PTH)",
+      "GTP — substrate for cGMP synthesis, not the active second messenger",
+    ],
+    pediatrics:
+      "Same NO–cGMP pathway in PPHN; sildenafil approved for pediatric PAH (weight-based dosing).",
   },
 ];
 

@@ -850,7 +850,16 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "sildenafil",
     name: "Sildenafil",
-    aliases: ["sildenafil", "viagra", "revatio"],
+    aliases: [
+      "sildenafil",
+      "viagra",
+      "revatio",
+      "phosphodiesterase type 5 inhibitor",
+      "phosphodiesterase-5 inhibitor",
+      "phosphodiesterase 5 inhibitor",
+      "pde-5 inhibitor",
+      "pde5 inhibitor",
+    ],
     drugClass: "Phosphodiesterase type 5 (PDE-5) inhibitor",
     mechanism:
       "Inhibits PDE-5 → prevents cGMP degradation → ↑ cGMP in vascular smooth muscle → vasodilation (systemic and pulmonary).",
