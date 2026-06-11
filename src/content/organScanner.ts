@@ -129,9 +129,16 @@ const highlightedWordsOnQuestion = new Set<string>();
 const highlightedTermZone = new Map<string, number>();
 let questionFingerprint = "";
 let isApplyingHighlights = false;
+const pendingScanRoots = new Set<Element>();
 
 const QUESTION_HEADER_RE =
   /(?:Question|Q\.?|Item)\s*\d+(?:\s*(?:of|\/)\s*\d+)?/i;
+
+/** UWorld question areas — avoid scanning the entire app shell on every mutation. */
+const SCAN_AREA_SELECTORS = ["#questionInformation", "#explanation"] as const;
+
+const SCAN_DEBOUNCE_MS = 400;
+const SCAN_IDLE_TIMEOUT_MS = 800;
 
 /** Lower number = scanned and claimed first (UWorld question stem + options). */
 const SCAN_ZONE = {
@@ -156,10 +163,6 @@ function normalizedWordKey(matchText: string): string {
   return normalizeForComparison(matchText).replace(/\s+/g, " ").trim();
 }
 
-function isTermHighlightedInDom(term: TermMatch): boolean {
-  return document.querySelector(chipSelectorForTerm(term)) !== null;
-}
-
 function getAliasesForTerm(term: TermMatch): Set<string> {
   if (!aliasesByTermKey) {
     aliasesByTermKey = new Map();
@@ -181,17 +184,10 @@ function getAliasesForTerm(term: TermMatch): Set<string> {
 }
 
 function isSynonymAlreadyHighlighted(term: TermMatch): boolean {
-  const key = termKey(term);
-  if (highlightedOnQuestion.has(key)) return true;
-  if (isTermHighlightedInDom(term)) return true;
+  if (highlightedOnQuestion.has(termKey(term))) return true;
 
-  const aliases = getAliasesForTerm(term);
-  for (const alias of aliases) {
+  for (const alias of getAliasesForTerm(term)) {
     if (highlightedWordsOnQuestion.has(alias)) return true;
-  }
-
-  for (const chip of document.querySelectorAll(CHIP_SELECTOR)) {
-    if (aliases.has(normalizedWordKey(chip.textContent ?? ""))) return true;
   }
 
   return false;
@@ -245,15 +241,6 @@ function isVisibleElement(el: Element): boolean {
     style.visibility !== "hidden" &&
     style.opacity !== "0"
   );
-}
-
-function isVisibleNode(node: Node): boolean {
-  let el = node.parentElement;
-  while (el) {
-    if (!isVisibleElement(el)) return false;
-    el = el.parentElement;
-  }
-  return true;
 }
 
 function chipSelectorForTerm(term: TermMatch): string {
@@ -339,18 +326,31 @@ function recordHighlight(term: TermMatch, _matchText: string, zone: number): voi
   }
 }
 
-function getQuestionTextSnapshot(): string {
-  const clone = document.body.cloneNode(true) as HTMLElement;
-  for (const el of clone.querySelectorAll(
-    `.${POPOVER_CLASS}, ${CHIP_SELECTOR}`,
-  )) {
-    el.remove();
+function getScanAreas(): Element[] {
+  const areas = SCAN_AREA_SELECTORS.flatMap((selector) => {
+    const el = document.querySelector(selector);
+    return el ? [el] : [];
+  });
+  if (areas.length > 0) return areas;
+  return document.body ? [document.body] : [];
+}
+
+function nodeInScanArea(node: Node): boolean {
+  const areas = getScanAreas();
+  if (areas.length === 1 && areas[0] === document.body) {
+    return !isInsidePopover(node);
   }
-  return clone.innerText.replace(/\s+/g, " ").trim();
+  const el = node instanceof Element ? node : node.parentElement;
+  if (!el || isInsidePopover(el)) return false;
+  return areas.some((area) => area.contains(el));
 }
 
 function getQuestionFingerprint(): string {
-  const text = getQuestionTextSnapshot();
+  const parts: string[] = [];
+  for (const area of getScanAreas()) {
+    parts.push((area as HTMLElement).innerText ?? "");
+  }
+  const text = parts.join(" ").replace(/\s+/g, " ").trim();
   const header = text.match(QUESTION_HEADER_RE)?.[0] ?? "";
   return `${header}::${text.slice(0, 600)}`;
 }
@@ -362,15 +362,18 @@ function resetQuestionHighlights(): void {
   questionFingerprint = "";
 }
 
-function syncQuestionContext(): void {
+function syncQuestionContext(): boolean {
   const next = getQuestionFingerprint();
-  if (questionFingerprint && next !== questionFingerprint) {
+  const changed = questionFingerprint !== "" && next !== questionFingerprint;
+  if (changed) {
     unwrapAllChips();
     highlightedOnQuestion.clear();
     highlightedWordsOnQuestion.clear();
     highlightedTermZone.clear();
+    pendingScanRoots.clear();
   }
   questionFingerprint = next;
+  return changed;
 }
 
 function nodeContainsOurChip(node: Node): boolean {
@@ -749,7 +752,6 @@ function buildCoalescedText(root: Element): CoalescedTextView | null {
     if (node.nodeType === Node.TEXT_NODE) {
       const textNode = node as Text;
       if (shouldSkipNode(textNode)) return;
-      if (!isVisibleNode(textNode)) return;
       const content = textNode.textContent ?? "";
       if (!content) return;
       text = appendCoalescedSeparator(text);
@@ -874,7 +876,6 @@ function collectHighlightableTextNodes(root: Node): Text[] {
     acceptNode(node) {
       if (isInsidePopover(node)) return NodeFilter.FILTER_REJECT;
       if (shouldSkipNode(node)) return NodeFilter.FILTER_REJECT;
-      if (!isVisibleNode(node)) return NodeFilter.FILTER_REJECT;
       const text = node.textContent ?? "";
       if (!text.trim()) return NodeFilter.FILTER_REJECT;
       return NodeFilter.FILTER_ACCEPT;
@@ -896,18 +897,62 @@ function collectHighlightableTextNodes(root: Node): Text[] {
 }
 
 function isInsidePopover(node: Node): boolean {
-  return (
-    node instanceof Element &&
-    (node.classList.contains(POPOVER_CLASS) ||
-      node.closest(`.${POPOVER_CLASS}`) !== null)
-  );
+  const el = node instanceof Element ? node : node.parentElement;
+  return el?.closest(`.${POPOVER_CLASS}`) != null;
 }
 
-function scanPage(): void {
-  if (!document.body || isInsidePopover(document.body)) return;
-  syncQuestionContext();
+function collectCoalesceRootsForAreas(areas: Element[]): Element[] {
+  const seen = new Set<Element>();
+  const roots: Element[] = [];
+  for (const area of areas) {
+    for (const root of collectCoalesceRoots(area)) {
+      if (seen.has(root)) continue;
+      seen.add(root);
+      roots.push(root);
+    }
+  }
+  return roots.sort((a, b) => {
+    const zoneDiff = getScanZone(a) - getScanZone(b);
+    if (zoneDiff !== 0) return zoneDiff;
+    return compareNodeDocumentOrder(a, b);
+  });
+}
 
-  const coalesceRoots = collectCoalesceRoots(document.body);
+function flushPendingScans(): void {
+  if (pendingScanRoots.size === 0) return;
+
+  isApplyingHighlights = true;
+  try {
+    for (const root of pendingScanRoots) {
+      if (root.isConnected) highlightCoalescedRoot(root, getScanZone(root));
+    }
+  } finally {
+    pendingScanRoots.clear();
+    isApplyingHighlights = false;
+  }
+}
+
+function scheduleIncrementalScan(from: Node): void {
+  if (!nodeInScanArea(from)) return;
+  for (const root of collectCoalesceRoots(from)) {
+    pendingScanRoots.add(root);
+  }
+}
+
+function runScanWork(): void {
+  const questionChanged = syncQuestionContext();
+  if (questionChanged || pendingScanRoots.size === 0) {
+    performFullScan();
+    return;
+  }
+  flushPendingScans();
+}
+
+function performFullScan(): void {
+  if (!document.body || isInsidePopover(document.body)) return;
+
+  pendingScanRoots.clear();
+  const coalesceRoots = collectCoalesceRootsForAreas(getScanAreas());
   isApplyingHighlights = true;
   try {
     for (const root of coalesceRoots) {
@@ -918,6 +963,11 @@ function scanPage(): void {
   }
 }
 
+function scanPage(): void {
+  syncQuestionContext();
+  performFullScan();
+}
+
 export function scanRoot(root: Node): void {
   if (isInsidePopover(root)) return;
   if (root === document.body) {
@@ -926,10 +976,11 @@ export function scanRoot(root: Node): void {
   }
 
   syncQuestionContext();
-  const coalesceRoots = collectCoalesceRoots(root);
+  if (!nodeInScanArea(root)) return;
+
   isApplyingHighlights = true;
   try {
-    for (const coalesceRoot of coalesceRoots) {
+    for (const coalesceRoot of collectCoalesceRoots(root)) {
       highlightCoalescedRoot(coalesceRoot, getScanZone(coalesceRoot));
     }
   } finally {
@@ -947,16 +998,21 @@ export function startOrganScanner(): void {
   let scanScheduled = false;
 
   const observer = new MutationObserver((mutations) => {
-    if (!isApplyingHighlights && mutationsRemovedOurChips(mutations)) {
+    if (isApplyingHighlights) return;
+
+    if (mutationsRemovedOurChips(mutations)) {
       resetQuestionHighlights();
     }
 
     for (const mutation of mutations) {
+      if (!nodeInScanArea(mutation.target)) continue;
+
       if (mutation.type === "characterData") {
-        const parent = mutation.target.parentNode;
-        if (parent && !isInsidePopover(parent)) scanScheduled = true;
+        scheduleIncrementalScan(mutation.target);
+        scanScheduled = true;
         continue;
       }
+
       for (const node of mutation.addedNodes) {
         if (node instanceof Element) {
           let isOurChip = false;
@@ -968,25 +1024,30 @@ export function startOrganScanner(): void {
           }
           if (isOurChip) continue;
         }
-        if (node.nodeType === Node.TEXT_NODE) {
-          const parent = node.parentNode;
-          if (parent && !isInsidePopover(parent)) scanScheduled = true;
-        } else if (
-          node.nodeType === Node.ELEMENT_NODE &&
-          !isInsidePopover(node)
-        ) {
-          scanScheduled = true;
-        }
+        scheduleIncrementalScan(node);
+        scanScheduled = true;
       }
     }
 
     if (!scanScheduled) return;
     if (debounceTimer) clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
-      scanPage();
-      scanScheduled = false;
-      debounceTimer = null;
-    }, 300);
+      const idle =
+        window.requestIdleCallback ??
+        ((cb: IdleRequestCallback) =>
+          window.setTimeout(
+            () => cb({ didTimeout: false, timeRemaining: () => 50 }),
+            0,
+          ));
+      idle(
+        () => {
+          runScanWork();
+          scanScheduled = false;
+          debounceTimer = null;
+        },
+        { timeout: SCAN_IDLE_TIMEOUT_MS },
+      );
+    }, SCAN_DEBOUNCE_MS);
   });
 
   observer.observe(document.body, {
