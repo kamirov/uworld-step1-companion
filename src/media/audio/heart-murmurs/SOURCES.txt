@@ -26,3 +26,21 @@ harsh-systolic-ejection-murmur.mp3
   Download: https://teachingheartauscultation.com/download/1110/
   Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
   Trimmed from 1 s offset, 7 s duration; mono 22.05 kHz.
+
+atrial-septal-defect-murmur.mp3
+  Source recording: Congenital Case 1 — Atrial septal defect
+  Download: https://teachingheartauscultation.com/download/1109/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from 1 s offset, 7 s duration; mono 22.05 kHz.
+
+patent-ductus-arteriosus-murmur.mp3
+  Source recording: Congenital Case 3 — Patent ductus arteriosus
+  Download: https://teachingheartauscultation.com/download/1111/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from 1 s offset, 7 s duration; mono 22.05 kHz.
+
+aortic-regurgitation-murmur.mp3
+  Source recording: Congenital Case 4 — Aortic stenosis and regurgitation
+  Download: https://teachingheartauscultation.com/download/1112/
+  Page: https://teachingheartauscultation.com/heart-sounds-mp3-downloads
+  Trimmed from 1 s offset, 7 s duration; mono 22.05 kHz.

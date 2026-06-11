@@ -52,6 +52,8 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
       "systolic ejection click",
       "ejection click",
       "systolic ejection sound",
+      "bicuspid aortic valve",
+      "bicuspid aortic valve click",
     ],
     meaning:
       "Brief, high-pitched early systolic sound from abrupt opening of a stenotic semilunar valve or rapid distention of a dilated aorta/pulmonary artery; best heard with the diaphragm.",
@@ -82,6 +84,63 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
     ],
     pediatrics:
       "ToF is the classic cyanotic CHD with harsh RVOT murmur; murmur intensity may ↓ during hypercyanotic (tet) spells when RVOT spasm worsens.",
+  },
+  {
+    id: "atrial-septal-defect-murmur",
+    name: "ASD Flow Murmur",
+    aliases: [
+      "atrial septal defect murmur",
+      "asd murmur",
+      "fixed split s2",
+      "wide fixed split s2",
+    ],
+    meaning:
+      "Soft systolic ejection/flow murmur at the upper left sternal border from ↑ flow across the pulmonary valve; classic finding is fixed split S2 from delayed pulmonic closure.",
+    conditions: [
+      "Ostium secundum ASD (most common)",
+      "↑ pulmonary blood flow with left-to-right atrial shunt",
+      "Fixed split S2 — does not narrow with expiration",
+    ],
+    pediatrics:
+      "ASD murmur is from pulmonary flow, not blood crossing the septum; large ASDs may be asymptomatic until adulthood.",
+  },
+  {
+    id: "patent-ductus-arteriosus-murmur",
+    name: "Continuous Machinery Murmur",
+    aliases: [
+      "continuous machinery murmur",
+      "machinery murmur",
+      "patent ductus arteriosus murmur",
+      "pda murmur",
+    ],
+    meaning:
+      "Continuous \"machinery-like\" murmur throughout systole and diastole from persistent flow through the ductus arteriosus between aorta and pulmonary artery.",
+    conditions: [
+      "Patent ductus arteriosus (PDA)",
+      "Loudest at left infraclavicular area / upper left sternal border",
+      "Bounding pulses and wide pulse pressure with large PDA",
+    ],
+    pediatrics:
+      "Prematurity and congenital rubella classic associations; indomethacin/ibuprofen or coil closure; keep PDA open with prostaglandins in ductal-dependent lesions.",
+  },
+  {
+    id: "aortic-regurgitation-murmur",
+    name: "Early Diastolic Decrescendo Murmur",
+    aliases: [
+      "early diastolic decrescendo murmur",
+      "aortic regurgitation murmur",
+      "aortic insufficiency murmur",
+      "diastolic blowing murmur",
+    ],
+    meaning:
+      "High-pitched early diastolic murmur that decrescendes, best heard at the left sternal border with the patient leaning forward and exhaling — regurgitant flow from aorta into LV.",
+    conditions: [
+      "Aortic regurgitation: bicuspid aortic valve, rheumatic fever, endocarditis, aortic dissection",
+      "Wide pulse pressure, head bobbing (de Musset), pulsating nail beds (Quincke)",
+      "Acute severe AR: pulmonary edema, soft short murmur; chronic AR: LV dilation",
+    ],
+    pediatrics:
+      "Bicuspid aortic valve may have AR before significant AS; rheumatic AR still seen worldwide.",
   },
 ];
 

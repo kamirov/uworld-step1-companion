@@ -2273,6 +2273,231 @@ export const CONDITIONS: ConditionEntry[] = [
       "Muscular VSDs often close by age 5–10; membranous VSDs less likely to close. Monitor for failure to thrive and pulmonary hypertension.",
   },
   {
+    id: "atrial-septal-defect",
+    name: "Atrial Septal Defect",
+    aliases: [
+      "atrial septal defect",
+      "asd",
+      "ostium secundum asd",
+      "secundum asd",
+    ],
+    definition:
+      "Congenital opening in the atrial septum causing left-to-right shunt and increased pulmonary blood flow; ostium secundum is most common.",
+    pathophysiology:
+      "Left atrial pressure exceeds right → blood flows across ASD → RA/RV volume overload and ↑ pulmonary flow; fixed split S2 from delayed pulmonic valve closure.",
+    classicPresentation: [
+      "Often asymptomatic in childhood; fatigue or palpitations in adulthood",
+      "Soft systolic flow murmur at ULSB (pulmonary flow, not septal flow)",
+      "Fixed wide split S2",
+    ],
+    keyFindings: [
+      "Fixed split S2 (pathognomonic)",
+      "Systolic ejection murmur at upper left sternal border",
+      "RV heave with large shunts",
+    ],
+    keyLabs: [
+      "Echocardiography with bubble study — defines size and shunt",
+      "ECG: right axis deviation, RBBB pattern in secundum ASD",
+    ],
+    associations: [
+      "Ostium secundum (most common)",
+      "Ostium primum — associated with endocardial cushion defects",
+      "Sinus venosus ASD",
+    ],
+    complications: [
+      "Atrial arrhythmias (flutter/fibrillation) in adults",
+      "Pulmonary hypertension and Eisenmenger syndrome (late)",
+      "Paradoxical embolism",
+    ],
+    distinguishFrom: [
+      "PDA — continuous machinery murmur, not fixed split S2",
+      "VSD — holosystolic murmur at LLSB",
+      "Physiologic split S2 — narrows with expiration",
+    ],
+    treatment: [
+      "Small ASD with no RV dilation: may observe",
+      "Significant shunt or RV volume overload: percutaneous device or surgical closure",
+    ],
+    boardsPearls: [
+      "Fixed split S2 = ASD until proven otherwise",
+      "Murmur is from ↑ pulmonary flow, not blood crossing the defect",
+      "Secundum ASD most common; primum ASD associated with AV valve abnormalities",
+    ],
+    pediatrics:
+      "Many secundum ASDs close spontaneously in childhood; monitor echo. Large shunts may cause failure to thrive.",
+  },
+  {
+    id: "patent-ductus-arteriosus",
+    name: "Patent Ductus Arteriosus",
+    aliases: [
+      "patent ductus arteriosus",
+      "pda",
+      "patent ductus",
+      "ductus arteriosus",
+    ],
+    definition:
+      "Persistence of the fetal ductus arteriosus connecting the aorta and pulmonary artery after birth, causing left-to-right shunt.",
+    pathophysiology:
+      "Aortic pressure > pulmonary pressure → continuous flow from aorta to pulmonary artery → ↑ pulmonary blood flow, LA/LV volume overload; may reverse to right-to-left shunt in Eisenmenger or persistent pulmonary hypertension of newborn.",
+    classicPresentation: [
+      "Continuous machinery murmur at left infraclavicular area",
+      "Bounding pulses, wide pulse pressure with large PDA",
+      "Premature infant or history of congenital rubella",
+    ],
+    keyFindings: [
+      "Continuous systolic and diastolic murmur (machinery murmur)",
+      "Hyperdynamic precordium, cardiomegaly with large shunt",
+      "Differential cyanosis (lower body cyanotic) if R→L shunt",
+    ],
+    keyLabs: [
+      "Echocardiography — duct size, shunt, pulmonary pressures",
+      "CXR: cardiomegaly and ↑ pulmonary vascular markings",
+    ],
+    associations: [
+      "Prematurity",
+      "Congenital rubella",
+      "Coarctation of aorta (may need PDA for lower-body perfusion)",
+    ],
+    complications: [
+      "Heart failure in infancy",
+      "Eisenmenger syndrome",
+      "Endocarditis at ductus",
+      "Pulmonary hemorrhage in prematurity",
+    ],
+    distinguishFrom: [
+      "Venous hum — cervical, positional, not true PDA",
+      "Coronary fistula — continuous murmur but different echo anatomy",
+      "VSD — holosystolic, not continuous",
+    ],
+    treatment: [
+      "Indomethacin or ibuprofen in premature infants (closes ductus)",
+      "Coil or device closure / surgical ligation when indicated",
+      "Prostaglandin E1 to keep ductus open in ductal-dependent lesions (e.g., coarctation, TGA)",
+    ],
+    boardsPearls: [
+      "Continuous machinery murmur = PDA",
+      "Indomethacin closes PDA in premies; prostaglandins keep it open when needed",
+      "Differential cyanosis: pink arms, blue legs — PDA with R→L shunt",
+    ],
+    pediatrics:
+      "Classic premature infant lesion; treat CHF and close hemodynamically significant PDA. Opposite of prostaglandins in ductal-dependent cyanotic heart disease.",
+  },
+  {
+    id: "bicuspid-aortic-valve",
+    name: "Bicuspid Aortic Valve",
+    aliases: [
+      "bicuspid aortic valve",
+      "bicuspid aortic valve disease",
+      "bav",
+      "congenital bicuspid aortic valve",
+    ],
+    definition:
+      "Congenital fusion of two aortic valve cusps (most commonly right and noncoronary), predisposing to early aortic stenosis and/or regurgitation.",
+    pathophysiology:
+      "Abnormal valve morphology → turbulent flow and progressive calcific stenosis in adulthood; associated aortopathy (dilated ascending aorta) from cystic medial degeneration.",
+    classicPresentation: [
+      "Often asymptomatic for years",
+      "Systolic ejection click with or without crescendo-decrescendo murmur",
+      "Exercise intolerance, angina, or syncope when AS develops",
+    ],
+    keyFindings: [
+      "Systolic ejection click at RUSB/apex",
+      "Crescendo-decrescendo murmur if stenosis present",
+      "Early diastolic murmur if regurgitation present",
+    ],
+    keyLabs: [
+      "Echocardiography — valve morphology, gradient, aortic root size",
+      "CT/MRI for aortic dimensions if aneurysm suspected",
+    ],
+    associations: [
+      "Coarctation of aorta",
+      "Turner syndrome",
+      "Aortic root dilation and dissection risk",
+    ],
+    complications: [
+      "Aortic stenosis",
+      "Aortic regurgitation",
+      "Infective endocarditis",
+      "Aortic aneurysm and dissection",
+    ],
+    distinguishFrom: [
+      "Normal trileaflet AS — presents later in life",
+      "Subaortic membrane — murmur without ejection click from abnormal valve",
+      "HOCM — murmur ↑ with Valsalva",
+    ],
+    treatment: [
+      "Surveillance echo for stenosis, regurgitation, and aortic root size",
+      "Aortic valve replacement/repair and aortic surgery when criteria met",
+    ],
+    boardsPearls: [
+      "Most common congenital cardiac anomaly (~1–2% of population)",
+      "Ejection click often precedes murmur by years",
+      "Associated with coarctation and Turner syndrome — screen aorta",
+      "Listen for ejection click + AS/AR murmurs on boards",
+    ],
+    pediatrics:
+      "May be detected as incidental ejection click in childhood; athletic clearance and family screening sometimes indicated.",
+  },
+  {
+    id: "aortic-regurgitation",
+    name: "Aortic Regurgitation",
+    aliases: [
+      "aortic regurgitation",
+      "aortic insufficiency",
+      "ar",
+      "ai",
+    ],
+    definition:
+      "Incompetence of the aortic valve allowing diastolic backflow from the aorta into the left ventricle, causing volume overload.",
+    pathophysiology:
+      "Regurgitant volume → ↑ LV end-diastolic volume → eccentric LV hypertrophy and dilation; acute severe AR causes pulmonary edema; chronic AR develops wide pulse pressure and hyperdynamic circulation.",
+    classicPresentation: [
+      "Dyspnea, orthopnea with LV failure",
+      "High-pitched early diastolic decrescendo murmur (lean forward, exhale)",
+      "Wide pulse pressure, head bobbing, water-hammer pulses",
+    ],
+    keyFindings: [
+      "Early diastolic blowing murmur at LSB",
+      "Wide pulse pressure, bounding pulses",
+      "De Musset sign (head bob), Quincke pulse (nail bed pulsation), Hill sign",
+      "Soft S1 (premature mitral closure) in chronic severe AR",
+    ],
+    keyLabs: [
+      "Echocardiography — regurgitant severity, LV size/function, valve etiology",
+      "ECG: LVH in chronic disease",
+    ],
+    associations: [
+      "Bicuspid aortic valve",
+      "Rheumatic fever",
+      "Infective endocarditis",
+      "Aortic root dilation/dissection",
+      "Syphilitic aortitis (historical boards)",
+    ],
+    complications: [
+      "Acute pulmonary edema (severe acute AR)",
+      "LV failure and death if untreated",
+      "Endocarditis",
+    ],
+    distinguishFrom: [
+      "Pulmonic regurgitation — Graham Steell murmur with pulmonary hypertension, inspiration",
+      "Mitral stenosis — diastolic rumble at apex, not blowing decrescendo at LSB",
+      "Murmur of pregnancy — physiologic flow murmurs",
+    ],
+    treatment: [
+      "Afterload reduction (ACEi) in chronic AR with symptoms or LV dilation",
+      "Urgent aortic valve replacement in severe symptomatic or LV dysfunction",
+      "Treat endocarditis; surgery for acute severe AR (e.g., dissection)",
+    ],
+    boardsPearls: [
+      "Early diastolic decrescendo murmur at LSB — lean forward to hear",
+      "Wide pulse pressure and hyperdynamic signs in chronic AR",
+      "Acute severe AR: pulmonary edema, soft short murmur, surgical emergency",
+      "Bicuspid valve is common cause in younger patients",
+    ],
+    pediatrics:
+      "Rheumatic AR still seen globally; bicuspid AV may present in adolescence with exercise intolerance.",
+  },
+  {
     id: "emphysema",
     name: "Emphysema",
     aliases: ["emphysema", "pulmonary emphysema"],

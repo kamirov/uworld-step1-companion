@@ -6,6 +6,9 @@ import crescendoDecrescendo from "../media/audio/heart-murmurs/crescendo-decresc
 import diastolicRumble from "../media/audio/heart-murmurs/diastolic-rumble.mp3?url";
 import ejectionClick from "../media/audio/heart-murmurs/ejection-click.mp3?url";
 import harshSystolicEjectionMurmur from "../media/audio/heart-murmurs/harsh-systolic-ejection-murmur.mp3?url";
+import atrialSeptalDefectMurmur from "../media/audio/heart-murmurs/atrial-septal-defect-murmur.mp3?url";
+import patentDuctusArteriosusMurmur from "../media/audio/heart-murmurs/patent-ductus-arteriosus-murmur.mp3?url";
+import aorticRegurgitationMurmur from "../media/audio/heart-murmurs/aortic-regurgitation-murmur.mp3?url";
 
 export type HeartMurmurAudioId = HeartMurmurEntry["id"];
 
@@ -19,6 +22,9 @@ export const HEART_MURMUR_AUDIO: Record<HeartMurmurAudioId, string> = {
   "diastolic-rumble": extensionAssetUrl(diastolicRumble),
   "ejection-click": extensionAssetUrl(ejectionClick),
   "harsh-systolic-ejection-murmur": extensionAssetUrl(harshSystolicEjectionMurmur),
+  "atrial-septal-defect-murmur": extensionAssetUrl(atrialSeptalDefectMurmur),
+  "patent-ductus-arteriosus-murmur": extensionAssetUrl(patentDuctusArteriosusMurmur),
+  "aortic-regurgitation-murmur": extensionAssetUrl(aorticRegurgitationMurmur),
 };
 
 export const HEART_MURMUR_AUDIO_ATTRIBUTIONS: Record<
@@ -41,6 +47,18 @@ export const HEART_MURMUR_AUDIO_ATTRIBUTIONS: Record<
     label: "Teaching Heart Auscultation (Congenital Case 2)",
     url: "https://teachingheartauscultation.com/download/1110/",
   },
+  "atrial-septal-defect-murmur": {
+    label: "Teaching Heart Auscultation (Congenital Case 1)",
+    url: "https://teachingheartauscultation.com/download/1109/",
+  },
+  "patent-ductus-arteriosus-murmur": {
+    label: "Teaching Heart Auscultation (Congenital Case 3)",
+    url: "https://teachingheartauscultation.com/download/1111/",
+  },
+  "aortic-regurgitation-murmur": {
+    label: "Teaching Heart Auscultation (Congenital Case 4)",
+    url: "https://teachingheartauscultation.com/download/1112/",
+  },
 };
 
 export const HEART_MURMUR_AUDIO_CAPTIONS: Record<HeartMurmurAudioId, string> =
@@ -49,6 +67,9 @@ export const HEART_MURMUR_AUDIO_CAPTIONS: Record<HeartMurmurAudioId, string> =
     "diastolic-rumble": "Mitral stenosis (rumble)",
     "ejection-click": "Bicuspid aortic valve (click)",
     "harsh-systolic-ejection-murmur": "Pulmonary stenosis / RVOT (harsh ejection murmur)",
+    "atrial-septal-defect-murmur": "Atrial septal defect (flow murmur)",
+    "patent-ductus-arteriosus-murmur": "Patent ductus arteriosus (machinery murmur)",
+    "aortic-regurgitation-murmur": "Aortic regurgitation (diastolic decrescendo)",
   };
 
 export function getHeartMurmurAudioForId(

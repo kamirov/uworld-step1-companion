@@ -27,7 +27,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
       "Closure of the semilunar valves (aortic A2, pulmonic P2) at the end of systole; marks the beginning of diastole.",
     conditions: [
       "Physiologic split: P2 follows A2 during inspiration (normal)",
-      "Fixed split: atrial septal defect",
+      "Fixed split: atrial septal defect (ASD)",
       "Wide split: RBBB (delayed P2)",
       "Paradoxical split: aortic stenosis, LBBB (delayed A2)",
       "Single S2: severe aortic stenosis, pulmonary hypertension",
