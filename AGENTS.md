@@ -17,3 +17,7 @@ Specifically, any additions should pertain to Step 1 (not Step 2 or Step 3).
 ## Pediatric
 
 Where relevant, include a note on pediatrics, e.g. how something changes if the patient is pediatric
+
+## Attributions
+
+Any media fetched should have their URLs in SOURCES.txt. Any media used should show an attribution somewhere

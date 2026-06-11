@@ -1,7 +1,9 @@
 import {
+  getAntiarrhythmicAttributionForMedication,
   getAntiarrhythmicClassForMedication,
   getAntiarrhythmicImageForMedication,
 } from "../data/antiarrhythmicMedia";
+import type { MediaAttribution } from "../data/media";
 import { getConditionById } from "../data/conditions";
 import { getEcgFindingById } from "../data/ecgFindings";
 import { getHeartSoundById } from "../data/heartSounds";
@@ -184,6 +186,29 @@ function renderListSection(label: string, items: string[]): string {
   `;
 }
 
+function renderMediaAttribution(attribution: MediaAttribution): string {
+  return `
+    <div class="usmle-organ-popover__media-attribution">
+      <a href="${attribution.url}" target="_blank" rel="noopener noreferrer">${attribution.label}</a>
+    </div>
+  `;
+}
+
+function renderPopoverMediaBlock(options: {
+  src: string;
+  alt: string;
+  caption: string;
+  attribution: MediaAttribution;
+}): string {
+  return `
+    <div class="usmle-organ-popover__media">
+      <img src="${options.src}" alt="${options.alt}" />
+      <div class="usmle-organ-popover__media-caption">${options.caption}</div>
+      ${renderMediaAttribution(options.attribution)}
+    </div>
+  `;
+}
+
 function renderSymptomPopover(symptomId: string): boolean {
   const symptom = getSymptomById(symptomId);
   if (!symptom || !popoverEl) return false;
@@ -207,6 +232,8 @@ function renderMedicationPopover(medicationId: string): boolean {
 
   const antiarrhythmicClass = getAntiarrhythmicClassForMedication(medicationId);
   const actionPotentialImage = getAntiarrhythmicImageForMedication(medicationId);
+  const actionPotentialAttribution =
+    getAntiarrhythmicAttributionForMedication(medicationId);
 
   const bodyContent = `
     <div class="usmle-organ-popover__title usmle-organ-popover__title--medication">${medication.name}</div>
@@ -219,15 +246,17 @@ function renderMedicationPopover(medicationId: string): boolean {
   `;
 
   popoverEl.classList.add("usmle-organ-popover--rich");
-  if (actionPotentialImage && antiarrhythmicClass) {
+  if (actionPotentialImage && antiarrhythmicClass && actionPotentialAttribution) {
     popoverEl.classList.add("usmle-organ-popover--with-media");
     popoverEl.innerHTML = `
       <div class="usmle-organ-popover__layout">
         <div class="usmle-organ-popover__body">${bodyContent}</div>
-        <div class="usmle-organ-popover__media">
-          <img src="${actionPotentialImage}" alt="Class ${antiarrhythmicClass} action potential effect" />
-          <div class="usmle-organ-popover__media-caption">Class ${antiarrhythmicClass}</div>
-        </div>
+        ${renderPopoverMediaBlock({
+          src: actionPotentialImage,
+          alt: `Class ${antiarrhythmicClass} action potential effect`,
+          caption: `Class ${antiarrhythmicClass}`,
+          attribution: actionPotentialAttribution,
+        })}
       </div>
     `;
   } else {
