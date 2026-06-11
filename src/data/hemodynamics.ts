@@ -54,6 +54,26 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Peds: infants decompensate quickly — tachycardia and lethargy may precede hypotension",
     ],
   },
+  {
+    id: "pcwp",
+    name: "Pulmonary Capillary Wedge Pressure",
+    aliases: [
+      "pulmonary capillary wedge pressure",
+      "pulmonary capillary wedge",
+      "pulmonary wedge pressure",
+      "pcwp",
+      "pawp",
+    ],
+    definition:
+      "Indirect estimate of left atrial pressure obtained by inflating a balloon at the tip of a Swan-Ganz catheter to occlude a pulmonary artery branch; the distal pressure reflects retrograde transmission from the left atrium.",
+    factors: [
+      "Normal PCWP ~6–12 mmHg",
+      "↑ PCWP: left-sided heart failure, mitral stenosis/regurgitation, volume overload",
+      "↓ PCWP: hypovolemia, hemorrhage",
+      "Measured during right heart catheterization",
+      "PCWP ≈ LAP (except mitral stenosis — gradient between wedge and LV)",
+    ],
+  },
 ];
 
 const hemodynamicById = new Map(HEMODYNAMICS.map((h) => [h.id, h]));

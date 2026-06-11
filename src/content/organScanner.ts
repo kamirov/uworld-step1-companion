@@ -1,6 +1,8 @@
 import { buildConditionAliasIndex } from "../data/conditions";
+import { buildEcgFindingAliasIndex } from "../data/ecgFindings";
 import { buildHeartSoundAliasIndex } from "../data/heartSounds";
 import { buildHemodynamicAliasIndex } from "../data/hemodynamics";
+import { buildProcedureAliasIndex } from "../data/procedures";
 import { buildLabValueAliasIndex } from "../data/labValues";
 import { buildMedicationAliasIndex } from "../data/medications";
 import { buildNephronAliasIndex } from "../data/nephron";
@@ -19,7 +21,9 @@ const NEPHRON_CHIP_CLASS = "usmle-nephron-chip";
 const CONDITION_CHIP_CLASS = "usmle-condition-chip";
 const PROTEIN_CHIP_CLASS = "usmle-protein-chip";
 const SIGNALING_CHIP_CLASS = "usmle-signaling-chip";
-const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}`;
+const ECG_CHIP_CLASS = "usmle-ecg-chip";
+const PROCEDURE_CHIP_CLASS = "usmle-procedure-chip";
+const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}`;
 const OUR_CHIP_CLASSES = [
   ORGAN_CHIP_CLASS,
   HEART_SOUND_CHIP_CLASS,
@@ -31,6 +35,8 @@ const OUR_CHIP_CLASSES = [
   CONDITION_CHIP_CLASS,
   PROTEIN_CHIP_CLASS,
   SIGNALING_CHIP_CLASS,
+  ECG_CHIP_CLASS,
+  PROCEDURE_CHIP_CLASS,
 ] as const;
 const POPOVER_CLASS = "usmle-organ-popover";
 const SKIP_TAGS = new Set([
@@ -53,7 +59,9 @@ type TermKind =
   | "nephron"
   | "condition"
   | "protein"
-  | "signaling";
+  | "signaling"
+  | "ecg"
+  | "procedure";
 
 interface TermMatch {
   alias: string;
@@ -214,6 +222,10 @@ function chipSelectorForTerm(term: TermMatch): string {
       return `[data-protein-id="${CSS.escape(term.id)}"]`;
     case "signaling":
       return `[data-signaling-id="${CSS.escape(term.id)}"]`;
+    case "ecg":
+      return `[data-ecg-finding-id="${CSS.escape(term.id)}"]`;
+    case "procedure":
+      return `[data-procedure-id="${CSS.escape(term.id)}"]`;
     default:
       return `[data-organ-id="${CSS.escape(term.id)}"]`;
   }
@@ -392,6 +404,20 @@ function buildTermIndex(): TermMatch[] {
       id: signalingId,
     }),
   );
+  const ecgMatches: TermMatch[] = buildEcgFindingAliasIndex().map(
+    ({ alias, ecgFindingId }) => ({
+      alias,
+      kind: "ecg" as const,
+      id: ecgFindingId,
+    }),
+  );
+  const procedureMatches: TermMatch[] = buildProcedureAliasIndex().map(
+    ({ alias, procedureId }) => ({
+      alias,
+      kind: "procedure" as const,
+      id: procedureId,
+    }),
+  );
   return [
     ...organMatches,
     ...heartSoundMatches,
@@ -403,6 +429,8 @@ function buildTermIndex(): TermMatch[] {
     ...conditionMatches,
     ...proteinMatches,
     ...signalingMatches,
+    ...ecgMatches,
+    ...procedureMatches,
   ].sort(
     (a, b) => b.alias.length - a.alias.length || a.alias.localeCompare(b.alias),
   );
@@ -533,6 +561,12 @@ function createChip(
   } else if (term.kind === "signaling") {
     button.className = SIGNALING_CHIP_CLASS;
     button.dataset.signalingId = term.id;
+  } else if (term.kind === "ecg") {
+    button.className = ECG_CHIP_CLASS;
+    button.dataset.ecgFindingId = term.id;
+  } else if (term.kind === "procedure") {
+    button.className = PROCEDURE_CHIP_CLASS;
+    button.dataset.procedureId = term.id;
   } else {
     button.className = ORGAN_CHIP_CLASS;
     button.dataset.organId = term.id;

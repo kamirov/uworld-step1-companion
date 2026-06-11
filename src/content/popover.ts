@@ -3,7 +3,9 @@ import {
   getAntiarrhythmicImageForMedication,
 } from "../data/antiarrhythmicMedia";
 import { getConditionById } from "../data/conditions";
+import { getEcgFindingById } from "../data/ecgFindings";
 import { getHeartSoundById } from "../data/heartSounds";
+import { getProcedureById } from "../data/procedures";
 import { getHemodynamicById } from "../data/hemodynamics";
 import { getLabValueById } from "../data/labValues";
 import { getMedicationById } from "../data/medications";
@@ -14,7 +16,7 @@ import { getSignalingById } from "../data/signaling";
 import { getSymptomById } from "../data/symptoms";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
 
@@ -297,6 +299,40 @@ function renderConditionPopover(conditionId: string): boolean {
   return true;
 }
 
+function renderEcgFindingPopover(ecgFindingId: string): boolean {
+  const finding = getEcgFindingById(ecgFindingId);
+  if (!finding || !popoverEl) return false;
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  popoverEl.innerHTML = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--ecg">${finding.name}</div>
+    <div class="usmle-organ-popover__meaning">${finding.interpretation}</div>
+    <div class="usmle-organ-popover__layer"><strong>Territory:</strong> ${finding.territory}</div>
+    ${renderListSection("Think of", finding.thinkOf)}
+    ${renderListSection("Distinguish from", finding.distinguishFrom ?? [])}
+    ${renderListSection("Boards pearls", finding.boardsPearls)}
+    ${finding.pediatrics ? renderPediatricsSection(finding.pediatrics) : ""}
+  `;
+  return true;
+}
+
+function renderProcedurePopover(procedureId: string): boolean {
+  const procedure = getProcedureById(procedureId);
+  if (!procedure || !popoverEl) return false;
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  popoverEl.innerHTML = `
+    <div class="usmle-organ-popover__title usmle-organ-popover__title--procedure">${procedure.name}</div>
+    <div class="usmle-organ-popover__meaning">${procedure.definition}</div>
+    ${renderListSection("Indications", procedure.indications)}
+    ${renderListSection("Key measurements", procedure.keyMeasurements ?? [])}
+    ${renderListSection("Complications", procedure.complications)}
+    ${renderListSection("Boards pearls", procedure.boardsPearls)}
+    ${procedure.pediatrics ? renderPediatricsSection(procedure.pediatrics) : ""}
+  `;
+  return true;
+}
+
 function renderSignalingPopover(signalingId: string): boolean {
   const molecule = getSignalingById(signalingId);
   if (!molecule || !popoverEl) return false;
@@ -358,6 +394,8 @@ function showPopover(chip: HTMLElement): void {
   const conditionId = chip.dataset.conditionId;
   const proteinId = chip.dataset.proteinId;
   const signalingId = chip.dataset.signalingId;
+  const ecgFindingId = chip.dataset.ecgFindingId;
+  const procedureId = chip.dataset.procedureId;
   if (
     !organId &&
     !heartSoundId &&
@@ -368,7 +406,9 @@ function showPopover(chip: HTMLElement): void {
     !nephronSegmentId &&
     !conditionId &&
     !proteinId &&
-    !signalingId
+    !signalingId &&
+    !ecgFindingId &&
+    !procedureId
   )
     return;
 
@@ -400,7 +440,11 @@ function showPopover(chip: HTMLElement): void {
                   ? renderConditionPopover(conditionId)
                   : proteinId
                     ? renderProteinPopover(proteinId)
-                    : renderSignalingPopover(signalingId!);
+                    : signalingId
+                      ? renderSignalingPopover(signalingId)
+                      : ecgFindingId
+                        ? renderEcgFindingPopover(ecgFindingId)
+                        : renderProcedurePopover(procedureId!);
   if (!rendered) return;
 
   activeChip = chip;

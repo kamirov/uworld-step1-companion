@@ -251,6 +251,50 @@
   outline-offset: 1px;
 }
 
+.usmle-ecg-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(67, 56, 202, 0.06);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(67, 56, 202, 0.35);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-ecg-chip:hover,
+.usmle-ecg-chip:focus-visible {
+  background: rgba(67, 56, 202, 0.12);
+  outline: 1px solid rgba(67, 56, 202, 0.3);
+  outline-offset: 1px;
+}
+
+.usmle-procedure-chip {
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(194, 65, 12, 0.06);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline dotted rgba(194, 65, 12, 0.35);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.usmle-procedure-chip:hover,
+.usmle-procedure-chip:focus-visible {
+  background: rgba(194, 65, 12, 0.12);
+  outline: 1px solid rgba(194, 65, 12, 0.3);
+  outline-offset: 1px;
+}
+
 .usmle-organ-popover--rich {
   max-width: 360px;
   max-height: min(70vh, 480px);
@@ -330,6 +374,14 @@
 
 .usmle-organ-popover__title--signaling {
   color: #0f766e;
+}
+
+.usmle-organ-popover__title--ecg {
+  color: #4338ca;
+}
+
+.usmle-organ-popover__title--procedure {
+  color: #c2410c;
 }
 
 .usmle-organ-popover__meaning {
