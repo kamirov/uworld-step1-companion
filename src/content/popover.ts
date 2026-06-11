@@ -58,6 +58,10 @@ function hidePopover(): void {
   activeChip = null;
 }
 
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max);
+}
+
 function positionPopover(chip: HTMLElement, popover: HTMLDivElement): void {
   const rect = chip.getBoundingClientRect();
   const margin = 8;
@@ -65,15 +69,34 @@ function positionPopover(chip: HTMLElement, popover: HTMLDivElement): void {
   popover.hidden = false;
 
   const popRect = popover.getBoundingClientRect();
-  let top = rect.bottom + margin;
-  let left = rect.left + rect.width / 2 - popRect.width / 2;
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
 
-  if (top + popRect.height > window.innerHeight - margin) {
-    top = rect.top - popRect.height - margin;
-  }
-  if (left < margin) left = margin;
-  if (left + popRect.width > window.innerWidth - margin) {
-    left = window.innerWidth - popRect.width - margin;
+  let top: number;
+  let left: number;
+
+  const fitsRight = rect.right + margin + popRect.width <= vw - margin;
+  const fitsLeft = rect.left - margin - popRect.width >= margin;
+
+  if (fitsRight || fitsLeft) {
+    left = fitsRight
+      ? rect.right + margin
+      : rect.left - popRect.width - margin;
+    top = clamp(
+      rect.top + rect.height / 2 - popRect.height / 2,
+      margin,
+      vh - popRect.height - margin,
+    );
+  } else {
+    top = rect.bottom + margin;
+    if (top + popRect.height > vh - margin) {
+      top = rect.top - popRect.height - margin;
+    }
+    left = clamp(
+      rect.left + rect.width / 2 - popRect.width / 2,
+      margin,
+      vw - popRect.width - margin,
+    );
   }
 
   popover.style.top = `${top}px`;

@@ -258,8 +258,8 @@
 }
 
 .usmle-organ-popover--with-media {
-  max-width: 560px;
-  max-height: min(70vh, 420px);
+  max-width: 720px;
+  max-height: min(80vh, 520px);
   overflow: hidden;
 }
 
@@ -273,11 +273,11 @@
   flex: 1;
   min-width: 0;
   overflow-y: auto;
-  max-height: min(70vh, 400px);
+  max-height: min(80vh, 500px);
 }
 
 .usmle-organ-popover__media {
-  flex: 0 0 180px;
+  flex: 0 0 280px;
 }
 
 .usmle-organ-popover__media img {
