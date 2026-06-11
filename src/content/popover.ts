@@ -266,6 +266,7 @@ function renderConditionPopover(conditionId: string): boolean {
     ${renderListSection("Associations", condition.associations ?? [])}
     ${renderListSection("Complications", condition.complications ?? [])}
     ${renderListSection("Distinguish from", condition.distinguishFrom ?? [])}
+    ${renderListSection("Treatment", condition.treatment)}
     ${renderListSection("Boards pearls", condition.boardsPearls)}
     ${condition.pediatrics ? renderPediatricsSection(condition.pediatrics) : ""}
   `;

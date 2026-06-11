@@ -211,6 +211,59 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "procainamide",
+    name: "Procainamide",
+    aliases: ["procainamide", "pronestyl"],
+    drugClass: "Class Ia antiarrhythmic",
+    antiarrhythmicClass: "Ia",
+    mechanism:
+      "Blocks fast Na⁺ channels → moderate Na⁺ channel blockade, ↑ action potential duration and effective refractory period; active metabolite N-acetylprocainamide (NAPA) prolongs repolarization.",
+    indications: [
+      "Ventricular arrhythmias",
+      "Supraventricular arrhythmias (atrial fibrillation/flutter, WPW)",
+    ],
+    adverseEffects: [
+      "Drug-induced lupus (positive ANA, anti-histone antibodies)",
+      "Hypotension (especially with IV loading)",
+      "QT prolongation / torsades de pointes",
+      "Agranulocytosis (rare)",
+      "Negative inotropy",
+    ],
+    boardsPearls: [
+      "Class Ia: moderate Na⁺ channel block + ↑ APD (quinidine-like)",
+      "Classic drug-induced lupus — slow acetylators at higher risk; reversible on discontinuation",
+      "NAPA metabolite has Class III–like repolarization effects",
+      "Pediatrics: rarely used; lupus risk and hemodynamic effects limit routine use",
+    ],
+  },
+  {
+    id: "quinidine",
+    name: "Quinidine",
+    aliases: ["quinidine", "quinidex", "quinora"],
+    drugClass: "Class Ia antiarrhythmic",
+    antiarrhythmicClass: "Ia",
+    mechanism:
+      "Blocks fast Na⁺ channels and K⁺ channels → moderate Na⁺ blockade with ↑ action potential duration and effective refractory period; also α-adrenergic blockade.",
+    indications: [
+      "Atrial fibrillation/flutter (rhythm control)",
+      "Ventricular arrhythmias",
+      "Malaria (historical)",
+    ],
+    adverseEffects: [
+      "Cinchonism (tinnitus, headache, nausea, blurred vision)",
+      "QT prolongation / torsades de pointes",
+      "Diarrhea (common — limits long-term use)",
+      "Thrombocytopenia, hemolytic anemia",
+      "Drug-induced lupus (less common than procainamide)",
+    ],
+    boardsPearls: [
+      "Class Ia: moderate Na⁺ channel block + ↑ APD",
+      "Increases digoxin levels — displaces digoxin from tissue binding and ↓ renal clearance",
+      "Contraindicated in myasthenia gravis — worsens neuromuscular blockade",
+      "Pediatrics: rarely first-line; cinchonism and GI intolerance limit use",
+    ],
+  },
+  {
     id: "disopyramide",
     name: "Disopyramide",
     aliases: ["disopyramide", "norpace"],
@@ -261,6 +314,32 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "propafenone",
+    name: "Propafenone",
+    aliases: ["propafenone", "rythmol"],
+    drugClass: "Class Ic antiarrhythmic",
+    antiarrhythmicClass: "Ic",
+    mechanism:
+      "Strong block of fast Na⁺ channels → markedly slows conduction (↓ Vmax) with minimal effect on action potential duration; weak β-adrenergic blockade.",
+    indications: [
+      "Supraventricular arrhythmias (including atrial fibrillation/flutter in structurally normal hearts)",
+      "Ventricular arrhythmias (selected patients without structural heart disease)",
+    ],
+    adverseEffects: [
+      "Proarrhythmia (new or worsened ventricular arrhythmias)",
+      "Bradycardia, heart block",
+      "Metallic taste, dizziness, nausea",
+      "Negative inotropy",
+      "Bronchospasm (weak β-blockade)",
+    ],
+    boardsPearls: [
+      "Class Ic: strong Na⁺ block, minimal APD change — like flecainide",
+      "Contraindicated in structural heart disease (CAD, post-MI, HFrEF) — proarrhythmia risk",
+      "Intrinsic β-blocking activity — additive bradycardia with other nodal depressants",
+      "Pediatrics: reserved for refractory SVT in structurally normal hearts under specialist care",
+    ],
+  },
+  {
     id: "lidocaine",
     name: "Lidocaine",
     aliases: ["lidocaine", "xylocaine"],
@@ -282,6 +361,31 @@ export const MEDICATIONS: MedicationEntry[] = [
       "IV antiarrhythmic use largely replaced by amiodarone, but classic post-MI VT/VF drug",
       "CNS toxicity before cardiovascular collapse — perioral numbness is early warning",
       "Pediatrics: same ischemia-selective binding; toxicity risk ↑ with liver dysfunction",
+    ],
+  },
+  {
+    id: "mexiletine",
+    name: "Mexiletine",
+    aliases: ["mexiletine", "mexitil"],
+    drugClass: "Class Ib antiarrhythmic",
+    antiarrhythmicClass: "Ib",
+    mechanism:
+      "Blocks fast Na⁺ channels preferentially in depolarized or ischemic tissue → shortens action potential duration; oral analog of lidocaine.",
+    indications: [
+      "Ventricular arrhythmias (chronic oral therapy)",
+      "Neuropathic pain (off-label)",
+    ],
+    adverseEffects: [
+      "GI upset (nausea, vomiting)",
+      "CNS effects (tremor, ataxia, dizziness, confusion)",
+      "Bradycardia, heart block (less common)",
+      "Hepatotoxicity (rare)",
+    ],
+    boardsPearls: [
+      "Class Ib: preferentially binds inactivated Na⁺ channels — lidocaine-like but oral",
+      "Useful for chronic oral suppression of ventricular arrhythmias when IV lidocaine is not practical",
+      "CNS toxicity before cardiovascular collapse — dose-reduce in liver disease",
+      "Pediatrics: rarely used; CNS and GI side effects limit routine use",
     ],
   },
   {
@@ -741,6 +845,31 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Binds D-Ala-D-Ala → inhibits peptidoglycan polymerization (Gram-positive)",
       "Red man syndrome from rapid infusion (histamine release, not true allergy)",
       "Oral vancomycin not absorbed — treats C. difficile in gut lumen only",
+    ],
+  },
+  {
+    id: "sildenafil",
+    name: "Sildenafil",
+    aliases: ["sildenafil", "viagra", "revatio"],
+    drugClass: "Phosphodiesterase type 5 (PDE-5) inhibitor",
+    mechanism:
+      "Inhibits PDE-5 → prevents cGMP degradation → ↑ cGMP in vascular smooth muscle → vasodilation (systemic and pulmonary).",
+    indications: [
+      "Erectile dysfunction",
+      "Pulmonary arterial hypertension (PAH)",
+    ],
+    adverseEffects: [
+      "Headache, flushing, dyspepsia",
+      "Hypotension (especially with nitrates or α-blockers)",
+      "Visual disturbances (blue tinge; PDE-6 cross-reactivity in retina)",
+      "Priapism (rare)",
+    ],
+    boardsPearls: [
+      "Absolute contraindication with nitrates (e.g., nitroglycerin) → life-threatening hypotension",
+      "Also inhibits PDE-6 in retina → blue-tinged vision",
+      "Metabolized by CYP3A4 — levels ↑ with ritonavir and grapefruit",
+      "Same drug as Revatio; PAH dosing differs from erectile dysfunction dosing",
+      "Pediatrics: approved for PAH in children ≥1 year (weight-based dosing)",
     ],
   },
   {

@@ -10,6 +10,7 @@ export interface ConditionEntry {
   associations?: string[];
   complications?: string[];
   distinguishFrom?: string[];
+  treatment: string[];
   boardsPearls: string[];
   pediatrics?: string;
 }
@@ -48,6 +49,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Aortic dissection — tearing pain, unequal BP",
       "Pericarditis — diffuse ST elevation, PR depression",
     ],
+    treatment: [
+      "Reperfusion: PCI preferred, or fibrinolysis if PCI unavailable",
+      "Antiplatelet (aspirin + P2Y12 inhibitor), anticoagulation, β-blocker, statin",
+    ],
     boardsPearls: [
       "STEMI: ST elevation in contiguous leads → culprit artery territory",
       "Anterior MI (LAD): V1–V4; Inferior MI (RCA): II, III, aVF",
@@ -85,6 +90,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Hypertrophic cardiomyopathy — murmur ↑ with Valsalva",
       "Functional murmurs — benign, no symptoms",
+    ],
+    treatment: [
+      "Medical: diuretics for congestion; endocarditis prophylaxis when indicated",
+      "Definitive: valve repair/replacement when symptomatic or severe stenosis",
     ],
     boardsPearls: [
       "AS triad: angina, syncope, heart failure (poor prognosis once symptomatic)",
@@ -131,6 +140,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Nephrotic syndrome — edema without pulmonary congestion",
       "COPD — wheeze, hyperinflation, no S3",
     ],
+    treatment: [
+      "Loop diuretics for volume overload; ACEi/ARB, β-blocker, spironolactone, SGLT2i for HFrEF mortality benefit",
+      "Address underlying cause; restrict sodium and fluids when volume overloaded",
+    ],
     boardsPearls: [
       "Left-sided failure: pulmonary congestion; right-sided: peripheral edema, JVD",
       "HFrEF mortality benefit: ACEi/ARB, β-blockers, spironolactone, SGLT2 inhibitors",
@@ -174,6 +187,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Athlete's heart — physiologic hypertrophy, normal diastolic function",
       "Hypertensive heart disease — concentric hypertrophy",
     ],
+    treatment: [
+      "β-blockers or non-DHP CCBs for rate control and symptom relief",
+      "ICD for high-risk patients; avoid strenuous exercise",
+    ],
     boardsPearls: [
       "#1 cause of sudden cardiac death in young athletes",
       "Murmur ↑ with decreased preload (Valsalva, standing)",
@@ -212,6 +229,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Ischemic cardiomyopathy — regional wall motion abnormalities, CAD history",
       "Restrictive cardiomyopathy — preserved EF, diastolic dysfunction",
     ],
+    treatment: [
+      "Standard HFrEF therapy: ACEi/ARB, β-blocker, diuretics",
+      "Treat underlying cause (alcohol cessation, chelation for hemochromatosis)",
+    ],
     boardsPearls: [
       "Most common cardiomyopathy worldwide",
       "Coxsackie B → viral myocarditis → dilated cardiomyopathy",
@@ -248,6 +269,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Constrictive pericarditis — pericardial knock, equalization of pressures",
       "Dilated cardiomyopathy — ↓ EF, dilation",
+    ],
+    treatment: [
+      "Diuretics for congestion; treat underlying infiltrative disease if identified",
+      "Heart transplant for end-stage disease",
     ],
     boardsPearls: [
       "Least common cardiomyopathy; think infiltrative disease",
@@ -293,11 +318,72 @@ export const CONDITIONS: ConditionEntry[] = [
       "Vasospastic angina — normal coronaries, ST elevation at rest",
       "Aortic stenosis — exertional angina without CAD",
     ],
+    treatment: [
+      "Statins, antiplatelet therapy, risk factor modification",
+      "Revascularization (PCI/CABG) for symptomatic or high-risk coronary disease",
+    ],
     boardsPearls: [
       "Major risk factors: hyperlipidemia, HTN, DM, smoking",
       "Foam cells = lipid-laden macrophages in intima",
       "Statins stabilize plaques and ↓ cardiovascular events",
     ],
+  },
+  {
+    id: "hypertension",
+    name: "Hypertension",
+    aliases: [
+      "hypertension",
+      "htn",
+      "high blood pressure",
+      "essential hypertension",
+      "primary hypertension",
+    ],
+    definition:
+      "Sustained elevation of systemic arterial blood pressure, most often primary (essential) without identifiable cause.",
+    pathophysiology:
+      "Essential HTN: multifactorial ↑ peripheral vascular resistance ± ↑ cardiac output from neurohormonal dysregulation (RAAS, sympathetic tone). Secondary causes include renal disease, renovascular stenosis, primary aldosteronism, pheochromocytoma, and OSA.",
+    classicPresentation: [
+      "Usually asymptomatic — detected on routine screening",
+      "Headache, dizziness, or epistaxis when severe",
+      "Risk factors: obesity, high sodium intake, family history, age, African American descent",
+    ],
+    keyFindings: [
+      "Elevated BP on repeated measurements (≥130/80 mmHg per current guidelines)",
+      "LVH on ECG (Sokolow-Lyon criteria) or echo",
+      "Fundoscopic changes: arteriovenous nicking, copper/silver wiring, papilledema if malignant",
+    ],
+    keyLabs: [
+      "BMP — renal function and electrolytes (screen for renal cause, hyperaldosteronism)",
+      "Urinalysis — proteinuria suggests hypertensive nephropathy or underlying renal disease",
+    ],
+    associations: [
+      "Obesity and metabolic syndrome",
+      "Obstructive sleep apnea",
+      "Chronic kidney disease",
+      "Coarctation of the aorta (secondary, younger patients)",
+    ],
+    complications: [
+      "Stroke and intracerebral hemorrhage",
+      "Myocardial infarction and heart failure",
+      "Chronic kidney disease",
+      "Hypertensive retinopathy and encephalopathy",
+    ],
+    distinguishFrom: [
+      "White coat hypertension — elevated in clinic, normal at home",
+      "Secondary hypertension — young onset, resistant HTN, hypokalemia, abdominal bruit",
+      "Malignant hypertension — severe BP with end-organ damage (papilledema, AKI)",
+    ],
+    treatment: [
+      "Lifestyle: weight loss, DASH diet, sodium restriction, exercise",
+      "First-line pharmacotherapy: thiazide diuretic, ACE inhibitor, ARB, or CCB; ACEi/ARB preferred with diabetes or CKD",
+    ],
+    boardsPearls: [
+      "Leading modifiable risk factor for stroke, MI, and CKD",
+      "Secondary HTN clues: age <30, resistant HTN, hypokalemia (↑ aldosterone), abdominal bruit (renal artery stenosis)",
+      "Hypertensive emergency: IV labetalol, nicardipine, or nitroprusside with end-organ damage",
+    ],
+    pediatrics:
+      "Secondary causes (renal parenchymal disease, coarctation) are more common than essential HTN; evaluate if BP elevated on repeated measurements.",
   },
   {
     id: "atrioventricular-block",
@@ -333,6 +419,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Sinus bradycardia — P waves precede every QRS",
       "Atrial fibrillation with slow ventricular response",
+    ],
+    treatment: [
+      "Atropine for symptomatic bradycardia (especially inferior MI)",
+      "Permanent pacemaker for Mobitz II or third-degree block",
     ],
     boardsPearls: [
       "Mobitz I (Wenckebach) — usually benign, AV nodal",
@@ -373,6 +463,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "TIA — symptoms resolve within 24 h",
       "Hypoglycemia — check glucose immediately",
     ],
+    treatment: [
+      "IV tPA within 4.5 h if eligible; mechanical thrombectomy for large-vessel occlusion",
+      "Antiplatelet therapy; anticoagulation for cardioembolic stroke (e.g., AF)",
+    ],
     boardsPearls: [
       "MCA territory: contralateral face/arm weakness, aphasia (dominant hemisphere)",
       "tPA window: within 4.5 h of symptom onset if eligible",
@@ -406,6 +500,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Brain metastasis — multiple lesions at gray-white junction",
       "Abscess — fever, ring enhancement with restricted diffusion",
+    ],
+    treatment: [
+      "Maximal safe surgical resection when feasible",
+      "Adjuvant radiation ± temozolomide for high-grade gliomas",
     ],
     boardsPearls: [
       "Adults: glioblastoma most common malignant primary tumor",
@@ -443,6 +541,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Neuromyelitis optica — anti-AQP4, longitudinally extensive transverse myelitis",
       "ADEM — monophasic, post-infectious",
     ],
+    treatment: [
+      "High-dose IV corticosteroids for acute relapses",
+      "Disease-modifying therapy (interferon-β, glatiramer) for relapsing-remitting MS",
+    ],
     boardsPearls: [
       "Most common demyelinating disease in young adults",
       "Oligoclonal bands in CSF = intrathecal IgG synthesis",
@@ -473,6 +575,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Essential tremor — action tremor, no rigidity",
       "Drug-induced parkinsonism — antipsychotics, metoclopramide",
       "Progressive supranuclear palsy — vertical gaze palsy",
+    ],
+    treatment: [
+      "Levodopa/carbidopa — most effective symptomatic therapy",
+      "Dopamine agonists, MAO-B inhibitors as adjuncts",
     ],
     boardsPearls: [
       "TRAP: Tremor, Rigidity, Akinesia/bradykinesia, Postural instability",
@@ -514,6 +620,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Type 1 DM — lean, young, anti-GAD antibodies, low C-peptide",
       "Steroid-induced hyperglycemia",
     ],
+    treatment: [
+      "Lifestyle modification; metformin first-line pharmacotherapy",
+      "Add GLP-1 agonist or SGLT2 inhibitor for cardiovascular/renal benefit when indicated",
+    ],
     boardsPearls: [
       "First-line: metformin (↓ hepatic gluconeogenesis)",
       "SGLT2 inhibitors and GLP-1 agonists have cardiovascular/renal benefit",
@@ -545,6 +655,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Type 2 DM — obese, insulin resistant, ↑ C-peptide",
       "MODY — autosomal dominant, milder, no autoantibodies",
+    ],
+    treatment: [
+      "Lifelong insulin replacement (basal-bolus regimen)",
+      "Intensive glucose control to prevent microvascular complications",
     ],
     boardsPearls: [
       "Absolute insulin deficiency — requires lifelong insulin",
@@ -582,6 +696,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Hyperosmolar hyperglycemic state — minimal ketosis, extreme hyperglycemia, T2DM",
       "Starvation ketosis — euglycemic or mild hyperglycemia",
     ],
+    treatment: [
+      "IV fluids first, then IV insulin infusion",
+      "Replace potassium before insulin if K⁺ <3.3 mEq/L; treat precipitating cause",
+    ],
     boardsPearls: [
       "Treat: fluids first, then insulin; replace K⁺ when <3.3 mEq/L",
       "Anion gap = Na − (Cl + HCO₃)",
@@ -617,6 +735,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Toxic multinodular goiter — nodular gland, no ophthalmopathy",
       "Subacute thyroiditis — painful thyroid, low uptake",
+    ],
+    treatment: [
+      "Methimazole (or PTU in first trimester pregnancy) for hyperthyroidism",
+      "β-blockers for symptomatic relief; definitive: radioactive iodine or thyroidectomy",
     ],
     boardsPearls: [
       "Only cause of hyperthyroidism with ophthalmopathy",
@@ -655,6 +777,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "11β-hydroxylase deficiency — HTN, ↑ 11-deoxycortisol",
       "Androgen-secreting tumor",
     ],
+    treatment: [
+      "Glucocorticoid replacement (hydrocortisone) to suppress ACTH",
+      "Fludrocortisone for salt-wasting form; surgical correction of ambiguous genitalia if needed",
+    ],
     boardsPearls: [
       "21-hydroxylase deficiency = 90% of CAH cases",
       "Salt-wasting form: hyponatremia, hyperkalemia, hypotension in neonate",
@@ -683,6 +809,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Pregnancy — physiologic hyperprolactinemia",
       "Dopamine antagonists (antipsychotics) — drug-induced hyperprolactinemia",
       "Hypothyroidism — ↑ TRH stimulates prolactin",
+    ],
+    treatment: [
+      "Dopamine agonists (cabergoline, bromocriptine) — first-line",
+      "Transsphenoidal surgery if medical therapy fails or for chiasmal compression",
     ],
     boardsPearls: [
       "Most common functioning pituitary adenoma",
@@ -718,6 +848,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Pseudo-Cushing — depression, alcoholism",
       "Obesity alone — no purple striae or proximal weakness",
     ],
+    treatment: [
+      "Transsphenoidal surgery for pituitary adenoma; adrenalectomy for adrenal tumor",
+      "Ketoconazole or metyrapone for cortisol synthesis inhibition while localizing source",
+    ],
     boardsPearls: [
       "Exogenous steroids = most common cause overall",
       "Purple striae >1 cm wide are specific",
@@ -747,6 +881,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Secondary adrenal insufficiency — ↓ ACTH, no hyperpigmentation, no hyperkalemia",
       "Chronic fatigue syndrome — normal electrolytes",
+    ],
+    treatment: [
+      "Glucocorticoid (hydrocortisone) and mineralocorticoid (fludrocortisone) replacement",
+      "IV hydrocortisone emergently for adrenal crisis",
     ],
     boardsPearls: [
       "Hyperpigmentation from ↑ ACTH (MSH activity)",
@@ -782,6 +920,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Routine PUD — H. pylori, NSAIDs; responds to PPI",
       "Retained antrum syndrome",
     ],
+    treatment: [
+      "High-dose PPIs to control acid secretion",
+      "Surgical resection of gastrinoma; screen for MEN 1",
+    ],
     boardsPearls: [
       "Think ZES: multiple ulcers + diarrhea + PPI resistance",
       "MEN 1: parathyroid hyperplasia most common manifestation",
@@ -812,6 +954,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Tropical sprue — travel history, responds to antibiotics",
       "Crohn disease — transmural inflammation, skip lesions",
     ],
+    treatment: [
+      "Strict lifelong gluten-free diet",
+      "Correct nutritional deficiencies (iron, B12, vitamin D)",
+    ],
     boardsPearls: [
       "tTG IgA is screening test of choice",
       "Dermatitis herpetiformis: IgA deposits at dermal papillae",
@@ -839,6 +985,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Intussusception — currant jelly stools, sausage-shaped mass",
       "Juvenile polyps — colonoscopy finding",
+    ],
+    treatment: [
+      "Surgical resection if bleeding, obstruction, or intussusception",
+      "Meckel scan guides diagnosis; supportive care for uncomplicated cases",
     ],
     boardsPearls: [
       "Rule of 2s is classic boards fodder",
@@ -873,6 +1023,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Hemochromatosis — bronze diabetes, ↑ ferritin, HFE mutation",
       "Autoimmune hepatitis — autoantibodies, normal copper studies",
     ],
+    treatment: [
+      "Copper chelation: D-penicillamine or trientine",
+      "Zinc acetate blocks intestinal copper absorption",
+    ],
     boardsPearls: [
       "↓ ceruloplasmin + Kayser-Fleischer rings in young patient with liver disease",
       "Treat with chelators (penicillamine, trientine) or zinc",
@@ -905,6 +1059,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Ulcerative colitis — continuous colonic disease, bloody diarrhea, no fistulae",
       "Celiac disease — villous atrophy, tTG positive",
+    ],
+    treatment: [
+      "Aminosalicylates (mesalamine) for mild disease; corticosteroids for flares",
+      "Immunomodulators (azathioprine) or anti-TNF (infliximab) for moderate-severe disease",
     ],
     boardsPearls: [
       "Transmural + skip lesions + fistulae = Crohn",
@@ -942,6 +1100,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Crohn disease — skip lesions, fistulae, terminal ileum, noncaseating granulomas",
       "Infectious colitis — self-limited, stool studies positive",
     ],
+    treatment: [
+      "Aminosalicylates (mesalamine) for mild-moderate disease",
+      "Corticosteroids for flares; colectomy for refractory or toxic megacolon",
+    ],
     boardsPearls: [
       "Always involves rectum; extends continuously proximally",
       "PSC association — chronic cholestatic liver disease",
@@ -968,6 +1130,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "ZES — multiple ulcers, diarrhea, PPI-resistant, ↑ gastrin",
       "Gastritis — superficial, no full-thickness ulcer",
       "GERD — heartburn without ulcer on endoscopy",
+    ],
+    treatment: [
+      "PPI therapy; eradicate H. pylori if positive (triple therapy)",
+      "Discontinue NSAIDs; treat ZES if refractory",
     ],
     boardsPearls: [
       "Duodenal ulcer: pain improves with eating",
@@ -1008,6 +1174,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Sickle cell trait — HbAS, asymptomatic, no anemia",
       "β-thalassemia — target cells, HbA2 elevation",
+    ],
+    treatment: [
+      "Hydroxyurea to ↑ fetal hemoglobin and ↓ vaso-occlusive crises",
+      "Pain crisis: IV fluids, opioids; penicillin prophylaxis in children",
     ],
     boardsPearls: [
       "HbS: glutamic acid → valine at position 6 of β-globin",
@@ -1050,6 +1220,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Adenocarcinoma — peripheral, EGFR mutations in nonsmokers",
       "Squamous — central, hypercalcemia (PTHrP)",
     ],
+    treatment: [
+      "Surgical resection for early-stage NSCLC",
+      "Small cell: chemotherapy ± radiation (surgery rarely used)",
+    ],
     boardsPearls: [
       "Small cell: SIADH, Cushing (ACTH), Lambert-Eaton",
       "Squamous: hypercalcemia (PTHrP)",
@@ -1085,6 +1259,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Primary ciliary dyskinesia — situs inversus, normal sweat chloride",
       "Celiac disease — malabsorption with normal lungs",
     ],
+    treatment: [
+      "Airway clearance, inhaled bronchodilators, CFTR modulators (e.g., ivacaftor/lumacaftor)",
+      "Pancreatic enzyme replacement; treat infections aggressively",
+    ],
     boardsPearls: [
       "Sweat chloride test is diagnostic gold standard",
       "Pseudomonas colonization is hallmark of chronic lung disease",
@@ -1117,6 +1295,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "COPD — older, smokers, incomplete reversibility",
       "Cardiac asthma — heart failure with wheeze",
       "Vocal cord dysfunction — normal spirometry between episodes",
+    ],
+    treatment: [
+      "Inhaled corticosteroids for persistent disease; SABA for acute relief",
+      "Avoid triggers; leukotriene modifiers for mild disease or aspirin-exacerbated respiratory disease",
     ],
     boardsPearls: [
       "Reversible obstruction: FEV1 improves ≥12% with bronchodilator",
@@ -1151,6 +1333,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Tuberculosis — caseating granulomas, positive AFB",
       "Lymphoma — B symptoms, mediastinal mass without granulomas",
       "Berylliosis — identical histology, occupational exposure",
+    ],
+    treatment: [
+      "Observation for mild disease; corticosteroids for symptomatic or progressive disease",
+      "Avoidance of further exposure",
     ],
     boardsPearls: [
       "Noncaseating granulomas + bilateral hilar lymphadenopathy",
@@ -1187,6 +1373,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Transient tachypnea of newborn — term/near-term, fluid in lungs, resolves in 24–72 h",
       "Meconium aspiration — post-term, meconium-stained fluid",
     ],
+    treatment: [
+      "Exogenous surfactant replacement; CPAP or mechanical ventilation",
+      "Antenatal corticosteroids to accelerate fetal lung maturity",
+    ],
     boardsPearls: [
       "Surfactant deficiency in premature infants",
       "Lecithin/sphingomyelin ratio ≥2 indicates lung maturity",
@@ -1218,6 +1408,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Chronic bronchitis — productive cough prominent, less hyperinflation",
       "Asthma — reversible obstruction, younger onset",
+    ],
+    treatment: [
+      "Smoking cessation; bronchodilators (SABA, LAMA, LABA)",
+      "Supplemental O₂ for hypoxemia; α1-antitrypsin replacement if deficient",
     ],
     boardsPearls: [
       "Centriacinar (centrilobular): smoking, upper lobes",
@@ -1251,6 +1445,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Sarcoidosis — noncaseating granulomas, BHL, no occupational history",
       "Idiopathic pulmonary fibrosis — no dust exposure",
+    ],
+    treatment: [
+      "Remove from exposure; no specific cure",
+      "Supportive care; treat complications (TB prophylaxis in silicosis)",
     ],
     boardsPearls: [
       "Silicosis: upper lobe fibrosis, eggshell hilar calcification, ↑ TB",
@@ -1289,6 +1487,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Left heart failure — pulmonary edema, ↓ EF",
       "Asthma/COPD — obstructive pattern on PFTs",
     ],
+    treatment: [
+      "Treat underlying cause (left heart failure, hypoxemia, chronic thromboembolism)",
+      "Vasodilators (sildenafil, epoprostenol) for pulmonary arterial hypertension",
+    ],
     boardsPearls: [
       "Loud P2 suggests pulmonary hypertension",
       "Eisenmenger: left-to-right shunt → irreversible PAH → right-to-left shunt",
@@ -1318,6 +1520,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Emphysema — dyspnea predominant, hyperinflation, pink puffer",
       "Bronchiectasis — copious purulent sputum, dilated bronchi on CT",
+    ],
+    treatment: [
+      "Smoking cessation; bronchodilators and inhaled corticosteroids",
+      "Pulmonary rehabilitation; treat exacerbations with antibiotics and steroids",
     ],
     boardsPearls: [
       "Clinical definition: productive cough ≥3 months × 2 years",
@@ -1353,6 +1559,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Nephrotic syndrome — heavy proteinuria (>3.5 g/day), fatty casts, minimal hematuria",
       "UTI — WBC casts, dysuria, positive culture",
+    ],
+    treatment: [
+      "Supportive care for post-streptococcal GN (usually self-limited)",
+      "Immunosuppression (steroids, cyclophosphamide) for rapidly progressive GN",
     ],
     boardsPearls: [
       "RBC casts = glomerular origin of hematuria",
@@ -1397,6 +1607,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Nephritic syndrome — RBC casts, hypertension, oliguria",
       "Heart failure edema — JVD, pulmonary congestion",
     ],
+    treatment: [
+      "Corticosteroids for minimal change disease (especially in children)",
+      "ACE inhibitors to reduce proteinuria; treat underlying cause",
+    ],
     boardsPearls: [
       "Minimal change disease: selective albuminuria, responds to steroids, most common in children",
       "FSGS: common in African Americans, HIV-associated",
@@ -1434,6 +1648,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Pyelonephritis — fever, WBC casts, less colicky pain",
       "AAA — pulsatile mass, older hypertensive patient",
     ],
+    treatment: [
+      "Analgesia (NSAIDs) and hydration for acute colic",
+      "Lithotripsy or surgical removal for large or obstructing stones",
+    ],
     boardsPearls: [
       "Calcium oxalate: envelope-shaped crystals, most common",
       "Struvite (ammonium magnesium phosphate): staghorn calculi, Proteus/Morganella",
@@ -1463,6 +1681,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Vaginitis — external dysuria, discharge, normal urine culture",
       "Acute urethritis (GC/Chlamydia) — discharge, urethral inflammation",
+    ],
+    treatment: [
+      "Cystitis: TMP-SMX or nitrofurantoin (3–5 days)",
+      "Pyelonephritis: fluoroquinolone or ceftriaxone; longer course",
     ],
     boardsPearls: [
       "E. coli = #1 cause (uropathogenic strains with P fimbriae)",
@@ -1502,6 +1724,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Osteoarthritis — DIP involvement, no systemic features, minimal morning stiffness",
       "SLE — malar rash, anti-dsDNA, less erosive arthritis",
     ],
+    treatment: [
+      "Methotrexate anchor DMARD; NSAIDs for symptom relief",
+      "TNF inhibitors (infliximab, etanercept) for refractory disease",
+    ],
     boardsPearls: [
       "Anti-CCP more specific than rheumatoid factor",
       "Spares DIPs (unlike osteoarthritis)",
@@ -1532,6 +1758,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Noonan syndrome — 46,XY or XX, pulmonary stenosis, normal ovaries",
       "Constitutional growth delay — normal karyotype",
+    ],
+    treatment: [
+      "Growth hormone for short stature; estrogen replacement for pubertal induction",
+      "Monitor and repair cardiac anomalies (coarctation, bicuspid valve)",
     ],
     boardsPearls: [
       "45,X — most common cause of primary amenorrhea",
@@ -1571,6 +1801,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Rheumatoid arthritis — erosive, anti-CCP, spares malar rash",
       "Rosacea — centrofacial erythema, no systemic features",
     ],
+    treatment: [
+      "Hydroxychloroquine for skin/joint disease; corticosteroids for flares",
+      "Immunosuppressants (mycophenolate, cyclophosphamide) for lupus nephritis",
+    ],
     boardsPearls: [
       "Anti-dsDNA correlates with renal disease activity",
       "↓ complement (C3/C4) during flares",
@@ -1603,6 +1837,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Schizophreniform — symptoms 1–6 months",
       "Brief psychotic disorder — <1 month",
       "Schizoaffective — mood episode concurrent with psychosis",
+    ],
+    treatment: [
+      "Antipsychotics (risperidone, olanzapine) for positive symptoms",
+      "Supportive psychotherapy and social rehabilitation",
     ],
     boardsPearls: [
       "Diagnosis requires ≥6 months of symptoms including ≥1 month active phase",
@@ -1638,6 +1876,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Persistent depressive disorder (dysthymia) — chronic low mood ≥2 years",
       "Bipolar depression — history of manic/hypomanic episodes",
       "Adjustment disorder — clear stressor, symptoms <6 months",
+    ],
+    treatment: [
+      "SSRIs (sertraline, fluoxetine) first-line pharmacotherapy",
+      "Cognitive behavioral therapy; ECT for severe or psychotic depression",
     ],
     boardsPearls: [
       "≥5 SIGECAPS symptoms for ≥2 weeks, one must be depressed mood or anhedonia",
@@ -1678,6 +1920,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Acute mono — heterophile negative in HIV; test both",
       "Immunodeficiency from other causes — check HIV first",
     ],
+    treatment: [
+      "Antiretroviral therapy (ART) — combination regimen suppresses viral load",
+      "TMP-SMX prophylaxis when CD4 <200 (PJP prevention)",
+    ],
     boardsPearls: [
       "CD4 <200 = AIDS; PJP prophylaxis with TMP-SMX",
       "CCR5 antagonists (maraviroc) only if tropism test shows R5 virus",
@@ -1714,6 +1960,10 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Sarcoidosis — noncaseating granulomas, bilateral hilar lymphadenopathy",
       "Lung cancer — mass without infectious symptoms",
+    ],
+    treatment: [
+      "RIPE therapy: rifampin, isoniazid, pyrazinamide, ethambutol for active TB",
+      "Isoniazid monotherapy for latent TB (9 months)",
     ],
     boardsPearls: [
       "Caseating granulomas = TB (vs noncaseating in sarcoidosis)",
