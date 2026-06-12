@@ -11,6 +11,7 @@ import cyanosis from "../media/images/symptoms/cyanosis.jpg?url";
 import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
+import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
 import dysuria from "../media/images/symptoms/dysuria.jpg?url";
 import easyFatigability from "../media/images/symptoms/easy-fatigability.jpg?url";
 import edema from "../media/images/symptoms/edema.jpg?url";
@@ -74,6 +75,7 @@ export type SymptomImageId = Extract<
   | "dactylitis"
   | "decreased-skin-turgor"
   | "dry-mucous-membranes"
+  | "dysmorphic-facies"
   | "dysuria"
   | "easy-fatigability"
   | "edema"
@@ -143,6 +145,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "dactylitis": extensionAssetUrl(dactylitis),
   "decreased-skin-turgor": extensionAssetUrl(decreasedSkinTurgor),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
+  "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
   "dysuria": extensionAssetUrl(dysuria),
   "easy-fatigability": extensionAssetUrl(easyFatigability),
   "edema": extensionAssetUrl(edema),
@@ -209,6 +212,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "dactylitis": { label: "Wikimedia Commons (Quick Reference Guide for Clinicians- Sickle Cell Disease- Comprehensive Screening and Management in Newborns and Infants (IA quickreferencegu00unse).pdf)", url: "https://commons.wikimedia.org/wiki/File:Quick_Reference_Guide_for_Clinicians-_Sickle_Cell_Disease-_Comprehensive_Screening_and_Management_in_Newborns_and_Infants_(IA_quickreferencegu00unse).pdf" },
   "decreased-skin-turgor": { label: "Wikimedia Commons (LowSkinTurgor.jpg)", url: "https://commons.wikimedia.org/wiki/File:LowSkinTurgor.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
+  "dysmorphic-facies": { label: "Wikimedia Commons (Down syndrome lg.jpg)", url: "https://commons.wikimedia.org/wiki/File:Down_syndrome_lg.jpg" },
   "dysuria": { label: "Wikimedia Commons (Bombax ceiba is a universe unto itself.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_is_a_universe_unto_itself.jpg" },
   "easy-fatigability": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:easy-fatigability.jpg" },
   "edema": { label: "Wikimedia Commons (Depiction of different types of Edema.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_different_types_of_Edema.png" },
@@ -273,6 +277,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "dactylitis": "Painful swelling of the hands — dactylitis in sickle cell disease",
   "decreased-skin-turgor": "Clinical or pathologic image illustrating decreased skin turgor",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
+  "dysmorphic-facies": "Characteristic facial features of Down syndrome — flat profile, upslanting palpebral fissures, epicanthal folds, flat nasal bridge",
   "dysuria": "Clinical or pathologic image illustrating dysuria",
   "easy-fatigability": "Clinical or pathologic image illustrating easy fatigability",
   "edema": "Clinical or pathologic image illustrating edema",

@@ -61,6 +61,7 @@ import stroma from "../media/images/cells/stroma.jpg?url";
 import tCellSignaling from "../media/images/cells/t-cell-signaling.svg?url";
 import tLymphocyte from "../media/images/cells/t-lymphocyte.jpg?url";
 import th2 from "../media/images/cells/th2.png?url";
+import th17 from "../media/images/cells/th17.png?url";
 import tightJunction from "../media/images/cells/tight-junction.png?url";
 
 export type CELLImageId = Extract<
@@ -125,6 +126,7 @@ export type CELLImageId = Extract<
   | "t-cell-signaling"
   | "t-lymphocyte"
   | "th2"
+  | "th17"
   | "tight-junction"
 >;
 
@@ -194,6 +196,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "t-cell-signaling": extensionAssetUrl(tCellSignaling),
   "t-lymphocyte": extensionAssetUrl(tLymphocyte),
   "th2": extensionAssetUrl(th2),
+  "th17": extensionAssetUrl(th17),
   "tight-junction": extensionAssetUrl(tightJunction),
 };
 
@@ -260,6 +263,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "t-cell-signaling": { label: "Wikimedia Commons (063-T-CellReceptor-MHC-ru.svg)", url: "https://commons.wikimedia.org/wiki/File:063-T-CellReceptor-MHC-ru.svg" },
   "t-lymphocyte": { label: "Wikimedia Commons (HIV-infected T cell (6813384933).jpg)", url: "https://commons.wikimedia.org/wiki/File:HIV-infected_T_cell_(6813384933).jpg" },
   "th2": { label: "Wikimedia Commons (M2 macrophages. Sézary cells produce the Th2 cytokines IL-4 and IL-13.png)", url: "https://commons.wikimedia.org/wiki/File:M2_macrophages._Sézary_cells_produce_the_Th2_cytokines_IL-4_and_IL-13.png" },
+  "th17": { label: "Wikimedia Commons (Helper T Cell Differentiation.png)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "tight-junction": { label: "Wikimedia Commons (Morphological modifications during EMT.png)", url: "https://commons.wikimedia.org/wiki/File:Morphological_modifications_during_EMT.png" },
 };
 
@@ -324,6 +328,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "t-cell-signaling": "Clinical or pathologic image illustrating t cell signaling",
   "t-lymphocyte": "Clinical or pathologic image illustrating t lymphocyte",
   "th2": "Clinical or pathologic image illustrating th2",
+  "th17": "CD4⁺ T-helper differentiation pathways — Th17 lineage (TGF-β + IL-6 → RORγt → IL-17) among Th1, Th2, and Treg fates",
   "tight-junction": "Clinical or pathologic image illustrating tight junction",
 };
 

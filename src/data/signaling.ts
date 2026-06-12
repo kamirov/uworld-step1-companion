@@ -4,6 +4,7 @@ export type SignalingType =
   | "Growth factor"
   | "Neurotransmitter"
   | "Second messenger"
+  | "Signaling pathway"
   | "Gasotransmitter"
   | "Hormone"
   | "Vitamin";
@@ -255,9 +256,58 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Hormone — typically endocrine, distant targets, classic glands (insulin, cortisol); overlap exists (e.g., IL-6 as hepatic acute-phase signal)",
       "Growth factor — PDGF, EGF, VEGF; emphasize mitogenesis/repair; categories overlap (TGF-β is both)",
       "Complement proteins — cascade opsonization/lysis, not cytokine signaling mediators",
+      "JAK-STAT pathway — intracellular signaling cascade downstream of many cytokine receptors",
     ],
     pediatrics:
       "Hemophagocytic lymphohistiocytosis (HLH) — uncontrolled macrophage activation and cytokine storm in children; MIS-C post-COVID also cytokine-driven.",
+  },
+  {
+    id: "jak-stat",
+    name: "JAK-STAT Pathway",
+    aliases: [
+      "jak-stat",
+      "jak stat",
+      "jakstat",
+      "jak/stat",
+      "jak-stat pathway",
+      "jak stat pathway",
+      "jak-stat signaling",
+      "jak stat signaling",
+      "janus kinase stat pathway",
+      "janus kinase-stat pathway",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Activated by cytokine and some hormone/growth factor receptors lacking intrinsic kinase activity — ligand binding induces receptor dimerization/oligomerization and brings receptor-associated JAK kinases into proximity",
+    receptor:
+      "Type I/II cytokine receptors and related receptors with cytoplasmic JAKs (JAK1, JAK2, JAK3, TYK2); common γ-chain cytokine receptors use JAK3",
+    function:
+      "Canonical cascade: ligand → receptor-JAK activation → JAK transphosphorylation → STAT recruitment and phosphorylation → STAT dimerization → nuclear translocation → transcription of cytokine-responsive genes (immune activation, proliferation, acute-phase response, hematopoiesis).",
+    clinicalRelevance: [
+      "Dominant downstream pathway for many interleukins, interferons, erythropoietin, prolactin, and growth hormone",
+      "JAK inhibitors (tofacitinib, baricitinib, upadacitinib) — rheumatoid arthritis, psoriatic arthritis, IBD; block STAT phosphorylation",
+      "Ruxolitinib (JAK1/JAK2 inhibitor) — myelofibrosis and polycythemia vera with JAK2 V617F",
+      "JAK2 V617F activating mutation — polycythemia vera, essential thrombocythemia, primary myelofibrosis (MPNs)",
+      "STAT3 loss-of-function — autosomal dominant hyper-IgE syndrome (Job syndrome)",
+      "JAK3 deficiency — X-linked severe combined immunodeficiency (common γ-chain cytokine signaling failure)",
+    ],
+    boardsPearls: [
+      "Steps: cytokine binds → JAK activation → STAT phosphorylation → STAT dimer → nucleus → gene transcription",
+      "IL-6 → JAK → STAT3 (acute-phase proteins, fever); IL-4 → STAT6 (Th2, IgE); IFN-γ → STAT1 (Th1, macrophage activation); EPO → JAK2 → STAT5 (erythropoiesis)",
+      "JAK2 V617F = classic MPN driver — think PV when polycythemia + low EPO + JAK2 mutation",
+      "Hyper-IgE syndrome: STAT3 mutation → ↑ IgE, eczema, recurrent staph abscesses, retained primary teeth",
+      "JAK3 on common γ-chain — IL-2/IL-4/IL-7/IL-9/IL-15/IL-21 receptors; JAK3 defect = X-linked SCID",
+      "vs NF-κB — TNF receptor pathway; vs MAPK — many growth factor RTKs; vs cAMP — GPCR second messenger",
+    ],
+    distinguishFrom: [
+      "NF-κB pathway — TNF-family receptors, IκB degradation; overlaps in inflammation but distinct kinases",
+      "MAPK/ERK pathway — many receptor tyrosine kinases and growth factors; Ras-Raf-MEK-ERK cascade",
+      "cAMP/PKA pathway — GPCR–adenylyl cyclase second messenger (β-adrenergic, glucagon, PTH)",
+      "Smad/TGF-β pathway — serine/threonine receptor kinases phosphorylate Smad transcription factors",
+      "PI3K/Akt pathway — often parallel to MAPK from RTKs; cell survival and metabolism",
+    ],
+    pediatrics:
+      "X-linked SCID from JAK3 or common γ-chain defects abolishes multiple cytokine JAK-STAT signals. Hyper-IgE (STAT3) presents in childhood with eczema and staph abscesses. JAK inhibitors used cautiously in pediatric autoimmune disease; ruxolitinib in pediatric MPNs per specialist guidance.",
   },
   {
     id: "il-2",

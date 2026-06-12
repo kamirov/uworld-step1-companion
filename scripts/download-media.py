@@ -134,6 +134,7 @@ DOWNLOADS: list[tuple[str, str]] = [
     ("neonatal respiratory distress syndrome xray", "conditions/neonatal-respiratory-distress-syndrome.jpg"),
     ("ventricular septal defect diagram", "conditions/ventricular-septal-defect.svg"),
     ("atrial septal defect diagram", "conditions/atrial-septal-defect.svg"),
+    ("down syndrome facial features", "symptoms/dysmorphic-facies.jpg"),
     ("dry gangrene foot", "conditions/gangrene.jpg"),
     ("kidney stone CT urolithiasis", "conditions/nephrolithiasis.jpg"),
     ("acute pyelonephritis CT", "conditions/pyelonephritis.jpg"),

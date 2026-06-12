@@ -535,6 +535,52 @@ export const CELLS: CellEntry[] = [
       "Atopic march — infant eczema (Th2-skewed) often precedes food allergy and childhood asthma; early Th2 sensitization is a key pediatric immunology concept.",
   },
   {
+    id: "th17",
+    name: "Th17",
+    aliases: [
+      "th17",
+      "th 17",
+      "th17 cell",
+      "th17 cells",
+      "t helper 17",
+      "t-helper 17",
+      "t helper 17 cell",
+      "t helper 17 cells",
+      "type 17 helper t cell",
+    ],
+    definition:
+      "CD4⁺ T-helper subset differentiated under TGF-β and IL-6 (STAT3, RORγt) that coordinates neutrophil-mediated mucosal immunity by secreting IL-17A, IL-17F, IL-21, and IL-22.",
+    characteristics: [
+      "Differentiation: TGF-β + IL-6 from APCs → naïve CD4⁺ → Th17; IL-23 sustains and expands committed Th17 cells",
+      "Master transcription factor RORγt (RORC); STAT3 is required for lineage commitment",
+      "IL-17A/IL-17F — induce epithelial and stromal cells to release G-CSF and CXCL8 (IL-8) → neutrophil production and recruitment",
+      "IL-22 — promotes epithelial barrier repair and antimicrobial peptide production at mucosal surfaces",
+      "Inhibited by Th1 (IFN-γ) and Th2 (IL-4) cytokines; IL-27 and retinoic acid also suppress Th17 differentiation",
+    ],
+    clinicalRelevance: [
+      "Mucosal defense against extracellular bacteria and fungi (e.g., Candida) at gut, lung, and skin barriers",
+      "Autoimmune and inflammatory diseases — psoriasis, IBD, multiple sclerosis, ankylosing spondylitis, rheumatoid arthritis",
+      "Psoriasis pathogenesis: IL-23 → Th17 → IL-17 drives keratinocyte hyperproliferation and neutrophilic inflammation",
+      "Biologics: secukinumab/ixekizumab (anti–IL-17A), brodalumab (anti–IL-17R), guselkumab/risankizumab (anti–IL-23)",
+      "Hyper-IgE syndrome (Job) — impaired Th17 responses → recurrent Candida and Staphylococcus skin infections",
+    ],
+    boardsPearls: [
+      "Th17 cytokines: IL-17A, IL-17F, IL-21, IL-22 — IL-17 is the hallmark effector",
+      "IL-23 sustains Th17 (not initial differentiation) — key target in psoriasis and IBD biologics",
+      "RORγt drives Th17; FoxP3 drives Treg; GATA3 drives Th2; T-bet drives Th1 — transcription factor favorite",
+      "Th1 (macrophages) vs Th2 (eosinophils/mast cells) vs Th17 (neutrophils) — three helper subsets regulating myeloid cells",
+      "TGF-β + IL-6 → Th17; TGF-β alone → Treg — cytokine context determines fate",
+    ],
+    distinguishFrom: [
+      "Th1 — IFN-γ production; activates macrophages for intracellular bacteria and viruses",
+      "Th2 — IL-4, IL-5, IL-13; eosinophil and IgE-mediated allergy and helminth defense",
+      "Treg — FoxP3⁺; suppresses immune responses; maintains tolerance",
+      "CD4+ T lymphocyte — parent category; Th17 is one effector subset",
+    ],
+    pediatrics:
+      "Pediatric psoriasis and juvenile idiopathic arthritis involve Th17/IL-17–driven inflammation; secukinumab is approved for pediatric plaque psoriasis. Hyper-IgE syndrome in children presents with eczema, retained primary teeth, and recurrent staphylococcal abscesses from impaired Th17 immunity.",
+  },
+  {
     id: "b-lymphocyte",
     name: "B Lymphocyte",
     aliases: [

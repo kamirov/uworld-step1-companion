@@ -52,6 +52,7 @@ import heartFailure from "../media/images/conditions/heart-failure.jpg?url";
 import hemothorax from "../media/images/conditions/hemothorax.png?url";
 import hivInfection from "../media/images/conditions/hiv-infection.jpg?url";
 import hodgkinLymphoma from "../media/images/conditions/hodgkin-lymphoma.jpg?url";
+import hyperIgeSyndrome from "../media/images/conditions/hyper-ige-syndrome.jpg?url";
 import hyperlipidemia from "../media/images/conditions/hyperlipidemia.jpg?url";
 import hyperprolactinemia from "../media/images/conditions/hyperprolactinemia.jpg?url";
 import hypertension from "../media/images/conditions/hypertension.jpg?url";
@@ -190,6 +191,7 @@ export type ConditionImageId = Extract<
   | "hemothorax"
   | "hiv-infection"
   | "hodgkin-lymphoma"
+  | "hyper-ige-syndrome"
   | "hyperlipidemia"
   | "hyperprolactinemia"
   | "hypertension"
@@ -333,6 +335,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hemothorax": extensionAssetUrl(hemothorax),
   "hiv-infection": extensionAssetUrl(hivInfection),
   "hodgkin-lymphoma": extensionAssetUrl(hodgkinLymphoma),
+  "hyper-ige-syndrome": extensionAssetUrl(hyperIgeSyndrome),
   "hyperlipidemia": extensionAssetUrl(hyperlipidemia),
   "hyperprolactinemia": extensionAssetUrl(hyperprolactinemia),
   "hypertension": extensionAssetUrl(hypertension),
@@ -473,6 +476,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "hemothorax": { label: "Wikimedia Commons (Chest-X-ray-Left-sided-hemothorax.png)", url: "https://commons.wikimedia.org/wiki/File:Chest-X-ray-Left-sided-hemothorax.png" },
   "hiv-infection": { label: "Wikimedia Commons (The George Blumer edition of Billings-Forchheimer's Therapeusis of internal diseases- Anaphylaxis, Dietary, Deficiencies, Endocrins, Dvelopmental, Vasomotor, Metabolic, Digestion ... (IA georgeblumeredit04forc).pdf)", url: "https://commons.wikimedia.org/wiki/File:The_George_Blumer_edition_of_Billings-Forchheimer's_Therapeusis_of_internal_diseases-_Anaphylaxis,_Dietary,_Deficiencies,_Endocrins,_Dvelopmental,_Vasomotor,_Metabolic,_Digestion_..._(IA_georgeblumeredit04forc).pdf" },
   "hodgkin-lymphoma": { label: "Wikimedia Commons (Reed-Sternberg lymphocyte nci-vol-7172-300.jpg)", url: "https://commons.wikimedia.org/wiki/File:Reed-Sternberg_lymphocyte_nci-vol-7172-300.jpg" },
+  "hyper-ige-syndrome": { label: "Wikimedia Commons (Person with Job's syndrome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Person_with_Job%27s_syndrome.jpg" },
   "hyperlipidemia": { label: "Wikimedia Commons (Xanthoma histology.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xanthoma_histology.jpg" },
   "hyperprolactinemia": { label: "Wikimedia Commons (Lactation.jpg)", url: "https://commons.wikimedia.org/wiki/File:Lactation.jpg" },
   "hypertension": { label: "Wikimedia Commons (HE pulmonary hypertension artery concentric intimal fibrosis.jpg)", url: "https://commons.wikimedia.org/wiki/File:HE_pulmonary_hypertension_artery_concentric_intimal_fibrosis.jpg" },
@@ -613,6 +617,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "hemothorax": "Clinical or pathologic image illustrating hemothorax",
   "hiv-infection": "Clinical or pathologic image illustrating hiv infection",
   "hodgkin-lymphoma": "Clinical or pathologic image illustrating hodgkin lymphoma",
+  "hyper-ige-syndrome": "Patient with Job syndrome showing coarse facies, eczematous skin, and cold staphylococcal abscess",
   "hyperlipidemia": "Clinical or pathologic image illustrating hyperlipidemia",
   "hyperprolactinemia": "Clinical or pathologic image illustrating hyperprolactinemia",
   "hypertension": "Clinical or pathologic image illustrating hypertension",

@@ -1936,6 +1936,47 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Coagulopathy (↓ fibrinogen, ↑ PT/aPTT) — DIC or liver disease pattern",
     ],
   },
+  {
+    id: "dysmorphic-facies",
+    name: "Dysmorphic Facies",
+    aliases: [
+      "dysmorphic facies",
+      "dysmorphic facial features",
+      "distinctive facies",
+      "characteristic facies",
+      "facial dysmorphism",
+      "unusual facial features",
+    ],
+    definition:
+      "Congenital or acquired deviation from typical facial morphology — a pattern of structural anomalies (eyes, nose, mouth, ears, skull shape) that suggests an underlying genetic, chromosomal, teratogenic, or syndromic disorder.",
+    mechanism:
+      "Disrupted embryonic craniofacial development from chromosomal aneuploidy, gene deletion/mutation, or teratogen exposure alters growth of facial bones, soft tissue, and midline structures; specific combinations of features narrow the differential.",
+    thinkOf: [
+      "Down syndrome (trisomy 21) — flat facies, upslanting palpebral fissures, epicanthal folds, flat nasal bridge",
+      "Fetal alcohol syndrome — short palpebral fissures, smooth philtrum, thin upper lip vermillion",
+      "Williams syndrome — elfin facies, wide mouth, periorbital fullness, supravalvular aortic stenosis",
+      "Noonan syndrome — hypertelorism, low-set ears, webbed neck, short stature",
+      "DiGeorge syndrome (22q11 deletion) — hooded eyelids, bulbous nose, cleft palate, conotruncal defects",
+      "Edwards syndrome (trisomy 18) — low-set ears, micrognathia, clenched fists, rocker-bottom feet",
+      "Mucopolysaccharidoses (Hurler) — coarse facies, corneal clouding, skeletal dysplasia",
+      "Cushing syndrome — moon facies (acquired, from cortisol excess)",
+    ],
+    pairWith: [
+      "Single transverse palmar crease + hypotonia → Down syndrome",
+      "Smooth philtrum + short palpebral fissures + microcephaly → fetal alcohol syndrome",
+      "Elfin facies + SVAS murmur + hypercalcemia in infancy → Williams syndrome",
+      "Webbed neck + short stature + cardiac defect → Turner (♀) or Noonan",
+      "Cleft palate + hypocalcemia + conotruncal anomaly → DiGeorge",
+      "Coarse facies + hepatosplenomegaly + developmental delay → lysosomal storage disease",
+      "Moon facies + striae + central obesity → Cushing syndrome",
+    ],
+    distinguishFrom: [
+      "Normal ethnic/familial facial variation — no associated congenital anomalies or delay",
+      "Acquired facial changes — trauma, surgery, or edema without syndromic pattern",
+      "Prematurity-related appearance — resolves with growth; not true dysmorphism",
+      "Specific named facies (elfin, moon, coarse) — subtype patterns within dysmorphic facies",
+    ],
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));

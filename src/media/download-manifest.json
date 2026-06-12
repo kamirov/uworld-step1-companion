@@ -454,6 +454,11 @@
     "page": "https://commons.wikimedia.org/wiki/File:M2_macrophages._S\u00e9zary_cells_produce_the_Th2_cytokines_IL-4_and_IL-13.png",
     "query": "Th2 helper T cell cytokine"
   },
+  "cells/th17.png": {
+    "title": "File:Helper T Cell Differentiation.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png",
+    "query": "Th17 helper T cell IL-17 differentiation"
+  },
   "cells/tight-junction.png": {
     "title": "File:Morphological modifications during EMT.png",
     "page": "https://commons.wikimedia.org/wiki/File:Morphological_modifications_during_EMT.png",
@@ -1003,6 +1008,11 @@
     "title": "File:55 year old female with advanced Buerger's disease.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:55_year_old_female_with_advanced_Buerger's_disease.jpg",
     "query": "thromboangiitis obliterans buerger"
+  },
+  "conditions/hyper-ige-syndrome.jpg": {
+    "title": "File:Person_with_Job's_syndrome.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Person_with_Job%27s_syndrome.jpg",
+    "query": "hyper IgE syndrome Job"
   },
   "conditions/hyperlipidemia.jpg": {
     "title": "File:Xanthoma histology.jpg",
