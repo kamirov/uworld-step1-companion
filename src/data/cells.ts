@@ -928,6 +928,86 @@ export const CELLS: CellEntry[] = [
       "Preterm labor — immature myometrium can be suppressed with tocolytics while giving steroids for fetal lung maturity; same oxytocin/prostaglandin axis as term labor.",
   },
   {
+    id: "mucosa",
+    name: "Mucosa",
+    aliases: [
+      "mucosa",
+      "mucosal",
+      "mucosal layer",
+      "tunica mucosa",
+      "mucous membrane",
+      "mucous membranes",
+    ],
+    definition:
+      "Innermost lining layer of hollow organs (GI, respiratory, and genitourinary tracts), composed of epithelium, lamina propria, and muscularis mucosae; specialized for secretion, absorption, barrier defense, and immune surveillance.",
+    characteristics: [
+      "Epithelium varies by site — columnar (GI), pseudostratified ciliated (respiratory), transitional (bladder)",
+      "Lamina propria — loose connective tissue with capillaries, lymphatics, and immune cells",
+      "Muscularis mucosae — thin smooth muscle permitting local mucosal movement",
+      "Associated lymphoid tissue (MALT, Peyer's patches, tonsils) resides in or beneath mucosa",
+    ],
+    clinicalRelevance: [
+      "Ulcerative colitis — continuous mucosal inflammation from rectum proximally",
+      "Peptic ulcer disease — mucosal break in stomach or duodenum",
+      "Celiac disease — T-cell injury to small bowel mucosa → villous atrophy",
+      "H. pylori colonizes gastric mucosa; IgA predominates in mucosal secretions",
+      "Barrier dysfunction in atopic disease and bacterial translocation across gut mucosa",
+    ],
+    boardsPearls: [
+      "GI wall (inside out): mucosa → submucosa → muscularis propria → subserosa → serosa (intraperitoneal)",
+      "UC = mucosal only; Crohn = transmural (full thickness)",
+      "Mucosa is the site of absorption (small intestine), secretion (goblet cells), and most mucosal immunity",
+      "vs submucosa — submucosa lies deep to muscularis mucosae; contains Meissner plexus and vessels",
+    ],
+    distinguishFrom: [
+      "Serosa — outer mesothelial layer of intraperitoneal viscera, not the inner lining",
+      "Submucosa — connective tissue layer beneath muscularis mucosae",
+      "Adventitia — outer connective tissue of retroperitoneal organs without mesothelial covering",
+      "Skin (epidermis/dermis) — not a mucosal surface; keratinized stratified squamous epithelium",
+    ],
+    pediatrics:
+      "Necrotizing enterocolitis — mucosal injury and bacterial invasion in preterm gut; IgA in breast milk supports mucosal immunity in infants.",
+  },
+  {
+    id: "serosa",
+    name: "Serosa",
+    aliases: [
+      "serosa",
+      "serosal",
+      "serosal layer",
+      "tunica serosa",
+      "visceral peritoneum",
+    ],
+    definition:
+      "Outermost layer of intraperitoneal visceral organs, consisting of a thin connective tissue sheet covered by simple squamous mesothelial cells (visceral peritoneum); reduces friction between organs and the peritoneal cavity.",
+    characteristics: [
+      "Mesothelium — simple squamous epithelial cells secreting lubricating fluid",
+      "Subserosal connective tissue with vessels and nerves entering from organ wall",
+      "Continuous with mesentery and visceral peritoneal reflections",
+      "Retroperitoneal organs (duodenum portions, pancreas, ascending/descending colon) have adventitia instead of serosa where not intraperitoneal",
+    ],
+    clinicalRelevance: [
+      "Bowel perforation — spillage of contents into peritoneal cavity when serosa (and full wall) breached → peritonitis",
+      "Serosal metastases — ovarian cancer (Krukenberg), gastric cancer seeding peritoneum",
+      "Crohn fistulae and transmural disease extend beyond mucosa through to serosa/adjacent organs",
+      "Serosal inflammation contributes to peritoneal adhesions post-surgery",
+    ],
+    boardsPearls: [
+      "Serosa = visceral peritoneum on intraperitoneal organs; adventitia on retroperitoneal segments",
+      "GI layers: mucosa (inner) → … → serosa (outer, if intraperitoneal)",
+      "Peritonitis requires perforation or infection reaching peritoneal cavity — often through breached serosa",
+      "vs parietal peritoneum — lines abdominal wall; visceral peritoneum is the serosa of organs",
+    ],
+    distinguishFrom: [
+      "Mucosa — innermost functional lining for absorption/secretion, not outer covering",
+      "Adventitia — outer fibrous layer of retroperitoneal structures without mesothelium",
+      "Parietal peritoneum — lines body wall; serosa is visceral peritoneum on organ surface",
+      "Capsule (liver, kidney) — organ-specific fibrous covering, not GI serosa",
+    ],
+    pediatrics:
+      "Same anatomic layers in children; appendicitis perforation → serosal breach and peritonitis; NEC can progress to full-thickness necrosis and perforation.",
+  },
+  {
     id: "actin",
     name: "Actin",
     aliases: [

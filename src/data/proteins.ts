@@ -654,6 +654,46 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "cytochrome-p450",
+    name: "Cytochrome P-450",
+    aliases: [
+      "cytochrome p-450",
+      "cytochrome p450",
+      "cytochrome p 450",
+      "cytochrome p-450 enzymes",
+      "cyp450",
+      "cyp-450",
+      "cyp enzymes",
+      "cyp enzyme",
+      "p450 enzymes",
+    ],
+    gene: "CYP gene superfamily (e.g., CYP3A4, CYP2D6, CYP2C9, CYP2C19, CYP1A2)",
+    location:
+      "Smooth endoplasmic reticulum of hepatocytes (primary); also intestinal enterocytes and other tissues",
+    function:
+      "Heme-containing monooxygenase enzymes catalyzing phase I drug metabolism — oxidation, reduction, and hydroxylation — often as the first step before conjugation (phase II) and renal/biliary elimination.",
+    mutationCauses: [
+      "CYP2D6 poor metabolizer — ↓ codeine activation, altered β-blocker and antidepressant levels",
+      "CYP2C19 poor metabolizer — ↓ clopidogrel activation → reduced antiplatelet effect",
+      "CYP2C9 variants — ↑ warfarin sensitivity and bleeding risk",
+      "Pharmacologic induction (rifampin, phenytoin, carbamazepine, St. John's wort) — ↑ enzyme synthesis → ↓ drug levels",
+      "Pharmacologic inhibition (azole antifungals, macrolides, ritonavir, grapefruit juice, cimetidine) — ↑ substrate drug toxicity",
+    ],
+    boardsPearls: [
+      "CYP3A4 metabolizes the most drugs — inhibited by azoles, macrolides, ritonavir, grapefruit; induced by rifampin",
+      "CYP2C9 — warfarin and phenytoin; CYP2C19 — clopidogrel (prodrug), PPIs; CYP2D6 — codeine, tamoxifen, many psychotropics",
+      "CYP1A2 — theophylline, caffeine; induced by smoking",
+      "Inducers ↑ CYP activity (↓ drug effect); inhibitors ↓ CYP activity (↑ drug toxicity)",
+      "Grapefruit inhibits intestinal CYP3A4 — ↑ levels of many oral drugs (statins, cyclosporine, some CCBs)",
+    ],
+    distinguishFrom: [
+      "Phase II enzymes (UGT, sulfotransferases) — conjugation reactions, not CYP oxidation",
+      "Glucuronidation — phase II; CYP is phase I",
+      "P-glycoprotein — efflux transporter, not metabolic enzyme",
+      "MAO / COMT — neurotransmitter metabolism, not hepatic drug CYP system",
+    ],
+  },
+  {
     id: "huntingtin",
     name: "Huntingtin",
     aliases: ["huntingtin", "htt"],

@@ -1,6 +1,7 @@
 import {
   Activity,
   AudioLines,
+  Bone,
   CircleDot,
   ClipboardList,
   createElement,
@@ -37,7 +38,8 @@ export type PopoverCategory =
   | "clinical-strategy"
   | "cell"
   | "pathogenesis"
-  | "microbiology";
+  | "microbiology"
+  | "musculoskeletal";
 
 const CATEGORY_ICONS: Record<PopoverCategory, IconNode> = {
   organ: Layers,
@@ -57,6 +59,7 @@ const CATEGORY_ICONS: Record<PopoverCategory, IconNode> = {
   cell: CircleDot,
   pathogenesis: GitBranch,
   microbiology: Microscope,
+  musculoskeletal: Bone,
 };
 
 function popoverTitleClass(category: PopoverCategory): string {

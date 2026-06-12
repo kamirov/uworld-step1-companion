@@ -2084,6 +2084,69 @@ export const CONDITIONS: ConditionEntry[] = [
       "May present in adolescence with acute liver failure or neuropsychiatric symptoms; screen siblings.",
   },
   {
+    id: "ibd",
+    name: "Inflammatory Bowel Disease (IBD)",
+    aliases: [
+      "ibd",
+      "inflammatory bowel disease",
+      "inflammatory bowel diseases",
+    ],
+    definition:
+      "Chronic immune-mediated inflammatory disorders of the gastrointestinal tract; the two major subtypes are Crohn disease and ulcerative colitis.",
+    pathophysiology:
+      "Genetic susceptibility (HLA and other loci) plus environmental triggers → dysregulated mucosal immune response to gut microbiota → ↑ pro-inflammatory cytokines (TNF-α, IL-12/23) → chronic intestinal inflammation with barrier dysfunction.",
+    classicPresentation: [
+      "Chronic or relapsing diarrhea (bloody in UC; may be nonbloody in Crohn)",
+      "Abdominal pain and cramping",
+      "Weight loss, fatigue, anemia",
+      "Urgency/tenesmus (especially UC)",
+      "Perianal fistulae or abscesses (Crohn)",
+    ],
+    keyFindings: [
+      "Crohn: transmural inflammation, skip lesions, terminal ileum, noncaseating granulomas, fistulae",
+      "UC: continuous mucosal inflammation from rectum proximally, crypt abscesses, lead-pipe colon",
+      "p-ANCA more common in UC; ASCA more common in Crohn (supportive, not diagnostic)",
+      "Extraintestinal manifestations: erythema nodosum, uveitis, ankylosing spondylitis, PSC (UC)",
+    ],
+    associations: [
+      "Crohn disease and ulcerative colitis are the two main IBD subtypes",
+      "Primary sclerosing cholangitis (especially with UC)",
+      "Arthritis, uveitis, erythema nodosum, pyoderma gangrenosum",
+      "Smoking worsens Crohn disease but may be protective in UC",
+      "Psoriasis and other autoimmune diseases",
+    ],
+    complications: [
+      "Colorectal cancer with long-standing extensive colonic disease",
+      "Malnutrition, iron/B12 deficiency (Crohn with ileal disease)",
+      "Crohn: fistulae, strictures, abscesses",
+      "UC: toxic megacolon, fulminant colitis",
+    ],
+    distinguishFrom: [
+      "Crohn disease — any GI segment, transmural, skip lesions, fistulae, granulomas",
+      "Ulcerative colitis — colon only, continuous from rectum, mucosal, bloody diarrhea",
+      "Celiac disease — villous atrophy, tTG/IgA antibodies, responds to gluten-free diet",
+      "Infectious colitis — acute, self-limited, positive stool studies",
+      "Microscopic colitis — watery diarrhea, normal endoscopy, biopsy diagnosis",
+      "Irritable bowel syndrome — no inflammation, no weight loss, normal labs",
+    ],
+    treatment: [
+      "Mild: aminosalicylates (mesalamine/sulfasalazine)",
+      "Moderate-severe flares: corticosteroids",
+      "Steroid-sparing maintenance: azathioprine, methotrexate",
+      "Biologics: anti-TNF (infliximab, adalimumab), anti–IL-12/23 (ustekinumab), vedolizumab (gut-selective)",
+      "Crohn fistulizing disease or refractory UC — biologics or surgery (colectomy for UC)",
+    ],
+    boardsPearls: [
+      "IBD = Crohn + UC; know the comparison: Crohn (anywhere, transmural, skip, fistulae) vs UC (colon, mucosal, continuous from rectum)",
+      "Smoking: worsens Crohn, protective in UC — classic boards contrast",
+      "PSC + IBD → think UC; p-ANCA supportive",
+      "Toxic megacolon — UC emergency: colon >6 cm + systemic toxicity",
+      "Anti-TNF for moderate-severe IBD — screen for latent TB before starting",
+    ],
+    pediatrics:
+      "Pediatric IBD may present with growth failure and delayed puberty before overt GI symptoms; Crohn perianal disease common. Same step-up therapy principles with growth and bone health monitoring.",
+  },
+  {
     id: "crohn-disease",
     name: "Crohn Disease",
     aliases: ["crohn disease", "crohn's disease", "regional enteritis"],
@@ -3633,6 +3696,72 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Febrile UTI in young children requires imaging for reflux/anatomy; boys with first UTI need workup.",
+  },
+  {
+    id: "rotator-cuff-syndrome",
+    name: "Rotator Cuff Syndrome",
+    aliases: [
+      "rotator cuff syndrome",
+      "rotator cuff tendinopathy",
+      "rotator cuff tendinitis",
+      "rotator cuff tendinosis",
+      "subacromial impingement syndrome",
+      "shoulder impingement syndrome",
+      "impingement syndrome",
+    ],
+    definition:
+      "Spectrum of shoulder disorders involving rotator cuff tendinopathy, subacromial bursitis, and impingement under the coracoacromial arch, ranging from chronic overuse pain to partial- or full-thickness tendon tears.",
+    pathophysiology:
+      "Repetitive overhead activity or age-related tendon degeneration → supraspinatus (most often) and other cuff tendon microtrauma → subacromial inflammation and bursitis → painful arc; progression to partial or full-thickness tear with chronic impingement and cuff weakness.",
+    classicPresentation: [
+      "Deep anterolateral shoulder pain worsened by overhead activity",
+      "Night pain lying on affected side",
+      "Painful arc between ~60–120° of abduction",
+      "Weakness with abduction or external rotation if tear present",
+      "Older adult or repetitive overhead athlete/worker",
+    ],
+    keyFindings: [
+      "Positive Neer and Hawkins impingement tests",
+      "Painful arc sign (60–120° abduction)",
+      "Empty can weakness (supraspinatus)",
+      "Drop-arm sign or external rotation lag if full-thickness tear",
+      "MRI or ultrasound — tendinopathy, partial tear, or full-thickness defect",
+    ],
+    associations: [
+      "Supraspinatus tendon — most commonly affected",
+      "Subacromial bursitis",
+      "Acromioclavicular osteoarthritis with inferior spur (extrinsic impingement)",
+      "Shoulder instability and scapular dyskinesis",
+      "Diabetes — increased risk of adhesive capsulitis and cuff pathology",
+    ],
+    complications: [
+      "Progressive full-thickness rotator cuff tear",
+      "Chronic weakness and functional limitation",
+      "Secondary adhesive capsulitis (frozen shoulder)",
+      "Muscle atrophy with chronic massive tear (fatty infiltration)",
+    ],
+    distinguishFrom: [
+      "Adhesive capsulitis — global loss of passive ROM, not primarily impingement pattern",
+      "Glenohumeral osteoarthritis — older patient, decreased ROM, radiographic joint space loss",
+      "Cervical radiculopathy — neck pain, dermatomal symptoms, Spurling positive",
+      "Biceps tendinopathy — anterior shoulder pain, Speed/Yergason tests",
+      "Acromioclavicular joint disease — localized AC tenderness, cross-body adduction pain",
+    ],
+    treatment: [
+      "Activity modification and physical therapy (rotator cuff strengthening, scapular stabilization)",
+      "NSAIDs for pain",
+      "Subacromial corticosteroid injection for refractory bursitis/impingement",
+      "Surgical decompression and/or cuff repair for persistent symptoms or full-thickness tear in active patients",
+    ],
+    boardsPearls: [
+      "Supraspinatus most commonly involved — painful arc + impingement signs",
+      "Neer test (forced forward flexion) and Hawkins test (internal rotation at 90° flexion) — impingement",
+      "Empty can → supraspinatus; drop-arm → full-thickness tear",
+      "SITS muscles: know actions for localization of cuff injury",
+      "vs frozen shoulder — loss of passive ROM points to capsulitis, not isolated cuff syndrome",
+    ],
+    pediatrics:
+      "True rotator cuff tears uncommon; adolescent overhead athletes with shoulder pain — consider Little League shoulder (proximal humeral physeal injury) before cuff syndrome.",
   },
   {
     id: "rheumatoid-arthritis",

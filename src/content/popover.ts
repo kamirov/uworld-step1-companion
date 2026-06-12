@@ -31,6 +31,7 @@ import {
   getMicrobiologyImageForId,
 } from "../data/microbiologyMedia";
 import { getMedicationById } from "../data/medications";
+import { getMusculoskeletalById } from "../data/musculoskeletal";
 import { getNephronSegmentById } from "../data/nephron";
 import { getOrganById } from "../data/organs";
 import { getProteinById } from "../data/proteins";
@@ -39,7 +40,7 @@ import { getSymptomById } from "../data/symptoms";
 import { renderPopoverTitle, type PopoverCategory } from "./popoverIcons";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip, .usmle-microbiology-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip, .usmle-microbiology-chip, .usmle-musculoskeletal-chip";
 const POPOVER_AUDIO_SELECTOR = ".usmle-organ-popover__audio";
 const POPOVER_CLASS = "usmle-organ-popover";
 const HIDE_DELAY_MS = 120;
@@ -537,6 +538,29 @@ function renderCellPopover(cellId: string): boolean {
   return true;
 }
 
+function renderMusculoskeletalPopover(musculoskeletalId: string): boolean {
+  const entry = getMusculoskeletalById(musculoskeletalId);
+  if (!entry || !popoverEl) return false;
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  popoverEl.innerHTML = renderRichPopoverContent(
+    `
+    ${renderPopoverTitle(entry.name, "musculoskeletal")}
+    <div class="usmle-organ-popover__meaning">${entry.definition}</div>
+  `,
+    `
+    ${entry.anatomy ? `<div class="usmle-organ-popover__layer"><strong>Anatomy:</strong> ${entry.anatomy}</div>` : ""}
+    ${entry.innervation ? `<div class="usmle-organ-popover__layer"><strong>Innervation:</strong> ${entry.innervation}</div>` : ""}
+    ${renderListSection("Action", entry.action)}
+    ${renderListSection("Clinical relevance", entry.clinicalRelevance)}
+    ${renderListSection("Distinguish from", entry.distinguishFrom ?? [])}
+    ${renderListSection("Boards pearls", entry.boardsPearls)}
+    ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
+  `,
+  );
+  return true;
+}
+
 function renderPathogenesisPopover(pathogenesisId: string): boolean {
   const entry = getPathogenesisById(pathogenesisId);
   if (!entry || !popoverEl) return false;
@@ -709,6 +733,7 @@ function showPopover(chip: HTMLElement): void {
   const cellId = chip.dataset.cellId;
   const pathogenesisId = chip.dataset.pathogenesisId;
   const microbiologyId = chip.dataset.microbiologyId;
+  const musculoskeletalId = chip.dataset.musculoskeletalId;
   if (
     !organId &&
     !heartSoundId &&
@@ -726,7 +751,8 @@ function showPopover(chip: HTMLElement): void {
     !clinicalStrategyId &&
     !cellId &&
     !pathogenesisId &&
-    !microbiologyId
+    !microbiologyId &&
+    !musculoskeletalId
   )
     return;
 
@@ -772,7 +798,11 @@ function showPopover(chip: HTMLElement): void {
                               ? renderCellPopover(cellId)
                               : pathogenesisId
                                 ? renderPathogenesisPopover(pathogenesisId)
-                                : renderMicrobiologyPopover(microbiologyId!);
+                                : microbiologyId
+                                  ? renderMicrobiologyPopover(microbiologyId)
+                                  : renderMusculoskeletalPopover(
+                                      musculoskeletalId!,
+                                    );
   if (!rendered) return;
 
   activeChip = chip;

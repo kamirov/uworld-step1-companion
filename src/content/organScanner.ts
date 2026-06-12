@@ -10,6 +10,7 @@ import { buildProcedureAliasIndex } from "../data/procedures";
 import { buildLabValueAliasIndex } from "../data/labValues";
 import { buildMicrobiologyAliasIndex } from "../data/microbiology";
 import { buildMedicationAliasIndex } from "../data/medications";
+import { buildMusculoskeletalAliasIndex } from "../data/musculoskeletal";
 import { buildNephronAliasIndex } from "../data/nephron";
 import { buildAliasIndex } from "../data/organs";
 import { buildProteinAliasIndex } from "../data/proteins";
@@ -33,7 +34,8 @@ const CLINICAL_STRATEGY_CHIP_CLASS = "usmle-clinical-strategy-chip";
 const CELL_CHIP_CLASS = "usmle-cell-chip";
 const PATHOGENESIS_CHIP_CLASS = "usmle-pathogenesis-chip";
 const MICROBIOLOGY_CHIP_CLASS = "usmle-microbiology-chip";
-const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEART_MURMUR_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}, .${CLINICAL_STRATEGY_CHIP_CLASS}, .${CELL_CHIP_CLASS}, .${PATHOGENESIS_CHIP_CLASS}, .${MICROBIOLOGY_CHIP_CLASS}`;
+const MUSCULOSKELETAL_CHIP_CLASS = "usmle-musculoskeletal-chip";
+const CHIP_SELECTOR = `.${ORGAN_CHIP_CLASS}, .${HEART_SOUND_CHIP_CLASS}, .${HEART_MURMUR_CHIP_CLASS}, .${HEMODYNAMIC_CHIP_CLASS}, .${SYMPTOM_CHIP_CLASS}, .${MEDICATION_CHIP_CLASS}, .${LAB_CHIP_CLASS}, .${NEPHRON_CHIP_CLASS}, .${CONDITION_CHIP_CLASS}, .${PROTEIN_CHIP_CLASS}, .${SIGNALING_CHIP_CLASS}, .${ECG_CHIP_CLASS}, .${PROCEDURE_CHIP_CLASS}, .${CLINICAL_STRATEGY_CHIP_CLASS}, .${CELL_CHIP_CLASS}, .${PATHOGENESIS_CHIP_CLASS}, .${MICROBIOLOGY_CHIP_CLASS}, .${MUSCULOSKELETAL_CHIP_CLASS}`;
 const OUR_CHIP_CLASSES = [
   ORGAN_CHIP_CLASS,
   HEART_SOUND_CHIP_CLASS,
@@ -52,6 +54,7 @@ const OUR_CHIP_CLASSES = [
   CELL_CHIP_CLASS,
   PATHOGENESIS_CHIP_CLASS,
   MICROBIOLOGY_CHIP_CLASS,
+  MUSCULOSKELETAL_CHIP_CLASS,
 ] as const;
 const POPOVER_CLASS = "usmle-organ-popover";
 const SKIP_TAGS = new Set([
@@ -118,7 +121,8 @@ type TermKind =
   | "clinical-strategy"
   | "cell"
   | "pathogenesis"
-  | "microbiology";
+  | "microbiology"
+  | "musculoskeletal";
 
 interface TermMatch {
   alias: string;
@@ -281,6 +285,8 @@ function chipSelectorForTerm(term: TermMatch): string {
       return `[data-pathogenesis-id="${CSS.escape(term.id)}"]`;
     case "microbiology":
       return `[data-microbiology-id="${CSS.escape(term.id)}"]`;
+    case "musculoskeletal":
+      return `[data-musculoskeletal-id="${CSS.escape(term.id)}"]`;
     default:
       return `[data-organ-id="${CSS.escape(term.id)}"]`;
   }
@@ -523,6 +529,12 @@ function buildTermIndex(): TermMatch[] {
       id: microbiologyId,
     }),
   );
+  const musculoskeletalMatches: TermMatch[] =
+    buildMusculoskeletalAliasIndex().map(({ alias, musculoskeletalId }) => ({
+      alias,
+      kind: "musculoskeletal" as const,
+      id: musculoskeletalId,
+    }));
   return [
     ...organMatches,
     ...heartSoundMatches,
@@ -541,6 +553,7 @@ function buildTermIndex(): TermMatch[] {
     ...cellMatches,
     ...pathogenesisMatches,
     ...microbiologyMatches,
+    ...musculoskeletalMatches,
   ].sort(
     (a, b) => b.alias.length - a.alias.length || a.alias.localeCompare(b.alias),
   );
@@ -726,6 +739,9 @@ function createChip(
   } else if (term.kind === "microbiology") {
     button.className = MICROBIOLOGY_CHIP_CLASS;
     button.dataset.microbiologyId = term.id;
+  } else if (term.kind === "musculoskeletal") {
+    button.className = MUSCULOSKELETAL_CHIP_CLASS;
+    button.dataset.musculoskeletalId = term.id;
   } else {
     button.className = ORGAN_CHIP_CLASS;
     button.dataset.organId = term.id;

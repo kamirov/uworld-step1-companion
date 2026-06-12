@@ -252,6 +252,43 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Physiologic neonatal jaundice is amplified by enterohepatic circulation of bilirubin; frequent feeding and meconium passage ↓ reabsorption. Breast milk jaundice also involves this pathway.",
   },
+  {
+    id: "calcification",
+    name: "Calcification",
+    aliases: [
+      "calcification",
+      "calcifications",
+      "tissue calcification",
+      "pathologic calcification",
+      "dystrophic calcification",
+      "metastatic calcification",
+    ],
+    definition:
+      "Deposition of calcium salts (primarily hydroxyapatite) in tissues; classified as dystrophic (damaged tissue with normal serum calcium) or metastatic (normal tissue with abnormal calcium/phosphate homeostasis).",
+    examples: [
+      "Dystrophic: atherosclerotic plaques, caseous TB lymph nodes, fat necrosis (breast trauma), damaged heart valves, healed granulomas",
+      "Metastatic: nephrocalcinosis and renal failure in hyperparathyroidism or CKD; lung and gastric mucosa calcification with hypercalcemia",
+      "Monckeberg medial calcific sclerosis — calcification of arterial media (often diabetes, elderly)",
+      "Psammona bodies — laminated calcifications in papillary thyroid carcinoma, meningioma, serous ovarian tumors",
+      "Pericardial calcification in chronic constrictive pericarditis",
+      "Eggshell calcification of hilar lymph nodes in silicosis",
+    ],
+    boardsPearls: [
+      "Dystrophic = dead/damaged tissue + normal Ca²⁺/PO₄³⁻; metastatic = normal tissue + ↑ Ca²⁺ or ↑ PO₄³⁻",
+      "Metastatic calcification favors interstitial tissues: kidney, lung, gastric mucosa, media of arteries",
+      "Hyperparathyroidism, vitamin D toxicity, milk-alkali syndrome, sarcoidosis (↑ 1,25-OH vitamin D) → metastatic calcification",
+      "CKD → hyperphosphatemia + secondary hyperparathyroidism → vascular and soft-tissue calcification",
+      "vs ossification — bone formation with organized osteoid and lamellae; calcification is calcium salt deposition without true bone matrix",
+    ],
+    distinguishFrom: [
+      "Ossification — organized bone with osteoblasts/osteoid; heterotopic ossification after trauma",
+      "Chondrocalcinosis — calcium pyrophosphate crystals in cartilage (pseudogout), not hydroxyapatite dystrophic deposit",
+      "Radiopaque foreign body — metal/glass on imaging, not biologic calcification",
+      "Hematogenous dissemination — term for spread via blood, not calcium deposition",
+    ],
+    pediatrics:
+      "Congenital CMV — periventricular intracranial calcifications; congenital toxoplasmosis — more diffuse calcifications plus chorioretinitis and hydrocephalus.",
+  },
 ];
 
 const pathogenesisById = new Map(
