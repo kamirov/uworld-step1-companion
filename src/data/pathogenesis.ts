@@ -997,6 +997,97 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Rhabdomyosarcoma and Ewing sarcoma peak in childhood/adolescence; osteosarcoma in teenage growth spurt. Wilms tumor is nephroblastoma (renal embryonal), not classified as sarcoma despite mesenchymal appearance.",
   },
+  {
+    id: "gastrointestinal-flora",
+    name: "Gastrointestinal Flora",
+    aliases: [
+      "gastrointestinal flora",
+      "gut flora",
+      "intestinal flora",
+      "normal gut flora",
+      "normal intestinal flora",
+      "gut microbiota",
+      "intestinal microbiota",
+      "colonic flora",
+      "enteric flora",
+      "commensal gut bacteria",
+    ],
+    definition:
+      "Complex community of commensal and mutualistic microorganisms colonizing the GI tract — predominantly anaerobic gram-negative rods (Bacteroides) in the colon plus facultative organisms (E. coli, Enterococcus) — that aid digestion, synthesize vitamins, and competitively inhibit pathogens.",
+    examples: [
+      "Vitamin K synthesis by gut bacteria — neonates lack flora until colonization (prophylactic IM vitamin K at birth)",
+      "Colonization resistance — normal flora competes with C. difficile until antibiotics disrupt balance",
+      "Bile acid metabolism and short-chain fatty acid production from fiber fermentation",
+      "Bacterial translocation in cirrhosis — gut flora (E. coli, Klebsiella) cross impaired barrier → SBP",
+      "Strongyloides hyperinfection — larvae carry gut flora into bloodstream during dissemination",
+      "Uropathogenic E. coli — gut reservoir ascends to cause UTI/pyelonephritis",
+    ],
+    boardsPearls: [
+      "Colon dominated by anaerobes (Bacteroides); oral flora more aerobic diversity",
+      "Antibiotics ↓ normal flora → C. difficile overgrowth and pseudomembranous colitis",
+      "Neonates lack established gut flora — vitamin K deficiency bleeding risk; give IM vitamin K",
+      "Same organism can be commensal in gut but pathogenic in sterile sites (peritoneum, bloodstream)",
+      "vs pathogens — flora colonize without disease unless barrier breaks or immunity fails",
+      "Broad-spectrum antibiotics before GI surgery cover gut flora (gram-negatives + anaerobes)",
+    ],
+    distinguishFrom: [
+      "Pathogens — cause disease at low inoculum; flora require barrier breach or immune failure",
+      "Skin flora — Staphylococcus epidermidis, cutaneous microbiome; different site and organisms",
+      "Oral flora — Streptococcus viridans, anaerobes; source of endocarditis after dental work",
+      "Contamination on culture — distinguish colonizer from true infection by clinical context",
+    ],
+    pediatrics:
+      "Infants acquire gut microbiota at delivery (vaginal vs cesarean profiles differ) and through feeding (breast milk promotes Bifidobacteria). NEC in preterm infants involves immature mucosa and abnormal bacterial colonization. Prophylactic vitamin K given because gut flora not yet producing vitamin K.",
+  },
+  {
+    id: "pili",
+    name: "Pili (Fimbriae)",
+    aliases: [
+      "pili",
+      "pilus",
+      "fimbriae",
+      "fimbria",
+      "bacterial pili",
+      "bacterial pilus",
+      "bacterial fimbriae",
+      "bacterial fimbria",
+      "type i pili",
+      "type 1 pili",
+      "p fimbriae",
+      "p pili",
+      "pyelonephritis-associated pili",
+      "sex pilus",
+      "sex pili",
+    ],
+    definition:
+      "Hairlike protein appendages on many gram-negative bacteria (and some gram-positives) that mediate adherence to host epithelium or, in the case of sex pili, conjugative DNA transfer — a key virulence factor for mucosal colonization and invasion.",
+    examples: [
+      "E. coli P fimbriae (pyelonephritis-associated) — bind uroepithelium; upper UTI virulence",
+      "E. coli type 1 fimbriae — mannose-sensitive binding; bladder colonization",
+      "Neisseria gonorrhoeae — pili enable attachment to urethral/cervical epithelium; antigenic variation evades immunity",
+      "Bordetella pertussis — filamentous hemagglutinin and fimbriae in adhesion to respiratory epithelium",
+      "Haemophilus influenzae — pili for respiratory mucosal attachment (nontypeable strains)",
+      "Sex (conjugation) pilus — F+ bacteria transfer plasmid DNA to F− recipient",
+    ],
+    boardsPearls: [
+      "Pili (fimbriae) = adherence; flagella = motility — both can be virulence factors",
+      "P fimbriae on uropathogenic E. coli — bind kidney/uroepithelium → pyelonephritis",
+      "Mannose-sensitive type 1 pili — common bladder adhesion",
+      "Gonorrhea pili — attachment + antigenic variation (immune escape)",
+      "Anti-adhesion is therapeutic concept; vaccines targeting fimbriae explored for UTI",
+      "vs capsule — polysaccharide antiphagocytic layer, not attachment appendage",
+      "vs flagella — locomotion, not primary adherence structure",
+    ],
+    distinguishFrom: [
+      "Flagella — locomotion organelle, not primarily adhesion (though H. pylori flagella aid mucus penetration)",
+      "Capsule — antiphagocytic polysaccharide coating",
+      "Lipoteichoic acid / cell wall — gram-positive adherence mechanisms, not pili",
+      "Arrector pili — smooth muscle at hair follicle for goosebumps; unrelated to bacterial structure",
+      "Cilia — eukaryotic microtubule-based structures on respiratory epithelium, not bacterial",
+    ],
+    pediatrics:
+      "Nontypeable H. influenzae uses pili for otitis media and bronchitis in children. Neonatal E. coli meningitis strains often carry K1 capsule and fimbriae for mucosal attachment and invasion.",
+  },
 ];
 
 const pathogenesisById = new Map(

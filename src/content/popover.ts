@@ -32,6 +32,11 @@ import {
 } from "../data/microbiologyMedia";
 import { getMedicationById } from "../data/medications";
 import { getMusculoskeletalById } from "../data/musculoskeletal";
+import {
+  getMusculoskeletalImageAttributionForId,
+  getMusculoskeletalImageCaptionForId,
+  getMusculoskeletalImageForId,
+} from "../data/musculoskeletalMedia";
 import { getNephronSegmentById } from "../data/nephron";
 import { getOrganById } from "../data/organs";
 import { getProteinById } from "../data/proteins";
@@ -542,8 +547,12 @@ function renderMusculoskeletalPopover(musculoskeletalId: string): boolean {
   const entry = getMusculoskeletalById(musculoskeletalId);
   if (!entry || !popoverEl) return false;
 
-  popoverEl.classList.add("usmle-organ-popover--rich");
-  popoverEl.innerHTML = renderRichPopoverContent(
+  const imageSrc = getMusculoskeletalImageForId(musculoskeletalId);
+  const imageCaption = getMusculoskeletalImageCaptionForId(musculoskeletalId);
+  const imageAttribution =
+    getMusculoskeletalImageAttributionForId(musculoskeletalId);
+
+  const bodyContent = renderRichPopoverContent(
     `
     ${renderPopoverTitle(entry.name, "musculoskeletal")}
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
@@ -558,6 +567,24 @@ function renderMusculoskeletalPopover(musculoskeletalId: string): boolean {
     ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
   `,
   );
+
+  popoverEl.classList.add("usmle-organ-popover--rich");
+  if (imageSrc && imageCaption && imageAttribution) {
+    popoverEl.classList.add("usmle-organ-popover--with-media");
+    popoverEl.innerHTML = `
+      <div class="usmle-organ-popover__layout">
+        <div class="usmle-organ-popover__body">${bodyContent}</div>
+        ${renderPopoverMediaBlock({
+          src: imageSrc,
+          alt: `${entry.name} diagram`,
+          caption: imageCaption,
+          attribution: imageAttribution,
+        })}
+      </div>
+    `;
+  } else {
+    popoverEl.innerHTML = bodyContent;
+  }
   return true;
 }
 

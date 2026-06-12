@@ -414,6 +414,50 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     pediatrics:
       "Down syndrome patients need atlantoaxial instability screening; contact sports may be restricted if instability present. Odontoid fractures and ligamentous injuries in pediatric cervical trauma require careful imaging.",
   },
+  {
+    id: "sarcomere",
+    name: "Sarcomere",
+    aliases: [
+      "sarcomere",
+      "sarcomeres",
+      "muscle sarcomere",
+      "contractile unit",
+      "sarcomere structure",
+      "striated muscle sarcomere",
+    ],
+    definition:
+      "Functional contractile unit of striated (skeletal and cardiac) muscle — the segment between two adjacent Z lines containing interdigitating thick (myosin) and thin (actin) filaments whose sliding produces contraction.",
+    anatomy:
+      "Z line (Z disc) — protein boundary anchoring thin filaments at each end of the sarcomere. M line — central anchor for thick myosin filaments. A band (anisotropic) — full length of thick filaments; width stays constant during contraction. I band (isotropic) — thin filaments only (plus overlap region at edges); shortens with contraction. H zone — central A-band region with thick filaments only; disappears when fully contracted. Titin spans Z line to M line stabilizing the lattice.",
+    action: [
+      "Sliding filament theory — myosin heads bind actin, power stroke pulls thin filaments toward M line",
+      "Contraction shortens I band and H zone; A band length unchanged (myosin filaments do not shorten)",
+      "ATP required for cross-bridge detachment; absence of ATP → rigor (rigor mortis)",
+      "Tropomyosin/troponin regulate actin–myosin binding in response to Ca²⁺",
+    ],
+    clinicalRelevance: [
+      "Hypertrophic cardiomyopathy — autosomal dominant sarcomere gene mutations (MYH7, MYBPC3, troponins)",
+      "Muscular dystrophies — dystrophin links sarcolemma to Z disc; loss → membrane instability",
+      "Rigor mortis — postmortem ATP depletion locks cross-bridges",
+      "Delayed-onset muscle soreness — eccentric contraction microinjury to sarcomere structures",
+    ],
+    boardsPearls: [
+      "Sarcomere = Z line to Z line",
+      "A band = myosin (thick) filament length — constant during contraction",
+      "I band and H zone shorten; Z lines move closer together",
+      "M line — mid-sarcomere myosin anchor; Z line — actin anchor",
+      "Troponin C binds Ca²⁺ → tropomyosin shifts → cross-bridge cycling",
+      "Cardiac vs skeletal sarcomere — same band nomenclature; cardiac has intercalated discs between cells",
+    ],
+    distinguishFrom: [
+      "Myofibril — long chain of many sarcomeres in series",
+      "Neuromuscular junction — motor neuron to muscle signaling site, not contractile lattice",
+      "Smooth muscle — lacks striated sarcomere organization (no Z lines/bands)",
+      "Titin — giant elastic protein within sarcomere, not the sarcomere itself",
+    ],
+    pediatrics:
+      "Same sarcomere band anatomy in pediatric skeletal and cardiac muscle. Sarcomere gene mutations (e.g., MYH7, MYBPC3) cause familial hypertrophic cardiomyopathy that may present in adolescents with syncope or sudden death.",
+  },
 ];
 
 const musculoskeletalById = new Map(

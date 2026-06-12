@@ -1,0 +1,9 @@
+Musculoskeletal images for USMLE Study Tools popovers.
+
+sarcomere-diagram.svg
+  Source: Wikimedia Commons — Sarcomere diagram.svg
+  Author: SlothMcCarty
+  License: CC BY-SA 3.0 / GFDL
+  Description: Labeled sarcomere diagram (Z line, M line, A band, I band, H zone)
+  Page: https://commons.wikimedia.org/wiki/File:Sarcomere_diagram.svg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Sarcomere_diagram.svg
