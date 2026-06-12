@@ -9,3 +9,19 @@ Mysid (vectorized from CDC public domain image)
 molar-pregnancy-ultrasound.jpg
 https://commons.wikimedia.org/wiki/File:Molar_pregnancy.jpg
 Mikael Häggström, CC0 (public domain)
+
+ovarian-dermoid-cyst-histology.jpg
+https://commons.wikimedia.org/wiki/File:Histopathology_of_ovarian_dermoid_cyst.jpg
+Koumoutsea et al., CC BY 3.0
+
+rocky-mountain-spotted-fever-rash.jpg
+https://commons.wikimedia.org/wiki/File:Rocky_mountain_spotted_fever.jpg
+CDC PHIL, public domain (U.S. federal government)
+
+dengue-recovery-rash.jpg
+https://commons.wikimedia.org/wiki/File:Dengue_recovery_rash_(White_islands_in_red_sea).jpg
+Ranjan Premaratna, CC BY-SA 4.0
+
+typhoid-fever-rose-spots.jpg
+https://commons.wikimedia.org/wiki/File:Salmonella_typhi_typhoid_fever_PHIL_2215_lores.jpg
+CDC PHIL #2215, public domain (U.S. federal government)

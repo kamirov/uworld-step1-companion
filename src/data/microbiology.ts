@@ -1233,6 +1233,79 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
       "Congenital CMV common; most asymptomatic at birth but sensorineural hearing loss may develop; screen failed newborn hearing tests.",
   },
   {
+    id: "dengue-virus",
+    name: "Dengue Virus",
+    aliases: [
+      "dengue virus",
+      "dengue",
+      "denv",
+      "dengue fever virus",
+      "breakbone fever",
+      "flavivirus dengue",
+    ],
+    type: "virus",
+    definition:
+      "Enveloped positive-sense ssRNA flavivirus with four antigenically distinct serotypes (DENV-1–4); transmitted by Aedes mosquito bite, causing dengue fever and, on secondary heterotypic infection, severe dengue through antibody-dependent enhancement.",
+    morphology: [
+      "Flavivirus — enveloped icosahedral virion (~50 nm)",
+      "Positive-sense ssRNA genome; single serotype exposure does not protect against others",
+      "Replicates in monocytes/macrophages, dendritic cells, and endothelial cells",
+    ],
+    virulenceFactors: [
+      "Four serotypes — infection with one confers lifelong immunity to that serotype only",
+      "Antibody-dependent enhancement (ADE) — subneutralizing cross-reactive antibodies from prior infection facilitate Fc-receptor–mediated uptake into monocytes/macrophages on secondary heterotypic infection",
+      "Endothelial dysfunction and increased vascular permeability in severe disease",
+      "NS1 protein — early diagnostic antigen; may contribute to vascular leak",
+    ],
+    transmission: [
+      "Aedes aegypti mosquito bite — primary vector; daytime feeder",
+      "Aedes albopictus (Asian tiger mosquito) — secondary vector",
+      "Vertical transmission rare; blood transfusion and organ transplant (rare)",
+      "No human-to-human transmission without mosquito vector",
+    ],
+    diseases: [
+      "Dengue fever (breakbone fever) — uncomplicated febrile illness",
+      "Severe dengue (dengue hemorrhagic fever/dengue shock syndrome) — plasma leakage, shock, hemorrhage",
+    ],
+    classicPresentation: [
+      "Febrile phase (2–7 days): high fever, retro-orbital headache, severe myalgias/arthralgias",
+      "Flushed skin early; maculopapular rash later (days 4–7)",
+      "Recovery rash — 'white islands in a sea of red'",
+      "Leukopenia, thrombocytopenia, positive tourniquet test",
+      "Critical phase at defervescence — warning signs if progressing to severe dengue",
+    ],
+    diagnosis: [
+      "Clinical diagnosis in endemic area with compatible features",
+      "NS1 antigen — early acute infection (first few days)",
+      "Dengue IgM — rises after day 5; IgG indicates secondary infection or past exposure",
+      "RT-PCR during viremic phase",
+      "CBC — leukopenia, thrombocytopenia; rising hematocrit suggests plasma leakage",
+    ],
+    treatment: [
+      "Supportive care only — no specific antiviral",
+      "Oral/IV hydration; monitor for warning signs and shock",
+      "Acetaminophen for symptoms — avoid aspirin and NSAIDs (bleeding risk)",
+      "IV fluid resuscitation and critical care for severe dengue",
+    ],
+    distinguishFrom: [
+      "Chikungunya virus — also Aedes-borne; prolonged arthralgia; different serology",
+      "Zika virus — flavivirus; milder illness; teratogenic in pregnancy",
+      "Yellow fever virus — flavivirus; Aedes/Haemagogus vectors; jaundice and hepatorenal failure",
+      "Plasmodium (malaria) — Anopheles vector; blood smear diagnosis",
+    ],
+    boardsPearls: [
+      "Aedes aegypti mosquito — daytime vector; breeds in standing water containers",
+      "4 serotypes — secondary heterotypic infection → ADE → severe dengue",
+      "Breakbone fever + retro-orbital pain + thrombocytopenia in traveler = dengue",
+      "White islands in a sea of red — recovery rash classic descriptor",
+      "Avoid aspirin/NSAIDs — thrombocytopenia and hemorrhage risk",
+      "Flavivirus family — also yellow fever, Zika, West Nile, HCV",
+      "No antiviral; supportive fluids — rising Hct + falling platelets = plasma leak",
+    ],
+    pediatrics:
+      "Infants and young children in endemic regions at higher risk for severe dengue and shock; fluid management must be carefully titrated. Dengvaxia (live attenuated vaccine) is restricted to seropositive individuals in endemic areas — primary seronegative vaccination may increase severe dengue risk (ADE concern).",
+  },
+  {
     id: "cryptosporidium-parvum",
     name: "Cryptosporidium parvum",
     aliases: [
@@ -1889,6 +1962,157 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
       "CRS from maternal first-trimester infection — classic pediatric board topic (deafness, PDA, cataracts). MMR prevents CRS by immunizing before pregnancy. Acquired rubella is mild in children; arthritis more prominent in adolescent females.",
   },
   {
+    id: "zika-virus",
+    name: "Zika Virus",
+    aliases: [
+      "zika virus",
+      "zika",
+      "zikv",
+      "zika fever",
+      "zika virus infection",
+    ],
+    type: "virus",
+    definition:
+      "Enveloped positive-sense ssRNA flavivirus (genus Flavivirus, family Flaviviridae) transmitted primarily by Aedes mosquitoes; causes mild febrile illness in most adults but teratogenic congenital infection with microcephaly and neurologic sequelae.",
+    morphology: [
+      "Enveloped icosahedral virion ~40 nm",
+      "Positive-sense ssRNA flavivirus",
+      "Single open reading frame translated as polyprotein then cleaved",
+      "Structurally related to dengue, yellow fever, West Nile virus",
+    ],
+    virulenceFactors: [
+      "Neurotropism — crosses placenta and infects fetal neural progenitors",
+      "Disrupts neural development → microcephaly and calcifications",
+      "Immune-mediated Guillain-Barré syndrome association in adults",
+      "Persistence in semen and other body fluids enables sexual transmission",
+    ],
+    transmission: [
+      "Aedes aegypti and Aedes albopictus mosquito bites (daytime feeder)",
+      "Vertical (congenital) transmission during maternal viremia",
+      "Sexual transmission (virus persists in semen)",
+      "Blood transfusion and laboratory exposure (rare)",
+      "Incubation ~3–14 days",
+    ],
+    diseases: [
+      "Zika fever — mild febrile illness with rash and conjunctivitis",
+      "Congenital Zika syndrome — microcephaly, intracranial calcifications, ocular abnormalities",
+      "Guillain-Barré syndrome (post-infectious association)",
+      "Fetal loss and stillbirth with severe congenital infection",
+    ],
+    classicPresentation: [
+      "Adult: low-grade fever, maculopapular rash, conjunctivitis (nonpurulent), arthralgia — often mild or asymptomatic",
+      "Travel or residence in endemic area (tropical Americas, parts of Africa/Asia/Pacific)",
+      "Congenital: microcephaly, simplified gyral pattern, intracranial calcifications, ventriculomegaly, ocular findings",
+      "Post-infectious ascending weakness with areflexia → Guillain-Barré",
+    ],
+    diagnosis: [
+      "RT-PCR on serum/urine during acute viremia (first ~1 week)",
+      "Zika IgM with confirmatory plaque reduction neutralization test (PRNT)",
+      "Maternal/fetal ultrasound for congenital infection — microcephaly, calcifications",
+      "CSF PCR in neonatal congenital infection",
+      "Distinguish from cross-reacting flavivirus serology (dengue, yellow fever)",
+    ],
+    treatment: [
+      "Supportive care — no specific antiviral",
+      "Avoid mosquito bites to prevent transmission (including during viremia)",
+      "Pregnant patients: serial fetal ultrasound; counsel on congenital risks",
+      "Guillain-Barré — IVIG/plasmapheresis per standard protocols",
+      "Prevention: vector control, condom use after travel to endemic areas",
+    ],
+    distinguishFrom: [
+      "Dengue — more severe febrile illness, hemorrhagic manifestations, thrombocytopenia; same Aedes vector",
+      "Chikungunya — severe incapacitating arthralgia; Aedes vector",
+      "Rubella — postauricular lymphadenopathy; teratogenic but different congenital triad",
+      "Parvovirus B19 — slapped-cheek rash in children; hydrops fetalis",
+      "Cytomegalovirus — TORCH; periventricular calcifications (vs Zika cortical/subcortical)",
+    ],
+    boardsPearls: [
+      "Flavivirus — Aedes aegypti/albopictus vector (same as dengue/chikungunya)",
+      "Classic triad in symptomatic adults: fever + rash + conjunctivitis",
+      "Congenital Zika → microcephaly + intracranial calcifications + ocular defects",
+      "vs CMV congenital — CMV favors periventricular calcifications; Zika favors cortical/subcortical",
+      "Sexual transmission possible — counsel travelers; screen pregnant partners",
+      "Guillain-Barré association after Zika infection",
+      "No vaccine routinely available on boards — prevention is vector avoidance",
+    ],
+    pediatrics:
+      "Congenital Zika syndrome is the critical pediatric board topic — microcephaly, brain malformations, and ocular abnormalities after maternal first- or second-trimester infection. Infants may have hypertonia, seizures, and feeding difficulties. Acquired Zika in children is usually mild like adults.",
+  },
+  {
+    id: "yellow-fever-virus",
+    name: "Yellow Fever Virus",
+    aliases: [
+      "yellow fever virus",
+      "yellow fever",
+      "yfv",
+      "flavivirus yellow fever",
+    ],
+    type: "virus",
+    definition:
+      "Enveloped positive-sense ssRNA flavivirus transmitted by Aedes mosquitoes (urban cycle) or Haemagogus spp. (jungle/sylvatic cycle); causes hepatitis, hemorrhage, and shock in severe disease — prevented by live attenuated 17D vaccine.",
+    morphology: [
+      "Enveloped icosahedral flavivirus ~40–50 nm",
+      "Positive-sense ssRNA genome",
+      "17D vaccine strain — live attenuated, replicates with reduced virulence",
+    ],
+    virulenceFactors: [
+      "Hepatotropism — midzonal hepatocyte necrosis (Councilman bodies)",
+      "Endothelial injury and DIC in severe intoxication phase",
+      "Renal failure from shock and myoglobinuria",
+      "High viremia enables mosquito acquisition",
+    ],
+    transmission: [
+      "Urban cycle — Aedes aegypti mosquito between humans",
+      "Jungle (sylvatic) cycle — Haemagogus mosquitoes between nonhuman primates; spillover to humans in forest",
+      "Incubation 3–6 days",
+      "Endemic in tropical Africa and South America",
+    ],
+    diseases: [
+      "Yellow fever — biphasic illness with hepatitis and hemorrhagic shock",
+      "Vaccine-associated viscerotropic disease (rare, immunocompromised)",
+      "Vaccine-associated neurotropic disease (rare)",
+    ],
+    classicPresentation: [
+      "First phase (infection): sudden fever, headache, myalgias, nausea — may remit after 3–4 days",
+      "Remission period — brief clinical improvement",
+      "Intoxication phase (15–25%): recurrent fever, jaundice, 'black vomit' (hematemesis), hemorrhage, shock",
+      "Relative bradycardia during fever (Faget sign) — classic but not universal",
+      "Travel to endemic Africa/South America without vaccination",
+    ],
+    diagnosis: [
+      "Clinical diagnosis in endemic area with compatible illness",
+      "RT-PCR or antigen detection early in illness",
+      "IgM serology — cross-reacts with other flaviviruses; confirm with PRNT",
+      "Liver biopsy not routine — midzonal necrosis with Councilman bodies if obtained",
+      "Verify vaccination status and travel history",
+    ],
+    treatment: [
+      "Supportive care only — no specific antiviral",
+      "Avoid aspirin/NSAIDs (bleeding risk)",
+      "Manage shock, hemorrhage, renal failure, and hepatic encephalopathy in ICU",
+      "Prevention: live attenuated 17D vaccine for travelers to endemic areas",
+      "Single dose provides long-lasting immunity; booster per current guidelines for at-risk groups",
+    ],
+    distinguishFrom: [
+      "Dengue — hemorrhagic fever without prominent jaundice; same Aedes vector",
+      "Hepatitis A/E — jaundice without hemorrhagic shock pattern",
+      "Malaria — cyclical fevers, parasitemia on smear",
+      "Leptospirosis — conjunctival suffusion, renal involvement; different exposure",
+      "Ebola/Marburg — viral hemorrhagic fever; different geography and transmission",
+    ],
+    boardsPearls: [
+      "Flavivirus — Aedes aegypti urban vector; Haemagogus jungle vector",
+      "Three phases: infection → remission → intoxication (jaundice + hemorrhage + shock)",
+      "Faget sign — fever with relative bradycardia",
+      "Liver — midzonal hepatocyte necrosis with Councilman (apoptotic) bodies",
+      "Live attenuated 17D vaccine — contraindicated in infants <6–9 months, pregnancy, severe egg allergy (check guidelines), and immunocompromised",
+      "Case-fatality rate up to ~20–50% in severe intoxication phase",
+      "Travel medicine boards favorite — vaccine required for entry to some endemic countries",
+    ],
+    pediatrics:
+      "Yellow fever vaccine generally not given before 9 months (6 months in outbreak per WHO); infants have higher risk of encephalitis from live vaccine. Children in endemic areas without vaccination are at risk for severe disease. Congenital infection is rare but reported.",
+  },
+  {
     id: "toxoplasma-gondii",
     name: "Toxoplasma gondii",
     aliases: [
@@ -2003,6 +2227,62 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
     ],
     pediatrics:
       "Children in endemic areas — check for tick bites; doxycycline used in children for Lyme per current guidelines (age limits evolving); arthritis common late manifestation.",
+  },
+  {
+    id: "rickettsia-rickettsii",
+    name: "Rickettsia rickettsii",
+    aliases: [
+      "rickettsia rickettsii",
+      "r. rickettsii",
+      "rickettsia rickettsiae",
+    ],
+    type: "atypical-bacteria",
+    definition:
+      "Obligate intracellular gram-negative bacterium transmitted by hard tick (Dermacentor spp.) bite; causes Rocky Mountain spotted fever — the most severe and common rickettsial illness in the United States.",
+    morphology: [
+      "Obligate intracellular coccobacillus",
+      "Poorly visualized on Gram stain of blood",
+      "Giemsa or immunohistochemistry on skin biopsy in selected cases",
+    ],
+    virulenceFactors: [
+      "Endothelial cell invasion and replication",
+      "Vasculitis with increased vascular permeability",
+      "Spread hematogenously to skin, CNS, lungs, and other organs",
+    ],
+    transmission: [
+      "Dermacentor variabilis (American dog tick) — eastern US",
+      "Dermacentor andersoni (Rocky Mountain wood tick) — western US",
+      "Rhipicephalus sanguineus (brown dog tick) — Southwest US/Mexico",
+      "Tick must attach typically ≥6 h for transmission (classically taught)",
+    ],
+    diseases: ["Rocky Mountain spotted fever"],
+    classicPresentation: [
+      "Fever, headache, myalgias after tick exposure in endemic area",
+      "Rash 2–4 days later — wrists/ankles → trunk; palms/soles possible",
+      "Petechiae in severe late disease",
+    ],
+    diagnosis: [
+      "Clinical diagnosis with empiric treatment — do not wait for rash or labs",
+      "Acute and convalescent serology (IFA) — fourfold rise",
+      "Thrombocytopenia and hyponatremia supportive but nonspecific",
+    ],
+    treatment: [
+      "Doxycycline — first line for all ages when RMSF suspected",
+      "Start immediately; delay increases mortality",
+    ],
+    distinguishFrom: [
+      "Rickettsia typhi (murine typhus) — flea vector; less severe",
+      "Ehrlichia/Anaplasma — leukopenia; different tick vectors and geography",
+      "Borrelia burgdorferi (Lyme) — Ixodes tick; erythema migrans",
+    ],
+    boardsPearls: [
+      "Obligate intracellular rickettsia — vasculitis of endothelial cells",
+      "Dermacentor tick vector — not Ixodes (Lyme)",
+      "Doxycycline empirically — even without rash and even in children",
+      "Rash starts on wrists/ankles and spreads centrally",
+    ],
+    pediatrics:
+      "Children are commonly affected; doxycycline is recommended for suspected RMSF regardless of age because mortality without treatment is high.",
   },
   {
     id: "aspergillus-fumigatus",

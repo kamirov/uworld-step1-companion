@@ -25,3 +25,11 @@ erythema.jpg
   License: CC0 1.0 (public domain dedication)
   Page: https://commons.wikimedia.org/wiki/File:Recurrent_erysipelas_on_edematous_leg.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Recurrent_erysipelas_on_edematous_leg.jpg?width=1280
+
+purpura.jpg
+  Source: Wikimedia Commons — Vasculitis.JPG
+  Author: James Heilman, MD
+  Description: Petechiae/purpura on the lower limb from medication-induced vasculitis
+  License: CC BY-SA 3.0
+  Page: https://commons.wikimedia.org/wiki/File:Vasculitis.JPG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Vasculitis.JPG?width=1280

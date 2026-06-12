@@ -44,8 +44,11 @@ import varicellaZosterVirus from "../media/images/microbiology/varicella-zoster-
 import measlesVirus from "../media/images/microbiology/measles-virus.jpg?url";
 import mumpsVirus from "../media/images/microbiology/mumps-virus.jpg?url";
 import rubellaVirus from "../media/images/microbiology/rubella-virus.jpg?url";
+import zikaVirus from "../media/images/microbiology/zika-virus.png?url";
+import yellowFeverVirus from "../media/images/microbiology/yellow-fever-virus.jpg?url";
 import sporothrixSchenckii from "../media/images/microbiology/sporothrix-schenckii.jpg?url";
 import bartonellaHenselae from "../media/images/microbiology/bartonella-henselae.jpg?url";
+import aedesAegypti from "../media/images/microbiology/aedes-aegypti.jpg?url";
 
 export type MicrobiologyImageId = MicrobiologyEntry["id"];
 
@@ -86,6 +89,8 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "measles-virus": extensionAssetUrl(measlesVirus),
     "mumps-virus": extensionAssetUrl(mumpsVirus),
     "rubella-virus": extensionAssetUrl(rubellaVirus),
+    "zika-virus": extensionAssetUrl(zikaVirus),
+    "yellow-fever-virus": extensionAssetUrl(yellowFeverVirus),
     "sporothrix-schenckii": extensionAssetUrl(sporothrixSchenckii),
     "bartonella-henselae": extensionAssetUrl(bartonellaHenselae),
     "toxoplasma-gondii": extensionAssetUrl(toxoplasmaGondii),
@@ -101,6 +106,7 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "plasmodium-vivax": extensionAssetUrl(plasmodiumVivax),
     "strongyloides-stercoralis": extensionAssetUrl(strongyloidesStercoralis),
     "schistosoma-mansoni": extensionAssetUrl(schistosomaMansoni),
+    "dengue-virus": extensionAssetUrl(aedesAegypti),
   };
 
 export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
@@ -226,6 +232,14 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #10221",
     url: "https://phil.cdc.gov/Details.aspx?pid=10221",
   },
+  "zika-virus": {
+    label: "CDC PHIL #20538",
+    url: "https://phil.cdc.gov/Details.aspx?pid=20538",
+  },
+  "yellow-fever-virus": {
+    label: "CDC PHIL #8239",
+    url: "https://phil.cdc.gov/Details.aspx?pid=8239",
+  },
   "sporothrix-schenckii": {
     label: "CDC PHIL #3940",
     url: "https://phil.cdc.gov/Details.aspx?pid=3940",
@@ -286,6 +300,10 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #5252",
     url: "https://phil.cdc.gov/Details.aspx?pid=5252",
   },
+  "dengue-virus": {
+    label: "CDC PHIL #9186 (public domain)",
+    url: "https://phil.cdc.gov/Details.aspx?pid=9186",
+  },
 };
 
 export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
@@ -335,6 +353,10 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "Negative-stain TEM of mumps rubulavirus (paramyxovirus)",
   "rubella-virus":
     "Negative-stain TEM of rubella virions budding from host cell surface",
+  "zika-virus":
+    "Colorized TEM of Zika virus particles (Flaviviridae; ~40 nm)",
+  "yellow-fever-virus":
+    "TEM of yellow fever virions at high magnification (Flaviviridae)",
   "sporothrix-schenckii":
     "Lymphocutaneous sporotrichosis — ascending nodular lesions on the arm (Sporothrix schenckii)",
   "bartonella-henselae":

@@ -4,10 +4,11 @@ import type { SymptomEntry } from "./symptoms";
 import erythema from "../media/images/symptoms/erythema.jpg?url";
 import papule from "../media/images/symptoms/papule.jpg?url";
 import plaque from "../media/images/symptoms/plaque.jpg?url";
+import purpura from "../media/images/symptoms/purpura.jpg?url";
 
 export type SymptomImageId = Extract<
   SymptomEntry["id"],
-  "erythema" | "papule" | "plaque"
+  "erythema" | "papule" | "plaque" | "purpura"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -19,6 +20,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   erythema: extensionAssetUrl(erythema),
   papule: extensionAssetUrl(papule),
   plaque: extensionAssetUrl(plaque),
+  purpura: extensionAssetUrl(purpura),
 };
 
 export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
@@ -36,6 +38,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (James Heilman, MD, CC BY-SA 3.0)",
     url: "https://commons.wikimedia.org/wiki/File:Psoriasis2010.JPG",
   },
+  purpura: {
+    label: "Wikimedia Commons (James Heilman, MD, CC BY-SA 3.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Vasculitis.JPG",
+  },
 };
 
 export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
@@ -45,6 +51,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
     "Violaceous flat-topped papules of lichen planus on the shins (solid, ≤1 cm)",
   plaque:
     "Erythematous plaque of psoriasis with silvery scale (solid, >1 cm)",
+  purpura:
+    "Petechiae and purpura on the lower limb from medication-induced leukocytoclastic vasculitis",
 };
 
 export function getSymptomImageForId(id: string): string | undefined {

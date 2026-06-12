@@ -1643,6 +1643,47 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Thrombophlebitis — follows vein not lymphatic; cord-like tender vein",
     ],
   },
+  {
+    id: "purpura",
+    name: "Purpura",
+    aliases: [
+      "purpura",
+      "purpuras",
+      "palpable purpura",
+      "non-blanching purpura",
+      "cutaneous purpura",
+    ],
+    definition:
+      "Non-blanching purple or red discoloration of skin or mucosa from extravasation of blood into the dermis or submucosa; lesions are typically 3–10 mm (larger than petechiae, smaller than ecchymoses) and may be palpable when vasculitis is present.",
+    mechanism:
+      "Hemorrhage through damaged or insufficient platelet/coagulation support, or inflamed vessel walls — from thrombocytopenia, platelet dysfunction, coagulopathy, or small-vessel vasculitis increasing vascular permeability.",
+    thinkOf: [
+      "Immune thrombocytopenic purpura (ITP) — isolated thrombocytopenia",
+      "Thrombotic thrombocytopenic purpura (TTP) — pentad: fever, neuro, renal, thrombocytopenia, MAHA",
+      "Disseminated intravascular coagulation (DIC) — widespread coagulation with consumption",
+      "Meningococcemia — rapid toxic illness with petechiae/purpura",
+      "Henoch-Schönlein purpura (IgA vasculitis) — palpable purpura on buttocks/legs in children",
+      "Leukocytoclastic vasculitis — palpable purpura, often lower extremities",
+      "Vitamin C deficiency (scurvy) — perifollicular petechiae/purpura, bleeding gums",
+      "Amyloidosis — periorbital purpura with minor trauma ('raccoon eyes')",
+    ],
+    pairWith: [
+      "Fever + hypotension + rapid progression → meningococcemia / Waterhouse-Friderichsen",
+      "Palpable purpura on legs/buttocks + abdominal pain + hematuria → Henoch-Schönlein purpura",
+      "Isolated thrombocytopenia + mucosal bleeding → ITP",
+      "Schistocytes + ↑ LDH + renal dysfunction + fever → TTP",
+      "Prolonged PT/PTT + low fibrinogen + ↑ D-dimer → DIC",
+      "Recent drug exposure + palpable purpura → drug-induced leukocytoclastic vasculitis",
+      "Gingival bleeding + corkscrew hairs + poor wound healing → scurvy",
+    ],
+    distinguishFrom: [
+      "Petechiae — smaller (typically <3 mm) pinpoint hemorrhages; same non-blanching mechanism",
+      "Ecchymosis — larger (>1 cm) bruise from trauma or coagulopathy",
+      "Erythema — blanches with pressure; vasodilation not hemorrhage",
+      "Telangiectasia — blanching or persistent dilated vessels, not hemorrhage",
+      "Livedo reticularis — netlike vascular pattern, usually blanching",
+    ],
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));

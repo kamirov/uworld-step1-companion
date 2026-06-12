@@ -316,6 +316,22 @@ rubella-virus.jpg
   Page: https://phil.cdc.gov/Details.aspx?pid=10221
   Commons: https://commons.wikimedia.org/wiki/File:Rubella_virus_10221_lores.jpg
 
+zika-virus.png
+  Source: CDC PHIL #20538
+  Author: CDC/Cynthia Goldsmith
+  Description: Colorized TEM of Zika virus particles (Flaviviridae)
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=20538
+  Commons: https://commons.wikimedia.org/wiki/File:Zika_EM_CDC_20538.png
+
+yellow-fever-virus.jpg
+  Source: CDC PHIL #8239
+  Author: Erskine Palmer, Ph.D.
+  Description: TEM of yellow fever virions at high magnification
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=8239
+  Commons: https://commons.wikimedia.org/wiki/File:YellowFeverVirus.jpg
+
 sporothrix-schenckii.jpg
   Source: CDC PHIL #3940
   Description: Lymphocutaneous sporotrichosis with ascending arm lesions
