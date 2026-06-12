@@ -3,6 +3,7 @@ import type { ConditionEntry } from "./conditions";
 
 import addisonDisease from "../media/images/conditions/addison-disease.jpg?url";
 import asthma from "../media/images/conditions/asthma.jpg?url";
+import atopicDermatitis from "../media/images/conditions/atopic-dermatitis.jpg?url";
 import catScratchDisease from "../media/images/conditions/cat-scratch-disease.jpg?url";
 import celiacDisease from "../media/images/conditions/celiac-disease.jpg?url";
 import chikungunyaRash from "../media/images/conditions/chikungunya-rash.jpg?url";
@@ -15,7 +16,9 @@ import gangrene from "../media/images/conditions/gangrene.jpg?url";
 import hivInfection from "../media/images/conditions/hiv-infection.jpg?url";
 import hodgkinLymphoma from "../media/images/conditions/hodgkin-lymphoma.jpg?url";
 import infectiveEndocarditis from "../media/images/conditions/infective-endocarditis.jpg?url";
+import lichenPlanus from "../media/images/conditions/lichen-planus.jpg?url";
 import lungCancer from "../media/images/conditions/lung-cancer.jpg?url";
+import lymeDisease from "../media/images/conditions/lyme-disease.jpg?url";
 import lymphogranulomaVenereum from "../media/images/conditions/lymphogranuloma-venereum.jpg?url";
 import malaria from "../media/images/conditions/malaria.jpg?url";
 import meningesDiagram from "../media/images/conditions/meninges-diagram.svg?url";
@@ -34,6 +37,7 @@ import pressureUlcer from "../media/images/conditions/pressure-ulcer.jpg?url";
 import primaryBiliaryCholangitis from "../media/images/conditions/primary-biliary-cholangitis.jpg?url";
 import psoriasis from "../media/images/conditions/psoriasis.jpg?url";
 import raggedRedFibersGomori from "../media/images/conditions/ragged-red-fibers-gomori.jpg?url";
+import rheumatoidArthritis from "../media/images/conditions/rheumatoid-arthritis.jpg?url";
 import rockyMountainSpottedFeverRash from "../media/images/conditions/rocky-mountain-spotted-fever-rash.jpg?url";
 import sarcoidosis from "../media/images/conditions/sarcoidosis.jpg?url";
 import sickleCellDisease from "../media/images/conditions/sickle-cell-disease.jpg?url";
@@ -53,6 +57,7 @@ export type ConditionImageId = Extract<
   ConditionEntry["id"],
   | "addison-disease"
   | "asthma"
+  | "atopic-dermatitis"
   | "cat-scratch-disease"
   | "celiac-disease"
   | "chikungunya-fever"
@@ -65,7 +70,9 @@ export type ConditionImageId = Extract<
   | "hiv-infection"
   | "hodgkin-lymphoma"
   | "infective-endocarditis"
+  | "lichen-planus"
   | "lung-cancer"
+  | "lyme-disease"
   | "lymphogranuloma-venereum"
   | "malaria"
   | "meningitis"
@@ -84,6 +91,7 @@ export type ConditionImageId = Extract<
   | "primary-biliary-cholangitis"
   | "psoriasis"
   | "mitochondrial-encephalomyopathy"
+  | "rheumatoid-arthritis"
   | "rocky-mountain-spotted-fever"
   | "sarcoidosis"
   | "sickle-cell-disease"
@@ -108,6 +116,7 @@ function extensionAssetUrl(path: string): string {
 export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "addison-disease": extensionAssetUrl(addisonDisease),
   "asthma": extensionAssetUrl(asthma),
+  "atopic-dermatitis": extensionAssetUrl(atopicDermatitis),
   "cat-scratch-disease": extensionAssetUrl(catScratchDisease),
   "celiac-disease": extensionAssetUrl(celiacDisease),
   "chikungunya-fever": extensionAssetUrl(chikungunyaRash),
@@ -120,7 +129,9 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hiv-infection": extensionAssetUrl(hivInfection),
   "hodgkin-lymphoma": extensionAssetUrl(hodgkinLymphoma),
   "infective-endocarditis": extensionAssetUrl(infectiveEndocarditis),
+  "lichen-planus": extensionAssetUrl(lichenPlanus),
   "lung-cancer": extensionAssetUrl(lungCancer),
+  "lyme-disease": extensionAssetUrl(lymeDisease),
   "lymphogranuloma-venereum": extensionAssetUrl(lymphogranulomaVenereum),
   "malaria": extensionAssetUrl(malaria),
   "meningitis": extensionAssetUrl(meningesDiagram),
@@ -139,6 +150,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "primary-biliary-cholangitis": extensionAssetUrl(primaryBiliaryCholangitis),
   "psoriasis": extensionAssetUrl(psoriasis),
   "mitochondrial-encephalomyopathy": extensionAssetUrl(raggedRedFibersGomori),
+  "rheumatoid-arthritis": extensionAssetUrl(rheumatoidArthritis),
   "rocky-mountain-spotted-fever": extensionAssetUrl(rockyMountainSpottedFeverRash),
   "sarcoidosis": extensionAssetUrl(sarcoidosis),
   "sickle-cell-disease": extensionAssetUrl(sickleCellDisease),
@@ -160,6 +172,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
 > = {
   "addison-disease": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
   "asthma": { label: "Wikimedia Commons (2311 Lung Tissue.jpg)", url: "https://commons.wikimedia.org/wiki/File:2311_Lung_Tissue.jpg" },
+  "atopic-dermatitis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:atopic-dermatitis.jpg" },
   "cat-scratch-disease": { label: "Wikimedia Commons (ICD-10-CM (2010).djvu)", url: "https://commons.wikimedia.org/wiki/File:ICD-10-CM_(2010).djvu" },
   "celiac-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:celiac-disease.jpg" },
   "chikungunya-fever": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:chikungunya-rash.jpg" },
@@ -172,7 +185,9 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "hiv-infection": { label: "Wikimedia Commons (The George Blumer edition of Billings-Forchheimer's Therapeusis of internal diseases- Anaphylaxis, Dietary, Deficiencies, Endocrins, Dvelopmental, Vasomotor, Metabolic, Digestion ... (IA georgeblumeredit04forc).pdf)", url: "https://commons.wikimedia.org/wiki/File:The_George_Blumer_edition_of_Billings-Forchheimer's_Therapeusis_of_internal_diseases-_Anaphylaxis,_Dietary,_Deficiencies,_Endocrins,_Dvelopmental,_Vasomotor,_Metabolic,_Digestion_..._(IA_georgeblumeredit04forc).pdf" },
   "hodgkin-lymphoma": { label: "Wikimedia Commons (Reed-Sternberg lymphocyte nci-vol-7172-300.jpg)", url: "https://commons.wikimedia.org/wiki/File:Reed-Sternberg_lymphocyte_nci-vol-7172-300.jpg" },
   "infective-endocarditis": { label: "Wikimedia Commons (Janeway lesion.JPG)", url: "https://commons.wikimedia.org/wiki/File:Janeway_lesion.JPG" },
+  "lichen-planus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lichen-planus.jpg" },
   "lung-cancer": { label: "Wikimedia Commons (LungCancer-Xray-01.jpg)", url: "https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg" },
+  "lyme-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lyme-disease.jpg" },
   "lymphogranuloma-venereum": { label: "Wikimedia Commons (Poullignac Travaux LGV Caterpillar RM500 2013.jpg)", url: "https://commons.wikimedia.org/wiki/File:Poullignac_Travaux_LGV_Caterpillar_RM500_2013.jpg" },
   "malaria": { label: "Wikimedia Commons (Ring Forms of Plasmodium falciparum.jpg)", url: "https://commons.wikimedia.org/wiki/File:Ring_Forms_of_Plasmodium_falciparum.jpg" },
   "meningitis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:meninges-diagram.svg" },
@@ -191,6 +206,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "primary-biliary-cholangitis": { label: "Wikimedia Commons (United States Navy Medical News Letter Vol. 22, No. 9, 13 November 1953 (IA MedicalNewsLetter19531113).pdf)", url: "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._22,_No._9,_13_November_1953_(IA_MedicalNewsLetter19531113).pdf" },
   "psoriasis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:psoriasis.jpg" },
   "mitochondrial-encephalomyopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ragged-red-fibers-gomori.jpg" },
+  "rheumatoid-arthritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:rheumatoid-arthritis.jpg" },
   "rocky-mountain-spotted-fever": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:rocky-mountain-spotted-fever-rash.jpg" },
   "sarcoidosis": { label: "Wikimedia Commons (Sarcoidosis histology skin involvement.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sarcoidosis_histology_skin_involvement.jpg" },
   "sickle-cell-disease": { label: "Wikimedia Commons (Sickle Cell Disease in Newborns and Infants- A Guide for Parents (IA sicklecelldiseas00usde).pdf)", url: "https://commons.wikimedia.org/wiki/File:Sickle_Cell_Disease_in_Newborns_and_Infants-_A_Guide_for_Parents_(IA_sicklecelldiseas00usde).pdf" },
@@ -212,6 +228,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
 > = {
   "addison-disease": "Clinical or pathologic image illustrating addison disease",
   "asthma": "Clinical or pathologic image illustrating asthma",
+  "atopic-dermatitis": "Clinical or pathologic image illustrating atopic dermatitis",
   "cat-scratch-disease": "Clinical or pathologic image illustrating cat scratch disease",
   "celiac-disease": "Clinical or pathologic image illustrating celiac disease",
   "chikungunya-fever": "Maculopapular chikungunya rash on the abdomen during acute illness",
@@ -224,7 +241,9 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "hiv-infection": "Clinical or pathologic image illustrating hiv infection",
   "hodgkin-lymphoma": "Clinical or pathologic image illustrating hodgkin lymphoma",
   "infective-endocarditis": "Clinical or pathologic image illustrating infective endocarditis",
+  "lichen-planus": "Clinical or pathologic image illustrating lichen planus",
   "lung-cancer": "Clinical or pathologic image illustrating lung cancer",
+  "lyme-disease": "Clinical or pathologic image illustrating lyme disease",
   "lymphogranuloma-venereum": "Clinical or pathologic image illustrating lymphogranuloma venereum",
   "malaria": "Clinical or pathologic image illustrating malaria",
   "meningitis": "Cross-section of cranial meninges — dura mater, arachnoid mater, pia mater, and subarachnoid space",
@@ -243,6 +262,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "primary-biliary-cholangitis": "Clinical or pathologic image illustrating primary biliary cholangitis",
   "psoriasis": "Clinical or pathologic image illustrating psoriasis",
   "mitochondrial-encephalomyopathy": "Ragged red fibers (subsarcolemmal mitochondrial aggregates) on Gomori trichrome muscle biopsy in mitochondrial myopathy",
+  "rheumatoid-arthritis": "Clinical or pathologic image illustrating rheumatoid arthritis",
   "rocky-mountain-spotted-fever": "Characteristic spotted rash of Rocky Mountain spotted fever on the wrist and hand",
   "sarcoidosis": "Clinical or pathologic image illustrating sarcoidosis",
   "sickle-cell-disease": "Clinical or pathologic image illustrating sickle cell disease",

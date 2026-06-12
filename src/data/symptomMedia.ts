@@ -1,6 +1,7 @@
 import type { MediaAttribution } from "./media";
 import type { SymptomEntry } from "./symptoms";
 
+import brudzinskiSign from "../media/images/symptoms/brudzinski-sign.png?url";
 import bullae from "../media/images/symptoms/bullae.jpg?url";
 import calcinosis from "../media/images/symptoms/calcinosis.jpg?url";
 import clubbing from "../media/images/symptoms/clubbing.jpg?url";
@@ -8,6 +9,7 @@ import cyanosis from "../media/images/symptoms/cyanosis.jpg?url";
 import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import erythema from "../media/images/symptoms/erythema.jpg?url";
 import jaundice from "../media/images/symptoms/jaundice.jpg?url";
+import kernigSign from "../media/images/symptoms/kernig-sign.jpg?url";
 import lichenification from "../media/images/symptoms/lichenification.jpg?url";
 import lymphadenopathy from "../media/images/symptoms/lymphadenopathy.jpg?url";
 import maculopapularRash from "../media/images/symptoms/maculopapular-rash.jpg?url";
@@ -23,6 +25,7 @@ import vesicle from "../media/images/symptoms/vesicle.jpg?url";
 
 export type SymptomImageId = Extract<
   SymptomEntry["id"],
+  | "brudzinski-sign"
   | "bullae"
   | "calcinosis"
   | "clubbing"
@@ -30,6 +33,7 @@ export type SymptomImageId = Extract<
   | "dactylitis"
   | "erythema"
   | "jaundice"
+  | "kernig-sign"
   | "lichenification"
   | "lymphadenopathy"
   | "maculopapular-rash"
@@ -51,6 +55,7 @@ function extensionAssetUrl(path: string): string {
 
 /** See src/media/images/symptoms/SOURCES.txt */
 export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
+  "brudzinski-sign": extensionAssetUrl(brudzinskiSign),
   "bullae": extensionAssetUrl(bullae),
   "calcinosis": extensionAssetUrl(calcinosis),
   "clubbing": extensionAssetUrl(clubbing),
@@ -58,6 +63,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "dactylitis": extensionAssetUrl(dactylitis),
   "erythema": extensionAssetUrl(erythema),
   "jaundice": extensionAssetUrl(jaundice),
+  "kernig-sign": extensionAssetUrl(kernigSign),
   "lichenification": extensionAssetUrl(lichenification),
   "lymphadenopathy": extensionAssetUrl(lymphadenopathy),
   "maculopapular-rash": extensionAssetUrl(maculopapularRash),
@@ -76,6 +82,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
 export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   Record<SymptomImageId, MediaAttribution>
 > = {
+  "brudzinski-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:brudzinski-sign.png" },
   "bullae": { label: "Wikimedia Commons (Bullous pemphigoid new image.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg" },
   "calcinosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:calcinosis.jpg" },
   "clubbing": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clubbing.jpg" },
@@ -83,6 +90,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "dactylitis": { label: "Wikimedia Commons (Quick Reference Guide for Clinicians- Sickle Cell Disease- Comprehensive Screening and Management in Newborns and Infants (IA quickreferencegu00unse).pdf)", url: "https://commons.wikimedia.org/wiki/File:Quick_Reference_Guide_for_Clinicians-_Sickle_Cell_Disease-_Comprehensive_Screening_and_Management_in_Newborns_and_Infants_(IA_quickreferencegu00unse).pdf" },
   "erythema": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:erythema.jpg" },
   "jaundice": { label: "Wikimedia Commons (Troupial (Icterus icterus).jpg)", url: "https://commons.wikimedia.org/wiki/File:Troupial_(Icterus_icterus).jpg" },
+  "kernig-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:kernig-sign.jpg" },
   "lichenification": { label: "Wikimedia Commons (Clinical features of atopic dermatitis in English.png)", url: "https://commons.wikimedia.org/wiki/File:Clinical_features_of_atopic_dermatitis_in_English.png" },
   "lymphadenopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lymphadenopathy.jpg" },
   "maculopapular-rash": { label: "Wikimedia Commons (Generalized ACLE.jpg)", url: "https://commons.wikimedia.org/wiki/File:Generalized_ACLE.jpg" },
@@ -99,25 +107,27 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
 };
 
 export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
-  "bullae": "Clinical or pathologic image illustrating bullae",
+  "brudzinski-sign": "Brudziński sign — passive neck flexion causes involuntary hip/knee flexion in meningitis",
+  "bullae": "Bullous pemphigoid — tense subepidermal bullae",
   "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
   "clubbing": "Finger clubbing — increased convexity of nail bed with loss of Lovibond angle",
-  "cyanosis": "Clinical or pathologic image illustrating cyanosis",
-  "dactylitis": "Clinical or pathologic image illustrating dactylitis",
+  "cyanosis": "Peripheral cyanosis of the lower extremity due to ischemia",
+  "dactylitis": "Painful swelling of the hands — dactylitis in sickle cell disease",
   "erythema": "Sharply demarcated erythema of recurrent erysipelas (vasodilation with infection)",
-  "jaundice": "Clinical or pathologic image illustrating jaundice",
+  "jaundice": "Scleral icterus — yellow discoloration of the conjunctiva from hyperbilirubinemia",
+  "kernig-sign": "Kernig sign — resistance to knee extension with hip flexed suggests meningeal irritation",
   "lichenification": "Clinical or pathologic image illustrating lichenification",
   "lymphadenopathy": "Cervical lymphadenopathy — enlarged palpable anterior cervical lymph nodes",
-  "maculopapular-rash": "Clinical or pathologic image illustrating maculopapular rash",
+  "maculopapular-rash": "Maculopapular eruption — coalescent erythematous macules and papules",
   "nodular-lymphangitis": "Clinical or pathologic image illustrating nodular lymphangitis",
-  "nuchal-rigidity": "Clinical or pathologic image illustrating nuchal rigidity",
+  "nuchal-rigidity": "Nuchal rigidity — resistance to passive neck flexion in meningeal irritation",
   "papule": "Violaceous flat-topped papules of lichen planus on the shins (solid, ≤1 cm)",
   "plaque": "Erythematous plaque of psoriasis with silvery scale (solid, >1 cm)",
   "purpura": "Petechiae and purpura on the lower limb from medication-induced leukocytoclastic vasculitis",
   "sclerodactyly": "Clinical or pathologic image illustrating sclerodactyly",
   "skin-thickening": "Clinical or pathologic image illustrating skin thickening",
-  "telangiectasia": "Clinical or pathologic image illustrating telangiectasia",
-  "vesicle": "Clinical or pathologic image illustrating vesicle",
+  "telangiectasia": "Spider angioma — central arteriole with radiating telangiectasias",
+  "vesicle": "Herpes labialis vesicles — fluid-filled epidermal lesions <1 cm",
   "petechiae": "Non-blanching petechiae on the lower limb from leukocytoclastic vasculitis",
 };
 

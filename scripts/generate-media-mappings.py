@@ -54,6 +54,18 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "clubbing": "Finger clubbing — increased convexity of nail bed with loss of Lovibond angle",
         "lymphadenopathy": "Cervical lymphadenopathy — enlarged palpable anterior cervical lymph nodes",
         "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
+        "kernig-sign":
+            "Kernig sign — resistance to knee extension with hip flexed suggests meningeal irritation",
+        "brudzinski-sign":
+            "Brudziński sign — passive neck flexion causes involuntary hip/knee flexion in meningitis",
+        "jaundice": "Scleral icterus — yellow discoloration of the conjunctiva from hyperbilirubinemia",
+        "cyanosis": "Peripheral cyanosis of the lower extremity due to ischemia",
+        "dactylitis": "Painful swelling of the hands — dactylitis in sickle cell disease",
+        "vesicle": "Herpes labialis vesicles — fluid-filled epidermal lesions <1 cm",
+        "bullae": "Bullous pemphigoid — tense subepidermal bullae",
+        "telangiectasia": "Spider angioma — central arteriole with radiating telangiectasias",
+        "maculopapular-rash": "Maculopapular eruption — coalescent erythematous macules and papules",
+        "nuchal-rigidity": "Nuchal rigidity — resistance to passive neck flexion in meningeal irritation",
     },
     "cells": {
         "oxidative-phosphorylation": "Inner mitochondrial membrane respiratory chain: complexes I–IV pass electrons to O₂; proton pumping drives ATP synthase (Complex V)",

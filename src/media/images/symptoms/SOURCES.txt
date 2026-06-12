@@ -33,3 +33,37 @@ purpura.jpg
   License: CC BY-SA 3.0
   Page: https://commons.wikimedia.org/wiki/File:Vasculitis.JPG
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Vasculitis.JPG?width=1280
+
+clubbing.jpg
+  Source: Wikimedia Commons — Clubbing fingers 2.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Clubbing_fingers_2.jpg
+
+jaundice.jpg
+  Source: Wikimedia Commons — Jaundice eye.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Jaundice_eye.jpg
+
+cyanosis.jpg
+  Source: Wikimedia Commons — Peripheral Cyanosis due to Ischemia.jpg
+  Author: James Heilman, MD
+  License: CC BY-SA 3.0
+  Page: https://commons.wikimedia.org/wiki/File:Peripheral_Cyanosis_due_to_Ischemia.jpg
+
+kernig-sign.jpg
+  Source: Wikimedia Commons — Kernig's sign cerebrospinal meningitis.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Kernig%27s_sign_cerebrospinal_meningitis.jpg
+
+brudzinski-sign.png
+  Source: Wikimedia Commons — Brud I.png
+  Page: https://commons.wikimedia.org/wiki/File:Brud_I.png
+
+calcinosis.jpg
+  Source: Wikimedia Commons — Calcinosis cutis.jpg
+  Author: James Heilman, MD
+  License: CC BY-SA 3.0
+  Page: https://commons.wikimedia.org/wiki/File:Calcinosis_cutis.jpg
+
+lymphadenopathy.jpg
+  Source: Wikimedia Commons — Cervical lymphadenopathy.jpg
+  Author: James Heilman, MD
+  License: CC BY-SA 3.0
+  Page: https://commons.wikimedia.org/wiki/File:Cervical_lymphadenopathy.jpg

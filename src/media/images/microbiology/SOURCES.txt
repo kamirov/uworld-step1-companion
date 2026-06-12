@@ -384,3 +384,22 @@ variola-virus.jpg
   License: Public domain (U.S. federal government)
   Page: https://phil.cdc.gov/Details.aspx?pid=2265
   Commons: https://commons.wikimedia.org/wiki/File:Smallpox_virus.jpg
+
+rhinovirus.png
+  Source: Wikimedia Commons — Rhinovirus.PNG
+  Author: Robin S / Quibik (molecular model from PDB 1AYM)
+  Description: Molecular surface of human rhinovirus 16 capsid
+  Page: https://commons.wikimedia.org/wiki/File:Rhinovirus.PNG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Rhinovirus.PNG?width=1280
+
+rickettsia-rickettsii.jpg
+  Source: CDC (public domain)
+  Description: Gimenez stain of R. rickettsii in tick hemolymph cells
+  Page: https://commons.wikimedia.org/wiki/File:Rickettsia_rickettsii.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Rickettsia_rickettsii.jpg?width=1280
+
+chlamydia-trachomatis.jpg
+  Source: Wikimedia Commons — ChlamydiaTrachomatisEinschlusskörperchen.jpg
+  Description: Lugol-stained chlamydial inclusion bodies in host cells
+  Page: https://commons.wikimedia.org/wiki/File:ChlamydiaTrachomatisEinschlussk%C3%B6rperchen.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/ChlamydiaTrachomatisEinschlussk%C3%B6rperchen.jpg?width=1280

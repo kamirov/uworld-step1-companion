@@ -8,3 +8,11 @@ electrical-alternans.jpg
   Page: https://commons.wikimedia.org/wiki/File:Electrical_Alternans.JPG
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Electrical_Alternans.JPG?width=1280
   Resized to 1280 px width for popover display.
+
+inferior-stemi.jpg
+  Source: Wikimedia Commons — 12 lead generated inferior MI.JPG
+  Author: Glenlarson
+  Description: 12-lead ECG with ST elevation in inferior leads II, III, and aVF
+  Page: https://commons.wikimedia.org/wiki/File:12_lead_generated_inferior_MI.JPG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/12_lead_generated_inferior_MI.JPG?width=1280
+  Resized to 1280 px width for popover display.
