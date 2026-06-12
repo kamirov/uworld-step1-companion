@@ -132,6 +132,62 @@ export const PROCEDURES: ProcedureEntry[] = [
     pediatrics:
       "Same principles with smaller volumes and ultrasound guidance; parapneumonic effusion in children may need chest tube if empyema or loculations present.",
   },
+  {
+    id: "pcr-testing",
+    name: "PCR Testing",
+    aliases: [
+      "pcr testing",
+      "pcr test",
+      "pcr",
+      "polymerase chain reaction",
+      "polymerase chain reaction testing",
+      "polymerase chain reaction test",
+      "rt-pcr",
+      "reverse transcriptase pcr",
+      "reverse transcription pcr",
+      "qpcr",
+      "quantitative pcr",
+      "real-time pcr",
+      "real time pcr",
+      "nested pcr",
+    ],
+    definition:
+      "In vitro enzymatic amplification of a specific DNA (or cDNA) sequence using heat-stable DNA polymerase (Taq), template-specific primers, and repeated thermal cycles of denaturation, annealing, and extension — detects minute quantities of pathogen nucleic acid or fusion transcripts with high sensitivity and rapid turnaround.",
+    indications: [
+      "Rapid pathogen detection when culture is slow or negative (HSV encephalitis CSF, pertussis, atypical pneumonia)",
+      "Quantitative viral load monitoring (HIV, HBV, HCV, CMV in transplant recipients)",
+      "Oncologic fusion gene detection (BCR-ABL in CML, PML-RARA in acute promyelocytic leukemia)",
+      "Diagnosis of RNA viruses after reverse transcription (RT-PCR) — influenza, SARS-CoV-2, many respiratory panels",
+      "Congenital infection confirmation (CMV PCR from urine/saliva in neonates)",
+      "Species-specific identification when morphology is ambiguous (E. histolytica vs E. dispar)",
+    ],
+    keyMeasurements: [
+      "Thermal cycling: denaturation (~95°C) → primer annealing (~50–65°C) → extension (~72°C, Taq polymerase)",
+      "RT-PCR — reverse transcriptase converts RNA → cDNA before amplification",
+      "Quantitative (real-time) PCR — fluorescence tracks amplicon accumulation; reports viral copies/mL",
+      "Endpoint PCR — presence/absence of band of expected size on gel electrophoresis",
+      "Requires flanking primers complementary to target sequence; dNTPs and Mg²⁺ cofactor",
+    ],
+    complications: [
+      "False positives from amplicon or sample contamination (especially in research/low-prevalence settings)",
+      "False negatives from inadequate sample, PCR inhibitors, or testing before pathogen appears in compartment",
+      "Does not provide live culture for antibiotic susceptibility testing",
+      "Detects nucleic acid — may remain positive after organism cleared (e.g., nonviable DNA)",
+      "Expensive compared with many serologic or antigen tests; requires specialized lab infrastructure",
+    ],
+    boardsPearls: [
+      "PCR exponentially amplifies specific DNA — extremely sensitive for low-copy targets",
+      "Taq polymerase — heat-stable DNA polymerase from Thermus aquaticus; enables automated cycling",
+      "HSV encephalitis — CSF PCR is test of choice; start empiric acyclovir while pending",
+      "RT-PCR for RNA viruses; standard PCR for DNA pathogens and fusion genes",
+      "BCR-ABL (t(9;22)) and PML-RARA (t(15;17)) — PCR/FISH detects leukemic translocations",
+      "vs Southern blot — PCR amplifies known short target; Southern detects restriction fragment patterns in genomic DNA",
+      "vs serology — PCR detects active infection earlier; IgM/IgG reflect immune response timing",
+      "vs culture — PCR is faster and more sensitive for fastidious or slow-growing organisms (Chlamydia, HSV)",
+    ],
+    pediatrics:
+      "Pertussis nasopharyngeal PCR preferred in infants (culture less sensitive). Congenital CMV diagnosed by urine or saliva PCR within first 3 weeks of life — after that, positive PCR may reflect acquired rather than congenital infection.",
+  },
 ];
 
 const procedureById = new Map(PROCEDURES.map((entry) => [entry.id, entry]));
