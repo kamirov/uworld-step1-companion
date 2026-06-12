@@ -2900,6 +2900,159 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "chlorpheniramine",
+    name: "Chlorpheniramine",
+    aliases: [
+      "chlorpheniramine",
+      "chlorpheniramine maleate",
+      "chlor-trimeton",
+    ],
+    drugClass: "First-generation H1 antihistamine",
+    mechanism:
+      "Competitive H1 receptor antagonist (inverse agonist) → blocks histamine-mediated vasodilation, pruritus, and bronchospasm; crosses blood-brain barrier.",
+    indications: [
+      "Allergic rhinitis and conjunctivitis",
+      "Urticaria and pruritus",
+      "Common cold symptoms (adjunct)",
+    ],
+    adverseEffects: [
+      "Sedation and impaired cognition",
+      "Anticholinergic effects (dry mouth, urinary retention, constipation, blurred vision)",
+      "Paradoxical excitation in children (rare)",
+    ],
+    boardsPearls: [
+      "First-generation H1 blocker — sedating; crosses BBB",
+      "Anticholinergic burden — caution in elderly (Beers criteria) and BPH/glaucoma",
+      "vs second-generation agents (loratadine) — more sedation and anticholinergic effects",
+      "Peds: paradoxical hyperactivity possible; weight-based dosing; avoid in young children when safer alternatives exist",
+    ],
+  },
+  {
+    id: "diphenhydramine",
+    name: "Diphenhydramine",
+    aliases: [
+      "diphenhydramine",
+      "benadryl",
+      "diphenhydramine hcl",
+    ],
+    drugClass: "First-generation H1 antihistamine",
+    mechanism:
+      "Competitive H1 receptor antagonist with significant antimuscarinic activity → blocks histamine effects and muscarinic receptors (sedation, anticholinergic toxidrome risk).",
+    indications: [
+      "Allergic reactions (adjunct — not first-line for anaphylaxis)",
+      "Pruritus and urticaria",
+      "Insomnia (OTC)",
+      "Motion sickness",
+      "Acute dystonic reactions (IV/IM — alternative to benztropine)",
+    ],
+    adverseEffects: [
+      "Sedation, confusion (especially elderly)",
+      "Anticholinergic toxidrome in overdose (dry skin, mydriasis, urinary retention, hyperthermia, delirium)",
+      "Paradoxical excitation in children",
+      "Local anesthetic properties at high concentrations",
+    ],
+    boardsPearls: [
+      "Classic first-generation H1 blocker — also antimuscarinic; crosses BBB → sedation",
+      "Anticholinergic overdose toxidrome: hot as a hare, dry as a bone, mad as a hatter, blind as a bat",
+      "Physostigmine for pure anticholinergic CNS toxicity — contraindicated in TCA overdose",
+      "Adjunct in anaphylaxis only — epinephrine IM is first-line",
+      "Peds: accidental ingestion common; same anticholinergic toxidrome; paradoxical excitation possible",
+    ],
+  },
+  {
+    id: "hydroxyzine",
+    name: "Hydroxyzine",
+    aliases: [
+      "hydroxyzine",
+      "hydroxyzine hcl",
+      "hydroxyzine pamoate",
+      "atarax",
+      "vistaril",
+    ],
+    drugClass: "First-generation H1 antihistamine",
+    mechanism:
+      "H1 receptor antagonist with CNS depressant and anticholinergic effects; active metabolite cetirizine retains H1 blockade with less sedation.",
+    indications: [
+      "Pruritus (atopic dermatitis, urticaria)",
+      "Short-term anxiety",
+      "Preoperative sedation",
+      "Allergic rhinitis",
+    ],
+    adverseEffects: [
+      "Sedation and cognitive impairment",
+      "Anticholinergic effects",
+      "QT prolongation (rare, dose-dependent)",
+      "Dry mouth, headache",
+    ],
+    boardsPearls: [
+      "First-generation H1 blocker also used for pruritus and short-term anxiety",
+      "Metabolized to cetirizine — explains overlapping H1 activity",
+      "Sedating — avoid driving; caution with other CNS depressants",
+      "Peds: used for atopic pruritus and pre-procedure sedation; weight-based dosing; sedation more pronounced than second-generation agents",
+    ],
+  },
+  {
+    id: "loratadine",
+    name: "Loratadine",
+    aliases: [
+      "loratadine",
+      "claritin",
+      "second-generation antihistamine",
+      "nonsedating antihistamine",
+    ],
+    drugClass: "Second-generation H1 antihistamine",
+    mechanism:
+      "Selective peripheral H1 receptor antagonist with minimal blood-brain barrier penetration → blocks histamine at H1 receptors without significant CNS sedation.",
+    indications: [
+      "Allergic rhinitis (seasonal and perennial)",
+      "Chronic urticaria",
+      "Allergic conjunctivitis",
+    ],
+    adverseEffects: [
+      "Minimal sedation at standard doses",
+      "Headache, fatigue (uncommon)",
+      "Cardiac effects at supratherapeutic doses (rare — torsades)",
+    ],
+    boardsPearls: [
+      "Second-generation H1 blocker — preferred for daytime use (less sedating than diphenhydramine)",
+      "Active metabolite desloratadine — also available as separate drug",
+      "Does not cross BBB well → ↓ sedation vs first-generation agents",
+      "Peds: approved for allergic rhinitis/urticaria; preferred over sedating first-generation agents when alertness needed",
+    ],
+  },
+  {
+    id: "promethazine",
+    name: "Promethazine",
+    aliases: [
+      "promethazine",
+      "promethazine hcl",
+      "phenergan",
+    ],
+    drugClass: "Phenothiazine derivative (H1 antihistamine / antiemetic)",
+    mechanism:
+      "H1 receptor antagonist with D₂ dopamine antagonism and anticholinergic activity → antiemetic (CTZ), sedative, and antihistamine effects.",
+    indications: [
+      "Nausea and vomiting",
+      "Motion sickness",
+      "Preoperative sedation",
+      "Allergic symptoms (adjunct)",
+    ],
+    adverseEffects: [
+      "Sedation, anticholinergic effects",
+      "Extrapyramidal symptoms and dystonic reactions",
+      "Respiratory depression — contraindicated in children <2 years (black box warning)",
+      "Photosensitivity, hypotension (IV)",
+      "Tissue injury with IV extravasation (highly irritant — give deep IM preferred)",
+    ],
+    boardsPearls: [
+      "Phenothiazine with H1, D₂, and antimuscarinic activity — antiemetic and sedating antihistamine",
+      "Black box: severe respiratory depression in young children — avoid <2 years",
+      "vs ondansetron — promethazine is sedating with anticholinergic and EPS risk; ondansetron is 5-HT₃-specific",
+      "IV extravasation causes severe tissue damage — prefer deep IM",
+      "Peds: contraindicated <2 years; EPS/dystonia possible at any age — diphenhydramine treats acute dystonia",
+    ],
+  },
+  {
     id: "vitamin-k",
     name: "Vitamin K",
     aliases: [
