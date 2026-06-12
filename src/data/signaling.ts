@@ -733,6 +733,11 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "estradiol-17β",
       "e2",
       "17β-estradiol",
+      "estrone",
+      "e1",
+      "estriol",
+      "e3",
+      "ethinyl estradiol",
     ],
     type: "Hormone",
     source:
@@ -749,10 +754,12 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "OCPs — ethinyl estradiol + progestin for contraception and cycle regulation",
     ],
     boardsPearls: [
-      "Estradiol (E2) — most potent endogenous estrogen; drives endometrial proliferation in menstrual cycle",
-      "Unopposed estrogen ↑ endometrial cancer risk — progestin opposes proliferation",
+      "Estradiol (E2) — most potent endogenous estrogen; drives endometrial proliferation in follicular phase",
+      "Estrone (E1) dominant after menopause; estriol (E3) from placenta in pregnancy",
+      "Unopposed estrogen ↑ endometrial cancer risk — progesterone/progestin opposes proliferation",
       "Turner: streak gonads → ↓ estrogen → webbed neck, short stature, primary amenorrhea",
       "Aromatase converts androgens → estrogens — inhibitors used in postmenopausal breast cancer",
+      "Follicular phase: estrogen ↑ → LH surge → ovulation; luteal phase dominated by progesterone",
     ],
     distinguishFrom: [
       "Progesterone — stabilizes endometrium, secretory phase; opposes estrogen-driven proliferation",
@@ -761,6 +768,100 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Precocious puberty — early estrogen exposure → breast development, accelerated bone age; McCune-Albright or ovarian tumor workup.",
+  },
+  {
+    id: "progesterone",
+    name: "Progesterone",
+    aliases: [
+      "progesterone",
+      "progestin",
+      "progestins",
+      "progestogen",
+      "progestogens",
+      "progestational hormone",
+      "corpus luteum hormone",
+      "medroxyprogesterone",
+      "norethindrone",
+      "levonorgestrel",
+    ],
+    type: "Hormone",
+    source:
+      "Corpus luteum after ovulation (LH-stimulated granulosa/theca-lutein cells); placenta (syncytiotrophoblast) in pregnancy; small adrenal contribution",
+    receptor:
+      "Progesterone receptor (PR) — intracellular/nuclear ligand-activated transcription factor; progestins are synthetic PR agonists",
+    function:
+      "Transforms endometrium from proliferative to secretory phase; stabilizes endometrium for implantation; maintains early pregnancy; raises basal body temperature; supports breast alveolar development; provides negative feedback on GnRH/LH; relaxes smooth muscle (GI, ureter) in pregnancy.",
+    clinicalRelevance: [
+      "Luteal phase — progesterone from corpus luteum; withdrawal if no implantation → menstruation",
+      "Corpus luteum of pregnancy — progesterone maintains uterine quiescence until placental takeover (~8–10 weeks)",
+      "Unopposed estrogen without progesterone — endometrial hyperplasia and cancer risk",
+      "OCPs and progestin-only pills/IUDs — progestins prevent ovulation and/or thicken cervical mucus",
+      "Mifepristone — progesterone receptor antagonist used for medical abortion",
+      "Luteal phase defect / low progesterone — infertility and recurrent pregnancy loss (controversial supplementation)",
+      "17-hydroxyprogesterone — elevated in 21-hydroxylase CAH (steroid precursor, not therapeutic progesterone)",
+    ],
+    boardsPearls: [
+      "Estrogen proliferates endometrium; progesterone stabilizes/secretory — unopposed estrogen is carcinogenic",
+      "Progesterone withdrawal bleeding — drop in progesterone triggers menses",
+      "↑ basal body temperature in luteal phase — progesterone thermogenic effect",
+      "HRT with uterus: estrogen + progestin; estrogen alone only if hysterectomy",
+      "Mifepristone blocks PR → decidual breakdown + prostaglandin sensitization (with misoprostol)",
+      "vs aldosterone — mineralocorticoid; progesterone has weak anti-mineralocorticoid activity at high doses",
+    ],
+    distinguishFrom: [
+      "Estrogen — proliferative phase hormone; drives endometrial growth; aromatized from androgens",
+      "hCG — maintains corpus luteum early in pregnancy; not the same as progesterone itself",
+      "Prolactin — lactation hormone; high levels suppress GnRH, not a progestational steroid",
+      "17-hydroxyprogesterone — CAH screening analyte; precursor steroid, not functional luteal progesterone",
+    ],
+    pediatrics:
+      "Adolescent anovulatory cycles may lack robust luteal progesterone → irregular menses; congenital absence of progesterone effect is not a typical isolated pediatric presentation — CAH presents with androgen excess from steroid pathway blocks.",
+  },
+  {
+    id: "androgen",
+    name: "Androgens",
+    aliases: [
+      "androgen",
+      "androgens",
+      "testosterone",
+      "dihydrotestosterone",
+      "dht",
+      "androstenedione",
+      "dhea",
+      "dehydroepiandrosterone",
+    ],
+    type: "Hormone",
+    source:
+      "Testicular Leydig cells (testosterone, stimulated by LH); ovarian theca cells and adrenal zona reticularis (androstenedione, DHEA); peripheral 5α-reductase converts testosterone → DHT in prostate, skin, external genitalia",
+    receptor:
+      "Androgen receptor (AR) — intracellular/nuclear ligand-activated transcription factor; DHT binds AR with higher affinity than testosterone",
+    function:
+      "Promote male internal (Wolffian duct) and external genital development, secondary sex characteristics, libido, muscle mass, erythropoiesis, sebum production, and prostate growth; in females, converted to estrogen via aromatase and contribute to pubic/axillary hair.",
+    clinicalRelevance: [
+      "Congenital adrenal hyperplasia (21-hydroxylase deficiency) — shunting to androgen pathway → virilization",
+      "PCOS — ↑ ovarian and adrenal androgens → hirsutism, acne, anovulation",
+      "5α-reductase deficiency — ↓ DHT → ambiguous external genitalia in 46,XY males; Wolffian structures normal (testosterone intact)",
+      "Androgen insensitivity syndrome (46,XY, defective AR) — female external phenotype, no uterus, blind vagina",
+      "Finasteride — 5α-reductase inhibitor ↓ DHT for BPH and androgenetic alopecia",
+      "Spironolactone, flutamide, bicalutamide — antiandrogen effects",
+      "GnRH agonists or orchiectomy ↓ androgens in prostate cancer",
+    ],
+    boardsPearls: [
+      "Testosterone from Leydig cells (LH-driven); DHT via 5α-reductase — required for prostate and external male genitalia",
+      "5α-reductase deficiency: internal male genitalia present, ambiguous external genitalia at birth; virilizes at puberty",
+      "Androgen insensitivity: 46,XY female phenotype, ↑ testosterone and LH, absent uterus",
+      "CAH 21-hydroxylase — ↑ 17-OHP and androgens → virilized female infant",
+      "Aromatase converts androgens → estrogens; finasteride blocks testosterone → DHT conversion",
+      "BPH is androgen (DHT) dependent — 5α-reductase inhibitors shrink prostate",
+    ],
+    distinguishFrom: [
+      "Estrogen — feminizing steroids; aromatized from androgens in ovary and adipose",
+      "Progesterone — progestational hormone; not primarily androgenic",
+      "Anabolic steroids — synthetic androgen analogs with ↑ anabolic:androgenic ratio abuse",
+      "Corticosteroids — glucocorticoid/mineralocorticoid activity, not gonadal androgens",
+    ],
+    pediatrics:
+      "CAH virilized female newborn — ↑ androgens from 21-hydroxylase deficiency; 5α-reductase deficiency presents with ambiguous genitalia in 46,XY infants who virilize at puberty.",
   },
 ];
 

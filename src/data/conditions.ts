@@ -5351,6 +5351,83 @@ export const CONDITIONS: ConditionEntry[] = [
     pediatrics:
       "Not applicable — menopause is adult ovarian senescence. Premature ovarian insufficiency before age 40 in adolescents/young women warrants separate workup (Turner, autoimmunity, iatrogenic).",
   },
+  {
+    id: "amenorrhea",
+    name: "Amenorrhea",
+    aliases: [
+      "amenorrhea",
+      "primary amenorrhea",
+      "secondary amenorrhea",
+      "absent menses",
+      "absence of menses",
+    ],
+    definition:
+      "Absence of menstrual bleeding — primary amenorrhea when menses have not begun by age 15 with normal secondary sexual characteristics (or by 13 without them); secondary amenorrhea when established menses cease for ≥3 months (previously regular) or ≥6 months (previously oligomenorrheic).",
+    pathophysiology:
+      "Disruption anywhere along the hypothalamic–pituitary–ovarian–uterine outflow axis: ↓ GnRH pulsatility (hypothalamic), pituitary tumor/hyperprolactinemia, ovarian failure or PCOS, anatomic outflow obstruction (imperforate hymen, Müllerian agenesis), or intrauterine scarring (Asherman); pregnancy is the most common cause of secondary amenorrhea in reproductive-age women.",
+    classicPresentation: [
+      "Secondary amenorrhea — previously cycling woman with absent periods",
+      "Primary amenorrhea — adolescent without menarche ± absent pubertal development",
+      "Associated galactorrhea suggests hyperprolactinemia",
+      "Virilization or hirsutism suggests androgen excess (PCOS, CAH, tumor)",
+      "Cyclic pelvic pain without bleeding — outflow obstruction (hematocolpos)",
+    ],
+    keyFindings: [
+      "Negative pregnancy test (first step in secondary amenorrhea)",
+      "Tanner staging and presence of secondary sexual characteristics",
+      "Galactorrhea on breast exam",
+      "Hirsutism, acne, obesity — PCOS pattern",
+      "Absent uterus or vagina on imaging/exam — Müllerian anomaly or androgen insensitivity",
+    ],
+    keyLabs: [
+      "β-hCG — rule out pregnancy",
+      "Prolactin — prolactinoma suppresses GnRH",
+      "TSH — hypothyroidism can cause hyperprolactinemia and amenorrhea",
+      "FSH — high in ovarian failure/Turner; low/normal in hypothalamic/pituitary causes",
+      "LH, testosterone, DHEA-S — PCOS or virilizing tumor workup",
+      "Progesterone challenge — withdrawal bleed implies estrogen present and patent outflow",
+      "Karyotype — primary amenorrhea with short stature or hypergonadotropic hypogonadism",
+    ],
+    associations: [
+      "Pregnancy",
+      "Functional hypothalamic amenorrhea — stress, eating disorder, excessive exercise",
+      "Prolactinoma — galactorrhea + amenorrhea",
+      "PCOS — oligomenorrhea/amenorrhea, hyperandrogenism, polycystic ovaries",
+      "Turner syndrome — primary amenorrhea, streak gonads, 45,X",
+      "Premature ovarian insufficiency and menopause",
+      "Asherman syndrome — postpartum/D&C intrauterine adhesions",
+      "Müllerian agenesis (Mayer-Rokitansky-Küster-Hauser) — absent uterus, normal ovaries",
+    ],
+    complications: [
+      "Estrogen deficiency — osteoporosis, cardiovascular risk, vaginal atrophy (if prolonged)",
+      "Anovulation and infertility",
+      "Endometrial hyperplasia if chronic unopposed estrogen without progesterone (e.g., PCOS)",
+    ],
+    distinguishFrom: [
+      "Oligomenorrhea — infrequent menses; may progress to amenorrhea but cycles still occur",
+      "Menopause — age-appropriate ovarian senescence with ≥12 months amenorrhea and ↑ FSH",
+      "Pregnancy — must exclude before extensive workup",
+      "Anovulatory bleeding — irregular bleeding still present, not complete amenorrhea",
+    ],
+    treatment: [
+      "Treat underlying cause — dopamine agonist for prolactinoma, weight restoration for hypothalamic amenorrhea",
+      "Combined OCPs or cyclic progestin for endometrial protection when estrogen present but anovulatory (PCOS)",
+      "Estrogen replacement in ovarian failure/Turner (with progestin if uterus present)",
+      "Surgical correction of outflow obstruction (imperforate hymen, transverse vaginal septum)",
+      "Hysteroscopic adhesiolysis for Asherman syndrome",
+    ],
+    boardsPearls: [
+      "Secondary amenorrhea workup: pregnancy test → prolactin → TSH → FSH (± LH, androgens)",
+      "Galactorrhea + amenorrhea → prolactinoma until proven otherwise",
+      "↑ FSH + low estrogen → ovarian failure (Turner, POI, menopause)",
+      "Low/normal FSH + low estrogen → hypothalamic or pituitary (functional, prolactinoma)",
+      "Progesterone challenge: bleed = estrogenized uterus with patent outflow; no bleed = low estrogen or outflow block",
+      "Primary amenorrhea: absent uterus + 46,XY → androgen insensitivity; absent uterus + 46,XX → Müllerian agenesis",
+      "PCOS: ↑ LH:FSH, elevated androgens, polycystic ovaries, anovulatory amenorrhea",
+    ],
+    pediatrics:
+      "Primary amenorrhea — karyotype if hypergonadotropic; evaluate for Turner (45,X), outflow tract anomalies, and androgen insensitivity. No menarche by 15 warrants evaluation.",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

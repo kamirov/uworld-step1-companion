@@ -1009,6 +1009,49 @@ export const CELLS: CellEntry[] = [
       "Preterm labor — immature myometrium can be suppressed with tocolytics while giving steroids for fetal lung maturity; same oxytocin/prostaglandin axis as term labor.",
   },
   {
+    id: "endometrium",
+    name: "Endometrium",
+    aliases: [
+      "endometrium",
+      "endometrial",
+      "uterine lining",
+      "endometrial lining",
+      "endometrial tissue",
+    ],
+    definition:
+      "Inner glandular mucosal lining of the uterine cavity above the internal cervical os — undergoes cyclic proliferation and shedding driven by ovarian estrogen and progesterone and is the site of blastocyst implantation.",
+    characteristics: [
+      "Basalis layer — regenerates functional layer after each menses",
+      "Functional layer — proliferative phase (estrogen) then secretory phase (progesterone) then sloughs if no implantation",
+      "Glandular epithelium and stroma with spiral arteries sensitive to hormone withdrawal",
+      "Decidual transformation in pregnancy — endometrium becomes decidua under progesterone and hCG support",
+      "Myometrium lies external to endometrium; endocervix is columnar epithelium below internal os",
+    ],
+    clinicalRelevance: [
+      "Menstruation — progesterone withdrawal → spiral artery vasospasm → endometrial shedding",
+      "Endometrial hyperplasia and carcinoma — unopposed estrogen-driven proliferation",
+      "Endometriosis — ectopic endometrial glands/stroma outside uterus",
+      "Asherman syndrome — intrauterine adhesions after curettage → absent endometrial stripe",
+      "Implantation and placentation — site of early pregnancy attachment",
+      "Tamoxifen — partial estrogen agonist in endometrium → hyperplasia/cancer risk",
+    ],
+    boardsPearls: [
+      "Endometrium = inner lining; myometrium = smooth muscle; perimetrium/serosa = outer",
+      "Proliferative phase (estrogen) vs secretory phase (progesterone) histology on endometrial biopsy",
+      "Unopposed estrogen → endometrial hyperplasia → type I endometrial adenocarcinoma risk",
+      "Progesterone stabilizes endometrium — HRT requires progestin if uterus present",
+      "vs endocervix — cervical canal lining below internal os, not uterine cavity",
+    ],
+    distinguishFrom: [
+      "Myometrium — middle smooth muscle layer; contracts in labor; fibroids arise here",
+      "Endocervix — columnar epithelium of cervical canal; Pap smear samples transformation zone",
+      "Endometriosis tissue — ectopic endometrial-like lesions outside uterine cavity",
+      "Decidua — pregnant endometrium; specialized but continuous with endometrial origin",
+    ],
+    pediatrics:
+      "Neonatal withdrawal bleeding from maternal hormone loss is benign; endometrium matures with pubertal estrogen before menarche.",
+  },
+  {
     id: "cervical-os",
     name: "Cervical Os",
     aliases: [
