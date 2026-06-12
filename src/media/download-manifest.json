@@ -1,0 +1,267 @@
+{
+  "symptoms/jaundice.jpg": {
+    "title": "File:Troupial (Icterus icterus).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Troupial_(Icterus_icterus).jpg",
+    "query": "jaundice icterus sclera"
+  },
+  "symptoms/cyanosis.jpg": {
+    "title": "File:My Heartbeat and Peripheral Oxygen Saturation (SpO2) (29609885543).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:My_Heartbeat_and_Peripheral_Oxygen_Saturation_(SpO2)_(29609885543).jpg",
+    "query": "cyanosis extremity"
+  },
+  "symptoms/vesicle.jpg": {
+    "title": "File:Diseases of the mouth; for physicians, dentists, medical and dental students (1912) (14772644622).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diseases_of_the_mouth;_for_physicians,_dentists,_medical_and_dental_students_(1912)_(14772644622).jpg",
+    "query": "herpes labialis vesicle"
+  },
+  "symptoms/bullae.jpg": {
+    "title": "File:Bullous pemphigoid new image.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg",
+    "query": "bullous pemphigoid"
+  },
+  "symptoms/telangiectasia.jpg": {
+    "title": "File:SpiderAngioma.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:SpiderAngioma.jpg",
+    "query": "spider angioma"
+  },
+  "symptoms/dactylitis.jpg": {
+    "title": "File:Quick Reference Guide for Clinicians- Sickle Cell Disease- Comprehensive Screening and Management in Newborns and Infants (IA quickreferencegu00unse).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:Quick_Reference_Guide_for_Clinicians-_Sickle_Cell_Disease-_Comprehensive_Screening_and_Management_in_Newborns_and_Infants_(IA_quickreferencegu00unse).pdf",
+    "query": "sickle cell dactylitis"
+  },
+  "symptoms/lichenification.jpg": {
+    "title": "File:Clinical features of atopic dermatitis in English.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Clinical_features_of_atopic_dermatitis_in_English.png",
+    "query": "lichenification dermatitis"
+  },
+  "symptoms/nodular-lymphangitis.jpg": {
+    "title": "File:Sporotrichosis by the fungus Sporothrix schenckii PHIL 3940 lores.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sporotrichosis_by_the_fungus_Sporothrix_schenckii_PHIL_3940_lores.jpg",
+    "query": "sporotrichosis arm"
+  },
+  "symptoms/maculopapular-rash.jpg": {
+    "title": "File:Generalized ACLE.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Generalized_ACLE.jpg",
+    "query": "maculopapular rash"
+  },
+  "symptoms/sclerodactyly.jpg": {
+    "title": "File:Calcinosis of CREST syndrome.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Calcinosis_of_CREST_syndrome.jpg",
+    "query": "sclerodactyly"
+  },
+  "symptoms/skin-thickening.jpg": {
+    "title": "File:On scleroderma (IA 101695003.nlm.nih.gov).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:On_scleroderma_(IA_101695003.nlm.nih.gov).pdf",
+    "query": "scleroderma skin thickening"
+  },
+  "symptoms/nuchal-rigidity.jpg": {
+    "title": "File:Books from the Library of Congress (IA moderndiagnosi00shef).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:Books_from_the_Library_of_Congress_(IA_moderndiagnosi00shef).pdf",
+    "query": "meningismus neck stiffness"
+  },
+  "conditions/pemphigus-vulgaris.jpg": {
+    "title": "File:Pemphigus vulgaris.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Pemphigus_vulgaris.jpg",
+    "query": "pemphigus vulgaris"
+  },
+  "conditions/sickle-cell-disease.jpg": {
+    "title": "File:Sickle Cell Disease in Newborns and Infants- A Guide for Parents (IA sicklecelldiseas00usde).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:Sickle_Cell_Disease_in_Newborns_and_Infants-_A_Guide_for_Parents_(IA_sicklecelldiseas00usde).pdf",
+    "query": "hand foot syndrome sickle cell"
+  },
+  "conditions/malaria.jpg": {
+    "title": "File:Ring Forms of Plasmodium falciparum.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ring_Forms_of_Plasmodium_falciparum.jpg",
+    "query": "plasmodium falciparum ring forms"
+  },
+  "conditions/pneumonia.jpg": {
+    "title": "File:Annual report of the trustees (IA annualreportoftr1819bost).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:Annual_report_of_the_trustees_(IA_annualreportoftr1819bost).pdf",
+    "query": "lobar pneumonia xray"
+  },
+  "conditions/otitis-media.jpg": {
+    "title": "File:Acute Otitis Media Stage of Resolution.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Acute_Otitis_Media_Stage_of_Resolution.jpg",
+    "query": "otitis media bulging"
+  },
+  "conditions/sarcoidosis.jpg": {
+    "title": "File:Sarcoidosis histology skin involvement.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sarcoidosis_histology_skin_involvement.jpg",
+    "query": "sarcoidosis skin"
+  },
+  "conditions/emphysema.jpg": {
+    "title": "File:Emphysema H and E.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg",
+    "query": "emphysema histology lung"
+  },
+  "conditions/asthma.jpg": {
+    "title": "File:2311 Lung Tissue.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:2311_Lung_Tissue.jpg",
+    "query": "asthma histology"
+  },
+  "conditions/nephrotic-syndrome.jpg": {
+    "title": "File:United States Navy Medical News Letter Vol. 32 1958 Index (IA NavyMedicalNewsletter19581231Index).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._32_1958_Index_(IA_NavyMedicalNewsletter19581231Index).pdf",
+    "query": "nephrotic syndrome pitting edema"
+  },
+  "conditions/systemic-lupus-erythematosus.jpg": {
+    "title": "File:What Black Women Should Know About Lupus (IA whatblackwomensh00usde).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:What_Black_Women_Should_Know_About_Lupus_(IA_whatblackwomensh00usde).pdf",
+    "query": "lupus butterfly rash face"
+  },
+  "conditions/hodgkin-lymphoma.jpg": {
+    "title": "File:Reed-Sternberg lymphocyte nci-vol-7172-300.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Reed-Sternberg_lymphocyte_nci-vol-7172-300.jpg",
+    "query": "reed sternberg cell"
+  },
+  "conditions/tuberculosis.jpg": {
+    "title": "File:Mycobacterium tuberculosis in Ziehl-Neelsen stained smear of sputum.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Mycobacterium_tuberculosis_in_Ziehl-Neelsen_stained_smear_of_sputum.jpg",
+    "query": "mycobacterium tuberculosis ziehl neelsen"
+  },
+  "conditions/hiv-infection.jpg": {
+    "title": "File:The George Blumer edition of Billings-Forchheimer's Therapeusis of internal diseases- Anaphylaxis, Dietary, Deficiencies, Endocrins, Dvelopmental, Vasomotor, Metabolic, Digestion ... (IA georgeblumeredit04forc).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:The_George_Blumer_edition_of_Billings-Forchheimer's_Therapeusis_of_internal_diseases-_Anaphylaxis,_Dietary,_Deficiencies,_Endocrins,_Dvelopmental,_Vasomotor,_Metabolic,_Digestion_..._(IA_georgeblumeredit04forc).pdf",
+    "query": "oral hairy leukoplakia"
+  },
+  "conditions/crohn-disease.jpg": {
+    "title": "File:Severe ulcerative colitis.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Severe_ulcerative_colitis.jpg",
+    "query": "crohn disease cobblestone mucosa"
+  },
+  "conditions/cushing-syndrome.jpg": {
+    "title": "File:United States Navy Medical News Letter Vol. 28, No. 5, 7 September 1956 (IA NavyMedicalNewsletter19560907).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._28,_No._5,_7_September_1956_(IA_NavyMedicalNewsletter19560907).pdf",
+    "query": "cushing syndrome moon facies"
+  },
+  "conditions/addison-disease.jpg": {
+    "title": "File:T. Addison; On...supra-renal capsules Wellcome L0018484.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg",
+    "query": "addison disease hyperpigmentation"
+  },
+  "conditions/parkinson-disease.jpg": {
+    "title": "File:The Journal of nervous and mental disease (IA journalofnervous49ameruoft).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Journal_of_nervous_and_mental_disease_(IA_journalofnervous49ameruoft).pdf",
+    "query": "parkinson disease pill rolling tremor"
+  },
+  "conditions/multiple-sclerosis.jpg": {
+    "title": "File:Disseminated sclerosis (IA b2810349x).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:Disseminated_sclerosis_(IA_b2810349x).pdf",
+    "query": "dawson fingers multiple sclerosis"
+  },
+  "conditions/pressure-ulcer.jpg": {
+    "title": "File:Decubitus ulcer stage 4.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Decubitus_ulcer_stage_4.jpg",
+    "query": "pressure ulcer stage 4"
+  },
+  "conditions/sporotrichosis.jpg": {
+    "title": "File:Feline sporotrichosis 4.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Feline_sporotrichosis_4.jpg",
+    "query": "sporotrichosis lymphocutaneous"
+  },
+  "conditions/cat-scratch-disease.jpg": {
+    "title": "File:ICD-10-CM (2010).djvu",
+    "page": "https://commons.wikimedia.org/wiki/File:ICD-10-CM_(2010).djvu",
+    "query": "cat scratch disease lymphadenopathy"
+  },
+  "conditions/zika-virus-infection.jpg": {
+    "title": "File:Alexius Salvador Zika-Virus.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Alexius_Salvador_Zika-Virus.jpg",
+    "query": "zika virus rash"
+  },
+  "conditions/yellow-fever.jpg": {
+    "title": "File:John Horsey sept 24 1821 yellow fever, Allegator.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:John_Horsey_sept_24_1821_yellow_fever,_Allegator.jpg",
+    "query": "yellow fever patient"
+  },
+  "conditions/lymphogranuloma-venereum.jpg": {
+    "title": "File:Poullignac Travaux LGV Caterpillar RM500 2013.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Poullignac_Travaux_LGV_Caterpillar_RM500_2013.jpg",
+    "query": "lymphogranuloma venereum"
+  },
+  "conditions/myocardial-infarction.jpg": {
+    "title": "File:ST elevation myocardial infarction ECG (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:ST_elevation_myocardial_infarction_ECG_(cropped).jpg",
+    "query": "ST elevation myocardial infarction ECG"
+  },
+  "conditions/infective-endocarditis.jpg": {
+    "title": "File:Janeway lesion.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Janeway_lesion.JPG",
+    "query": "janeway lesion"
+  },
+  "conditions/lung-cancer.jpg": {
+    "title": "File:LungCancer-Xray-01.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg",
+    "query": "lung cancer chest xray"
+  },
+  "conditions/merkel-cell-carcinoma.jpg": {
+    "title": "File:Merkel cell carcinoma - very high mag.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Merkel_cell_carcinoma_-_very_high_mag.jpg",
+    "query": "merkel cell carcinoma skin"
+  },
+  "conditions/tetralogy-of-fallot-cyanosis.jpg": {
+    "title": "File:Heart Surgery Practice.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Heart_Surgery_Practice.jpg",
+    "query": "tetralogy of fallot cyanotic"
+  },
+  "conditions/neonatal-respiratory-distress-syndrome.jpg": {
+    "title": "File:Annual report - National Institutes of Health. National Heart, Lung, and Blood Advisory Council (IA annualreportnatio1985nati).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:Annual_report_-_National_Institutes_of_Health._National_Heart,_Lung,_and_Blood_Advisory_Council_(IA_annualreportnatio1985nati).pdf",
+    "query": "neonatal respiratory distress syndrome xray"
+  },
+  "conditions/ventricular-septal-defect.svg": {
+    "title": "File:Ventricular septal defect-es.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ventricular_septal_defect-es.svg",
+    "query": "ventricular septal defect diagram"
+  },
+  "conditions/gangrene.jpg": {
+    "title": "File:Dry gangrene of the foot Wellcome L0062216.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dry_gangrene_of_the_foot_Wellcome_L0062216.jpg",
+    "query": "dry gangrene foot"
+  },
+  "conditions/primary-biliary-cholangitis.jpg": {
+    "title": "File:United States Navy Medical News Letter Vol. 22, No. 9, 13 November 1953 (IA MedicalNewsLetter19531113).pdf",
+    "page": "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._22,_No._9,_13_November_1953_(IA_MedicalNewsLetter19531113).pdf",
+    "query": "primary biliary cholangitis histology"
+  },
+  "conditions/sjogren-syndrome.jpg": {
+    "title": "File:Sjogren's syndrome (2).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sjogren's_syndrome_(2).jpg",
+    "query": "sjogren syndrome"
+  },
+  "cells/mast-cell.jpg": {
+    "title": "File:Mast cell.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Mast_cell.jpg",
+    "query": "mast cell toluidine blue"
+  },
+  "cells/lymphocyte.jpg": {
+    "title": "File:A blood smear of rainbow trout.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:A_blood_smear_of_rainbow_trout.jpg",
+    "query": "lymphocyte blood smear"
+  },
+  "cells/gap-junction.svg": {
+    "title": "File:Gap cell junction-uk.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gap_cell_junction-uk.svg",
+    "query": "gap junction diagram"
+  },
+  "cells/langhans-giant-cell.jpg": {
+    "title": "File:Langhans Giant Cell (10189844503).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg",
+    "query": "langhans giant cell"
+  },
+  "cells/langerhans-cell.jpg": {
+    "title": "File:Beta-cells of islets of Langerhans.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Beta-cells_of_islets_of_Langerhans.jpg",
+    "query": "langerhans cell histology"
+  },
+  "cells/melanocyte.jpg": {
+    "title": "File:Melanin Development in Melanocytes.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Melanin_Development_in_Melanocytes.svg",
+    "query": "melanocyte skin"
+  },
+  "musculoskeletal/acromion.jpg": {
+    "title": "File:Acromion of scapula02.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Acromion_of_scapula02.png",
+    "query": "acromion process shoulder"
+  }
+}
