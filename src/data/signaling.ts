@@ -679,6 +679,51 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Neonatal breastfeeding establishes suckling reflex → maternal oxytocin release; preterm infants may need lactation support but same hormonal axis.",
   },
   {
+    id: "gnrh",
+    name: "GnRH",
+    aliases: [
+      "gnrh",
+      "gonadotropin-releasing hormone",
+      "gonadotropin releasing hormone",
+      "gonadotropin-releasing hormones",
+      "lhrh",
+      "luteinizing hormone-releasing hormone",
+      "luteinizing hormone releasing hormone",
+      "gonadorelin",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Hypothalamic arcuate and preoptic neurons; released in pulsatile fashion into hypophyseal portal circulation → anterior pituitary",
+    receptor:
+      "GnRH receptor (GnRHR; Gq-coupled GPCR) on anterior pituitary gonadotrophs",
+    function:
+      "Stimulates synthesis and pulsatile release of LH and FSH from anterior pituitary → drives gonadal steroidogenesis, gametogenesis, and pubertal development; pulsatile pattern is required for normal gonadotropin secretion.",
+    clinicalRelevance: [
+      "Hypogonadotropic hypogonadism — deficient GnRH pulsatility (Kallmann syndrome, functional hypothalamic amenorrhea)",
+      "Hyperprolactinemia — ↑ prolactin inhibits GnRH pulsatility → ↓ LH/FSH → hypogonadism",
+      "Menopause — loss of ovarian estrogen removes negative feedback → ↑ FSH/LH despite intact GnRH",
+      "GnRH agonists (leuprolide, goserelin) — continuous exposure → receptor downregulation → ↓ sex steroids (prostate cancer, endometriosis, precocious puberty)",
+      "GnRH antagonists (ganirelix, degarelix) — immediate ↓ LH/FSH (IVF, prostate cancer)",
+      "Central precocious puberty — premature activation of GnRH pulse generator; treat with GnRH agonists",
+    ],
+    boardsPearls: [
+      "GnRH is pulsatile — continuous GnRH (agonist therapy) paradoxically suppresses gonadotropins",
+      "Hypothalamus → GnRH → anterior pituitary LH/FSH → gonadal estrogen/testosterone",
+      "Kallmann syndrome — ↓ GnRH neuron migration + anosmia + delayed puberty",
+      "Prolactinoma inhibits GnRH → galactorrhea + amenorrhea/infertility",
+      "vs CRH/TRH/GHRH — other hypothalamic releasing hormones with distinct pituitary targets",
+      "Pulsatile GnRH pump — treats hypogonadotropic hypogonadism; continuous agonist suppresses axis",
+    ],
+    distinguishFrom: [
+      "LH / FSH — anterior pituitary gonadotropins downstream of GnRH, not hypothalamic releasing hormone",
+      "GnRH agonist drugs — pharmacologic continuous stimulation causing downregulation, not physiologic pulses",
+      "hCG — mimics LH action at ovary/testis; does not act on pituitary GnRH receptor",
+      "Prolactin — inhibits GnRH release; does not stimulate gonadotropins",
+    ],
+    pediatrics:
+      "Central precocious puberty — GnRH agonists suppress premature pubertal progression; Kallmann presents with delayed puberty and anosmia from failed GnRH neuron migration.",
+  },
+  {
     id: "estrogen",
     name: "Estrogen",
     aliases: [

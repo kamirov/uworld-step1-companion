@@ -5218,6 +5218,139 @@ export const CONDITIONS: ConditionEntry[] = [
     pediatrics:
       "APL occurs in children and adolescents — same urgency for ATRA and DIC management; excellent cure rates with modern therapy.",
   },
+  {
+    id: "merkel-cell-carcinoma",
+    name: "Merkel Cell Carcinoma",
+    aliases: [
+      "merkel cell carcinoma",
+      "merkel cell cancer",
+      "mcc",
+      "neuroendocrine carcinoma of skin",
+      "cutaneous neuroendocrine carcinoma",
+    ],
+    definition:
+      "Aggressive primary cutaneous neuroendocrine carcinoma thought to arise from Merkel cells or related cutaneous neuroendocrine precursors, often associated with Merkel cell polyomavirus (MCPyV) and UV exposure.",
+    pathophysiology:
+      "MCPyV integration and T-antigen expression (in virus-positive tumors) or UV-induced mutational burden (virus-negative) drive uncontrolled proliferation of CK20⁺ neuroendocrine cells; rapid local growth with early nodal and distant metastasis.",
+    classicPresentation: [
+      "Elderly or immunosuppressed patient (HIV, transplant)",
+      "Sun-exposed site — head, neck, or extremity",
+      "Rapidly growing, painless, firm, red-violet or flesh-colored nodule",
+      "Often lacks overlying epidermal connection on histology (unlike BCC)",
+    ],
+    keyFindings: [
+      "Biopsy — small round blue cells with neuroendocrine features",
+      "Immunohistochemistry: CK20⁺ (paranuclear dot pattern), synaptophysin⁺, chromogranin⁺",
+      "MCPyV oncoprotein antibodies or viral testing (supportive)",
+      "Sentinel lymph node often involved early",
+    ],
+    associations: [
+      "Merkel cell polyomavirus (MCPyV)",
+      "UV radiation and fair skin",
+      "Immunosuppression — HIV/AIDS, chronic lymphocytic leukemia, organ transplant",
+      "Second primary skin cancers (SCC, BCC) in sun-damaged skin",
+    ],
+    complications: [
+      "Early lymph node and distant metastasis (liver, lung, bone)",
+      "High recurrence after local therapy",
+      "Poor prognosis compared with most non-melanoma skin cancers",
+    ],
+    distinguishFrom: [
+      "Melanoma — S100⁺/Melan-A⁺; pigmented often; BRAF mutations",
+      "Basal cell carcinoma — indolent, pearly rolled border, hedgehog pathway",
+      "Squamous cell carcinoma — keratin pearls, CK5/6⁺, less neuroendocrine IHC",
+      "Metastatic small cell lung carcinoma to skin — CK20 usually negative; search for pulmonary primary",
+      "Langerhans cell histiocytosis — CD1a⁺/langerin⁺ histiocytes, not neuroendocrine carcinoma",
+      "Merkel cell (benign mechanoreceptor) — not a malignancy; carcinoma is the tumor entity",
+    ],
+    treatment: [
+      "Wide local excision with sentinel lymph node biopsy",
+      "Adjuvant radiation for high-risk primary or nodal disease",
+      "Immunotherapy (anti–PD-1/PD-L1) for advanced or metastatic disease",
+      "Chemotherapy (platinum/etoposide) historically for metastatic disease; immunotherapy preferred when available",
+    ],
+    boardsPearls: [
+      "CK20⁺ paranuclear dot + neuroendocrine markers → Merkel cell carcinoma",
+      "MCPyV association — immunosuppressed and elderly patients at risk",
+      "Aggressive small round blue cell skin tumor — not melanoma, not BCC",
+      "vs benign Merkel cell — mechanoreceptor for touch; carcinoma is malignant neuroendocrine neoplasm",
+      "Metastatic small cell lung cancer to skin — CK20 negative; look for lung primary",
+    ],
+    pediatrics:
+      "Rare in children; when it occurs often in immunosuppressed hosts. Do not confuse with Langerhans cell histiocytosis (CD1a⁺, not CK20⁺ neuroendocrine carcinoma).",
+  },
+  {
+    id: "menopause",
+    name: "Menopause",
+    aliases: [
+      "menopause",
+      "menopausal",
+      "postmenopause",
+      "postmenopausal",
+      "post-menopausal",
+      "post menopausal",
+      "perimenopause",
+      "perimenopausal",
+      "climacteric",
+    ],
+    definition:
+      "Permanent cessation of ovarian function marked by 12 consecutive months of amenorrhea, reflecting depletion of ovarian follicles and loss of cyclic estrogen and progesterone production (average age ~51 in the US).",
+    pathophysiology:
+      "Accelerated follicular atresia → ↓ inhibin B and estradiol → loss of negative feedback on hypothalamus/pituitary → ↑ FSH and LH; vasomotor symptoms from thermoregulatory instability in the hypothalamus; urogenital atrophy from estrogen deficiency.",
+    classicPresentation: [
+      "Irregular menses during perimenopause → eventual amenorrhea ≥12 months",
+      "Hot flashes and night sweats (vasomotor symptoms)",
+      "Sleep disturbance, mood changes, vaginal dryness, dyspareunia",
+      "Often accompanied by osteoporosis risk and changes in lipid profile",
+    ],
+    keyFindings: [
+      "Amenorrhea ≥12 months in appropriate age group",
+      "Atrophic vaginitis on exam",
+      "↑ FSH (>30–40 mIU/mL, lab-dependent) with low estradiol",
+    ],
+    keyLabs: [
+      "↑ FSH (most consistent marker postmenopause)",
+      "↓ Estradiol",
+      "↑ LH",
+      "Bone density (DEXA) — screen for osteoporosis",
+    ],
+    associations: [
+      "Accelerated bone loss and osteoporosis",
+      "↑ Cardiovascular disease risk after estrogen loss",
+      "Genitourinary syndrome of menopause (vaginal atrophy, urinary symptoms)",
+      "Earlier surgical menopause (bilateral oophorectomy) — abrupt estrogen withdrawal",
+    ],
+    complications: [
+      "Osteoporotic fractures (vertebral, hip)",
+      "Cardiovascular disease",
+      "Urogenital atrophy and recurrent UTIs",
+      "Cognitive/mood symptoms (variable; multifactorial)",
+    ],
+    distinguishFrom: [
+      "Primary ovarian insufficiency — menopause before age 40; evaluate karyotype and autoimmunity",
+      "Pregnancy — always rule out in woman of reproductive age with amenorrhea",
+      "Hypothalamic amenorrhea — low FSH/LH from stress, weight loss, exercise (not menopause)",
+      "Hyperprolactinemia — amenorrhea with ↑ prolactin, not menopausal FSH pattern",
+      "Turner syndrome — primary amenorrhea in adolescence with 45,X, not age-appropriate menopause",
+    ],
+    treatment: [
+      "Lifestyle: weight-bearing exercise, calcium/vitamin D, smoking cessation",
+      "Hormone therapy (estrogen ± progestin) for moderate-severe vasomotor symptoms if no contraindications",
+      "Local vaginal estrogen for genitourinary syndrome",
+      "SSRIs/SNRIs, gabapentin, or clonidine for vasomotor symptoms when HT contraindicated",
+      "Bisphosphonates or other antiresorptives for osteoporosis prevention/treatment",
+    ],
+    boardsPearls: [
+      "Menopause = 12 months amenorrhea from ovarian failure; ↑ FSH + ↓ estradiol",
+      "Estrogen loss → hot flashes, osteoporosis, ↑ CV risk, vaginal atrophy",
+      "HRT: estrogen alone if no uterus; add progestin if uterus present (↓ endometrial cancer risk)",
+      "HRT contraindications: history of estrogen-dependent cancer, VTE, active liver disease, undiagnosed vaginal bleeding",
+      "vs primary ovarian insufficiency — menopause <40 years is POI, not normal menopause",
+      "Unopposed estrogen in woman with uterus → endometrial hyperplasia/cancer risk",
+    ],
+    pediatrics:
+      "Not applicable — menopause is adult ovarian senescence. Premature ovarian insufficiency before age 40 in adolescents/young women warrants separate workup (Turner, autoimmunity, iatrogenic).",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

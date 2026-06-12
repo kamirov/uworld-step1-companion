@@ -762,6 +762,45 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Nickel from jewelry/belt buckles and poison ivy common triggers; diaper dermatitis is usually irritant, not allergic type IV.",
   },
   {
+    id: "antigen",
+    name: "Antigen",
+    aliases: [
+      "antigen",
+      "antigens",
+      "immunogen",
+      "immunogens",
+      "complete antigen",
+      "complete antigens",
+    ],
+    definition:
+      "Any substance recognized by the adaptive immune system — typically via B-cell receptor (native antigen) or T-cell receptor (processed peptide bound to MHC) — that can provoke an immune response if sufficiently immunogenic.",
+    examples: [
+      "Protein antigens — strong immunogens; require processing and MHC presentation to T cells",
+      "Polysaccharide capsular antigens — T-independent antigens (e.g., pneumococcal capsule); mainly IgM response",
+      "Hapten + carrier protein — small molecule becomes antigenic when conjugated (penicillin, urushiol, nickel)",
+      "Alloantigens — non-self antigens on transfused blood or transplanted tissue (ABO, HLA)",
+      "Autoantigens — self proteins targeted in autoimmune disease (e.g., desmoglein in pemphigus)",
+      "Superantigens — cross-link TCR and MHC II outside peptide groove (S. aureus TSST-1, enterotoxins)",
+    ],
+    boardsPearls: [
+      "Antigen = substance recognized by immune system; immunogen = antigen that provokes a response",
+      "T cells see peptide–MHC complexes; B cells recognize native (3D) antigen via surface Ig",
+      "Hapten alone is NOT immunogenic — needs carrier protein (contact dermatitis, penicillin allergy)",
+      "T-dependent antigens (proteins) → class switching and memory; T-independent (polysaccharides) → mainly IgM",
+      "Epitope = specific antigenic determinant recognized by one antibody or TCR clone",
+      "vs adjuvant — enhances response to antigen but is not itself the recognized antigen",
+    ],
+    distinguishFrom: [
+      "Hapten — incomplete antigen; requires carrier protein to become immunogenic",
+      "Adjuvant — potentiates immune response (alum, MF59) without being the antigen",
+      "Epitope — specific binding site on antigen, not the whole molecule",
+      "Antibody — effector molecule produced in response to antigen, not the stimulus itself",
+      "MHC molecule — displays peptide antigen; not the antigen being recognized by TCR alone",
+    ],
+    pediatrics:
+      "Conjugate vaccines (e.g., Hib, pneumococcal) link polysaccharide antigen to protein carrier — converts T-independent antigen into T-dependent response in infants.",
+  },
+  {
     id: "hapten",
     name: "Hapten",
     aliases: ["hapten", "haptens", "incomplete antigen"],
@@ -880,6 +919,83 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Same vesicular mechanisms as adults; neonatal intestinal pinocytosis historically noted for macromolecule absorption early in life.",
+  },
+  {
+    id: "carcinoma",
+    name: "Carcinoma",
+    aliases: [
+      "carcinoma",
+      "carcinomas",
+      "epithelial malignancy",
+      "epithelial malignancies",
+      "epithelial tumor",
+      "epithelial neoplasm",
+    ],
+    definition:
+      "Malignant neoplasm arising from epithelial cells (surface epithelium or glandular tissue), accounting for the majority of human cancers; named by site and histologic subtype (adenocarcinoma, squamous cell carcinoma, etc.).",
+    examples: [
+      "Adenocarcinoma — glandular epithelium (colon, lung, breast, prostate)",
+      "Squamous cell carcinoma — squamous epithelium (lung, cervix, skin, esophagus)",
+      "Hepatocellular carcinoma — hepatocyte (liver parenchymal epithelium)",
+      "Renal cell carcinoma — renal tubular epithelium",
+      "Transitional cell (urothelial) carcinoma — bladder urothelium",
+      "Merkel cell carcinoma — cutaneous neuroendocrine carcinoma (specialized epithelial/neuroendocrine tumor)",
+    ],
+    boardsPearls: [
+      "Carcinoma = malignant tumor of epithelial origin",
+      "Adeno- (glandular) vs squamous (flat/squamous epithelium) — most common carcinoma subtypes",
+      "Carcinomas often spread via lymphatics to regional nodes",
+      "vs sarcoma — mesenchymal origin (bone, muscle, fat, blood vessels)",
+      "vs lymphoma/leukemia — hematopoietic malignancies, not solid epithelial tumors",
+      "In situ carcinoma — confined above basement membrane; invasive carcinoma breaches basement membrane",
+    ],
+    distinguishFrom: [
+      "Sarcoma — mesenchymal malignancy (osteogenic, liposarcoma, leiomyosarcoma)",
+      "Lymphoma — malignant lymphoid proliferation in nodes or extranodal sites",
+      "Melanoma — malignant melanocyte tumor; debated epithelial/neuroectodermal but classified separately from carcinoma on boards",
+      "Adenoma — benign glandular epithelial tumor, not carcinoma",
+    ],
+    pediatrics:
+      "Pediatric solid malignancies include neuroblastoma and Wilms tumor (not classic carcinomas); rhabdomyosarcoma is sarcoma. Hepatoblastoma is embryonal liver tumor, not hepatocellular carcinoma.",
+  },
+  {
+    id: "sarcoma",
+    name: "Sarcoma",
+    aliases: [
+      "sarcoma",
+      "sarcomas",
+      "mesenchymal malignancy",
+      "mesenchymal malignancies",
+      "mesenchymal tumor",
+      "mesenchymal neoplasm",
+    ],
+    definition:
+      "Malignant neoplasm arising from mesenchymal (connective tissue) cells — bone, cartilage, fat, muscle, blood vessels, or fibrous tissue — generally less common than carcinomas but often aggressive.",
+    examples: [
+      "Osteosarcoma — malignant bone-forming tumor (metaphysis of long bones in adolescents)",
+      "Ewing sarcoma — small round blue cell bone/soft tissue tumor; t(11;22) translocation",
+      "Rhabdomyosarcoma — skeletal muscle differentiation; most common soft tissue sarcoma in children",
+      "Leiomyosarcoma — smooth muscle origin (uterus, retroperitoneum)",
+      "Liposarcoma — adipose tissue origin",
+      "Kaposi sarcoma — HHV-8–associated vascular/endothelial proliferation (AIDS)",
+      "Chondrosarcoma — malignant cartilage-forming tumor",
+    ],
+    boardsPearls: [
+      "Sarcoma = malignant tumor of mesenchymal origin",
+      "Often hematogenous metastasis to lung (classic boards pattern)",
+      "vs carcinoma — epithelial origin; lymphatic spread more typical",
+      "Osteosarcoma — distal femur/proximal tibia in teens; sunburst periosteal reaction, Codman triangle",
+      "Rhabdomyosarcoma — head/neck, GU tract in children; desmin/myogenin positive",
+      "Kaposi sarcoma — HIV/AIDS, HHV-8, violaceous skin lesions",
+    ],
+    distinguishFrom: [
+      "Carcinoma — epithelial malignancy (adenocarcinoma, squamous cell carcinoma)",
+      "Lymphoma — lymphoid malignancy, not mesenchymal sarcoma",
+      "Benign mesenchymoma/fibroma — benign mesenchymal tumor, not sarcoma",
+      "Metastasis to bone from carcinoma — more common than primary bone sarcoma in adults",
+    ],
+    pediatrics:
+      "Rhabdomyosarcoma and Ewing sarcoma peak in childhood/adolescence; osteosarcoma in teenage growth spurt. Wilms tumor is nephroblastoma (renal embryonal), not classified as sarcoma despite mesenchymal appearance.",
   },
 ];
 

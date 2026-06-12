@@ -1009,6 +1009,51 @@ export const CELLS: CellEntry[] = [
       "Preterm labor — immature myometrium can be suppressed with tocolytics while giving steroids for fetal lung maturity; same oxytocin/prostaglandin axis as term labor.",
   },
   {
+    id: "cervical-os",
+    name: "Cervical Os",
+    aliases: [
+      "cervical os",
+      "cervical os uteri",
+      "external os",
+      "external cervical os",
+      "internal os",
+      "internal cervical os",
+      "os uteri",
+      "cervical opening",
+    ],
+    definition:
+      "Opening of the uterine cervix — the internal os communicates with the endometrial cavity and the external os opens into the upper vagina; the canal between them is the endocervical canal.",
+    characteristics: [
+      "Internal os — junction between endometrium and endocervix at the uterine isthmus",
+      "External os — opening into the vaginal fornix; appears as a small round or slit-like orifice on speculum exam",
+      "Endocervix lined by columnar mucus-secreting epithelium; ectocervix (portio vaginalis) lined by stratified squamous epithelium",
+      "Squamocolumnar junction (transformation zone) — dynamic border where columnar epithelium is replaced by squamous metaplasia; site of HPV-related neoplasia",
+      "Dilates during labor (external os) under prostaglandin and mechanical forces; cerclage placed when cervical incompetence threatens internal os",
+    ],
+    clinicalRelevance: [
+      "Pap smear / HPV testing samples transformation zone at ectocervix and endocervix",
+      "Cervical intraepithelial neoplasia (CIN) and squamous cell carcinoma arise at transformation zone",
+      "Cervical incompetence — painless dilation of internal os in second trimester → cerclage",
+      "Labor — progressive effacement and dilation of external os to 10 cm",
+      "Cervicitis — friable, bleeding endocervix; mucopurulent discharge (Chlamydia, gonorrhea)",
+    ],
+    boardsPearls: [
+      "Internal os → uterine cavity; external os → vagina",
+      "Transformation zone (squamocolumnar junction) — target of Pap smear; HPV-driven dysplasia",
+      "Ectocervix = squamous; endocervix = columnar — metaplasia occurs between them",
+      "Cervical incompetence: painless dilation before viability — differs from preterm labor with contractions",
+      "vs cervical vertebrae — anatomical neck bones; unrelated to uterine cervix",
+    ],
+    distinguishFrom: [
+      "Cervical spine (C1–C7) — vertebral column of the neck, not uterine anatomy",
+      "External urethral orifice — urinary outlet; distinct from external cervical os",
+      "Endometrium — uterine lining above internal os, not the cervical canal itself",
+      "Vaginal introitus — vaginal opening; external os is deeper at the upper vagina/fornix",
+    ],
+    pediatrics:
+      "Adolescent cervical ectopy (columnar epithelium visible on ectocervix) is physiologic — can cause bleeding after intercourse; still screen per guidelines when age-appropriate.",
+  },
+  {
     id: "mucosa",
     name: "Mucosa",
     aliases: [
@@ -1646,12 +1691,15 @@ export const CELLS: CellEntry[] = [
     id: "epithelioid-cell",
     name: "Epithelioid Cell",
     aliases: [
+      "epithelioid",
       "epithelioid cell",
       "epithelioid cells",
       "epithelioid macrophage",
       "epithelioid macrophages",
       "epithelioid histiocyte",
       "epithelioid histiocytes",
+      "epithelioid granuloma",
+      "epithelioid granulomas",
     ],
     definition:
       "Activated macrophage with abundant eosinophilic cytoplasm and rounded epithelial-like morphology that aggregates with lymphocytes to form granulomas in chronic inflammation.",
@@ -2058,6 +2106,48 @@ export const CELLS: CellEntry[] = [
     ],
     pediatrics:
       "Neonatal liver has immature sinusoidal clearance; kernicterus risk when unconjugated bilirubin overwhelms hepatocyte conjugation and sinusoidal processing.",
+  },
+  {
+    id: "stroma",
+    name: "Stroma",
+    aliases: [
+      "stroma",
+      "stromal",
+      "stromal tissue",
+      "stromal cells",
+      "supporting stroma",
+    ],
+    definition:
+      "Connective tissue framework of an organ that supports and organizes the functional parenchymal cells — composed of extracellular matrix, fibroblasts, blood vessels, lymphatics, nerves, and resident immune cells.",
+    characteristics: [
+      "Stroma vs parenchyma — stroma provides structural scaffold; parenchyma performs organ-specific function (hepatocytes, nephrons, acini)",
+      "Stromal cells include fibroblasts, myofibroblasts, endothelial cells, pericytes, and immune cells",
+      "Lamina propria is stromal connective tissue beneath mucosal epithelium",
+      "Tumor stroma — desmoplastic reaction with cancer-associated fibroblasts, angiogenesis, immune infiltration",
+      "Bone marrow stroma — reticular network and stromal cells (osteoblasts, adipocytes) support hematopoiesis",
+    ],
+    clinicalRelevance: [
+      "BPH — benign hyperplasia of prostatic stromal and glandular (parenchymal) elements",
+      "Desmoplastic stroma in pancreatic adenocarcinoma — dense fibrotic reaction impedes drug delivery",
+      "Corneal stroma — thickest corneal layer; edema (keratoconus, Fuchs) impairs transparency",
+      "Lymph node stroma — fibroblastic reticular network guides T/B-cell migration",
+      "Hepatic stellate cells in Space of Disse — liver stromal cells that activate to myofibroblasts in fibrosis",
+    ],
+    boardsPearls: [
+      "Stroma = supportive connective tissue; parenchyma = functional cells of an organ",
+      "Giant cell tumor of bone — neoplastic stromal cells (not epithelioid granuloma macrophages)",
+      "BPH involves stromal AND glandular hyperplasia — 5α-reductase inhibitors shrink stromal component",
+      "Tumor microenvironment stroma can promote growth, invasion, and immune evasion",
+      "vs parenchyma — hepatocytes are liver parenchyma; Space of Disse stroma surrounds them",
+    ],
+    distinguishFrom: [
+      "Parenchyma — functional tissue (acini, nephrons, hepatocytes), not supporting framework",
+      "Epithelium — cellular lining layer; stroma lies beneath or surrounds epithelium",
+      "Interstitium — often used interchangeably with stroma in kidney/lung; connective tissue between functional units",
+      "Matrix alone — ECM component of stroma but stroma also includes cells and vessels",
+    ],
+    pediatrics:
+      "Bone marrow stroma supports pediatric hematopoiesis; stromal damage from chemotherapy or radiation contributes to cytopenias.",
   },
 ];
 
