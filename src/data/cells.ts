@@ -1008,6 +1008,88 @@ export const CELLS: CellEntry[] = [
       "Same anatomic layers in children; appendicitis perforation → serosal breach and peritonitis; NEC can progress to full-thickness necrosis and perforation.",
   },
   {
+    id: "adventitia",
+    name: "Adventitia",
+    aliases: [
+      "adventitia",
+      "adventitial",
+      "adventitial layer",
+      "tunica adventitia",
+    ],
+    definition:
+      "Outermost connective tissue layer of organs that lie outside the peritoneal cavity (retroperitoneal and mediastinal structures); dense fibrous tissue without a mesothelial covering, anchoring the organ to surrounding tissues.",
+    characteristics: [
+      "Dense irregular connective tissue with collagen, blood vessels, lymphatics, and nerves",
+      "No mesothelial lining — unlike serosa, not continuous with visceral peritoneum",
+      "Blends with surrounding retroperitoneal or mediastinal fascia",
+      "Also the outermost tunic of blood vessels (tunica externa/adventitia)",
+    ],
+    clinicalRelevance: [
+      "Retroperitoneal organs — duodenum (portions), pancreas, ascending/descending colon, rectum (partially), aorta, esophagus — covered by adventitia not serosa",
+      "Pancreatic and retroperitoneal tumors spread along adventitial planes",
+      "Aortic adventitia — aneurysm rupture into retroperitoneum (not free intraperitoneal rupture initially)",
+      "Vascular adventitia contains vasa vasorum nourishing large vessel walls",
+    ],
+    boardsPearls: [
+      "Adventitia vs serosa — retroperitoneal = adventitia; intraperitoneal = serosa (mesothelium-covered)",
+      "GI wall outer layer: serosa if intraperitoneal; adventitia if retroperitoneal (2nd–4th duodenum, ascending colon, etc.)",
+      "Esophagus has adventitia (no serosa) — mediastinal, not intraperitoneal",
+      "Blood vessel tunica externa = adventitia — anchors vessel to surrounding tissue",
+    ],
+    distinguishFrom: [
+      "Serosa — mesothelial covering on intraperitoneal viscera; lubricates within peritoneal cavity",
+      "Mucosa — inner lining for absorption/secretion",
+      "Organ capsule — liver and kidney fibrous capsule; distinct from GI adventitia",
+      "Parietal peritoneum — lines abdominal wall, not organ outer layer",
+    ],
+    pediatrics:
+      "Same retroperitoneal anatomy in children; retroperitoneal appendicitis or duodenal injury may localize differently than intraperitoneal perforation.",
+  },
+  {
+    id: "dermal-appendage",
+    name: "Dermal Appendage",
+    aliases: [
+      "dermal appendage",
+      "dermal appendages",
+      "skin appendage",
+      "skin appendages",
+      "skin adnexa",
+      "cutaneous adnexa",
+    ],
+    definition:
+      "Epidermal-derived structures that invaginate into the dermis, including hair follicles, sebaceous glands, eccrine and apocrine sweat glands, and nails; responsible for thermoregulation, barrier lubrication, and hair growth.",
+    characteristics: [
+      "Hair follicle — cycling growth (anagen, catagen, telogen); associated with arrector pili muscle",
+      "Sebaceous gland — holocrine sebum secretion into hair follicle canal; lubricates skin and hair",
+      "Eccrine sweat gland — widely distributed; watery sweat for thermoregulation (palms, soles, forehead)",
+      "Apocrine sweat gland — axilla, areola, anogenital region; odorless secretion until bacterial breakdown; activated at puberty",
+      "Nail unit — specialized keratinized plate over nail matrix",
+    ],
+    clinicalRelevance: [
+      "Acne vulgaris — follicular hyperkeratinization + sebaceous hyperplasia + Cutibacterium acnes inflammation",
+      "Hidradenitis suppurativa — apocrine/follicular occlusion in intertriginous areas",
+      "Alopecia areata — autoimmune attack on hair follicle",
+      "Fox-Fordyce disease — apocrine gland duct occlusion",
+      "Sebaceous carcinoma — rare malignancy of sebaceous glands (Muir-Torre syndrome association)",
+      "Eccrine porocarcinoma and other adnexal tumors",
+    ],
+    boardsPearls: [
+      "Dermal appendages = hair + sebaceous + sweat glands + nails — all epidermal derivatives",
+      "Acne targets pilosebaceous unit (hair follicle + sebaceous gland)",
+      "Eccrine = cooling sweat everywhere; apocrine = body odor regions, puberty-dependent",
+      "Basal cell carcinoma arises from hair follicle stem cells / epidermal basal layer",
+      "vs epidermis alone — appendages are downgrowths into dermis with specialized glands",
+    ],
+    distinguishFrom: [
+      "Epidermis — stratified squamous epithelium forming surface barrier; appendages are invaginations",
+      "Dermis — connective tissue layer housing appendages but not itself an appendage",
+      "Mucosa — GI/respiratory lining; no pilosebaceous units (except nasal vestibule hair)",
+      "Exocrine pancreas/salivary glands — not cutaneous adnexal structures",
+    ],
+    pediatrics:
+      "Neonatal acne from maternal androgens affects sebaceous glands; apocrine function minimal until puberty. Congenital absence of eccrine glands (anhidrotic ectodermal dysplasia) → heat intolerance.",
+  },
+  {
     id: "actin",
     name: "Actin",
     aliases: [

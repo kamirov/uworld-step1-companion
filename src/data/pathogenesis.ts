@@ -289,6 +289,183 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Congenital CMV — periventricular intracranial calcifications; congenital toxoplasmosis — more diffuse calcifications plus chorioretinitis and hydrocephalus.",
   },
+  {
+    id: "eosinophilic-inflammation",
+    name: "Eosinophilic Inflammation",
+    aliases: [
+      "eosinophilic",
+      "eosinophilic inflammation",
+      "eosinophil-mediated inflammation",
+      "eosinophilic infiltrate",
+      "tissue eosinophilia",
+    ],
+    definition:
+      "Inflammatory response dominated by eosinophil recruitment and activation, typically driven by type 2 (Th2) cytokines; on histology, \"eosinophilic\" also describes structures staining pink with eosin dye on H&E.",
+    examples: [
+      "Asthma and allergic rhinitis — airway eosinophilic inflammation with IL-4, IL-5, IL-13",
+      "Eosinophilic esophagitis — dysphagia, food impaction, esophageal rings/furrows, tissue eosinophils",
+      "Helminth and parasitic infections — eosinophils combat multicellular parasites",
+      "Drug hypersensitivity and DRESS — peripheral eosinophilia with organ involvement",
+      "EGPA (eosinophilic granulomatosis with polyangiitis) — asthma + eosinophilia + vasculitis",
+      "Bullous pemphigoid — subepidermal blisters with eosinophilic dermal infiltrate",
+      "Lewy bodies — eosinophilic intracytoplasmic inclusions in Parkinson disease (staining descriptor)",
+    ],
+    boardsPearls: [
+      "Th2 cytokines IL-5 (eosinophil growth/survival) and IL-4/IL-13 drive eosinophilic inflammation",
+      "Eosinophils + allergy/parasites; neutrophils + acute bacterial infection — classic pairing",
+      "Peripheral eosinophilia often accompanies tissue eosinophilic inflammation but can be absent locally",
+      "Dupilumab blocks IL-4Rα → ↓ type 2 inflammation (atopic dermatitis, eosinophilic asthma, EoE)",
+      "Before attributing eosinophilia to autoimmune disease, rule out parasites (especially with steroids planned)",
+    ],
+    distinguishFrom: [
+      "Neutrophilic inflammation — acute bacterial infection, pus, IL-8/C5a chemotaxis",
+      "Lymphocytic inflammation — viral infection, chronic autoimmune (e.g., lymphocytic thyroiditis)",
+      "Eosinophilia (lab finding) — elevated blood eosinophil count; not synonymous with tissue infiltration",
+      "Basophilic staining — blue/purple on H&E (nuclei, basophil granules), opposite staining property",
+    ],
+    pediatrics:
+      "Eosinophilic esophagitis in children/adolescents — feeding difficulty or dysphagia; atopy and food allergy common. Parasitic infection must be excluded before diagnosing primary eosinophilic disorders.",
+  },
+  {
+    id: "hyperplasia",
+    name: "Hyperplasia",
+    aliases: [
+      "hyperplasia",
+      "cellular hyperplasia",
+      "tissue hyperplasia",
+    ],
+    definition:
+      "Increase in the number of cells in a tissue or organ, causing enlargement; an adaptive or pathologic response to stimulation, hormonal drive, or chronic injury.",
+    examples: [
+      "Benign prostatic hyperplasia — androgen-driven prostate gland enlargement",
+      "Endometrial hyperplasia — unopposed estrogen → ↑ endometrial cancer risk",
+      "Congenital adrenal hyperplasia — ACTH-driven adrenal cortical enlargement",
+      "Gingival hyperplasia — nifedipine, phenytoin, cyclosporine",
+      "Lymphoid hyperplasia — reactive lymph node enlargement in infection",
+      "Compensatory hyperplasia — liver regeneration after partial hepatectomy",
+    ],
+    boardsPearls: [
+      "Hyperplasia = ↑ cell number; hypertrophy = ↑ cell size without division",
+      "Often reversible if stimulus removed (unlike metaplasia/dysplasia progression risks)",
+      "Endometrial hyperplasia with atypia → endometrial carcinoma risk",
+      "BPH — hyperplasia of stromal and glandular elements, not prostate cancer",
+      "vs neoplasia — hyperplasia is regulated and polyclonal; neoplasia is monoclonal",
+    ],
+    distinguishFrom: [
+      "Hypertrophy — larger cells (e.g., LV hypertrophy), not increased cell count",
+      "Metaplasia — one adult cell type replaced by another (Barrett esophagus)",
+      "Dysplasia — disordered growth with architectural/cytologic atypia",
+      "Neoplasia — monoclonal uncontrolled proliferation (benign or malignant)",
+    ],
+    pediatrics:
+      "Physiologic thymic hyperplasia in infants can mimic mediastinal mass on imaging; congenital adrenal hyperplasia presents with virilization or salt-wasting in neonates.",
+  },
+  {
+    id: "sclerosis",
+    name: "Sclerosis",
+    aliases: [
+      "sclerosis",
+      "fibrosis",
+      "tissue sclerosis",
+      "organ sclerosis",
+    ],
+    definition:
+      "Pathologic hardening of tissue from excessive deposition of collagen and extracellular matrix, replacing normal parenchyma and impairing function; distinct from the disease name systemic sclerosis (scleroderma).",
+    examples: [
+      "Systemic sclerosis — skin and visceral fibrosis (scleroderma disease)",
+      "Atherosclerotic plaque sclerosis — hardened arterial wall",
+      "Multiple sclerosis — CNS demyelinating plaques (name uses \"sclerosis\" for hard scar-like lesions)",
+      "Cirrhosis — hepatic fibrosis and nodular regeneration",
+      "Glomerulosclerosis in chronic kidney disease",
+      "Radiation fibrosis of lung or mediastinum",
+    ],
+    boardsPearls: [
+      "\"Sclerosis\" = fibrotic hardening; systemic sclerosis is a specific autoimmune disease",
+      "CREST/scleroderma — immune-mediated fibrosis, not simple age-related sclerosis",
+      "Sclerosis is often irreversible — unlike many hyperplastic changes",
+      "MS plaques are sclerotic scars in CNS white matter — different organ, same histologic concept",
+      "Scleroderma renal crisis — fibroproliferative vascular lesion in kidney, not benign sclerosis",
+    ],
+    distinguishFrom: [
+      "Hyperplasia — increased cell number, not matrix deposition",
+      "Systemic sclerosis (disease) — specific autoimmune fibrosing disorder; term \"sclerosis\" here is pathologic descriptor",
+      "Calcification — calcium deposits, not collagen fibrosis",
+      "Hyaline arteriolosclerosis — vascular change in hypertension/diabetes, related but distinct pattern",
+    ],
+    pediatrics:
+      "Localized morphea (scleroderma) in children causes skin sclerosis without necessarily progressing to systemic sclerosis; monitor for extracutaneous involvement.",
+  },
+  {
+    id: "hyperkeratosis",
+    name: "Hyperkeratosis",
+    aliases: [
+      "hyperkeratosis",
+      "hyperkeratotic",
+      "stratum corneum thickening",
+      "orthokeratosis",
+      "parakeratosis",
+    ],
+    definition:
+      "Thickening of the stratum corneum from excess keratin production or retention; may show retained nuclei in corneocytes (parakeratosis) or anucleate cells (orthokeratosis).",
+    examples: [
+      "Psoriasis — parakeratosis with silvery scale and Munro microabscesses",
+      "Actinic keratosis — sun-damaged rough plaques; premalignant",
+      "Corns and calluses — friction-induced localized hyperkeratosis",
+      "Keratosis pilaris — follicular hyperkeratosis on extensor arms",
+      "Subungual hyperkeratosis — psoriasis or onychomycosis under nail",
+      "Acanthosis nigricans — velvety hyperkeratotic plaques (insulin resistance)",
+    ],
+    boardsPearls: [
+      "Hyperkeratosis = thick stratum corneum; hyperplasia = ↑ epidermal cell layers (acanthosis)",
+      "Parakeratosis — nuclei retained in stratum corneum (psoriasis, actinic keratosis)",
+      "Psoriasis: acanthosis + parakeratosis + hypogranulosis classic triad",
+      "Actinic keratosis → can progress to squamous cell carcinoma",
+      "vs lichenification — thickening from chronic rubbing (eczema), not primary keratin disorder alone",
+    ],
+    distinguishFrom: [
+      "Hyperplasia — increased cell number in tissue; hyperkeratosis is specifically cornified layer thickening",
+      "Hypertrophy — enlarged cells, not excess keratin layer",
+      "Ichthyosis — generalized scaling disorders; hyperkeratosis describes histologic finding",
+      "Hypergranulosis — thickened granular layer (lichen planus), opposite of hypogranulosis in psoriasis",
+    ],
+    pediatrics:
+      "Keratosis pilaris common in atopic children; congenital ichthyoses present at birth with diffuse hyperkeratotic scaling.",
+  },
+  {
+    id: "extravasation",
+    name: "Extravasation",
+    aliases: [
+      "extravasation",
+      "extravasated",
+      "extravasated blood",
+      "extravasated cells",
+      "vascular extravasation",
+    ],
+    definition:
+      "Escape of blood cells, fluid, or infused substances from vessels into surrounding tissues through damaged or permeable vessel walls.",
+    examples: [
+      "Leukocyte extravasation — diapedesis during inflammation (see leukocyte migration)",
+      "RBC extravasation — bruise (ecchymosis), hemosiderin-laden macrophages, cholesterol granulomas in atherosclerosis",
+      "IV chemotherapy extravasation — doxorubicin, vincristine → severe local tissue necrosis",
+      "Contrast or hyperosmolar fluid extravasation — compartment swelling and injury",
+      "Vascular permeability in burns, sepsis, or anaphylaxis — plasma extravasation → edema",
+    ],
+    boardsPearls: [
+      "Extravasated RBCs → hemosiderin (golden-brown macrophages) after bruise resorption",
+      "Atherosclerotic plaque cholesterol from extravasated RBC membranes and LDL",
+      "Chemotherapy extravasation emergency — stop infusion, elevate limb, local antidotes per agent",
+      "Leukocyte extravasation = key step in inflammation; distinct from bacteria hematogenous spread",
+      "Extravasation ≠ diapedesis only — includes fluid, drugs, and erythrocytes leaving vessels",
+    ],
+    distinguishFrom: [
+      "Leukocyte migration — focused on WBC recruitment; extravasation is broader (RBC, fluid, drugs)",
+      "Hematoma — collected extravasated blood forming a localized clot",
+      "Transudate vs exudate — fluid shifts with different protein content; extravasation emphasizes vessel egress",
+      "Hematogenous dissemination — microbes in bloodstream seeding distant sites",
+    ],
+    pediatrics:
+      "Extravasation of IV infusions in infants — small veins, high risk of tissue injury; use appropriate cannula size and monitor site.",
+  },
 ];
 
 const pathogenesisById = new Map(

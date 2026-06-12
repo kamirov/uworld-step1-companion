@@ -248,6 +248,36 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "collagen",
+    name: "Collagen",
+    aliases: ["collagen", "collagens"],
+    gene: "COL gene family (e.g., COL1A1, COL2A1, COL3A1, COL4A)",
+    location:
+      "Extracellular matrix of bone, skin, cartilage, blood vessels, basement membranes, and most connective tissues",
+    function:
+      "Primary structural protein providing tensile strength; synthesized as procollagen triple helix (Gly-X-Y repeats), secreted, and cross-linked into fibrils and networks that support tissues and organs.",
+    mutationCauses: [
+      "Type I defects — osteogenesis imperfecta (bone fragility, blue sclerae)",
+      "Type III defects — vascular Ehlers-Danlos syndrome (arterial rupture)",
+      "Type IV defects — Alport syndrome (nephritis, hearing loss), Goodpasture (anti-GBM targets α3 chain)",
+      "Vitamin C deficiency — impaired hydroxylation → scurvy (bleeding gums, poor wound healing)",
+      "Excessive deposition — systemic sclerosis (scleroderma), pulmonary/liver fibrosis",
+    ],
+    boardsPearls: [
+      "Synthesis requires vitamin C for proline/lysine hydroxylation — scurvy = defective collagen",
+      "Type I — bone/skin/tendon; Type II — cartilage; Type III — reticulin/vessels; Type IV — basement membrane",
+      "Goodpasture — antibodies against type IV collagen in GBM and alveolar basement membrane",
+      "Alport — X-linked COL4A5 mutation → hematuria, sensorineural hearing loss, ocular changes",
+      "Osteogenesis imperfecta — type I collagen; blue sclerae, fractures, hearing loss",
+    ],
+    distinguishFrom: [
+      "Elastin — elastic recoil in arteries/lungs; Williams syndrome (ELN deletion)",
+      "Fibrillin-1 — microfibrils; Marfan syndrome, not primary collagen disorder",
+      "Keratin — intermediate filaments in epithelial cells, not ECM collagen",
+      "Fibrin — clot polymer, not structural ECM protein",
+    ],
+  },
+  {
     id: "collagen-type-1",
     name: "Collagen type I",
     aliases: ["collagen type i", "collagen type 1", "type i collagen"],

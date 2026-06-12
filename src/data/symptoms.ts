@@ -1091,6 +1091,236 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Jaundice — yellow bilirubin pigmentation, sclera involved",
     ],
   },
+  {
+    id: "dactylitis",
+    name: "Dactylitis",
+    aliases: [
+      "dactylitis",
+      "sausage digit",
+      "sausage digits",
+      "sausage finger",
+      "sausage toe",
+    ],
+    definition:
+      "Diffuse inflammatory swelling of an entire digit (finger or toe), producing a \"sausage-like\" appearance from involvement of all tissue compartments rather than isolated joint effusion alone.",
+    mechanism:
+      "Inflammation of joints, tenosynovium, and soft tissues of the digit — from psoriatic enthesitis, sickle vaso-occlusion, infection, or crystal/immune-mediated synovitis.",
+    thinkOf: [
+      "Psoriatic arthritis — asymmetric oligoarthritis with DIP and enthesitis",
+      "Sickle cell disease — hand-foot syndrome in infants/children",
+      "Reactive arthritis (Reiter syndrome)",
+      "Infectious flexor tenosynovitis (Kanavel signs)",
+      "Blistering distal dactylitis (Strep pyogenes in children)",
+    ],
+    pairWith: [
+      "Nail pitting or psoriatic plaques → psoriatic arthritis",
+      "Pain out of proportion + fever → infectious tenosynovitis",
+      "Hemoglobin SS + infant → sickle cell dactylitis",
+      "Urethritis + conjunctivitis → reactive arthritis",
+    ],
+    distinguishFrom: [
+      "Isolated joint arthritis — single joint swelling without diffuse digit swelling",
+      "Cellulitis — erythema and warmth but not classic uniform sausage digit",
+      "Herpetic whitlow — vesicular lesions, localized to fingertip",
+    ],
+  },
+  {
+    id: "skin-thickening",
+    name: "Skin Thickening",
+    aliases: [
+      "skin thickening",
+      "thickened skin",
+      "indurated skin",
+      "skin induration",
+    ],
+    definition:
+      "Abnormal increase in skin thickness or firmness from edema, inflammation, collagen deposition, or infiltrative disease; may be localized or diffuse.",
+    mechanism:
+      "Dermal collagen accumulation (systemic sclerosis), mucopolysaccharide deposition (myxedema), soft tissue hypertrophy (acromegaly), chronic lymphedema, or inflammatory infiltration increases skin resistance and decreases pliability.",
+    thinkOf: [
+      "Systemic sclerosis (scleroderma) — sclerodactyly, proximal spread, Raynaud",
+      "CREST syndrome — limited cutaneous systemic sclerosis",
+      "Eosinophilic fasciitis — after strenuous exercise, eosinophilia",
+      "Myxedema — hypothyroidism, nonpitting, periorbital",
+      "Acromegaly — coarse features, jaw enlargement, ↑ IGF-1",
+      "Chronic lymphedema — nonpitting extremity swelling",
+    ],
+    pairWith: [
+      "Raynaud + reflux → systemic sclerosis",
+      "Anti-centromere or anti–Scl-70 → scleroderma subtype",
+      "Eosinophilia + fascial thickening → eosinophilic fasciitis",
+      "↓ TSH + periorbital puffiness → myxedema",
+      "Enlarged hands/feet + jaw → acromegaly",
+    ],
+    distinguishFrom: [
+      "Edema — pitting fluid accumulation, not true dermal thickening",
+      "Lichenification — chronic scratching in eczema, not systemic fibrosis",
+      "Sclerodactyly — specific finger tightening in systemic sclerosis subset of skin thickening",
+    ],
+  },
+  {
+    id: "sclerodactyly",
+    name: "Sclerodactyly",
+    aliases: ["sclerodactyly", "sclerodactylies"],
+    definition:
+      "Fibrotic tightening and tapering of the skin over the fingers and toes, classically in systemic sclerosis, producing a shiny, bound-down appearance and flexion contractures.",
+    mechanism:
+      "Dermal and subcutaneous collagen deposition with loss of skin compliance → fixed skin induration of digits; the \"S\" in CREST (limited cutaneous systemic sclerosis).",
+    thinkOf: [
+      "Systemic sclerosis / CREST syndrome",
+      "Limited cutaneous systemic sclerosis — anti-centromere antibody",
+      "Diffuse systemic sclerosis — proximal skin involvement beyond hands",
+      "Digital pitting scars and contractures",
+    ],
+    pairWith: [
+      "Raynaud phenomenon → systemic sclerosis",
+      "Telangiectasias + calcinosis → CREST",
+      "GERD/dysphagia → esophageal dysmotility in scleroderma",
+      "Anti-centromere → limited disease, PAH risk",
+    ],
+    distinguishFrom: [
+      "General skin thickening — broader term; acromegaly, myxedema, eosinophilic fasciitis",
+      "Clubbing — bulbous nail bed enlargement, not dermal fibrosis",
+      "Dupuytren contracture — palmar fascia, not dorsal finger skin",
+    ],
+  },
+  {
+    id: "telangiectasia",
+    name: "Telangiectasia",
+    aliases: [
+      "telangiectasia",
+      "telangiectasias",
+      "spider telangiectasia",
+      "spider angioma",
+    ],
+    definition:
+      "Visible permanent dilatation of small superficial blood vessels in skin or mucosa, appearing as fine red lines, mat-like patches, or spider-like lesions with a central arteriole.",
+    mechanism:
+      "Chronic vascular dilatation from local hypoxia, hormonal influence, or connective tissue disease; in CREST/systemic sclerosis reflects underlying microvascular injury and loss of capillary density at nailfolds.",
+    thinkOf: [
+      "CREST syndrome / limited systemic sclerosis — the \"T\" in CREST",
+      "Hereditary hemorrhagic telangiectasia (Osler-Weber-Rendu)",
+      "Cirrhosis — spider angiomata on upper body",
+      "Rosacea — centrofacial telangiectasias",
+      "Pregnancy and estrogen excess",
+    ],
+    pairWith: [
+      "Sclerodactyly + Raynaud → systemic sclerosis",
+      "Epistaxis + mucosal telangiectasias → HHT",
+      "Jaundice + ascites → cirrhotic spider angiomata",
+      "Facial flushing + papules → rosacea",
+    ],
+    distinguishFrom: [
+      "Petechiae — nonblanching hemorrhage, not dilated vessels",
+      "Cherry angioma — isolated dome-shaped papule, benign aging lesion",
+      "Palmar erythema — diffuse redness, not discrete telangiectasias",
+    ],
+  },
+  {
+    id: "calcinosis",
+    name: "Calcinosis",
+    aliases: [
+      "calcinosis",
+      "calcinosis cutis",
+      "subcutaneous calcification",
+      "soft tissue calcification",
+    ],
+    definition:
+      "Deposition of calcium salts in skin, subcutaneous tissue, or other soft tissues, producing firm white nodules that may ulcerate and extrude chalky material.",
+    mechanism:
+      "Dystrophic calcification in damaged or fibrotic tissue despite normal serum calcium; in CREST/systemic sclerosis the \"C\" reflects subcutaneous calcinosis over pressure points (fingers, elbows, knees).",
+    thinkOf: [
+      "CREST syndrome / systemic sclerosis — calcinosis cutis",
+      "Dermatomyositis — especially juvenile form",
+      "Hyperphosphatemic familial tumoral calcinosis",
+      "Metastatic calcification — hypercalcemia/hyperphosphatemia (different mechanism)",
+      "Calciphylaxis in CKD",
+    ],
+    pairWith: [
+      "Sclerodactyly + Raynaud → CREST",
+      "Proximal muscle weakness + heliotrope rash → dermatomyositis",
+      "↑ calcium × phosphate product → metastatic calcification",
+    ],
+    distinguishFrom: [
+      "Gout tophi — urate crystals, not calcium hydroxyapatite",
+      "Xanthoma — lipid deposits, not calcified",
+      "Metastatic calcification — normal tissue + abnormal Ca²⁺/PO₄³⁻ (vs dystrophic in damaged tissue)",
+      "Ossification — true bone formation, not calcium salt deposits alone",
+    ],
+  },
+  {
+    id: "raynaud-phenomenon",
+    name: "Raynaud Phenomenon",
+    aliases: [
+      "raynaud phenomenon",
+      "raynaud's phenomenon",
+      "raynauds phenomenon",
+      "secondary raynaud",
+      "raynaud syndrome",
+    ],
+    definition:
+      "Episodic digital vasospasm triggered by cold or stress, causing color changes (white → blue → red) in fingers or toes; when associated with underlying disease it is Raynaud phenomenon (vs primary Raynaud disease).",
+    mechanism:
+      "Exaggerated sympathetic arteriolar vasoconstriction → transient ischemia (pallor/cyanosis) followed by reactive hyperemia (rubor); in systemic sclerosis reflects structural microvascular disease and may progress to digital ulcers or pitting scars.",
+    thinkOf: [
+      "Systemic sclerosis — often first manifestation months before skin fibrosis",
+      "CREST syndrome",
+      "SLE, Sjögren syndrome, mixed connective tissue disease",
+      "Buerger disease (thromboangiitis obliterans)",
+      "Carpal tunnel syndrome, vibration tool use",
+      "Drugs — β-blockers, ergotamines, bleomycin, cisplatin",
+    ],
+    pairWith: [
+      "Sclerodactyly + telangiectasias → systemic sclerosis",
+      "Anti-centromere or anti–Scl-70 → scleroderma workup",
+      "Digital ulcers or pitting → secondary Raynaud with tissue injury",
+      "Young woman + isolated episodes only → may be primary Raynaud disease",
+    ],
+    distinguishFrom: [
+      "Raynaud disease (primary) — benign, no underlying disease, normal capillaroscopy, young women",
+      "Acrocyanosis — persistent blue discoloration without episodic triphasic color change",
+      "Frostbite — acute cold injury with tissue necrosis",
+      "Embolic digital ischemia — sudden, asymmetric, not triggered by cold",
+    ],
+  },
+  {
+    id: "lymphadenopathy",
+    name: "Lymphadenopathy",
+    aliases: [
+      "lymphadenopathy",
+      "lymphadenopathies",
+      "enlarged lymph nodes",
+      "enlarged lymph node",
+      "lymph node enlargement",
+      "lymph node swelling",
+      "adenopathy",
+    ],
+    definition:
+      "Abnormal enlargement of lymph nodes, detected clinically or on imaging; may be localized or generalized and reflects reactive, infectious, malignant, or autoimmune processes.",
+    mechanism:
+      "Antigen-driven lymphocyte proliferation, macrophage activation, or neoplastic infiltration within lymphoid tissue increases node size; tenderness often suggests acute inflammation; rubbery painless nodes raise malignancy concern.",
+    thinkOf: [
+      "Viral infection — EBV (mono), CMV, HIV acute seroconversion",
+      "Bacterial infection — strep pharyngitis, cat-scratch disease, TB",
+      "Lymphoma — Hodgkin (mediastinal mass, Reed-Sternberg) or NHL",
+      "Metastatic cancer — supraclavicular (Virchow node) suggests GI or thoracic malignancy",
+      "Sarcoidosis — bilateral hilar lymphadenopathy",
+      "SLE, RA, and other autoimmune disease",
+    ],
+    pairWith: [
+      "Pharyngitis + atypical lymphocytes → infectious mononucleosis",
+      "B symptoms (fever, night sweats, weight loss) → lymphoma or TB",
+      "Bilateral hilar nodes + erythema nodosum → sarcoidosis (Löfgren)",
+      "Left supraclavicular node → gastric or thoracic malignancy (Virchow)",
+      "Localized tender nodes → bacterial lymphadenitis",
+    ],
+    distinguishFrom: [
+      "Lymphadenitis — painful inflamed node, often bacterial; subset of lymphadenopathy",
+      "Lipoma or cyst — soft, not true lymphoid enlargement",
+      "Matted nodes fixed to tissue — higher suspicion for malignancy or TB",
+      "Generalized lymphadenopathy — ≥2 noncontiguous regions; broader workup (HIV, lymphoma, SLE)",
+    ],
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));

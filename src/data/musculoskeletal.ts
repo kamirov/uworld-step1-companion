@@ -188,6 +188,232 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     pediatrics:
       "Subscapularis tears rare in children; anterior instability more often labral (Bankart) injury than cuff tear.",
   },
+  {
+    id: "axillary-nerve",
+    name: "Axillary Nerve",
+    aliases: ["axillary nerve", "circumflex nerve"],
+    definition:
+      "Terminal branch of the posterior cord of the brachial plexus that innervates the deltoid and teres minor and provides sensation over the lateral shoulder.",
+    anatomy:
+      "Exits axilla posterior to humerus through the quadrangular space with the posterior circumflex humeral artery; wraps around the surgical neck of the humerus deep to deltoid.",
+    action: [
+      "Motor — deltoid (arm abduction, especially middle deltoid past initiation), teres minor (external rotation)",
+      "Sensory — skin over lateral shoulder (\"regimental badge\" area)",
+    ],
+    innervation: "C5–C6 fibers from posterior cord of brachial plexus",
+    clinicalRelevance: [
+      "Anterior shoulder dislocation — classic cause of axillary nerve neuropraxia",
+      "Fracture of surgical neck of humerus",
+      "Iatrogenic injury during shoulder surgery or axillary nerve block",
+      "Flat deltoid with weakness of abduction and loss of lateral shoulder sensation",
+    ],
+    boardsPearls: [
+      "Anterior dislocation → axillary nerve injury — check deltoid sensation and abduction",
+      "Regimental badge area numbness = axillary nerve sensory loss",
+      "Passes through quadrangular space with posterior circumflex humeral artery",
+      "Teres minor also supplied — external rotation may be weak",
+    ],
+    distinguishFrom: [
+      "Suprascapular nerve — supraspinatus/infraspinatus only; no deltoid or lateral shoulder numbness",
+      "Musculocutaneous nerve — biceps/brachialis weakness, lateral forearm sensation",
+      "Radial nerve — wrist/finger extension, posterior arm; spiral groove fracture",
+      "Long thoracic nerve — serratus anterior, winged scapula",
+    ],
+    pediatrics:
+      "Anterior shoulder dislocation in adolescents can injure axillary nerve; assess deltoid function and sensation after reduction.",
+  },
+  {
+    id: "suprascapular-nerve",
+    name: "Suprascapular Nerve",
+    aliases: ["suprascapular nerve"],
+    definition:
+      "Branch of the upper trunk of the brachial plexus that innervates the supraspinatus and infraspinatus rotator cuff muscles as it courses across the posterior scapula.",
+    anatomy:
+      "Passes through the suprascapular notch (under superior transverse scapular ligament) to supraspinatus; motor branch to infraspinatus continues through spinoglenoid notch to infraspinous fossa.",
+    action: [
+      "Motor — supraspinatus (initiates abduction), infraspinatus (external rotation)",
+      "Sensory — minimal; mainly articular branches to glenohumeral and AC joints",
+    ],
+    innervation: "C5–C6 fibers from upper trunk of brachial plexus",
+    clinicalRelevance: [
+      "Compression at suprascapular notch — weakness of both supraspinatus and infraspinatus",
+      "Spinoglenoid notch ganglion cyst — isolated infraspinatus atrophy and external rotation weakness (supraspinatus spared)",
+      "Traction or repetitive overhead sports injury (volleyball, baseball)",
+      "Visible wasting of supraspinatus and/or infraspinatus fossae",
+    ],
+    boardsPearls: [
+      "Innervates supraspinatus + infraspinatus — both rotator cuff external rotation/abduction muscles",
+      "Spinoglenoid ganglion cyst → isolated infraspinatus atrophy — boards favorite",
+      "Passes under superior transverse scapular ligament at suprascapular notch",
+      "vs axillary nerve — deltoid and lateral shoulder sensation unaffected",
+    ],
+    distinguishFrom: [
+      "Axillary nerve — deltoid paralysis and regimental badge numbness",
+      "Upper subscapular nerve — subscapularis (internal rotation)",
+      "Dorsal scapular nerve — rhomboids, levator scapulae",
+      "Long thoracic nerve — serratus anterior, winged scapula",
+    ],
+    pediatrics:
+      "Overhead youth athletes may develop suprascapular neuropathy from repetitive traction; consider if posterior cuff weakness without trauma.",
+  },
+  {
+    id: "acromion",
+    name: "Acromion",
+    aliases: ["acromion", "acromial process"],
+    definition:
+      "Lateral extension of the scapular spine that forms the anterolateral roof of the shoulder and articulates with the clavicle at the acromioclavicular (AC) joint.",
+    anatomy:
+      "Projects anterolaterally over the humeral head; together with the coracoid process and coracoacromial ligament forms the coracoacromial arch. Subacromial bursa and supraspinatus tendon course beneath it.",
+    action: [
+      "Provides origin for deltoid (acromial portion)",
+      "Forms superior boundary of subacromial space during shoulder elevation",
+      "Transmits force from clavicle via AC joint during arm movement",
+    ],
+    clinicalRelevance: [
+      "Subacromial impingement — supraspinatus tendon compressed against acromion with elevation",
+      "Acromioclavicular joint osteoarthritis — inferior osteophytes narrow subacromial space",
+      "Os acromiale (unfused acromial apophysis) — may contribute to impingement symptoms",
+      "Target of acromioplasty in refractory impingement surgery",
+    ],
+    boardsPearls: [
+      "Coracoacromial arch = coracoid + acromion + coracoacromial ligament",
+      "Supraspinatus passes underneath — impingement with overhead motion",
+      "AC joint separates acromion from clavicle — separate from glenohumeral joint",
+      "Hooked acromion (type III) associated with rotator cuff tears on imaging studies",
+    ],
+    distinguishFrom: [
+      "Coracoid process — anterior scapular projection; pectoralis minor, coracobrachialis, short head biceps attach",
+      "Clavicle — articulates with acromion at AC joint; not part of scapula",
+      "Glenoid fossa — scapular socket for humeral head, inferior to acromion",
+    ],
+    pediatrics:
+      "Os acromiale may present in adolescents with overhead shoulder pain; unfused acromial center on imaging.",
+  },
+  {
+    id: "humerus",
+    name: "Humerus",
+    aliases: ["humerus", "humeral", "upper arm bone"],
+    definition:
+      "Long bone of the brachium connecting the shoulder (glenohumeral joint) to the elbow; site of rotator cuff insertion proximally and major upper-extremity nerve crossings.",
+    anatomy:
+      "Proximal: head (glenohumeral articulation), anatomical neck, greater and lesser tuberosities (rotator cuff insertions), surgical neck, intertubercular (bicipital) groove. Shaft: spiral (radial) groove posteriorly. Distal: medial/lateral epicondyles, trochlea, capitulum.",
+    action: [
+      "Articulates with scapula at glenohumeral joint and with radius/ulna at elbow",
+      "Serves as attachment for rotator cuff, deltoid, pectoralis major, latissimus dorsi, and arm muscles",
+      "Provides lever arm for shoulder and elbow motion",
+    ],
+    clinicalRelevance: [
+      "Surgical neck fracture — elderly fall; axillary nerve injury risk",
+      "Humeral shaft fracture — radial nerve injury in spiral groove (wrist drop)",
+      "Supracondylar fracture (children) — brachial artery and median/anterior interosseous nerve at risk",
+      "Greater/lesser tuberosity fractures with rotator cuff avulsion",
+      "Proximal humeral physeal stress injury (Little League shoulder) in young throwers",
+    ],
+    boardsPearls: [
+      "Axillary nerve wraps surgical neck — anterior dislocation or surgical neck fracture",
+      "Radial nerve in spiral groove — mid-shaft fracture → wrist/finger extension loss",
+      "Supracondylar fracture in child — check distal pulses and anterior interosseous nerve (OK sign)",
+      "Rotator cuff inserts on greater tuberosity (SITS except subscapularis on lesser)",
+      "Anatomical neck vs surgical neck — surgical neck is common fracture site below tuberosities",
+    ],
+    distinguishFrom: [
+      "Femur — thigh bone; hip and knee articulation",
+      "Scapula — shoulder blade; glenoid and acromion are scapular, not humeral",
+      "Clavicle — strut between sternum and acromion; no elbow articulation",
+      "Radius/ulna — forearm bones articulating with distal humerus",
+    ],
+    pediatrics:
+      "Supracondylar humerus fracture — most common pediatric elbow fracture; vascular and nerve exam mandatory. Little League shoulder = proximal humeral physeal widening in throwers.",
+  },
+  {
+    id: "subluxation",
+    name: "Subluxation",
+    aliases: [
+      "subluxation",
+      "subluxations",
+      "joint subluxation",
+      "partial dislocation",
+      "partial dislocations",
+    ],
+    definition:
+      "Partial displacement of articulating joint surfaces with incomplete loss of congruity — more than normal joint play but less than full dislocation; may spontaneously reduce or remain malaligned.",
+    anatomy:
+      "Results from capsuloligamentous laxity, trauma, or structural joint abnormality; the joint partially escapes its normal alignment without complete separation of articular surfaces.",
+    action: [
+      "Produces pain, instability, and reduced function during episodes of partial malalignment",
+      "May damage labrum, capsule, or articular cartilage with repeated episodes",
+      "Can impinge or stretch adjacent nerves/vessels depending on joint and direction",
+    ],
+    clinicalRelevance: [
+      "Glenohumeral subluxation/instability — anterior shoulder pain, apprehension test positive; may progress to dislocation",
+      "Patellar subluxation — lateral knee pain, especially in adolescent females with valgus alignment",
+      "Atlantoaxial subluxation — rheumatoid arthritis (pannus), Down syndrome (ligamentous laxity); cord compression risk",
+      "Lens subluxation (ectopia lentis) — Marfan syndrome, homocystinuria, trauma; inferior/temporal displacement in Marfan",
+      "Temporomandibular joint subluxation — jaw locks open",
+    ],
+    boardsPearls: [
+      "Subluxation = partial dislocation; dislocation = complete loss of articular contact",
+      "Anterior shoulder dislocation/subluxation → axillary nerve injury; check deltoid sensation",
+      "Atlantoaxial subluxation in RA — screen with cervical spine films before surgery; cord compression",
+      "Marfan — upward lens subluxation (superotemporal) vs homocystinuria — downward",
+      "Recurrent shoulder subluxation → Bankart lesion (anterior labrum), Hill-Sachs defect (humeral head)",
+    ],
+    distinguishFrom: [
+      "Dislocation — complete separation of articular surfaces; usually requires reduction",
+      "Joint laxity/hypermobility — excessive ROM without frank subluxation episode",
+      "Fracture-dislocation — fracture with associated dislocation, not isolated subluxation",
+      "Subluxation vs luxation — luxation often used synonymously with dislocation; subluxation is partial",
+    ],
+    pediatrics:
+      "Nursemaid's elbow (radial head subluxation) in toddlers — axial traction injury; reduced by supination-flexion maneuver. Patellar subluxation common in adolescent athletes.",
+  },
+  {
+    id: "atlantoaxial",
+    name: "Atlantoaxial Joint (C1–C2)",
+    aliases: [
+      "atlantoaxial",
+      "atlanto-axial",
+      "atlantoaxial joint",
+      "atlantoaxial subluxation",
+      "atlanto-axial subluxation",
+      "atlantoaxial instability",
+      "c1-c2 subluxation",
+      "c1 c2 subluxation",
+    ],
+    definition:
+      "Articulation between the atlas (C1) and axis (C2) that permits ~50% of cervical rotation; stability depends on the odontoid process (dens) of C2 and the transverse ligament holding it against C1.",
+    anatomy:
+      "C1 (atlas) — ring-shaped, no vertebral body; articulates with occiput above and C2 below. C2 (axis) — odontoid process (dens) projects into C1 ring. Transverse ligament secures dens to anterior C1 arch; alar and apical ligaments provide additional stability.",
+    action: [
+      "Primary site of cervical rotation (head turning)",
+      "Allows flexion/extension at occipitoatlantal joint separately from rotation at C1–C2",
+      "Protects spinal cord as it transitions through the cervical canal",
+    ],
+    innervation:
+      "Spinal cord at risk with instability; upper cervical nerve roots C1–C2 contribute to suboccipital sensation",
+    clinicalRelevance: [
+      "Atlantoaxial subluxation — C1 slides anteriorly on C2 → spinal cord compression",
+      "Rheumatoid arthritis — pannus erodes transverse ligament and dens → instability",
+      "Down syndrome — ligamentous laxity → ↑ atlantoaxial instability",
+      "Trauma — dens fracture (type II most unstable), Jefferson fracture (C1 ring)",
+      "Screen cervical spine before intubation/surgery in RA with neck symptoms",
+    ],
+    boardsPearls: [
+      "Atlantoaxial = C1 on C2; transverse ligament holds dens — failure → cord compression",
+      "RA complication — atlantoaxial subluxation; get cervical films before anesthesia",
+      "Down syndrome — screen for atlantoaxial instability especially before sports",
+      "Jefferson fracture (C1 burst) vs hangman fracture (C2 pedicles) — trauma distinctions",
+      "Type II odontoid fracture — high nonunion risk; unstable",
+    ],
+    distinguishFrom: [
+      "Occipitoatlantal joint (C0–C1) — flexion/extension of head nodding, not primary rotation",
+      "Subaxial cervical spine (C3–C7) — different injury patterns (facet dislocation, burst fractures)",
+      "Glenohumeral subluxation — shoulder, not cervical spine",
+      "Central cord syndrome — weakness in upper > lower extremities after hyperextension injury (different mechanism)",
+    ],
+    pediatrics:
+      "Down syndrome patients need atlantoaxial instability screening; contact sports may be restricted if instability present. Odontoid fractures and ligamentous injuries in pediatric cervical trauma require careful imaging.",
+  },
 ];
 
 const musculoskeletalById = new Map(

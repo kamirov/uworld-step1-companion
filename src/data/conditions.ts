@@ -3304,6 +3304,72 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
   },
   {
+    id: "interstitial-lung-disease",
+    name: "Interstitial Lung Disease",
+    aliases: [
+      "interstitial lung disease",
+      "interstitial lung diseases",
+      "ild",
+      "diffuse parenchymal lung disease",
+      "interstitial pneumonia",
+    ],
+    definition:
+      "Heterogeneous group of disorders affecting the lung interstitium and alveolar structures, causing inflammation and/or fibrosis with restrictive physiology and impaired gas exchange.",
+    pathophysiology:
+      "Injury to alveolar epithelium and capillary endothelium → inflammatory cell infiltration → fibroblast activation and collagen deposition → stiff, noncompliant lungs with ↓ DLCO and eventual respiratory failure.",
+    classicPresentation: [
+      "Progressive exertional dyspnea",
+      "Dry cough (less productive than COPD/chronic bronchitis)",
+      "Fine inspiratory crackles (velcro rales) on exam",
+      "Clubbing in advanced fibrotic disease (e.g., IPF)",
+    ],
+    keyFindings: [
+      "Restrictive pattern on PFTs — ↓ TLC, normal or ↑ FEV₁/FVC, ↓ DLCO",
+      "HRCT — reticular opacities, ground-glass, traction bronchiectasis, honeycombing (UIP pattern in IPF)",
+      "Bilateral infiltrates without cardiogenic edema pattern",
+    ],
+    keyLabs: [
+      "Serologies for connective tissue disease (ANA, RF, anti-CCP, Scl-70) if suspected",
+      "ACE level and biopsy if sarcoidosis suspected",
+      "Environmental/occupational exposure history guides workup",
+    ],
+    associations: [
+      "Idiopathic pulmonary fibrosis (IPF)",
+      "Sarcoidosis, hypersensitivity pneumonitis",
+      "Pneumoconiosis (silica, asbestos, coal)",
+      "Connective tissue disease — RA, scleroderma, SLE, polymyositis",
+      "Drug-induced — amiodarone, bleomycin, methotrexate, nitrofurantoin",
+      "Smoking-related interstitial lung disease",
+    ],
+    complications: [
+      "Progressive respiratory failure",
+      "Pulmonary hypertension and cor pulmonale",
+      "Lung cancer (especially IPF, asbestosis)",
+    ],
+    distinguishFrom: [
+      "COPD — obstructive PFTs (↑ RV, ↓ FEV₁/FVC), smoking, hyperinflation",
+      "Congestive heart failure — cardiomegaly, BNP ↑, Kerley B lines, pleural effusions",
+      "Pneumonia — acute febrile illness, focal consolidation, resolves with treatment",
+      "Sarcoidosis — noncaseating granulomas, BHL; ILD is broader category including sarcoid",
+      "Pneumoconiosis — occupational ILD subset with specific dust exposure",
+    ],
+    treatment: [
+      "Treat underlying cause (stop offending drug, remove antigen, treat CTD)",
+      "Antifibrotics (nintedanib, pirfenidone) for IPF",
+      "Corticosteroids ± immunosuppression for inflammatory ILD (sarcoid, hypersensitivity pneumonitis, CTD-ILD)",
+      "Supplemental oxygen; lung transplant for end-stage fibrosis",
+    ],
+    boardsPearls: [
+      "ILD = restrictive lung disease — ↓ TLC + ↓ DLCO; crackles common",
+      "IPF — older adult, basal/subpleural honeycombing (UIP pattern), poor prognosis",
+      "Hypersensitivity pneumonitis — bird/fungal antigen exposure; ground-glass + centrilobular nodules",
+      "Drug causes: amiodarone, bleomycin, methotrexate — always ask medication history",
+      "vs COPD — obstructive vs restrictive PFT pattern is the key fork",
+    ],
+    pediatrics:
+      "Neuroendocrine cell hyperplasia of infancy and genetic surfactant disorders cause pediatric ILD; different etiology workup than adult IPF.",
+  },
+  {
     id: "pneumoconiosis",
     name: "Pneumoconiosis",
     aliases: [
@@ -3400,6 +3466,8 @@ export const CONDITIONS: ConditionEntry[] = [
       "Loud P2 suggests pulmonary hypertension",
       "Eisenmenger: left-to-right shunt → irreversible PAH → right-to-left shunt",
       "Syncope in PAH indicates advanced disease",
+      "Systemic sclerosis — common cause of PAH; anti-centromere associated; evaluate dyspnea in scleroderma",
+      "Scleroderma PAH — insidious dyspnea with normal CXR early; screen with echo",
     ],
   },
   {
@@ -3764,6 +3832,75 @@ export const CONDITIONS: ConditionEntry[] = [
       "True rotator cuff tears uncommon; adolescent overhead athletes with shoulder pain — consider Little League shoulder (proximal humeral physeal injury) before cuff syndrome.",
   },
   {
+    id: "ankylosing-spondylitis",
+    name: "Ankylosing Spondylitis",
+    aliases: [
+      "ankylosing spondylitis",
+      "as",
+      "bekhterev disease",
+      "bechterew disease",
+      "marie-strumpell disease",
+    ],
+    definition:
+      "Chronic inflammatory seronegative spondyloarthropathy primarily affecting the axial skeleton (sacroiliac joints and spine), causing sacroiliitis, enthesitis, and progressive spinal fusion.",
+    pathophysiology:
+      "HLA-B27–associated immune dysregulation → inflammation at entheses and sacroiliac joints → erosions and reactive bone formation (syndesmophytes) → spinal ankylosis (\"bamboo spine\") and reduced mobility.",
+    classicPresentation: [
+      "Young man with insidious inflammatory low back pain and morning stiffness >30 minutes",
+      "Pain improves with exercise, worsens with rest",
+      "Progressive loss of lumbar flexion and chest wall expansion",
+      "Alternating buttock pain from sacroiliitis",
+      "Peripheral enthesitis (Achilles tendon, plantar fascia) or oligoarthritis",
+    ],
+    keyFindings: [
+      "Reduced lumbar flexion — positive Schober test",
+      "Decreased chest expansion (<2.5 cm)",
+      "Sacroiliitis on MRI or plain films (erosions, sclerosis, fusion)",
+      "Syndesmophytes bridging vertebral bodies — bamboo spine (late)",
+    ],
+    keyLabs: [
+      "↑ ESR/CRP during active disease",
+      "HLA-B27 positive (not diagnostic alone — common in general population)",
+      "RF and anti-CCP negative (seronegative spondyloarthropathy)",
+    ],
+    associations: [
+      "HLA-B27",
+      "Anterior uveitis (painful red eye)",
+      "Inflammatory bowel disease (ulcerative colitis > Crohn)",
+      "Aortitis and aortic regurgitation",
+      "Apical pulmonary fibrosis (rare)",
+      "Spondyloarthropathy family: psoriatic arthritis, reactive arthritis, IBD-associated arthritis",
+    ],
+    complications: [
+      "Spinal fusion and kyphosis — fixed deformity",
+      "Cervical fracture risk after minor trauma (fused brittle spine)",
+      "Aortic regurgitation",
+      "Restrictive lung physiology from thoracic cage rigidity",
+      "Chronic uveitis → vision loss if untreated",
+    ],
+    distinguishFrom: [
+      "Mechanical low back pain — older onset, no morning stiffness, no sacroiliitis",
+      "Rheumatoid arthritis — symmetric small-joint polyarthritis; RF/anti-CCP positive",
+      "Diffuse idiopathic skeletal hyperostosis (DISH) — older patients, flowing anterior osteophytes, less inflammation",
+      "Spondylosis/degenerative disc disease — age-related, not inflammatory sacroiliitis",
+    ],
+    treatment: [
+      "NSAIDs first-line for symptom control",
+      "Physical therapy — maintain posture and mobility",
+      "TNF inhibitors or IL-17 inhibitors (secukinumab) for refractory axial disease",
+      "Treat acute anterior uveitis with topical corticosteroids urgently",
+    ],
+    boardsPearls: [
+      "Young male + inflammatory back pain + morning stiffness improving with exercise → AS",
+      "HLA-B27 associated but not sufficient for diagnosis — need sacroiliitis on imaging",
+      "Seronegative spondyloarthropathy — RF/anti-CCP negative",
+      "Bamboo spine = syndesmophytes from chronic AS",
+      "Anterior uveitis and IBD are classic extra-articular manifestations",
+    ],
+    pediatrics:
+      "Juvenile ankylosing spondylitis may present with peripheral arthritis or enthesitis before axial symptoms; HLA-B27 and sacroiliitis on MRI aid diagnosis in adolescents.",
+  },
+  {
     id: "rheumatoid-arthritis",
     name: "Rheumatoid Arthritis",
     aliases: ["rheumatoid arthritis", "ra"],
@@ -3807,6 +3944,145 @@ export const CONDITIONS: ConditionEntry[] = [
       "Spares DIPs (unlike osteoarthritis)",
       "Methotrexate is anchor DMARD; TNF inhibitors for refractory disease",
     ],
+  },
+  {
+    id: "systemic-sclerosis",
+    name: "Systemic Sclerosis",
+    aliases: [
+      "systemic sclerosis",
+      "systemic scleroderma",
+      "scleroderma",
+      "scleroderma syndrome",
+      "crest syndrome",
+      "crest",
+      "limited cutaneous systemic sclerosis",
+      "diffuse cutaneous systemic sclerosis",
+    ],
+    definition:
+      "Autoimmune connective tissue disease characterized by progressive fibrosis of skin and internal organs, vascular dysfunction (especially Raynaud phenomenon), and characteristic autoantibodies; formerly called scleroderma.",
+    pathophysiology:
+      "Immune-mediated endothelial injury and fibroblast activation → excessive collagen deposition and fibrosis in skin, lungs, GI tract, kidneys, and heart → organ dysfunction; vasculopathy drives Raynaud phenomenon, digital ulcers, and pulmonary arterial hypertension.",
+    classicPresentation: [
+      "Raynaud phenomenon often precedes skin changes by months to years",
+      "Progressive skin thickening/tightening of fingers (sclerodactyly) spreading proximally",
+      "GERD and dysphagia from esophageal dysmotility",
+      "Shortness of breath from interstitial lung disease or pulmonary hypertension",
+      "Middle-aged woman most common demographic",
+    ],
+    keyFindings: [
+      "Skin thickening proximal to MCPs (diffuse or limited distribution)",
+      "Sclerodactyly, digital pitting scars, telangiectasias, calcinosis cutis",
+      "Nailfold capillary dilatation and dropout on capillaroscopy",
+      "Tight perioral skin → microstomia",
+    ],
+    keyLabs: [
+      "ANA positive (often speckled or nucleolar pattern)",
+      "Anti-centromere antibody — limited cutaneous disease (CREST), PAH risk",
+      "Anti–Scl-70 (topoisomerase I) — diffuse disease, ILD risk",
+      "Anti-RNA polymerase III — diffuse disease, scleroderma renal crisis risk",
+    ],
+    associations: [
+      "CREST syndrome (limited cutaneous) — Calcinosis, Raynaud, Esophageal dysmotility, Sclerodactyly, Telangiectasias",
+      "Interstitial lung disease and pulmonary arterial hypertension",
+      "Sjögren syndrome overlap",
+      "Scleroderma renal crisis — abrupt malignant hypertension and AKI",
+    ],
+    complications: [
+      "Scleroderma renal crisis — treat with ACE inhibitors urgently",
+      "Pulmonary fibrosis and pulmonary hypertension",
+      "Digital ischemia and gangrene",
+      "Barrett esophagus and aspiration from reflux",
+      "Cardiac involvement (fibrosis, arrhythmias)",
+    ],
+    distinguishFrom: [
+      "Eosinophilic fasciitis — eosinophilia, groin sparing, \"peau d'orange\" skin",
+      "SLE — inflammatory arthritis, malar rash, anti-dsDNA; less skin fibrosis",
+      "Mixed connective tissue disease — anti-U1 RNP, overlap features",
+      "Morphea (localized scleroderma) — skin plaques without systemic visceral disease",
+      "Acromegaly — skin thickening but gigantism, jaw enlargement, ↑ IGF-1",
+    ],
+    treatment: [
+      "Raynaud — calcium channel blockers, avoid cold; prostacyclin analogs if severe",
+      "ILD — mycophenolate, cyclophosphamide; antifibrotics in some cases",
+      "PAH — endothelin receptor antagonists, PDE-5 inhibitors, prostacyclins",
+      "GERD — PPIs; esophageal dysmotility management",
+      "Scleroderma renal crisis — ACE inhibitors (even if creatinine rises); avoid high-dose steroids",
+    ],
+    boardsPearls: [
+      "CREST = limited cutaneous systemic sclerosis; anti-centromere antibody",
+      "Diffuse disease — anti–Scl-70, rapid proximal skin thickening, early ILD",
+      "Scleroderma renal crisis — new HTN + AKI → ACE inhibitor immediately",
+      "Skin thickening of fingers + Raynaud + GI reflux = systemic sclerosis until proven otherwise",
+      "Do not give high-dose steroids alone — may precipitate renal crisis",
+    ],
+    pediatrics:
+      "Juvenile systemic sclerosis is rare; localized morphea more common in children. Same autoantibody and organ screening principles with growth monitoring.",
+  },
+  {
+    id: "sjogren-syndrome",
+    name: "Sjögren Syndrome",
+    aliases: [
+      "sjogren syndrome",
+      "sjögren syndrome",
+      "sjogrens syndrome",
+      "sjögren's syndrome",
+      "sjogren's syndrome",
+      "sicca syndrome",
+    ],
+    definition:
+      "Autoimmune disorder targeting exocrine glands, causing dry eyes (keratoconjunctivitis sicca) and dry mouth (xerostomia); may occur alone (primary) or with another connective tissue disease (secondary).",
+    pathophysiology:
+      "Lymphocytic infiltration and destruction of lacrimal and salivary glands → decreased aqueous secretion; B-cell hyperactivity with autoantibodies (anti-Ro/SSA, anti-La/SSB) and increased lymphoma risk.",
+    classicPresentation: [
+      "Dry gritty eyes, foreign body sensation",
+      "Dry mouth, difficulty swallowing dry foods, dental caries",
+      "Parotid gland enlargement (bilateral, painless)",
+      "Fatigue and arthralgias",
+      "Middle-aged woman (classic demographic)",
+    ],
+    keyFindings: [
+      "Keratoconjunctivitis sicca on exam",
+      "Decreased salivary pooling; enlarged parotids",
+      "Positive Schirmer test (↓ tear production)",
+    ],
+    keyLabs: [
+      "Anti-Ro (SSA) and anti-La (SSB) antibodies — supportive, not required",
+      "ANA often positive",
+      "RF may be positive (nonspecific)",
+      "Salivary gland biopsy — focal lymphocytic sialadenitis",
+    ],
+    associations: [
+      "Secondary Sjögren — with RA, SLE, or systemic sclerosis",
+      "Non-Hodgkin B-cell lymphoma (MALT) — persistent parotid enlargement, adenopathy",
+      "Interstitial lung disease and renal tubular acidosis",
+      "Neonatal lupus if anti-Ro positive mother (congenital heart block)",
+    ],
+    complications: [
+      "B-cell lymphoma (especially MALT lymphoma)",
+      "Severe dental decay and oral candidiasis",
+      "Corneal ulceration",
+      "Vasculitis and peripheral neuropathy",
+    ],
+    distinguishFrom: [
+      "Dry mouth from medications (anticholinergics) — no autoantibodies, abrupt onset",
+      "Sarcoidosis — uveitis, granulomas; not primary sicca syndrome",
+      "IgG4-related disease — autoimmune pancreatitis, salivary enlargement",
+      "Dehydration — reversible, no chronic gland destruction",
+    ],
+    treatment: [
+      "Artificial tears, punctal plugs for ocular dryness",
+      "Sugar-free gum, pilocarpine/cevimeline for xerostomia",
+      "Treat extraglandular manifestations (hydroxychloroquine, immunosuppression)",
+      "Monitor for lymphoma if parotid enlargement persists",
+    ],
+    boardsPearls: [
+      "Dry eyes + dry mouth + anti-Ro/SSB → Sjögren syndrome",
+      "Secondary Sjögren with RA is common — sicca plus inflammatory arthritis",
+      "↑ lymphoma risk — investigate persistent parotid/lymph node enlargement",
+      "Anti-Ro (SSA) in pregnancy → risk of neonatal congenital heart block",
+    ],
+    pediatrics:
+      "Rare in children; consider juvenile Sjögren with recurrent parotitis or unexplained dental caries; same lymphoma vigilance if parotid masses persist.",
   },
   {
     id: "turner-syndrome",
@@ -4278,6 +4554,202 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Primary TB in children may present with hilar lymphadenopathy without cavitation; miliary TB in infants.",
+  },
+  {
+    id: "lymphoma",
+    name: "Lymphoma",
+    aliases: ["lymphoma", "lymphomas", "malignant lymphoma"],
+    definition:
+      "Malignant neoplasm of lymphocytes arising in lymph nodes or extranodal sites; broadly divided into Hodgkin lymphoma and non-Hodgkin lymphoma (NHL), with diverse subtypes, prognoses, and treatments.",
+    pathophysiology:
+      "Clonal proliferation of B or T lymphocytes → lymphadenopathy, marrow/blood involvement, and extranodal masses; genetic translocations drive many subtypes (e.g., t(14;18) follicular, t(8;14) Burkitt, t(11;14) mantle cell).",
+    classicPresentation: [
+      "Painless lymphadenopathy (cervical, mediastinal, abdominal)",
+      "B symptoms — fever, night sweats, weight loss >10%",
+      "Fatigue, pruritus (especially Hodgkin)",
+      "Extranodal symptoms — GI bleeding (MALT), jaw mass (endemic Burkitt), CNS lesions (primary CNS lymphoma in AIDS)",
+    ],
+    keyFindings: [
+      "Lymphadenopathy on exam; mediastinal mass on CXR/CT (especially Hodgkin, primary mediastinal B-cell)",
+      "Excisional lymph node biopsy for diagnosis — not fine-needle alone",
+      "Flow cytometry and immunohistochemistry for lineage and subtype",
+      "PET-CT for staging",
+    ],
+    keyLabs: [
+      "CBC — cytopenias if marrow involved; lymphocytosis in leukemic presentations (CLL)",
+      "LDH — prognostic marker, reflects tumor burden",
+      "EBV association in some lymphomas (Burkitt, post-transplant, HIV-associated)",
+    ],
+    associations: [
+      "EBV — Burkitt lymphoma, Hodgkin lymphoma, post-transplant lymphoproliferative disorder",
+      "HIV/AIDS — aggressive B-cell lymphomas, primary CNS lymphoma",
+      "Autoimmune disease and immunosuppression — ↑ lymphoma risk",
+      "H. pylori — gastric MALT lymphoma",
+      "Prior chemotherapy/radiation",
+    ],
+    complications: [
+      "Airway or SVC compression from mediastinal mass",
+      "Tumor lysis syndrome with treatment of high-burden disease",
+      "Bone marrow failure",
+      "Transformation to more aggressive lymphoma (e.g., Richter transformation in CLL)",
+    ],
+    distinguishFrom: [
+      "Reactive lymphadenopathy — tender nodes, infection context, resolves; polyclonal",
+      "Hodgkin lymphoma — Reed-Sternberg cells, contiguous nodal spread, curable with chemo/radiation",
+      "Non-Hodgkin lymphoma — no Reed-Sternberg cells; more extranodal disease; heterogeneous",
+      "Leukemia — primarily blood/marrow disease; overlap with lymphoblastic lymphoma/leukemia",
+      "Sarcoidosis — noncaseating granulomas, not monoclonal lymphoid malignancy",
+    ],
+    treatment: [
+      "Subtype-specific chemotherapy (e.g., ABVD for Hodgkin, R-CHOP for DLBCL)",
+      "Rituximab (anti-CD20) for CD20⁺ B-cell lymphomas",
+      "Radiation for localized Hodgkin or early-stage indolent NHL",
+      "CAR-T and stem cell transplant for relapsed/refractory disease",
+    ],
+    boardsPearls: [
+      "Hodgkin vs NHL — Reed-Sternberg cells define Hodgkin; NHL is everything else",
+      "B symptoms (fever, night sweats, weight loss) — malignancy, TB, HIV",
+      "Excisional biopsy required for lymphoma diagnosis",
+      "Burkitt — t(8;14) c-myc, starry sky histology, very aggressive, treat urgently (tumor lysis risk)",
+      "MALT lymphoma — may regress with H. pylori eradication",
+    ],
+    pediatrics:
+      "Burkitt and lymphoblastic lymphoma more common in children; endemic Burkitt (jaw) in equatorial Africa linked to malaria and EBV.",
+  },
+  {
+    id: "hodgkin-lymphoma",
+    name: "Hodgkin Lymphoma",
+    aliases: [
+      "hodgkin lymphoma",
+      "hodgkin's lymphoma",
+      "hodgkins lymphoma",
+      "hodgkin disease",
+      "hodgkin's disease",
+      "hodhkin lymphoma",
+      "hodgkin",
+    ],
+    definition:
+      "Lymphoid malignancy defined by the presence of Reed-Sternberg cells in a background of inflammatory cells; characterized by contiguous nodal spread and generally favorable prognosis with chemotherapy and radiation.",
+    pathophysiology:
+      "Reed-Sternberg cells (abnormal B cells) secrete cytokines → eosinophil-rich inflammatory infiltrate and fibrosis (especially nodular sclerosis); spreads in predictable contiguous fashion between lymph node groups.",
+    classicPresentation: [
+      "Young adult with painless cervical or mediastinal lymphadenopathy",
+      "B symptoms — fever, night sweats, weight loss",
+      "Alcohol-induced pain at involved lymph nodes (classic but uncommon)",
+      "Pruritus without rash",
+      "Mediastinal mass → cough, SVC syndrome in severe cases",
+    ],
+    keyFindings: [
+      "Reed-Sternberg cells — large binucleate cells with \"owl-eye\" nucleoli (CD15⁺, CD30⁺, CD45⁻)",
+      "Contiguous lymph node group involvement on staging",
+      "Mediastinal adenopathy especially in nodular sclerosis subtype",
+      "Eosinophilia on CBC (common)",
+    ],
+    keyLabs: [
+      "Excisional lymph node biopsy — required for diagnosis",
+      "LDH — prognostic",
+      "EBV testing in some subtypes (mixed cellularity, lymphocyte-depleted)",
+    ],
+    associations: [
+      "EBV — especially mixed cellularity and lymphocyte-depleted subtypes",
+      "Nodular sclerosis — most common subtype in young adults, mediastinal disease, female predominance",
+      "Prior EBV infection",
+      "Immunocompromise (less common than NHL)",
+    ],
+    complications: [
+      "SVC syndrome or airway compromise from mediastinal bulk",
+      "Secondary malignancies after radiation/chemotherapy (breast, lung, thyroid)",
+      "Cardiotoxicity and pulmonary fibrosis from treatment (bleomycin, radiation)",
+    ],
+    distinguishFrom: [
+      "Non-Hodgkin lymphoma — no Reed-Sternberg cells; more extranodal disease; non-contiguous spread",
+      "Sarcoidosis — noncaseating granulomas, BHL, no monoclonal Reed-Sternberg cells",
+      "Infectious mononucleosis — atypical lymphocytes, heterophile positive, not Reed-Sternberg",
+      "Mediastinal germ cell tumor — young male, ↑ AFP/β-hCG",
+    ],
+    treatment: [
+      "ABVD (doxorubicin, bleomycin, vinblastine, dacarbazine) — standard for most stages",
+      "Involved-site radiation for early-stage favorable disease",
+      "Escalated regimens (BEACOPP) for high-risk disease in specialized centers",
+      "Checkpoint inhibitors (nivolumab, pembrolizumab) for relapsed disease",
+    ],
+    boardsPearls: [
+      "Reed-Sternberg cells = Hodgkin lymphoma; CD15⁺, CD30⁺",
+      "Young adult + mediastinal mass + cervical nodes → Hodgkin until proven otherwise",
+      "Contiguous nodal spread — classic pattern distinguishing from NHL",
+      "ABVD is curative in most patients — high cure rate compared with many NHL subtypes",
+      "Bleomycin toxicity — pulmonary fibrosis; avoid high O₂ when possible",
+      "Alcohol-induced lymph node pain — pathognomonic when present",
+    ],
+    pediatrics:
+      "Hodgkin lymphoma peaks in young adulthood but occurs in adolescents; same Reed-Sternberg diagnosis and ABVD-based therapy with fertility and growth considerations.",
+  },
+  {
+    id: "non-hodgkin-lymphoma",
+    name: "Non-Hodgkin Lymphoma",
+    aliases: [
+      "non-hodgkin lymphoma",
+      "non-hodgkin's lymphoma",
+      "non hodgkin lymphoma",
+      "non hodgkins lymphoma",
+      "non-hodgkins lymphoma",
+      "nhl",
+    ],
+    definition:
+      "Heterogeneous group of lymphoid malignancies without Reed-Sternberg cells, encompassing B-cell, T-cell, and NK-cell neoplasms with widely varying behavior from indolent to highly aggressive.",
+    pathophysiology:
+      "Clonal B- or T-cell proliferation driven by chromosomal translocations, oncogene activation, and microenvironment signals; B-cell NHL most common in adults. No contiguous nodal spread pattern like classic Hodgkin.",
+    classicPresentation: [
+      "Painless lymphadenopathy or extranodal mass",
+      "B symptoms in aggressive subtypes",
+      "GI symptoms with MALT or intestinal NHL",
+      "CNS symptoms with primary CNS lymphoma (especially immunocompromised)",
+    ],
+    keyFindings: [
+      "Monoclonal lymphoid population on biopsy and flow cytometry",
+      "No Reed-Sternberg cells — distinguishes from Hodgkin lymphoma",
+      "Subtype-specific markers — CD20 (B-cell), cyclin D1 (mantle cell), BCL2 (follicular)",
+    ],
+    keyLabs: [
+      "LDH ↑ with aggressive disease",
+      "Bone marrow biopsy for staging",
+      "HIV testing if risk factors; hepatitis B screen before rituximab",
+    ],
+    associations: [
+      "Diffuse large B-cell lymphoma (DLBCL) — most common NHL overall",
+      "Follicular lymphoma — indolent, t(14;18) BCL2-IgH",
+      "Burkitt lymphoma — t(8;14) c-myc, starry sky, very fast doubling time",
+      "Mantle cell lymphoma — t(11;14) cyclin D1",
+      "MALT lymphoma — gastric, H. pylori associated",
+      "CLL/SLL — indolent mature B-cell neoplasm overlapping with leukemia",
+    ],
+    complications: [
+      "Tumor lysis syndrome (especially Burkitt and high-grade NHL)",
+      "Extranodal compression (spinal cord, gut obstruction)",
+      "Transformation of indolent to aggressive lymphoma",
+    ],
+    distinguishFrom: [
+      "Hodgkin lymphoma — Reed-Sternberg cells, mediastinal mass in young adult, curable with ABVD",
+      "CLL — peripheral blood lymphocytosis predominant; SLL same biology in nodes",
+      "Reactive lymphadenopathy — polyclonal, infection-associated",
+      "Acute lymphoblastic leukemia/lymphoma — lymphoblasts, children/young adults",
+    ],
+    treatment: [
+      "R-CHOP (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone) for DLBCL",
+      "Rituximab-based regimens for most CD20⁺ B-cell NHL",
+      "Watch and wait for asymptomatic indolent NHL (follicular, early CLL)",
+      "H. pylori eradication for gastric MALT lymphoma",
+      "Intensive regimens + CNS prophylaxis for Burkitt and lymphoblastic lymphoma",
+    ],
+    boardsPearls: [
+      "NHL = no Reed-Sternberg cells; more common and more heterogeneous than Hodgkin",
+      "DLBCL — most common NHL; R-CHOP; rapidly enlarging node/mass",
+      "Follicular — t(14;18), indolent, BCL2 overexpression",
+      "Burkitt — t(8;14), starry sky, jaw (endemic) or abdomen (sporadic), tumor lysis risk",
+      "Rituximab (anti-CD20) — B-cell NHL; screen for hepatitis B reactivation",
+    ],
+    pediatrics:
+      "Burkitt and lymphoblastic lymphoma are common pediatric NHL subtypes; endemic Burkitt presents with jaw mass in African children.",
   },
   {
     id: "cll",
