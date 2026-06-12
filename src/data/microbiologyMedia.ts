@@ -49,6 +49,11 @@ import yellowFeverVirus from "../media/images/microbiology/yellow-fever-virus.jp
 import sporothrixSchenckii from "../media/images/microbiology/sporothrix-schenckii.jpg?url";
 import bartonellaHenselae from "../media/images/microbiology/bartonella-henselae.jpg?url";
 import aedesAegypti from "../media/images/microbiology/aedes-aegypti.jpg?url";
+import adenovirus from "../media/images/microbiology/adenovirus.jpg?url";
+import influenzaVirus from "../media/images/microbiology/influenza-virus.jpg?url";
+import norovirus from "../media/images/microbiology/norovirus.jpg?url";
+import rsv from "../media/images/microbiology/rsv.jpg?url";
+import variolaVirus from "../media/images/microbiology/variola-virus.jpg?url";
 
 export type MicrobiologyImageId = MicrobiologyEntry["id"];
 
@@ -108,6 +113,11 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "schistosoma-mansoni": extensionAssetUrl(schistosomaMansoni),
     "dengue-virus": extensionAssetUrl(aedesAegypti),
     "chikungunya-virus": extensionAssetUrl(aedesAegypti),
+    "respiratory-syncytial-virus": extensionAssetUrl(rsv),
+    norovirus: extensionAssetUrl(norovirus),
+    "influenza-virus": extensionAssetUrl(influenzaVirus),
+    adenovirus: extensionAssetUrl(adenovirus),
+    "variola-virus": extensionAssetUrl(variolaVirus),
   };
 
 export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
@@ -309,6 +319,26 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #9186 (public domain)",
     url: "https://phil.cdc.gov/Details.aspx?pid=9186",
   },
+  "respiratory-syncytial-virus": {
+    label: "CDC PHIL #2175",
+    url: "https://phil.cdc.gov/Details.aspx?pid=2175",
+  },
+  norovirus: {
+    label: "CDC PHIL #2172",
+    url: "https://phil.cdc.gov/Details.aspx?pid=2172",
+  },
+  "influenza-virus": {
+    label: "CDC PHIL #8430",
+    url: "https://phil.cdc.gov/Details.aspx?pid=8430",
+  },
+  adenovirus: {
+    label: "CDC PHIL #823",
+    url: "https://phil.cdc.gov/Details.aspx?pid=823",
+  },
+  "variola-virus": {
+    label: "CDC PHIL #2265",
+    url: "https://phil.cdc.gov/Details.aspx?pid=2265",
+  },
 };
 
 export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
@@ -364,6 +394,16 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "Female Aedes aegypti mosquito — primary vector of dengue virus (daytime feeder)",
   "chikungunya-virus":
     "Female Aedes aegypti mosquito — primary vector of chikungunya virus (daytime feeder)",
+  "respiratory-syncytial-virus":
+    "TEM of respiratory syncytial virus (RSV) — common cause of infant bronchiolitis",
+  norovirus:
+    "TEM of norovirus (Norwalk virus) particles — calicivirus gastroenteritis",
+  "influenza-virus":
+    "TEM of influenza virus particles — orthomyxovirus with hemagglutinin spikes",
+  adenovirus:
+    "TEM of adenovirus particles — icosahedral non-enveloped dsDNA virus",
+  "variola-virus":
+    "TEM of variola (smallpox) virus — brick-shaped orthopoxvirus (eradicated 1980)",
   "yellow-fever-virus":
     "TEM of yellow fever virions at high magnification (Flaviviridae)",
   "sporothrix-schenckii":

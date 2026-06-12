@@ -350,3 +350,37 @@ aedes-aegypti.jpg
   License: Public domain (U.S. federal government)
   Page: https://phil.cdc.gov/Details.aspx?pid=9186
   Photographer: James Gathany
+
+norovirus.jpg
+  Source: CDC PHIL #2172
+  Description: TEM of norovirus (Norwalk virus) particles (~27–32 nm)
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2172
+  Commons: https://commons.wikimedia.org/wiki/File:Norovirus_EM_PHIL_2172_lores.jpg
+
+rsv.jpg
+  Source: CDC PHIL #2175
+  Description: TEM of respiratory syncytial virus (RSV) virions
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2175
+  Commons: https://commons.wikimedia.org/wiki/File:Respiratory_Syncytial_Virus_(RSV)_EM_PHIL_2175_lores.jpg
+
+influenza-virus.jpg
+  Source: CDC PHIL #8430
+  Description: TEM of influenza virus particles
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=8430
+
+adenovirus.jpg
+  Source: CDC PHIL #823
+  Description: TEM of adenovirus particles
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=823
+  Commons: https://commons.wikimedia.org/wiki/File:Adenoviruses.jpg
+
+variola-virus.jpg
+  Source: CDC PHIL #2265
+  Description: TEM of variola (smallpox) virus
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=2265
+  Commons: https://commons.wikimedia.org/wiki/File:Smallpox_virus.jpg

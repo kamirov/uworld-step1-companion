@@ -7603,6 +7603,206 @@ export const CONDITIONS: ConditionEntry[] = [
       "Children in endemic areas without vaccination are susceptible to severe disease. Yellow fever vaccine is generally deferred until ≥9 months because of increased encephalitis risk in younger infants; during outbreaks WHO may recommend vaccination from 6 months. Pediatric severe disease mirrors adult intoxication phase.",
   },
   {
+    id: "lyme-disease",
+    name: "Lyme Disease",
+    aliases: [
+      "lyme disease",
+      "lyme",
+      "lyme borreliosis",
+      "borreliosis",
+      "erythema migrans",
+    ],
+    definition:
+      "Tick-borne spirochetal infection caused by Borrelia burgdorferi (and related Borrelia species in Europe) transmitted by Ixodes ticks — classically presenting with erythema migrans and capable of early disseminated neurologic, cardiac, and late musculoskeletal manifestations.",
+    pathophysiology:
+      "Ixodes tick inoculates spirochetes → local skin replication → erythema migrans; hematogenous dissemination to CNS (meningitis, cranial neuropathy), heart (AV block), joints (Lyme arthritis), and skin (secondary EM lesions); immune-mediated and persistent infection drive late arthritis.",
+    classicPresentation: [
+      "Summer hiking/camping in Northeast or Upper Midwest US after tick bite",
+      "Erythema migrans — expanding annular rash with central clearing (bull's-eye)",
+      "Early disseminated: multiple EM lesions, Bell palsy, meningitis, AV heart block",
+      "Late: intermittent large-joint oligoarthritis (knee most common)",
+    ],
+    keyFindings: [
+      "Clinical diagnosis of erythema migrans — treat without waiting for serology",
+      "Two-tier serology (ELISA → Western blot) for later stages",
+      "CSF lymphocytic pleocytosis in Lyme meningitis",
+      "ECG — varying degrees of AV block in carditis",
+    ],
+    keyLabs: [
+      "Borrelia serology — IgM/IgG two-tier testing (false negative early)",
+      "CSF — lymphocytic meningitis pattern; intrathecal antibody production",
+      "Synovial fluid — inflammatory; PCR may detect Borrelia in refractory arthritis",
+    ],
+    associations: [
+      "Borrelia burgdorferi — causative spirochete",
+      "Ixodes scapularis (deer tick) — vector in US",
+      "Co-infection with Anaplasma and Babesia possible (same tick)",
+      "Endemic: Northeast, Upper Midwest, Pacific Coast",
+    ],
+    complications: [
+      "Chronic Lyme arthritis",
+      "Persistent neurologic symptoms (rare/controversial chronic Lyme)",
+      "Third-degree heart block requiring pacing (usually temporary)",
+      "Acrodermatitis chronica atrophicans (late skin manifestation, Europe)",
+    ],
+    distinguishFrom: [
+      "Rocky Mountain spotted fever — Dermacentor tick; centripetal rash; doxycycline empiric",
+      "Cellulitis — not expanding bull's-eye; acute bacterial",
+      "Syphilis — different spirochete; VDRL/RPR; penicillin",
+      "Rheumatoid arthritis — symmetric small joints; no EM history",
+      "Multiple sclerosis — CNS demyelination; different MRI/CSF pattern",
+    ],
+    treatment: [
+      "Early localized: doxycycline (also covers Anaplasma) or amoxicillin/cefuroxime",
+      "Neurologic/cardiac: doxycycline or IV ceftriaxone depending on severity",
+      "Lyme arthritis: oral doxycycline/amoxicillin; IV ceftriaxone if refractory",
+      "Doxycycline preferred in children per current guidelines for Lyme (covers coinfections)",
+    ],
+    boardsPearls: [
+      "Erythema migrans = treat empirically — serology often negative in first weeks",
+      "Bell palsy + tick exposure in endemic area = Lyme until proven otherwise",
+      "Ixodes tick — not Dermacentor (RMSF) or Amblyomma (ehrlichiosis geography)",
+      "Doxycycline covers Lyme + Anaplasma coinfection",
+      "Late Lyme arthritis — large joint (knee); treat with oral antibiotics",
+      "vs RMSF — EM bull's-eye vs centripetal maculopapular rash starting at wrists/ankles",
+    ],
+    pediatrics:
+      "Children in endemic areas frequently affected; arthritis is common late manifestation in kids. Doxycycline used for Lyme in children per current IDSA/AAP guidance. Check for coinfection if severe illness.",
+  },
+  {
+    id: "lymphogranuloma-venereum",
+    name: "Lymphogranuloma Venereum",
+    aliases: [
+      "lymphogranuloma venereum",
+      "lymphogranuloma venereums",
+      "lgv",
+      "lymphogranuloma",
+    ],
+    definition:
+      "Sexually transmitted infection caused by Chlamydia trachomatis serovars L1–L3 — a systemic chlamydial disease progressing from a transient genital lesion to painful inguinal lymphadenopathy (bubo) or proctocolitis, distinct from uncomplicated D–K chlamydia.",
+    pathophysiology:
+      "C. trachomatis L1–L3 inoculation at mucosal site → local ulceration (often unnoticed) → lymphatic spread to regional nodes → painful suppurative lymphadenitis (bubo) or rectal infection with granulomatous proctocolitis; chronic untreated LGV can cause genital lymphedema and rectal strictures.",
+    classicPresentation: [
+      "Young sexually active adult or MSM with STI risk factors",
+      "Primary: small painless genital papule/ulcer that heals quickly (often missed)",
+      "Secondary (1–4 weeks): painful unilateral inguinal/femoral lymphadenopathy (bubo)",
+      "Proctocolitis variant: rectal pain, tenesmus, bloody/mucopurulent discharge, constipation",
+      "Fever, malaise, systemic symptoms with bubo",
+    ],
+    keyFindings: [
+      "Painful inguinal lymphadenopathy — distinguishes from painless syphilitic nodes",
+      "Grooved sign (Giovanetti) — enlarged nodes above and below inguinal ligament (classic but uncommon)",
+      "Proctoscopy — ulcerations, granulomas, mucosal friability in proctocolitis",
+      "NAAT positive for Chlamydia trachomatis from ulcer, node aspirate, or rectal swab",
+    ],
+    keyLabs: [
+      "NAAT (PCR) for C. trachomatis — ulcer, rectal, or lymph node aspirate",
+      "Serology (complement fixation) — supportive historically; high titer suggests LGV",
+      "HIV and syphilis co-screening in all STI patients",
+    ],
+    associations: [
+      "Chlamydia trachomatis serovars L1, L2, L3",
+      "MSM proctocolitis outbreaks in Europe/North America",
+      "HIV coinfection common — screen all patients",
+      "Co-infection with gonorrhea, syphilis possible",
+    ],
+    complications: [
+      "Bubo suppuration and sinus tract formation",
+      "Chronic lymphedema (elephantiasis of genitalia)",
+      "Rectal strictures and fistulae from chronic proctocolitis",
+      "Reactive arthritis",
+    ],
+    distinguishFrom: [
+      "Uncomplicated chlamydia (D–K) — cervicitis/urethritis without bubo; shorter treatment course",
+      "Syphilis — painless chancre; painless LAD; VDRL/RPR positive",
+      "Herpes — grouped painful vesicles; PCR positive for HSV",
+      "Chancroid (H. ducreyi) — painful ulcer + painful LAD; soft chancre",
+      "Crohn proctitis — chronic; no acute STI context; granulomas on biopsy",
+    ],
+    treatment: [
+      "Doxycycline 100 mg PO BID × 21 days — first line for LGV",
+      "Azithromycin weekly × 3 weeks — alternative if doxycycline not tolerated",
+      "Bubo may be aspirated for comfort (through healthy skin) — do not incise/drain routinely",
+      "Treat sexual partners; test for HIV, syphilis, gonorrhea",
+    ],
+    boardsPearls: [
+      "LGV = Chlamydia trachomatis L1–L3 — obligate intracellular",
+      "Painless primary ulcer → painful inguinal bubo = LGV classic sequence",
+      "Doxycycline × 21 days (NOT single-dose azithromycin like uncomplicated chlamydia)",
+      "MSM with proctocolitis — think LGV in chlamydia-positive rectal NAAT",
+      "vs syphilis — LGV bubo is painful; syphilis chancre and nodes typically painless",
+    ],
+    pediatrics:
+      "LGV is rare in prepubertal children — consider sexual abuse if diagnosed. Adolescents sexually active are at risk; same 21-day doxycycline regimen (avoid tetracyclines in pregnancy).",
+  },
+  {
+    id: "malaria",
+    name: "Malaria",
+    aliases: [
+      "malaria",
+      "malarial infection",
+      "plasmodium infection",
+      "cerebral malaria",
+    ],
+    definition:
+      "Mosquito-borne parasitic disease caused by Plasmodium species transmitted by Anopheles mosquitoes — characterized by cyclical fevers, hemolytic anemia, and potentially life-threatening complications, especially with P. falciparum.",
+    pathophysiology:
+      "Anopheles mosquito injects sporozoites → liver schizogony (hypnozoites in P. vivax/ovale) → merozoites invade RBCs → cyclic RBC rupture → fever/chills; P. falciparum sequesters in microvasculature (PfEMP1) → cerebral malaria, organ ischemia, and high parasitemia.",
+    classicPresentation: [
+      "Travel to endemic area without chemoprophylaxis",
+      "Cyclical fever, chills, sweats (periodicity varies by species)",
+      "Headache, myalgias, nausea, anemia, splenomegaly",
+      "P. falciparum: irregular fever, altered mental status, jaundice (severe)",
+    ],
+    keyFindings: [
+      "Giemsa thick and thin blood smears — diagnostic gold standard",
+      "Ring forms, trophozoites, schizonts, gametocytes on smear",
+      "Banana-shaped gametocytes — P. falciparum only",
+      "Rapid diagnostic tests (HRP2, pLDH) in field settings",
+    ],
+    keyLabs: [
+      "Blood smear — identify species and parasitemia percentage",
+      "CBC — hemolytic anemia, thrombocytopenia",
+      "Bilirubin — hemolysis",
+      "LDH — elevated with hemolysis",
+    ],
+    associations: [
+      "Plasmodium falciparum — most virulent; cerebral malaria",
+      "P. vivax/ovale — hypnozoites (relapse); primaquine needed",
+      "P. malariae — low parasitemia; band forms",
+      "Anopheles mosquito — night-biting vector",
+      "Sickle cell trait — partial protection against P. falciparum",
+    ],
+    complications: [
+      "Cerebral malaria (P. falciparum) — seizures, coma",
+      "Blackwater fever — hemoglobinuria, acute kidney injury",
+      "Severe anemia, hypoglycemia (especially children and pregnancy)",
+      "ARDS, DIC, death if untreated",
+    ],
+    distinguishFrom: [
+      "Dengue — Aedes vector; thrombocytopenia without parasitemia; tourniquet test",
+      "Typhoid fever — stepwise fever, relative bradycardia, rose spots",
+      "Babesiosis — US Northeast; maltese cross on smear; no tropical travel required",
+      "Viral hepatitis — jaundice without cyclical fever or smear parasites",
+    ],
+    treatment: [
+      "Uncomplicated P. falciparum: artemisinin-based combination therapy (ACT)",
+      "Severe/cerebral malaria: IV artesunate (preferred in US)",
+      "P. vivax/ovale: chloroquine + primaquine (or ACT + primaquine) for hypnozoites",
+      "Chemoprophylaxis for travelers to endemic areas",
+    ],
+    boardsPearls: [
+      "Anopheles mosquito — night feeder; not Aedes (dengue) or Culex",
+      "Blood smear diagnosis — thick smear for sensitivity, thin for species ID",
+      "P. falciparum — banana gametocytes, multiple rings per RBC, cerebral malaria",
+      "IV artesunate for severe malaria — medical emergency",
+      "Primaquine for P. vivax/ovale hypnozoites — check G6PD first",
+      "Sickle cell trait protects against falciparum malaria",
+    ],
+    pediatrics:
+      "Children in endemic areas bear highest mortality; cerebral malaria presents with seizures and coma. Hypoglycemia common in pediatric severe malaria. Weight-based antimalarial dosing; IV artesunate for severe disease.",
+  },
+  {
     id: "meningitis",
     name: "Meningitis",
     aliases: [
