@@ -54,6 +54,9 @@ import influenzaVirus from "../media/images/microbiology/influenza-virus.jpg?url
 import norovirus from "../media/images/microbiology/norovirus.jpg?url";
 import rsv from "../media/images/microbiology/rsv.jpg?url";
 import variolaVirus from "../media/images/microbiology/variola-virus.jpg?url";
+import rhinovirus from "../media/images/microbiology/rhinovirus.png?url";
+import rickettsiaRickettsii from "../media/images/microbiology/rickettsia-rickettsii.jpg?url";
+import chlamydiaTrachomatis from "../media/images/microbiology/chlamydia-trachomatis.jpg?url";
 
 export type MicrobiologyImageId = MicrobiologyEntry["id"];
 
@@ -115,9 +118,13 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "chikungunya-virus": extensionAssetUrl(aedesAegypti),
     "respiratory-syncytial-virus": extensionAssetUrl(rsv),
     norovirus: extensionAssetUrl(norovirus),
+    "influenza-a": extensionAssetUrl(influenzaVirus),
     "influenza-virus": extensionAssetUrl(influenzaVirus),
     adenovirus: extensionAssetUrl(adenovirus),
     "variola-virus": extensionAssetUrl(variolaVirus),
+    rhinovirus: extensionAssetUrl(rhinovirus),
+    "rickettsia-rickettsii": extensionAssetUrl(rickettsiaRickettsii),
+    "chlamydia-trachomatis": extensionAssetUrl(chlamydiaTrachomatis),
   };
 
 export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
@@ -327,6 +334,10 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #2172",
     url: "https://phil.cdc.gov/Details.aspx?pid=2172",
   },
+  "influenza-a": {
+    label: "CDC PHIL #8430",
+    url: "https://phil.cdc.gov/Details.aspx?pid=8430",
+  },
   "influenza-virus": {
     label: "CDC PHIL #8430",
     url: "https://phil.cdc.gov/Details.aspx?pid=8430",
@@ -338,6 +349,18 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
   "variola-virus": {
     label: "CDC PHIL #2265",
     url: "https://phil.cdc.gov/Details.aspx?pid=2265",
+  },
+  rhinovirus: {
+    label: "Wikimedia Commons (Robin S / Quibik, molecular model from PDB 1AYM)",
+    url: "https://commons.wikimedia.org/wiki/File:Rhinovirus.PNG",
+  },
+  "rickettsia-rickettsii": {
+    label: "CDC (public domain)",
+    url: "https://commons.wikimedia.org/wiki/File:Rickettsia_rickettsii.jpg",
+  },
+  "chlamydia-trachomatis": {
+    label: "Wikimedia Commons (CC BY-SA 3.0)",
+    url: "https://commons.wikimedia.org/wiki/File:ChlamydiaTrachomatisEinschlussk%C3%B6rperchen.jpg",
   },
 };
 
@@ -398,6 +421,8 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "TEM of respiratory syncytial virus (RSV) — common cause of infant bronchiolitis",
   norovirus:
     "TEM of norovirus (Norwalk virus) particles — calicivirus gastroenteritis",
+  "influenza-a":
+    "TEM of influenza A virions — orthomyxovirus with hemagglutinin and neuraminidase surface spikes",
   "influenza-virus":
     "TEM of influenza virus particles — orthomyxovirus with hemagglutinin spikes",
   adenovirus:
@@ -435,6 +460,12 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "Strongyloides stercoralis larvae in sputum specimen",
   "schistosoma-mansoni":
     "Schistosoma mansoni adult trematodes (male and female)",
+  rhinovirus:
+    "Molecular surface of human rhinovirus 16 capsid — icosahedral picornavirus causing common cold",
+  "rickettsia-rickettsii":
+    "Gimenez stain of R. rickettsii in tick hemolymph cells — obligate intracellular Gram-negative coccobacillus",
+  "chlamydia-trachomatis":
+    "Lugol-stained intracytoplasmic inclusion bodies (glycogen) in host cells — classic chlamydial morphology",
 };
 
 export function getMicrobiologyImageForId(

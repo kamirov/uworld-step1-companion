@@ -367,7 +367,7 @@ rsv.jpg
 
 influenza-virus.jpg
   Source: CDC PHIL #8430
-  Description: TEM of influenza virus particles
+  Description: TEM of influenza virus particles (also used for influenza-a entry)
   License: Public domain (U.S. federal government)
   Page: https://phil.cdc.gov/Details.aspx?pid=8430
 

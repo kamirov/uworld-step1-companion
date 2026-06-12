@@ -432,6 +432,7 @@ export const CELLS: CellEntry[] = [
       "B lymphocyte — surface immunoglobulin, antibody production, CD19/CD20",
       "NK cell — innate; kills without prior sensitization; CD16/CD56, no TCR/CD3",
       "CD4+ T lymphocyte — subset of T cells; helper/coordinator role specifically",
+      "Memory T lymphocyte — antigen-experienced; rapid recall response on re-exposure",
     ],
     pediatrics:
       "DiGeorge: conotruncal heart defects, hypocalcemia, absent thymic shadow, recurrent viral/fungal infections from T-cell deficiency.",
@@ -558,9 +559,99 @@ export const CELLS: CellEntry[] = [
       "CD4+ T lymphocyte — cell-mediated immunity; CD4 marker, not CD19/CD20",
       "Plasma cell — antibody-secreting end-stage B cell; eccentric clock-face nucleus",
       "NK cell — innate cytotoxicity; CD16/CD56, no antigen receptor",
+      "Naive B lymphocyte — antigen-inexperienced subset with surface IgM/IgD",
     ],
     pediatrics:
       "X-linked agammaglobulinemia presents after 6 months when maternal IgG wanes — recurrent otitis, pneumonia; live vaccines contraindicated.",
+  },
+  {
+    id: "memory-t-lymphocyte",
+    name: "Memory T Lymphocyte",
+    aliases: [
+      "memory t lymphocyte",
+      "memory t lymphocytes",
+      "memory t cell",
+      "memory t cells",
+      "memory t-lymphocyte",
+      "memory t-lymphocytes",
+      "t memory cell",
+      "t memory cells",
+    ],
+    definition:
+      "Long-lived antigen-experienced T lymphocyte generated after primary immune activation that persists after effector contraction and mounts a rapid, robust recall response upon re-exposure to the same antigen.",
+    characteristics: [
+      "Arise from naïve T cells after successful TCR signaling (Signal 1 + Signal 2) and clonal expansion during primary infection or vaccination",
+      "Central memory T cells (Tcm): CD62L⁺, CCR7⁺ — recirculate through lymph nodes; potent proliferative capacity on rechallenge",
+      "Effector memory T cells (Tem): CD62L⁻, CCR7⁻ — patrol peripheral tissues; faster immediate effector cytokine/cytotoxic function",
+      "CD8⁺ memory T cells provide durable viral immunity; CD4⁺ memory T cells coordinate secondary humoral and cellular responses",
+      "Do not require full co-stimulation for rapid reactivation — key basis of vaccine-mediated protection",
+    ],
+    clinicalRelevance: [
+      "Vaccine-induced immunologic memory — anamnestic antibody and T-cell responses on booster or natural re-exposure",
+      "Latent/chronic infections maintained by pathogen-specific memory T cells (e.g., CMV, EBV, M. tuberculosis granulomas)",
+      "Tumor immunity and checkpoint inhibitor responses depend on tumor-antigen–specific memory/effector T cells",
+      "Loss of memory T cells in severe immunodeficiency (SCID, advanced HIV) → poor response to recall antigens and vaccines",
+    ],
+    boardsPearls: [
+      "Memory T cells = faster, stronger secondary response than naïve T cells — core of adaptive immunity and vaccination",
+      "Tcm (lymph node–homing) vs Tem (tissue-patrolling) — USMLE loves subset localization",
+      "Vaccine memory involves both memory B cells (antibody) and memory T cells (cell-mediated recall)",
+      "vs naïve T cell — antigen-inexperienced; requires full two-signal activation and slower primary response",
+      "vs effector T cell — short-lived during active infection; memory cells persist after pathogen clearance",
+    ],
+    distinguishFrom: [
+      "Naive T cell — has not encountered antigen; CD45RA⁺ in many contexts; slower primary response",
+      "Effector T cell — actively secreting cytokines or killing targets during acute infection; often apoptose after resolution",
+      "T lymphocyte — parent category including naïve, effector, and memory subsets",
+      "Memory B lymphocyte — humoral memory via surface Ig and rapid plasma cell differentiation; not TCR/MHC restricted",
+    ],
+    pediatrics:
+      "Primary vaccine series in infancy establishes T- and B-cell memory before many natural exposures; live vaccines (MMR, varicella) rely on durable memory T-cell responses. Premature infants may have attenuated vaccine responses — follow catch-up schedules.",
+  },
+  {
+    id: "naive-b-lymphocyte",
+    name: "Naive B Lymphocyte",
+    aliases: [
+      "naive b lymphocyte",
+      "naive b lymphocytes",
+      "naive b cell",
+      "naive b cells",
+      "naive b-lymphocyte",
+      "naive b-lymphocytes",
+      "naïve b lymphocyte",
+      "naïve b cell",
+      "naïve b cells",
+    ],
+    definition:
+      "Mature, antigen-inexperienced B lymphocyte that circulates through secondary lymphoid organs bearing surface immunoglobulin (primarily IgM and IgD) as its B-cell receptor, awaiting first encounter with cognate antigen.",
+    characteristics: [
+      "Surface markers: CD19⁺, CD20⁺, CD21⁺ (CR2 — EBV receptor), membrane-bound IgM and IgD (BCR)",
+      "Resides in B-cell follicles of lymph nodes, spleen, and mucosa-associated lymphoid tissue",
+      "First antigen encounter → activation, germinal center entry, class-switch recombination, affinity maturation",
+      "T-dependent protein antigens require CD40–CD40L interaction with helper T cells for isotype switching and memory formation",
+      "T-independent polysaccharide antigens activate some naïve B cells but yield mainly IgM with limited memory (why conjugate vaccines matter)",
+    ],
+    clinicalRelevance: [
+      "Primary humoral immune response begins when naïve B cells bind antigen and receive T-cell help",
+      "X-linked agammaglobulinemia (Bruton tyrosine kinase defect) — failure of naïve B-cell maturation → no circulating B cells",
+      "EBV infects naïve B cells via CD21 → infectious mononucleosis; drives B-cell proliferation",
+      "Rituximab (anti-CD20) depletes naïve and memory B cells but not long-lived plasma cells in bone marrow",
+    ],
+    boardsPearls: [
+      "Naïve B cell = IgM/IgD on surface, has not class-switched — distinguish from memory B (switched Ig) and plasma cell (secretes antibody, no surface Ig)",
+      "Germinal center reaction converts activated naïve B cells → memory B cells or plasma cells",
+      "T-independent antigens (polysaccharides) → poor memory in young children — conjugate vaccines add protein carrier",
+      "vs memory B cell — faster secondary response, often IgG/IgA on surface, no need for full germinal center re-entry",
+      "vs plasma cell — terminally differentiated antibody factory; CD19⁻, CD20⁻, eccentric nucleus",
+    ],
+    distinguishFrom: [
+      "Memory B lymphocyte — antigen-experienced; rapid differentiation to plasma cells on re-exposure",
+      "Plasma cell — antibody-secreting end stage; no surface immunoglobulin",
+      "B lymphocyte — parent category; naïve B cell is the antigen-inexperienced subset",
+      "Naive T cell — TCR/MHC restricted; different surface markers (CD3, CD4/CD8) and activation requirements",
+    ],
+    pediatrics:
+      "Maternal IgG masks humoral deficiency until ~6 months; naïve B-cell defects (e.g., Bruton) present with recurrent bacterial infections after maternal antibody wanes. Plain polysaccharide vaccines poorly immunogenic in children <2 years — use conjugated vaccines to engage naïve B cells via T-cell help.",
   },
   {
     id: "desmosome",
