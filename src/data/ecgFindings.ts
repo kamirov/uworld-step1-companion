@@ -1,6 +1,7 @@
 export interface EcgFindingEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   interpretation: string;
   territory: string;
@@ -14,6 +15,7 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
   {
     id: "inferior-stemi",
     name: "Inferior STEMI (II, III, aVF)",
+    etymology: "From inferior stemi ii iii avf",
     aliases: [
       "st-segment elevation in leads ii, iii, and avf",
       "st elevation in leads ii, iii, and avf",
@@ -48,6 +50,7 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
   {
     id: "electrical-alternans",
     name: "Electrical Alternans",
+    etymology: "From electrical alternans",
     aliases: [
       "electrical alternans",
       "qrs alternans",

@@ -54,6 +54,7 @@ import influenzaVirus from "../media/images/microbiology/influenza-virus.jpg?url
 import norovirus from "../media/images/microbiology/norovirus.jpg?url";
 import rsv from "../media/images/microbiology/rsv.jpg?url";
 import variolaVirus from "../media/images/microbiology/variola-virus.jpg?url";
+import enterovirus from "../media/images/microbiology/enterovirus.jpg?url";
 import rhinovirus from "../media/images/microbiology/rhinovirus.png?url";
 import rickettsiaRickettsii from "../media/images/microbiology/rickettsia-rickettsii.jpg?url";
 import chlamydiaTrachomatis from "../media/images/microbiology/chlamydia-trachomatis.jpg?url";
@@ -122,6 +123,7 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "influenza-virus": extensionAssetUrl(influenzaVirus),
     adenovirus: extensionAssetUrl(adenovirus),
     "variola-virus": extensionAssetUrl(variolaVirus),
+    enterovirus: extensionAssetUrl(enterovirus),
     rhinovirus: extensionAssetUrl(rhinovirus),
     "rickettsia-rickettsii": extensionAssetUrl(rickettsiaRickettsii),
     "chlamydia-trachomatis": extensionAssetUrl(chlamydiaTrachomatis),
@@ -350,6 +352,10 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #2265",
     url: "https://phil.cdc.gov/Details.aspx?pid=2265",
   },
+  enterovirus: {
+    label: "CDC PHIL #5630",
+    url: "https://phil.cdc.gov/Details.aspx?pid=5630",
+  },
   rhinovirus: {
     label: "Wikimedia Commons (Robin S / Quibik, molecular model from PDB 1AYM)",
     url: "https://commons.wikimedia.org/wiki/File:Rhinovirus.PNG",
@@ -460,6 +466,8 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "Strongyloides stercoralis larvae in sputum specimen",
   "schistosoma-mansoni":
     "Schistosoma mansoni adult trematodes (male and female)",
+  enterovirus:
+    "Immunoelectron micrograph of Coxsackie B4 enterovirus virions — icosahedral picornavirus",
   rhinovirus:
     "Molecular surface of human rhinovirus 16 capsid — icosahedral picornavirus causing common cold",
   "rickettsia-rickettsii":

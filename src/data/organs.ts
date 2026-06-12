@@ -1,6 +1,7 @@
 export interface OrganEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   germLayer: string;
   origin: string;
@@ -11,6 +12,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "heart",
     name: "Heart",
+    etymology: "Old English heorte; Greek kardia",
     aliases: ["heart", "cardiac muscle", "myocardium"],
     germLayer: "Mesoderm",
     origin:
@@ -20,6 +22,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "aorta",
     name: "Aorta",
+    etymology: "Greek aortē (artery)",
     aliases: ["aorta", "aortic"],
     germLayer: "Mesoderm",
     origin:
@@ -29,6 +32,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pulmonary-artery",
     name: "Pulmonary Artery",
+    etymology: "Latin pulmo (lung); Greek artēria (artery)",
     aliases: ["pulmonary artery", "pulmonary arteries"],
     germLayer: "Mesoderm",
     origin:
@@ -37,6 +41,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pulmonary-vein",
     name: "Pulmonary Vein",
+    etymology: "Latin pulmo (lung)",
     aliases: ["pulmonary vein", "pulmonary veins"],
     germLayer: "Endoderm / Mesoderm",
     origin:
@@ -45,6 +50,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "svc",
     name: "Superior Vena Cava",
+    etymology: "Latin vena (vein)",
     aliases: ["superior vena cava", "svc"],
     germLayer: "Mesoderm",
     origin:
@@ -53,6 +59,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "ivc",
     name: "Inferior Vena Cava",
+    etymology: "Latin vena (vein)",
     aliases: ["inferior vena cava", "ivc"],
     germLayer: "Mesoderm",
     origin:
@@ -61,6 +68,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "ductus-arteriosus",
     name: "Ductus Arteriosus",
+    etymology: "Latin ducere (to lead); Latin arteria",
     aliases: ["ductus arteriosus"],
     germLayer: "Mesoderm",
     origin:
@@ -69,6 +77,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "lungs",
     name: "Lungs",
+    etymology: "Abbreviation: Lungs",
     aliases: ["lung", "lungs", "pulmonary"],
     germLayer: "Endoderm",
     origin:
@@ -78,6 +87,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "larynx",
     name: "Larynx",
+    etymology: "Greek larynx (upper windpipe)",
     aliases: ["larynx", "laryngeal"],
     germLayer: "Endoderm / Mesoderm",
     origin:
@@ -86,6 +96,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "trachea",
     name: "Trachea",
+    etymology: "Greek trachys (rough)",
     aliases: ["trachea", "tracheal"],
     germLayer: "Endoderm",
     origin:
@@ -94,6 +105,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "bronchi",
     name: "Bronchi",
+    etymology: "Abbreviation: Bronchi",
     aliases: ["bronchus", "bronchi", "bronchial"],
     germLayer: "Endoderm",
     origin:
@@ -102,6 +114,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pleura",
     name: "Pleura",
+    etymology: "Greek pleura (side)",
     aliases: ["pleura", "pleural"],
     germLayer: "Mesoderm",
     origin:
@@ -110,6 +123,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "esophagus",
     name: "Esophagus",
+    etymology: "Greek oisophagos (food carrier)",
     aliases: ["esophagus", "esophageal", "oesophagus"],
     germLayer: "Endoderm",
     origin:
@@ -118,6 +132,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "stomach",
     name: "Stomach",
+    etymology: "Greek gaster; Latin stomachus",
     aliases: ["stomach", "gastric"],
     germLayer: "Endoderm",
     origin:
@@ -127,6 +142,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "duodenum-proximal",
     name: "Duodenum (proximal)",
+    etymology: "Latin proximus (nearest)",
     aliases: ["proximal duodenum", "duodenum"],
     germLayer: "Endoderm (foregut) / Mesoderm (midgut)",
     origin:
@@ -135,6 +151,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "jejunum",
     name: "Jejunum",
+    etymology: "Abbreviation: Jejunum",
     aliases: ["jejunum", "jejunal"],
     germLayer: "Endoderm",
     origin:
@@ -143,6 +160,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "ileum",
     name: "Ileum",
+    etymology: "Abbreviation: Ileum",
     aliases: ["ileum", "ileal"],
     germLayer: "Endoderm",
     origin:
@@ -151,6 +169,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "cecum",
     name: "Cecum",
+    etymology: "Abbreviation: Cecum",
     aliases: ["cecum", "caecum", "cecal"],
     germLayer: "Endoderm",
     origin:
@@ -159,6 +178,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "colon",
     name: "Colon",
+    etymology: "Abbreviation: Colon",
     aliases: ["colon", "colonic", "large intestine"],
     germLayer: "Endoderm",
     origin:
@@ -168,6 +188,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "rectum",
     name: "Rectum",
+    etymology: "Abbreviation: Rectum",
     aliases: ["rectum", "rectal"],
     germLayer: "Endoderm",
     origin:
@@ -176,6 +197,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "anal-canal",
     name: "Anal Canal",
+    etymology: "Abbreviation: Anal Canal",
     aliases: ["anal canal", "anus", "anal"],
     germLayer: "Endoderm / Ectoderm",
     origin:
@@ -184,6 +206,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "liver",
     name: "Liver",
+    etymology: "Old English lifer; Latin iecur",
     aliases: ["liver", "hepatic"],
     germLayer: "Endoderm",
     origin:
@@ -193,6 +216,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "gallbladder",
     name: "Gallbladder",
+    etymology: "Abbreviation: Gallbladder",
     aliases: ["gallbladder", "gall bladder"],
     germLayer: "Endoderm",
     origin:
@@ -201,6 +225,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pancreas",
     name: "Pancreas",
+    etymology: "Greek pan + kreas (all flesh)",
     aliases: ["pancreas", "pancreatic"],
     germLayer: "Endoderm",
     origin:
@@ -210,6 +235,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "spleen",
     name: "Spleen",
+    etymology: "Greek splēn; Latin lien",
     aliases: ["spleen", "splenic"],
     germLayer: "Mesoderm",
     origin:
@@ -218,6 +244,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "kidney",
     name: "Kidney",
+    etymology: "Middle English kidene; Latin renes",
     aliases: ["kidney", "kidneys", "renal"],
     germLayer: "Mesoderm",
     origin:
@@ -227,6 +254,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "ureter",
     name: "Ureter",
+    etymology: "Greek ourētēr (urinary canal)",
     aliases: ["ureter", "ureteral", "ureters"],
     germLayer: "Mesoderm",
     origin:
@@ -235,6 +263,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "bladder",
     name: "Urinary Bladder",
+    etymology: "Old English blædre (blister)",
     aliases: ["bladder", "urinary bladder"],
     germLayer: "Endoderm / Mesoderm",
     origin:
@@ -243,6 +272,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "urethra",
     name: "Urethra",
+    etymology: "Greek ourēthra (urinary passage)",
     aliases: ["urethra", "urethral"],
     germLayer: "Endoderm",
     origin:
@@ -251,6 +281,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "prostate",
     name: "Prostate",
+    etymology: "Abbreviation: Prostate",
     aliases: ["prostate", "prostatic"],
     germLayer: "Endoderm",
     origin:
@@ -259,6 +290,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "testis",
     name: "Testis",
+    etymology: "Latin testis (witness)",
     aliases: ["testis", "testes", "testicle", "testicular"],
     germLayer: "Mesoderm",
     origin:
@@ -267,6 +299,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "epididymis",
     name: "Epididymis",
+    etymology: "Abbreviation: Epididymis",
     aliases: ["epididymis", "epididymal"],
     germLayer: "Mesoderm",
     origin:
@@ -275,6 +308,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "ovary",
     name: "Ovary",
+    etymology: "Latin ovum (egg)",
     aliases: ["ovary", "ovaries", "ovarian"],
     germLayer: "Mesoderm",
     origin:
@@ -283,6 +317,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "uterus",
     name: "Uterus",
+    etymology: "Latin uterus (womb)",
     aliases: ["uterus", "uterine", "womb"],
     germLayer: "Mesoderm",
     origin:
@@ -291,6 +326,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "fallopian-tube",
     name: "Fallopian Tube",
+    etymology: "From fallopian tube",
     aliases: ["fallopian tube", "fallopian tubes", "uterine tube", "oviduct"],
     germLayer: "Mesoderm",
     origin:
@@ -299,6 +335,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "vagina",
     name: "Vagina",
+    etymology: "Abbreviation: Vagina",
     aliases: ["vagina", "vaginal"],
     germLayer: "Mesoderm / Endoderm",
     origin:
@@ -307,6 +344,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "thyroid",
     name: "Thyroid",
+    etymology: "Greek thyreos (shield-shaped)",
     aliases: ["thyroid", "thyroid gland"],
     germLayer: "Endoderm",
     origin:
@@ -315,6 +353,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "parathyroid",
     name: "Parathyroid",
+    etymology: "Abbreviation: Parathyroid",
     aliases: ["parathyroid", "parathyroid gland", "parathyroid glands"],
     germLayer: "Endoderm",
     origin:
@@ -323,6 +362,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "adrenal-cortex",
     name: "Adrenal Cortex",
+    etymology: "Latin ad- + renal; Latin cortex (bark)",
     aliases: ["adrenal cortex", "adrenal gland", "adrenal"],
     germLayer: "Mesoderm",
     origin:
@@ -332,6 +372,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "adrenal-medulla",
     name: "Adrenal Medulla",
+    etymology: "Latin ad- + renal; Latin medulla (marrow)",
     aliases: ["adrenal medulla"],
     germLayer: "Ectoderm / Neural crest",
     origin:
@@ -340,6 +381,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pituitary",
     name: "Pituitary",
+    etymology: "Latin pituita (phlegm)",
     aliases: ["pituitary", "pituitary gland", "hypophysis"],
     germLayer: "Ectoderm",
     origin:
@@ -349,6 +391,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pineal",
     name: "Pineal Gland",
+    etymology: "Abbreviation: Pineal Gland",
     aliases: ["pineal", "pineal gland"],
     germLayer: "Ectoderm",
     origin:
@@ -357,6 +400,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "thymus",
     name: "Thymus",
+    etymology: "Greek thymos (soul/incense)",
     aliases: ["thymus", "thymic"],
     germLayer: "Endoderm",
     origin:
@@ -365,6 +409,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "bone-marrow",
     name: "Bone Marrow",
+    etymology: "Abbreviation: Bone Marrow",
     aliases: ["bone marrow", "marrow"],
     germLayer: "Mesoderm",
     origin:
@@ -373,6 +418,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "lymph-nodes",
     name: "Lymph Nodes",
+    etymology: "Latin lympha (water)",
     aliases: ["lymph node", "lymph nodes", "lymphatic"],
     germLayer: "Mesoderm",
     origin:
@@ -381,6 +427,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "brain",
     name: "Brain",
+    etymology: "Old English brægen; Greek enkephalos",
     aliases: ["brain", "cerebral", "cerebrum", "cortex"],
     germLayer: "Ectoderm",
     origin:
@@ -390,6 +437,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "spinal-cord",
     name: "Spinal Cord",
+    etymology: "Latin spina (thorn)",
     aliases: ["spinal cord"],
     germLayer: "Ectoderm",
     origin:
@@ -398,6 +446,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "retina",
     name: "Retina",
+    etymology: "Abbreviation: Retina",
     aliases: ["retina", "retinal"],
     germLayer: "Ectoderm",
     origin:
@@ -406,6 +455,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "lens",
     name: "Lens",
+    etymology: "Abbreviation: Lens",
     aliases: ["lens"],
     germLayer: "Ectoderm",
     origin:
@@ -414,6 +464,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "cornea",
     name: "Cornea",
+    etymology: "Abbreviation: Cornea",
     aliases: ["cornea", "corneal"],
     germLayer: "Ectoderm / Neural crest",
     origin:
@@ -422,6 +473,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "inner-ear",
     name: "Inner Ear",
+    etymology: "Abbreviation: Inner Ear",
     aliases: ["inner ear", "cochlea", "semicircular canals"],
     germLayer: "Ectoderm",
     origin:
@@ -430,6 +482,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "skin",
     name: "Skin",
+    etymology: "Abbreviation: Skin",
     aliases: ["skin", "epidermis", "dermis"],
     germLayer: "Ectoderm / Mesoderm",
     origin:
@@ -438,6 +491,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "bone",
     name: "Bone",
+    etymology: "Abbreviation: Bone",
     aliases: ["bone", "bones", "skeletal", "ossification"],
     germLayer: "Mesoderm",
     origin:
@@ -446,6 +500,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "skeletal-muscle",
     name: "Skeletal Muscle",
+    etymology: "Greek skeletos (dried up)",
     aliases: ["skeletal muscle", "striated muscle"],
     germLayer: "Mesoderm",
     origin:
@@ -454,6 +509,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "teeth",
     name: "Teeth",
+    etymology: "Abbreviation: Teeth",
     aliases: ["tooth", "teeth", "dental"],
     germLayer: "Ectoderm / Neural crest",
     origin:
@@ -462,6 +518,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "tongue",
     name: "Tongue",
+    etymology: "Abbreviation: Tongue",
     aliases: ["tongue", "lingual"],
     germLayer: "Mesoderm / Endoderm",
     origin:
@@ -470,6 +527,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "diaphragm",
     name: "Diaphragm",
+    etymology: "Greek dia + phragma (fence)",
     aliases: ["diaphragm", "diaphragmatic"],
     germLayer: "Mesoderm",
     origin:
@@ -478,6 +536,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "pericardium",
     name: "Pericardium",
+    etymology: "Greek peri + kardia",
     aliases: ["pericardium", "pericardial"],
     germLayer: "Mesoderm",
     origin:
@@ -486,6 +545,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "appendix",
     name: "Appendix",
+    etymology: "Latin appendere (to hang)",
     aliases: ["appendix", "vermiform appendix"],
     germLayer: "Endoderm",
     origin:
@@ -494,6 +554,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "tonsils",
     name: "Tonsils",
+    etymology: "Abbreviation: Tonsils",
     aliases: ["tonsil", "tonsils", "palatine tonsil"],
     germLayer: "Endoderm",
     origin:
@@ -502,6 +563,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "parotid",
     name: "Parotid Gland",
+    etymology: "From parotid gland",
     aliases: ["parotid", "parotid gland"],
     germLayer: "Ectoderm",
     origin:
@@ -510,6 +572,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "submandibular",
     name: "Submandibular Gland",
+    etymology: "From submandibular gland",
     aliases: ["submandibular gland", "submandibular"],
     germLayer: "Endoderm",
     origin:
@@ -518,6 +581,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "suprarenal",
     name: "Suprarenal Gland",
+    etymology: "From suprarenal gland",
     aliases: ["suprarenal"],
     germLayer: "Mesoderm / Neural crest",
     origin:
@@ -526,6 +590,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "clitoris",
     name: "Clitoris",
+    etymology: "Abbreviation: Clitoris",
     aliases: ["clitoris"],
     germLayer: "Ectoderm",
     origin:
@@ -534,6 +599,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "penis",
     name: "Penis",
+    etymology: "Abbreviation: Penis",
     aliases: ["penis", "penile"],
     germLayer: "Ectoderm",
     origin:
@@ -542,6 +608,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "placenta",
     name: "Placenta",
+    etymology: "Greek plakous (flat cake)",
     aliases: ["placenta", "placental"],
     germLayer: "Trophoblast / Mesoderm",
     origin:
@@ -550,6 +617,7 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "umbilical-cord",
     name: "Umbilical Cord",
+    etymology: "From umbilical cord",
     aliases: ["umbilical cord"],
     germLayer: "Mesoderm",
     origin:

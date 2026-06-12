@@ -1,6 +1,7 @@
 export interface PathogenesisEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   definition: string;
   examples: string[];
@@ -13,6 +14,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "bacterial-translocation",
     name: "Bacterial Translocation",
+    etymology: "Latin trans + locus (place)",
     aliases: [
       "bacterial translocation",
       "gut bacterial translocation",
@@ -43,6 +45,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "contiguous-spread",
     name: "Contiguous Spread",
+    etymology: "From contiguous spread",
     aliases: [
       "contiguous spread",
       "contiguous extension",
@@ -76,6 +79,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hematogenous-dissemination",
     name: "Hematogenous Dissemination",
+    etymology: "From hematogenous dissemination",
     aliases: [
       "hematogenous dissemination",
       "hematogenous spread",
@@ -113,6 +117,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "anti-drug-antibodies",
     name: "Anti-drug antibodies (ADAs)",
+    etymology: "From anti-drug antibodies adas",
     aliases: [
       "anti-drug antibodies",
       "antidrug antibodies",
@@ -148,6 +153,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "autoantibodies",
     name: "Autoantibodies",
+    etymology: "From autoantibodies",
     aliases: [
       "autoantibody",
       "autoantibodies",
@@ -184,6 +190,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "leukocyte-migration",
     name: "Leukocyte Migration",
+    etymology: "Greek -cyte (cell)",
     aliases: [
       "leukocyte migration",
       "leukocyte trafficking",
@@ -219,6 +226,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "chemotaxis",
     name: "Chemotaxis",
+    etymology: "Abbreviation: Chemotaxis",
     aliases: [
       "chemotaxis",
       "leukocyte chemotaxis",
@@ -251,6 +259,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "phagocytosis",
     name: "Phagocytosis",
+    etymology: "Greek phagein + kytos + -osis; Greek -osis (condition)",
     aliases: [
       "phagocytosis",
       "phagocyte",
@@ -285,6 +294,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "granuloma",
     name: "Granuloma",
+    etymology: "Greek -oma (tumor/mass)",
     aliases: [
       "granuloma",
       "granulomas",
@@ -324,6 +334,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "enterohepatic-recirculation",
     name: "Enterohepatic Recirculation",
+    etymology: "From enterohepatic recirculation",
     aliases: [
       "enterohepatic recirculation",
       "enterohepatic circulation",
@@ -357,6 +368,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "calcification",
     name: "Calcification",
+    etymology: "From calcification",
     aliases: [
       "calcification",
       "calcifications",
@@ -394,6 +406,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "eosinophilic-inflammation",
     name: "Eosinophilic Inflammation",
+    etymology: "From eosinophilic inflammation",
     aliases: [
       "eosinophilic",
       "eosinophilic inflammation",
@@ -431,6 +444,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hyperplasia",
     name: "Hyperplasia",
+    etymology: "Abbreviation: Hyperplasia",
     aliases: [
       "hyperplasia",
       "cellular hyperplasia",
@@ -465,6 +479,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "sclerosis",
     name: "Sclerosis",
+    etymology: "Greek -osis (condition)",
     aliases: [
       "sclerosis",
       "fibrosis",
@@ -500,6 +515,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hyperkeratosis",
     name: "Hyperkeratosis",
+    etymology: "Greek -osis (condition)",
     aliases: [
       "hyperkeratosis",
       "hyperkeratotic",
@@ -536,6 +552,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "extravasation",
     name: "Extravasation",
+    etymology: "Latin extra + vas (vessel)",
     aliases: [
       "extravasation",
       "extravasated",
@@ -571,6 +588,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "acantholysis",
     name: "Acantholysis",
+    etymology: "Greek -lysis (breakdown)",
     aliases: ["acantholysis", "acantholytic"],
     definition:
       "Loss of intercellular adhesion between epidermal keratinocytes, causing rounded detached cells within the epidermis while the basement membrane remains intact.",
@@ -599,6 +617,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hypersensitivity",
     name: "Hypersensitivity",
+    etymology: "Greek hyper + Latin sensus",
     aliases: [
       "hypersensitivity",
       "hypersensitivity reaction",
@@ -631,6 +650,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-i-hypersensitivity",
     name: "Type I Hypersensitivity",
+    etymology: "Greek hyper + Latin sensus",
     aliases: [
       "type i hypersensitivity",
       "type 1 hypersensitivity",
@@ -665,6 +685,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-ii-hypersensitivity",
     name: "Type II Hypersensitivity",
+    etymology: "Greek hyper + Latin sensus",
     aliases: [
       "type ii hypersensitivity",
       "type 2 hypersensitivity",
@@ -697,6 +718,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-iii-hypersensitivity",
     name: "Type III Hypersensitivity",
+    etymology: "Greek hyper + Latin sensus",
     aliases: [
       "type iii hypersensitivity",
       "type 3 hypersensitivity",
@@ -730,6 +752,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "immune-complex",
     name: "Immune Complex",
+    etymology: "From immune complex",
     aliases: [
       "immune complex",
       "immune complexes",
@@ -775,6 +798,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-iv-hypersensitivity",
     name: "Type IV Hypersensitivity",
+    etymology: "Greek hyper + Latin sensus",
     aliases: [
       "type iv hypersensitivity",
       "type 4 hypersensitivity",
@@ -809,6 +833,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "antigen",
     name: "Antigen",
+    etymology: "anti- + Greek -gen (producer)",
     aliases: [
       "antigen",
       "antigens",
@@ -848,6 +873,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hapten",
     name: "Hapten",
+    etymology: "Abbreviation: Hapten",
     aliases: ["hapten", "haptens", "incomplete antigen"],
     definition:
       "Small molecule that is not immunogenic alone but becomes antigenic when bound to a carrier protein; the hapten–protein complex elicits T-cell and antibody responses.",
@@ -874,6 +900,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hemosiderin",
     name: "Hemosiderin",
+    etymology: "Abbreviation: Hemosiderin",
     aliases: ["hemosiderin", "hemosiderin deposition", "hemosiderin pigment"],
     definition:
       "Iron-storage complex formed when macrophages degrade hemoglobin from phagocytosed erythrocytes; golden-brown granular pigment in tissues after chronic or recurrent hemorrhage.",
@@ -903,6 +930,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "endocytosis",
     name: "Endocytosis",
+    etymology: "Greek endon + kytos + -osis; Greek -osis (condition)",
     aliases: [
       "endocytosis",
       "endocytic",
@@ -936,6 +964,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "pinocytosis",
     name: "Pinocytosis",
+    etymology: "Greek pinein (to drink) + kytos + -osis; Greek -osis (condition)",
     aliases: [
       "pinocytosis",
       "pinocytic",
@@ -968,6 +997,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "carcinoma",
     name: "Carcinoma",
+    etymology: "Greek karkinos + -oma; Greek -oma (tumor/mass)",
     aliases: [
       "carcinoma",
       "carcinomas",
@@ -1006,6 +1036,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "sarcoma",
     name: "Sarcoma",
+    etymology: "Greek sarx + -oma; Greek -oma (tumor/mass)",
     aliases: [
       "sarcoma",
       "sarcomas",
@@ -1045,6 +1076,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "gastrointestinal-flora",
     name: "Gastrointestinal Flora",
+    etymology: "From gastrointestinal flora",
     aliases: [
       "gastrointestinal flora",
       "gut flora",
@@ -1087,6 +1119,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "pili",
     name: "Pili (Fimbriae)",
+    etymology: "Latin pilus (hair)",
     aliases: [
       "pili",
       "pilus",
@@ -1136,6 +1169,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "monoclonal-antibodies",
     name: "Monoclonal Antibodies",
+    etymology: "Greek monos + klon (twig)",
     aliases: [
       "monoclonal antibodies",
       "monoclonal antibody",
@@ -1185,6 +1219,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "synovitis",
     name: "Synovitis",
+    etymology: "Greek -itis (inflammation)",
     aliases: [
       "synovitis",
       "synovial inflammation",
@@ -1227,6 +1262,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "mosaicism",
     name: "Mosaicism",
+    etymology: "Abbreviation: Mosaicism",
     aliases: [
       "mosaicism",
       "genetic mosaicism",
@@ -1266,6 +1302,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "disomy",
     name: "Disomy",
+    etymology: "Abbreviation: Disomy",
     aliases: [
       "disomy",
       "chromosomal disomy",
@@ -1311,6 +1348,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "locus-heterogeneity",
     name: "Locus Heterogeneity",
+    etymology: "Greek heteros (other) + genos",
     aliases: [
       "locus heterogeneity",
       "locus heterogeneities",
@@ -1351,6 +1389,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "class-switching",
     name: "Class Switching",
+    etymology: "From class switching",
     aliases: [
       "class switching",
       "class switch",
@@ -1396,6 +1435,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "vaccination",
     name: "Vaccination",
+    etymology: "Abbreviation: Vaccination",
     aliases: [
       "vaccination",
       "vaccinations",
@@ -1448,6 +1488,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "conjugate-vaccine",
     name: "Conjugate Vaccine",
+    etymology: "Latin conjugare (join together)",
     aliases: [
       "conjugate vaccine",
       "conjugate vaccines",
@@ -1494,6 +1535,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "recombinant-vaccine",
     name: "Recombinant Vaccine",
+    etymology: "Latin re- + combinare",
     aliases: [
       "recombinant vaccine",
       "recombinant vaccines",
@@ -1542,6 +1584,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "mmr-vaccine",
     name: "MMR Vaccine",
+    etymology: "Abbreviation: MMR Vaccine",
     aliases: [
       "mmr",
       "mmr vaccine",
@@ -1587,6 +1630,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "dimorphic-fungus",
     name: "Dimorphic Fungus",
+    etymology: "From dimorphic fungus",
     aliases: [
       "dimorphic fungus",
       "dimorphic fungi",
@@ -1629,6 +1673,42 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Disseminated histoplasmosis and coccidioidomycosis occur in infant immunocompromise; endemic exposure history matters in children living in or traveling to Ohio/Mississippi valleys or the Southwest. Sporothrix dimorphism relevant to pediatric thorn injuries.",
+  },
+  {
+    id: "obliterative-endarteritis",
+    name: "Obliterative Endarteritis",
+    etymology:
+      "Latin ob + literare (to block) + Greek endon (within) + artēria (artery) + -itis",
+    aliases: [
+      "obliterative endarteritis",
+      "obliterating endarteritis",
+      "endarteritis obliterans",
+      "endarteritis",
+    ],
+    definition:
+      "Inflammatory thickening and luminal narrowing of small arteries — classically perivascular lymphoplasmacytic inflammation around the vasa vasorum with concentric intimal proliferation that obstructs blood flow to the vessel wall itself.",
+    examples: [
+      "Tertiary (cardiovascular) syphilis — Treponema pallidum invades aortic adventitia → obliterative endarteritis of vasa vasorum → medial ischemia and necrosis → syphilitic aortitis with tree-bark intima, aortic regurgitation, and coronary ostial stenosis",
+      "All stages of syphilis — obliterative endarteritis underlies gummas, chancre healing, and CNS/vascular lesions via small-vessel compromise",
+      "Gummatous syphilis — granulomatous inflammation with endarteritis at lesion periphery",
+      "Tabes dorsalis and neurosyphilis — meningeal and spinal vessel involvement",
+    ],
+    boardsPearls: [
+      "Syphilitic aortitis = obliterative endarteritis of vasa vasorum → medial necrosis → dilated ascending aorta + AR",
+      "Tree-bark (wrinkled) appearance of aortic intima — classic gross pathology of tertiary syphilis",
+      "Coronary ostial stenosis in syphilis from proximal aortitis — not typical atherosclerotic pattern",
+      "Treponemes are scarce in lesions; intense lymphoplasmacytic infiltrate suggests immune-mediated vascular injury",
+      "vs atherosclerosis — lipid plaques and intimal foam cells, not obliterative endarteritis of vasa vasorum",
+      "Penicillin treats infection but does not reverse established aortic damage",
+    ],
+    distinguishFrom: [
+      "Atherosclerosis — intimal lipid plaques and fibrous caps, not syphilitic vasa vasorum endarteritis",
+      "Thromboangiitis obliterans (Buerger disease) — segmental thrombosis in distal arteries of young smokers",
+      "Giant cell (temporal) arteritis — granulomatous inflammation of large vessel wall, not obliterative endarteritis of vasa vasorum",
+      "IgG4-related aortitis — lymphoplasmacytic pattern can mimic syphilis; serology and histology distinguish",
+    ],
+    pediatrics:
+      "Congenital syphilis involves similar vascular inflammatory mechanisms; Hutchinson triad and bone/teeth findings are more tested than aortitis in children.",
   },
 ];
 

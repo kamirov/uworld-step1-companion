@@ -1,6 +1,7 @@
 export interface ProcedureEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   definition: string;
   indications: string[];
@@ -14,6 +15,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   {
     id: "cardiac-catheterization",
     name: "Cardiac Catheterization",
+    etymology: "Greek kardia (heart)",
     aliases: [
       "cardiac catheterization",
       "cardiac cath",
@@ -53,6 +55,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   {
     id: "coronary-ct-angiography",
     name: "Coronary CT Angiography",
+    etymology: "Latin corona (crown); computed tomography",
     aliases: [
       "coronary ct angiography",
       "coronary cta",
@@ -94,6 +97,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   {
     id: "thoracentesis",
     name: "Thoracentesis",
+    etymology: "Greek -centesis (puncture)",
     aliases: [
       "thoracentesis",
       "pleural tap",
@@ -135,6 +139,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   {
     id: "pcr-testing",
     name: "PCR Testing",
+    etymology: "polymerase chain reaction",
     aliases: [
       "pcr testing",
       "pcr test",
@@ -191,6 +196,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   {
     id: "gomori-trichrome-stain",
     name: "Gomori Trichrome Stain",
+    etymology: "Named for George Gömöri; Greek tri + chrōma (color)",
     aliases: [
       "gomori trichrome",
       "gomori trichrome stain",
@@ -236,6 +242,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   {
     id: "lumbar-puncture",
     name: "Lumbar Puncture",
+    etymology: "From lumbar puncture",
     aliases: [
       "lumbar puncture",
       "lumbar punctures",

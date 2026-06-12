@@ -12,6 +12,7 @@ export type SignalingType =
 export interface SignalingEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   type: SignalingType;
   source?: string;
@@ -27,6 +28,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "bnp",
     name: "Brain natriuretic peptide (BNP)",
+    etymology: "B-type natriuretic peptide; Old English brægen; Greek enkephalos",
     aliases: [
       "brain natriuretic peptide",
       "b-type natriuretic peptide",
@@ -61,6 +63,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "anp",
     name: "Atrial natriuretic peptide (ANP)",
+    etymology: "atrial natriuretic peptide; Latin natrium + Greek ourētikos",
     aliases: [
       "atrial natriuretic peptide",
       "anp",
@@ -93,6 +96,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "vitamin-d",
     name: "Vitamin D (25-hydroxycholecalciferol)",
+    etymology: "Abbreviation: Vitamin D",
     aliases: [
       "vitamin d",
       "vitamin d3",
@@ -129,6 +133,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "vitamin-k",
     name: "Vitamin K",
+    etymology: "Abbreviation: Vitamin K",
     aliases: [
       "vitamin k",
       "vitamin k1",
@@ -167,6 +172,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "active-vitamin-d",
     name: "1,25-Dihydroxycholecalciferol (calcitriol)",
+    etymology: "Numbered clinical designation",
     aliases: [
       "1,25-dihydroxycholecalciferol",
       "1,25-dihydroxyvitamin d",
@@ -200,6 +206,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "gaba",
     name: "Gamma-aminobutyric acid (GABA)",
+    etymology: "gamma-aminobutyric acid; Latin acidus (sour)",
     aliases: [
       "gamma-aminobutyric acid",
       "gamma aminobutyric acid",
@@ -230,6 +237,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "cytokine",
     name: "Cytokine",
+    etymology: "Greek kytos + kinein (to move)",
     aliases: ["cytokine", "cytokines"],
     type: "Cytokine",
     source:
@@ -264,6 +272,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "jak-stat",
     name: "JAK-STAT Pathway",
+    etymology: "Janus kinase; signal transducer and activator of transcription",
     aliases: [
       "jak-stat",
       "jak stat",
@@ -312,6 +321,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "il-2",
     name: "Interleukin-2 (IL-2)",
+    etymology: "interleukin; Latin inter + Greek leukos",
     aliases: [
       "interleukin-2",
       "interleukin 2",
@@ -344,6 +354,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "il-4",
     name: "Interleukin-4 (IL-4)",
+    etymology: "interleukin; Latin inter + Greek leukos",
     aliases: [
       "interleukin-4",
       "interleukin 4",
@@ -378,6 +389,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "tnf",
     name: "Tumor necrosis factor (TNF)",
+    etymology: "tumor necrosis factor; Latin tumere (to swell)",
     aliases: [
       "tumor necrosis factor",
       "tumor necrosis factor-alpha",
@@ -423,6 +435,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "pdgf",
     name: "Platelet-derived growth factor (PDGF)",
+    etymology: "platelet-derived growth factor; French plate + -let (small)",
     aliases: [
       "platelet-derived growth factor",
       "platelet derived growth factor",
@@ -454,6 +467,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "acetylcholine",
     name: "Acetylcholine (ACh)",
+    etymology: "acetyl + Greek cholē (bile)",
     aliases: [
       "acetylcholine",
       "ach",
@@ -484,6 +498,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "histamine",
     name: "Histamine",
+    etymology: "Greek histos + amine",
     aliases: ["histamine"],
     type: "Neurotransmitter",
     source:
@@ -515,6 +530,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "nitric-oxide",
     name: "Nitric oxide (NO)",
+    etymology: "Abbreviation: Nitric oxide",
     aliases: [
       "nitric oxide",
       "endothelium-derived relaxing factor",
@@ -546,6 +562,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "cgmp",
     name: "Cyclic GMP (cGMP)",
+    etymology: "cyclic guanosine monophosphate; Greek kyklos (circle)",
     aliases: [
       "cgmp",
       "cyclic gmp",
@@ -578,6 +595,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "prostaglandin",
     name: "Prostaglandins",
+    etymology: "Greek prostates (before) + gland",
     aliases: [
       "prostaglandin",
       "prostaglandins",
@@ -618,6 +636,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "leukotriene",
     name: "Leukotrienes",
+    etymology: "Greek leukos + tri- (three) + -ene",
     aliases: [
       "leukotriene",
       "leukotrienes",
@@ -665,6 +684,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "thromboxane-a2",
     name: "Thromboxane A₂",
+    etymology: "Greek thrombos + xylon (wood) + -ane",
     aliases: [
       "thromboxane a2",
       "thromboxane a₂",
@@ -701,6 +721,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "oxytocin",
     name: "Oxytocin",
+    etymology: "Greek oxys (swift) + tokos (birth)",
     aliases: ["oxytocin", "pitocin"],
     type: "Peptide hormone",
     source:
@@ -731,6 +752,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "gnrh",
     name: "GnRH",
+    etymology: "gonadotropin-releasing hormone",
     aliases: [
       "gnrh",
       "gonadotropin-releasing hormone",
@@ -776,6 +798,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "estrogen",
     name: "Estrogen",
+    etymology: "Abbreviation: Estrogen",
     aliases: [
       "estrogen",
       "estrogens",
@@ -822,6 +845,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "progesterone",
     name: "Progesterone",
+    etymology: "Abbreviation: Progesterone",
     aliases: [
       "progesterone",
       "progestin",
@@ -870,6 +894,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "androgen",
     name: "Androgens",
+    etymology: "Abbreviation: Androgens",
     aliases: [
       "androgen",
       "androgens",

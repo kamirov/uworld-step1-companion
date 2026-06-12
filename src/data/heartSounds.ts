@@ -1,6 +1,7 @@
 export interface HeartSoundEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   meaning: string;
   conditions: string[];
@@ -10,6 +11,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s1",
     name: "S1 (First Heart Sound)",
+    etymology: "S = sound; first closure sound of systole",
     aliases: ["S1", "first heart sound"],
     meaning:
       "Closure of the AV valves (mitral M1, tricuspid T1) at the onset of systole; marks the beginning of ventricular contraction.",
@@ -22,6 +24,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s2",
     name: "S2 (Second Heart Sound)",
+    etymology: "S = sound; second closure sound of diastole",
     aliases: ["S2", "second heart sound"],
     meaning:
       "Closure of the semilunar valves (aortic A2, pulmonic P2) at the end of systole; marks the beginning of diastole.",
@@ -36,6 +39,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s3",
     name: "S3 (Third Heart Sound)",
+    etymology: "S = sound; third diastolic filling sound",
     aliases: ["S3", "third heart sound"],
     meaning:
       "Low-frequency sound in early diastole caused by rapid ventricular filling; may be normal in children and young adults.",
@@ -48,6 +52,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s4",
     name: "S4 (Fourth Heart Sound)",
+    etymology: "S = sound; fourth atrial kick sound",
     aliases: ["S4", "fourth heart sound"],
     meaning:
       "Low-frequency sound in late diastole from atrial contraction into a stiff, noncompliant ventricle; not normally heard.",

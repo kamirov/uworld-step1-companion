@@ -1,6 +1,7 @@
 export interface HemodynamicEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   definition: string;
   factors: string[];
@@ -10,6 +11,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "preload",
     name: "Preload",
+    etymology: "Latin prae (before) + load",
     aliases: ["preload"],
     definition:
       "End-diastolic ventricular volume (EDV) and the stretch on the ventricular wall before contraction. Greater preload increases sarcomere stretch and stroke volume via the Frank-Starling mechanism.",
@@ -21,6 +23,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "afterload",
     name: "Afterload",
+    etymology: "Latin after + load",
     aliases: ["afterload"],
     definition:
       "The resistance or pressure the ventricle must overcome to eject blood. For the left ventricle, afterload is primarily determined by systemic vascular resistance and aortic pressure.",
@@ -32,6 +35,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "ejection-fraction",
     name: "Ejection Fraction",
+    etymology: "From ejection fraction",
     aliases: ["ejection fraction"],
     definition:
       "The percentage of end-diastolic volume ejected per beat: EF = (stroke volume / EDV) × 100%. Normal LVEF is roughly 55–70%.",
@@ -43,6 +47,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "hypovolemia",
     name: "Hypovolemia",
+    etymology: "Greek -emia (blood condition)",
     aliases: ["hypovolemia", "hypovolaemia"],
     definition:
       "Decreased effective circulating intravascular volume, leading to reduced preload, tissue hypoperfusion, and compensatory sympathetic activation.",
@@ -57,6 +62,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "pcwp",
     name: "Pulmonary Capillary Wedge Pressure",
+    etymology: "Latin pulmo (lung)",
     aliases: [
       "pulmonary capillary wedge pressure",
       "pulmonary capillary wedge",
@@ -77,6 +83,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "left-to-right-shunt",
     name: "Left-to-Right Shunt",
+    etymology: "From left-to-right shunt",
     aliases: [
       "left-to-right shunt",
       "left to right shunt",
@@ -96,6 +103,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "right-to-left-shunt",
     name: "Right-to-Left Shunt",
+    etymology: "From right-to-left shunt",
     aliases: [
       "right-to-left shunt",
       "right to left shunt",
@@ -115,6 +123,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "right-ventricular-hypertrophy",
     name: "Right Ventricular Hypertrophy",
+    etymology: "Greek -trophy (growth)",
     aliases: [
       "right ventricular hypertrophy",
       "right ventricle hypertrophy",
@@ -139,6 +148,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "beck-triad",
     name: "Beck Triad",
+    etymology: "Abbreviation: Beck Triad",
     aliases: [
       "beck triad",
       "beck's triad",
@@ -158,6 +168,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "pulsus-paradoxus",
     name: "Pulsus Paradoxus",
+    etymology: "From pulsus paradoxus",
     aliases: [
       "pulsus paradoxus",
       "paradoxical pulse",

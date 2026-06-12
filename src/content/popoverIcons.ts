@@ -89,10 +89,15 @@ function renderIcon(category: PopoverCategory): string {
 export function renderPopoverTitle(
   name: string,
   category: PopoverCategory,
+  etymology?: string,
 ): string {
+  const etymologyHtml = etymology
+    ? `<div class="usmle-organ-popover__etymology">${etymology}</div>`
+    : "";
   return `
     <div class="${popoverTitleClass(category)}">
       <span class="usmle-organ-popover__title-inner">${renderIcon(category)}<span class="usmle-organ-popover__title-text">${name}</span></span>
     </div>
+    ${etymologyHtml}
   `;
 }

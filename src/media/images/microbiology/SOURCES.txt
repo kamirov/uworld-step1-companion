@@ -385,6 +385,14 @@ variola-virus.jpg
   Page: https://phil.cdc.gov/Details.aspx?pid=2265
   Commons: https://commons.wikimedia.org/wiki/File:Smallpox_virus.jpg
 
+enterovirus.jpg
+  Source: CDC PHIL #5630 (via Wikimedia Commons — Coxsackie B4 virus.JPG)
+  Description: Immunoelectron micrograph of Coxsackie B4 enterovirus virions
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=5630
+  Commons: https://commons.wikimedia.org/wiki/File:Coxsackie_B4_virus.JPG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Coxsackie_B4_virus.JPG?width=1280
+
 rhinovirus.png
   Source: Wikimedia Commons — Rhinovirus.PNG
   Author: Robin S / Quibik (molecular model from PDB 1AYM)

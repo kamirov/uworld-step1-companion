@@ -221,7 +221,7 @@ function renderOrganPopover(organId: string): boolean {
       : "";
 
   popoverEl.innerHTML = `
-    ${renderPopoverTitle(organ.name, "organ")}
+    ${renderPopoverTitle(organ.name, "organ", organ.etymology)}
     <div class="usmle-organ-popover__layer"><strong>Germ layer:</strong> ${organ.germLayer}</div>
     <div class="usmle-organ-popover__origin">${organ.origin}</div>
     ${derivatives}
@@ -235,6 +235,7 @@ function renderDefinitionPopover(
   definition: string,
   sectionLabel: string,
   items: string[],
+  etymology?: string,
 ): boolean {
   if (!popoverEl) return false;
 
@@ -243,7 +244,7 @@ function renderDefinitionPopover(
     .join("")}</ul>`;
 
   popoverEl.innerHTML = `
-    ${renderPopoverTitle(title, category)}
+    ${renderPopoverTitle(title, category, etymology)}
     <div class="usmle-organ-popover__meaning">${definition}</div>
     <div class="usmle-organ-popover__section-label">${sectionLabel}</div>
     ${list}
@@ -261,6 +262,7 @@ function renderHeartSoundPopover(heartSoundId: string): boolean {
     sound.meaning,
     "Common conditions",
     sound.conditions,
+    sound.etymology,
   );
 }
 
@@ -273,7 +275,7 @@ function renderHeartMurmurPopover(heartMurmurId: string): boolean {
   const audioAttribution = getHeartMurmurAudioAttributionForId(heartMurmurId);
 
   const header = `
-    ${renderPopoverTitle(murmur.name, "heart-murmur")}
+    ${renderPopoverTitle(murmur.name, "heart-murmur", murmur.etymology)}
     <div class="usmle-organ-popover__meaning">${murmur.meaning}</div>
   `;
   const sections = `
@@ -311,6 +313,7 @@ function renderHemodynamicPopover(hemodynamicId: string): boolean {
     term.definition,
     "Factors that affect it",
     term.factors,
+    term.etymology,
   );
 }
 
@@ -386,7 +389,7 @@ function renderSymptomPopover(symptomId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(symptom.name, "symptom")}
+    ${renderPopoverTitle(symptom.name, "symptom", symptom.etymology)}
     <div class="usmle-organ-popover__meaning">${symptom.definition}</div>
     <div class="usmle-organ-popover__section-label">Mechanism</div>
     <div class="usmle-organ-popover__mechanism">${symptom.mechanism}</div>
@@ -429,7 +432,7 @@ function renderMedicationPopover(medicationId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(medication.name, "medication")}
+    ${renderPopoverTitle(medication.name, "medication", medication.etymology)}
     <div class="usmle-organ-popover__layer"><strong>Class:</strong> ${medication.drugClass}</div>
     <div class="usmle-organ-popover__section-label">Mechanism</div>
     <div class="usmle-organ-popover__mechanism">${medication.mechanism}</div>
@@ -468,7 +471,7 @@ function renderLabValuePopover(labValueId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(lab.name, "lab")}
+    ${renderPopoverTitle(lab.name, "lab", lab.etymology)}
     <div class="usmle-organ-popover__meaning">${lab.measures}</div>
     <div class="usmle-organ-popover__layer"><strong>Normal range:</strong> ${lab.normalRange}</div>
   `,
@@ -489,7 +492,7 @@ function renderNephronPopover(nephronSegmentId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(segment.name, "nephron")}
+    ${renderPopoverTitle(segment.name, "nephron", segment.etymology)}
     <div class="usmle-organ-popover__section-label">Function</div>
     <div class="usmle-organ-popover__mechanism">${segment.function}</div>
   `,
@@ -521,7 +524,7 @@ function renderConditionPopover(conditionId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(condition.name, "condition")}
+    ${renderPopoverTitle(condition.name, "condition", condition.etymology)}
     <div class="usmle-organ-popover__meaning">${condition.definition}</div>
     <div class="usmle-organ-popover__section-label">Pathophysiology</div>
     <div class="usmle-organ-popover__mechanism">${condition.pathophysiology}</div>
@@ -569,7 +572,7 @@ function renderEcgFindingPopover(ecgFindingId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(finding.name, "ecg")}
+    ${renderPopoverTitle(finding.name, "ecg", finding.etymology)}
     <div class="usmle-organ-popover__meaning">${finding.interpretation}</div>
     <div class="usmle-organ-popover__layer"><strong>Territory:</strong> ${finding.territory}</div>
   `,
@@ -608,7 +611,7 @@ function renderClinicalStrategyPopover(clinicalStrategyId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(strategy.name, "clinical-strategy")}
+    ${renderPopoverTitle(strategy.name, "clinical-strategy", strategy.etymology)}
     <div class="usmle-organ-popover__meaning">${strategy.definition}</div>
   `,
     `
@@ -630,7 +633,7 @@ function renderCellPopover(cellId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(cell.name, "cell")}
+    ${renderPopoverTitle(cell.name, "cell", cell.etymology)}
     <div class="usmle-organ-popover__meaning">${cell.definition}</div>
   `,
     `
@@ -674,7 +677,7 @@ function renderMusculoskeletalPopover(musculoskeletalId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(entry.name, "musculoskeletal")}
+    ${renderPopoverTitle(entry.name, "musculoskeletal", entry.etymology)}
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
   `,
     `
@@ -715,7 +718,7 @@ function renderPathogenesisPopover(pathogenesisId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(entry.name, "pathogenesis")}
+    ${renderPopoverTitle(entry.name, "pathogenesis", entry.etymology)}
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
   `,
     `
@@ -745,7 +748,7 @@ function renderMicrobiologyPopover(microbiologyId: string): boolean {
 
   const bodyContent = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(entry.name, "microbiology")}
+    ${renderPopoverTitle(entry.name, "microbiology", entry.etymology)}
     <div class="usmle-organ-popover__layer"><strong>Type:</strong> ${formatMicrobeType(entry.type)}</div>
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
   `,
@@ -790,7 +793,7 @@ function renderProcedurePopover(procedureId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(procedure.name, "procedure")}
+    ${renderPopoverTitle(procedure.name, "procedure", procedure.etymology)}
     <div class="usmle-organ-popover__meaning">${procedure.definition}</div>
   `,
     `
@@ -819,7 +822,7 @@ function renderSignalingPopover(signalingId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(molecule.name, "signaling")}
+    ${renderPopoverTitle(molecule.name, "signaling", molecule.etymology)}
     ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
     <div class="usmle-organ-popover__section-label">Function</div>
     <div class="usmle-organ-popover__mechanism">${molecule.function}</div>
@@ -848,7 +851,7 @@ function renderProteinPopover(proteinId: string): boolean {
   popoverEl.classList.add("usmle-organ-popover--rich");
   popoverEl.innerHTML = renderRichPopoverContent(
     `
-    ${renderPopoverTitle(protein.name, "protein")}
+    ${renderPopoverTitle(protein.name, "protein", protein.etymology)}
     ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
     <div class="usmle-organ-popover__section-label">Function</div>
     <div class="usmle-organ-popover__mechanism">${protein.function}</div>

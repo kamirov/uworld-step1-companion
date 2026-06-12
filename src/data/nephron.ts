@@ -1,6 +1,7 @@
 export interface NephronSegmentEntry {
   id: string;
   name: string;
+  etymology: string;
   aliases: string[];
   function: string;
   reabsorbs: string[];
@@ -12,6 +13,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "glomerulus",
     name: "Glomerulus",
+    etymology: "Abbreviation: Glomerulus",
     aliases: ["glomerulus", "glomeruli"],
     function:
       "Specialized capillary tuft where plasma is ultrafiltered into Bowman space. Filtration barrier = fenestrated endothelium, basement membrane, podocyte slit diaphragms.",
@@ -26,6 +28,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "proximal-tubule",
     name: "Proximal Tubule",
+    etymology: "Latin proximus (nearest)",
     aliases: [
       "proximal convoluted tubule",
       "proximal tubule",
@@ -55,6 +58,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "thin-descending-limb",
     name: "Thin Descending Limb (Loop of Henle)",
+    etymology: "Latin descendere (to climb down)",
     aliases: [
       "thin descending limb of the loop of henle",
       "thin descending limb",
@@ -75,6 +79,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "thick-ascending-limb",
     name: "Thick Ascending Limb (Loop of Henle)",
+    etymology: "Latin ascendere (to climb)",
     aliases: [
       "thick ascending limb of the loop of henle",
       "thick ascending limb of loop of henle",
@@ -100,6 +105,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "distal-convoluted-tubule",
     name: "Distal Convoluted Tubule",
+    etymology: "Latin distare (to stand apart); Latin convolutus (rolled together)",
     aliases: [
       "distal convoluted tubule",
       "distal tubule",
@@ -122,6 +128,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "collecting-duct",
     name: "Collecting Duct",
+    etymology: "From collecting duct",
     aliases: ["collecting duct", "collecting ducts"],
     function:
       "Final regulation of water, Na⁺, K⁺, and H⁺/HCO₃⁻; determines final urine osmolality and electrolyte composition.",
@@ -143,6 +150,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "macula-densa",
     name: "Macula Densa",
+    etymology: "Abbreviation: Macula Densa",
     aliases: ["macula densa"],
     function:
       "Specialized plaque of thick ascending limb cells at the glomerular hilum that senses tubular NaCl delivery and mediates tubuloglomerular feedback.",
@@ -157,6 +165,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
     id: "loop-of-henle",
     name: "Loop of Henle",
+    etymology: "From loop of henle",
     aliases: ["loop of henle"],
     function:
       "Countercurrent multiplier system: descending limb extracts water, thick ascending limb extracts NaCl without water, establishing corticomedullary osmotic gradient for urine concentration.",
