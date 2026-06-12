@@ -758,6 +758,38 @@ export const PROTEINS: ProteinEntry[] = [
       "Sonic hedgehog (SHH) — morphogen gradient in limb bud, not HOX segment identity",
     ],
   },
+  {
+    id: "connexin",
+    name: "Connexin",
+    aliases: [
+      "connexin",
+      "connexins",
+      "connexin protein",
+      "connexin proteins",
+    ],
+    gene: "GJB gene family (e.g., GJB2/Cx26, GJB1/Cx32); GJA family (e.g., GJA1/Cx43)",
+    location:
+      "Plasma membrane of adjacent cells; hexameric connexons form gap junction channels at intercellular plaques",
+    function:
+      "Transmembrane proteins assembling into connexons that dock across the intercellular space, forming gap junction pores for ion and small-molecule (<1 kDa) coupling between cells.",
+    mutationCauses: [
+      "GJB2 (connexin 26) — autosomal recessive nonsyndromic hearing loss (most common genetic deafness)",
+      "GJB1 (connexin 32) — X-linked Charcot-Marie-Tooth disease (CMTX)",
+      "GJA1 (connexin 43) — oculodentodigital dysplasia, arrhythmias",
+      "GJB2 variants — Vohwinkel syndrome (palmoplantar keratoderma + deafness)",
+    ],
+    boardsPearls: [
+      "Connexin hexamer = connexon; two connexons = gap junction channel",
+      "Connexin 26 (GJB2) — #1 genetic cause of congenital hearing loss; test in newborn deafness",
+      "Connexin 43 — dominant in heart; gap junctions propagate cardiac action potentials",
+      "vs claudins — tight junction sealing proteins, not intercellular channels",
+    ],
+    distinguishFrom: [
+      "Gap junction — structure formed by connexins; connexin is the protein subunit",
+      "Claudin/occludin — tight junction proteins, paracellular seal",
+      "Cadherin — adherens junction/desmosome adhesion, not cytoplasmic channels",
+    ],
+  },
 ];
 
 const proteinById = new Map(PROTEINS.map((p) => [p.id, p]));

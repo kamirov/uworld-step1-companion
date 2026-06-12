@@ -694,6 +694,39 @@ export const CELLS: CellEntry[] = [
     pediatrics:
       "Aminoglycosides carry risk of ototoxicity and nephrotoxicity in neonates — avoid when possible; same 30S ribosomal target as in adults.",
   },
+  {
+    id: "myometrium",
+    name: "Myometrium",
+    aliases: ["myometrium", "uterine myometrium", "uterine muscle"],
+    definition:
+      "Thick middle smooth muscle layer of the uterus between the inner endometrium and outer serosa (perimetrium); responsible for uterine contractions during menstruation, labor, and postpartum involution.",
+    characteristics: [
+      "Smooth muscle bundles arranged in longitudinal, circular, and oblique layers",
+      "Rich in oxytocin receptors — sensitivity ↑ dramatically in late pregnancy (parturition)",
+      "Estrogen promotes hypertrophy and gap junction (connexin 43) expression → coordinated contractions",
+      "Progesterone maintains quiescence during pregnancy; ↓ progesterone triggers labor",
+      "Leiomyomas (fibroids) arise from myometrial smooth muscle proliferation",
+    ],
+    clinicalRelevance: [
+      "Labor — oxytocin + prostaglandins (PGF₂α) stimulate myometrial contraction",
+      "Postpartum hemorrhage — uterine atony (failed myometrial contraction); treat with oxytocin, massage, prostaglandins",
+      "Uterine fibroids — benign myometrial tumors; menorrhagia, bulk symptoms",
+      "Tocolytics (terbutaline, nifedipine, indomethacin) relax myometrium to delay preterm labor",
+    ],
+    boardsPearls: [
+      "Myometrium = smooth muscle; endometrium = glandular lining shed in menses",
+      "Oxytocin acts on myometrium; estrogen ↑ oxytocin receptor expression",
+      "Uterine atony — boggy uterus postpartum → oxytocin first-line",
+      "Fibroids (leiomyomas) — myometrial origin, estrogen-sensitive",
+    ],
+    distinguishFrom: [
+      "Endometrium — inner mucosal layer; proliferative/secretory cycles, site of implantation",
+      "Myocardium — cardiac muscle; not uterine smooth muscle",
+      "Myoepithelial cells — surround mammary alveoli; contract for milk ejection",
+    ],
+    pediatrics:
+      "Preterm labor — immature myometrium can be suppressed with tocolytics while giving steroids for fetal lung maturity; same oxytocin/prostaglandin axis as term labor.",
+  },
 ];
 
 const cellById = new Map(CELLS.map((entry) => [entry.id, entry]));

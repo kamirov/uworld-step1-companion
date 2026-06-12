@@ -488,6 +488,45 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     pediatrics:
       "Neonatal breastfeeding establishes suckling reflex → maternal oxytocin release; preterm infants may need lactation support but same hormonal axis.",
   },
+  {
+    id: "estrogen",
+    name: "Estrogen",
+    aliases: [
+      "estrogen",
+      "estrogens",
+      "estradiol",
+      "estradiol-17β",
+      "e2",
+      "17β-estradiol",
+    ],
+    type: "Hormone",
+    source:
+      "Ovarian granulosa cells (estradiol from theca-androgen aromatization); placenta in pregnancy; adipose aromatization; small amounts from testes/adrenals",
+    receptor:
+      "Intracellular/nuclear estrogen receptors (ERα, ERβ) — ligand-activated transcription factors; membrane ER signaling also exists",
+    function:
+      "Promotes female secondary sex characteristics, endometrial proliferation, breast ductal development, epiphyseal closure, and negative feedback on FSH/LH; maintains bone density and cardiovascular effects.",
+    clinicalRelevance: [
+      "Estrogen deficiency — menopause, Turner syndrome, primary ovarian insufficiency → hot flashes, osteoporosis, ↑ CV risk",
+      "Estrogen excess or unopposed estrogen — endometrial hyperplasia/cancer risk",
+      "Tamoxifen — SERM with antagonist effect in breast, partial agonist in endometrium",
+      "Aromatase inhibitors (anastrozole) — block peripheral/ tumor estrogen synthesis in ER+ breast cancer",
+      "OCPs — ethinyl estradiol + progestin for contraception and cycle regulation",
+    ],
+    boardsPearls: [
+      "Estradiol (E2) — most potent endogenous estrogen; drives endometrial proliferation in menstrual cycle",
+      "Unopposed estrogen ↑ endometrial cancer risk — progestin opposes proliferation",
+      "Turner: streak gonads → ↓ estrogen → webbed neck, short stature, primary amenorrhea",
+      "Aromatase converts androgens → estrogens — inhibitors used in postmenopausal breast cancer",
+    ],
+    distinguishFrom: [
+      "Progesterone — stabilizes endometrium, secretory phase; opposes estrogen-driven proliferation",
+      "Prolactin — milk synthesis; high prolactin suppresses GnRH → ↓ estrogen",
+      "Testosterone — androgen; aromatized to estrogen peripherally",
+    ],
+    pediatrics:
+      "Precocious puberty — early estrogen exposure → breast development, accelerated bone age; McCune-Albright or ovarian tumor workup.",
+  },
 ];
 
 const signalingById = new Map(
