@@ -728,6 +728,51 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "PSGN common after strep in children — hematuria, periorbital edema, hypertension; usually self-limited with supportive care.",
   },
   {
+    id: "immune-complex",
+    name: "Immune Complex",
+    aliases: [
+      "immune complex",
+      "immune complexes",
+      "antigen-antibody complex",
+      "antigen antibody complex",
+      "antigen-antibody complexes",
+      "antigen antibody complexes",
+      "circulating immune complexes",
+      "immune complex deposition",
+    ],
+    definition:
+      "Aggregates of antigen bound to antibody (and often complement) formed when humoral immunity encounters soluble antigen — normally cleared by the reticuloendothelial system, but when formed in excess or deposited in vessel walls and tissues they trigger complement activation and neutrophil-mediated inflammation (type III hypersensitivity).",
+    examples: [
+      "Systemic lupus erythematosus — DNA/anti-DNA and other immune complexes deposit in glomeruli, skin, serosa",
+      "Poststreptococcal glomerulonephritis — streptococcal antigen–antibody complexes in glomerular basement membrane region",
+      "Serum sickness — exogenous protein (antivenom, infliximab) → circulating complexes → fever, rash, arthralgia",
+      "Henoch-Schönlein purpura (IgA vasculitis) — IgA-dominant immune complexes in small vessels",
+      "Cryoglobulinemia — immune complexes precipitate in cold (often HCV-associated)",
+      "Subacute bacterial endocarditis — immune complex glomerulonephritis (↓ C3)",
+      "Arthus reaction — local immune complex inflammation at high-dose antigen injection site",
+      "Libman-Sacks endocarditis — SLE immune complex vegetations on valves",
+    ],
+    boardsPearls: [
+      "Immune complex = antigen + antibody ± complement; deposits activate complement and recruit neutrophils",
+      "Type III hypersensitivity is the clinical syndrome of pathologic immune complex deposition",
+      "↓ C3/C4 from complement consumption in active immune complex disease (SLE flare, PSGN)",
+      "Serum sickness: 1–2 weeks after antigen exposure — fever, urticaria, arthralgia, ↓ complement",
+      "PSGN: low C3, hematuria, periorbital edema after strep — immune complexes in glomeruli",
+      "vs type II — antibody on cell surface (AIHA, Goodpasture anti-GBM), not soluble complexes in tissue",
+      "vs ANCA vasculitis — pauci-immune (little immune complex on biopsy), not classic type III",
+      "Granular IgG/C3 on immunofluorescence suggests immune complex deposition (lupus nephritis)",
+    ],
+    distinguishFrom: [
+      "Type III hypersensitivity — classification of disease mechanism mediated by immune complexes",
+      "Type II hypersensitivity — antibody directly against cell-surface or matrix antigen (Coombs+, anti-GBM linear IgG)",
+      "Type IV hypersensitivity — T-cell mediated; no antibody–antigen complex deposition",
+      "ANCA-associated vasculitis — neutrophil antibodies, pauci-immune GN",
+      "Monoclonal immunoglobulin (myeloma) — paraprotein without antigen–antibody lattice",
+    ],
+    pediatrics:
+      "PSGN and Henoch-Schönlein purpura (IgA vasculitis) are classic pediatric immune complex diseases — palpable purpura, abdominal pain, joint pain, renal involvement in HSP; supportive care with monitor for nephritis.",
+  },
+  {
     id: "type-iv-hypersensitivity",
     name: "Type IV Hypersensitivity",
     aliases: [
@@ -1136,6 +1181,48 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Conjugate vaccines use monoclonal concepts indirectly (defined antigen specificity); therapeutic mAbs (e.g., infliximab for pediatric IBD) carry infection and infusion-reaction risks — live vaccines often contraindicated during therapy.",
+  },
+  {
+    id: "synovitis",
+    name: "Synovitis",
+    aliases: [
+      "synovitis",
+      "synovial inflammation",
+      "inflammatory synovitis",
+      "proliferative synovitis",
+      "synovial membrane inflammation",
+      "joint synovitis",
+    ],
+    definition:
+      "Inflammation of the synovial membrane lining diarthrodial joints — causes joint effusion, warmth, swelling, and pain; may be acute (infection, crystals) or chronic (autoimmune), with synovial hypertrophy and inflammatory exudate.",
+    examples: [
+      "Rheumatoid arthritis — chronic autoimmune synovitis with pannus (proliferative granulation tissue) eroding cartilage and bone",
+      "Septic arthritis — bacterial invasion of synovium/joint space; Staphylococcus aureus most common in adults",
+      "Gout and pseudogout — crystal deposition triggers intense acute synovitis",
+      "Reactive arthritis — post-infectious sterile synovitis (Chlamydia, GI pathogens)",
+      "Lyme arthritis — Borrelia-associated episodic synovitis, often knee",
+      "Psoriatic and spondyloarthropathy-related peripheral synovitis",
+      "Transient synovitis of the hip — self-limited childhood synovitis after viral illness",
+    ],
+    boardsPearls: [
+      "Synovitis = inflamed synovium → effusion, warmth, swelling, limited ROM",
+      "Pannus — invasive RA synovium that destroys cartilage and subchondral bone",
+      "Septic arthritis: synovial WBC often >50,000/µL; surgical emergency",
+      "Gout synovial fluid — negatively birefringent needle-shaped MSU crystals",
+      "Pseudogout — positively birefringent rhomboid CPPD crystals",
+      "OA has minimal synovitis vs inflammatory arthritis (RA, gout, septic)",
+      "Synovial fluid analysis — cell count, crystals, Gram stain/culture distinguish causes",
+      "Morning stiffness >1 hour suggests inflammatory synovitis (RA)",
+    ],
+    distinguishFrom: [
+      "Osteoarthritis — mechanical degeneration with osteophytes; synovitis mild or absent",
+      "Tenosynovitis — inflammation of tendon sheath, not joint synovium (though Kanavel signs in flexor tenosynovitis)",
+      "Bursitis — inflammation of bursa outside joint capsule",
+      "Joint effusion without synovitis — noninflammatory transudate (e.g., osteoarthritis effusion, trauma)",
+      "Enthesitis — inflammation at tendon/ligament insertion, hallmark of spondyloarthropathy",
+    ],
+    pediatrics:
+      "Transient synovitis of the hip — acute limp in young child after URI; exclude septic arthritis (fever, refusal to bear weight, ↑ ESR/CRP, hip held flexed/abducted/externally rotated). Septic arthritis in children is orthopedic emergency.",
   },
 ];
 

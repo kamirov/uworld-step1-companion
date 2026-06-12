@@ -188,6 +188,51 @@ export const PROCEDURES: ProcedureEntry[] = [
     pediatrics:
       "Pertussis nasopharyngeal PCR preferred in infants (culture less sensitive). Congenital CMV diagnosed by urine or saliva PCR within first 3 weeks of life — after that, positive PCR may reflect acquired rather than congenital infection.",
   },
+  {
+    id: "gomori-trichrome-stain",
+    name: "Gomori Trichrome Stain",
+    aliases: [
+      "gomori trichrome",
+      "gomori trichrome stain",
+      "gomori modified trichrome",
+      "gomori modified trichrome stain",
+      "modified gomori trichrome",
+      "modified trichrome stain",
+      "muscle trichrome stain",
+    ],
+    definition:
+      "Modified trichrome histochemical stain applied to skeletal muscle biopsy specimens — muscle fibers appear red while collagen and connective tissue stain green/blue, enhancing visualization of structural myofiber abnormalities not always obvious on H&E.",
+    indications: [
+      "Skeletal muscle biopsy evaluation for myopathy or muscular dystrophy",
+      "Suspected mitochondrial myopathy (ragged red fibers)",
+      "Nemaline rod myopathy and other congenital myopathies",
+      "Inflammatory myopathy workup (often paired with H&E, immunohistochemistry)",
+      "Differentiation of fiber-type grouping, necrosis, and endomysial fibrosis",
+    ],
+    keyMeasurements: [
+      "Normal: polygonal muscle fibers with uniform red cytoplasm; nuclei at periphery",
+      "Ragged red fibers — subsarcolemmal red granular staining from accumulated mitochondria",
+      "Nemaline rods — dark red rod-shaped inclusions at Z lines (I band)",
+      "Central cores — pale central areas within fibers (central core disease)",
+      "Increased green collagen between fibers — fibrosis/replacement",
+    ],
+    complications: [
+      "Interpretation requires adequate biopsy sample (avoid crush artifact from needle technique)",
+      "Nonspecific findings without clinical correlation — stain is adjunct to history, EM, genetics",
+      "Sampling error if nonrepresentative muscle sampled",
+    ],
+    boardsPearls: [
+      "Gomori trichrome on muscle biopsy — red fibers, green collagen",
+      "Ragged red fibers → mitochondrial myopathy (MELAS, MERRF); confirm with SDH stain or genetics",
+      "Nemaline rods — Gomori trichrome highlights rod bodies; hypotonia/weakness in infant",
+      "vs Masson trichrome — used for liver/kidney fibrosis, not classic muscle Gomori panel",
+      "vs H&E — Gomori better shows ragged reds, rods, cores; H&E for inflammation and necrosis",
+      "Duchenne dystrophy — dystrophin loss on IHC; Gomori may show fiber size variation and fibrosis",
+      "Oil red O — lipid storage in vacuolar myopathies, not Gomori's primary role",
+    ],
+    pediatrics:
+      "Nemaline rod myopathy and mitochondrial myopathies present in infancy — hypotonia, weakness; muscle biopsy with Gomori trichrome shows diagnostic rods or ragged red fibers. Distinguish from benign congenital hypotonia.",
+  },
 ];
 
 const procedureById = new Map(PROCEDURES.map((entry) => [entry.id, entry]));

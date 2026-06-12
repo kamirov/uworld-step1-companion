@@ -6353,6 +6353,321 @@ export const CONDITIONS: ConditionEntry[] = [
     pediatrics:
       "Febrile UTI in infants and young children is treated as pyelonephritis; evaluate for vesicoureteral reflux and anatomic abnormalities after first febrile UTI (ultrasound ± VCUG per guidelines). Boys with first UTI warrant imaging.",
   },
+  {
+    id: "primary-biliary-cholangitis",
+    name: "Primary Biliary Cholangitis",
+    aliases: [
+      "primary biliary cholangitis",
+      "primary biliary cirrhosis",
+      "pbc",
+      "biliary cholangitis",
+    ],
+    definition:
+      "Chronic autoimmune cholestatic liver disease characterized by progressive destruction of small intrahepatic bile ducts, leading to cholestasis, fibrosis, and eventually cirrhosis.",
+    pathophysiology:
+      "T-cell–mediated attack on interlobular bile ducts → ductopenia → impaired bile flow → ↑ alkaline phosphatase and conjugated bilirubin → chronic cholestasis, cirrhosis, and portal hypertension over years.",
+    classicPresentation: [
+      "Middle-aged woman with fatigue and pruritus",
+      "Cholestatic LFTs (↑ alk phos, ↑ GGT, later ↑ bilirubin)",
+      "Often asymptomatic early; xanthelasma from hypercholesterolemia of cholestasis",
+      "Associated autoimmune conditions (Sjögren, Hashimoto thyroiditis)",
+    ],
+    keyFindings: [
+      "Cholestatic pattern on LFTs",
+      "Antimitochondrial antibodies (AMA) positive in ~90%",
+      "Liver biopsy — florid duct lesion, granulomas, ductopenia (if needed)",
+    ],
+    keyLabs: [
+      "↑ Alkaline phosphatase and GGT (cholestatic)",
+      "↑ AMA (anti–pyruvate dehydrogenase complex)",
+      "↑ IgM (often)",
+      "↑ Bilirubin in advanced disease",
+    ],
+    associations: [
+      "Sjögren syndrome",
+      "Hashimoto thyroiditis",
+      "Hypercholesterolemia and xanthomas",
+      "Osteoporosis from chronic cholestasis",
+    ],
+    complications: [
+      "Cirrhosis and portal hypertension",
+      "Hepatic osteodystrophy",
+      "Fat-soluble vitamin deficiency (A, D, E, K)",
+      "Hepatocellular carcinoma (less common than in other cirrhoses)",
+    ],
+    distinguishFrom: [
+      "Primary sclerosing cholangitis — young men, IBD, large-duct strictures on MRCP, AMA negative",
+      "Obstructive choledocholithiasis — acute RUQ pain, dilated CBD on imaging, stones",
+      "Drug-induced cholestasis — temporal relation to medication",
+      "Extrahepatic biliary obstruction — dilated extrahepatic ducts on ultrasound/MRCP",
+    ],
+    treatment: [
+      "Ursodeoxycholic acid (UDCA) — slows progression; first-line",
+      "Obeticholic acid if inadequate response to UDCA",
+      "Cholestyramine for pruritus; fat-soluble vitamin replacement",
+      "Liver transplant for end-stage disease",
+    ],
+    boardsPearls: [
+      "PBC: middle-aged woman + pruritus + ↑ alk phos + AMA positive",
+      "AMA = highly sensitive/specific for PBC on boards",
+      "Cholestatic LFTs = ↑ alk phos/GGT disproportionate to transaminases",
+      "vs PSC — PSC has IBD, beads-on-a-string MRCP, AMA negative",
+      "UDCA is disease-modifying therapy for PBC",
+    ],
+    pediatrics:
+      "PBC is essentially an adult disease. Neonatal cholestasis in infants — think biliary atresia, not PBC.",
+  },
+  {
+    id: "primary-sclerosing-cholangitis",
+    name: "Primary Sclerosing Cholangitis",
+    aliases: [
+      "primary sclerosing cholangitis",
+      "psc",
+      "sclerosing cholangitis",
+    ],
+    definition:
+      "Chronic cholestatic liver disease with inflammation and fibrosis of intra- and extrahepatic bile ducts, causing multifocal strictures and progressive biliary cirrhosis.",
+    pathophysiology:
+      "Unknown etiology (likely immune-mediated) → fibroinflammatory stricturing of bile ducts → impaired bile drainage → cholestasis, bacterial cholangitis episodes, cirrhosis; strong association with inflammatory bowel disease.",
+    classicPresentation: [
+      "Young to middle-aged man with chronic cholestatic LFTs",
+      "Often discovered during workup of ulcerative colitis",
+      "Fatigue, pruritus, jaundice in progressive disease",
+      "Recurrent bacterial cholangitis",
+    ],
+    keyFindings: [
+      "MRCP/ERCP — multifocal bile duct strictures and dilations ('beads on a string')",
+      "Cholestatic LFT pattern (↑ alk phos, ↑ GGT)",
+      "p-ANCA positive in many patients (supportive, not diagnostic)",
+    ],
+    keyLabs: [
+      "↑ Alkaline phosphatase and GGT",
+      "↑ Bilirubin with advanced disease",
+      "AMA typically negative (distinguishes from PBC)",
+    ],
+    associations: [
+      "Ulcerative colitis (most common IBD association)",
+      "Cholangiocarcinoma — lifetime risk markedly increased",
+      "Gallbladder cancer",
+      "Colorectal cancer (with concomitant UC)",
+    ],
+    complications: [
+      "Dominant strictures and recurrent cholangitis",
+      "Biliary cirrhosis and portal hypertension",
+      "Cholangiocarcinoma",
+      "Need for liver transplantation",
+    ],
+    distinguishFrom: [
+      "Primary biliary cholangitis — women, AMA+, small duct disease",
+      "Secondary sclerosing cholangitis — ischemia, prior cholangitis, IgG4-related disease",
+      "Choledocholithiasis — filling defect/stone, often acute presentation",
+      "Caroli disease — congenital cystic ductal dilatation",
+    ],
+    treatment: [
+      "UDCA may improve LFTs but does not clearly alter outcomes (unlike PBC)",
+      "ERCP with dilation of dominant strictures for symptomatic obstruction/cholangitis",
+      "Treat underlying UC; surveillance colonoscopy for dysplasia",
+      "Surveillance for cholangiocarcinoma (CA 19-9, imaging)",
+      "Liver transplant for end-stage disease or cholangiocarcinoma (selected cases)",
+    ],
+    boardsPearls: [
+      "PSC + UC — classic association; p-ANCA supportive",
+      "Beads on a string on MRCP = PSC",
+      "↑ cholangiocarcinoma risk — RUQ pain + jaundice + weight loss in PSC patient",
+      "AMA negative; cholestatic LFTs like PBC but different demographics and imaging",
+      "vs PBC — PSC affects large ducts, men + IBD; PBC is AMA+ women",
+    ],
+    pediatrics:
+      "PSC can occur in children with IBD but is less common; neonatal duct disease — consider biliary atresia instead.",
+  },
+  {
+    id: "acute-cholangitis",
+    name: "Acute Cholangitis",
+    aliases: [
+      "acute cholangitis",
+      "ascending cholangitis",
+      "suppurative cholangitis",
+      "bacterial cholangitis",
+      "cholangitis",
+    ],
+    definition:
+      "Bacterial infection of the biliary tree, usually secondary to obstruction (most often choledocholithiasis), presenting with fever, jaundice, and RUQ pain.",
+    pathophysiology:
+      "Biliary obstruction → stagnant bile and ↑ intraductal pressure → bacterial ascent (E. coli, Klebsiella, Enterococcus, anaerobes) from gut → infection and sepsis; requires urgent biliary drainage.",
+    classicPresentation: [
+      "Charcot triad: fever, jaundice, RUQ pain",
+      "Reynolds pentad adds hypotension and altered mental status (severe/septic)",
+      "History of gallstones, prior ERCP, or PSC strictures",
+      "Tender RUQ, may have hepatomegaly",
+    ],
+    keyFindings: [
+      "Dilated common bile duct on ultrasound",
+      "Choledocholithiasis or stricture on imaging",
+      "Fever and systemic inflammatory response",
+    ],
+    keyLabs: [
+      "↑ Alkaline phosphatase, GGT, and conjugated bilirubin (cholestatic/obstructive)",
+      "↑ WBC, blood cultures often positive",
+      "Transaminases may be mildly elevated",
+    ],
+    associations: [
+      "Choledocholithiasis — most common precipitant",
+      "Primary sclerosing cholangitis with strictures",
+      "Malignant biliary obstruction (pancreatic head, cholangiocarcinoma)",
+      "Post-ERCP or biliary instrumentation",
+    ],
+    complications: [
+      "Septic shock and multiorgan failure",
+      "Liver abscess",
+      "Recurrent cholangitis if obstruction not relieved",
+    ],
+    distinguishFrom: [
+      "Acute cholecystitis — gallbladder inflammation; ultrasound gallbladder wall thickening, stones in gallbladder; may have normal bilirubin if no CBD stone",
+      "Hepatitis — predominant transaminase elevation, less cholestatic pattern",
+      "Pancreatitis — epigastric pain radiating to back; may coexist with gallstone passage",
+    ],
+    treatment: [
+      "IV fluids, broad-spectrum antibiotics (piperacillin-tazobactam or ceftriaxone + metronidazole)",
+      "Urgent biliary drainage — ERCP with sphincterotomy and stone extraction or stent",
+      "Percutaneous transhepatic drainage if ERCP not feasible",
+    ],
+    boardsPearls: [
+      "Charcot triad = fever + jaundice + RUQ pain → cholangitis until proven otherwise",
+      "Treat infection AND relieve obstruction (ERCP)",
+      "Most commonly secondary to choledocholithiasis",
+      "vs cholecystitis — cholangitis has jaundice and cholestatic labs from biliary tree infection",
+      "Reynolds pentad = Charcot + hypotension + AMS → severe cholangitis",
+    ],
+    pediatrics:
+      "Ascending cholangitis can complicate choledochal cysts or biliary atresia post-Kasai; same need for antibiotics and drainage.",
+  },
+  {
+    id: "choledocholithiasis",
+    name: "Choledocholithiasis",
+    aliases: [
+      "choledocholithiasis",
+      "cbd stone",
+      "cbd stones",
+      "common bile duct stone",
+      "common bile duct stones",
+      "bile duct stone",
+      "bile duct stones",
+      "choledochal stone",
+    ],
+    definition:
+      "Gallstone(s) lodged in the common bile duct, causing biliary obstruction with cholestatic labs and risk of cholangitis and pancreatitis.",
+    pathophysiology:
+      "Stone migrates from gallbladder through cystic duct into CBD (or forms de novo in CBD) → obstructs bile flow → ↑ conjugated bilirubin and alk phos; sustained obstruction predisposes to ascending cholangitis and triggers pancreatitis if ampulla occluded.",
+    classicPresentation: [
+      "RUQ or epigastric pain with jaundice",
+      "Fluctuating jaundice if stone intermittently impacts ampulla",
+      "History of biliary colic or prior cholecystectomy",
+      "May present with cholangitis (fever) or pancreatitis (epigastric pain radiating to back)",
+    ],
+    keyFindings: [
+      "Dilated common bile duct on ultrasound (>6–8 mm, age-dependent)",
+      "Stone in distal CBD on ultrasound, MRCP, or ERCP",
+      "Cholestatic LFT pattern",
+    ],
+    keyLabs: [
+      "↑ Conjugated (direct) bilirubin",
+      "↑ Alkaline phosphatase and GGT",
+      "↑ Amylase/lipase if biliary pancreatitis",
+    ],
+    associations: [
+      "Gallstones (cholelithiasis)",
+      "Acute cholangitis",
+      "Acute biliary pancreatitis",
+      "Ascending infection if obstruction persists",
+    ],
+    complications: [
+      "Acute cholangitis and sepsis",
+      "Acute pancreatitis",
+      "Secondary biliary cirrhosis if chronic obstruction",
+    ],
+    distinguishFrom: [
+      "Choledochal cyst — congenital ductal dilatation, often pediatric",
+      "Pancreatic head tumor — painless jaundice, weight loss, dilated ducts without stone",
+      "Cholecystitis without CBD stone — gallbladder disease only",
+      "Gilbert syndrome — unconjugated hyperbilirubinemia, no duct dilation",
+    ],
+    treatment: [
+      "ERCP with sphincterotomy and stone extraction — definitive for CBD stones",
+      "Cholecystectomy after ERCP for gallstone source (same admission when stable)",
+      "Antibiotics if cholangitis present",
+    ],
+    boardsPearls: [
+      "↑ alk phos + ↑ direct bilirubin + dilated CBD + stone → choledocholithiasis",
+      "Charcot triad suggests cholangitis from obstructing stone",
+      "Gallstone pancreatitis — stone passes through ampulla; ERCP if cholangitis or persistent obstruction",
+      "vs pancreatic cancer — painless progressive jaundice, no stone on MRCP",
+      "ERCP is therapeutic (and diagnostic) for CBD stones",
+    ],
+    pediatrics:
+      "Less common than in adults; consider choledochal cyst if young child with duct stones and dilatation. Pigment stones in hemolytic disorders.",
+  },
+  {
+    id: "biliary-atresia",
+    name: "Biliary Atresia",
+    aliases: [
+      "biliary atresia",
+      "extrahepatic biliary atresia",
+      "neonatal biliary atresia",
+    ],
+    definition:
+      "Neonatal obliteration or fibrosis of extrahepatic bile ducts causing progressive cholestatic jaundice — the most common surgical cause of neonatal jaundice beyond the first 2 weeks of life.",
+    pathophysiology:
+      "Inflammatory destruction and fibrosis of extrahepatic bile ducts → bile cannot reach intestine → conjugated hyperbilirubinemia, acholic stools, hepatomegaly; progressive intrahepatic cholestasis and cirrhosis if untreated.",
+    classicPresentation: [
+      "Persistent conjugated (direct) hyperbilirubinemia after 2 weeks of life",
+      "Acholic (pale/clay-colored) stools and dark urine",
+      "Hepatomegaly, failure to thrive",
+      "Previously healthy-appearing term infant",
+    ],
+    keyFindings: [
+      "Conjugated hyperbilirubinemia — always pathologic in neonate",
+      "Acholic stools on stool color card",
+      "Hepatobiliary scan (HIDA) — nonexcretion into intestine",
+      "Intraoperative cholangiogram confirms absent patent extrahepatic ducts",
+    ],
+    keyLabs: [
+      "↑ Direct (conjugated) bilirubin",
+      "↑ GGT and alk phos",
+      "Normal or mildly ↑ transaminases early",
+    ],
+    associations: [
+      "Kasai portoenterostomy — surgical attempt to restore bile flow",
+      "Later cirrhosis and need for liver transplant if Kasai fails or late presentation",
+      "Distinguish from neonatal hepatitis causes",
+    ],
+    complications: [
+      "Biliary cirrhosis",
+      "Portal hypertension",
+      "Malnutrition and fat-soluble vitamin deficiency",
+      "Cholangitis after Kasai procedure",
+    ],
+    distinguishFrom: [
+      "Physiologic neonatal jaundice — unconjugated, resolves by 2 weeks",
+      "Breast milk jaundice — unconjugated, prolonged but not cholestatic",
+      "Neonatal hepatitis — infectious or metabolic; may have similar cholestasis",
+      "Choledochal cyst — cystic ductal dilatation on imaging",
+    ],
+    treatment: [
+      "Kasai portoenterostomy before 60 days of life for best outcomes",
+      "Fat-soluble vitamins, nutritional support",
+      "Liver transplant if bile drainage inadequate",
+      "Treat cholangitis episodes with antibiotics",
+    ],
+    boardsPearls: [
+      "Conjugated hyperbilirubinemia + acholic stools in neonate → biliary atresia until proven otherwise",
+      "Kasai before 8 weeks (ideally <60 days) improves native liver survival",
+      "vs physiologic jaundice — physiologic is unconjugated and mild",
+      "Newborn screen and TORCH workup part of neonatal cholestasis differential",
+      "Pale stools are red flag for obstructive cholestasis in infant",
+    ],
+    pediatrics:
+      "This is a core pediatric diagnosis — any infant jaundiced >2 weeks needs fractionated bilirubin. Biliary atresia requires urgent surgical referral; delay worsens prognosis.",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

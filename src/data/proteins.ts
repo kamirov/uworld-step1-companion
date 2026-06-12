@@ -296,7 +296,13 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen",
     name: "Collagen",
-    aliases: ["collagen", "collagens"],
+    aliases: [
+      "collagen",
+      "collagens",
+      "collagen types",
+      "collagen fibrils",
+      "fibrillar collagen",
+    ],
     gene: "COL gene family (e.g., COL1A1, COL2A1, COL3A1, COL4A)",
     location:
       "Extracellular matrix of bone, skin, cartilage, blood vessels, basement membranes, and most connective tissues",
@@ -311,7 +317,7 @@ export const PROTEINS: ProteinEntry[] = [
     ],
     boardsPearls: [
       "Synthesis requires vitamin C for proline/lysine hydroxylation — scurvy = defective collagen",
-      "Type I — bone/skin/tendon; Type II — cartilage; Type III — reticulin/vessels; Type IV — basement membrane",
+      "Collagen types: I — bone/skin/tendon (OI); II — cartilage (COL2A1); III — vessels/reticulin (vEDS); IV — basement membrane (Alport, Goodpasture)",
       "Goodpasture — antibodies against type IV collagen in GBM and alveolar basement membrane",
       "Alport — X-linked COL4A5 mutation → hematuria, sensorineural hearing loss, ocular changes",
       "Osteogenesis imperfecta — type I collagen; blue sclerae, fractures, hearing loss",
@@ -326,7 +332,13 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen-type-1",
     name: "Collagen type I",
-    aliases: ["collagen type i", "collagen type 1", "type i collagen"],
+    aliases: [
+      "collagen type i",
+      "collagen type 1",
+      "type i collagen",
+      "type 1 collagen",
+      "type i collagen fibrils",
+    ],
     gene: "COL1A1 / COL1A2",
     location: "Bone, skin, tendons, dentin",
     function:
@@ -343,6 +355,116 @@ export const PROTEINS: ProteinEntry[] = [
     distinguishFrom: [
       "Fibrillin-1 — Marfan, tall stature, aortic root — not brittle bones",
       "Dystrophin — muscle weakness, not primary bone disease",
+      "Type II collagen — cartilage, not bone matrix",
+    ],
+  },
+  {
+    id: "collagen-type-2",
+    name: "Collagen type II",
+    aliases: [
+      "collagen type ii",
+      "collagen type 2",
+      "type ii collagen",
+      "type 2 collagen",
+      "cartilage collagen",
+      "hyaline cartilage collagen",
+    ],
+    gene: "COL2A1",
+    location:
+      "Hyaline cartilage (articular surfaces, costal cartilage), intervertebral disc nucleus pulposus, vitreous humor of the eye",
+    function:
+      "Fibrillar collagen forming the structural framework of hyaline cartilage — resists compressive forces in joints; type II homotrimer (three α1[II] chains) distinct from type I heterotrimer.",
+    mutationCauses: [
+      "Achondrogenesis type II — severe lethal dwarfism from COL2A1 defects",
+      "Stickler syndrome — COL2A1 variants → orofacial clefting, myopia/retinal detachment, hearing loss, joint hypermobility",
+      "Spondyloepiphyseal dysplasia — short stature, spinal involvement",
+      "Degeneration in osteoarthritis — cartilage matrix breakdown (acquired, not germline mutation vignette)",
+    ],
+    boardsPearls: [
+      "Type II = cartilage; Type I = bone/skin/tendon — do not confuse on boards",
+      "Articular hyaline cartilage is type II collagen + proteoglycans",
+      "RA and other inflammatory arthritides destroy cartilage rich in type II collagen",
+      "Stickler syndrome — COL2A1; vision and hearing problems + joint issues",
+      "vs type I — OI affects bone (type I collagen), not primary cartilage collagen",
+      "vs type IV — basement membrane network collagen, not fibrillar cartilage matrix",
+    ],
+    distinguishFrom: [
+      "Type I collagen — bone, skin, tendon; osteogenesis imperfecta",
+      "Type IV collagen — basement membrane (GBM, alveolar BM), not cartilage fibrils",
+      "Aggrecan/proteoglycans — compressive resistance in cartilage ECM alongside type II fibrils",
+      "Fibrillin-1 — microfibrils; Marfan syndrome",
+    ],
+  },
+  {
+    id: "collagen-type-3",
+    name: "Collagen type III",
+    aliases: [
+      "collagen type iii",
+      "collagen type 3",
+      "type iii collagen",
+      "type 3 collagen",
+      "reticulin",
+      "reticulin fibers",
+    ],
+    gene: "COL3A1",
+    location:
+      "Reticular fibers of lymphoid organs, skin, uterus, and especially walls of hollow organs and blood vessels (often alongside type I)",
+    function:
+      "Fibrillar collagen providing distensibility and structural support in expandable tissues and vascular walls; forms thin reticulin fibers (silver stain) supporting parenchymal cells in liver, spleen, lymph nodes.",
+    mutationCauses: [
+      "Vascular Ehlers-Danlos syndrome (vEDS) — COL3A1 mutations → fragile arteries, bowel, and uterus with rupture risk",
+      "Arterial dissection, aneurysm, and spontaneous organ perforation at young age",
+      "Characteristic facial features (thin nose/lips, small chin) in vEDS",
+    ],
+    boardsPearls: [
+      "Type III — vessels and reticulin; vascular EDS = COL3A1 deficiency",
+      "vEDS: arterial or bowel rupture — avoid invasive procedures/colonoscopy unless essential",
+      "Reticulin fibers (liver/spleen/lymph node scaffolding) = type III collagen",
+      "vs classic/hypermobile EDS — different genes; vEDS is life-threatening vascular type",
+      "vs Marfan — fibrillin-1; aortic root dilation, not COL3A1 vascular fragility pattern",
+      "vs type I — bone fragility in OI; type III is vessel/organ rupture emphasis",
+    ],
+    distinguishFrom: [
+      "Type I collagen — osteogenesis imperfecta, bone/skin/tendon strength",
+      "Fibrillin-1 — Marfan syndrome; tall stature, lens dislocation, aortic root dilation",
+      "Elastin — elastic artery recoil; Williams syndrome (ELN deletion)",
+      "Type IV collagen — basement membranes, not reticulin fibrils in stroma",
+    ],
+  },
+  {
+    id: "collagen-type-4",
+    name: "Collagen type IV",
+    aliases: [
+      "collagen type iv",
+      "collagen type 4",
+      "type iv collagen",
+      "type 4 collagen",
+      "basement membrane collagen",
+      "glomerular basement membrane collagen",
+    ],
+    gene: "COL4A3, COL4A4, COL4A5 (α chains assemble into network)",
+    location:
+      "Basement membranes — renal glomerular basement membrane (GBM), alveolar basement membrane, lens capsule, cochlea",
+    function:
+      "Network-forming (nonfibrillar) collagen creating the basement membrane scaffold via α1–α6(IV) chains in a chicken-wire network; critical filter barrier in kidney and structural support in lung and inner ear.",
+    mutationCauses: [
+      "Alport syndrome — COL4A5 (X-linked most common) or COL4A3/COL4A4 → progressive nephritis, sensorineural hearing loss, anterior lenticonus",
+      "Thin basement membrane disease — benign familial hematuria (COL4A mutations, milder)",
+      "Goodpasture syndrome target — autoantibodies against α3(IV) NC1 domain in GBM and lung BM → pulmonary hemorrhage + RPGN",
+    ],
+    boardsPearls: [
+      "Type IV = basement membrane; Goodpasture attacks α3(IV) in kidney and lung",
+      "Alport: hematuria → proteinuria → renal failure + hearing loss + eye changes (X-linked COL4A5)",
+      "Goodpasture: linear IgG deposition on GBM biopsy; plasmapheresis + immunosuppression",
+      "vs type I — fibrillar bone collagen; not GBM target",
+      "vs ANCA vasculitis — pauci-immune crescents, not anti-GBM linear staining",
+      "Alport GBM shows basket-weave splitting on EM",
+    ],
+    distinguishFrom: [
+      "Type I collagen — fibrillar ECM of bone and tendon",
+      "Type II collagen — hyaline cartilage matrix",
+      "Laminin/nidogen — other basement membrane components alongside type IV network",
+      "Anti-dsDNA lupus nephritis — immune complex granular deposits, not linear anti-GBM",
     ],
   },
   {
