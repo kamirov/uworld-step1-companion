@@ -42,6 +42,9 @@ import treponemaPallidum from "../media/images/microbiology/treponema-pallidum.j
 import toxoplasmaGondii from "../media/images/microbiology/toxoplasma-gondii.jpg?url";
 import varicellaZosterVirus from "../media/images/microbiology/varicella-zoster-virus.jpg?url";
 import measlesVirus from "../media/images/microbiology/measles-virus.jpg?url";
+import mumpsVirus from "../media/images/microbiology/mumps-virus.jpg?url";
+import rubellaVirus from "../media/images/microbiology/rubella-virus.jpg?url";
+import sporothrixSchenckii from "../media/images/microbiology/sporothrix-schenckii.jpg?url";
 
 export type MicrobiologyImageId = MicrobiologyEntry["id"];
 
@@ -80,6 +83,9 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "herpes-simplex-virus": extensionAssetUrl(herpesSimplexVirus),
     "varicella-zoster-virus": extensionAssetUrl(varicellaZosterVirus),
     "measles-virus": extensionAssetUrl(measlesVirus),
+    "mumps-virus": extensionAssetUrl(mumpsVirus),
+    "rubella-virus": extensionAssetUrl(rubellaVirus),
+    "sporothrix-schenckii": extensionAssetUrl(sporothrixSchenckii),
     "toxoplasma-gondii": extensionAssetUrl(toxoplasmaGondii),
     "borrelia-burgdorferi": extensionAssetUrl(borreliaBurgdorferi),
     "aspergillus-fumigatus": extensionAssetUrl(aspergillusFumigatus),
@@ -210,6 +216,18 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #8429",
     url: "https://phil.cdc.gov/Details.aspx?pid=8429",
   },
+  "mumps-virus": {
+    label: "CDC PHIL #8758",
+    url: "https://phil.cdc.gov/Details.aspx?pid=8758",
+  },
+  "rubella-virus": {
+    label: "CDC PHIL #10221",
+    url: "https://phil.cdc.gov/Details.aspx?pid=10221",
+  },
+  "sporothrix-schenckii": {
+    label: "CDC PHIL #3940",
+    url: "https://phil.cdc.gov/Details.aspx?pid=3940",
+  },
   "toxoplasma-gondii": {
     label: "CDC DPDx Parasite Image Library",
     url: "https://commons.wikimedia.org/wiki/File:Toxoplasma_gondii_tachy.jpg",
@@ -307,6 +325,12 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
   "varicella-zoster-virus": "Electron micrograph of varicella-zoster virion",
   "measles-virus":
     "TEM thin section of a single measles morbillivirus virion (paramyxovirus)",
+  "mumps-virus":
+    "Negative-stain TEM of mumps rubulavirus (paramyxovirus)",
+  "rubella-virus":
+    "Negative-stain TEM of rubella virions budding from host cell surface",
+  "sporothrix-schenckii":
+    "Lymphocutaneous sporotrichosis — ascending nodular lesions on the arm (Sporothrix schenckii)",
   "toxoplasma-gondii": "Giemsa stain: crescent-shaped tachyzoites",
   "borrelia-burgdorferi":
     "Dark-field microscopy: corkscrew spirochetes (400×)",

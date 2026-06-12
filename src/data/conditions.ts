@@ -6756,6 +6756,73 @@ export const CONDITIONS: ConditionEntry[] = [
     pediatrics:
       "Leigh syndrome and infantile mitochondrial myopathies present with hypotonia, failure to thrive, and lactic acidosis — newborn metabolic screen may not detect; muscle biopsy and genetics when suspected. Kearns-Sayre requires cardiac monitoring for conduction block in children/adolescents.",
   },
+  {
+    id: "sporotrichosis",
+    name: "Sporotrichosis",
+    aliases: [
+      "sporotrichosis",
+      "sporotricosis",
+      "sporotrichosis infection",
+      "lymphocutaneous sporotrichosis",
+      "rose gardener's disease",
+      "rose gardeners disease",
+      "rose handler's disease",
+      "rose handlers disease",
+    ],
+    definition:
+      "Subacute fungal infection (Sporothrix schenckii) acquired by traumatic inoculation of contaminated organic matter — classically presents as lymphocutaneous disease with nodular lymphangitis ascending from the inoculation site.",
+    pathophysiology:
+      "Conidia introduced through skin break → local granulomatous inflammation → organism spreads proximally along lymphatic channels → chain of nodular lesions (sporotrichoid pattern); dimorphic conversion to yeast in tissue.",
+    classicPresentation: [
+      "Puncture or scratch while gardening, handling roses, sphagnum moss, or hay",
+      "Painless papule or nodule at inoculation site (often hand or arm)",
+      "Days to weeks later: ascending subcutaneous nodules along lymphatic drainage",
+      "Nodules may ulcerate; mild regional lymphadenopathy; systemic symptoms uncommon in localized disease",
+    ],
+    keyFindings: [
+      "Nodular lymphangitis — linear array of nodules along extremity",
+      "No rapid spreading cellulitis border; subacute course",
+      "Disseminated: multiple cutaneous lesions, joint involvement, ocular sporotrichosis (rare)",
+    ],
+    keyLabs: [
+      "Fungal culture of biopsy/aspirate — Sporothrix schenckii (definitive)",
+      "Biopsy — granulomatous inflammation; cigar-shaped yeast; asteroid bodies",
+      "GMS or PAS stain highlights fungi",
+    ],
+    associations: [
+      "Sporothrix schenckii — worldwide; soil and plant saprophyte",
+      "Sporothrix brasiliensis — cat-transmitted epidemics (Brazil)",
+      "Alcoholism, COPD, HIV, transplant — disseminated/pulmonary forms",
+    ],
+    complications: [
+      "Disseminated cutaneous sporotrichosis",
+      "Osteoarticular infection",
+      "Pulmonary sporotrichosis (inhalation exposure)",
+      "Meningitis (rare, disseminated)",
+    ],
+    distinguishFrom: [
+      "Nocardiosis — nodular lymphangitis; acid-fast branching rods; sulfonamide treatment",
+      "Mycobacterium marinum — aquarium/fish tank exposure; granulomatous nodules",
+      "Bacterial cellulitis — acute, warm, erythematous, not nodular lymphatic chain",
+      "Cutaneous leishmaniasis — travel history; amastigotes on biopsy",
+      "Cat-scratch disease — Bartonella; papule then regional lymphadenopathy, not linear nodules",
+    ],
+    treatment: [
+      "Itraconazole — first-line for lymphocutaneous and cutaneous disease",
+      "Saturated potassium iodide (SSKI) — traditional oral therapy; monitor thyroid with prolonged use",
+      "Liposomal amphotericin B for severe disseminated or pulmonary disease, then step down to itraconazole",
+      "Prolonged antifungal course until clinical resolution",
+    ],
+    boardsPearls: [
+      "Rose thorn + nodular lymphangitis = sporotrichosis classic vignette",
+      "SSKI is the oral potassium iodide answer on many boards stems",
+      "Sporotrichoid pattern = spread along lymphatics — pathognomonic pattern, not pathognomonic organism (Nocardia too)",
+      "Culture confirms; cigar-shaped yeast in tissue",
+      "vs cellulitis — subacute nodules in a line, not acute diffuse erythema",
+    ],
+    pediatrics:
+      "Itraconazole preferred in children over long-term SSKI; thorn or outdoor trauma in gardeners' children; cat-associated S. brasiliensis outbreaks relevant in endemic regions.",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

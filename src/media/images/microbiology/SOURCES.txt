@@ -301,3 +301,23 @@ measles-virus.jpg
   License: Public domain (U.S. federal government)
   Page: https://phil.cdc.gov/Details.aspx?pid=8429
   Commons: https://commons.wikimedia.org/wiki/File:Measles_virus.JPG
+
+mumps-virus.jpg
+  Source: CDC PHIL #8758
+  Description: Negative-stained TEM of mumps virus
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=8758
+  Commons: https://commons.wikimedia.org/wiki/File:Mumps_virus,_negative_stained_TEM_8758_lores.jpg
+
+rubella-virus.jpg
+  Source: CDC PHIL #10221
+  Description: Negative-stained TEM of rubella virions budding from host cell
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=10221
+  Commons: https://commons.wikimedia.org/wiki/File:Rubella_virus_10221_lores.jpg
+
+sporothrix-schenckii.jpg
+  Source: CDC PHIL #3940
+  Description: Lymphocutaneous sporotrichosis with ascending arm lesions
+  License: Public domain (U.S. federal government)
+  Page: https://phil.cdc.gov/Details.aspx?pid=3940

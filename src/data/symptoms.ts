@@ -1604,6 +1604,45 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Peripheral nerve lesion — segmental deficit, LMN pattern (fasciculations, atrophy), not hemibody UMN pattern",
     ],
   },
+  {
+    id: "nodular-lymphangitis",
+    name: "Nodular Lymphangitis",
+    aliases: [
+      "nodular lymphangitis",
+      "nodular lymphangitis pattern",
+      "sporotrichoid spread",
+      "sporotrichoid pattern",
+      "sporotrichoid lymphangitis",
+      "lymphocutaneous spread",
+      "ascending nodular lesions",
+      "linear nodular lesions along arm",
+    ],
+    definition:
+      "Subacute chain of erythematous to violaceous subcutaneous nodules along the course of lymphatic drainage from a distal inoculation site — reflects lymphatic spread of infection or inflammation (sporotrichoid pattern).",
+    mechanism:
+      "Organism introduced through skin break at distal site (thorn, scratch) → infects regional lymphatics → granulomatous nodules form sequentially along proximal lymphatic channels toward regional nodes.",
+    thinkOf: [
+      "Sporotrichosis (Sporothrix schenckii) — rose thorn, sphagnum moss, gardening; classic boards cause",
+      "Nocardiosis — soil/trauma; weakly acid-fast filaments; immunocompromised",
+      "Mycobacterium marinum — fish tank/aquarium exposure; granulomatous hand lesions",
+      "Leishmania braziliensis — New World cutaneous leishmaniasis with lymphatic spread",
+      "Other rare fungi or atypical mycobacteria",
+    ],
+    pairWith: [
+      "Gardening/rose thorn + arm nodules in a line → sporotrichosis",
+      "SSKI or itraconazole response → supports sporotrichosis treatment",
+      "Acid-fast branching filaments on stain → Nocardia over Sporothrix",
+      "Aquarium worker + hand nodules → M. marinum",
+      "Culture grows cigar-shaped yeast → Sporothrix schenckii",
+    ],
+    distinguishFrom: [
+      "Cellulitis — diffuse acute erythema and warmth without discrete nodular lymphatic chain",
+      "Lymphangitis (acute bacterial) — tender red streaks from wound (Streptococcus); acute not nodular",
+      "Lymphadenopathy alone — enlarged nodes without intervening subcutaneous nodules along tract",
+      "Dermatophyte ringworm — annular scaly plaque, not lymphatic nodule chain",
+      "Thrombophlebitis — follows vein not lymphatic; cord-like tender vein",
+    ],
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));
