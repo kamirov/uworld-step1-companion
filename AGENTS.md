@@ -22,6 +22,10 @@ When new entries are specified for data, if it makes sense to establish a new da
 
 Where relevant, include a note on pediatrics, e.g. how something changes if the patient is pediatric
 
+## Media
+
+When adding data, look online for any relevant media for the data that we can attach
+
 ## Attributions
 
 Any media fetched should have their URLs in SOURCES.txt. Any media used should show an attribution somewhere
