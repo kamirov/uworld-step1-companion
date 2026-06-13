@@ -286,6 +286,41 @@ export const PROCEDURES: ProcedureEntry[] = [
     pediatrics:
       "Same CSF interpretation principles; neonatal meningitis requires low threshold for LP in febrile or ill infant. CT indications similar; do not withhold antibiotics while arranging LP in suspected bacterial meningitis.",
   },
+  {
+    id: "laparotomy",
+    name: "Laparotomy",
+    etymology: "Greek lapara = flank/abdomen + tome = cutting",
+    aliases: ["laparotomy", "exploratory laparotomy", "ex lap", "celiotomy"],
+    definition:
+      "Open surgical incision into the abdominal cavity for diagnosis, source control, repair, or resection.",
+    indications: [
+      "Peritonitis or acute abdomen with suspected perforation/ischemia",
+      "Hemodynamic instability after abdominal trauma",
+      "Bowel obstruction with strangulation/perforation concern",
+      "Source control for intra-abdominal sepsis",
+      "Open access when laparoscopy is unsafe or inadequate",
+    ],
+    keyMeasurements: [
+      "Exam: rebound/guarding, rigidity, peritonitis",
+      "Imaging: pneumoperitoneum, free fluid, bowel ischemia/perforation",
+      "Hemodynamics and lactate guide urgency",
+    ],
+    complications: [
+      "Bleeding, infection, wound dehiscence",
+      "Ileus",
+      "Adhesions causing future small bowel obstruction",
+      "Incisional hernia",
+      "Postoperative pneumoperitoneum can persist briefly",
+    ],
+    boardsPearls: [
+      "Unstable abdominal trauma patient + positive FAST → exploratory laparotomy",
+      "Free air under diaphragm + peritonitis → surgical emergency",
+      "Adhesions after prior laparotomy are common cause of small bowel obstruction",
+      "Laparoscopy = minimally invasive; laparotomy = open incision",
+    ],
+    pediatrics:
+      "Pediatric indications include perforated appendicitis, volvulus/malrotation, NEC perforation, and trauma; decision is weight/physiology and diagnosis dependent.",
+  },
 ];
 
 const procedureById = new Map(PROCEDURES.map((entry) => [entry.id, entry]));

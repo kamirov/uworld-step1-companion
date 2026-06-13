@@ -1076,6 +1076,178 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     pediatrics:
       "CAH virilized female newborn — ↑ androgens from 21-hydroxylase deficiency; 5α-reductase deficiency presents with ambiguous genitalia in 46,XY infants who virilize at puberty.",
   },
+  {
+    id: "calcitonin",
+    name: "Calcitonin",
+    etymology: "Latin calx = calcium + Greek tonos = tension/regulation + -in = peptide",
+    aliases: ["calcitonin", "thyrocalcitonin"],
+    type: "Peptide hormone",
+    source: "Parafollicular C cells of thyroid",
+    receptor: "Calcitonin receptor (Gs-coupled) on osteoclasts and kidney",
+    function:
+      "Lowers serum calcium by inhibiting osteoclast-mediated bone resorption; minor physiologic role in adult calcium homeostasis.",
+    clinicalRelevance: [
+      "Tumor marker for medullary thyroid carcinoma",
+      "Elevated in MEN2-associated C-cell tumors",
+      "Salmon calcitonin can treat hypercalcemia/Paget disease but is less common now",
+    ],
+    boardsPearls: [
+      "Medullary thyroid carcinoma from parafollicular C cells secretes calcitonin",
+      "MEN2A/2B: RET mutation + medullary thyroid carcinoma",
+      "PTH and vitamin D dominate calcium regulation; calcitonin is a board tumor marker",
+    ],
+    distinguishFrom: [
+      "PTH — raises calcium; from parathyroid chief cells",
+      "Calcitriol — active vitamin D; increases intestinal calcium absorption",
+      "Thyroglobulin — follicular thyroid marker, not C-cell marker",
+    ],
+  },
+  {
+    id: "bradykinin",
+    name: "Bradykinin",
+    etymology: "Greek bradys = slow + kinein = to move",
+    aliases: ["bradykinin", "bradykin", "kinin"],
+    type: "Peptide hormone",
+    source: "Kallikrein cleavage of high-molecular-weight kininogen",
+    receptor: "B2 receptor (constitutive) and B1 receptor (inflammation)",
+    function:
+      "Vasoactive peptide causing vasodilation, increased vascular permeability, pain, and bronchoconstriction.",
+    clinicalRelevance: [
+      "ACE degrades bradykinin; ACE inhibitors increase bradykinin → cough/angioedema",
+      "C1 esterase inhibitor deficiency → excess bradykinin → hereditary angioedema",
+      "Contributes to pain and swelling in inflammation",
+    ],
+    boardsPearls: [
+      "ACE = kininase II; ACE inhibitors raise bradykinin",
+      "Hereditary angioedema is bradykinin-mediated, not histamine-mediated",
+      "No urticaria in classic bradykinin angioedema",
+    ],
+    distinguishFrom: [
+      "Histamine — mast cell mediator with urticaria/pruritus",
+      "Angiotensin II — vasoconstrictor; ACE generates it while degrading bradykinin",
+    ],
+  },
+  {
+    id: "il-3",
+    name: "Interleukin-3 (IL-3)",
+    etymology: "interleukin = between leukocytes + 3 = cytokine number",
+    aliases: ["il-3", "il 3", "interleukin-3", "interleukin 3"],
+    type: "Cytokine",
+    source: "Activated T cells and mast cells",
+    receptor: "IL-3 receptor (JAK-STAT)",
+    function:
+      "Stimulates proliferation and differentiation of early hematopoietic progenitors, especially myeloid lineages.",
+    clinicalRelevance: [
+      "Links T-cell activation to marrow myelopoiesis",
+      "Less clinically tested than IL-5/G-CSF but high-yield as hematopoietic growth signal",
+    ],
+    boardsPearls: [
+      "IL-3 supports bone marrow progenitor growth",
+      "Contrast with GM-CSF (granulocyte/macrophage) and IL-5 (eosinophils)",
+    ],
+  },
+  {
+    id: "il-10",
+    name: "Interleukin-10 (IL-10)",
+    etymology: "interleukin = between leukocytes + 10 = cytokine number",
+    aliases: ["il-10", "il 10", "interleukin-10", "interleukin 10"],
+    type: "Cytokine",
+    source: "Treg cells, Th2 cells, macrophages, dendritic cells",
+    receptor: "IL-10 receptor (JAK-STAT)",
+    function:
+      "Anti-inflammatory cytokine that suppresses macrophage and dendritic cell cytokine production and antigen presentation.",
+    clinicalRelevance: [
+      "Limits Th1/macrophage inflammation",
+      "Treg-mediated immune tolerance uses IL-10 and TGF-β",
+    ],
+    boardsPearls: [
+      "IL-10 inhibits macrophages and Th1 responses",
+      "Anti-inflammatory pair: IL-10 and TGF-β",
+    ],
+    distinguishFrom: ["IL-12 — promotes Th1 and IFN-γ", "IFN-γ — activates macrophages"],
+  },
+  {
+    id: "il-12",
+    name: "Interleukin-12 (IL-12)",
+    etymology: "interleukin = between leukocytes + 12 = cytokine number",
+    aliases: ["il-12", "il 12", "interleukin-12", "interleukin 12"],
+    type: "Cytokine",
+    source: "Macrophages and dendritic cells",
+    receptor: "IL-12 receptor (JAK-STAT)",
+    function:
+      "Promotes Th1 differentiation and stimulates NK/T cells to produce IFN-γ, enhancing intracellular pathogen killing.",
+    clinicalRelevance: [
+      "IL-12 receptor deficiency → mycobacterial and Salmonella susceptibility",
+      "Key bridge from innate APCs to Th1 immunity",
+    ],
+    boardsPearls: [
+      "IL-12 → Th1 → IFN-γ → macrophage activation",
+      "Defects in IL-12/IFN-γ axis → disseminated atypical mycobacteria",
+    ],
+    distinguishFrom: ["IL-10 — inhibits macrophages/Th1", "IL-4 — promotes Th2 and IgE"],
+  },
+  {
+    id: "ifn-gamma",
+    name: "Interferon-gamma (IFN-γ)",
+    etymology: "interferon = interferes with viral replication + gamma = third classic class",
+    aliases: ["ifn-gamma", "ifn gamma", "ifn-γ", "interferon-gamma", "interferon gamma"],
+    type: "Cytokine",
+    source: "Th1 cells, CD8 T cells, NK cells",
+    receptor: "IFN-γ receptor (JAK1/JAK2-STAT1)",
+    function:
+      "Activates macrophages, increases MHC I/II expression, promotes Th1 responses, and supports IgG class switching.",
+    clinicalRelevance: [
+      "Defective IFN-γ/IL-12 axis → disseminated mycobacterial infection",
+      "IGRA TB tests measure IFN-γ release after TB antigen stimulation",
+      "Therapeutic IFN-γ can reduce infections in chronic granulomatous disease",
+    ],
+    boardsPearls: [
+      "Th1 signature cytokine = IFN-γ",
+      "IFN-γ activates macrophages for intracellular pathogen killing",
+      "IL-12 induces IFN-γ; IL-10 suppresses this axis",
+    ],
+    distinguishFrom: ["Type I interferons (IFN-α/β) — antiviral state", "IL-4 — Th2 cytokine"],
+  },
+  {
+    id: "interferons",
+    name: "Interferons",
+    etymology: "interfere = block viral replication + -on = substance suffix",
+    aliases: ["interferon", "interferons", "ifn", "type i interferon", "ifn-alpha", "ifn-beta"],
+    type: "Cytokine",
+    source: "Virus-infected cells, plasmacytoid dendritic cells, T cells/NK cells depending on subtype",
+    receptor: "IFNAR for type I IFNs; IFNGR for IFN-γ",
+    function:
+      "Cytokine family that induces antiviral state, increases antigen presentation, and coordinates innate/adaptive immunity.",
+    clinicalRelevance: [
+      "IFN-α historically used for hepatitis C and melanoma",
+      "IFN-β used in multiple sclerosis",
+      "IFN-γ is Th1/macrophage activating",
+    ],
+    boardsPearls: [
+      "Type I IFNs (α/β) are antiviral and upregulate MHC I",
+      "IFN-γ is type II interferon and activates macrophages",
+      "Viral immune evasion often blocks interferon signaling",
+    ],
+  },
+  {
+    id: "gm-csf",
+    name: "GM-CSF",
+    etymology: "GM = granulocyte-macrophage + CSF = colony-stimulating factor",
+    aliases: ["gm-csf", "gm csf", "granulocyte macrophage colony stimulating factor", "sargramostim"],
+    type: "Growth factor",
+    source: "T cells, macrophages, endothelial cells, fibroblasts",
+    receptor: "GM-CSF receptor (JAK2-STAT5)",
+    function:
+      "Stimulates granulocyte and macrophage progenitor proliferation and activation.",
+    clinicalRelevance: [
+      "Sargramostim can aid marrow recovery after chemotherapy/transplant",
+      "Autoantibodies to GM-CSF associated with pulmonary alveolar proteinosis",
+    ],
+    boardsPearls: [
+      "GM-CSF grows granulocyte/macrophage colonies",
+      "G-CSF is neutrophil-focused; GM-CSF broader myeloid stimulation",
+    ],
+  },
 ];
 
 const signalingById = new Map(

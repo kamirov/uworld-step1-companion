@@ -207,6 +207,38 @@ export const CELLS: CellEntry[] = [
       "Food allergy anaphylaxis common in children — mast cell/IgE mediated; epinephrine auto-injector and action plan essential.",
   },
   {
+    id: "natural-killer-cell",
+    name: "Natural Killer Cell",
+    etymology: "natural = innate/non-sensitized + killer = cytotoxic cell",
+    aliases: ["natural killer cell", "natural killer cells", "nk cell", "nk cells"],
+    definition:
+      "Innate lymphocyte that kills virus-infected and tumor cells without prior antigen sensitization, especially cells with low MHC I.",
+    characteristics: [
+      "Surface markers: CD16+ CD56+",
+      "Kills via perforin/granzyme-induced apoptosis",
+      "ADCC through CD16 binding IgG-coated target cells",
+      "Activated by IL-12 and IFN-α/β; produces IFN-γ",
+    ],
+    clinicalRelevance: [
+      "Defense against viruses and tumors",
+      "MHC I downregulation triggers NK killing",
+      "Important in antibody-dependent cellular cytotoxicity",
+    ],
+    boardsPearls: [
+      "NK cells kill cells with decreased MHC I",
+      "CD16 mediates ADCC; CD56 is NK marker",
+      "Perforin creates pores; granzymes trigger apoptosis",
+      "IL-12 from macrophages/DCs stimulates NK cells to secrete IFN-γ",
+    ],
+    distinguishFrom: [
+      "CD8 T cell — antigen-specific, MHC I-restricted adaptive cytotoxicity",
+      "Macrophage — phagocyte, not perforin/granzyme cytotoxic lymphocyte",
+      "B cell — antibody production, not innate killing",
+    ],
+    pediatrics:
+      "Rare NK-cell defects cause severe/recurrent herpesvirus infections; congenital hemophagocytic lymphohistiocytosis can involve impaired cytotoxic granule function.",
+  },
+  {
     id: "lymphocyte",
     name: "Lymphocyte",
     etymology: "Latin lympha = clear fluid + Greek kytos = cell",

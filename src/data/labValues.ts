@@ -2433,6 +2433,94 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Galactorrhea + amenorrhea → check β-hCG before attributing to hyperprolactinemia",
     ],
   },
+  {
+    id: "anti-ro-ssa-lab",
+    name: "Anti-Ro/SSA Antibody",
+    etymology: "anti- = against + Ro = original patient name + SSA = Sjögren syndrome antigen A",
+    aliases: ["anti-ro test", "anti ro test", "anti-ssa test", "anti ssa antibody", "anti-ro antibody"],
+    measures:
+      "Serum autoantibodies against Ro/SSA ribonucleoprotein antigens, used in Sjögren/SLE evaluation and pregnancy risk stratification.",
+    normalRange: "Negative",
+    increasedCauses: [
+      "Sjögren syndrome",
+      "Systemic lupus erythematosus",
+      "Subacute cutaneous lupus",
+      "Neonatal lupus risk in fetus/newborn of antibody-positive mother",
+    ],
+    decreasedCauses: ["Not applicable — negative test lowers likelihood but does not exclude Sjögren/SLE"],
+    boardsPearls: [
+      "Anti-Ro/SSA + anti-La/SSB = classic Sjögren antibody pair",
+      "Maternal anti-Ro/SSA can cause congenital heart block",
+      "Anti-Ro associated with photosensitive subacute cutaneous lupus",
+    ],
+    pairWith: [
+      "Dry eyes + dry mouth + anti-Ro/anti-La → Sjögren",
+      "Pregnancy + anti-Ro → fetal echo surveillance for heart block",
+    ],
+  },
+  {
+    id: "anti-la-ssb-lab",
+    name: "Anti-La/SSB Antibody",
+    etymology: "anti- = against + La = original patient name + SSB = Sjögren syndrome antigen B",
+    aliases: ["anti-la test", "anti la test", "anti-ssb test", "anti ssb antibody", "anti-la antibody"],
+    measures:
+      "Serum autoantibodies against La/SSB ribonucleoprotein antigen, commonly paired with anti-Ro/SSA in Sjögren syndrome workup.",
+    normalRange: "Negative",
+    increasedCauses: ["Sjögren syndrome", "SLE overlap", "Neonatal lupus risk when maternal antibodies present"],
+    decreasedCauses: ["Not applicable — negative test does not exclude Sjögren syndrome"],
+    boardsPearls: [
+      "Anti-La/SSB is more specific but less sensitive than anti-Ro/SSA for Sjögren",
+      "Often appears with anti-Ro/SSA rather than alone",
+    ],
+    pairWith: ["Sicca symptoms + anti-Ro/anti-La → Sjögren syndrome"],
+  },
+  {
+    id: "serum-tryptase",
+    name: "Serum Tryptase",
+    etymology: "trypsin-like protease + -ase = enzyme",
+    aliases: ["tryptase level", "serum tryptase", "tryptase"],
+    measures: "Mast cell granule protease level in serum; marker of mast cell activation or burden.",
+    normalRange: "Usually <11.4 ng/mL (assay-dependent); systemic mastocytosis minor criterion >20 ng/mL baseline",
+    increasedCauses: [
+      "Anaphylaxis / mast cell activation",
+      "Systemic mastocytosis",
+      "Hereditary alpha-tryptasemia",
+      "Severe allergic reaction",
+    ],
+    decreasedCauses: ["Not clinically used as a low-value marker"],
+    boardsPearls: [
+      "Draw acute tryptase soon after suspected anaphylaxis, then compare with baseline",
+      "Elevated baseline tryptase supports systemic mastocytosis",
+      "Histamine is transient; tryptase is more practical lab marker",
+    ],
+    pairWith: ["Flushing + urticaria pigmentosa + ↑ tryptase → mastocytosis"],
+  },
+  {
+    id: "tuberculin-skin-test",
+    name: "Tuberculin Skin Test",
+    etymology: "tuberculin = tuberculosis-derived protein extract + skin test = dermal assay",
+    aliases: ["tuberculin", "tuberculin skin test", "ppd", "mantoux test", "purified protein derivative"],
+    measures:
+      "Delayed-type (type IV) hypersensitivity induration 48-72 hours after intradermal purified protein derivative injection.",
+    normalRange: "Negative if induration below risk-based cutoff",
+    increasedCauses: [
+      "Latent or active tuberculosis infection",
+      "BCG vaccination (false positive possible)",
+      "Nontuberculous mycobacterial exposure",
+    ],
+    decreasedCauses: [
+      "No TB exposure/infection",
+      "Anergy from severe immunosuppression, HIV, malnutrition, or disseminated TB",
+      "Very recent TB exposure before immune conversion",
+    ],
+    boardsPearls: [
+      "Read induration, not erythema",
+      "Mechanism: type IV hypersensitivity mediated by Th1 cells/macrophages",
+      "IGRA is more specific after BCG vaccination",
+      "Positive screen does not distinguish latent from active TB",
+    ],
+    pairWith: ["Positive PPD + normal CXR/no symptoms → latent TB", "Cough/night sweats/weight loss → evaluate active TB"],
+  },
 ];
 
 const labValueById = new Map(LAB_VALUES.map((l) => [l.id, l]));

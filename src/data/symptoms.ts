@@ -2081,6 +2081,157 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Specific named facies (elfin, moon, coarse) — subtype patterns within dysmorphic facies",
     ],
   },
+  {
+    id: "ecchymosis",
+    name: "Ecchymosis",
+    etymology: "Greek ek = out + chymos = juice/fluid",
+    aliases: [
+      "ecchymosis",
+      "ecchymoses",
+      "bruise",
+      "bruising",
+      "large bruise",
+      "cutaneous ecchymosis",
+    ],
+    definition:
+      "Non-blanching macular discoloration from blood extravasation into skin or mucosa; larger than petechiae or purpura.",
+    mechanism:
+      "Trauma, platelet problems, coagulation-factor defects, vascular fragility, or vasculitis allow RBCs to leak into tissues; hemoglobin breakdown changes color over time.",
+    thinkOf: [
+      "Trauma",
+      "Thrombocytopenia or platelet dysfunction",
+      "Coagulation factor deficiency (hemophilia, liver disease, warfarin)",
+      "Vitamin C deficiency (scurvy)",
+      "DIC or severe sepsis",
+      "Child abuse when pattern/location is suspicious",
+    ],
+    pairWith: [
+      "Mucosal bleeding/petechiae → platelet disorder or vWD",
+      "Deep tissue bleeding/hemarthrosis → coagulation factor deficiency",
+      "Perifollicular hemorrhage + corkscrew hairs → vitamin C deficiency",
+      "Prolonged PT/aPTT + low fibrinogen → DIC",
+      "Different ages of bruises in child → nonaccidental trauma concern",
+    ],
+    distinguishFrom: [
+      "Petechiae — pinpoint non-blanching lesions <2 mm",
+      "Purpura — non-blanching lesions ~2 mm to 1 cm",
+      "Hematoma — palpable blood collection",
+      "Erythema — blanching redness from vasodilation, not RBC extravasation",
+    ],
+  },
+  {
+    id: "xerosis",
+    name: "Xerosis (dry skin)",
+    etymology: "Greek xeros = dry + -osis = condition",
+    aliases: ["xerosis", "dry skin", "xeroderma"],
+    definition:
+      "Abnormally dry, rough, or scaly skin from impaired stratum corneum hydration and barrier function.",
+    mechanism:
+      "Loss of water, lipids, or filaggrin-dependent natural moisturizing factors increases transepidermal water loss and causes scale/fissuring.",
+    thinkOf: [
+      "Atopic dermatitis",
+      "Ichthyosis vulgaris",
+      "Hypothyroidism",
+      "Chronic kidney disease / uremia",
+      "Aging, low humidity, frequent bathing",
+      "Vitamin A deficiency (follicular hyperkeratosis)",
+    ],
+    pairWith: [
+      "Pruritus + flexural eczema → atopic dermatitis",
+      "Cold intolerance + bradycardia → hypothyroidism",
+      "Uremia + pruritus → CKD",
+      "Night blindness + follicular hyperkeratosis → vitamin A deficiency",
+    ],
+    distinguishFrom: [
+      "Xerostomia — dry mouth, salivary dysfunction",
+      "Keratoconjunctivitis sicca — dry eyes, lacrimal dysfunction",
+      "Scale from psoriasis — inflammatory plaques, not simple dryness",
+    ],
+  },
+  {
+    id: "xerostomia",
+    name: "Xerostomia (dry mouth)",
+    etymology: "Greek xeros = dry + stoma = mouth",
+    aliases: ["xerostomia", "dry mouth", "oral dryness"],
+    definition:
+      "Subjective dry mouth from reduced salivary flow or altered saliva composition.",
+    mechanism:
+      "Salivary gland hypofunction reduces lubrication, antimicrobial peptides, bicarbonate buffering, and enamel remineralization.",
+    thinkOf: [
+      "Sjögren syndrome",
+      "Anticholinergic medications",
+      "Head/neck radiation",
+      "Dehydration",
+      "Diabetes mellitus",
+    ],
+    pairWith: [
+      "Dry eyes + parotid enlargement → Sjögren syndrome",
+      "Dental caries + difficulty swallowing dry food → chronic salivary hypofunction",
+      "Urinary retention + mydriasis → anticholinergic toxicity",
+      "Polyuria/polydipsia → diabetes mellitus",
+    ],
+    distinguishFrom: [
+      "Dry mucous membranes — broader dehydration exam finding",
+      "Aphthous ulcer — painful oral ulcer, not global dryness",
+      "Sialadenitis — painful salivary gland inflammation/swelling",
+    ],
+  },
+  {
+    id: "leukocytosis",
+    name: "Leukocytosis",
+    etymology: "Greek leukos = white + kytos = cell + -osis = condition",
+    aliases: ["leukocytosis", "elevated wbc", "high wbc", "increased white blood cells"],
+    definition:
+      "Increased total white blood cell count above the age-adjusted reference range.",
+    mechanism:
+      "Bone marrow release, demargination, reduced egress, or malignant proliferation increases circulating leukocytes.",
+    thinkOf: [
+      "Acute infection or inflammation",
+      "Corticosteroids / stress demargination",
+      "Tissue necrosis",
+      "Leukemoid reaction",
+      "Leukemia / myeloproliferative neoplasm",
+    ],
+    pairWith: [
+      "Left shift + fever → bacterial infection",
+      "Very high WBC + low LAP + basophilia → CML",
+      "Steroid exposure + mature neutrophilia → demargination",
+      "Atypical lymphocytes → EBV/CMV",
+    ],
+    distinguishFrom: [
+      "Neutrophilia — increased neutrophil count specifically",
+      "Leukemoid reaction — reactive high WBC with high LAP",
+      "Leukemia — malignant clonal leukocytosis with blasts or lineage clues",
+    ],
+  },
+  {
+    id: "neutrophilia",
+    name: "Neutrophilia",
+    etymology: "Latin neuter = neither + Greek philos = loving + -ia = condition",
+    aliases: ["neutrophilia", "high neutrophils", "elevated neutrophils", "increased neutrophils"],
+    definition:
+      "Increased absolute neutrophil count, usually reflecting acute inflammation, infection, stress, or myeloid proliferation.",
+    mechanism:
+      "G-CSF/IL-6-driven marrow production, marrow release of bands, and catecholamine or steroid demargination increase circulating neutrophils.",
+    thinkOf: [
+      "Acute bacterial infection",
+      "Tissue necrosis or trauma",
+      "Corticosteroids",
+      "Smoking, stress, pregnancy",
+      "CML or other myeloproliferative neoplasm",
+    ],
+    pairWith: [
+      "Bands/toxic granulation → severe bacterial infection",
+      "No pus + delayed cord separation despite neutrophilia → LAD type 1",
+      "Basophilia + splenomegaly → CML",
+      "Steroids + no fever → demargination",
+    ],
+    distinguishFrom: [
+      "Leukocytosis — total WBC elevation from any lineage",
+      "Left shift — immature neutrophils, not just high mature neutrophils",
+      "Neutropenia — low ANC with infection risk",
+    ],
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));

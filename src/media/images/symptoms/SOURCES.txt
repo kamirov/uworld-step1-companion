@@ -81,3 +81,18 @@ dysmorphic-facies.jpg
   Description: Illustration of characteristic facial features in Down syndrome (trisomy 21)
   License: Public domain
   Page: https://commons.wikimedia.org/wiki/File:Down_syndrome_lg.jpg
+
+ecchymosis.jpg
+  Source: Wikimedia Commons — Bilateral periorbital ecchymosis
+  Description: Periorbital ecchymosis showing non-blanching blood extravasation into skin
+  Page: https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg
+
+xerosis.jpg
+  Source: Wikimedia Commons — Xeroderma knuckles.jpg
+  Description: Dry, scaling skin over the knuckles consistent with xerosis
+  Page: https://commons.wikimedia.org/wiki/File:Xeroderma_knuckles.jpg
+
+xerostomia.jpg
+  Source: Wikimedia Commons — Xerostomia - Dry Mouth.jpg
+  Description: Dry mouth illustration showing reduced salivary moisture
+  Page: https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg

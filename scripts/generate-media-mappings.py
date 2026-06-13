@@ -49,6 +49,11 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "dengue-fever": "Dengue recovery rash — classic 'white islands in a sea of red' pattern",
         "chikungunya-fever": "Maculopapular chikungunya rash on the abdomen during acute illness",
         "meningitis": "Cross-section of cranial meninges — dura mater, arachnoid mater, pia mater, and subarachnoid space",
+        "acromegaly": "Coarse facial features and prognathism in acromegaly from chronic growth hormone excess",
+        "serum-sickness": "Urticarial rash pattern that can occur in serum sickness after immune-complex complement activation",
+        "aphthous-ulcer": "Aphthous ulcer on nonkeratinized oral mucosa",
+        "dental-caries": "Occlusal dental caries with enamel cavitation",
+        "keratoconjunctivitis-sicca": "Dry eye with ocular surface staining/keratitis pattern",
     },
     "symptoms": {
         "erythema": "Sharply demarcated erythema of recurrent erysipelas (vasodilation with infection)",
@@ -71,6 +76,9 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "telangiectasia": "Spider angioma — central arteriole with radiating telangiectasias",
         "maculopapular-rash": "Maculopapular eruption — coalescent erythematous macules and papules",
         "nuchal-rigidity": "Nuchal rigidity — resistance to passive neck flexion in meningeal irritation",
+        "ecchymosis": "Periorbital ecchymosis — non-blanching blood extravasation into skin",
+        "xerosis": "Dry, scaling skin over the knuckles consistent with xerosis",
+        "xerostomia": "Dry mouth illustration showing reduced salivary moisture",
     },
     "cells": {
         "oxidative-phosphorylation": "Inner mitochondrial membrane respiratory chain: complexes I–IV pass electrons to O₂; proton pumping drives ATP synthase (Complex V)",

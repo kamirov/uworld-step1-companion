@@ -32,6 +32,59 @@ export interface MicrobiologyEntry {
 
 export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
+    id: "neisseria-genus",
+    name: "Neisseria",
+    etymology: "Named for Albert Neisser + -ia = bacterial genus suffix",
+    aliases: ["neisseria", "neisseriae", "neisseria species"],
+    type: "gram-negative-cocci",
+    definition:
+      "Genus of aerobic Gram-negative diplococci; high-yield pathogenic species are N. meningitidis and N. gonorrhoeae.",
+    morphology: [
+      "Gram-negative kidney bean-shaped diplococci",
+      "Oxidase positive",
+      "Often intracellular in neutrophils (gonorrhea smear)",
+    ],
+    virulenceFactors: [
+      "Pili and Opa proteins for attachment/antigenic variation",
+      "IgA protease at mucosal surfaces",
+      "LOS endotoxin; capsule in N. meningitidis",
+    ],
+    transmission: [
+      "Respiratory droplets for N. meningitidis",
+      "Sexual/perinatal transmission for N. gonorrhoeae",
+    ],
+    diseases: [
+      "Meningitis and meningococcemia (N. meningitidis)",
+      "Urethritis, cervicitis, PID, septic arthritis (N. gonorrhoeae)",
+      "Neonatal conjunctivitis (gonorrhea)",
+    ],
+    classicPresentation: [
+      "Meningitis + petechial rash → N. meningitidis",
+      "Purulent urethral discharge → N. gonorrhoeae",
+    ],
+    diagnosis: [
+      "Gram stain/culture or NAAT depending on syndrome",
+      "Chocolate agar; Thayer-Martin selective medium for gonococcus",
+      "Oxidase positive",
+    ],
+    treatment: [
+      "Ceftriaxone-based therapy for serious pathogenic Neisseria",
+      "Add doxycycline if chlamydia not excluded in gonorrhea",
+      "Meningococcal exposure prophylaxis: rifampin, ciprofloxacin, or ceftriaxone",
+    ],
+    distinguishFrom: [
+      "Moraxella catarrhalis — Gram-negative diplococcus respiratory pathogen",
+      "Streptococcus pneumoniae — Gram-positive lancet diplococcus",
+    ],
+    boardsPearls: [
+      "Terminal complement (C5-C9) deficiency → recurrent Neisseria",
+      "Neisseria are oxidase-positive Gram-negative diplococci",
+      "Meningococcus has capsule; gonococcus lacks capsule but antigenically varies pili",
+    ],
+    pediatrics:
+      "Meningococcemia can progress rapidly in adolescents; gonococcal ophthalmia neonatorum prevented with erythromycin eye ointment.",
+  },
+  {
     id: "staphylococcus-aureus",
     name: "Staphylococcus aureus",
     etymology: "Greek staphyle = grape cluster + kokkos = berry + Latin aureus = golden",

@@ -67,3 +67,28 @@ x-linked-agammaglobulinemia.png
 https://commons.wikimedia.org/wiki/File:B_cell_activation.png
 Miguelfo, CC BY-SA 3.0
 Description: B-cell activation pathway — relevant to BTK-dependent B-cell maturation in X-linked agammaglobulinemia
+
+acromegaly.jpg
+https://commons.wikimedia.org/wiki/File:Acromegaly_facial_features.JPEG
+Wikimedia Commons
+Description: Coarse facial features and prognathism in acromegaly from chronic growth hormone excess
+
+serum-sickness.jpg
+https://commons.wikimedia.org/wiki/File:RashUrticaria.jpg
+Wikimedia Commons
+Description: Urticarial rash pattern relevant to serum sickness
+
+aphthous-ulcer.jpg
+https://commons.wikimedia.org/wiki/File:Aphthous_Stomatitis_in_the_mouth.jpg
+Wikimedia Commons
+Description: Aphthous ulcer on nonkeratinized oral mucosa
+
+keratoconjunctivitis-sicca.jpg
+https://commons.wikimedia.org/wiki/File:Dry_eyeKell.jpg
+Wikimedia Commons
+Description: Dry eye with ocular surface staining/keratitis pattern
+
+dental-caries.jpg
+https://commons.wikimedia.org/wiki/File:Dental_Caries_Lower_Right_First_Molar.jpg
+Wikimedia Commons
+Description: Occlusal dental caries with enamel cavitation

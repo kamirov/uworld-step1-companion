@@ -2,10 +2,12 @@ import type { MediaAttribution } from "./media";
 import type { ConditionEntry } from "./conditions";
 
 import abscess from "../media/images/conditions/abscess.jpg?url";
+import acromegaly from "../media/images/conditions/acromegaly.jpg?url";
 import acuteCholangitis from "../media/images/conditions/acute-cholangitis.svg?url";
 import addisonDisease from "../media/images/conditions/addison-disease.jpg?url";
 import allergicContactDermatitis from "../media/images/conditions/allergic-contact-dermatitis.jpg?url";
 import amenorrhea from "../media/images/conditions/amenorrhea.jpg?url";
+import aphthousUlcer from "../media/images/conditions/aphthous-ulcer.jpg?url";
 import aml from "../media/images/conditions/aml.jpg?url";
 import ankylosingSpondylitis from "../media/images/conditions/ankylosing-spondylitis.jpg?url";
 import aorticRegurgitation from "../media/images/conditions/aortic-regurgitation.jpg?url";
@@ -32,6 +34,7 @@ import crohnDisease from "../media/images/conditions/crohn-disease.jpg?url";
 import cushingSyndrome from "../media/images/conditions/cushing-syndrome.jpg?url";
 import cysticFibrosis from "../media/images/conditions/cystic-fibrosis.jpg?url";
 import dengueRecoveryRash from "../media/images/conditions/dengue-recovery-rash.jpg?url";
+import dentalCaries from "../media/images/conditions/dental-caries.jpg?url";
 import diabeticKetoacidosis from "../media/images/conditions/diabetic-ketoacidosis.jpg?url";
 import dilatedCardiomyopathy from "../media/images/conditions/dilated-cardiomyopathy.jpg?url";
 import diverticulitis from "../media/images/conditions/diverticulitis.jpg?url";
@@ -66,6 +69,7 @@ import infectiveEndocarditis from "../media/images/conditions/infective-endocard
 import interstitialLungDisease from "../media/images/conditions/interstitial-lung-disease.jpg?url";
 import intestinalPerforation from "../media/images/conditions/intestinal-perforation.jpg?url";
 import ischemicStroke from "../media/images/conditions/ischemic-stroke.jpg?url";
+import keratoconjunctivitisSicca from "../media/images/conditions/keratoconjunctivitis-sicca.jpg?url";
 import lichenPlanus from "../media/images/conditions/lichen-planus.jpg?url";
 import lungCancer from "../media/images/conditions/lung-cancer.jpg?url";
 import lymeDisease from "../media/images/conditions/lyme-disease.jpg?url";
@@ -114,6 +118,7 @@ import rotatorCuffSyndrome from "../media/images/conditions/rotator-cuff-syndrom
 import sarcoidosis from "../media/images/conditions/sarcoidosis.jpg?url";
 import selectiveIgaDeficiency from "../media/images/conditions/selective-iga-deficiency.png?url";
 import schizophrenia from "../media/images/conditions/schizophrenia.jpg?url";
+import serumSickness from "../media/images/conditions/serum-sickness.jpg?url";
 import shock from "../media/images/conditions/shock.jpg?url";
 import sickleCellDisease from "../media/images/conditions/sickle-cell-disease.jpg?url";
 import sinusitis from "../media/images/conditions/sinusitis.jpg?url";
@@ -146,10 +151,12 @@ import zollingerEllisonSyndrome from "../media/images/conditions/zollinger-ellis
 export type ConditionImageId = Extract<
   ConditionEntry["id"],
   | "abscess"
+  | "acromegaly"
   | "acute-cholangitis"
   | "addison-disease"
   | "allergic-contact-dermatitis"
   | "amenorrhea"
+  | "aphthous-ulcer"
   | "aml"
   | "ankylosing-spondylitis"
   | "aortic-regurgitation"
@@ -176,6 +183,7 @@ export type ConditionImageId = Extract<
   | "cushing-syndrome"
   | "cystic-fibrosis"
   | "dengue-fever"
+  | "dental-caries"
   | "diabetic-ketoacidosis"
   | "dilated-cardiomyopathy"
   | "diverticulitis"
@@ -210,6 +218,7 @@ export type ConditionImageId = Extract<
   | "interstitial-lung-disease"
   | "intestinal-perforation"
   | "ischemic-stroke"
+  | "keratoconjunctivitis-sicca"
   | "lichen-planus"
   | "lung-cancer"
   | "lyme-disease"
@@ -258,6 +267,7 @@ export type ConditionImageId = Extract<
   | "sarcoidosis"
   | "selective-iga-deficiency"
   | "schizophrenia"
+  | "serum-sickness"
   | "shock"
   | "sickle-cell-disease"
   | "sinusitis"
@@ -295,10 +305,12 @@ function extensionAssetUrl(path: string): string {
 /** See src/media/images/conditions/SOURCES.txt */
 export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "abscess": extensionAssetUrl(abscess),
+  "acromegaly": extensionAssetUrl(acromegaly),
   "acute-cholangitis": extensionAssetUrl(acuteCholangitis),
   "addison-disease": extensionAssetUrl(addisonDisease),
   "allergic-contact-dermatitis": extensionAssetUrl(allergicContactDermatitis),
   "amenorrhea": extensionAssetUrl(amenorrhea),
+  "aphthous-ulcer": extensionAssetUrl(aphthousUlcer),
   "aml": extensionAssetUrl(aml),
   "ankylosing-spondylitis": extensionAssetUrl(ankylosingSpondylitis),
   "aortic-regurgitation": extensionAssetUrl(aorticRegurgitation),
@@ -325,6 +337,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "cushing-syndrome": extensionAssetUrl(cushingSyndrome),
   "cystic-fibrosis": extensionAssetUrl(cysticFibrosis),
   "dengue-fever": extensionAssetUrl(dengueRecoveryRash),
+  "dental-caries": extensionAssetUrl(dentalCaries),
   "diabetic-ketoacidosis": extensionAssetUrl(diabeticKetoacidosis),
   "dilated-cardiomyopathy": extensionAssetUrl(dilatedCardiomyopathy),
   "diverticulitis": extensionAssetUrl(diverticulitis),
@@ -359,6 +372,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "interstitial-lung-disease": extensionAssetUrl(interstitialLungDisease),
   "intestinal-perforation": extensionAssetUrl(intestinalPerforation),
   "ischemic-stroke": extensionAssetUrl(ischemicStroke),
+  "keratoconjunctivitis-sicca": extensionAssetUrl(keratoconjunctivitisSicca),
   "lichen-planus": extensionAssetUrl(lichenPlanus),
   "lung-cancer": extensionAssetUrl(lungCancer),
   "lyme-disease": extensionAssetUrl(lymeDisease),
@@ -407,6 +421,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "sarcoidosis": extensionAssetUrl(sarcoidosis),
   "selective-iga-deficiency": extensionAssetUrl(selectiveIgaDeficiency),
   "schizophrenia": extensionAssetUrl(schizophrenia),
+  "serum-sickness": extensionAssetUrl(serumSickness),
   "shock": extensionAssetUrl(shock),
   "sickle-cell-disease": extensionAssetUrl(sickleCellDisease),
   "sinusitis": extensionAssetUrl(sinusitis),
@@ -441,10 +456,12 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   Record<ConditionImageId, string>
 > = {
   "abscess": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:abscess.jpg" },
+  "acromegaly": { label: "Wikimedia Commons (Acromegaly facial features.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Acromegaly_facial_features.JPEG" },
   "acute-cholangitis": { label: "Wikimedia Commons (Charcot's cholangitis triad-en.svg)", url: "https://commons.wikimedia.org/wiki/File:Charcot's_cholangitis_triad-en.svg" },
   "addison-disease": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
   "allergic-contact-dermatitis": { label: "Wikimedia Commons (Blausen 0014 AllergicDermatitis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0014_AllergicDermatitis.png" },
   "amenorrhea": { label: "Wikimedia Commons (Lactational-amenorrhea-method-This-method-of-family-planning-evolved-from (1).jpg)", url: "https://commons.wikimedia.org/wiki/File:Lactational-amenorrhea-method-This-method-of-family-planning-evolved-from_(1).jpg" },
+  "aphthous-ulcer": { label: "Wikimedia Commons (Aphthous Stomatitis in the mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Aphthous_Stomatitis_in_the_mouth.jpg" },
   "aml": { label: "Wikimedia Commons (Acute Myeloid Leukemia (M2 type).jpg)", url: "https://commons.wikimedia.org/wiki/File:Acute_Myeloid_Leukemia_(M2_type).jpg" },
   "ankylosing-spondylitis": { label: "Wikimedia Commons (Bamboo spine ankylosing spondylitis.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bamboo_spine_ankylosing_spondylitis.jpg" },
   "aortic-regurgitation": { label: "Wikimedia Commons (Blausen 0039 AorticRegurgitation.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0039_AorticRegurgitation.png" },
@@ -471,6 +488,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "cushing-syndrome": { label: "Wikimedia Commons (United States Navy Medical News Letter Vol. 28, No. 5, 7 September 1956 (IA NavyMedicalNewsletter19560907).pdf)", url: "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._28,_No._5,_7_September_1956_(IA_NavyMedicalNewsletter19560907).pdf" },
   "cystic-fibrosis": { label: "Wikimedia Commons (Blausen 0286 CysticFibrosis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0286_CysticFibrosis.png" },
   "dengue-fever": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dengue-recovery-rash.jpg" },
+  "dental-caries": { label: "Wikimedia Commons (Dental Caries Lower Right First Molar.jpg)", url: "https://commons.wikimedia.org/wiki/File:Dental_Caries_Lower_Right_First_Molar.jpg" },
   "diabetic-ketoacidosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diabetic-ketoacidosis.jpg" },
   "dilated-cardiomyopathy": { label: "Wikimedia Commons (Blausen 0165 Cardiomyopathy Dilated.svg)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0165_Cardiomyopathy_Dilated.svg" },
   "diverticulitis": { label: "Wikimedia Commons (Seed derived storage cells - Perforated diverticulitis (50706479398).jpg)", url: "https://commons.wikimedia.org/wiki/File:Seed_derived_storage_cells_-_Perforated_diverticulitis_(50706479398).jpg" },
@@ -505,6 +523,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "interstitial-lung-disease": { label: "Wikimedia Commons (Interstitial lung disease overview.png)", url: "https://commons.wikimedia.org/wiki/File:Interstitial_lung_disease_overview.png" },
   "intestinal-perforation": { label: "Wikimedia Commons (Nicholas Senn intestinal perforation.jpg)", url: "https://commons.wikimedia.org/wiki/File:Nicholas_Senn_intestinal_perforation.jpg" },
   "ischemic-stroke": { label: "Wikimedia Commons (Stroke ischemic.jpg)", url: "https://commons.wikimedia.org/wiki/File:Stroke_ischemic.jpg" },
+  "keratoconjunctivitis-sicca": { label: "Wikimedia Commons (Dry eyeKell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Dry_eyeKell.jpg" },
   "lichen-planus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lichen-planus.jpg" },
   "lung-cancer": { label: "Wikimedia Commons (LungCancer-Xray-01.jpg)", url: "https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg" },
   "lyme-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lyme-disease.jpg" },
@@ -553,6 +572,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "sarcoidosis": { label: "Wikimedia Commons (Sarcoidosis histology skin involvement.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sarcoidosis_histology_skin_involvement.jpg" },
   "selective-iga-deficiency": { label: "Wikimedia Commons (Antibody Isotypes.png)", url: "https://commons.wikimedia.org/wiki/File:Antibody_Isotypes.png" },
   "schizophrenia": { label: "Wikimedia Commons (Schizophrenia fMRI working memory.jpg)", url: "https://commons.wikimedia.org/wiki/File:Schizophrenia_fMRI_working_memory.jpg" },
+  "serum-sickness": { label: "Wikimedia Commons (RashUrticaria.jpg)", url: "https://commons.wikimedia.org/wiki/File:RashUrticaria.jpg" },
   "shock": { label: "Wikimedia Commons (Kolloidale Infusionslösungen.jpg)", url: "https://commons.wikimedia.org/wiki/File:Kolloidale_Infusionslösungen.jpg" },
   "sickle-cell-disease": { label: "Wikimedia Commons (Sickle Cell Disease in Newborns and Infants- A Guide for Parents (IA sicklecelldiseas00usde).pdf)", url: "https://commons.wikimedia.org/wiki/File:Sickle_Cell_Disease_in_Newborns_and_Infants-_A_Guide_for_Parents_(IA_sicklecelldiseas00usde).pdf" },
   "sinusitis": { label: "Wikimedia Commons (Odontogenic sinusitis.jpg)", url: "https://commons.wikimedia.org/wiki/File:Odontogenic_sinusitis.jpg" },
@@ -587,10 +607,12 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   Record<ConditionImageId, MediaAttribution>
 > = {
   "abscess": "Clinical or pathologic image illustrating abscess",
+  "acromegaly": "Coarse facial features and prognathism in acromegaly from chronic growth hormone excess",
   "acute-cholangitis": "Clinical or pathologic image illustrating acute cholangitis",
   "addison-disease": "Clinical or pathologic image illustrating addison disease",
   "allergic-contact-dermatitis": "Clinical or pathologic image illustrating allergic contact dermatitis",
   "amenorrhea": "Clinical or pathologic image illustrating amenorrhea",
+  "aphthous-ulcer": "Aphthous ulcer on nonkeratinized oral mucosa",
   "aml": "Clinical or pathologic image illustrating aml",
   "ankylosing-spondylitis": "Clinical or pathologic image illustrating ankylosing spondylitis",
   "aortic-regurgitation": "Clinical or pathologic image illustrating aortic regurgitation",
@@ -617,6 +639,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "cushing-syndrome": "Clinical or pathologic image illustrating cushing syndrome",
   "cystic-fibrosis": "Clinical or pathologic image illustrating cystic fibrosis",
   "dengue-fever": "Dengue recovery rash — classic 'white islands in a sea of red' pattern",
+  "dental-caries": "Occlusal dental caries with enamel cavitation",
   "diabetic-ketoacidosis": "Clinical or pathologic image illustrating diabetic ketoacidosis",
   "dilated-cardiomyopathy": "Clinical or pathologic image illustrating dilated cardiomyopathy",
   "diverticulitis": "Clinical or pathologic image illustrating diverticulitis",
@@ -651,6 +674,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "interstitial-lung-disease": "Clinical or pathologic image illustrating interstitial lung disease",
   "intestinal-perforation": "Clinical or pathologic image illustrating intestinal perforation",
   "ischemic-stroke": "Clinical or pathologic image illustrating ischemic stroke",
+  "keratoconjunctivitis-sicca": "Dry eye with ocular surface staining/keratitis pattern",
   "lichen-planus": "Clinical or pathologic image illustrating lichen planus",
   "lung-cancer": "Clinical or pathologic image illustrating lung cancer",
   "lyme-disease": "Clinical or pathologic image illustrating lyme disease",
@@ -699,6 +723,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "sarcoidosis": "Clinical or pathologic image illustrating sarcoidosis",
   "selective-iga-deficiency": "Immunoglobulin isotypes — selective IgA deficiency features isolated loss of IgA with normal IgG and IgM",
   "schizophrenia": "Clinical or pathologic image illustrating schizophrenia",
+  "serum-sickness": "Urticarial rash pattern that can occur in serum sickness after immune-complex complement activation",
   "shock": "Clinical or pathologic image illustrating shock",
   "sickle-cell-disease": "Clinical or pathologic image illustrating sickle cell disease",
   "sinusitis": "Clinical or pathologic image illustrating sinusitis",

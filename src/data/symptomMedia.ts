@@ -13,6 +13,7 @@ import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
 import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
 import dysuria from "../media/images/symptoms/dysuria.jpg?url";
+import ecchymosis from "../media/images/symptoms/ecchymosis.jpg?url";
 import easyFatigability from "../media/images/symptoms/easy-fatigability.jpg?url";
 import edema from "../media/images/symptoms/edema.jpg?url";
 import erythema from "../media/images/symptoms/erythema.jpg?url";
@@ -62,6 +63,8 @@ import vesicle from "../media/images/symptoms/vesicle.jpg?url";
 import vomiting from "../media/images/symptoms/vomiting.jpg?url";
 import wateryDiarrhea from "../media/images/symptoms/watery-diarrhea.jpg?url";
 import wheezing from "../media/images/symptoms/wheezing.jpg?url";
+import xerosis from "../media/images/symptoms/xerosis.jpg?url";
+import xerostomia from "../media/images/symptoms/xerostomia.jpg?url";
 
 export type SymptomImageId = Extract<
   SymptomEntry["id"],
@@ -77,6 +80,7 @@ export type SymptomImageId = Extract<
   | "dry-mucous-membranes"
   | "dysmorphic-facies"
   | "dysuria"
+  | "ecchymosis"
   | "easy-fatigability"
   | "edema"
   | "erythema"
@@ -126,6 +130,8 @@ export type SymptomImageId = Extract<
   | "vomiting"
   | "watery-diarrhea"
   | "wheezing"
+  | "xerosis"
+  | "xerostomia"
   | "petechiae"
 >;
 
@@ -147,6 +153,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
   "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
   "dysuria": extensionAssetUrl(dysuria),
+  "ecchymosis": extensionAssetUrl(ecchymosis),
   "easy-fatigability": extensionAssetUrl(easyFatigability),
   "edema": extensionAssetUrl(edema),
   "erythema": extensionAssetUrl(erythema),
@@ -196,6 +203,8 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "vomiting": extensionAssetUrl(vomiting),
   "watery-diarrhea": extensionAssetUrl(wateryDiarrhea),
   "wheezing": extensionAssetUrl(wheezing),
+  "xerosis": extensionAssetUrl(xerosis),
+  "xerostomia": extensionAssetUrl(xerostomia),
   "petechiae": extensionAssetUrl(purpura),
 };
 
@@ -214,6 +223,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
   "dysmorphic-facies": { label: "Wikimedia Commons (Down syndrome lg.jpg)", url: "https://commons.wikimedia.org/wiki/File:Down_syndrome_lg.jpg" },
   "dysuria": { label: "Wikimedia Commons (Bombax ceiba is a universe unto itself.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_is_a_universe_unto_itself.jpg" },
+  "ecchymosis": { label: "Wikimedia Commons (Bilateral periorbital ecchymosis)", url: "https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg" },
   "easy-fatigability": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:easy-fatigability.jpg" },
   "edema": { label: "Wikimedia Commons (Depiction of different types of Edema.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_different_types_of_Edema.png" },
   "erythema": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:erythema.jpg" },
@@ -263,6 +273,8 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "vomiting": { label: "Wikimedia Commons (Emesis (Emesis Cerea).JPG)", url: "https://commons.wikimedia.org/wiki/File:Emesis_(Emesis_Cerea).JPG" },
   "watery-diarrhea": { label: "Wikimedia Commons (Cholera patient stool.jpg)", url: "https://commons.wikimedia.org/wiki/File:Cholera_patient_stool.jpg" },
   "wheezing": { label: "Wikimedia Commons (UOTW 48 - Ultrasound of the Week 5.jpg)", url: "https://commons.wikimedia.org/wiki/File:UOTW_48_-_Ultrasound_of_the_Week_5.jpg" },
+  "xerosis": { label: "Wikimedia Commons (Xeroderma knuckles.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xeroderma_knuckles.jpg" },
+  "xerostomia": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
   "petechiae": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:purpura.jpg" },
 };
 
@@ -279,6 +291,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
   "dysmorphic-facies": "Characteristic facial features of Down syndrome — flat profile, upslanting palpebral fissures, epicanthal folds, flat nasal bridge",
   "dysuria": "Clinical or pathologic image illustrating dysuria",
+  "ecchymosis": "Periorbital ecchymosis — non-blanching blood extravasation into skin",
   "easy-fatigability": "Clinical or pathologic image illustrating easy fatigability",
   "edema": "Clinical or pathologic image illustrating edema",
   "erythema": "Sharply demarcated erythema of recurrent erysipelas (vasodilation with infection)",
@@ -328,6 +341,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "vomiting": "Clinical or pathologic image illustrating vomiting",
   "watery-diarrhea": "Clinical or pathologic image illustrating watery diarrhea",
   "wheezing": "Clinical or pathologic image illustrating wheezing",
+  "xerosis": "Dry, scaling skin over the knuckles consistent with xerosis",
+  "xerostomia": "Dry mouth illustration showing reduced salivary moisture",
   "petechiae": "Non-blanching petechiae on the lower limb from leukocytoclastic vasculitis",
 };
 

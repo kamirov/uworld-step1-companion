@@ -623,6 +623,26 @@ export const ORGANS: OrganEntry[] = [
     origin:
       "Extraembryonic mesoderm surrounds allantois and vitelline vessels; contains two arteries and one vein.",
   },
+  {
+    id: "gingiva-oral",
+    name: "Gingiva (oral)",
+    etymology: "Latin gingiva = gum around teeth",
+    aliases: [
+      "gingiva",
+      "gingivae",
+      "oral gingiva",
+      "gums",
+      "gum tissue",
+    ],
+    germLayer: "Ectoderm / Neural crest mesenchyme",
+    origin:
+      "Oral epithelium derives from surface ectoderm; underlying connective tissue largely from cranial neural crest-derived ectomesenchyme around developing teeth.",
+    derivatives: [
+      "Keratinized stratified squamous oral mucosa",
+      "Junctional epithelium around tooth enamel",
+      "Lamina propria over alveolar bone",
+    ],
+  },
 ];
 
 const organById = new Map(ORGANS.map((o) => [o.id, o]));

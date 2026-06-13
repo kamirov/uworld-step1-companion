@@ -1143,5 +1143,45 @@
     "title": "File:DIP, PIP and MCP joints of hand.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:DIP,_PIP_and_MCP_joints_of_hand.jpg",
     "query": "proximal interphalangeal joint anatomy"
+  },
+  "conditions/serum-sickness.jpg": {
+    "title": "File:RashUrticaria.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:RashUrticaria.jpg",
+    "query": "urticaria rash"
+  },
+  "conditions/acromegaly.jpg": {
+    "title": "File:Acromegaly facial features.JPEG",
+    "page": "https://commons.wikimedia.org/wiki/File:Acromegaly_facial_features.JPEG",
+    "query": "acromegaly face"
+  },
+  "symptoms/ecchymosis.jpg": {
+    "title": "File:Bilateral periorbital ecchymosis (raccoon eyes).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg",
+    "query": "ecchymosis bruise"
+  },
+  "conditions/aphthous-ulcer.jpg": {
+    "title": "File:Aphthous Stomatitis in the mouth.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Aphthous_Stomatitis_in_the_mouth.jpg",
+    "query": "aphthous ulcer mouth"
+  },
+  "symptoms/xerosis.jpg": {
+    "title": "File:Xeroderma knuckles.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Xeroderma_knuckles.jpg",
+    "query": "xerosis dry skin"
+  },
+  "symptoms/xerostomia.jpg": {
+    "title": "File:Xerostomia - Dry Mouth.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg",
+    "query": "xerostomia dry mouth"
+  },
+  "conditions/keratoconjunctivitis-sicca.jpg": {
+    "title": "File:Dry eyeKell.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dry_eyeKell.jpg",
+    "query": "keratoconjunctivitis sicca dry eye"
+  },
+  "conditions/dental-caries.jpg": {
+    "title": "File:Dental Caries Lower Right First Molar.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dental_Caries_Lower_Right_First_Molar.jpg",
+    "query": "dental caries tooth decay"
   }
 }

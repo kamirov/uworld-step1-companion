@@ -1435,6 +1435,302 @@ export const PROTEINS: ProteinEntry[] = [
       "C3NeF — autoantibody stabilizing alternative convertase, not the C3 protein itself",
     ],
   },
+  {
+    id: "anti-ro-ssa",
+    name: "Anti-Ro/SSA",
+    etymology: "anti- = against + Ro = patient surname origin + SSA = Sjögren syndrome antigen A",
+    aliases: ["anti-ro", "anti ro", "anti-rro", "anti-ssa", "anti ssa", "ro antibody", "ssa antibody"],
+    gene: "Targets Ro/SSA ribonucleoprotein antigens (Ro52/TRIM21, Ro60/TROVE2)",
+    location: "Autoantibody in serum; target antigens are intracellular ribonucleoproteins",
+    function:
+      "Diagnostic autoantibody marker; pathogenic transplacental antibody can injure fetal cardiac conduction tissue.",
+    mutationCauses: [
+      "Sjögren syndrome",
+      "Systemic lupus erythematosus, especially subacute cutaneous lupus",
+      "Neonatal lupus and congenital heart block from maternal antibody transfer",
+    ],
+    boardsPearls: [
+      "Sjögren: anti-Ro/SSA often with anti-La/SSB",
+      "Pregnant patient with anti-Ro → fetal congenital heart block risk",
+      "Photosensitive annular rash + anti-Ro → subacute cutaneous lupus",
+    ],
+    distinguishFrom: ["Anti-La/SSB — more specific companion Sjögren antibody", "Anti-dsDNA — SLE activity/nephritis marker"],
+  },
+  {
+    id: "anti-la-ssb",
+    name: "Anti-La/SSB",
+    etymology: "anti- = against + La = patient surname origin + SSB = Sjögren syndrome antigen B",
+    aliases: ["anti-la", "anti la", "anti-ssb", "anti ssb", "la antibody", "ssb antibody"],
+    gene: "Targets La/SSB ribonucleoprotein antigen",
+    location: "Autoantibody in serum; target antigen is intracellular ribonucleoprotein",
+    function: "Diagnostic autoantibody marker associated with Sjögren syndrome and neonatal lupus risk.",
+    mutationCauses: [
+      "Sjögren syndrome",
+      "SLE overlap",
+      "Neonatal lupus when maternal antibodies cross placenta",
+    ],
+    boardsPearls: [
+      "Anti-Ro/SSA and anti-La/SSB support Sjögren diagnosis",
+      "Anti-Ro is more associated with congenital heart block; anti-La often coexists",
+    ],
+    distinguishFrom: ["Anti-Ro/SSA — more common and stronger congenital heart block association", "Anti-centromere — limited systemic sclerosis"],
+  },
+  {
+    id: "tryptase",
+    name: "Tryptase",
+    etymology: "trypsin-like protease + -ase = enzyme",
+    aliases: ["tryptase", "serum tryptase", "mast cell tryptase"],
+    gene: "TPSAB1/TPSB2",
+    location: "Mast cell secretory granules; released into serum during degranulation",
+    function:
+      "Serine protease stored in mast cells; clinical marker of mast cell activation and burden.",
+    mutationCauses: [
+      "↑ acute tryptase — anaphylaxis/mast cell degranulation",
+      "↑ baseline tryptase — systemic mastocytosis",
+      "Hereditary alpha-tryptasemia — increased TPSAB1 copy number",
+    ],
+    boardsPearls: [
+      "Tryptase rises after anaphylaxis and supports mast cell-mediated reaction",
+      "Baseline tryptase >20 ng/mL is minor criterion for systemic mastocytosis",
+      "Histamine is short-lived; tryptase is more useful lab marker",
+    ],
+    distinguishFrom: ["Histamine — immediate mediator, short half-life", "IgE — upstream antibody, not granule enzyme"],
+  },
+  {
+    id: "collagenase",
+    name: "Collagenase",
+    etymology: "collagen = glue-producing structural protein + -ase = enzyme",
+    aliases: ["collagenase", "matrix metalloproteinase", "mmp", "mmp collagenase"],
+    gene: "MMP1/MMP8/MMP13 family",
+    location: "Extracellular matrix and inflammatory cell secretions",
+    function:
+      "Matrix metalloproteinase activity cleaves collagen, enabling tissue remodeling, wound healing, invasion, and inflammatory tissue destruction.",
+    mutationCauses: [
+      "Excess MMP activity contributes to rheumatoid joint erosion and tumor invasion",
+      "Clostridium histolyticum collagenase used therapeutically for Dupuytren contracture",
+    ],
+    boardsPearls: [
+      "Collagenase breaks collagen; zinc-dependent MMP family",
+      "Neutrophil collagenase = MMP-8",
+      "Tumor invasion requires basement membrane/ECM degradation by proteases",
+    ],
+    distinguishFrom: ["Elastase — degrades elastin; α1-antitrypsin inhibits neutrophil elastase", "Hyaluronidase — spreads through connective tissue ground substance"],
+  },
+  {
+    id: "myeloperoxidase",
+    name: "Myeloperoxidase",
+    etymology: "Greek myelos = marrow + peroxide = oxidized compound + -ase = enzyme",
+    aliases: ["myeloperoxidase", "mpo", "myeloperoxidase enzyme"],
+    gene: "MPO",
+    location: "Azurophilic granules of neutrophils and monocytes",
+    function:
+      "Uses H₂O₂ and Cl⁻ to generate hypochlorous acid (bleach) during respiratory burst for microbial killing.",
+    mutationCauses: [
+      "MPO deficiency — often asymptomatic; Candida susceptibility possible",
+      "p-ANCA/MPO-ANCA vasculitis (microscopic polyangiitis, EGPA)",
+      "MPO cytochemical stain positive in AML myeloblasts",
+    ],
+    boardsPearls: [
+      "NADPH oxidase makes superoxide/H₂O₂; MPO converts H₂O₂ to bleach",
+      "MPO-positive blasts favor AML over ALL",
+      "p-ANCA often targets MPO",
+    ],
+    distinguishFrom: ["NADPH oxidase — upstream respiratory burst enzyme", "Lysozyme — bacterial cell wall enzyme"],
+  },
+  {
+    id: "lysozyme",
+    name: "Lysozyme",
+    etymology: "Greek lysis = loosening + zyme = enzyme/ferment",
+    aliases: ["lysozyme", "muramidase"],
+    gene: "LYZ",
+    location: "Tears, saliva, mucus, neutrophil/monocyte granules",
+    function:
+      "Hydrolyzes peptidoglycan β-1,4 bonds between NAM and NAG in bacterial cell walls.",
+    mutationCauses: [
+      "High serum/urine lysozyme can occur in monocytic leukemias",
+      "Part of innate mucosal defense in tears and saliva",
+    ],
+    boardsPearls: [
+      "Lysozyme attacks peptidoglycan; Gram-positive organisms more exposed",
+      "Tears and saliva contain lysozyme",
+      "Monocytes/macrophages and neutrophils produce lysozyme",
+    ],
+    distinguishFrom: ["Defensins — pore-forming antimicrobial peptides", "Lactoferrin — binds iron"],
+  },
+  {
+    id: "cytochrome-c-oxidase",
+    name: "Cytochrome c oxidase",
+    etymology: "Greek kytos = cell + chroma = color + oxidase = oxidation enzyme",
+    aliases: ["cytochrome c oxidase", "complex iv", "electron transport chain complex iv", "cox enzyme"],
+    gene: "Mitochondrial and nuclear COX subunits",
+    location: "Inner mitochondrial membrane",
+    function:
+      "Complex IV transfers electrons from cytochrome c to O₂, forming water and pumping protons for oxidative phosphorylation.",
+    mutationCauses: [
+      "Cyanide, carbon monoxide, and azide inhibit Complex IV → histotoxic hypoxia/lactic acidosis",
+      "Mitochondrial disorders can impair Complex IV activity",
+    ],
+    boardsPearls: [
+      "Cyanide blocks cytochrome c oxidase → cells cannot use O₂ despite normal PaO₂",
+      "Complex IV reduces O₂ to H₂O",
+      "ETC complexes I, III, IV pump protons; Complex II does not",
+    ],
+    distinguishFrom: ["Cytochrome c — mobile electron carrier", "Succinate dehydrogenase — Complex II/FAD enzyme"],
+  },
+  {
+    id: "nadph-oxidase",
+    name: "NADPH oxidase",
+    etymology: "NADPH = reduced nicotinamide adenine dinucleotide phosphate + oxidase = oxidation enzyme",
+    aliases: ["nadph oxidase", "phagocyte oxidase", "nox2", "respiratory burst oxidase"],
+    gene: "CYBB (gp91phox) and other phox subunits",
+    location: "Phagolysosome membrane of neutrophils/macrophages",
+    function:
+      "Generates superoxide from oxygen during respiratory burst, enabling ROS-mediated killing.",
+    mutationCauses: [
+      "Chronic granulomatous disease — defective NADPH oxidase",
+      "Recurrent catalase-positive infections",
+      "Abnormal dihydrorhodamine (DHR) oxidative burst test",
+    ],
+    boardsPearls: [
+      "CGD: NADPH oxidase defect → cannot make ROS",
+      "Catalase-positive organisms degrade their own H₂O₂ → worse in CGD",
+      "DHR flow cytometry diagnoses CGD",
+      "Peds: CGD often presents in childhood with recurrent abscesses, pneumonia, granulomas, and catalase-positive infections",
+    ],
+    distinguishFrom: ["Myeloperoxidase — downstream bleach enzyme", "Superoxide dismutase — converts superoxide to H₂O₂"],
+  },
+  {
+    id: "complement-system",
+    name: "Complement System",
+    etymology: "Latin complementum = that which completes",
+    aliases: ["complement", "complement system", "complement cascade"],
+    location: "Plasma and tissue fluid; liver-synthesized proteins",
+    function:
+      "Innate immune cascade causing opsonization (C3b), inflammation/chemotaxis (C3a/C4a/C5a), and lysis via MAC (C5b-9).",
+    mutationCauses: [
+      "C3 deficiency — recurrent pyogenic infections",
+      "C5-C9 deficiency — recurrent Neisseria",
+      "C1 inhibitor deficiency — hereditary angioedema",
+    ],
+    boardsPearls: [
+      "Classical pathway uses IgG/IgM; alternative uses microbial surfaces; lectin uses mannose",
+      "C3b opsonizes; C5a chemotaxis; C5b-9 MAC lyses Neisseria",
+      "Low complement suggests immune-complex consumption in SLE/PSGN",
+    ],
+    distinguishFrom: ["Antibody — adaptive recognition molecule", "Cytokines — soluble signaling proteins, not protease cascade"],
+  },
+  {
+    id: "c4a",
+    name: "C4a",
+    etymology: "C4 = fourth complement component + a = small cleavage fragment",
+    aliases: ["c4a", "complement c4a", "complement component c4a"],
+    gene: "C4A/C4B",
+    location: "Complement cleavage product in plasma/tissue fluid",
+    function:
+      "Weak anaphylatoxin generated during classical/lectin complement activation; promotes inflammatory vascular responses.",
+    mutationCauses: [
+      "Reflects classical/lectin pathway activation when C4 is cleaved",
+      "Less potent than C3a and C5a",
+    ],
+    boardsPearls: [
+      "Anaphylatoxins: C3a, C4a, C5a; C5a most potent and chemotactic",
+      "Low C4 often indicates classical pathway consumption",
+    ],
+    distinguishFrom: ["C4b — binds surface and forms C3 convertase", "C5a — strongest anaphylatoxin/chemotactic factor"],
+  },
+  {
+    id: "cd16",
+    name: "CD16 (FcγRIII)",
+    etymology: "CD = cluster of differentiation + 16 = marker number",
+    aliases: ["cd16", "fcγriii", "fcgriii", "fc gamma receptor iii"],
+    gene: "FCGR3A/FCGR3B",
+    location: "NK cells, neutrophils, macrophages",
+    function:
+      "Low-affinity Fc receptor for IgG; NK-cell CD16 mediates antibody-dependent cellular cytotoxicity (ADCC).",
+    mutationCauses: ["Reduced ADCC if Fc receptor function impaired (conceptual Step 1 relevance)"],
+    boardsPearls: [
+      "NK cells are CD16+ CD56+",
+      "ADCC: CD16 binds IgG-coated target → NK cell kills",
+    ],
+    distinguishFrom: ["CD56 — NK adhesion marker", "CD18 — beta-2 integrin for leukocyte adhesion"],
+  },
+  {
+    id: "cd18",
+    name: "CD18",
+    etymology: "CD = cluster of differentiation + 18 = marker number",
+    aliases: ["cd18", "beta-2 integrin", "β2 integrin", "itgb2", "lfa-1 beta chain"],
+    gene: "ITGB2",
+    location: "Leukocyte integrins (LFA-1, Mac-1)",
+    function:
+      "β2 integrin subunit required for firm leukocyte adhesion to endothelium via ICAM-1.",
+    mutationCauses: [
+      "Leukocyte adhesion deficiency type 1",
+      "Delayed umbilical cord separation, recurrent bacterial infections, no pus, neutrophilia",
+    ],
+    boardsPearls: [
+      "LAD1 = CD18 defect",
+      "Rolling uses selectins; firm adhesion uses integrins binding ICAM",
+      "No pus despite high neutrophils is classic",
+      "Peds: delayed cord separation and recurrent skin/mucosal infections without pus",
+    ],
+    distinguishFrom: ["ICAM-1 — endothelial ligand", "CD11 — alpha integrin partner"],
+  },
+  {
+    id: "cd28",
+    name: "CD28",
+    etymology: "CD = cluster of differentiation + 28 = marker number",
+    aliases: ["cd28"],
+    gene: "CD28",
+    location: "Naive T-cell surface",
+    function:
+      "Costimulatory receptor binding B7 (CD80/86) on APCs to provide signal 2 for T-cell activation.",
+    mutationCauses: ["Absent costimulation → T-cell anergy rather than activation"],
+    boardsPearls: [
+      "T-cell activation needs signal 1 (TCR-MHC) + signal 2 (CD28-B7)",
+      "CTLA-4 competes with CD28 and inhibits T cells",
+    ],
+    distinguishFrom: ["CTLA-4 — inhibitory B7 receptor", "CD3 — TCR signaling complex"],
+  },
+  {
+    id: "ctla4",
+    name: "CTLA-4",
+    etymology: "CTLA = cytotoxic T-lymphocyte antigen + 4 = marker number",
+    aliases: ["ctla4", "ctla-4", "cd152", "cytotoxic t lymphocyte antigen 4"],
+    gene: "CTLA4",
+    location: "Activated T cells and Treg cells",
+    function:
+      "Inhibitory checkpoint receptor that binds B7 with higher affinity than CD28, reducing T-cell activation.",
+    mutationCauses: [
+      "CTLA4 haploinsufficiency — immune dysregulation/autoimmunity",
+      "Checkpoint blockade (ipilimumab) enhances antitumor T-cell activity but can cause autoimmunity",
+    ],
+    boardsPearls: [
+      "CTLA-4 turns T cells off; CD28 turns them on",
+      "Abatacept/CTLA4-Ig binds B7 and blocks costimulation in RA",
+      "Ipilimumab blocks CTLA-4 for cancer immunotherapy",
+    ],
+    distinguishFrom: ["PD-1 — peripheral exhaustion checkpoint", "CD28 — stimulatory B7 receptor"],
+  },
+  {
+    id: "icam-1",
+    name: "ICAM-1",
+    etymology: "ICAM = intercellular adhesion molecule + 1 = subtype",
+    aliases: ["icam-1", "icam1", "intercellular adhesion molecule 1"],
+    gene: "ICAM1",
+    location: "Activated endothelium and APCs",
+    function:
+      "Adhesion molecule binding leukocyte LFA-1/Mac-1 integrins for firm adhesion and transmigration.",
+    mutationCauses: [
+      "Upregulated by TNF-α and IL-1 during inflammation",
+      "Rhinovirus can use ICAM-1 as receptor on respiratory epithelium",
+    ],
+    boardsPearls: [
+      "Firm adhesion: leukocyte integrins bind endothelial ICAM/VCAM",
+      "LAD1 CD18 defect prevents binding to ICAM-1",
+      "Steroids reduce adhesion molecule expression and leukocyte migration",
+    ],
+    distinguishFrom: ["Selectins — rolling", "PECAM-1/CD31 — diapedesis"],
+  },
 ];
 
 const proteinById = new Map(PROTEINS.map((p) => [p.id, p]));

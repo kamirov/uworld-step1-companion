@@ -1858,7 +1858,13 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "multiple-sclerosis",
     name: "Multiple Sclerosis",
     etymology: "Latin multiplex = many + Greek skleros = hard/scarred",
-    aliases: ["multiple sclerosis", "ms"],
+    aliases: [
+      "multiple sclerosis",
+      "ms",
+      "disseminated sclerosis",
+      "relapsing-remitting multiple sclerosis",
+      "rrms",
+    ],
     definition:
       "Autoimmune demyelinating disease of the CNS with relapsing-remitting or progressive neurologic deficits disseminated in time and space.",
     pathophysiology:
@@ -1899,6 +1905,8 @@ export const CONDITIONS: ConditionEntry[] = [
       "Most common demyelinating disease in young adults",
       "Oligoclonal bands in CSF = intrathecal IgG synthesis",
       "INO: impaired adduction ipsilateral eye, nystagmus contralateral eye",
+      "Dissemination in time and space is required for diagnosis",
+      "Heat worsens symptoms (Uhthoff phenomenon)",
     ],
   },
   {
@@ -5255,6 +5263,61 @@ export const CONDITIONS: ConditionEntry[] = [
       "Diagnosis requires ≥6 months of symptoms including ≥1 month active phase",
       "Positive symptoms respond better to antipsychotics than negative",
       "Typical antipsychotics: D2 blockade → extrapyramidal symptoms",
+    ],
+  },
+  {
+    id: "delusional-disorder",
+    name: "Delusional Disorder",
+    etymology: "Latin de- = away/from + ludere = play/trick + disorder = disturbed order",
+    aliases: [
+      "delusional disorder",
+      "delusional disorder persecutory type",
+      "delusional disorder grandiose type",
+      "delusional disorder jealous type",
+      "delusional disorder somatic type",
+      "paranoia",
+      "paranoid delusion disorder",
+    ],
+    definition:
+      "Psychotic disorder with one or more fixed delusions for ≥1 month, without prominent hallucinations, disorganized speech, negative symptoms, or markedly impaired functioning outside the delusional theme.",
+    pathophysiology:
+      "Likely dysregulated dopaminergic salience attribution plus cognitive bias toward threat or misinterpretation; unlike schizophrenia, broad thought disorganization and negative symptoms are absent.",
+    classicPresentation: [
+      "Middle-aged or older adult with fixed nonbizarre belief (persecutory, jealous, erotomanic, grandiose, or somatic)",
+      "Functioning relatively preserved except behavior related to delusion",
+      "No sustained manic/depressive episode explaining psychosis",
+    ],
+    keyFindings: [
+      "Delusion duration ≥1 month",
+      "Hallucinations absent or not prominent; if present, related to delusional theme",
+      "No disorganized speech/behavior or negative symptoms typical of schizophrenia",
+    ],
+    associations: [
+      "Family history of psychotic disorders",
+      "Social isolation, sensory impairment, chronic stress",
+      "Substance use or medical illness must be excluded",
+    ],
+    complications: [
+      "Poor insight and treatment refusal",
+      "Interpersonal/legal conflict",
+      "Risk of harm to self/others depending on delusional content",
+    ],
+    distinguishFrom: [
+      "Schizophrenia — ≥6 months with hallucinations/disorganization/negative symptoms and functional decline",
+      "Brief psychotic disorder — <1 month",
+      "Psychotic mood disorder — delusions occur only during mood episodes",
+      "Substance/medical-induced psychosis — intoxication, withdrawal, dementia, endocrine/CNS disease",
+    ],
+    treatment: [
+      "Antipsychotics when accepted; evidence less robust than schizophrenia",
+      "Supportive psychotherapy / CBT for psychosis; build therapeutic alliance",
+      "Hospitalize if danger to self/others or inability to care for self",
+    ],
+    boardsPearls: [
+      "Delusional disorder: fixed delusion ≥1 month with otherwise preserved functioning",
+      "Nonbizarre delusions are classic but bizarre delusions can still occur in DSM-5",
+      "Absence of prominent hallucinations/disorganized speech helps separate from schizophrenia",
+      "Always rule out substances, medications, neurologic disease, and mood disorder with psychosis",
     ],
   },
   {
@@ -8642,6 +8705,269 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Peak incidence 6 months to 5 years; extremely common in daycare. Monitor hydration — oral ulcers cause refusal to eat/drink. EV-A71-associated brainstem encephalitis is rare outside endemic regions but presents with myoclonus, ataxia, and autonomic instability. Nail shedding 1–2 months later is a recognized benign sequela.",
+  },
+  {
+    id: "serum-sickness",
+    name: "Serum Sickness",
+    etymology: "Latin serum = whey/blood fluid + sickness = disease state",
+    aliases: [
+      "serum sickness",
+      "serum sickness reaction",
+      "type iii serum sickness",
+      "immune complex serum sickness",
+    ],
+    definition:
+      "Systemic type III hypersensitivity reaction after exposure to foreign protein or certain drugs, classically presenting with fever, rash, arthralgias, and low complement.",
+    pathophysiology:
+      "Exogenous antigen triggers IgG antibody formation → circulating antigen-antibody immune complexes deposit in vessels, joints, and glomeruli → complement activation/consumption and inflammation.",
+    classicPresentation: [
+      "Fever, urticarial or morbilliform rash, pruritus",
+      "Arthralgias or arthritis, often hands/feet",
+      "Lymphadenopathy days to weeks after antiserum, antivenom, monoclonal antibody, or drug exposure",
+    ],
+    keyFindings: [
+      "Delayed onset after exposure (often 1–2 weeks)",
+      "Possible proteinuria or hematuria from immune-complex glomerulonephritis",
+      "Can follow antivenom, antitoxin, rituximab, infliximab, or beta-lactam exposure",
+    ],
+    keyLabs: [
+      "↓ C3/C4 from complement consumption",
+      "↑ ESR/CRP",
+      "Urinalysis may show proteinuria/hematuria",
+    ],
+    associations: [
+      "Type III hypersensitivity",
+      "Foreign animal serum or antivenom exposure",
+      "Immune complex vasculitis and glomerulonephritis",
+    ],
+    complications: [
+      "Glomerulonephritis",
+      "Vasculitis",
+      "Rare neuritis or myocarditis",
+    ],
+    distinguishFrom: [
+      "Anaphylaxis — type I, immediate, IgE-mediated with bronchospasm/hypotension",
+      "Serum sickness-like reaction — similar symptoms but usually normal complement/no immune complexes",
+      "DRESS — fever/rash with eosinophilia and organ injury weeks after drug exposure",
+    ],
+    treatment: [
+      "Stop offending exposure when possible",
+      "Supportive care: NSAIDs, antihistamines",
+      "Systemic glucocorticoids for severe symptoms or organ involvement",
+    ],
+    boardsPearls: [
+      "Triad: fever + rash + arthralgia after foreign protein/drug exposure",
+      "Mechanism: type III hypersensitivity with immune-complex deposition",
+      "Low complement helps distinguish true serum sickness from serum sickness-like reaction",
+      "Antivenom can save life acutely but can cause delayed serum sickness",
+    ],
+    pediatrics:
+      "Serum sickness-like reactions are more common in children, especially after cefaclor/amoxicillin; true serum sickness still implies immune complexes and low complement.",
+  },
+  {
+    id: "acromegaly",
+    name: "Acromegaly",
+    etymology: "Greek akron = extremity + megas = large",
+    aliases: [
+      "acromegaly",
+      "growth hormone excess",
+      "gh excess",
+      "somatotropin excess",
+      "pituitary somatotroph adenoma",
+    ],
+    definition:
+      "Excess growth hormone after epiphyseal plate closure causing enlargement of acral soft tissue, facial bones, and viscera.",
+    pathophysiology:
+      "Usually a pituitary somatotroph adenoma secretes GH → liver and tissues produce IGF-1 → periosteal bone growth, soft-tissue overgrowth, insulin resistance, and organ enlargement.",
+    classicPresentation: [
+      "Enlarged hands/feet, increased ring or shoe size",
+      "Coarse facial features, frontal bossing, prognathism, macroglossia",
+      "Headache or bitemporal hemianopia from pituitary mass effect",
+    ],
+    keyFindings: [
+      "Hypertension, cardiomyopathy, sleep apnea",
+      "Carpal tunnel syndrome from soft-tissue overgrowth",
+      "Insulin resistance or diabetes mellitus",
+    ],
+    keyLabs: [
+      "↑ IGF-1 screening test",
+      "Oral glucose load fails to suppress GH",
+      "Pituitary MRI often shows adenoma",
+    ],
+    associations: [
+      "Pituitary adenoma",
+      "Multiple endocrine neoplasia type 1 (less common association)",
+      "Colon polyps and increased colorectal cancer risk",
+    ],
+    complications: [
+      "Hypertension and hypertrophic cardiomyopathy",
+      "Obstructive sleep apnea",
+      "Diabetes mellitus",
+      "Degenerative joint disease",
+    ],
+    distinguishFrom: [
+      "Gigantism — GH excess before epiphyseal plate closure",
+      "Cushing syndrome — central obesity, striae, proximal weakness",
+      "Hypothyroidism — coarse features possible but low thyroid hormone/slow reflexes",
+    ],
+    treatment: [
+      "Transsphenoidal resection of pituitary adenoma",
+      "Somatostatin analogs (octreotide), GH receptor antagonist (pegvisomant), dopamine agonist in select cases",
+      "Radiation for residual/recurrent disease",
+    ],
+    boardsPearls: [
+      "Best screening test: IGF-1 because GH is pulsatile",
+      "Diagnostic confirmation: GH not suppressed by oral glucose",
+      "Somatostatin inhibits GH; octreotide can treat unresectable/residual disease",
+      "Peds: GH excess before epiphyseal closure causes gigantism, not classic acromegaly",
+    ],
+    pediatrics:
+      "Before epiphyseal closure, GH excess causes gigantism with excessive linear growth; after closure, it causes acromegaly.",
+  },
+  {
+    id: "aphthous-ulcer",
+    name: "Aphthous Ulcer",
+    etymology: "Greek aphtha = ulcer/eruption + Latin ulcus = sore",
+    aliases: ["aphthous ulcer", "aphtous ulcer", "aphthous ulcers", "canker sore", "canker sores"],
+    definition:
+      "Painful, shallow, round oral mucosal ulcer with erythematous halo and yellow-white base; not caused by HSV.",
+    pathophysiology:
+      "T-cell-mediated mucosal injury triggered by local trauma, stress, nutritional deficiency, or systemic inflammatory disease.",
+    classicPresentation: [
+      "Painful oral ulcer on nonkeratinized mucosa (buccal/labial mucosa, floor of mouth)",
+      "Recurrent episodes; no vesicular stage",
+      "Heals without scarring when minor",
+    ],
+    keyFindings: [
+      "Round ulcer with gray-yellow base and red rim",
+      "No grouped vesicles (vs HSV)",
+      "May coexist with genital ulcers/uveitis in Behçet disease",
+    ],
+    keyLabs: [
+      "Clinical diagnosis",
+      "Consider CBC, iron, folate, B12 if recurrent/severe",
+    ],
+    associations: [
+      "Iron, folate, or vitamin B12 deficiency",
+      "Celiac disease, inflammatory bowel disease",
+      "Behçet disease",
+      "HIV or neutropenia when severe/refractory",
+    ],
+    complications: ["Pain-limited oral intake", "Rare scarring with major aphthae"],
+    distinguishFrom: [
+      "HSV gingivostomatitis — vesicles, keratinized mucosa, fever",
+      "Oral candidiasis — scrapeable plaques",
+      "Oral squamous cell carcinoma — persistent nonhealing ulcer",
+    ],
+    treatment: [
+      "Topical corticosteroids or anesthetics",
+      "Correct nutritional deficiency",
+      "Systemic therapy only for severe systemic disease",
+    ],
+    boardsPearls: [
+      "Aphthous ulcers are painful and recurrent but not vesicular",
+      "Recurrent oral + genital ulcers + uveitis = Behçet disease",
+      "Nonkeratinized mucosa favors aphthous ulcer; keratinized clustered vesicles favor HSV",
+    ],
+    pediatrics:
+      "Common in children/adolescents; monitor hydration when oral pain limits drinking. Severe recurrent ulcers warrant evaluation for IBD, celiac disease, cyclic neutropenia, or immunodeficiency.",
+  },
+  {
+    id: "keratoconjunctivitis-sicca",
+    name: "Keratoconjunctivitis Sicca (dry eyes)",
+    etymology: "Greek keras = cornea + conjunctiva = joined membrane + Latin siccus = dry",
+    aliases: [
+      "keratoconjunctivitis sicca",
+      "dry eyes",
+      "dry eye",
+      "sicca keratoconjunctivitis",
+    ],
+    definition:
+      "Dry eye disease from deficient or unstable tear film causing corneal and conjunctival irritation.",
+    pathophysiology:
+      "Lacrimal gland dysfunction or evaporative tear loss reduces aqueous/lipid tear components → ocular surface inflammation and epithelial injury.",
+    classicPresentation: [
+      "Gritty/burning eyes, foreign-body sensation",
+      "Photophobia or blurry vision worse with reading/screens",
+      "Sjögren syndrome: dry eyes with xerostomia",
+    ],
+    keyFindings: [
+      "Decreased tear lake",
+      "Corneal punctate epithelial erosions",
+      "Positive Schirmer test in aqueous-deficient dry eye",
+    ],
+    keyLabs: [
+      "Schirmer test",
+      "Fluorescein or rose bengal staining",
+      "Anti-Ro/SSA and anti-La/SSB if Sjögren suspected",
+    ],
+    associations: [
+      "Sjögren syndrome",
+      "Rheumatoid arthritis and SLE",
+      "Anticholinergics, antihistamines, isotretinoin",
+      "Vitamin A deficiency (xerophthalmia)",
+    ],
+    complications: ["Keratitis", "Corneal ulceration in severe disease"],
+    distinguishFrom: [
+      "Allergic conjunctivitis — itching, watery discharge",
+      "Bacterial conjunctivitis — purulent discharge",
+      "Vitamin A deficiency — Bitot spots/night blindness",
+    ],
+    treatment: [
+      "Artificial tears and lubricating ointment",
+      "Treat underlying autoimmune disease",
+      "Topical cyclosporine/lifitegrast or punctal plugs for refractory disease",
+    ],
+    boardsPearls: [
+      "Dry eyes + dry mouth = sicca symptoms; think Sjögren",
+      "Anti-Ro/SSA and anti-La/SSB support Sjögren diagnosis",
+      "Schirmer test measures tear production",
+    ],
+  },
+  {
+    id: "dental-caries",
+    name: "Dental Caries",
+    etymology: "Latin dens = tooth + caries = decay/rottenness",
+    aliases: ["dental caries", "caries", "tooth decay", "cavities", "dental cavity"],
+    definition:
+      "Localized demineralization and destruction of tooth enamel/dentin caused by acid-producing bacterial biofilm.",
+    pathophysiology:
+      "Oral bacteria ferment dietary carbohydrates → organic acids lower plaque pH → enamel hydroxyapatite dissolves; low saliva worsens buffering and remineralization.",
+    classicPresentation: [
+      "Tooth pain or sensitivity to sweets/cold",
+      "Visible pits, fissures, or brown/black lesions",
+      "May be asymptomatic until dentin/pulp involved",
+    ],
+    keyFindings: [
+      "Enamel cavitation",
+      "Plaque biofilm",
+      "Xerostomia increases risk",
+    ],
+    keyLabs: ["Dental exam and radiographs when needed"],
+    associations: [
+      "Streptococcus mutans and Lactobacillus",
+      "Frequent sugar exposure",
+      "Xerostomia / Sjögren syndrome",
+      "Poor fluoride exposure",
+    ],
+    complications: ["Pulpitis", "Dental abscess", "Contiguous spread to jaw/soft tissue"],
+    distinguishFrom: [
+      "Periodontitis — gum/attachment loss, not primary enamel decay",
+      "Aphthous ulcer — mucosal ulcer, not tooth lesion",
+      "Enamel fluorosis — mottled enamel from excess fluoride",
+    ],
+    treatment: [
+      "Fluoride and dietary sugar reduction",
+      "Restoration/filling for cavitated lesions",
+      "Drainage/antibiotics only for spreading odontogenic infection",
+    ],
+    boardsPearls: [
+      "S. mutans makes dextran biofilm and lactic acid from sucrose",
+      "Saliva protects teeth via buffering, antimicrobial proteins, and remineralization",
+      "Sjögren xerostomia → recurrent dental caries",
+    ],
+    pediatrics:
+      "Early childhood caries can follow frequent bottle/sippy-cup sugar exposure; fluoride varnish and limiting juice/sugary drinks are high-yield prevention.",
   },
 ];
 
