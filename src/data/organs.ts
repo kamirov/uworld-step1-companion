@@ -266,6 +266,25 @@ export const ORGANS: OrganEntry[] = [
     derivatives: ["Glomerulus", "Tubules", "Collecting system"],
   },
   {
+    id: "metanephros",
+    name: "Metanephros",
+    etymology: "Greek meta = after/change + nephros = kidney",
+    aliases: [
+      "metanephros",
+      "metanephric kidney",
+      "definitive kidney",
+      "permanent kidney",
+      "metanephric system",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Caudal intermediate mesoderm gives rise to metanephric mesenchyme (blastema); ureteric bud sprouts from mesonephric (Wolffian) duct and invades mesenchyme — reciprocal induction forms the permanent kidney.",
+    derivatives: [
+      "Metanephric mesenchyme → glomeruli, proximal tubule through distal tubule",
+      "Ureteric bud → ureter, renal pelvis, calyces, collecting ducts",
+    ],
+  },
+  {
     id: "ureter",
     name: "Ureter",
     etymology: "Greek oureter = urinary canal",
@@ -318,6 +337,20 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Mesoderm",
     origin:
       "Mesonephric (Wolffian) duct derivative; forms efferent ductules and epididymis under testosterone.",
+  },
+  {
+    id: "scrotum",
+    name: "Scrotum",
+    etymology: "Latin scrotum = skin/pouch",
+    aliases: [
+      "scrotum",
+      "scrotal",
+      "scrotal sac",
+      "scrotal pouch",
+    ],
+    germLayer: "Ectoderm / Mesoderm",
+    origin:
+      "Labioscrotal swellings of the urogenital folds fuse in the male fetus to form the scrotum; contains skin (ectoderm), dartos smooth muscle, and cremaster muscle investing the testes.",
   },
   {
     id: "ovary",
@@ -377,20 +410,33 @@ export const ORGANS: OrganEntry[] = [
     id: "adrenal-cortex",
     name: "Adrenal Cortex",
     etymology: "Latin ad = near + renal = kidney + Latin cortex = bark/outer layer",
-    aliases: ["adrenal cortex", "adrenal gland", "adrenal"],
+    aliases: [
+      "adrenal cortex",
+      "adrenal cortices",
+      "cortex of adrenal gland",
+      "zona glomerulosa",
+      "zona fasciculata",
+      "zona reticularis",
+    ],
     germLayer: "Mesoderm",
     origin:
-      "Mesodermal cells from celomic epithelium near gonadal ridge; forms three cortical zones.",
+      "Mesodermal mesenchyme from celomic (coelomic) epithelium of the posterior abdominal wall near the urogenital ridge; condenses into a cortical primordium that envelops the migrating neural crest–derived medulla. Fetal cortex predominates in utero and involutes after birth; the permanent adult cortex differentiates into zona glomerulosa (outer), fasciculata (middle), and reticularis (inner).",
     derivatives: ["Zona glomerulosa", "Zona fasciculata", "Zona reticularis"],
   },
   {
     id: "adrenal-medulla",
     name: "Adrenal Medulla",
     etymology: "Latin ad = near + renal = kidney + Latin medulla = marrow",
-    aliases: ["adrenal medulla"],
+    aliases: [
+      "adrenal medulla",
+      "adrenal medullas",
+      "medulla of adrenal gland",
+      "chromaffin cells",
+      "chromaffin cell",
+    ],
     germLayer: "Ectoderm / Neural crest",
     origin:
-      "Neural crest cells (ectoderm) migrate into adrenal cortex primordium and differentiate into chromaffin cells.",
+      "Neural crest cells (neuroectoderm) migrate from the neural tube alongside the developing sympathetic chain and penetrate the center of the mesoderm-derived adrenal cortex primordium, differentiating into chromaffin cells — functionally modified postganglionic sympathetic neurons that secrete catecholamines directly into blood.",
   },
   {
     id: "pituitary",
@@ -506,6 +552,26 @@ export const ORGANS: OrganEntry[] = [
       "Corneal epithelium from surface ectoderm; stroma and endothelium largely from neural crest mesenchyme.",
   },
   {
+    id: "conjunctiva",
+    name: "Conjunctiva",
+    etymology: "Latin conjunctivus = connecting/joining together",
+    aliases: [
+      "conjunctiva",
+      "conjunctivae",
+      "conjunctival",
+      "bulbar conjunctiva",
+      "palpebral conjunctiva",
+    ],
+    germLayer: "Ectoderm",
+    origin:
+      "Surface ectoderm lining the inner eyelids (palpebral conjunctiva) and covering the anterior sclera (bulbar conjunctiva); continuous at the fornices; contains goblet cells for mucin secretion.",
+    derivatives: [
+      "Nonkeratinized stratified squamous epithelium with goblet cells",
+      "Substantia propria (loose vascular connective tissue)",
+      "Limbal stem cell niche at corneoscleral junction",
+    ],
+  },
+  {
     id: "inner-ear",
     name: "Inner Ear",
     etymology: "inner = inside + Old English eare = ear",
@@ -617,7 +683,7 @@ export const ORGANS: OrganEntry[] = [
     id: "suprarenal",
     name: "Suprarenal Gland",
     etymology: "Latin supra = above + renal = kidney + Latin glans = acorn/gland",
-    aliases: ["suprarenal"],
+    aliases: ["suprarenal", "suprarenal gland", "adrenal gland", "adrenal", "adrenal glands"],
     germLayer: "Mesoderm / Neural crest",
     origin:
       "Synonymous with adrenal gland; cortex from mesoderm, medulla from neural crest.",
@@ -657,6 +723,35 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Mesoderm",
     origin:
       "Extraembryonic mesoderm surrounds allantois and vitelline vessels; contains two arteries and one vein.",
+  },
+  {
+    id: "allantois",
+    name: "Allantois",
+    etymology: "Greek allantoeides = sausage-shaped",
+    aliases: [
+      "allantois",
+      "allantoic",
+      "allantoic sac",
+      "allantoic diverticulum",
+    ],
+    germLayer: "Endoderm / Mesoderm",
+    origin:
+      "Endoderm-lined diverticulum from the yolk sac that extends into the connecting stalk; mesoderm surrounds the allantoic vessels; early waste exchange and later contributes to the urachus and umbilical cord vessels.",
+  },
+  {
+    id: "urachus",
+    name: "Urachus",
+    etymology: "Greek oura = tail + Latin -chus = vessel-like structure",
+    aliases: [
+      "urachus",
+      "urachal",
+      "urachal remnant",
+      "median umbilical ligament",
+      "median umbilical ligaments",
+    ],
+    germLayer: "Endoderm / Mesoderm",
+    origin:
+      "Intraembryonic remnant of the allantois between the fetal bladder dome and umbilicus; normally obliterates to form the median umbilical ligament; failure of closure → patent urachus, urachal cyst, sinus, or diverticulum.",
   },
   {
     id: "gingiva-oral",
@@ -897,13 +992,24 @@ const ORGAN_DETAILS: Record<
   "adrenal-cortex": {
     functionSummary: "Makes aldosterone, cortisol, and adrenal androgens in glomerulosa, fasciculata, and reticularis.",
     commonPathologies: ["Addison disease", "Cushing syndrome", "Conn syndrome", "Congenital adrenal hyperplasia"],
-    step1Pearls: ["GFR: salt, sugar, sex", "21-hydroxylase deficiency causes low cortisol +/- aldosterone and high androgens", "ACTH stimulates cortisol and androgens, not aldosterone primarily"],
+    step1Pearls: [
+      "GFR: salt (glomerulosa), sugar (fasciculata), sex (reticularis)",
+      "Embryology: cortex = mesoderm from celomic epithelium; medulla = neural crest inside cortex",
+      "21-hydroxylase deficiency causes low cortisol +/- aldosterone and high androgens",
+      "ACTH stimulates cortisol and androgens, not aldosterone primarily (renin-angiotensin drives aldosterone)",
+    ],
     pediatrics: "Classic CAH can cause salt wasting and virilization/ambiguous genitalia in newborns.",
   },
   "adrenal-medulla": {
-    functionSummary: "Chromaffin cells secrete catecholamines as modified postganglionic sympathetic neurons.",
+    functionSummary: "Chromaffin cells secrete epinephrine and norepinephrine as modified postganglionic sympathetic neurons.",
     commonPathologies: ["Pheochromocytoma", "Neuroblastoma", "MEN2-associated tumors"],
-    step1Pearls: ["Episodic headache, sweating, tachycardia, hypertension suggests pheochromocytoma", "Treat alpha blockade before beta blockade", "Neural crest origin links to neuroblastoma"],
+    step1Pearls: [
+      "Embryology: neural crest (ectoderm) migrates into mesodermal adrenal cortex primordium",
+      "Chromaffin cells = modified sympathetic postganglionic neurons releasing catecholamines into blood",
+      "Episodic headache, sweating, tachycardia, hypertension suggests pheochromocytoma",
+      "Treat alpha blockade before beta blockade",
+      "Neural crest origin links medulla to neuroblastoma and pheochromocytoma",
+    ],
     pediatrics: "Neuroblastoma is a common pediatric adrenal medulla/sympathetic chain tumor with elevated HVA/VMA.",
   },
   pituitary: {
@@ -972,6 +1078,18 @@ const ORGAN_DETAILS: Record<
     functionSummary: "Transparent anterior refractive surface and barrier against pathogens/trauma.",
     commonPathologies: ["Corneal abrasion", "Keratitis", "Keratoconus", "Fuchs dystrophy", "Corneal ulcer"],
     step1Pearls: ["CN V1 mediates corneal reflex afferent; CN VII efferent blink", "HSV keratitis causes dendritic ulcers", "Wilson disease deposits copper in Descemet membrane as Kayser-Fleischer rings"],
+  },
+  conjunctiva: {
+    functionSummary: "Vascularized mucous membrane lining eyelids and sclera; produces mucin via goblet cells and contributes to tear film stability.",
+    commonPathologies: ["Bacterial conjunctivitis", "Viral conjunctivitis", "Allergic conjunctivitis", "Episcleritis/scleritis", "Pterygium"],
+    step1Pearls: [
+      "Scleral icterus visible through bulbar conjunctiva in hyperbilirubinemia",
+      "Red eye with discharge: bacterial (purulent) vs viral (watery, lymphoid follicles) vs allergic (itching, eosinophils)",
+      "Adenovirus — pharyngoconjunctival fever (pharyngitis + conjunctivitis + fever)",
+      "Conjunctiva is vascularized; cornea is avascular — key clinical distinction",
+      "Chemosis = conjunctival edema (e.g., anaphylaxis, CHF)",
+    ],
+    pediatrics: "Neonatal conjunctivitis (ophthalmia neonatorum): N. gonorrhoeae (days 2–5, urgent), C. trachomatis (days 5–14), HSV, or chemical irritant from prophylaxis.",
   },
   "inner-ear": {
     functionSummary: "Cochlea mediates hearing; vestibular apparatus mediates balance and head acceleration.",
@@ -1056,9 +1174,15 @@ const ORGAN_DETAILS: Record<
   },
   penis: {
     functionSummary: "Male external organ for urination and sexual function; erectile tissue enables intercourse.",
-    commonPathologies: ["Hypospadias", "Erectile dysfunction", "Peyronie disease", "Penile cancer", "Phimosis/paraphimosis"],
+    commonPathologies: ["Hypospadias", "Erectile dysfunction", "Peyronie disease", "Penile cancer", "Phimosis", "Paraphimosis"],
     step1Pearls: ["Parasympathetic erection, sympathetic emission/ejaculation", "Hypospadias opens on ventral surface; do not circumcise before repair planning", "HPV increases penile squamous cell carcinoma risk"],
     pediatrics: "Hypospadias is a common congenital anomaly and may indicate androgen synthesis/action problems if severe.",
+  },
+  scrotum: {
+    functionSummary: "Cutaneous pouch housing the testes and epididymides; thermoregulation maintains testicular temperature below core body temperature for spermatogenesis.",
+    commonPathologies: ["Cryptorchidism", "Testicular torsion", "Hydrocele", "Varicocele", "Epididymitis", "Fournier gangrene", "Scrotal trauma"],
+    step1Pearls: ["Cremaster reflex (L1–L2) — ipsilateral testicular elevation with inner thigh stroke", "Testes must be ~2–3°C below body temperature for normal spermatogenesis", "Torsion = surgical emergency; bell-clapper deformity predisposes", "Bag of worms = varicocele (left > right due to left renal vein angle)", "Transillumination: hydrocele glows; solid masses do not"],
+    pediatrics: "Undescended testis (cryptorchidism) increases infertility and germ cell tumor risk — orchiopexy typically by 6–18 months. Neonatal testes may be retractile; distinguish from true cryptorchidism.",
   },
   placenta: {
     functionSummary: "Transfers gases/nutrients/waste, produces hormones, and creates maternal-fetal immune interface.",

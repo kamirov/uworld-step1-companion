@@ -185,6 +185,146 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Not specific to tamponade alone — always interpret with full clinical context",
     ],
   },
+  {
+    id: "plasma",
+    name: "Plasma",
+    etymology: "Greek plasma = something molded or formed",
+    aliases: ["plasma", "blood plasma", "plasma volume"],
+    definition:
+      "The liquid component of blood after cells are removed, containing water, electrolytes, albumin and other proteins, clotting factors, hormones, and nutrients; the intravascular compartment from which glomerular filtrate is derived.",
+    factors: [
+      "Composition: ~90% water; major proteins include albumin (oncotic pressure), globulins, fibrinogen",
+      "Oncotic (colloid osmotic) pressure largely from plasma proteins — opposes filtration out of capillaries",
+      "Renal handling: glomerulus filters plasma water and small solutes; cells and large proteins normally remain intravascular",
+      "↑ Plasma volume: Na⁺/water retention, IV fluids, hyperaldosteronism, SIADH (dilutional if free water excess)",
+      "↓ Plasma volume: hemorrhage, dehydration, burns, third-spacing — ↓ preload and renal perfusion",
+      "RPF = RBF × (1 − hematocrit) — plasma flow through kidneys per unit time",
+    ],
+  },
+  {
+    id: "renal-blood-flow",
+    name: "Renal Blood Flow",
+    etymology: "Latin ren = kidney + blood + flow = movement of fluid",
+    aliases: [
+      "renal blood flow",
+      "rbf",
+      "kidney blood flow",
+    ],
+    definition:
+      "Total volumetric flow of blood through both kidneys per unit time (~20–25% of cardiac output, ~1.1 L/min in adults). High baseline flow supports filtration, reabsorption, and oxygen delivery despite relatively low O₂ extraction.",
+    factors: [
+      "Normal ~1.1 L/min (~20–25% CO) — kidneys receive disproportionately high perfusion",
+      "↑ RBF: ↑ CO, vasodilation (prostaglandins dilate afferent arteriole, dopamine at low dose)",
+      "↓ RBF: ↓ CO/hypovolemia, renal artery stenosis, NSAIDs (↓ prostaglandin-mediated afferent dilation), severe heart failure",
+      "Autoregulation maintains relatively stable RBF/GFR across MAP ~80–180 mmHg via myogenic response and TGF",
+      "RPF = RBF × (1 − Hct); hematocrit determines plasma fraction of renal flow",
+      "Oxygen extraction by kidney is low (~10%) — high flow buffers metabolic demand",
+    ],
+  },
+  {
+    id: "renal-plasma-flow",
+    name: "Renal Plasma Flow",
+    etymology: "Latin ren = kidney + Greek plasma = formed/molded + flow = movement",
+    aliases: [
+      "renal plasma flow",
+      "rpf",
+      "kidney plasma flow",
+      "effective renal plasma flow",
+      "erpf",
+    ],
+    definition:
+      "Plasma component of renal blood flow per unit time (~600–700 mL/min). Measured clinically using PAH clearance because PAH is both filtered and secretively extracted from plasma by proximal tubule.",
+    factors: [
+      "RPF = RBF × (1 − Hct); with Hct ~45%, RPF ≈ 55% of RBF",
+      "Normal effective RPF ~600–700 mL/min (often estimated via PAH clearance)",
+      "↑ RPF: same drivers as ↑ RBF (afferent dilation, ↑ CO)",
+      "↓ RPF: afferent constriction, hypovolemia, NSAIDs, bilateral renal artery stenosis",
+      "PAH clearance approximates RPF because kidney extracts ~90% of PAH from plasma in one pass",
+      "Filtration fraction = GFR / RPF — links plasma delivery to filtration rate",
+    ],
+  },
+  {
+    id: "glomerular-filtration-rate",
+    name: "Glomerular Filtration Rate",
+    etymology: "Latin glomerulus = small ball + filtration + rate = per unit time",
+    aliases: [
+      "glomerular filtration rate",
+      "gfr",
+      "glomerular filtration",
+      "estimated gfr",
+    ],
+    definition:
+      "Volume of plasma ultrafiltrate formed by all glomeruli per unit time (~120 mL/min/1.73 m² in healthy adults). Primary index of kidney excretory function; estimated clinically from creatinine (eGFR) or measured with inulin/Iohexol clearance.",
+    factors: [
+      "GFR = Kf × [(PGC − PBS) − (πGC − πBS)] — net ultrafiltration pressure × filtration coefficient",
+      "↑ GFR: ↑ glomerular capillary hydrostatic pressure (afferent dilation or efferent constriction via Ang II), ↑ Kf",
+      "↓ GFR: ↓ RBF (hypovolemia, NSAIDs, RAS), ↓ Kf (glomerular disease), ↓ net filtration pressure (efferent dilation or afferent constriction)",
+      "Creatinine clearance approximates GFR; serum creatinine inversely correlates but lags in acute injury",
+      "Autoregulation and tubuloglomerular feedback stabilize GFR despite BP fluctuations",
+      "CKD staged by persistent ↓ GFR; ESRD typically GFR <15 mL/min/1.73 m²",
+    ],
+  },
+  {
+    id: "filtration-fraction",
+    name: "Filtration Fraction",
+    etymology: "Latin filtrum = felt/strainer + fractio = portion/share",
+    aliases: [
+      "filtration fraction",
+      "ff",
+      "renal filtration fraction",
+    ],
+    definition:
+      "Fraction of renal plasma flow that is filtered across glomeruli: FF = GFR / RPF. Normally ~20% (~120/600 mL/min); the remaining ~80% of plasma passes through efferent arterioles to peritubular capillaries for reabsorption.",
+    factors: [
+      "Normal FF ≈ 0.20 (20%)",
+      "↑ FF: efferent arteriole constriction (Ang II) → ↑ PGC with relatively stable RPF → ↑ GFR/RPF ratio",
+      "↓ FF: afferent arteriole constriction → ↓ GFR more than ↓ RPF (e.g., NSAIDs, severe hypoperfusion)",
+      "FF = GFR / RPF; if GFR and RPF both fall proportionally, FF may stay near normal",
+      "Low FF with ↓ RPF suggests afferent-side hypoperfusion (prerenal azotemia physiology)",
+      "High FF with ↑ Ang II supports efferent constriction preserving GFR in early hypovolemia",
+    ],
+  },
+  {
+    id: "mean-arterial-pressure",
+    name: "Mean Arterial Pressure",
+    etymology: "Latin medius = middle + arteria = artery + pressura = pressing force",
+    aliases: [
+      "mean arterial pressure",
+      "map",
+    ],
+    definition:
+      "Time-averaged arterial pressure over the cardiac cycle — the perfusion pressure driving organ blood flow. Approximated as DBP + ⅓(SBP − DBP), or (2×DBP + SBP)/3.",
+    factors: [
+      "Normal MAP ~70–105 mmHg; cerebral and renal autoregulation generally operates ~60–160 mmHg",
+      "MAP = CO × SVR (conceptually — perfusion pressure depends on flow and resistance)",
+      "↑ MAP: vasoconstriction (↑ SVR), ↑ CO (inotropes, hyperdynamic states), volume loading",
+      "↓ MAP: hemorrhage, sepsis (late), cardiogenic shock, general anesthesia, vasodilators",
+      "Cerebral perfusion pressure (CPP) = MAP − ICP — MAP must exceed ICP for brain perfusion",
+      "Autoregulation in kidney and brain buffers blood flow across a range of MAP changes",
+    ],
+  },
+  {
+    id: "systemic-vascular-resistance",
+    name: "Systemic Vascular Resistance",
+    etymology: "Greek systema = organized whole + Latin vasculum = small vessel + resistere = to stand against",
+    aliases: [
+      "systemic vascular resistance",
+      "svr",
+      "total peripheral resistance",
+      "tpr",
+      "peripheral vascular resistance",
+    ],
+    definition:
+      "Aggregate resistance to blood flow offered by the systemic arterial tree. Primary determinant of LV afterload; calculated from MAP, CVP, and cardiac output: SVR ∝ (MAP − CVP) / CO.",
+    factors: [
+      "Normal SVR ~900–1400 dyn·s/cm⁵ (~11–15 Wood units)",
+      "↑ SVR: vasoconstrictors (phenylephrine, norepinephrine), hypovolemic shock (compensatory), cardiogenic shock, cold exposure",
+      "↓ SVR: sepsis (early distributive shock), anaphylaxis, spinal/epidural anesthesia, nitroprusside, hydralazine",
+      "Squatting and knee-chest position ↑ SVR — used in tetralogy of Fallot to ↓ right-to-left shunt",
+      "Shock profiles: hypovolemic/cardiogenic → ↑ SVR; early septic → ↓ SVR with ↑ or normal CO",
+      "Afterload ≈ SVR for the left ventricle ejecting into the aorta",
+    ],
+  },
 ];
 
 const hemodynamicById = new Map(HEMODYNAMICS.map((h) => [h.id, h]));

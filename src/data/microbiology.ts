@@ -521,6 +521,72 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
       "Pediatric gas gangrene rare; consider necrotizing fasciitis overlap in toxic-appearing child with extremity pain.",
   },
   {
+    id: "clostridium-botulinum",
+    name: "Clostridium botulinum",
+    etymology: "Greek kloster = spindle + Latin botulus = sausage",
+    aliases: [
+      "clostridium botulinum",
+      "c. botulinum",
+      "botulinum",
+      "clostridium botulinum toxin",
+    ],
+    type: "anaerobe",
+    definition:
+      "Gram-positive, spore-forming anaerobic rod producing botulinum neurotoxin — the most potent biological toxin — causing flaccid paralysis via presynaptic acetylcholine blockade.",
+    morphology: [
+      "Gram-positive rod",
+      "Spore-forming anaerobe",
+      "Subterminal spores (safety-pin appearance on stain)",
+    ],
+    virulenceFactors: [
+      "Botulinum neurotoxin (seven serotypes A–G) — zinc endopeptidase cleaving SNARE proteins",
+      "Blocks ACh release at neuromuscular junction and autonomic ganglia",
+      "Heat-labile preformed toxin in foodborne disease",
+    ],
+    transmission: [
+      "Ingestion of preformed toxin in improperly preserved canned/fermented foods",
+      "Infant ingestion of spores (honey) with in vivo toxin production in gut",
+      "Contaminated wounds (wound botulism)",
+    ],
+    diseases: [
+      "Foodborne botulism",
+      "Infant botulism",
+      "Wound botulism",
+      "Iatrogenic botulism (cosmetic/medical toxin overdose)",
+    ],
+    classicPresentation: [
+      "Descending flaccid paralysis starting with cranial neuropathies",
+      "Diplopia, ptosis, dysarthria, dysphagia",
+      "Infant: constipation, weak suck, hypotonia",
+      "Multiple victims after shared meal (foodborne outbreak)",
+    ],
+    diagnosis: [
+      "Clinical syndrome plus toxin detection in serum/stool/food",
+      "Mouse bioassay or specialized toxin assays",
+      "Stool culture in infant botulism",
+    ],
+    treatment: [
+      "Botulinum antitoxin (heptavalent) for foodborne/wound disease",
+      "Human botulism immune globulin (BIG-IV) for infants",
+      "Mechanical ventilation for respiratory failure",
+      "Wound debridement for wound botulism",
+    ],
+    distinguishFrom: [
+      "C. tetani — tetanospasmin causes spastic paralysis, not flaccid",
+      "C. perfringens — α-toxin myonecrosis/gas gangrene, not neuroparalysis",
+      "C. difficile — colitis toxin, not neuromuscular blockade",
+    ],
+    boardsPearls: [
+      "Botulinum toxin cleaves SNARE proteins → ↓ ACh release",
+      "Most potent toxin known; flaccid (not spastic) paralysis",
+      "Infant botulism from honey spores — human BIG-IV treatment",
+      "vs tetanus — opposite paralysis pattern",
+      "Cosmetic botulinum toxin uses same mechanism locally at NMJ",
+    ],
+    pediatrics:
+      "Infant botulism is the key pediatric presentation; honey is contraindicated before age 1. BIG-IV reduces hospital stay and severity.",
+  },
+  {
     id: "mycobacterium-tuberculosis",
     name: "Mycobacterium tuberculosis",
     etymology: "Greek mykes = fungus + bacterion = small rod + Latin tuberculum = small swelling + -osis = condition",

@@ -1,5 +1,6 @@
 import {
   Activity,
+  Atom,
   AudioLines,
   Bone,
   CircleDot,
@@ -38,6 +39,7 @@ export type PopoverCategory =
   | "clinical-strategy"
   | "cell"
   | "pathogenesis"
+  | "metabolism"
   | "microbiology"
   | "musculoskeletal";
 
@@ -58,6 +60,7 @@ const CATEGORY_ICONS: Record<PopoverCategory, IconNode> = {
   "clinical-strategy": Lightbulb,
   cell: CircleDot,
   pathogenesis: GitBranch,
+  metabolism: Atom,
   microbiology: Microscope,
   musculoskeletal: Bone,
 };

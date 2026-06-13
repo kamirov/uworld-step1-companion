@@ -115,6 +115,35 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "ramipril",
+    name: "Ramipril",
+    etymology: "rami- = ACE-inhibitor naming element + -pril = ACE inhibitor suffix",
+    aliases: ["ramipril", "altace"],
+    drugClass: "ACE inhibitor",
+    mechanism:
+      "Prodrug converted to ramiprilat; inhibits angiotensin-converting enzyme → ↓ angiotensin II and aldosterone → vasodilation, ↓ afterload, ↓ intraglomerular pressure.",
+    indications: [
+      "Hypertension",
+      "Heart failure post-MI (↓ mortality)",
+      "High cardiovascular risk (HOPE trial population)",
+      "Diabetic nephropathy / proteinuric chronic kidney disease",
+    ],
+    adverseEffects: [
+      "Dry cough (bradykinin accumulation)",
+      "Hyperkalemia",
+      "Angioedema",
+      "Teratogenic — contraindicated in pregnancy",
+      "↑ creatinine; bilateral renal artery stenosis → acute renal failure",
+    ],
+    boardsPearls: [
+      "ACE inhibitor — same class as lisinopril and enalapril",
+      "HOPE trial: ramipril ↓ CV events in high-risk patients",
+      "Renoprotective in diabetic nephropathy — ↓ intraglomerular hypertension",
+      "Dry cough from bradykinin — switch to ARB if intolerable",
+      "Contraindicated in pregnancy and bilateral renal artery stenosis",
+    ],
+  },
+  {
     id: "ace-inhibitors",
     name: "ACE inhibitors",
     etymology: "ACE = angiotensin-converting enzyme + inhibitor = blocker",

@@ -46,6 +46,7 @@ import {
   getMicrobiologyImageForId,
 } from "../data/microbiologyMedia";
 import { getMedicationById } from "../data/medications";
+import { getMetabolismById } from "../data/metabolism";
 import {
   getMedicationImageAttributionForId,
   getMedicationImageCaptionForId,
@@ -81,7 +82,7 @@ import { schedulePopoverRootScan } from "./organScanner";
 import { renderPopoverTitle, type PopoverCategory } from "./popoverIcons";
 
 const CHIP_SELECTOR =
-  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip, .usmle-microbiology-chip, .usmle-musculoskeletal-chip";
+  ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip, .usmle-metabolism-chip, .usmle-microbiology-chip, .usmle-musculoskeletal-chip";
 const POPOVER_AUDIO_SELECTOR = ".usmle-organ-popover__audio";
 const POPOVER_CLASS = "usmle-organ-popover";
 const STACK_OFFSET_PX = 14;
@@ -869,6 +870,26 @@ function renderPathogenesisPopover(pathogenesisId: string, popover: HTMLDivEleme
   return true;
 }
 
+function renderMetabolismPopover(metabolismId: string, popover: HTMLDivElement): boolean {
+  const entry = getMetabolismById(metabolismId);
+  if (!entry || !popover) return false;
+
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
+    `
+    ${renderPopoverTitle(entry.name, "metabolism", entry.etymology)}
+    <div class="usmle-organ-popover__meaning">${entry.definition}</div>
+  `,
+    `
+    ${renderListSection("Pathway", entry.pathway)}
+    ${renderListSection("Distinguish from", entry.distinguishFrom ?? [])}
+    ${renderListSection("Boards pearls", entry.boardsPearls)}
+    ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
+  `,
+  );
+  return true;
+}
+
 function formatMicrobeType(type: string): string {
   return type
     .split("-")
@@ -1041,6 +1062,7 @@ function showPopover(chip: HTMLElement): void {
   const clinicalStrategyId = chip.dataset.clinicalStrategyId;
   const cellId = chip.dataset.cellId;
   const pathogenesisId = chip.dataset.pathogenesisId;
+  const metabolismId = chip.dataset.metabolismId;
   const microbiologyId = chip.dataset.microbiologyId;
   const musculoskeletalId = chip.dataset.musculoskeletalId;
   if (
@@ -1060,6 +1082,7 @@ function showPopover(chip: HTMLElement): void {
     !clinicalStrategyId &&
     !cellId &&
     !pathogenesisId &&
+    !metabolismId &&
     !microbiologyId &&
     !musculoskeletalId
   )
@@ -1126,6 +1149,11 @@ function showPopover(chip: HTMLElement): void {
                                     pathogenesisId,
                                     popover,
                                   )
+                                : metabolismId
+                                  ? renderMetabolismPopover(
+                                      metabolismId,
+                                      popover,
+                                    )
                                 : microbiologyId
                                   ? renderMicrobiologyPopover(
                                       microbiologyId,

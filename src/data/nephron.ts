@@ -11,6 +11,32 @@ export interface NephronSegmentEntry {
 
 export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   {
+    id: "bowmans-space",
+    name: "Bowman Space",
+    etymology: "eponym: Sir William Bowman + Latin spatium = space",
+    aliases: [
+      "bowman space",
+      "bowman's space",
+      "bowmans space",
+      "bowman capsule",
+      "bowman's capsule",
+      "bowmans capsule",
+      "glomerular capsule",
+      "glomerular capsular space",
+    ],
+    function:
+      "Urinary space between the parietal and visceral layers of Bowman capsule where glomerular ultrafiltrate first collects before entering the proximal tubule. Parietal epithelium is simple squamous; visceral layer consists of podocytes enveloping the glomerular capillary tuft.",
+    reabsorbs: [],
+    secretes: [],
+    boardsPearls: [
+      "Filtrate (not urine yet) collects in Bowman space, then drains to proximal tubule via urinary pole",
+      "Crescents in RPGN form in Bowman space from parietal epithelial proliferation after GBM rupture",
+      "Visceral layer = podocytes with foot processes and slit diaphragms — key filtration barrier component",
+      "Parietal layer continuous with proximal tubule epithelium at the urinary pole",
+      "Capsular drop in diabetic nephropathy — hyaline material in Bowman space on histology",
+    ],
+  },
+  {
     id: "glomerulus",
     name: "Glomerulus",
     etymology: "Latin glomerulus = small ball",
@@ -23,6 +49,52 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
       "Filters water and solutes by size/charge — not selective reabsorption",
       "GFR driven by hydrostatic vs oncotic pressure in glomerular capillaries",
       "Injury → proteinuria (podocyte disease) or hematuria (GBM disease)",
+    ],
+  },
+  {
+    id: "afferent-arteriole",
+    name: "Afferent arteriole",
+    etymology: "Latin ad = toward + ferre = to carry + arteriole = small artery",
+    aliases: [
+      "afferent arteriole",
+      "afferent arterioles",
+      "afferent glomerular arteriole",
+      "afferent glomerular arterioles",
+      "incoming arteriole",
+    ],
+    function:
+      "Resistance vessel delivering blood from the interlobular artery into the glomerular capillary tuft; its diameter is a major determinant of glomerular hydrostatic pressure, renal plasma flow (RPF), and GFR.",
+    reabsorbs: [],
+    secretes: [],
+    boardsPearls: [
+      "Afferent dilation ↑ glomerular hydrostatic pressure → ↑ GFR and RPF",
+      "Afferent constriction ↓ RPF and GFR (e.g., severe hypovolemia, NSAIDs blocking prostaglandin-mediated dilation)",
+      "Prostaglandins (PGE₂) dilate afferent arteriole — preserves GFR in low-flow states; NSAIDs remove this protection",
+      "Renal artery stenosis ↓ afferent inflow → ↓ GFR, activates RAAS",
+      "vs efferent arteriole — afferent controls inflow; efferent controls outflow resistance",
+    ],
+  },
+  {
+    id: "efferent-arteriole",
+    name: "Efferent arteriole",
+    etymology: "Latin ex = out + ferre = to carry + arteriole = small artery",
+    aliases: [
+      "efferent arteriole",
+      "efferent arterioles",
+      "efferent glomerular arteriole",
+      "efferent glomerular arterioles",
+      "outgoing arteriole",
+    ],
+    function:
+      "Resistance vessel draining the glomerular capillary tuft into peritubular capillaries (cortex) or vasa recta (juxtamedullary nephrons); constriction raises glomerular hydrostatic pressure and filtration fraction.",
+    reabsorbs: [],
+    secretes: [],
+    boardsPearls: [
+      "Angiotensin II preferentially constricts efferent arteriole → ↑ glomerular capillary pressure → preserves GFR early in hypovolemia",
+      "Efferent constriction ↑ filtration fraction (FF = GFR/RPF)",
+      "ACE inhibitors/ARBs dilate efferent arteriole → ↓ intraglomerular pressure → may ↓ GFR (especially if renal artery stenosis)",
+      "Efferent dilation or afferent constriction ↓ GFR disproportionately",
+      "Peritubular capillaries arise from efferent arteriole — supply reabsorptive blood flow to proximal and distal tubules",
     ],
   },
   {

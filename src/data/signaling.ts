@@ -1754,6 +1754,370 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "G-CSF is neutrophil-focused; GM-CSF broader myeloid stimulation",
     ],
   },
+  {
+    id: "camp-pka-pathway",
+    name: "Cyclic AMP–Protein Kinase A Pathway",
+    etymology: "cyclic = ring + AMP = adenosine monophosphate + protein + kinase = phosphorylating enzyme + A = first named isoform",
+    aliases: [
+      "cyclic amp-protein kinase a pathway",
+      "cyclic amp protein kinase a pathway",
+      "camp-pka pathway",
+      "camp pka pathway",
+      "camp/protein kinase a pathway",
+      "adenylyl cyclase-camp-pka pathway",
+      "gs-camp-pka pathway",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Activated by Gs-coupled GPCRs (and some ligand-gated receptors) that stimulate adenylyl cyclase after GTP-bound Gαs dissociates from Gβγ",
+    receptor:
+      "Gs GPCRs (β-adrenergic, glucagon, CRH, TSH, LH, FSH, PTH, ADH V2); Gi GPCRs (α2-adrenergic, M2 muscarinic) inhibit the same adenylyl cyclase",
+    function:
+      "Ligand → Gs → adenylyl cyclase → ATP converted to cAMP → cAMP activates protein kinase A (PKA) → PKA phosphorylates enzymes, ion channels, and transcription factors (e.g., CREB) → cellular response such as glycogen breakdown, lipolysis, or gene transcription.",
+    clinicalRelevance: [
+      "β-agonists (albuterol) and glucagon raise cAMP in target tissues",
+      "PTH increases renal cAMP (Gs at PTH1R)",
+      "V2 vasopressin receptor uses cAMP to insert aquaporin-2 in collecting duct",
+      "Cholera toxin ADP-ribosylates Gαs → constitutive adenylyl cyclase activation → secretory diarrhea",
+      "Pertussis toxin inactivates Gi → loss of adenylyl cyclase inhibition",
+      "Phosphodiesterase inhibitors (theophylline, caffeine) ↑ cAMP by blocking degradation",
+    ],
+    boardsPearls: [
+      "Gs → ↑ cAMP → PKA; Gi → ↓ cAMP",
+      "Classic Gs ligands: glucagon, epinephrine via β-receptors, PTH, TSH, ADH (V2)",
+      "Cholera = endless Gs signaling → ↑ cAMP in enterocytes → Cl⁻ secretion and water loss",
+      "PKA phosphorylates glycogen phosphorylase kinase in liver (glycogenolysis)",
+    ],
+    distinguishFrom: [
+      "cGMP/PKG pathway — NO and natriuretic peptides, not adenylyl cyclase",
+      "IP3/DAG pathway — Gq GPCRs use phospholipase C, not adenylyl cyclase",
+      "JAK-STAT — cytokine receptors without cAMP second messenger",
+    ],
+    pediatrics:
+      "Same Gs–cAMP–PKA logic in children; β-agonists for asthma and prostaglandin/adenosine physiology in neonates follow cAMP-related signaling.",
+  },
+  {
+    id: "dag-pkc-pathway",
+    name: "Diacylglycerol–Protein Kinase C Pathway",
+    etymology: "diacyl = two acyl chains + glycerol + protein + kinase C = calcium-independent classic PKC isoform family",
+    aliases: [
+      "diacylglycerol-protein kinase c pathway",
+      "diacylglycerol protein kinase c pathway",
+      "dag-pkc pathway",
+      "dag pkc pathway",
+      "dag/protein kinase c pathway",
+      "pip2-plc-dag-pkc pathway",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Generated alongside IP3 when Gq (or some G11) GPCRs activate phospholipase Cβ, which cleaves membrane PIP2",
+    receptor:
+      "Gq-coupled GPCRs — α1-adrenergic, M1/M3 muscarinic, H1 histamine, V1 vasopressin, GnRH, oxytocin, angiotensin II (AT1), endothelin",
+    function:
+      "PLC cleaves PIP2 → diacylglycerol remains in membrane → DAG (with Ca²⁺ for some PKC isoforms) activates protein kinase C → PKC phosphorylates substrates controlling smooth muscle contraction, secretion, gene expression, and platelet activation.",
+    clinicalRelevance: [
+      "α1-blockers (prazosin) reduce Gq signaling in hypertension/BPH",
+      "Phorbol esters (TPA) mimic DAG and chronically activate PKC — tumor promoter in models",
+      "V1 vasopressin causes vasoconstriction via Gq → DAG/PKC",
+    ],
+    boardsPearls: [
+      "Gq → PLC → PIP2 cleavage → DAG + IP3",
+      "DAG activates PKC at the plasma membrane",
+      "M3 muscarinic and α1 adrenergic receptors use Gq (DAG/PKC and IP3/Ca²⁺)",
+      "Phorbol ester tumor promotion works through persistent PKC activation",
+    ],
+    distinguishFrom: [
+      "cAMP/PKA pathway — Gs/Gi and adenylyl cyclase, not DAG",
+      "IP3–Ca²⁺–calmodulin pathway — parallel branch from same PLC reaction, different effector",
+      "RTK–MAPK — receptor tyrosine kinases, not Gq GPCR PLC cleavage",
+    ],
+  },
+  {
+    id: "ip3-calcium-calmodulin-pathway",
+    name: "Inositol Triphosphate–Calcium–Calmodulin Pathway",
+    etymology: "inositol = cyclic sugar alcohol + triphosphate = three phosphates + calcium + calmodulin = calcium-modulated protein",
+    aliases: [
+      "inositol triphosphate-calcium-calmodulin pathway",
+      "inositol triphosphate calcium calmodulin pathway",
+      "ip3-calcium-calmodulin pathway",
+      "ip3 calcium calmodulin pathway",
+      "ip3/ca2+/calmodulin pathway",
+      "plc-ip3-calcium pathway",
+      "ip3-calcium signaling",
+    ],
+    type: "Signaling pathway",
+    source:
+      "IP3 released when phospholipase C cleaves PIP2 downstream of Gq GPCRs (and some RTK pathways)",
+    receptor:
+      "IP3 receptors on endoplasmic reticulum release Ca²⁺; Ca²⁺ binds calmodulin and activates calmodulin-dependent kinases and myosin light-chain kinase (MLCK)",
+    function:
+      "PLC → IP3 diffuses to ER → IP3 receptor opens → Ca²⁺ efflux into cytosol → Ca²⁺–calmodulin complex activates MLCK (smooth muscle contraction), CaM kinases, and other enzymes; cytosolic Ca²⁺ is rapidly cleared by pumps and buffers.",
+    clinicalRelevance: [
+      "Smooth muscle contraction (vascular, bronchial, GI) via Gq → IP3 → Ca²⁺ → MLCK",
+      "Exocrine secretion (salivary, pancreatic) uses IP3-mediated Ca²⁺ spikes",
+      "Digitalis increases intracellular Ca²⁺ by a separate mechanism (Na⁺/K⁺-ATPase), not IP3",
+      "Ryanodine receptors release Ca²⁺ from sarcoplasmic reticulum in muscle (related but distinct from IP3 receptor on ER)",
+    ],
+    boardsPearls: [
+      "Gq → PLC → IP3 + DAG from PIP2",
+      "IP3 raises cytosolic Ca²⁺ from ER stores; DAG activates PKC",
+      "Ca²⁺–calmodulin activates MLCK → smooth muscle contraction",
+      "Same Gq receptor often activates both PKC (DAG) and Ca²⁺ (IP3) arms",
+    ],
+    distinguishFrom: [
+      "cAMP/PKA pathway — no IP3 or ER Ca²⁺ release",
+      "DAG/PKC pathway — lipid second messenger from same PLC step, different downstream kinase",
+      "Voltage-gated Ca²⁺ channels — membrane depolarization entry, not IP3 receptor",
+    ],
+    pediatrics:
+      "Bronchoconstriction and vascular tone in children use the same Gq–IP3–Ca²⁺ signaling; malignant hyperthermia involves abnormal sarcoplasmic reticulum Ca²⁺ release (ryanodine receptor), not IP3 pathway defect.",
+  },
+  {
+    id: "erythropoietin",
+    name: "Erythropoietin",
+    etymology: "Greek erythros = red + poiein = to make + -in = protein suffix",
+    aliases: [
+      "erythropoietin",
+      "erythropoetin",
+      "epo",
+      "epoetin",
+      "recombinant erythropoietin",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Primarily renal peritubular interstitial cells in adults (liver in fetus); hypoxia-inducible factor (HIF) upregulates EPO transcription when O₂ delivery falls",
+    receptor:
+      "EPO receptor (cytokine receptor with associated JAK2) on erythroid progenitor cells in bone marrow",
+    function:
+      "Stimulates survival, proliferation, and differentiation of late erythroid progenitors → increased red blood cell mass and oxygen-carrying capacity.",
+    clinicalRelevance: [
+      "Anemia of chronic kidney disease from relative EPO deficiency",
+      "Recombinant epoetin alfa/darbepoetin treats renal and chemotherapy-related anemia",
+      "EPO misuse as performance-enhancing drug (↑ hematocrit)",
+      "Polycythemia vera often has low EPO with JAK2 V617F mutation",
+      "EPO-secreting tumors (e.g., renal cell carcinoma) can cause secondary polycythemia",
+    ],
+    boardsPearls: [
+      "EPO is produced by kidney in response to hypoxia via HIF",
+      "EPO → JAK2 → STAT5 → erythropoiesis",
+      "CKD anemia: ↓ EPO + uremia; treat with EPO and iron repletion",
+      "PV: ↑ RBC mass with low EPO and JAK2 mutation is classic pattern",
+    ],
+    distinguishFrom: [
+      "Thrombopoietin — megakaryocyte/platelet growth factor, not RBC production",
+      "Colony-stimulating factors (G-CSF, GM-CSF) — myeloid lineage, not erythropoiesis",
+      "Iron — required for hemoglobin synthesis but not the erythropoietic hormone signal",
+    ],
+    pediatrics:
+      "Premature infants may receive EPO for anemia of prematurity; neonatal polycythemia workup distinguishes dehydration, twin-twin transfusion, and congenital erythrocytosis from EPO-secreting tumors.",
+  },
+  {
+    id: "incretin",
+    name: "Incretin",
+    etymology: "Latin incretio = secretion inward → gut hormones that stimulate internal (endocrine) insulin release",
+    aliases: [
+      "incretin",
+      "incretins",
+      "incretin hormone",
+      "incretin hormones",
+      "incretin effect",
+      "gut incretin",
+      "gut incretins",
+      "gip",
+      "gastric inhibitory polypeptide",
+      "glucose-dependent insulinotropic polypeptide",
+    ],
+    type: "Peptide hormone",
+    source:
+      "GLP-1 from intestinal L cells (distal ileum/colon); GIP from K cells (duodenum/jejunum) — both released after nutrient ingestion",
+    receptor:
+      "GLP-1 receptor and GIP receptor (GPCRs) on pancreatic β cells and other tissues; GLP-1 also slows gastric emptying via vagal/CNS pathways",
+    function:
+      "Amplify glucose-stimulated insulin secretion from pancreatic β cells after oral nutrient intake — the incretin effect explains why oral glucose provokes greater insulin release than intravenous glucose at matched glycemia.",
+    clinicalRelevance: [
+      "Type 2 diabetes — reduced incretin effect contributes to impaired postprandial insulin secretion",
+      "GLP-1 receptor agonists (exenatide, liraglutide) mimic incretin → ↑ insulin, ↓ glucagon, ↓ appetite, slow gastric emptying",
+      "DPP-4 inhibitors (sitagliptin, saxagliptin) prolong endogenous GLP-1/GIP by blocking dipeptidyl peptidase-4 degradation",
+      "Incretin-based therapies generally low hypoglycemia risk when used without insulin or sulfonylureas (glucose-dependent action)",
+    ],
+    boardsPearls: [
+      "Incretin effect = oral glucose → more insulin than IV glucose at same blood glucose",
+      "Main incretins: GLP-1 (L cells) and GIP (K cells)",
+      "GLP-1 → ↑ insulin, ↓ glucagon, slow gastric emptying, ↓ appetite",
+      "DPP-4 degrades GLP-1 — DPP-4 inhibitors boost endogenous incretin levels",
+      "vs insulin — incretins are gut hormones that signal β cells; insulin is the β-cell product",
+    ],
+    distinguishFrom: [
+      "Insulin — β-cell hormone product; incretins stimulate its release",
+      "Glucagon — raises glucose; GLP-1 suppresses glucagon secretion",
+      "Amylin — co-secreted with insulin from β cells; slows gastric emptying but is not an incretin",
+      "Sulfonylurea — closes KATP channels directly; not glucose/incretin dependent",
+    ],
+    pediatrics:
+      "Incretin physiology applies in adolescents with type 2 diabetes; GLP-1 agonists are used in selected pediatric T2DM when indicated, but type 1 diabetes still requires insulin replacement.",
+  },
+  {
+    id: "glp-1",
+    name: "GLP-1",
+    etymology: "glucagon-like = structurally related to glucagon + peptide-1 = first proglucagon-derived isoform",
+    aliases: [
+      "glp-1",
+      "glp1",
+      "glp 1",
+      "glucagon-like peptide-1",
+      "glucagon like peptide 1",
+      "glucagon-like peptide 1",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Intestinal L cells (distal ileum and colon) — released postprandially after nutrient exposure; also from brainstem neurons",
+    receptor:
+      "GLP-1 receptor (GPCR) on pancreatic β cells, gastric smooth muscle, and hypothalamus; couples to cAMP/PKA signaling",
+    function:
+      "Glucose-dependent insulin secretion from β cells, suppression of glucagon, delayed gastric emptying, and central satiety signaling — key incretin hormone accounting for much of the oral vs IV glucose insulin difference.",
+    clinicalRelevance: [
+      "Reduced incretin effect in type 2 diabetes",
+      "GLP-1 receptor agonists (exenatide, liraglutide, semaglutide) — injectable mimetics with weight loss and CV/renal benefits",
+      "Degraded by dipeptidyl peptidase-4 (DPP-4) — DPP-4 inhibitors prolong endogenous GLP-1",
+      "Native GLP-1 has very short half-life (~2 min) due to DPP-4 cleavage",
+    ],
+    boardsPearls: [
+      "GLP-1 from intestinal L cells after meals",
+      "GLP-1 → ↑ insulin (glucose-dependent), ↓ glucagon, slow gastric emptying, ↓ appetite",
+      "DPP-4 degrades GLP-1 — sitagliptin and other gliptins block this",
+      "GLP-1 agonists cause weight loss; DPP-4 inhibitors are weight-neutral",
+      "vs GIP — second incretin from K cells; both amplify insulin secretion",
+    ],
+    distinguishFrom: [
+      "GIP — duodenal/jejunal K-cell incretin, not L-cell GLP-1",
+      "Glucagon — raises glucose; GLP-1 suppresses glucagon",
+      "GLP-2 — separate proglucagon product promoting intestinal growth, not insulinotropic",
+      "DPP-4 — enzyme that degrades GLP-1, not the hormone",
+    ],
+    pediatrics:
+      "GLP-1 physiology is relevant in adolescent type 2 diabetes; type 1 diabetes still requires insulin regardless of incretin status.",
+  },
+  {
+    id: "angiotensin-i",
+    name: "Angiotensin I",
+    etymology: "Latin angio = vessel + tension = stretch + -in = protein suffix + I = first cleavage product",
+    aliases: [
+      "angiotensin i",
+      "angiotensin 1",
+      "ang i",
+      "at i",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Generated when renin (from juxtaglomerular cells) cleaves angiotensinogen (hepatocyte-derived) in plasma",
+    receptor:
+      "Minimal direct physiologic activity at low concentrations; converted to angiotensin II by angiotensin-converting enzyme (ACE, primarily pulmonary endothelium)",
+    function:
+      "Inactive decapeptide intermediate in the RAAS cascade; serves as substrate for ACE (and chymase in some tissues) to produce active angiotensin II.",
+    clinicalRelevance: [
+      "↑ in renin-secreting states (renal artery stenosis, diuretic use, heart failure)",
+      "ACE inhibitors block conversion of Ang I → Ang II",
+      "Direct renin inhibitors (aliskiren) reduce Ang I formation upstream",
+    ],
+    boardsPearls: [
+      "Renin → cleaves angiotensinogen → angiotensin I (inactive decapeptide)",
+      "ACE converts Ang I → Ang II (active octapeptide)",
+      "↑ renin activity → ↑ Ang I and (unless ACE blocked) ↑ Ang II",
+      "Ang I has little direct pressor effect — must be converted to Ang II",
+    ],
+    distinguishFrom: [
+      "Angiotensin II — active octapeptide; vasoconstrictor, aldosterone stimulator",
+      "Angiotensinogen — liver precursor protein (renin substrate)",
+      "Renin — protease that creates Ang I from angiotensinogen",
+      "ACE — enzyme that converts Ang I to Ang II",
+    ],
+    pediatrics:
+      "Fetal RAAS is active; ACE inhibitor exposure in utero disrupts angiotensin II–dependent renal development — teratogenic in pregnancy.",
+  },
+  {
+    id: "angiotensin-ii",
+    name: "Angiotensin II",
+    etymology: "Latin angio = vessel + tension = stretch + -in = protein suffix + II = second active peptide",
+    aliases: [
+      "angiotensin ii",
+      "angiotensin 2",
+      "ang ii",
+      "ang 2",
+      "at ii",
+      "angiotensin-ii",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Angiotensin I converted by ACE (angiotensin-converting enzyme, kininase II) on pulmonary and systemic endothelium; also generated locally by chymase in some tissues",
+    receptor:
+      "AT1 receptor (Gq-coupled GPCR) — vasoconstriction, aldosterone release, sympathetic activation, thirst; AT2 receptor — counter-regulatory effects in development and tissue repair",
+    function:
+      "Potent vasoconstrictor and central effector of RAAS: ↑ systemic vascular resistance, preferentially constricts efferent arteriole to preserve GFR in hypovolemia, stimulates adrenal aldosterone release, ↑ proximal tubule Na⁺ reabsorption, and stimulates ADH and thirst.",
+    clinicalRelevance: [
+      "Central to blood pressure regulation and volume homeostasis",
+      "ACE inhibitors and ARBs block Ang II effects — cornerstone of HTN, HF, and diabetic nephropathy therapy",
+      "↑ Ang II in renal artery stenosis, heart failure, cirrhosis (effective hypovolemia)",
+      "ACE also degrades bradykinin — ACE inhibitor cough/angioedema from ↑ bradykinin",
+      "Aldosterone escape may occur with chronic ACE inhibition",
+    ],
+    boardsPearls: [
+      "Ang II via AT1 (Gq): vasoconstriction, ↑ aldosterone, ↑ Na⁺ reabsorption, ↑ ADH",
+      "Preferential efferent arteriole constriction → ↑ GFR preservation in early hypovolemia",
+      "ACE = kininase II — converts Ang I → Ang II and breaks down bradykinin",
+      "ARBs block AT1 without affecting bradykinin — less cough than ACE inhibitors",
+      "Captopril/enalapril/lisinopril = ACE inhibitors; losartan = ARB",
+    ],
+    distinguishFrom: [
+      "Angiotensin I — inactive precursor; requires ACE conversion",
+      "Aldosterone — downstream adrenal hormone stimulated by Ang II; acts on collecting duct",
+      "Renin — upstream protease; ACE inhibitors ↑ renin by blocking Ang II feedback",
+      "Norepinephrine — direct sympathetic vasoconstrictor, not RAAS peptide",
+    ],
+    pediatrics:
+      "Neonates rely on RAAS for renal perfusion and salt handling; ACE inhibitors/ARBs contraindicated in pregnancy and generally avoided in infants except specialist use.",
+  },
+  {
+    id: "raas",
+    name: "RAAS",
+    etymology: "RAA = renin-angiotensin-aldosterone + S = system",
+    aliases: [
+      "raas",
+      "renin-angiotensin-aldosterone system",
+      "renin angiotensin aldosterone system",
+      "renin-angiotensin system",
+      "renin angiotensin system",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Activated by ↓ renal perfusion pressure, ↓ NaCl at macula densa, and ↑ sympathetic β1 tone → juxtaglomerular renin release",
+    receptor:
+      "Renin acts on angiotensinogen; ACE converts Ang I to Ang II; Ang II binds AT1 receptors; aldosterone acts on mineralocorticoid receptor in collecting duct",
+    function:
+      "Integrated hormonal cascade restoring blood pressure and volume: renin → angiotensin I → ACE → angiotensin II → vasoconstriction + aldosterone → Na⁺ and water retention + ↑ ADH/thirst; also constricts efferent arteriole to maintain GFR.",
+    clinicalRelevance: [
+      "Activated in hypovolemia, heart failure, cirrhosis, and renal artery stenosis",
+      "ACE inhibitors, ARBs, and aldosterone antagonists are key cardiovascular and renal drugs",
+      "Primary hyperaldosteronism — autonomous aldosterone with suppressed renin",
+      "Secondary hyperaldosteronism — ↑ renin driving ↑ aldosterone (renal artery stenosis, diuretics)",
+      "Bartter/Gitelman and loop/thiazide diuretics activate RAAS via macula densa sensing",
+    ],
+    boardsPearls: [
+      "RAAS cascade: renin → Ang I → ACE → Ang II → aldosterone + vasoconstriction",
+      "JG cells release renin; macula densa senses NaCl; liver makes angiotensinogen",
+      "Ang II preferentially constricts efferent arteriole — preserves GFR when RPF falls",
+      "ACE inhibitors: ↓ Ang II, ↑ bradykinin, ↑ renin; contraindicated in bilateral renal artery stenosis/pregnancy",
+      "↑ renin + ↑ aldosterone → secondary hyperaldosteronism; ↓ renin + ↑ aldosterone → Conn syndrome",
+      "Counter-regulatory: ANP/BNP promote natriuresis and ↓ renin/aldosterone",
+    ],
+    distinguishFrom: [
+      "ADH (vasopressin) — separate volume/osmolality axis; Ang II also stimulates ADH",
+      "Sympathetic nervous system — parallel pressor response; β1 drives renin release",
+      "RAAS vs RAS abbreviation — boards use RAAS when aldosterone arm emphasized",
+      "Local renin-angiotensin systems — tissue ACE/Ang II outside classic renal JGA axis",
+    ],
+    pediatrics:
+      "Neonatal effective hypovolemia (dehydration, sepsis) activates RAAS; ACE inhibitor fetopathy from in utero RAAS blockade causes renal agenesis-like maldevelopment and oligohydramnios.",
+  },
 ];
 
 const signalingById = new Map(

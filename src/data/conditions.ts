@@ -2409,6 +2409,74 @@ export const CONDITIONS: ConditionEntry[] = [
       "Increasingly seen in obese adolescents; distinguish from T1DM with autoantibodies and C-peptide.",
   },
   {
+    id: "diabetic-nephropathy",
+    name: "Diabetic Nephropathy",
+    etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek nephros = kidney + Greek pathos = suffering",
+    aliases: [
+      "diabetic nephropathy",
+      "diabetic kidney disease",
+      "dkd",
+      "diabetic glomerulosclerosis",
+      "kimmelstiel-wilson disease",
+      "kimmelstiel wilson disease",
+    ],
+    definition:
+      "Microvascular complication of diabetes mellitus causing progressive glomerular injury, proteinuria, and chronic kidney disease.",
+    pathophysiology:
+      "Chronic hyperglycemia → nonenzymatic glycation, hemodynamic changes (afferent > efferent glomerular vasodilation), and TGF-β/fibrosis → thickening of GBM, mesangial expansion, and nodular glomerulosclerosis (Kimmelstiel-Wilson nodules) → albuminuria → declining GFR.",
+    classicPresentation: [
+      "Long-standing type 1 or type 2 diabetes",
+      "Progressive proteinuria → nephrotic-range in advanced disease",
+      "Hypertension and edema as disease advances",
+      "Often asymptomatic until CKD or overt proteinuria detected on screening",
+    ],
+    keyFindings: [
+      "Microalbuminuria (earliest detectable sign)",
+      "Progressive albuminuria/proteinuria",
+      "Hypertension",
+      "Retinopathy often coexists (shared microvascular disease)",
+      "Kimmelstiel-Wilson nodules on kidney biopsy (late)",
+    ],
+    keyLabs: [
+      "Urine albumin-to-creatinine ratio or 24-h urine protein",
+      "↑ serum creatinine with ↓ eGFR in later stages",
+      "Hyperglycemia and elevated HbA1c (poor glycemic control accelerates injury)",
+    ],
+    associations: [
+      "Type 1 and type 2 diabetes mellitus",
+      "Diabetic retinopathy",
+      "Hypertension",
+      "Cardiovascular disease",
+    ],
+    complications: [
+      "Chronic kidney disease and end-stage renal disease",
+      "Nephrotic syndrome",
+      "Accelerated atherosclerosis",
+      "Anemia of CKD",
+    ],
+    distinguishFrom: [
+      "Nondiabetic glomerulonephritis — active urinary sediment with RBC casts",
+      "Hypertensive nephrosclerosis — long-standing HTN without diabetic retinopathy pattern",
+      "Contrast nephropathy — acute creatinine rise after contrast exposure",
+    ],
+    treatment: [
+      "Glycemic control (HbA1c goal individualized)",
+      "ACE inhibitor or ARB for albuminuria and renoprotection (even if normotensive with microalbuminuria)",
+      "Blood pressure control",
+      "SGLT2 inhibitors with proven renal benefit in diabetic CKD",
+      "Avoid nephrotoxins (NSAIDs)",
+    ],
+    boardsPearls: [
+      "Microalbuminuria = earliest sign of diabetic nephropathy",
+      "ACE inhibitors/ARBs reduce intraglomerular pressure and slow proteinuria",
+      "Diabetic nephropathy + retinopathy is classic microvascular pairing",
+      "Kimmelstiel-Wilson nodules = nodular glomerulosclerosis in diabetes",
+      "Glycemic control and BP control are foundational renoprotective strategies",
+    ],
+    pediatrics:
+      "Diabetic nephropathy is uncommon in childhood but screen with urine albumin once diabetes duration warrants; tight glycemic control from diagnosis delays microvascular complications.",
+  },
+  {
     id: "type-1-diabetes-mellitus",
     name: "Type 1 Diabetes Mellitus",
     etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + type 1 = autoimmune insulin-deficient subtype",
@@ -2677,6 +2745,519 @@ export const CONDITIONS: ConditionEntry[] = [
       "Familial MEN2 can present in childhood. RET-positive children may need prophylactic thyroidectomy, with timing based on mutation risk; screen family members early.",
   },
   {
+    id: "pheochromocytoma",
+    name: "Pheochromocytoma",
+    etymology: "Greek phaios = dusky + chroma = color + -oma = tumor",
+    aliases: [
+      "pheochromocytoma",
+      "pheochromocytomas",
+      "pheo",
+      "adrenal pheochromocytoma",
+      "catecholamine-secreting tumor",
+      "paraganglioma",
+      "extra-adrenal pheochromocytoma",
+    ],
+    definition:
+      "Catecholamine-secreting neuroendocrine tumor arising from adrenal medullary chromaffin cells (or extra-adrenal paraganglia), causing episodic or sustained sympathetic hyperactivity.",
+    pathophysiology:
+      "Tumor secretes epinephrine and/or norepinephrine → episodic or sustained vasoconstriction, tachycardia, and hypertension; catecholamine surges can precipitate hypertensive crisis, arrhythmia, cardiomyopathy, and stroke; associated with germline syndromes (MEN2, NF1, VHL).",
+    classicPresentation: [
+      "Episodic headache, diaphoresis, palpitations, and severe hypertension",
+      "Anxiety, tremor, chest pain during spells",
+      "May be sustained hypertension or discovered incidentally",
+      "Symptoms triggered by surgery, drugs (beta-blocker before alpha), tyramine-rich foods, or urination (bladder paraganglioma)",
+    ],
+    keyFindings: [
+      "Paroxysmal or labile hypertension",
+      "Tachycardia, pallor or flushing during spell",
+      "Adrenal mass on CT/MRI (may be bilateral in familial disease)",
+    ],
+    keyLabs: [
+      "↑ Plasma free metanephrines or 24-hour urine metanephrines/catecholamines (preferred screening)",
+      "Rule out interfering medications when possible",
+      "Genetic testing if young, bilateral, extra-adrenal, or family history (RET, VHL, NF1, SDH genes)",
+    ],
+    associations: [
+      "MEN2A and MEN2B",
+      "Neurofibromatosis type 1",
+      "Von Hippel–Lindau disease",
+      "Familial paraganglioma syndromes (SDHx mutations)",
+    ],
+    complications: [
+      "Hypertensive crisis and stroke",
+      "Takotsubo/stress cardiomyopathy",
+      "Arrhythmias",
+      "Malignant pheochromocytoma (~10%)",
+    ],
+    distinguishFrom: [
+      "Essential hypertension — no catecholamine excess or paroxysmal spells",
+      "Hyperthyroidism — heat intolerance, weight loss, ↑ T4/T3",
+      "Panic disorder — normal metanephrines between episodes",
+      "Carcinoid syndrome — flushing with diarrhea, ↑ 5-HIAA not metanephrines",
+    ],
+    treatment: [
+      "Alpha blockade first (phenoxybenzamine or selective alpha-1 blockers) — mandatory before beta blockade",
+      "Volume expansion after alpha blockade",
+      "Surgical resection after adequate adrenergic blockade",
+      "Never give beta-blocker alone — unopposed alpha worsens hypertension",
+    ],
+    boardsPearls: [
+      "Classic triad: headache, sweating, tachycardia + hypertension",
+      "Rule of 10s: ~10% bilateral, extra-adrenal, malignant, familial, pediatric",
+      "Alpha before beta — unopposed alpha-1 vasoconstriction if beta blocked first",
+      "Screen for pheochromocytoma before thyroid surgery in MEN2",
+      "↑ metanephrines are most sensitive screening test",
+    ],
+    pediatrics:
+      "Pheochromocytoma occurs in children with NF1, VHL, and MEN2; genetic testing and bilateral adrenal disease are more common in hereditary cases.",
+  },
+  {
+    id: "hyperparathyroidism",
+    name: "Hyperparathyroidism",
+    etymology: "Greek hyper = excess + para = beside + thyreos = shield gland + -ism = condition",
+    aliases: [
+      "hyperparathyroidism",
+      "primary hyperparathyroidism",
+      "secondary hyperparathyroidism",
+      "tertiary hyperparathyroidism",
+      "elevated pth",
+      "high pth",
+      "phpt",
+      "shpt",
+      "parathyroid hyperfunction",
+    ],
+    definition:
+      "Excess parathyroid hormone activity causing disordered calcium–phosphate homeostasis — classified as primary (autonomous gland), secondary (physiologic response to hypocalcemia), or tertiary (autonomous after chronic secondary).",
+    pathophysiology:
+      "PTH ↑ bone resorption, ↑ renal calcium reabsorption, ↑ 1,25-(OH)₂ vitamin D synthesis, and ↑ phosphate excretion. Primary: parathyroid adenoma/hyperplasia secretes excess PTH → hypercalcemia. Secondary: CKD or vitamin D deficiency → hypocalcemia/hyperphosphatemia drives compensatory PTH ↑. Tertiary: prolonged secondary → nodular hyperplasia with autonomous PTH secretion despite high calcium.",
+    classicPresentation: [
+      "Primary — often asymptomatic hypercalcemia; stones, bone pain, abdominal pain, depression, fatigue",
+      "Secondary — CKD or malabsorption context with bone pain and pruritus",
+      "Tertiary — dialysis patient with persistent hypercalcemia and very high PTH",
+    ],
+    keyFindings: [
+      "Hypercalcemia in primary and tertiary disease",
+      "Hypocalcemia with elevated PTH in secondary disease",
+      "Renal stones, osteopenia/osteitis fibrosa cystica",
+      "Subperiosteal bone resorption on hand radiograph (advanced)",
+    ],
+    keyLabs: [
+      "Serum calcium, phosphate, PTH, creatinine, 25-OH vitamin D",
+      "Primary: ↑ Ca, ↑ or inappropriately normal PTH, ↓ phosphate",
+      "Secondary CKD: ↓ Ca, ↑ phosphate, ↑ PTH",
+      "Urine calcium may be elevated in primary disease",
+    ],
+    associations: [
+      "Primary — solitary parathyroid adenoma (most common), four-gland hyperplasia, MEN1, MEN2A",
+      "Secondary — chronic kidney disease, vitamin D deficiency, malabsorption",
+      "Tertiary — long-standing secondary hyperparathyroidism in ESRD",
+      "Renal stones and nephrocalcinosis",
+    ],
+    complications: [
+      "Nephrolithiasis and nephrocalcinosis",
+      "Osteoporosis and fragility fractures",
+      "Hypercalcemic crisis",
+      "Brown tumors (severe bone resorption)",
+      "Vascular and soft-tissue calcification in CKD-related disease",
+    ],
+    distinguishFrom: [
+      "Familial hypocalciuric hypercalcemia — mild hypercalcemia, low urinary calcium, benign",
+      "Malignancy-associated hypercalcemia — PTHrP or osteolytic metastases; PTH suppressed",
+      "Vitamin D toxicity — hypercalcemia with suppressed PTH",
+      "Hypoparathyroidism — hypocalcemia with low PTH",
+    ],
+    treatment: [
+      "Primary symptomatic or marked hypercalcemia — parathyroidectomy",
+      "Secondary — treat underlying cause; vitamin D repletion; phosphate binders and calcimimetics in CKD",
+      "Tertiary refractory disease — parathyroidectomy in selected ESRD patients",
+      "Adequate hydration; avoid thiazides in primary hypercalcemia",
+    ],
+    boardsPearls: [
+      "Primary = autonomous gland: ↑ Ca + ↑ PTH + ↓ phosphate (stones, bones, groans, moans)",
+      "Secondary = appropriate PTH ↑ from hypocalcemia: CKD (↓ Ca, ↑ phosphate) or vitamin D deficiency",
+      "Tertiary = autonomous PTH after long secondary: ↑ Ca + ↑ PTH in ESRD/dialysis patient",
+      "MEN1 and MEN2A can include primary hyperparathyroidism",
+      "vs malignancy — PTH suppressed in PTHrP-mediated hypercalcemia",
+      "vs FHH — benign; low urinary calcium; do not operate",
+    ],
+    pediatrics:
+      "Neonatal severe primary hyperparathyroidism is rare and presents with hypercalcemia and failure to thrive; familial hypocalciuric hypercalcemia is benign and does not need parathyroidectomy.",
+  },
+  {
+    id: "multiple-endocrine-neoplasia",
+    name: "Multiple Endocrine Neoplasia",
+    etymology: "Latin multi = many + endocrine = internal secretion + Greek neos = new + plasis = formation",
+    aliases: [
+      "multiple endocrine neoplasia",
+      "multiple endocrine neoplasia syndrome",
+      "men syndrome",
+      "men syndromes",
+      "multiple endocrine neoplasia type 1",
+      "multiple endocrine neoplasia type 2",
+    ],
+    definition:
+      "Inherited cancer syndromes featuring development of tumors in multiple endocrine glands, classically MEN1 (MENIN mutation) and MEN2 (RET mutation) families with distinct tumor spectra.",
+    pathophysiology:
+      "Germline loss-of-function MEN1 or gain-of-function RET mutations confer lifetime risk of characteristic neuroendocrine and endocrine neoplasms; penetrance is high, so screening and prophylactic surgery are central to management.",
+    classicPresentation: [
+      "Young patient with tumors in multiple endocrine organs",
+      "Family history of pituitary, parathyroid, pancreatic, thyroid medullary, or pheochromocytoma disease",
+      "Recurrent ulcers (gastrinoma), kidney stones (hyperparathyroidism), or episodic hypertension (pheochromocytoma)",
+    ],
+    keyFindings: [
+      "Multigland endocrine disease pattern matching MEN1 or MEN2",
+      "Genetic testing confirms syndrome and guides family screening",
+    ],
+    keyLabs: [
+      "Calcium/PTH, prolactin/IGF-1, gastrin, chromogranin A as syndrome-directed",
+      "Calcitonin and catecholamine metabolites in MEN2 workup",
+      "Germline MEN1 or RET sequencing",
+    ],
+    associations: [
+      "MEN1 — parathyroid, pituitary, pancreatic neuroendocrine tumors",
+      "MEN2 — medullary thyroid carcinoma, pheochromocytoma, hyperparathyroidism (2A)",
+      "RET, MEN1, NF1, VHL in broader hereditary endocrine tumor context",
+    ],
+    complications: [
+      "Metastatic neuroendocrine malignancy",
+      "Hypertensive crisis from untreated pheochromocytoma",
+      "Severe hypercalcemia and peptic disease in MEN1",
+    ],
+    distinguishFrom: [
+      "Sporadic isolated endocrine adenomas — no multigland pattern or family history",
+      "MEN1 vs MEN2 — MEN1 lacks medullary thyroid carcinoma; MEN2 centers on RET and C-cell disease",
+      "Carney complex, NF1 — other hereditary endocrine tumor syndromes",
+    ],
+    treatment: [
+      "Genetic counseling and cascade family testing",
+      "Syndrome-specific surveillance and prophylactic surgery (especially RET-positive thyroidectomy)",
+      "Treat pheochromocytoma before other abdominal or thyroid surgery in MEN2",
+    ],
+    boardsPearls: [
+      "MEN1 = 3 P's: Pituitary, Parathyroid, Pancreas (endocrine)",
+      "MEN2 = RET + medullary thyroid carcinoma + pheochromocytoma (+ parathyroid in 2A)",
+      "Always rule out pheochromocytoma before thyroidectomy in MEN2",
+      "MEN1 gene on chromosome 11; RET on chromosome 10",
+    ],
+    pediatrics:
+      "RET mutation carriers may need childhood prophylactic thyroidectomy based on codon risk; MEN1 surveillance begins in adolescence/young adulthood.",
+  },
+  {
+    id: "men-type-1",
+    name: "MEN Type 1",
+    etymology: "multiple endocrine neoplasia + type 1 + eponym: Paul Wermer framework",
+    aliases: [
+      "men type 1",
+      "men1",
+      "men 1",
+      "men i",
+      "wermer syndrome",
+      "multiple endocrine neoplasia type 1",
+      "multiple endocrine neoplasia type i",
+    ],
+    definition:
+      "Autosomal dominant syndrome from MEN1 tumor suppressor gene mutation causing multigland hyperplasia and tumors of parathyroid, anterior pituitary, and pancreatic neuroendocrine tissue.",
+    pathophysiology:
+      "MEN1 (menin) loss-of-function → hyperplasia/neoplasia in parathyroid, pituitary, and enteropancreatic neuroendocrine cells; parathyroid disease is most common and often presents first with hypercalcemia.",
+    classicPresentation: [
+      "Recurrent nephrolithiasis or hypercalcemia from multigland parathyroid disease",
+      "Pituitary adenoma — prolactinoma or acromegaly symptoms",
+      "Refractory peptic ulcer disease from gastrinoma (Zollinger-Ellison)",
+      "Hypoglycemia from insulinoma",
+    ],
+    keyFindings: [
+      "Hypercalcemia with elevated PTH",
+      "Pituitary mass or hormonal excess (prolactin, GH)",
+      "Pancreatic neuroendocrine tumor on imaging",
+    ],
+    keyLabs: [
+      "↑ Calcium and PTH",
+      "Prolactin, IGF-1, fasting glucose/insulin, gastrin as clinically directed",
+      "Germline MEN1 mutation testing",
+    ],
+    associations: [
+      "Primary hyperparathyroidism (most common manifestation)",
+      "Prolactinoma and other pituitary adenomas",
+      "Gastrinoma (Zollinger-Ellison syndrome)",
+      "Insulinoma, VIPoma, glucagonoma (less common)",
+      "Carcinoid tumors (bronchial/thymic)",
+    ],
+    complications: [
+      "Severe peptic ulcer disease and diarrhea (gastrinoma/VIPoma)",
+      "Hypoglycemic seizures (insulinoma)",
+      "Pituitary mass effect and hormone excess complications",
+      "Metastatic pancreatic neuroendocrine carcinoma",
+    ],
+    distinguishFrom: [
+      "MEN2 — RET mutation with medullary thyroid carcinoma, not MEN1 tumor spectrum",
+      "Sporadic parathyroid adenoma — isolated without pituitary/pancreatic disease",
+      "NF1 — pheochromocytoma and neurofibromas, different genetics",
+    ],
+    treatment: [
+      "Parathyroidectomy for symptomatic hyperparathyroidism",
+      "Dopamine agonists or surgery for prolactinoma; transsphenoidal surgery for other pituitary adenomas",
+      "Somatostatin analogs and surgery for functional pancreatic NETs",
+      "Screen first-degree relatives with genetic testing",
+    ],
+    boardsPearls: [
+      "3 P's: Pituitary, Parathyroid, Pancreas (endocrine tumors)",
+      "Parathyroid disease is most common and often first manifestation",
+      "Gastrinoma → Zollinger-Ellison → recurrent ulcers after PPIs",
+      "MEN1 on chromosome 11; menin tumor suppressor",
+      "vs MEN2 — no medullary thyroid carcinoma in MEN1",
+    ],
+    pediatrics:
+      "MEN1 screening for carriers often begins in teen years; hyperparathyroidism can present in young adults.",
+  },
+  {
+    id: "men-type-2",
+    name: "MEN Type 2",
+    etymology: "multiple endocrine neoplasia + type 2 + RET proto-oncogene association",
+    aliases: [
+      "men type 2",
+      "men2",
+      "men 2",
+      "men ii",
+      "multiple endocrine neoplasia type 2",
+      "multiple endocrine neoplasia type ii",
+      "sipple syndrome",
+    ],
+    definition:
+      "Autosomal dominant RET proto-oncogene gain-of-function syndromes unified by medullary thyroid carcinoma risk and frequent pheochromocytoma, with subtypes MEN2A, MEN2B, and familial medullary thyroid carcinoma.",
+    pathophysiology:
+      "Activating RET mutations drive C-cell hyperplasia and medullary thyroid carcinoma; adrenal medullary hyperplasia predisposes to pheochromocytoma; MEN2A may include parathyroid hyperplasia, whereas MEN2B features aggressive medullary cancer and mucosal neuromas without typical hyperparathyroidism.",
+    classicPresentation: [
+      "Thyroid nodule or cervical nodes with ↑ calcitonin",
+      "Episodic hypertension, headache, sweating (pheochromocytoma)",
+      "Hypercalcemia in MEN2A from parathyroid disease",
+      "Mucosal neuromas and marfanoid habitus in MEN2B",
+    ],
+    keyFindings: [
+      "Medullary thyroid carcinoma or C-cell hyperplasia",
+      "Adrenal mass or paroxysmal sympathetic spells",
+      "Mucosal neuromas (lips, tongue) in MEN2B",
+    ],
+    keyLabs: [
+      "↑ Calcitonin and possible ↑ CEA",
+      "Plasma/urine metanephrines before surgery",
+      "Calcium/PTH in MEN2A",
+      "Germline RET mutation",
+    ],
+    associations: [
+      "Medullary thyroid carcinoma",
+      "Pheochromocytoma (often bilateral)",
+      "Primary hyperparathyroidism (MEN2A only)",
+      "Hirschsprung disease (some RET mutations)",
+    ],
+    complications: [
+      "Hypertensive crisis if pheochromocytoma untreated during surgery",
+      "Metastatic medullary thyroid carcinoma",
+      "Secretory diarrhea from calcitonin-related peptides",
+    ],
+    distinguishFrom: [
+      "MEN1 — parathyroid/pituitary/pancreatic tumors without RET medullary thyroid carcinoma",
+      "Sporadic medullary thyroid carcinoma — no germline RET or multigland syndrome",
+      "Papillary thyroid carcinoma — thyroglobulin marker, BRAF/RET fusions in sporadic disease context",
+    ],
+    treatment: [
+      "Treat pheochromocytoma with alpha blockade and resection before thyroid surgery",
+      "Total thyroidectomy with node dissection for medullary thyroid carcinoma",
+      "Prophylactic thyroidectomy in RET-positive children by risk-stratified timing",
+      "Parathyroidectomy for MEN2A hyperparathyroidism when indicated",
+    ],
+    boardsPearls: [
+      "RET gain-of-function on chromosome 10",
+      "Always screen for pheochromocytoma before thyroidectomy",
+      "Medullary thyroid carcinoma secretes calcitonin — not thyroglobulin",
+      "Subtypes: MEN2A, MEN2B, FMTC",
+      "MEN2B medullary thyroid carcinoma is more aggressive and presents earlier",
+    ],
+    pediatrics:
+      "RET codon-specific guidelines determine timing of prophylactic thyroidectomy in infancy or childhood; screen for pheochromocytoma before any surgery.",
+  },
+  {
+    id: "men2a",
+    name: "MEN2A",
+    etymology: "MEN type 2 + subtype A (Sipple syndrome variant)",
+    aliases: [
+      "men2a",
+      "men 2a",
+      "men2 a",
+      "men iia",
+      "men type 2a",
+      "multiple endocrine neoplasia type 2a",
+      "sipple syndrome",
+    ],
+    definition:
+      "MEN2 subtype featuring medullary thyroid carcinoma, pheochromocytoma, and primary hyperparathyroidism from RET mutation.",
+    pathophysiology:
+      "RET activation → C-cell neoplasia and adrenal medullary hyperplasia; parathyroid chief-cell hyperplasia causes primary hyperparathyroidism in a subset of MEN2A kindreds.",
+    classicPresentation: [
+      "Medullary thyroid carcinoma with ↑ calcitonin",
+      "Episodic catecholamine symptoms from pheochromocytoma",
+      "Asymptomatic hypercalcemia from multigland parathyroid disease",
+    ],
+    keyFindings: [
+      "Thyroid nodule or cervical adenopathy",
+      "Paroxysmal hypertension",
+      "Hypercalcemia",
+    ],
+    keyLabs: [
+      "↑ Calcitonin",
+      "↑ Metanephrines/normetanephrines",
+      "↑ Calcium and PTH",
+      "RET mutation (often codon 634)",
+    ],
+    associations: [
+      "Bilateral pheochromocytoma risk",
+      "Parathyroid hyperplasia",
+      "Hirschsprung disease with certain RET mutations",
+    ],
+    complications: [
+      "Intraoperative hypertensive crisis if pheochromocytoma missed",
+      "Metastatic medullary thyroid carcinoma",
+      "Nephrolithiasis from hyperparathyroidism",
+    ],
+    distinguishFrom: [
+      "MEN2B — mucosal neuromas, marfanoid habitus, usually no hyperparathyroidism",
+      "FMTC — medullary thyroid carcinoma only without pheochromocytoma",
+      "MEN1 — pancreatic and pituitary tumors, not RET medullary thyroid carcinoma",
+    ],
+    treatment: [
+      "Alpha blockade and pheochromocytoma resection before thyroidectomy",
+      "Total thyroidectomy for medullary thyroid carcinoma",
+      "Parathyroid surgery when hyperparathyroidism symptomatic",
+      "Lifelong surveillance in carriers",
+    ],
+    boardsPearls: [
+      "MEN2A triad: medullary thyroid carcinoma + pheochromocytoma + hyperparathyroidism",
+      "Pheochromocytoma first — alpha blockade before thyroid surgery",
+      "vs MEN2B — no mucosal neuromas; includes hyperparathyroidism",
+      "Calcitonin is tumor marker",
+    ],
+    pediatrics:
+      "Children with RET mutations need age-based thyroidectomy and periodic metanephrine screening.",
+  },
+  {
+    id: "men2b",
+    name: "MEN2B",
+    etymology: "MEN type 2 + subtype B (mucosal neuroma syndrome)",
+    aliases: [
+      "men2b",
+      "men 2b",
+      "men2 b",
+      "men iib",
+      "men type 2b",
+      "multiple endocrine neoplasia type 2b",
+      "mucosal neuroma syndrome",
+      "marfanoid habitus medullary thyroid carcinoma syndrome",
+    ],
+    definition:
+      "Aggressive MEN2 subtype with early medullary thyroid carcinoma, pheochromocytoma, mucosal neuromas, and marfanoid habitus, usually without hyperparathyroidism.",
+    pathophysiology:
+      "Specific RET mutations (often codon 918) cause aggressive C-cell malignancy early in life and distinctive mucosal ganglioneuromatosis; pheochromocytoma develops in many patients; parathyroid disease is uncommon compared with MEN2A.",
+    classicPresentation: [
+      "Young patient with medullary thyroid carcinoma",
+      "Thick lips, tongue neuromas, intestinal ganglioneuromatosis",
+      "Long limbs and marfanoid habitus without lens dislocation or aortic root dilation",
+      "Catecholamine spell symptoms from pheochromocytoma",
+    ],
+    keyFindings: [
+      "Mucosal neuromas on lips and tongue",
+      "Marfanoid body habitus",
+      "Medullary thyroid carcinoma often in infancy or childhood",
+    ],
+    keyLabs: [
+      "↑ Calcitonin from early age",
+      "↑ Metanephrines if pheochromocytoma present",
+      "RET mutation (often M918T)",
+    ],
+    associations: [
+      "Aggressive medullary thyroid carcinoma",
+      "Pheochromocytoma",
+      "Alacrima in some patients",
+      "Constipation from intestinal ganglioneuromatosis",
+    ],
+    complications: [
+      "Early metastatic medullary thyroid carcinoma",
+      "Hypertensive crisis during surgery if pheochromocytoma untreated",
+      "Megacolon from intestinal neuromas",
+    ],
+    distinguishFrom: [
+      "Marfan syndrome — fibrillin-1, lens dislocation, aortic root dilation, no RET mutation",
+      "MEN2A — hyperparathyroidism common; lacks mucosal neuroma phenotype",
+      "Neurofibromatosis — café-au-lait, neurofibromas, different genetics",
+    ],
+    treatment: [
+      "Early prophylactic thyroidectomy in infancy for known RET M918T",
+      "Pheochromocytoma resection after alpha blockade",
+      "Genetic counseling and family RET testing",
+    ],
+    boardsPearls: [
+      "MEN2B: medullary thyroid carcinoma + pheochromocytoma + mucosal neuromas + marfanoid habitus",
+      "More aggressive medullary thyroid carcinoma than MEN2A — thyroidectomy in infancy for high-risk mutations",
+      "Usually NO hyperparathyroidism — key distinction from MEN2A",
+      "vs Marfan — marfanoid habitus without lens dislocation/aortic root disease",
+    ],
+    pediatrics:
+      "MEN2B medullary thyroid carcinoma can metastasize in infancy; prophylactic thyroidectomy is recommended within the first year of life for classic RET mutations.",
+  },
+  {
+    id: "familial-medullary-thyroid-carcinoma",
+    name: "Familial Medullary Thyroid Carcinoma",
+    etymology: "Latin familia = household + medulla + thyroid + carcinoma",
+    aliases: [
+      "familial medullary thyroid carcinoma",
+      "fmtc",
+      "men2 fmtc",
+      "medullary thyroid carcinoma only syndrome",
+    ],
+    definition:
+      "MEN2 spectrum RET-associated syndrome with medullary thyroid carcinoma as the primary manifestation, without clinically evident pheochromocytoma or parathyroid disease in the kindred.",
+    pathophysiology:
+      "Germline RET mutations with lower penetrance for non-thyroid components allow medullary thyroid carcinoma to predominate; C-cell hyperplasia progresses to carcinoma over time.",
+    classicPresentation: [
+      "Family history of medullary thyroid carcinoma without pheochromocytoma",
+      "Thyroid nodule with elevated calcitonin",
+      "May appear clinically sporadic until family screening performed",
+    ],
+    keyFindings: [
+      "Medullary thyroid carcinoma histology with amyloid stroma",
+      "Elevated calcitonin",
+    ],
+    keyLabs: [
+      "↑ Calcitonin",
+      "RET germline mutation",
+      "Screen metanephrines to exclude MEN2A before labeling FMTC",
+    ],
+    associations: [
+      "RET proto-oncogene mutations",
+      "Part of MEN2 spectrum",
+    ],
+    complications: [
+      "Metastatic medullary thyroid carcinoma",
+      "Missed pheochromocytoma if inadequate screening",
+    ],
+    distinguishFrom: [
+      "MEN2A — includes pheochromocytoma and hyperparathyroidism in kindred",
+      "Sporadic medullary thyroid carcinoma — no germline RET or family history",
+      "Papillary thyroid carcinoma — thyroglobulin marker, different histology",
+    ],
+    treatment: [
+      "Total thyroidectomy when medullary thyroid carcinoma diagnosed or prophylactically in carriers",
+      "Still screen for pheochromocytoma before surgery",
+      "Family RET testing",
+    ],
+    boardsPearls: [
+      "FMTC = medullary thyroid carcinoma-dominant MEN2 subtype",
+      "Must exclude pheochromocytoma in patient and family before FMTC diagnosis",
+      "RET mutation links all MEN2 subtypes",
+      "Calcitonin is surveillance marker",
+    ],
+    pediatrics:
+      "RET-positive children in FMTC families need risk-based prophylactic thyroidectomy timing similar to other MEN2 variants.",
+  },
+  {
     id: "congenital-adrenal-hyperplasia",
     name: "Congenital Adrenal Hyperplasia",
     etymology: "Latin congenitus = born with + ad = near + renal = kidney + Greek hyper = excess + plasis = formation",
@@ -2892,6 +3473,323 @@ export const CONDITIONS: ConditionEntry[] = [
       "Witch's milk — benign neonatal galactorrhea from maternal estrogen withdrawal; resolves spontaneously. Adolescents with galactorrhea need prolactin/TSH and medication review (antipsychotics); evaluate pubertal delay if amenorrhea coexists.",
   },
   {
+    id: "hypopituitarism",
+    name: "Hypopituitarism",
+    etymology: "Greek hypo = deficient + Latin pituita = phlegm (pituitary) + -ism = condition",
+    aliases: [
+      "hypopituitarism",
+      "anterior pituitary insufficiency",
+      "pituitary insufficiency",
+      "partial hypopituitarism",
+      "panhypopituitarism",
+      "pan hypopituitarism",
+    ],
+    definition:
+      "Deficiency of one or more anterior pituitary hormones (GH, ACTH, TSH, LH/FSH, prolactin); panhypopituitarism denotes loss of all anterior hormones.",
+    pathophysiology:
+      "Destruction, compression, infarction, or infiltration of pituitary lactotrophs, somatotrophs, corticotrophs, thyrotrophs, and gonadotrophs → ↓ trophic hormones → downstream end-organ failure (adrenal, thyroid, gonadal); posterior pituitary (ADH) may be spared or involved depending on cause.",
+    classicPresentation: [
+      "Fatigue, hypotension, hypoglycemia (ACTH/cortisol deficiency)",
+      "Cold intolerance, weight gain, bradycardia (TSH deficiency)",
+      "Amenorrhea, loss of libido, infertility (LH/FSH deficiency)",
+      "Failure to thrive or short stature in children (GH deficiency)",
+      "Galactorrhea uncommon unless hyperprolactinemia from stalk effect",
+      "Headache or bitemporal hemianopia if mass lesion",
+    ],
+    keyLabs: [
+      "↓ cortisol with inappropriately low/normal ACTH (secondary adrenal insufficiency)",
+      "↓ free T4 with low/normal TSH (central hypothyroidism)",
+      "↓ LH/FSH with low estradiol or testosterone (hypogonadotropic hypogonadism)",
+      "↓ IGF-1 or failed GH stimulation test (GH deficiency)",
+      "MRI pituitary — mass, empty sella, postpartum changes, infiltration",
+    ],
+    keyFindings: [
+      "Pale, thin skin; loss of axillary/pubic hair (gonadal axis)",
+      "Hypotension without hyperpigmentation (vs primary Addison)",
+      "Bitemporal hemianopia with suprasellar/chiasmal compression",
+    ],
+    associations: [
+      "Pituitary adenoma or apoplexy",
+      "Sheehan syndrome (postpartum infarction)",
+      "Craniopharyngioma, meningioma, glioma",
+      "Pituitary surgery or radiation",
+      "Traumatic brain injury / pituitary stalk transection",
+      "Hemochromatosis, lymphocytic hypophysitis, sarcoidosis (infiltration)",
+      "Empty sella syndrome",
+    ],
+    complications: [
+      "Adrenal crisis if glucocorticoid replacement omitted before thyroid hormone",
+      "Infertility, osteoporosis from hypogonadism",
+      "Growth failure in children",
+    ],
+    distinguishFrom: [
+      "Primary adrenal insufficiency (Addison) — hyperpigmentation, ↑ ACTH",
+      "Primary hypothyroidism — ↑ TSH",
+      "Primary hypogonadism — ↑ LH/FSH",
+      "Functional hypothalamic amenorrhea — isolated GnRH suppression without panhypopituitarism",
+    ],
+    treatment: [
+      "Replace deficient hormones: glucocorticoids first, then thyroid hormone, then sex steroids/GH as indicated",
+      "Treat underlying cause (surgery for mass, dopamine agonist if prolactinoma)",
+      "Stress-dose steroids during illness/surgery if ACTH deficient",
+    ],
+    boardsPearls: [
+      "Give glucocorticoids BEFORE levothyroxine — thyroid replacement ↑ cortisol metabolism → adrenal crisis",
+      "Secondary adrenal insufficiency: ↓ cortisol, ACTH low/normal, NO hyperpigmentation",
+      "Sheehan syndrome = postpartum hypopituitarism from pituitary infarction",
+      "Empty sella on imaging with hormone deficiencies → chronic hypopituitarism",
+      "Panhypopituitarism = all anterior hormones lost; posterior (ADH) may still function",
+    ],
+    pediatrics:
+      "GH deficiency presents with growth failure and delayed bone age; congenital hypopituitarism may include midline defects (septo-optic dysplasia); neonatal ACTH deficiency can cause hypoglycemia and jaundice.",
+  },
+  {
+    id: "sheehan-syndrome",
+    name: "Sheehan Syndrome",
+    etymology: "eponym: Harold Leeming Sheehan + syndrome = running together of findings",
+    aliases: [
+      "sheehan syndrome",
+      "sheehan's syndrome",
+      "postpartum pituitary necrosis",
+      "postpartum hypopituitarism",
+      "postpartum panhypopituitarism",
+    ],
+    definition:
+      "Postpartum ischemic infarction and necrosis of the pituitary gland from severe blood loss and hypotension during or after childbirth, causing hypopituitarism.",
+    pathophysiology:
+      "Pregnancy enlarges the pituitary (lactotroph hyperplasia); postpartum hemorrhage and shock → pituitary arterial spasm/infarction → necrosis of anterior pituitary → loss of ACTH, TSH, GH, LH/FSH (and sometimes ADH if infarct extensive).",
+    classicPresentation: [
+      "History of postpartum hemorrhage with hypotension",
+      "Failure to lactate (prolactin deficiency) — early clue",
+      "Amenorrhea, loss of pubic/axillary hair",
+      "Fatigue, cold intolerance, weight changes months to years later",
+      "Adrenal insufficiency symptoms if ACTH loss",
+    ],
+    keyLabs: [
+      "↓ prolactin, ↓ ACTH/cortisol, ↓ TSH/free T4, ↓ LH/FSH",
+      "MRI — empty sella or shrunken pituitary; no functioning adenoma",
+    ],
+    keyFindings: [
+      "Agalactia after delivery",
+      "Signs of hypopituitarism without hyperpigmentation",
+    ],
+    associations: [
+      "Massive postpartum hemorrhage",
+      "Home or resource-limited delivery without transfusion support",
+      "Coexisting DIC or severe anemia",
+    ],
+    complications: [
+      "Adrenal crisis",
+      "Infertility and osteoporosis",
+      "Delayed diagnosis when presentation is remote from delivery",
+    ],
+    distinguishFrom: [
+      "Lymphocytic hypophysitis — autoimmune; may also present postpartum but different pathology",
+      "Prolactinoma — ↑ prolactin, not failure to lactate",
+      "Primary ovarian failure — ↑ LH/FSH, not low",
+    ],
+    treatment: [
+      "Lifelong hormone replacement (glucocorticoids, thyroid, sex steroids/GH as needed)",
+      "Obstetric hemorrhage prevention and prompt resuscitation prevent Sheehan",
+    ],
+    boardsPearls: [
+      "Postpartum hemorrhage + failure to lactate + amenorrhea → Sheehan syndrome",
+      "Ischemic pituitary necrosis — not a tumor",
+      "Agalactia distinguishes from physiologic lactation failure from other causes",
+      "May present years later with insidious hypopituitarism",
+    ],
+    pediatrics:
+      "Sheehan affects the mother after childbirth, not the neonate; subsequent pregnancies require endocrine optimization and stress-dose steroids if ACTH deficient.",
+  },
+  {
+    id: "hemochromatosis",
+    name: "Hemochromatosis",
+    etymology: "Greek haima = blood + Greek chroma = color + -osis = condition (iron overload darkens tissues)",
+    aliases: [
+      "hemochromatosis",
+      "hereditary hemochromatosis",
+      "hfe hemochromatosis",
+      "bronze diabetes",
+      "iron overload",
+      "primary hemochromatosis",
+    ],
+    definition:
+      "Disorder of systemic iron overload from increased intestinal iron absorption and parenchymal deposition, most commonly hereditary (HFE C282Y mutation).",
+    pathophysiology:
+      "Mutated HFE (or other iron-regulatory defects) → inappropriately ↑ hepcidin suppression and intestinal iron absorption → iron accumulates in liver, heart, pancreas, pituitary, joints, skin → organ dysfunction (cirrhosis, cardiomyopathy, diabetes, hypogonadism).",
+    classicPresentation: [
+      "Middle-aged man with fatigue, arthralgia (especially 2nd/3rd MCP joints)",
+      "Bronze skin hyperpigmentation",
+      "Diabetes mellitus (pancreatic iron deposition — bronze diabetes)",
+      "Hepatomegaly, cirrhosis, hepatocellular carcinoma risk",
+      "Hypogonadism, cardiomyopathy, arrhythmias",
+    ],
+    keyLabs: [
+      "↑ serum ferritin",
+      "↑ transferrin saturation (>45% screens; >60% highly suggestive)",
+      "↑ serum iron; genetic testing — HFE C282Y homozygosity (most common)",
+      "Liver biopsy or MRI for iron quantification when diagnosis uncertain",
+    ],
+    keyFindings: [
+      "Arthritis of 2nd and 3rd metacarpophalangeal joints",
+      "Skin bronzing",
+      "Signs of cirrhosis or heart failure in advanced disease",
+    ],
+    associations: [
+      "HFE C282Y homozygosity (autosomal recessive; low penetrance in women)",
+      "Hypopituitarism — gonadotroph and somatotroph iron damage",
+      "HCC in cirrhotic hemochromatosis",
+      "Secondary hemochromatosis from chronic transfusion (thalassemia major, sickle cell)",
+    ],
+    complications: [
+      "Cirrhosis and hepatocellular carcinoma",
+      "Restrictive/dilated cardiomyopathy",
+      "Diabetes mellitus",
+      "Hypogonadotropic hypogonadism",
+    ],
+    distinguishFrom: [
+      "Anemia of chronic disease — ferritin ↑ but transferrin saturation usually normal/low",
+      "Alcoholic liver disease — may ↑ ferritin without iron overload saturation pattern",
+      "Secondary iron overload — transfusion history",
+    ],
+    treatment: [
+      "Therapeutic phlebotomy to reduce iron stores",
+      "Treat organ complications; avoid iron/vitamin C supplements",
+      "Chelation (deferoxamine, deferasirox) when phlebotomy not tolerated",
+    ],
+    boardsPearls: [
+      "HFE C282Y homozygote + ↑ ferritin + ↑ transferrin saturation = hereditary hemochromatosis",
+      "Bronze diabetes = skin hyperpigmentation + diabetes from pancreatic iron",
+      "2nd/3rd MCP arthritis is classic hand finding",
+      "Iron overload can cause hypopituitarism — check gonadal and adrenal axes",
+      "Phlebotomy is treatment of choice for primary disease",
+    ],
+    pediatrics:
+      "Juvenile hemochromatosis (HJV/HAMP mutations) presents earlier with severe cardiomyopathy and hypogonadism; neonatal hemochromatosis is a distinct fulminant neonatal iron overload syndrome.",
+  },
+  {
+    id: "lymphocytic-hypophysitis",
+    name: "Lymphocytic Hypophysitis",
+    etymology: "Latin lympha = water + Greek kytos = cell + Greek hypo = under + physis = growth (pituitary) + -itis = inflammation",
+    aliases: [
+      "lymphocytic hypophysitis",
+      "autoimmune hypophysitis",
+      "lymphoid hypophysitis",
+      "adenohypophysitis",
+    ],
+    definition:
+      "Autoimmune inflammation of the pituitary gland with lymphocytic infiltration, causing mass effect and progressive hypopituitarism — often associated with pregnancy or postpartum period.",
+    pathophysiology:
+      "Autoimmune lymphocytic infiltration of anterior pituitary (and sometimes infundibulum/stalk) → enlargement on imaging and destruction of hormone-secreting cells → variable hypopituitarism; may mimic adenoma on MRI.",
+    classicPresentation: [
+      "Headache and visual field defects (chiasm compression from enlarged pituitary)",
+      "Hyperprolactinemia from stalk effect (loss of dopamine inhibition)",
+      "Symptoms of ACTH, TSH, or gonadotropin deficiency",
+      "Peripartum or postpartum woman (classic demographic)",
+    ],
+    keyLabs: [
+      "Variable pituitary hormone deficiencies on dynamic testing",
+      "↑ prolactin possible from stalk effect (modest elevation)",
+      "MRI — homogeneously enhancing pituitary enlargement, stalk thickening",
+    ],
+    keyFindings: [
+      "Bitemporal hemianopia with suprasellar extension",
+      "Signs of hypopituitarism without Cushingoid features of functional adenoma",
+    ],
+    associations: [
+      "Pregnancy and postpartum period",
+      "Other autoimmune diseases (autoimmune thyroiditis, type 1 diabetes)",
+      "Ipilimumab/nivolumab immune checkpoint inhibitor use (immune-related hypophysitis)",
+    ],
+    complications: [
+      "Permanent hypopituitarism after inflammation subsides",
+      "Visual loss from chiasmal compression",
+    ],
+    distinguishFrom: [
+      "Pituitary adenoma — usually discrete mass; hormone hypersecretion more common",
+      "Sheehan syndrome — postpartum hemorrhage history, ischemic necrosis not lymphocytic infiltration",
+      "Craniopharyngioma — suprasellar calcification, bimodal age",
+      "Sarcoidosis/granulomatous infiltration — systemic granulomas, ↑ ACE",
+    ],
+    treatment: [
+      "High-dose glucocorticoids for acute inflammation and mass effect",
+      "Hormone replacement for deficiencies",
+      "Surgery if vision threatened and steroids fail",
+    ],
+    boardsPearls: [
+      "Postpartum woman + enlarged pituitary + hypopituitarism → lymphocytic hypophysitis on differential",
+      "Stalk thickening + modest hyperprolactinemia suggests stalk effect, not prolactinoma",
+      "Autoimmune pituitary inflammation — treat with steroids",
+      "vs Sheehan — hemorrhagic infarction, not lymphocytic infiltration",
+    ],
+    pediatrics:
+      "Rare in children; when it occurs, presents with growth failure and pituitary enlargement — exclude adenoma and craniopharyngioma; immune checkpoint–related hypophysitis increasingly recognized in adolescent oncology survivors.",
+  },
+  {
+    id: "pituitary-infiltration",
+    name: "Pituitary infiltration",
+    etymology: "Latin pituita = phlegm (pituitary) + Latin infiltratio = permeation into tissue",
+    aliases: [
+      "pituitary infiltration",
+      "infiltrative hypopituitarism",
+      "infiltrative pituitary disease",
+      "granulomatous hypophysitis",
+      "sarcoidosis of the pituitary",
+    ],
+    definition:
+      "Replacement of normal pituitary tissue by infiltrating cells (granulomas, histiocytes, malignant cells, or iron-laden macrophages), causing mass effect and hypopituitarism.",
+    pathophysiology:
+      "Systemic infiltrative disease seeds pituitary/hypothalamic tissue → destruction and compression of normal endocrine cells → partial or panhypopituitarism; stalk involvement may cause diabetes insipidus or hyperprolactinemia from dopamine blockade.",
+    classicPresentation: [
+      "Headache, visual field loss",
+      "Diabetes insipidus (posterior pituitary or stalk involvement)",
+      "Signs of hypopituitarism (fatigue, hypogonadism, adrenal insufficiency)",
+      "Systemic features of underlying disease (cough, skin lesions, lymphadenopathy)",
+    ],
+    keyLabs: [
+      "Variable anterior pituitary hormone deficiencies",
+      "Hypernatremia/polyuria if central DI",
+      "↑ ACE (sarcoidosis), biopsy showing granulomas or histiocytes",
+      "MRI — stalk thickening, homogenous enhancement, absent discrete adenoma",
+    ],
+    keyFindings: [
+      "Diabetes insipidus + anterior pituitary failure suggests infiltrative/stalk disease",
+      "Bitemporal hemianopia with diffuse pituitary enlargement",
+    ],
+    associations: [
+      "Sarcoidosis",
+      "Langerhans cell histiocytosis",
+      "Tuberculosis",
+      "Hemochromatosis (iron deposition)",
+      "Metastatic carcinoma (breast, lung) to pituitary",
+      "Wegener granulomatosis (granulomatosis with polyangiitis)",
+    ],
+    complications: [
+      "Permanent hypopituitarism",
+      "Visual loss",
+      "Progression of systemic infiltrative disease",
+    ],
+    distinguishFrom: [
+      "Pituitary adenoma — discrete enhancing nodule, hormone hypersecretion common",
+      "Lymphocytic hypophysitis — lymphocytic infiltrate, peripartum predilection",
+      "Sheehan syndrome — ischemic necrosis after hemorrhage",
+      "Craniopharyngioma — cystic/suprasellar mass with calcification",
+    ],
+    treatment: [
+      "Treat underlying disease (steroids for sarcoid, anti-TB therapy, chemotherapy for malignancy)",
+      "Hormone replacement for pituitary deficiencies",
+      "Desmopressin for central diabetes insipidus",
+    ],
+    boardsPearls: [
+      "DI + anterior hypopituitarism → think stalk infiltration (sarcoid, histiocytosis, metastasis)",
+      "Sarcoidosis can infiltrate hypothalamus/pituitary → ↑ ACE, bilateral hilar lymphadenopathy",
+      "Infiltrative disease mimics adenoma on MRI — look for stalk thickening and systemic clues",
+      "Hemochromatosis causes iron infiltration → hypogonadism and diabetes",
+    ],
+    pediatrics:
+      "Langerhans cell histiocytosis may present in children with DI and bony lesions; central DI in a child warrants MRI and workup for infiltrative causes beyond idiopathic DI.",
+  },
+  {
     id: "cushing-syndrome",
     name: "Cushing Syndrome",
     etymology: "eponym: Harvey Cushing + syndrome = running together of findings",
@@ -3054,6 +3952,73 @@ export const CONDITIONS: ConditionEntry[] = [
       "May present with failure to thrive, short stature, or delayed puberty; screen if T1DM or Down syndrome.",
   },
   {
+    id: "rickets",
+    name: "Rickets",
+    etymology: "origin uncertain; possibly Old English wricken = twist (bowed legs)",
+    aliases: [
+      "rickets",
+      "vitamin d deficiency rickets",
+      "nutritional rickets",
+      "renal rickets",
+      "hypophosphatemic rickets",
+    ],
+    definition:
+      "Disorder of defective mineralization of growth plate (physeal) cartilage in children, most commonly from vitamin D deficiency but also from phosphate wasting or resistance, causing skeletal deformity and growth impairment.",
+    pathophysiology:
+      "Low vitamin D and/or phosphate → impaired calcium and phosphate availability for hydroxyapatite deposition at metaphyseal growth plates → unmineralized osteoid accumulates → widened, irregular physes and soft bones; secondary hyperparathyroidism worsens bone resorption.",
+    classicPresentation: [
+      "Leg bowing (genu varum), waddling gait in toddler",
+      "Rachitic rosary — palpable enlargement of costochondral junctions",
+      "Frontal bossing and delayed fontanelle closure in infants",
+      "Bone pain, muscle weakness, growth delay",
+      "Breastfed infant without vitamin D supplementation; limited sun exposure",
+    ],
+    keyFindings: [
+      "Widened wrists and ankles (metaphyseal enlargement)",
+      "Harrison groove from diaphragmatic pull on softened ribs",
+      "Craniotabes — softening of skull occiput and parietals in infants",
+    ],
+    keyLabs: [
+      "↓ 25-OH vitamin D (nutritional deficiency)",
+      "↓ serum calcium and phosphate (variable by cause)",
+      "↑ alkaline phosphatase",
+      "↑ PTH (secondary hyperparathyroidism)",
+      "X-ray: cupping, fraying, and splaying of metaphyses (especially wrists and knees)",
+    ],
+    associations: [
+      "Vitamin D deficiency — low sun, breast milk without supplementation, dark skin, malabsorption (celiac, CF)",
+      "Renal osteodystrophy / renal rickets — failed 1α-hydroxylation in CKD",
+      "X-linked hypophosphatemic rickets — phosphate wasting (PHEX mutation)",
+      "Prematurity and exclusive breastfeeding without vitamin D",
+    ],
+    complications: [
+      "Skeletal deformities (bowlegs, pelvic deformity)",
+      "Growth retardation",
+      "Hypocalcemic seizures in severe deficiency (infants)",
+      "Osteomalacia in adults (same mineralization defect in mature bone)",
+    ],
+    distinguishFrom: [
+      "Osteomalacia — adult equivalent of defective bone mineralization without open physes",
+      "Blount disease — tibia vara from physeal growth disturbance, not systemic rickets",
+      "Physiologic bowing — symmetric, mild, resolves with walking",
+      "Achondroplasia — disproportionate short stature with normal mineralization",
+    ],
+    treatment: [
+      "Vitamin D and calcium supplementation for nutritional deficiency",
+      "Treat underlying malabsorption or CKD",
+      "Phosphate and calcitriol for hypophosphatemic/renal forms",
+    ],
+    boardsPearls: [
+      "Rickets = children; osteomalacia = adults — both defective mineralization",
+      "↑ ALP + ↓ vitamin D + leg bowing in toddler = classic rickets",
+      "X-ray: metaphyseal cupping/fraying/splaying at wrists and knees",
+      "Breastfed infants need vitamin D 400 IU/day",
+      "Renal rickets: failed 1,25-(OH)₂D production in CKD — treat with active vitamin D",
+    ],
+    pediatrics:
+      "Rickets is primarily a pediatric diagnosis; breastfed infants, preterm infants, and children with malabsorption are highest risk; leg bowing and rachitic rosary are classic exam findings.",
+  },
+  {
     id: "meckel-diverticulum",
     name: "Meckel Diverticulum",
     etymology: "eponym: Johann Meckel + Latin divertere = turn aside/outpouch",
@@ -3140,6 +4105,439 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "May present in adolescence with acute liver failure or neuropsychiatric symptoms; screen siblings.",
+  },
+  {
+    id: "alkaptonuria",
+    name: "Alkaptonuria",
+    etymology: "Greek alkapton = nitrogenous substance that absorbs strongly + ouron = urine",
+    aliases: [
+      "alkaptonuria",
+      "aku",
+      "homogentisic aciduria",
+    ],
+    definition:
+      "Autosomal recessive inborn error of phenylalanine and tyrosine catabolism caused by homogentisate oxidase deficiency, with homogentisic acid accumulation and urine that darkens on standing.",
+    pathophysiology:
+      "HGD gene mutation → deficient homogentisate oxidase → block after homogentisic acid in aromatic amino acid pathway → homogentisic acid accumulates in blood and urine → oxidation on standing turns urine black; chronic deposition of oxidized pigment in connective tissue causes ochronosis.",
+    classicPresentation: [
+      "Dark or black urine on standing or alkalinization (often noted in infancy)",
+      "Otherwise well in childhood; progressive ochronosis in adulthood",
+      "Chronic back pain and ochronotic arthritis in 3rd–4th decade",
+      "Bluish-black pigmentation of sclera and ear cartilage",
+    ],
+    keyFindings: [
+      "Urine turns black on exposure to air",
+      "Ochronotic pigmentation of sclera, ears, nose, hands",
+      "Degenerative arthritis of spine and large joints",
+      "Aortic and mitral valve calcification/narrowing in later disease",
+    ],
+    keyLabs: [
+      "↑ homogentisic acid in urine (pathognomonic)",
+      "Normal phenylalanine if PAH intact — block is downstream of tyrosine catabolism",
+    ],
+    associations: [
+      "Autosomal recessive",
+      "HGD gene — homogentisate oxidase",
+      "Shared pathway: phenylalanine → tyrosine → homogentisic acid",
+    ],
+    complications: [
+      "Ochronosis",
+      "Spondyloarthropathy and joint destruction",
+      "Calcific valvular heart disease",
+      "Renal stones (homogentisic acid pigmentation)",
+    ],
+    distinguishFrom: [
+      "Phenylketonuria — ↑ phenylalanine, musty odor, intellectual disability; PAH deficiency",
+      "Melanuria — myoglobin or homogentisic acid from other causes; alkaptonuria is lifelong AR defect",
+      "Ochronosis from phenol exposure — exogenous, no homogentisic aciduria",
+    ],
+    treatment: [
+      "No curative Step 1 therapy — supportive joint care",
+      "High-dose vitamin C and dietary protein restriction have limited evidence",
+      "Monitor cardiac valves and renal function",
+    ],
+    boardsPearls: [
+      "Homogentisate oxidase deficiency → homogentisic acid accumulates",
+      "Phenylalanine and tyrosine are the amino acids whose catabolic pathway is blocked",
+      "Urine turns black on standing — classic buzzword",
+      "Benign in childhood; ochronotic arthritis and valvular disease in adulthood",
+      "Autosomal recessive; not PKU (that is phenylalanine hydroxylase)",
+    ],
+    pediatrics:
+      "Often asymptomatic in childhood except dark urine on diaper exposure to air; ochronosis and arthritis develop in adulthood.",
+  },
+  {
+    id: "ochronosis",
+    name: "Ochronosis",
+    etymology: "Greek ochros = pale yellow + -osis = condition (pigment appears yellow-brown microscopically)",
+    aliases: [
+      "ochronosis",
+      "ochronotic arthritis",
+      "endogenous ochronosis",
+    ],
+    definition:
+      "Tissue deposition of blue-black oxidized homogentisic acid pigment in connective tissue, classically from alkaptonuria but also rarely from exogenous phenolic compounds.",
+    pathophysiology:
+      "Chronic homogentisic acid exposure → oxidation and polymerization in cartilage, sclera, heart valves, and skin → brittle ochronotic pigment deposits → accelerated degenerative arthritis and valvular calcification.",
+    classicPresentation: [
+      "Bluish-black sclera and ear/nasal cartilage pigmentation",
+      "Progressive low back pain and stiffness",
+      "Large-joint arthropathy resembling osteoarthritis but with early severe spine involvement",
+      "History of dark urine on standing if endogenous (alkaptonuria)",
+    ],
+    keyFindings: [
+      "Ochronotic pigmentation of sclera (Osler sign)",
+      "Blackened ear cartilage and tendons",
+      "Calcified aortic/mitral valves on imaging",
+      "Degenerative changes of intervertebral discs and large joints",
+    ],
+    associations: [
+      "Alkaptonuria — most common cause on boards",
+      "Exogenous phenol/resorcinol exposure — rare dermatologic cause",
+    ],
+    complications: [
+      "Severe spondyloarthropathy",
+      "Valvular heart disease and coronary calcification",
+      "Renal and prostatic stone pigmentation",
+    ],
+    distinguishFrom: [
+      "Osteoarthritis — lacks scleral/cartilage pigmentation and dark urine history",
+      "Ankylosing spondylitis — inflammatory sacroiliitis, HLA-B27 association",
+      "Exogenous ochronosis — hydroquinone or phenol creams, no homogentisic aciduria",
+    ],
+    treatment: [
+      "Treat underlying alkaptonuria if present",
+      "Joint replacement for severe arthropathy",
+      "Cardiac surveillance for valvular disease",
+    ],
+    boardsPearls: [
+      "Ochronosis = connective tissue pigment deposition from homogentisic acid",
+      "Think alkaptonuria when ochronosis + black urine on standing",
+      "Spine and large joints affected; may need valve replacement",
+      "Endogenous vs exogenous: alkaptonuria has homogentisic aciduria",
+    ],
+    pediatrics:
+      "Pediatric ochronosis is uncommon; pigmentation may be subtle until adulthood unless severe alkaptonuria.",
+  },
+  {
+    id: "phenylketonuria",
+    name: "Phenylketonuria",
+    etymology: "phenyl = benzene ring + ketone + ouron = urine",
+    aliases: [
+      "phenylketonuria",
+      "pku",
+      "phenylalanine hydroxylase deficiency",
+      "hyperphenylalaninemia",
+    ],
+    definition:
+      "Autosomal recessive disorder of phenylalanine metabolism caused by phenylalanine hydroxylase (or tetrahydrobiopterin cofactor) deficiency, leading to toxic phenylalanine accumulation and intellectual disability if untreated.",
+    pathophysiology:
+      "PAH gene mutation (or BH₄ pathway defect) → inability to convert phenylalanine to tyrosine → ↑ phenylalanine and phenylketones in blood/urine → neurotoxicity → impaired myelination and cognitive development; hypopigmentation from ↓ melanin substrate (tyrosine).",
+    classicPresentation: [
+      "Intellectual disability if untreated",
+      "Musty or mousy body odor",
+      "Fair hair, blue eyes, hypopigmentation",
+      "Eczema",
+      "Seizures in severe untreated disease",
+    ],
+    keyFindings: [
+      "Elevated phenylalanine on newborn screen",
+      "Musty odor",
+      "Developmental delay without dietary treatment",
+    ],
+    keyLabs: [
+      "↑ phenylalanine (newborn screen and confirmatory)",
+      "Normal or low tyrosine if PAH deficient",
+      "Distinguish BH₄ defects with pterin studies if atypical",
+    ],
+    associations: [
+      "Autosomal recessive",
+      "PAH gene on chromosome 12",
+      "Maternal PKU risks fetal teratogenicity if mother is not diet-controlled during pregnancy",
+    ],
+    complications: [
+      "Intellectual disability",
+      "Microcephaly",
+      "Seizures",
+      "Maternal PKU embryopathy (congenital heart defects, growth restriction)",
+    ],
+    distinguishFrom: [
+      "Alkaptonuria — dark urine on standing, ochronosis; homogentisate oxidase defect downstream of tyrosine",
+      "Maple syrup urine disease — sweet urine, BCAA accumulation, neonatal encephalopathy",
+      "BH₄ deficiency — PKU-like hyperphenylalaninemia plus ↓ neurotransmitters (dystonia, seizures)",
+    ],
+    treatment: [
+      "Lifelong low-phenylalanine diet",
+      "Tyrosine supplementation",
+      "Sapropterin (BH₄) for responsive PAH variants",
+      "Strict maternal diet control before and during pregnancy",
+    ],
+    boardsPearls: [
+      "PAH deficiency → cannot convert phenylalanine to tyrosine",
+      "Musty odor + fair hair + intellectual disability → PKU",
+      "Newborn screen mandatory; early diet prevents CNS damage",
+      "Maternal PKU: mother's high phenylalanine is teratogenic to fetus",
+      "Tyrosine becomes essential when PAH is deficient",
+    ],
+    pediatrics:
+      "Detected on newborn screen; dietary restriction from infancy prevents intellectual disability. Fair hair and eczema are early clues if screen missed.",
+  },
+  {
+    id: "maple-syrup-urine-disease",
+    name: "Maple Syrup Urine Disease",
+    etymology: "maple syrup = sweet odor descriptor + urine = excreted fluid + disease = disordered function",
+    aliases: [
+      "maple syrup urine disease",
+      "msud",
+      "branched-chain ketoaciduria",
+      "branched-chain alpha-keto acid dehydrogenase deficiency",
+    ],
+    definition:
+      "Autosomal recessive disorder of branched-chain amino acid (leucine, isoleucine, valine) catabolism causing neonatal encephalopathy and urine with a sweet maple-syrup odor.",
+    pathophysiology:
+      "Deficiency of branched-chain α-keto acid dehydrogenase (BCKDH) → accumulation of leucine, isoleucine, valine and their toxic ketoacids → cerebral edema and neurologic injury; leucine is the most neurotoxic BCAA.",
+    classicPresentation: [
+      "Poor feeding, vomiting, lethargy in first week of life",
+      "Sweet-smelling urine (maple syrup odor)",
+      "Hypotonia progressing to seizures and coma",
+      "Neonatal metabolic emergency",
+    ],
+    keyFindings: [
+      "Sweet odor to urine, cerumen, or earwax",
+      "Neurologic deterioration in untreated neonate",
+      "Ketonuria without hyperglycemia",
+    ],
+    keyLabs: [
+      "↑ leucine, isoleucine, valine on plasma amino acids",
+      "↑ branched-chain ketoacids in urine",
+      "Newborn screen positive in screened populations",
+    ],
+    associations: [
+      "Autosomal recessive",
+      "BCKDHA, BCKDHB, DBT, or DLD gene defects",
+      "Thiamine-responsive subtype (DLD deficiency)",
+    ],
+    complications: [
+      "Metabolic decompensation with illness or fasting",
+      "Seizures, cerebral edema, death if untreated",
+      "Intellectual disability with delayed diagnosis",
+    ],
+    distinguishFrom: [
+      "Phenylketonuria — musty odor, ↑ phenylalanine, not sweet urine",
+      "Organic acidemias — metabolic acidosis prominent; MSUD has characteristic odor",
+      "Urea cycle defects — hyperammonemia without sweet urine odor",
+    ],
+    treatment: [
+      "Emergency restriction of branched-chain amino acids",
+      "IV glucose and fluids; dialysis for severe leucine toxicity",
+      "Lifelong special diet low in leucine, isoleucine, valine",
+      "Thiamine in thiamine-responsive subtypes",
+    ],
+    boardsPearls: [
+      "Sweet urine odor in neonate → MSUD until proven otherwise",
+      "BCAA dehydrogenase deficiency — same enzyme family inhibited by arsenic",
+      "Leucine most neurotoxic; restrict BCAAs emergently",
+      "Thiamine is cofactor for BCKDH (like pyruvate dehydrogenase)",
+      "vs PKU: musty odor and ↑ phenylalanine, not maple syrup smell",
+    ],
+    pediatrics:
+      "Classic neonatal presentation within days of birth; treat as metabolic emergency. Siblings need screening; dietary management is lifelong.",
+  },
+  {
+    id: "galactosemia",
+    name: "Galactosemia",
+    etymology: "Greek gala = milk + -ose = sugar + -emia = blood condition",
+    aliases: [
+      "galactosemia",
+      "galactosaemia",
+      "classic galactosemia",
+      "galactose-1-phosphate uridyltransferase deficiency",
+      "galt deficiency",
+    ],
+    definition:
+      "Autosomal recessive disorder of galactose metabolism causing toxic accumulation of galactose-1-phosphate after lactose/galactose ingestion, with neonatal liver disease, cataracts, and sepsis risk if untreated.",
+    pathophysiology:
+      "GALT enzyme deficiency (classic form) → inability to convert galactose-1-phosphate to glucose-1-phosphate → accumulation of galactose-1-phosphate and galactitol → hepatocellular injury, renal tubular dysfunction, lens opacities, and E. coli sepsis susceptibility in neonates.",
+    classicPresentation: [
+      "Jaundice, vomiting, hepatomegaly after milk feeds begin",
+      "Failure to thrive in first weeks of life",
+      "Cataracts",
+      "E. coli sepsis in neonate",
+      "Hypoglycemia and aminoaciduria",
+    ],
+    keyFindings: [
+      "Hepatosplenomegaly and conjugated hyperbilirubinemia",
+      "Cataracts on exam",
+      "Reducing substances in urine (non-glucose)",
+    ],
+    keyLabs: [
+      "↑ galactose and galactose-1-phosphate",
+      "Positive newborn screen for galactosemia",
+      "↓ GALT enzyme activity on confirmatory testing",
+      "E. coli bacteremia in sick neonate",
+    ],
+    associations: [
+      "Autosomal recessive",
+      "GALT gene on chromosome 9",
+      "Lactose in breast milk or cow's milk formula triggers disease",
+    ],
+    complications: [
+      "Intellectual disability if untreated",
+      "Ovarian failure in females",
+      "Speech and motor deficits despite early treatment (variant outcomes)",
+      "Neonatal E. coli sepsis",
+    ],
+    distinguishFrom: [
+      "Galactokinase deficiency — mainly cataracts, milder systemic disease",
+      "UDP-galactose-4-epimerase deficiency — often benign",
+      "Neonatal hepatitis — no reducing substances or galactose screen abnormality",
+      "Phenylketonuria — musty odor, ↑ phenylalanine, not milk-induced jaundice",
+    ],
+    treatment: [
+      "Immediate elimination of lactose/galactose from diet (soy or elemental formula)",
+      "Lifelong galactose restriction",
+      "Monitor development, speech, and ovarian function",
+    ],
+    boardsPearls: [
+      "Stop milk feeds — galactose is from lactose hydrolysis",
+      "Neonate with jaundice + E. coli sepsis + cataracts → galactosemia",
+      "Reducing substances in urine after milk introduction",
+      "Newborn screen detects many cases before irreversible injury",
+      "vs PKU — different amino acid pathway; both on newborn screen",
+    ],
+    pediatrics:
+      "Symptoms appear after milk feeds start; soy formula is used until diagnosis confirmed. Early dietary treatment prevents death from sepsis and liver failure.",
+  },
+  {
+    id: "down-syndrome",
+    name: "Down Syndrome",
+    etymology: "eponym: John Langdon Down + syndrome = grouped findings",
+    aliases: [
+      "down syndrome",
+      "down's syndrome",
+      "trisomy 21",
+      "trisomy-21",
+      "t21",
+    ],
+    definition:
+      "Chromosomal disorder most often from trisomy 21 causing intellectual disability, characteristic facies, congenital anomalies, and increased risk of several medical conditions.",
+    pathophysiology:
+      "Extra copy of chromosome 21 (free trisomy, Robertsonian translocation, or mosaicism) → gene dosage imbalance → abnormal neurodevelopment, immune and cardiac malformations, and early Alzheimer-type neuropathology.",
+    classicPresentation: [
+      "Intellectual disability (variable severity)",
+      "Hypotonia in infancy",
+      "Flat facial profile, upslanting palpebral fissures, epicanthal folds",
+      "Single transverse palmar crease, gap between first and second toes",
+    ],
+    keyFindings: [
+      "Dysmorphic facies and hypotonia",
+      "Congenital heart disease (especially AVSD, VSD, ASD)",
+      "Duodenal atresia or Hirschsprung disease",
+      "Atlantoaxial instability risk",
+    ],
+    keyLabs: [
+      "Karyotype: 47,XX,+21 or 47,XY,+21 (or translocation/mosaic pattern)",
+      "Prenatal screening: ↓ maternal AFP, ↑ β-hCG, ↑ inhibin A (quadruple screen pattern)",
+      "TSH — screen for concurrent hypothyroidism",
+    ],
+    associations: [
+      "Advanced maternal age (free trisomy 21)",
+      "Robertsonian translocation (often 14;21) — translocation carriers at recurrence risk",
+      "Acute megakaryoblastic leukemia (pediatric)",
+      "Early-onset Alzheimer disease pathology",
+      "Autoimmune thyroiditis / hypothyroidism",
+      "Hirschsprung disease, duodenal atresia",
+    ],
+    complications: [
+      "Congenital heart disease",
+      "Atlantoaxial subluxation with cord compression",
+      "Obstructive sleep apnea",
+      "Hearing loss, recurrent otitis media",
+      "Hematologic malignancy in childhood",
+    ],
+    distinguishFrom: [
+      "Edwards syndrome (trisomy 18) — rocker-bottom feet, severe malformations, poorer survival",
+      "Patau syndrome (trisomy 13) — holoprosencephaly, polydactyly",
+      "Zellweger syndrome — hypotonia but peroxisomal disease labs, not trisomy 21",
+    ],
+    treatment: [
+      "Early intervention, developmental support, and family counseling",
+      "Repair congenital heart defects; monitor thyroid, hearing, vision",
+      "Cervical spine screening before contact sports (atlantoaxial instability)",
+    ],
+    boardsPearls: [
+      "Trisomy 21 = Down syndrome; 47,XX,+21 karyotype",
+      "First-trimester screen: ↑ nuchal translucency, ↓ PAPP-A, ↑ β-hCG",
+      "AVSD is classic heart defect; duodenal atresia (double bubble) and Hirschsprung associated",
+      "Single palmar crease + hypotonia + upslanting fissures",
+      "Maternal age is risk factor for free trisomy, not translocation cases",
+    ],
+    pediatrics:
+      "Newborn hypotonia and feeding difficulty are early clues; echocardiogram and newborn screening for hypothyroidism recommended. Atlantoaxial instability screening before sports participation.",
+  },
+  {
+    id: "hirschsprung-disease",
+    name: "Hirschsprung Disease",
+    etymology: "eponym: Harald Hirschsprung + disease = disordered function",
+    aliases: [
+      "hirschsprung disease",
+      "hirschsprung's disease",
+      "congenital aganglionic megacolon",
+      "aganglionic megacolon",
+      "hd",
+    ],
+    definition:
+      "Congenital absence of enteric ganglion cells in the distal colon causing functional obstruction, failure to pass meconium, and megacolon.",
+    pathophysiology:
+      "Failed cranial-to-caudal migration of neural crest–derived enteric ganglia (often RET proto-oncogene mutations) → aganglionic distal segment with uncoordinated contraction → functional obstruction, proximal dilatation, and enterocolitis risk.",
+    classicPresentation: [
+      "Failure to pass meconium within 48 hours of birth",
+      "Abdominal distension and bilious vomiting in neonate",
+      "Chronic constipation and poor growth in older infant",
+      "Explosive stool after rectal exam (squirt sign)",
+    ],
+    keyFindings: [
+      "Empty rectal vault on digital exam with tight anal sphincter",
+      "Proximal colonic dilatation on imaging",
+      "Transition zone on contrast enema",
+      "Absent ganglion cells and hypertrophied nerve trunks on rectal suction biopsy",
+    ],
+    keyLabs: [
+      "Anorectal manometry — absent rectoanal inhibitory reflex",
+      "Rectal suction biopsy — gold standard (no ganglion cells, ↑ acetylcholinesterase staining)",
+      "Contrast enema — transition zone between dilated and narrow segments",
+    ],
+    associations: [
+      "Down syndrome (increased risk)",
+      "RET proto-oncogene mutations (also MEN2 association)",
+      "Waardenburg syndrome, congenital central hypoventilation",
+      "Short-segment (rectosigmoid) most common; long-segment worse prognosis",
+    ],
+    complications: [
+      "Enterocolitis (Hirschsprung-associated enterocolitis) — fever, distension, shock",
+      "Malnutrition and failure to thrive",
+      "Persistent obstruction if incomplete resection",
+    ],
+    distinguishFrom: [
+      "Meconium ileus — cystic fibrosis, inspissated meconium in ileum not aganglionosis",
+      "Functional constipation — normal ganglion cells on biopsy",
+      "Anal stenosis or imperforate anus — mechanical outlet obstruction",
+      "Hypothyroidism-related constipation — check TSH; passes meconium usually",
+    ],
+    treatment: [
+      "Definitive surgery: pull-through procedure removing aganglionic segment",
+      "Temporary colostomy in severe neonatal obstruction or enterocolitis",
+      "Treat enterocolitis urgently with rectal washouts, antibiotics, IV fluids",
+    ],
+    boardsPearls: [
+      "Failure to pass meconium in 48 h → Hirschsprung until proven otherwise",
+      "Aganglionosis from absent neural crest–derived enteric ganglia",
+      "Rectal biopsy shows no ganglion cells",
+      "Down syndrome association",
+      "vs meconium ileus (CF) — distal microcolon with ileal obstruction",
+    ],
+    pediatrics:
+      "Neonatal intestinal obstruction emergency; do not delay diagnosis in infant who never passed meconium. Enterocolitis is life-threatening complication after diagnosis or surgery.",
   },
   {
     id: "ibd",
@@ -3454,6 +4852,203 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Newborn screen detects HbS; dactylitis is common first manifestation in infants; penicillin prophylaxis until age 5.",
+  },
+  {
+    id: "sickle-cell-trait",
+    name: "Sickle Cell Trait",
+    etymology: "Old English sicol = curved blade + cell = small biological unit + Latin tractus = drawn path",
+    aliases: [
+      "sickle cell trait",
+      "sickle cell carrier",
+      "hbas",
+      "hb as",
+      "heterozygous sickle cell",
+    ],
+    definition:
+      "Heterozygous carrier state with one normal β-globin allele and one HbS allele (HbAS), usually asymptomatic with normal hemoglobin and no vaso-occlusive disease.",
+    pathophysiology:
+      "HbAS RBCs sickle only under extreme hypoxia, dehydration, or acidosis; most of life RBCs remain discoid → no chronic hemolysis or infarction at baseline; heterozygote advantage against Plasmodium falciparum malaria.",
+    classicPresentation: [
+      "Asymptomatic in daily life",
+      "Normal CBC without anemia",
+      "Incidental finding on newborn screen or pre-athletic screening",
+      "May report painless hematuria (renal papillary necrosis) or rare exertional complications",
+    ],
+    keyFindings: [
+      "No chronic anemia or splenomegaly",
+      "Peripheral smear usually normal (occasional target cells)",
+      "No history of painful crises typical of HbSS",
+    ],
+    keyLabs: [
+      "Hemoglobin electrophoresis: ~55–60% HbA, ~35–40% HbS, minimal HbF",
+      "Normal hemoglobin and reticulocyte count",
+      "Positive sickle solubility test with confirmatory electrophoresis",
+    ],
+    associations: [
+      "Autosomal codominant inheritance",
+      "African, Mediterranean, Middle Eastern, and Indian ancestry",
+      "Partial protection against severe falciparum malaria",
+    ],
+    complications: [
+      "Isosthenuria (impaired urinary concentrating ability)",
+      "Hematuria from renal papillary necrosis",
+      "Rare exertional rhabdomyolysis/sudden death with extreme exertion at altitude (controversial screening topic)",
+      "Risk of sickle cell disease offspring if partner is carrier",
+    ],
+    distinguishFrom: [
+      "Sickle cell disease (HbSS) — anemia, crises, Howell-Jolly bodies, functional asplenia",
+      "Sickle β-thalassemia — variable HbS with ↓ HbA and microcytosis",
+      "Sickle cell disease with transfusion — do not confuse with trait on electrophoresis",
+    ],
+    treatment: [
+      "No disease-specific treatment required",
+      "Genetic counseling for reproductive planning",
+      "Maintain hydration during extreme exercise or high altitude",
+      "Avoid assuming trait explains unrelated anemia — evaluate separately",
+    ],
+    boardsPearls: [
+      "HbAS = sickle cell trait; asymptomatic, no anemia",
+      "Electrophoresis shows both HbA and HbS",
+      "Trait confers partial malaria protection — heterozygote advantage",
+      "vs HbSS: no painful crises, no autosplenectomy, normal lifespan",
+      "Partner screening important — two carriers risk 25% HbSS offspring",
+    ],
+    pediatrics:
+      "Newborn screen identifies HbAS; parents need counseling. Trait is not sickle cell disease — children do not need penicillin prophylaxis or hydroxyurea.",
+  },
+  {
+    id: "beta-thalassemia-minor",
+    name: "Beta-Thalassemia Minor",
+    etymology: "Greek beta = second letter + thalassa = sea + haima = blood + Latin minor = smaller/lesser",
+    aliases: [
+      "beta-thalassemia minor",
+      "β-thalassemia minor",
+      "beta thalassemia minor",
+      "beta-thalassemia trait",
+      "β-thalassemia trait",
+      "beta thalassemia trait",
+      "thalassemia minor",
+      "thalassemia trait",
+    ],
+    definition:
+      "Carrier state of β-globin gene mutations with reduced β-chain synthesis, causing mild microcytic anemia without transfusion dependence.",
+    pathophysiology:
+      "One defective HBB allele → ↓ β-globin production → relative α-chain excess (usually balanced) → microcytic hypochromic RBCs with target cells; adequate HbA from normal allele prevents significant hemolysis.",
+    classicPresentation: [
+      "Often asymptomatic, discovered incidentally",
+      "Mild microcytic anemia",
+      "Mediterranean, Middle Eastern, African, or Southeast Asian ancestry",
+      "Family history of thalassemia",
+    ],
+    keyFindings: [
+      "Target cells on peripheral smear",
+      "Basophilic stippling possible",
+      "Mild splenomegaly uncommon",
+    ],
+    keyLabs: [
+      "Microcytosis (↓ MCV) with mild anemia",
+      "↑ HbA2 (>3.5%) on electrophoresis — key diagnostic clue",
+      "Normal or near-normal RBC count (high RBC count for degree of anemia)",
+      "Normal iron studies (ferritin normal)",
+      "Normal RDW (vs iron deficiency)",
+    ],
+    associations: [
+      "Autosomal recessive inheritance of mutant allele",
+      "HBB gene point mutations or deletions",
+      "Coexistence with iron deficiency can mask ↑ HbA2",
+    ],
+    complications: [
+      "Misdiagnosis as iron deficiency if HbA2 not checked",
+      "Risk of β-thalassemia major offspring if both parents are carriers",
+    ],
+    distinguishFrom: [
+      "Iron deficiency anemia — ↑ RDW, ↓ ferritin, no ↑ HbA2",
+      "Alpha-thalassemia trait — normal HbA2, often normal MCV or mild microcytosis",
+      "Beta-thalassemia major — transfusion-dependent, HbF elevated, severe anemia",
+      "Anemia of chronic disease — low iron, normal HbA2",
+    ],
+    treatment: [
+      "No treatment required in uncomplicated trait",
+      "Genetic counseling for reproductive planning",
+      "Avoid unnecessary iron unless coexisting iron deficiency documented",
+    ],
+    boardsPearls: [
+      "β-thalassemia minor: ↑ HbA2 is diagnostic",
+      "Microcytic anemia + normal iron + normal RDW → think thalassemia trait",
+      "High RBC count with low MCV favors thalassemia over iron deficiency",
+      "Do not give iron empirically without ferritin workup",
+    ],
+    pediatrics:
+      "May present as incidental microcytosis on CBC; confirm with Hb electrophoresis before labeling iron deficiency in at-risk ethnic backgrounds.",
+  },
+  {
+    id: "beta-thalassemia-major",
+    name: "Beta-Thalassemia Major",
+    etymology: "Greek beta = second letter + thalassa = sea + haima = blood + Latin major = greater",
+    aliases: [
+      "beta-thalassemia major",
+      "β-thalassemia major",
+      "beta thalassemia major",
+      "cooley anemia",
+      "cooley's anemia",
+      "mediterranean anemia",
+      "thalassemia major",
+    ],
+    definition:
+      "Severe autosomal recessive β-globin disorder with absent or markedly reduced β-chain synthesis, causing profound hemolytic anemia requiring chronic transfusion.",
+    pathophysiology:
+      "Two defective HBB alleles → absent/minimal β-globin → excess free α-chains precipitate in erythroid precursors → ineffective erythropoiesis and extravascular hemolysis → severe anemia; chronic transfusions cause iron overload.",
+    classicPresentation: [
+      "Severe anemia presenting in infancy after HbF declines (~6 months)",
+      "Failure to thrive, pallor, hepatosplenomegaly",
+      "Frontal bossing, maxillary hyperplasia ('chipmunk facies')",
+      "Extramedullary hematopoiesis",
+    ],
+    keyFindings: [
+      "Target cells, nucleated RBCs, tear-drop cells",
+      "Massive hepatosplenomegaly",
+      "Bone marrow expansion — 'hair-on-end' skull on X-ray",
+    ],
+    keyLabs: [
+      "Hb electrophoresis: ↑↑ HbF, variable HbA2, absent/minimal HbA",
+      "Severe microcytic hypochromic anemia",
+      "↑ indirect bilirubin, ↑ LDH (hemolysis)",
+      "↑ ferritin with transfusion (iron overload)",
+    ],
+    associations: [
+      "Autosomal recessive",
+      "Parents usually β-thalassemia minor carriers",
+      "Chronic transfusion therapy",
+    ],
+    complications: [
+      "Iron overload cardiomyopathy and cirrhosis",
+      "Secondary hemochromatosis",
+      "Splenomegaly requiring splenectomy",
+      "Bone deformities from marrow expansion",
+      "Growth retardation and delayed puberty",
+    ],
+    distinguishFrom: [
+      "Beta-thalassemia minor — mild anemia, ↑ HbA2 only, asymptomatic",
+      "Alpha-thalassemia major (hydrops fetalis) — presents in utero/neonatal death",
+      "Iron deficiency — ↓ ferritin, responds to iron; no ↑ HbF pattern",
+      "Sickle cell disease — HbS on electrophoresis, vaso-occlusive crises",
+    ],
+    treatment: [
+      "Chronic packed RBC transfusions to maintain Hb",
+      "Iron chelation (deferoxamine, deferasirox, deferiprone)",
+      "Splenectomy if hypersplenism",
+      "Allogeneic hematopoietic stem cell transplant curative in selected patients",
+      "Gene therapy emerging",
+    ],
+    boardsPearls: [
+      "Cooley anemia = β-thalassemia major",
+      "Anemia after 6 months when HbF normally falls",
+      "↑ HbF + transfusion dependence + iron overload",
+      "Chelation mandatory with chronic transfusion",
+      "Chipmunk facies and hair-on-end skull from marrow expansion",
+    ],
+    pediatrics:
+      "Presents around 6 months of age with severe anemia as fetal Hb declines; newborn screen may not detect all cases — Hb electrophoresis if high-risk ancestry and pallor.",
   },
   {
     id: "lung-cancer",
@@ -5236,8 +6831,13 @@ export const CONDITIONS: ConditionEntry[] = [
     aliases: [
       "nephrolithiasis",
       "kidney stones",
+      "kidney stone",
       "renal calculi",
+      "renal stones",
+      "renal stone",
       "urolithiasis",
+      "urinary stones",
+      "urinary stone",
     ],
     definition:
       "Formation of crystalline concretions in the urinary tract causing colicky flank pain and hematuria.",
@@ -5273,6 +6873,398 @@ export const CONDITIONS: ConditionEntry[] = [
       "Struvite (ammonium magnesium phosphate): staghorn calculi, Proteus/Morganella",
       "Uric acid stones: radiolucent on X-ray, associated with gout",
     ],
+  },
+  {
+    id: "renal-cell-carcinoma",
+    name: "Renal Cell Carcinoma",
+    etymology: "Latin ren = kidney + cellula = small cell + carcinoma = malignant epithelial tumor",
+    aliases: [
+      "renal cell carcinoma",
+      "renal cell carcinomas",
+      "rcc",
+      "renal carcinoma",
+      "hypernephroma",
+      "clear cell renal cell carcinoma",
+      "clear cell carcinoma of kidney",
+      "kidney cancer",
+    ],
+    definition:
+      "Malignant epithelial tumor arising from renal tubular epithelium, most commonly the clear cell subtype; often presents with hematuria and may cause paraneoplastic syndromes before metastasis is evident.",
+    pathophysiology:
+      "Clonal transformation of proximal tubular epithelium → clear cell histology with lipid/glycogen-rich cytoplasm; VHL gene loss (3p deletion) in many sporadic and hereditary cases → constitutive HIF activation → ↑ VEGF and erythropoietin; tumor invades renal vein (left-sided extension to IVC classic) and metastasizes hematogenously to lung, bone, and brain.",
+    classicPresentation: [
+      "Classic triad (uncommon as full triad): hematuria, flank pain, palpable abdominal/flank mass",
+      "Often asymptomatic until advanced — incidental renal mass on imaging",
+      "Painless gross hematuria in older adult",
+      "Constitutional symptoms: weight loss, fever, malaise",
+    ],
+    keyFindings: [
+      "Solid enhancing renal mass on CT/MRI",
+      "Clear cell histology — cells with abundant clear cytoplasm (lipid/glycogen dissolved in processing)",
+      "Renal vein or IVC tumor thrombus on imaging",
+      "Osteolytic bone metastases (lytic lesions)",
+    ],
+    keyLabs: [
+      "Hematuria on urinalysis",
+      "Paraneoplastic polycythemia from ectopic EPO secretion",
+      "Hypercalcemia from PTHrP (less common than in squamous carcinoma)",
+      "Stauffer syndrome — nonmetastatic hepatic dysfunction",
+    ],
+    associations: [
+      "Smoking — major risk factor",
+      "Von Hippel–Lindau (VHL) syndrome — bilateral/multifocal clear cell RCC, hemangioblastomas, pheochromocytoma",
+      "Obesity and hypertension",
+      "Acquired cystic kidney disease in long-term dialysis",
+      "Paraneoplastic syndromes — polycythemia, hypercalcemia, hypertension (renin)",
+    ],
+    complications: [
+      "Renal vein/IVC thrombus",
+      "Hematogenous metastasis to lung, bone, brain, liver",
+      "Paraneoplastic polycythemia and hypercalcemia",
+      "Treatment-related toxicity with targeted therapy and immunotherapy",
+    ],
+    distinguishFrom: [
+      "Wilms tumor — pediatric kidney mass, not adult RCC",
+      "Transitional cell (urothelial) carcinoma — arises from urothelium of renal pelvis/ureter; hematuria without parenchymal mass pattern",
+      "Renal oncocytoma — benign; central scar on imaging; eosinophilic granular cytoplasm histologically",
+      "Angiomyolipoma — fat-containing benign mass; tuberous sclerosis association",
+      "Pyelonephritis — fever, WBC casts, not solid enhancing mass",
+    ],
+    treatment: [
+      "Partial or radical nephrectomy for localized disease",
+      "Targeted therapy (VEGF/tyrosine kinase inhibitors) and immunotherapy for advanced/metastatic RCC",
+      "Historical: high-dose IL-2 for select metastatic clear cell RCC",
+    ],
+    boardsPearls: [
+      "RCC = malignant tumor of renal tubular epithelium; clear cell type most common",
+      "VHL → 3p deletion → HIF dysregulation → clear cell RCC + hemangioblastomas",
+      "Classic triad: hematuria, flank pain, palpable mass — rarely all three together",
+      "Paraneoplastic polycythemia from ectopic EPO — RCC is classic association",
+      "Left renal vein drains directly into IVC — RCC may extend as tumor thrombus",
+      "RCC metastases often lytic (osteolytic) bone lesions; lung 'cannonball' metastases",
+      "RCC invades renal vein — left-sided tumor thrombus to IVC is board favorite",
+    ],
+    pediatrics:
+      "RCC is primarily an adult malignancy; pediatric renal mass is Wilms tumor until proven otherwise. RCC in children/adolescents is rare and often associated with VHL or other syndromes.",
+  },
+  {
+    id: "autosomal-dominant-polycystic-kidney-disease",
+    name: "Autosomal Dominant Polycystic Kidney Disease",
+    etymology: "autos = self + dominus = lord + Greek poly = many + kystis = bladder/sac + nephros = kidney",
+    aliases: [
+      "autosomal dominant polycystic kidney disease",
+      "adpkd",
+      "adult polycystic kidney disease",
+      "adult-onset polycystic kidney disease",
+      "pkd1",
+      "pkd2",
+    ],
+    definition:
+      "Inherited disorder of tubular epithelial proliferation causing progressive bilateral renal cysts, hypertension, and chronic kidney disease; the most common inherited kidney disease in adults.",
+    pathophysiology:
+      "Mutations in PKD1 (polycystin-1, chromosome 16) or PKD2 (polycystin-2, chromosome 4) → defective ciliary signaling and abnormal tubular cell proliferation → expanding fluid-filled cysts that compress and destroy renal parenchyma → progressive CKD.",
+    classicPresentation: [
+      "Hypertension in young adult (often before creatinine rises)",
+      "Flank or abdominal pain from cyst hemorrhage, infection, or stones",
+      "Hematuria from cyst rupture",
+      "Palpable bilateral enlarged kidneys on exam",
+      "Family history of kidney failure or intracranial aneurysm",
+    ],
+    keyLabs: [
+      "Renal ultrasound or MRI — multiple bilateral cysts (≥2 per side in adults with family history, or age-specific criteria)",
+      "PKD1/PKD2 genetic testing when diagnosis uncertain",
+      "↑ creatinine with progressive CKD",
+      "Screen for intracranial aneurysm when family history of SAH or high-risk occupation",
+    ],
+    associations: [
+      "Berry (saccular) cerebral aneurysms — subarachnoid hemorrhage risk",
+      "Hepatic cysts (often asymptomatic)",
+      "Mitral valve prolapse",
+      "Colonic diverticulosis",
+      "PKD1 mutations — earlier and more severe disease than PKD2",
+    ],
+    complications: [
+      "End-stage renal disease (often 5th–7th decade)",
+      "Cyst infection or hemorrhage",
+      "Nephrolithiasis",
+      "Subarachnoid hemorrhage from ruptured berry aneurysm",
+    ],
+    distinguishFrom: [
+      "ARPKD — autosomal recessive, neonatal/childhood presentation, hepatic fibrosis, not adult-onset dominant inheritance",
+      "Simple renal cyst — solitary, thin-walled, no CKD or family history",
+      "Acquired cystic kidney disease — long-standing dialysis patients",
+      "Medullary sponge kidney — cystic dilatation of collecting ducts, different imaging pattern",
+    ],
+    treatment: [
+      "Blood pressure control (ACE inhibitors/ARBs preferred)",
+      "Tolvaptan (vasopressin V2 antagonist) may slow cyst growth in selected patients",
+      "Treat complications (stones, infection, pain); dialysis or transplant for ESRD",
+      "Screen and manage intracranial aneurysms per guidelines when indicated",
+    ],
+    boardsPearls: [
+      "ADPKD = PKD1 or PKD2; autosomal dominant with variable penetrance",
+      "HTN often precedes elevated creatinine — earliest treatable manifestation",
+      "Berry aneurysm association — worst headache of life if SAH",
+      "Multiple bilateral renal cysts + family history + HTN in young adult = ADPKD",
+      "PKD1 (chrom 16) more common and severe than PKD2 (chrom 4)",
+    ],
+    pediatrics:
+      "Cysts may be too small to detect in childhood; large-enough cysts can rarely appear in adolescents with known family history — adult diagnostic criteria apply by age.",
+  },
+  {
+    id: "autosomal-recessive-polycystic-kidney-disease",
+    name: "Autosomal Recessive Polycystic Kidney Disease",
+    etymology: "autos = self + recessus = withdrawn/hidden + Greek poly = many + kystis = bladder/sac + nephros = kidney",
+    aliases: [
+      "autosomal recessive polycystic kidney disease",
+      "arpkd",
+      "infantile polycystic kidney disease",
+      "childhood polycystic kidney disease",
+      "pkhd1",
+    ],
+    definition:
+      "Autosomal recessive ciliopathy from PKHD1 (fibrocystin) mutations causing cystic renal dysplasia and congenital hepatic fibrosis, typically presenting in utero, at birth, or in childhood.",
+    pathophysiology:
+      "PKHD1 mutation → defective fibrocystin at cilia/basolateral membrane → abnormal collecting duct and biliary duct morphology → innumerable small renal cysts with radially arranged enlarged kidneys and periportal hepatic fibrosis → oligohydramnios and Potter sequence in severe perinatal forms.",
+    classicPresentation: [
+      "Prenatal ultrasound — enlarged echogenic kidneys, oligohydramnios",
+      "Neonate — respiratory distress from pulmonary hypoplasia (Potter sequence)",
+      "Hypertension and progressive CKD in surviving infants/children",
+      "Portal hypertension from congenital hepatic fibrosis (splenomegaly, varices)",
+      "Normal parents with affected sibling — recessive inheritance pattern",
+    ],
+    keyLabs: [
+      "Prenatal/postnatal renal ultrasound — bilaterally enlarged, echogenic kidneys with poor corticomedullary differentiation",
+      "PKHD1 genetic testing",
+      "Liver imaging/biopsy — congenital hepatic fibrosis (not macroscopic hepatic cysts like ADPKD)",
+      "↑ creatinine, hypertension on follow-up",
+    ],
+    associations: [
+      "Potter sequence — oligohydramnios, pulmonary hypoplasia, Potter facies",
+      "Congenital hepatic fibrosis — portal hypertension",
+      "Caroli syndrome variant — cystic biliary dilatation (overlap spectrum)",
+    ],
+    complications: [
+      "Neonatal death from pulmonary hypoplasia (severe perinatal form)",
+      "End-stage renal disease in childhood or adolescence",
+      "Portal hypertension complications (variceal bleeding, hypersplenism)",
+      "Recurrent urinary tract infections",
+    ],
+    distinguishFrom: [
+      "ADPKD — dominant inheritance, adult onset, large cortical cysts, hepatic cysts not fibrosis",
+      "Multicystic dysplastic kidney — nonhereditary, often unilateral, nonfunctional",
+      "Potter sequence alone — descriptive consequence of oligohydramnios; ARPKD is one underlying cause",
+      "Autosomal dominant polycystic liver disease — liver cysts without recessive renal/hepatic fibrosis pattern",
+    ],
+    treatment: [
+      "Supportive neonatal care for pulmonary hypoplasia and renal failure",
+      "Antihypertensive therapy and CKD management",
+      "Manage portal hypertension (banding, transplant evaluation)",
+      "Dialysis and kidney/liver transplantation in selected patients",
+    ],
+    boardsPearls: [
+      "ARPKD = PKHD1; autosomal recessive — 25% recurrence risk for carrier parents",
+      "Enlarged echogenic kidneys on prenatal US + oligohydramnios → ARPKD/Potter spectrum",
+      "Congenital hepatic fibrosis distinguishes ARPKD from ADPKD (which has hepatic cysts)",
+      "Perinatal type — worst prognosis with pulmonary hypoplasia; juvenile type may survive to CKD",
+      "vs ADPKD — recessive, neonatal/childhood, small cysts, hepatic fibrosis not macroscopic liver cysts",
+    ],
+    pediatrics:
+      "ARPKD is primarily a pediatric/perinatal disease — severe cases present in the nursery with Potter facies and respiratory failure; milder juvenile forms progress to CKD and portal HTN over years.",
+  },
+  {
+    id: "oligohydramnios",
+    name: "Oligohydramnios",
+    etymology: "Greek oligos = few/scant + hydor = water + amnion = membrane around fetus",
+    aliases: [
+      "oligohydramnios",
+      "oligohydramnion",
+      "low amniotic fluid",
+      "decreased amniotic fluid",
+      "reduced amniotic fluid volume",
+    ],
+    definition:
+      "Abnormally low amniotic fluid volume during pregnancy — a prenatal finding with fetal, placental, or maternal causes that can lead to Potter sequence when severe and prolonged.",
+    pathophysiology:
+      "After the second trimester, fetal urine is the main source of amniotic fluid; reduced production (renal agenesis, obstructive uropathy, severe IUGR) or increased loss (premature rupture of membranes) → oligohydramnios → fetal compression and restricted lung development.",
+    classicPresentation: [
+      "Small uterus for gestational age or decreased fundal height growth",
+      "Prenatal ultrasound — low amniotic fluid index (AFI) or single deepest pocket",
+      "Fetal malpresentation (breech) from lack of cushioning",
+      "Maternal perception of decreased fetal movement in some cases",
+    ],
+    keyFindings: [
+      "Low AFI on ultrasound (<5 cm commonly used threshold; lab-specific)",
+      "Fetal growth restriction on serial scans",
+      "Absent or small fetal bladder if anuria/obstruction",
+    ],
+    keyLabs: [
+      "Prenatal ultrasound — AFI, fetal kidneys/bladder, urine production",
+      "Nonstress test / biophysical profile for fetal well-being",
+      "Rule out PROM with speculum exam and nitrazine/ferning if membranes intact unclear",
+    ],
+    associations: [
+      "Bilateral renal agenesis or severe renal dysplasia",
+      "Posterior urethral valves and obstructive uropathy",
+      "ARPKD — severe perinatal form",
+      "Premature rupture of membranes",
+      "Placental insufficiency and IUGR",
+      "Post-term pregnancy",
+    ],
+    complications: [
+      "Potter sequence — facies, limb deformities, pulmonary hypoplasia",
+      "Umbilical cord compression during labor",
+      "Fetal distress and preterm delivery",
+      "Pulmonary hypoplasia — incompatible with life if severe bilateral renal failure",
+    ],
+    distinguishFrom: [
+      "Polyhydramnios — excess amniotic fluid; often GI obstruction or diabetes",
+      "Normal low-normal fluid variant — context and serial trends matter",
+      "Potter syndrome — clinical sequence resulting from oligohydramnios, not synonymous with low fluid alone",
+    ],
+    treatment: [
+      "Treat underlying cause when possible (obstructive uropathy shunting in select cases)",
+      "Close fetal monitoring; timing of delivery based on gestational age and fetal status",
+      "Amnioinfusion during labor in selected cases of oligohydramnios with variable decelerations",
+      "Genetic counseling and anomaly scan when structural renal cause suspected",
+    ],
+    boardsPearls: [
+      "Fetal urine maintains amniotic fluid after mid-pregnancy — no urine → oligohydramnios",
+      "Bilateral renal agenesis → oligohydramnios → Potter sequence → pulmonary hypoplasia",
+      "PUV in male fetus can cause oligohydramnios if bilateral obstruction",
+      "PROM is a common maternal/placental cause of oligohydramnios",
+      "vs polyhydramnios — impaired swallowing (esophageal atresia, anencephaly) causes excess fluid",
+    ],
+    pediatrics:
+      "Neonatal outcome depends on cause — pulmonary hypoplasia from prolonged severe oligohydramnios is often fatal; milder oligohydramnios from PROM may deliver a viable infant with close monitoring.",
+  },
+  {
+    id: "polyhydramnios",
+    name: "Polyhydramnios",
+    etymology: "Greek poly = many + hydor = water + amnion = membrane around fetus",
+    aliases: [
+      "polyhydramnios",
+      "polyhydramnion",
+      "excess amniotic fluid",
+      "increased amniotic fluid",
+      "hydramnios",
+    ],
+    definition:
+      "Excessive amniotic fluid volume during pregnancy — often reflects impaired fetal swallowing, increased fetal urine output, or placental/twin factors.",
+    pathophysiology:
+      "Amniotic fluid balance depends on fetal swallowing, urination, lung fluid secretion, and membrane exchange; impaired swallowing (GI atresia, neurologic anomaly) or ↑ fetal urine (maternal diabetes, twin-twin transfusion recipient) → polyhydramnios → uterine overdistention and preterm labor risk.",
+    classicPresentation: [
+      "Uterus large for dates; fundal height above expected",
+      "Maternal dyspnea and abdominal discomfort",
+      "Prenatal ultrasound — elevated amniotic fluid index",
+      "Unstable fetal lie from excess space",
+    ],
+    keyFindings: [
+      "Elevated AFI on ultrasound (often >24 cm or >95th percentile; lab-specific)",
+      "Fetal anomaly on detailed anatomy scan (GI, neural tube, facial)",
+      "Hydramnios with single umbilical artery or other markers → expanded workup",
+    ],
+    keyLabs: [
+      "Prenatal ultrasound — AFI, fetal anatomy survey",
+      "Glucose screening — gestational diabetes association",
+      "Fetal echocardiography if structural anomaly suspected",
+      "Karyotype/amniocentesis when multiple anomalies or isolated severe polyhydramnios",
+    ],
+    associations: [
+      "Esophageal or duodenal atresia — cannot swallow amniotic fluid",
+      "Anencephaly and open neural tube defects",
+      "Gestational diabetes mellitus",
+      "Twin-twin transfusion syndrome (recipient twin)",
+      "Fetal anemia (hydrops may coexist)",
+      "Maternal hyperthyroidism",
+    ],
+    complications: [
+      "Preterm labor and premature rupture of membranes",
+      "Umbilical cord prolapse at membrane rupture",
+      "Postpartum hemorrhage from uterine atony (overdistended uterus)",
+      "Fetal malpresentation",
+    ],
+    distinguishFrom: [
+      "Oligohydramnios — low fluid; renal agenesis/obstruction classic cause",
+      "Macrosomia alone — large fetus without necessarily elevated AFI",
+      "Multiple gestation with normal fluid in each sac — not true polyhydramnios in singleton sense",
+    ],
+    treatment: [
+      "Treat underlying cause (glycemic control in GDM)",
+      "Amnioreduction for symptomatic severe polyhydramnios",
+      "Monitor for preterm labor; corticosteroids if preterm delivery anticipated",
+      "Delivery planning based on fetal condition and etiology",
+    ],
+    boardsPearls: [
+      "Polyhydramnios + inability to swallow → esophageal/duodenal atresia (double bubble)",
+      "Anencephaly — no swallowing center → polyhydramnios",
+      "Maternal diabetes → fetal hyperglycemia → polyuria → polyhydramnios",
+      "vs oligohydramnios — opposite; think renal failure vs GI obstruction/anencephaly",
+      "Twin-twin transfusion — recipient has polyhydramnios, donor oligohydramnios",
+    ],
+    pediatrics:
+      "Neonate born after polyhydramnios needs evaluation for the underlying anomaly (TE fistula, duodenal atresia, neural tube defect) — prenatal ultrasound often predicts postnatal course.",
+  },
+  {
+    id: "potter-syndrome",
+    name: "Potter Syndrome",
+    etymology: "eponym: Edith Potter + syndrome = grouped findings from shared cause",
+    aliases: [
+      "potter syndrome",
+      "potter sequence",
+      "potter facies",
+      "oligohydramnios sequence",
+      "oligohydramnios syndrome",
+      "renal agenesis sequence",
+    ],
+    definition:
+      "Sequence of fetal deformities caused by prolonged oligohydramnios from decreased fetal urine output — classically bilateral renal agenesis but also seen with severe bilateral renal dysplasia, ARPKD, or urinary tract obstruction.",
+    pathophysiology:
+      "Absent or severely reduced fetal urine production → oligohydramnios → loss of amniotic fluid cushion → fetal compression deformities (Potter facies, limb positioning defects) and restricted lung expansion → pulmonary hypoplasia → neonatal respiratory failure.",
+    classicPresentation: [
+      "Prenatal oligohydramnios on ultrasound",
+      "Potter facies — flattened nose, micrognathia, low-set ears, epicanthal folds",
+      "Clubfoot and joint contractures from intrauterine compression",
+      "Pulmonary hypoplasia — respiratory distress and death in perinatal period (bilateral severe cases)",
+      "Associated with bilateral renal agenesis or severe cystic/dysplastic kidneys",
+    ],
+    keyLabs: [
+      "Prenatal ultrasound — oligohydramnios, absent kidneys (agenesis) or enlarged echogenic kidneys (ARPKD)",
+      "Postnatal imaging confirms renal anomaly type",
+      "Pulmonary hypoplasia on autopsy or chest imaging in neonates",
+    ],
+    associations: [
+      "Bilateral renal agenesis — classic cause",
+      "ARPKD — severe perinatal form",
+      "Posterior urethral valves — obstructive uropathy if bilateral effect on amniotic fluid",
+      "Bilateral multicystic dysplastic kidney",
+    ],
+    complications: [
+      "Neonatal death from pulmonary hypoplasia (bilateral severe disease)",
+      "Progressive CKD if any renal function remains",
+      "Skeletal and craniofacial deformities",
+    ],
+    distinguishFrom: [
+      "Potter facies alone — facial features without full sequence context",
+      "Isolated clubfoot — not necessarily oligohydramnios-related",
+      "ARPKD — specific genetic disease that can cause Potter sequence but is not synonymous with it",
+      "Polyhydramnios — opposite fluid abnormality; often GI obstruction or maternal diabetes",
+    ],
+    treatment: [
+      "Prenatal diagnosis and counseling; no cure for bilateral agenesis with pulmonary hypoplasia",
+      "Neonatal respiratory support if any viable lung tissue",
+      "Surgical correction of obstructive uropathy (e.g., posterior urethral valves) if unilateral obstruction with contralateral compensatory function",
+      "Dialysis/transplant only if sufficient renal tissue and pulmonary function exist",
+    ],
+    boardsPearls: [
+      "Potter sequence = oligohydramnios → facies + limb deformities + pulmonary hypoplasia",
+      "Fetal urine maintains amniotic fluid volume in second half of pregnancy — no urine = oligohydramnios",
+      "Bilateral renal agenesis incompatible with long-term survival (pulmonary hypoplasia)",
+      "Potter facies: flattened nose, micrognathia, low-set ears",
+      "Unilateral renal agenesis may be asymptomatic — does not cause Potter sequence",
+    ],
+    pediatrics:
+      "Potter syndrome is a neonatal/perinatal diagnosis — pulmonary hypoplasia determines survival; unilateral renal anomalies do not produce the full sequence.",
   },
   {
     id: "urinary-tract-infection",
@@ -7046,6 +9038,282 @@ export const CONDITIONS: ConditionEntry[] = [
       "Primary amenorrhea — karyotype if hypergonadotropic; evaluate for Turner (45,X), outflow tract anomalies, and androgen insensitivity. No menarche by 15 warrants evaluation.",
   },
   {
+    id: "secondary-amenorrhea",
+    name: "Secondary Amenorrhea",
+    etymology: "Latin secundarius = following + Greek a- = absent + men = month + rhoia = flow",
+    aliases: [
+      "secondary amenorrhea",
+      "secondary amenorrhoea",
+      "cessation of menses",
+      "absent periods after prior menstruation",
+    ],
+    definition:
+      "Cessation of menstrual bleeding in a woman who previously menstruated — ≥3 months without menses after regular cycles, or ≥6 months after previously oligomenorrheic cycles.",
+    pathophysiology:
+      "Established cycles stop when pregnancy occurs or when the HPO axis is disrupted: ↓ GnRH pulsatility (stress, weight loss, eating disorders, exercise), pituitary hyperprolactinemia, thyroid disease, ovarian dysfunction (PCOS, premature ovarian insufficiency), or uterine/outflow pathology (Asherman syndrome).",
+    classicPresentation: [
+      "Previously cycling woman with absent periods for months",
+      "May have galactorrhea (hyperprolactinemia), hirsutism/acne (PCOS), or weight loss/restrictive eating (hypothalamic)",
+      "Cyclic pelvic pain without bleeding — consider outflow obstruction",
+    ],
+    keyFindings: [
+      "Negative pregnancy test (mandatory first step)",
+      "Galactorrhea, hirsutism, low BMI, or athletic training pattern",
+      "Normal or abnormal pelvic exam depending on cause",
+    ],
+    keyLabs: [
+      "β-hCG — pregnancy is most common cause",
+      "Prolactin — prolactinoma or stalk effect",
+      "TSH — hypothyroidism can raise prolactin and stop menses",
+      "FSH — ↑ in ovarian failure; low/normal in hypothalamic/pituitary causes",
+      "LH, testosterone, DHEA-S — hyperandrogenism workup (PCOS, tumor)",
+      "Progesterone challenge test — withdrawal bleed implies estrogen + patent outflow",
+    ],
+    associations: [
+      "Pregnancy",
+      "Functional hypothalamic amenorrhea — eating disorder, stress, excessive exercise",
+      "Prolactinoma",
+      "Polycystic ovary syndrome",
+      "Premature ovarian insufficiency and menopause",
+      "Asherman syndrome — postpartum/D&C adhesions",
+      "Hypothyroidism",
+    ],
+    complications: [
+      "Estrogen deficiency — osteoporosis, infertility",
+      "Endometrial hyperplasia if chronic anovulation with unopposed estrogen (PCOS)",
+    ],
+    distinguishFrom: [
+      "Primary amenorrhea — menses never began",
+      "Oligomenorrhea — infrequent but ongoing bleeding",
+      "Menopause — age-appropriate ≥12 months amenorrhea with ↑ FSH",
+      "Pregnancy — always exclude first",
+    ],
+    treatment: [
+      "Treat underlying cause — cabergoline/bromocriptine for prolactinoma, levothyroxine for hypothyroidism, weight restoration for hypothalamic amenorrhea",
+      "Combined OCPs or cyclic progestin for endometrial protection in anovulatory states (PCOS)",
+      "Hysteroscopic adhesiolysis for Asherman syndrome",
+    ],
+    boardsPearls: [
+      "Workup ladder: pregnancy test → prolactin → TSH → FSH (± LH, androgens)",
+      "Galactorrhea + secondary amenorrhea → prolactinoma until proven otherwise",
+      "Low/normal FSH + low estrogen → hypothalamic (eating disorder, athlete triad) or pituitary",
+      "↑ FSH → ovarian failure (POI, menopause) — not functional hypothalamic pattern",
+      "Progesterone challenge: bleed = estrogenized + patent outflow; no bleed = low estrogen or obstruction",
+    ],
+    pediatrics:
+      "Adolescents with previously established menses who stop cycling warrant pregnancy exclusion and evaluation for eating disorders, athlete triad, PCOS, or hyperprolactinemia.",
+  },
+  {
+    id: "polycystic-ovary-syndrome",
+    name: "Polycystic Ovary Syndrome",
+    etymology: "Greek poly = many + kystis = bladder/pouch + Latin ovarium = egg vessel + syndrome = grouped findings",
+    aliases: [
+      "polycystic ovary syndrome",
+      "polycystic ovarian syndrome",
+      "pcos",
+      "stein-leventhal syndrome",
+      "sclerocystic ovary syndrome",
+    ],
+    definition:
+      "Common endocrine disorder of reproductive-age women characterized by hyperandrogenism, ovulatory dysfunction, and polycystic ovarian morphology, often with insulin resistance and metabolic syndrome features.",
+    pathophysiology:
+      "Insulin resistance and ↑ GnRH pulse frequency → preferential LH secretion → ovarian theca cell androgen production → anovulation and follicular arrest; peripheral insulin resistance worsens hyperandrogenism and metabolic risk; chronic anovulation with estrogen without progesterone predisposes to endometrial hyperplasia.",
+    classicPresentation: [
+      "Oligomenorrhea or secondary amenorrhea",
+      "Hirsutism, acne, androgenic alopecia",
+      "Obesity or central adiposity (not required)",
+      "Infertility from chronic anovulation",
+      "Acanthosis nigricans with insulin resistance",
+    ],
+    keyFindings: [
+      "Polycystic ovaries on ultrasound — multiple small peripheral follicles",
+      "Hirsutism on exam; may have clitoromegaly if severe androgen excess (rule out tumor)",
+      "Obesity and metabolic syndrome features",
+    ],
+    keyLabs: [
+      "↑ LH:FSH ratio (classically >2–3; not required for diagnosis)",
+      "Elevated free/total testosterone or DHEA-S (mild–moderate in PCOS)",
+      "Normal or mildly ↑ prolactin; TSH to exclude thyroid disease",
+      "Fasting glucose/HbA1c — insulin resistance and diabetes screening",
+      "17-hydroxyprogesterone if virilization suggests congenital adrenal hyperplasia",
+    ],
+    associations: [
+      "Obesity and metabolic syndrome",
+      "Type 2 diabetes mellitus",
+      "NAFLD/NASH",
+      "Obstructive sleep apnea",
+      "Endometrial hyperplasia and carcinoma (chronic unopposed estrogen)",
+      "Infertility",
+    ],
+    complications: [
+      "Anovulatory infertility",
+      "Endometrial hyperplasia/cancer",
+      "Gestational diabetes and pregnancy complications",
+      "Cardiovascular risk from metabolic syndrome",
+    ],
+    distinguishFrom: [
+      "Congenital adrenal hyperplasia (21-hydroxylase deficiency) — ↑ 17-OHP, often presents younger with virilization",
+      "Androgen-secreting ovarian or adrenal tumor — rapid virilization, markedly ↑ androgens",
+      "Cushing syndrome — cortisol excess with central obesity, striae",
+      "Hypothyroidism — check TSH; can cause menstrual irregularity",
+      "Functional hypothalamic amenorrhea — low energy availability, low androgens, not hyperandrogenic",
+    ],
+    treatment: [
+      "Lifestyle — weight loss improves ovulation and metabolic profile",
+      "Combined oral contraceptives — regulate menses, ↓ androgens, endometrial protection",
+      "Metformin — insulin sensitizer for metabolic features and ovulation induction adjunct",
+      "Spironolactone or antiandrogens for hirsutism (with contraception to prevent teratogenicity)",
+      "Clomiphene or letrozole for fertility when desired",
+    ],
+    boardsPearls: [
+      "Rotterdam criteria: ≥2 of — oligo/anovulation, clinical/biochemical hyperandrogenism, polycystic ovaries on US",
+      "↑ LH:FSH ratio + hirsutism + oligomenorrhea → PCOS",
+      "Most common cause of anovulatory infertility",
+      "OCPs protect endometrium from unopposed estrogen",
+      "Rule out tumor/CAH if rapid virilization or very high androgens",
+      "vs functional hypothalamic amenorrhea — PCOS has hyperandrogenism and often obesity/insulin resistance",
+    ],
+    pediatrics:
+      "Adolescent PCOS diagnosis requires careful distinction from physiologic anovulatory cycles after menarche; hyperandrogenism and persistent oligomenorrhea beyond 2–3 years post-menarche warrant evaluation.",
+  },
+  {
+    id: "anorexia-nervosa",
+    name: "Anorexia Nervosa",
+    etymology: "Greek an- = without + orexis = appetite + Latin nervus = nerve/sinew (disordered drive)",
+    aliases: [
+      "anorexia nervosa",
+      "anorexia",
+      "restrictive eating disorder",
+      "an",
+    ],
+    definition:
+      "Eating disorder characterized by restrictive energy intake, intense fear of weight gain, and distorted body image, leading to significantly low body weight and medical complications.",
+    pathophysiology:
+      "Severe caloric restriction → hypothalamic suppression of GnRH → ↓ LH/FSH → ↓ estrogen → amenorrhea and bone loss; malnutrition causes bradycardia, hypotension, hypothermia, lanugo, and electrolyte disturbances; refeeding can precipitate refeeding syndrome (hypophosphatemia, arrhythmias).",
+    classicPresentation: [
+      "Restrictive dieting, excessive exercise, or purging with marked weight loss",
+      "Intense fear of gaining weight despite being underweight",
+      "Body image distortion — perceives self as overweight",
+      "Amenorrhea, lanugo, cold intolerance",
+      "Bradycardia, orthostatic hypotension, fatigue",
+    ],
+    keyFindings: [
+      "Low BMI or failure to meet expected weight/height trajectory in adolescents",
+      "Lanugo, dry skin, brittle hair",
+      "Bradycardia and hypothermia",
+      "Muscle wasting; may have peripheral edema if albumin low",
+    ],
+    keyLabs: [
+      "Electrolytes — hypokalemia if purging; refeeding hypophosphatemia",
+      "ECG — bradycardia, QT prolongation",
+      "Bone density — osteoporosis from hypoestrogenism",
+      "β-hCG if amenorrhea; FSH/LH low (functional hypothalamic)",
+    ],
+    associations: [
+      "Secondary amenorrhea and hypogonadotropic hypogonadism",
+      "Female athlete triad / RED-S",
+      "Osteoporosis and stress fractures",
+      "Depression, anxiety, OCD traits",
+      "Bulimia nervosa — can coexist or evolve between subtypes",
+    ],
+    complications: [
+      "Refeeding syndrome",
+      "Sudden cardiac death from arrhythmia",
+      "Osteoporosis",
+      "Infertility (often reversible with weight restoration)",
+      "Suicide",
+    ],
+    distinguishFrom: [
+      "Bulimia nervosa — binge–purge cycles; BMI often normal",
+      "Avoidant/restrictive food intake disorder — lack of interest in food without body image distortion",
+      "Malabsorption (celiac, IBD) — GI symptoms predominate",
+      "Hyperthyroidism — weight loss with ↑ appetite and tachycardia",
+      "Malignancy — unintentional weight loss without body image preoccupation",
+    ],
+    treatment: [
+      "Nutritional rehabilitation and weight restoration — cornerstone",
+      "Hospitalize if severe malnutrition, electrolyte instability, bradycardia, or suicide risk",
+      "Monitor refeeding — gradual calories, phosphate, thiamine",
+      "Psychotherapy (CBT, family-based therapy in adolescents); SSRIs less effective for core weight pathology",
+    ],
+    boardsPearls: [
+      "Restrictive eating + low BMI + fear of weight gain + amenorrhea → anorexia nervosa",
+      "Lanugo + bradycardia + hypothermia in underweight young woman → eating disorder",
+      "Refeeding syndrome — hypophosphatemia after restarting nutrition",
+      "Amenorrhea from ↓ GnRH — functional hypothalamic pattern",
+      "vs bulimia — anorexia restrictive subtype vs binge–purge; bulimia often normal BMI",
+    ],
+    pediatrics:
+      "Family-based treatment (FBT) is first-line in adolescents; growth charts and delayed puberty/menarche are red flags. Bone accrual during adolescence is permanently compromised if prolonged hypoestrogenism.",
+  },
+  {
+    id: "bulimia-nervosa",
+    name: "Bulimia Nervosa",
+    etymology: "Greek bous = ox + limos = hunger + Latin nervus = nerve/sinew (ox-hunger = bingeing)",
+    aliases: [
+      "bulimia nervosa",
+      "bulimia",
+      "binge eating disorder with purging",
+      "bn",
+    ],
+    definition:
+      "Eating disorder characterized by recurrent binge eating followed by inappropriate compensatory behaviors (self-induced vomiting, laxative/diuretic misuse, fasting, or excessive exercise) with undue influence of body shape and weight on self-evaluation.",
+    pathophysiology:
+      "Binge–purge cycles → gastric acid exposure erodes dental enamel and inflames parotids; vomiting causes hypokalemia, hypochloremia, and metabolic alkalosis; laxative abuse worsens potassium loss; chronic purging can cause arrhythmias and renal injury.",
+    classicPresentation: [
+      "Recurrent episodes of uncontrolled large food intake",
+      "Self-induced vomiting, laxative/diuretic use, fasting, or driven exercise afterward",
+      "Normal or near-normal BMI (unlike restrictive anorexia)",
+      "Preoccupation with weight and shape",
+      "Dental sensitivity, sore throat, facial swelling after purging",
+    ],
+    keyFindings: [
+      "Russell sign — knuckle calluses from inducing vomiting",
+      "Parotid gland hypertrophy ('chipmunk cheeks')",
+      "Dental enamel erosion on lingual surfaces",
+      "Normal or fluctuating weight",
+    ],
+    keyLabs: [
+      "Hypokalemia, hypochloremia, metabolic alkalosis (vomiting)",
+      "Elevated amylase (salivary) possible with parotid inflammation",
+      "Electrolytes before initiating treatment",
+    ],
+    associations: [
+      "Depression and anxiety",
+      "Borderline personality traits in some patients",
+      "Anorexia nervosa binge–purge subtype overlap",
+      "Substance use",
+    ],
+    complications: [
+      "Cardiac arrhythmias from electrolyte disturbances",
+      "Esophageal Mallory-Weiss tears or rupture (rare Boerhaave)",
+      "Dental caries and enamel loss",
+      "Parotid inflammation",
+      "Renal injury from dehydration and laxative abuse",
+    ],
+    distinguishFrom: [
+      "Anorexia nervosa restrictive type — significantly low BMI",
+      "Binge eating disorder — binges without regular compensatory purging",
+      "Cyclic vomiting syndrome — not driven by body image concerns",
+      "Hyperemesis gravidarum — pregnancy-related vomiting",
+    ],
+    treatment: [
+      "Psychotherapy — CBT is first-line",
+      "SSRIs (high-dose fluoxetine FDA-approved for bulimia nervosa)",
+      "Correct electrolyte abnormalities; monitor cardiac rhythm",
+      "Nutritional counseling — regular meals to reduce binge triggers",
+    ],
+    boardsPearls: [
+      "Binge + purge + normal BMI + Russell sign → bulimia nervosa",
+      "Vomiting → hypokalemia + hypochloremia + metabolic alkalosis",
+      "Parotid hypertrophy and lingual dental erosion are classic physical clues",
+      "Fluoxetine is the SSRI with bulimia indication on boards",
+      "vs anorexia — bulimia typically preserves normal weight; anorexia has low BMI",
+    ],
+    pediatrics:
+      "Bulimia can begin in adolescence; screen for purging in teens with unexplained electrolyte abnormalities, dental erosion, or parotid swelling.",
+  },
+  {
     id: "endometriosis",
     name: "Endometriosis",
     etymology: "Greek endon = within + metra = uterus + -osis = condition",
@@ -7786,6 +10054,383 @@ export const CONDITIONS: ConditionEntry[] = [
       "BPH is an adult disease. Pediatric boys with urinary obstruction — consider posterior urethral valves, phimosis, or neurogenic bladder, not BPH.",
   },
   {
+    id: "hypospadias",
+    name: "Hypospadias",
+    etymology: "Greek hypo = under + spadon = torn/open → urethral opening on ventral penis below normal glanular location",
+    aliases: [
+      "hypospadias",
+      "hypospadia",
+      "ventral urethral opening",
+      "congenital hypospadias",
+    ],
+    definition:
+      "Congenital malformation in which the urethral meatus opens on the ventral surface of the penis (glanular, coronal, penile, or perineal) rather than at the tip of the glans, often with ventral curvature (chordee) and incomplete foreskin dorsally.",
+    pathophysiology:
+      "Failure of urethral fold fusion on the ventral penis during androgen-dependent development (DHT) → ectopic urethral opening; severe forms may reflect androgen synthesis or receptor defects; associated with chordee from ventral skin/structural tethering.",
+    classicPresentation: [
+      "Urethral opening on ventral penile shaft, corona, or perineum — not at glans tip",
+      "Dorsal hood of foreskin with ventral foreskin deficiency",
+      "Ventricular curvature (chordee) on erection",
+      "Spraying or sitting to urinate in older child",
+      "Severe perineal hypospadias — evaluate for disorders of sex development",
+    ],
+    keyFindings: [
+      "Ectopic ventral meatus on exam",
+      "Chordee (ventral penile curvature)",
+      "Bifid scrotum or undescended testis in severe cases",
+    ],
+    keyLabs: [
+      "Clinical diagnosis at birth or well-child exam",
+      "Karyotype and hormone workup if perineal hypospadias, cryptorchidism, or ambiguous genitalia",
+    ],
+    associations: [
+      "Isolated mild glanular/coronal forms most common",
+      "Cryptorchidism and inguinal hernia",
+      "5α-reductase deficiency or androgen insensitivity in severe forms",
+      "Family history of hypospadias",
+    ],
+    complications: [
+      "Functional and cosmetic concerns with voiding and erection",
+      "Psychosocial impact if unrepaired",
+      "Missed DSD in severe perineal forms",
+    ],
+    distinguishFrom: [
+      "Epispadias — urethral opening on dorsal penis; bladder exstrophy association",
+      "Normal variant meatal location — glanular tip is normal",
+      "Urethral stricture — acquired, not congenital ventral meatus",
+    ],
+    treatment: [
+      "Surgical urethroplasty and chordee repair, typically after 6–18 months",
+      "Do not circumcise before repair — foreskin may be used in reconstruction",
+      "Hormone stimulation (testosterone/DHT) in select severe cases before surgery",
+    ],
+    boardsPearls: [
+      "Hypospadias = ventral urethral opening; epispadias = dorsal",
+      "Do NOT circumcise before hypospadias repair planning",
+      "Chordee often coexists — correct with surgery",
+      "Perineal hypospadias + cryptorchidism → evaluate for DSD/androgen pathway defect",
+      "DHT-dependent external genital development — links to 5α-reductase deficiency",
+    ],
+    pediatrics:
+      "Most common congenital penile anomaly (~1 in 200 boys); refer to pediatric urology. Severe forms with bifid scrotum or cryptorchidism warrant karyotype and hormone evaluation.",
+  },
+  {
+    id: "erectile-dysfunction",
+    name: "Erectile Dysfunction",
+    etymology: "Latin erectus = upright + Latin dis- = apart + function = impaired performance",
+    aliases: [
+      "erectile dysfunction",
+      "ed",
+      "impotence",
+      "male impotence",
+      "erectile disorder",
+    ],
+    definition:
+      "Persistent or recurrent inability to achieve or maintain penile erection sufficient for satisfactory sexual performance.",
+    pathophysiology:
+      "Erection requires parasympathetic-mediated vasodilation (NO → cGMP) in cavernosal arteries and trabecular smooth muscle; failure from vascular insufficiency, neuropathy, low testosterone, medication effects, or psychogenic inhibition → inadequate inflow/trapping of blood in corpora cavernosa.",
+    classicPresentation: [
+      "Difficulty obtaining or maintaining erection",
+      "Reduced rigidity or premature loss of erection",
+      "Often gradual onset with vascular/endocrine causes; sudden onset suggests psychogenic component",
+      "Associated lower libido if hypogonadal",
+    ],
+    keyFindings: [
+      "Normal external genitalia on exam",
+      "Reduced testicular size or gynecomastia if hypogonadal",
+      "Peripheral neuropathy or vascular disease signs",
+    ],
+    keyLabs: [
+      "Morning testosterone (especially if ↓ libido, small testes)",
+      "Fasting glucose/HbA1c — diabetes mellitus",
+      "Lipid panel — atherosclerotic risk",
+      "Consider prolactin if low testosterone",
+    ],
+    associations: [
+      "Diabetes mellitus — microvascular and autonomic neuropathy",
+      "Atherosclerosis and hypertension",
+      "Hyperprolactinemia and hypogonadism",
+      "Depression and psychogenic ED",
+      "Medications — β-blockers, SSRIs, antihypertensives, finasteride",
+      "Pelvic surgery/radiation, spinal cord injury",
+      "Chronic kidney disease and liver disease",
+    ],
+    complications: [
+      "Relationship distress and reduced quality of life",
+      "Marker of underlying cardiovascular disease (endothelial dysfunction)",
+    ],
+    distinguishFrom: [
+      "Normal transient failure from fatigue, alcohol, or situational stress",
+      "Low libido from depression or hypogonadism — desire problem vs erectile mechanism",
+      "Premature ejaculation — erection present but timing problem",
+      "Peyronie disease — painful curvature may prevent intercourse but erection may be intact",
+    ],
+    treatment: [
+      "Treat underlying cause (glycemic control, testosterone if hypogonadal, adjust medications)",
+      "PDE5 inhibitors (sildenafil, tadalafil) — ↑ cGMP-mediated vasodilation; contraindicated with nitrates",
+      "Lifestyle: exercise, weight loss, smoking cessation",
+      "Psychotherapy if psychogenic component",
+      "Second-line: intracavernosal alprostadil, vacuum devices, penile implants",
+    ],
+    boardsPearls: [
+      "Parasympathetic (S2–S4) → erection via NO/cGMP; sympathetic → emission/ejaculation",
+      "PDE5 inhibitors (sildenafil) block cGMP breakdown — do NOT combine with nitrates (hypotension)",
+      "Diabetes + ED → vascular and neuropathic causes",
+      "Sudden onset + situational pattern → psychogenic; gradual → organic",
+      "ED may precede coronary artery disease (shared endothelial dysfunction)",
+    ],
+    pediatrics:
+      "Not applicable to prepubertal children; adolescent ED is uncommon — evaluate for anxiety, substance use, and organic causes if persistent.",
+  },
+  {
+    id: "peyronie-disease",
+    name: "Peyronie Disease",
+    etymology: "eponym: François de la Peyronie + disease = disordered function",
+    aliases: [
+      "peyronie disease",
+      "peyronie's disease",
+      "peyronies disease",
+      "penile fibromatosis",
+      "penile curvature",
+      "induratio penis plastica",
+    ],
+    definition:
+      "Acquired fibrotic disorder of the tunica albuginea causing penile plaque, painful erection, and abnormal curvature that may impair intercourse.",
+    pathophysiology:
+      "Repeated microtrauma to tunica albuginea during intercourse → fibrin deposition and abnormal wound healing → collagen-rich plaque → inelastic tethering → curvature and pain with erection; may resolve partially in chronic phase.",
+    classicPresentation: [
+      "Middle-aged man with painful erection and palpable penile plaque",
+      "Penile curvature (dorsal, ventral, or lateral) during erection",
+      "Difficulty with intercourse due to curvature or pain",
+      "Erectile dysfunction may coexist",
+    ],
+    keyFindings: [
+      "Palpable fibrous plaque on tunica albuginea (often dorsal midshaft)",
+      "Penile curvature on erection (clinical or photograph)",
+    ],
+    keyLabs: [
+      "Clinical diagnosis — imaging rarely needed",
+      "Evaluate comorbid ED with history/exam",
+    ],
+    associations: [
+      "Dupuytren contracture (palmar fascial fibrosis)",
+      "Ledderhose disease (plantar fibromatosis)",
+      "Diabetes and erectile dysfunction",
+      "Hypertension and ischemic cardiopathy",
+    ],
+    complications: [
+      "Erectile dysfunction",
+      "Psychological distress",
+      "Penile shortening or hourglass deformity",
+    ],
+    distinguishFrom: [
+      "Congenital chordee — present from birth, often with hypospadias",
+      "Penile fracture — acute trauma during intercourse, sudden pop and hematoma",
+      "Penile cancer — ulcerated or fungating mass, not fibrous plaque",
+      "Normal slight curvature — no plaque or pain",
+    ],
+    treatment: [
+      "Observation in mild stable disease",
+      "Oral pentoxifylline or collagenase clostridium histolyticum (collagenase injections) in selected cases",
+      "Surgical plication or grafting for severe fixed curvature",
+      "Treat comorbid ED (PDE5 inhibitors if appropriate)",
+    ],
+    boardsPearls: [
+      "Peyronie = tunica albuginea fibrous plaque → painful curvature",
+      "Associated with Dupuytren contracture (connective tissue fibromatosis)",
+      "vs congenital chordee — hypospadias context, lifelong",
+      "vs penile fracture — acute traumatic event during sex",
+    ],
+    pediatrics:
+      "Acquired Peyronie disease is an adult disorder; congenital ventral curvature (chordee) is evaluated in infancy with hypospadias repair.",
+  },
+  {
+    id: "penile-cancer",
+    name: "Penile Cancer",
+    etymology: "Latin penis = tail + Latin cancer = crab/tumor",
+    aliases: [
+      "penile cancer",
+      "penile carcinoma",
+      "penile squamous cell carcinoma",
+      "cancer of the penis",
+      "carcinoma of the penis",
+    ],
+    definition:
+      "Malignant neoplasm of the penis, overwhelmingly squamous cell carcinoma arising from penile epithelium, often linked to HPV infection and lack of circumcision.",
+    pathophysiology:
+      "Chronic inflammation, phimosis with poor hygiene, and high-risk HPV (especially HPV-16) promote dysplasia of penile squamous epithelium → carcinoma in situ (Bowen disease, erythroplasia of Queyrat) → invasive squamous cell carcinoma with local invasion and inguinal lymph node metastasis.",
+    classicPresentation: [
+      "Painless or painful penile lesion — ulcer, nodule, or verrucous mass on glans or foreskin",
+      "Persistent lesion despite topical therapy",
+      "Inguinal lymphadenopathy if metastatic",
+      "Older uncircumcised man with phimosis obscuring lesion",
+    ],
+    keyFindings: [
+      "Indurated ulcer or exophytic mass on penis",
+      "Nonhealing glans or foreskin lesion",
+      "Palpable inguinal nodes (firm, not always tender)",
+    ],
+    keyLabs: [
+      "Biopsy for histologic diagnosis",
+      "HPV association on pathology/PCR in research/clinical context",
+      "Staging imaging if nodal disease suspected",
+    ],
+    associations: [
+      "HPV infection (HPV-16)",
+      "Lack of neonatal circumcision",
+      "Phimosis and poor genital hygiene",
+      "Lichen sclerosus (balanitis xerotica obliterans)",
+      "Smoking and immunosuppression",
+    ],
+    complications: [
+      "Inguinal and pelvic lymph node metastasis",
+      "Local destruction of penile tissue",
+      "Need for partial or total penectomy in advanced disease",
+    ],
+    distinguishFrom: [
+      "Genital herpes — painful grouped vesicles on erythematous base; episodic",
+      "Primary syphilis (chancre) — painless ulcer with indurated base; serology",
+      "Balanitis — diffuse inflammation, responds to hygiene/antifungal",
+      "Bowenoid papulosis — benign HPV-related papules in younger men",
+    ],
+    treatment: [
+      "Local excision, glansectomy, or partial penectomy for early disease",
+      "Inguinal lymph node dissection or sentinel node biopsy if nodal involvement",
+      "Chemotherapy/radiation for advanced or unresectable disease",
+    ],
+    boardsPearls: [
+      "Penile cancer = squamous cell carcinoma; HPV and phimosis are major risk factors",
+      "Circumcision ↓ risk — relates to hygiene and HPV exposure",
+      "Painless penile ulcer — cancer and syphilis on differential (biopsy vs serology)",
+      "Erythroplasia of Queyrat (glans) and Bowen disease (shaft) = carcinoma in situ",
+      "Inguinal nodes are first metastatic site",
+    ],
+    pediatrics:
+      "Penile cancer is extremely rare in children; persistent genital lesions in adolescents warrant biopsy. HPV vaccination prevents high-risk oncogenic strains.",
+  },
+  {
+    id: "phimosis",
+    name: "Phimosis",
+    etymology: "Greek phimos = muzzle → tight foreskin unable to retract over glans",
+    aliases: [
+      "phimosis",
+      "physiologic phimosis",
+      "pathologic phimosis",
+      "tight foreskin",
+      "nonretractile foreskin",
+    ],
+    definition:
+      "Inability to retract the foreskin over the glans penis — physiologic (normal) in young boys or pathologic from scarring, infection, or balanitis xerotica obliterans.",
+    pathophysiology:
+      "Physiologic: normal adhesions between inner prepuce and glans resolve with age. Pathologic: recurrent balanoposthitis, lichen sclerosus (BXO), or forced retraction causes preputial fibrosis and a tight phimotic ring → nonretractile foreskin, voiding difficulty, and infection risk.",
+    classicPresentation: [
+      "Nonretractile foreskin — normal in infants/toddlers if physiologic",
+      "Ballooning of foreskin with urination in boys",
+      "Recurrent balanitis or posthitis",
+      "White sclerotic ring at preputial opening in lichen sclerosus (BXO)",
+      "Adult: difficulty with hygiene and intercourse",
+    ],
+    keyFindings: [
+      "Tight preputial opening; inability to expose glans",
+      "White scarred preputial ring in BXO",
+      "Erythema and discharge if superinfected",
+    ],
+    keyLabs: [
+      "Clinical diagnosis",
+      "Biopsy if lichen sclerosus suspected or atypical lesion under phimosis",
+    ],
+    associations: [
+      "Physiologic phimosis in childhood — resolves by puberty in most",
+      "Balanitis xerotica obliterans (lichen sclerosus)",
+      "Recurrent balanoposthitis",
+      "Increased penile cancer risk if chronic pathologic phimosis (poor hygiene, chronic inflammation)",
+      "Urinary tract infection in boys with severe obstruction",
+    ],
+    complications: [
+      "Paraphimosis if foreskin forced back and trapped",
+      "Urinary retention or ballooning",
+      "Penile cancer risk with chronic BXO/phimosis",
+    ],
+    distinguishFrom: [
+      "Paraphimosis — retracted foreskin trapped behind glans; emergency",
+      "Normal nonretractile foreskin in young child — physiologic, no scarring",
+      "Hidden penis or buried penis — adipose or congenital, not preputial ring",
+    ],
+    treatment: [
+      "Physiologic phimosis in children — reassurance, topical corticosteroids if symptomatic",
+      "Pathologic phimosis or BXO — circumcision or preputioplasty",
+      "Treat superimposed infection (topical antifungal/antibacterial)",
+      "Do not forcefully retract foreskin in children — risks paraphimosis and scarring",
+    ],
+    boardsPearls: [
+      "Physiologic phimosis is normal in young boys — most resolve spontaneously",
+      "Pathologic phimosis = scarring (BXO) — may need circumcision",
+      "Phimosis ↑ penile cancer risk (chronic inflammation, poor hygiene)",
+      "Topical steroids can treat mild symptomatic phimosis in children",
+      "vs paraphimosis — phimosis cannot retract; paraphimosis cannot reduce",
+    ],
+    pediatrics:
+      "Most boys have physiologic phimosis until age 5–10; avoid forceful retraction. BXO causes white scarred ring — urology referral for circumcision. Severe ballooning or UTIs may warrant treatment.",
+  },
+  {
+    id: "paraphimosis",
+    name: "Paraphimosis",
+    etymology: "Greek para = beside/beyond + phimos = muzzle → foreskin retracted and trapped proximal to glans",
+    aliases: [
+      "paraphimosis",
+      "trapped foreskin",
+      "strangulated foreskin",
+      "retracted foreskin",
+    ],
+    definition:
+      "Urologic emergency in which the retracted foreskin cannot be returned over the glans, causing a constricting band, venous/lymphatic obstruction, edema, and risk of glans ischemia.",
+    pathophysiology:
+      "Foreskin retracted behind corona (often after catheterization, exam, or forced retraction) → tight ring compresses glans → impaired venous and lymphatic drainage → progressive glans and prepuce edema → worsening constriction → arterial compromise if untreated.",
+    classicPresentation: [
+      "Painful swollen glans with retracted foreskin trapped behind coronal sulcus",
+      "Edematous preputial ring — \"donut\" appearance",
+      "Often after urinary catheter placement without foreskin reduction",
+      "Child or uncircumcised adult after manipulation",
+    ],
+    keyFindings: [
+      "Retracted foreskin fixed behind glans",
+      "Edematous, painful glans",
+      "Constricting band at neck of penis",
+    ],
+    keyLabs: [
+      "Clinical diagnosis — no labs required for diagnosis",
+    ],
+    associations: [
+      "Iatrogenic — Foley catheter placed without reducing foreskin",
+      "Forced retraction of physiologic phimosis",
+      "Underlying phimosis",
+    ],
+    complications: [
+      "Glans ischemia and necrosis if prolonged",
+      "Requires emergency reduction or surgical dorsal slit/circumcision",
+    ],
+    distinguishFrom: [
+      "Phimosis — foreskin cannot be retracted at all; no trapped edematous ring behind glans",
+      "Penile fracture — trauma during intercourse, ecchymosis, detumescence",
+      "Allergic/contact balanitis — diffuse inflammation without constricting band",
+    ],
+    treatment: [
+      "Manual reduction: compress edema (gauze/sugar/saline), then push glans while advancing foreskin",
+      "Pain control and topical anesthetic if needed",
+      "Dorsal slit or emergency circumcision if manual reduction fails",
+      "Always reduce foreskin after catheterization or genital exam in uncircumcised patients",
+    ],
+    boardsPearls: [
+      "Paraphimosis = urologic emergency — reduce foreskin promptly",
+      "After Foley in uncircumcised male — MUST replace foreskin over glans",
+      "Edematous glans + retracted foreskin behind corona = paraphimosis",
+      "vs phimosis — cannot retract vs retracted and stuck",
+      "Manual reduction before surgical dorsal slit",
+    ],
+    pediatrics:
+      "Same emergency in children — often follows forced retraction or catheterization without reduction. Teach parents not to force retract foreskin; reduce immediately if paraphimosis occurs.",
+  },
+  {
     id: "fecal-incontinence",
     name: "Fecal Incontinence",
     etymology: "Latin faex = dregs/stool + in- = not + continere = hold together",
@@ -7934,6 +10579,79 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Febrile UTI in infants and young children is treated as pyelonephritis; evaluate for vesicoureteral reflux and anatomic abnormalities after first febrile UTI (ultrasound ± VCUG per guidelines). Boys with first UTI warrant imaging.",
+  },
+  {
+    id: "urosepsis",
+    name: "Urosepsis",
+    etymology: "Greek ouron = urine + Greek sepsis = putrefaction/infection",
+    aliases: [
+      "urosepsis",
+      "urinary sepsis",
+      "septic uti",
+      "septic urinary tract infection",
+      "sepsis from uti",
+      "sepsis from urinary tract infection",
+      "bacteremic uti",
+    ],
+    definition:
+      "Life-threatening systemic inflammatory response to bacterial infection originating in the urinary tract, with bacteremia and risk of septic shock — typically from complicated pyelonephritis, obstructive uropathy, or catheter-associated infection.",
+    pathophysiology:
+      "Uropathogens (E. coli most common) invade renal parenchyma or infected urine under pressure (obstruction) → bacteremia → endotoxin/cytokine release → systemic inflammatory response → vasodilation, capillary leak, and distributive shock; impaired host defenses (diabetes, obstruction, catheter) increase risk.",
+    classicPresentation: [
+      "Fever, rigors, tachycardia, hypotension",
+      "Flank pain and CVA tenderness (pyelonephritis source)",
+      "Altered mental status, especially in elderly",
+      "History of nephrolithiasis, BPH, indwelling catheter, or recent urologic procedure",
+      "Diabetic patient with severe back pain and gas on imaging → emphysematous pyelonephritis risk",
+    ],
+    keyFindings: [
+      "Signs of sepsis: fever/hypothermia, tachycardia, tachypnea, hypotension",
+      "CVA tenderness when renal source",
+      "Oliguria or anuria if obstructive component",
+    ],
+    keyLabs: [
+      "Urinalysis — pyuria, bacteriuria, WBC casts (upper tract)",
+      "Blood and urine cultures before antibiotics when feasible",
+      "↑ WBC with left shift; ↑ lactate; metabolic acidosis in shock",
+      "Imaging (CT) if obstruction, abscess, or emphysematous pyelonephritis suspected",
+    ],
+    associations: [
+      "E. coli — most common organism",
+      "Proteus, Klebsiella, Enterococcus, Pseudomonas (healthcare-associated)",
+      "Urinary obstruction — stone, BPH, malignancy, stricture",
+      "Indwelling urinary catheter",
+      "Diabetes mellitus — emphysematous pyelonephritis",
+      "Pregnancy — pyelonephritis predisposition",
+      "Vesicoureteral reflux in children",
+    ],
+    complications: [
+      "Septic shock and multiorgan failure",
+      "Renal abscess or perinephric abscess",
+      "Acute kidney injury",
+      "Disseminated intravascular coagulation",
+    ],
+    distinguishFrom: [
+      "Uncomplicated cystitis — localized dysuria/frequency without systemic toxicity",
+      "Non-urinary sepsis — pneumonia, cholangitis, intra-abdominal source; urinalysis may be misleading if catheter colonization",
+      "Catheter-associated asymptomatic bacteriuria — colonization without systemic illness (do not treat unless symptomatic)",
+      "Transplant pyelonephritis vs rejection — overlapping fever and graft dysfunction",
+    ],
+    treatment: [
+      "Immediate IV broad-spectrum antibiotics (e.g., ceftriaxone, piperacillin-tazobactam; adjust to culture/resistance)",
+      "Sepsis resuscitation: IV fluids, vasopressors (norepinephrine) if shock",
+      "Source control: relieve obstruction (catheter, stent, nephrostomy), drain abscess",
+      "Remove or replace indwelling catheter when feasible",
+    ],
+    boardsPearls: [
+      "Urosepsis = urinary source + systemic infection/sepsis physiology",
+      "E. coli #1; obstruction + infection = urosepsis until proven otherwise",
+      "WBC casts localize to upper tract pyelonephritis",
+      "Emphysematous pyelonephritis in diabetics — gas in kidney on CT; surgical urgency",
+      "Obstructed infected kidney needs drainage, not antibiotics alone",
+      "vs uncomplicated UTI — fever, hypotension, lactate elevation indicate sepsis",
+    ],
+    pediatrics:
+      "Febrile UTI in infants can rapidly progress to urosepsis; neonates may present with nonspecific lethargy, poor feeding, or hypothermia. Vesicoureteral reflux and congenital anomalies increase risk — urgent cultures and IV antibiotics.",
   },
   {
     id: "primary-biliary-cholangitis",
@@ -9319,6 +12037,71 @@ export const CONDITIONS: ConditionEntry[] = [
       "Children in endemic areas bear highest mortality; cerebral malaria presents with seizures and coma. Hypoglycemia common in pediatric severe malaria. Weight-based antimalarial dosing; IV artesunate for severe disease.",
   },
   {
+    id: "botulism",
+    name: "Botulism",
+    etymology: "Latin botulus = sausage + -ism = condition (first linked to spoiled sausage)",
+    aliases: [
+      "botulism",
+      "foodborne botulism",
+      "infant botulism",
+      "wound botulism",
+      "clostridium botulinum poisoning",
+    ],
+    definition:
+      "Neuroparalytic illness from botulinum toxin blocking presynaptic acetylcholine release at the neuromuscular junction, causing descending flaccid paralysis.",
+    pathophysiology:
+      "Clostridium botulinum produces botulinum toxin (heat-labile in foodborne form) → proteolytic cleavage of SNARE proteins (SNAP-25, VAMP, syntaxin) → impaired ACh vesicle fusion → flaccid paralysis; infant form from in vivo toxin production in gut after spore ingestion (honey).",
+    classicPresentation: [
+      "Cranial nerve palsies first: diplopia, ptosis, dysarthria, dysphagia",
+      "Symmetric descending flaccid weakness",
+      "Clear sensorium, no fever (foodborne/infant)",
+      "Infant: constipation, weak cry, poor feeding, floppy baby ('floppy infant')",
+      "Foodborne: multiple people after shared meal (canned/home-preserved foods)",
+    ],
+    keyFindings: [
+      "Flaccid paralysis with absent reflexes",
+      "Dilated, unreactive pupils",
+      "Respiratory muscle weakness",
+      "Normal mental status early",
+    ],
+    keyLabs: [
+      "Clinical diagnosis supported by toxin assay in serum/stool/food",
+      "Electrophysiology: incremental response to repetitive nerve stimulation (presynaptic defect)",
+      "Stool culture for C. botulinum in infant botulism",
+    ],
+    associations: [
+      "Foodborne — improperly canned or home-preserved alkaline vegetables",
+      "Infant — honey ingestion (spores germinate in immature gut)",
+      "Wound botulism — injection drug use, traumatic wounds",
+    ],
+    complications: [
+      "Respiratory failure requiring mechanical ventilation",
+      "Aspiration pneumonia",
+      "Prolonged ICU care (recovery takes weeks)",
+    ],
+    distinguishFrom: [
+      "Tetanus — spastic paralysis, lockjaw, risus sardonicus; tetanospasmin",
+      "Guillain-Barré syndrome — ascending weakness, areflexia, CSF albuminocytologic dissociation",
+      "Myasthenia gravis — fatigable weakness, postsynaptic ACh receptor antibodies",
+      "Organophosphate poisoning — cholinergic crisis with SLUDGE, miosis",
+    ],
+    treatment: [
+      "Botulinum antitoxin (equine heptavalent) early in foodborne/wound disease",
+      "Human botulism immune globulin (BIG-IV) for infant botulism",
+      "Airway protection and mechanical ventilation as needed",
+      "Wound debridement and antibiotics for wound botulism (avoid aminoglycosides — worsen NM block)",
+    ],
+    boardsPearls: [
+      "Botulinum toxin blocks ACh release — flaccid paralysis",
+      "Descending paralysis with cranial nerves first; sensation intact",
+      "Infant botulism from honey — floppy baby, constipation",
+      "vs tetanus — spastic not flaccid",
+      "SNARE protein cleavage is the molecular mechanism",
+    ],
+    pediatrics:
+      "Infant botulism is the classic pediatric form — do not give honey before age 1. Human botulism immune globulin (BIG-IV) is specific treatment for infants.",
+  },
+  {
     id: "meningitis",
     name: "Meningitis",
     etymology: "Greek meninx = membrane + -itis = inflammation",
@@ -10157,11 +12940,14 @@ export const CONDITIONS: ConditionEntry[] = [
     etymology: "Greek chronos = time + Old English cwið + Latin ren = kidney + Latin dis = apart + ease = comfort",
     aliases: [
       "chronic kidney disease",
+      "chronic kidney diseases",
       "ckd",
       "chronic renal disease",
+      "chronic renal diseases",
       "chronic renal failure",
       "crf",
       "chronic renal insufficiency",
+      "chronic nephropathy",
     ],
     definition:
       "Progressive, irreversible loss of kidney function for ≥3 months, defined by reduced GFR and/or persistent markers of kidney damage.",
@@ -10456,6 +13242,380 @@ export const CONDITIONS: ConditionEntry[] = [
       "Spina bifida commonly causes neurogenic bladder; early urologic follow-up protects upper tracts.",
   },
   {
+    id: "primary-vesicoureteral-reflux",
+    name: "Primary Vesicoureteral Reflux",
+    etymology: "Latin primarius = first + vesica = bladder + ureter + re = back + fluxus = flow",
+    aliases: [
+      "primary vesicoureteral reflux",
+      "primary vur",
+      "congenital vesicoureteral reflux",
+      "congenital vur",
+    ],
+    definition:
+      "Congenital retrograde urine flow from bladder into ureter due to intrinsic abnormality of the ureterovesical junction (UVJ) valve mechanism — not caused by downstream bladder outlet obstruction.",
+    pathophysiology:
+      "Short intramural ureter tunnel or abnormal UVJ anatomy → incompetent flap-valve at ureteral orifice → urine refluxes during bladder filling or voiding → infected urine reaches renal pelvis → pyelonephitis and cortical scarring; often familial.",
+    classicPresentation: [
+      "Infant or young child with first febrile UTI",
+      "Often otherwise healthy without outlet obstruction",
+      "May be detected on sibling screening when family history present",
+    ],
+    keyFindings: [
+      "Reflux on VCUG without posterior urethral valves or stricture",
+      "Hydroureteronephrosis on ultrasound",
+    ],
+    keyLabs: [
+      "VCUG — diagnostic; grades I–V severity",
+      "Renal ultrasound — scarring, dysplasia, hydronephrosis",
+    ],
+    associations: [
+      "Family history of VUR",
+      "Renal dysplasia or congenital anomalies",
+      "Lower grades often resolve spontaneously with growth",
+    ],
+    complications: [
+      "Febrile pyelonephitis",
+      "Reflux nephropathy and renal scarring",
+      "Hypertension and CKD in severe bilateral cases",
+    ],
+    distinguishFrom: [
+      "Secondary VUR — bladder outlet obstruction (posterior urethral valves), neurogenic bladder, or high voiding pressures",
+      "Obstructive uropathy without reflux — no retrograde flow on VCUG",
+      "Vesicoureteral reflux (general) — umbrella term including primary and secondary forms",
+    ],
+    treatment: [
+      "Low-grade may resolve spontaneously — observation with UTI prophylaxis per specialist",
+      "Treat UTIs promptly",
+      "Surgical ureteral reimplantation or endoscopic bulking for persistent high-grade reflux with breakthrough infections",
+    ],
+    boardsPearls: [
+      "Primary VUR = congenital short intramural ureter / faulty UVJ valve",
+      "vs secondary VUR — fix obstruction (PUV) first",
+      "Many low-grade primary VUR cases resolve as child grows",
+      "Febrile UTI + primary VUR → risk of permanent renal scarring",
+    ],
+    pediatrics:
+      "Most common form of VUR in children; siblings may need screening. Primary VUR grades I–II often resolve by age 5–6.",
+  },
+  {
+    id: "bilateral-vesicoureteral-reflux",
+    name: "Bilateral Vesicoureteral Reflux",
+    etymology: "Latin bilateralis = two-sided + vesica = bladder + ureter + re = back + fluxus = flow",
+    aliases: [
+      "bilateral vesicoureteral reflux",
+      "bilateral vur",
+      "bilateral reflux",
+    ],
+    definition:
+      "Retrograde flow of urine from the bladder into both ureters and often both renal pelves — carries higher risk of bilateral renal injury than unilateral reflux.",
+    pathophysiology:
+      "Bilateral incompetent ureterovesical junctions (primary) or bilateral reflux secondary to bladder outlet obstruction/neurogenic bladder → repeated ascending infection and pressure effects on both kidneys → bilateral hydronephrosis, scarring, and impaired renal function.",
+    classicPresentation: [
+      "Young child with febrile UTIs and bilateral hydroureteronephrosis on ultrasound",
+      "May have growth failure or hypertension if chronic renal damage",
+      "Boys with posterior urethral valves may have bilateral reflux secondary to obstruction",
+    ],
+    keyFindings: [
+      "Reflux into both ureters on VCUG",
+      "Bilateral hydronephrosis on renal ultrasound",
+      "Bilateral renal scarring on DMSA after pyelonephitis",
+    ],
+    keyLabs: [
+      "VCUG — bilateral reflux grading",
+      "Renal function tests if bilateral scarring suspected",
+      "Blood pressure monitoring",
+    ],
+    associations: [
+      "Primary bilateral VUR — familial UVJ defects",
+      "Posterior urethral valves with secondary bilateral reflux",
+      "Neurogenic bladder with high intravesical pressures",
+    ],
+    complications: [
+      "Bilateral reflux nephropathy",
+      "Chronic kidney disease and hypertension in childhood",
+      "Recurrent bilateral pyelonephitis",
+    ],
+    distinguishFrom: [
+      "Unilateral VUR — reflux on one side only; generally lower bilateral renal risk",
+      "Bilateral hydronephrosis without reflux — obstruction (UPJ, PUV) without retrograde flow on VCUG",
+      "Primary vs secondary bilateral VUR — evaluate for outlet obstruction in boys",
+    ],
+    treatment: [
+      "Aggressive UTI prevention and prompt treatment",
+      "Correct bladder outlet obstruction if secondary cause",
+      "Surgical intervention for persistent high-grade bilateral reflux with breakthrough febrile UTIs or declining renal function",
+    ],
+    boardsPearls: [
+      "Bilateral VUR → both kidneys at risk for pyelonephitis scarring",
+      "PUV in boy can cause bilateral reflux + bilateral hydronephrosis",
+      "Monitor BP and renal function in bilateral disease",
+      "vs unilateral VUR — contralateral kidney may compensate if unilateral scarring",
+    ],
+    pediatrics:
+      "Bilateral primary VUR with recurrent febrile UTIs is high-risk for bilateral renal scarring — close nephrology/urology follow-up essential.",
+  },
+  {
+    id: "hydronephrosis",
+    name: "Hydronephrosis",
+    etymology: "Greek hydor = water + nephros = kidney + -osis = condition",
+    aliases: [
+      "hydronephrosis",
+      "hydroureteronephrosis",
+      "pelvicalyceal dilatation",
+      "pelvicalyceal dilation",
+      "renal pelvis dilation",
+      "dilated renal pelvis",
+    ],
+    definition:
+      "Dilation of the renal pelvis and calyces from accumulation of urine due to urinary outflow obstruction, reflux, or physiologic dilatation — may be unilateral or bilateral.",
+    pathophysiology:
+      "Increased pressure upstream from obstruction (stone, UPJ obstruction, posterior urethral valves, BPH) or sustained reflux → pelvicalyceal enlargement → compression of renal parenchyma → cortical thinning and impaired function if prolonged; physiologic hydronephrosis in pregnancy from progesterone and ureteral compression.",
+    classicPresentation: [
+      "Often asymptomatic when mild — found on prenatal ultrasound or imaging workup",
+      "Flank pain if acute obstruction (stone)",
+      "UTI symptoms if stagnant urine becomes infected",
+      "Pregnant woman — right-sided physiologic hydronephrosis common",
+      "Neonate with palpable flank mass or anuria if bilateral obstruction (PUV)",
+    ],
+    keyFindings: [
+      "Dilated renal pelvis and calyces on ultrasound or CT",
+      "Cortical thinning in chronic cases",
+      "Hydroureter if ureter also dilated (hydroureteronephrosis)",
+    ],
+    keyLabs: [
+      "Renal ultrasound — first-line anatomic assessment",
+      "VCUG if reflux suspected",
+      "Creatinine/BUN if bilateral or chronic obstruction",
+    ],
+    associations: [
+      "Ureteropelvic junction obstruction — common congenital cause in infants",
+      "Posterior urethral valves — bilateral in boys",
+      "Nephrolithiasis",
+      "BPH and ureteral stricture",
+      "Vesicoureteral reflux",
+      "Pregnancy — physiologic",
+      "Crossing renal vessel causing UPJ obstruction",
+    ],
+    complications: [
+      "Postrenal azotemia if bilateral obstruction",
+      "Infection of stagnant urine (pyelonephritis, urosepsis)",
+      "Irreversible renal parenchymal loss with chronic obstruction",
+    ],
+    distinguishFrom: [
+      "Renal cyst — round anechoic lesion without pelvicalyceal connection",
+      "Extrarenal pelvis — normal anatomic variant without calyceal dilation",
+      "Physiologic pregnancy hydronephrosis — no obstruction, resolves postpartum",
+      "Hydroureter alone — ureteral dilation; hydronephrosis specifies renal pelvis/calyces",
+    ],
+    treatment: [
+      "Relieve obstruction — stent, nephrostomy, stone removal, PUV ablation, BPH therapy",
+      "Treat underlying reflux or UPJ obstruction surgically if persistent",
+      "Observe mild physiologic or transient neonatal hydronephrosis",
+    ],
+    boardsPearls: [
+      "Hydronephrosis = dilated renal pelvis/calyces from obstruction or reflux",
+      "Prenatal hydronephrosis → evaluate for UPJ obstruction or posterior urethral valves",
+      "Bilateral hydronephrosis in newborn boy → posterior urethral valves until proven otherwise",
+      "Pregnancy — right > left physiologic hydronephrosis from ureteral compression",
+      "Staghorn calculus can cause obstruction and hydronephrosis",
+    ],
+    pediatrics:
+      "Prenatal hydronephrosis is common; postnatal ultrasound distinguishes UPJ obstruction, VUR, and PUV. Bilateral prenatal hydronephrosis with oligohydramnios suggests severe obstructive uropathy.",
+  },
+  {
+    id: "horseshoe-kidney",
+    name: "Horseshoe Kidney",
+    etymology: "English horse + shoe + kidney — fused renal lower poles forming a U-shaped organ",
+    aliases: [
+      "horseshoe kidney",
+      "horseshoe kidneys",
+      "renal fusion",
+      "fused kidney",
+      "fused kidneys",
+    ],
+    definition:
+      "Most common renal fusion anomaly — the lower poles of both kidneys are joined by an isthmus of functioning or fibrous renal tissue, preventing normal ascent and rotating the kidneys into a midline lower position.",
+    pathophysiology:
+      "Abnormal metanephric migration during development → fusion of lower poles (usually anterior isthmus across midline, anterior to aorta and IVC) → kidneys arrested in pelvis or lower abdomen → altered ureteropelvic anatomy predisposes to obstruction, stones, and infection.",
+    classicPresentation: [
+      "Often asymptomatic — incidental finding on imaging",
+      "Recurrent UTIs or flank pain from obstruction/stones",
+      "Workup for Turner syndrome or other congenital anomalies",
+      "May present in childhood with UPJ obstruction symptoms",
+    ],
+    keyFindings: [
+      "Midline or lower-position fused kidneys on CT/MRI/ultrasound",
+      "Isthmus crossing anterior to great vessels (classic)",
+      "Abnormal calyceal drainage and ureter course",
+    ],
+    keyLabs: [
+      "Renal ultrasound or cross-sectional imaging for diagnosis",
+      "Urinalysis and cultures if UTI suspected",
+      "Renal function tests if obstructive nephropathy",
+    ],
+    associations: [
+      "Turner syndrome (45,X)",
+      "Trisomy 18 and other chromosomal anomalies",
+      "VACTERL association",
+      "Ureteropelvic junction obstruction",
+      "Renal stones and hydronephrosis",
+      "Increased risk of renal cell carcinoma (modest; boards mention association)",
+    ],
+    complications: [
+      "Obstructive uropathy and hydronephrosis",
+      "Nephrolithiasis",
+      "Recurrent pyelonephitis",
+      "Chronic kidney disease if longstanding obstruction",
+    ],
+    distinguishFrom: [
+      "Crossed fused ectopia — one kidney crosses midline; different fusion pattern",
+      "Pelvic kidney (unilateral ectopia) — single kidney low without contralateral fusion",
+      "Normal kidney — separate organs in normal fossae",
+    ],
+    treatment: [
+      "Treat complications — stone management, infection, surgical correction of UPJ obstruction if needed",
+      "No treatment required if asymptomatic incidental finding",
+      "Avoid unnecessary nephrectomy — preserve renal mass",
+    ],
+    boardsPearls: [
+      "Horseshoe kidney = fused lower poles + isthmus anterior to great vessels",
+      "Most common renal fusion anomaly; often asymptomatic",
+      "Associated with Turner syndrome",
+      "Fails to ascend normally — lower position in abdomen/pelvis",
+      "UPJ obstruction and stones are common complications",
+    ],
+    pediatrics:
+      "May be detected on prenatal ultrasound or during Turner/chromosomal workup; monitor for obstruction and UTIs during childhood.",
+  },
+  {
+    id: "patent-urachus",
+    name: "Patent Urachus",
+    etymology: "Latin patere = to be open + Greek oura = tail (urachus) = persistent fetal bladder-umbilical connection",
+    aliases: [
+      "patent urachus",
+      "urachal fistula",
+      "urachal patency",
+      "persistent urachus",
+      "urine from umbilicus",
+      "umbilical urine drainage",
+    ],
+    definition:
+      "Failure of the urachus to obliterate after birth, leaving an open channel between the bladder dome and umbilicus — urine drains from the umbilicus in the neonate.",
+    pathophysiology:
+      "Allantois forms urachus connecting fetal bladder to umbilicus → normally fibroses into median umbilical ligament; complete failure of closure → patent urachus → urine leaks from umbilicus when bladder fills/voids.",
+    classicPresentation: [
+      "Neonate with clear or urine-like fluid draining from umbilicus",
+      "Fluid reappears after voiding or bladder filling",
+      "Persistent wet umbilicus despite cord separation",
+      "No bile or feculent drainage (vs omphaloenteric fistula)",
+    ],
+    keyFindings: [
+      "Umbilical drainage that increases with micturition",
+      "Fluid confirms as urine (high creatinine)",
+      "Patent tube on ultrasound or fistulogram from umbilicus to bladder",
+    ],
+    keyLabs: [
+      "Fluid creatinine/sodium — urine-like composition from umbilical discharge",
+      "Ultrasound — urachal tract to bladder",
+    ],
+    associations: [
+      "Other urachal anomalies — urachal cyst, sinus, diverticulum (partial patency spectrum)",
+      "Urachal adenocarcinoma risk in adulthood with chronic urachal remnants (rare)",
+      "Umbilical infection if untreated",
+    ],
+    complications: [
+      "Omphalitis and ascending UTI",
+      "Urachal adenocarcinoma in long-standing remnant (adult)",
+    ],
+    distinguishFrom: [
+      "Omphalitis — erythematous umbilicus without urine-specific drainage pattern",
+      "Patent omphalomesenteric (vitelline) duct — feculent or bilious umbilical discharge",
+      "Urachal cyst — closed midline cyst, not continuous urine leak",
+      "Umbilical granuloma — small pink tissue, serous not urine drainage",
+    ],
+    treatment: [
+      "Surgical excision of urachus with bladder cuff",
+      "Antibiotics if infected",
+      "Do not confuse with vitelline duct anomalies — different embryology",
+    ],
+    boardsPearls: [
+      "Patent urachus = urine from umbilicus in neonate",
+      "Allantois → urachus → median umbilical ligament if obliterated",
+      "vs patent vitelline duct — meconium/bile from umbilicus, not urine",
+      "Partial closure → urachal cyst, sinus, or diverticulum",
+      "Excise urachus to bladder dome to prevent infection and malignancy risk",
+    ],
+    pediatrics:
+      "Neonatal umbilical urine drainage is patent urachus until proven otherwise; distinguish from omphalomesenteric fistula (vitelline duct) with bilious/meconium content.",
+  },
+  {
+    id: "posterior-urethral-valves",
+    name: "Posterior Urethral Valves",
+    etymology: "Latin posterior = behind + Greek ourethra = urinary passage + Latin valva = fold/door",
+    aliases: [
+      "posterior urethral valves",
+      "posterior urethral valve",
+      "puv",
+      "congenital posterior urethral valves",
+      "type i posterior urethral valves",
+      "urethral valves",
+    ],
+    definition:
+      "Most common cause of congenital bladder outlet obstruction in male infants — mucosal folds (valves) in the prostatic urethra obstruct urinary flow, causing trabeculated bladder, bilateral hydronephrosis, and secondary vesicoureteral reflux.",
+    pathophysiology:
+      "Congenital abnormal folds in posterior urethra (Type I most common) → obstruction during voiding → high intravesical pressure → detrusor hypertrophy/trabeculation → bilateral hydroureteronephrosis, renal dysplasia; oligohydramnios if severe prenatal obstruction (Potter sequence risk if bilateral renal failure).",
+    classicPresentation: [
+      "Male infant or boy with weak urinary stream, dribbling, or straining to void",
+      "Prenatal bilateral hydronephrosis and oligohydramnios",
+      "Neonatal anuria or palpable bladder",
+      "Recurrent UTIs and failure to thrive",
+      "Salt-wasting (vasa recta injury) in some infants",
+    ],
+    keyFindings: [
+      "Dilated posterior urethra (keyhole sign) on VCUG",
+      "Trabeculated thick-walled bladder",
+      "Bilateral hydroureteronephrosis on ultrasound",
+      "Poor urinary stream on observation",
+    ],
+    keyLabs: [
+      "Prenatal and postnatal renal ultrasound",
+      "VCUG — diagnostic; shows dilated posterior urethra and bladder changes",
+      "Serum creatinine — renal function",
+    ],
+    associations: [
+      "Secondary vesicoureteral reflux (often bilateral)",
+      "Urinary ascites from bladder rupture in neonates",
+      "Pulmonary hypoplasia if severe oligohydramnios (Potter sequence)",
+      "Renal dysplasia from intrauterine obstruction",
+    ],
+    complications: [
+      "End-stage renal disease in childhood",
+      "Recurrent urosepsis",
+      "Growth failure and electrolyte abnormalities",
+    ],
+    distinguishFrom: [
+      "Primary vesicoureteral reflux without obstruction — no keyhole posterior urethra on VCUG",
+      "Ureteropelvic junction obstruction — hydronephrosis without bladder outlet findings",
+      "Urethral stricture — acquired, not congenital valves in prostatic urethra",
+      "Neurogenic bladder — neurologic history, not isolated male congenital obstruction",
+    ],
+    treatment: [
+      "Endoscopic valve ablation (primary treatment)",
+      "Temporary vesicostomy or catheter drainage in severe neonatal obstruction",
+      "Monitor and manage renal function, UTIs, and reflux long-term",
+      "Antenatal vesicoamniotic shunting in select severe cases (specialist decision)",
+    ],
+    boardsPearls: [
+      "PUV = #1 congenital bladder outlet obstruction in boys",
+      "VCUG: dilated posterior urethra + trabeculated bladder + bilateral hydronephrosis",
+      "Causes secondary (not primary) VUR from high bladder pressures",
+      "Prenatal oligohydramnios + male fetus → consider PUV",
+      "Early ablation preserves renal function; long-term nephrology follow-up required",
+    ],
+    pediatrics:
+      "Always consider PUV in male infant with prenatal hydronephrosis or weak stream; newborn anuria with palpable bladder is emergency. Bilateral renal dysplasia from prolonged obstruction may cause neonatal renal failure.",
+  },
+  {
     id: "vesicoureteral-reflux",
     name: "Vesicoureteral Reflux",
     etymology: "Latin vesica = bladder + ureter + Latin re = back + fluxus = flow",
@@ -10465,6 +13625,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "vur",
       "reflux nephropathy",
       "urinary reflux",
+      "bilateral vesicoureteral reflux",
+      "bilateral vur",
+      "primary vesicoureteral reflux",
+      "primary vur",
     ],
     definition:
       "Retrograde flow of urine from bladder into ureter(s) and sometimes renal pelvis due to abnormal ureterovesical junction valve mechanism.",
@@ -10500,6 +13664,9 @@ export const CONDITIONS: ConditionEntry[] = [
       "Obstructive uropathy without reflux — obstruction on imaging without retrograde flow on VCUG",
       "Simple cystitis — lower tract infection without fever/flank involvement",
       "Acute pyelonephritis without reflux — may coexist but VUR explains recurrent upper tract infections",
+      "Primary vesicoureteral reflux — congenital UVJ defect without outlet obstruction",
+      "Secondary VUR — high bladder pressure from posterior urethral valves or neurogenic bladder",
+      "Bilateral vesicoureteral reflux — both ureters affected; higher bilateral renal risk",
     ],
     treatment: [
       "Prophylactic antibiotics during infancy in higher-grade or recurrent febrile UTIs (per specialist guidance)",
@@ -10514,6 +13681,73 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Primary VUR often improves with age in lower grades; febrile UTIs with VUR can cause permanent renal scarring — key pediatric nephrology topic.",
+  },
+  {
+    id: "hypothyroidism",
+    name: "Hypothyroidism",
+    etymology: "Greek hypo = under + thyreos = shield-shaped gland + -ism = condition",
+    aliases: [
+      "hypothyroidism",
+      "hypothyroid",
+      "low thyroid",
+      "myxedema",
+      "underactive thyroid",
+    ],
+    definition:
+      "Clinical syndrome of insufficient thyroid hormone activity causing slowed metabolism, with elevated TSH in primary disease.",
+    pathophysiology:
+      "↓ circulating T4/T3 → decreased basal metabolic rate → accumulation of glycosaminoglycans in skin (myxedema), bradycardia, slowed reflexes, and impaired thermogenesis; primary disease triggers compensatory ↑ TSH from loss of negative feedback.",
+    classicPresentation: [
+      "Fatigue, weight gain, cold intolerance",
+      "Constipation, dry skin, hair loss",
+      "Bradycardia, delayed deep tendon reflexes",
+      "Menorrhagia or infertility",
+    ],
+    keyFindings: [
+      "Periorbital puffiness and nonpitting myxedema",
+      "Dry coarse skin and hoarse voice",
+      "Bradycardia and hypothermia in severe disease",
+    ],
+    keyLabs: [
+      "Primary: ↑ TSH with ↓ free T4",
+      "Subclinical: ↑ TSH with normal free T4",
+      "Central: ↓ free T4 with low/inappropriately normal TSH",
+      "Anti-TPO antibodies if autoimmune (Hashimoto)",
+    ],
+    associations: [
+      "Hashimoto thyroiditis — most common cause in iodine-sufficient adults",
+      "Congenital hypothyroidism in neonates",
+      "Iodine deficiency",
+      "Postpartum thyroiditis, subacute thyroiditis (hypothyroid phase)",
+      "Pituitary/hypothalamic disease (central hypothyroidism)",
+      "Drugs: lithium, amiodarone",
+    ],
+    complications: [
+      "Myxedema coma",
+      "Hyperlipidemia and atherosclerosis",
+      "Pericardial effusion",
+      "Infertility and hyperprolactinemia (↑ TRH)",
+    ],
+    distinguishFrom: [
+      "Hyperthyroidism — weight loss, heat intolerance, ↑ T4, ↓ TSH",
+      "Euthyroid sick syndrome — abnormal thyroid tests during acute illness",
+      "Depression — may overlap symptoms; check TSH",
+      "Congenital hypothyroidism — neonatal presentation; screen with TSH",
+    ],
+    treatment: [
+      "Levothyroxine replacement (adjust dose to normalize TSH)",
+      "Treat underlying cause when possible",
+      "Myxedema coma: IV levothyroxine, hydrocortisone, supportive care",
+    ],
+    boardsPearls: [
+      "Primary hypothyroidism: ↑ TSH, ↓ free T4",
+      "Hashimoto thyroiditis is the most common cause in adults",
+      "Hypothyroidism → ↑ TRH → mild hyperprolactinemia and amenorrhea",
+      "Delayed relaxation of deep tendon reflexes (Woltman sign) is classic",
+      "Myxedema = nonpitting mucopolysaccharide deposition, not pitting edema",
+    ],
+    pediatrics:
+      "Congenital hypothyroidism is screened by newborn TSH; untreated disease causes cretinism. Acquired autoimmune hypothyroidism can present with growth delay and school difficulty in children.",
   },
   {
     id: "hashimoto-thyroiditis",
@@ -11392,6 +14626,580 @@ export const CONDITIONS: ConditionEntry[] = [
       "Type A involves ascending aorta — surgical emergency",
       "Marfan, bicuspid valve, and Turner increase risk",
     ],
+  },
+  {
+    id: "hepatitis",
+    name: "Hepatitis",
+    etymology: "Greek hepar = liver + -itis = inflammation",
+    aliases: [
+      "hepatitis",
+      "acute hepatitis",
+      "viral hepatitis",
+      "hepatic inflammation",
+    ],
+    definition:
+      "Inflammation of the liver presenting with hepatocellular injury, often detected by elevated aminotransferases and clinical jaundice in symptomatic cases.",
+    pathophysiology:
+      "Hepatocyte injury from viral infection, toxins, ischemia, or immune attack → release of ALT/AST → impaired bile transport and synthetic function depending on severity and chronicity.",
+    classicPresentation: [
+      "Fatigue, anorexia, nausea, and RUQ discomfort",
+      "Jaundice, dark urine, and pale stools if cholestasis prominent",
+      "Fever and tender hepatomegaly in acute viral hepatitis",
+    ],
+    keyFindings: [
+      "Elevated ALT and AST (often ALT ≥ AST except alcoholic pattern)",
+      "Hyperbilirubinemia and pruritus with cholestasis",
+      "Hepatomegaly on exam",
+    ],
+    keyLabs: [
+      "ALT, AST, bilirubin, alkaline phosphatase",
+      "Viral serologies (HBV, HCV, HAV, HEV as indicated)",
+      "INR and albumin if synthetic dysfunction suspected",
+    ],
+    associations: [
+      "Hepatitis A and E — fecal-oral, usually self-limited",
+      "Hepatitis B and C — blood/body fluid exposure, chronic infection risk",
+      "Alcohol, acetaminophen toxicity, ischemic hepatitis",
+      "Autoimmune hepatitis, Wilson disease, drug-induced liver injury",
+    ],
+    complications: [
+      "Acute liver failure",
+      "Progression to chronic hepatitis and cirrhosis (especially HBV/HCV)",
+      "Fulminant hepatic failure with encephalopathy and coagulopathy",
+    ],
+    distinguishFrom: [
+      "Cholestasis/obstruction — predominant ↑ ALP/GGT with dilated ducts",
+      "Cirrhosis — chronic disease with portal hypertension and stigmata, not isolated acute inflammation",
+      "Hemolysis — unconjugated hyperbilirubinemia without marked transaminase rise",
+    ],
+    treatment: [
+      "Treat underlying cause (antivirals for HBV/HCV, stop hepatotoxin, immunosuppression for autoimmune hepatitis)",
+      "Supportive care in acute viral hepatitis",
+      "Avoid alcohol and hepatotoxic drugs",
+    ],
+    boardsPearls: [
+      "AST:ALT >2:1 suggests alcoholic hepatitis",
+      "Transaminases >1000 suggest acute viral, ischemic, or toxin-mediated injury",
+      "HBV: HBsAg, anti-HBc, anti-HBs pattern determines acute vs chronic vs immunity",
+      "HAV and HEV usually self-limited; HCV often becomes chronic without treatment",
+    ],
+    pediatrics:
+      "Neonatal cholestasis requires distinguishing biliary atresia from neonatal hepatitis; HBV perinatal transmission prevented with birth dose vaccine and HBIG.",
+  },
+  {
+    id: "cirrhosis",
+    name: "Cirrhosis",
+    etymology: "Greek kirrhos = tawny/orange + -osis = condition",
+    aliases: [
+      "cirrhosis",
+      "liver cirrhosis",
+      "hepatic cirrhosis",
+      "end-stage liver disease from fibrosis",
+    ],
+    definition:
+      "End-stage chronic liver disease with diffuse fibrosis and nodular regeneration causing portal hypertension and impaired hepatic synthetic and metabolic function.",
+    pathophysiology:
+      "Repeated hepatocyte injury → stellate cell activation and collagen deposition → fibrous bands and regenerative nodules distort architecture → ↑ intrahepatic resistance (portal hypertension) and ↓ functional hepatocyte mass.",
+    classicPresentation: [
+      "Fatigue, muscle wasting, and anorexia",
+      "Jaundice, ascites, and lower-extremity edema",
+      "Encephalopathy with asterixis in decompensated disease",
+    ],
+    keyFindings: [
+      "Spider angiomata, palmar erythema, gynecomastia",
+      "Caput medusae, ascites, and splenomegaly",
+      "Shrunken nodular liver (may be enlarged early)",
+    ],
+    keyLabs: [
+      "↓ albumin, prolonged PT/INR",
+      "↑ bilirubin and transaminases (may be near-normal in late disease)",
+      "Thrombocytopenia from hypersplenism",
+      "Hyponatremia in advanced disease",
+    ],
+    associations: [
+      "Chronic hepatitis B and C",
+      "Alcohol-associated liver disease",
+      "Nonalcoholic steatohepatitis",
+      "Hemochromatosis, Wilson disease, autoimmune hepatitis, PBC/PSC",
+    ],
+    complications: [
+      "Portal hypertension with variceal bleeding",
+      "Ascites and spontaneous bacterial peritonitis",
+      "Hepatic encephalopathy",
+      "Hepatocellular carcinoma",
+      "Hepatorenal syndrome",
+    ],
+    distinguishFrom: [
+      "Acute hepatitis — inflammatory injury without established fibrosis/nodules",
+      "Right heart failure — congestive hepatopathy with JVD, not typical cirrhotic stigmata",
+      "Metastatic liver disease — focal masses, not diffuse nodular architecture",
+    ],
+    treatment: [
+      "Treat underlying cause and abstain from alcohol",
+      "Manage complications (diuretics for ascites, lactulose for encephalopathy, band ligation for varices)",
+      "Liver transplantation for decompensated cirrhosis",
+      "Surveillance ultrasound/AFP for HCC in cirrhotic patients",
+    ],
+    boardsPearls: [
+      "Cirrhosis = fibrosis + regenerative nodules + portal hypertension",
+      "↓ albumin and ↑ INR reflect impaired synthetic function",
+      "Spider angiomata, ascites, and varices are classic stigmata",
+      "All cirrhotics need HCC surveillance",
+    ],
+    pediatrics:
+      "Pediatric cirrhosis may follow biliary atresia, metabolic liver disease, or chronic cholestatic disorders; portal hypertension complications occur in children as in adults.",
+  },
+  {
+    id: "portal-hypertension",
+    name: "Portal Hypertension",
+    etymology: "Latin porta = gate + Greek hyper = excess + Latin tensio = pressure",
+    aliases: [
+      "portal hypertension",
+      "portal venous hypertension",
+      "increased portal pressure",
+    ],
+    definition:
+      "Elevated pressure in the portal venous system, most commonly from increased intrahepatic resistance in cirrhosis, leading to portosystemic shunting and complications.",
+    pathophysiology:
+      "↑ portal venous inflow or resistance (intrahepatic fibrosis, presinusoidal/sinusoidal/postsinusoidal obstruction) → opening of portosystemic collaterals → esophageal/gastric varices, caput medusae, and splenic congestion.",
+    classicPresentation: [
+      "Often asymptomatic until complication (variceal bleed, ascites)",
+      "Hematemesis or melena from variceal rupture",
+      "Ascites and splenomegaly in chronic portal hypertension",
+    ],
+    keyFindings: [
+      "Esophageal or gastric varices on endoscopy",
+      "Caput medusae and hemorrhoids from portosystemic collaterals",
+      "Splenomegaly with thrombocytopenia",
+      "Ascites on exam or imaging",
+    ],
+    keyLabs: [
+      "Hepatic venous pressure gradient when measured invasively",
+      "Platelet count often low from hypersplenism",
+      "Diagnostic paracentesis if ascites present",
+    ],
+    associations: [
+      "Cirrhosis (most common cause)",
+      "Portal vein thrombosis",
+      "Schistosomiasis (presinusoidal)",
+      "Right-sided heart failure (sinusoidal/postsinusoidal component)",
+    ],
+    complications: [
+      "Variceal hemorrhage",
+      "Ascites and spontaneous bacterial peritonitis",
+      "Hepatic encephalopathy from shunting",
+      "Refractory hydrothorax (hepatic hydrothorax)",
+    ],
+    distinguishFrom: [
+      "Systemic hypertension — arm BP elevation without portosystemic collaterals",
+      "Budd-Chiari syndrome — hepatic vein thrombosis with painful hepatomegaly and ascites",
+      "Isolated ascites from heart failure or nephrotic syndrome without varices",
+    ],
+    treatment: [
+      "Nonselective β-blockers (propranolol, nadolol) for primary/secondary variceal prophylaxis",
+      "Endoscopic band ligation for medium/large varices or acute bleed",
+      "Octreotide and antibiotics during acute variceal hemorrhage",
+      "Transjugular intrahepatic portosystemic shunt (TIPS) in selected refractory cases",
+    ],
+    boardsPearls: [
+      "Cirrhosis is the most common cause of portal hypertension",
+      "Varices form at gastroesophageal junction and umbilicus (caput medusae)",
+      "SBP occurs in cirrhotic ascites from bacterial translocation",
+      "Portal hypertension explains ascites, varices, and hypersplenism together",
+    ],
+    pediatrics:
+      "Extrahepatic portal vein obstruction can cause portal hypertension in children without cirrhosis; variceal bleeding remains a major complication.",
+  },
+  {
+    id: "hepatocellular-carcinoma",
+    name: "Hepatocellular Carcinoma",
+    etymology: "Greek hepar = liver + Latin cellula = small cell + carcinoma = malignant epithelial tumor",
+    aliases: [
+      "hepatocellular carcinoma",
+      "hepatocellular cancer",
+      "hcc",
+      "primary liver cancer",
+      "hepatoma",
+    ],
+    definition:
+      "Primary malignant neoplasm arising from hepatocytes, usually developing in the setting of chronic liver disease and cirrhosis.",
+    pathophysiology:
+      "Chronic injury and regeneration in cirrhosis → clonal hepatocyte transformation with angiogenesis and arterial supply → expansile hepatic mass with risk of vascular invasion and metastasis.",
+    classicPresentation: [
+      "Often asymptomatic until advanced",
+      "RUQ pain, weight loss, and ascites in cirrhotic patient",
+      "Sudden decompensation or new portal hypertension complication",
+    ],
+    keyFindings: [
+      "Solid hepatic mass on ultrasound/CT/MRI with arterial enhancement and venous washout",
+      "Worsening liver function in known cirrhosis",
+      "Paraneoplastic erythrocytosis (rare)",
+    ],
+    keyLabs: [
+      "↑ alpha-fetoprotein (AFP) — supports but not required for diagnosis",
+      "Imaging criteria in cirrhosis can diagnose HCC without biopsy in select cases",
+      "Evaluate underlying chronic liver disease etiology",
+    ],
+    associations: [
+      "Cirrhosis from hepatitis B/C, alcohol, NASH, hemochromatosis",
+      "Aflatoxin exposure (HBV synergy)",
+      "Chronic HBV even without cirrhosis (higher risk population)",
+    ],
+    complications: [
+      "Vascular invasion and intrahepatic spread",
+      "Portal vein tumor thrombosis",
+      "Metastasis to lung and bone",
+      "Liver failure and variceal bleeding",
+    ],
+    distinguishFrom: [
+      "Metastatic liver cancer — multiple lesions, known primary elsewhere",
+      "Cholangiocarcinoma — biliary/obstructive pattern, CA 19-9 may be elevated",
+      "Hepatic adenoma — benign, often in young women on OCPs",
+      "Focal nodular hyperplasia — central scar, benign",
+    ],
+    treatment: [
+      "Resection or transplant in early disease within Milan criteria",
+      "Locoregional therapy (ablation, TACE) for intermediate disease",
+      "Systemic therapy for advanced/unresectable HCC",
+      "Treat underlying cirrhosis and continue surveillance if new lesion after treatment",
+    ],
+    boardsPearls: [
+      "HCC usually arises in cirrhosis — screen cirrhotics with ultrasound ± AFP",
+      "HBV increases HCC risk even without advanced fibrosis",
+      "AFP is useful but normal AFP does not exclude HCC",
+      "Arterial hyperenhancement with washout on imaging is classic for HCC",
+    ],
+    pediatrics:
+      "Pediatric primary liver malignancy is usually hepatoblastoma, not HCC; HCC is rare in children except with underlying metabolic or HBV-related chronic liver disease.",
+  },
+  {
+    id: "fatty-liver-disease",
+    name: "Fatty Liver Disease",
+    etymology: "Old English fǣtt = fat + Old English lifer = liver + Latin dis = apart + ease = condition",
+    aliases: [
+      "fatty liver disease",
+      "fatty liver",
+      "hepatic steatosis",
+      "nafld",
+      "nash",
+      "nonalcoholic fatty liver disease",
+      "nonalcoholic steatohepatitis",
+      "mafld",
+      "metabolic dysfunction-associated fatty liver disease",
+      "alcoholic fatty liver disease",
+      "steatosis",
+    ],
+    definition:
+      "Hepatic triglyceride accumulation with or without inflammation and fibrosis, most commonly associated with metabolic syndrome or alcohol use.",
+    pathophysiology:
+      "Insulin resistance and increased free fatty acid delivery → hepatocyte steatosis → lipotoxicity and oxidative stress → steatohepatitis, ballooning degeneration, and progressive fibrosis (NASH) → cirrhosis and HCC risk.",
+    classicPresentation: [
+      "Often asymptomatic with incidentally elevated ALT",
+      "Mild RUQ discomfort in some patients",
+      "Features of metabolic syndrome (obesity, diabetes, dyslipidemia, hypertension)",
+    ],
+    keyFindings: [
+      "Hepatomegaly possible",
+      "Bright liver on ultrasound",
+      "Steatosis on imaging; steatohepatitis requires biopsy for definitive diagnosis",
+    ],
+    keyLabs: [
+      "Mild ↑ ALT > AST (typically <5× normal in NAFLD)",
+      "Evaluate for metabolic syndrome, diabetes, and dyslipidemia",
+      "Exclude viral hepatitis, alcohol excess, hemochromatosis, Wilson disease",
+    ],
+    associations: [
+      "Obesity and type 2 diabetes mellitus",
+      "Metabolic syndrome",
+      "Polycystic ovary syndrome",
+      "Alcohol use (alcoholic steatohepatitis overlap)",
+    ],
+    complications: [
+      "Progressive fibrosis and cirrhosis",
+      "Hepatocellular carcinoma",
+      "Cardiovascular disease (shared metabolic risk)",
+    ],
+    distinguishFrom: [
+      "Alcoholic liver disease — AST:ALT often >2:1, heavy alcohol history",
+      "Chronic viral hepatitis — serologic diagnosis",
+      "Hemochromatosis — ↑ ferritin/transferrin saturation, HFE mutation",
+      "Simple steatosis vs NASH — inflammation/ballooning/fibrosis on biopsy defines steatohepatitis",
+    ],
+    treatment: [
+      "Weight loss and treatment of diabetes/dyslipidemia",
+      "Alcohol abstinence if any alcohol-associated component",
+      "Manage cardiovascular risk factors",
+      "No universally approved disease-modifying drug for all NAFLD/NASH on Step 1 focus — lifestyle is cornerstone",
+    ],
+    boardsPearls: [
+      "NAFLD/NASH linked to metabolic syndrome and insulin resistance",
+      "NASH can progress to cirrhosis and HCC without alcohol",
+      "AST:ALT >2:1 favors alcoholic over NAFLD pattern",
+      "Zone 3 hepatocytes are vulnerable in many toxic/metabolic injuries",
+    ],
+    pediatrics:
+      "Pediatric NAFLD is increasingly common with childhood obesity; evaluate for metabolic syndrome and exclude other liver diseases.",
+  },
+  {
+    id: "rhabdomyolysis",
+    name: "Rhabdomyolysis",
+    etymology: "Greek rhabdos = rod/striated + mys = muscle + -lysis = breakdown",
+    aliases: [
+      "rhabdomyolysis",
+      "rhabdo",
+      "skeletal muscle breakdown",
+      "myoglobinuria from muscle injury",
+    ],
+    definition:
+      "Acute breakdown of skeletal muscle with release of intracellular contents (myoglobin, CK, potassium) into circulation, risking acute kidney injury and electrolyte disturbances.",
+    pathophysiology:
+      "Muscle injury → sarcolemmal disruption → ↑ CK and myoglobin in blood → myoglobin filters in kidneys → tubular obstruction and direct nephrotoxicity → acute tubular necrosis; hyperkalemia and compartment syndrome may coexist.",
+    classicPresentation: [
+      "Muscle pain, weakness, swelling after trauma, exertion, immobilization, or drugs",
+      "Dark or tea-colored urine (myoglobinuria)",
+      "Recent statin use, cocaine/amphetamines, heat stroke, crush injury, or seizure",
+    ],
+    keyFindings: [
+      "Tender, swollen muscles; possible compartment syndrome",
+      "Hypovolemia from third-spacing",
+      "Altered mental status if severe hyperkalemia",
+    ],
+    keyLabs: [
+      "Markedly ↑ CK (often >5× normal, frequently thousands)",
+      "↑ potassium, ↑ phosphate, ↓ calcium (early hypocalcemia)",
+      "↑ creatinine/BUN with muddy brown casts on urinalysis",
+      "Myoglobinuria — positive urine dipstick for blood without RBCs on microscopy",
+    ],
+    associations: [
+      "Crush injury and compartment syndrome",
+      "Statins (especially with fibrates or CYP inhibitors)",
+      "Cocaine, amphetamines, alcohol binge",
+      "Heat stroke, malignant hyperthermia, neuroleptic malignant syndrome",
+      "McArdle disease and other metabolic myopathies with exertion",
+      "Viral myositis (influenza, coxsackie)",
+    ],
+    complications: [
+      "Acute kidney injury",
+      "Hyperkalemia and cardiac arrhythmias",
+      "Compartment syndrome",
+      "Disseminated intravascular coagulation",
+    ],
+    distinguishFrom: [
+      "Myocardial infarction — troponin ↑ with cardiac symptoms; CK-MB pattern differs",
+      "Polymyositis/dermatomyositis — subacute weakness, autoimmune markers, less explosive CK",
+      "Hematuria — RBCs on microscopy; dipstick blood positive with cells",
+      "Hemolysis — ↑ LDH and indirect bilirubin without extreme CK elevation",
+    ],
+    treatment: [
+      "Aggressive IV isotonic fluids (early goal: urine output ~200–300 mL/h in adults)",
+      "Treat hyperkalemia urgently if present",
+      "Stop offending agents; fasciotomy for compartment syndrome",
+      "Dialysis if refractory AKI or severe electrolyte derangements",
+    ],
+    boardsPearls: [
+      "Massive CK ↑ + dark urine + AKI → rhabdomyolysis until proven otherwise",
+      "Urine dipstick detects myoglobin as blood — suspect rhabdo when blood+ but few/no RBCs",
+      "Statins + gemfibrozil or macrolides ↑ myopathy risk",
+      "Fluids are cornerstone to prevent myoglobin precipitation in renal tubules",
+      "Malignant hyperthermia and NMS are classic drug-related precipitants",
+    ],
+    pediatrics:
+      "Viral myositis and inherited metabolic myopathies (McArdle) can cause rhabdomyolysis with exertion; maintain hydration and monitor CK and renal function.",
+  },
+  {
+    id: "ards",
+    name: "Acute Respiratory Distress Syndrome",
+    etymology: "Latin acutus = sudden + respirare = breathe + distrahere = pull apart + syndrome = grouped findings",
+    aliases: [
+      "acute respiratory distress syndrome",
+      "ards",
+      "adult respiratory distress syndrome",
+      "noncardiogenic pulmonary edema",
+      "diffuse alveolar damage",
+      "dad",
+    ],
+    definition:
+      "Acute, diffuse inflammatory lung injury causing severe hypoxemia and bilateral pulmonary infiltrates from increased alveolar-capillary permeability, not primarily from left atrial hypertension.",
+    pathophysiology:
+      "Systemic insult (sepsis, trauma, pancreatitis, aspiration) → diffuse alveolar damage → ↑ capillary permeability → protein-rich edema floods alveoli → surfactant dysfunction and atelectasis → V/Q mismatch and shunt → refractory hypoxemia; fibroproliferative phase may follow in prolonged disease.",
+    classicPresentation: [
+      "Acute dyspnea and hypoxemia within days of precipitating injury",
+      "Bilateral crackles; often requires mechanical ventilation",
+      "Precipitant: sepsis, pneumonia, pancreatitis, trauma, aspiration, transfusion",
+    ],
+    keyFindings: [
+      "Bilateral infiltrates on chest imaging",
+      "Severe hypoxemia with high supplemental O₂ requirement",
+      "No cardiomegaly or elevated BNP pattern of cardiogenic edema",
+      "Reduced lung compliance on ventilation",
+    ],
+    keyLabs: [
+      "PaO₂/FiO₂ ratio <300 mm Hg (Berlin criteria framework)",
+      "Normal or mildly elevated BNP/PCWP if measured (supports noncardiogenic etiology)",
+      "Underlying trigger labs — sepsis cultures, lipase in pancreatitis, etc.",
+    ],
+    associations: [
+      "Sepsis (most common)",
+      "Severe pneumonia and aspiration",
+      "Acute pancreatitis",
+      "Trauma, burns, massive transfusion",
+      "DIC, overdose (salicylates, opioids with pulmonary edema)",
+    ],
+    complications: [
+      "Ventilator-associated pneumonia",
+      "Barotrauma (pneumothorax)",
+      "Multiorgan failure",
+      "Pulmonary fibrosis in prolonged ARDS",
+    ],
+    distinguishFrom: [
+      "Cardiogenic pulmonary edema — JVD, S3, cardiomegaly, ↑ BNP, pulmonary capillary wedge pressure ↑",
+      "Pneumonia alone — may cause ARDS but isolated lobar consolidation without diffuse injury is pneumonia",
+      "Acute bronchitis — no bilateral infiltrates or severe hypoxemia",
+    ],
+    treatment: [
+      "Treat underlying cause (source control in sepsis, etc.)",
+      "Lung-protective mechanical ventilation (low tidal volume ~6 mL/kg PBW, plateau pressure limits)",
+      "Prone positioning in severe hypoxemia",
+      "Conservative fluid strategy once resuscitated",
+    ],
+    boardsPearls: [
+      "Bilateral infiltrates + severe hypoxemia + no CHF → ARDS",
+      "Noncardiogenic = permeability edema; cardiogenic = hydrostatic edema",
+      "PaO₂/FiO₂ <300 defines ARDS severity bands on boards",
+      "Sepsis and pneumonia are top precipitants",
+      "Low tidal volume ventilation improves mortality (ARDSNet paradigm)",
+    ],
+    pediatrics:
+      "Neonatal RDS is surfactant deficiency, not the same entity as adult ARDS; pediatric ARDS follows similar permeability injury from sepsis, pneumonia, or aspiration with lung-protective ventilation principles.",
+  },
+  {
+    id: "vitiligo",
+    name: "Vitiligo",
+    etymology: "Latin vitium = blemish/defect + -igo = condition suffix",
+    aliases: [
+      "vitiligo",
+      "vitiligos",
+      "depigmentation",
+      "autoimmune depigmentation",
+    ],
+    definition:
+      "Acquired autoimmune disorder causing patchy loss of epidermal melanocytes and well-demarcated depigmented macules or patches.",
+    pathophysiology:
+      "Autoimmune attack on melanocytes (CD8+ T cells and autoantibodies) → melanocyte destruction → absence of melanin in affected skin → depigmented patches; may coexist with other autoimmune diseases.",
+    classicPresentation: [
+      "Well-demarcated chalk-white macules or patches",
+      "Periorificial, acral, or generalized distribution",
+      "Often progressive; may follow stress or skin trauma (Koebner phenomenon)",
+      "Usually asymptomatic except cosmetic concern",
+    ],
+    keyFindings: [
+      "Depigmented patches with normal skin texture",
+      "Wood lamp accentuates lesions (if used)",
+      "Perifollicular repigmentation may occur with treatment",
+    ],
+    keyLabs: [
+      "Clinical diagnosis; biopsy rarely needed",
+      "Screen for associated autoimmune disease if clinically suggested (thyroid disease, diabetes, pernicious anemia)",
+      "Negative fungal prep distinguishes from tinea versicolor",
+    ],
+    associations: [
+      "Other autoimmune diseases — Hashimoto thyroiditis, type 1 diabetes, pernicious anemia, alopecia areata",
+      "Family history of autoimmunity",
+      "Melanoma-associated vitiligo can appear with immunotherapy",
+    ],
+    complications: [
+      "Psychosocial impact",
+      "Sunburn risk in depigmented areas",
+      "Ocular or auditory pigment loss in rare segmental variants",
+    ],
+    distinguishFrom: [
+      "Tinea versicolor — fine scale, positive KOH, not fully depigmented",
+      "Pityriasis alba — hypopigmented, not chalk-white, common in atopic children",
+      "Albinism — congenital, global hypomelanin with ocular involvement",
+      "Post-inflammatory hypopigmentation — history of prior inflammation",
+      "Chemical leukoderma — contact with phenols/catechols",
+    ],
+    treatment: [
+      "Topical corticosteroids or calcineurin inhibitors for limited disease",
+      "Narrowband UVB phototherapy for widespread disease",
+      "Sun protection of depigmented skin",
+      "Cosmetic camouflage",
+    ],
+    boardsPearls: [
+      "Autoimmune melanocyte destruction → sharply demarcated depigmented patches",
+      "Associated with thyroid autoimmunity and other autoimmune diseases",
+      "Koebner phenomenon — new lesions at sites of trauma",
+      "vs tinea versicolor — scale and KOH; vs pityriasis alba — mild hypopigmentation in atopic child",
+    ],
+    pediatrics:
+      "Segmental vitiligo in children may stabilize earlier than nonsegmental disease; pityriasis alba is a common hypopigmentation mimic in atopic children.",
+  },
+  {
+    id: "migraine",
+    name: "Migraine",
+    etymology: "Greek hēmikrania = pain on half of the skull → Latin migranea",
+    aliases: [
+      "migraine",
+      "migraines",
+      "migraine headache",
+      "migraine headaches",
+      "migraine with aura",
+      "migraine without aura",
+      "common migraine",
+      "classic migraine",
+    ],
+    definition:
+      "Recurrent primary headache disorder characterized by unilateral or bilateral pulsating headache, often with nausea, photophobia, and phonophobia; may include transient focal neurologic aura.",
+    pathophysiology:
+      "Complex neurovascular disorder: cortical spreading depression may trigger aura; trigeminovascular activation releases CGRP and substance P → meningeal vasodilation and neurogenic inflammation; central sensitization contributes to pain chronification.",
+    classicPresentation: [
+      "Recurrent headaches lasting 4–72 hours",
+      "Unilateral pulsating pain, moderate to severe intensity",
+      "Aggravated by routine physical activity",
+      "Nausea/vomiting, photophobia, phonophobia",
+      "Aura in ~25% — visual (scintillating scotoma), sensory, or language symptoms preceding headache",
+    ],
+    keyFindings: [
+      "Normal neurologic exam between attacks",
+      "Visual aura — fortification spectra, scintillating scotoma",
+      "No fever, papilledema, or thunderclap onset (red flags for secondary headache)",
+    ],
+    keyLabs: [
+      "Clinical diagnosis when typical features and normal exam",
+      "Neuroimaging if atypical features, abnormal exam, or red flags",
+    ],
+    associations: [
+      "Family history of migraine",
+      "Triggers: stress, sleep deprivation, menses, certain foods, hormonal changes",
+      "Patent foramen ovale (association, not causal on boards)",
+      "Increased risk of ischemic stroke in migraine with aura + OCP use (Step 1 context)",
+    ],
+    complications: [
+      "Status migrainosus — prolonged attack >72 h",
+      "Medication-overuse headache with frequent abortive use",
+      "Migrainous infarction (rare)",
+    ],
+    distinguishFrom: [
+      "Tension-type headache — bilateral pressing pain, no nausea/photophobia",
+      "Cluster headache — excruciating unilateral periorbital pain, autonomic symptoms, short attacks",
+      "Subarachnoid hemorrhage — thunderclap maximal-at-onset headache",
+      "Meningitis — fever, neck stiffness",
+      "Brain tumor — progressive headache, focal signs, papilledema",
+    ],
+    treatment: [
+      "Acute (abortive): NSAIDs, acetaminophen, triptans, antiemetics",
+      "Prophylaxis for frequent/disabling attacks: β-blockers, topiramate, amitriptyline, valproate",
+      "Trigger avoidance, sleep hygiene, hydration",
+    ],
+    boardsPearls: [
+      "Pulsating unilateral headache + nausea + photophobia = migraine",
+      "Aura = reversible focal neurologic symptoms before headache (visual most common)",
+      "Triptans are abortive agents — contraindicated in hemiplegic migraine and uncontrolled HTN/CAD",
+      "Migraine prophylaxis: propranolol, topiramate, amitriptyline, valproate",
+      "Red flags (SNOOP): systemic symptoms, neurologic signs, onset sudden, older age, progressive pattern → image",
+    ],
+    pediatrics:
+      "Childhood migraine often bilateral and shorter; abdominal migraine presents with recurrent abdominal pain and nausea. Infant colic is unrelated. Pediatric prophylaxis considered when school absence is significant.",
   },
 ];
 

@@ -77,6 +77,168 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     pediatrics:
       "Toddlers with ToF may assume squatting during play to relieve cyanosis — pathognomonic behavior on boards.",
   },
+  {
+    id: "valsalva-maneuver",
+    name: "Valsalva Maneuver",
+    etymology: "eponym: Antonio Maria Valsalva + maneuver = deliberate physical action",
+    aliases: [
+      "valsalva",
+      "valsalva maneuver",
+      "valsalva manoeuvre",
+      "valsalva strain",
+      "bearing down",
+      "forced expiration against closed glottis",
+    ],
+    definition:
+      "Physiologic maneuver of forced expiration against a closed glottis (straining/bearing down), transiently raising intrathoracic and intra-abdominal pressure and altering venous return and cardiac murmur intensity.",
+    details: [
+      "Phase 1: ↑ intrathoracic pressure → brief ↑ arterial pressure",
+      "Phase 2: ↓ venous return → ↓ preload → ↓ stroke volume → ↓ blood pressure",
+      "Phase 3: further ↓ pressure as strain continues",
+      "Phase 4: release → venous return surges → reflex ↑ heart rate and blood pressure",
+      "Used clinically to accentuate or diminish heart murmurs and in autonomic testing",
+    ],
+    boardsPearls: [
+      "Valsalva ↓ preload (↓ venous return) — key for murmur differentiation",
+      "HOCM murmur ↑ with Valsalva and standing (↓ preload worsens LVOT obstruction)",
+      "Aortic stenosis murmur ↓ with Valsalva (less stroke volume across stenotic valve)",
+      "Most other murmurs (MR, VSD, AR) ↓ with Valsalva because ↓ preload",
+      "Squatting ↑ preload — opposite effect; HOCM murmur ↓ with squatting",
+      "Prolonged Valsalva during labor, heavy lifting, or defecation can provoke syncope",
+      "Used in autonomic testing — abnormal HR/BP response suggests dysautonomia",
+    ],
+    pediatrics:
+      "Same hemodynamic principles apply; HOCM and ToF boards questions use squatting vs Valsalva/standing as opposing maneuvers.",
+  },
+  {
+    id: "titrate",
+    name: "Titrate",
+    etymology: "Latin titulus = measured mark → titrate = adjust in measured steps",
+    aliases: [
+      "titrate",
+      "titrates",
+      "titrating",
+      "titrated",
+      "titration",
+      "dose titration",
+      "dose titrate",
+      "titrate dose",
+      "titrate medication",
+    ],
+    definition:
+      "Incremental adjustment of medication dose (or infusion rate) based on clinical response, vital signs, or laboratory targets until efficacy is achieved without unacceptable toxicity.",
+    details: [
+      "Start low (or weight-based loading when indicated), then increase or decrease in stepwise fashion",
+      "Recheck interval depends on drug half-life and risk (e.g., levothyroxine every 6–8 weeks; insulin daily)",
+      "Used when therapeutic window is narrow or response is highly individual",
+      "Opposite of fixed one-size dose when patient factors dominate (renal function, weight, sensitivity)",
+    ],
+    boardsPearls: [
+      "Titrate levothyroxine to normalize TSH in hypothyroidism",
+      "Titrate warfarin to target INR; bridge with heparin when initiating",
+      "Titrate insulin to glucose targets in diabetes",
+      "Titrate diuretics in heart failure to euvolemia without hypotension or renal injury",
+      "vs titer — titrate = adjust dose; titer = antibody dilution endpoint on serology",
+      "Start low, go slow for drugs with delayed steady state (levothyroxine, amiodarone)",
+    ],
+    pediatrics:
+      "Pediatric dosing is weight-based and often titrated (levothyroxine in congenital hypothyroidism, insulin in type 1 diabetes); growth and puberty change requirements over time.",
+  },
+  {
+    id: "migraine-prophylaxis",
+    name: "Migraine prophylaxis",
+    etymology: "Greek hēmi = half + kranion = skull (migraine) + Greek prophylaxis = guard before",
+    aliases: [
+      "migraine prophylaxis",
+      "migraine prevention",
+      "preventive migraine therapy",
+      "migraine prophylactic therapy",
+      "prophylactic migraine treatment",
+    ],
+    definition:
+      "Preventive pharmacologic strategy to reduce migraine attack frequency, severity, and disability in patients with recurrent or disabling migraines — distinct from abortive (acute) treatment.",
+    details: [
+      "Indicated when migraines are frequent (often ≥4 headache days/month), prolonged, or cause significant disability despite abortive therapy",
+      "First-line agents (Step 1 favorites): β-blockers (propranolol, metoprolol), anticonvulsants (topiramate, valproate), tricyclic antidepressants (amitriptyline)",
+      "Other options: calcium channel blockers (verapamil for cluster overlap; less first-line for migraine), CGRP monoclonal antibodies (more Step 2/3 detail)",
+      "Requires weeks of daily dosing before benefit; continue 3–6 months after good control before taper trial",
+      "Avoid β-blockers in asthma/COPD (use cardioselective agents cautiously or choose non-β-blocker); valproate teratogenic — avoid in pregnancy",
+      "Lifestyle: sleep regularity, hydration, trigger avoidance complement pharmacotherapy",
+    ],
+    boardsPearls: [
+      "Prophylaxis = daily prevention; abortive = treat acute attack (triptans, NSAIDs, antiemetics)",
+      "Propranolol, topiramate, amitriptyline, valproate — classic migraine prophylaxis list",
+      "β-blocker side effects: bradycardia, bronchospasm, fatigue, masked hypoglycemia",
+      "Topiramate: weight loss, paresthesias, cognitive slowing; teratogenic risk",
+      "Do not use triptans for prophylaxis — they are acute abortive agents",
+    ],
+    pediatrics:
+      "Pediatric migraine prophylaxis uses weight-based topiramate, propranolol, or amitriptyline when attacks are frequent/disabling; behavioral therapy and lifestyle measures are first-line in many children before daily medication.",
+  },
+  {
+    id: "fundal-height",
+    name: "Fundal Height",
+    etymology: "Latin fundus = bottom/base (uterine top) + Old English hiehthu = height",
+    aliases: [
+      "fundal height",
+      "fundal heights",
+      "uterine fundal height",
+      "symphysis-fundal height",
+      "sfh",
+    ],
+    definition:
+      "Clinical measurement from the superior border of the symphysis pubis to the uterine fundus with a tape measure; used to estimate gestational age and screen for abnormal fetal growth or amniotic fluid volume.",
+    details: [
+      "Measured with patient supine, bladder empty, uterus not contracted",
+      "After ~12–14 weeks the uterus rises out of the pelvis; fundal height becomes clinically useful",
+      "From ~20 to 36 weeks gestation: fundal height in centimeters approximates gestational age in weeks (±2–3 cm)",
+      "Fundal height below dates → IUGR, oligohydramnios, fetal anomaly, wrong dates",
+      "Fundal height above dates → macrosomia, polyhydramnios, multifetal pregnancy, wrong dates",
+      "Less reliable with obesity, fibroids, fetal malposition, or hydramnios",
+    ],
+    boardsPearls: [
+      "SFH in cm ≈ gestational weeks (20–36 weeks) — classic boards approximation",
+      "Small for dates → consider IUGR, oligohydramnios (Potter sequence association), chromosomal abnormality",
+      "Large for dates → gestational diabetes/macrosomia, polyhydramnios (e.g., fetal GI atresia, diabetes, anencephaly with open neural tube)",
+      "Confirm discrepancies with ultrasound biometry and amniotic fluid index",
+      "vs abdominal girth — fundal height is symphysis-to-fundus linear measure, not abdominal circumference",
+    ],
+    pediatrics:
+      "Fundal height tracks in utero fetal growth; after birth, length/weight/head circumference percentiles replace SFH for growth monitoring.",
+  },
+  {
+    id: "glycemic-control",
+    name: "Glycemic Control",
+    etymology: "Greek glykys = sweet + haima = blood + Latin control = restraint/regulation",
+    aliases: [
+      "glycemic control",
+      "glycaemic control",
+      "blood glucose control",
+      "glucose control",
+      "tight glycemic control",
+      "glycemic management",
+    ],
+    definition:
+      "Therapeutic strategy to maintain blood glucose near normal range in diabetes mellitus, reducing acute hyperglycemic complications and long-term microvascular and macrovascular injury.",
+    details: [
+      "Monitored with self-glucose checks, continuous glucose monitoring, and HbA1c (~3-month average glycemia)",
+      "Type 1 DM: insulin replacement (basal-bolus or pump) matched to carbohydrate intake and activity",
+      "Type 2 DM: lifestyle (diet, exercise, weight loss) plus metformin first-line; add agents per comorbidities (SGLT2i/GLP-1 for CV/renal benefit)",
+      "Targets individualized — tighter control in younger patients with short disease duration; less strict in elderly, hypoglycemia-prone, or limited life expectancy",
+      "Intensive control delays diabetic nephropathy, retinopathy, and neuropathy but raises hypoglycemia risk",
+    ],
+    boardsPearls: [
+      "HbA1c reflects ~120-day average glucose; goal often <7% in many adults but individualize",
+      "Microalbuminuria signals early diabetic nephropathy — glycemic and BP control are renoprotective",
+      "Metformin first-line in T2DM; insulin required in T1DM and advanced T2DM",
+      "SGLT2 inhibitors and GLP-1 agonists improve outcomes beyond glucose lowering alone",
+      "DKA/hypoglycemia are acute risks of poor vs overly aggressive control",
+      "vs glycemic monitoring alone — control implies active therapy adjustment, not just measurement",
+      "vs lipid/BP control — parallel CV risk reduction, distinct glucose targets",
+    ],
+    pediatrics:
+      "Pediatric T1DM targets slightly higher A1c than adults to limit hypoglycemia-related neurocognitive harm; family-centered insulin regimens and carbohydrate counting are core.",
+  },
 ];
 
 const strategyById = new Map(
