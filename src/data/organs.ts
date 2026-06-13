@@ -8,6 +8,7 @@ export interface OrganEntry {
   derivatives?: string[];
   functionSummary?: string;
   commonPathologies?: string[];
+  cancerMetastasis?: string[];
   step1Pearls?: string[];
   pediatrics?: string;
 }
@@ -108,6 +109,21 @@ export const ORGANS: OrganEntry[] = [
     derivatives: ["Waldeyer ring lymphoid tissue", "Tonsils", "Passageway shared by respiratory and digestive tracts"],
   },
   {
+    id: "nasopharynx",
+    name: "Nasopharynx",
+    etymology: "Latin nasus = nose + Greek pharynx = throat",
+    aliases: [
+      "nasopharynx",
+      "nasopharyngeal",
+      "postnasal space",
+      "nasopharyngeal space",
+    ],
+    germLayer: "Endoderm / Mesoderm",
+    origin:
+      "Cranialmost pharyngeal segment from foregut endoderm at the junction of nasal cavity and oropharynx; surrounded by pharyngeal arch mesenchyme; contains pharyngeal tonsil (adenoid) and Eustachian tube openings.",
+    derivatives: ["Pharyngeal tonsil (adenoids)", "Eustachian tube orifices", "Fossa of Rosenmüller"],
+  },
+  {
     id: "trachea",
     name: "Trachea",
     etymology: "Greek trachys = rough",
@@ -152,6 +168,40 @@ export const ORGANS: OrganEntry[] = [
     origin:
       "Foregut endoderm dilates and rotates; greater and lesser curvatures form during 90° clockwise rotation.",
     derivatives: ["Fundus", "Body", "Pylorus"],
+  },
+  {
+    id: "omentum",
+    name: "Omentum",
+    etymology: "Latin omentum = fatty membrane/apron",
+    aliases: [
+      "omentum",
+      "omenta",
+      "greater omentum",
+      "lesser omentum",
+      "gastrocolic omentum",
+      "omental",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Greater omentum from dorsal mesogastrium (dorsal stomach mesentery); lesser omentum from ventral mesentery between liver and lesser curvature of stomach and duodenum.",
+    derivatives: ["Greater omentum (apron over intestines)", "Lesser omentum (hepatogastric and hepatoduodenal ligaments)"],
+  },
+  {
+    id: "peritoneum",
+    name: "Peritoneum",
+    etymology: "Greek peri = around + teinein = to stretch + -um = membrane",
+    aliases: [
+      "peritoneum",
+      "peritoneal",
+      "parietal peritoneum",
+      "visceral peritoneum",
+      "peritoneal cavity",
+      "peritoneal lining",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Coelomic epithelium (mesoderm) lining the embryonic body cavity; parietal layer lines abdominal wall; visceral layer (serosa) covers intraperitoneal organs.",
+    derivatives: ["Parietal peritoneum", "Visceral peritoneum (serosa)", "Mesenteries and omenta"],
   },
   {
     id: "intestines",
@@ -312,6 +362,27 @@ export const ORGANS: OrganEntry[] = [
       "Cystic diverticulum from the hepatic diverticulum of ventral foregut endoderm.",
   },
   {
+    id: "bile-duct",
+    name: "Bile Duct",
+    etymology: "Latin bilis = bile + Latin ductus = channel",
+    aliases: [
+      "bile duct",
+      "bile ducts",
+      "biliary tree",
+      "biliary tract",
+      "common bile duct",
+      "cbd",
+      "extrahepatic bile duct",
+      "common hepatic duct",
+      "hepatic duct",
+      "hepatic ducts",
+    ],
+    germLayer: "Endoderm",
+    origin:
+      "Hepatic diverticulum endoderm forms intrahepatic bile ductules (Canals of Hering → bile ductules → interlobular ducts); extrahepatic tree from hepatic duct confluence, cystic duct, and common bile duct draining to duodenal ampulla of Vater.",
+    derivatives: ["Right and left hepatic ducts", "Common hepatic duct", "Cystic duct", "Common bile duct"],
+  },
+  {
     id: "pancreas",
     name: "Pancreas",
     etymology: "Greek pan = all + kreas = flesh",
@@ -339,6 +410,26 @@ export const ORGANS: OrganEntry[] = [
     origin:
       "Definitive kidney from metanephros (ureteric bud + metanephric mesenchyme); intermediate mesoderm origin.",
     derivatives: ["Glomerulus", "Tubules", "Collecting system"],
+  },
+  {
+    id: "renal-artery",
+    name: "Renal Artery",
+    etymology: "Latin ren = kidney + Greek arteria = air-holder/artery",
+    aliases: [
+      "renal artery",
+      "renal arteries",
+      "renal arterial",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Lateral sacral branches of abdominal aorta arise at L1–L2; renal arteries enter the renal hilum and divide into segmental → interlobar → arcuate → interlobular arteries supplying nephrons; afferent arterioles branch from interlobular arteries to glomeruli.",
+    derivatives: [
+      "Segmental arteries",
+      "Interlobar arteries",
+      "Arcuate arteries",
+      "Interlobular arteries",
+      "Afferent arterioles",
+    ],
   },
   {
     id: "metanephros",
@@ -410,6 +501,20 @@ export const ORGANS: OrganEntry[] = [
       "Urogenital sinus endoderm; grows around the urethra under influence of dihydrotestosterone.",
   },
   {
+    id: "seminal-vesicles",
+    name: "Seminal Vesicles",
+    etymology: "Latin semen = seed + vesica = bladder/pouch",
+    aliases: [
+      "seminal vesicle",
+      "seminal vesicles",
+      "seminal vesicle gland",
+      "seminal vesicle glands",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Paired outpouchings of the mesonephric (Wolffian) duct under androgen influence; contribute secretions to seminal fluid and drain into ejaculatory ducts.",
+  },
+  {
     id: "testis",
     name: "Testis",
     etymology: "Latin testis = witness",
@@ -460,6 +565,43 @@ export const ORGANS: OrganEntry[] = [
       "Paramesonephric (Müllerian) duct fuses to form uterus; caudal ends form cervix and upper vagina.",
   },
   {
+    id: "endometrium",
+    name: "Endometrium",
+    etymology: "Greek endon = within + metra = uterus",
+    aliases: [
+      "endometrium",
+      "endometrial",
+      "uterine lining",
+      "endometrial lining",
+      "endometrial tissue",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Inner glandular mucosal lining of the fused paramesonephric (Müllerian) ducts forming the uterine cavity; basalis and functional layers cycle under ovarian estrogen and progesterone.",
+    derivatives: ["Basalis layer", "Functional layer", "Spiral arteries", "Decidua (in pregnancy)"],
+  },
+  {
+    id: "cervix",
+    name: "Cervix",
+    etymology: "Latin cervix = neck",
+    aliases: [
+      "cervix",
+      "cervical",
+      "cervix uteri",
+      "uterine cervix",
+      "cervix of uterus",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Caudal fused portion of paramesonephric (Müllerian) ducts forms the cervix; ectocervix lined by stratified squamous epithelium, endocervix by columnar epithelium; squamocolumnar junction (transformation zone) is the site of HPV-related neoplasia.",
+    derivatives: [
+      "Ectocervix (squamous epithelium)",
+      "Endocervix (columnar epithelium)",
+      "Transformation zone",
+      "Cervical stroma",
+    ],
+  },
+  {
     id: "fallopian-tube",
     name: "Fallopian Tube",
     etymology: "eponym: Gabriele Falloppio + Latin tubus = pipe",
@@ -476,6 +618,42 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Mesoderm / Endoderm",
     origin:
       "Upper vagina from Müllerian duct; lower vagina from urogenital sinus (sinovaginal bulbs).",
+  },
+  {
+    id: "vulva",
+    name: "Vulva",
+    etymology: "Latin vulva = wrapper/covering",
+    aliases: [
+      "vulva",
+      "vulvar",
+      "vulval",
+      "labia",
+      "labia majora",
+      "labia minora",
+      "external female genitalia",
+    ],
+    germLayer: "Ectoderm / Mesoderm",
+    origin:
+      "External genitalia from genital tubercle (clitoris), urogenital folds (labia minora/urethral/ vaginal vestibule), and labioscrotal swellings (labia majora) under estrogen influence in female fetus.",
+    derivatives: ["Labia majora", "Labia minora", "Clitoris", "Vestibule", "Bartholin glands"],
+  },
+  {
+    id: "breast",
+    name: "Breast",
+    etymology: "Old English breost = breast + Latin mamma = breast",
+    aliases: [
+      "breast",
+      "breasts",
+      "mammary gland",
+      "mammary glands",
+      "mammary tissue",
+      "mamma",
+      "mammary",
+    ],
+    germLayer: "Ectoderm / Mesoderm",
+    origin:
+      "Mammary glands develop along mammary ridges (milk lines) from ectodermal placodes invaginating into underlying mesenchyme; nipple and areola from surface ectoderm; glandular tissue branches from ectodermal epithelial buds.",
+    derivatives: ["Lobules and ducts", "Nipple and areola", "Lactiferous ducts"],
   },
   {
     id: "thyroid",
@@ -673,6 +851,23 @@ export const ORGANS: OrganEntry[] = [
       "Outpocketing of diencephalon (optic vesicle → optic cup); neuroectoderm forms neural retina.",
   },
   {
+    id: "uvea",
+    name: "Uvea",
+    etymology: "Latin uva = grape (grape-like appearance of iris folds)",
+    aliases: [
+      "uvea",
+      "uveal",
+      "uveal tract",
+      "uveal layer",
+      "choroid",
+      "ciliary body",
+    ],
+    germLayer: "Mesoderm / Neural crest",
+    origin:
+      "Middle vascular pigmented coat of the eye derived from periocular mesenchyme (neural crest and mesoderm) surrounding the optic cup; comprises iris (anterior), ciliary body, and choroid (posterior).",
+    derivatives: ["Iris", "Ciliary body", "Choroid"],
+  },
+  {
     id: "lens",
     name: "Lens",
     etymology: "Latin lens = lentil-shaped glass",
@@ -819,6 +1014,20 @@ export const ORGANS: OrganEntry[] = [
       "Endodermal bud from floor of mouth (oral cavity endoderm).",
   },
   {
+    id: "sublingual-gland",
+    name: "Sublingual Gland",
+    etymology: "Latin sub = under + lingua = tongue + Latin glans = acorn/gland",
+    aliases: [
+      "sublingual gland",
+      "sublingual glands",
+      "sublingual salivary gland",
+      "sublingual salivary glands",
+    ],
+    germLayer: "Endoderm",
+    origin:
+      "Smallest major salivary gland; endodermal buds from floor of mouth (sublingual folds) lateral to submandibular duct; predominantly mucous acini.",
+  },
+  {
     id: "suprarenal",
     name: "Suprarenal Gland",
     etymology: "Latin supra = above + renal = kidney + Latin glans = acorn/gland",
@@ -916,7 +1125,7 @@ export const ORGANS: OrganEntry[] = [
 
 const ORGAN_DETAILS: Record<
   string,
-  Pick<OrganEntry, "functionSummary" | "commonPathologies" | "step1Pearls" | "pediatrics">
+  Pick<OrganEntry, "functionSummary" | "commonPathologies" | "cancerMetastasis" | "step1Pearls" | "pediatrics">
 > = {
   heart: {
     functionSummary: "Pumps blood through pulmonary and systemic circuits; coordinated electrical conduction produces effective cardiac output.",
@@ -974,6 +1183,17 @@ const ORGAN_DETAILS: Record<
     step1Pearls: ["Shared airway and food passage — swallowing reflex protects airway", "Group A strep pharyngitis can trigger rheumatic fever or PSGN", "Posterior pharynx lesions suggest enteroviral herpangina or HSV distribution patterns"],
     pediatrics: "Strep pharyngitis and viral pharyngitis are common in children; peritonsillar abscess presents with trismus and uvular deviation.",
   },
+  nasopharynx: {
+    functionSummary: "Superior pharyngeal segment connecting nasal cavity to oropharynx; conducts air, drains middle ear via Eustachian tubes, and hosts adenoidal lymphoid tissue.",
+    commonPathologies: ["Nasopharyngeal carcinoma", "Adenoid hypertrophy", "Otitis media with effusion", "Juvenile nasopharyngeal angiofibroma"],
+    step1Pearls: [
+      "EBV-associated undifferentiated nasopharyngeal carcinoma — Asian/endemic epidemiology; biopsy shows syncytial cells with lymphoid stroma",
+      "Fossa of Rosenmüller is common site of origin",
+      "Eustachian tube dysfunction → serous otitis media",
+      "Juvenile nasopharyngeal angiofibroma — adolescent male epistaxis/obstruction",
+    ],
+    pediatrics: "Adenoid hypertrophy causes mouth breathing, snoring, and otitis media with effusion; juvenile nasopharyngeal angiofibroma occurs in adolescent males.",
+  },
   trachea: {
     functionSummary: "Conducts air from larynx to bronchi; ciliated mucosa clears particles upward.",
     commonPathologies: ["Tracheoesophageal fistula", "Tracheomalacia", "Foreign body obstruction", "Tracheitis"],
@@ -1001,6 +1221,28 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Peptic ulcer disease", "Gastritis", "Gastric adenocarcinoma", "GIST", "Hypertrophic pyloric stenosis"],
     step1Pearls: ["Parietal cells secrete HCl and intrinsic factor", "H. pylori increases ulcers and gastric cancer risk", "Pernicious anemia targets parietal cells/intrinsic factor"],
     pediatrics: "Projectile nonbilious vomiting at 2-8 weeks suggests hypertrophic pyloric stenosis.",
+  },
+  omentum: {
+    functionSummary: "Peritoneal fold that stores fat, cushions abdominal organs, and contributes to immune surveillance and wound sealing (greater omentum wraps injured viscera).",
+    commonPathologies: ["Omental infarction", "Omental cake (omental metastases)", "Omental torsion", "Greater omentum adhesion after surgery"],
+    step1Pearls: [
+      "Greater omentum — apron from greater curvature of stomach; transverse colon suspended within it",
+      "Lesser omentum — hepatogastric and hepatoduodenal ligaments (portal triad in free edge)",
+      "Omental metastases — gastric and ovarian carcinoma seeding (omental cake)",
+      "Greater omentum can wall off perforated viscus",
+    ],
+    pediatrics: "Primary omental torsion is rare in children but can mimic appendicitis with focal pain.",
+  },
+  peritoneum: {
+    functionSummary: "Serous membrane lining the abdominal cavity and covering viscera; produces lubricating fluid and forms mesenteries, omenta, and ligaments.",
+    commonPathologies: ["Peritonitis", "Ascites", "Peritoneal carcinomatosis", "Mesenteric ischemia", "Adhesions"],
+    step1Pearls: [
+      "Parietal peritoneum — somatic innervation (sharp localized pain)",
+      "Visceral peritoneum — autonomic innervation (dull referred pain)",
+      "Transcoelomic spread — ovarian and gastric cancers seed peritoneum without hematogenous route",
+      "Retroperitoneal organs (kidney, pancreas head, duodenum) have adventitia not serosa",
+    ],
+    pediatrics: "Meckel diverticulum and appendicitis cause peritonitis when perforated; neonatal peritonitis may follow necrotizing enterocolitis.",
   },
   intestines: {
     functionSummary: "Digest and absorb nutrients, water, and electrolytes; host microbiome; mucosal immunity and endocrine signaling (GLP-1, secretin, CCK).",
@@ -1083,6 +1325,17 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Cholelithiasis", "Acute cholecystitis", "Choledocholithiasis", "Gallstone pancreatitis"],
     step1Pearls: ["Cholesterol stones are radiolucent; pigment stones occur with hemolysis/infection", "RUQ pain after fatty meals points to biliary colic", "Porcelain gallbladder increases carcinoma risk"],
   },
+  "bile-duct": {
+    functionSummary: "Conducts bile from liver and gallbladder to duodenum; intrahepatic and extrahepatic ducts enable digestion and bilirubin excretion.",
+    commonPathologies: ["Choledocholithiasis", "Cholangiocarcinoma", "Primary sclerosing cholangitis", "Biliary atresia", "Caroli disease"],
+    step1Pearls: [
+      "Cholangiocarcinoma — painless jaundice, dilated intrahepatic ducts; associated with PSC and liver flukes",
+      "Common bile duct joins pancreatic duct at ampulla of Vater (Sphincter of Oddi)",
+      "Biliary atresia — neonatal conjugated hyperbilirubinemia; absent/obliterated extrahepatic ducts",
+      "Courvoisier sign — palpable non-tender gallbladder + jaundice suggests malignant distal obstruction",
+    ],
+    pediatrics: "Biliary atresia presents with persistent neonatal jaundice and acholic stools; requires Kasai portoenterostomy or transplant.",
+  },
   pancreas: {
     functionSummary: "Secretes digestive enzymes/bicarbonate and endocrine hormones insulin, glucagon, somatostatin, and pancreatic polypeptide.",
     commonPathologies: ["Acute pancreatitis", "Pancreatic adenocarcinoma", "Diabetes mellitus", "Cystic fibrosis pancreatic insufficiency", "Insulinoma"],
@@ -1098,6 +1351,25 @@ const ORGAN_DETAILS: Record<
     functionSummary: "Filters plasma, regulates electrolytes/acid-base/volume, secretes renin and EPO, activates vitamin D.",
     commonPathologies: ["Acute kidney injury", "Glomerulonephritis", "Nephrotic syndrome", "Pyelonephritis", "Polycystic kidney disease"],
     step1Pearls: ["Juxtaglomerular cells release renin", "PCT reabsorbs most filtered Na/water/glucose/amino acids", "Podocyte injury drives proteinuria"],
+  },
+  "renal-artery": {
+    functionSummary: "Delivers ~20–25% of cardiac output to kidneys; perfusion pressure drives GFR and oxygen delivery to renal parenchyma.",
+    commonPathologies: [
+      "Renal artery stenosis (atherosclerosis, fibromuscular dysplasia)",
+      "Renal infarction",
+      "Renal artery aneurysm",
+      "Accessory renal arteries",
+    ],
+    step1Pearls: [
+      "Renal arteries branch from abdominal aorta just below SMA",
+      "Afferent arteriole dilation (prostaglandins) maintains GFR in hypoperfusion — NSAIDs block this",
+      "Renal artery stenosis → ↓ perfusion → ↑ renin → secondary hyperaldosteronism and hypertension",
+      "Abdominal bruit + resistant HTN in young woman → fibromuscular dysplasia",
+      "ACE inhibitors contraindicated in bilateral renal artery stenosis — precipitate acute renal failure",
+      "Segmental artery occlusion can cause wedge-shaped renal infarct",
+    ],
+    pediatrics:
+      "Fibromuscular dysplasia can present in adolescents/young adults; congenital accessory renal arteries are common and relevant in transplant donor surgery.",
   },
   metanephros: {
     functionSummary: "Embryonic definitive kidney primordium formed by reciprocal induction between ureteric bud and metanephric mesenchyme.",
@@ -1142,6 +1414,17 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Benign prostatic hyperplasia", "Prostate adenocarcinoma", "Prostatitis"],
     step1Pearls: ["BPH arises in periurethral transition zone; cancer often posterior peripheral zone", "PSA is prostate kallikrein; increased in cancer, BPH, prostatitis"],
   },
+  "seminal-vesicles": {
+    functionSummary: "Paired glands secreting fructose-rich alkaline fluid into ejaculatory ducts; contribute ~60–70% of semen volume and nourish sperm.",
+    commonPathologies: ["Congenital absence (CBAVD/CF)", "Seminal vesicle cyst", "Infection with prostatitis", "Invasion by prostate adenocarcinoma"],
+    step1Pearls: [
+      "Wolffian (mesonephric) duct derivative — develops under testosterone",
+      "Fructose in semen reflects seminal vesicle contribution; absent in CBAVD/cystic fibrosis",
+      "Prostate cancer locally invades seminal vesicles — upstages disease",
+      "Homologous embryologically to uterus/prostate glandular tissue (Müllerian vs Wolffian)",
+    ],
+    pediatrics: "Congenital bilateral absence of vas deferens and seminal vesicles occurs in cystic fibrosis; infertility workup may be first presentation in adolescence.",
+  },
   testis: {
     functionSummary: "Produces sperm in seminiferous tubules and testosterone from Leydig cells.",
     commonPathologies: ["Testicular torsion", "Germ cell tumors", "Cryptorchidism", "Orchitis", "Varicocele-related infertility"],
@@ -1163,6 +1446,37 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Leiomyomas", "Endometrial hyperplasia/carcinoma", "Adenomyosis", "Endometritis", "Müllerian anomalies"],
     step1Pearls: ["Unopposed estrogen drives endometrial hyperplasia", "Fibroids are estrogen-sensitive benign smooth muscle tumors", "Adenomyosis = endometrial glands in myometrium"],
   },
+  endometrium: {
+    functionSummary: "Inner glandular lining of uterine cavity; cycles through proliferative and secretory phases and is the site of implantation.",
+    commonPathologies: ["Endometrial hyperplasia", "Endometrial adenocarcinoma", "Endometritis", "Asherman syndrome", "Endometriosis (ectopic)"],
+    step1Pearls: [
+      "Type I endometrial cancer — estrogen-driven, PTEN loss, better prognosis",
+      "Type II — p53-associated, serous/clear cell, poor prognosis, not always hyperplastic precursor",
+      "Tamoxifen is estrogen agonist in endometrium → hyperplasia/cancer risk",
+      "Proliferative (estrogen) vs secretory (progesterone) histology on biopsy",
+    ],
+    pediatrics: "Neonatal withdrawal bleeding is benign; endometrium matures with pubertal estrogen before menarche.",
+  },
+  cervix: {
+    functionSummary: "Fibromuscular canal between uterine cavity and vagina; produces mucus that varies with estrogen/progesterone and forms a mucus plug in pregnancy.",
+    commonPathologies: [
+      "Cervical intraepithelial neoplasia (CIN)",
+      "Cervical squamous cell carcinoma",
+      "Cervicitis (Chlamydia, gonorrhea)",
+      "Cervical ectropion/ectopy",
+      "Cervical insufficiency",
+      "Cervical polyp",
+    ],
+    step1Pearls: [
+      "Transformation zone (squamocolumnar junction) is target of HPV-related dysplasia and Pap screening",
+      "HPV-16 and HPV-18 are high-risk types → CIN → invasive SCC",
+      "Pap smear samples exfoliated cells from transformation zone",
+      "Friable cervix + postcoital bleeding → cervical cancer until proven otherwise",
+      "Cervical incompetence → painless second-trimester dilation and pregnancy loss",
+    ],
+    pediatrics:
+      "Clear cell adenocarcinoma of cervix/vagina linked to in utero DES exposure in adolescent/young women; routine HPV vaccination prevents high-risk HPV infection before sexual debut.",
+  },
   "fallopian-tube": {
     functionSummary: "Captures ovulated oocyte, supports fertilization, and transports embryo to uterus.",
     commonPathologies: ["Ectopic pregnancy", "Salpingitis/PID", "Hydrosalpinx", "High-grade serous carcinoma origin"],
@@ -1172,6 +1486,28 @@ const ORGAN_DETAILS: Record<
     functionSummary: "Fibromuscular canal for intercourse, menstrual flow, and childbirth; acidic microbiome protects against infection.",
     commonPathologies: ["Vaginitis", "Bacterial vaginosis", "Candida", "Trichomoniasis", "Vaginal atresia"],
     step1Pearls: ["Lactobacilli produce lactic acid", "BV has clue cells and fishy odor", "Candida causes thick white discharge with pseudohyphae"],
+  },
+  vulva: {
+    functionSummary: "External female genitalia including labia, clitoris, and vestibule; protects urethral and vaginal openings and contains Bartholin glands.",
+    commonPathologies: ["Vulvar lichen sclerosus", "Vulvar intraepithelial neoplasia (VIN)", "Vulvar squamous cell carcinoma", "Bartholin gland cyst/abscess", "Contact dermatitis"],
+    step1Pearls: [
+      "HPV-related VIN and SCC — smoking and immunosuppression increase risk",
+      "Lichen sclerosus — white atrophic plaques; long-term SCC risk",
+      "Inguinal lymph node drainage for lateral vulva; midline lesions may drain bilaterally",
+      "vs cervical cancer — different lymphatic drainage and HPV subtype patterns",
+    ],
+    pediatrics: "Labial adhesions are common in prepubertal girls; ambiguous genitalia evaluation includes vulvar anatomy and CAH screening.",
+  },
+  breast: {
+    functionSummary: "Modified sweat gland producing milk; hormonally responsive ductal-lobular tissue in superficial fascia of anterior chest.",
+    commonPathologies: ["Fibrocystic change", "Fibroadenoma", "Breast cancer", "Mastitis", "Gynecomastia"],
+    step1Pearls: [
+      "Invasive ductal carcinoma is most common type",
+      "ER/PR/HER2 status guides therapy; triple-negative often BRCA1-associated",
+      "Peau d'orange — dermal lymphatic obstruction by carcinoma",
+      "BRCA1/2 — hereditary breast and ovarian cancer syndrome",
+    ],
+    pediatrics: "Pediatric breast masses are usually fibroadenoma; breast cancer is extremely rare in children/adolescents.",
   },
   thyroid: {
     functionSummary: "Produces T3/T4 to regulate metabolism and calcitonin from C cells to lower calcium.",
@@ -1301,6 +1637,17 @@ const ORGAN_DETAILS: Record<
     step1Pearls: ["Rods handle night/peripheral vision; cones handle color/acuity", "Central retinal artery occlusion causes cherry-red spot", "Vitamin A deficiency causes night blindness"],
     pediatrics: "Retinoblastoma presents with leukocoria; mutation of both RB alleles is classic.",
   },
+  uvea: {
+    functionSummary: "Vascular pigmented middle coat of the eye (iris, ciliary body, choroid); supplies nutrition to outer retina and controls pupil/accommodation.",
+    commonPathologies: ["Uveitis", "Uveal melanoma", "Choroidal melanoma", "Choroidal metastasis", "Sympathetic ophthalmia"],
+    step1Pearls: [
+      "Uveal melanoma — most common primary intraocular malignancy in adults",
+      "Classic hematogenous spread to liver (not regional nodes)",
+      "Choroid is thickest posteriorly — common site of uveal melanoma",
+      "vs retinoblastoma — pediatric, white pupillary reflex, not uveal melanoma",
+    ],
+    pediatrics: "Retinoblastoma arises from retina, not uvea; uveal melanoma is primarily an adult tumor.",
+  },
   lens: {
     functionSummary: "Focuses light onto retina by changing shape during accommodation.",
     commonPathologies: ["Cataracts", "Ectopia lentis", "Presbyopia"],
@@ -1394,6 +1741,17 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Sialolithiasis", "Sialadenitis", "Sjogren syndrome"],
     step1Pearls: ["Wharton duct stones are common due to uphill flow and viscous saliva", "Parasympathetic input from CN VII via chorda tympani/submandibular ganglion"],
   },
+  "sublingual-gland": {
+    functionSummary: "Predominantly mucous salivary gland beneath the floor of mouth; drains via multiple ducts (Bartholin/ducts of Rivinus) into sublingual papillae.",
+    commonPathologies: ["Ranula (mucous retention cyst)", "Sialolithiasis (less common than submandibular)", "Sjogren syndrome", "Salivary gland tumors"],
+    step1Pearls: [
+      "Predominantly mucous acini — thick saliva",
+      "Ranula — translucent floor-of-mouth cyst from duct obstruction",
+      "CN VII secretomotor via chorda tympani and submandibular ganglion",
+      "Minor salivary glands also scattered in oral mucosa",
+    ],
+    pediatrics: "Congenital ranula or mucocele can present in infants; usually benign but may need marsupialization if large.",
+  },
   suprarenal: {
     functionSummary: "Adrenal gland combining steroid-producing cortex and catecholamine-producing medulla.",
     commonPathologies: ["Addison disease", "Cushing syndrome", "Hyperaldosteronism", "Pheochromocytoma"],
@@ -1437,8 +1795,467 @@ const ORGAN_DETAILS: Record<
   },
 };
 
+const ORGAN_METASTASIS: Record<string, string[]> = {
+  heart: [
+    "Primary cardiac malignancy is rare (myxoma most common benign tumor)",
+    "When malignant, usually local invasion of myocardium/pericardium rather than distant spread",
+  ],
+  aorta: [
+    "Not a typical primary malignancy site",
+    "Primary aortic sarcomas are exceedingly rare and spread locally along the vessel wall",
+  ],
+  "pulmonary-artery": [
+    "Not a typical primary malignancy site",
+    "Pulmonary artery sarcoma (very rare) spreads locally within pulmonary vasculature and lung",
+  ],
+  "pulmonary-vein": [
+    "Not a typical primary malignancy site",
+    "Atrial myxoma can involve pulmonary venous inflow; lung cancer invades locally",
+  ],
+  svc: [
+    "Not a typical primary malignancy site",
+    "More often compressed by mediastinal metastases (lung cancer, lymphoma) than a source of metastasis",
+  ],
+  ivc: [
+    "Not a typical primary malignancy site",
+    "Renal cell carcinoma classically grows into renal vein → IVC as tumor thrombus (extension, not discrete metastasis)",
+  ],
+  "ductus-arteriosus": [
+    "Not a primary malignancy site (embryologic fetal shunt)",
+  ],
+  lungs: [
+    "Non–small cell lung cancer — brain, bone, liver, adrenal glands",
+    "Small cell lung cancer — early widespread hematogenous spread to liver, brain, adrenals, bone",
+    "Bronchogenic carcinoma also spreads to contralateral lung and regional mediastinal/hilar nodes",
+  ],
+  larynx: [
+    "Cervical lymph nodes (levels II–IV)",
+    "Lung",
+    "Local extension to thyroid, esophagus, and prevertebral tissues",
+  ],
+  pharynx: [
+    "Cervical lymph nodes (levels I–V; retropharyngeal for nasopharynx)",
+    "Lung and liver (especially nasopharyngeal carcinoma)",
+    "Local invasion of skull base, orbit, and carotid sheath (nasopharyngeal)",
+  ],
+  nasopharynx: [
+    "Cervical lymph nodes — often bilateral and early (levels II–V, retropharyngeal)",
+    "Skull base and paranasal sinuses (local invasion)",
+    "Lung and bone (hematogenous when advanced)",
+    "EBV-associated carcinoma rarely skips nodal stage — cervical adenopathy may be presenting sign",
+  ],
+  trachea: [
+    "Primary tracheal tumors are rare",
+    "Local extension into lung, mediastinum, and esophagus",
+    "Regional mediastinal lymph nodes",
+  ],
+  bronchi: [
+    "Regional hilar and mediastinal lymph nodes",
+    "Contralateral lung",
+    "Distant hematogenous spread per histology — brain, bone, liver, adrenals (same as lung cancer)",
+  ],
+  pleura: [
+    "Mesothelioma — local chest wall, diaphragm, and contralateral pleura (rarely distant)",
+    "Pleural metastases from lung/breast/other primaries are far more common than primary pleural cancer",
+  ],
+  esophagus: [
+    "Liver",
+    "Lung",
+    "Mediastinal and celiac lymph nodes",
+    "Peritoneal seeding (especially adenocarcinoma)",
+  ],
+  stomach: [
+    "Liver (portal circulation)",
+    "Peritoneum (transcoelomic spread)",
+    "Left supraclavicular node (Virchow node)",
+    "Krukenberg tumor — bilateral ovarian metastases",
+    "Lung",
+  ],
+  omentum: [
+    "Omentum is primarily a metastatic destination, not a primary cancer site",
+    "Gastric adenocarcinoma — omental seeding (omental cake)",
+    "Epithelial ovarian cancer — omental metastases (omental caking)",
+    "Pseudomyxoma peritonei — mucinous appendiceal/ovarian tumor spreads along omentum",
+  ],
+  peritoneum: [
+    "Peritoneum is primarily a metastatic destination via transcoelomic spread",
+    "Ovarian carcinoma — diffuse peritoneal carcinomatosis",
+    "Gastric adenocarcinoma — peritoneal seeding",
+    "Primary peritoneal carcinoma (rare) — spreads like ovarian serous carcinoma",
+    "Mesothelioma arises from pleural/peritoneal mesothelium — local spread within cavity",
+  ],
+  intestines: [
+    "Liver via portal venous drainage (classic for GI adenocarcinoma)",
+    "Lung (hematogenous)",
+    "Peritoneal carcinomatosis",
+    "Regional mesenteric lymph nodes",
+  ],
+  "duodenum-proximal": [
+    "Regional lymph nodes",
+    "Liver and peritoneum (overlap with periampullary/pancreatic head cancers)",
+    "Pancreaticoduodenal local invasion",
+  ],
+  jejunum: [
+    "Mesenteric lymph nodes",
+    "Liver (especially carcinoid/neuroendocrine tumors)",
+    "Lung",
+  ],
+  ileum: [
+    "Mesenteric lymph nodes",
+    "Liver (carcinoid syndrome classically from ileal NET liver metastases)",
+    "Lung",
+  ],
+  cecum: [
+    "Regional colonic lymph nodes",
+    "Liver (portal route)",
+    "Lung",
+  ],
+  colon: [
+    "Liver — first and most common hematogenous site (portal circulation)",
+    "Lung",
+    "Peritoneal carcinomatosis",
+    "Regional mesenteric lymph nodes",
+  ],
+  "ascending-colon": [
+    "Regional lymph nodes → liver (portal circulation) → lung",
+    "Same colorectal adenocarcinoma metastatic pattern as colon overall",
+  ],
+  "transverse-colon": [
+    "Regional lymph nodes → liver → lung",
+    "Peritoneal spread possible via transverse mesocolon",
+  ],
+  "descending-colon": [
+    "Regional lymph nodes → liver → lung",
+    "Left-sided colonic cancers follow same portal-then-systemic pattern",
+  ],
+  "sigmoid-colon": [
+    "Regional lymph nodes → liver → lung",
+    "Peritoneal seeding and local pelvic extension when advanced",
+  ],
+  rectum: [
+    "Liver and lung (systemic hematogenous route — bypasses portal first-pass for lower rectal lesions)",
+    "Pelvic lymph nodes and local invasion (bladder, prostate, sacrum)",
+    "Less classic Virchow node than proximal GI cancers",
+  ],
+  "anal-canal": [
+    "Inguinal lymph nodes (below pectinate line — somatic drainage)",
+    "Liver and lung when advanced",
+    "Local extension to sphincters and perianal skin",
+  ],
+  liver: [
+    "Intrahepatic spread along portal/hepatic veins",
+    "Lung",
+    "Portal vein tumor thrombus (HCC)",
+    "Note: liver is far more often a metastatic destination (colon, breast, lung) than a source",
+  ],
+  gallbladder: [
+    "Liver (direct extension)",
+    "Regional lymph nodes (cystic duct, hepatic nodes)",
+    "Peritoneum",
+  ],
+  "bile-duct": [
+    "Regional lymph nodes (porta hepatis, celiac, peripancreatic)",
+    "Liver (intrahepatic spread along bile ducts)",
+    "Peritoneum",
+    "Lung when advanced",
+  ],
+  pancreas: [
+    "Liver",
+    "Peritoneum (transcoelomic — classic for pancreatic adenocarcinoma)",
+    "Lung",
+    "Local invasion of duodenum, celiac plexus, and splenic/mesenteric vessels",
+  ],
+  spleen: [
+    "Primary splenic malignancy is rare (angioma/angiosarcoma, lymphoma)",
+    "Angiosarcoma can spread to liver and lung",
+    "More commonly involved by systemic hematologic malignancies than solid tumor metastasis",
+  ],
+  kidney: [
+    "Lung — classic 'cannonball' metastases (renal cell carcinoma)",
+    "Bone — osteolytic lesions (RCC, thyroid)",
+    "Brain and liver",
+    "Renal vein → IVC tumor thrombus (local vascular extension)",
+  ],
+  "renal-artery": [
+    "Not a typical primary malignancy site",
+  ],
+  metanephros: [
+    "Wilms tumor (embryologic context) — lung and liver hematogenous metastases",
+    "Regional lymph nodes",
+  ],
+  "urogenital-membrane": [
+    "Not a primary malignancy site (embryologic structure)",
+  ],
+  ureter: [
+    "Regional lymph nodes",
+    "Urothelial tract spread — bladder, contralateral ureter, renal pelvis (field effect)",
+    "Local extension to retroperitoneum",
+  ],
+  bladder: [
+    "Pelvic lymph nodes",
+    "Liver, lung, and bone",
+    "Local invasion of prostate, vagina, and pelvic sidewall",
+  ],
+  urethra: [
+    "Regional inguinal and pelvic lymph nodes",
+    "Local extension; distant spread uncommon until advanced",
+  ],
+  prostate: [
+    "Bone — osteoblastic metastases (vertebrae, pelvis, ribs; classic Step 1 pattern)",
+    "Lung and liver",
+    "Regional pelvic and para-aortic lymph nodes",
+  ],
+  "seminal-vesicles": [
+    "Not a primary malignancy site — involved by local extension of prostate adenocarcinoma",
+    "Seminal vesicle invasion upstages prostate cancer (T3b)",
+    "Distant spread follows prostate cancer pattern → bone, lung, regional nodes",
+  ],
+  testis: [
+    "Retroperitoneal para-aortic lymph nodes (lymphatic route — does not follow inguinal drainage)",
+    "Lung — most common distant hematogenous site",
+    "Brain (choriocarcinoma component of mixed germ cell tumors)",
+  ],
+  epididymis: [
+    "Adenocarcinoma of epididymis is rare",
+    "Testicular germ cell tumors may involve epididymis locally; spread follows testicular pattern → retroperitoneal nodes, lung",
+  ],
+  scrotum: [
+    "Inguinal lymph nodes (scrotal skin drainage)",
+    "Local extension; distant spread uncommon",
+  ],
+  ovary: [
+    "Peritoneum and omentum (transcoelomic — classic for epithelial ovarian cancer)",
+    "Pleural effusion (Müllerian spread)",
+    "Liver surface and diaphragm",
+    "Para-aortic lymph nodes",
+  ],
+  uterus: [
+    "Endometrial carcinoma — lung, liver, peritoneum, vagina",
+    "Leiomyosarcoma — hematogenous to lung",
+    "Regional pelvic and para-aortic lymph nodes",
+  ],
+  endometrium: [
+    "Lung and liver (hematogenous)",
+    "Peritoneum and omentum",
+    "Vaginal metastases (rare but classic for advanced endometrial cancer)",
+    "Regional pelvic and para-aortic lymph nodes",
+  ],
+  cervix: [
+    "Parametrium and pelvic sidewall (local)",
+    "Pelvic and para-aortic lymph nodes",
+    "Lung and liver (advanced disease)",
+  ],
+  "fallopian-tube": [
+    "Peritoneum and omentum (high-grade serous carcinoma often arises from fimbria/tube)",
+    "Para-aortic lymph nodes",
+    "Same spread pattern as ovarian epithelial cancer",
+  ],
+  vagina: [
+    "Inguinal nodes (lower third) or pelvic nodes (upper two-thirds)",
+    "Local extension to bladder/rectum",
+    "Lung when advanced",
+  ],
+  vulva: [
+    "Inguinal lymph nodes (sentinel node drainage — unilateral or bilateral)",
+    "Local invasion of urethra, vagina, and anus",
+    "Lung and bone when advanced",
+  ],
+  breast: [
+    "Axillary lymph nodes (sentinel node staging — level I–III)",
+    "Bone — osteolytic or blastic metastases",
+    "Lung, liver, and brain",
+    "Internal mammary lymph nodes (parasternal chain)",
+  ],
+  thyroid: [
+    "Papillary carcinoma — cervical lymph nodes, pulmonary micrometastases",
+    "Follicular carcinoma — hematogenous to bone and lung",
+    "Medullary carcinoma — cervical nodes, liver, bone, lung",
+    "Anaplastic — rapid local and distant spread",
+  ],
+  parathyroid: [
+    "Parathyroid carcinoma is rare",
+    "Local invasion of thyroid and neck structures",
+    "Lung and bone when metastatic",
+  ],
+  "adrenal-cortex": [
+    "Adrenocortical carcinoma — liver, lung, peritoneum",
+    "Local invasion of kidney, liver, and IVC",
+    "Note: adrenal gland is also a common metastatic destination (lung, breast, melanoma)",
+  ],
+  "zona-glomerulosa": [
+    "Adrenocortical adenoma rarely malignant",
+    "When carcinoma arises from cortex, spreads as adrenal cortical carcinoma → liver, lung, peritoneum",
+  ],
+  "zona-fasciculata": [
+    "Adrenocortical carcinoma (cortisol-secreting) → liver, lung, peritoneum",
+    "Local invasion of adjacent kidney and vasculature",
+  ],
+  "zona-reticularis": [
+    "Virilizing adrenocortical carcinoma → liver, lung, peritoneum",
+    "Same metastatic pattern as other adrenal cortical zones",
+  ],
+  "adrenal-medulla": [
+    "Pheochromocytoma — rarely metastatic (~10%); regional nodes, liver, bone when malignant",
+    "Neuroblastoma — bone marrow, liver, skin, orbit (pediatric)",
+  ],
+  suprarenal: [
+    "Adrenocortical carcinoma — liver, lung, peritoneum",
+    "Pheochromocytoma/neuroblastoma (medulla) — nodes, liver, bone marrow",
+    "Also a frequent site of metastases from lung, breast, and melanoma",
+  ],
+  pituitary: [
+    "Pituitary adenoma — local extension into cavernous sinus and suprasellar cistern",
+    "Rare extracranial metastasis (true pituitary carcinoma is very rare)",
+    "Compression of optic chiasm (local mass effect, not metastasis)",
+  ],
+  pineal: [
+    "Pineal/germ cell tumors — CSF drop metastases along spinal cord",
+    "Local brainstem compression",
+  ],
+  thymus: [
+    "Thymoma — pleura and lung (local/contiguous spread)",
+    "Thymic carcinoma — regional mediastinal nodes, lung, liver",
+  ],
+  "bone-marrow": [
+    "Primary hematologic malignancies (leukemia, lymphoma, myeloma) involve marrow systemically rather than 'metastasizing' from a single focus",
+    "Solid tumors metastasize to bone marrow (prostate, breast, lung, neuroblastoma)",
+  ],
+  "lymph-nodes": [
+    "Lymph nodes are secondary metastatic sites, not primary origins",
+    "Carcinoma spreads to nodes via lymphatics; lymphoma arises primarily in lymphoid tissue",
+  ],
+  "systemic-lymphoid-system": [
+    "Not a single primary site — hematologic malignancies (leukemia, lymphoma) spread systemically through marrow, nodes, and spleen",
+  ],
+  brain: [
+    "Primary brain tumors (glioma, medulloblastoma) rarely metastasize outside CNS",
+    "Medulloblastoma — CSF seeding to spine ('drop metastases')",
+    "Glioblastoma — local CNS spread; extracranial metastasis is exceptional",
+  ],
+  "spinal-cord": [
+    "Primary spinal cord tumors (ependymoma, astrocytoma) spread locally along cord",
+    "Distant extracranial metastasis is uncommon",
+    "Medulloblastoma drop metastases from brain can seed spinal leptomeninges",
+  ],
+  retina: [
+    "Retinoblastoma — direct extension into orbit and optic nerve (CNS)",
+    "Hematogenous spread is rare but can reach bone marrow and CNS when advanced",
+  ],
+  uvea: [
+    "Uveal (choroidal) melanoma — hematogenous spread to liver (classic Step 1 pattern)",
+    "Lung and bone when advanced",
+    "Local extension within eye; rarely spreads to regional nodes (eye lacks lymphatics)",
+  ],
+  lens: [
+    "Not a primary malignancy site",
+  ],
+  cornea: [
+    "Not a primary malignancy site (surface squamous neoplasia arises at limbus/conjunctiva)",
+  ],
+  conjunctiva: [
+    "Local invasion of orbit and eyelid",
+    "Preauricular and cervical lymph nodes (squamous cell carcinoma)",
+  ],
+  "inner-ear": [
+    "Primary inner ear malignancy is exceedingly rare",
+    "Local extension to cerebellopontine angle (vs benign vestibular schwannoma)",
+  ],
+  skin: [
+    "Melanoma — widespread hematogenous spread: brain, lung, liver, GI tract, anywhere",
+    "Squamous cell carcinoma — regional lymph nodes, local invasion",
+    "Basal cell carcinoma — local invasion only (rarely metastasizes)",
+  ],
+  bone: [
+    "Osteosarcoma — lung (classic hematogenous site)",
+    "Ewing sarcoma — lung and bone",
+    "Chondrosarcoma — local recurrence; lung when high-grade",
+    "Note: bone is also a major metastatic destination (prostate blastic, breast/RCC lytic)",
+  ],
+  "skeletal-muscle": [
+    "Rhabdomyosarcoma — lung, bone marrow, lymph nodes",
+    "Leiomyosarcoma — lung and liver",
+    "Primary skeletal muscle tumors are rare",
+  ],
+  teeth: [
+    "Oral squamous cell carcinoma from gingiva/alveolus — cervical lymph nodes",
+    "Ameloblastoma — local jaw invasion (benign but locally aggressive)",
+  ],
+  tongue: [
+    "Cervical lymph nodes (levels I–IV; tip → ipsilateral, base → bilateral)",
+    "Lung",
+    "Local extension to floor of mouth and mandible",
+  ],
+  diaphragm: [
+    "Primary diaphragmatic tumors are rare",
+    "Local extension from lung, liver, or gastric primaries is more common",
+  ],
+  pericardium: [
+    "Primary pericardial malignancy is rare",
+    "Metastatic involvement from lung/breast/melanoma more common than primary spread from pericardium",
+  ],
+  appendix: [
+    "Carcinoid tumor — liver (classic for appendiceal NET when metastatic)",
+    "Appendiceal adenocarcinoma — follows colonic pattern → liver, peritoneum",
+  ],
+  tonsils: [
+    "Cervical lymph nodes (levels II–III)",
+    "Waldeyer ring and contralateral tonsil",
+    "Lung when advanced (oropharyngeal SCC)",
+  ],
+  parotid: [
+    "Pleomorphic adenoma malignant transformation — lung, bone",
+    "Mucoepidermoid and adenoid cystic — local nodes, lung, bone (adenoid cystic has perineural spread)",
+    "Facial nerve invasion locally",
+  ],
+  submandibular: [
+    "Cervical lymph nodes (submandibular/level I–II)",
+    "Local invasion; distant spread uncommon until advanced",
+  ],
+  "sublingual-gland": [
+    "Cervical lymph nodes (level I–II submandibular/submental)",
+    "Local floor-of-mouth invasion",
+    "Lung when advanced (salivary gland malignancies)",
+  ],
+  clitoris: [
+    "Inguinal lymph nodes (rare primary malignancy)",
+    "Local extension",
+  ],
+  penis: [
+    "Inguinal lymph nodes (sentinel node drainage — Step 1 classic)",
+    "Pelvic nodes if deep corporal invasion",
+    "Lung when advanced",
+  ],
+  placenta: [
+    "Choriocarcinoma — hematogenous spread to lung (most common), brain, vagina",
+    "Invasive mole — local uterine extension; can embolize to lung",
+  ],
+  "umbilical-cord": [
+    "Not a primary malignancy site",
+  ],
+  allantois: [
+    "Not a primary malignancy site (embryologic structure)",
+    "Persistent urachus derivative can give rise to urachal carcinoma",
+  ],
+  urachus: [
+    "Urachal adenocarcinoma — peritoneum, liver, lung",
+    "Local pelvic invasion (bladder dome, anterior abdominal wall)",
+  ],
+  "gingiva-oral": [
+    "Cervical lymph nodes (mandibular/maxillary drainage)",
+    "Local invasion of alveolar bone and floor of mouth",
+    "Lung when advanced (oral squamous cell carcinoma)",
+  ],
+};
+
 const organById = new Map(
-  ORGANS.map((o) => [o.id, { ...o, ...(ORGAN_DETAILS[o.id] ?? {}) }]),
+  ORGANS.map((o) => [
+    o.id,
+    {
+      ...o,
+      ...(ORGAN_DETAILS[o.id] ?? {}),
+      cancerMetastasis: ORGAN_METASTASIS[o.id],
+    },
+  ]),
 );
 
 export function getOrganById(id: string): OrganEntry | undefined {

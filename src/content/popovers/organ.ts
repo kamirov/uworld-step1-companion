@@ -34,6 +34,7 @@ export function renderOrganPopover(organId: string, popover: HTMLDivElement): bo
   `,
     `
     ${renderListSection("Common pathologies", organ.commonPathologies ?? [])}
+    ${renderListSection("Metastasis", organ.cancerMetastasis ?? [])}
     ${renderListSection("Step 1 pearls", organ.step1Pearls ?? [])}
   `,
   );
