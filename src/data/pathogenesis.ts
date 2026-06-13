@@ -1614,6 +1614,53 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Rhabdomyosarcoma and Ewing sarcoma peak in childhood/adolescence; osteosarcoma in teenage growth spurt. Wilms tumor is nephroblastoma (renal embryonal), not classified as sarcoma despite mesenchymal appearance.",
   },
   {
+    id: "squamous-cell-carcinoma",
+    name: "Squamous Cell Carcinoma",
+    etymology:
+      "Latin squama = scale + cell + Greek karkinos = crab/cancer + -oma = tumor",
+    aliases: [
+      "squamous cell carcinoma",
+      "squamous cell carcinomas",
+      "squamous cell cancer",
+      "squamous cell cancers",
+      "squamous carcinoma",
+      "squamous carcinomas",
+      "scc",
+      "sccs",
+      "epidermoid carcinoma",
+      "epidermoid carcinomas",
+    ],
+    definition:
+      "Malignant neoplasm of stratified squamous epithelium (or squamous-differentiated cells) that forms keratin pearls and intercellular bridges on histology; one of the most common carcinoma subtypes, with site-specific risk factors and spread patterns.",
+    examples: [
+      "Cervical SCC — HPV-driven dysplasia at transformation zone; postcoital bleeding, friable cervix",
+      "Lung SCC — central/hilar mass in smokers; PTHrP-mediated hypercalcemia",
+      "Esophageal SCC — upper/middle esophagus; smoking and alcohol",
+      "Cutaneous SCC — sun-exposed skin; actinic keratosis precursor",
+      "Oral/oropharyngeal SCC — lateral tongue, floor of mouth; tobacco, alcohol, HPV (oropharynx)",
+      "Penile SCC — HPV, phimosis, lack of circumcision",
+      "Anal SCC — HPV, below dentate line",
+      "Bladder SCC — Schistosoma haematobium association",
+    ],
+    boardsPearls: [
+      "Histology: keratin pearls, intercellular bridges, eosinophilic cytoplasm",
+      "HPV E6/E7 inactivate p53 and Rb → cervical and anogenital/oropharyngeal SCC",
+      "Lung SCC — central location, cavitation, hypercalcemia via PTHrP (vs lung adenocarcinoma peripheral, EGFR mutations)",
+      "Field cancerization — contiguous mucosa at risk after chronic carcinogen exposure (oral cavity, esophagus)",
+      "Actinic keratosis → cutaneous SCC; excision or Mohs for invasive skin SCC",
+      "vs adenocarcinoma — gland formation and mucin, not squamous keratinization",
+    ],
+    distinguishFrom: [
+      "Adenocarcinoma — glandular epithelial malignancy (colon, lung periphery, prostate)",
+      "Basal cell carcinoma — indolent cutaneous tumor; palisading nuclei, no keratin pearls",
+      "Squamous cell carcinoma in situ — confined above basement membrane (Bowen disease, CIN III)",
+      "Verrucous carcinoma — low-grade exophytic SCC variant with pushing borders",
+      "Melanoma — S100⁺/Melan-A⁺ pigmented cutaneous malignancy",
+    ],
+    pediatrics:
+      "Pediatric solid SCC is rare outside HPV-related adolescent cervical disease and sun-exposed skin in fair-skinned children; rhabdomyosarcoma and other sarcomas are more common childhood solid tumors than SCC.",
+  },
+  {
     id: "gastrointestinal-flora",
     name: "Gastrointestinal Flora",
     etymology: "Greek gaster = stomach + Latin intestinum = gut + Latin flora = plant life; microbial community",
@@ -3778,6 +3825,93 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Cyanotic congenital heart disease causes chronic hypoxemia from birth → clubbing and polycythemia; neonates with duct-dependent lesions desaturate when duct closes.",
+  },
+  {
+    id: "alcohol-induced",
+    name: "Alcohol-Induced",
+    etymology:
+      "Arabic al-kuhl = fine powder/distillation + Latin inducere = to lead/bring on",
+    aliases: [
+      "alcohol-induced",
+      "alcohol induced",
+      "alcoholic",
+      "alcohol-related",
+      "alcohol related",
+      "ethanol-induced",
+      "ethanol induced",
+    ],
+    definition:
+      "Disease or organ injury directly caused or substantially driven by chronic or acute ethanol toxicity — a modifier linking alcohol exposure to specific hepatic, pancreatic, cardiac, neurologic, and fetal pathology.",
+    examples: [
+      "Alcoholic hepatitis and cirrhosis — steatosis → steatohepatitis → fibrosis → portal hypertension",
+      "Acute and chronic pancreatitis — acinar cell injury and ductal obstruction from ethanol",
+      "Alcoholic cardiomyopathy — direct myocardial toxicity → dilated cardiomyopathy",
+      "Peripheral neuropathy and Wernicke-Korsakoff syndrome — thiamine depletion and direct neurotoxicity",
+      "Fetal alcohol syndrome — teratogenic effects on craniofacial and CNS development",
+      "Mallory-Denk bodies and AST:ALT >2 in alcoholic liver disease",
+    ],
+    boardsPearls: [
+      "AST:ALT ratio >2:1 suggests alcoholic hepatitis (vs viral hepatitis often ALT > AST)",
+      "Give thiamine before glucose in malnourished alcoholic to prevent Wernicke encephalopathy",
+      "Alcoholic cirrhosis → ascites, varices, SBP, hepatocellular carcinoma risk",
+      "vs nonalcoholic fatty liver disease — similar steatosis pattern but different risk context and histology (Mallory-Denk bodies favor alcohol)",
+      "Disulfiram-like reaction with metronidazole — counsel patients about alcohol avoidance",
+    ],
+    distinguishFrom: [
+      "Nonalcoholic steatohepatitis (NASH) — metabolic syndrome without heavy alcohol use",
+      "Viral hepatitis — serologic markers (HBsAg, anti-HCV), different AST:ALT pattern",
+      "Autoimmune hepatitis — anti-smooth muscle, anti-LKM antibodies",
+      "Ischemic or toxin cardiomyopathy — non-alcohol etiologies of dilated cardiomyopathy",
+    ],
+    pediatrics:
+      "Fetal alcohol syndrome is the key pediatric alcohol-induced condition — smooth philtrum, short palpebral fissures, growth restriction, and neurodevelopmental deficits; no safe alcohol threshold in pregnancy.",
+  },
+  {
+    id: "tobacco",
+    name: "Tobacco",
+    etymology:
+      "Carib Taíno tabaco = rolled tobacco leaves / pipe used for inhaling smoke",
+    aliases: [
+      "tobacco",
+      "tobacco use",
+      "tobacco exposure",
+      "tobacco smoking",
+      "cigarette smoking",
+      "cigarette smoke",
+      "cigarettes",
+      "smoking",
+      "smoker",
+      "smokers",
+      "nicotine",
+      "chewing tobacco",
+      "smokeless tobacco",
+    ],
+    definition:
+      "Chronic exposure to tobacco smoke or smokeless tobacco — a major modifiable risk factor for cardiovascular disease, pulmonary disease, thromboembolism, and multiple malignancies via nicotine addiction, carcinogens, and endothelial injury.",
+    examples: [
+      "COPD and lung cancer — chronic airway inflammation and carcinogen exposure",
+      "Coronary artery disease and peripheral artery disease — endothelial dysfunction and accelerated atherosclerosis",
+      "Buerger disease (thromboangiitis obliterans) — segmental vascular inflammation in young male smokers",
+      "Oral and laryngeal squamous cell carcinoma — field cancerization from smoke",
+      "Pancreatic and bladder cancer associations",
+      "Nicotine ↑ catecholamines → transient ↑ HR and BP; complicates perioperative risk",
+      "Deep vein thrombosis and PE — prothrombotic effect of smoking",
+    ],
+    boardsPearls: [
+      "Smoking is leading preventable cause of death in the US",
+      "Buerger disease — young male smoker with digital ischemia; cessation is only effective treatment",
+      "COPD FEV₁ decline accelerates with continued smoking; cessation slows decline",
+      "Squamous cell lung cancer linked to central/hilar location and smoking history",
+      "vs marijuana smoke — different carcinogen profile; tobacco is the classic boards risk factor",
+      "Cessation counseling is first-line; nicotine replacement, bupropion, varenicline aid quit attempts",
+    ],
+    distinguishFrom: [
+      "Secondhand smoke exposure — passive inhalation without active use",
+      "Electronic nicotine delivery — different aerosol chemistry; tobacco refers to combusted/smokeless leaf products",
+      "Occupational dust exposure (silica, asbestos) — separate lung disease risk without nicotine addiction",
+    ],
+    pediatrics:
+      "Fetal nicotine exposure from maternal smoking → low birth weight, preterm delivery, SIDS risk, and childhood asthma. Adolescent smoking initiation predicts lifelong addiction; Buerger disease is extremely rare in children.",
   },
 ];
 

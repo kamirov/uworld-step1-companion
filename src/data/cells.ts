@@ -2992,6 +2992,55 @@ export const CELLS: CellEntry[] = [
       "Renin-angiotensin system is active from fetal life; neonatal renal perfusion and salt handling still depend on JGA-mediated renin release — ACE inhibitors are contraindicated in pregnancy due to fetal renal maldevelopment.",
   },
   {
+    id: "intraglomerular-mesangial-cell",
+    name: "Intraglomerular Mesangial Cell",
+    etymology:
+      "Latin intra = within + glomerulus = small ball + Greek mesos = middle + angeion = vessel + cell",
+    aliases: [
+      "intraglomerular mesangial cell",
+      "intraglomerular mesangial cells",
+      "mesangial cell",
+      "mesangial cells",
+      "intraglomerular mesangial",
+      "glomerular mesangial cell",
+      "glomerular mesangial cells",
+    ],
+    definition:
+      "Contractile, phagocytic stromal cell located within the glomerular tuft between capillary loops — supports capillary structure, modulates filtration surface area, clears debris, and secretes extracellular matrix; distinct from extraglomerular (lacis) mesangial cells of the juxtaglomerular apparatus.",
+    characteristics: [
+      "Reside in central mesangial matrix between glomerular capillaries — not in capillary wall itself",
+      "Contractile (actin/myosin) — respond to angiotensin II and other vasoactive mediators",
+      "Phagocytic — remove trapped immune complexes and macromolecules from filtration barrier",
+      "Secrete mesangial matrix (collagen, fibronectin, laminin) and cytokines/growth factors (PDGF, TGF-β)",
+      "Mesangial expansion is hallmark of diabetic nephropathy and IgA nephropathy",
+      "Extraglomerular mesangial (lacis) cells connect macula densa to JG cells — separate population",
+    ],
+    clinicalRelevance: [
+      "Diabetic nephropathy — mesangial matrix expansion and Kimmelstiel-Wilson nodules",
+      "IgA nephropathy — mesangial IgA immune complex deposition with mesangial hypercellularity",
+      "Lupus nephritis — mesangial proliferative pattern (Class II)",
+      "Mesangial proliferative glomerulonephritis — ↑ mesangial cellularity on light microscopy",
+      "HIV-associated nephropathy — collapsing podocyte injury with mesangial changes in FSGS pattern",
+    ],
+    boardsPearls: [
+      "Intraglomerular mesangial cells are inside the glomerular tuft; lacis cells are extraglomerular in JGA",
+      "Mesangial cells are contractile and phagocytic — support capillary loops and clear immune complexes",
+      "IgA nephropathy = mesangial IgA deposition on immunofluorescence",
+      "Diabetic nephropathy → mesangial expansion and nodular glomerulosclerosis",
+      "vs podocyte — visceral epithelial cell forming slit diaphragm; mesangial cell is intercapillary stromal cell",
+      "vs JG cell — modified afferent arteriole smooth muscle secreting renin, not intraglomerular mesangium",
+    ],
+    distinguishFrom: [
+      "Extraglomerular mesangial (lacis) cell — JGA connecting cell between macula densa and JG cells",
+      "Podocyte — visceral glomerular epithelial cell with foot processes and slit diaphragm",
+      "Juxtaglomerular cell — renin-secreting granular cell of afferent arteriole",
+      "Interstitial fibroblast — cortical peritubular EPO-producing cell outside glomerulus",
+      "Endothelial cell — lines glomerular capillary lumen with fenestrations",
+    ],
+    pediatrics:
+      "IgA nephropathy and minimal change disease are common pediatric glomerular diseases; mesangial hypercellularity on biopsy points toward IgA or mesangial proliferative GN rather than minimal change (normal LM).",
+  },
+  {
     id: "mtdna",
     name: "mtDNA",
     etymology: "mtDNA = mitochondrial DNA",

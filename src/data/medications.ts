@@ -2350,6 +2350,43 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "diuretics",
+    name: "Diuretics",
+    etymology: "Latin di- = apart + urina = urine + -etic = promoting",
+    aliases: [
+      "diuretic",
+      "diuretics",
+    ],
+    drugClass: "Drug class",
+    mechanism:
+      "Inhibit renal tubular Na⁺ (and often water) reabsorption at specific nephron segments → natriuresis and diuresis; site of action determines potency and electrolyte effects (loop > thiazide > K⁺-sparing).",
+    indications: [
+      "Edema (heart failure, cirrhosis, nephrotic syndrome, renal disease)",
+      "Hypertension (thiazides first-line)",
+      "Hypercalcemia (loop diuretics + saline)",
+      "Nephrogenic diabetes insipidus (thiazides — paradoxical antidiuresis)",
+      "Ascites in cirrhosis (spironolactone ± loop diuretic)",
+    ],
+    adverseEffects: [
+      "Hypokalemia, hypomagnesemia, metabolic alkalosis (loop and thiazide)",
+      "Hyperkalemia (K⁺-sparing diuretics, especially with ACE-I/ARB)",
+      "Hyponatremia (thiazides, especially elderly)",
+      "Ototoxicity (loop diuretics, especially with aminoglycosides)",
+      "Hyperuricemia and gout flares",
+      "Hyperglycemia and dyslipidemia (thiazides)",
+      "Gynecomastia (spironolactone antiandrogen effect)",
+    ],
+    boardsPearls: [
+      "Four main classes: loop (furosemide), thiazide (HCTZ, chlorthalidone), K⁺-sparing (spironolactone, amiloride), osmotic (mannitol)",
+      "Loop diuretics — thick ascending limb NKCC2; most potent; ↑ Ca²⁺ and Mg²⁺ loss",
+      "Thiazides — DCT NCC; first-line HTN; ineffective if GFR <30; ↓ Ca²⁺ excretion",
+      "K⁺-sparing — collecting duct; hyperkalemia risk with ACE-I/ARB/renal insufficiency",
+      "Bartter syndrome mimics loop diuretic; Gitelman mimics thiazide",
+      "Diuretics activate RAAS via macula densa ↓ NaCl sensing → ↑ renin",
+      "Loop diuretics relieve HF congestion but do not ↓ mortality (unlike ACE-I, β-blocker, MRA)",
+    ],
+  },
+  {
     id: "losartan",
     name: "Losartan",
     etymology: "lo- = angiotensin-receptor-blocker naming element + -sartan = ARB suffix",

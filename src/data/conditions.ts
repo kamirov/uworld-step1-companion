@@ -2552,6 +2552,77 @@ export const CONDITIONS: ConditionEntry[] = [
       "Diabetic nephropathy is uncommon in childhood but screen with urine albumin once diabetes duration warrants; tight glycemic control from diagnosis delays microvascular complications.",
   },
   {
+    id: "diabetic-retinopathy",
+    name: "Diabetic Retinopathy",
+    etymology:
+      "Greek diabainein = pass through + Latin mellitus = honey-sweet + Latin rete = net + Greek pathos = suffering",
+    aliases: [
+      "diabetic retinopathy",
+      "diabetic retinopathies",
+      "diabetic eye disease",
+      "proliferative diabetic retinopathy",
+      "nonproliferative diabetic retinopathy",
+      "npdr",
+      "pdr",
+    ],
+    definition:
+      "Microvascular complication of diabetes mellitus affecting retinal capillaries and venules, progressing from nonproliferative changes to proliferative neovascularization with risk of vision loss.",
+    pathophysiology:
+      "Chronic hyperglycemia → pericyte loss, basement membrane thickening, and endothelial dysfunction → microaneurysms, capillary nonperfusion, and ischemia → ↑ VEGF → retinal neovascularization (proliferative stage) → vitreous hemorrhage and traction retinal detachment.",
+    classicPresentation: [
+      "Long-standing diabetes — often asymptomatic until advanced",
+      "Gradual vision loss from macular edema or proliferative complications",
+      "Floaters or sudden vision loss from vitreous hemorrhage",
+      "Often coexists with diabetic nephropathy and neuropathy",
+    ],
+    keyFindings: [
+      "Nonproliferative: microaneurysms, dot-blot hemorrhages, hard exudates, cotton-wool spots (nerve fiber layer infarcts)",
+      "Macular edema — leading cause of vision loss in NPDR",
+      "Proliferative: neovascularization of disc or elsewhere, vitreous hemorrhage",
+      "Dilated fundoscopic exam is screening mainstay",
+    ],
+    keyLabs: [
+      "HbA1c — glycemic control correlates with progression risk",
+      "Blood pressure and urine albumin — assess other micro/macrovascular disease",
+      "Fluorescein angiography or OCT for macular edema/neovascularization (specialist)",
+    ],
+    associations: [
+      "Type 1 and type 2 diabetes mellitus",
+      "Diabetic nephropathy",
+      "Diabetic neuropathy",
+      "Hypertension — accelerates progression",
+      "Pregnancy — can worsen rapidly (gestational monitoring)",
+    ],
+    complications: [
+      "Macular edema and central vision loss",
+      "Vitreous hemorrhage",
+      "Traction retinal detachment",
+      "Neovascular glaucoma",
+      "Blindness",
+    ],
+    distinguishFrom: [
+      "Hypertensive retinopathy — AV nicking, copper/silver wiring, flame hemorrhages without classic diabetic microaneurysm pattern",
+      "Retinal vein occlusion — sectoral hemorrhages, unilateral acute presentation",
+      "Age-related macular degeneration — drusen, geographic atrophy; different risk profile",
+      "Cataracts — lens opacity; common in diabetes but separate pathology",
+    ],
+    treatment: [
+      "Optimize glycemic and blood pressure control",
+      "Panretinal photocoagulation for proliferative disease",
+      "Intravitreal anti-VEGF agents for macular edema and neovascularization",
+      "Regular ophthalmologic screening — annual dilated exam after diabetes diagnosis (timing varies by type/duration)",
+    ],
+    boardsPearls: [
+      "Microaneurysms are earliest clinically visible sign of diabetic retinopathy",
+      "Cotton-wool spots = nerve fiber layer infarcts from capillary occlusion",
+      "Proliferative retinopathy = neovascularization; treat with laser and/or anti-VEGF",
+      "Diabetic nephropathy + retinopathy + neuropathy = microvascular triad",
+      "Pregnancy can accelerate retinopathy — closer ophthalmology follow-up",
+    ],
+    pediatrics:
+      "Pediatric diabetes warrants ophthalmologic screening once age and disease duration meet guideline thresholds; proliferative disease is uncommon in childhood but macular edema and background retinopathy can occur with poor control.",
+  },
+  {
     id: "type-1-diabetes-mellitus",
     name: "Type 1 Diabetes Mellitus",
     etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + type 1 = autoimmune insulin-deficient subtype",
@@ -8552,6 +8623,81 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Minimal change disease is most common cause in children; dramatic response to corticosteroids.",
+  },
+  {
+    id: "focal-segmental-glomerulosclerosis",
+    name: "Focal Segmental Glomerulosclerosis",
+    etymology:
+      "Latin focalis = pertaining to a focus + segmentalis = in segments + glomerulus = small ball + Greek sklerosis = hardening",
+    aliases: [
+      "focal segmental glomerulosclerosis",
+      "focal segmental glomerular sclerosis",
+      "fsgs",
+      "fsgn",
+      "collapsing fsgs",
+      "hiv-associated nephropathy",
+      "hiv-associated nephropathy pattern",
+    ],
+    definition:
+      "Glomerular disease with segmental sclerosis and hyalinosis affecting some but not all glomeruli (focal) and only portions of affected glomeruli (segmental), commonly presenting with nephrotic-range proteinuria and progressive CKD.",
+    pathophysiology:
+      "Podocyte injury from circulating factors (obesity-related adipokines, interferon), direct viral injury (HIV), hyperfiltration, or genetic APOL1 risk variants → segmental capillary loop collapse and sclerosis with podocyte foot-process effacement → heavy proteinuria; collapsing variant shows global podocyte injury with poor prognosis.",
+    classicPresentation: [
+      "Adult or adolescent with nephrotic syndrome — edema, foamy urine, hypoalbuminemia",
+      "More common in African Americans (APOL1 risk alleles)",
+      "HIV-associated nephropathy — Black patient with HIV, heavy proteinuria, large echogenic kidneys",
+      "Secondary FSGS from obesity, reflux nephropathy, or heroin use",
+      "Often steroid-resistant compared with minimal change disease",
+    ],
+    keyFindings: [
+      "Nephrotic-range proteinuria (>3.5 g/day)",
+      "Edema, hypoalbuminemia, hyperlipidemia",
+      "Normal or mildly elevated BP early; hypertension as CKD progresses",
+      "Kidney biopsy: focal segmental sclerosis and hyalinosis on light microscopy; foot-process effacement on EM",
+    ],
+    keyLabs: [
+      "Heavy proteinuria, ↓ albumin, ↑ LDL",
+      "Fatty casts (Maltese cross)",
+      "↑ creatinine with disease progression",
+      "HIV serology if at risk; APOL1 genotyping in research/clinical context",
+    ],
+    associations: [
+      "Primary (idiopathic) FSGS",
+      "HIV-associated nephropathy (collapsing variant)",
+      "Obesity-related glomerulopathy",
+      "Heroin (heroin nephropathy)",
+      "Interferon therapy",
+      "Sickle cell disease and APOL1 risk variants",
+      "Reflux nephropathy / reduced nephron mass (secondary hyperfiltration)",
+    ],
+    complications: [
+      "Progressive CKD and ESRD",
+      "Renal vein thrombosis (nephrotic hypercoagulability)",
+      "Recurrence in transplanted kidney (especially primary FSGS)",
+      "Infection from urinary immunoglobulin loss",
+    ],
+    distinguishFrom: [
+      "Minimal change disease — children, selective albuminuria, steroid-responsive; LM normal, EM foot-process effacement only",
+      "Membranous nephropathy — subepithelial deposits, spike-and-dome on EM; adults, PLA2R antibodies",
+      "Diabetic nephropathy — nodular glomerulosclerosis (Kimmelstiel-Wilson), long-standing diabetes",
+      "Membranoproliferative GN — nephritic-nephrotic overlap, ↓ C3, tram-track GBM",
+    ],
+    treatment: [
+      "ACE inhibitors/ARBs to reduce proteinuria",
+      "Corticosteroids and calcineurin inhibitors for primary FSGS (often partial or no response)",
+      "Treat HIV with ART (HIV-associated nephropathy)",
+      "Weight loss for obesity-related FSGS",
+      "Dialysis or transplant for ESRD; plasmapheresis considered for recurrent primary FSGS post-transplant",
+    ],
+    boardsPearls: [
+      "FSGS = focal (some glomeruli) + segmental (part of glomerulus) sclerosis",
+      "Common nephrotic cause in African Americans; APOL1 risk alleles on boards",
+      "HIV-associated nephropathy = collapsing FSGS pattern with large kidneys",
+      "Steroid-resistant nephrotic syndrome in child → biopsy; FSGS vs minimal change",
+      "Secondary FSGS from hyperfiltration (obesity, reflux, unilateral renal agenesis) — treat underlying cause",
+    ],
+    pediatrics:
+      "FSGS is a leading cause of steroid-resistant nephrotic syndrome in children after minimal change disease; biopsy distinguishes the two. HIV-associated nephropathy is less common in children but collapsing FSGS pattern applies.",
   },
   {
     id: "nephrolithiasis",

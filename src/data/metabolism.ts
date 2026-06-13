@@ -593,6 +593,47 @@ export const METABOLISM: MetabolismEntry[] = [
     pediatrics:
       "Neonatal lactic acidosis may reflect sepsis, inborn errors of metabolism, or mitochondrial disorders; LDH is elevated with hemolysis of newborn samples.",
   },
+  {
+    id: "erythropoiesis",
+    name: "Erythropoiesis",
+    etymology:
+      "Greek erythros = red + poiesis = making/formation",
+    aliases: [
+      "erythropoiesis",
+      "erythropoietic",
+      "red blood cell production",
+      "rbc production",
+      "red cell production",
+      "erythroid maturation",
+      "erythroid differentiation",
+    ],
+    definition:
+      "Bone marrow process by which multipotent stem cells differentiate into mature erythrocytes — requires erythropoietin, iron, vitamin B12, folate, and intact heme/globin synthesis.",
+    pathway: [
+      "Hypoxia → renal (and hepatic) EPO secretion → EPO binds erythroid progenitors (BFU-E → CFU-E)",
+      "Maturation sequence: proerythroblast → basophilic → polychromatic → orthochromatic erythroblast → reticulocyte (extrudes nucleus) → mature RBC",
+      "Heme synthesis in mitochondria/cytosol (ALA, porphyrin, iron incorporation); globin chains (α, β) assemble into hemoglobin",
+      "Reticulocytes remain in marrow ~1 day, circulate 1–2 days — ↑ reticulocyte count reflects ↑ erythropoiesis",
+      "Extramedullary erythropoiesis in fetal liver/spleen; adult marrow is primary site (vertebrae, pelvis, ribs, sternum)",
+      "Megaloblastic anemia — impaired DNA synthesis → large ineffective erythroblasts; thalassemia — imbalanced globin → ineffective erythropoiesis and hemolysis",
+    ],
+    boardsPearls: [
+      "EPO from peritubular interstitial cells in kidney (~90%); liver contributes remainder",
+      "↑ reticulocyte count = marrow response to anemia (hemolysis, blood loss recovery)",
+      "Iron, B12, and folate are essential cofactors — deficiency causes microcytic or macrocytic anemia",
+      "EPO-secreting renal cell carcinoma → paraneoplastic polycythemia",
+      "Polycythemia vera — JAK2 mutation → autonomous erythropoiesis independent of EPO",
+      "Anemia of chronic disease — ↓ iron availability and blunted EPO response despite normal stores",
+    ],
+    distinguishFrom: [
+      "Hemolysis — destruction of circulating RBCs; reticulocytosis reflects compensatory erythropoiesis",
+      "Hematopoiesis — broader process producing all blood lineages, not only erythroid",
+      "Erythropoietin — hormone stimulating erythropoiesis, not the differentiation process itself",
+      "Extramedullary hematopoiesis — pathologic blood production outside marrow (e.g., myelofibrosis, severe hemolytic anemia)",
+    ],
+    pediatrics:
+      "Fetal erythropoiesis occurs in liver then marrow; hemoglobin F (α2γ2) predominates until γ-to-β switch after birth. Neonatal anemia of prematurity reflects low EPO response; physiologic nadir at ~6–8 weeks in term infants.",
+  },
 ];
 
 const metabolismById = new Map(METABOLISM.map((entry) => [entry.id, entry]));
