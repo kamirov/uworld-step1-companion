@@ -1417,6 +1417,8 @@ export const MEDICATIONS: MedicationEntry[] = [
       "glucocorticoids",
       "systemic corticosteroids",
       "systemic glucocorticoids",
+      "steroid",
+      "steroids",
     ],
     drugClass: "Drug class",
     mechanism:
@@ -3553,6 +3555,32 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Phenylephrine = pure α₁; can cause reflex bradycardia",
       "Vasopressin acts at V1 receptors and can be adjunct in refractory septic shock",
       "Peds: epinephrine often favored in cold shock/low cardiac output; norepinephrine in warm vasodilatory shock",
+    ],
+  },
+  {
+    id: "metyrapone",
+    name: "Metyrapone",
+    etymology: "methyl + pyridine derivative naming + -one ketone suffix",
+    aliases: ["metyrapone", "metopirone"],
+    drugClass: "Adrenal steroid synthesis inhibitor",
+    mechanism:
+      "Inhibits 11β-hydroxylase in adrenal cortex → blocks conversion of 11-deoxycortisol to cortisol → transient cortisol deficiency and compensatory ↑ ACTH.",
+    indications: [
+      "Diagnostic metyrapone test for Cushing syndrome localization",
+      "Medical control of hypercortisolism while awaiting definitive Cushing therapy",
+      "Adjunct with ketoconazole in severe hypercortisolism",
+    ],
+    adverseEffects: [
+      "Nausea, vomiting, abdominal pain",
+      "Dizziness, sedation",
+      "Hirsutism/acne from elevated ACTH and adrenal androgens during testing",
+      "Adrenal insufficiency if prolonged without glucocorticoid cover",
+    ],
+    boardsPearls: [
+      "Metyrapone ↓ cortisol by blocking 11β-hydroxylase",
+      "Metyrapone test: pituitary Cushing → ↑ ACTH and ↑ 11-deoxycortisol; adrenal adenoma → no ACTH rise",
+      "Used with ketoconazole as steroidogenesis inhibitor in Cushing syndrome",
+      "Do not confuse with metyrapone block and 17-hydroxycorticosteroid assays in older endocrine testing",
     ],
   },
 ];

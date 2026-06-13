@@ -899,6 +899,115 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
   },
   {
+    id: "acth",
+    name: "ACTH",
+    etymology: "ACTH = adrenocorticotropic hormone; Latin ad = toward + cortex = bark + Greek tropos = turning",
+    aliases: [
+      "acth",
+      "adrenocorticotropic hormone",
+      "adrenocorticotropin",
+      "corticotropin",
+      "plasma acth",
+      "serum acth",
+    ],
+    measures:
+      "Anterior pituitary peptide that stimulates adrenal cortisol and androgen synthesis; key for distinguishing ACTH-dependent vs ACTH-independent hypercortisolism.",
+    normalRange: "Morning plasma ~10–60 pg/mL (assay-dependent); interpret with cortisol and dexamethasone suppression",
+    increasedCauses: [
+      "Cushing disease (pituitary ACTH adenoma)",
+      "Ectopic ACTH secretion (e.g. small cell lung cancer)",
+      "Primary adrenal insufficiency (Addison disease — loss of cortisol feedback)",
+      "Metyrapone test response in pituitary Cushing",
+    ],
+    decreasedCauses: [
+      "Exogenous glucocorticoids (suppress ACTH)",
+      "Secondary/tertiary adrenal insufficiency (pituitary/hypothalamic disease)",
+      "Adrenal adenoma/carcinoma causing ACTH-independent Cushing",
+    ],
+    boardsPearls: [
+      "ACTH distinguishes ACTH-dependent Cushing (high ACTH) from adrenal tumor (low ACTH)",
+      "Addison: ↓ cortisol + ↑ ACTH → hyperpigmentation from POMC/MSH",
+      "High-dose dexamethasone suppresses ACTH in pituitary Cushing but not ectopic ACTH",
+      "ACTH stimulates zona fasciculata/reticularis, not primary driver of aldosterone",
+    ],
+    pairWith: [
+      "↑ ACTH + ↑ cortisol → Cushing disease or ectopic ACTH",
+      "↓ cortisol + ↑ ACTH → primary adrenal insufficiency",
+      "↑ cortisol + ↓ ACTH → adrenal adenoma",
+    ],
+  },
+  {
+    id: "aldosterone",
+    name: "Aldosterone",
+    etymology: "Latin ald(o)- = aldehyde + sterol = steroid hormone",
+    aliases: [
+      "aldosterone",
+      "serum aldosterone",
+      "plasma aldosterone",
+    ],
+    measures:
+      "Mineralocorticoid from adrenal zona glomerulosa that promotes distal nephron Na⁺ reabsorption and K⁺/H⁺ secretion.",
+    normalRange: "Supine/upright and salt intake affect levels; interpret with renin and volume status",
+    increasedCauses: [
+      "Primary hyperaldosteronism (Conn syndrome, adrenal adenoma/hyperplasia)",
+      "Secondary hyperaldosteronism (renin-driven: renal artery stenosis, diuretics, heart failure)",
+      "Liddle syndrome (low renin, high aldosterone-like activity — actually ENaC mutation)",
+    ],
+    decreasedCauses: [
+      "Addison disease",
+      "Congenital adrenal hyperplasia with aldosterone deficiency (salt-wasting 21-hydroxylase)",
+      "ACE inhibitors/ARBs (↓ angiotensin II → ↓ aldosterone)",
+    ],
+    boardsPearls: [
+      "Primary hyperaldosteronism: hypertension + hypokalemia (not always) + ↓ renin",
+      "Conn workup: elevated aldosterone with suppressed renin; confirm with saline suppression",
+      "Spironolactone/eplerenone block mineralocorticoid receptor",
+      "Aldosterone escape limits edema in chronic heart failure despite high aldosterone",
+    ],
+    pairWith: [
+      "↑ aldosterone + ↓ renin + hypertension → primary hyperaldosteronism",
+      "↑ aldosterone + ↑ renin → secondary hyperaldosteronism (↓ renal perfusion)",
+      "↓ aldosterone + hyperkalemia → Addison disease",
+    ],
+  },
+  {
+    id: "renin",
+    name: "Renin",
+    etymology: "Latin ren = kidney + -in = enzyme/protein suffix",
+    aliases: [
+      "renin",
+      "plasma renin activity",
+      "pra",
+      "plasma renin",
+      "serum renin",
+    ],
+    measures:
+      "Protease released by juxtaglomerular cells that cleaves angiotensinogen to angiotensin I, initiating RAAS.",
+    normalRange: "Highly sensitive to posture, salt intake, and diuretics; interpret with aldosterone",
+    increasedCauses: [
+      "Renal artery stenosis",
+      "Diuretic use, volume depletion, heart failure",
+      "Secondary hyperaldosteronism",
+      "Bartter and Gitelman syndromes",
+    ],
+    decreasedCauses: [
+      "Primary hyperaldosteronism (autonomous aldosterone suppresses renin)",
+      "High salt intake",
+      "β-blockers (↓ renin release)",
+    ],
+    boardsPearls: [
+      "Renin-angiotensin-aldosterone axis: renin → Ang I → ACE → Ang II → aldosterone + vasoconstriction",
+      "Renal artery stenosis: ↑ renin, ↑ aldosterone, refractory hypertension",
+      "Primary hyperaldosteronism: ↑ aldosterone with ↓ renin",
+      "β-blockers lower renin — can mask RAAS activation",
+    ],
+    pairWith: [
+      "↑ renin + ↑ aldosterone + unilateral kidney disease → renal artery stenosis",
+      "↓ renin + ↑ aldosterone + hypertension → Conn syndrome",
+      "ACE inhibitor/ARB ↑ renin by blocking Ang II feedback",
+    ],
+  },
+  {
     id: "creatine-kinase",
     name: "Creatine Kinase",
     etymology: "Greek kreas = flesh + -ine substance suffix + Greek kinein = move + -ase enzyme suffix",
@@ -1883,6 +1992,8 @@ export const LAB_VALUES: LabValueEntry[] = [
       "17-hydroxycorticosteroids",
       "17 hydroxycorticosteroids",
       "17-oh corticosteroids",
+      "17-ohs",
+      "17 ohs",
       "urinary 17-hydroxycorticosteroids",
     ],
     measures:
@@ -2606,6 +2717,105 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Positive screen does not distinguish latent from active TB",
     ],
     pairWith: ["Positive PPD + normal CXR/no symptoms → latent TB", "Cough/night sweats/weight loss → evaluate active TB"],
+  },
+  {
+    id: "fecal-occult-blood-test",
+    name: "Fecal Occult Blood Test",
+    etymology: "Latin faex = dregs + occultus = hidden + Old English blod + Old English test = trial",
+    aliases: [
+      "fecal occult blood test",
+      "fecal occult blood",
+      "fobt",
+      "stool occult blood",
+      "guaiac test",
+      "gFOBT",
+      "fecal occult blood testing",
+    ],
+    measures:
+      "Screening assay detecting hidden (non-visible) blood in stool, used for colorectal cancer screening and evaluation of GI bleeding.",
+    normalRange: "Negative in healthy screening population",
+    increasedCauses: [
+      "Colorectal cancer or adenomatous polyps",
+      "Upper or lower GI bleeding (ulcer, angiodysplasia, diverticulosis)",
+      "False positives: red meat, vitamin C excess, some vegetables/medications (guaiac-based tests)",
+    ],
+    decreasedCauses: ["No clinically significant GI blood loss detected"],
+    boardsPearls: [
+      "Positive FOBT requires colonoscopy to evaluate for cancer/polyps",
+      "Painless hematochezia still warrants evaluation — occult bleeding can be from right-sided lesions",
+      "FIT (fecal immunochemical test) is more specific than guaiac FOBT and preferred in many screening programs",
+      "One-time positive screen is not diagnostic — confirm with colonoscopy",
+    ],
+    pairWith: [
+      "Positive FOBT + iron deficiency anemia → colonoscopy",
+      "Screening age 45+ (average-risk adults) with colonoscopy, FIT, or other approved modality",
+    ],
+  },
+  {
+    id: "prostate-specific-antigen",
+    name: "Prostate-Specific Antigen",
+    etymology: "Greek prostatēs = one standing before + Latin specificus = particular + antigen = antibody generator",
+    aliases: [
+      "prostate-specific antigen",
+      "prostate specific antigen",
+      "psa",
+      "serum psa",
+      "total psa",
+    ],
+    measures:
+      "Kallikrein-like serine protease produced mainly by prostatic epithelium; used to screen for prostate cancer and monitor recurrence.",
+    normalRange: "Age-dependent; commonly <4 ng/mL in many labs (interpret with DRE and trend)",
+    increasedCauses: [
+      "Prostate adenocarcinoma",
+      "Benign prostatic hyperplasia",
+      "Prostatitis and urinary tract instrumentation",
+      "Recent ejaculation or vigorous cycling (modest/transient rise)",
+    ],
+    decreasedCauses: [
+      "Finasteride or dutasteride (5α-reductase inhibitors) — roughly halves PSA; adjust interpretation",
+      "Prior prostatectomy (expected undetectable if no recurrence)",
+    ],
+    boardsPearls: [
+      "PSA is prostate-specific, not cancer-specific — BPH and prostatitis also elevate PSA",
+      "Hard irregular nodule on DRE raises cancer concern regardless of PSA",
+      "5α-reductase inhibitors lower PSA — double measured value when interpreting on therapy",
+      "Screening remains controversial; shared decision-making in average-risk men",
+    ],
+    pairWith: [
+      "↑ PSA + hard prostate nodule → biopsy",
+      "↑ PSA + normal DRE → consider prostatitis, BPH, or occult cancer",
+    ],
+  },
+  {
+    id: "karyotype",
+    name: "Karyotype",
+    etymology: "Greek karyon = nucleus + typos = impression/type",
+    aliases: [
+      "karyotype",
+      "karyotypes",
+      "chromosome analysis",
+      "chromosomal analysis",
+      "cytogenetic analysis",
+    ],
+    measures:
+      "Microscopic or genomic arrangement of an individual's chromosomes used to detect aneuploidy, translocations, and large structural abnormalities.",
+    normalRange: "46,XX in females and 46,XY in males (modal chromosome complement)",
+    increasedCauses: [
+      "Aneuploidy detected on analysis — trisomies, monosomies, sex chromosome disorders",
+      "Structural chromosomal rearrangements — translocations, deletions, inversions",
+    ],
+    decreasedCauses: [],
+    boardsPearls: [
+      "Turner syndrome — 45,X or mosaic 45,X/46,XX",
+      "Klinefelter — 47,XXY; Down syndrome — trisomy 21",
+      "Primary amenorrhea or ambiguous genitalia often warrants karyotype",
+      "Mosaicism may require multiple cell lines or FISH if clinical suspicion persists",
+    ],
+    pairWith: [
+      "Short stature + webbed neck + primary amenorrhea → karyotype for Turner (45,X)",
+      "Small firm testes + infertility → karyotype for Klinefelter (47,XXY)",
+      "Hydatidiform mole — 46,XX androgenetic complete mole or triploid partial mole",
+    ],
   },
 ];
 

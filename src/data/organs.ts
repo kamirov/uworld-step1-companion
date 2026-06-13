@@ -98,6 +98,16 @@ export const ORGANS: OrganEntry[] = [
       "Laryngeal cartilages from fourth and sixth pharyngeal arch mesoderm; epithelium from foregut endoderm of the laryngotracheal groove.",
   },
   {
+    id: "pharynx",
+    name: "Pharynx",
+    etymology: "Greek pharynx = throat",
+    aliases: ["pharynx", "pharyngeal", "throat"],
+    germLayer: "Endoderm / Mesoderm",
+    origin:
+      "Develops from foregut endoderm and surrounding pharyngeal arch mesenchyme; divided into nasopharynx, oropharynx, and laryngopharynx.",
+    derivatives: ["Waldeyer ring lymphoid tissue", "Tonsils", "Passageway shared by respiratory and digestive tracts"],
+  },
+  {
     id: "trachea",
     name: "Trachea",
     etymology: "Greek trachys = rough",
@@ -723,6 +733,12 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Croup", "Epiglottitis", "Vocal cord paralysis", "Laryngeal cancer"],
     step1Pearls: ["Recurrent laryngeal nerve injury causes hoarseness", "Croup causes inspiratory stridor and barking cough", "Epiglottitis is a drooling tripod emergency"],
     pediatrics: "Croup is usually parainfluenza; Hib vaccine sharply reduced pediatric epiglottitis.",
+  },
+  pharynx: {
+    functionSummary: "Muscular tube connecting nasal/oral cavities to larynx and esophagus; conducts air and food and hosts lymphoid tissue for mucosal immunity.",
+    commonPathologies: ["Pharyngitis", "Peritonsillar abscess", "Adenotonsillar hypertrophy", "Oropharyngeal cancer", "Zenker diverticulum"],
+    step1Pearls: ["Shared airway and food passage — swallowing reflex protects airway", "Group A strep pharyngitis can trigger rheumatic fever or PSGN", "Posterior pharynx lesions suggest enteroviral herpangina or HSV distribution patterns"],
+    pediatrics: "Strep pharyngitis and viral pharyngitis are common in children; peritonsillar abscess presents with trismus and uvular deviation.",
   },
   trachea: {
     functionSummary: "Conducts air from larynx to bronchi; ciliated mucosa clears particles upward.",

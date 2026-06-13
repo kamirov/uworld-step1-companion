@@ -1426,6 +1426,8 @@ export const CONDITIONS: ConditionEntry[] = [
       "coronary atherosclerosis",
       "arterial plaque",
       "ischemic heart disease",
+      "coronary heart disease",
+      "chd",
     ],
     definition:
       "Chronic inflammatory disease of arterial intima with lipid accumulation, plaque formation, and progressive luminal narrowing.",
@@ -5000,9 +5002,6 @@ export const CONDITIONS: ConditionEntry[] = [
       "post-streptococcal glomerulonephritis",
       "post streptococcal glomerulonephritis",
       "psgn",
-      "rapidly progressive glomerulonephritis",
-      "rpgn",
-      "crescentic glomerulonephritis",
       "iga nephropathy",
       "berger disease",
     ],
@@ -5279,7 +5278,7 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "urinary-tract-infection",
     name: "Urinary Tract Infection",
     etymology: "Greek ouron = urine + Latin tractus = drawn path + infectio = contamination",
-    aliases: ["urinary tract infection", "uti", "cystitis", "bladder infection"],
+    aliases: ["urinary tract infection", "uti", "bladder infection"],
     definition:
       "Bacterial infection of the urinary tract — most often uncomplicated cystitis (lower UTI); may ascend to pyelonephritis or progress to urosepsis.",
     pathophysiology:
@@ -5712,7 +5711,16 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "turner-syndrome",
     name: "Turner Syndrome",
     etymology: "eponym: Henry Turner + syndrome = grouped findings",
-    aliases: ["turner syndrome", "turner's syndrome", "45,x"],
+    aliases: [
+      "turner syndrome",
+      "turner's syndrome",
+      "turners syndrome",
+      "45,x",
+      "45,xo",
+      "45 xo",
+      "monosomy x",
+      "xo syndrome",
+    ],
     definition:
       "Chromosomal disorder in females (45,X or mosaic) with short stature, ovarian dysgenesis, and characteristic physical features.",
     pathophysiology:
@@ -5726,6 +5734,9 @@ export const CONDITIONS: ConditionEntry[] = [
       "Webbed neck, low posterior hairline",
       "Widely spaced nipples (shield chest)",
       "Short fourth metacarpal",
+      "Cubitus valgus (increased carrying angle)",
+      "High-arched palate",
+      "Lymphedema of hands and feet in infancy",
     ],
     keyLabs: ["Karyotype: 45,X or mosaic (45,X/46,XX)"],
     associations: [
@@ -9886,6 +9897,1501 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Early childhood caries can follow frequent bottle/sippy-cup sugar exposure; fluoride varnish and limiting juice/sugary drinks are high-yield prevention.",
+  },
+  {
+    id: "glossitis",
+    name: "Glossitis",
+    etymology: "Greek glossa = tongue + -itis = inflammation",
+    aliases: ["glossitis", "inflamed tongue", "tongue inflammation", "atrophic glossitis"],
+    definition:
+      "Inflammation or morphologic change of the tongue mucosa, often reflecting local irritation, infection, or systemic nutritional or inflammatory disease.",
+    pathophysiology:
+      "Mucosal injury or atrophy from nutritional deficiency (B12, folate, iron), autoimmune disease, infection, or chronic irritation → papillary loss, erythema, pain, or fissuring.",
+    classicPresentation: [
+      "Smooth, beefy red tongue with papillary loss in B12/folate deficiency",
+      "Painful swollen tongue with hot/spicy food intolerance",
+      "Geographic tongue — maplike migrating erythematous patches with white borders",
+    ],
+    keyFindings: [
+      "Atrophic or erythematous tongue",
+      "Median rhomboid glossitis — central posterior rhomboid erythematous patch",
+      "Angular cheilitis or other deficiency stigmata may coexist",
+    ],
+    keyLabs: [
+      "CBC, iron studies, folate, vitamin B12",
+      "Consider celiac serology or TSH if clinical context suggests",
+    ],
+    associations: [
+      "Vitamin B12 or folate deficiency",
+      "Iron deficiency anemia",
+      "Celiac disease",
+      "Median rhomboid glossitis with Candida",
+      "Geographic tongue (benign migratory glossitis)",
+    ],
+    complications: ["Pain-limited oral intake", "Underlying deficiency or malabsorption if untreated"],
+    distinguishFrom: [
+      "Oral candidiasis — scrapeable white plaques",
+      "Aphthous ulcer — discrete painful ulcer, not diffuse tongue inflammation",
+      "Macroglossia — tongue enlargement, not primarily inflammatory mucosal change",
+    ],
+    treatment: [
+      "Treat underlying deficiency or systemic disease",
+      "Topical antifungal if Candida-associated median rhomboid glossitis",
+      "Reassurance for benign geographic tongue",
+    ],
+    boardsPearls: [
+      "Smooth beefy red tongue with B12/folate deficiency is classic glossitis",
+      "Median rhomboid glossitis is often Candida-associated",
+      "Geographic tongue is benign and migratory — do not confuse with leukoplakia",
+    ],
+    pediatrics:
+      "Iron deficiency and nutritional deficiencies can cause glossitis in children; geographic tongue is common and benign.",
+  },
+  {
+    id: "oral-candidiasis",
+    name: "Oral Candidiasis",
+    etymology: "Latin candidus = white + Greek -iasis = diseased condition",
+    aliases: [
+      "oral candidiasis",
+      "oral thrush",
+      "thrush",
+      "oropharyngeal candidiasis",
+      "oral yeast infection",
+      "pseudomembranous candidiasis",
+    ],
+    definition:
+      "Fungal overgrowth of Candida species on oral mucosa causing white plaques, erythema, or soreness, especially when local or systemic defenses are impaired.",
+    pathophysiology:
+      "Disrupted oral flora or impaired immunity allows Candida overgrowth → pseudomembranous white plaques adherent to erythematous mucosa; scraping removes plaque and leaves bleeding base.",
+    classicPresentation: [
+      "White curdlike plaques on buccal mucosa, tongue, or palate",
+      "Plaques scrape off with erythematous base underneath",
+      "Burning mouth, dysphagia if esophageal extension",
+    ],
+    keyFindings: [
+      "Scrapeable white pseudomembranes",
+      "Erythematous/atrophic candidiasis in denture wearers or inhaled steroid users",
+      "Angular cheilitis may coexist",
+    ],
+    keyLabs: [
+      "KOH prep or Gram stain — yeast and pseudohyphae",
+      "Germ tube test positive for Candida albicans",
+      "Consider HIV testing if unexplained or recurrent",
+    ],
+    associations: [
+      "Candida albicans",
+      "HIV/AIDS and immunosuppression",
+      "Broad-spectrum antibiotics and inhaled corticosteroids",
+      "Diabetes mellitus, dentures, xerostomia",
+      "Neutropenia and chronic mucocutaneous candidiasis",
+    ],
+    complications: ["Esophageal candidiasis with odynophagia", "Systemic candidiasis in severe immunocompromise"],
+    distinguishFrom: [
+      "Oral hairy leukoplakia (EBV) — lateral tongue, does not scrape off",
+      "Leukoplakia — white patch that cannot be scraped off; premalignant",
+      "Aphthous ulcer — painful discrete ulcer, not diffuse plaques",
+    ],
+    treatment: [
+      "Topical nystatin or clotrimazole for mild disease",
+      "Oral fluconazole for moderate/severe or esophageal involvement",
+      "Treat underlying immunosuppression, hyperglycemia, or xerostomia",
+    ],
+    boardsPearls: [
+      "Thrush plaques scrape off; hairy leukoplakia does not",
+      "C. albicans germ tube test is positive at 37°C",
+      "Inhaled steroids without mouth rinse predispose to oral candidiasis",
+    ],
+    pediatrics:
+      "Neonatal thrush is common; also check for diaper candidiasis. Chronic mucocutaneous candidiasis in a child suggests immunodeficiency.",
+  },
+  {
+    id: "tongue-cancer",
+    name: "Tongue Cancer",
+    etymology: "Latin cancer = crab (spread like crab legs) + Old English tunge = tongue",
+    aliases: [
+      "tongue cancer",
+      "oral tongue cancer",
+      "squamous cell carcinoma of the tongue",
+      "tongue scc",
+      "tongue squamous cell carcinoma",
+      "lingual cancer",
+    ],
+    definition:
+      "Malignant neoplasm of the tongue, usually oral squamous cell carcinoma, most often on the lateral border of the mobile tongue.",
+    pathophysiology:
+      "Field cancerization from tobacco/alcohol or chronic mucosal irritation → dysplasia of stratified squamous epithelium → invasive SCC with local spread to floor of mouth and cervical lymph nodes.",
+    classicPresentation: [
+      "Nonhealing ulcer or mass on lateral tongue border",
+      "Pain, bleeding, or referred otalgia",
+      "Fixation to tongue musculature as disease advances",
+    ],
+    keyFindings: [
+      "Indurated ulcer with raised edges",
+      "Cervical lymphadenopathy",
+      "Leukoplakia or erythroplakia as precursor lesions",
+    ],
+    keyLabs: [
+      "Biopsy confirms squamous cell carcinoma",
+      "Imaging for nodal and local extension",
+      "HPV testing more relevant for oropharyngeal SCC than anterior oral tongue",
+    ],
+    associations: [
+      "Tobacco and alcohol use",
+      "Leukoplakia and erythroplakia",
+      "Chronic mechanical irritation",
+      "HPV-associated SCC more classically at base of tongue/oropharynx",
+    ],
+    complications: ["Cervical nodal metastasis", "Local invasion affecting speech/swallowing", "Recurrence after treatment"],
+    distinguishFrom: [
+      "Aphthous ulcer — painful, shallow, heals within weeks",
+      "Oral candidiasis — scrapeable white plaques",
+      "Oral hairy leukoplakia — HIV-associated lateral tongue plaque, not invasive ulcer",
+    ],
+    treatment: [
+      "Surgical resection ± neck dissection",
+      "Radiation ± chemotherapy depending on stage",
+      "Smoking/alcohol cessation",
+    ],
+    boardsPearls: [
+      "Lateral tongue border is the classic high-yield site for oral SCC",
+      "Persistent nonhealing oral ulcer >2 weeks needs biopsy",
+      "Erythroplakia is more ominous than leukoplakia for malignant transformation",
+    ],
+  },
+  {
+    id: "macroglossia",
+    name: "Macroglossia",
+    etymology: "Greek makros = large + glossa = tongue",
+    aliases: ["macroglossia", "enlarged tongue", "tongue enlargement", "large tongue"],
+    definition:
+      "Abnormally enlarged tongue that may be congenital or acquired, causing airway, feeding, speech, or dental problems.",
+    pathophysiology:
+      "True enlargement from tissue overgrowth (hypothyroid myxedema, acromegaly, amyloid deposition) or relative protrusion from small oral cavity; mass effect can obstruct airway or push teeth apart.",
+    classicPresentation: [
+      "Protruding tongue with tooth indentations (cobblestone/scalloped margins)",
+      "Speech articulation difficulty or mouth breathing",
+      "Airway obstruction or feeding difficulty in infants",
+    ],
+    keyFindings: [
+      "Enlarged tongue with dental imprinting",
+      "Open bite or anterior open occlusion from tongue thrust",
+      "Signs of underlying systemic disease (hypothyroidism, acromegaly, Down syndrome)",
+    ],
+    keyLabs: [
+      "TSH/free T4 if hypothyroidism suspected",
+      "IGF-1 if acromegaly suspected",
+      "Biopsy if amyloidosis suspected",
+    ],
+    associations: [
+      "Down syndrome",
+      "Congenital hypothyroidism",
+      "Acromegaly",
+      "Primary (AL) amyloidosis",
+      "Beckwith-Wiedemann syndrome",
+    ],
+    complications: ["Airway obstruction", "Obstructive sleep apnea", "Malocclusion and drooling"],
+    distinguishFrom: [
+      "Ankyloglossia — restricted tongue mobility from short frenulum, not true enlargement",
+      "Glossitis — inflammation/atrophy rather than organomegaly",
+      "Acute tongue swelling (angioedema/anaphylaxis) — sudden onset",
+    ],
+    treatment: [
+      "Treat underlying cause (levothyroxine, acromegaly therapy, amyloid workup)",
+      "Airway support when severe",
+      "Speech/dental management as needed",
+    ],
+    boardsPearls: [
+      "Macroglossia with hypothyroidism and developmental delay = congenital hypothyroidism",
+      "Beckwith-Wiedemann syndrome: macroglossia, omphalocele, hemihyperplasia, ↑ Wilms tumor risk",
+      "Acromegaly causes macroglossia with coarse facial features and enlarged hands/feet",
+    ],
+    pediatrics:
+      "Macroglossia is seen in Beckwith-Wiedemann syndrome and congenital hypothyroidism; monitor for airway compromise and screen for Wilms tumor in Beckwith-Wiedemann.",
+  },
+  {
+    id: "ankyloglossia",
+    name: "Ankyloglossia",
+    etymology: "Greek ankylos = stiff/fixed + glossa = tongue",
+    aliases: ["ankyloglossia", "tongue-tie", "tongue tie", "short lingual frenulum", "lingual frenulum anomaly"],
+    definition:
+      "Congenital short, thick, or anteriorly inserted lingual frenulum restricting tongue elevation and protrusion.",
+    pathophysiology:
+      "Abnormal frenulum attachment limits tongue mobility → impaired latch in infants and sometimes articulation of lingual sounds (t, d, l) later in childhood.",
+    classicPresentation: [
+      "Heart-shaped tongue tip on protrusion",
+      "Inability to lift tongue to palate or protrude past lower lip",
+      "Infant breastfeeding difficulty with poor latch",
+    ],
+    keyFindings: [
+      "Short/tight lingual frenulum",
+      "Restricted tongue elevation and lateralization",
+      "Not true tongue enlargement",
+    ],
+    keyLabs: ["Clinical diagnosis"],
+    associations: [
+      "Breastfeeding difficulty in neonates",
+      "Speech articulation issues in select children",
+      "May coexist with other craniofacial anomalies",
+    ],
+    complications: ["Poor infant weight gain from feeding difficulty", "Speech delay in some cases"],
+    distinguishFrom: [
+      "Macroglossia — enlarged tongue, not restricted by frenulum",
+      "Neurologic tongue weakness (CN XII palsy) — weakness rather than tethering",
+      "Cleft palate — midline structural defect, not frenulum restriction",
+    ],
+    treatment: [
+      "Lactation support first in mild cases",
+      "Frenotomy or frenuloplasty if significant feeding or speech impairment",
+    ],
+    boardsPearls: [
+      "Heart-shaped tongue tip on protrusion suggests ankyloglossia",
+      "Short frenulum restricts mobility; macroglossia is true enlargement",
+      "CN XII palsy causes tongue deviation toward lesion, not frenulum tethering",
+    ],
+    pediatrics:
+      "Evaluate when breastfeeding is impaired; frenotomy can improve latch in selected infants. Not every tongue-tie requires surgery.",
+  },
+  {
+    id: "chronic-kidney-disease",
+    name: "Chronic Kidney Disease",
+    etymology: "Greek chronos = time + Old English cwið + Latin ren = kidney + Latin dis = apart + ease = comfort",
+    aliases: [
+      "chronic kidney disease",
+      "ckd",
+      "chronic renal disease",
+      "chronic renal failure",
+      "crf",
+      "chronic renal insufficiency",
+    ],
+    definition:
+      "Progressive, irreversible loss of kidney function for ≥3 months, defined by reduced GFR and/or persistent markers of kidney damage.",
+    pathophysiology:
+      "Nephron loss from diabetes, hypertension, glomerular disease, or tubulointerstitial injury → ↓ GFR → retention of urea/creatinine, impaired electrolyte/acid-base regulation, ↓ EPO, and ↓ 1,25-dihydroxyvitamin D activation.",
+    classicPresentation: [
+      "Often asymptomatic until advanced",
+      "Fatigue, nocturia, foamy urine (proteinuria), peripheral edema",
+      "Hypertension and bone pain in later stages",
+    ],
+    keyFindings: [
+      "↑ creatinine with ↓ estimated GFR",
+      "Proteinuria or albuminuria",
+      "Anemia, metabolic acidosis, hyperphosphatemia",
+      "Small echogenic kidneys on ultrasound in chronic disease",
+    ],
+    keyLabs: [
+      "Serum creatinine and eGFR",
+      "Urinalysis with protein/albumin quantification",
+      "Electrolytes, bicarbonate, phosphorus, calcium, PTH",
+      "CBC for anemia",
+    ],
+    associations: [
+      "Diabetes mellitus and hypertension (most common causes in adults)",
+      "Diabetic nephropathy",
+      "Polycystic kidney disease",
+      "Glomerulonephritis and reflux nephropathy",
+      "Secondary hyperparathyroidism of CKD",
+    ],
+    complications: [
+      "End-stage renal disease",
+      "Cardiovascular disease",
+      "Renal osteodystrophy",
+      "Hyperkalemia and uremic symptoms",
+    ],
+    distinguishFrom: [
+      "Acute kidney injury — rapid creatinine rise over days with often reversible cause",
+      "Prerenal azotemia — BUN/Cr >20:1, low urine Na, improves with volume repletion",
+      "End-stage renal disease — CKD stage 5 (GFR <15) or dialysis dependence",
+    ],
+    treatment: [
+      "Treat underlying cause and control BP/glucose",
+      "ACE inhibitor or ARB for proteinuric CKD",
+      "Avoid nephrotoxins (NSAIDs, contrast when possible)",
+      "Phosphate binders, vitamin D, ESA for CKD-mineral bone disease and anemia",
+    ],
+    boardsPearls: [
+      "CKD = GFR <60 mL/min/1.73 m² or kidney damage markers for ≥3 months",
+      "Diabetes + HTN are the leading CKD causes in the US",
+      "CKD causes normocytic anemia via ↓ EPO and secondary hyperparathyroidism via ↓ vitamin D activation",
+      "ACEi/ARB slow proteinuric CKD but monitor K⁺ and creatinine",
+    ],
+    pediatrics:
+      "Congenital anomalies, reflux nephropathy, and glomerular disease are important pediatric causes; monitor growth and bone health in chronic disease.",
+  },
+  {
+    id: "end-stage-renal-disease",
+    name: "End-Stage Renal Disease",
+    etymology: "Latin finis = end + Latin status = state + Latin ren = kidney + Latin dis = apart + ease = comfort",
+    aliases: [
+      "end-stage renal disease",
+      "esrd",
+      "end stage renal disease",
+      "stage 5 ckd",
+      "ckd stage 5",
+      "kidney failure requiring dialysis",
+      "dialysis-dependent renal failure",
+    ],
+    definition:
+      "Terminal kidney failure (CKD stage 5) with GFR <15 mL/min/1.73 m² or need for chronic dialysis or kidney transplantation.",
+    pathophysiology:
+      "Severe nephron loss → accumulation of uremic toxins, fluid overload, electrolyte derangements, and endocrine dysfunction → multisystem uremic syndrome unless cleared by dialysis or replaced by transplant.",
+    classicPresentation: [
+      "Marked fatigue, nausea, vomiting, pruritus, altered taste",
+      "Volume overload with edema and dyspnea",
+      "Confusion or asterixis in severe uremia",
+    ],
+    keyFindings: [
+      "Very low or absent urine output in some patients",
+      "Uremic frost, pericardial rub, or encephalopathy",
+      "Platelet dysfunction with prolonged bleeding time",
+      "Hyperkalemia and metabolic acidosis",
+    ],
+    keyLabs: [
+      "GFR <15 mL/min/1.73 m²",
+      "↑ BUN and creatinine",
+      "Hyperphosphatemia, hypocalcemia, ↑ PTH",
+      "Anemia and metabolic acidosis",
+    ],
+    associations: [
+      "Progression from chronic kidney disease",
+      "Diabetes mellitus and hypertension",
+      "Secondary hyperparathyroidism",
+      "Dialysis access (AV fistula, catheter) complications",
+    ],
+    complications: [
+      "Uremic pericarditis and encephalopathy",
+      "Hyperkalemia-induced arrhythmia",
+      "Dialysis disequilibrium syndrome",
+      "Renal osteodystrophy and vascular calcification",
+    ],
+    distinguishFrom: [
+      "Chronic kidney disease — earlier stages with GFR ≥15 and often fewer uremic symptoms",
+      "Acute kidney injury — potentially reversible rapid decline",
+      "Prerenal azotemia — improves with volume repletion",
+    ],
+    treatment: [
+      "Renal replacement therapy: hemodialysis, peritoneal dialysis, or transplant",
+      "Dietary potassium/phosphate restriction and fluid management",
+      "Erythropoiesis-stimulating agents, iron, phosphate binders, vitamin D analogs",
+      "Avoid routine NSAIDs and nephrotoxins",
+    ],
+    boardsPearls: [
+      "ESRD = CKD stage 5 (GFR <15) or dialysis/transplant requirement",
+      "Uremic bleeding is due to platelet dysfunction — normal platelet count",
+      "Uremic pericarditis may not fully respond until dialysis; avoid anticoagulation if hemorrhagic risk",
+      "Secondary hyperparathyroidism: ↑ phosphate, ↓ calcium, ↑ PTH",
+    ],
+    pediatrics:
+      "Children with ESRD need growth monitoring, nutrition support, and often peritoneal dialysis; congenital urologic disease is a common underlying cause.",
+  },
+  {
+    id: "cystitis",
+    name: "Cystitis",
+    etymology: "Greek kystis = bladder + -itis = inflammation",
+    aliases: ["cystitis", "acute cystitis", "uncomplicated cystitis", "bladder infection", "lower uti"],
+    definition:
+      "Acute bacterial infection and inflammation of the bladder, the most common form of lower urinary tract infection.",
+    pathophysiology:
+      "Uropathogens (usually E. coli with type 1 and P fimbriae) ascend from perineum into bladder → mucosal inflammation → dysuria, frequency, and pyuria without systemic upper tract involvement.",
+    classicPresentation: [
+      "Dysuria, urinary frequency, and urgency",
+      "Suprapubic pain or pressure",
+      "No fever, flank pain, or CVA tenderness in uncomplicated disease",
+    ],
+    keyFindings: [
+      "Pyuria and bacteriuria on urinalysis",
+      "Positive nitrites if gram-negative organisms present",
+      "Normal vitals and no costovertebral angle tenderness",
+    ],
+    keyLabs: [
+      "Urinalysis with pyuria/bacteriuria",
+      "Urine culture (>10⁵ CFU/mL) when diagnosis uncertain or recurrent",
+    ],
+    associations: [
+      "Female sex and sexual activity",
+      "Recent antibiotic use or spermicide use",
+      "Catheterization and diabetes mellitus",
+      "Anatomic or functional voiding abnormalities in complicated cases",
+    ],
+    complications: [
+      "Pyelonephritis if infection ascends",
+      "Recurrent UTIs",
+      "Emphysematous cystitis in diabetics (rare)",
+    ],
+    distinguishFrom: [
+      "Pyelonephritis — fever, flank/CVA tenderness, WBC casts",
+      "Urethritis (GC/Chlamydia) — urethral discharge, often sexually transmitted",
+      "Vaginitis — external dysuria, discharge, normal urine",
+      "Interstitial cystitis — chronic pelvic pain without infection",
+    ],
+    treatment: [
+      "Uncomplicated cystitis in women: nitrofurantoin or TMP-SMX (local resistance patterns matter)",
+      "Avoid fluoroquinolones as first-line for uncomplicated cystitis when alternatives exist",
+      "Treat longer and evaluate anatomy if recurrent or complicated",
+    ],
+    boardsPearls: [
+      "Uncomplicated cystitis = bladder only; E. coli is the leading cause",
+      "Nitrites on dipstick suggest gram-negative organisms with nitrate reductase",
+      "Upper tract infection signs (fever, flank pain, WBC casts) mean pyelonephritis, not simple cystitis",
+    ],
+    pediatrics:
+      "Febrile UTI in infants and young children is treated as pyelonephritis until proven otherwise; evaluate for vesicoureteral reflux after first febrile UTI.",
+  },
+  {
+    id: "bladder-cancer",
+    name: "Bladder Cancer",
+    etymology: "Old English blædre = bladder + Latin cancro = crab/malignancy",
+    aliases: [
+      "bladder cancer",
+      "bladder carcinoma",
+      "urothelial carcinoma of bladder",
+      "transitional cell carcinoma of bladder",
+      "tcc bladder",
+      "bladder urothelial carcinoma",
+    ],
+    definition:
+      "Malignant neoplasm of the bladder urothelium, most commonly urothelial (transitional cell) carcinoma presenting with hematuria.",
+    pathophysiology:
+      "Carcinogens in urine (smoking metabolites, aromatic amines, cyclophosphamide metabolites) damage urothelium → field cancerization → papillary or flat lesions; schistosomiasis predisposes to squamous carcinoma.",
+    classicPresentation: [
+      "Painless gross or microscopic hematuria",
+      "Irritative voiding symptoms if carcinoma in situ",
+      "Older adult with smoking history",
+    ],
+    keyFindings: [
+      "Hematuria without dysuria in classic case",
+      "Bladder mass on cystoscopy",
+      "Urothelial malignancy on biopsy",
+    ],
+    keyLabs: [
+      "Urinalysis/cytology — hematuria; cytology may detect high-grade disease",
+      "Cystoscopy with biopsy is diagnostic",
+      "Imaging for staging and upper tract involvement",
+    ],
+    associations: [
+      "Tobacco smoking (major risk factor)",
+      "Occupational aromatic amine exposure (dye/rubber industries)",
+      "Cyclophosphamide and pelvic radiation",
+      "Schistosoma haematobium — squamous cell carcinoma of bladder",
+      "Lynch syndrome",
+    ],
+    complications: [
+      "Local invasion and obstruction",
+      "Upper tract urothelial carcinoma (field effect)",
+      "Metastasis to nodes, liver, bone, lung",
+    ],
+    distinguishFrom: [
+      "Cystitis — dysuria, pyuria, infection; hematuria may occur but cancer classically painless",
+      "Nephrolithiasis — colicky flank pain, stones on imaging",
+      "Glomerulonephritis — RBC casts, proteinuria, hypertension",
+      "Benign prostatic hyperplasia — LUTS with possible hematuria but no bladder mass",
+    ],
+    treatment: [
+      "Transurethral resection for non-muscle-invasive disease ± intravesical BCG/chemotherapy",
+      "Radical cystectomy for muscle-invasive disease",
+      "Systemic therapy for advanced/metastatic disease",
+    ],
+    boardsPearls: [
+      "Painless hematuria in older smoker → bladder cancer until proven otherwise",
+      "Most common histology in the US is urothelial carcinoma",
+      "Schistosoma haematobium + hematuria → think squamous bladder cancer",
+    ],
+  },
+  {
+    id: "neurogenic-bladder",
+    name: "Neurogenic Bladder",
+    etymology: "Greek neuron = nerve + Latin gignere = to produce + Old English blædre = bladder",
+    aliases: [
+      "neurogenic bladder",
+      "neurogenic lower urinary tract dysfunction",
+      "neuropathic bladder",
+      "bladder dysfunction neurologic",
+    ],
+    definition:
+      "Bladder storage and emptying dysfunction caused by neurologic disease affecting central or peripheral pathways controlling micturition.",
+    pathophysiology:
+      "Disruption of sacral micturition reflex arc or suprapontine inhibition → detrusor overactivity or areflexia, sphincter dyssynergia, high bladder pressures, incomplete emptying, and risk of upper tract damage.",
+    classicPresentation: [
+      "Urinary retention, incontinence, or both",
+      "Recurrent UTIs from stasis",
+      "Known spinal cord injury, MS, or diabetic neuropathy",
+    ],
+    keyFindings: [
+      "High post-void residual or overflow incontinence",
+      "Detrusor-sphincter dyssynergia on urodynamics",
+      "Hydronephrosis if chronic high intravesical pressure",
+    ],
+    keyLabs: [
+      "Post-void residual volume",
+      "Urodynamic studies",
+      "Renal ultrasound if obstructive uropathy suspected",
+    ],
+    associations: [
+      "Spinal cord injury",
+      "Multiple sclerosis",
+      "Diabetic autonomic neuropathy",
+      "Spina bifida and cauda equina syndrome",
+      "Parkinson disease and stroke",
+    ],
+    complications: [
+      "Recurrent urinary tract infections",
+      "Hydronephrosis and chronic kidney disease",
+      "Autonomic dysreflexia in spinal cord injury above T6 with bladder distention",
+    ],
+    distinguishFrom: [
+      "Benign prostatic hyperplasia — smooth enlarged prostate on DRE in older men",
+      "Urethral stricture — history of instrumentation/trauma",
+      "Simple cystitis — infectious symptoms with pyuria, not primary neurologic voiding disorder",
+    ],
+    treatment: [
+      "Intermittent catheterization for retention",
+      "Anticholinergics or β₃-agonists for overactive neurogenic bladder when safe",
+      "Treat infection and avoid chronic high bladder pressures",
+    ],
+    boardsPearls: [
+      "Spinal cord injury above T6 + bladder distention can trigger autonomic dysreflexia — urgent catheterization",
+      "Upper motor neuron lesion → spastic bladder; lower motor neuron/cauda equina → flaccid areflexic bladder",
+      "Chronic high bladder pressure can cause silent hydronephrosis",
+    ],
+    pediatrics:
+      "Spina bifida commonly causes neurogenic bladder; early urologic follow-up protects upper tracts.",
+  },
+  {
+    id: "vesicoureteral-reflux",
+    name: "Vesicoureteral Reflux",
+    etymology: "Latin vesica = bladder + ureter + Latin re = back + fluxus = flow",
+    aliases: [
+      "vesicoureteral reflux",
+      "vesico ureteral reflux",
+      "vur",
+      "reflux nephropathy",
+      "urinary reflux",
+    ],
+    definition:
+      "Retrograde flow of urine from bladder into ureter(s) and sometimes renal pelvis due to abnormal ureterovesical junction valve mechanism.",
+    pathophysiology:
+      "Primary VUR from short intramural ureter or abnormal UVJ anatomy; secondary VUR from bladder outlet obstruction or neurogenic bladder → reflux delivers infected urine to kidneys → pyelonephritis and renal scarring.",
+    classicPresentation: [
+      "Febrile urinary tract infection in infant or young child",
+      "Recurrent UTIs with flank symptoms",
+      "Often discovered during workup after first febrile UTI",
+    ],
+    keyFindings: [
+      "Hydroureteronephrosis on renal ultrasound",
+      "Reflux on voiding cystourethrogram (VCUG)",
+      "Renal scarring on DMSA scan after pyelonephritis",
+    ],
+    keyLabs: [
+      "VCUG for diagnosis and grading",
+      "Renal ultrasound for anatomy and scarring",
+      "Urine culture during febrile illness",
+    ],
+    associations: [
+      "Primary congenital UVJ abnormality",
+      "Posterior urethral valves (secondary VUR in boys)",
+      "Neurogenic bladder and voiding dysfunction",
+      "Renal dysplasia",
+    ],
+    complications: [
+      "Acute pyelonephritis",
+      "Renal scarring and reflux nephropathy",
+      "Hypertension and chronic kidney disease",
+    ],
+    distinguishFrom: [
+      "Obstructive uropathy without reflux — obstruction on imaging without retrograde flow on VCUG",
+      "Simple cystitis — lower tract infection without fever/flank involvement",
+      "Acute pyelonephritis without reflux — may coexist but VUR explains recurrent upper tract infections",
+    ],
+    treatment: [
+      "Prophylactic antibiotics during infancy in higher-grade or recurrent febrile UTIs (per specialist guidance)",
+      "Prompt treatment of UTIs",
+      "Surgical reimplantation or endoscopic injection for persistent high-grade reflux with breakthrough infections",
+      "Correct bladder outlet obstruction if secondary cause",
+    ],
+    boardsPearls: [
+      "First febrile UTI in young child → renal ultrasound; VCUG if indicated for reflux evaluation",
+      "VUR predisposes to pyelonephitis and renal scarring, not just cystitis",
+      "Posterior urethral valves in boys can cause secondary VUR and obstructive uropathy",
+    ],
+    pediatrics:
+      "Primary VUR often improves with age in lower grades; febrile UTIs with VUR can cause permanent renal scarring — key pediatric nephrology topic.",
+  },
+  {
+    id: "hashimoto-thyroiditis",
+    name: "Hashimoto Thyroiditis",
+    etymology: "eponym: Hakaru Hashimoto + Greek thyreos = shield-shaped gland + -itis = inflammation",
+    aliases: [
+      "hashimoto thyroiditis",
+      "hashimotos thyroiditis",
+      "hashimoto's thyroiditis",
+      "chronic lymphocytic thyroiditis",
+      "autoimmune thyroiditis",
+      "hashimoto disease",
+    ],
+    definition:
+      "Autoimmune destruction of thyroid tissue causing goiter and progressive hypothyroidism, the most common cause of hypothyroidism in iodine-sufficient regions.",
+    pathophysiology:
+      "CD8+ T-cell and antibody-mediated injury (anti-TPO, anti-thyroglobulin) → lymphocytic infiltration and follicular destruction → ↓ thyroid hormone synthesis and release → compensatory ↑ TSH.",
+    classicPresentation: [
+      "Fatigue, weight gain, cold intolerance, constipation",
+      "Painless goiter early; atrophic thyroid in late disease",
+      "Dry skin, hair loss, bradycardia",
+    ],
+    keyFindings: [
+      "Diffuse or nodular goiter",
+      "Delayed reflexes and periorbital puffiness",
+      "Hurthle cell change and lymphoid infiltrates on histology",
+    ],
+    keyLabs: [
+      "↑ TSH with ↓ free T4 in overt hypothyroidism",
+      "Anti-TPO and anti-thyroglobulin antibodies",
+      "Subclinical disease: ↑ TSH with normal free T4",
+    ],
+    associations: [
+      "Other autoimmune diseases (type 1 diabetes, celiac disease, SLE)",
+      "HLA-DR5 association",
+      "Increased risk of thyroid lymphoma (rare)",
+      "Postpartum thyroiditis shares autoimmune mechanism",
+    ],
+    complications: [
+      "Overt hypothyroidism",
+      "Myxedema coma in severe untreated disease",
+      "Thyroid lymphoma (rare, often in long-standing goiter)",
+    ],
+    distinguishFrom: [
+      "Graves disease — hyperthyroidism with TSI, not anti-TPO-driven destruction",
+      "Subacute thyroiditis — painful tender thyroid, transient hyperthyroid then hypothyroid",
+      "Iodine deficiency goiter — low iodine intake, not autoimmune antibodies",
+    ],
+    treatment: [
+      "Levothyroxine replacement for hypothyroidism",
+      "Monitor TSH after dose changes every 6–8 weeks initially",
+    ],
+    boardsPearls: [
+      "Most common cause of hypothyroidism in iodine-sufficient areas",
+      "Anti-TPO antibodies are the key autoimmune marker",
+      "Hashimoto is more common than Graves in children with thyroid autoimmunity",
+    ],
+    pediatrics:
+      "Pediatric autoimmune thyroiditis can present with goiter and fatigue; monitor growth and school performance.",
+  },
+  {
+    id: "thyroid-nodule",
+    name: "Thyroid Nodule",
+    etymology: "Greek thyreos = shield + Latin nodus = knot",
+    aliases: [
+      "thyroid nodule",
+      "thyroid nodules",
+      "thyroid mass",
+      "solitary thyroid nodule",
+      "cold thyroid nodule",
+      "hot thyroid nodule",
+    ],
+    definition:
+      "Discrete palpable or imaging-detected lesion within the thyroid gland; most are benign, but malignancy must be excluded.",
+    pathophysiology:
+      "Benign nodules arise from colloid, adenoma, or Hashimoto-related change; malignant nodules reflect clonal neoplastic growth (papillary, follicular, medullary, or anaplastic carcinoma).",
+    classicPresentation: [
+      "Asymptomatic neck lump discovered on exam or imaging",
+      "Occasionally compressive symptoms — dysphagia or hoarseness if large/invasive",
+      "May be found incidentally on neck imaging",
+    ],
+    keyFindings: [
+      "Palpable thyroid nodule",
+      "Ultrasound features: solid hypoechoic nodule, microcalcifications, irregular margins, taller-than-wide shape",
+      "Cervical lymphadenopathy raises malignancy concern",
+    ],
+    keyLabs: [
+      "TSH first — if suppressed, radionuclide scan for autonomously functioning (hot) nodule",
+      "Thyroid ultrasound for characterization",
+      "Fine-needle aspiration biopsy based on size and suspicious features",
+    ],
+    associations: [
+      "Iodine deficiency (multinodular goiter)",
+      "Hashimoto thyroiditis",
+      "Radiation exposure to head/neck",
+      "Familial syndromes (MEN2 with medullary carcinoma)",
+    ],
+    complications: [
+      "Thyroid cancer if malignant",
+      "Compression of airway or recurrent laryngeal nerve",
+      "Hyperthyroidism if toxic adenoma (hot nodule)",
+    ],
+    distinguishFrom: [
+      "Graves disease — diffuse goiter with hyperthyroidism, not usually solitary cold nodule",
+      "Thyroid cancer — malignant cytology or invasive features on FNA/histology",
+      "Cervical lymph node — separate from thyroid parenchyma on ultrasound",
+    ],
+    treatment: [
+      "Benign nodules: observation or levothyroxine suppression in select cases",
+      "Suspicious/malignant nodules: surgery after appropriate FNA workup",
+      "Autonomous hot nodule may be treated with radioiodine or surgery if hyperthyroid",
+    ],
+    boardsPearls: [
+      "Start thyroid nodule workup with TSH, then ultrasound ± FNA",
+      "Hot nodule on scan is usually benign adenoma; cold nodule needs malignancy exclusion",
+      "Papillary carcinoma is the most common thyroid malignancy overall",
+    ],
+    pediatrics:
+      "Thyroid nodules are less common in children but have a higher malignancy risk than in adults — lower threshold for FNA and surgery.",
+  },
+  {
+    id: "thyroid-cancer",
+    name: "Thyroid Cancer",
+    etymology: "Greek thyreos = shield + Latin cancro = crab/malignancy",
+    aliases: [
+      "thyroid cancer",
+      "thyroid carcinoma",
+      "differentiated thyroid cancer",
+      "papillary thyroid cancer",
+      "papillary thyroid carcinoma",
+      "follicular thyroid cancer",
+      "follicular thyroid carcinoma",
+    ],
+    definition:
+      "Malignant neoplasm of thyroid follicular or C-cell origin; papillary carcinoma is most common and carries the best prognosis among differentiated types.",
+    pathophysiology:
+      "Papillary/follicular cancers arise from follicular cells (RET/ BRAF and other driver mutations in papillary disease) → lymphatic (papillary) or hematogenous (follicular) spread; anaplastic carcinoma is undifferentiated and aggressive.",
+    classicPresentation: [
+      "Painless thyroid nodule or neck mass",
+      "Cervical lymphadenopathy (especially papillary)",
+      "Hoarseness if recurrent laryngeal nerve invasion",
+    ],
+    keyFindings: [
+      "Solid thyroid nodule with suspicious ultrasound features",
+      "Orphan Annie nuclei and psammoma bodies in papillary carcinoma",
+      "Capsular/vascular invasion in follicular carcinoma",
+    ],
+    keyLabs: [
+      "Fine-needle aspiration cytology",
+      "Thyroglobulin as tumor marker for differentiated follicular-derived cancers post-treatment",
+      "Calcitonin elevated in medullary thyroid carcinoma (separate entity)",
+    ],
+    associations: [
+      "Childhood head/neck irradiation",
+      "Papillary carcinoma — BRAF/RET fusions among common drivers",
+      "Follicular carcinoma — hematogenous spread to bone/lung",
+      "Anaplastic carcinoma — older adults, rapidly enlarging neck mass",
+    ],
+    complications: [
+      "Cervical nodal metastasis",
+      "Local invasion of airway or recurrent laryngeal nerve",
+      "Distant metastasis (follicular hematogenous; papillary pulmonary micrometastases)",
+    ],
+    distinguishFrom: [
+      "Benign thyroid adenoma — bland cytology, no invasion",
+      "Medullary thyroid carcinoma — calcitonin-secreting C-cell tumor, RET/MEN2 association",
+      "Graves disease — diffuse hyperthyroid gland, not focal malignancy",
+      "Thyroid lymphoma — rapid enlargement in Hashimoto background",
+    ],
+    treatment: [
+      "Thyroidectomy ± lymph node dissection for differentiated thyroid cancer",
+      "Radioactive iodine ablation for selected differentiated tumors",
+      "Thyroglobulin surveillance after thyroidectomy",
+    ],
+    boardsPearls: [
+      "Papillary thyroid carcinoma: orphan Annie nuclei, psammoma bodies, lymphatic spread",
+      "Follicular carcinoma invades capsule/vessels and spreads hematogenously",
+      "Medullary carcinoma is calcitonin-secreting and linked to RET/MEN2 — not the same as differentiated thyroid cancer",
+    ],
+    pediatrics:
+      "Thyroid malignancy is more likely when a child has a thyroid nodule; papillary carcinoma remains the most common pediatric thyroid cancer.",
+  },
+  {
+    id: "congenital-hypothyroidism",
+    name: "Congenital Hypothyroidism",
+    etymology: "Latin con = together + nasci = to be born + Greek hypo = under + thyreos = shield + -ism = condition",
+    aliases: [
+      "congenital hypothyroidism",
+      "neonatal hypothyroidism",
+      "cretinism",
+      "thyroid dysgenesis",
+      "congenital thyroid deficiency",
+    ],
+    definition:
+      "Thyroid hormone deficiency present at birth from thyroid dysgenesis, dyshormonogenesis, or iodine deficiency, causing neurodevelopmental impairment if untreated.",
+    pathophysiology:
+      "Absent or ectopic thyroid gland, enzymatic defect in hormone synthesis, or maternal antibodies/medications → insufficient T4 in neonatal period → impaired brain myelination and growth; neonatal ↑ TSH triggers newborn screening detection.",
+    classicPresentation: [
+      "Often asymptomatic at birth due to transplacental maternal T4",
+      "Prolonged jaundice, poor feeding, hypotonia, macroglossia, umbilical hernia",
+      "Delayed growth and intellectual disability if untreated",
+    ],
+    keyFindings: [
+      "Large posterior fontanelle and hypotonia",
+      "Macroglossia and umbilical hernia",
+      "Dry skin, hoarse cry, constipation",
+    ],
+    keyLabs: [
+      "Newborn screening: ↑ TSH (primary screen in most programs)",
+      "Confirmatory ↓ free T4 with ↑ TSH",
+      "Thyroid ultrasound or scan to assess ectopic/aplastic gland",
+    ],
+    associations: [
+      "Thyroid dysgenesis (aplasia, ectopy)",
+      "Dyshormonogenesis (TPO, pendrin, TG defects)",
+      "Maternal iodine deficiency or antithyroid drugs",
+      "Down syndrome can have concurrent thyroid dysfunction",
+    ],
+    complications: [
+      "Irreversible intellectual disability if treatment delayed",
+      "Growth failure and developmental delay",
+      "Myxedema coma (rare in neonates if missed)",
+    ],
+    distinguishFrom: [
+      "Transient neonatal hypothyroidism from maternal antibodies or iodine exposure",
+      "Central hypothyroidism — low T4 with inappropriately normal/low TSH",
+      "Physiologic jaundice — unconjugated hyperbilirubinemia without thyroid dysfunction",
+    ],
+    treatment: [
+      "Immediate levothyroxine replacement after confirmatory testing",
+      "Normalize TSH and monitor development/growth closely",
+    ],
+    boardsPearls: [
+      "Screen all newborns with TSH — treat before symptoms to prevent cretinism",
+      "Most common cause in iodine-sufficient areas is thyroid dysgenesis",
+      "Macroglossia + umbilical hernia + prolonged jaundice in neonate → think congenital hypothyroidism",
+    ],
+    pediatrics:
+      "Early levothyroxine prevents intellectual disability; missed screening or delayed treatment causes permanent neurodevelopmental harm.",
+  },
+  {
+    id: "rapidly-progressive-glomerulonephritis",
+    name: "Rapidly Progressive Glomerulonephritis",
+    etymology: "Latin rapidus = seizing + Latin progressus = advance + glomerulus + nephros + -itis",
+    aliases: [
+      "rapidly progressive glomerulonephritis",
+      "rpgn",
+      "crescentic glomerulonephritis",
+      "crescentic gn",
+      "rapidly progressive gn",
+    ],
+    definition:
+      "Aggressive glomerulonephritis with rapid loss of renal function over weeks, defined histologically by crescents in most glomeruli.",
+    pathophysiology:
+      "Severe glomerular injury from anti-GBM antibodies, immune complex disease, or pauci-immune ANCA vasculitis → breaks in GBM → fibrin and inflammatory cells in Bowman space → parietal epithelial proliferation forming crescents → rapid decline in GFR.",
+    classicPresentation: [
+      "Nephritic syndrome with oliguria over days to weeks",
+      "Rapidly rising creatinine",
+      "Pulmonary hemorrhage if anti-GBM disease (Goodpasture)",
+    ],
+    keyFindings: [
+      "RBC casts and dysmorphic RBCs",
+      "Hypertension and edema",
+      ">50% glomerular crescents on biopsy",
+    ],
+    keyLabs: [
+      "↑ creatinine with active urinary sediment",
+      "Anti-GBM antibodies",
+      "ANCA (c-ANCA/PR3 in GPA; p-ANCA/MPO in MPA)",
+      "Linear IgG on GBM (Goodpasture) or pauci-immune IF",
+    ],
+    associations: [
+      "Goodpasture syndrome (anti-GBM)",
+      "Granulomatosis with polyangiitis and microscopic polyangiitis",
+      "Severe lupus nephritis and post-infectious GN (less common)",
+    ],
+    complications: [
+      "Acute kidney injury progressing to ESRD within weeks",
+      "Pulmonary hemorrhage with anti-GBM disease",
+      "Hypertensive emergency",
+    ],
+    distinguishFrom: [
+      "Acute poststreptococcal GN — usually slower recovery in children, subepithelial humps, often self-limited",
+      "IgA nephropathy — episodic synpharyngitic hematuria; RPGN only if severe flare",
+      "Acute tubular necrosis — muddy brown casts, ischemic/toxic injury without glomerular crescents",
+    ],
+    treatment: [
+      "Urgent immunosuppression: high-dose corticosteroids ± cyclophosphamide",
+      "Plasmapheresis for anti-GBM disease and severe ANCA vasculitis with pulmonary hemorrhage",
+      "Dialysis if needed while treating underlying cause",
+    ],
+    boardsPearls: [
+      "RPGN = crescents in >50% glomeruli on biopsy",
+      "Three major mechanisms: anti-GBM, immune complex, pauci-immune ANCA",
+      "Linear IgG on GBM = Goodpasture; pauci-immune crescents = ANCA vasculitis",
+      "Pulmonary hemorrhage + RPGN → anti-GBM until proven otherwise",
+    ],
+    pediatrics:
+      "Rare in children but a renal emergency when present; Goodpasture and ANCA vasculitis require urgent nephrology and serologic testing.",
+  },
+  {
+    id: "tracheoesophageal-fistula",
+    name: "Tracheoesophageal Fistula",
+    etymology: "Greek trachys = rough + oisophagos = food carrier + Latin fistula = pipe/connection",
+    aliases: [
+      "tracheoesophageal fistula",
+      "te fistula",
+      "tef",
+      "esophageal atresia with tracheoesophageal fistula",
+      "ea/tef",
+      "tracheo esophageal fistula",
+    ],
+    definition:
+      "Congenital abnormal connection between trachea and esophagus, most often with esophageal atresia causing inability to pass an NG tube and feeding-related respiratory distress.",
+    pathophysiology:
+      "Failure of tracheoesophageal septum to separate foregut into ventral trachea and dorsal esophagus → blind esophageal pouch with or without tracheal fistula → aspiration, coughing, and cyanosis during feeding.",
+    classicPresentation: [
+      "Neonate with excessive drooling, choking, and coughing during first feed",
+      "Cannot pass nasogastric tube into stomach",
+      "Respiratory distress, cyanosis, and recurrent pneumonitis",
+      "History of polyhydramnios",
+    ],
+    keyFindings: [
+      "Coiled NG tube on chest X-ray",
+      "Air in stomach with proximal esophageal atresia and distal fistula",
+      "Feeding-associated desaturation",
+    ],
+    keyLabs: [
+      "Chest/abdominal X-ray after attempted NG placement",
+      "Contrast esophagram or bronchoscopy when diagnosis uncertain",
+      "Evaluate for VACTERL anomalies",
+    ],
+    associations: [
+      "Esophageal atresia (most common combination: proximal atresia + distal TEF)",
+      "VACTERL association (vertebral, anal, cardiac, TE, renal, limb)",
+      "Polyhydramnios from fetal inability to swallow amniotic fluid",
+    ],
+    complications: [
+      "Aspiration pneumonia",
+      "Airway obstruction",
+      "Anastomotic stricture after repair",
+    ],
+    distinguishFrom: [
+      "Choanal atresia — cyclical cyanosis relieved by crying with mouth open",
+      "Laryngomalacia — stridor without feeding tube obstruction",
+      "H-type TEF without atresia — intermittent cough with feeds later in infancy",
+    ],
+    treatment: [
+      "NPO, suction secretions, head-up positioning",
+      "Surgical ligation of fistula and esophageal anastomosis",
+      "Evaluate and manage associated anomalies",
+    ],
+    boardsPearls: [
+      "Most common type: proximal esophageal atresia with distal tracheoesophageal fistula",
+      "Neonate + drooling + choking with feeds + NG tube coiled on X-ray = TEF",
+      "Polyhydramnios results from impaired fetal swallowing",
+    ],
+    pediatrics:
+      "Classic neonatal surgical emergency; delay first feed and obtain imaging before oral intake when TEF is suspected.",
+  },
+  {
+    id: "tracheomalacia",
+    name: "Tracheomalacia",
+    etymology: "Greek trachys = rough + malakia = softness",
+    aliases: [
+      "tracheomalacia",
+      "tracheal malacia",
+      "floppy trachea",
+      "tracheobronchomalacia",
+    ],
+    definition:
+      "Weak or immature tracheal cartilage causing dynamic airway collapse and stridor, especially during expiration, crying, or feeding.",
+    pathophysiology:
+      "Deficient or soft C-shaped tracheal rings → anterior tracheal wall collapses during increased intrathoracic pressure or negative extrathoracic pressure → intermittent obstruction and biphasic or expiratory stridor.",
+    classicPresentation: [
+      "Stridor worsened by crying, feeding, or supine position",
+      "Coughing or apnea spells in infants",
+      "Often improves over first 1–2 years of life",
+    ],
+    keyFindings: [
+      "Expiratory or biphasic stridor",
+      "Dynamic airway collapse on bronchoscopy",
+      "Normal oxygenation between episodes in mild disease",
+    ],
+    keyLabs: [
+      "Flexible bronchoscopy for definitive diagnosis",
+      "Chest imaging to exclude vascular compression or mass",
+    ],
+    associations: [
+      "Prematurity",
+      "History of tracheoesophageal fistula repair",
+      "Vascular ring or external compression",
+      "Tracheostomy or prolonged intubation",
+    ],
+    complications: [
+      "Recurrent respiratory infections",
+      "Failure to thrive from feeding-associated obstruction",
+      "Severe cyanotic spells in extreme cases",
+    ],
+    distinguishFrom: [
+      "Laryngomalacia — inspiratory stridor from supraglottic collapse",
+      "Vascular ring — stridor with feeding difficulty and compressive anatomy on imaging",
+      "Foreign body — sudden onset in previously well older child",
+    ],
+    treatment: [
+      "Observation for mild primary tracheomalacia (often self-limited)",
+      "Treat reflux and avoid airway irritants",
+      "Surgery or stenting for severe or extrinsic compression cases",
+    ],
+    boardsPearls: [
+      "Tracheomalacia causes dynamic tracheal collapse, often expiratory stridor",
+      "Many infants improve spontaneously as cartilage matures",
+      "Consider vascular compression if stridor persists beyond infancy",
+    ],
+    pediatrics:
+      "Primary tracheomalacia is common in infancy and often benign; severe cases or post-TEF repair tracheomalacia may need specialist follow-up.",
+  },
+  {
+    id: "foreign-body-airway-obstruction",
+    name: "Foreign Body Airway Obstruction",
+    etymology: "Latin foris = outside + corpus = body + Latin obstructio = blockade",
+    aliases: [
+      "foreign body obstruction",
+      "foreign body airway obstruction",
+      "aspirated foreign body",
+      "airway foreign body",
+      "tracheobronchial foreign body",
+      "fb aspiration",
+      "choking",
+    ],
+    definition:
+      "Aspiration or impaction of food or object in the pharynx, trachea, or bronchi causing acute or subacute airway obstruction.",
+    pathophysiology:
+      "Foreign material lodges in airway → localized inflammation, ball-valve obstruction, or complete occlusion → unilateral wheeze, atelectasis, or life-threatening hypoxia; complete upper airway obstruction prevents air movement.",
+    classicPresentation: [
+      "Sudden choking episode while eating or playing",
+      "Persistent cough, wheeze, or stridor after witnessed aspiration",
+      "Unilateral decreased breath sounds or wheeze in older child",
+      "Inability to speak/cough/breathe with complete obstruction",
+    ],
+    keyFindings: [
+      "Unilateral hyperinflation or atelectasis on chest X-ray",
+      "Wheezing localized to one lung",
+      "Air trapping on expiratory film",
+      "Silent chest if complete obstruction",
+    ],
+    keyLabs: [
+      "Chest X-ray (inspiratory and expiratory views)",
+      "Bronchoscopy for diagnosis and removal",
+    ],
+    associations: [
+      "Nuts, seeds, and small toys in toddlers",
+      "Right main bronchus aspiration (wider, more vertical bronchus)",
+      "Neurologic impairment or poor dentition increasing aspiration risk",
+    ],
+    complications: [
+      "Hypoxic brain injury or death if untreated",
+      "Post-obstructive pneumonia",
+      "Bronchiectasis from chronic retained foreign body",
+    ],
+    distinguishFrom: [
+      "Asthma — bilateral wheeze, episodic, no sudden choking event",
+      "Croup — viral prodrome, barky cough, diffuse stridor",
+      "Pneumonia — fever and infiltrate without focal ball-valve obstruction history",
+    ],
+    treatment: [
+      "Complete obstruction: back blows/chest thrusts in infants; Heimlich in responsive older child/adult",
+      "Emergency bronchoscopy for suspected tracheobronchial foreign body",
+      "Avoid blind finger sweeps in infants",
+    ],
+    boardsPearls: [
+      "Sudden unilateral wheeze in a toddler = foreign body until proven otherwise",
+      "Right main bronchus is the most common lower airway lodging site",
+      "Organic objects (peanut) cause more granulation reaction than inert plastic",
+    ],
+    pediatrics:
+      "Peak age 1–3 years; unilateral wheeze after choking is foreign body until proven otherwise — bronchoscopy is diagnostic and therapeutic.",
+  },
+  {
+    id: "tracheitis",
+    name: "Tracheitis",
+    etymology: "Greek trachys = rough + -itis = inflammation",
+    aliases: [
+      "tracheitis",
+      "bacterial tracheitis",
+      "pseudomembranous tracheitis",
+      "bacterial croup",
+    ],
+    definition:
+      "Bacterial infection of the trachea, usually superimposed on a viral upper respiratory illness, causing toxic-appearing stridor and potential airway compromise.",
+    pathophysiology:
+      "Mucosal injury from viral URI allows superinfection (often Staphylococcus aureus) → thick purulent secretions and pseudomembranes in subglottic/tracheal lumen → worsening stridor, airway obstruction, and respiratory failure.",
+    classicPresentation: [
+      "Child with initial croup-like illness who suddenly worsens after 2–3 days",
+      "High fever and toxic appearance",
+      "Stridor, barky cough, and respiratory distress",
+      "Poor response to racemic epinephrine compared with viral croup",
+    ],
+    keyFindings: [
+      "Subglottic/tracheal erythema and purulent secretions on laryngoscopy/bronchoscopy",
+      "Pseudomembranes in trachea",
+      "No drooling or tripod posture typical of epiglottitis",
+    ],
+    keyLabs: [
+      "Clinical diagnosis supported by endoscopic findings",
+      "Tracheal culture if intubated",
+      "Chest X-ray may show subglottic narrowing (steeple sign overlap with croup)",
+    ],
+    associations: [
+      "Staphylococcus aureus superinfection after parainfluenza or other viral URI",
+      "Methicillin-sensitive or MRSA strains",
+    ],
+    complications: [
+      "Airway obstruction requiring intubation",
+      "Pneumonia",
+      "Toxic shock syndrome (rare)",
+    ],
+    distinguishFrom: [
+      "Viral croup — less toxic, usually responds to dexamethasone and nebulized epinephrine",
+      "Epiglottitis — drooling, tripod posture, minimal cough, supraglottic inflammation",
+      "Foreign body — sudden onset without high fever or toxic appearance",
+    ],
+    treatment: [
+      "Airway management first — intubation if impending obstruction",
+      "IV antibiotics covering S. aureus (including MRSA risk)",
+      "Nebulized epinephrine and corticosteroids as adjuncts",
+    ],
+    boardsPearls: [
+      "Bacterial tracheitis = croup that gets worse on day 3 with high fever and toxicity",
+      "S. aureus superinfection with purulent tracheal secretions",
+      "May require intubation to secure airway and suction thick membranes",
+    ],
+    pediatrics:
+      "Pediatric airway emergency; distinguish from benign viral croup by toxic appearance and failure to improve with standard croup therapy.",
+  },
+  {
+    id: "preeclampsia",
+    name: "Preeclampsia",
+    etymology: "Latin prae = before + Greek eklampsis = flashing out (originally pre-convulsive toxemia)",
+    aliases: [
+      "preeclampsia",
+      "pre-eclampsia",
+      "pre eclampsia",
+      "pregnancy-induced hypertension with proteinuria",
+      "toxemia of pregnancy",
+    ],
+    definition:
+      "Pregnancy-specific hypertensive disorder usually after 20 weeks with new-onset hypertension and proteinuria or other maternal end-organ dysfunction.",
+    pathophysiology:
+      "Abnormal trophoblast invasion and failure of spiral artery remodeling → placental ischemia → endothelial dysfunction → vasospasm, capillary leak, and organ injury (kidney, liver, brain, platelets).",
+    classicPresentation: [
+      "New hypertension after 20 weeks gestation",
+      "Proteinuria, headache, visual changes, epigastric/RUQ pain",
+      "Sudden weight gain and edema from capillary leak",
+    ],
+    keyFindings: [
+      "BP ≥140/90 on two occasions",
+      "Proteinuria or elevated creatinine, LFTs, low platelets",
+      "Hyperreflexia and clonus if severe",
+    ],
+    keyLabs: [
+      "Urinalysis/protein quantification",
+      "CBC — thrombocytopenia",
+      "AST/ALT — hepatic involvement",
+      "Creatinine — renal dysfunction",
+    ],
+    associations: [
+      "Nulliparity, chronic hypertension, diabetes, multifetal gestation",
+      "Molar pregnancy (early severe preeclampsia before 20 weeks)",
+      "Family history and autoimmune disease",
+    ],
+    complications: [
+      "Eclampsia (seizures)",
+      "HELLP syndrome",
+      "Placental abruption",
+      "Fetal growth restriction and preterm delivery",
+    ],
+    distinguishFrom: [
+      "Chronic hypertension — present before pregnancy or before 20 weeks",
+      "Gestational hypertension — hypertension without proteinuria/end-organ damage",
+      "Acute fatty liver of pregnancy — more severe coagulopathy and hypoglycemia",
+    ],
+    treatment: [
+      "Definitive treatment is delivery when maternal/fetal status warrants",
+      "Magnesium sulfate for seizure prophylaxis in severe preeclampsia/eclampsia",
+      "Antihypertensives (labetalol, hydralazine, nifedipine) for severe BP",
+    ],
+    boardsPearls: [
+      "Preeclampsia after 20 weeks: HTN + proteinuria/end-organ dysfunction",
+      "Spiral artery remodeling failure is key pathophysiology",
+      "Magnesium sulfate prevents/treats eclampsia seizures",
+      "Preeclampsia before 20 weeks → think molar pregnancy",
+    ],
+  },
+  {
+    id: "placenta-previa",
+    name: "Placenta Previa",
+    etymology: "Latin placenta = flat cake + Latin prae = before + via = road",
+    aliases: [
+      "placenta previa",
+      "placenta praevia",
+      "previa",
+      "low-lying placenta",
+    ],
+    definition:
+      "Placenta implanted over or near the internal cervical os, causing painless antepartum hemorrhage.",
+    pathophysiology:
+      "Low uterine implantation → placental tissue covers or encroaches on internal os → separation with cervical change or uterine activity → painless maternal bleeding without labor pain.",
+    classicPresentation: [
+      "Sudden painless bright red vaginal bleeding in 2nd or 3rd trimester",
+      "Uterus soft and non-tender between bleeding episodes",
+      "Often recurrent bleeding episodes",
+    ],
+    keyFindings: [
+      "Painless vaginal bleeding",
+      "Fetal presentation often abnormal (breech/transverse)",
+      "Placenta over internal os on transvaginal ultrasound",
+    ],
+    keyLabs: [
+      "Transvaginal ultrasound for diagnosis and placental location",
+      "Maternal blood type and antibody screen",
+      "Fetal heart rate monitoring during bleeding",
+    ],
+    associations: [
+      "Prior cesarean delivery or uterine surgery",
+      "Multiparity, advanced maternal age, smoking",
+      "Multifetal gestation",
+      "Increases risk of placenta accreta spectrum when combined with prior C-section scar",
+    ],
+    complications: [
+      "Major antepartum hemorrhage",
+      "Preterm delivery",
+      "Placenta accreta spectrum if over prior scar",
+    ],
+    distinguishFrom: [
+      "Placental abruption — painful bleeding, rigid tender uterus",
+      "Placenta previa — painless bleeding; avoid digital cervical exam",
+      "Vasa previa — fetal vessel rupture with fetal bradycardia after membrane rupture",
+    ],
+    treatment: [
+      "Avoid digital cervical examination",
+      "Hospitalization and delivery planning based on bleeding severity and gestational age",
+      "Cesarean delivery when previa persists near term",
+    ],
+    boardsPearls: [
+      "Painless third-trimester bleeding until proven otherwise = placenta previa",
+      "Never perform digital exam if previa suspected — may provoke hemorrhage",
+      "Transvaginal ultrasound confirms diagnosis",
+    ],
+  },
+  {
+    id: "placental-abruption",
+    name: "Placental Abruption",
+    etymology: "Latin placenta = flat cake + ab = away + Latin rumpere = to break",
+    aliases: [
+      "placental abruption",
+      "abruptio placentae",
+      "abruptio",
+      "placenta abruption",
+    ],
+    definition:
+      "Premature separation of the placenta from the uterine wall before delivery, causing painful bleeding and fetal compromise.",
+    pathophysiology:
+      "Decidual vessel rupture or mechanical shear → retroplacental hematoma → placental detachment → uterine irritability, fetal hypoxia, and concealed or overt hemorrhage; can trigger DIC.",
+    classicPresentation: [
+      "Painful vaginal bleeding with uterine tenderness",
+      "Board-like rigid uterus and back pain",
+      "Fetal distress or demise",
+      "May occur with minimal external bleeding if hemorrhage is concealed",
+    ],
+    keyFindings: [
+      "Painful bleeding with hypertonic uterus",
+      "Frequent contractions or tetanic uterus",
+      "Nonreassuring fetal heart tracing",
+    ],
+    keyLabs: [
+      "Clinical diagnosis supported by ultrasound (retroplacental clot) when seen",
+      "CBC/coagulation studies if DIC suspected",
+      "Kleihauer-Betke or flow cytometry if fetomaternal hemorrhage suspected",
+    ],
+    associations: [
+      "Hypertension and preeclampsia",
+      "Trauma, cocaine use, smoking",
+      "Premature rupture of membranes and polyhydramnios",
+      "Short umbilical cord or rapid decompression (rare)",
+    ],
+    complications: [
+      "DIC and maternal shock",
+      "Fetal hypoxia or death",
+      "Couvelaire uterus (blood infiltrating myometrium)",
+    ],
+    distinguishFrom: [
+      "Placenta previa — painless bleeding, soft uterus",
+      "Uterine rupture — loss of fetal station, prior uterine scar history",
+      "Normal labor pain — progressive cervical change without hemorrhage",
+    ],
+    treatment: [
+      "Maternal stabilization and fetal monitoring",
+      "Blood products if coagulopathy or hemorrhagic shock",
+      "Delivery when maternal/fetal status requires — often emergent cesarean or vaginal delivery",
+    ],
+    boardsPearls: [
+      "Painful bleeding + rigid tender uterus → placental abruption",
+      "Concealed abruption can cause shock with little visible blood loss",
+      "Strong association with hypertension and cocaine use",
+    ],
+  },
+  {
+    id: "placenta-accreta",
+    name: "Placenta Accreta",
+    etymology: "Latin placenta = flat cake + accretus = grown to",
+    aliases: [
+      "placenta accreta",
+      "placenta accreta spectrum",
+      "placenta increta",
+      "placenta percreta",
+      "morbidly adherent placenta",
+      "accreta",
+    ],
+    definition:
+      "Abnormally adherent placenta due to defective decidua, ranging from accreta (attached to myometrium) to increta (invades myometrium) and percreta (penetrates serosa/adjacent organs).",
+    pathophysiology:
+      "Prior uterine scar or placenta previa → endometrial/decidual deficiency → trophoblast attaches directly to myometrium → placenta fails to separate at delivery → massive postpartum hemorrhage.",
+    classicPresentation: [
+      "Often discovered at delivery when placenta does not detach",
+      "History of prior cesarean with current placenta previa",
+      "Antepartum bleeding possible with previa overlap",
+    ],
+    keyFindings: [
+      "Placenta previa over prior cesarean scar on ultrasound/MRI",
+      "Loss of retroplacental clear space or bladder wall interruption (percreta)",
+      "Failure of placental separation with life-threatening hemorrhage at delivery",
+    ],
+    keyLabs: [
+      "Prenatal ultrasound/MRI for accreta suspicion",
+      "Type and screen; massive transfusion planning",
+    ],
+    associations: [
+      "Prior cesarean delivery (risk rises with number of prior C-sections)",
+      "Placenta previa",
+      "Asherman syndrome or other uterine surgery",
+    ],
+    complications: [
+      "Massive obstetric hemorrhage",
+      "Need for hysterectomy",
+      "Bladder invasion with percreta",
+      "Maternal death",
+    ],
+    distinguishFrom: [
+      "Retained placenta — adherent fragments without deep invasion",
+      "Placenta previa alone — abnormal location without myometrial invasion",
+      "Uterine atony — soft boggy uterus after delivery, not adherent placenta",
+    ],
+    treatment: [
+      "Planned cesarean hysterectomy at specialized center when diagnosed prenatally",
+      "Avoid manual placental removal if accreta suspected — triggers hemorrhage",
+      "Multidisciplinary team and blood product availability",
+    ],
+    boardsPearls: [
+      "Prior C-section + placenta previa = high risk for accreta spectrum",
+      "Do not forcefully remove abnormally adherent placenta",
+      "Accreta = myometrium attachment; increta = invasion; percreta = through uterine wall",
+    ],
+  },
+  {
+    id: "coarctation-of-the-aorta",
+    name: "Coarctation of the Aorta",
+    etymology: "Latin co = together + arctare = to narrow + Greek aorte = artery",
+    aliases: [
+      "coarctation of the aorta",
+      "coarctation",
+      "aortic coarctation",
+      "coarctation of aorta",
+    ],
+    definition:
+      "Congenital narrowing of the aorta, classically juxtaductal near the ligamentum arteriosum, causing upper-extremity hypertension and lower-extremity hypoperfusion.",
+    pathophysiology:
+      "Focal aortic arch/media hypoplasia → obstruction to left ventricular outflow distal to head/arm vessels → ↑ pressure proximal to lesion and ↓ flow distally → collateral circulation through intercostal and internal mammary arteries.",
+    classicPresentation: [
+      "Hypertension in arms with lower blood pressure in legs",
+      "Leg claudication or exercise intolerance in older children",
+      "Headache and nosebleeds from upper-body hypertension",
+    ],
+    keyFindings: [
+      "Radiofemoral delay and diminished femoral pulses",
+      "Systolic murmur over left back or continuous murmur from collaterals",
+      "Rib notching on chest X-ray (older children/adults)",
+    ],
+    keyLabs: [
+      "Echocardiography or MRI for lesion location and associated defects",
+      "Four-limb blood pressures",
+    ],
+    associations: [
+      "Bicuspid aortic valve",
+      "Turner syndrome",
+      "Patent ductus arteriosus in infants (ductal-dependent lower-body flow)",
+      "Berry aneurysms and intracranial hemorrhage risk",
+    ],
+    complications: [
+      "Heart failure in neonates when ductus closes",
+      "Hypertensive heart disease and stroke",
+      "Aortic rupture or dissection",
+      "Endocarditis of associated bicuspid valve",
+    ],
+    distinguishFrom: [
+      "Essential hypertension — no radiofemoral delay or rib notching",
+      "Aortic stenosis — murmur at RUSB, normal femoral pulses",
+      "Peripheral artery disease — adult atherosclerosis, not congenital juxtaductal narrowing",
+    ],
+    treatment: [
+      "Prostaglandin E1 in ductal-dependent neonatal coarctation",
+      "Surgical resection/end-to-end anastomosis or balloon/stent angioplasty",
+      "Treat associated hypertension and monitor for recoarctation",
+    ],
+    boardsPearls: [
+      "Upper-extremity HTN + weak femoral pulses + rib notching = coarctation",
+      "Strong association with bicuspid aortic valve and Turner syndrome",
+      "Notching of ribs 3–8 from dilated intercostal collaterals",
+    ],
+    pediatrics:
+      "Neonatal coarctation may present when PDA closes; prostaglandin maintains lower-body perfusion until repair.",
+  },
+  {
+    id: "aortic-dissection",
+    name: "Aortic Dissection",
+    etymology: "Greek aorte = artery + Latin dis = apart + secare = to cut",
+    aliases: [
+      "aortic dissection",
+      "dissection of the aorta",
+      "aortic tear",
+      "type a dissection",
+      "type b dissection",
+    ],
+    definition:
+      "Intimal tear with blood entering the aortic media, creating a false lumen and risking rupture or branch vessel compromise.",
+    pathophysiology:
+      "Cystic medial degeneration or hypertension weakens media → intimal tear → blood dissects between layers → propagation proximally or distally → malperfusion, tamponade, or rupture.",
+    classicPresentation: [
+      "Sudden tearing chest pain radiating to the back",
+      "Unequal blood pressures or pulses between arms",
+      "Syncope, stroke, or new murmur of aortic regurgitation",
+    ],
+    keyFindings: [
+      "Widened mediastinum on chest X-ray",
+      "New diastolic murmur if aortic regurgitation develops",
+      "Focal neurologic deficits from carotid or spinal artery involvement",
+    ],
+    keyLabs: [
+      "CT angiography or TEE for diagnosis",
+      "Type A — involves ascending aorta; Type B — descending only",
+    ],
+    associations: [
+      "Hypertension",
+      "Marfan syndrome and Ehlers-Danlos vascular type",
+      "Bicuspid aortic valve and Turner syndrome",
+      "Pregnancy and cocaine use",
+    ],
+    complications: [
+      "Cardiac tamponade",
+      "Aortic rupture and death",
+      "Malperfusion of coronary, carotid, renal, or mesenteric arteries",
+      "Acute aortic regurgitation",
+    ],
+    distinguishFrom: [
+      "Myocardial infarction — tearing pain and pulse/BP asymmetry favor dissection",
+      "Pulmonary embolism — pleuritic pain and hypoxia without pulse deficit",
+      "Esophageal rupture — post-emesis, subcutaneous emphysema",
+    ],
+    treatment: [
+      "Immediate BP and heart rate control (β-blocker first, then vasodilator if needed)",
+      "Emergent surgery for type A dissection",
+      "Medical management or endovascular repair for uncomplicated type B",
+    ],
+    boardsPearls: [
+      "Tearing pain to the back + unequal arm BPs → aortic dissection",
+      "Type A involves ascending aorta — surgical emergency",
+      "Marfan, bicuspid valve, and Turner increase risk",
+    ],
   },
 ];
 

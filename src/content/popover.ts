@@ -77,7 +77,7 @@ import {
   getSymptomImageForId,
 } from "../data/symptomMedia";
 import { getSymptomById } from "../data/symptoms";
-import { scanPopoverRoot } from "./organScanner";
+import { schedulePopoverRootScan } from "./organScanner";
 import { renderPopoverTitle, type PopoverCategory } from "./popoverIcons";
 
 const CHIP_SELECTOR =
@@ -1141,7 +1141,6 @@ function showPopover(chip: HTMLElement): void {
   }
 
   preparePopoverForDisplay(popover);
-  scanPopoverRoot(popover);
   const entry = { chip, popover };
   popoverStack.push(entry);
   if (previousPopover) {
@@ -1151,6 +1150,7 @@ function showPopover(chip: HTMLElement): void {
   }
   bindPopoverImageReposition(entry, popover);
   playPopoverAudio(popover);
+  schedulePopoverRootScan(popover);
 }
 
 export function startPopoverController(): void {

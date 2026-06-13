@@ -2276,6 +2276,71 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Congenital syphilis involves similar vascular inflammatory mechanisms; Hutchinson triad and bone/teeth findings are more tested than aortitis in children.",
   },
+  {
+    id: "glomerular-basement-membrane",
+    name: "Glomerular Basement Membrane",
+    etymology: "Latin glomerulus = small ball + basis = base + Latin membrana = skin/layer",
+    aliases: [
+      "glomerular basement membrane",
+      "gbm",
+      "glomerular basement membranes",
+      "renal basement membrane",
+      "glomerular capillary basement membrane",
+    ],
+    definition:
+      "Specialized basement membrane between glomerular endothelium and podocytes that forms the central charge- and size-selective layer of the renal filtration barrier.",
+    examples: [
+      "Type IV collagen network (especially α3, α4, α5 chains) with laminin, nidogen, and heparan sulfate proteoglycans",
+      "Goodpasture syndrome — autoantibodies to α3(IV) NC1 domain in GBM and alveolar basement membrane",
+      "Alport syndrome — COL4A5/COL4A3/COL4A4 mutations → hematuria, hearing loss, basket-weave GBM on EM",
+      "Thin basement membrane disease — mild familial hematuria",
+      "Anti-GBM linear IgG staining on kidney biopsy immunofluorescence",
+    ],
+    boardsPearls: [
+      "Filtration barrier = fenestrated endothelium + GBM + podocyte slit diaphragm",
+      "GBM carries negative charge from heparan sulfate → repels albumin",
+      "Goodpasture target is type IV collagen α3 chain in GBM and lung basement membrane",
+      "Linear IgG along GBM distinguishes anti-GBM disease from granular immune complex deposits",
+    ],
+    distinguishFrom: [
+      "Podocyte slit diaphragm — final barrier component; nephrin/NPHS2 mutations cause nephrotic syndrome",
+      "Tubular basement membrane — separate basement membrane in nephron tubules",
+      "Alveolar basement membrane — distinct BM attacked alongside GBM in Goodpasture",
+      "Mesangial matrix — supports glomerular tuft but is not the filtration barrier GBM",
+    ],
+  },
+  {
+    id: "glomerular-crescent",
+    name: "Glomerular Crescent",
+    etymology: "Latin crescere = to grow + glomerulus = small ball",
+    aliases: [
+      "glomerular crescent",
+      "glomerular crescents",
+      "crescent formation",
+      "bowman space crescent",
+      "cellular crescent",
+    ],
+    definition:
+      "Histologic accumulation of proliferating parietal epithelial cells plus macrophages and fibrin in Bowman space, arching around the glomerular tuft like a crescent.",
+    examples: [
+      "Rapidly progressive glomerulonephritis when crescents involve >50% glomeruli",
+      "Goodpasture syndrome — anti-GBM with severe GBM breaks and crescents",
+      "ANCA-associated vasculitis — pauci-immune crescentic GN",
+      "Severe lupus nephritis and some post-infectious GN flares",
+    ],
+    boardsPearls: [
+      ">50% crescents on biopsy defines RPGN clinically",
+      "Crescents form after GBM rupture allows fibrin and cells into Bowman space",
+      "Pauci-immune crescents (few deposits) → ANCA vasculitis; linear IgG → anti-GBM",
+      "RPGN is a renal emergency requiring urgent immunosuppression ± plasmapheresis",
+    ],
+    distinguishFrom: [
+      "Fibrous crescent — older scarred lesion with less active inflammation",
+      "Mesangial proliferation — expansion within tuft, not Bowman space crescent",
+      "Acute tubular necrosis — tubular injury without glomerular crescents",
+      "RBC casts alone — marker of glomerular bleeding, not necessarily crescentic RPGN",
+    ],
+  },
 ];
 
 const pathogenesisById = new Map(

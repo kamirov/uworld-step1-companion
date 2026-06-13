@@ -57,6 +57,7 @@ const OUR_CHIP_CLASSES = [
   MUSCULOSKELETAL_CHIP_CLASS,
 ] as const;
 const POPOVER_CLASS = "usmle-organ-popover";
+const POPOVER_TITLE_SELECTOR = ".usmle-organ-popover__title";
 const SKIP_TAGS = new Set([
   "SCRIPT",
   "STYLE",
@@ -684,6 +685,9 @@ function shouldSkipNode(node: Node): boolean {
     if (!allowPopoverScan && parent.classList.contains(POPOVER_CLASS)) {
       return true;
     }
+    if (allowPopoverScan && isInsidePopoverTitle(parent)) {
+      return true;
+    }
     const closestSelector = allowPopoverScan
       ? CHIP_SELECTOR
       : `${CHIP_SELECTOR}, .${POPOVER_CLASS}`;
@@ -775,6 +779,7 @@ function shouldSkipElement(el: Element): boolean {
     if (el.classList.contains(cls)) return true;
   }
   if (!allowPopoverScan && el.classList.contains(POPOVER_CLASS)) return true;
+  if (allowPopoverScan && isInsidePopoverTitle(el)) return true;
   const closestSelector = allowPopoverScan
     ? CHIP_SELECTOR
     : `${CHIP_SELECTOR}, .${POPOVER_CLASS}`;
@@ -948,6 +953,11 @@ function isInsidePopover(node: Node): boolean {
   return el?.closest(`.${POPOVER_CLASS}`) != null;
 }
 
+function isInsidePopoverTitle(node: Node): boolean {
+  const el = node instanceof Element ? node : node.parentElement;
+  return el?.closest(POPOVER_TITLE_SELECTOR) != null;
+}
+
 function collectCoalesceRootsForAreas(areas: Element[]): Element[] {
   const seen = new Set<Element>();
   const roots: Element[] = [];
@@ -1033,6 +1043,13 @@ export function scanRoot(root: Node): void {
   } finally {
     isApplyingHighlights = false;
   }
+}
+
+export function schedulePopoverRootScan(popover: Element): void {
+  requestAnimationFrame(() => {
+    if (!popover.isConnected) return;
+    scanPopoverRoot(popover);
+  });
 }
 
 export function scanPopoverRoot(popover: Element): void {

@@ -1093,6 +1093,44 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Neonatal breastfeeding establishes suckling reflex → maternal oxytocin release; preterm infants may need lactation support but same hormonal axis.",
   },
   {
+    id: "vasopressin",
+    name: "Vasopressin",
+    etymology: "Latin vas = vessel + pressus = pressed + -in = protein suffix",
+    aliases: [
+      "vasopressin",
+      "antidiuretic hormone",
+      "adh",
+      "arginine vasopressin",
+      "avp",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Synthesized in hypothalamic supraoptic and paraventricular nuclei; stored and released from posterior pituitary",
+    receptor:
+      "V2 receptors (collecting duct; Gs → cAMP → aquaporin-2 insertion); V1 receptors (vascular smooth muscle vasoconstriction)",
+    function:
+      "Promotes free water reabsorption in renal collecting duct via aquaporin-2; at high levels causes vasoconstriction through V1 receptors.",
+    clinicalRelevance: [
+      "Central diabetes insipidus — deficient ADH → dilute polyuria and hypernatremia",
+      "SIADH — inappropriate ADH → euvolemic hyponatremia with concentrated urine",
+      "Desmopressin (DDAVP) — V2-selective analog for central DI and bleeding disorders",
+      "Vasopressin infusion used in vasodilatory/septic shock (V1 effect)",
+    ],
+    boardsPearls: [
+      "Posterior pituitary hormones: ADH + oxytocin — both made in hypothalamus",
+      "DI: high serum osm + low urine osm; SIADH: low serum osm + inappropriately concentrated urine",
+      "Desmopressin treats central DI; nephrogenic DI does not respond (collecting duct defect)",
+      "Ethanol inhibits ADH — beer potomania/hyponatremia context",
+    ],
+    distinguishFrom: [
+      "Oxytocin — uterine contraction and milk ejection, not primary water retention hormone",
+      "Aldosterone — Na⁺ retention in distal nephron; ADH reabsorbs free water",
+      "ANP/BNP — promote natriuresis; oppose volume retention",
+    ],
+    pediatrics:
+      "Central DI in children may follow head trauma or craniopharyngioma; desmopressin is main therapy. SIADH occurs with CNS infection, pulmonary disease, and postoperative states.",
+  },
+  {
     id: "gnrh",
     name: "GnRH",
     etymology: "GnRH = gonadotropin-releasing hormone",

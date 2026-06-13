@@ -32,7 +32,7 @@ Where relevant, include a note on pediatrics, e.g. how something changes if the 
 
 ## Media
 
-When adding data, look online for any relevant media for the data that we can attach
+Do not add any media  for new data. Our network currently does not support media fetches, so just focus on the content for now
 
 ## Attributions
 

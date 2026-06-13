@@ -3090,6 +3090,88 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Neutropenia — low ANC with infection risk",
     ],
   },
+  {
+    id: "webbed-neck",
+    name: "Webbed Neck",
+    etymology: "Old English web = woven fabric + Latin neck = collum",
+    aliases: ["webbed neck", "webbed necks", "pterygium colli", "neck webbing"],
+    definition:
+      "Congenital excess lateral neck skin forming a web-like fold from the mastoid region toward the acromion.",
+    mechanism:
+      "Failed lymphatic drainage during fetal development leaves redundant nuchal tissue; classically seen in Turner syndrome and Noonan syndrome.",
+    thinkOf: [
+      "Turner syndrome (45,X)",
+      "Noonan syndrome",
+      "Fetal hydrops or lymphatic malformation",
+    ],
+    pairWith: [
+      "Short stature + primary amenorrhea → Turner syndrome",
+      "Pulmonary stenosis + normal ovaries → Noonan syndrome",
+      "Coarctation or bicuspid valve → Turner syndrome",
+    ],
+    distinguishFrom: [
+      "Low posterior hairline alone — may coexist but not synonymous with webbing",
+      "Neck mass or cystic hygroma — focal lesion rather than symmetric webbing",
+    ],
+    pediatrics:
+      "Prominent in neonatal Turner syndrome along with lymphedema of hands and feet.",
+  },
+  {
+    id: "cubitus-valgus",
+    name: "Cubitus Valgus",
+    etymology: "Latin cubitus = elbow + valgus = bent outward",
+    aliases: ["cubitus valgus", "increased carrying angle", "cubitus valgus deformity"],
+    definition:
+      "Outward angulation of the forearm relative to the humerus, increasing the carrying angle at the elbow.",
+    mechanism:
+      "Abnormal development of the distal humerus or prior supracondylar fracture malunion changes elbow alignment; in Turner syndrome reflects skeletal dysplasia of the arm.",
+    thinkOf: [
+      "Turner syndrome",
+      "Previous supracondylar humerus fracture malunion",
+      "Rickets or skeletal dysplasia",
+    ],
+    pairWith: [
+      "Webbed neck + short stature → Turner syndrome",
+      "Genu valgum + short fourth metacarpal → Turner syndrome",
+    ],
+    distinguishFrom: [
+      "Cubitus varus — inward angulation ('gunstock deformity') after supracondylar fracture",
+      "Normal carrying angle variation — isolated finding without syndromic features",
+    ],
+  },
+  {
+    id: "high-arched-palate",
+    name: "High-Arched Palate",
+    etymology: "Old English heah = high + Latin arcus = bow + Latin palatum = palate",
+    aliases: [
+      "high-arched palate",
+      "high arched palate",
+      "high arched palates",
+      "gothic palate",
+      "narrow palate",
+    ],
+    definition:
+      "Elevated, narrow palate vault that may affect dental alignment and speech.",
+    mechanism:
+      "Disordered palatal shelf fusion or connective tissue disorders alter maxillary development, producing a deep narrow oral vault.",
+    thinkOf: [
+      "Turner syndrome",
+      "Marfan syndrome",
+      "Fragile X syndrome",
+      "Cleft palate spectrum / submucous cleft",
+    ],
+    pairWith: [
+      "Webbed neck + short stature → Turner syndrome",
+      "Arachnodactyly + lens dislocation → Marfan syndrome",
+      "Macroorchidism + developmental delay → Fragile X (males)",
+    ],
+    distinguishFrom: [
+      "Cleft palate — overt midline defect, not isolated high vault",
+      "Normal anatomic variant — no syndromic or dental complications",
+    ],
+    pediatrics:
+      "Turner and connective tissue disorders may present with high-arched palate in childhood; evaluate for associated cardiac and skeletal findings.",
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));
