@@ -11199,7 +11199,6 @@ export const CONDITIONS: ConditionEntry[] = [
       "anorexia nervosa",
       "anorexia",
       "restrictive eating disorder",
-      "an",
     ],
     definition:
       "Eating disorder characterized by restrictive energy intake, intense fear of weight gain, and distorted body image, leading to significantly low body weight and medical complications.",

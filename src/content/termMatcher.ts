@@ -52,6 +52,80 @@ function hasWordBoundaryAfter(text: string, index: number): boolean {
   return index >= text.length || !/\w/.test(text[index]!);
 }
 
+const SHORT_ACRONYM_MAX_LENGTH = 2;
+
+/** Common English function words that must never trigger alias matches. */
+const FUNCTION_WORD_BLOCKLIST = new Set([
+  "a",
+  "an",
+  "the",
+  "in",
+  "on",
+  "at",
+  "to",
+  "of",
+  "by",
+  "for",
+  "with",
+  "and",
+  "or",
+  "but",
+  "as",
+  "if",
+  "so",
+  "is",
+  "are",
+  "was",
+  "were",
+  "be",
+  "been",
+  "being",
+  "do",
+  "does",
+  "did",
+  "has",
+  "have",
+  "had",
+  "it",
+  "he",
+  "she",
+  "we",
+  "they",
+  "i",
+  "you",
+  "me",
+  "my",
+  "us",
+  "no",
+  "not",
+  "up",
+]);
+
+export function isFunctionWordBlocked(matchText: string): boolean {
+  return FUNCTION_WORD_BLOCKLIST.has(normalizedWordKey(matchText));
+}
+
+export function isShortAcronymAlias(alias: string): boolean {
+  return normalizedWordKey(alias).length <= SHORT_ACRONYM_MAX_LENGTH;
+}
+
+/** Short aliases (≤2 chars) must appear as acronyms (all letters uppercase) in source text. */
+export function isAllCapsAcronymInSource(matchText: string): boolean {
+  const letters = matchText.match(/\p{L}/gu);
+  if (!letters || letters.length === 0) return false;
+  return letters.every(
+    (ch) => ch === ch.toUpperCase() && ch !== ch.toLowerCase(),
+  );
+}
+
+export function shouldRejectAliasMatch(matchText: string, alias: string): boolean {
+  if (isFunctionWordBlocked(matchText)) return true;
+  if (isShortAcronymAlias(alias) && !isAllCapsAcronymInSource(matchText)) {
+    return true;
+  }
+  return false;
+}
+
 /** S2/S4 heart-sound aliases must not match sacral spinal notation (e.g. S2-S4, S2–S4). */
 export function isSacralSpinalRangeHeartSound(
   text: string,
@@ -114,8 +188,12 @@ export function findNextMatchInTrie(
       if (node.terms.length > 0) {
         const matchLen = pos - i;
         if (hasWordBoundaryAfter(text, pos)) {
+          const matchText = text.slice(i, pos);
           for (const term of node.terms) {
-            if (ctx.isAlreadyHighlighted(term, text.slice(i, pos), ctx.zone)) {
+            if (ctx.isAlreadyHighlighted(term, matchText, ctx.zone)) {
+              continue;
+            }
+            if (shouldRejectAliasMatch(matchText, term.alias)) {
               continue;
             }
             if (
@@ -126,7 +204,7 @@ export function findNextMatchInTrie(
             }
             if (!best || matchLen > best.length) {
               best = {
-                matchText: text.slice(i, pos),
+                matchText,
                 term,
                 length: matchLen,
               };

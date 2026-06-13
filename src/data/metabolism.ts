@@ -52,7 +52,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "leucine",
     name: "Leucine",
     etymology: "Greek leukos = white + -ine = chemical suffix for amino acids",
-    aliases: ["leucine", "leu", "l"],
+    aliases: ["leucine", "leu"],
     definition:
       "Essential branched-chain amino acid (BCAA) catabolized to ketone bodies; purely ketogenic on boards classification.",
     pathway: [
@@ -147,7 +147,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "phenylalanine",
     name: "Phenylalanine",
     etymology: "phenyl = benzene ring + alanine = amino acid",
-    aliases: ["phenylalanine", "phe", "f"],
+    aliases: ["phenylalanine", "phe"],
     definition:
       "Essential aromatic amino acid converted to tyrosine by phenylalanine hydroxylase; shared catabolic pathway with tyrosine feeds homogentisic acid metabolism.",
     pathway: [
@@ -174,7 +174,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "tyrosine",
     name: "Tyrosine",
     etymology: "Greek tyros = cheese + -ine = chemical suffix (first isolated from cheese protein)",
-    aliases: ["tyrosine", "tyr", "y"],
+    aliases: ["tyrosine", "tyr"],
     definition:
       "Aromatic amino acid derived from phenylalanine; catabolized through homogentisic acid to fumarate and acetoacetate, and used in melanin, thyroid hormone, and catecholamine synthesis.",
     pathway: [
@@ -201,7 +201,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "serine",
     name: "Serine",
     etymology: "Latin sericum = silk + -ine = chemical suffix (first found in silk protein)",
-    aliases: ["serine", "ser", "s"],
+    aliases: ["serine", "ser"],
     definition:
       "Nonessential glucogenic amino acid central to one-carbon metabolism and a precursor for glycine and cysteine via the transsulfuration pathway.",
     pathway: [
@@ -226,7 +226,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "cysteine",
     name: "Cysteine",
     etymology: "Latin cystis = bladder + -ine = chemical suffix (named for bladder-shaped crystals)",
-    aliases: ["cysteine", "cys", "c"],
+    aliases: ["cysteine", "cys"],
     definition:
       "Sulfur-containing amino acid synthesized from homocysteine and serine; forms disulfide bonds stabilizing protein tertiary structure.",
     pathway: [
@@ -279,7 +279,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "valine",
     name: "Valine",
     etymology: "Latin valere = to be strong + -ine = chemical suffix",
-    aliases: ["valine", "val", "v"],
+    aliases: ["valine", "val"],
     definition:
       "Essential branched-chain amino acid (BCAA) that is both glucogenic and ketogenic; catabolized through propionyl-CoA and succinyl-CoA.",
     pathway: [
@@ -312,7 +312,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "glutamic",
       "l-glutamate",
       "glu",
-      "e",
     ],
     definition:
       "Nonessential glucogenic amino acid and the principal excitatory neurotransmitter in the CNS; at synapses it activates ionotropic (NMDA, AMPA, kainate) and metabotropic glutamate receptors, while astrocytes clear excess glutamate to prevent excitotoxicity. In metabolism it transaminates to α-ketoglutarate, linking nitrogen handling to the TCA and urea cycles.",
@@ -346,7 +345,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "alanine",
     name: "Alanine",
     etymology: "Latin alumen = alum + -ine = chemical suffix",
-    aliases: ["alanine", "ala", "a", "l-alanine"],
+    aliases: ["alanine", "ala", "l-alanine"],
     definition:
       "Nonessential glucogenic amino acid that transaminates to pyruvate, linking amino acid catabolism to glycolysis and gluconeogenesis.",
     pathway: [
@@ -371,7 +370,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "arginine",
     name: "Arginine",
     etymology: "Latin argentum = silver + -ine = chemical suffix (early silver-colored crystals)",
-    aliases: ["arginine", "arg", "r", "l-arginine"],
+    aliases: ["arginine", "arg", "l-arginine"],
     definition:
       "Semi-essential amino acid central to the urea cycle, nitric oxide synthesis, and creatine production; becomes essential in growth and critical illness.",
     pathway: [
@@ -403,7 +402,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "aspartate",
       "aspartic acid",
       "asp",
-      "d",
       "l-aspartate",
       "l-aspartic acid",
     ],
@@ -432,7 +430,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "glutamine",
     name: "Glutamine",
     etymology: "Latin gluten = glue + amine = nitrogen-bearing + -ine suffix",
-    aliases: ["glutamine", "gln", "q", "l-glutamine"],
+    aliases: ["glutamine", "gln", "l-glutamine"],
     definition:
       "Most abundant free amino acid in blood; amide form of glutamate that transports ammonia and fuels rapidly dividing cells.",
     pathway: [
@@ -460,7 +458,7 @@ export const METABOLISM: MetabolismEntry[] = [
     id: "histidine",
     name: "Histidine",
     etymology: "Greek histos = tissue + -idine = chemical suffix",
-    aliases: ["histidine", "his", "h", "l-histidine"],
+    aliases: ["histidine", "his", "l-histidine"],
     definition:
       "Essential amino acid with imidazole side chain; precursor to histamine, carnosine, and one-carbon metabolism via folate-linked pathways.",
     pathway: [
