@@ -34,7 +34,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "staphylococcus-aureus",
     name: "Staphylococcus aureus",
-    etymology: "Latin aureus (golden)",
+    etymology: "Greek staphyle = grape cluster + kokkos = berry + Latin aureus = golden",
     aliases: [
       "staphylococcus aureus",
       "s. aureus",
@@ -97,7 +97,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "streptococcus-pyogenes",
     name: "Streptococcus pyogenes",
-    etymology: "Greek pyon (pus) + -genes",
+    etymology: "Greek streptos = twisted chain + kokkos = berry + Greek pyon = pus + -genes = producing",
     aliases: [
       "streptococcus pyogenes",
       "s. pyogenes",
@@ -162,7 +162,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "streptococcus-pneumoniae",
     name: "Streptococcus pneumoniae",
-    etymology: "Greek pneumon (lung) + -ia",
+    etymology: "Greek streptos = twisted chain + kokkos = berry + Greek pneumon = lung + -iae = associated with",
     aliases: [
       "streptococcus pneumoniae",
       "s. pneumoniae",
@@ -223,7 +223,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "escherichia-coli",
     name: "Escherichia coli",
-    etymology: "From escherichia coli",
+    etymology: "eponym: Theodor Escherich + Latin colon = large intestine",
     aliases: [
       "escherichia coli",
       "e. coli",
@@ -288,7 +288,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "haemophilus-influenzae",
     name: "Haemophilus influenzae",
-    etymology: "Greek haima + philos (blood-loving)",
+    etymology: "Greek haima = blood + philos = loving + Italian influenza = influence",
     aliases: [
       "haemophilus influenzae",
       "h. influenzae",
@@ -347,7 +347,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "neisseria-meningitidis",
     name: "Neisseria meningitidis",
-    etymology: "Greek mēninx + -itis",
+    etymology: "eponym: Albert Neisser + Greek meninx = membrane + -itis = inflammation",
     aliases: [
       "neisseria meningitidis",
       "n. meningitidis",
@@ -411,7 +411,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "clostridium-perfringens",
     name: "Clostridium perfringens",
-    etymology: "Greek klōstēr (spindle)",
+    etymology: "Greek kloster = spindle + Latin perfringere = break through",
     aliases: [
       "clostridium perfringens",
       "c. perfringens",
@@ -470,7 +470,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "mycobacterium-tuberculosis",
     name: "Mycobacterium tuberculosis",
-    etymology: "Greek mykēs (fungus) + bacterium; Latin tuberculum (small swelling)",
+    etymology: "Greek mykes = fungus + bacterion = small rod + Latin tuberculum = small swelling + -osis = condition",
     aliases: [
       "mycobacterium tuberculosis",
       "m. tuberculosis",
@@ -531,7 +531,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "treponema-pallidum",
     name: "Treponema pallidum",
-    etymology: "Greek trepein (to turn) + nēma (thread)",
+    etymology: "Greek trepein = turn + nema = thread + Latin pallidus = pale",
     aliases: [
       "treponema pallidum",
       "t. pallidum",
@@ -590,7 +590,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "hiv",
     name: "Human Immunodeficiency Virus",
-    etymology: "human immunodeficiency virus",
+    etymology: "human host + immunis = protected + de- = lack + facere = make + Latin virus = poison/viral agent",
     aliases: [
       "human immunodeficiency virus",
       "hiv",
@@ -653,7 +653,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "candida-albicans",
     name: "Candida albicans",
-    etymology: "Latin candidus (white)",
+    etymology: "Latin candidus = white + Latin albicare = to be white",
     aliases: [
       "candida albicans",
       "c. albicans",
@@ -713,7 +713,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "cryptococcus-neoformans",
     name: "Cryptococcus neoformans",
-    etymology: "Greek kryptos (hidden) + kokkos",
+    etymology: "Greek kryptos = hidden + kokkos = berry + Greek neo = new + Latin formans = forming",
     aliases: [
       "cryptococcus neoformans",
       "cryptococcus",
@@ -770,7 +770,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "plasmodium-falciparum",
     name: "Plasmodium falciparum",
-    etymology: "Greek plasma + eidos (form)",
+    etymology: "Greek plasma = formed thing + -odium diminutive + Latin falx = sickle + parere = produce",
     aliases: [
       "plasmodium falciparum",
       "p. falciparum",
@@ -830,7 +830,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "giardia-lamblia",
     name: "Giardia lamblia",
-    etymology: "Named for Alfred Giard",
+    etymology: "eponym: Alfred Giard + eponym: Vilém Lambl",
     aliases: [
       "giardia lamblia",
       "giardia",
@@ -884,7 +884,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "klebsiella-pneumoniae",
     name: "Klebsiella pneumoniae",
-    etymology: "Named for Edwin Klebs; Greek pneumon (lung) + -ia",
+    etymology: "eponym: Edwin Klebs + Greek pneumon = lung + -iae = associated with",
     aliases: [
       "klebsiella pneumoniae",
       "k. pneumoniae",
@@ -946,7 +946,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "pseudomonas-aeruginosa",
     name: "Pseudomonas aeruginosa",
-    etymology: "Greek pseudēs (false) + monas (unit)",
+    etymology: "Greek pseudes = false + monas = unit + Latin aerugo = copper rust/blue-green",
     aliases: [
       "pseudomonas aeruginosa",
       "p. aeruginosa",
@@ -1013,7 +1013,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "legionella-pneumophila",
     name: "Legionella pneumophila",
-    etymology: "From American Legion outbreak",
+    etymology: "American Legion outbreak name + -ella diminutive + Greek pneumon = lung + philos = loving",
     aliases: [
       "legionella pneumophila",
       "l. pneumophila",
@@ -1074,7 +1074,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "bordetella-pertussis",
     name: "Bordetella pertussis",
-    etymology: "Named for Jules Bordet; Latin per (intense) + tussis (cough)",
+    etymology: "eponym: Jules Bordet + -ella diminutive + Latin per = intense + tussis = cough",
     aliases: [
       "bordetella pertussis",
       "b. pertussis",
@@ -1131,7 +1131,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "epstein-barr-virus",
     name: "Epstein-Barr Virus",
-    etymology: "Latin virus (poison) + pathogen name",
+    etymology: "eponyms: Epstein + Barr + Latin virus = poison/viral agent",
     aliases: [
       "epstein-barr virus",
       "epstein barr virus",
@@ -1198,7 +1198,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "cytomegalovirus",
     name: "Cytomegalovirus",
-    etymology: "Greek kytos + megas + virus",
+    etymology: "Greek kytos = cell + megas = large + virus = viral agent",
     aliases: [
       "cytomegalovirus",
       "cmv",
@@ -1263,7 +1263,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "dengue-virus",
     name: "Dengue Virus",
-    etymology: "Swahili ka-dinga pepo (cramp-like seizure)",
+    etymology: "Swahili ka-dinga pepo = cramp-like seizure + Latin virus = poison/viral agent",
     aliases: [
       "dengue virus",
       "dengue",
@@ -1337,7 +1337,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "chikungunya-virus",
     name: "Chikungunya Virus",
-    etymology: "Latin virus (poison) + pathogen name",
+    etymology: "Kimakonde chikungunya = to become contorted + Latin virus = poison/viral agent",
     aliases: [
       "chikungunya virus",
       "chikungunya",
@@ -1414,7 +1414,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "cryptosporidium-parvum",
     name: "Cryptosporidium parvum",
-    etymology: "From cryptosporidium parvum",
+    etymology: "Greek kryptos = hidden + sporos = seed/spore + Latin parvum = small",
     aliases: [
       "cryptosporidium parvum",
       "cryptosporidium",
@@ -1467,7 +1467,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "entamoeba-histolytica",
     name: "Entamoeba histolytica",
-    etymology: "Greek entos (within) + amoibe (change)",
+    etymology: "Greek entos = within + amoibe = change + Greek histos = tissue + lysis = loosening",
     aliases: [
       "entamoeba histolytica",
       "e. histolytica",
@@ -1523,7 +1523,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "salmonella-enterica",
     name: "Salmonella enterica",
-    etymology: "Named for Daniel Salmon",
+    etymology: "eponym: Daniel Salmon + -ella diminutive + Greek enteron = intestine",
     aliases: [
       "salmonella enterica",
       "salmonella",
@@ -1590,7 +1590,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "shigella-flexneri",
     name: "Shigella flexneri",
-    etymology: "Named for Kiyoshi Shiga",
+    etymology: "eponym: Kiyoshi Shiga + -ella diminutive + eponym: Simon Flexner",
     aliases: [
       "shigella flexneri",
       "shigella",
@@ -1650,7 +1650,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "listeria-monocytogenes",
     name: "Listeria monocytogenes",
-    etymology: "Named for Joseph Lister",
+    etymology: "eponym: Joseph Lister + Greek monos = single + kytos = cell + -genes = producing",
     aliases: [
       "listeria monocytogenes",
       "listeria",
@@ -1712,7 +1712,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "herpes-simplex-virus",
     name: "Herpes Simplex Virus",
-    etymology: "Greek herpein (to creep)",
+    etymology: "Greek herpein = creep + Latin simplex = simple + Latin virus = poison/viral agent",
     aliases: [
       "herpes simplex virus",
       "herpes simplex",
@@ -1779,7 +1779,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "varicella-zoster-virus",
     name: "Varicella-Zoster Virus",
-    etymology: "Latin varius (varied) + -ella; Greek zōstēr (girdle)",
+    etymology: "Latin varius = spotted/varied + Greek zoster = belt + Latin virus = poison/viral agent",
     aliases: [
       "varicella-zoster virus",
       "varicella zoster virus",
@@ -1848,7 +1848,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "measles-virus",
     name: "Measles Virus",
-    etymology: "Latin virus (poison) + pathogen name",
+    etymology: "Middle English masel = spot + Latin virus = poison/viral agent",
     aliases: [
       "measles virus",
       "measles",
@@ -1930,7 +1930,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "mumps-virus",
     name: "Mumps Virus",
-    etymology: "Abbreviation: Mumps Virus",
+    etymology: "mump = grimace/swollen cheek + Latin virus = poison/viral agent",
     aliases: [
       "mumps virus",
       "mumps",
@@ -2006,7 +2006,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "rubella-virus",
     name: "Rubella Virus",
-    etymology: "Latin virus (poison) + pathogen name",
+    etymology: "Latin rubellus = reddish + Latin virus = poison/viral agent",
     aliases: [
       "rubella virus",
       "rubella",
@@ -2084,7 +2084,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "respiratory-syncytial-virus",
     name: "Respiratory Syncytial Virus",
-    etymology: "Latin respirare (to breathe)",
+    etymology: "Latin respirare = breathe + Greek syn = together + kytos = cell + Latin virus = poison/viral agent",
     aliases: [
       "respiratory syncytial virus",
       "respiratory syncytial viruses",
@@ -2152,7 +2152,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "rhinovirus",
     name: "Rhinovirus",
-    etymology: "Greek rhis (nose) + virus",
+    etymology: "Greek rhis = nose + virus = viral agent",
     aliases: [
       "rhinovirus",
       "rhinoviruses",
@@ -2218,7 +2218,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "enterovirus",
     name: "Enterovirus",
-    etymology: "Greek enteron (intestine) + virus",
+    etymology: "Greek enteron = intestine + virus = viral agent",
     aliases: [
       "enterovirus",
       "enteroviruses",
@@ -2305,7 +2305,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "norovirus",
     name: "Norovirus",
-    etymology: "Abbreviation: Norovirus",
+    etymology: "Norwalk, Ohio outbreak name + virus = viral agent",
     aliases: [
       "norovirus",
       "noroviruses",
@@ -2374,7 +2374,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "influenza-a",
     name: "Influenza A",
-    etymology: "Italian influenza (influence)",
+    etymology: "Italian influenza = influence + A = influenza virus type A",
     aliases: [
       "influenza a",
       "influenza a virus",
@@ -2454,7 +2454,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "influenza-virus",
     name: "Influenza Virus",
-    etymology: "Italian influenza (influence)",
+    etymology: "Italian influenza = influence + virus = poison/viral agent",
     aliases: [
       "influenza virus",
       "influenza",
@@ -2528,7 +2528,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "adenovirus",
     name: "Adenovirus",
-    etymology: "adenoid tissue + virus",
+    etymology: "Greek aden = gland + virus = viral agent",
     aliases: [
       "adenovirus",
       "adenoviruses",
@@ -2596,7 +2596,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "variola-virus",
     name: "Variola Virus",
-    etymology: "Latin virus (poison) + pathogen name",
+    etymology: "Latin varius = spotted + Latin virus = poison/viral agent",
     aliases: [
       "variola virus",
       "variola",
@@ -2665,7 +2665,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "zika-virus",
     name: "Zika Virus",
-    etymology: "Abbreviation: Zika Virus",
+    etymology: "Zika Forest geographic name + Latin virus = poison/viral agent",
     aliases: [
       "zika virus",
       "zika",
@@ -2743,7 +2743,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "yellow-fever-virus",
     name: "Yellow Fever Virus",
-    etymology: "Latin virus (poison) + pathogen name",
+    etymology: "yellow = jaundice + fever = febrile illness + virus = viral agent",
     aliases: [
       "yellow fever virus",
       "yellow fever",
@@ -2818,7 +2818,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "toxoplasma-gondii",
     name: "Toxoplasma gondii",
-    etymology: "Greek toxon (bow) + plasma",
+    etymology: "Greek toxon = bow + plasma = form + named after gundi rodent host",
     aliases: [
       "toxoplasma gondii",
       "toxoplasma",
@@ -2880,7 +2880,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "borrelia-burgdorferi",
     name: "Borrelia burgdorferi",
-    etymology: "Named for Amédée Borrel",
+    etymology: "eponym: Amedee Borrel + eponym: Willy Burgdorfer",
     aliases: [
       "borrelia burgdorferi",
       "b. burgdorferi",
@@ -2939,7 +2939,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "rickettsia-rickettsii",
     name: "Rickettsia rickettsii",
-    etymology: "Named for Howard Ricketts",
+    etymology: "eponym: Howard Ricketts",
     aliases: [
       "rickettsia rickettsii",
       "r. rickettsii",
@@ -2996,7 +2996,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "aspergillus-fumigatus",
     name: "Aspergillus fumigatus",
-    etymology: "Latin aspergillum (holy water sprinkler)",
+    etymology: "Latin aspergillum = holy-water sprinkler + Latin fumigare = smoky",
     aliases: [
       "aspergillus fumigatus",
       "aspergillus",
@@ -3055,7 +3055,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "histoplasma-capsulatum",
     name: "Histoplasma capsulatum",
-    etymology: "Greek histos + plasma",
+    etymology: "Greek histos = tissue + plasma = form + Latin capsula = little box/capsule",
     aliases: [
       "histoplasma capsulatum",
       "histoplasma",
@@ -3113,7 +3113,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "campylobacter-jejuni",
     name: "Campylobacter jejuni",
-    etymology: "From campylobacter jejuni",
+    etymology: "Greek kampylos = curved + bakterion = rod + Latin jejunum = empty intestine",
     aliases: [
       "campylobacter jejuni",
       "campylobacter",
@@ -3176,7 +3176,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "helicobacter-pylori",
     name: "Helicobacter pylori",
-    etymology: "From helicobacter pylori",
+    etymology: "Greek helix = spiral + bakterion = rod + Greek pylorus = gatekeeper",
     aliases: [
       "helicobacter pylori",
       "h. pylori",
@@ -3240,7 +3240,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "corynebacterium-diphtheriae",
     name: "Corynebacterium diphtheriae",
-    etymology: "Greek diphthera (leather)",
+    etymology: "Greek koryne = club + bakterion = rod + Greek diphthera = leather/hide",
     aliases: [
       "corynebacterium diphtheriae",
       "c. diphtheriae",
@@ -3302,7 +3302,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "bartonella-henselae",
     name: "Bartonella henselae",
-    etymology: "Named for Alberto Barton",
+    etymology: "eponym: Alberto Barton + -ella diminutive + eponym: Diane Hensel",
     aliases: [
       "bartonella henselae",
       "b. henselae",
@@ -3378,7 +3378,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "mycoplasma-pneumoniae",
     name: "Mycoplasma pneumoniae",
-    etymology: "Greek mykēs + plasma; Greek pneumon (lung) + -ia",
+    etymology: "Greek mykes = fungus + plasma = form + Greek pneumon = lung + -iae = associated with",
     aliases: [
       "mycoplasma pneumoniae",
       "mycoplasma",
@@ -3438,7 +3438,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "chlamydia-trachomatis",
     name: "Chlamydia trachomatis",
-    etymology: "Greek chlamys (cloak)",
+    etymology: "Greek chlamys = cloak + Greek trachoma = roughness",
     aliases: [
       "chlamydia trachomatis",
       "c. trachomatis",
@@ -3511,7 +3511,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "coccidioides-immitis",
     name: "Coccidioides immitis",
-    etymology: "Greek kokkos + -oides (like); Greek -itis (inflammation)",
+    etymology: "Greek kokkos = berry + -oides = resembling + Latin immitis = harsh/not mild",
     aliases: [
       "coccidioides immitis",
       "coccidioides",
@@ -3569,7 +3569,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "blastomyces-dermatitidis",
     name: "Blastomyces dermatitidis",
-    etymology: "Greek blastos + mykēs",
+    etymology: "Greek blastos = bud + mykes = fungus + Greek derma = skin + -itis = inflammation",
     aliases: [
       "blastomyces dermatitidis",
       "blastomyces",
@@ -3628,7 +3628,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "sporothrix-schenckii",
     name: "Sporothrix schenckii",
-    etymology: "Greek sporos (seed) + thrix (hair)",
+    etymology: "Greek sporos = seed/spore + thrix = hair + eponym: Benjamin Schenck",
     aliases: [
       "sporothrix schenckii",
       "sporothrix schekii",
@@ -3704,7 +3704,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "plasmodium-vivax",
     name: "Plasmodium vivax",
-    etymology: "Greek plasma + eidos (form)",
+    etymology: "Greek plasma = formed thing + -odium diminutive + Latin vivax = lively/long-lived",
     aliases: [
       "plasmodium vivax",
       "p. vivax",
@@ -3762,7 +3762,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "strongyloides-stercoralis",
     name: "Strongyloides stercoralis",
-    etymology: "Greek strongylos (round) + -oides",
+    etymology: "Greek strongylos = round + -oides = resembling + Latin stercus = feces",
     aliases: [
       "strongyloides stercoralis",
       "strongyloides",
@@ -3825,7 +3825,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   {
     id: "schistosoma-mansoni",
     name: "Schistosoma mansoni",
-    etymology: "Greek schistos (split) + sōma (body); Greek -oma (tumor/mass)",
+    etymology: "Greek schistos = split + soma = body + eponym: Patrick Manson",
     aliases: [
       "schistosoma mansoni",
       "schistosoma",

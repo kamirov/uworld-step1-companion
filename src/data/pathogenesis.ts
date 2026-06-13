@@ -14,7 +14,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "bacterial-translocation",
     name: "Bacterial Translocation",
-    etymology: "Latin trans + locus (place)",
+    etymology: "Greek bakterion = small rod + Latin trans = across + locus = place",
     aliases: [
       "bacterial translocation",
       "gut bacterial translocation",
@@ -45,7 +45,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "contiguous-spread",
     name: "Contiguous Spread",
-    etymology: "From contiguous spread",
+    etymology: "Latin contingere = touch + spread = extension outward",
     aliases: [
       "contiguous spread",
       "contiguous extension",
@@ -79,7 +79,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hematogenous-dissemination",
     name: "Hematogenous Dissemination",
-    etymology: "From hematogenous dissemination",
+    etymology: "Greek haima = blood + genos = born/carried + Latin disseminare = scatter seed",
     aliases: [
       "hematogenous dissemination",
       "hematogenous spread",
@@ -117,7 +117,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "anti-drug-antibodies",
     name: "Anti-drug antibodies (ADAs)",
-    etymology: "From anti-drug antibodies adas",
+    etymology: "anti- = against + drug = medicine + anti- = against + body = immune protein + ADAs = anti-drug antibodies",
     aliases: [
       "anti-drug antibodies",
       "antidrug antibodies",
@@ -153,7 +153,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "autoantibodies",
     name: "Autoantibodies",
-    etymology: "From autoantibodies",
+    etymology: "auto- = self + antibodies = immune proteins",
     aliases: [
       "autoantibody",
       "autoantibodies",
@@ -190,7 +190,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "leukocyte-migration",
     name: "Leukocyte Migration",
-    etymology: "Greek -cyte (cell)",
+    etymology: "Greek leukos = white + kytos = cell + Latin migrare = move",
     aliases: [
       "leukocyte migration",
       "leukocyte trafficking",
@@ -226,7 +226,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "chemotaxis",
     name: "Chemotaxis",
-    etymology: "Abbreviation: Chemotaxis",
+    etymology: "Greek chemo = chemical + taxis = arrangement/movement",
     aliases: [
       "chemotaxis",
       "leukocyte chemotaxis",
@@ -259,7 +259,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "phagocytosis",
     name: "Phagocytosis",
-    etymology: "Greek phagein + kytos + -osis; Greek -osis (condition)",
+    etymology: "Greek phagein = eat + kytos = cell + -osis = process",
     aliases: [
       "phagocytosis",
       "phagocyte",
@@ -294,7 +294,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "granuloma",
     name: "Granuloma",
-    etymology: "Greek -oma (tumor/mass)",
+    etymology: "Latin granulum = small grain + Greek -oma = mass",
     aliases: [
       "granuloma",
       "granulomas",
@@ -334,7 +334,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "enterohepatic-recirculation",
     name: "Enterohepatic Recirculation",
-    etymology: "From enterohepatic recirculation",
+    etymology: "Greek enteron = intestine + hepar = liver + re- = again + circulation = going around",
     aliases: [
       "enterohepatic recirculation",
       "enterohepatic circulation",
@@ -368,7 +368,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "calcification",
     name: "Calcification",
-    etymology: "From calcification",
+    etymology: "Latin calx = lime/calcium + facere = make",
     aliases: [
       "calcification",
       "calcifications",
@@ -406,7 +406,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "eosinophilic-inflammation",
     name: "Eosinophilic Inflammation",
-    etymology: "From eosinophilic inflammation",
+    etymology: "Greek eos = dawn-red + philos = loving + Latin inflammare = set on fire",
     aliases: [
       "eosinophilic",
       "eosinophilic inflammation",
@@ -444,7 +444,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hyperplasia",
     name: "Hyperplasia",
-    etymology: "Abbreviation: Hyperplasia",
+    etymology: "Greek hyper = excess + plasis = formation",
     aliases: [
       "hyperplasia",
       "cellular hyperplasia",
@@ -479,7 +479,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "sclerosis",
     name: "Sclerosis",
-    etymology: "Greek -osis (condition)",
+    etymology: "Greek skleros = hardening",
     aliases: [
       "sclerosis",
       "fibrosis",
@@ -515,7 +515,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hyperkeratosis",
     name: "Hyperkeratosis",
-    etymology: "Greek -osis (condition)",
+    etymology: "Greek hyper = excess + keras = horn/keratin + -osis = condition",
     aliases: [
       "hyperkeratosis",
       "hyperkeratotic",
@@ -552,7 +552,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "extravasation",
     name: "Extravasation",
-    etymology: "Latin extra + vas (vessel)",
+    etymology: "Latin extra = outside + vas = vessel + -ation = process",
     aliases: [
       "extravasation",
       "extravasated",
@@ -588,7 +588,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "acantholysis",
     name: "Acantholysis",
-    etymology: "Greek -lysis (breakdown)",
+    etymology: "Greek akantha = thorn/spine + lysis = loosening/breakdown",
     aliases: ["acantholysis", "acantholytic"],
     definition:
       "Loss of intercellular adhesion between epidermal keratinocytes, causing rounded detached cells within the epidermis while the basement membrane remains intact.",
@@ -617,7 +617,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hypersensitivity",
     name: "Hypersensitivity",
-    etymology: "Greek hyper + Latin sensus",
+    etymology: "Greek hyper = excess + Latin sensus = feeling/response",
     aliases: [
       "hypersensitivity",
       "hypersensitivity reaction",
@@ -650,7 +650,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-i-hypersensitivity",
     name: "Type I Hypersensitivity",
-    etymology: "Greek hyper + Latin sensus",
+    etymology: "type I = first subtype + Greek hyper = excess + Latin sensus = response",
     aliases: [
       "type i hypersensitivity",
       "type 1 hypersensitivity",
@@ -685,7 +685,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-ii-hypersensitivity",
     name: "Type II Hypersensitivity",
-    etymology: "Greek hyper + Latin sensus",
+    etymology: "type II = second subtype + Greek hyper = excess + Latin sensus = response",
     aliases: [
       "type ii hypersensitivity",
       "type 2 hypersensitivity",
@@ -718,7 +718,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-iii-hypersensitivity",
     name: "Type III Hypersensitivity",
-    etymology: "Greek hyper + Latin sensus",
+    etymology: "type III = third subtype + Greek hyper = excess + Latin sensus = response",
     aliases: [
       "type iii hypersensitivity",
       "type 3 hypersensitivity",
@@ -752,7 +752,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "immune-complex",
     name: "Immune Complex",
-    etymology: "From immune complex",
+    etymology: "Latin immunis = exempt/protected + Latin complecti = entwine",
     aliases: [
       "immune complex",
       "immune complexes",
@@ -798,7 +798,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "type-iv-hypersensitivity",
     name: "Type IV Hypersensitivity",
-    etymology: "Greek hyper + Latin sensus",
+    etymology: "type IV = fourth subtype + Greek hyper = excess + Latin sensus = response",
     aliases: [
       "type iv hypersensitivity",
       "type 4 hypersensitivity",
@@ -833,7 +833,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "antigen",
     name: "Antigen",
-    etymology: "anti- + Greek -gen (producer)",
+    etymology: "anti- = against + -gen = producer",
     aliases: [
       "antigen",
       "antigens",
@@ -873,7 +873,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hapten",
     name: "Hapten",
-    etymology: "Abbreviation: Hapten",
+    etymology: "Greek haptein = fasten; small antigen when attached",
     aliases: ["hapten", "haptens", "incomplete antigen"],
     definition:
       "Small molecule that is not immunogenic alone but becomes antigenic when bound to a carrier protein; the hapten–protein complex elicits T-cell and antibody responses.",
@@ -900,7 +900,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "hemosiderin",
     name: "Hemosiderin",
-    etymology: "Abbreviation: Hemosiderin",
+    etymology: "Greek haima = blood + sideros = iron + -in substance",
     aliases: ["hemosiderin", "hemosiderin deposition", "hemosiderin pigment"],
     definition:
       "Iron-storage complex formed when macrophages degrade hemoglobin from phagocytosed erythrocytes; golden-brown granular pigment in tissues after chronic or recurrent hemorrhage.",
@@ -930,7 +930,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "endocytosis",
     name: "Endocytosis",
-    etymology: "Greek endon + kytos + -osis; Greek -osis (condition)",
+    etymology: "Greek endon = within + kytos = cell + -osis = process",
     aliases: [
       "endocytosis",
       "endocytic",
@@ -964,7 +964,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "pinocytosis",
     name: "Pinocytosis",
-    etymology: "Greek pinein (to drink) + kytos + -osis; Greek -osis (condition)",
+    etymology: "Greek pinein = drink + kytos = cell + -osis = process",
     aliases: [
       "pinocytosis",
       "pinocytic",
@@ -997,7 +997,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "carcinoma",
     name: "Carcinoma",
-    etymology: "Greek karkinos + -oma; Greek -oma (tumor/mass)",
+    etymology: "Greek karkinos = crab/cancer + -oma = tumor",
     aliases: [
       "carcinoma",
       "carcinomas",
@@ -1036,7 +1036,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "sarcoma",
     name: "Sarcoma",
-    etymology: "Greek sarx + -oma; Greek -oma (tumor/mass)",
+    etymology: "Greek sarx = flesh + -oma = tumor",
     aliases: [
       "sarcoma",
       "sarcomas",
@@ -1076,7 +1076,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "gastrointestinal-flora",
     name: "Gastrointestinal Flora",
-    etymology: "From gastrointestinal flora",
+    etymology: "Greek gaster = stomach + Latin intestinum = gut + Latin flora = plant life; microbial community",
     aliases: [
       "gastrointestinal flora",
       "gut flora",
@@ -1119,7 +1119,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "pili",
     name: "Pili (Fimbriae)",
-    etymology: "Latin pilus (hair)",
+    etymology: "Latin pilus = hair + Latin fimbria = fringe",
     aliases: [
       "pili",
       "pilus",
@@ -1169,7 +1169,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "pamp",
     name: "Pathogen-Associated Molecular Pattern (PAMP)",
-    etymology: "Latin pathos (suffering) + Greek associated + Latin patere (to lie open)",
+    etymology: "pathogen = disease-producer + associated = linked + molecular pattern = recurring molecule motif",
     aliases: [
       "pathogen-associated molecular pattern",
       "pathogen associated molecular pattern",
@@ -1210,7 +1210,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "damp",
     name: "Damage-Associated Molecular Pattern (DAMP)",
-    etymology: "Latin damnum (loss/harm) + Latin patere (to lie open)",
+    etymology: "damage = tissue injury + associated = linked + molecular pattern = recurring molecule motif",
     aliases: [
       "damage-associated molecular pattern",
       "damage associated molecular pattern",
@@ -1258,7 +1258,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "lipopolysaccharide",
     name: "Lipopolysaccharide (LPS / Endotoxin)",
-    etymology: "Greek lipos (fat) + poly (many) + Latin saccharum (sugar)",
+    etymology: "Greek lipos = fat + poly = many + Latin saccharum = sugar + LPS = lipopolysaccharide + Greek endon = within + toxikon = poison",
     aliases: [
       "lipopolysaccharide",
       "lipopolysaccharides",
@@ -1306,7 +1306,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "monoclonal-antibodies",
     name: "Monoclonal Antibodies",
-    etymology: "Greek monos + klon (twig)",
+    etymology: "Greek monos = single + klon = twig/clone + anti- = against + body = immune protein",
     aliases: [
       "monoclonal antibodies",
       "monoclonal antibody",
@@ -1356,7 +1356,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "synovitis",
     name: "Synovitis",
-    etymology: "Greek -itis (inflammation)",
+    etymology: "Greek syn = together + ovum-like fluid + -itis = inflammation",
     aliases: [
       "synovitis",
       "synovial inflammation",
@@ -1399,7 +1399,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "mosaicism",
     name: "Mosaicism",
-    etymology: "Abbreviation: Mosaicism",
+    etymology: "mosaic = patchwork + -ism condition",
     aliases: [
       "mosaicism",
       "genetic mosaicism",
@@ -1439,7 +1439,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "disomy",
     name: "Disomy",
-    etymology: "Abbreviation: Disomy",
+    etymology: "di- = two + soma = body/chromosome",
     aliases: [
       "disomy",
       "chromosomal disomy",
@@ -1485,7 +1485,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "locus-heterogeneity",
     name: "Locus Heterogeneity",
-    etymology: "Greek heteros (other) + genos",
+    etymology: "Latin locus = place + Greek heteros = other + genos = kind",
     aliases: [
       "locus heterogeneity",
       "locus heterogeneities",
@@ -1526,7 +1526,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "class-switching",
     name: "Class Switching",
-    etymology: "From class switching",
+    etymology: "class = category + switching = changing antibody class",
     aliases: [
       "class switching",
       "class switch",
@@ -1572,7 +1572,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "vaccination",
     name: "Vaccination",
-    etymology: "Abbreviation: Vaccination",
+    etymology: "Latin vacca = cow; named from cowpox vaccine",
     aliases: [
       "vaccination",
       "vaccinations",
@@ -1625,7 +1625,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "conjugate-vaccine",
     name: "Conjugate Vaccine",
-    etymology: "Latin conjugare (join together)",
+    etymology: "Latin conjugare = join together + Latin vacca = cow; immunizing preparation",
     aliases: [
       "conjugate vaccine",
       "conjugate vaccines",
@@ -1672,7 +1672,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "recombinant-vaccine",
     name: "Recombinant Vaccine",
-    etymology: "Latin re- + combinare",
+    etymology: "Latin re- = again + combinare = combine + Latin vacca = cow; immunizing preparation",
     aliases: [
       "recombinant vaccine",
       "recombinant vaccines",
@@ -1721,7 +1721,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "mmr-vaccine",
     name: "MMR Vaccine",
-    etymology: "Abbreviation: MMR Vaccine",
+    etymology: "MMR = measles, mumps, rubella + Latin vacca = cow; immunizing preparation",
     aliases: [
       "mmr",
       "mmr vaccine",
@@ -1767,7 +1767,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   {
     id: "dimorphic-fungus",
     name: "Dimorphic Fungus",
-    etymology: "From dimorphic fungus",
+    etymology: "Greek di- = two + morphe = form + Latin fungus = mushroom",
     aliases: [
       "dimorphic fungus",
       "dimorphic fungi",
@@ -1815,7 +1815,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     id: "obliterative-endarteritis",
     name: "Obliterative Endarteritis",
     etymology:
-      "Latin ob + literare (to block) + Greek endon (within) + artēria (artery) + -itis",
+      "Latin obliterare = erase/close + Greek endon = within + arteria = artery + -itis = inflammation",
     aliases: [
       "obliterative endarteritis",
       "obliterating endarteritis",

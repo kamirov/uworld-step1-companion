@@ -13,7 +13,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   {
     id: "rate-control",
     name: "Rate control",
-    etymology: "Abbreviation: Rate control",
+    etymology: "rate = ventricular beats per minute + control = restraint/regulation",
     aliases: ["rate control", "rate-control"],
     definition:
       "Management strategy for atrial fibrillation/flutter that limits ventricular response without necessarily restoring sinus rhythm.",
@@ -36,7 +36,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   {
     id: "rhythm-control",
     name: "Rhythm control",
-    etymology: "From rhythm control",
+    etymology: "Greek rhythmos = measured flow/beat + control = restraint/regulation",
     aliases: ["rhythm control", "rhythm-control"],
     definition:
       "Management strategy for atrial fibrillation/flutter aimed at restoring and maintaining sinus rhythm.",
@@ -59,7 +59,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   {
     id: "squatting",
     name: "Squatting",
-    etymology: "Abbreviation: Squatting",
+    etymology: "squat = crouched posture; increases systemic vascular resistance",
     aliases: ["squatting", "squatting maneuver", "squats"],
     definition:
       "Physical maneuver that increases systemic vascular resistance (SVR) and venous return; used instinctively by children with tetralogy of Fallot during hypercyanotic spells.",

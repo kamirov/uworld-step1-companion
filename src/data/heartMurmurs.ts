@@ -12,7 +12,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "crescendo-decrescendo",
     name: "Systolic Crescendo-Decrescendo Murmur",
-    etymology: "Latin murmur (hum)",
+    etymology: "Greek systole = contraction + Italian crescendo = growing + decrescendo = decreasing + Latin murmur = hum",
     aliases: [
       "systolic crescendo-decrescendo murmur",
       "crescendo-decrescendo murmur",
@@ -32,7 +32,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "diastolic-rumble",
     name: "Diastolic Rumble",
-    etymology: "From diastolic rumble",
+    etymology: "Greek diastole = dilation/filling + rumble = low rolling sound",
     aliases: [
       "diastolic rumble",
       "rumbling diastolic murmur",
@@ -51,7 +51,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "ejection-click",
     name: "Systolic Ejection Click",
-    etymology: "From systolic ejection click",
+    etymology: "Greek systole = contraction + Latin eicere = throw out + click = sharp sound",
     aliases: [
       "systolic ejection click",
       "ejection click",
@@ -72,7 +72,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "harsh-systolic-ejection-murmur",
     name: "Harsh Systolic Ejection Murmur",
-    etymology: "Latin murmur (hum)",
+    etymology: "harsh = rough + Greek systole = contraction + Latin eicere = throw out + murmur = hum",
     aliases: [
       "harsh systolic ejection murmur",
       "harsh systolic murmur",
@@ -93,7 +93,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "atrial-septal-defect-murmur",
     name: "ASD Flow Murmur",
-    etymology: "Latin murmur (hum)",
+    etymology: "ASD = atrial septal defect + flow = movement of blood + murmur = hum",
     aliases: [
       "atrial septal defect murmur",
       "asd murmur",
@@ -113,7 +113,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "patent-ductus-arteriosus-murmur",
     name: "Continuous Machinery Murmur",
-    etymology: "Latin patere (to lie open); Latin ducere (to lead)",
+    etymology: "continuous = uninterrupted + machinery = machine-like + murmur = hum",
     aliases: [
       "continuous machinery murmur",
       "machinery murmur",
@@ -133,7 +133,7 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
     id: "aortic-regurgitation-murmur",
     name: "Early Diastolic Decrescendo Murmur",
-    etymology: "Greek aortē (artery); Latin murmur (hum)",
+    etymology: "early = initial + Greek diastole = filling + decrescendo = decreasing + murmur = hum",
     aliases: [
       "early diastolic decrescendo murmur",
       "aortic regurgitation murmur",

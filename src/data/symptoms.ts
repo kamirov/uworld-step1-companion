@@ -14,7 +14,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "exertional-dyspnea",
     name: "Exertional Dyspnea",
-    etymology: "Greek dys + pnoia (breathing)",
+    etymology: "Latin exertus = put forth/effort + Greek dys = difficult + pnoia = breathing",
     aliases: [
       "exertional dyspnea",
       "exertional sob",
@@ -51,7 +51,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "shortness-of-breath",
     name: "Shortness of Breath",
-    etymology: "From shortness of breath",
+    etymology: "short = insufficient + breath = respiration",
     aliases: ["shortness of breath", "dyspnea"],
     definition:
       "Subjective sensation of uncomfortable or inadequate breathing (dyspnea), at rest or with activity.",
@@ -82,7 +82,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "wheezing",
     name: "Wheezing",
-    etymology: "Abbreviation: Wheezing",
+    etymology: "wheeze = high-pitched breath sound",
     aliases: ["wheezing", "wheeze", "wheezes"],
     definition:
       "High-pitched whistling sound during expiration (sometimes inspiration) from narrowed airways.",
@@ -112,7 +112,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "cough",
     name: "Cough",
-    etymology: "Abbreviation: Cough",
+    etymology: "Middle English coughen = expel air",
     aliases: ["cough", "chronic cough", "productive cough", "dry cough"],
     definition:
       "Reflex expulsion of air from the lungs to clear airways; may be acute or chronic, dry or productive.",
@@ -144,7 +144,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "easy-fatigability",
     name: "Easy Fatigability",
-    etymology: "From easy fatigability",
+    etymology: "easy = low threshold + Latin fatigare = tire + ability = capacity",
     aliases: ["easy fatigability"],
     definition:
       "Disproportionate tiredness or exhaustion with ordinary activity that was previously well tolerated.",
@@ -175,7 +175,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "orthopnea",
     name: "Orthopnea",
-    etymology: "Greek orthos + pnoia",
+    etymology: "Greek orthos = upright + pnoia = breathing",
     aliases: ["orthopnea"],
     definition:
       "Dyspnea that develops or worsens when lying flat, relieved by sitting or standing.",
@@ -201,7 +201,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "pulmonary-edema",
     name: "Pulmonary Edema",
-    etymology: "Latin pulmo (lung); Greek oidēma (swelling)",
+    etymology: "Latin pulmo = lung + Greek oidema = swelling",
     aliases: [
       "pulmonary edema",
       "pulmonary oedema",
@@ -237,7 +237,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "edema",
     name: "Edema",
-    etymology: "Greek oidēma (swelling)",
+    etymology: "Greek oidema = swelling",
     aliases: [
       "edema",
       "oedema",
@@ -275,7 +275,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "peripheral-edema",
     name: "Peripheral Edema",
-    etymology: "Greek oidēma (swelling)",
+    etymology: "Greek peri = around + pherein = carry + Greek oidema = swelling",
     aliases: [
       "peripheral edema",
       "pedal edema",
@@ -311,7 +311,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "pnd",
     name: "Paroxysmal Nocturnal Dyspnea (PND)",
-    etymology: "Greek paroxysmos (irritation); Latin nox (night)",
+    etymology: "Greek paroxysmos = sudden attack + Latin nox = night + dys = difficult + pnoia = breathing",
     aliases: ["paroxysmal nocturnal dyspnea", "pnd"],
     definition:
       "Sudden episodes of dyspnea that awaken the patient from sleep, often with a sensation of suffocation.",
@@ -338,7 +338,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "pleuritic-chest-pain",
     name: "Pleuritic Chest Pain",
-    etymology: "From pleuritic chest pain",
+    etymology: "Greek pleura = side/rib + -itic = inflammatory + Old English cest = box/thorax + Latin poena = penalty/suffering",
     aliases: ["pleuritic chest pain", "pleuritic pain"],
     definition:
       "Sharp chest pain that worsens with inspiration or coughing due to pleural irritation.",
@@ -366,7 +366,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "tearing-chest-pain",
     name: "Tearing Chest Pain",
-    etymology: "From tearing chest pain",
+    etymology: "tear = ripping sensation + Old English cest = box/thorax + Latin poena = penalty/suffering",
     aliases: ["tearing chest pain", "tearing pain"],
     definition:
       "Sudden, severe chest pain described as ripping or tearing, often maximal at onset.",
@@ -388,7 +388,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "chest-pain",
     name: "Chest Pain",
-    etymology: "Abbreviation: Chest Pain",
+    etymology: "Old English cest = box/thorax + Latin poena = penalty/suffering",
     aliases: [
       "chest pain",
       "substernal chest pain",
@@ -425,7 +425,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "palpitations",
     name: "Palpitations",
-    etymology: "Abbreviation: Palpitations",
+    etymology: "Latin palpitare = flutter",
     aliases: ["palpitations", "palpitation"],
     definition:
       "Awareness of one's own heartbeat, described as racing, pounding, fluttering, or skipping beats.",
@@ -458,7 +458,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "syncope",
     name: "Syncope",
-    etymology: "Greek synkopē (cutting short)",
+    etymology: "Greek synkope = cutting short",
     aliases: ["syncope"],
     definition:
       "Transient loss of consciousness due to global cerebral hypoperfusion, with rapid spontaneous recovery.",
@@ -488,7 +488,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "presyncope",
     name: "Presyncope",
-    etymology: "Abbreviation: Presyncope",
+    etymology: "pre- = before + syncope = fainting",
     aliases: ["presyncope", "pre-syncope"],
     definition:
       "Sensation of imminent faint (lightheadedness, weakness, visual changes) without full loss of consciousness.",
@@ -516,7 +516,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "fever",
     name: "Fever",
-    etymology: "Abbreviation: Fever",
+    etymology: "Latin febris = fever",
     aliases: ["fever", "febrile", "pyrexia"],
     definition:
       "Elevation of body temperature above normal, usually ≥38°C (100.4°F), reflecting a shift in the hypothalamic set point.",
@@ -546,7 +546,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "headache",
     name: "Headache",
-    etymology: "Abbreviation: Headache",
+    etymology: "head + ache = pain",
     aliases: [
       "headache",
       "head pain",
@@ -582,7 +582,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "cyanosis",
     name: "Cyanosis",
-    etymology: "Greek -osis (condition)",
+    etymology: "Greek kyanos = dark blue + -osis = condition",
     aliases: [
       "cyanosis",
       "cyanotic",
@@ -629,7 +629,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hypoxemia",
     name: "Hypoxemia",
-    etymology: "Greek -emia (blood condition)",
+    etymology: "Greek hypo = low + oxygen + -emia = blood condition",
     aliases: [
       "hypoxemia",
       "hypoxaemia",
@@ -662,7 +662,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "clubbing",
     name: "Clubbing",
-    etymology: "Abbreviation: Clubbing",
+    etymology: "club = rounded enlargement",
     aliases: ["clubbing", "digital clubbing"],
     definition:
       "Bulbous enlargement of the distal digits with loss of the normal nail-bed angle.",
@@ -690,7 +690,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "jaundice",
     name: "Jaundice",
-    etymology: "French jaune (yellow)",
+    etymology: "French jaune = yellow",
     aliases: ["jaundice"],
     definition:
       "Yellow discoloration of skin and sclera from accumulation of bilirubin.",
@@ -717,7 +717,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "pruritus",
     name: "Pruritus",
-    etymology: "Latin prurire (to itch)",
+    etymology: "Latin prurire = itch",
     aliases: ["pruritus"],
     definition:
       "An unpleasant sensation provoking the urge to scratch, without primary skin lesions required.",
@@ -747,7 +747,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hemoptysis",
     name: "Hemoptysis",
-    etymology: "Greek haima + ptysis (spitting)",
+    etymology: "Greek haima = blood + ptysis = spitting",
     aliases: ["hemoptysis"],
     definition:
       "Coughing up blood or blood-streaked sputum originating from the lower respiratory tract.",
@@ -776,7 +776,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "melena",
     name: "Melena",
-    etymology: "Greek melas (black)",
+    etymology: "Greek melas = black",
     aliases: ["melena"],
     definition:
       "Black, tarry stools from digested blood, typically indicating upper GI bleeding.",
@@ -803,7 +803,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hematochezia",
     name: "Hematochezia",
-    etymology: "Greek haima + chezein (to defecate)",
+    etymology: "Greek haima = blood + chezein = defecate",
     aliases: ["hematochezia"],
     definition:
       "Passage of bright red blood per rectum, usually from lower GI bleeding but can occur with rapid upper GI bleeding.",
@@ -832,7 +832,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hematuria",
     name: "Hematuria",
-    etymology: "Greek -uria (urine condition)",
+    etymology: "Greek haima = blood + ouron = urine",
     aliases: ["hematuria", "blood in urine", "gross hematuria"],
     definition:
       "Presence of red blood cells in the urine, visible (gross) or detected on dipstick/microscopy.",
@@ -862,7 +862,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "dysuria",
     name: "Dysuria",
-    etymology: "Greek -uria (urine condition)",
+    etymology: "Greek dys = painful/difficult + ouron = urine",
     aliases: ["dysuria", "painful urination", "burning with urination"],
     definition: "Painful or burning sensation during urination.",
     mechanism:
@@ -890,7 +890,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "polyuria-polydipsia",
     name: "Polyuria and Polydipsia",
-    etymology: "Greek -uria (urine condition)",
+    etymology: "Greek poly = much + ouron = urine + dipsa = thirst",
     aliases: [
       "polyuria",
       "polydipsia",
@@ -925,7 +925,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "watery-diarrhea",
     name: "Watery Diarrhea",
-    etymology: "Greek dia + rhoia (flow); Greek -rrhea (flow)",
+    etymology: "water-like + Greek dia = through + rhoia = flow",
     aliases: ["watery diarrhea"],
     definition:
       "Frequent loose stools with high water content, reflecting secretory or osmotic fluid loss into the bowel lumen.",
@@ -955,7 +955,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "nausea",
     name: "Nausea",
-    etymology: "Abbreviation: Nausea",
+    etymology: "Greek nausia = seasickness",
     aliases: ["nausea", "nauseated"],
     definition:
       "Unpleasant sensation of needing to vomit, with or without actual emesis.",
@@ -986,7 +986,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "vomiting",
     name: "Vomiting",
-    etymology: "Abbreviation: Vomiting",
+    etymology: "Latin vomere = throw up",
     aliases: ["vomiting"],
     definition:
       "Forceful expulsion of gastric contents through the mouth due to coordinated contraction of the diaphragm and abdominal wall.",
@@ -1016,7 +1016,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "dry-mucous-membranes",
     name: "Dry Mucous Membranes",
-    etymology: "Latin mucus (slime)",
+    etymology: "dry = lacking moisture + Latin mucus = slime + Latin membrana = thin skin",
     aliases: ["dry mucous membranes", "dry mucosa"],
     definition:
       "Reduced moisture of oral and other mucosal surfaces, a clinical sign of hypovolemia or dehydration.",
@@ -1042,7 +1042,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "decreased-skin-turgor",
     name: "Decreased Skin Turgor",
-    etymology: "Latin turgere (to swell)",
+    etymology: "made lower + Old Norse skinn = hide + Latin turgere = swell",
     aliases: [
       "decreased skin turgor",
       "poor skin turgor",
@@ -1073,7 +1073,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hyperactive-bowel-sounds",
     name: "Hyperactive Bowel Sounds",
-    etymology: "From hyperactive bowel sounds",
+    etymology: "Greek hyper = excessive + active = doing + intestine + audible findings",
     aliases: ["hyperactive bowel sounds", "increased bowel sounds"],
     definition:
       "Loud, frequent bowel sounds on auscultation, reflecting increased peristaltic activity.",
@@ -1101,7 +1101,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "erythema",
     name: "Erythema",
-    etymology: "Abbreviation: Erythema",
+    etymology: "Greek erythros = red",
     aliases: ["erythema", "erythematous", "skin erythema"],
     definition:
       "Visible redness of the skin or mucosa caused by increased blood flow to dermal capillaries (active hyperemia); typically blanches with pressure unless severe or purpuric components are present.",
@@ -1134,7 +1134,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "dactylitis",
     name: "Dactylitis",
-    etymology: "Greek -itis (inflammation)",
+    etymology: "Greek daktylos = finger/toe + -itis = inflammation",
     aliases: [
       "dactylitis",
       "sausage digit",
@@ -1168,7 +1168,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "skin-thickening",
     name: "Skin Thickening",
-    etymology: "Old English thicce + -ening",
+    etymology: "Old Norse skinn = hide + Old English thicce = thick + -ening = process",
     aliases: [
       "skin thickening",
       "thickened skin",
@@ -1203,7 +1203,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "sclerodactyly",
     name: "Sclerodactyly",
-    etymology: "From sclerodactyly",
+    etymology: "Greek skleros = hard + daktylos = finger/toe",
     aliases: ["sclerodactyly", "sclerodactylies"],
     definition:
       "Fibrotic tightening and tapering of the skin over the fingers and toes, classically in systemic sclerosis, producing a shiny, bound-down appearance and flexion contractures.",
@@ -1230,7 +1230,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "telangiectasia",
     name: "Telangiectasia",
-    etymology: "From telangiectasia",
+    etymology: "Greek telos = end + angeion = vessel + ektasis = dilation",
     aliases: [
       "telangiectasia",
       "telangiectasias",
@@ -1263,7 +1263,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "calcinosis",
     name: "Calcinosis",
-    etymology: "Greek -osis (condition)",
+    etymology: "Latin calx = lime/calcium + -osis = condition",
     aliases: [
       "calcinosis",
       "calcinosis cutis",
@@ -1296,7 +1296,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "raynaud-phenomenon",
     name: "Raynaud Phenomenon",
-    etymology: "Named for Raynaud",
+    etymology: "eponym: Maurice Raynaud + Greek phainomenon = thing appearing",
     aliases: [
       "raynaud phenomenon",
       "raynaud's phenomenon",
@@ -1332,7 +1332,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "lymphadenopathy",
     name: "Lymphadenopathy",
-    etymology: "Greek -pathy (disease)",
+    etymology: "Latin lympha = clear fluid + Greek aden = gland + -pathy = disease",
     aliases: [
       "lymphadenopathy",
       "lymphadenopathies",
@@ -1371,7 +1371,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "papule",
     name: "Papule",
-    etymology: "Abbreviation: Papule",
+    etymology: "Latin papula = pimple",
     aliases: ["papule", "papules", "papular lesion", "papular rash"],
     definition:
       "Solid, elevated skin lesion ≤1 cm in diameter without visible fluid; may be erythematous, violaceous, or flesh-colored.",
@@ -1400,7 +1400,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "plaque",
     name: "Plaque",
-    etymology: "French plaque (plate)",
+    etymology: "French plaque = plate",
     aliases: ["plaque", "plaques", "skin plaque", "cutaneous plaque"],
     definition:
       "Solid, elevated skin lesion >1 cm in diameter formed by confluence of papules or broad inflammatory infiltration; may be scaly, indurated, or erythematous.",
@@ -1429,7 +1429,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "vesicle",
     name: "Vesicle",
-    etymology: "Abbreviation: Vesicle",
+    etymology: "Latin vesicula = small bladder",
     aliases: ["vesicle", "vesicles", "vesicular lesion", "vesicular rash"],
     definition:
       "Superficial elevated fluid-filled skin lesion ≤1 cm in diameter; fluid may be serous, serosanguineous, or cloudy.",
@@ -1457,7 +1457,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "bullae",
     name: "Bullae",
-    etymology: "Abbreviation: Bullae",
+    etymology: "Latin bulla = bubble",
     aliases: ["bulla", "bullae", "blister", "blisters", "bullous lesion"],
     definition:
       "Fluid-filled skin lesion >1 cm in diameter; may be tense or flaccid depending on level of split and roof integrity.",
@@ -1485,7 +1485,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "lichenification",
     name: "Lichenification",
-    etymology: "From lichenification",
+    etymology: "Latin lichen = moss + facere = make",
     aliases: ["lichenification", "lichenified", "lichenified skin"],
     definition:
       "Thickened, leathery skin with exaggerated skin markings from chronic rubbing or scratching; secondary to repeated mechanical trauma.",
@@ -1512,7 +1512,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "excoriated",
     name: "Excoriated",
-    etymology: "Abbreviation: Excoriated",
+    etymology: "Latin ex = out + corium = skin",
     aliases: [
       "excoriated",
       "excoriation",
@@ -1556,7 +1556,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "indurated-plaque",
     name: "Indurated Plaque",
-    etymology: "French plaque (plate)",
+    etymology: "Latin in = into + durus = hard + French plaque = plate",
     aliases: [
       "indurated plaque",
       "indurated plaques",
@@ -1589,7 +1589,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "morning-stiffness",
     name: "Morning Stiffness",
-    etymology: "Old English stif + -ness",
+    etymology: "morning = early day + Old English stif = rigid",
     aliases: [
       "morning stiffness",
       "am stiffness",
@@ -1623,7 +1623,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hemianopsia",
     name: "Hemianopsia",
-    etymology: "Abbreviation: Hemianopsia",
+    etymology: "Greek hemi = half + an- = without + opsis = vision",
     aliases: [
       "hemianopsia",
       "hemianopia",
@@ -1669,7 +1669,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "hemiplegia",
     name: "Hemiplegia",
-    etymology: "Greek -plegia (paralysis)",
+    etymology: "Greek hemi = half + plege = stroke/paralysis",
     aliases: [
       "hemiplegia",
       "hemiplegic",
@@ -1707,7 +1707,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "nodular-lymphangitis",
     name: "Nodular Lymphangitis",
-    etymology: "Greek -itis (inflammation)",
+    etymology: "Latin nodulus = little knot + Latin lympha = clear fluid + Greek angeion = vessel + -itis = inflammation",
     aliases: [
       "nodular lymphangitis",
       "nodular lymphangitis pattern",
@@ -1747,7 +1747,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "purpura",
     name: "Purpura",
-    etymology: "Abbreviation: Purpura",
+    etymology: "Latin purpura = purple",
     aliases: [
       "purpura",
       "purpuras",
@@ -1789,7 +1789,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "nuchal-rigidity",
     name: "Nuchal Rigidity",
-    etymology: "Latin nucha (nape); Latin rigidus (stiff)",
+    etymology: "Latin nucha = nape + Latin rigidus = stiff",
     aliases: [
       "nuchal rigidity",
       "neck stiffness",
@@ -1823,7 +1823,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "kernig-sign",
     name: "Kernig Sign",
-    etymology: "Abbreviation: Kernig Sign",
+    etymology: "eponym: Vladimir Kernig + sign = physical exam finding",
     aliases: [
       "kernig sign",
       "kernig's sign",
@@ -1853,7 +1853,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "brudzinski-sign",
     name: "Brudzinski Sign",
-    etymology: "Named for Brudzinski",
+    etymology: "eponym: Josef Brudzinski + sign = physical exam finding",
     aliases: [
       "brudzinski sign",
       "brudzinski's sign",
@@ -1883,7 +1883,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "petechiae",
     name: "Petechiae",
-    etymology: "Abbreviation: Petechiae",
+    etymology: "Italian petecchia = small spot",
     aliases: [
       "petechiae",
       "petechia",
@@ -1920,7 +1920,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "maculopapular-rash",
     name: "Maculopapular Rash",
-    etymology: "From maculopapular rash",
+    etymology: "Latin macula = spot + papula = pimple + rash = skin eruption",
     aliases: [
       "maculopapular rash",
       "maculopapular rashes",
@@ -1961,7 +1961,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "thrombocytopenia",
     name: "Thrombocytopenia",
-    etymology: "Greek thrombos + kytos + -penia; Greek -penia (deficiency)",
+    etymology: "Greek thrombos = clot + kytos = cell + penia = deficiency",
     aliases: [
       "thrombocytopenia",
       "thrombocytopenias",
@@ -2001,7 +2001,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "coagulopathy",
     name: "Coagulopathy",
-    etymology: "Latin coagulare (to curdle) + Greek -pathos (suffering)",
+    etymology: "Latin coagulare = clot + Greek pathos = suffering/disease",
     aliases: [
       "coagulopathy",
       "coagulopathies",
@@ -2042,7 +2042,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   {
     id: "dysmorphic-facies",
     name: "Dysmorphic Facies",
-    etymology: "From dysmorphic facies",
+    etymology: "Greek dys = abnormal + morphe = form + Latin facies = face",
     aliases: [
       "dysmorphic facies",
       "dysmorphic facial features",

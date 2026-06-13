@@ -28,7 +28,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "bnp",
     name: "Brain natriuretic peptide (BNP)",
-    etymology: "B-type natriuretic peptide; Old English brægen; Greek enkephalos",
+    etymology: "brain = discovery tissue + natrium = sodium + ouretikos = urine-promoting + peptide = small protein",
     aliases: [
       "brain natriuretic peptide",
       "b-type natriuretic peptide",
@@ -63,7 +63,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "anp",
     name: "Atrial natriuretic peptide (ANP)",
-    etymology: "atrial natriuretic peptide; Latin natrium + Greek ourētikos",
+    etymology: "atrium = heart chamber + natrium = sodium + ouretikos = urine-promoting + peptide = small protein",
     aliases: [
       "atrial natriuretic peptide",
       "anp",
@@ -96,7 +96,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "vitamin-d",
     name: "Vitamin D (25-hydroxycholecalciferol)",
-    etymology: "Abbreviation: Vitamin D",
+    etymology: "vitamin = vital amine historical term + chole = bile + calciferol = calcium-carrying sterol",
     aliases: [
       "vitamin d",
       "vitamin d3",
@@ -133,7 +133,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "vitamin-k",
     name: "Vitamin K",
-    etymology: "Abbreviation: Vitamin K",
+    etymology: "vitamin = vital amine historical term + K = Koagulation German spelling",
     aliases: [
       "vitamin k",
       "vitamin k1",
@@ -172,7 +172,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "active-vitamin-d",
     name: "1,25-Dihydroxycholecalciferol (calcitriol)",
-    etymology: "Numbered clinical designation",
+    etymology: "di- = two + hydroxy = OH group + chole = bile + calci- = calcium + -triol = three alcohol groups",
     aliases: [
       "1,25-dihydroxycholecalciferol",
       "1,25-dihydroxyvitamin d",
@@ -206,7 +206,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "gaba",
     name: "Gamma-aminobutyric acid (GABA)",
-    etymology: "gamma-aminobutyric acid; Latin acidus (sour)",
+    etymology: "gamma = third carbon position + amino = nitrogen group + butyric = butter acid + acid = proton donor",
     aliases: [
       "gamma-aminobutyric acid",
       "gamma aminobutyric acid",
@@ -237,7 +237,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "cytokine",
     name: "Cytokine",
-    etymology: "Greek kytos + kinein (to move)",
+    etymology: "Greek kytos = cell + kinein = move; cell-moving signal",
     aliases: ["cytokine", "cytokines"],
     type: "Cytokine",
     source:
@@ -272,7 +272,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "jak-stat",
     name: "JAK-STAT Pathway",
-    etymology: "Janus kinase; signal transducer and activator of transcription",
+    etymology: "JAK = Janus kinase + STAT = signal transducer and activator of transcription",
     aliases: [
       "jak-stat",
       "jak stat",
@@ -321,7 +321,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "nf-kb",
     name: "NF-κB (Nuclear Factor Kappa B)",
-    etymology: "nuclear factor kappa B; Greek kappa (letter Κ) + Latin factor",
+    etymology: "NF = nuclear factor + Greek kappa = letter K + B = B-cell enhancer binding",
     aliases: [
       "nf-kb",
       "nf kb",
@@ -373,7 +373,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "il-1",
     name: "Interleukin-1 (IL-1)",
-    etymology: "interleukin; Latin inter + Greek leukos",
+    etymology: "Latin inter = between + Greek leukos = white cell + 1 = first numbered subtype",
     aliases: [
       "interleukin-1",
       "interleukin 1",
@@ -417,7 +417,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "il-2",
     name: "Interleukin-2 (IL-2)",
-    etymology: "interleukin; Latin inter + Greek leukos",
+    etymology: "Latin inter = between + Greek leukos = white cell + 2 = second numbered subtype",
     aliases: [
       "interleukin-2",
       "interleukin 2",
@@ -450,7 +450,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "il-4",
     name: "Interleukin-4 (IL-4)",
-    etymology: "interleukin; Latin inter + Greek leukos",
+    etymology: "Latin inter = between + Greek leukos = white cell + 4 = fourth numbered subtype",
     aliases: [
       "interleukin-4",
       "interleukin 4",
@@ -485,7 +485,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "il-6",
     name: "Interleukin-6 (IL-6)",
-    etymology: "interleukin; Latin inter + Greek leukos",
+    etymology: "Latin inter = between + Greek leukos = white cell + 6 = sixth numbered subtype",
     aliases: [
       "interleukin-6",
       "interleukin 6",
@@ -527,7 +527,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "tnf",
     name: "Tumor necrosis factor (TNF)",
-    etymology: "tumor necrosis factor; Latin tumere (to swell)",
+    etymology: "Latin tumere = swell + Greek nekros = dead + factor = causal agent",
     aliases: [
       "tumor necrosis factor",
       "tumor necrosis factor-alpha",
@@ -573,7 +573,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "pdgf",
     name: "Platelet-derived growth factor (PDGF)",
-    etymology: "platelet-derived growth factor; French plate + -let (small)",
+    etymology: "platelet = small plate cell fragment + derived = drawn from + growth factor = growth signal",
     aliases: [
       "platelet-derived growth factor",
       "platelet derived growth factor",
@@ -605,7 +605,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "acetylcholine",
     name: "Acetylcholine (ACh)",
-    etymology: "acetyl + Greek cholē (bile)",
+    etymology: "acetyl = CH3CO group + Greek chole = bile + -ine = substance suffix",
     aliases: [
       "acetylcholine",
       "ach",
@@ -636,7 +636,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "histamine",
     name: "Histamine",
-    etymology: "Greek histos + amine",
+    etymology: "Greek histos = tissue + amine = nitrogen group",
     aliases: ["histamine"],
     type: "Neurotransmitter",
     source:
@@ -668,7 +668,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "nitric-oxide",
     name: "Nitric oxide (NO)",
-    etymology: "Abbreviation: Nitric oxide",
+    etymology: "nitric = nitrogen-derived + oxide = oxygen compound",
     aliases: [
       "nitric oxide",
       "endothelium-derived relaxing factor",
@@ -700,7 +700,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "cgmp",
     name: "Cyclic GMP (cGMP)",
-    etymology: "cyclic guanosine monophosphate; Greek kyklos (circle)",
+    etymology: "cyclic = ring-shaped + guanosine = guanine nucleoside + monophosphate = one phosphate",
     aliases: [
       "cgmp",
       "cyclic gmp",
@@ -733,7 +733,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "prostaglandin",
     name: "Prostaglandins",
-    etymology: "Greek prostates (before) + gland",
+    etymology: "Greek prostates = standing before/prostate + gland = secreting organ",
     aliases: [
       "prostaglandin",
       "prostaglandins",
@@ -774,7 +774,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "leukotriene",
     name: "Leukotrienes",
-    etymology: "Greek leukos + tri- (three) + -ene",
+    etymology: "Greek leukos = white cell + tri- = three + -ene = double-bond hydrocarbon",
     aliases: [
       "leukotriene",
       "leukotrienes",
@@ -822,7 +822,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "thromboxane-a2",
     name: "Thromboxane A₂",
-    etymology: "Greek thrombos + xylon (wood) + -ane",
+    etymology: "Greek thrombos = clot + oxane = oxygen ring + A2 = second A-series compound",
     aliases: [
       "thromboxane a2",
       "thromboxane a₂",
@@ -859,7 +859,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "oxytocin",
     name: "Oxytocin",
-    etymology: "Greek oxys (swift) + tokos (birth)",
+    etymology: "Greek oxys = swift + tokos = birth",
     aliases: ["oxytocin", "pitocin"],
     type: "Peptide hormone",
     source:
@@ -890,7 +890,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "gnrh",
     name: "GnRH",
-    etymology: "gonadotropin-releasing hormone",
+    etymology: "GnRH = gonadotropin-releasing hormone",
     aliases: [
       "gnrh",
       "gonadotropin-releasing hormone",
@@ -936,7 +936,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "estrogen",
     name: "Estrogen",
-    etymology: "Abbreviation: Estrogen",
+    etymology: "Greek oistros = frenzy/estrus + -gen = producing",
     aliases: [
       "estrogen",
       "estrogens",
@@ -983,7 +983,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "progesterone",
     name: "Progesterone",
-    etymology: "Abbreviation: Progesterone",
+    etymology: "pro- = supporting + gestare = carry pregnancy + -one = ketone hormone suffix",
     aliases: [
       "progesterone",
       "progestin",
@@ -1032,7 +1032,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
   {
     id: "androgen",
     name: "Androgens",
-    etymology: "Abbreviation: Androgens",
+    etymology: "Greek aner/andros = male + -gen = producing",
     aliases: [
       "androgen",
       "androgens",

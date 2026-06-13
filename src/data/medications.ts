@@ -17,7 +17,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "digoxin",
     name: "Digoxin",
-    etymology: "From Digitalis (foxglove) genus",
+    etymology: "Digitalis = foxglove genus + -in = chemical substance suffix",
     aliases: ["digoxin", "lanoxin"],
     drugClass: "Cardiac glycoside",
     mechanism:
@@ -41,7 +41,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "furosemide",
     name: "Furosemide",
-    etymology: "Abbreviation: Furosemide",
+    etymology: "furfuryl = furan ring side chain + sulfamoyl = sulfonamide group + -ide = compound suffix",
     aliases: ["furosemide", "lasix"],
     drugClass: "Loop diuretic",
     mechanism:
@@ -67,7 +67,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "lisinopril",
     name: "Lisinopril",
-    etymology: "Abbreviation: Lisinopril",
+    etymology: "lysine = amino-acid side chain + -pril = ACE inhibitor suffix",
     aliases: ["lisinopril"],
     drugClass: "ACE inhibitor",
     mechanism:
@@ -94,7 +94,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "enalapril",
     name: "Enalapril",
-    etymology: "Abbreviation: Enalapril",
+    etymology: "enal- = ACE-inhibitor naming element + -pril = ACE inhibitor suffix",
     aliases: ["enalapril"],
     drugClass: "ACE inhibitor",
     mechanism:
@@ -117,7 +117,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ace-inhibitors",
     name: "ACE inhibitors",
-    etymology: "angiotensin-converting enzyme",
+    etymology: "ACE = angiotensin-converting enzyme + inhibitor = blocker",
     aliases: [
       "ace inhibitors",
       "ace inhibitor",
@@ -152,7 +152,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "beta-blockers",
     name: "Beta blockers",
-    etymology: "Greek beta (second letter)",
+    etymology: "Greek beta = second letter/receptor class + blocker = antagonist",
     aliases: [
       "beta blockers",
       "beta-blockers",
@@ -191,7 +191,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "calcium-channel-blockers",
     name: "Calcium channel blockers",
-    etymology: "Latin calx (lime)",
+    etymology: "Latin calx = lime/calcium + channel = pore + blocker = antagonist",
     aliases: [
       "calcium channel blockers",
       "calcium channel blocker",
@@ -226,7 +226,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "nondihydropyridine-calcium-channel-blockers",
     name: "Nondihydropyridine calcium channel blockers",
-    etymology: "Latin calx (lime)",
+    etymology: "non- = not + dihydropyridine = two-hydrogen pyridine ring + calcium channel blocker = Ca2+ pore antagonist",
     aliases: [
       "nondihydropyridine calcium channel blockers",
       "nondihydropyridine calcium channel blocker",
@@ -260,7 +260,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "dihydropyridine-calcium-channel-blockers",
     name: "Dihydropyridine calcium channel blockers",
-    etymology: "Latin calx (lime)",
+    etymology: "di- = two + hydro = hydrogen + pyridine = nitrogen ring + calcium channel blocker = Ca2+ pore antagonist",
     aliases: [
       "dihydropyridine calcium channel blockers",
       "dihydropyridine calcium channel blocker",
@@ -294,7 +294,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "metoprolol",
     name: "Metoprolol",
-    etymology: "Abbreviation: Metoprolol",
+    etymology: "meto- = beta-blocker naming element + -olol = beta-blocker drug suffix",
     aliases: ["metoprolol", "lopressor"],
     drugClass: "Beta-1 selective blocker",
     mechanism:
@@ -321,7 +321,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "atenolol",
     name: "Atenolol",
-    etymology: "Abbreviation: Atenolol",
+    etymology: "aten- = cardioselective beta-blocker naming element + -olol = beta-blocker drug suffix",
     aliases: ["atenolol", "tenormin"],
     drugClass: "Beta-1 selective blocker",
     mechanism:
@@ -348,7 +348,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "amiodarone",
     name: "Amiodarone",
-    etymology: "From iodine + benzofuran structure",
+    etymology: "amio- = antiarrhythmic naming element + iod- = iodine + -arone = benzofuran antiarrhythmic suffix",
     aliases: ["amiodarone", "pacerone"],
     drugClass: "Class III antiarrhythmic (multichannel blocker)",
     antiarrhythmicClass: "III",
@@ -375,7 +375,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "adenosine",
     name: "Adenosine",
-    etymology: "Abbreviation: Adenosine",
+    etymology: "adenine = purine base + ribose = sugar nucleoside + -ine = substance suffix",
     aliases: ["adenosine", "adenocard"],
     drugClass: "Purine nucleoside / antiarrhythmic",
     mechanism:
@@ -399,7 +399,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "diltiazem",
     name: "Diltiazem",
-    etymology: "Abbreviation: Diltiazem",
+    etymology: "dil- = benzothiazepine naming element + thiazepine = sulfur-nitrogen ring",
     aliases: ["diltiazem", "cardizem"],
     drugClass: "Class IV antiarrhythmic / nondihydropyridine calcium channel blocker",
     antiarrhythmicClass: "IV",
@@ -426,7 +426,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "amlodipine",
     name: "Amlodipine",
-    etymology: "Abbreviation: Amlodipine",
+    etymology: "amlo- = dihydropyridine naming element + -dipine = calcium-channel blocker suffix",
     aliases: ["amlodipine", "norvasc"],
     drugClass: "Dihydropyridine calcium channel blocker",
     mechanism:
@@ -453,7 +453,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "nifedipine",
     name: "Nifedipine",
-    etymology: "Abbreviation: Nifedipine",
+    etymology: "nife- = dihydropyridine naming element + -dipine = calcium-channel blocker suffix",
     aliases: ["nifedipine", "procardia", "adalat"],
     drugClass: "Dihydropyridine calcium channel blocker",
     mechanism:
@@ -481,7 +481,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "procainamide",
     name: "Procainamide",
-    etymology: "Abbreviation: Procainamide",
+    etymology: "procaine = anesthetic parent + amide = carbonyl-nitrogen group",
     aliases: ["procainamide", "pronestyl"],
     drugClass: "Class Ia antiarrhythmic",
     antiarrhythmicClass: "Ia",
@@ -508,7 +508,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "quinidine",
     name: "Quinidine",
-    etymology: "Abbreviation: Quinidine",
+    etymology: "quinine = cinchona alkaloid + -idine = alkaloid-related suffix",
     aliases: ["quinidine", "quinidex", "quinora"],
     drugClass: "Class Ia antiarrhythmic",
     antiarrhythmicClass: "Ia",
@@ -536,7 +536,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "disopyramide",
     name: "Disopyramide",
-    etymology: "Abbreviation: Disopyramide",
+    etymology: "diso- = class Ia antiarrhythmic naming element + pyramide = pyridine-amide structure",
     aliases: ["disopyramide", "norpace"],
     drugClass: "Class Ia antiarrhythmic",
     antiarrhythmicClass: "Ia",
@@ -562,7 +562,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "flecainide",
     name: "Flecainide",
-    etymology: "Abbreviation: Flecainide",
+    etymology: "flec- = class Ic antiarrhythmic naming element + -ainide = amide antiarrhythmic suffix",
     aliases: ["flecainide", "tambocor"],
     drugClass: "Class Ic antiarrhythmic",
     antiarrhythmicClass: "Ic",
@@ -588,7 +588,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "propafenone",
     name: "Propafenone",
-    etymology: "Abbreviation: Propafenone",
+    etymology: "propa- = propyl-containing naming element + phenone = phenyl-ketone structure",
     aliases: ["propafenone", "rythmol"],
     drugClass: "Class Ic antiarrhythmic",
     antiarrhythmicClass: "Ic",
@@ -615,7 +615,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "lidocaine",
     name: "Lidocaine",
-    etymology: "Abbreviation: Lidocaine",
+    etymology: "lido- = acetanilide anesthetic naming element + -caine = local anesthetic suffix",
     aliases: ["lidocaine", "xylocaine"],
     drugClass: "Class Ib antiarrhythmic / local anesthetic",
     antiarrhythmicClass: "Ib",
@@ -640,7 +640,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "mexiletine",
     name: "Mexiletine",
-    etymology: "Abbreviation: Mexiletine",
+    etymology: "mexil- = lidocaine-like antiarrhythmic naming element + -etine = amine drug suffix",
     aliases: ["mexiletine", "mexitil"],
     drugClass: "Class Ib antiarrhythmic",
     antiarrhythmicClass: "Ib",
@@ -666,7 +666,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "propranolol",
     name: "Propranolol",
-    etymology: "Abbreviation: Propranolol",
+    etymology: "pro- = forward/before + -olol = beta-blocker drug suffix",
     aliases: ["propranolol", "inderal"],
     drugClass: "Nonselective β-blocker (Class II antiarrhythmic)",
     antiarrhythmicClass: "II",
@@ -695,7 +695,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "alteplase",
     name: "Alteplase",
-    etymology: "Abbreviation: Alteplase",
+    etymology: "altered tissue plasminogen activator + -ase = enzyme suffix",
     aliases: ["alteplase", "tpa", "t-pa", "activase"],
     drugClass: "Thrombolytic (tissue plasminogen activator)",
     mechanism:
@@ -719,7 +719,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "atropine",
     name: "Atropine",
-    etymology: "Abbreviation: Atropine",
+    etymology: "Atropa belladonna plant + -ine = alkaloid suffix",
     aliases: ["atropine"],
     drugClass: "Antimuscarinic (anticholinergic)",
     mechanism:
@@ -745,7 +745,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "morphine",
     name: "Morphine",
-    etymology: "Abbreviation: Morphine",
+    etymology: "Morpheus = Greek god of dreams + -ine = alkaloid suffix",
     aliases: ["morphine", "ms contin"],
     drugClass: "Opioid agonist (μ-receptor)",
     mechanism:
@@ -772,7 +772,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "naloxone",
     name: "Naloxone",
-    etymology: "Abbreviation: Naloxone",
+    etymology: "N-allyl = antagonist side chain + oxymorphone parent + -one = ketone suffix",
     aliases: ["naloxone", "narcan"],
     drugClass: "Opioid antagonist",
     mechanism:
@@ -795,7 +795,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "physostigmine",
     name: "Physostigmine",
-    etymology: "From physostigmine",
+    etymology: "Physostigma = Calabar bean genus + -mine = amine compound suffix",
     aliases: ["physostigmine", "antilirium"],
     drugClass: "Reversible acetylcholinesterase inhibitor",
     mechanism:
@@ -818,7 +818,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "heparin",
     name: "Heparin",
-    etymology: "Greek hēpar (liver)",
+    etymology: "Greek hepar = liver + -in = substance suffix",
     aliases: [
       "heparin",
       "unfractionated heparin",
@@ -848,7 +848,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "warfarin",
     name: "Warfarin",
-    etymology: "Named for Wisconsin Alumni Research Foundation",
+    etymology: "Wisconsin Alumni Research Foundation + coumarin anticoagulant suffix",
     aliases: ["warfarin", "coumadin"],
     drugClass: "Vitamin K antagonist",
     mechanism:
@@ -873,7 +873,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "apixaban",
     name: "Apixaban",
-    etymology: "Abbreviation: Apixaban",
+    etymology: "api- = factor Xa inhibitor naming element + -xaban = factor Xa inhibitor suffix",
     aliases: ["apixaban", "eliquis"],
     drugClass: "Direct factor Xa inhibitor (DOAC)",
     mechanism:
@@ -894,7 +894,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "rivaroxaban",
     name: "Rivaroxaban",
-    etymology: "Abbreviation: Rivaroxaban",
+    etymology: "riva- = factor Xa inhibitor naming element + -xaban = factor Xa inhibitor suffix",
     aliases: ["rivaroxaban", "xarelto"],
     drugClass: "Direct factor Xa inhibitor (DOAC)",
     mechanism:
@@ -916,7 +916,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "dabigatran",
     name: "Dabigatran",
-    etymology: "Abbreviation: Dabigatran",
+    etymology: "dabi- = thrombin-inhibitor naming element + -gatran = direct thrombin inhibitor suffix",
     aliases: ["dabigatran", "pradaxa"],
     drugClass: "Direct thrombin inhibitor (DOAC)",
     mechanism:
@@ -938,7 +938,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "lmwh",
     name: "Low-Molecular-Weight Heparin (LMWH)",
-    etymology: "Greek hēpar (liver)",
+    etymology: "low molecular weight = smaller chains + heparin = liver-derived anticoagulant name",
     aliases: [
       "lmwh",
       "low molecular weight heparin",
@@ -968,7 +968,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "enoxaparin",
     name: "Enoxaparin",
-    etymology: "Abbreviation: Enoxaparin",
+    etymology: "enoxa- = low-molecular-weight heparin naming element + -parin = heparin-like anticoagulant suffix",
     aliases: ["enoxaparin", "lovenox"],
     drugClass: "Low-molecular-weight heparin (LMWH)",
     mechanism:
@@ -993,7 +993,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "fondaparinux",
     name: "Fondaparinux",
-    etymology: "Abbreviation: Fondaparinux",
+    etymology: "fonda- = synthetic pentasaccharide naming element + -parinux = heparin-like Xa inhibitor suffix",
     aliases: ["fondaparinux", "arixtra"],
     drugClass: "Synthetic factor Xa inhibitor",
     mechanism:
@@ -1016,7 +1016,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "clopidogrel",
     name: "Clopidogrel",
-    etymology: "Abbreviation: Clopidogrel",
+    etymology: "clopido- = thienopyridine naming element + -grel = platelet P2Y12 inhibitor suffix",
     aliases: ["clopidogrel", "plavix"],
     drugClass: "P2Y12 ADP receptor antagonist (thienopyridine)",
     mechanism:
@@ -1042,7 +1042,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ticagrelor",
     name: "Ticagrelor",
-    etymology: "Abbreviation: Ticagrelor",
+    etymology: "tica- = triazolotriazine naming element + -grelor = P2Y12 inhibitor suffix",
     aliases: ["ticagrelor", "brilinta"],
     drugClass: "P2Y12 ADP receptor antagonist (cyclopentyltriazolopyrimidine)",
     mechanism:
@@ -1065,7 +1065,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "prasugrel",
     name: "Prasugrel",
-    etymology: "Abbreviation: Prasugrel",
+    etymology: "prasu- = thienopyridine naming element + -grel = platelet P2Y12 inhibitor suffix",
     aliases: ["prasugrel", "effient"],
     drugClass: "P2Y12 ADP receptor antagonist (thienopyridine)",
     mechanism:
@@ -1086,7 +1086,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "eptifibatide",
     name: "Eptifibatide",
-    etymology: "Abbreviation: Eptifibatide",
+    etymology: "epti- = seven-residue peptide naming element + -fibatide = fibrinogen-receptor inhibitor suffix",
     aliases: ["eptifibatide", "integrilin"],
     drugClass: "Glycoprotein IIb/IIIa inhibitor",
     mechanism:
@@ -1109,7 +1109,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "cilostazol",
     name: "Cilostazol",
-    etymology: "Abbreviation: Cilostazol",
+    etymology: "cilo- = quinolinone naming element + -stazol = PDE inhibitor suffix",
     aliases: ["cilostazol", "pletal"],
     drugClass: "Phosphodiesterase-3 inhibitor / antiplatelet agent",
     mechanism:
@@ -1131,7 +1131,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "acetaminophen",
     name: "Acetaminophen",
-    etymology: "From acetaminophen",
+    etymology: "acetyl = CH3CO group + amino = nitrogen group + phenol = benzene-OH",
     aliases: [
       "acetaminophen",
       "paracetamol",
@@ -1165,7 +1165,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "nsaid",
     name: "NSAID",
-    etymology: "Abbreviation: NSAID",
+    etymology: "NSAID = nonsteroidal anti-inflammatory drug",
     aliases: [
       "nsaid",
       "nsaids",
@@ -1196,7 +1196,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "naproxen",
     name: "Naproxen",
-    etymology: "Abbreviation: Naproxen",
+    etymology: "naphtyl = fused aromatic ring + propionic acid = NSAID acid core",
     aliases: ["naproxen", "aleve", "naprosyn"],
     drugClass: "NSAID",
     mechanism:
@@ -1221,7 +1221,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ibuprofen",
     name: "Ibuprofen",
-    etymology: "Abbreviation: Ibuprofen",
+    etymology: "iso-butyl = side chain + propionic acid = NSAID acid core",
     aliases: ["ibuprofen", "advil", "motrin", "nuprin"],
     drugClass: "NSAID",
     mechanism:
@@ -1250,7 +1250,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "aspirin",
     name: "Aspirin",
-    etymology: "From acetyl + Spiraea (plant genus)",
+    etymology: "a- = acetyl + Spiraea = meadowsweet plant + -in = drug suffix",
     aliases: ["aspirin", "asa", "acetylsalicylic acid"],
     drugClass: "NSAID / antiplatelet agent",
     mechanism:
@@ -1278,7 +1278,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "metformin",
     name: "Metformin",
-    etymology: "Abbreviation: Metformin",
+    etymology: "met- = methyl + form = from biguanide/formamidine chemistry + -in = drug suffix",
     aliases: ["metformin"],
     drugClass: "Biguanide",
     mechanism:
@@ -1302,7 +1302,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "insulin",
     name: "Insulin",
-    etymology: "Latin insula (island)",
+    etymology: "Latin insula = island; named for pancreatic islets",
     aliases: ["insulin"],
     drugClass: "Hormone / hypoglycemic agent",
     mechanism:
@@ -1328,7 +1328,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "insulin-glargine",
     name: "Insulin Glargine",
-    etymology: "Latin insula (island)",
+    etymology: "Latin insula = island + glycine/arginine substitutions in long-acting analog",
     aliases: [
       "insulin glargine",
       "glargine",
@@ -1359,7 +1359,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "levothyroxine",
     name: "Levothyroxine",
-    etymology: "From levothyroxine",
+    etymology: "levo- = left-handed isomer + thyroxine = thyroid hormone T4",
     aliases: ["levothyroxine", "synthroid"],
     drugClass: "Synthetic T4 (thyroid hormone)",
     mechanism:
@@ -1382,7 +1382,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "prednisone",
     name: "Prednisone",
-    etymology: "Abbreviation: Prednisone",
+    etymology: "pred- = corticosteroid naming element + -one = ketone suffix",
     aliases: ["prednisone"],
     drugClass: "Glucocorticoid",
     mechanism:
@@ -1409,7 +1409,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "corticosteroids",
     name: "Corticosteroids",
-    etymology: "From corticosteroids",
+    etymology: "Latin cortex = bark/outer adrenal layer + steroid = sterol-like compound",
     aliases: [
       "corticosteroid",
       "corticosteroids",
@@ -1449,7 +1449,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "methotrexate",
     name: "Methotrexate",
-    etymology: "Abbreviation: Methotrexate",
+    etymology: "metho- = methyl-related antifolate naming element + -trexate = folate antagonist suffix",
     aliases: ["methotrexate", "mtx", "amethopterin"],
     drugClass: "Antimetabolite / DMARD",
     mechanism:
@@ -1480,7 +1480,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "hydroxychloroquine",
     name: "Hydroxychloroquine",
-    etymology: "From hydroxychloroquine",
+    etymology: "hydroxy = OH group + chloro = chlorine + quinoline = ring scaffold",
     aliases: [
       "hydroxychloroquine",
       "hcq",
@@ -1514,7 +1514,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "sulfasalazine",
     name: "Sulfasalazine",
-    etymology: "From sulfasalazine",
+    etymology: "sulfa = sulfonamide + salazine = salicylate-azo compound",
     aliases: ["sulfasalazine", "sulphasalazine", "azulfidine"],
     drugClass: "5-ASA / sulfa DMARD",
     mechanism:
@@ -1542,7 +1542,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "colchicine",
     name: "Colchicine",
-    etymology: "Abbreviation: Colchicine",
+    etymology: "Colchicum autumnale plant + -ine = alkaloid suffix",
     aliases: ["colchicine"],
     drugClass: "Antigout / anti-inflammatory",
     mechanism:
@@ -1570,7 +1570,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "minocycline",
     name: "Minocycline",
-    etymology: "Abbreviation: Minocycline",
+    etymology: "mino- = modified tetracycline naming element + -cycline = tetracycline antibiotic suffix",
     aliases: ["minocycline", "minocin"],
     drugClass: "Tetracycline antibiotic / DMARD",
     mechanism:
@@ -1600,7 +1600,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "haloperidol",
     name: "Haloperidol",
-    etymology: "Abbreviation: Haloperidol",
+    etymology: "halo- = halogenated + peri- = piperidine-related naming element + -dol = butyrophenone antipsychotic suffix",
     aliases: ["haloperidol", "haldol"],
     drugClass: "Typical (first-generation) antipsychotic",
     mechanism:
@@ -1626,7 +1626,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "lorazepam",
     name: "Lorazepam",
-    etymology: "Abbreviation: Lorazepam",
+    etymology: "lora- = benzodiazepine naming element + -zepam = benzodiazepine suffix",
     aliases: ["lorazepam", "ativan"],
     drugClass: "Benzodiazepine",
     mechanism:
@@ -1652,7 +1652,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "fluoxetine",
     name: "Fluoxetine",
-    etymology: "Abbreviation: Fluoxetine",
+    etymology: "flu- = fluorinated naming element + -oxetine = SSRI antidepressant suffix",
     aliases: ["fluoxetine", "prozac"],
     drugClass: "SSRI",
     mechanism:
@@ -1677,7 +1677,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "gentamicin",
     name: "Gentamicin",
-    etymology: "Abbreviation: Gentamicin",
+    etymology: "Micromonospora gentamicin-producing organism + -micin = antibiotic suffix",
     aliases: ["gentamicin"],
     drugClass: "Aminoglycoside antibiotic",
     mechanism:
@@ -1701,7 +1701,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "vancomycin",
     name: "Vancomycin",
-    etymology: "Abbreviation: Vancomycin",
+    etymology: "vanquish = defeat + -mycin = antibiotic suffix",
     aliases: ["vancomycin"],
     drugClass: "Glycopeptide antibiotic",
     mechanism:
@@ -1726,7 +1726,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "sildenafil",
     name: "Sildenafil",
-    etymology: "Abbreviation: Sildenafil",
+    etymology: "silden- = PDE-5 inhibitor naming element + -afil = PDE-5 inhibitor suffix",
     aliases: [
       "sildenafil",
       "viagra",
@@ -1761,7 +1761,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "tmp-smx",
     name: "Trimethoprim-Sulfamethoxazole",
-    etymology: "From trimethoprim-sulfamethoxazole",
+    etymology: "tri-methoxy-pyrimidine = trimethoprim core + sulfa = sulfonamide + methoxazole = methoxy-isoxazole",
     aliases: [
       "trimethoprim-sulfamethoxazole",
       "tmp-smx",
@@ -1793,7 +1793,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "tacrolimus",
     name: "Tacrolimus",
-    etymology: "Abbreviation: Tacrolimus",
+    etymology: "Tsukuba macrolide immunosuppressant + -imus = immunosuppressant suffix",
     aliases: ["tacrolimus", "fk506", "prograf", "advagraf", "astagraf"],
     drugClass: "Calcineurin inhibitor (immunosuppressant)",
     mechanism:
@@ -1821,7 +1821,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "rituximab",
     name: "Rituximab",
-    etymology: "Abbreviation: Rituximab",
+    etymology: "ritu- = CD20 antibody naming element + -xi- = chimeric + -mab = monoclonal antibody",
     aliases: ["rituximab", "rituxan", "mabthera"],
     drugClass: "Anti-CD20 monoclonal antibody",
     mechanism:
@@ -1852,7 +1852,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ivig",
     name: "IVIG",
-    etymology: "Abbreviation: IVIG",
+    etymology: "IVIG = intravenous immunoglobulin",
     aliases: [
       "ivig",
       "iv ig",
@@ -1899,7 +1899,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "dupilumab",
     name: "Dupilumab",
-    etymology: "Abbreviation: Dupilumab",
+    etymology: "dupi- = interleukin-receptor antibody naming element + -mab = monoclonal antibody suffix",
     aliases: ["dupilumab", "dipilumab", "dupixent"],
     drugClass: "Anti–IL-4 receptor α monoclonal antibody",
     mechanism:
@@ -1928,7 +1928,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "adalimumab",
     name: "Adalimumab",
-    etymology: "Abbreviation: Adalimumab",
+    etymology: "adali- = TNF antibody naming element + -mab = monoclonal antibody suffix",
     aliases: ["adalimumab", "dalimumab", "humira"],
     drugClass: "Anti–TNF-α monoclonal antibody",
     mechanism:
@@ -1961,7 +1961,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "statins",
     name: "Statins",
-    etymology: "Abbreviation: Statins",
+    etymology: "-statin = HMG-CoA reductase inhibitor suffix; stat = stop/hold",
     aliases: [
       "statin",
       "statins",
@@ -1996,7 +1996,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "nitroglycerin",
     name: "Nitroglycerin",
-    etymology: "From nitroglycerin",
+    etymology: "nitro = nitrate ester + glycerin = glycerol backbone",
     aliases: [
       "nitroglycerin",
       "nitroglycerine",
@@ -2028,7 +2028,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "spironolactone",
     name: "Spironolactone",
-    etymology: "From spironolactone",
+    etymology: "spiro = twisted ring + lactone = cyclic ester",
     aliases: ["spironolactone", "aldactone"],
     drugClass: "Potassium-sparing diuretic / mineralocorticoid receptor antagonist (MRA)",
     mechanism:
@@ -2056,7 +2056,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "hydrochlorothiazide",
     name: "Hydrochlorothiazide",
-    etymology: "From hydrochlorothiazide",
+    etymology: "hydro-chloro = hydrogen/chlorine substitutions + thiazide = sulfur-nitrogen diuretic ring",
     aliases: [
       "hydrochlorothiazide",
       "hctz",
@@ -2090,7 +2090,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "losartan",
     name: "Losartan",
-    etymology: "Abbreviation: Losartan",
+    etymology: "lo- = angiotensin-receptor-blocker naming element + -sartan = ARB suffix",
     aliases: [
       "losartan",
       "cozaar",
@@ -2125,7 +2125,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "epinephrine",
     name: "Epinephrine",
-    etymology: "Greek epi + nephros + -ine",
+    etymology: "Greek epi = upon + nephros = kidney + -ine = substance; adrenal medulla hormone",
     aliases: ["epinephrine", "adrenaline", "epi"],
     drugClass: "Catecholamine (nonselective adrenergic agonist)",
     mechanism:
@@ -2152,7 +2152,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "allopurinol",
     name: "Allopurinol",
-    etymology: "Abbreviation: Allopurinol",
+    etymology: "allo- = other + purine = uric-acid precursor + -ol = alcohol-like suffix",
     aliases: ["allopurinol", "zyloprim"],
     drugClass: "Xanthine oxidase inhibitor",
     mechanism:
@@ -2179,7 +2179,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "n-acetylcysteine",
     name: "N-Acetylcysteine",
-    etymology: "From n-acetylcysteine",
+    etymology: "N-acetyl = acetyl group on nitrogen + cysteine = sulfur amino acid",
     aliases: [
       "n-acetylcysteine",
       "nac",
@@ -2208,7 +2208,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "phenytoin",
     name: "Phenytoin",
-    etymology: "Abbreviation: Phenytoin",
+    etymology: "phenyl = benzene ring + hydantoin = ureide anticonvulsant ring",
     aliases: ["phenytoin", "dilantin"],
     drugClass: "Antiepileptic (hydantoin)",
     mechanism:
@@ -2236,7 +2236,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "carbamazepine",
     name: "Carbamazepine",
-    etymology: "From carbamazepine",
+    etymology: "carb- = carbon ring naming element + azepine = seven-member nitrogen ring",
     aliases: ["carbamazepine", "tegretol"],
     drugClass: "Antiepileptic / mood stabilizer",
     mechanism:
@@ -2263,7 +2263,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ethosuximide",
     name: "Ethosuximide",
-    etymology: "Abbreviation: Ethosuximide",
+    etymology: "etho- = ethyl-containing naming element + succinimide = cyclic imide anticonvulsant",
     aliases: ["ethosuximide", "zarontin"],
     drugClass: "Antiepileptic (succinimide)",
     mechanism:
@@ -2287,7 +2287,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "valproic-acid",
     name: "Valproic Acid",
-    etymology: "Latin acidus (sour)",
+    etymology: "valeric/propyl chain = branched fatty-acid root + acid = proton donor",
     aliases: [
       "valproic acid",
       "valproate",
@@ -2321,7 +2321,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "levodopa",
     name: "Levodopa",
-    etymology: "Abbreviation: Levodopa",
+    etymology: "levo- = left-handed isomer + DOPA = dihydroxyphenylalanine",
     aliases: [
       "levodopa",
       "l-dopa",
@@ -2352,7 +2352,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "lithium",
     name: "Lithium",
-    etymology: "Abbreviation: Lithium",
+    etymology: "Greek lithos = stone + -ium = element suffix",
     aliases: ["lithium", "lithium carbonate", "lithobid"],
     drugClass: "Mood stabilizer",
     mechanism:
@@ -2378,7 +2378,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "omeprazole",
     name: "Omeprazole",
-    etymology: "Abbreviation: Omeprazole",
+    etymology: "ome- = PPI naming element + -prazole = proton pump inhibitor suffix",
     aliases: [
       "omeprazole",
       "prilosec",
@@ -2412,7 +2412,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "amoxicillin",
     name: "Amoxicillin",
-    etymology: "Abbreviation: Amoxicillin",
+    etymology: "amino = NH2 group + penicillin = beta-lactam antibiotic scaffold",
     aliases: [
       "amoxicillin",
       "amoxil",
@@ -2445,7 +2445,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "cephalosporins",
     name: "Cephalosporins",
-    etymology: "From cephalosporins",
+    etymology: "Cephalosporium fungus + -sporin = spore-derived antibiotic suffix",
     aliases: [
       "cephalosporin",
       "cephalosporins",
@@ -2479,7 +2479,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "metronidazole",
     name: "Metronidazole",
-    etymology: "Greek metron (measure) + nitro + azole",
+    etymology: "metro- = nitroimidazole naming element + nitro = NO2 group + imidazole = azole ring",
     aliases: ["metronidazole", "flagyl"],
     drugClass: "Nitroimidazole antibiotic / antiprotozoal",
     mechanism:
@@ -2506,7 +2506,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "azithromycin",
     name: "Azithromycin",
-    etymology: "Abbreviation: Azithromycin",
+    etymology: "aza- = nitrogen insertion + erythromycin parent + -mycin = antibiotic suffix",
     aliases: [
       "azithromycin",
       "zithromax",
@@ -2541,7 +2541,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ciprofloxacin",
     name: "Ciprofloxacin",
-    etymology: "From ciprofloxacin",
+    etymology: "cyclopropyl = three-carbon ring + fluoro = fluorine + -oxacin = fluoroquinolone suffix",
     aliases: [
       "ciprofloxacin",
       "cipro",
@@ -2578,7 +2578,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "doxycycline",
     name: "Doxycycline",
-    etymology: "Abbreviation: Doxycycline",
+    etymology: "doxy- = oxygen-modified tetracycline naming element + -cycline = tetracycline antibiotic suffix",
     aliases: ["doxycycline", "vibramycin", "doryx"],
     drugClass: "Tetracycline antibiotic",
     mechanism:
@@ -2608,7 +2608,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "isoniazid",
     name: "Isoniazid",
-    etymology: "Abbreviation: Isoniazid",
+    etymology: "iso-nicotinic acid hydrazide = INH chemical origin",
     aliases: ["isoniazid", "inh"],
     drugClass: "Antitubercular agent",
     mechanism:
@@ -2633,7 +2633,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "rifampin",
     name: "Rifampin",
-    etymology: "Abbreviation: Rifampin",
+    etymology: "rifamycin = ansamycin antibiotic parent + -pin = piperazine-related derivative",
     aliases: ["rifampin", "rifampicin", "rifadin"],
     drugClass: "Antitubercular agent / RNA polymerase inhibitor",
     mechanism:
@@ -2660,7 +2660,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "acyclovir",
     name: "Acyclovir",
-    etymology: "Abbreviation: Acyclovir",
+    etymology: "a- = without + cyclo = ring + vir = virus; acyclic antiviral nucleoside",
     aliases: ["acyclovir", "acycloguanosine", "zovirax"],
     drugClass: "Antiviral (guanosine analog)",
     mechanism:
@@ -2686,7 +2686,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "amphotericin-b",
     name: "Amphotericin B",
-    etymology: "From amphotericin b",
+    etymology: "ampho- = both + -tericin = amphoteric antifungal polyene + B = compound variant",
     aliases: [
       "amphotericin b",
       "amphotericin",
@@ -2717,7 +2717,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "albuterol",
     name: "Albuterol",
-    etymology: "Abbreviation: Albuterol",
+    etymology: "al- = beta-agonist naming element + butyl = four-carbon group + -terol = beta-agonist suffix",
     aliases: [
       "albuterol",
       "salbutamol",
@@ -2749,7 +2749,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "methimazole",
     name: "Methimazole",
-    etymology: "Abbreviation: Methimazole",
+    etymology: "meth- = methyl + imidazole = azole ring",
     aliases: [
       "methimazole",
       "tapazole",
@@ -2783,7 +2783,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "cyclophosphamide",
     name: "Cyclophosphamide",
-    etymology: "From cyclophosphamide",
+    etymology: "cyclo = ring + phosphor = phosphate + amide = nitrogen carbonyl group",
     aliases: ["cyclophosphamide", "cytoxan"],
     drugClass: "Alkylating agent / immunosuppressant",
     mechanism:
@@ -2811,7 +2811,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "cyclosporine",
     name: "Cyclosporine",
-    etymology: "Abbreviation: Cyclosporine",
+    etymology: "cyclo = ring + sporine = fungal spore-derived peptide",
     aliases: ["cyclosporine", "ciclosporin", "cyclosporin", "neoral", "sandimmune"],
     drugClass: "Calcineurin inhibitor (immunosuppressant)",
     mechanism:
@@ -2838,7 +2838,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "infliximab",
     name: "Infliximab",
-    etymology: "Abbreviation: Infliximab",
+    etymology: "inflix- = TNF antibody naming element + -xi- = chimeric + -mab = monoclonal antibody",
     aliases: ["infliximab", "remicade"],
     drugClass: "Anti–TNF-α monoclonal antibody (chimeric)",
     mechanism:
@@ -2866,7 +2866,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "hydralazine",
     name: "Hydralazine",
-    etymology: "Abbreviation: Hydralazine",
+    etymology: "hydra- = hydrazine-related + -azine = nitrogen ring suffix",
     aliases: ["hydralazine", "apresoline"],
     drugClass: "Direct arteriolar vasodilator",
     mechanism:
@@ -2892,7 +2892,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "mannitol",
     name: "Mannitol",
-    etymology: "Abbreviation: Mannitol",
+    etymology: "manna sugar alcohol + -itol = sugar alcohol suffix",
     aliases: ["mannitol", "osmitrol"],
     drugClass: "Osmotic diuretic",
     mechanism:
@@ -2918,7 +2918,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "acetazolamide",
     name: "Acetazolamide",
-    etymology: "From acetazolamide",
+    etymology: "acetyl = CH3CO group + azole = nitrogen ring + amide = carbonyl-nitrogen group",
     aliases: ["acetazolamide", "diamox"],
     drugClass: "Carbonic anhydrase inhibitor",
     mechanism:
@@ -2947,7 +2947,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "magnesium-sulfate",
     name: "Magnesium Sulfate",
-    etymology: "Greek Magnesia (region)",
+    etymology: "Magnesia = Greek region source name + sulfate = sulfur-oxygen salt",
     aliases: [
       "magnesium sulfate",
       "magnesium sulphate",
@@ -2978,7 +2978,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "ondansetron",
     name: "Ondansetron",
-    etymology: "Abbreviation: Ondansetron",
+    etymology: "ondan- = serotonin-antagonist naming element + -setron = 5-HT3 antagonist suffix",
     aliases: [
       "ondansetron",
       "zofran",
@@ -3008,7 +3008,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "chlorpheniramine",
     name: "Chlorpheniramine",
-    etymology: "From chlorpheniramine",
+    etymology: "chloro = chlorine + phenyl = benzene ring + amine = nitrogen group",
     aliases: [
       "chlorpheniramine",
       "chlorpheniramine maleate",
@@ -3037,7 +3037,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "diphenhydramine",
     name: "Diphenhydramine",
-    etymology: "From diphenhydramine",
+    etymology: "di- = two + phenyl = benzene ring + hydr- = hydrogenated ether element + amine = nitrogen group",
     aliases: [
       "diphenhydramine",
       "benadryl",
@@ -3070,7 +3070,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "hydroxyzine",
     name: "Hydroxyzine",
-    etymology: "Abbreviation: Hydroxyzine",
+    etymology: "hydroxy = OH group + -zine = piperazine antihistamine suffix",
     aliases: [
       "hydroxyzine",
       "hydroxyzine hcl",
@@ -3103,7 +3103,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "loratadine",
     name: "Loratadine",
-    etymology: "Abbreviation: Loratadine",
+    etymology: "lora- = tricyclic antihistamine naming element + -tadine = H1 antihistamine suffix",
     aliases: [
       "loratadine",
       "claritin",
@@ -3133,7 +3133,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "promethazine",
     name: "Promethazine",
-    etymology: "Abbreviation: Promethazine",
+    etymology: "pro- = forward/before + meth- = methyl + -azine = phenothiazine ring suffix",
     aliases: [
       "promethazine",
       "promethazine hcl",
@@ -3166,7 +3166,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "vitamin-k",
     name: "Vitamin K",
-    etymology: "Abbreviation: Vitamin K",
+    etymology: "vitamin = vital amine historical term + K = Koagulation German spelling",
     aliases: [
       "vitamin k",
       "phytonadione",
@@ -3195,7 +3195,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   {
     id: "dmards",
     name: "DMARDs",
-    etymology: "Abbreviation: DMARDs",
+    etymology: "DMARDs = disease-modifying antirheumatic drugs",
     aliases: [
       "dmard",
       "dmards",

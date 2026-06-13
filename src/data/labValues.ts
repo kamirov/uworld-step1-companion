@@ -15,7 +15,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hematocrit",
     name: "Hematocrit",
-    etymology: "Abbreviation: Hematocrit",
+    etymology: "Greek haima = blood + krites = separator",
     aliases: ["hematocrit", "hct"],
     measures: "Percentage of blood volume occupied by red blood cells.",
     normalRange: "~41–50% (M), 36–44% (F)",
@@ -44,7 +44,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hemoglobin",
     name: "Hemoglobin",
-    etymology: "Abbreviation: Hemoglobin",
+    etymology: "Greek haima = blood + Latin globus = sphere + -in = protein",
     aliases: ["hemoglobin", "hgb", "hb"],
     measures: "Oxygen-carrying protein concentration in whole blood.",
     normalRange: "~13.5–17.5 g/dL (M), 12.0–15.5 g/dL (F)",
@@ -71,7 +71,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "mcv",
     name: "MCV",
-    etymology: "mean corpuscular volume",
+    etymology: "MCV = mean corpuscular volume",
     aliases: [
       "mcv",
       "mean corpuscular volume",
@@ -101,7 +101,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "platelets",
     name: "Platelet Count",
-    etymology: "French plate + -let (small)",
+    etymology: "French plate = flat + -let = small + count = measured number",
     aliases: ["platelet count", "platelets", "plt"],
     measures: "Number of platelets per volume of blood (hemostasis).",
     normalRange: "~150,000–400,000 /µL",
@@ -133,7 +133,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "wbc",
     name: "WBC Count",
-    etymology: "white blood cell count",
+    etymology: "WBC = white blood cell + count = measured number",
     aliases: ["wbc count", "white blood cell count", "leukocyte count"],
     measures: "Total white blood cell concentration in blood.",
     normalRange: "~4,500–11,000 /µL",
@@ -164,7 +164,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "eosinophilia",
     name: "Eosinophilia",
-    etymology: "Greek eos + philos + -ia; Greek -philia (attraction)",
+    etymology: "Greek eos = dawn-red + philos = loving + -ia = condition",
     aliases: [
       "eosinophilia",
       "elevated eosinophils",
@@ -206,7 +206,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "sodium",
     name: "Sodium",
-    etymology: "Abbreviation: Sodium",
+    etymology: "English soda + -ium element suffix",
     aliases: ["sodium", "serum sodium", "na+"],
     measures: "Primary extracellular cation; reflects water balance more than total body Na⁺.",
     normalRange: "~136–145 mEq/L",
@@ -235,7 +235,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "potassium",
     name: "Potassium",
-    etymology: "English potash + -ium",
+    etymology: "English potash + -ium element suffix",
     aliases: ["potassium", "serum potassium", "k+"],
     measures: "Primary intracellular cation; critical for membrane potential and arrhythmia risk.",
     normalRange: "~3.5–5.0 mEq/L",
@@ -267,7 +267,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "bicarbonate",
     name: "Bicarbonate",
-    etymology: "Abbreviation: Bicarbonate",
+    etymology: "bi- = two/second + carbonate = carbonic acid salt",
     aliases: ["bicarbonate", "hco3", "serum bicarbonate", "co2 content"],
     measures: "Serum HCO₃⁻; metabolic component of acid-base status.",
     normalRange: "~22–28 mEq/L",
@@ -293,7 +293,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "bun",
     name: "BUN",
-    etymology: "blood urea nitrogen",
+    etymology: "BUN = blood urea nitrogen",
     aliases: ["bun", "blood urea nitrogen", "urea nitrogen", "serum urea nitrogen"],
     measures: "Nitrogen component of urea; marker of nitrogen waste and renal function.",
     normalRange: "~7–20 mg/dL",
@@ -322,7 +322,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "creatinine",
     name: "Creatinine",
-    etymology: "Greek kreas (flesh) + -inine",
+    etymology: "Greek kreas = flesh + -inine compound suffix",
     aliases: ["creatinine", "serum creatinine"],
     measures: "Muscle metabolism byproduct cleared by kidneys; estimates GFR.",
     normalRange: "~0.7–1.3 mg/dL (varies by muscle mass/sex)",
@@ -349,7 +349,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "glucose",
     name: "Glucose",
-    etymology: "Abbreviation: Glucose",
+    etymology: "Greek gleukos = sweet wine/sugar",
     aliases: ["glucose", "serum glucose", "blood glucose", "fasting glucose"],
     measures: "Primary circulating sugar; fuel source and diabetes marker.",
     normalRange: "Fasting ~70–99 mg/dL",
@@ -380,7 +380,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "albumin",
     name: "Serum Albumin",
-    etymology: "Latin albus (white)",
+    etymology: "Latin serum = watery fluid + Latin albus = white + -in protein suffix",
     aliases: [
       "serum albumin",
       "serum albumin concentration",
@@ -410,7 +410,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ast",
     name: "AST",
-    etymology: "aspartate aminotransferase",
+    etymology: "AST = aspartate aminotransferase",
     aliases: ["ast", "aspartate aminotransferase", "sgot"],
     measures: "Enzyme in liver and muscle; released with hepatocellular or muscle injury.",
     normalRange: "~10–40 U/L",
@@ -435,7 +435,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "alt",
     name: "ALT",
-    etymology: "alanine aminotransferase",
+    etymology: "ALT = alanine aminotransferase",
     aliases: ["alt", "alanine aminotransferase", "sgpt"],
     measures: "Enzyme relatively specific to hepatocytes.",
     normalRange: "~7–56 U/L",
@@ -456,7 +456,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "alk-phos",
     name: "Alkaline Phosphatase",
-    etymology: "From alkaline phosphatase",
+    etymology: "Arabic al-qali = ashes/alkali + phosphate + -ase enzyme suffix",
     aliases: ["alkaline phosphatase", "alk phos"],
     measures: "Enzyme from bile ducts, bone, and placenta.",
     normalRange: "~44–147 U/L (age-dependent)",
@@ -485,7 +485,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "bilirubin",
     name: "Bilirubin",
-    etymology: "Latin bilis (bile) + ruber (red)",
+    etymology: "Latin bilis = bile + ruber = red",
     aliases: ["bilirubin", "total bilirubin", "serum bilirubin"],
     measures: "Heme breakdown product; elevated in hemolysis and cholestasis.",
     normalRange: "Total ~0.3–1.2 mg/dL",
@@ -508,7 +508,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "uric-acid",
     name: "Serum Uric Acid",
-    etymology: "Latin acidus (sour)",
+    etymology: "Latin serum = watery fluid + Greek ouron = urine + -ic = relating to + Latin acidus = sour",
     aliases: [
       "serum uric acid",
       "serum uric acid concentration",
@@ -543,7 +543,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "inr",
     name: "INR",
-    etymology: "international normalized ratio",
+    etymology: "INR = international normalized ratio",
     aliases: ["inr", "international normalized ratio", "pt/inr"],
     measures: "Standardized prothrombin time; extrinsic coagulation pathway activity.",
     normalRange: "~0.8–1.2 (not on warfarin)",
@@ -568,7 +568,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "troponin",
     name: "Troponin",
-    etymology: "Greek tropos (turn) + -in",
+    etymology: "Greek tropos = turn + -in protein suffix",
     aliases: ["troponin", "troponin i", "troponin t"],
     measures: "Cardiac myocyte injury marker; highly sensitive for MI.",
     normalRange: "Assay-dependent (often undetectable at baseline)",
@@ -594,7 +594,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "d-dimer",
     name: "D-Dimer",
-    etymology: "Abbreviation: D-Dimer",
+    etymology: "D = fibrin D fragment + dimer = two-part molecule",
     aliases: ["d-dimer", "d dimer"],
     measures: "Fibrin degradation product; marker of active coagulation and fibrinolysis.",
     normalRange: "Age-adjusted (often <500 ng/mL FEU in adults)",
@@ -620,7 +620,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ldh",
     name: "LDH",
-    etymology: "lactate dehydrogenase",
+    etymology: "LDH = lactate dehydrogenase",
     aliases: ["ldh", "lactate dehydrogenase"],
     measures: "Ubiquitous cytoplasmic enzyme released with tissue breakdown.",
     normalRange: "~140–280 U/L",
@@ -646,7 +646,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "tsh",
     name: "TSH",
-    etymology: "thyroid-stimulating hormone",
+    etymology: "TSH = thyroid-stimulating hormone",
     aliases: ["tsh", "thyroid stimulating hormone"],
     measures: "Pituitary hormone regulating thyroid hormone production.",
     normalRange: "~0.4–4.0 mIU/L",
@@ -672,7 +672,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ferritin",
     name: "Ferritin",
-    etymology: "Latin ferrum (iron) + -in",
+    etymology: "Latin ferrum = iron + -in protein suffix",
     aliases: ["ferritin", "serum ferritin"],
     measures: "Iron storage protein; acute-phase reactant.",
     normalRange: "~30–300 ng/mL (M), 15–200 (F) (lab-dependent)",
@@ -698,7 +698,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "lipase",
     name: "Lipase",
-    etymology: "Abbreviation: Lipase",
+    etymology: "Greek lipos = fat + -ase enzyme suffix",
     aliases: ["lipase", "serum lipase"],
     measures: "Pancreatic enzyme; more specific than amylase for pancreatitis.",
     normalRange: "~0–160 U/L (lab-dependent)",
@@ -722,7 +722,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "pleural-fluid",
     name: "Pleural Fluid Analysis",
-    etymology: "Greek pleura (side/rib); Greek -lysis (breakdown)",
+    etymology: "Greek pleura = side/rib + fluid = liquid + analysis = breaking apart for study",
     aliases: [
       "pleural fluid",
       "pleural fluid analysis",
@@ -755,7 +755,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "amylase",
     name: "Amylase",
-    etymology: "Abbreviation: Amylase",
+    etymology: "Greek amylon = starch + -ase enzyme suffix",
     aliases: ["amylase", "serum amylase"],
     measures:
       "Pancreatic and salivary enzyme that digests starch; elevated in pancreatitis and salivary gland disease.",
@@ -785,7 +785,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "calcium",
     name: "Serum Calcium",
-    etymology: "Latin calx (lime)",
+    etymology: "Latin serum = watery fluid + Latin calx = lime + -ium element suffix",
     aliases: [
       "calcium",
       "serum calcium",
@@ -826,7 +826,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "triglycerides",
     name: "Triglycerides",
-    etymology: "From triglycerides",
+    etymology: "tri- = three + glyceride = glycerol fatty-acid ester",
     aliases: [
       "triglycerides",
       "triglyceride",
@@ -863,7 +863,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "cortisol",
     name: "Cortisol",
-    etymology: "Latin cortex + -ol",
+    etymology: "Latin cortex = adrenal bark + -ol alcohol suffix",
     aliases: [
       "cortisol",
       "serum cortisol",
@@ -901,7 +901,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "creatine-kinase",
     name: "Creatine Kinase",
-    etymology: "Greek kinein (to move)",
+    etymology: "Greek kreas = flesh + -ine substance suffix + Greek kinein = move + -ase enzyme suffix",
     aliases: [
       "creatine kinase",
       "ck",
@@ -938,7 +938,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "chloride",
     name: "Chloride",
-    etymology: "Abbreviation: Chloride",
+    etymology: "Greek chloros = greenish-yellow + -ide ion suffix",
     aliases: ["chloride", "serum chloride", "cl-"],
     measures:
       "Major extracellular anion; tracks sodium and acid-base status. Changes often parallel Na⁺ (volume) or reflect acid-base disorders.",
@@ -967,7 +967,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "magnesium",
     name: "Magnesium",
-    etymology: "Greek Magnesia (region)",
+    etymology: "Magnesia = Greek region source name + -ium element suffix",
     aliases: ["magnesium", "serum magnesium", "mg2+"],
     measures:
       "Intracellular cation essential for ATP-dependent processes, neuromuscular function, and potassium homeostasis.",
@@ -998,7 +998,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "fsh",
     name: "FSH",
-    etymology: "follicle-stimulating hormone",
+    etymology: "FSH = follicle-stimulating hormone",
     aliases: [
       "fsh",
       "follicle stimulating hormone",
@@ -1033,7 +1033,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "lh",
     name: "Luteinizing Hormone",
-    etymology: "luteinizing hormone; Greek hormaein (to excite)",
+    etymology: "Latin luteus = yellow + -izing = causing + Greek hormaein = set in motion/excite",
     aliases: [
       "luteinizing hormone",
       "lh",
@@ -1066,7 +1066,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "gh-arginine-stimulation",
     name: "Growth Hormone Arginine Stimulation Test",
-    etymology: "Greek hormaein (to excite); Latin testis (witness)",
+    etymology: "growth = size increase + hormone = signal + arginine = amino acid stimulus + test = assay",
     aliases: [
       "growth hormone-arginine stimulation",
       "growth hormone arginine stimulation",
@@ -1100,7 +1100,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "iron",
     name: "Serum Iron",
-    etymology: "Abbreviation: Serum Iron",
+    etymology: "Latin serum = watery fluid + Old English iren + Latin ferrum = iron",
     aliases: [
       "iron",
       "serum iron",
@@ -1134,7 +1134,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "tibc",
     name: "Total Iron Binding Capacity",
-    etymology: "total iron-binding capacity",
+    etymology: "Latin totus = whole + Old English iren + Latin ferrum = iron + binding = attaching + Latin capacitas = holding ability",
     aliases: [
       "total iron binding capacity",
       "tibc",
@@ -1166,7 +1166,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "transferrin",
     name: "Transferrin",
-    etymology: "Latin transferre + -in",
+    etymology: "Latin transferre = carry across + -in protein suffix",
     aliases: [
       "transferrin",
       "serum transferrin",
@@ -1198,7 +1198,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "osmolality",
     name: "Osmolality",
-    etymology: "Abbreviation: Osmolality",
+    etymology: "Greek osmos = thrust/push + -ality = concentration property",
     aliases: [
       "osmolality",
       "serum osmolality",
@@ -1234,7 +1234,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "phosphorus",
     name: "Phosphorus",
-    etymology: "Abbreviation: Phosphorus",
+    etymology: "Greek phosphoros = light-bearing",
     aliases: [
       "phosphorus",
       "phosphate",
@@ -1273,7 +1273,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "prolactin",
     name: "Prolactin",
-    etymology: "Latin pro + lac (milk) + -in",
+    etymology: "Latin pro = forward + lac = milk + -in protein suffix",
     aliases: [
       "prolactin",
       "hprl",
@@ -1308,7 +1308,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "globulin",
     name: "Globulin",
-    etymology: "Latin globus (sphere)",
+    etymology: "Latin globus = sphere + -in protein suffix",
     aliases: [
       "globulin",
       "serum globulin",
@@ -1346,7 +1346,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "iodine-uptake",
     name: "Radioactive Iodine Uptake",
-    etymology: "From radioactive iodine uptake",
+    etymology: "radius = ray + active = emitting + Greek iodes = violet-colored + uptake = taking up",
     aliases: [
       "iodine",
       "radioactive iodine uptake",
@@ -1382,7 +1382,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "thyroxine",
     name: "Thyroxine (T4)",
-    etymology: "Abbreviation: Thyroxine",
+    etymology: "Greek thyreos = shield/thyroid + oxygen + -ine = hormone suffix + T4 = four iodine atoms",
     aliases: [
       "thyroxine",
       "t4",
@@ -1419,7 +1419,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "triiodothyronine",
     name: "Triiodothyronine (T3)",
-    etymology: "From triiodothyronine t3",
+    etymology: "tri- = three + iodo = iodine + thyronine = thyroid amino-acid hormone + T3 = three iodine atoms",
     aliases: [
       "triiodothyronine",
       "t3",
@@ -1456,7 +1456,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "immunoglobulins",
     name: "Immunoglobulins",
-    etymology: "From immunoglobulins",
+    etymology: "immunis = exempt/protected + globus = sphere + -in protein",
     aliases: [
       "immunoglobulins",
       "immunoglobulin",
@@ -1495,7 +1495,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "iga",
     name: "IgA",
-    etymology: "immunoglobulin A",
+    etymology: "IgA = immunoglobulin A",
     aliases: [
       "iga",
       "immunoglobulin a",
@@ -1530,7 +1530,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ige",
     name: "IgE",
-    etymology: "immunoglobulin E",
+    etymology: "IgE = immunoglobulin E",
     aliases: [
       "ige",
       "immunoglobulin e",
@@ -1567,7 +1567,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "igg",
     name: "IgG",
-    etymology: "immunoglobulin G",
+    etymology: "IgG = immunoglobulin G",
     aliases: [
       "igg",
       "immunoglobulin g",
@@ -1605,7 +1605,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "igm",
     name: "IgM",
-    etymology: "immunoglobulin M",
+    etymology: "IgM = immunoglobulin M",
     aliases: [
       "igm",
       "immunoglobulin m",
@@ -1642,7 +1642,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hba1c",
     name: "Hemoglobin A1c",
-    etymology: "From hemoglobin a1c",
+    etymology: "Greek haima = blood + Latin globus = sphere + -in = protein + A1c = glycated hemoglobin fraction",
     aliases: [
       "hemoglobin a1c",
       "hemoglobin a₁c",
@@ -1681,7 +1681,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "reticulocyte",
     name: "Reticulocyte Count",
-    etymology: "Latin reticulum (net) + kytos; Greek -cyte (cell)",
+    etymology: "Latin reticulum = little net + Greek kytos = cell + count = measured number",
     aliases: [
       "reticulocyte",
       "reticulocytes",
@@ -1718,7 +1718,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "pt",
     name: "Prothrombin Time",
-    etymology: "prothrombin time",
+    etymology: "pro- = before + thrombin = clotting enzyme + measured duration",
     aliases: [
       "pt",
       "prothrombin time",
@@ -1751,7 +1751,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ptt",
     name: "Partial Thromboplastin Time",
-    etymology: "partial thromboplastin time",
+    etymology: "Latin pars = part + Greek thrombos = clot + plastos = molded + measured duration",
     aliases: [
       "ptt",
       "partial thromboplastin time",
@@ -1786,7 +1786,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "mch",
     name: "MCH",
-    etymology: "mean corpuscular hemoglobin",
+    etymology: "MCH = mean corpuscular hemoglobin",
     aliases: ["mch", "mean corpuscular hemoglobin"],
     measures:
       "Average mass of hemoglobin per red blood cell; parallels MCHC and helps classify anemia.",
@@ -1813,7 +1813,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "mchc",
     name: "MCHC",
-    etymology: "mean corpuscular hemoglobin concentration",
+    etymology: "MCHC = mean corpuscular hemoglobin concentration",
     aliases: [
       "mchc",
       "mean corpuscular hemoglobin concentration",
@@ -1843,7 +1843,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "oxalate",
     name: "Oxalate",
-    etymology: "Abbreviation: Oxalate",
+    etymology: "Greek oxalis = sorrel/sharp acid salt",
     aliases: [
       "oxalate",
       "urine oxalate",
@@ -1878,7 +1878,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "17-hydroxycorticosteroids",
     name: "17-Hydroxycorticosteroids",
-    etymology: "Numbered clinical designation",
+    etymology: "17 = steroid carbon position + hydroxy = OH group + cortex = adrenal bark + steroid = sterol-like compound",
     aliases: [
       "17-hydroxycorticosteroids",
       "17 hydroxycorticosteroids",
@@ -1912,7 +1912,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "17-ketosteroids",
     name: "17-Ketosteroids",
-    etymology: "Numbered clinical designation",
+    etymology: "17 = steroid carbon position + keto = carbonyl group + steroid = sterol-like compound",
     aliases: [
       "17-ketosteroids",
       "17 ketosteroids",
@@ -1947,7 +1947,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "bmi",
     name: "Body Mass Index",
-    etymology: "From body mass index",
+    etymology: "body = whole organism + Greek massa = lump + Latin indicare = point out",
     aliases: [
       "bmi",
       "body mass index",
@@ -1980,7 +1980,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "cholesterol",
     name: "Total Cholesterol",
-    etymology: "Greek chole + stereos (solid)",
+    etymology: "Latin totus = whole + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "cholesterol",
       "total cholesterol",
@@ -2018,7 +2018,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ldl",
     name: "LDL Cholesterol",
-    etymology: "Greek chole + stereos (solid)",
+    etymology: "LDL = low-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "ldl",
       "ldl cholesterol",
@@ -2056,7 +2056,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hdl",
     name: "HDL Cholesterol",
-    etymology: "Greek chole + stereos (solid)",
+    etymology: "HDL = high-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "hdl",
       "hdl cholesterol",
@@ -2094,7 +2094,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "esr",
     name: "ESR",
-    etymology: "erythrocyte sedimentation rate",
+    etymology: "ESR = erythrocyte sedimentation rate",
     aliases: [
       "esr",
       "erythrocyte sedimentation rate",
@@ -2142,7 +2142,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "c-reactive-protein",
     name: "C-Reactive Protein",
-    etymology: "Greek prōtos (first)",
+    etymology: "C = pneumococcal C-polysaccharide reactive + Greek proteios = primary + -in protein suffix",
     aliases: [
       "c-reactive protein",
       "c reactive protein",
@@ -2186,7 +2186,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "rheumatoid-factor",
     name: "Rheumatoid Factor",
-    etymology: "Greek rheuma (flow) + -oid",
+    etymology: "Greek rheuma = flow + -oid = resembling + Latin facere = do/make; causal agent",
     aliases: [
       "rheumatoid factor",
       "rf",
@@ -2228,7 +2228,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "anti-ccp",
     name: "Anti-CCP (ACPA)",
-    etymology: "Abbreviation: Anti-CCP",
+    etymology: "anti-CCP = antibody against cyclic citrullinated peptide + ACPA = anti-citrullinated protein antibody",
     aliases: [
       "anti-ccp",
       "anti ccp",
@@ -2284,7 +2284,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ana",
     name: "Antinuclear Antibodies",
-    etymology: "From antinuclear antibodies",
+    etymology: "anti- = against + nuclear = cell nucleus + anti- = against + body = immune protein",
     aliases: [
       "antinuclear antibodies",
       "antinuclear antibody",
@@ -2333,7 +2333,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "lactic-acidosis",
     name: "Lactic Acidosis",
-    etymology: "Latin lac (milk); Latin acidus + -osis",
+    etymology: "Latin lac = milk + Latin acidus = sour + -osis = condition",
     aliases: [
       "lactic acidosis",
       "lactate acidosis",
@@ -2375,7 +2375,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "beta-hcg",
     name: "β-hCG",
-    etymology: "Greek beta (second letter); human chorionic gonadotropin",
+    etymology: "beta = beta subunit + HCG = human chorionic gonadotropin",
     aliases: [
       "β-hcg",
       "β hcg",

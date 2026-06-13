@@ -11,7 +11,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s1",
     name: "S1 (First Heart Sound)",
-    etymology: "S = sound; first closure sound of systole",
+    etymology: "S = sound + first = AV valve closure at systole start",
     aliases: ["S1", "first heart sound"],
     meaning:
       "Closure of the AV valves (mitral M1, tricuspid T1) at the onset of systole; marks the beginning of ventricular contraction.",
@@ -24,7 +24,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s2",
     name: "S2 (Second Heart Sound)",
-    etymology: "S = sound; second closure sound of diastole",
+    etymology: "S = sound + second = semilunar valve closure at diastole start",
     aliases: ["S2", "second heart sound"],
     meaning:
       "Closure of the semilunar valves (aortic A2, pulmonic P2) at the end of systole; marks the beginning of diastole.",
@@ -39,7 +39,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s3",
     name: "S3 (Third Heart Sound)",
-    etymology: "S = sound; third diastolic filling sound",
+    etymology: "S = sound + third = rapid ventricular filling sound",
     aliases: ["S3", "third heart sound"],
     meaning:
       "Low-frequency sound in early diastole caused by rapid ventricular filling; may be normal in children and young adults.",
@@ -52,7 +52,7 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
   {
     id: "s4",
     name: "S4 (Fourth Heart Sound)",
-    etymology: "S = sound; fourth atrial kick sound",
+    etymology: "S = sound + fourth = atrial kick into stiff ventricle",
     aliases: ["S4", "fourth heart sound"],
     meaning:
       "Low-frequency sound in late diastole from atrial contraction into a stiff, noncompliant ventricle; not normally heard.",

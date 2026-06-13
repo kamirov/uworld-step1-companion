@@ -17,7 +17,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "rotator-cuff",
     name: "Rotator Cuff",
-    etymology: "Abbreviation: Rotator Cuff",
+    etymology: "Latin rotare = turn + cuff = encircling band",
     aliases: [
       "rotator cuff",
       "rotator cuff muscles",
@@ -58,7 +58,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "supraspinatus",
     name: "Supraspinatus",
-    etymology: "From supraspinatus",
+    etymology: "Latin supra = above + spina = spine",
     aliases: ["supraspinatus", "supraspinatus muscle", "supraspinatus tendon"],
     definition:
       "Rotator cuff muscle occupying the supraspinous fossa of the scapula; its tendon passes beneath the acromion through the subacromial space to insert on the superior facet of the greater tuberosity.",
@@ -93,7 +93,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "infraspinatus",
     name: "Infraspinatus",
-    etymology: "From infraspinatus",
+    etymology: "Latin infra = below + spina = spine",
     aliases: ["infraspinatus", "infraspinatus muscle", "infraspinatus tendon"],
     definition:
       "Rotator cuff muscle filling the infraspinous fossa of the scapula; tendon inserts on the posterior facet of the greater tuberosity and is the primary external rotator of the shoulder.",
@@ -126,7 +126,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "teres-minor",
     name: "Teres Minor",
-    etymology: "Latin teres (rounded)",
+    etymology: "Latin teres = rounded + Latin minor = smaller",
     aliases: ["teres minor", "teres minor muscle", "teres minor tendon"],
     definition:
       "Smallest rotator cuff muscle arising from the lateral border of the scapula; assists infraspinatus with external rotation and posterior glenohumeral stabilization.",
@@ -161,7 +161,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "subscapularis",
     name: "Subscapularis",
-    etymology: "From subscapularis",
+    etymology: "Latin sub = under + scapula = shoulder blade",
     aliases: ["subscapularis", "subscapularis muscle", "subscapularis tendon"],
     definition:
       "Largest rotator cuff muscle on the anterior scapula (subscapular fossa); the primary internal rotator, inserting on the lesser tuberosity of the humerus.",
@@ -197,7 +197,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "axillary-nerve",
     name: "Axillary Nerve",
-    etymology: "From axillary nerve",
+    etymology: "Latin axilla = armpit + Greek neuron = sinew/nerve",
     aliases: ["axillary nerve", "circumflex nerve"],
     definition:
       "Terminal branch of the posterior cord of the brachial plexus that innervates the deltoid and teres minor and provides sensation over the lateral shoulder.",
@@ -232,7 +232,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "suprascapular-nerve",
     name: "Suprascapular Nerve",
-    etymology: "From suprascapular nerve",
+    etymology: "Latin supra = above + scapula = shoulder blade + Greek neuron = sinew/nerve",
     aliases: ["suprascapular nerve"],
     definition:
       "Branch of the upper trunk of the brachial plexus that innervates the supraspinatus and infraspinatus rotator cuff muscles as it courses across the posterior scapula.",
@@ -267,7 +267,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "acromion",
     name: "Acromion",
-    etymology: "Abbreviation: Acromion",
+    etymology: "Greek akros = highest + omos = shoulder",
     aliases: ["acromion", "acromial process"],
     definition:
       "Lateral extension of the scapular spine that forms the anterolateral roof of the shoulder and articulates with the clavicle at the acromioclavicular (AC) joint.",
@@ -301,7 +301,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "humerus",
     name: "Humerus",
-    etymology: "Abbreviation: Humerus",
+    etymology: "Latin humerus = upper arm",
     aliases: ["humerus", "humeral", "upper arm bone"],
     definition:
       "Long bone of the brachium connecting the shoulder (glenohumeral joint) to the elbow; site of rotator cuff insertion proximally and major upper-extremity nerve crossings.",
@@ -338,7 +338,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "subluxation",
     name: "Subluxation",
-    etymology: "Abbreviation: Subluxation",
+    etymology: "Latin sub = partial + luxare = dislocate",
     aliases: [
       "subluxation",
       "subluxations",
@@ -381,7 +381,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "atlantoaxial",
     name: "Atlantoaxial Joint (C1–C2)",
-    etymology: "From atlantoaxial joint c1 c2",
+    etymology: "Atlas = C1 vertebra + axis = C2 vertebra + joint = articulation",
     aliases: [
       "atlantoaxial",
       "atlanto-axial",
@@ -429,7 +429,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "sarcomere",
     name: "Sarcomere",
-    etymology: "Abbreviation: Sarcomere",
+    etymology: "Greek sarx = flesh + meros = part",
     aliases: [
       "sarcomere",
       "sarcomeres",
@@ -474,7 +474,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "metacarpophalangeal-joint",
     name: "Metacarpophalangeal Joint",
-    etymology: "From metacarpophalangeal joint",
+    etymology: "Greek meta = after + karpos = wrist + phalanx = finger bone + joint = articulation",
     aliases: [
       "metacarpophalangeal joint",
       "metacarpophalangeal joints",
@@ -520,7 +520,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   {
     id: "interphalangeal-joint",
     name: "Interphalangeal Joint",
-    etymology: "From interphalangeal joint",
+    etymology: "Latin inter = between + Greek phalanx = finger bone + joint = articulation",
     aliases: [
       "interphalangeal joint",
       "interphalangeal joints",

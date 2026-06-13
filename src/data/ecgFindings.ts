@@ -15,7 +15,7 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
   {
     id: "inferior-stemi",
     name: "Inferior STEMI (II, III, aVF)",
-    etymology: "From inferior stemi ii iii avf",
+    etymology: "inferior = lower wall + ST = ECG ST segment + elevation = raised + MI = myocardial infarction",
     aliases: [
       "st-segment elevation in leads ii, iii, and avf",
       "st elevation in leads ii, iii, and avf",
@@ -50,7 +50,7 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
   {
     id: "electrical-alternans",
     name: "Electrical Alternans",
-    etymology: "From electrical alternans",
+    etymology: "electrical = cardiac voltage + Latin alternare = alternate",
     aliases: [
       "electrical alternans",
       "qrs alternans",

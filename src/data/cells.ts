@@ -16,7 +16,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "leukocyte",
     name: "Leukocyte",
-    etymology: "Greek -cyte (cell)",
+    etymology: "Greek leukos = white + kytos = cell",
     aliases: [
       "leukocyte",
       "leukocytes",
@@ -63,7 +63,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "neutrophil",
     name: "Neutrophil",
-    etymology: "Latin neuter + Greek philos (loving)",
+    etymology: "Latin neuter = neither + Greek philos = loving",
     aliases: [
       "neutrophil",
       "neutrophils",
@@ -111,7 +111,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "eosinophil",
     name: "Eosinophil",
-    etymology: "Greek eos (dawn) + philos",
+    etymology: "Greek eos = dawn-red + philos = loving",
     aliases: ["eosinophil", "eosinophils", "eos"],
     definition:
       "Granulocyte with bilobed nucleus and large eosinophilic cytoplasmic granules; defends against helminths and participates in allergic and atopic inflammation via granule proteins and cytokine release.",
@@ -146,7 +146,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "basophil",
     name: "Basophil",
-    etymology: "Greek basis + philos",
+    etymology: "Greek basis = base + philos = loving",
     aliases: ["basophil", "basophils"],
     definition:
       "Least common granulocyte (<1% of WBCs); contains histamine and heparin granules. Participates in type I hypersensitivity and helminth defense. Surface IgE receptor (FcεRI).",
@@ -176,7 +176,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "mast-cell",
     name: "Mast Cell",
-    etymology: "Abbreviation: Mast Cell",
+    etymology: "German Mast = well-fed + small biological unit",
     aliases: ["mast cell", "mast cells"],
     definition:
       "Tissue-resident granulated immune cell of myeloid lineage found in skin, mucosa, and perivascular spaces; central effector of type I hypersensitivity and innate defense against helminths via IgE-mediated degranulation.",
@@ -209,7 +209,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "lymphocyte",
     name: "Lymphocyte",
-    etymology: "Latin lympha + Greek kytos; Greek -cyte (cell)",
+    etymology: "Latin lympha = clear fluid + Greek kytos = cell",
     aliases: ["lymphocyte", "lymphocytes"],
     definition:
       "Agranular leukocyte central to adaptive immunity; includes B cells (antibody production), T cells (cell-mediated immunity), and NK cells (innate cytotoxicity).",
@@ -240,7 +240,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "monocyte",
     name: "Monocyte",
-    etymology: "Greek monos + kytos; Greek -cyte (cell)",
+    etymology: "Greek monos = single + kytos = cell",
     aliases: ["monocyte", "monocytes"],
     definition:
       "Largest circulating leukocyte; migrates into tissues as macrophage or dendritic cell. Phagocytosis, antigen presentation, and chronic inflammation.",
@@ -272,7 +272,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "macrophage",
     name: "Macrophage",
-    etymology: "Greek makros + phagein (to eat)",
+    etymology: "Greek makros = large + phagein = eat",
     aliases: [
       "macrophage",
       "macrophages",
@@ -316,7 +316,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "cd4-t-lymphocyte",
     name: "CD4+ T Lymphocyte",
-    etymology: "cluster of differentiation 4; Latin lympha + Greek kytos",
+    etymology: "CD4 = cluster of differentiation 4 + T = thymus-derived + Latin lympha = clear fluid + Greek kytos = cell",
     aliases: [
       "cd4+",
       "cd4⁺",
@@ -369,7 +369,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "cd8-t-lymphocyte",
     name: "CD8+ T Lymphocyte",
-    etymology: "cluster of differentiation 8; Latin lympha + Greek kytos",
+    etymology: "CD8 = cluster of differentiation 8 + T = thymus-derived + Latin lympha = clear fluid + Greek kytos = cell",
     aliases: [
       "cd8+",
       "cd8⁺",
@@ -420,7 +420,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "t-lymphocyte",
     name: "T Lymphocyte",
-    etymology: "Latin lympha + Greek kytos; Greek -cyte (cell)",
+    etymology: "T = thymus-derived + Latin lympha = clear fluid + Greek kytos = cell",
     aliases: [
       "t-lymphocyte",
       "t lymphocyte",
@@ -462,7 +462,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "t-cell-signaling",
     name: "T-Cell Signaling",
-    etymology: "From t-cell signaling",
+    etymology: "T = thymus-derived lymphocyte + signaling = cellular communication",
     aliases: [
       "t-cell signaling",
       "t cell signaling",
@@ -598,7 +598,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "b-lymphocyte",
     name: "B Lymphocyte",
-    etymology: "Latin lympha + Greek kytos; Greek -cyte (cell)",
+    etymology: "B = bursa/bone marrow lineage + Latin lympha = clear fluid + Greek kytos = cell",
     aliases: [
       "b-lymphocyte",
       "b lymphocyte",
@@ -639,7 +639,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "memory-t-lymphocyte",
     name: "Memory T Lymphocyte",
-    etymology: "Latin lympha + Greek kytos; Greek -cyte (cell)",
+    etymology: "memory = retained immune response + T = thymus-derived + Latin lympha = clear fluid + Greek kytos = cell",
     aliases: [
       "memory t lymphocyte",
       "memory t lymphocytes",
@@ -684,7 +684,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "naive-b-lymphocyte",
     name: "Naive B Lymphocyte",
-    etymology: "Latin lympha + Greek kytos; Greek -cyte (cell)",
+    etymology: "naive = not previously exposed + B = bursa/bone marrow lineage + Latin lympha = clear fluid + Greek kytos = cell",
     aliases: [
       "naive b lymphocyte",
       "naive b lymphocytes",
@@ -730,7 +730,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "desmosome",
     name: "Desmosome",
-    etymology: "Abbreviation: Desmosome",
+    etymology: "Greek desmos = bond + soma = body",
     aliases: ["desmosome", "desmosomes", "macula adherens"],
     definition:
       "Strong adhesive cell–cell junction anchoring intermediate filaments (keratin in epithelia, desmin in cardiac muscle) between adjacent cells via cadherin family proteins (desmogleins, desmocollins).",
@@ -761,7 +761,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "adherens-junction",
     name: "Adherens Junction",
-    etymology: "From adherens junction",
+    etymology: "Latin adhaerere = stick to + Latin jungere = join",
     aliases: [
       "adherens junction",
       "adherens junctions",
@@ -797,7 +797,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "hemidesmosome",
     name: "Hemidesmosome",
-    etymology: "From hemidesmosome",
+    etymology: "hemi- = half + desmosome = binding body",
     aliases: ["hemidesmosome", "hemidesmosomes"],
     definition:
       "Half-desmosome anchoring basal keratinocytes to the basement membrane via integrins (α6β4) and bullous pemphigoid antigens (BP180/BP230), linking keratin intermediate filaments to the extracellular matrix.",
@@ -828,7 +828,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "tight-junction",
     name: "Tight Junction",
-    etymology: "From tight junction",
+    etymology: "tight = sealed + Latin jungere = join",
     aliases: [
       "tight junction",
       "tight junctions",
@@ -865,7 +865,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "fenestrae",
     name: "Fenestrae",
-    etymology: "Abbreviation: Fenestrae",
+    etymology: "Latin fenestra = window",
     aliases: [
       "fenestrae",
       "fenestra",
@@ -902,7 +902,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "gap-junction",
     name: "Gap Junction",
-    etymology: "Abbreviation: Gap Junction",
+    etymology: "gap = opening/channel + Latin jungere = join",
     aliases: ["gap junction", "gap junctions", "nexus", "electrical synapse"],
     definition:
       "Intercellular channel formed by paired connexons (hexameric connexin proteins) allowing direct cytoplasmic exchange of ions and small molecules (<1 kDa) between adjacent cells.",
@@ -934,7 +934,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "dna-methylation",
     name: "DNA Methylation",
-    etymology: "From dna methylation",
+    etymology: "DNA = deoxyribonucleic acid + methyl = CH3 group + -ation = process",
     aliases: ["dna methylation", "cpg methylation", "cytosine methylation"],
     definition:
       "Epigenetic modification adding a methyl group to cytosine (usually in CpG dinucleotides) by DNA methyltransferases (DNMTs), generally repressing gene transcription when occurring in promoter CpG islands.",
@@ -966,7 +966,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "epigenetics",
     name: "Epigenetics",
-    etymology: "Abbreviation: Epigenetics",
+    etymology: "Greek epi = upon + genesis = origin",
     aliases: [
       "epigenetics",
       "epigenetic",
@@ -1004,7 +1004,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "acetylation",
     name: "Acetylation",
-    etymology: "Abbreviation: Acetylation",
+    etymology: "acetyl = CH3CO group + -ation = process",
     aliases: [
       "acetylation",
       "histone acetylation",
@@ -1039,7 +1039,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "dna-transcription",
     name: "DNA Transcription",
-    etymology: "From dna transcription",
+    etymology: "DNA = deoxyribonucleic acid + Latin transcribere = write across",
     aliases: [
       "dna transcription",
       "transcription",
@@ -1076,7 +1076,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "pre-mrna",
     name: "Pre-mRNA",
-    etymology: "messenger RNA",
+    etymology: "pre- = before + mRNA = messenger RNA",
     aliases: [
       "pre-mrna",
       "pre mrna",
@@ -1116,7 +1116,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "mrna-translation",
     name: "mRNA Translation",
-    etymology: "messenger RNA",
+    etymology: "mRNA = messenger RNA + Latin transferre = carry across; code read into protein",
     aliases: [
       "mrna translation",
       "messenger rna translation",
@@ -1155,7 +1155,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "myometrium",
     name: "Myometrium",
-    etymology: "Abbreviation: Myometrium",
+    etymology: "Greek myos = muscle + metra = uterus",
     aliases: ["myometrium", "uterine myometrium", "uterine muscle"],
     definition:
       "Thick middle smooth muscle layer of the uterus between the inner endometrium and outer serosa (perimetrium); responsible for uterine contractions during menstruation, labor, and postpartum involution.",
@@ -1189,7 +1189,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "endometrium",
     name: "Endometrium",
-    etymology: "Abbreviation: Endometrium",
+    etymology: "Greek endon = within + metra = uterus",
     aliases: [
       "endometrium",
       "endometrial",
@@ -1233,7 +1233,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "cervical-os",
     name: "Cervical Os",
-    etymology: "Abbreviation: Cervical Os",
+    etymology: "Latin cervix = neck + Latin os = mouth/opening",
     aliases: [
       "cervical os",
       "cervical os uteri",
@@ -1279,7 +1279,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "mucosa",
     name: "Mucosa",
-    etymology: "Abbreviation: Mucosa",
+    etymology: "Latin mucus = slime + -osa = membrane",
     aliases: [
       "mucosa",
       "mucosal",
@@ -1321,7 +1321,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "lamina-propria",
     name: "Lamina Propria",
-    etymology: "From lamina propria",
+    etymology: "Latin lamina = thin plate + Latin proprius = own/proper",
     aliases: [
       "lamina propria",
       "lamina propria layer",
@@ -1362,7 +1362,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "serosa",
     name: "Serosa",
-    etymology: "Abbreviation: Serosa",
+    etymology: "Latin serum = watery fluid + -osa = membrane",
     aliases: [
       "serosa",
       "serosal",
@@ -1402,7 +1402,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "adventitia",
     name: "Adventitia",
-    etymology: "Abbreviation: Adventitia",
+    etymology: "Latin adventicius = coming from outside",
     aliases: [
       "adventitia",
       "adventitial",
@@ -1441,7 +1441,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "dermal-appendage",
     name: "Dermal Appendage",
-    etymology: "From dermal appendage",
+    etymology: "Greek derma = skin + Latin appendere = hang from",
     aliases: [
       "dermal appendage",
       "dermal appendages",
@@ -1486,7 +1486,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "actin",
     name: "Actin",
-    etymology: "Abbreviation: Actin",
+    etymology: "Greek aktis = ray; filament protein",
     aliases: [
       "actin",
       "actin filament",
@@ -1527,7 +1527,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "intermediate-filament",
     name: "Intermediate Filament",
-    etymology: "From intermediate filament",
+    etymology: "Latin intermedius = in the middle + Latin filum = thread",
     aliases: [
       "intermediate filament",
       "intermediate filaments",
@@ -1568,7 +1568,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "microtubule",
     name: "Microtubule",
-    etymology: "Abbreviation: Microtubule",
+    etymology: "Greek mikros = small + Latin tubulus = little tube",
     aliases: ["microtubule", "microtubules", "tubulin", "tubulin filament"],
     definition:
       "Hollow cylindrical polymers of α/β-tubulin dimers (~25 nm) — the largest cytoskeletal filaments; dynamic instability drives mitosis, intracellular transport, and ciliary/flagellar motility.",
@@ -1601,7 +1601,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "polymerization",
     name: "Polymerization",
-    etymology: "From polymerization",
+    etymology: "Greek poly = many + meros = part + -ization = process",
     aliases: [
       "polymerization",
       "polymerisation",
@@ -1642,7 +1642,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "a-delta-fiber",
     name: "A-delta fiber",
-    etymology: "From a-delta fiber",
+    etymology: "A-delta = myelinated pain fiber class + Latin fibra = thread",
     aliases: [
       "a-delta fiber",
       "a-delta fibers",
@@ -1686,7 +1686,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "golgi-tendon-organ",
     name: "Golgi tendon organ",
-    etymology: "Named for Camillo Golgi",
+    etymology: "eponym: Camillo Golgi + Latin tendere = stretch + Greek organon = tool/instrument",
     aliases: [
       "golgi tendon organ",
       "golgi tendon organs",
@@ -1725,7 +1725,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "siderophage",
     name: "Siderophage",
-    etymology: "Abbreviation: Siderophage",
+    etymology: "Greek sideros = iron + phagein = eat",
     aliases: [
       "siderophage",
       "siderophages",
@@ -1769,7 +1769,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "langerhans-cell",
     name: "Langerhans Cell",
-    etymology: "From langerhans cell",
+    etymology: "eponym: Paul Langerhans + small biological unit",
     aliases: [
       "langerhans cell",
       "langerhans cells",
@@ -1808,7 +1808,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "kupffer-cell",
     name: "Kupffer Cell",
-    etymology: "Abbreviation: Kupffer Cell",
+    etymology: "eponym: Karl Kupffer + small biological unit",
     aliases: [
       "kupffer cell",
       "kupffer cells",
@@ -1849,7 +1849,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "merkel-cell",
     name: "Merkel Cell",
-    etymology: "Abbreviation: Merkel Cell",
+    etymology: "eponym: Friedrich Merkel + small biological unit",
     aliases: [
       "merkel cell",
       "merkel cells",
@@ -1889,7 +1889,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "melanocyte",
     name: "Melanocyte",
-    etymology: "Greek -cyte (cell)",
+    etymology: "Greek melas = black + kytos = cell",
     aliases: [
       "melanocyte",
       "melanocytes",
@@ -1929,7 +1929,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "epithelioid-cell",
     name: "Epithelioid Cell",
-    etymology: "From epithelioid cell",
+    etymology: "Greek epi = upon + thele = nipple/surface + -oid = resembling + small biological unit",
     aliases: [
       "epithelioid",
       "epithelioid cell",
@@ -1975,7 +1975,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "myeloid-surface-markers",
     name: "Myeloid Surface Markers",
-    etymology: "From myeloid surface markers",
+    etymology: "Greek myelos = marrow + -oid = resembling + Latin superficies = outer face + marker = identifying sign",
     aliases: [
       "myeloid surface markers",
       "myeloid surface marker",
@@ -2027,7 +2027,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "langhans-giant-cell",
     name: "Langhans Giant Cell",
-    etymology: "From langhans giant cell",
+    etymology: "eponym: Theodor Langhans + Latin gigas = giant/large + small biological unit",
     aliases: [
       "langhans giant cell",
       "langhans giant cells",
@@ -2067,7 +2067,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "dendritic-cell",
     name: "Dendritic Cell",
-    etymology: "From dendritic cell",
+    etymology: "Greek dendron = tree/branching + small biological unit",
     aliases: [
       "dendritic cell",
       "dendritic cells",
@@ -2109,7 +2109,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "antigen-presenting-cell",
     name: "Antigen-Presenting Cell",
-    etymology: "anti- + Greek -gen (producer)",
+    etymology: "anti- = against + -gen = producer + presenting = showing + small biological unit",
     aliases: [
       "antigen-presenting cell",
       "antigen presenting cell",
@@ -2154,7 +2154,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "birbeck-granules",
     name: "Birbeck Granules",
-    etymology: "From birbeck granules",
+    etymology: "eponym: Michael Birbeck + Latin granulum = small grain",
     aliases: [
       "birbeck granules",
       "birbeck granule",
@@ -2191,7 +2191,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "melanosome",
     name: "Melanosome",
-    etymology: "Abbreviation: Melanosome",
+    etymology: "Greek melas = black + soma = body",
     aliases: [
       "melanosome",
       "melanosomes",
@@ -2230,7 +2230,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "keratinocyte",
     name: "Keratinocyte",
-    etymology: "Greek -cyte (cell)",
+    etymology: "Greek keras = horn + kytos = cell",
     aliases: [
       "keratinocyte",
       "keratinocytes",
@@ -2272,7 +2272,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "neural-crest",
     name: "Neural Crest",
-    etymology: "Abbreviation: Neural Crest",
+    etymology: "Greek neuron = nerve + Latin crista = ridge",
     aliases: [
       "neural crest",
       "neural crest cells",
@@ -2315,7 +2315,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "hepatic-sinusoids",
     name: "Hepatic Sinusoids",
-    etymology: "From hepatic sinusoids",
+    etymology: "Greek hepar = liver + Latin sinus = hollow curve + -oid = resembling",
     aliases: [
       "hepatic sinusoids",
       "hepatic sinusoid",
@@ -2359,7 +2359,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "stroma",
     name: "Stroma",
-    etymology: "Greek -oma (tumor/mass)",
+    etymology: "Greek stroma = bed/mattress",
     aliases: [
       "stroma",
       "stromal",
@@ -2402,7 +2402,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "hypothalamus",
     name: "Hypothalamus",
-    etymology: "Abbreviation: Hypothalamus",
+    etymology: "Greek hypo = below + thalamos = inner chamber",
     aliases: [
       "hypothalamus",
       "hypothalamic",
@@ -2450,7 +2450,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "mtdna",
     name: "mtDNA",
-    etymology: "Mitochondrial DNA",
+    etymology: "mtDNA = mitochondrial DNA",
     aliases: [
       "mtdna",
       "mt dna",
@@ -2499,7 +2499,7 @@ export const CELLS: CellEntry[] = [
   {
     id: "oxidative-phosphorylation",
     name: "Oxidative Phosphorylation",
-    etymology: "From oxidative phosphorylation",
+    etymology: "oxygen-driven + phosphorus group transfer process",
     aliases: [
       "oxidative phosphorylation",
       "oxidative phosphorylation pathway",

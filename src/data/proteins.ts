@@ -15,7 +15,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "beta-myosin-heavy-chain",
     name: "Beta-myosin heavy chain",
-    etymology: "Greek beta (second letter)",
+    etymology: "Greek beta = second letter + myos = muscle + heavy = larger chain + chain = linked polymer",
     aliases: [
       "beta-myosin heavy chain",
       "β-myosin heavy chain",
@@ -44,7 +44,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "myosin-binding-protein-c",
     name: "Myosin-binding protein C",
-    etymology: "Greek prōtos (first)",
+    etymology: "myosin = muscle motor protein + binding = attaching + Greek proteios = primary + -in protein suffix + C = Roman numeral subtype",
     aliases: ["myosin-binding protein c", "mybp-c", "mybpc3"],
     gene: "MYBPC3",
     location: "Cardiac sarcomere (C-zone of A band)",
@@ -65,7 +65,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "myosin",
     name: "Myosin",
-    etymology: "Abbreviation: Myosin",
+    etymology: "Greek myos = muscle + -in protein suffix",
     aliases: [
       "myosin",
       "myosins",
@@ -112,7 +112,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "cardiac-potassium-channel",
     name: "Cardiac potassium channel (hERG / KCNQ1)",
-    etymology: "Greek kardia (heart); English potash + -ium",
+    etymology: "Greek kardia = heart + English potash + -ium element suffix + channel = membrane pore + hERG = human ether-a-go-go-related gene + KCNQ1 = potassium channel gene Q1",
     aliases: [
       "herg channel",
       "hERG",
@@ -143,7 +143,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "dystrophin",
     name: "Dystrophin",
-    etymology: "Abbreviation: Dystrophin",
+    etymology: "Greek dys = abnormal + trophe = nourishment + -in protein",
     aliases: ["dystrophin"],
     gene: "DMD",
     location: "Sarcolemma of skeletal (and cardiac) muscle",
@@ -167,7 +167,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "fibrillin-1",
     name: "Fibrillin-1",
-    etymology: "Abbreviation: Fibrillin-1",
+    etymology: "Latin fibra = fiber + -in protein + 1 = subtype",
     aliases: ["fibrillin-1", "fibrillin 1"],
     gene: "FBN1",
     location: "Microfibrils in connective tissue (aorta, zonules, skin)",
@@ -190,7 +190,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "transthyretin",
     name: "Transthyretin",
-    etymology: "From transthyretin",
+    etymology: "trans = transports + thy = thyroxine + retin = retinol",
     aliases: ["transthyretin", "ttr", "prealbumin"],
     gene: "TTR",
     location: "Plasma (tetramer); also CSF",
@@ -214,7 +214,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "beta-globin",
     name: "Beta-globin",
-    etymology: "Greek beta (second letter)",
+    etymology: "Greek beta = second letter + Latin globus = sphere + -in protein",
     aliases: ["beta-globin", "β-globin", "hemoglobin beta chain"],
     gene: "HBB",
     location: "Erythrocyte hemoglobin tetramer (α₂β₂)",
@@ -238,7 +238,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "alpha-globin",
     name: "Alpha-globin",
-    etymology: "Greek alpha (first letter)",
+    etymology: "Greek alpha = first letter + Latin globus = sphere + -in protein",
     aliases: ["alpha-globin", "α-globin", "hemoglobin alpha chain"],
     gene: "HBA1 / HBA2",
     location: "Erythrocyte hemoglobin (α₂β₂, fetal α₂γ₂)",
@@ -262,7 +262,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "spectrin",
     name: "Spectrin",
-    etymology: "Abbreviation: Spectrin",
+    etymology: "spectrum = image/ghost + -in protein; RBC scaffold protein",
     aliases: ["spectrin", "ankyrin"],
     gene: "SPTA1, SPTB, ANK1 (and others)",
     location: "Red blood cell membrane cytoskeleton",
@@ -285,7 +285,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "g6pd",
     name: "G6PD",
-    etymology: "Abbreviation: G6PD",
+    etymology: "G6PD = glucose-6-phosphate dehydrogenase",
     aliases: ["g6pd", "glucose-6-phosphate dehydrogenase"],
     gene: "G6PD",
     location: "Red blood cell cytoplasm (pentose phosphate pathway)",
@@ -308,7 +308,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen",
     name: "Collagen",
-    etymology: "Greek kolla (glue) + -gen",
+    etymology: "Greek kolla = glue + -gen = producing",
     aliases: [
       "collagen",
       "collagens",
@@ -345,7 +345,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen-type-1",
     name: "Collagen type I",
-    etymology: "Greek kolla (glue) + -gen",
+    etymology: "Greek kolla = glue + -gen = producing + type I = first collagen subtype",
     aliases: [
       "collagen type i",
       "collagen type 1",
@@ -375,7 +375,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen-type-2",
     name: "Collagen type II",
-    etymology: "Greek kolla (glue) + -gen",
+    etymology: "Greek kolla = glue + -gen = producing + type II = second collagen subtype",
     aliases: [
       "collagen type ii",
       "collagen type 2",
@@ -413,7 +413,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen-type-3",
     name: "Collagen type III",
-    etymology: "Greek kolla (glue) + -gen",
+    etymology: "Greek kolla = glue + -gen = producing + type III = third collagen subtype",
     aliases: [
       "collagen type iii",
       "collagen type 3",
@@ -450,7 +450,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "collagen-type-4",
     name: "Collagen type IV",
-    etymology: "Greek kolla (glue) + -gen",
+    etymology: "Greek kolla = glue + -gen = producing + type IV = fourth collagen subtype",
     aliases: [
       "collagen type iv",
       "collagen type 4",
@@ -487,7 +487,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "elastin",
     name: "Elastin",
-    etymology: "Greek elastos (ductile)",
+    etymology: "Greek elastos = ductile/stretchable + -in protein",
     aliases: ["elastin"],
     gene: "ELN",
     location: "Arterial walls, lungs, ligaments",
@@ -509,7 +509,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "cftr",
     name: "CFTR",
-    etymology: "Abbreviation: CFTR",
+    etymology: "CFTR = cystic fibrosis transmembrane conductance regulator",
     aliases: [
       "cftr",
       "cystic fibrosis transmembrane conductance regulator",
@@ -535,7 +535,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "alpha-galactosidase-a",
     name: "Alpha-galactosidase A",
-    etymology: "Greek alpha (first letter)",
+    etymology: "Greek alpha = first letter + galactose = milk sugar + -ase = enzyme + A = enzyme subtype",
     aliases: ["alpha-galactosidase a", "α-galactosidase a"],
     gene: "GLA",
     location: "Lysosome",
@@ -558,7 +558,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "alpha-l-iduronidase",
     name: "Alpha-L-iduronidase",
-    etymology: "Greek alpha (first letter)",
+    etymology: "alpha-L = stereochemical form + iduronic acid + -ase enzyme",
     aliases: ["alpha-l-iduronidase", "α-l-iduronidase"],
     gene: "IDUA",
     location: "Lysosome",
@@ -582,7 +582,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "hexosaminidase-a",
     name: "Hexosaminidase A",
-    etymology: "From hexosaminidase a",
+    etymology: "hexosamine = six-carbon amino sugar + -ase = enzyme + A = enzyme subtype",
     aliases: ["hexosaminidase a", "hex-a"],
     gene: "HEXA",
     location: "Lysosome",
@@ -605,7 +605,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "glucocerebrosidase",
     name: "Glucocerebrosidase",
-    etymology: "From glucocerebrosidase",
+    etymology: "gluco = glucose + cerebroside lipid + -ase enzyme",
     aliases: ["glucocerebrosidase", "beta-glucocerebrosidase"],
     gene: "GBA",
     location: "Lysosome",
@@ -628,7 +628,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "sphingomyelinase",
     name: "Sphingomyelinase",
-    etymology: "From sphingomyelinase",
+    etymology: "sphinx-like lipid name + myelin + -ase enzyme",
     aliases: ["sphingomyelinase", "acid sphingomyelinase"],
     gene: "SMPD1",
     location: "Lysosome",
@@ -652,7 +652,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "phenylalanine-hydroxylase",
     name: "Phenylalanine hydroxylase",
-    etymology: "Greek phainein + alanin; hydroxy + -ase (enzyme)",
+    etymology: "phenyl = benzene ring + alanine amino acid + hydroxy = OH group + -ase enzyme",
     aliases: ["phenylalanine hydroxylase", "pah"],
     gene: "PAH",
     location: "Hepatocyte cytoplasm",
@@ -675,7 +675,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "ornithine-transcarbamylase",
     name: "Ornithine transcarbamylase",
-    etymology: "From ornithine transcarbamylase",
+    etymology: "Greek ornis = bird; amino acid from urea cycle + trans = across + carbamyl group + -ase enzyme",
     aliases: ["ornithine transcarbamylase", "otc"],
     gene: "OTC",
     location: "Mitochondrial matrix (hepatocytes)",
@@ -698,7 +698,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "factor-viii",
     name: "Factor VIII",
-    etymology: "Abbreviation: Factor VIII",
+    etymology: "Latin facere = do/make; causal agent + VIII = Roman numeral subtype",
     aliases: ["factor viii", "factor 8", "antihemophilic factor"],
     gene: "F8",
     location: "Plasma (synthesized by liver/endothelium)",
@@ -721,7 +721,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "factor-ix",
     name: "Factor IX",
-    etymology: "Abbreviation: Factor IX",
+    etymology: "Latin facere = do/make; causal agent + IX = Roman numeral subtype",
     aliases: ["factor ix", "factor 9", "christmas factor"],
     gene: "F9",
     location: "Plasma (liver-synthesized, vitamin K-dependent)",
@@ -744,7 +744,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "factor-x",
     name: "Factor X",
-    etymology: "Abbreviation: Factor X",
+    etymology: "Latin facere = do/make; causal agent + X = Roman numeral subtype",
     aliases: [
       "factor x",
       "factor 10",
@@ -774,7 +774,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "protein-c",
     name: "Protein C",
-    etymology: "Greek prōtos (first)",
+    etymology: "Greek proteios = primary + -in protein suffix + C = Roman numeral subtype",
     aliases: ["protein c"],
     gene: "PROC",
     location: "Plasma (vitamin K-dependent zymogen)",
@@ -798,7 +798,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "protein-s",
     name: "Protein S",
-    etymology: "Greek prōtos (first)",
+    etymology: "Greek proteios = primary + -in = protein + S = Seattle-named anticoagulant protein",
     aliases: ["protein s"],
     gene: "PROS1",
     location: "Plasma (vitamin K-dependent cofactor)",
@@ -821,7 +821,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "antithrombin",
     name: "Antithrombin III",
-    etymology: "From antithrombin iii",
+    etymology: "anti- = against + thrombin = clotting enzyme + III = three",
     aliases: [
       "antithrombin",
       "antithrombin iii",
@@ -852,7 +852,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "phospholipase-a2",
     name: "Phospholipase A₂",
-    etymology: "From phospholipase a",
+    etymology: "phospholipid + -ase enzyme + A2 = second A subtype",
     aliases: [
       "phospholipase a2",
       "phospholipase a₂",
@@ -885,7 +885,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "cyclooxygenase",
     name: "Cyclooxygenase (COX)",
-    etymology: "From cyclooxygenase cox",
+    etymology: "cyclo = ring + oxygen + -ase enzyme + COX = cyclooxygenase",
     aliases: [
       "cox",
       "cyclooxygenase",
@@ -920,7 +920,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "aromatase",
     name: "Aromatase",
-    etymology: "Abbreviation: Aromatase",
+    etymology: "aromatic ring-forming + -ase enzyme",
     aliases: [
       "aromatase",
       "aromatase enzyme",
@@ -960,7 +960,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "cytochrome-p450",
     name: "Cytochrome P-450",
-    etymology: "From cytochrome p-450",
+    etymology: "Greek kytos = cell + chroma = color + P450 = pigment absorbing at 450 nm",
     aliases: [
       "cytochrome p-450",
       "cytochrome p450",
@@ -1001,7 +1001,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "huntingtin",
     name: "Huntingtin",
-    etymology: "Abbreviation: Huntingtin",
+    etymology: "Huntington disease protein name + -in protein suffix",
     aliases: ["huntingtin", "htt"],
     gene: "HTT",
     location: "Widely expressed; enriched in CNS neurons and striatum",
@@ -1024,7 +1024,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "prion-protein",
     name: "Prion protein",
-    etymology: "Greek prōtos (first)",
+    etymology: "proteinaceous infectious particle + Greek proteios = primary + -in protein suffix",
     aliases: ["prion protein", "prp", "prpc"],
     gene: "PRNP",
     location: "Neuronal membrane (normal PrP^C)",
@@ -1048,7 +1048,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "hoxd13",
     name: "HOXD13",
-    etymology: "Abbreviation: HOXD13",
+    etymology: "HOXD13 = homeobox D cluster gene 13",
     aliases: ["hoxd13", "hox d13", "hox-d13"],
     gene: "HOXD13",
     location: "HOX gene cluster on chromosome 2q31; expressed in developing distal limbs and urogenital tract",
@@ -1075,7 +1075,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "homeobox-hox-gene",
     name: "Homeobox (HOX) gene",
-    etymology: "Abbreviation: Homeobox",
+    etymology: "homeo = similar + box = conserved DNA sequence + HOX = homeobox gene cluster",
     aliases: [
       "homeobox (hox) gene",
       "homeobox gene",
@@ -1110,7 +1110,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "connexin",
     name: "Connexin",
-    etymology: "Abbreviation: Connexin",
+    etymology: "Latin connectere = join + -in protein",
     aliases: [
       "connexin",
       "connexins",
@@ -1143,7 +1143,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "calcineurin",
     name: "Calcineurin",
-    etymology: "Abbreviation: Calcineurin",
+    etymology: "calci- = calcium + neurin = nerve protein name",
     aliases: [
       "calcineurin",
       "protein phosphatase 2b",
@@ -1175,7 +1175,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "mhc-class-ii",
     name: "MHC Class II",
-    etymology: "major histocompatibility complex",
+    etymology: "MHC = major histocompatibility complex + class = category + II = Roman numeral subtype",
     aliases: [
       "mhc class ii",
       "mhc class 2",
@@ -1217,7 +1217,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "b7-molecules",
     name: "B7 Molecules",
-    etymology: "Abbreviation: B7 Molecules",
+    etymology: "B7 = B-cell costimulatory family + molecule = small biological unit",
     aliases: [
       "b7",
       "b7 molecules",
@@ -1256,7 +1256,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "toll-like-receptor",
     name: "Toll-Like Receptor",
-    etymology: "German toll (strange/wonderful) + -like + receptor",
+    etymology: "German toll = strange/wonderful + like = resembling + Latin recipere = receive",
     aliases: [
       "toll-like receptor",
       "toll like receptor",
@@ -1308,7 +1308,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "sex-hormone-binding-globulin",
     name: "Sex Hormone–Binding Globulin",
-    etymology: "Greek hormaein (to excite); Latin globus (sphere)",
+    etymology: "Latin sexus = biological sex + hormone = signaling molecule + binding = attaching + globulin = spherical protein",
     aliases: [
       "sex-hormone binding globulin",
       "sex hormone binding globulin",
@@ -1347,7 +1347,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "antibody-fc-region",
     name: "Fc Region",
-    etymology: "Abbreviation: Fc Region",
+    etymology: "Fc = fragment crystallizable + Latin regio = area",
     aliases: [
       "fc region",
       "fc fragment",
@@ -1393,7 +1393,7 @@ export const PROTEINS: ProteinEntry[] = [
   {
     id: "complement-c3",
     name: "Complement C3",
-    etymology: "Latin complementum (that which completes)",
+    etymology: "Latin complementum = that which completes + C3 = third complement component",
     aliases: [
       "c3",
       "complement c3",
