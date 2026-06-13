@@ -14,6 +14,7 @@ import {
   normalizedWordKey,
   type MatchValidationContext,
 } from "./termMatcher";
+import type { ChipPopoverTarget } from "./popoverLoader";
 import type { TermKind, TermMatch } from "./termTypes";
 
 const ORGAN_CHIP_CLASS = "usmle-organ-chip";
@@ -276,6 +277,20 @@ function recordHighlight(term: TermMatch, _matchText: string, zone: number): voi
   for (const alias of getAliasesForTerm(term)) {
     highlightedWordsOnQuestion.add(alias);
   }
+}
+
+function termMatchFromPopoverTarget(target: ChipPopoverTarget): TermMatch {
+  const key = `${target.kind}:${target.id.toLowerCase()}`;
+  const aliases = ALIASES_BY_TERM_KEY[key];
+  return {
+    kind: target.kind as TermKind,
+    id: target.id,
+    alias: aliases?.[0] ?? target.id,
+  };
+}
+
+function excludePopoverOwnTerm(target: ChipPopoverTarget, zone: number): void {
+  recordHighlight(termMatchFromPopoverTarget(target), "", zone);
 }
 
 function getScanAreas(): Element[] {
@@ -715,7 +730,10 @@ export function scanRoot(root: Node): void {
   }
 }
 
-export function schedulePopoverRootScan(popover: Element): void {
+export function schedulePopoverRootScan(
+  popover: Element,
+  target: ChipPopoverTarget,
+): void {
   const idle =
     window.requestIdleCallback ??
     ((cb: IdleRequestCallback) =>
@@ -725,11 +743,14 @@ export function schedulePopoverRootScan(popover: Element): void {
       ));
   idle(() => {
     if (!popover.isConnected) return;
-    scanPopoverRoot(popover);
+    scanPopoverRoot(popover, target);
   });
 }
 
-export function scanPopoverRoot(popover: Element): void {
+export function scanPopoverRoot(
+  popover: Element,
+  target: ChipPopoverTarget,
+): void {
   if (!popover.isConnected) return;
 
   const previousHighlightedOnQuestion = highlightedOnQuestion;
@@ -741,6 +762,7 @@ export function scanPopoverRoot(popover: Element): void {
   highlightedWordsOnQuestion = new Set();
   highlightedTermZone = new Map();
   allowPopoverScan = true;
+  excludePopoverOwnTerm(target, SCAN_ZONE.OTHER);
   for (const coalesceRoot of collectCoalesceRoots(popover)) {
     highlightCoalescedRoot(coalesceRoot, SCAN_ZONE.OTHER);
   }

@@ -255,7 +255,8 @@ async function showPopover(chip: HTMLElement): Promise<void> {
   repositionPopoverStackFrom(popoverStack.length - 1);
   bindPopoverImageReposition(entry, popover);
   playPopoverAudio(popover);
-  schedulePopoverRootScan(popover);
+  const scanTarget = getChipPopoverTarget(chip);
+  if (scanTarget) schedulePopoverRootScan(popover, scanTarget);
 }
 
 export function startPopoverController(): void {
