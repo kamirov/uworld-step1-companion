@@ -30,7 +30,7 @@ Where relevant, include a note on pediatrics, e.g. how something changes if the 
 
 ## Media
 
-Do not add any media for new data. Our network currently does not support media fetches, so just focus on the content for now
+For each new data item, attach a media item to it. This could be an image, a video, a gif, audio, etc. Follow the format used by the other data items.
 
 ## Attributions
 
