@@ -71,3 +71,102 @@ immunosuppression.svg
 Created locally
 Reference: https://en.wikipedia.org/wiki/Immunosuppression
 Description: Reduced immune cell activation from immunosuppressive drugs
+
+chromaffin-cell.jpg
+https://commons.wikimedia.org/wiki/File:Adrenal_gland_(medulla).JPG
+Jpogi, public domain
+Description: Human adrenal medulla micrograph showing chromaffin-cell-rich medullary tissue
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Adrenal_gland_(medulla).JPG?width=1280
+
+preganglionic-neuron.png
+https://commons.wikimedia.org/wiki/File:Gray839.png
+Henry Vandyke Carter / Gray's Anatomy, public domain
+Description: Efferent sympathetic and parasympathetic autonomic pathways showing preganglionic projections
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray839.png
+
+detrusor-muscle.jpg
+https://commons.wikimedia.org/wiki/File:Illu_bladder.jpg
+U.S. National Cancer Institute SEER Program, public domain
+Description: Urinary bladder diagram labeling detrusor muscle in the bladder wall
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Illu_bladder.jpg
+
+pancreatic-beta-cell.jpg
+https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg
+Afferent, CC BY-SA 3.0
+Description: Human pancreatic islet double immunostain; blue marks insulin-positive beta cells, red marks glucagon-positive alpha cells
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Human_pancreatic_islet.jpg?width=1280
+
+podocyte.gif
+https://commons.wikimedia.org/wiki/File:Glomerulum_of_mouse_kidney_in_Scanning_Electron_Microscope,_magnification_5,000x.GIF
+SecretDisc, CC BY-SA 3.0 / GFDL
+Description: Scanning electron micrograph of glomerulus with podocyte foot processes
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Glomerulum_of_mouse_kidney_in_Scanning_Electron_Microscope,_magnification_5,000x.GIF?width=1280
+
+renal-corpuscle.svg
+https://commons.wikimedia.org/wiki/File:Renal_corpuscle-en.svg
+Shypoetess, CC BY-SA 4.0
+Description: Renal corpuscle diagram used for juxtaglomerular and intraglomerular mesangial cell entries
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Renal_corpuscle-en.svg
+
+signet-ring-cells.jpg
+https://commons.wikimedia.org/wiki/File:Gastric_signet_ring_cell_carcinoma_histopatholgy_(1).jpg
+KGH, CC BY-SA 3.0 / GFDL
+Description: Gastric adenocarcinoma signet-ring cell variant on H&E stain
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gastric_signet_ring_cell_carcinoma_histopatholgy_(1).jpg
+
+stem-cell.png
+https://commons.wikimedia.org/wiki/File:Stem_cells_diagram.png
+Mike Jones, CC BY-SA 2.5
+Description: Stem cell potency diagram showing totipotent, pluripotent, and differentiated derivatives
+Download: https://commons.wikimedia.org/wiki/Special:FilePath/Stem_cells_diagram.png?width=1280
+
+helper-t-cell-differentiation.png
+https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png
+סתו כסלו, CC BY-SA 4.0
+Description: CD4+ T-helper differentiation pathways used for activated macrophage and naive Th0 cell entries
+Download: https://commons.wikimedia.org/wiki/Special:Redirect/file/Helper_T_Cell_Differentiation.png
+
+core-promoter-elements.svg
+https://commons.wikimedia.org/wiki/File:Core_promoter_elements.svg
+Leonid 2 / Butler and Kadonaga-derived diagram, public domain or CC BY-SA 3.0/GFDL option
+Description: Core promoter elements showing BRE, TATA box, initiator, and downstream promoter element
+Download: https://commons.wikimedia.org/wiki/Special:Redirect/file/Core_promoter_elements.svg
+
+protein-kinase-phosphoryl-transfer.png
+https://commons.wikimedia.org/wiki/File:Protein_Kinase_Phosphoryl_transfer.png
+Aaryakat, CC BY 4.0
+Description: General protein kinase phosphoryl transfer from ATP to substrate
+Download: https://commons.wikimedia.org/wiki/Special:Redirect/file/Protein_Kinase_Phosphoryl_transfer.png
+
+hepatic-structure.svg
+https://commons.wikimedia.org/wiki/File:Hepatic_structure2.svg
+Frevert U, Engelmann S, Zougbede S, Stange J, Ng B, et al.; SVG conversion by Viacheslav Vtyurin, CC BY 2.5
+Description: Liver lobule diagram showing hepatocytes as organ parenchyma arranged around sinusoids
+Download: https://commons.wikimedia.org/wiki/Special:Redirect/file/Hepatic_structure2.svg
+
+intestinal-l-cell.png
+https://commons.wikimedia.org/wiki/File:Celula_L_Localizacion.png
+Bohorquez DV, Samsa LA, Roholt A, Medicetty S, Chandra R, Liddle RA, CC BY 4.0
+Description: Confocal ileum image showing PYY-GFP enteroendocrine L cells in green
+Download: https://commons.wikimedia.org/wiki/Special:Redirect/file/Celula_L_Localizacion.png
+
+extracellular-matrix-labeled.png
+https://commons.wikimedia.org/wiki/File:Extracellular_Matrix_v1.001-labeled.png
+Sagearbor, CC BY-SA 4.0
+Description: Loose connective tissue diagram labeling fibroblasts in extracellular matrix
+Download: https://commons.wikimedia.org/wiki/Special:Redirect/file/Extracellular_Matrix_v1.001-labeled.png
+
+epithelial-polarity.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Epithelial_polarity
+Description: Polarized epithelial cell diagram showing apical and basolateral membrane domains
+
+metanephric-blastema.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Kidney_development
+Description: Kidney development schematic showing metanephric blastema and ureteric bud derivatives
+
+clear-cytoplasm.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Clear-cell_carcinoma
+Description: Schematic clear cell morphology showing optically clear cytoplasm after lipid/glycogen processing

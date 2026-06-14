@@ -7,6 +7,7 @@ import acuteCholangitis from "../media/images/conditions/acute-cholangitis.svg?u
 import addisonDisease from "../media/images/conditions/addison-disease.jpg?url";
 import allergicContactDermatitis from "../media/images/conditions/allergic-contact-dermatitis.jpg?url";
 import amenorrhea from "../media/images/conditions/amenorrhea.jpg?url";
+import anaphylaxis from "../media/images/conditions/anaphylaxis.svg?url";
 import aphthousUlcer from "../media/images/conditions/aphthous-ulcer.jpg?url";
 import aml from "../media/images/conditions/aml.jpg?url";
 import ankylosingSpondylitis from "../media/images/conditions/ankylosing-spondylitis.jpg?url";
@@ -40,6 +41,8 @@ import dengueRecoveryRash from "../media/images/conditions/dengue-recovery-rash.
 import dentalCaries from "../media/images/conditions/dental-caries.jpg?url";
 import dihydrorhodamineFlowCytometry from "../media/images/lab-values/dihydrorhodamine-flow-cytometry.svg?url";
 import diabeticKetoacidosis from "../media/images/conditions/diabetic-ketoacidosis.jpg?url";
+import diabeticNephropathy from "../media/images/conditions/diabetic-nephropathy.jpg?url";
+import diabeticRetinopathy from "../media/images/conditions/diabetic-retinopathy.png?url";
 import dilatedCardiomyopathy from "../media/images/conditions/dilated-cardiomyopathy.jpg?url";
 import diverticulitis from "../media/images/conditions/diverticulitis.jpg?url";
 import dysmenorrhea from "../media/images/conditions/dysmenorrhea.jpg?url";
@@ -62,8 +65,11 @@ import heartFailure from "../media/images/conditions/heart-failure.jpg?url";
 import hemothorax from "../media/images/conditions/hemothorax.png?url";
 import hivInfection from "../media/images/conditions/hiv-infection.jpg?url";
 import hodgkinLymphoma from "../media/images/conditions/hodgkin-lymphoma.jpg?url";
+import howellJollyBody from "../media/images/conditions/howell-jolly-body.png?url";
 import hyperIgeSyndrome from "../media/images/conditions/hyper-ige-syndrome.jpg?url";
 import hyperlipidemia from "../media/images/conditions/hyperlipidemia.jpg?url";
+import hyperosmolarHyperglycemicState from "../media/images/conditions/hyperosmolar-hyperglycemic-state.svg?url";
+import hyperparathyroidism from "../media/images/conditions/hyperparathyroidism.jpg?url";
 import hyperprolactinemia from "../media/images/conditions/hyperprolactinemia.jpg?url";
 import hypertension from "../media/images/conditions/hypertension.jpg?url";
 import hypertrophicCardiomyopathy from "../media/images/conditions/hypertrophic-cardiomyopathy.jpg?url";
@@ -87,6 +93,7 @@ import mastocytosis from "../media/images/conditions/mastocytosis.jpg?url";
 import meckelDiverticulum from "../media/images/conditions/meckel-diverticulum.jpg?url";
 import meningesDiagram from "../media/images/conditions/meninges-diagram.svg?url";
 import menopause from "../media/images/conditions/menopause.svg?url";
+import medullaryThyroidCarcinoma from "../media/images/conditions/medullary-thyroid-carcinoma.jpg?url";
 import merkelCellCarcinoma from "../media/images/conditions/merkel-cell-carcinoma.jpg?url";
 import molarPregnancyUltrasound from "../media/images/conditions/molar-pregnancy-ultrasound.jpg?url";
 import multipleSclerosis from "../media/images/conditions/multiple-sclerosis.jpg?url";
@@ -107,11 +114,13 @@ import pemphigusVulgaris from "../media/images/conditions/pemphigus-vulgaris.jpg
 import pepticUlcerDisease from "../media/images/conditions/peptic-ulcer-disease.jpg?url";
 import pericarditis from "../media/images/conditions/pericarditis.jpg?url";
 import peripheralArteryDisease from "../media/images/conditions/peripheral-artery-disease.jpg?url";
+import pheochromocytoma from "../media/images/conditions/pheochromocytoma.jpg?url";
 import pneumoconiosis from "../media/images/conditions/pneumoconiosis.jpg?url";
 import pneumonia from "../media/images/conditions/pneumonia.jpg?url";
 import pressureUlcer from "../media/images/conditions/pressure-ulcer.jpg?url";
 import primaryBiliaryCholangitis from "../media/images/conditions/primary-biliary-cholangitis.jpg?url";
 import primaryBrainTumor from "../media/images/conditions/primary-brain-tumor.png?url";
+import primaryHyperparathyroidism from "../media/images/conditions/primary-hyperparathyroidism.png?url";
 import primarySclerosingCholangitis from "../media/images/conditions/primary-sclerosing-cholangitis.jpg?url";
 import prolactinoma from "../media/images/conditions/prolactinoma.jpg?url";
 import psoriasis from "../media/images/conditions/psoriasis.jpg?url";
@@ -148,6 +157,7 @@ import urinaryTractInfection from "../media/images/conditions/urinary-tract-infe
 import uterineFibroids from "../media/images/conditions/uterine-fibroids.png?url";
 import valvularHeartDisease from "../media/images/conditions/valvular-heart-disease.jpg?url";
 import vasculitis from "../media/images/conditions/vasculitis.jpg?url";
+import venousThrombosis from "../media/images/conditions/venous-thrombosis.png?url";
 import venousStasisDermatitis from "../media/images/conditions/venous-stasis-dermatitis.png?url";
 import ventricularSeptalDefect from "../media/images/conditions/ventricular-septal-defect.svg?url";
 import wilsonDisease from "../media/images/conditions/wilson-disease.jpg?url";
@@ -164,6 +174,7 @@ export type ConditionImageId = Extract<
   | "addison-disease"
   | "allergic-contact-dermatitis"
   | "amenorrhea"
+  | "anaphylaxis"
   | "aphthous-ulcer"
   | "aml"
   | "ankylosing-spondylitis"
@@ -197,6 +208,8 @@ export type ConditionImageId = Extract<
   | "dengue-fever"
   | "dental-caries"
   | "diabetic-ketoacidosis"
+  | "diabetic-nephropathy"
+  | "diabetic-retinopathy"
   | "dilated-cardiomyopathy"
   | "diverticulitis"
   | "dysmenorrhea"
@@ -219,8 +232,11 @@ export type ConditionImageId = Extract<
   | "hemothorax"
   | "hiv-infection"
   | "hodgkin-lymphoma"
+  | "asplenic-sepsis"
   | "hyper-ige-syndrome"
   | "hyperlipidemia"
+  | "hyperosmolar-hyperglycemic-state"
+  | "hyperparathyroidism"
   | "hyperprolactinemia"
   | "hypertension"
   | "hypertrophic-cardiomyopathy"
@@ -244,6 +260,7 @@ export type ConditionImageId = Extract<
   | "meckel-diverticulum"
   | "meningitis"
   | "menopause"
+  | "medullary-thyroid-carcinoma"
   | "merkel-cell-carcinoma"
   | "hydatidiform-mole"
   | "multiple-sclerosis"
@@ -264,11 +281,13 @@ export type ConditionImageId = Extract<
   | "peptic-ulcer-disease"
   | "pericarditis"
   | "peripheral-artery-disease"
+  | "pheochromocytoma"
   | "pneumoconiosis"
   | "pneumonia"
   | "pressure-ulcer"
   | "primary-biliary-cholangitis"
   | "primary-brain-tumor"
+  | "primary-hyperparathyroidism"
   | "primary-sclerosing-cholangitis"
   | "prolactinoma"
   | "psoriasis"
@@ -305,6 +324,7 @@ export type ConditionImageId = Extract<
   | "uterine-fibroid"
   | "valvular-heart-disease"
   | "vasculitis"
+  | "venous-thrombosis"
   | "venous-stasis-dermatitis"
   | "ventricular-septal-defect"
   | "wilson-disease"
@@ -326,6 +346,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "addison-disease": extensionAssetUrl(addisonDisease),
   "allergic-contact-dermatitis": extensionAssetUrl(allergicContactDermatitis),
   "amenorrhea": extensionAssetUrl(amenorrhea),
+  "anaphylaxis": extensionAssetUrl(anaphylaxis),
   "aphthous-ulcer": extensionAssetUrl(aphthousUlcer),
   "aml": extensionAssetUrl(aml),
   "ankylosing-spondylitis": extensionAssetUrl(ankylosingSpondylitis),
@@ -359,6 +380,8 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "dengue-fever": extensionAssetUrl(dengueRecoveryRash),
   "dental-caries": extensionAssetUrl(dentalCaries),
   "diabetic-ketoacidosis": extensionAssetUrl(diabeticKetoacidosis),
+  "diabetic-nephropathy": extensionAssetUrl(diabeticNephropathy),
+  "diabetic-retinopathy": extensionAssetUrl(diabeticRetinopathy),
   "dilated-cardiomyopathy": extensionAssetUrl(dilatedCardiomyopathy),
   "diverticulitis": extensionAssetUrl(diverticulitis),
   "dysmenorrhea": extensionAssetUrl(dysmenorrhea),
@@ -381,8 +404,11 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hemothorax": extensionAssetUrl(hemothorax),
   "hiv-infection": extensionAssetUrl(hivInfection),
   "hodgkin-lymphoma": extensionAssetUrl(hodgkinLymphoma),
+  "asplenic-sepsis": extensionAssetUrl(howellJollyBody),
   "hyper-ige-syndrome": extensionAssetUrl(hyperIgeSyndrome),
   "hyperlipidemia": extensionAssetUrl(hyperlipidemia),
+  "hyperosmolar-hyperglycemic-state": extensionAssetUrl(hyperosmolarHyperglycemicState),
+  "hyperparathyroidism": extensionAssetUrl(hyperparathyroidism),
   "hyperprolactinemia": extensionAssetUrl(hyperprolactinemia),
   "hypertension": extensionAssetUrl(hypertension),
   "hypertrophic-cardiomyopathy": extensionAssetUrl(hypertrophicCardiomyopathy),
@@ -406,6 +432,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "meckel-diverticulum": extensionAssetUrl(meckelDiverticulum),
   "meningitis": extensionAssetUrl(meningesDiagram),
   "menopause": extensionAssetUrl(menopause),
+  "medullary-thyroid-carcinoma": extensionAssetUrl(medullaryThyroidCarcinoma),
   "merkel-cell-carcinoma": extensionAssetUrl(merkelCellCarcinoma),
   "hydatidiform-mole": extensionAssetUrl(molarPregnancyUltrasound),
   "multiple-sclerosis": extensionAssetUrl(multipleSclerosis),
@@ -426,11 +453,13 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "peptic-ulcer-disease": extensionAssetUrl(pepticUlcerDisease),
   "pericarditis": extensionAssetUrl(pericarditis),
   "peripheral-artery-disease": extensionAssetUrl(peripheralArteryDisease),
+  "pheochromocytoma": extensionAssetUrl(pheochromocytoma),
   "pneumoconiosis": extensionAssetUrl(pneumoconiosis),
   "pneumonia": extensionAssetUrl(pneumonia),
   "pressure-ulcer": extensionAssetUrl(pressureUlcer),
   "primary-biliary-cholangitis": extensionAssetUrl(primaryBiliaryCholangitis),
   "primary-brain-tumor": extensionAssetUrl(primaryBrainTumor),
+  "primary-hyperparathyroidism": extensionAssetUrl(primaryHyperparathyroidism),
   "primary-sclerosing-cholangitis": extensionAssetUrl(primarySclerosingCholangitis),
   "prolactinoma": extensionAssetUrl(prolactinoma),
   "psoriasis": extensionAssetUrl(psoriasis),
@@ -467,6 +496,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "uterine-fibroid": extensionAssetUrl(uterineFibroids),
   "valvular-heart-disease": extensionAssetUrl(valvularHeartDisease),
   "vasculitis": extensionAssetUrl(vasculitis),
+  "venous-thrombosis": extensionAssetUrl(venousThrombosis),
   "venous-stasis-dermatitis": extensionAssetUrl(venousStasisDermatitis),
   "ventricular-septal-defect": extensionAssetUrl(ventricularSeptalDefect),
   "wilson-disease": extensionAssetUrl(wilsonDisease),

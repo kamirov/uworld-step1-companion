@@ -8,6 +8,7 @@ import fontanelle from "../media/images/musculoskeletal/fontanelle.png?url";
 import humerus from "../media/images/musculoskeletal/humerus.jpg?url";
 import infraspinatus from "../media/images/musculoskeletal/infraspinatus.png?url";
 import interphalangealJoint from "../media/images/musculoskeletal/interphalangeal-joint.jpg?url";
+import l1L2SpinalLevel from "../media/images/musculoskeletal/l1-l2-spinal-level.png?url";
 import metacarpophalangealJoint from "../media/images/musculoskeletal/metacarpophalangeal-joint.jpg?url";
 import pelvicFloor from "../media/images/musculoskeletal/pelvic-floor.png?url";
 import rotatorCuff from "../media/images/musculoskeletal/rotator-cuff.svg?url";
@@ -28,6 +29,7 @@ export type MUSCULOSKELETALImageId = Extract<
   | "humerus"
   | "infraspinatus"
   | "interphalangeal-joint"
+  | "l1-l2-spinal-level"
   | "metacarpophalangeal-joint"
   | "pelvic-floor"
   | "rotator-cuff"
@@ -53,6 +55,7 @@ export const MUSCULOSKELETAL_IMAGES: Partial<Record<MUSCULOSKELETALImageId, stri
   "humerus": extensionAssetUrl(humerus),
   "infraspinatus": extensionAssetUrl(infraspinatus),
   "interphalangeal-joint": extensionAssetUrl(interphalangealJoint),
+  "l1-l2-spinal-level": extensionAssetUrl(l1L2SpinalLevel),
   "metacarpophalangeal-joint": extensionAssetUrl(metacarpophalangealJoint),
   "pelvic-floor": extensionAssetUrl(pelvicFloor),
   "rotator-cuff": extensionAssetUrl(rotatorCuff),
@@ -75,6 +78,7 @@ export const MUSCULOSKELETAL_IMAGE_ATTRIBUTIONS: Partial<
   "humerus": { label: "Wikimedia Commons (Right humerus, anterior aspect.jpg)", url: "https://commons.wikimedia.org/wiki/File:Right_humerus,_anterior_aspect.jpg" },
   "infraspinatus": { label: "Wikimedia Commons (Gray — musculus infraspinatus.png)", url: "https://commons.wikimedia.org/wiki/File:Gray_—_musculus_infraspinatus.png" },
   "interphalangeal-joint": { label: "Wikimedia Commons (DIP, PIP and MCP joints of hand.jpg)", url: "https://commons.wikimedia.org/wiki/File:DIP,_PIP_and_MCP_joints_of_hand.jpg" },
+  "l1-l2-spinal-level": { label: "Wikimedia Commons (Gray's Anatomy plate 662)", url: "https://commons.wikimedia.org/wiki/File:Gray662.png" },
   "metacarpophalangeal-joint": { label: "Wikimedia Commons (DIP, PIP and MCP joints of hand.jpg)", url: "https://commons.wikimedia.org/wiki/File:DIP,_PIP_and_MCP_joints_of_hand.jpg" },
   "pelvic-floor": { label: "Wikimedia Commons (Gray's Anatomy plate 404)", url: "https://commons.wikimedia.org/wiki/File:Gray404.png" },
   "rotator-cuff": { label: "Wikimedia Commons (Rotator cuff injury.svg)", url: "https://commons.wikimedia.org/wiki/File:Rotator_cuff_injury.svg" },
@@ -95,6 +99,7 @@ export const MUSCULOSKELETAL_IMAGE_CAPTIONS: Partial<Record<MUSCULOSKELETALImage
   "humerus": "Clinical or pathologic image illustrating humerus",
   "infraspinatus": "Clinical or pathologic image illustrating infraspinatus",
   "interphalangeal-joint": "Clinical or pathologic image illustrating interphalangeal joint",
+  "l1-l2-spinal-level": "Gray's Anatomy conus medullaris/cauda equina diagram; adult spinal cord ends near L1-L2",
   "metacarpophalangeal-joint": "Clinical or pathologic image illustrating metacarpophalangeal joint",
   "pelvic-floor": "Internal view of levator ani, the major muscular support of the pelvic floor",
   "rotator-cuff": "Clinical or pathologic image illustrating rotator cuff",

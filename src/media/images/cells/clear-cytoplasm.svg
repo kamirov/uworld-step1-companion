@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Abundant clear cytoplasm in clear cell morphology</title>
+  <desc id="desc">Schematic histology-style image of clear cells with optically empty cytoplasm and delicate intervening capillaries.</desc>
+  <rect width="900" height="560" fill="#fff7ed"/>
+  <text x="450" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#7f1d1d">clear cell morphology</text>
+  <g stroke="#be123c" stroke-width="5">
+    <path d="M130 175 C235 120 330 155 383 240 C314 298 202 301 124 245 C101 226 102 190 130 175z" fill="#fee2e2"/>
+    <path d="M430 150 C535 95 660 138 710 235 C642 306 523 309 438 245 C405 220 399 170 430 150z" fill="#fee2e2"/>
+    <path d="M235 330 C336 282 460 319 505 417 C440 486 315 483 236 419 C202 391 203 346 235 330z" fill="#fee2e2"/>
+    <path d="M545 330 C640 285 750 312 793 393 C736 460 626 470 550 415 C514 389 512 346 545 330z" fill="#fee2e2"/>
+  </g>
+  <g fill="#f8fafc" stroke="#fb7185" stroke-width="4">
+    <ellipse cx="242" cy="219" rx="48" ry="34"/>
+    <ellipse cx="534" cy="210" rx="55" ry="38"/>
+    <ellipse cx="363" cy="390" rx="52" ry="35"/>
+    <ellipse cx="655" cy="388" rx="50" ry="34"/>
+  </g>
+  <g fill="#6b21a8">
+    <ellipse cx="318" cy="238" rx="22" ry="17"/>
+    <ellipse cx="626" cy="237" rx="24" ry="18"/>
+    <ellipse cx="444" cy="418" rx="21" ry="16"/>
+    <ellipse cx="739" cy="407" rx="21" ry="16"/>
+  </g>
+  <g fill="none" stroke="#dc2626" stroke-width="9" stroke-linecap="round" opacity=".82">
+    <path d="M105 305 C205 278 315 281 425 307"/>
+    <path d="M480 305 C574 279 704 280 812 309"/>
+    <path d="M400 140 C395 244 390 329 395 460"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="23" fill="#334155">
+    <text x="450" y="498" text-anchor="middle">lipid/glycogen dissolve during processing, leaving optically clear cytoplasm</text>
+  </g>
+</svg>

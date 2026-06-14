@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Polarized epithelial cell membrane domains</title>
+  <desc id="desc">Diagram showing apical membrane facing lumen and basolateral membrane facing interstitium and basement membrane.</desc>
+  <rect width="900" height="560" fill="#f7fafc"/>
+  <rect x="70" y="56" width="760" height="70" rx="18" fill="#e0f2fe"/>
+  <text x="450" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#075985">lumen</text>
+  <rect x="90" y="430" width="720" height="40" rx="12" fill="#fcd34d"/>
+  <text x="450" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#7c2d12">basement membrane / interstitium</text>
+  <g fill="#dbeafe" stroke="#1d4ed8" stroke-width="5">
+    <path d="M230 150h145c28 0 50 22 50 50v210H180V200c0-28 22-50 50-50z"/>
+    <path d="M525 150h145c28 0 50 22 50 50v210H475V200c0-28 22-50 50-50z"/>
+  </g>
+  <g stroke="#1d4ed8" stroke-width="7" stroke-linecap="round">
+    <path d="M200 150v-46"/>
+    <path d="M230 150v-52"/>
+    <path d="M260 150v-46"/>
+    <path d="M290 150v-52"/>
+    <path d="M320 150v-46"/>
+    <path d="M350 150v-52"/>
+    <path d="M495 150v-46"/>
+    <path d="M525 150v-52"/>
+    <path d="M555 150v-46"/>
+    <path d="M585 150v-52"/>
+    <path d="M615 150v-46"/>
+    <path d="M645 150v-52"/>
+  </g>
+  <g fill="#f97316">
+    <rect x="406" y="185" width="88" height="16" rx="8"/>
+    <rect x="406" y="230" width="88" height="16" rx="8"/>
+  </g>
+  <text x="450" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#9a3412">tight junction fence</text>
+  <circle cx="303" cy="305" r="45" fill="#93c5fd" stroke="#1e40af" stroke-width="4"/>
+  <circle cx="598" cy="305" r="45" fill="#93c5fd" stroke="#1e40af" stroke-width="4"/>
+  <path d="M450 95 C450 132 430 134 360 134" fill="none" stroke="#0f766e" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#0f766e">apical membrane</text>
+  <path d="M780 448 C735 412 716 392 700 350" fill="none" stroke="#7c3aed" stroke-width="5" marker-end="url(#arrow2)"/>
+  <text x="760" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6d28d9">basolateral membrane</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>

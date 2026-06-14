@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Hyperosmolar hyperglycemic state schematic</title>
+  <desc id="desc">Step 1 schematic showing severe hyperglycemia, high serum osmolality, dehydration, altered mental status, and minimal ketosis in HHS.</desc>
+  <rect width="960" height="600" fill="#f7fafc"/>
+  <rect x="52" y="52" width="856" height="496" rx="22" fill="#ffffff" stroke="#203040" stroke-width="3"/>
+  <text x="480" y="106" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#203040">Hyperosmolar Hyperglycemic State</text>
+  <text x="480" y="143" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">Relative insulin deficiency: enough to suppress ketones, not enough to control glucose</text>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="104" y="196" width="218" height="112" rx="16" fill="#fff4e6" stroke="#d47a1f" stroke-width="3"/>
+    <text x="213" y="236" text-anchor="middle" font-size="24" font-weight="700" fill="#9a4b06">Glucose</text>
+    <text x="213" y="274" text-anchor="middle" font-size="30" font-weight="700" fill="#9a4b06">&gt;600 mg/dL</text>
+
+    <rect x="371" y="196" width="218" height="112" rx="16" fill="#e8f4ff" stroke="#2274a5" stroke-width="3"/>
+    <text x="480" y="236" text-anchor="middle" font-size="24" font-weight="700" fill="#15577e">Osmolality</text>
+    <text x="480" y="274" text-anchor="middle" font-size="30" font-weight="700" fill="#15577e">&gt;320 mOsm/kg</text>
+
+    <rect x="638" y="196" width="218" height="112" rx="16" fill="#f0f7ee" stroke="#4f8a45" stroke-width="3"/>
+    <text x="747" y="236" text-anchor="middle" font-size="24" font-weight="700" fill="#35672f">Ketones</text>
+    <text x="747" y="274" text-anchor="middle" font-size="30" font-weight="700" fill="#35672f">minimal/absent</text>
+
+    <path d="M213 322 C260 368 314 388 379 394" fill="none" stroke="#d47a1f" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M480 322 L480 391" fill="none" stroke="#2274a5" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M747 322 C699 366 646 388 581 394" fill="none" stroke="#4f8a45" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <rect x="268" y="392" width="424" height="96" rx="18" fill="#203040"/>
+    <text x="480" y="430" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">Osmotic diuresis + dehydration</text>
+    <text x="480" y="464" text-anchor="middle" font-size="20" fill="#dbe7f0">Altered mental status; usually older T2DM patient</text>
+
+    <text x="480" y="526" text-anchor="middle" font-size="18" fill="#536171">Board contrast: DKA has anion-gap acidosis and ketones; HHS has extreme hyperglycemia/osmolality.</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/>
+    </marker>
+  </defs>
+</svg>

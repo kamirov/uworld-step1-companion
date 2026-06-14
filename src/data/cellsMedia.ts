@@ -11,28 +11,37 @@ import bLymphocyteBlausen from "../media/images/cells/b-lymphocyte-blausen.png?u
 import bLymphocyte from "../media/images/cells/b-lymphocyte.png?url";
 import basophil from "../media/images/cells/basophil.jpg?url";
 import birbeckGranules from "../media/images/cells/birbeck-granules.jpg?url";
+import clearCytoplasm from "../media/images/cells/clear-cytoplasm.svg?url";
 import cd4TLymphocyte from "../media/images/cells/cd4-t-lymphocyte.jpg?url";
 import cd8TLymphocyte from "../media/images/cells/cd8-t-lymphocyte.png?url";
 import cervicalOs from "../media/images/cells/cervical-os.svg?url";
+import chromaffinCell from "../media/images/cells/chromaffin-cell.jpg?url";
+import corePromoterElements from "../media/images/cells/core-promoter-elements.svg?url";
 import dendriticCell from "../media/images/cells/dendritic-cell.jpg?url";
 import dermalAppendage from "../media/images/cells/dermal-appendage.svg?url";
 import desmosome from "../media/images/cells/desmosome.jpg?url";
+import detrusorMuscle from "../media/images/cells/detrusor-muscle.jpg?url";
 import dnaMethylation from "../media/images/cells/dna-methylation.jpg?url";
 import dnaTranscription from "../media/images/cells/dna-transcription.jpg?url";
 import endometrium from "../media/images/cells/endometrium.jpg?url";
 import eosinophil from "../media/images/cells/eosinophil.jpg?url";
+import epithelialPolarity from "../media/images/cells/epithelial-polarity.svg?url";
 import epigenetics from "../media/images/cells/epigenetics.jpg?url";
 import epithelioidCell from "../media/images/cells/epithelioid-cell.jpg?url";
+import extracellularMatrixLabeled from "../media/images/cells/extracellular-matrix-labeled.png?url";
 import fenestrae from "../media/images/cells/fenestrae.jpg?url";
 import gapJunction from "../media/images/cells/gap-junction.svg?url";
 import golgiTendonOrgan from "../media/images/cells/golgi-tendon-organ.png?url";
+import hepaticStructure from "../media/images/cells/hepatic-structure.svg?url";
 import hemidesmosome from "../media/images/cells/hemidesmosome.png?url";
 import hepatocyte from "../media/images/cells/hepatocyte.jpg?url";
 import hepaticSinusoids from "../media/images/cells/hepatic-sinusoids.png?url";
+import helperTCellDifferentiation from "../media/images/cells/helper-t-cell-differentiation.png?url";
 import hypothalamus from "../media/images/cells/hypothalamus.jpg?url";
 import immunologicalMemory from "../media/images/cells/immunological-memory.png?url";
 import immunosuppression from "../media/images/cells/immunosuppression.svg?url";
 import intermediateFilament from "../media/images/cells/intermediate-filament.jpg?url";
+import intestinalLCell from "../media/images/cells/intestinal-l-cell.png?url";
 import keratinocyte from "../media/images/cells/keratinocyte.png?url";
 import kupfferCell from "../media/images/cells/kupffer-cell.png?url";
 import laminaPropria from "../media/images/cells/lamina-propria.jpg?url";
@@ -41,12 +50,14 @@ import langhansGiantCell from "../media/images/cells/langhans-giant-cell.jpg?url
 import leukocyte from "../media/images/cells/leukocyte.jpg?url";
 import grayMatter from "../media/images/cells/gray-matter.svg?url";
 import lymphocyte from "../media/images/cells/lymphocyte.png?url";
+import pancreaticBetaCell from "../media/images/cells/pancreatic-beta-cell.jpg?url";
 import macrophage from "../media/images/cells/macrophage.png?url";
 import mastCell from "../media/images/cells/mast-cell.jpg?url";
 import medialLongitudinalFasciculus from "../media/images/cells/medial-longitudinal-fasciculus.svg?url";
 import melanocyte from "../media/images/cells/melanocyte.jpg?url";
 import melanosome from "../media/images/cells/melanosome.jpg?url";
 import merkelCell from "../media/images/cells/merkel-cell.jpg?url";
+import metanephricBlastema from "../media/images/cells/metanephric-blastema.svg?url";
 import microtubule from "../media/images/cells/microtubule.png?url";
 import mitochondrialRespiratoryChain from "../media/images/cells/mitochondrial-respiratory-chain.svg?url";
 import monocyte from "../media/images/cells/monocyte.jpg?url";
@@ -62,11 +73,17 @@ import osteoblast from "../media/images/cells/osteoblast.jpg?url";
 import osteoclast from "../media/images/cells/osteoclast.jpg?url";
 import periventricularWhiteMatter from "../media/images/cells/periventricular-white-matter.jpg?url";
 import polymerization from "../media/images/cells/polymerization.svg?url";
+import podocyte from "../media/images/cells/podocyte.gif?url";
 import preMrna from "../media/images/cells/pre-mrna.jpg?url";
+import preganglionicNeuron from "../media/images/cells/preganglionic-neuron.png?url";
 import pretermLungMaturity from "../media/images/cells/preterm-lung-maturity.svg?url";
+import proteinKinasePhosphorylTransfer from "../media/images/cells/protein-kinase-phosphoryl-transfer.png?url";
+import renalCorpuscle from "../media/images/cells/renal-corpuscle.svg?url";
 import saltatoryConduction from "../media/images/cells/saltatory-conduction.svg?url";
 import serosa from "../media/images/cells/serosa.jpg?url";
 import siderophage from "../media/images/cells/siderophage.jpg?url";
+import signetRingCells from "../media/images/cells/signet-ring-cells.jpg?url";
+import stemCell from "../media/images/cells/stem-cell.png?url";
 import stroma from "../media/images/cells/stroma.jpg?url";
 import tCellSignaling from "../media/images/cells/t-cell-signaling.svg?url";
 import tLymphocyte from "../media/images/cells/t-lymphocyte.jpg?url";
@@ -80,25 +97,32 @@ export type CELLImageId = Extract<
   | "a-delta-fiber"
   | "acetylation"
   | "actin"
+  | "activated-macrophage"
   | "adherens-junction"
   | "adventitia"
   | "antigen-presenting-cell"
+  | "apical-membrane"
+  | "basolateral-membrane"
   | "naive-b-lymphocyte"
   | "b-lymphocyte"
   | "basophil"
   | "birbeck-granules"
+  | "abundant-clear-cytoplasm"
   | "cd4-t-lymphocyte"
   | "cd8-t-lymphocyte"
   | "cervical-os"
+  | "chromaffin-cell"
   | "dendritic-cell"
   | "dermal-appendage"
   | "desmosome"
+  | "detrusor-muscle"
   | "dna-methylation"
   | "dna-transcription"
   | "endometrium"
   | "eosinophil"
   | "epigenetics"
   | "epithelioid-cell"
+  | "interstitial-fibroblast"
   | "fenestrae"
   | "gap-junction"
   | "golgi-tendon-organ"
@@ -117,6 +141,7 @@ export type CELLImageId = Extract<
   | "leukocyte"
   | "gray-matter"
   | "lymphocyte"
+  | "pancreatic-beta-cell"
   | "macrophage"
   | "mast-cell"
   | "medial-longitudinal-fasciculus"
@@ -124,6 +149,7 @@ export type CELLImageId = Extract<
   | "melanosome"
   | "merkel-cell"
   | "microtubule"
+  | "metanephric-blastema"
   | "oxidative-phosphorylation"
   | "monocyte"
   | "mrna-translation"
@@ -131,6 +157,7 @@ export type CELLImageId = Extract<
   | "mucosa"
   | "myeloid-surface-markers"
   | "myometrium"
+  | "naive-th0-cell"
   | "natural-killer-cell"
   | "neural-crest"
   | "neutrophil"
@@ -138,11 +165,21 @@ export type CELLImageId = Extract<
   | "osteoclast"
   | "periventricular-white-matter"
   | "polymerization"
+  | "promoter-region"
+  | "protein-phosphorylation"
+  | "podocyte"
   | "pre-mrna"
+  | "preganglionic-neuron"
   | "preterm-lung-maturity"
+  | "juxtaglomerular-cell"
+  | "intraglomerular-mesangial-cell"
   | "saltatory-conduction"
   | "serosa"
   | "siderophage"
+  | "signet-ring-cells"
+  | "intestinal-l-cell"
+  | "parenchyma"
+  | "stem-cell"
   | "stroma"
   | "t-cell-signaling"
   | "t-lymphocyte"
@@ -161,25 +198,32 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "a-delta-fiber": extensionAssetUrl(aDeltaFiber),
   "acetylation": extensionAssetUrl(acetylation),
   "actin": extensionAssetUrl(actin),
+  "activated-macrophage": extensionAssetUrl(helperTCellDifferentiation),
   "adherens-junction": extensionAssetUrl(adherensJunction),
   "adventitia": extensionAssetUrl(adventitia),
   "antigen-presenting-cell": extensionAssetUrl(antigenPresentingCell),
+  "apical-membrane": extensionAssetUrl(epithelialPolarity),
+  "basolateral-membrane": extensionAssetUrl(epithelialPolarity),
   "naive-b-lymphocyte": extensionAssetUrl(bLymphocyteBlausen),
   "b-lymphocyte": extensionAssetUrl(bLymphocyte),
   "basophil": extensionAssetUrl(basophil),
   "birbeck-granules": extensionAssetUrl(birbeckGranules),
+  "abundant-clear-cytoplasm": extensionAssetUrl(clearCytoplasm),
   "cd4-t-lymphocyte": extensionAssetUrl(cd4TLymphocyte),
   "cd8-t-lymphocyte": extensionAssetUrl(cd8TLymphocyte),
   "cervical-os": extensionAssetUrl(cervicalOs),
+  "chromaffin-cell": extensionAssetUrl(chromaffinCell),
   "dendritic-cell": extensionAssetUrl(dendriticCell),
   "dermal-appendage": extensionAssetUrl(dermalAppendage),
   "desmosome": extensionAssetUrl(desmosome),
+  "detrusor-muscle": extensionAssetUrl(detrusorMuscle),
   "dna-methylation": extensionAssetUrl(dnaMethylation),
   "dna-transcription": extensionAssetUrl(dnaTranscription),
   "endometrium": extensionAssetUrl(endometrium),
   "eosinophil": extensionAssetUrl(eosinophil),
   "epigenetics": extensionAssetUrl(epigenetics),
   "epithelioid-cell": extensionAssetUrl(epithelioidCell),
+  "interstitial-fibroblast": extensionAssetUrl(extracellularMatrixLabeled),
   "fenestrae": extensionAssetUrl(fenestrae),
   "gap-junction": extensionAssetUrl(gapJunction),
   "golgi-tendon-organ": extensionAssetUrl(golgiTendonOrgan),
@@ -198,12 +242,14 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "leukocyte": extensionAssetUrl(leukocyte),
   "gray-matter": extensionAssetUrl(grayMatter),
   "lymphocyte": extensionAssetUrl(lymphocyte),
+  "pancreatic-beta-cell": extensionAssetUrl(pancreaticBetaCell),
   "macrophage": extensionAssetUrl(macrophage),
   "mast-cell": extensionAssetUrl(mastCell),
   "medial-longitudinal-fasciculus": extensionAssetUrl(medialLongitudinalFasciculus),
   "melanocyte": extensionAssetUrl(melanocyte),
   "melanosome": extensionAssetUrl(melanosome),
   "merkel-cell": extensionAssetUrl(merkelCell),
+  "metanephric-blastema": extensionAssetUrl(metanephricBlastema),
   "microtubule": extensionAssetUrl(microtubule),
   "oxidative-phosphorylation": extensionAssetUrl(mitochondrialRespiratoryChain),
   "monocyte": extensionAssetUrl(monocyte),
@@ -212,6 +258,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "mucosa": extensionAssetUrl(mucosa),
   "myeloid-surface-markers": extensionAssetUrl(myeloidSurfaceMarkers),
   "myometrium": extensionAssetUrl(myometrium),
+  "naive-th0-cell": extensionAssetUrl(helperTCellDifferentiation),
   "natural-killer-cell": extensionAssetUrl(naturalKillerCell),
   "neural-crest": extensionAssetUrl(neuralCrest),
   "neutrophil": extensionAssetUrl(neutrophil),
@@ -219,11 +266,21 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "osteoclast": extensionAssetUrl(osteoclast),
   "periventricular-white-matter": extensionAssetUrl(periventricularWhiteMatter),
   "polymerization": extensionAssetUrl(polymerization),
+  "promoter-region": extensionAssetUrl(corePromoterElements),
+  "protein-phosphorylation": extensionAssetUrl(proteinKinasePhosphorylTransfer),
+  "podocyte": extensionAssetUrl(podocyte),
   "pre-mrna": extensionAssetUrl(preMrna),
+  "preganglionic-neuron": extensionAssetUrl(preganglionicNeuron),
   "preterm-lung-maturity": extensionAssetUrl(pretermLungMaturity),
+  "juxtaglomerular-cell": extensionAssetUrl(renalCorpuscle),
+  "intraglomerular-mesangial-cell": extensionAssetUrl(renalCorpuscle),
   "saltatory-conduction": extensionAssetUrl(saltatoryConduction),
   "serosa": extensionAssetUrl(serosa),
   "siderophage": extensionAssetUrl(siderophage),
+  "signet-ring-cells": extensionAssetUrl(signetRingCells),
+  "intestinal-l-cell": extensionAssetUrl(intestinalLCell),
+  "parenchyma": extensionAssetUrl(hepaticStructure),
+  "stem-cell": extensionAssetUrl(stemCell),
   "stroma": extensionAssetUrl(stroma),
   "t-cell-signaling": extensionAssetUrl(tCellSignaling),
   "t-lymphocyte": extensionAssetUrl(tLymphocyte),
@@ -239,25 +296,32 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "a-delta-fiber": { label: "Wikimedia Commons (Propagation of action potential along myelinated nerve fiber en.svg)", url: "https://commons.wikimedia.org/wiki/File:Propagation_of_action_potential_along_myelinated_nerve_fiber_en.svg" },
   "acetylation": { label: "Wikimedia Commons (Histone acetylation in regulating glial response after CNS injury.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histone_acetylation_in_regulating_glial_response_after_CNS_injury.jpg" },
   "actin": { label: "Wikimedia Commons (Microfilament Structure.svg)", url: "https://commons.wikimedia.org/wiki/File:Microfilament_Structure.svg" },
+  "activated-macrophage": { label: "Wikimedia Commons (Helper T Cell Differentiation.png, CC BY-SA 4.0)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "adherens-junction": { label: "Wikimedia Commons (Adherens Junctions structural proteins-LangNeutral.svg)", url: "https://commons.wikimedia.org/wiki/File:Adherens_Junctions_structural_proteins-LangNeutral.svg" },
   "adventitia": { label: "Wikimedia Commons (Microscopic anatomy of an artery de.svg)", url: "https://commons.wikimedia.org/wiki/File:Microscopic_anatomy_of_an_artery_de.svg" },
   "antigen-presenting-cell": { label: "Wikimedia Commons (An MHC tetramer binding to T-cell receptors (left), and an MHC molecule on the surface of an antigen presenting cell binding to T-cell receptors (right).png)", url: "https://commons.wikimedia.org/wiki/File:An_MHC_tetramer_binding_to_T-cell_receptors_(left),_and_an_MHC_molecule_on_the_surface_of_an_antigen_presenting_cell_binding_to_T-cell_receptors_(right).png" },
+  "apical-membrane": { label: "Created locally; reference: Epithelial polarity", url: "https://en.wikipedia.org/wiki/Epithelial_polarity" },
+  "basolateral-membrane": { label: "Created locally; reference: Epithelial polarity", url: "https://en.wikipedia.org/wiki/Epithelial_polarity" },
   "naive-b-lymphocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:b-lymphocyte-blausen.png" },
   "b-lymphocyte": { label: "Wikimedia Commons (Plasma B Cell (NIH BioArt 640981).png)", url: "https://commons.wikimedia.org/wiki/File:Plasma_B_Cell_(NIH_BioArt_640981).png" },
   "basophil": { label: "Wikimedia Commons (Blood-basophil2.jpg)", url: "https://commons.wikimedia.org/wiki/File:Blood-basophil2.jpg" },
   "birbeck-granules": { label: "Wikimedia Commons (Langerhans cell histiocytosis - Birbeck granules.jpg)", url: "https://commons.wikimedia.org/wiki/File:Langerhans_cell_histiocytosis_-_Birbeck_granules.jpg" },
+  "abundant-clear-cytoplasm": { label: "Created locally; reference: Clear-cell carcinoma", url: "https://en.wikipedia.org/wiki/Clear-cell_carcinoma" },
   "cd4-t-lymphocyte": { label: "Wikimedia Commons (Differentiation of helper T cell subsets is determined by cytokines.jpg)", url: "https://commons.wikimedia.org/wiki/File:Differentiation_of_helper_T_cell_subsets_is_determined_by_cytokines.jpg" },
   "cd8-t-lymphocyte": { label: "Wikimedia Commons (Killer T cells surround a cancer cell.png)", url: "https://commons.wikimedia.org/wiki/File:Killer_T_cells_surround_a_cancer_cell.png" },
   "cervical-os": { label: "Wikimedia Commons (Macro Os, vertèbres cervicales - Métastases 55-o.apatho-219d-os.jpg)", url: "https://commons.wikimedia.org/wiki/File:Macro_Os,_vertèbres_cervicales_-_Métastases_55-o.apatho-219d-os.jpg" },
+  "chromaffin-cell": { label: "Wikimedia Commons (Jpogi, public domain)", url: "https://commons.wikimedia.org/wiki/File:Adrenal_gland_(medulla).JPG" },
   "dendritic-cell": { label: "Wikimedia Commons (Antigen presentation by dendritic cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Antigen_presentation_by_dendritic_cell.jpg" },
   "dermal-appendage": { label: "Wikimedia Commons (Skin Hair Follicle (NIH BioArt 657).svg)", url: "https://commons.wikimedia.org/wiki/File:Skin_Hair_Follicle_(NIH_BioArt_657).svg" },
   "desmosome": { label: "Wikimedia Commons (Transmission electron micrograph of a normal apical junctional complex (AJC), the structure between two adjacent enterocytes from the ileal epithelium region of a 21 d old chick.jpg)", url: "https://commons.wikimedia.org/wiki/File:Transmission_electron_micrograph_of_a_normal_apical_junctional_complex_(AJC),_the_structure_between_two_adjacent_enterocytes_from_the_ileal_epithelium_region_of_a_21_d_old_chick.jpg" },
+  "detrusor-muscle": { label: "Wikimedia Commons (NCI SEER, public domain)", url: "https://commons.wikimedia.org/wiki/File:Illu_bladder.jpg" },
   "dna-methylation": { label: "Wikimedia Commons (Methylation levels during mouse very early embryonic development.jpg)", url: "https://commons.wikimedia.org/wiki/File:Methylation_levels_during_mouse_very_early_embryonic_development.jpg" },
   "dna-transcription": { label: "Wikimedia Commons (Regulatory sequence in a promoter at a transcription start site with a paused RNA polymerase and a TOP2B-induced DNA double-strand break.jpg)", url: "https://commons.wikimedia.org/wiki/File:Regulatory_sequence_in_a_promoter_at_a_transcription_start_site_with_a_paused_RNA_polymerase_and_a_TOP2B-induced_DNA_double-strand_break.jpg" },
   "endometrium": { label: "Wikimedia Commons (Diseases of women and abdominal surgery (1889) (14779613431).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_women_and_abdominal_surgery_(1889)_(14779613431).jpg" },
   "eosinophil": { label: "Wikimedia Commons (Eosinophil blood smear.JPG)", url: "https://commons.wikimedia.org/wiki/File:Eosinophil_blood_smear.JPG" },
   "epigenetics": { label: "Wikimedia Commons (Nematode C. elegans germline chromatin Epigenetic imprint on the paternal X chromosome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Nematode_C._elegans_germline_chromatin_Epigenetic_imprint_on_the_paternal_X_chromosome.jpg" },
   "epithelioid-cell": { label: "Wikimedia Commons (Sarcoidosis - Apoptotic bodies (6200975751).jpg)", url: "https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Apoptotic_bodies_(6200975751).jpg" },
+  "interstitial-fibroblast": { label: "Wikimedia Commons (Extracellular Matrix v1.001-labeled.png, CC BY-SA 4.0)", url: "https://commons.wikimedia.org/wiki/File:Extracellular_Matrix_v1.001-labeled.png" },
   "fenestrae": { label: "Wikimedia Commons (Glandula parathyroidea – overview (HE stain).jpg)", url: "https://commons.wikimedia.org/wiki/File:Glandula_parathyroidea_–_overview_(HE_stain).jpg" },
   "gap-junction": { label: "Wikimedia Commons (Gap cell junction-uk.svg)", url: "https://commons.wikimedia.org/wiki/File:Gap_cell_junction-uk.svg" },
   "golgi-tendon-organ": { label: "Wikimedia Commons (Gray938.png)", url: "https://commons.wikimedia.org/wiki/File:Gray938.png" },
@@ -276,12 +340,14 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "leukocyte": { label: "Wikimedia Commons (WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy.jpg)", url: "https://commons.wikimedia.org/wiki/File:WBC_(neutrophil)_at_centre,_numerous_erythrocytes_and_platelets_(dot_like_bodies)_in_Wright's_stained_peripheral_blood_smear_(PBS)_microscopy.jpg" },
   "gray-matter": { label: "Created locally; reference: Grey matter", url: "https://en.wikipedia.org/wiki/Grey_matter" },
   "lymphocyte": { label: "Wikimedia Commons (Microphotographs of atypical lymphocytes observed in peripheral blood smears of quokkas on Rottnest Island.png)", url: "https://commons.wikimedia.org/wiki/File:Microphotographs_of_atypical_lymphocytes_observed_in_peripheral_blood_smears_of_quokkas_on_Rottnest_Island.png" },
+  "pancreatic-beta-cell": { label: "Wikimedia Commons (Afferent, CC BY-SA 3.0)", url: "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg" },
   "macrophage": { label: "Wikimedia Commons (Infiltration of CD68+ tumor-associated macrophages (TAMs) in distinct histologic location.png)", url: "https://commons.wikimedia.org/wiki/File:Infiltration_of_CD68+_tumor-associated_macrophages_(TAMs)_in_distinct_histologic_location.png" },
   "mast-cell": { label: "Wikimedia Commons (Mast cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Mast_cell.jpg" },
   "medial-longitudinal-fasciculus": { label: "Created locally; reference: Medial longitudinal fasciculus", url: "https://en.wikipedia.org/wiki/Medial_longitudinal_fasciculus" },
   "melanocyte": { label: "Wikimedia Commons (Melanin Development in Melanocytes.svg)", url: "https://commons.wikimedia.org/wiki/File:Melanin_Development_in_Melanocytes.svg" },
   "melanosome": { label: "Wikimedia Commons (Anuran melanosoms3 - Falk etal 2025.jpg)", url: "https://commons.wikimedia.org/wiki/File:Anuran_melanosoms3_-_Falk_etal_2025.jpg" },
   "merkel-cell": { label: "Wikimedia Commons (Blausen 0805 Skin MerkelCell nl01.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0805_Skin_MerkelCell_nl01.png" },
+  "metanephric-blastema": { label: "Created locally; reference: Kidney development", url: "https://en.wikipedia.org/wiki/Kidney_development" },
   "microtubule": { label: "Wikimedia Commons (Chlorophyte-cell-diagram.png)", url: "https://commons.wikimedia.org/wiki/File:Chlorophyte-cell-diagram.png" },
   "oxidative-phosphorylation": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:mitochondrial-respiratory-chain.svg" },
   "monocyte": { label: "Wikimedia Commons (Blood-monocyte.jpg)", url: "https://commons.wikimedia.org/wiki/File:Blood-monocyte.jpg" },
@@ -290,6 +356,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "mucosa": { label: "Wikimedia Commons (Histology of transformation zone mucosa.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histology_of_transformation_zone_mucosa.jpg" },
   "myeloid-surface-markers": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:myeloid-surface-markers.jpg" },
   "myometrium": { label: "Wikimedia Commons (Uterus (myometrium).JPG)", url: "https://commons.wikimedia.org/wiki/File:Uterus_(myometrium).JPG" },
+  "naive-th0-cell": { label: "Wikimedia Commons (Helper T Cell Differentiation.png, CC BY-SA 4.0)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "natural-killer-cell": { label: "Wikimedia Commons (Human Natural Killer Cell)", url: "https://commons.wikimedia.org/wiki/File:Human_Natural_Killer_Cell_(29120480442).jpg" },
   "neural-crest": { label: "Wikimedia Commons (Neural.crest.cells.migration.svg)", url: "https://commons.wikimedia.org/wiki/File:Neural.crest.cells.migration.svg" },
   "neutrophil": { label: "Wikimedia Commons (Blausen 0676 Neutrophil (crop).png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0676_Neutrophil_(crop).png" },
@@ -297,11 +364,21 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "osteoclast": { label: "Wikimedia Commons (Robert M. Hunt, public domain)", url: "https://commons.wikimedia.org/wiki/File:Osteoclast.jpg" },
   "periventricular-white-matter": { label: "Wikimedia Commons (Disseminated sclerosis (IA b2810349x).pdf)", url: "https://commons.wikimedia.org/wiki/File:Disseminated_sclerosis_(IA_b2810349x).pdf" },
   "polymerization": { label: "Wikimedia Commons (CSIRO ScienceImage 3020 Starch to Polymer.jpg)", url: "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_3020_Starch_to_Polymer.jpg" },
+  "promoter-region": { label: "Wikimedia Commons (Core promoter elements.svg)", url: "https://commons.wikimedia.org/wiki/File:Core_promoter_elements.svg" },
+  "protein-phosphorylation": { label: "Wikimedia Commons (Protein Kinase Phosphoryl transfer.png, CC BY 4.0)", url: "https://commons.wikimedia.org/wiki/File:Protein_Kinase_Phosphoryl_transfer.png" },
+  "podocyte": { label: "Wikimedia Commons (SecretDisc, CC BY-SA 3.0)", url: "https://commons.wikimedia.org/wiki/File:Glomerulum_of_mouse_kidney_in_Scanning_Electron_Microscope,_magnification_5,000x.GIF" },
   "pre-mrna": { label: "Wikimedia Commons (Gene with introns and exons.jpg)", url: "https://commons.wikimedia.org/wiki/File:Gene_with_introns_and_exons.jpg" },
+  "preganglionic-neuron": { label: "Wikimedia Commons (Gray's Anatomy plate 839)", url: "https://commons.wikimedia.org/wiki/File:Gray839.png" },
   "preterm-lung-maturity": { label: "Created locally; reference: Fetal lung maturity", url: "https://en.wikipedia.org/wiki/Fetal_lung_maturity" },
+  "juxtaglomerular-cell": { label: "Wikimedia Commons (Shypoetess, CC BY-SA 4.0)", url: "https://commons.wikimedia.org/wiki/File:Renal_corpuscle-en.svg" },
+  "intraglomerular-mesangial-cell": { label: "Wikimedia Commons (Shypoetess, CC BY-SA 4.0)", url: "https://commons.wikimedia.org/wiki/File:Renal_corpuscle-en.svg" },
   "saltatory-conduction": { label: "Wikimedia Commons (Saltatory Conduction.gif)", url: "https://commons.wikimedia.org/wiki/File:Saltatory_Conduction.gif" },
   "serosa": { label: "Wikimedia Commons (Chicken embryo at the stage of formation of trunk and amniotic folds.jpg)", url: "https://commons.wikimedia.org/wiki/File:Chicken_embryo_at_the_stage_of_formation_of_trunk_and_amniotic_folds.jpg" },
   "siderophage": { label: "Wikimedia Commons (Siderophage CSF cytology.jpg)", url: "https://commons.wikimedia.org/wiki/File:Siderophage_CSF_cytology.jpg" },
+  "signet-ring-cells": { label: "Wikimedia Commons (KGH, CC BY-SA 3.0)", url: "https://commons.wikimedia.org/wiki/File:Gastric_signet_ring_cell_carcinoma_histopatholgy_(1).jpg" },
+  "intestinal-l-cell": { label: "Wikimedia Commons (Celula L Localizacion.png, CC BY 4.0)", url: "https://commons.wikimedia.org/wiki/File:Celula_L_Localizacion.png" },
+  "parenchyma": { label: "Wikimedia Commons (Hepatic structure2.svg, CC BY 2.5)", url: "https://commons.wikimedia.org/wiki/File:Hepatic_structure2.svg" },
+  "stem-cell": { label: "Wikimedia Commons (Mike Jones, CC BY-SA 2.5)", url: "https://commons.wikimedia.org/wiki/File:Stem_cells_diagram.png" },
   "stroma": { label: "Wikimedia Commons (Spiral arteries in endometrial stroma.jpg)", url: "https://commons.wikimedia.org/wiki/File:Spiral_arteries_in_endometrial_stroma.jpg" },
   "t-cell-signaling": { label: "Wikimedia Commons (063-T-CellReceptor-MHC-ru.svg)", url: "https://commons.wikimedia.org/wiki/File:063-T-CellReceptor-MHC-ru.svg" },
   "t-lymphocyte": { label: "Wikimedia Commons (HIV-infected T cell (6813384933).jpg)", url: "https://commons.wikimedia.org/wiki/File:HIV-infected_T_cell_(6813384933).jpg" },
@@ -315,25 +392,32 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "a-delta-fiber": "Clinical or pathologic image illustrating a delta fiber",
   "acetylation": "Clinical or pathologic image illustrating acetylation",
   "actin": "Clinical or pathologic image illustrating actin",
+  "activated-macrophage": "Helper T-cell differentiation diagram showing Th1 cytokines targeting macrophages, the classic IFN-gamma activation pathway",
   "adherens-junction": "Clinical or pathologic image illustrating adherens junction",
   "adventitia": "Clinical or pathologic image illustrating adventitia",
   "antigen-presenting-cell": "Clinical or pathologic image illustrating antigen presenting cell",
+  "apical-membrane": "Polarized epithelium diagram: the apical membrane faces the lumen and is separated from basolateral domains by tight junctions",
+  "basolateral-membrane": "Polarized epithelium diagram: the basolateral membrane faces basement membrane and interstitium, away from the lumen",
   "naive-b-lymphocyte": "B lymphocyte with surface immunoglobulin (BCR) — naïve B cells express IgM and IgD awaiting first antigen encounter",
   "b-lymphocyte": "Clinical or pathologic image illustrating b lymphocyte",
   "basophil": "Clinical or pathologic image illustrating basophil",
   "birbeck-granules": "Clinical or pathologic image illustrating birbeck granules",
+  "abundant-clear-cytoplasm": "Clear cell morphology schematic: lipid or glycogen dissolves during processing, leaving optically clear cytoplasm",
   "cd4-t-lymphocyte": "Clinical or pathologic image illustrating cd4 t lymphocyte",
   "cd8-t-lymphocyte": "Clinical or pathologic image illustrating cd8 t lymphocyte",
   "cervical-os": "Clinical or pathologic image illustrating cervical os",
+  "chromaffin-cell": "Human adrenal medulla micrograph; chromaffin cells secrete catecholamines after preganglionic sympathetic ACh",
   "dendritic-cell": "Clinical or pathologic image illustrating dendritic cell",
   "dermal-appendage": "Clinical or pathologic image illustrating dermal appendage",
   "desmosome": "Clinical or pathologic image illustrating desmosome",
+  "detrusor-muscle": "Urinary bladder diagram labeling detrusor smooth muscle, which contracts via pelvic splanchnic M3 signaling",
   "dna-methylation": "Clinical or pathologic image illustrating dna methylation",
   "dna-transcription": "Clinical or pathologic image illustrating dna transcription",
   "endometrium": "Clinical or pathologic image illustrating endometrium",
   "eosinophil": "Clinical or pathologic image illustrating eosinophil",
   "epigenetics": "Clinical or pathologic image illustrating epigenetics",
   "epithelioid-cell": "Clinical or pathologic image illustrating epithelioid cell",
+  "interstitial-fibroblast": "Loose connective tissue diagram labeling fibroblasts embedded in extracellular matrix beneath epithelium",
   "fenestrae": "Clinical or pathologic image illustrating fenestrae",
   "gap-junction": "Gap junction (connexon) channels connecting adjacent cells for direct cytoplasmic communication",
   "golgi-tendon-organ": "Clinical or pathologic image illustrating golgi tendon organ",
@@ -352,12 +436,14 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "leukocyte": "Clinical or pathologic image illustrating leukocyte",
   "gray-matter": "CNS gray matter — neuronal cell bodies, dendrites, and synapses in cortex and deep nuclei",
   "lymphocyte": "Clinical or pathologic image illustrating lymphocyte",
+  "pancreatic-beta-cell": "Human pancreatic islet immunostain: insulin-positive beta cells appear blue, glucagon-positive alpha cells red",
   "macrophage": "Clinical or pathologic image illustrating macrophage",
   "mast-cell": "Mast cell with granules containing histamine and heparin — key effector in type I hypersensitivity",
   "medial-longitudinal-fasciculus": "MLF coordinates horizontal gaze — lesion causes internuclear ophthalmoplegia",
   "melanocyte": "Melanocyte dendritic processes transferring melanin to surrounding keratinocytes",
   "melanosome": "Clinical or pathologic image illustrating melanosome",
   "merkel-cell": "Clinical or pathologic image illustrating merkel cell",
+  "metanephric-blastema": "Kidney development schematic: metanephric blastema gives nephron epithelium while ureteric bud gives collecting system",
   "microtubule": "Clinical or pathologic image illustrating microtubule",
   "oxidative-phosphorylation": "Inner mitochondrial membrane respiratory chain: complexes I–IV pass electrons to O₂; proton pumping drives ATP synthase (Complex V)",
   "monocyte": "Clinical or pathologic image illustrating monocyte",
@@ -366,6 +452,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "mucosa": "Clinical or pathologic image illustrating mucosa",
   "myeloid-surface-markers": "Clinical or pathologic image illustrating myeloid surface markers",
   "myometrium": "Clinical or pathologic image illustrating myometrium",
+  "naive-th0-cell": "Naive CD4+ T cell differentiation diagram showing APC signals and cytokine milieus driving Th lineage commitment",
   "natural-killer-cell": "Colorized scanning electron micrograph of a human natural killer cell",
   "neural-crest": "Clinical or pathologic image illustrating neural crest",
   "neutrophil": "Clinical or pathologic image illustrating neutrophil",
@@ -373,11 +460,21 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "osteoclast": "Light micrograph of a multinucleated osteoclast with foamy cytoplasm",
   "periventricular-white-matter": "Periventricular demyelinating plaques — classic MS MRI pattern (Dawson fingers)",
   "polymerization": "Clinical or pathologic image illustrating polymerization",
+  "promoter-region": "Core promoter elements diagram showing BRE, TATA box, initiator, and downstream promoter element around the transcription start site",
+  "protein-phosphorylation": "Protein kinase diagram showing phosphoryl transfer from ATP to a substrate, producing ADP and a phosphorylated protein",
+  "podocyte": "Scanning electron micrograph of a glomerulus showing podocyte foot processes around capillaries",
   "pre-mrna": "Clinical or pathologic image illustrating pre mrna",
+  "preganglionic-neuron": "Autonomic efferent diagram: preganglionic neurons project from CNS to autonomic ganglia or adrenal medulla",
   "preterm-lung-maturity": "Antenatal corticosteroids accelerate fetal surfactant — ↓ NRDS risk",
+  "juxtaglomerular-cell": "Renal corpuscle diagram showing the juxtaglomerular apparatus near afferent arteriole and macula densa",
+  "intraglomerular-mesangial-cell": "Renal corpuscle diagram showing mesangial support cells within the glomerular tuft",
   "saltatory-conduction": "Action potentials jump between nodes of Ranvier along myelinated axons",
   "serosa": "Clinical or pathologic image illustrating serosa",
   "siderophage": "Clinical or pathologic image illustrating siderophage",
+  "signet-ring-cells": "Gastric signet-ring cell carcinoma: mucin vacuoles displace nuclei to the cell periphery",
+  "intestinal-l-cell": "Confocal ileum image with PYY-GFP enteroendocrine L cells highlighted in green among intestinal epithelial cells",
+  "parenchyma": "Liver lobule diagram showing hepatocytes as functional parenchymal cells arranged around sinusoids",
+  "stem-cell": "Stem cell potency diagram showing totipotent morula cells and pluripotent inner cell mass derivatives",
   "stroma": "Clinical or pathologic image illustrating stroma",
   "t-cell-signaling": "Clinical or pathologic image illustrating t cell signaling",
   "t-lymphocyte": "Clinical or pathologic image illustrating t lymphocyte",

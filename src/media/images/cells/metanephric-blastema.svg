@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Metanephric blastema and ureteric bud derivatives</title>
+  <desc id="desc">Diagram contrasting metanephric blastema nephron derivatives with ureteric bud collecting system derivatives.</desc>
+  <rect width="900" height="560" fill="#f8fafc"/>
+  <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#0f172a">reciprocal induction in kidney development</text>
+  <g transform="translate(120 115)">
+    <path d="M275 18 C190 10 116 70 112 156 C108 245 179 310 268 304 C354 298 416 228 404 143 C394 66 350 27 275 18z" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+    <path d="M432 178 C379 171 335 149 286 108 C263 90 240 80 216 80 C178 80 150 106 146 144 C142 180 163 210 200 224 C245 241 278 219 310 193 C346 163 386 155 436 163z" fill="#fde68a" stroke="#ca8a04" stroke-width="5"/>
+    <path d="M330 204 C302 245 267 280 222 308 C188 330 163 358 150 397" fill="none" stroke="#1d4ed8" stroke-width="14" stroke-linecap="round"/>
+    <path d="M439 178 C486 217 514 272 526 345" fill="none" stroke="#ca8a04" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="222" cy="318" r="24" fill="#93c5fd" stroke="#1d4ed8" stroke-width="4"/>
+    <circle cx="183" cy="370" r="22" fill="#93c5fd" stroke="#1d4ed8" stroke-width="4"/>
+    <circle cx="522" cy="355" r="23" fill="#facc15" stroke="#ca8a04" stroke-width="4"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="205" y="128" font-size="26" fill="#1d4ed8">metanephric blastema</text>
+    <text x="177" y="162" font-size="20" fill="#1d4ed8">forms nephron epithelium</text>
+    <text x="177" y="190" font-size="20" fill="#1d4ed8">glomerulus to distal tubule</text>
+    <text x="560" y="258" font-size="26" fill="#a16207">ureteric bud</text>
+    <text x="560" y="292" font-size="20" fill="#a16207">forms collecting ducts,</text>
+    <text x="560" y="320" font-size="20" fill="#a16207">calyces, pelvis, ureter</text>
+    <path d="M438 165 C502 167 533 190 560 228" fill="none" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M322 150 C290 125 248 124 220 128" fill="none" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="450" y="505" text-anchor="middle" font-size="23" fill="#334155">GDNF-RET and WNT signaling coordinate bud branching and nephron induction</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+</svg>

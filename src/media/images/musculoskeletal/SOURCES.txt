@@ -31,3 +31,11 @@ fontanelle.png
   Description: Newborn skull showing anterior and posterior fontanelles
   Page: https://commons.wikimedia.org/wiki/File:Gray197.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray197.png
+
+l1-l2-spinal-level.png
+  Source: Wikimedia Commons — Gray662.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Cauda equina and conus medullaris diagram supporting the adult L1-L2 spinal cord termination level
+  Page: https://commons.wikimedia.org/wiki/File:Gray662.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray662.png
