@@ -677,6 +677,48 @@ export const METABOLISM: MetabolismEntry[] = [
     pediatrics:
       "Neonates have lower renal net acid excretion capacity — premature infants are prone to metabolic acidosis with protein-rich feeding; urea cycle and renal ammoniagenesis mature over weeks.",
   },
+  {
+    id: "thiamine",
+    name: "Thiamine",
+    etymology: "Greek theion = sulfur + amine = nitrogen compound (vitamin B₁)",
+    aliases: [
+      "thiamine",
+      "thiamin",
+      "vitamin b1",
+      "vitamin b-1",
+      "vitamin b 1",
+      "aneurine",
+      "thiamine pyrophosphate",
+      "tpp",
+      "cocarboxylase",
+    ],
+    definition:
+      "Water-soluble vitamin B₁ — essential cofactor for thiamine pyrophosphate (TPP)–dependent enzymes in carbohydrate metabolism — deficiency causes beriberi, Wernicke encephalopathy, and Korsakoff syndrome, especially in alcoholism and malnutrition.",
+    pathway: [
+      "Dietary thiamine → phosphorylation to thiamine pyrophosphate (TPP) in liver",
+      "TPP cofactor for pyruvate dehydrogenase complex — pyruvate → acetyl-CoA (links glycolysis to TCA cycle)",
+      "TPP cofactor for α-ketoglutarate dehydrogenase (TCA cycle) and transketolase (HMP shunt/pentose phosphate pathway)",
+      "Branched-chain α-keto acid dehydrogenase (BCAA catabolism) also requires TPP",
+      "Alcohol impairs intake, absorption, and hepatic storage; glucose infusion without thiamine depletes remaining stores",
+    ],
+    boardsPearls: [
+      "Thiamine (B₁) → TPP cofactor for PDH, α-KGDH, transketolase",
+      "Deficiency → Wernicke encephalopathy (acute) and Korsakoff syndrome (chronic amnesia)",
+      "Beriberi — dry (neuropathy) and wet (high-output heart failure) forms",
+      "Give thiamine BEFORE dextrose in malnourished/alcoholic patients",
+      "Refeeding syndrome — supplement thiamine with phosphate repletion",
+      "Arsenic poisons lipoic acid at PDH — similar energy failure concept",
+      "MSUD and PDH deficiency — other TPP-dependent pathway disorders",
+    ],
+    distinguishFrom: [
+      "Niacin (B₃) — NAD/NADP cofactors; pellagra (3 D's)",
+      "Riboflavin (B₂) — FAD/FMN cofactors; angular stomatitis",
+      "Pyridoxine (B₆) — transamination reactions; neuropathy and sideroblastic anemia",
+      "Lipoic acid — PDH cofactor (not thiamine itself); arsenic target",
+    ],
+    pediatrics:
+      "Infantile beriberi from thiamine-deficient breast milk (maternal deficiency); MSUD neonates may respond to thiamine in thiamine-responsive BCKDH subtypes.",
+  },
 ];
 
 const metabolismById = new Map(METABOLISM.map((entry) => [entry.id, entry]));

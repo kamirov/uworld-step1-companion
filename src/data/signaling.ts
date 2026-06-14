@@ -2505,6 +2505,87 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     pediatrics:
       "Children in endemic areas exposed via contaminated food; HCC from aflatoxin + HBV typically manifests in adulthood but exposure begins in childhood.",
   },
+  {
+    id: "glucagon",
+    name: "Glucagon",
+    etymology: "Greek glykys = sweet + agō = leading (toward glucose) + -in = protein suffix",
+    aliases: [
+      "glucagon",
+      "pancreatic glucagon",
+      "hyperglycemic factor",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Secreted by pancreatic islet α cells; proglucagon also processed to GLP-1 in intestinal L cells",
+    receptor:
+      "Glucagon receptor (Gs-coupled GPCR on hepatocytes) → ↑ cAMP → activation of glycogen phosphorylase and gluconeogenic enzymes",
+    function:
+      "Primary counter-regulatory hormone to insulin — raises blood glucose via hepatic glycogenolysis and gluconeogenesis; also lipolytic in adipose tissue at high levels.",
+    clinicalRelevance: [
+      "Type 1 diabetes — loss of glucagon counter-regulation worsens hypoglycemia unawareness",
+      "Glucagon injection treats severe hypoglycemia when IV access limited",
+      "Glucagon bypasses β-receptor blockade in refractory anaphylaxis on β-blockers",
+      "Glucagonoma — pancreatic α-cell tumor with necrolytic migratory erythema, diabetes, weight loss",
+      "Excess glucagon suppressed by insulin and somatostatin from δ cells",
+    ],
+    boardsPearls: [
+      "α cells secrete glucagon; β cells secrete insulin",
+      "Glucagon → ↑ cAMP in liver → glycogenolysis + gluconeogenesis → ↑ glucose",
+      "Insulin ↓ glucagon secretion (intra-islet paracrine regulation)",
+      "Glucagonoma — rash (necrolytic migratory erythema) + hyperglycemia + anemia",
+      "Give glucagon for hypoglycemia or β-blocker overdose anaphylaxis",
+      "GLP-1 from L cells is separate incretin product of proglucagon gene",
+    ],
+    distinguishFrom: [
+      "Insulin — lowers glucose; β-cell product",
+      "GLP-1 — incretin from intestinal L cells; ↑ insulin, ↓ glucagon",
+      "Epinephrine — counter-regulatory catecholamine in hypoglycemia, not pancreatic α-cell hormone",
+      "Cortisol and GH — other counter-regulatory hormones with slower onset",
+    ],
+    pediatrics:
+      "Neonates rely on glycogen stores at birth; glucagon response immature in infants — hypoglycemia management emphasizes glucose infusion.",
+  },
+  {
+    id: "somatostatin",
+    name: "Somatostatin",
+    etymology: "Greek soma = body + statos = standing still + -in = protein suffix",
+    aliases: [
+      "somatostatin",
+      "somatotropin release-inhibiting factor",
+      "somatotropin release inhibiting factor",
+      "growth hormone inhibiting hormone",
+      "growth hormone-inhibiting hormone",
+      "sst",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Pancreatic islet δ cells, hypothalamic neurons (inhibit GH release), gastric/intestinal D cells, and other neuroendocrine tissues",
+    receptor:
+      "Somatostatin receptors (SSTR1–5; Gi-coupled) → ↓ cAMP and ↓ Ca²⁺ → inhibited hormone secretion",
+    function:
+      "Universal inhibitory peptide — suppresses secretion of growth hormone, TSH, glucagon, insulin, gastrin, VIP, and GI secretions; slows gastric emptying and intestinal motility.",
+    clinicalRelevance: [
+      "Octreotide/lanreotide — somatostatin analogs for carcinoid syndrome, VIPoma, variceal bleeding prophylaxis",
+      "Treats secretory diarrhea from neuroendocrine tumors",
+      "Inhibits insulin and glucagon — can worsen diabetes or cause hyperglycemia with octreotide",
+      "Hypothalamic somatostatin inhibits GH — analog to continuous GnRH suppressing gonadotropins",
+    ],
+    boardsPearls: [
+      "δ cells of pancreatic islets secrete somatostatin",
+      "Inhibits GH, TSH, insulin, glucagon, gastrin, VIP",
+      "Octreotide = somatostatin analog for carcinoid flush/diarrhea and VIPoma watery diarrhea",
+      "Paracrine inhibition of neighboring α and β cells within islet",
+      "vs dopamine — also inhibits GH but via different receptor (used in acromegaly adjunct)",
+    ],
+    distinguishFrom: [
+      "Octreotide — synthetic somatostatin analog with longer half-life, not endogenous hormone",
+      "Dopamine agonists — inhibit GH via D2 receptors (cabergoline/bromocriptine)",
+      "Insulin — lowers glucose; somatostatin inhibits insulin release",
+      "Gastrin — stimulates acid secretion; somatostatin inhibits gastrin",
+    ],
+    pediatrics:
+      "Octreotide used in neonatal hyperinsulinism and chylothorax in specialized pediatric settings; somatostatin physiology same across ages.",
+  },
 ];
 
 const signalingById = new Map(

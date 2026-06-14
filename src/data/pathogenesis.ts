@@ -3719,6 +3719,48 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Same renal tubular physiology in children; loop diuretics used in pediatric heart failure and edema with electrolyte monitoring.",
   },
   {
+    id: "ceiling-effect",
+    name: "Ceiling Effect",
+    etymology: "Latin caelum = ceiling/limit + Latin effectus = result (maximum achievable effect plateaus)",
+    aliases: [
+      "ceiling effect",
+      "ceiling effects",
+      "diuretic ceiling effect",
+      "diuretic ceiling effects",
+      "pharmacologic ceiling effect",
+      "pharmacological ceiling effect",
+      "dose ceiling effect",
+      "dose ceiling effects",
+      "maximal effect plateau",
+    ],
+    definition:
+      "Pharmacologic phenomenon in which increasing drug dose beyond a threshold no longer increases effect because all target transporters or receptors at that site are maximally occupied or inhibited — the dose-response curve plateaus.",
+    examples: [
+      "Loop diuretics (high-ceiling diuretics) — block NKCC2 in thick ascending limb; can increase Na⁺ excretion to ~20–25% of filtered load before plateau",
+      "Thiazides (low-ceiling diuretics) — block NCC in DCT; maximum natriuresis limited to ~5% of filtered Na⁺ even at high dose",
+      "Escalating loop diuretic dose in advanced CKD or with NSAID co-use — diminished additional diuresis despite higher dose",
+      "Partial agonists (e.g., buprenorphine, pentazocine) — submaximal ceiling below full agonist even at full receptor occupancy",
+      "Receptor saturation — full antagonist blockade reached; further dose increase adds toxicity without additional benefit",
+    ],
+    boardsPearls: [
+      "High-ceiling diuretics = loop diuretics (furosemide, bumetanide); low-ceiling = thiazides",
+      "Once transporters at a nephron segment are fully blocked, more drug does not proportionally ↑ diuresis",
+      "Loop diuretics most potent natriuresis; thiazides limited by low ceiling despite chronic HTN utility",
+      "NSAIDs blunt loop diuretic response (↓ prostaglandin-mediated renal perfusion and natriuresis)",
+      "Chronic HF may need combination diuretics when single-agent ceiling reached (Step 2 context)",
+      "Partial agonist ceiling < full agonist maximum — important for opioid pharmacology",
+      "vs tachyphylaxis — ceiling is immediate max effect at a dose; tachyphylaxis is waning response over repeated exposure",
+    ],
+    distinguishFrom: [
+      "Tachyphylaxis — diminished drug effect over time despite same dose (e.g., nitrates, phenylephrine in ICU)",
+      "Tolerance — need higher dose over time to achieve same effect (different mechanism from single-dose ceiling)",
+      "High-ceiling diuretic — class name describing large max natriuresis, not the plateau mechanism itself",
+      "Therapeutic index — margin between effective and toxic dose; distinct from effect plateau",
+    ],
+    pediatrics:
+      "Same diuretic ceiling physiology in children; loop diuretics used for edema with careful electrolyte monitoring when escalating doses.",
+  },
+  {
     id: "nulliparity",
     name: "Nulliparity",
     etymology: "Latin nullus = none + parere = to bear (children)",
@@ -3867,6 +3909,45 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Fetal alcohol syndrome is the key pediatric alcohol-induced condition — smooth philtrum, short palpebral fissures, growth restriction, and neurodevelopmental deficits; no safe alcohol threshold in pregnancy.",
   },
   {
+    id: "mallory-denk-bodies",
+    name: "Mallory-Denk Bodies",
+    etymology: "Eponym: Frank Mallory + Hans Denk + body = intracellular inclusion",
+    aliases: [
+      "mallory-denk bodies",
+      "mallory denk bodies",
+      "mallory-denk body",
+      "mallory bodies",
+      "mallory body",
+      "mallory hyaline",
+      "mallory hyaline bodies",
+      "alcoholic hyaline",
+    ],
+    definition:
+      "Eosinophilic intracytoplasmic inclusions in injured hepatocytes composed of aggregated keratin intermediate filaments (especially K8/K18) — classic histologic finding in alcoholic steatohepatitis and also seen in NASH, cholestasis, and Wilson disease.",
+    examples: [
+      "Alcoholic hepatitis — Mallory-Denk bodies with ballooning degeneration and neutrophilic satellitosis",
+      "Nonalcoholic steatohepatitis — may show Mallory-Denk bodies though less specific than in alcoholic injury",
+      "Primary biliary cholangitis and Wilson disease — occasional Mallory-Denk inclusions",
+      "Aggregated cytokeratin filaments on immunohistochemistry (K8/K18)",
+    ],
+    boardsPearls: [
+      "Mallory-Denk bodies = keratin intermediate filament aggregates in hepatocytes",
+      "Classic in alcoholic steatohepatitis — supports alcohol-related liver injury on biopsy",
+      "Also seen in NASH — not pathognomonic for alcohol alone",
+      "Associated with ballooning degeneration and lobular inflammation",
+      "vs Councilman bodies — eosinophilic apoptotic hepatocytes in viral hepatitis (yellow fever)",
+      "vs ferruginous (hemosiderin) granules — iron, not keratin",
+    ],
+    distinguishFrom: [
+      "Councilman body — apoptotic hepatocyte in viral hepatitis (e.g., yellow fever midzonal necrosis)",
+      "Hemosiderin granules — iron overload (hemochromatosis)",
+      "Ground-glass hepatocytes — HBV HBsAg in cytoplasm",
+      "Kayser-Fleischer ring — copper in Descemet membrane, not hepatocyte inclusion",
+    ],
+    pediatrics:
+      "Mallory-Denk bodies are uncommon in pediatric liver biopsies; in children, evaluate Wilson disease, autoimmune hepatitis, and metabolic liver disease rather than assuming alcoholic injury.",
+  },
+  {
     id: "tobacco",
     name: "Tobacco",
     etymology:
@@ -3956,6 +4037,51 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Supraventricular tachycardia is the most common symptomatic pediatric arrhythmia; congenital long QT and WPW present in childhood. Neonatal bradycardia with maternal anti-Ro/La suggests congenital complete heart block.",
+  },
+  {
+    id: "ototoxicity",
+    name: "Ototoxicity",
+    etymology: "Greek ous = ear + toxikon = poison + -ity = state of",
+    aliases: [
+      "ototoxicity",
+      "ototoxicities",
+      "ototoxic",
+      "drug-induced ototoxicity",
+      "drug induced ototoxicity",
+      "inner ear toxicity",
+      "cochleotoxicity",
+      "vestibulotoxicity",
+      "ototoxic drug effect",
+      "ototoxic drug effects",
+    ],
+    definition:
+      "Injury to the cochlea (hearing), vestibular apparatus (balance), or both — usually sensorineural and often irreversible — from drugs, noise, or metabolic toxins damaging inner ear hair cells and supporting structures.",
+    examples: [
+      "Aminoglycosides — gentamicin, streptomycin, tobramycin, amikacin; cochlear and/or vestibular hair cell destruction",
+      "Loop diuretics — furosemide, ethacrynic acid; especially with aminoglycosides or rapid IV infusion",
+      "Cisplatin — cochlear outer hair cell loss with cumulative dose",
+      "Salicylates — reversible tinnitus and hearing loss at high doses",
+      "Vancomycin — ototoxicity risk increased with high levels and concurrent aminoglycosides",
+      "Noise-induced trauma — synergistic with aminoglycoside ototoxicity",
+    ],
+    boardsPearls: [
+      "Aminoglycosides + loop diuretics = classic synergistic ototoxicity and nephrotoxicity",
+      "Cochlear toxicity → high-frequency sensorineural hearing loss, tinnitus",
+      "Vestibular toxicity → vertigo, ataxia, nystagmus (streptomycin classically vestibular)",
+      "Often irreversible — prevention via dose limits, levels, and avoiding synergistic drugs",
+      "Renal impairment increases drug accumulation and ototoxicity risk",
+      "Aminoglycosides enter hair cells via mechanotransduction channels → ROS-mediated cell death",
+      "vs conductive hearing loss — otosclerosis, cerumen, middle ear effusion preserve bone conduction",
+    ],
+    distinguishFrom: [
+      "Conductive hearing loss — middle/external ear or ossicle problem; Weber/Rinne pattern differs",
+      "Presbycusis — age-related gradual high-frequency loss without acute drug exposure",
+      "Meniere disease — episodic vertigo, fluctuating hearing, aural fullness; not primarily drug-induced",
+      "Vestibular neuritis — post-viral vertigo without ototoxic drug history",
+      "Nephrotoxicity — renal injury from same drugs (often co-occurs) but distinct organ toxicity",
+    ],
+    pediatrics:
+      "Neonates have increased aminoglycoside exposure risk with immature renal clearance; hearing screens after meningitis/sepsis treated with gentamicin. Avoid unnecessary aminoglycosides when safer alternatives exist in pediatrics.",
   },
 ];
 

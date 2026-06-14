@@ -4374,7 +4374,18 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "celiac-disease",
     name: "Celiac Disease",
     etymology: "Greek koiliakos = abdominal + disease = disordered function",
-    aliases: ["celiac disease", "celiac sprue", "gluten-sensitive enteropathy"],
+    aliases: [
+      "celiac disease",
+      "celiac sprue",
+      "celiac sprue disease",
+      "celiac diseases",
+      "coeliac disease",
+      "coeliac sprue",
+      "gluten-sensitive enteropathy",
+      "gluten sensitive enteropathy",
+      "nontropical sprue",
+      "gluten intolerance enteropathy",
+    ],
     definition:
       "Immune-mediated enteropathy triggered by gluten ingestion in genetically predisposed individuals.",
     pathophysiology:
@@ -18766,6 +18777,787 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "SIADH occurs with CNS infection, head trauma, and postoperative states in children; small cell lung cancer is rare in pediatrics — pulmonary and CNS causes predominate. Correct hyponatremia cautiously in infants to avoid neurologic injury.",
+  },
+  {
+    id: "steatohepatitis",
+    name: "Steatohepatitis",
+    etymology: "Greek steat = fat + hēpar = liver + -itis = inflammation",
+    aliases: [
+      "steatohepatitis",
+      "steatohepatitides",
+      "steatosis with hepatitis",
+      "fatty liver hepatitis",
+      "alcoholic steatohepatitis",
+      "ash",
+    ],
+    definition:
+      "Hepatic steatosis with necroinflammatory injury — ballooning degeneration, lobular inflammation, and progressive fibrosis risk — occurring in alcoholic liver disease or as the inflammatory form of NAFLD (NASH).",
+    pathophysiology:
+      "Triglyceride accumulation in hepatocytes → lipotoxicity, oxidative stress, and mitochondrial injury → Kupffer cell activation and inflammatory cytokines → hepatocyte ballooning and apoptosis → stellate cell activation and fibrosis; zone 3 hepatocytes are especially vulnerable.",
+    classicPresentation: [
+      "Often asymptomatic with incidentally elevated ALT/AST",
+      "RUQ discomfort, fatigue, hepatomegaly",
+      "History of heavy alcohol use (alcoholic steatohepatitis) or metabolic syndrome/obesity (NASH)",
+    ],
+    keyFindings: [
+      "Elevated aminotransferases (usually <5× normal in NASH; higher in alcoholic hepatitis)",
+      "Steatosis on imaging; inflammation/fibrosis stage requires biopsy",
+      "Mallory-Denk bodies favor alcoholic steatohepatitis on histology",
+    ],
+    keyLabs: [
+      "ALT, AST — AST:ALT >2:1 suggests alcoholic etiology",
+      "Exclude viral serologies, ferritin, ceruloplasmin as indicated",
+      "Liver biopsy — ballooning, inflammation, fibrosis stage",
+    ],
+    associations: [
+      "Alcohol use disorder — alcoholic steatohepatitis",
+      "Metabolic syndrome, obesity, type 2 diabetes — NASH",
+      "Progression to cirrhosis and hepatocellular carcinoma",
+    ],
+    complications: [
+      "Fibrosis and cirrhosis",
+      "Hepatocellular carcinoma",
+      "Acute alcoholic hepatitis with jaundice and coagulopathy (severe alcoholic steatohepatitis)",
+    ],
+    distinguishFrom: [
+      "Simple hepatic steatosis — fat without significant inflammation or ballooning",
+      "Nonalcoholic steatohepatitis (NASH) — steatohepatitis without heavy alcohol use",
+      "Viral hepatitis — serologic diagnosis, often higher transaminases acutely",
+      "Autoimmune hepatitis — ANA/SMA, anti-LKM, interface hepatitis pattern",
+    ],
+    treatment: [
+      "Alcohol abstinence if alcohol-related",
+      "Weight loss and metabolic risk factor control for NASH component",
+      "Avoid hepatotoxic drugs; treat underlying cause",
+    ],
+    boardsPearls: [
+      "Steatohepatitis = steatosis + inflammation + ballooning (biopsy criteria)",
+      "AST:ALT >2:1 favors alcoholic steatohepatitis",
+      "Zone 3 (centrilobular) hepatocytes most vulnerable",
+      "Can progress to cirrhosis without cirrhosis-stage symptoms beforehand",
+    ],
+    pediatrics:
+      "Pediatric NAFLD can progress to steatohepatitis with childhood obesity; evaluate for metabolic syndrome and exclude other liver diseases.",
+  },
+  {
+    id: "nonalcoholic-steatohepatitis",
+    name: "Nonalcoholic Steatohepatitis",
+    etymology: "Latin non = not + alcohol + Greek steat = fat + hēpar = liver + -itis = inflammation",
+    aliases: [
+      "nonalcoholic steatohepatitis",
+      "nash",
+      "non-alcoholic steatohepatitis",
+      "non alcoholic steatohepatitis",
+      "metabolic dysfunction-associated steatohepatitis",
+      "mash",
+    ],
+    definition:
+      "Inflammatory form of NAFLD — hepatic steatosis with ballooning degeneration and lobular inflammation in the absence of heavy alcohol use — the progressive subset that can lead to fibrosis, cirrhosis, and HCC.",
+    pathophysiology:
+      "Insulin resistance → ↑ free fatty acid flux and de novo lipogenesis in hepatocytes → steatosis → lipotoxicity, ER stress, and oxidative injury → inflammation and fibrosis; 'two-hit' model (steatosis then inflammatory hit).",
+    classicPresentation: [
+      "Asymptomatic or mild RUQ discomfort with obesity/metabolic syndrome",
+      "Incidentally elevated ALT on routine labs",
+      "Type 2 diabetes, dyslipidemia, hypertension often coexist",
+    ],
+    keyFindings: [
+      "Hepatic steatosis on ultrasound or MRI",
+      "Mild ALT elevation (ALT often > AST in NASH)",
+      "Biopsy: steatosis + ballooning + inflammation ± fibrosis confirms NASH",
+    ],
+    keyLabs: [
+      "ALT, AST, metabolic panel, HbA1c, lipid panel",
+      "Exclude alcohol use disorder, viral hepatitis, hemochromatosis, Wilson disease",
+      "Fibrosis staging via biopsy or noninvasive scores (Step 2 context)",
+    ],
+    associations: [
+      "Obesity and metabolic syndrome",
+      "Type 2 diabetes mellitus",
+      "Polycystic ovary syndrome",
+      "Cardiovascular disease (shared metabolic risk)",
+    ],
+    complications: [
+      "Progressive fibrosis and cirrhosis",
+      "Hepatocellular carcinoma (can occur without cirrhosis in NAFLD)",
+      "Increased cardiovascular mortality",
+    ],
+    distinguishFrom: [
+      "Simple steatosis (NAFL) — fat without necroinflammation on biopsy",
+      "Alcoholic steatohepatitis — heavy alcohol use, AST:ALT >2:1, Mallory-Denk bodies",
+      "Viral hepatitis — HBsAg, anti-HCV serology",
+      "Autoimmune hepatitis — autoantibodies, interface hepatitis",
+    ],
+    treatment: [
+      "Weight loss (~7–10%) — most effective disease-modifying intervention",
+      "Optimize diabetes, dyslipidemia, and cardiovascular risk",
+      "Alcohol avoidance; no universally approved pharmacotherapy on Step 1 focus",
+    ],
+    boardsPearls: [
+      "NASH = NAFLD with inflammation and ballooning on biopsy",
+      "Metabolic syndrome + steatosis + ↑ ALT → think NASH",
+      "Can progress to cirrhosis and HCC without alcohol",
+      "AST:ALT usually <1 in NASH (vs >2 alcoholic pattern)",
+      "Most common chronic liver disease in Western countries",
+    ],
+    pediatrics:
+      "Pediatric NASH rising with childhood obesity; biopsy may be needed to distinguish from simple steatosis when fibrosis risk is high.",
+  },
+  {
+    id: "viral-hepatitis",
+    name: "Viral Hepatitis",
+    etymology: "Latin virus = poison + Greek hepar = liver + -itis = inflammation",
+    aliases: [
+      "viral hepatitis",
+      "viral hepatitides",
+      "acute viral hepatitis",
+      "chronic viral hepatitis",
+      "hepatitis virus infection",
+    ],
+    definition:
+      "Hepatocyte injury caused by hepatotropic viruses — most commonly hepatitis A, B, C, D, and E — presenting with transaminase elevation and, when symptomatic, jaundice and systemic illness.",
+    pathophysiology:
+      "Virus infects hepatocytes → immune-mediated and direct cytopathic injury → ALT/AST release → impaired synthetic and excretory function; HBV/HCV can establish chronic infection with ongoing inflammation → fibrosis → cirrhosis → HCC.",
+    classicPresentation: [
+      "Prodrome: fatigue, anorexia, nausea, RUQ pain",
+      "Icteric phase: jaundice, dark urine, pale stools, pruritus",
+      "Fever and tender hepatomegaly in acute infection",
+      "May be asymptomatic (especially chronic HBV/HCV)",
+    ],
+    keyFindings: [
+      "Markedly elevated ALT/AST (often >1000 in acute hepatitis)",
+      "Hyperbilirubinemia",
+      "Anti-HAV IgM (acute A); HBsAg/anti-HBc pattern (HBV); anti-HCV with HCV RNA (HCV)",
+    ],
+    keyLabs: [
+      "Viral serologies and PCR as indicated",
+      "ALT, AST, bilirubin, INR, albumin",
+      "HBV: HBsAg, anti-HBs, anti-HBc, HBeAg, HBV DNA",
+      "HCV: anti-HCV → confirm with HCV RNA",
+    ],
+    associations: [
+      "HAV/HEV — fecal-oral transmission; usually self-limited (HEV severe in pregnancy)",
+      "HBV/HCV — blood, sexual, perinatal transmission; chronic infection risk",
+      "HDV — requires HBV coinfection or superinfection",
+      "HBV + aflatoxin exposure — synergistic HCC risk",
+    ],
+    complications: [
+      "Fulminant hepatic failure (especially HBV, HEV in pregnancy)",
+      "Chronic hepatitis, cirrhosis, HCC (HBV, HCV, HDV)",
+      "Extrahepatic: cryoglobulinemia (HCV), polyarteritis nodosa (HBV)",
+    ],
+    distinguishFrom: [
+      "Alcoholic hepatitis — AST:ALT >2:1, alcohol history",
+      "Autoimmune hepatitis — ANA, SMA, anti-LKM antibodies",
+      "Drug-induced liver injury — temporal relation to medication",
+      "Ischemic hepatitis — shock, very high transaminases with rapid decline",
+    ],
+    treatment: [
+      "HAV/HEV acute — supportive care",
+      "HBV chronic — antivirals (tenofovir, entecavir); interferon selected cases",
+      "HCV chronic — direct-acting antivirals (cure >95%)",
+      "Vaccination: HAV and HBV (HBV birth dose + HBIG for exposed neonates)",
+    ],
+    boardsPearls: [
+      "Acute viral hepatitis — ALT/AST often >1000",
+      "HBV serology: HBsAg (+) chronic/active; anti-HBs (+) immunity; anti-HBc IgM acute",
+      "HCV: anti-HCV screening → HCV RNA confirms active infection",
+      "HAV/HEV self-limited; HBV/HCV can become chronic",
+      "ALT ≥ AST in viral hepatitis (vs AST > ALT alcoholic pattern)",
+    ],
+    pediatrics:
+      "Neonatal HBV infection → 90% chronicity risk; prevent with birth dose vaccine and HBIG. Vertical HCV transmission ~5%.",
+  },
+  {
+    id: "autoimmune-hepatitis",
+    name: "Autoimmune Hepatitis",
+    etymology: "Greek auto = self + Latin immunitas = exemption + Greek hepar = liver + -itis = inflammation",
+    aliases: [
+      "autoimmune hepatitis",
+      "autoimmune hepatitides",
+      "aih",
+      "lupoid hepatitis",
+      "chronic active autoimmune hepatitis",
+    ],
+    definition:
+      "Chronic immune-mediated liver disease characterized by interface hepatitis, hypergammaglobulinemia, and autoantibodies — classified as type 1 (ANA/SMA) or type 2 (anti-LKM, often pediatric).",
+    pathophysiology:
+      "Loss of self-tolerance to hepatocyte antigens → T-cell mediated attack on liver parenchyma → interface hepatitis with plasma cell infiltrate → progressive fibrosis if untreated; associated with other autoimmune diseases.",
+    classicPresentation: [
+      "Fatigue, jaundice, arthralgias in young to middle-aged women",
+      "Acute or insidious onset",
+      "May present as fulminant hepatitis or cirrhosis at diagnosis",
+    ],
+    keyFindings: [
+      "Elevated ALT/AST and bilirubin",
+      "Hypergammaglobulinemia (↑ IgG)",
+      "ANA and/or smooth muscle antibody (SMA) positive (type 1)",
+      "Anti-LKM1 positive (type 2, more common in children)",
+      "Liver biopsy — interface hepatitis, plasma cells, rosettes",
+    ],
+    keyLabs: [
+      "ANA, SMA, anti-LKM, total IgG",
+      "Exclude viral hepatitis, Wilson disease, drug-induced injury",
+      "Liver biopsy for diagnosis and staging",
+    ],
+    associations: [
+      "Other autoimmune diseases — thyroiditis, celiac disease, UC",
+      "Type 1 AIH — adult women, ANA/SMA",
+      "Type 2 AIH — children/adolescents, anti-LKM1",
+    ],
+    complications: [
+      "Cirrhosis and portal hypertension",
+      "Hepatocellular carcinoma in long-standing disease",
+      "Acute liver failure if untreated",
+    ],
+    distinguishFrom: [
+      "Viral hepatitis — HBsAg, anti-HCV negative; viral serologies distinguish",
+      "Primary biliary cholangitis — anti-mitochondrial antibody, cholestatic LFT pattern",
+      "Primary sclerosing cholangitis — MRCP beading, often with IBD",
+      "Drug-induced liver injury — resolves after drug withdrawal",
+    ],
+    treatment: [
+      "Corticosteroids (prednisone) ± azathioprine — first-line immunosuppression",
+      "Long-term maintenance often required",
+      "Liver transplant for decompensated cirrhosis or fulminant failure",
+    ],
+    boardsPearls: [
+      "Young woman + ↑ ALT + ↑ IgG + ANA/SMA → autoimmune hepatitis type 1",
+      "Anti-LKM1 → type 2 AIH (pediatric association)",
+      "Interface hepatitis with plasma cells on biopsy",
+      "Treat with steroids ± azathioprine — do not confuse with viral hepatitis needing antivirals",
+      "vs PBC — AMA positive, cholestatic pattern, middle-aged women",
+    ],
+    pediatrics:
+      "Type 2 AIH (anti-LKM1) more common in children; present with acute hepatitis or cirrhosis; treat aggressively with immunosuppression.",
+  },
+  {
+    id: "wernicke-encephalopathy",
+    name: "Wernicke Encephalopathy",
+    etymology: "Eponym: Carl Wernicke + Greek enkephalos = brain + -pathy = disease",
+    aliases: [
+      "wernicke encephalopathy",
+      "wernicke's encephalopathy",
+      "wernicke syndrome",
+      "acute wernicke encephalopathy",
+    ],
+    definition:
+      "Acute, potentially reversible neurologic emergency from thiamine (vitamin B₁) deficiency — classically the triad of confusion, ataxia, and ophthalmoplegia — most often in chronic alcoholism or malnutrition.",
+    pathophysiology:
+      "Thiamine depletion impairs cerebral energy metabolism (thiamine-dependent enzymes in glucose utilization) → petechial hemorrhages and demyelination in mammillary bodies, medial thalamus, periaqueductal gray, and cerebellar vermis → acute encephalopathy; glucose load without thiamine can precipitate or worsen injury.",
+    classicPresentation: [
+      "Confusion and altered mental status",
+      "Gait ataxia (cerebellar and vestibular involvement)",
+      "Ophthalmoplegia — nystagmus, lateral rectus palsy (CN VI), conjugate gaze palsies",
+      "History of alcohol use disorder, malnutrition, hyperemesis, or bariatric surgery",
+    ],
+    keyFindings: [
+      "Classic triad (confusion, ataxia, ophthalmoplegia) — present in minority of cases fully",
+      "Hypothermia and hypotension possible",
+      "MRI — mammillary body and periaqueductal enhancement (supportive, not required)",
+    ],
+    keyLabs: [
+      "Clinical diagnosis — thiamine levels not routinely available or reliable acutely",
+      "Exclude hypoglycemia, stroke, intoxication",
+      "Check glucose before giving dextrose — give thiamine first in at-risk patients",
+    ],
+    associations: [
+      "Chronic alcohol use — impaired intake and absorption",
+      "Hyperemesis gravidarum, anorexia nervosa, refeeding syndrome",
+      "Malabsorption, bariatric surgery",
+      "Progression to Korsakoff syndrome if untreated",
+    ],
+    complications: [
+      "Korsakoff syndrome — irreversible anterograde amnesia and confabulation",
+      "Death if untreated",
+      "Permanent gait ataxia and memory deficits",
+    ],
+    distinguishFrom: [
+      "Intoxication — alcohol or sedative; improves with time vs thiamine response in Wernicke",
+      "Stroke — focal deficits on imaging",
+      "Korsakoff syndrome — chronic memory disorder after untreated Wernicke",
+      "Beriberi — thiamine deficiency with peripheral neuropathy/cardiac form, not encephalopathy triad",
+    ],
+    treatment: [
+      "IV thiamine immediately — before or with dextrose in malnourished patients",
+      "High-dose parenteral thiamine for several days, then oral maintenance",
+      "Correct electrolytes; treat underlying malnutrition and alcohol use disorder",
+    ],
+    boardsPearls: [
+      "Confusion + ataxia + ophthalmoplegia in alcoholic → Wernicke encephalopathy",
+      "Give thiamine BEFORE glucose in malnourished/alcoholic patients",
+      "Mammillary body lesions on MRI — classic but not required for treatment",
+      "Untreated Wernicke → Korsakoff (irreversible memory disorder)",
+      "Reversible if treated early with thiamine",
+    ],
+    pediatrics:
+      "Rare in children except with malignancy, chronic vomiting, or inborn errors; thiamine before dextrose in refeeding malnourished children.",
+  },
+  {
+    id: "wernicke-korsakoff-syndrome",
+    name: "Wernicke-Korsakoff Syndrome",
+    etymology: "Eponym: Carl Wernicke + Sergei Korsakoff + Greek syn = together + dromos = course",
+    aliases: [
+      "wernicke-korsakoff syndrome",
+      "wernicke korsakoff syndrome",
+      "wernicke-korsakoff",
+      "wernicke korsakoff",
+      "wernicke-korsakoff psychosis",
+    ],
+    definition:
+      "Spectrum of thiamine deficiency neurologic disease — acute Wernicke encephalopathy progressing to chronic Korsakoff syndrome with severe anterograde amnesia, confabulation, and mammillary body injury — classically in chronic alcoholism.",
+    pathophysiology:
+      "Prolonged thiamine deficiency → initial acute encephalopathy (Wernicke) with hemorrhagic lesions in mammillary bodies and diencephalon → if inadequately treated, permanent damage to memory circuits → Korsakoff amnestic disorder with confabulation to fill memory gaps.",
+    classicPresentation: [
+      "Acute phase: confusion, ataxia, ophthalmoplegia (Wernicke triad)",
+      "Chronic phase: anterograde amnesia, inability to form new memories, confabulation",
+      "Apathy and lack of insight in chronic Korsakoff state",
+      "History of chronic alcohol use or prolonged malnutrition",
+    ],
+    keyFindings: [
+      "Wernicke features may precede or overlap with amnestic syndrome",
+      "Mammillary body atrophy on MRI in chronic disease",
+      "Preserved remote memory with impaired new learning (Korsakoff)",
+    ],
+    keyLabs: [
+      "Clinical diagnosis; exclude other causes of amnesia and ataxia",
+      "Thiamine repletion response in acute Wernicke component",
+    ],
+    associations: [
+      "Chronic alcohol use disorder",
+      "Malnutrition and malabsorption",
+      "Refeeding without thiamine supplementation",
+    ],
+    complications: [
+      "Permanent memory impairment (Korsakoff) — often irreversible",
+      "Gait ataxia persisting after acute treatment",
+      "Increased mortality in acute Wernicke phase",
+    ],
+    distinguishFrom: [
+      "Alcohol dementia — global cognitive decline, not isolated amnestic syndrome",
+      "Alzheimer disease — gradual cortical dementia, different imaging/history",
+      "Wernicke encephalopathy alone — acute and potentially reversible with thiamine",
+      "Korsakoff syndrome — chronic amnestic disorder component",
+    ],
+    treatment: [
+      "Emergency IV thiamine for acute Wernicke component",
+      "Prolonged thiamine replacement and nutritional rehabilitation",
+      "Abstinence support; Korsakoff memory deficits often permanent despite treatment",
+    ],
+    boardsPearls: [
+      "Wernicke (acute, reversible) → Korsakoff (chronic amnesia + confabulation) if untreated",
+      "Mammillary bodies — key anatomic site injured",
+      "Confabulation = fabricated memories to fill gaps — pathognomonic of Korsakoff",
+      "Prevent with thiamine before glucose in at-risk patients",
+      "Thiamine deficiency from alcohol — poor intake plus impaired absorption/utilization",
+    ],
+    pediatrics:
+      "Extremely rare in children; consider in prolonged vomiting, eating disorders, or refeeding without thiamine prophylaxis.",
+  },
+  {
+    id: "fetal-alcohol-syndrome",
+    name: "Fetal Alcohol Syndrome",
+    etymology: "Latin fetus = offspring + Arabic al-kuhl + Greek syn = together + dromos = course",
+    aliases: [
+      "fetal alcohol syndrome",
+      "fetal alcohol syndromes",
+      "fas",
+      "fetal alcohol spectrum disorder",
+      "fasd",
+      "fetal alcohol spectrum disorders",
+      "alcohol embryopathy",
+    ],
+    definition:
+      "Teratogenic spectrum disorder from in utero alcohol exposure — FAS represents the severe end with growth restriction, characteristic craniofacial dysmorphism, and neurodevelopmental impairment; no safe alcohol threshold in pregnancy.",
+    pathophysiology:
+      "Ethanol and acetaldehyde cross placenta → disrupt neuronal migration, synaptogenesis, and craniofacial development → microcephaly, midface hypoplasia, and permanent CNS dysfunction; timing and dose of exposure affect phenotype severity.",
+    classicPresentation: [
+      "Growth restriction (height/weight <10th percentile)",
+      "Craniofacial features: short palpebral fissures, smooth philtrum, thin vermillion of upper lip",
+      "Microcephaly and neurodevelopmental delay",
+      "Behavioral problems — hyperactivity, learning disability, poor executive function",
+    ],
+    keyFindings: [
+      "Classic facial triad on examination",
+      "Developmental delay or intellectual disability",
+      "History of maternal alcohol use in pregnancy (may be underreported)",
+    ],
+    keyLabs: [
+      "Clinical diagnosis — no specific lab test",
+      "Developmental assessment and neuropsychologic testing",
+      "Exclude other teratogenic and genetic syndromes if atypical",
+    ],
+    associations: [
+      "Maternal alcohol use during pregnancy — dose and timing dependent",
+      "Cardiac defects (VSD, PDA) in some cases",
+      "Partial FAS and alcohol-related neurodevelopmental disorder ( broader FASD spectrum)",
+    ],
+    complications: [
+      "Permanent intellectual disability and learning problems",
+      "Mental health disorders and substance use risk",
+      "Social and adaptive functioning impairment lifelong",
+    ],
+    distinguishFrom: [
+      "Fetal hydantoin syndrome — phenytoin exposure; broad nasal bridge, hypoplastic nails",
+      "Williams syndrome — elfin facies, supravalvular aortic stenosis, hypercalcemia",
+      "Noonan syndrome — webbed neck, cardiac defects, normal philtrum/lip",
+    ],
+    treatment: [
+      "No cure — early intervention, special education, occupational/speech therapy",
+      "Behavioral support and stable caregiving environment",
+      "Prevention: abstinence from alcohol in pregnancy",
+    ],
+    boardsPearls: [
+      "Smooth philtrum + short palpebral fissures + thin upper lip = FAS facies",
+      "Leading preventable cause of intellectual disability in US",
+      "No safe amount of alcohol in pregnancy on boards",
+      "Growth restriction + facial dysmorphism + CNS dysfunction",
+      "vs fetal hydantoin — anticonvulsant teratogen, different facies",
+    ],
+    pediatrics:
+      "Diagnosis often made in childhood with developmental delay and characteristic facies; early developmental services improve outcomes but CNS injury is permanent.",
+  },
+  {
+    id: "alcoholic-cardiomyopathy",
+    name: "Alcoholic Cardiomyopathy",
+    etymology: "Arabic al-kuhl + Greek kardia = heart + mys = muscle + -pathy = disease",
+    aliases: [
+      "alcoholic cardiomyopathy",
+      "alcoholic cardiomyopathies",
+      "alcohol-induced cardiomyopathy",
+      "alcoholic dilated cardiomyopathy",
+      "ethanol-induced cardiomyopathy",
+    ],
+    definition:
+      "Dilated cardiomyopathy caused by chronic heavy alcohol use — direct myocardial toxicity and thiamine deficiency contribute — presenting with heart failure and reduced ejection fraction that may improve with abstinence.",
+    pathophysiology:
+      "Chronic ethanol exposure → mitochondrial dysfunction, oxidative stress, and impaired calcium handling in cardiomyocytes → ventricular dilation and systolic dysfunction; acetaldehyde toxicity and nutritional cofactor depletion (thiamine) worsen injury; may coexist with beriberi (high-output) in thiamine deficiency.",
+    classicPresentation: [
+      "Dyspnea, orthopnea, peripheral edema in chronic heavy drinker",
+      "Palpitations and arrhythmias (AF common)",
+      "Dilated heart on imaging with reduced EF",
+      "Often middle-aged man with long history of alcohol use",
+    ],
+    keyFindings: [
+      "Dilated LV with reduced ejection fraction on echo",
+      "S3 gallop, jugular venous distension, pulmonary crackles",
+      "No ischemic territory pattern (vs ischemic cardiomyopathy)",
+    ],
+    keyLabs: [
+      "BNP elevated in decompensated failure",
+      "Exclude coronary artery disease if indicated",
+      "Thiamine deficiency may coexist — give thiamine",
+    ],
+    associations: [
+      "Chronic alcohol use disorder",
+      "Atrial fibrillation and other arrhythmias",
+      "Concurrent alcoholic liver disease and Wernicke-Korsakoff risk",
+      "Beriberi wet form — high-output failure from thiamine deficiency (can overlap)",
+    ],
+    complications: [
+      "Progressive heart failure and death",
+      "Thromboembolism from dilated atria",
+      "Sudden cardiac death from arrhythmia",
+    ],
+    distinguishFrom: [
+      "Ischemic cardiomyopathy — CAD, regional wall motion abnormalities",
+      "Idiopathic dilated cardiomyopathy — no alcohol history",
+      "Beriberi (wet) — thiamine deficiency high-output failure; may coexist with alcoholism",
+      "Hypertensive heart disease — concentric hypertrophy initially",
+    ],
+    treatment: [
+      "Alcohol abstinence — may partially reverse dysfunction if early",
+      "Standard heart failure therapy (ACEi/ARB, beta-blocker, diuretics)",
+      "Thiamine supplementation",
+      "Implantable devices if indicated (Step 2 context)",
+    ],
+    boardsPearls: [
+      "Chronic alcohol use + dilated cardiomyopathy + ↓ EF → alcoholic cardiomyopathy",
+      "Abstinence can improve or stabilize LV function",
+      "Distinguish from ischemic CM — no CAD required for alcoholic CM diagnosis",
+      "Check thiamine/beriberi in alcoholic with heart failure",
+      "Cobalt beer cardiomyopathy — historical toxin example on boards",
+    ],
+    pediatrics:
+      "Alcoholic cardiomyopathy is an adult disease; pediatric dilated cardiomyopathy has genetic, viral, and metabolic causes instead.",
+  },
+  {
+    id: "insulinoma",
+    name: "Insulinoma",
+    etymology: "Latin insula = island + -oma = tumor (islet cell origin)",
+    aliases: [
+      "insulinoma",
+      "insulinomas",
+      "pancreatic insulinoma",
+      "pancreatic insulinomas",
+      "beta cell tumor",
+      "β cell tumor",
+      "insulin-secreting tumor",
+      "insulin secreting tumor",
+    ],
+    definition:
+      "Functional pancreatic neuroendocrine tumor arising from β cells — autonomously secretes insulin causing fasting hypoglycemia with neuroglycopenic and adrenergic symptoms.",
+    pathophysiology:
+      "Insulin-secreting islet cell adenoma (rarely carcinoma) → inappropriate insulin release independent of glucose → hypoglycemia → adrenergic symptoms (tremor, diaphoresis, tachycardia) and neuroglycopenic symptoms (confusion, seizures, coma); C-peptide elevated with endogenous hyperinsulinism.",
+    classicPresentation: [
+      "Episodic confusion, seizures, or loss of consciousness relieved by eating",
+      "Symptoms worse with fasting or exercise",
+      "Weight gain (anabolic effect of excess insulin)",
+      "Whipple triad: hypoglycemia symptoms, documented low glucose, relief with glucose",
+    ],
+    keyFindings: [
+      "Fasting or provoked hypoglycemia with inappropriately high insulin",
+      "Elevated C-peptide during hypoglycemia (confirms endogenous production)",
+      "Negative sulfonylurea screen (excludes factitious/exogenous cause)",
+      "Pancreatic mass on CT/MRI/endoscopic ultrasound",
+    ],
+    keyLabs: [
+      "72-hour supervised fast with serial glucose, insulin, C-peptide",
+      "Low glucose + high insulin + high C-peptide during symptomatic episode",
+      "Proinsulin may be elevated",
+      "Exclude sulfonylurea/meglitinide on toxicology screen",
+    ],
+    associations: [
+      "MEN type 1 — part of pancreatic NET spectrum with gastrinoma, VIPoma",
+      "Sporadic solitary adenoma most common",
+      "Rare malignant insulinoma with metastases",
+    ],
+    complications: [
+      "Severe hypoglycemic seizures and brain injury",
+      "Driving/occupational safety risk from unpredictable hypoglycemia",
+      "Metastatic neuroendocrine carcinoma (rare)",
+    ],
+    distinguishFrom: [
+      "Factitious hypoglycemia — exogenous insulin (low C-peptide)",
+      "Sulfonylurea use — high insulin but low C-peptide with positive drug screen",
+      "Non-insulinoma pancreatogenous hypoglycemia (NIPHS) — postprandial, diffuse islet disease",
+      "Adrenal insufficiency or GH deficiency — low glucose with low/normal insulin",
+    ],
+    treatment: [
+      "Surgical enucleation or partial pancreatectomy when localized",
+      "Diazoxide (inhibits insulin release) if unresectable",
+      "Frequent meals; acarbose slows carbohydrate absorption (adjunct)",
+      "Octreotide for refractory cases",
+    ],
+    boardsPearls: [
+      "Whipple triad — symptoms + low glucose + relief with glucose",
+      "Fasting hypoglycemia + ↑ insulin + ↑ C-peptide → insulinoma",
+      "Exogenous insulin → low C-peptide; sulfonylurea → high insulin, low C-peptide",
+      "MEN1 association — screen for hyperparathyroidism and pituitary disease",
+      "Most insulinomas are benign solitary adenomas",
+    ],
+    pediatrics:
+      "Pediatric hyperinsulinemic hypoglycemia more often congenital (KATP channel mutations) or nesidioblastosis; true insulinoma is rare in children.",
+  },
+  {
+    id: "acute-pancreatitis",
+    name: "Acute Pancreatitis",
+    etymology: "Greek pan = all + kreas = flesh + -itis = inflammation",
+    aliases: [
+      "acute pancreatitis",
+      "acute pancreatitides",
+      "ap",
+      "pancreatitis acute",
+    ],
+    definition:
+      "Acute inflammatory injury of the pancreas with autodigestion by activated pancreatic enzymes — presenting with severe epigastric pain and elevated lipase/amylase.",
+    pathophysiology:
+      "Premature activation of trypsin within acinar cells → enzymatic autodigestion of pancreatic and peripancreatic tissue → inflammation, edema, necrosis, and systemic inflammatory response; gallstone impaction at ampulla and alcohol are leading causes.",
+    classicPresentation: [
+      "Sudden severe epigastric pain radiating to the back",
+      "Pain worsened by supine position, partially relieved by leaning forward",
+      "Nausea and vomiting",
+      "History of gallstones, heavy alcohol use, hypertriglyceridemia, ERCP, or trauma",
+    ],
+    keyFindings: [
+      "Epigastric tenderness, guarding; ileus common",
+      "Cullen sign — periumbilical ecchymosis (hemorrhagic pancreatitis)",
+      "Grey Turner sign — flank ecchymosis",
+      "Severe cases: hypotension, tachypnea, altered mental status",
+    ],
+    keyLabs: [
+      "Serum lipase ↑ (more specific and longer-lasting than amylase)",
+      "Amylase ↑ (also from salivary sources, macroamylasemia)",
+      "Hypocalcemia from saponification of peripancreatic fat (poor prognosis sign)",
+      "↑ BUN/creatinine, ↑ hematocrit (hemoconcentration from third-spacing)",
+    ],
+    associations: [
+      "Gallstones (most common overall cause in US)",
+      "Alcohol (common chronic cause)",
+      "Hypertriglyceridemia (especially >1000 mg/dL)",
+      "ERCP complication",
+      "Drugs — thiazides, valproate, azathioprine",
+      "Scorpion sting (Tityus trinitatis — boards trivia)",
+    ],
+    complications: [
+      "Pancreatic necrosis and infected necrosis",
+      "Pseudocyst and walled-off necrosis",
+      "ARDS and SIRS/septic shock",
+      "Hypocalcemia, DIC",
+      "Chronic pancreatitis after recurrent episodes",
+    ],
+    distinguishFrom: [
+      "Peptic ulcer perforation — free air, peritonitis",
+      "Cholecystitis — RUQ pain, Murphy sign; may coexist with biliary pancreatitis",
+      "Mesenteric ischemia — pain out of proportion early",
+      "Bowel obstruction — colicky pain, dilated loops",
+      "Chronic pancreatitis — calcifications, exocrine insufficiency, chronic pain",
+    ],
+    treatment: [
+      "Aggressive IV fluid resuscitation — cornerstone of early management",
+      "NPO initially; early enteral nutrition when tolerated (preferred over prolonged TPN)",
+      "Treat underlying cause (cholecystectomy for biliary pancreatitis after recovery)",
+      "No routine prophylactic antibiotics for sterile necrosis (Step 2 nuance)",
+      "ERCP for cholangitis with biliary obstruction, not routine mild gallstone pancreatitis",
+    ],
+    boardsPearls: [
+      "Epigastric pain to back + ↑ lipase → acute pancreatitis",
+      "Gallstones and alcohol — top causes",
+      "Lipase more specific than amylase",
+      "Hypocalcemia and Grey Turner/Cullen signs — severe hemorrhagic disease",
+      "Fat necrosis → saponification → hypocalcemia",
+      "Hypertriglyceridemia >1000 → pancreatitis risk",
+    ],
+    pediatrics:
+      "Pediatric pancreatitis is uncommon; consider trauma, systemic disease, gallstones in adolescents, and hereditary pancreatitis (PRSS1, SPINK1).",
+  },
+  {
+    id: "pancreatic-adenocarcinoma",
+    name: "Pancreatic Adenocarcinoma",
+    etymology: "Greek pan = all + kreas = flesh + aden = gland + karkinos = crab/cancer + -oma = tumor",
+    aliases: [
+      "pancreatic adenocarcinoma",
+      "pancreatic adenocarcinomas",
+      "pancreatic cancer",
+      "pancreatic cancers",
+      "pancreatic ductal adenocarcinoma",
+      "pancreatic ductal adenocarcinomas",
+      "pdac",
+      "pancreatic carcinoma",
+    ],
+    definition:
+      "Aggressive ductal adenocarcinoma of the pancreas — usually pancreatic head — presenting late with painless jaundice, weight loss, and poor prognosis; desmoplastic stroma limits drug delivery.",
+    pathophysiology:
+      "KRAS mutation and sequential genetic hits (CDKN2A, TP53, SMAD4) in ductal epithelium → invasive adenocarcinoma with dense desmoplastic reaction → early perineural and vascular invasion → metastases to liver, peritoneum (omental cake), and distant sites.",
+    classicPresentation: [
+      "Painless progressive jaundice (head of pancreas obstructs common bile duct)",
+      "Courvoisier sign — palpable non-tender gallbladder with jaundice",
+      "Weight loss, anorexia, new-onset diabetes in elderly",
+      "Epigastric pain radiating to back (body/tail tumors or advanced disease)",
+      "Migratory superficial thrombophlebitis (Trousseau syndrome)",
+    ],
+    keyFindings: [
+      "Painless jaundice with dark urine and pale stools",
+      "Palpable gallbladder (Courvoisier sign) — suggests malignant obstruction not chronic stones",
+      "Epigastric mass (late)",
+      "CA 19-9 elevated (monitoring, not screening)",
+    ],
+    keyLabs: [
+      "↑ total/direct bilirubin, ↑ alkaline phosphatase/GGT (obstructive pattern)",
+      "CA 19-9 — tumor marker (also rises in cholangitis/obstruction)",
+      "CT pancreas protocol — hypodense mass, double-duct sign (CBD + pancreatic duct dilation)",
+    ],
+    associations: [
+      "Smoking — major modifiable risk factor",
+      "Chronic pancreatitis and hereditary pancreatitis syndromes",
+      "Diabetes mellitus (can be paraneoplastic presenting feature)",
+      "BRCA2, Lynch syndrome, Peutz-Jeghers syndrome",
+      "Trousseau syndrome — migratory thrombophlebitis",
+    ],
+    complications: [
+      "Obstructive jaundice and cholangitis",
+      "Gastric outlet obstruction (duodenal invasion)",
+      "Thromboembolism",
+      "Cachexia and death — 5-year survival very low overall",
+    ],
+    distinguishFrom: [
+      "Chronic pancreatitis — calcifications, prior alcohol history, no discrete mass sometimes",
+      "Cholangiocarcinoma — biliary origin; similar obstructive jaundice",
+      "Pancreatic neuroendocrine tumor — often hypervascular on imaging, hormonal syndromes",
+      "Autoimmune pancreatitis — diffuse sausage-shaped gland, responds to steroids",
+    ],
+    treatment: [
+      "Surgical resection (Whipple procedure) if localized resectable disease",
+      "Chemotherapy (gemcitabine-based regimens — Step 2 context)",
+      "Biliary stenting for palliation of jaundice",
+      "Most present with unresectable or metastatic disease",
+    ],
+    boardsPearls: [
+      "Painless jaundice + weight loss + smoker → pancreatic head cancer",
+      "Courvoisier sign — palpable nontender gallbladder with jaundice",
+      "Double-duct sign on imaging — CBD and pancreatic duct dilation",
+      "Trousseau syndrome — migratory thrombophlebitis paraneoplastic sign",
+      "Desmoplastic stroma — dense fibrosis around tumor",
+      "KRAS mutation — common oncogenic driver",
+    ],
+    pediatrics:
+      "Pancreatic adenocarcinoma is exceedingly rare in children; pediatric pancreatic masses are more often neuroblastoma metastasis, solid pseudopapillary tumor, or pancreatoblastoma.",
+  },
+  {
+    id: "superior-mesenteric-artery-syndrome",
+    name: "Superior Mesenteric Artery Syndrome",
+    etymology: "Latin superior = above + Greek mesenterion = middle intestine + Latin arteria = artery + Greek syn = together + dromos = course",
+    aliases: [
+      "superior mesenteric artery syndrome",
+      "superior mesenteric artery syndromes",
+      "sma syndrome",
+      "sma syndromes",
+      "wilkie syndrome",
+      "cast syndrome",
+      "duodenal vascular compression syndrome",
+      "arteromesenteric duodenal compression",
+    ],
+    definition:
+      "Vascular compression of the transverse (third) portion of the duodenum between the superior mesenteric artery and aorta — causing postprandial upper GI obstructive symptoms, usually after loss of mesenteric fat pad.",
+    pathophysiology:
+      "↓ Mesenteric fat (rapid weight loss, malnutrition, hypercatabolic states) or anatomic variation narrows aortomesenteric angle (<25°) and aortomesenteric distance → SMA compresses transverse duodenum → postprandial duodenal obstruction with proximal dilation.",
+    classicPresentation: [
+      "Postprandial epigastric pain, bloating, nausea, and vomiting",
+      "Early satiety and weight loss (worsening the fat pad deficit)",
+      "History of rapid weight loss, anorexia nervosa, burns, bariatric surgery, or prolonged bed rest in casts",
+      "Relief of symptoms in prone or left lateral decubitus position (reduces compression)",
+    ],
+    keyFindings: [
+      "High-pitched bowel sounds and upper GI obstructive pattern",
+      "Upper GI series or CT — dilated proximal duodenum with abrupt cutoff at SMA crossing ('toadstool' or 'double-bubble' proximal pattern)",
+      "Narrow aortomesenteric angle on imaging",
+    ],
+    keyLabs: [
+      "Electrolyte abnormalities from vomiting",
+      "Malnutrition labs if underlying catabolic state",
+      "Diagnosis primarily radiographic/clinical",
+    ],
+    associations: [
+      "Anorexia nervosa and rapid weight loss",
+      "Postoperative states — spinal surgery with prolonged supine positioning",
+      "Hypercatabolic illness and burns",
+      "Congenital mesenteric anomalies (rare)",
+    ],
+    complications: [
+      "Severe malnutrition from chronic obstruction",
+      "Aspiration from vomiting",
+      "Need for surgical duodenojejunostomy if conservative measures fail",
+    ],
+    distinguishFrom: [
+      "Small bowel obstruction from adhesions — colicky pain, air-fluid levels more distal",
+      "Peptic ulcer disease — epigastric pain without obstructive dilatation pattern",
+      "Annular pancreas — congenital ring encircling duodenum in neonates/children",
+      "Gastroparesis — gastric not duodenal obstruction pattern",
+    ],
+    treatment: [
+      "Nutritional rehabilitation and weight gain to restore mesenteric fat pad",
+      "Small frequent meals; postural measures (prone/left lateral)",
+      "Enteral nutrition via nasojejunal tube bypassing duodenum",
+      "Surgical duodenojejunostomy for refractory cases",
+    ],
+    boardsPearls: [
+      "SMA compresses transverse duodenum between aorta and SMA",
+      "After rapid weight loss / anorexia / cast syndrome",
+      "Postprandial vomiting + proximal duodenal dilation on imaging",
+      "Narrow aortomesenteric angle — key anatomic concept",
+      "vs annular pancreas — congenital, neonatal bilious vomiting",
+    ],
+    pediatrics:
+      "Can occur in adolescents with eating disorders or after scoliosis surgery; annular pancreas is the classic neonatal congenital duodenal obstruction differential.",
   },
 ];
 
