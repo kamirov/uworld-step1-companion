@@ -127,3 +127,53 @@ avascular-necrosis.svg
 Created locally
 Reference: https://en.wikipedia.org/wiki/Avascular_necrosis
 Description: Femoral head avascular necrosis schematic
+
+anaphylaxis.svg
+https://commons.wikimedia.org/wiki/File:Signs_and_symptoms_of_anaphylaxis.svg
+Mikael Häggström, CC0
+Description: Signs and symptoms of anaphylaxis across skin, airway, GI, and cardiovascular systems
+
+howell-jolly-body.png
+https://commons.wikimedia.org/wiki/File:Howell-Jolly_body.png
+Paulo Henrique Orlandi Mourao and Mikael Häggström, CC BY-SA 3.0 / GFDL
+Description: Howell-Jolly body in an erythrocyte, relevant to impaired splenic filtration in asplenia
+
+venous-thrombosis.png
+https://commons.wikimedia.org/wiki/File:DVTUS.PNG
+James Heilman, MD, CC BY-SA 3.0 / GFDL
+Description: Ultrasound image demonstrating thrombus in the left common femoral vein
+
+diabetic-nephropathy.jpg
+https://commons.wikimedia.org/wiki/File:Diabetic_nephropathy.jpg
+Doc.mari, CC BY-SA 3.0 / GFDL
+Description: Light micrograph of diabetic nephropathy with nodular glomerulosclerosis
+
+diabetic-retinopathy.png
+https://commons.wikimedia.org/wiki/File:Fundus_-_diabetic_retinopathy.png
+Shaofeng Hao et al., CC BY 4.0
+Description: Fundus image showing hard exudates, microaneurysms, and small hemorrhages in diabetic retinopathy
+
+hyperosmolar-hyperglycemic-state.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Hyperosmolar_hyperglycemic_state
+Description: HHS schematic showing severe hyperglycemia, hyperosmolality, dehydration, altered mental status, and minimal ketosis
+
+medullary-thyroid-carcinoma.jpg
+https://commons.wikimedia.org/wiki/File:Medullary_thyroid_carcinoma_-_high_mag.jpg
+Nephron, CC BY-SA 3.0 / GFDL
+Description: High-power micrograph of medullary thyroid carcinoma with amyloid stroma
+
+pheochromocytoma.jpg
+https://commons.wikimedia.org/wiki/File:Pheochromocytoma.jpg
+NIH Clinical Center, public domain (U.S. federal government)
+Description: CT image showing adrenal pheochromocytoma in a symptomatic patient
+
+hyperparathyroidism.jpg
+https://commons.wikimedia.org/wiki/File:3D_Medical_Animation_still_shot_Hyperparathyroidism.jpg
+Scientific Animations, CC BY-SA 4.0
+Description: Medical illustration of parathyroid gland enlargement in hyperparathyroidism
+
+primary-hyperparathyroidism.png
+https://commons.wikimedia.org/wiki/File:Blausen_0533_Parathyroid_adenoma.png
+BruceBlaus, CC BY 3.0
+Description: Parathyroid adenoma illustration, relevant to primary hyperparathyroidism
