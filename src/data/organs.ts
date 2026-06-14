@@ -109,6 +109,32 @@ export const ORGANS: OrganEntry[] = [
     derivatives: ["Waldeyer ring lymphoid tissue", "Tonsils", "Passageway shared by respiratory and digestive tracts"],
   },
   {
+    id: "pharyngeal-pouch",
+    name: "Pharyngeal Pouch",
+    etymology: "Greek pharynx = throat + Old English poca = bag + endodermal outpocketing",
+    aliases: [
+      "pharyngeal pouch",
+      "pharyngeal pouches",
+      "pharyngeal pocket",
+      "pharyngeal pockets",
+      "branchial pouch",
+      "branchial pouches",
+      "pharyngeal endodermal pouch",
+      "pharyngeal endodermal pouches",
+      "visceral pouch",
+      "visceral pouches",
+    ],
+    germLayer: "Endoderm (with surrounding pharyngeal arch mesenchyme and neural crest)",
+    origin:
+      "Four paired endodermal outpocketings of the developing pharynx during weeks 4–5 that give rise to middle ear, tonsillar epithelium, thymus, parathyroids, and related structures; failure of development causes DiGeorge syndrome and branchial cyst anomalies.",
+    derivatives: [
+      "1st pouch — middle ear cavity, eustachian tube, mastoid air cells",
+      "2nd pouch — epithelial lining of palatine tonsil (tonsillar fossa)",
+      "3rd pouch — inferior parathyroid glands and thymus (ventral/dorsal wings)",
+      "4th pouch — superior parathyroid glands (dorsal wing); ultimobranchial body contributes to parafollicular C cells",
+    ],
+  },
+  {
     id: "nasopharynx",
     name: "Nasopharynx",
     etymology: "Latin nasus = nose + Greek pharynx = throat",
@@ -1273,6 +1299,17 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Pharyngitis", "Peritonsillar abscess", "Adenotonsillar hypertrophy", "Oropharyngeal cancer", "Zenker diverticulum"],
     step1Pearls: ["Shared airway and food passage — swallowing reflex protects airway", "Group A strep pharyngitis can trigger rheumatic fever or PSGN", "Posterior pharynx lesions suggest enteroviral herpangina or HSV distribution patterns"],
     pediatrics: "Strep pharyngitis and viral pharyngitis are common in children; peritonsillar abscess presents with trismus and uvular deviation.",
+  },
+  "pharyngeal-pouch": {
+    functionSummary: "Embryologic endodermal outpocketings patterning upper airway, middle ear, tonsillar epithelium, thymus, and parathyroid development.",
+    commonPathologies: ["DiGeorge syndrome (3rd/4th pouch failure)", "Branchial cleft cyst/fistula", "Thymic aplasia", "Hypoparathyroidism"],
+    step1Pearls: [
+      "3rd pouch → inferior parathyroids + thymus; 4th pouch → superior parathyroids",
+      "1st pouch → middle ear/Eustachian tube; 2nd pouch → palatine tonsil epithelium",
+      "DiGeorge = failed 3rd/4th pouch → hypocalcemia, T-cell deficiency, conotruncal heart defects",
+      "Pouches = endoderm; pharyngeal arches = mesoderm + neural crest (different structure)",
+    ],
+    pediatrics: "Neonatal hypocalcemic seizures and absent thymic shadow on chest X-ray point to 3rd/4th pharyngeal pouch failure (DiGeorge).",
   },
   nasopharynx: {
     functionSummary: "Superior pharyngeal segment connecting nasal cavity to oropharynx; conducts air, drains middle ear via Eustachian tubes, and hosts adenoidal lymphoid tissue.",

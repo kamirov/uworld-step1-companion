@@ -1858,6 +1858,53 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "pallor",
+    name: "Pallor",
+    etymology: "Latin pallere = to be pale + -or = state of",
+    aliases: [
+      "pallor",
+      "pallors",
+      "pallid",
+      "pallidness",
+      "paleness",
+      "pale",
+      "pale skin",
+      "pale complexion",
+      "circumoral pallor",
+      "circumoral pallors",
+    ],
+    definition:
+      "Abnormal paleness of skin, mucous membranes, or nail beds from reduced cutaneous blood flow or decreased hemoglobin concentration — blanches with pressure when due to vasoconstriction but persists when due to anemia.",
+    mechanism:
+      "↓ Hemoglobin (anemia) reduces red hue regardless of perfusion; alternatively arteriolar vasoconstriction from shock, hypovolemia, cold, sympathetic surge, or ischemia ↓ capillary blood volume in skin → visible pallor; in scarlet fever toxin spares perioral area producing circumoral pallor against diffuse erythema.",
+    thinkOf: [
+      "Iron deficiency or other anemia — chronic fatigue and exertional dyspnea",
+      "Acute hemorrhage or hypovolemic shock",
+      "Vasovagal syncope — sudden pallor with diaphoresis and bradycardia",
+      "Acute limb ischemia — pallor with pain, pulselessness, paresthesias (6 Ps)",
+      "Heart failure with low cardiac output",
+      "Scarlet fever — circumoral pallor with sandpaper rash",
+      "Steal syndrome after dialysis fistula or vascular access",
+    ],
+    pairWith: [
+      "Pallor + tachycardia + fatigue → anemia or blood loss",
+      "Pallor + hypotension + cool extremities → shock",
+      "Pallor + sandpaper rash + strawberry tongue → scarlet fever (circumoral pallor)",
+      "Pallor + pulselessness + pain → acute arterial occlusion",
+      "Pallor + diaphoresis + bradycardia → vasovagal syncope",
+      "Conjunctival pallor + koilonychia → iron deficiency anemia",
+    ],
+    distinguishFrom: [
+      "Cyanosis — bluish discoloration from deoxygenated hemoglobin, not pale",
+      "Erythema — increased blood flow causing redness, opposite of pallor",
+      "Jaundice — yellow bilirubin pigmentation, especially sclera",
+      "Albinism — congenital lack of melanin pigment, not hemodynamic or anemia-related pallor",
+      "Normal fair skin — baseline complexion without pathologic anemia or hypoperfusion",
+    ],
+    pediatrics:
+      "Infant pallor with tachypnea or poor feeding suggests congenital heart disease or anemia; circumoral pallor with rash is classic for scarlet fever. Sickle cell dactylitis presents with painful swelling more than isolated pallor.",
+  },
+  {
     id: "dactylitis",
     name: "Dactylitis",
     etymology: "Greek daktylos = finger/toe + -itis = inflammation",
@@ -4573,6 +4620,89 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Neonatal hypocalcemia (prematurity, maternal diabetes, DiGeorge syndrome) can present with jitteriness, seizures, or carpopedal spasm; check ionized calcium. Rickets from vitamin D deficiency causes hypocalcemic tetany in toddlers.",
   },
   {
+    id: "trousseau-sign",
+    name: "Trousseau Sign",
+    etymology: "eponym: Armand Trousseau (French physician) + sign = clinical indicator",
+    aliases: [
+      "trousseau sign",
+      "trousseau signs",
+      "trousseau",
+      "trousseau's sign",
+      "trousseaus sign",
+      "trousseau phenomenon",
+      "trousseau carpopedal spasm",
+      "bp cuff test",
+      "blood pressure cuff test",
+    ],
+    definition:
+      "Provocative test for neuromuscular hyperexcitability in hypocalcemia — inflation of a blood pressure cuff above systolic pressure for several minutes induces carpopedal spasm (wrist and finger flexion).",
+    mechanism:
+      "Ischemia from cuff inflation combined with ↓ ionized Ca²⁺ lowers the threshold for peripheral nerve firing → sustained muscle contraction in the hand; more sensitive than Chvostek for hypocalcemia.",
+    thinkOf: [
+      "Hypocalcemia — hypoparathyroidism after thyroid surgery",
+      "DiGeorge syndrome (22q11 deletion)",
+      "Vitamin D deficiency and rickets/osteomalacia",
+      "Acute pancreatitis with saponification",
+      "Massive transfusion (citrate binds Ca²⁺)",
+      "Metabolic alkalosis worsening ionized hypocalcemia",
+    ],
+    pairWith: [
+      "Cuff-induced carpopedal spasm + perioral tingling → hypocalcemia",
+      "Positive Trousseau + recent thyroidectomy → hypoparathyroidism",
+      "Trousseau + Chvostek + prolonged QT → hypocalcemia workup",
+      "↓ ionized Ca + low PTH → hypoparathyroidism",
+      "Neonatal seizures + absent thymic shadow → DiGeorge hypocalcemia",
+    ],
+    distinguishFrom: [
+      "Trousseau syndrome — paraneoplastic migratory superficial thrombophlebitis in pancreatic cancer, not a hypocalcemia sign",
+      "Chvostek sign — facial nerve tap causing facial twitch, less sensitive",
+      "Writer's cramp — task-specific dystonia without hypocalcemia",
+      "Carpal tunnel syndrome — median nerve compression with paresthesia, not tetanic spasm",
+    ],
+    pediatrics:
+      "Neonatal hypocalcemia may show Trousseau or Chvostek signs before frank seizures; common in prematurity, maternal diabetes, and DiGeorge syndrome.",
+  },
+  {
+    id: "chvostek-sign",
+    name: "Chvostek Sign",
+    etymology: "eponym: František Chvostek (Austrian physician) + sign = clinical indicator",
+    aliases: [
+      "chvostek sign",
+      "chvostek signs",
+      "chvostek",
+      "chvostek's sign",
+      "chvosteks sign",
+      "chvostek phenomenon",
+      "facial nerve tap sign",
+      "facial twitch sign",
+    ],
+    definition:
+      "Clinical sign of neuromuscular hyperexcitability in hypocalcemia — tapping the facial nerve (anterior to ear/tragus) triggers ipsilateral twitching of facial muscles.",
+    mechanism:
+      "↓ extracellular ionized Ca²⁺ increases excitability of peripheral nerves → mechanical stimulation of facial nerve branch causes transient muscle contraction; less sensitive and less specific than Trousseau sign.",
+    thinkOf: [
+      "Hypocalcemia — hypoparathyroidism, vitamin D deficiency",
+      "DiGeorge syndrome",
+      "Acute pancreatitis with hypocalcemia",
+      "Metabolic alkalosis (↓ ionized Ca²⁺)",
+      "Can be positive in ~10% of normal individuals (lower specificity)",
+    ],
+    pairWith: [
+      "Facial twitch on tapping + perioral tingling → hypocalcemia",
+      "Chvostek + Trousseau + prolonged QT → confirm ionized calcium",
+      "Recent thyroid surgery + facial twitch on tap → hypoparathyroidism",
+      "↓ Ca + ↓ PTH + 22q11 → DiGeorge",
+    ],
+    distinguishFrom: [
+      "Trousseau sign — BP cuff provoked carpopedal spasm; more sensitive for hypocalcemia",
+      "Facial nerve palsy (Bell palsy) — sustained weakness, not brief twitch on tap",
+      "Myokymia — spontaneous rippling without nerve percussion",
+      "Seizure — cortical event, not localized nerve hyperexcitability sign",
+    ],
+    pediatrics:
+      "May appear in neonatal hypocalcemia; always confirm with ionized calcium — Chvostek alone is less reliable in infants than combined clinical and lab assessment.",
+  },
+  {
     id: "fatigue",
     name: "Fatigue",
     etymology: "French fatiguer = to tire/weary",
@@ -4936,6 +5066,86 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Renal artery stenosis from fibromuscular dysplasia can present in adolescents; coarctation-related abdominal bruits are less common than femoral/brachial BP discrepancies. Always correlate bruit with BP pattern and renal function.",
+  },
+  {
+    id: "tetany",
+    name: "Tetany",
+    etymology: "Greek tetanos = tension/stretch (sustained muscle contraction)",
+    aliases: [
+      "tetany",
+      "tetanies",
+      "hypocalcemic tetany",
+      "hypocalcaemic tetany",
+      "latent tetany",
+      "manifest tetany",
+    ],
+    definition:
+      "Neuromuscular hyperexcitability from hypocalcemia (or effective hypocalcemia with alkalosis) causing paresthesias, muscle cramps, carpopedal spasm, and potentially laryngospasm or seizures.",
+    mechanism:
+      "↓ extracellular ionized Ca²⁺ lowers the voltage threshold for Na⁺ channel opening in nerves and muscle → spontaneous depolarization and sustained contraction; metabolic alkalosis ↑ protein-bound Ca²⁺ and worsens ionized hypocalcemia symptoms.",
+    thinkOf: [
+      "Hypoparathyroidism — post-thyroidectomy, autoimmune, DiGeorge syndrome",
+      "Vitamin D deficiency or rickets/osteomalacia",
+      "Acute pancreatitis — saponification of peripancreatic fat consumes Ca²⁺",
+      "Massive transfusion — citrate chelation of Ca²⁺",
+      "Hyperphosphatemia in CKD binding Ca²⁺",
+      "Hungry bone syndrome after parathyroidectomy",
+    ],
+    pairWith: [
+      "Perioral tingling + carpopedal spasm → hypocalcemia / tetany",
+      "Chvostek sign (facial twitch on tapping) → hypocalcemia",
+      "Trousseau sign (carpal spasm with BP cuff) → hypocalcemia",
+      "Prolonged QT interval → hypocalcemia",
+      "Neonatal seizures + absent thymic shadow → DiGeorge hypocalcemic tetany",
+      "Acute pancreatitis + hypocalcemia → fat saponification",
+    ],
+    distinguishFrom: [
+      "Tetanus — C. tetani toxin causes rigid spastic paralysis, not hypocalcemic hyperexcitability",
+      "Muscle spasm — focal painful contraction without systemic neuromuscular hyperexcitability",
+      "Seizure — cortical neuronal discharge; tetany can progress to seizures if severe hypocalcemia",
+      "Hyperventilation tetany — respiratory alkalosis ↓ ionized Ca²⁺; transient without structural hypoparathyroidism",
+    ],
+    pediatrics:
+      "Neonatal hypocalcemia from prematurity, maternal diabetes, or DiGeorge syndrome presents with jitteriness, tetany, or seizures — check ionized calcium. Rickets causes hypocalcemic tetany in toddlers.",
+  },
+  {
+    id: "tenesmus",
+    name: "Tenesmus",
+    etymology: "Greek teinesin = to stretch/strain + -mus = condition",
+    aliases: [
+      "tenesmus",
+      "rectal tenesmus",
+      "anal tenesmus",
+      "bowel tenesmus",
+      "fecal urgency with incomplete evacuation",
+    ],
+    definition:
+      "Painful sensation of incomplete rectal evacuation with persistent urge to defecate despite empty or repeated bowel movements — reflects rectal inflammation, mass effect, or motility dysfunction.",
+    mechanism:
+      "Inflammation or distention of rectal mucosa and anal canal (infection, IBD, tumor) or dysmotility activates stretch and pain pathways → repeated defecation attempts with little stool passage.",
+    thinkOf: [
+      "Ulcerative colitis — especially proctitis and left-sided colitis",
+      "Infectious proctocolitis — Shigella, Campylobacter, C. difficile, STIs (gonorrhea, HSV, chlamydia LGV)",
+      "Rectal cancer — mass with urgency and incomplete evacuation",
+      "Hemorrhoids and anal fissure (less prominent tenesmus than inflammatory causes)",
+      "Radiation proctitis",
+      "Ischemic colitis involving rectosigmoid",
+    ],
+    pairWith: [
+      "Bloody mucoid stools + tenesmus + urgency → UC or infectious proctitis",
+      "Tenesmus + weight loss + anemia → rectal cancer until proven otherwise",
+      "MSM + tenesmus + discharge → infectious proctitis workup",
+      "Tenesmus + fever + bloody diarrhea → Shigella dysentery",
+      "Tenesmus + friable rectal mucosa on exam → proctitis",
+    ],
+    distinguishFrom: [
+      "Diarrhea without tenesmus — increased frequency/loose stools without painful incomplete evacuation sensation",
+      "Constipation — difficult infrequent defecation, opposite of frequent urgent straining",
+      "Urinary urgency — bladder origin, not rectal",
+      "Fecal incontinence — passive leakage, not urge with incomplete evacuation",
+    ],
+    pediatrics:
+      "Tenesmus with bloody diarrhea in children suggests Shigella or severe bacterial colitis; UC can present in adolescence with urgency and rectal bleeding.",
   },
 ];
 

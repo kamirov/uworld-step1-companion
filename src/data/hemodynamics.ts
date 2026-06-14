@@ -465,6 +465,30 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "↓ Perfusion pressure causes: hypovolemia, shock states, arterial stenosis/occlusion, raised ICP, external compression",
     ],
   },
+  {
+    id: "hyperfiltration",
+    name: "Hyperfiltration",
+    etymology: "Greek hyper = excessive + Latin filtrum = felt/strainer + -ation = process",
+    aliases: [
+      "hyperfiltration",
+      "glomerular hyperfiltration",
+      "renal hyperfiltration",
+      "hyperfiltration injury",
+      "hyperfiltration theory",
+      "compensatory hyperfiltration",
+    ],
+    definition:
+      "Increased glomerular filtration rate per nephron — usually from ↑ intraglomerular capillary pressure and single-nephron GFR when total nephron mass is reduced or afferent arteriole tone is inappropriately low.",
+    factors: [
+      "Reduced nephron number — unilateral renal agenesis, reflux nephropathy, nephrectomy, advanced CKD with surviving nephrons compensating",
+      "Early diabetic nephropathy — afferent arteriole dilation relative to efferent constriction → ↑ intraglomerular pressure",
+      "Obesity and increased renal blood flow — hemodynamic stress on glomeruli",
+      "Pregnancy — physiologic hyperfiltration (↑ GFR, ↓ BUN/Cr)",
+      "APOL1 risk variants and HIV — podocyte injury with overlapping hemodynamic stress",
+      "Long-term consequence: glomerulosclerosis and progressive proteinuria (secondary FSGS pattern)",
+      "ACE inhibitors/ARBs ↓ intraglomerular pressure — renoprotective in diabetic and proteinuric kidney disease",
+    ],
+  },
 ];
 
 const hemodynamicById = new Map(HEMODYNAMICS.map((h) => [h.id, h]));

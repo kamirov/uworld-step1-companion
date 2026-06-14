@@ -122,6 +122,52 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
     pediatrics:
       "Supraventricular tachycardia in infants may show absent or abnormal P waves; narrow-complex tachycardia with rate >220 in infant warrants urgent cardioversion/adenosine pathway.",
   },
+  {
+    id: "qtc-prolongation",
+    name: "QTc Prolongation",
+    etymology: "QT = ECG interval from Q wave onset to T wave end + c = corrected for heart rate",
+    aliases: [
+      "qtc prolongation",
+      "qtc prolongations",
+      "qt prolongation",
+      "qt prolongations",
+      "prolonged qtc",
+      "prolonged qt",
+      "prolonged qt interval",
+      "prolonged qtc interval",
+      "qt interval prolongation",
+      "qtc interval prolongation",
+      "long qt interval",
+      "long qtc",
+    ],
+    interpretation:
+      "Corrected QT interval longer than normal on ECG — reflects delayed ventricular repolarization and increased risk of polymorphic ventricular tachycardia (torsades de pointes).",
+    territory:
+      "Global repolarization abnormality — not a coronary territory finding; assess across leads for uniform QT prolongation.",
+    thinkOf: [
+      "Drug-induced — class IA/III antiarrhythmics, macrolides, fluoroquinolones, antipsychotics, TCAs, ondansetron, methadone (hERG/KCNH2 blockade)",
+      "Electrolyte disturbances — hypokalemia, hypomagnesemia, hypocalcemia",
+      "Congenital long QT syndrome (LQT1–LQT3 channel mutations)",
+      "Bradycardia, hypothyroidism, intracranial hemorrhage",
+      "Female sex and congenital or acquired QT vulnerability",
+    ],
+    distinguishFrom: [
+      "U wave fusion — can mimic long QT; true QT ends at T-wave return to baseline",
+      "Torsades de pointes — arrhythmia consequence of QT prolongation, not the ECG measurement itself",
+      "ST-segment elevation — ischemic territory pattern, not repolarization interval prolongation",
+      "Normal variant early repolarization — ST elevation without prolonged QT",
+    ],
+    boardsPearls: [
+      "QTc prolongation predisposes to torsades de pointes — polymorphic VT with twisting QRS",
+      "Hypocalcemia and hypomagnesemia prolong QT — check electrolytes",
+      "hERG (KCNH2) blockade — common mechanism of drug-induced QT prolongation",
+      "Treat torsades with IV magnesium; avoid class IA/III drugs in long QT",
+      "Congenital long QT — syncope, sudden death in young; avoid QT-prolonging drugs",
+      "Bazett correction: QTc = QT / √RR — use for rate correction on boards concept",
+    ],
+    pediatrics:
+      "Congenital long QT may present with syncope, seizures, or sudden death in children; avoid erythromycin and other QT-prolonging drugs in known LQTS.",
+  },
 ];
 
 const ecgFindingById = new Map(ECG_FINDINGS.map((entry) => [entry.id, entry]));

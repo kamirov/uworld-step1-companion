@@ -19559,6 +19559,342 @@ export const CONDITIONS: ConditionEntry[] = [
     pediatrics:
       "Can occur in adolescents with eating disorders or after scoliosis surgery; annular pancreas is the classic neonatal congenital duodenal obstruction differential.",
   },
+  {
+    id: "pharyngitis",
+    name: "Pharyngitis",
+    etymology: "Greek pharynx = throat + -itis = inflammation",
+    aliases: [
+      "pharyngitis",
+      "pharyngitides",
+      "sore throat",
+      "sore throats",
+      "acute pharyngitis",
+      "acute pharyngitides",
+      "throat infection",
+      "throat infections",
+    ],
+    definition:
+      "Inflammation of the pharynx causing sore throat — most often viral; group A streptococcal infection requires identification to prevent rheumatic fever and guide antibiotic therapy.",
+    pathophysiology:
+      "Mucosal injury and inflammation from viral URI or bacterial invasion (GAS most important bacterium) → erythema, exudate, pain, and cervical lymphadenopathy; immune response to strep can trigger molecular mimicry sequelae if untreated.",
+    classicPresentation: [
+      "Sore throat, odynophagia, fever",
+      "Anterior cervical lymphadenopathy",
+      "Erythematous pharynx with or without tonsillar exudate",
+    ],
+    keyFindings: [
+      "Viral: cough, rhinorrhea, hoarseness, conjunctivitis — exudate may be present but atypical lymphocytes suggest EBV",
+      "Strep (GAS): sudden fever, tonsillar exudate, tender anterior cervical LAD, no cough",
+      "Scarlet fever — sandpaper rash and strawberry tongue with strep pharyngitis",
+      "Centor/McIsaac criteria guide strep testing",
+    ],
+    keyLabs: [
+      "Rapid strep antigen test or throat culture for GAS when clinically suspected",
+      "Monospot or heterophile antibodies if EBV suspected (atypical lymphocytes on smear)",
+    ],
+    associations: [
+      "Group A Streptococcus — rheumatic fever and post-streptococcal glomerulonephritis sequelae",
+      "EBV infectious mononucleosis — posterior cervical LAD, fatigue, splenomegaly",
+      "Adenovirus — pharyngoconjunctival fever",
+      "Coxsackievirus — herpangina (posterior oral vesicles)",
+    ],
+    complications: [
+      "Peritonsillar abscess",
+      "Rheumatic fever (prevented by treating strep)",
+      "Post-streptococcal glomerulonephritis",
+      "Airway compromise (rare — epiglottitis is supraglottic)",
+    ],
+    distinguishFrom: [
+      "Epiglottitis — drooling, tripod posture, muffled voice; medical emergency (Hib historically)",
+      "Retropharyngeal abscess — neck stiffness, posterior pharyngeal bulge in young child",
+      "Oral candidiasis — white plaques scrape off; immunocompromised or inhaled steroids",
+      "Thyroiditis — anterior neck tenderness, not primary pharyngeal exudate pattern",
+    ],
+    treatment: [
+      "Viral pharyngitis — supportive care",
+      "Confirmed strep — penicillin or amoxicillin (prevent rheumatic fever)",
+      "Penicillin allergy — cephalexin, clindamycin, or azithromycin depending on resistance",
+    ],
+    boardsPearls: [
+      "Strep: exudate + anterior LAD + fever − cough",
+      "Treat strep to prevent rheumatic fever — not primarily to prevent PSGN",
+      "EBV + amoxicillin → maculopapular rash (not true allergy necessarily)",
+      "Viral URI features (cough, rhinorrhea) argue against strep",
+      "Scarlet fever = strep pharyngitis + toxin-mediated rash",
+    ],
+    pediatrics:
+      "Strep pharyngitis peaks in school-age children; viral causes dominate in toddlers. Rheumatic fever prevention drives antibiotic treatment of confirmed GAS.",
+  },
+  {
+    id: "peritonsillar-abscess",
+    name: "Peritonsillar Abscess",
+    etymology: "Latin peri = around + tonsilla = tonsil + Latin abcessus = departure (collection of pus)",
+    aliases: [
+      "peritonsillar abscess",
+      "peritonsillar abscesses",
+      "quinsy",
+      "quinsies",
+      "tonsillar abscess",
+      "tonsillar abscesses",
+      "paratonsillar abscess",
+    ],
+    definition:
+      "Collection of pus between the palatine tonsil capsule and pharyngeal constrictors — complication of acute tonsillitis causing severe unilateral throat pain and trismus.",
+    pathophysiology:
+      "Untreated or severe tonsillitis → spread of infection to peritonsillar space (often superior pole) → abscess formation with medial tonsillar displacement, inflammatory trismus, and referred otalgia.",
+    classicPresentation: [
+      "Severe unilateral sore throat and dysphagia",
+      "Trismus (difficulty opening mouth)",
+      "Muffled hot-potato voice",
+      "Unilateral otalgia (referred)",
+      "Fever and toxic appearance",
+    ],
+    keyFindings: [
+      "Uvula deviated away from affected side",
+      "Tonsil medially displaced with erythematous bulge of soft palate",
+      "Trismus from pterygoid inflammation",
+      "Tender ipsilateral cervical lymphadenopathy",
+    ],
+    keyLabs: [
+      "Often clinical diagnosis; needle aspiration confirms pus",
+      "Throat culture may grow GAS plus anaerobes (Fusobacterium)",
+    ],
+    associations: [
+      "Prior or concurrent acute tonsillitis/pharyngitis",
+      "Adolescents and young adults most commonly affected",
+      "Smoking and dental infection as risk factors",
+    ],
+    complications: [
+      "Airway obstruction (rare if untreated)",
+      "Extension to parapharyngeal or retropharyngeal space",
+      "Recurrent peritonsillar abscess → tonsillectomy consideration",
+    ],
+    distinguishFrom: [
+      "Pharyngitis without abscess — bilateral erythema, no uvular deviation or trismus",
+      "Retropharyngeal abscess — young child, posterior bulge, neck extension pain",
+      "Epiglottitis — supraglottic, drooling, no focal peritonsillar swelling",
+      "Mononucleosis — bilateral tonsillar hypertrophy, fatigue, splenomegaly, no focal abscess",
+    ],
+    treatment: [
+      "Needle aspiration or incision and drainage",
+      "Antibiotics covering streptococci and anaerobes (often ampicillin-sulbactam or clindamycin)",
+      "IV fluids and analgesia; tonsillectomy if recurrent",
+    ],
+    boardsPearls: [
+      "Quinsy — unilateral throat pain + trismus + uvula deviation away from abscess",
+      "Hot-potato voice and medial tonsillar displacement",
+      "Drain pus + antibiotics covering anaerobes",
+      "vs retropharyngeal abscess — younger child, posterior pharyngeal mass",
+    ],
+    pediatrics:
+      "Less common under age 5; retropharyngeal abscess is more likely in young children with deep neck infection. Adolescents classic for peritonsillar abscess.",
+  },
+  {
+    id: "adenotonsillar-hypertrophy",
+    name: "Adenotonsillar Hypertrophy",
+    etymology: "Latin ad = toward + tonsilla = tonsil + Greek hyper = excessive + trophē = nourishment/growth",
+    aliases: [
+      "adenotonsillar hypertrophy",
+      "adenotonsillar hypertrophies",
+      "adenoid hypertrophy",
+      "adenoid hypertrophies",
+      "tonsil hypertrophy",
+      "tonsil hypertrophies",
+      "tonsillar hypertrophy",
+      "tonsillar hypertrophies",
+      "enlarged tonsils and adenoids",
+      "enlarged tonsils",
+      "enlarged adenoids",
+    ],
+    definition:
+      "Noninfectious enlargement of pharyngeal (adenoid) and palatine tonsillar lymphoid tissue — common in childhood and a major cause of obstructive sleep symptoms and recurrent otitis media.",
+    pathophysiology:
+      "Repeated antigen stimulation or baseline lymphoid hyperplasia in Waldeyer ring → adenoid and tonsillar enlargement → nasal obstruction, mouth breathing, snoring, and eustachian tube dysfunction.",
+    classicPresentation: [
+      "Chronic mouth breathing and snoring",
+      "Obstructive sleep apnea symptoms (pauses, restless sleep, daytime somnolence in children)",
+      "Nasal voice and chronic rhinorrhea",
+      "Recurrent otitis media or effusion from adenoid obstruction of eustachian tube",
+    ],
+    keyFindings: [
+      "Enlarged tonsils visible on oropharyngeal exam (may meet criteria for obstruction)",
+      "Adenoid facies — long face, open mouth posture in chronic cases",
+      "Sleep study may show obstructive events in OSA",
+      "Otoscopy — middle ear effusion",
+    ],
+    keyLabs: [
+      "Polysomnography if obstructive sleep apnea suspected",
+      "Usually clinical diagnosis; no mandatory labs",
+    ],
+    associations: [
+      "Recurrent otitis media and hearing loss in children",
+      "Obstructive sleep apnea — behavioral and cognitive effects if untreated",
+      "Allergic rhinitis may coexist and worsen nasal obstruction",
+    ],
+    complications: [
+      "Obstructive sleep apnea — growth, behavior, and cardiovascular strain if severe",
+      "Chronic otitis media with effusion and speech delay",
+      "Cor pulmonale from long-standing severe pediatric OSA (rare)",
+    ],
+    distinguishFrom: [
+      "Acute tonsillitis — fever, exudate, acute pain; hypertrophy is chronic enlargement",
+      "Infectious mononucleosis — acute bilateral enlargement with systemic illness",
+      "Lymphoma — asymmetric rapid tonsillar enlargement in adolescent/adult",
+      "Allergic rhinitis alone — nasal symptoms without massive tonsillar hypertrophy",
+    ],
+    treatment: [
+      "Observe if mild; treat allergic rhinitis if contributory",
+      "Adenoidectomy and/or tonsillectomy for OSA, recurrent otitis, or significant obstruction",
+      "CPAP rarely used in children compared with surgery",
+    ],
+    boardsPearls: [
+      "Child with snoring, mouth breathing, otitis → adenotonsillar hypertrophy",
+      "Adenoids block eustachian tube → otitis media with effusion",
+      "Tonsillectomy/adenoidectomy for OSA or recurrent infection (criteria-based)",
+      "vs acute tonsillitis — chronic size issue, not exudative infection",
+    ],
+    pediatrics:
+      "Peak incidence of adenotonsillar hypertrophy in preschool and early school-age years; adenoids often regress after age 7–8 but tonsils may remain enlarged.",
+  },
+  {
+    id: "oropharyngeal-cancer",
+    name: "Oropharyngeal Cancer",
+    etymology: "Latin oro = mouth + Greek pharynx = throat + karkinos = crab/cancer",
+    aliases: [
+      "oropharyngeal cancer",
+      "oropharyngeal cancers",
+      "oropharyngeal carcinoma",
+      "oropharyngeal carcinomas",
+      "oropharyngeal squamous cell carcinoma",
+      "oropharyngeal squamous cell carcinomas",
+      "opscc",
+      "tonsil cancer",
+      "tonsil cancers",
+      "base of tongue cancer",
+      "base of tongue cancers",
+      "throat cancer",
+    ],
+    definition:
+      "Malignancy of the oropharynx (tonsils, base of tongue, soft palate, posterior pharyngeal wall) — most often squamous cell carcinoma linked to tobacco/alcohol or HPV 16/18 infection.",
+    pathophysiology:
+      "Carcinogen exposure (smoking, alcohol) or HPV-driven oncogenesis (especially tonsil and base of tongue) → local invasion → cervical lymph node metastasis (often cystic level II nodes) → dysphagia, otalgia, and weight loss.",
+    classicPresentation: [
+      "Persistent sore throat or otalgia (referred)",
+      "Unilateral tonsillar enlargement or base-of-tongue mass",
+      "Dysphagia and weight loss",
+      "Cervical lymphadenopathy — often first sign in HPV-related disease",
+      "History of heavy smoking and alcohol OR HPV-associated profile (often nonsmoker male)",
+    ],
+    keyFindings: [
+      "Asymmetric tonsillar mass or ulcer",
+      "Firm fixed cervical lymph node (level II)",
+      "HPV p16 immunohistochemistry positive in many modern oropharyngeal SCC",
+      "Indirect laryngoscopy or imaging shows submucosal base-of-tongue lesion",
+    ],
+    keyLabs: [
+      "Tissue biopsy for diagnosis",
+      "HPV/p16 testing on tumor (prognostic and staging)",
+      "PET-CT for staging (Step 2 context)",
+    ],
+    associations: [
+      "HPV 16/18 — base of tongue and tonsil SCC; better prognosis than smoking-related",
+      "Tobacco and alcohol — synergistic traditional risk factors",
+      "EBV — nasopharyngeal carcinoma (different anatomic site)",
+      "Plummer-Vinson syndrome — hypopharyngeal/esophageal web with iron deficiency (different site)",
+    ],
+    complications: [
+      "Cervical nodal and distant metastases",
+      "Airway obstruction",
+      "Dysphagia and aspiration",
+      "Treatment-related xerostomia and dysphagia after chemoradiation",
+    ],
+    distinguishFrom: [
+      "Nasopharyngeal carcinoma — EBV-associated, Asian epidemiology, nasopharynx not oropharynx",
+      "Peritonsillar abscess — acute infection with trismus and uvular deviation",
+      "Lymphoma — bilateral tonsillar involvement, B symptoms",
+      "Benign tonsillar hypertrophy — symmetric childhood enlargement",
+    ],
+    treatment: [
+      "Stage-dependent: surgery, radiation, chemotherapy (Step 2/3 context)",
+      "HPV-positive disease often treated with definitive chemoradiation",
+      "HPV vaccination prevents HPV-related oropharyngeal cancer",
+    ],
+    boardsPearls: [
+      "Oropharyngeal SCC — tonsil and base of tongue most common subsites",
+      "HPV 16+ oropharyngeal cancer — younger patient, cystic cervical node, better prognosis",
+      "Smoking + alcohol — traditional head and neck SCC risk",
+      "vs nasopharyngeal carcinoma — EBV, Chinese endemicity, different anatomy",
+      "Gardasil 9 prevents HPV-related oropharyngeal and cervical cancers",
+    ],
+    pediatrics:
+      "Oropharyngeal SCC is rare in children; adolescent tonsillar asymmetry with rapid growth raises lymphoma or rare malignancy — not typical adenotonsillar hypertrophy.",
+  },
+  {
+    id: "zenker-diverticulum",
+    name: "Zenker Diverticulum",
+    etymology: "eponym: Ludwig Zenker (German pathologist) + Latin diverticulum = byway/outpouching",
+    aliases: [
+      "zenker diverticulum",
+      "zenker diverticula",
+      "zenker's diverticulum",
+      "zenkers diverticulum",
+      "pharyngeal pouch diverticulum",
+      "hypopharyngeal diverticulum",
+      "hypopharyngeal diverticula",
+      "killian triangle diverticulum",
+      "cricopharyngeal diverticulum",
+    ],
+    definition:
+      "False pulsion diverticulum through Killian triangle (weakness between cricopharyngeus and inferior pharyngeal constrictor) in the hypopharynx — causes dysphagia and regurgitation of undigested food in elderly patients.",
+    pathophysiology:
+      "Increased intraluminal hypopharyngeal pressure with cricopharyngeal dysfunction (failed relaxation or spasm) → mucosal herniation through Killian dehiscence → retained food in diverticulum → halitosis, regurgitation, aspiration pneumonia.",
+    classicPresentation: [
+      "Elderly patient with progressive dysphagia",
+      "Regurgitation of undigested food hours after eating",
+      "Halitosis and gurgling neck noise (Boyce sign)",
+      "Chronic cough or aspiration pneumonia",
+      "Sensation of lump in throat (globus)",
+    ],
+    keyFindings: [
+      "Barium swallow — posterior hypopharyngeal outpouching at C5–C6 level",
+      "Not a true diverticulum (only mucosa/submucosa herniate — no muscular layer)",
+      "Neck mass if large (left side more common)",
+    ],
+    keyLabs: [
+      "Diagnosis by barium esophagram or endoscopy (careful — perforation risk)",
+      "No specific laboratory test",
+    ],
+    associations: [
+      "Cricopharyngeal achalasia or hypertrophy",
+      "Advanced age",
+      "Prior neurologic disorders affecting swallowing (less common primary association)",
+    ],
+    complications: [
+      "Aspiration pneumonia",
+      "Weight loss and malnutrition",
+      "Diverticulitis or hemorrhage (rare)",
+      "Carcinoma within diverticulum (rare)",
+    ],
+    distinguishFrom: [
+      "Esophageal diverticula (mid-esophagus traction, epiphrenic) — different location on swallow study",
+      "Achalasia — distal esophagus bird-beak, not hypopharyngeal pouch",
+      "Oropharyngeal cancer — mass lesion, not classic posterior hypopharyngeal pouch",
+      "Embryologic pharyngeal pouch — developmental structure, not acquired Zenker diverticulum",
+    ],
+    treatment: [
+      "Surgical or endoscopic cricopharyngeal myotomy with diverticulectomy or diverticulopexy (Step 2 context)",
+      "Diet modification and aspiration precautions if poor surgical candidate",
+    ],
+    boardsPearls: [
+      "Zenker = hypopharyngeal false diverticulum through Killian triangle",
+      "Regurgitation of undigested food + halitosis in elderly dysphagia",
+      "Cricopharyngeus dysfunction — failed upper esophageal sphincter relaxation",
+      "Barium swallow diagnostic — posterior C5–C6 outpouching",
+      "vs embryologic pharyngeal pouch — congenital branchial/endodermal structure, not Zenker",
+    ],
+    pediatrics:
+      "Zenker diverticulum is acquired in older adults; pediatric dysphagia has different etiologies (vascular ring, eosinophilic esophagitis, neurologic disorders).",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

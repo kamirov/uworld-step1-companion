@@ -1326,6 +1326,40 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "indomethacin",
+    name: "Indomethacin",
+    etymology: "indole = bicyclic aromatic ring core + meth- = methyl + -acin = NSAID/acetic acid suffix",
+    aliases: [
+      "indomethacin",
+      "indometacin",
+      "indocin",
+    ],
+    drugClass: "NSAID",
+    mechanism:
+      "Nonselective COX inhibitor → ↓ prostaglandin synthesis → anti-inflammatory, analgesic, antipyretic effects; ↓ PGE₂ closes patent ductus arteriosus in premature infants.",
+    indications: [
+      "Patent ductus arteriosus closure in premature infants",
+      "Acute gout attack",
+      "Inflammatory arthritis (ankylosing spondylitis, osteoarthritis)",
+      "Tocolysis in preterm labor (selected cases — fetal ductus risk)",
+    ],
+    adverseEffects: [
+      "GI bleeding and peptic ulcer disease",
+      "Renal insufficiency and ↓ renal blood flow (especially neonates and dehydration)",
+      "Headache and vertigo (common with indomethacin)",
+      "Premature fetal ductus closure if used in third trimester",
+      "Bleeding, oliguria, intestinal perforation in neonates (PDA treatment monitoring)",
+    ],
+    boardsPearls: [
+      "Indomethacin closes PDA in premature infants by ↓ PGE₂ — opposite of alprostadil (PGE₁) which keeps ductus open",
+      "Ductal-dependent cyanotic lesions need prostaglandin infusion until surgery; indomethacin contraindicated",
+      "Ibuprofen also closes PDA in prematurity — similar NSAID mechanism",
+      "Classic NSAID risks: GI ulcer, renal afferent vasoconstriction, avoid in CKD/HF/dehydration",
+      "Acute gout — NSAIDs (indomethacin historically) with colchicine or steroids",
+      "NSAIDs blunt loop diuretic natriuresis — avoid combination when possible",
+    ],
+  },
+  {
     id: "aspirin",
     name: "Aspirin",
     etymology: "a- = acetyl + Spiraea = meadowsweet plant + -in = drug suffix",

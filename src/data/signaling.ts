@@ -251,6 +251,51 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Rickets from vitamin D deficiency or CKD — leg bowing, widened growth plates; calcitriol replacement in renal osteodystrophy.",
   },
   {
+    id: "fgf23",
+    name: "FGF23",
+    etymology: "FGF = fibroblast growth factor + 23 = member of FGF family",
+    aliases: [
+      "fgf23",
+      "fgf-23",
+      "fgf 23",
+      "fibroblast growth factor 23",
+      "fibroblast growth factor-23",
+      "phosphatonin",
+      "phosphatonins",
+    ],
+    type: "Growth factor",
+    source:
+      "Osteocytes and osteoblasts in bone; secretion ↑ with dietary phosphate load, calcitriol, and certain tumors (phosphaturic mesenchymal tumors)",
+    receptor:
+      "FGF receptor with Klotho co-receptor on renal proximal tubule → ↓ NaPi-IIa/IIc phosphate transporters, ↓ 1α-hydroxylase (CYP27B1), ↑ 24-hydroxylase (inactivates vitamin D)",
+    function:
+      "Phosphatonin hormone that lowers serum phosphate by increasing renal phosphate excretion and suppressing active vitamin D synthesis — central regulator of phosphate homeostasis opposing PTH/vitamin D axis on phosphate reabsorption.",
+    mnemonic:
+      "FGF23 flushes phosphate out and shuts off 1α-hydroxylase",
+    clinicalRelevance: [
+      "Tumor-induced osteomalacia — mesenchymal tumor secretes FGF23 → hypophosphatemia, phosphaturia, low calcitriol, osteomalacia",
+      "X-linked hypophosphatemic rickets (PHEX mutation) — ↑ FGF23 activity → renal phosphate wasting",
+      "Autosomal dominant hypophosphatemic rickets — FGF23 gain-of-function mutations",
+      "Chronic kidney disease — early ↑ then dysregulated FGF23 contributes to mineral bone disorder",
+    ],
+    boardsPearls: [
+      "FGF23 → renal phosphate wasting + ↓ 1α-hydroxylase → hypophosphatemia and low calcitriol",
+      "Tumor-induced osteomalacia: adult hypophosphatemia + bone pain — think excess FGF23",
+      "Opposes PTH on phosphate (PTH also wastes phosphate) but FGF23 suppresses vitamin D activation",
+      "Requires Klotho co-receptor for renal FGF23 signaling",
+      "vs PTH — PTH ↑ calcitriol; FGF23 ↓ calcitriol",
+      "XLH rickets — phosphate wasting with normal calcium, low phosphate, ↑ ALP",
+    ],
+    distinguishFrom: [
+      "PTH — ↑ 1α-hydroxylase and calcitriol; also increases phosphate excretion but different hormonal axis",
+      "1α-Hydroxylase (CYP27B1) — enzyme activated by PTH; inhibited by FGF23",
+      "Calcitriol — active vitamin D hormone downstream of 1α-hydroxylase, not the phosphatonin itself",
+      "Phosphate — mineral regulated by FGF23, not the hormone",
+    ],
+    pediatrics:
+      "X-linked hypophosphatemic rickets presents in childhood with bowing legs, short stature, and renal phosphate wasting with inappropriately normal/low calcitriol.",
+  },
+  {
     id: "gaba",
     name: "Gamma-aminobutyric acid (GABA)",
     etymology: "gamma = third carbon position + amino = nitrogen group + butyric = butter acid + acid = proton donor",
@@ -1593,6 +1638,59 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     distinguishFrom: ["IL-12 — promotes Th1 and IFN-γ", "IFN-γ — activates macrophages"],
   },
   {
+    id: "tgf-beta",
+    name: "TGF-β",
+    etymology: "TGF = transforming growth factor + Greek beta = second letter (isoform family)",
+    aliases: [
+      "tgf-β",
+      "tgf-beta",
+      "tgf beta",
+      "tgf-b",
+      "tgf b",
+      "tgfb",
+      "tgfb1",
+      "tgfβ",
+      "transforming growth factor beta",
+      "transforming growth factor β",
+      "transforming growth factor-b",
+      "transforming growth factor b",
+    ],
+    type: "Cytokine",
+    source:
+      "Platelets, macrophages, T regulatory cells, fibroblasts, epithelial cells, and most tissues (latent form activated by proteases/thrombospondin)",
+    receptor:
+      "TGF-β receptor type II recruits and phosphorylates type I receptor (serine/threonine kinases) → phosphorylates Smad2/3 → Smad4 complex translocates to nucleus (canonical Smad pathway); also MAPK and PI3K non-Smad routes",
+    function:
+      "Pleiotropic cytokine/growth factor: promotes Treg differentiation and immune tolerance (with IL-10), drives fibrosis and extracellular matrix deposition, inhibits epithelial proliferation (tumor suppressor early), and with IL-6 initiates Th17 differentiation depending on cytokine context.",
+    mnemonic:
+      "TGF-β alone → Treg; TGF-β + IL-6 → Th17; TGF-β in tissue → fibrosis",
+    clinicalRelevance: [
+      "Idiopathic pulmonary fibrosis, liver cirrhosis, and diabetic nephropathy — chronic TGF-β drives collagen and mesangial matrix deposition",
+      "Keloids and hypertrophic scars — excess TGF-β fibroblast activity",
+      "Treg-mediated peripheral tolerance — TGF-β with IL-10 suppresses autoimmunity",
+      "Marfan syndrome — fibrillin-1 normally sequesters TGF-β; deficiency → dysregulated TGF-β signaling and aortic root dilation",
+      "Smad pathway inactivation in many carcinomas — loss of TGF-β tumor suppressor late in tumorigenesis",
+    ],
+    boardsPearls: [
+      "TGF-β alone favors Treg; TGF-β + IL-6 favors Th17 (RORγt) — cytokine context is key",
+      "Pro-fibrotic cytokine — ECM deposition in lung, liver, kidney fibrosis",
+      "Smad2/3 pathway — serine/threonine receptor kinases, not JAK-STAT",
+      "Anti-inflammatory pair with IL-10 for immune suppression",
+      "Diabetic nephropathy — TGF-β contributes to mesangial expansion and GBM thickening",
+      "Early tumor suppressor (growth inhibition); tumor cells often escape TGF-β cytostasis later",
+      "vs IFN-γ — activates macrophages; TGF-β suppresses inflammation and promotes fibrosis",
+    ],
+    distinguishFrom: [
+      "IL-10 — distinct anti-inflammatory cytokine; often cooperates with TGF-β but different receptor (JAK-STAT)",
+      "IL-6 — with TGF-β drives Th17; alone IL-6 drives acute-phase response without Treg induction",
+      "PDGF — mitogenic for smooth muscle and fibroblasts in wound healing; less central to Treg/Th17 fate",
+      "EGF — epithelial mitogen; not primary Treg/Th17 polarizing cytokine",
+      "TNF-α — pro-inflammatory; opposes tolerance and drives granuloma inflammation",
+    ],
+    pediatrics:
+      "Treg development supports prevention of neonatal autoimmunity; Th17/TGF-β + IL-6 balance relevant in pediatric autoimmune and autoinflammatory disease.",
+  },
+  {
     id: "il-11",
     name: "Interleukin-11 (IL-11)",
     etymology: "interleukin = between leukocytes + 11 = cytokine number",
@@ -2585,6 +2683,50 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Octreotide used in neonatal hyperinsulinism and chylothorax in specialized pediatric settings; somatostatin physiology same across ages.",
+  },
+  {
+    id: "hepcidin",
+    name: "Hepcidin",
+    etymology: "Greek hepar = liver + Latin caedere = to cut (hepcidin was first identified as liver-derived antimicrobial peptide)",
+    aliases: [
+      "hepcidin",
+      "hepcidins",
+      "hamp",
+      "hepcidin antimicrobial peptide",
+      "liver iron regulatory hormone",
+      "iron regulatory hormone",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Synthesized mainly by hepatocytes; gene HAMP; production stimulated by iron loading and IL-6/inflammation, suppressed by iron deficiency and hypoxia (via erythropoietin-driven pathways)",
+    receptor:
+      "Binds ferroportin (iron export channel) on enterocytes and macrophages → ferroportin internalization and degradation → ↓ intestinal iron absorption and ↓ macrophage iron release",
+    function:
+      "Master regulator of systemic iron homeostasis — ↑ hepcidin restricts iron entry into plasma; ↓ hepcidin permits iron absorption and recycling to meet erythropoietic demand.",
+    mnemonic: "Hepcidin holds iron hostage — blocks ferroportin export",
+    clinicalRelevance: [
+      "Anemia of chronic disease — IL-6 ↑ hepcidin → iron sequestered in macrophages, ↓ serum iron and TIBC, ↑ ferritin",
+      "Hereditary hemochromatosis — HFE and related defects → inappropriately low hepcidin → ↑ iron absorption and overload",
+      "Juvenile hemochromatosis — HAMP (hepcidin) or HJV mutations → severe hepcidin deficiency and early iron overload",
+      "Iron deficiency anemia — low hepcidin allows compensatory ↑ intestinal iron absorption",
+    ],
+    boardsPearls: [
+      "Hepcidin ↓ ferroportin → ↓ iron export from gut and macrophages",
+      "IL-6 → ↑ hepcidin → anemia of chronic disease (high ferritin, low iron, low TIBC)",
+      "Iron deficiency → ↓ hepcidin → ↑ absorption",
+      "HFE hemochromatosis → relative hepcidin deficiency → ↑ transferrin saturation and ferritin",
+      "HAMP mutation → juvenile hemochromatosis with severe cardiomyopathy",
+      "vs transferrin — iron transport protein, not regulatory hormone",
+    ],
+    distinguishFrom: [
+      "Ferroportin — iron export channel degraded by hepcidin, not the hormone itself",
+      "Transferrin — plasma iron carrier; TIBC reflects transferrin availability",
+      "Ferritin — intracellular iron storage protein; ↑ in inflammation and iron overload",
+      "Erythropoietin — stimulates erythropoiesis; hypoxia suppresses hepcidin indirectly to provide iron",
+      "IL-6 — upstream cytokine inducing hepcidin in inflammation, not the iron effector itself",
+    ],
+    pediatrics:
+      "Neonatal hemochromatosis is a distinct fulminant syndrome unrelated to HFE hepcidin regulation; juvenile hemochromatosis from HAMP/HJV presents in teens with heart failure and hypogonadism.",
   },
 ];
 
