@@ -1,0 +1,18 @@
+cofactor.svg | Created locally
+purine.svg | Created locally
+thymidine.svg | Created locally
+
+cofactor.png
+  Source: Wikimedia Commons — Biosynthesis of seco Cofactor F430.png
+  Page: https://commons.wikimedia.org/wiki/File:Biosynthesis_of_seco_Cofactor_F430.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Biosynthesis_of_seco_Cofactor_F430.png?width=1280
+
+purine.jpg
+  Source: Wikimedia Commons — Purine Nucleotide Cycle.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Purine_Nucleotide_Cycle.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Purine_Nucleotide_Cycle.jpg?width=1280
+
+thymidine.jpg
+  Source: Wikimedia Commons — PDB 1p73 EBI.jpg
+  Page: https://commons.wikimedia.org/wiki/File:PDB_1p73_EBI.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:PDB_1p73_EBI.jpg?width=1280

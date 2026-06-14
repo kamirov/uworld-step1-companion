@@ -4,3 +4,13 @@ Wikimedia Commons
 Description: Gingiva around teeth
 dermis.svg | Created locally
 epidermis.svg | Created locally
+
+dermis.png
+  Source: Wikimedia Commons — Epidermis, papillary dermis and reticular dermis.png
+  Page: https://commons.wikimedia.org/wiki/File:Epidermis,_papillary_dermis_and_reticular_dermis.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Epidermis,_papillary_dermis_and_reticular_dermis.png?width=1280
+
+epidermis.png
+  Source: Wikimedia Commons — 502 Layers of epidermis (no labels).png
+  Page: https://commons.wikimedia.org/wiki/File:502_Layers_of_epidermis_(no_labels).png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:502_Layers_of_epidermis_(no_labels).png?width=1280

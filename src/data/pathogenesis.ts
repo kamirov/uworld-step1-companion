@@ -4699,6 +4699,186 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Same culture principles in pediatrics; throat culture on blood agar for GAS pharyngitis; chocolate agar for neonatal gonococcal conjunctivitis workup.",
   },
+  {
+    id: "cytopenias",
+    name: "Cytopenias",
+    etymology: "Greek kytos = cell + penia = deficiency",
+    aliases: [
+      "cytopenia",
+      "cytopenias",
+      "cytopenic",
+      "bone marrow cytopenias",
+      "peripheral cytopenias",
+      "hematologic cytopenias",
+    ],
+    definition:
+      "Reduction in one or more peripheral blood cell lineages — anemia (RBC), leukopenia/neutropenia (WBC), and/or thrombocytopenia (platelets) from decreased production, increased destruction, or sequestration.",
+    examples: [
+      "Pancytopenia — ↓ RBC, WBC, and platelets (aplastic anemia, leukemia, MDS, severe B12/folate deficiency)",
+      "Chemotherapy-induced cytopenias — marrow suppression",
+      "Copper deficiency — anemia + neutropenia ± thrombocytopenia",
+      "Hypersplenism — sequestration of multiple lineages",
+      "Myelophthisis — marrow infiltration (metastatic cancer, granulomatous disease)",
+      "Vitamin B12/folate deficiency — megaloblastic cytopenias",
+    ],
+    boardsPearls: [
+      "Pancytopenia = all three lineages low — think marrow failure, infiltration, or severe deficiency",
+      "Isolated cytopenia narrows differential — isolated plt (ITP), isolated ANC (drugs, cyclic neutropenia)",
+      "B12/folate deficiency can cause pancytopenia with macrocytosis",
+      "Copper deficiency cytopenias + myelopathy + sideroblastic anemia",
+      "vs cytosis — increased cell counts (leukocytosis, thrombocytosis, polycythemia)",
+    ],
+    distinguishFrom: [
+      "Pancytopenia — specific pattern of all three lineages decreased",
+      "Leukocytosis/thrombocytosis — increased counts, opposite problem",
+      "Anemia alone — single-lineage cytopenia without leukopenia or thrombocytopenia",
+      "Pseudothrombocytopenia — EDTA-related platelet clumping artifact",
+    ],
+    pediatrics:
+      "Fanconi anemia and other inherited bone marrow failure syndromes present in childhood with pancytopenia and congenital anomalies; transient erythroblastopenia of childhood causes isolated anemia in toddlers.",
+  },
+  {
+    id: "tea-and-toast-diet",
+    name: "Tea and Toast Diet",
+    etymology: "tea = beverage + toast = browned bread + diet = habitual food intake",
+    aliases: [
+      "tea and toast diet",
+      "tea-and-toast diet",
+      "tea-toast diet",
+      "tea toast diet",
+      "tea and toast",
+      "tea-toast",
+    ],
+    definition:
+      "Restrictive elderly dietary pattern of tea (often with milk) and toast/crackers with minimal protein, fruits, vegetables, or fortified foods — causes malnutrition and micronutrient deficiencies.",
+    examples: [
+      "Elderly widowed patient with poor dentition and limited shopping — B12 and folate deficiency",
+      "Pernicious anemia risk compounded by low dietary B12 intake",
+      "Iron and protein deficiency with chronic inadequate intake",
+      "Social isolation and depression contributing to monotonous diet",
+    ],
+    boardsPearls: [
+      "Classic boards vignette for B12/folate deficiency in elderly — poor diet + atrophic gastritis/pernicious anemia",
+      "Tea and toast = inadequate B12, folate, iron, and protein",
+      "Macrocytic anemia + neurologic signs in elderly → check B12, not just folate",
+      "vs poverty-related malnutrition — same nutrient deficits but different social context",
+    ],
+    distinguishFrom: [
+      "Strict vegan diet — intentional B12 absence, not elderly tea-toast pattern",
+      "Anorexia nervosa — body image disorder, younger demographic",
+      "Alcoholism-related malnutrition — ethanol toxicity plus poor intake",
+    ],
+    pediatrics:
+      "Not a pediatric pattern; children with restrictive eating need evaluation for avoidant/restrictive food intake disorder or neglect-related malnutrition.",
+  },
+  {
+    id: "alcoholism",
+    name: "Alcoholism",
+    etymology: "Arabic al-kuhl = distilled essence + Greek -ismos = condition/practice",
+    aliases: [
+      "alcoholism",
+      "chronic alcoholism",
+      "chronic alcohol abuse",
+      "alcohol dependence",
+      "alcohol dependency",
+    ],
+    definition:
+      "Chronic pattern of harmful heavy alcohol use with physiologic dependence, organ toxicity, and malnutrition — historical/clinical term overlapping with alcohol use disorder.",
+    examples: [
+      "Cirrhosis, alcoholic hepatitis, and portal hypertension",
+      "Wernicke-Korsakoff syndrome from thiamine depletion",
+      "Peripheral neuropathy and cerebellar degeneration",
+      "Macrocytosis (often non-megaloblastic) and folate/B12 deficiency from poor diet",
+      "Acute pancreatitis and chronic calcific pancreatitis",
+    ],
+    boardsPearls: [
+      "Alcoholism vs alcohol use disorder — boards use both; AUD is DSM-5 diagnostic term",
+      "AST:ALT >2 suggests alcoholic liver injury",
+      "Give thiamine before glucose in malnourished alcoholic",
+      "Macrocytosis common — may lack hypersegmented neutrophils (non-megaloblastic)",
+      "Fetal alcohol syndrome — teratogenic, not just nutritional",
+    ],
+    distinguishFrom: [
+      "Alcohol use disorder — formal DSM-5 diagnosis with craving, tolerance, withdrawal criteria",
+      "Social drinking — no dependence or organ injury",
+      "Alcohol-induced (modifier) — describes organ-specific injury mechanism",
+    ],
+    pediatrics:
+      "Pediatric concern is fetal alcohol exposure from maternal alcoholism, not child alcoholism itself.",
+  },
+  {
+    id: "macrocytosis",
+    name: "Macrocytosis",
+    etymology: "Greek makros = large + kytos = cell + -osis = condition",
+    aliases: [
+      "macrocytosis",
+      "macrocytic",
+      "macrocytic rbcs",
+      "macrocytic red blood cells",
+      "elevated mcv",
+      "increased mcv",
+    ],
+    definition:
+      "Enlarged red blood cells with mean corpuscular volume (MCV) above ~100 fL — may reflect megaloblastic DNA synthesis defects or non-megaloblastic causes.",
+    examples: [
+      "Megaloblastic macrocytosis — B12 or folate deficiency with hypersegmented neutrophils",
+      "Alcoholism and liver disease — macrocytosis without megaloblastosis",
+      "Reticulocytosis — young larger RBCs after hemolysis or bleeding",
+      "Hypothyroidism — reduced marrow turnover",
+      "Myelodysplastic syndrome — macrocytic dysplasia",
+      "Hydroxyurea, zidovudine — drug-induced macrocytosis",
+    ],
+    boardsPearls: [
+      "High MCV + hypersegmented PMNs → megaloblastic (B12/folate)",
+      "High MCV without hypersegmented PMNs → alcohol, liver disease, reticulocytosis, drugs, MDS",
+      "Reticulocytosis raises MCV — check retic count in hemolysis workup",
+      "B12 deficiency can macrocytose before anemia develops",
+      "vs microcytosis — iron deficiency, thalassemia (low MCV)",
+    ],
+    distinguishFrom: [
+      "Megaloblastic anemia — macrocytosis plus impaired DNA synthesis and hypersegmented neutrophils",
+      "Microcytosis — low MCV; iron deficiency, thalassemia",
+      "Normocytic anemia — MCV normal despite anemia",
+    ],
+    pediatrics:
+      "Macrocytosis in children warrants B12/folate levels and hemolysis workup; reticulocytosis after hemolytic disease of newborn causes transient macrocytosis.",
+  },
+  {
+    id: "reticulocytosis",
+    name: "Reticulocytosis",
+    etymology: "Latin reticulum = little net + Greek kytos = cell + -osis = increased condition",
+    aliases: [
+      "reticulocytosis",
+      "increased reticulocytes",
+      "elevated reticulocyte count",
+      "high reticulocyte count",
+      "reticulocyte response",
+    ],
+    definition:
+      "Elevated reticulocyte count reflecting increased erythropoietic activity — marrow response to hemolysis, blood loss, or recovery from suppression.",
+    examples: [
+      "Autoimmune hemolytic anemia — ↑ reticulocytes, ↑ LDH, ↓ haptoglobin",
+      "G6PD deficiency after oxidant stress — hemolysis with reticulocytosis",
+      "Acute blood loss with adequate iron stores",
+      "Recovery phase after chemotherapy or aplastic crisis",
+      "Hemolytic disease of the newborn",
+      "Post-iron repletion in iron deficiency (late response)",
+    ],
+    boardsPearls: [
+      "↑ reticulocytes + anemia = hemolysis or bleeding with marrow response (hyperproliferative)",
+      "↓ reticulocytes + anemia = production failure (hypoproliferative)",
+      "Reticulocytosis raises MCV — macrocytosis from young large RBCs",
+      "Reticulocyte index corrects for degree of anemia",
+      "Schistocytes + reticulocytosis → microangiopathic hemolysis (TTP/HUS/DIC)",
+    ],
+    distinguishFrom: [
+      "Reticulocytopenia — low retic count; marrow failure or nutrient deficiency without effective response",
+      "Reticulocyte count (lab) — measured value; reticulocytosis is the pathologic state",
+      "Polychromasia on smear — visual correlate of reticulocytosis",
+    ],
+    pediatrics:
+      "Hemolytic disease of newborn and hereditary spherocytosis cause pediatric reticulocytosis; parvovirus B19 aplastic crisis causes reticulocytopenia in sickle cell disease.",
+  },
 ];
 
 const pathogenesisById = new Map(

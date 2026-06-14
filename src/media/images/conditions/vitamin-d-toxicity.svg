@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Vitamin D toxicity lab pattern</title>
+  <desc id="desc">Schematic showing excess vitamin D intake leading to high 25-OH vitamin D, high calcium, low PTH, hypercalciuria, stones, and nephrocalcinosis.</desc>
+  <rect width="960" height="600" fill="#f8fafc"/>
+  <rect x="54" y="54" width="852" height="492" rx="20" fill="#fff" stroke="#25313f" stroke-width="3"/>
+  <text x="480" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#25313f">Vitamin D Toxicity</text>
+  <text x="480" y="145" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">Chronic excess supplement intake causes hypercalcemia with suppressed PTH</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <rect x="90" y="210" width="190" height="92" rx="14" fill="#fff7e6" stroke="#d97706" stroke-width="3"/>
+    <text x="185" y="246" text-anchor="middle" fill="#92400e">25-OH D</text>
+    <text x="185" y="276" text-anchor="middle" fill="#92400e">high</text>
+    <rect x="385" y="210" width="190" height="92" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <text x="480" y="246" text-anchor="middle" fill="#991b1b">Calcium</text>
+    <text x="480" y="276" text-anchor="middle" fill="#991b1b">high</text>
+    <rect x="680" y="210" width="190" height="92" rx="14" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+    <text x="775" y="246" text-anchor="middle" fill="#075985">PTH</text>
+    <text x="775" y="276" text-anchor="middle" fill="#075985">low</text>
+  </g>
+  <g stroke="#25313f" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <path d="M280 256 H376"/>
+    <path d="M576 256 H672"/>
+    <path d="M480 304 V382"/>
+  </g>
+  <rect x="268" y="382" width="424" height="86" rx="16" fill="#25313f"/>
+  <text x="480" y="418" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#fff">Hypercalciuria</text>
+  <text x="480" y="450" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#dbeafe">nephrolithiasis / nephrocalcinosis</text>
+  <text x="480" y="520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">Board contrast: primary hyperparathyroidism has high or inappropriately normal PTH.</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#25313f"/>
+    </marker>
+  </defs>
+</svg>

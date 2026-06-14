@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Multiple endocrine neoplasia overview</title>
+  <desc id="desc">Comparison schematic for MEN1 and MEN2 showing genes and target endocrine organs.</desc>
+  <rect width="960" height="600" fill="#f8fafc"/>
+  <rect x="52" y="52" width="856" height="496" rx="20" fill="#fff" stroke="#263241" stroke-width="3"/>
+  <text x="480" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#263241">Multiple Endocrine Neoplasia</text>
+  <text x="480" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">Inherited endocrine tumor syndromes: match gene to gland pattern</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="92" y="190" width="350" height="258" rx="18" fill="#ecfdf5" stroke="#059669" stroke-width="3"/>
+    <text x="267" y="235" text-anchor="middle" font-size="30" font-weight="700" fill="#065f46">MEN1</text>
+    <text x="267" y="270" text-anchor="middle" font-size="20" fill="#065f46">MEN1 tumor suppressor</text>
+    <text x="267" y="318" text-anchor="middle" font-size="24" font-weight="700" fill="#064e3b">3 P pattern</text>
+    <text x="267" y="360" text-anchor="middle" font-size="22" fill="#064e3b">Parathyroid</text>
+    <text x="267" y="395" text-anchor="middle" font-size="22" fill="#064e3b">Pituitary</text>
+    <text x="267" y="430" text-anchor="middle" font-size="22" fill="#064e3b">Pancreatic NETs</text>
+    <rect x="518" y="190" width="350" height="258" rx="18" fill="#eef2ff" stroke="#4f46e5" stroke-width="3"/>
+    <text x="693" y="235" text-anchor="middle" font-size="30" font-weight="700" fill="#3730a3">MEN2</text>
+    <text x="693" y="270" text-anchor="middle" font-size="20" fill="#3730a3">RET gain-of-function</text>
+    <text x="693" y="318" text-anchor="middle" font-size="24" font-weight="700" fill="#312e81">C-cell pattern</text>
+    <text x="693" y="360" text-anchor="middle" font-size="22" fill="#312e81">Medullary thyroid carcinoma</text>
+    <text x="693" y="395" text-anchor="middle" font-size="22" fill="#312e81">Pheochromocytoma</text>
+    <text x="693" y="430" text-anchor="middle" font-size="22" fill="#312e81">Parathyroid in MEN2A</text>
+  </g>
+  <text x="480" y="510" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">Critical Step 1 move: rule out pheochromocytoma before MEN2 thyroid surgery.</text>
+</svg>

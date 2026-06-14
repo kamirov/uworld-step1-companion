@@ -16,8 +16,10 @@ import cd4TLymphocyte from "../media/images/cells/cd4-t-lymphocyte.jpg?url";
 import cd8TLymphocyte from "../media/images/cells/cd8-t-lymphocyte.png?url";
 import cervicalOs from "../media/images/cells/cervical-os.svg?url";
 import chromaffinCell from "../media/images/cells/chromaffin-cell.jpg?url";
+import corticospinalTract from "../media/images/cells/corticospinal-tract.svg?url";
 import corePromoterElements from "../media/images/cells/core-promoter-elements.svg?url";
 import dendriticCell from "../media/images/cells/dendritic-cell.jpg?url";
+import dorsalColumns from "../media/images/cells/dorsal-columns.svg?url";
 import dermalAppendage from "../media/images/cells/dermal-appendage.svg?url";
 import desmosome from "../media/images/cells/desmosome.jpg?url";
 import detrusorMuscle from "../media/images/cells/detrusor-muscle.jpg?url";
@@ -35,6 +37,7 @@ import gapJunction from "../media/images/cells/gap-junction.svg?url";
 import golgiTendonOrgan from "../media/images/cells/golgi-tendon-organ.png?url";
 import hepaticStructure from "../media/images/cells/hepatic-structure.svg?url";
 import hemidesmosome from "../media/images/cells/hemidesmosome.png?url";
+import hypersegmentedNeutrophil from "../media/images/cells/hypersegmented-neutrophil.svg?url";
 import hepatocyte from "../media/images/cells/hepatocyte.jpg?url";
 import hepaticSinusoids from "../media/images/cells/hepatic-sinusoids.png?url";
 import helperTCellDifferentiation from "../media/images/cells/helper-t-cell-differentiation.png?url";
@@ -114,7 +117,9 @@ export type CELLImageId = Extract<
   | "cd8-t-lymphocyte"
   | "cervical-os"
   | "chromaffin-cell"
+  | "corticospinal-tract"
   | "dendritic-cell"
+  | "dorsal-columns"
   | "dermal-appendage"
   | "desmosome"
   | "detrusor-muscle"
@@ -131,6 +136,7 @@ export type CELLImageId = Extract<
   | "gap-junction"
   | "golgi-tendon-organ"
   | "hemidesmosome"
+  | "hypersegmented-neutrophil"
   | "hepatocyte"
   | "hepatic-sinusoids"
   | "hypothalamus"
@@ -218,7 +224,9 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "cd8-t-lymphocyte": extensionAssetUrl(cd8TLymphocyte),
   "cervical-os": extensionAssetUrl(cervicalOs),
   "chromaffin-cell": extensionAssetUrl(chromaffinCell),
+  "corticospinal-tract": extensionAssetUrl(corticospinalTract),
   "dendritic-cell": extensionAssetUrl(dendriticCell),
+  "dorsal-columns": extensionAssetUrl(dorsalColumns),
   "dermal-appendage": extensionAssetUrl(dermalAppendage),
   "desmosome": extensionAssetUrl(desmosome),
   "detrusor-muscle": extensionAssetUrl(detrusorMuscle),
@@ -235,6 +243,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "gap-junction": extensionAssetUrl(gapJunction),
   "golgi-tendon-organ": extensionAssetUrl(golgiTendonOrgan),
   "hemidesmosome": extensionAssetUrl(hemidesmosome),
+  "hypersegmented-neutrophil": extensionAssetUrl(hypersegmentedNeutrophil),
   "hepatocyte": extensionAssetUrl(hepatocyte),
   "hepatic-sinusoids": extensionAssetUrl(hepaticSinusoids),
   "hypothalamus": extensionAssetUrl(hypothalamus),
@@ -319,7 +328,9 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "cd8-t-lymphocyte": { label: "Wikimedia Commons (Killer T cells surround a cancer cell.png)", url: "https://commons.wikimedia.org/wiki/File:Killer_T_cells_surround_a_cancer_cell.png" },
   "cervical-os": { label: "Wikimedia Commons (Macro Os, vertèbres cervicales - Métastases 55-o.apatho-219d-os.jpg)", url: "https://commons.wikimedia.org/wiki/File:Macro_Os,_vertèbres_cervicales_-_Métastases_55-o.apatho-219d-os.jpg" },
   "chromaffin-cell": { label: "Wikimedia Commons (Jpogi, public domain)", url: "https://commons.wikimedia.org/wiki/File:Adrenal_gland_(medulla).JPG" },
+  "corticospinal-tract": { label: "Created locally; reference: Corticospinal tract", url: "https://en.wikipedia.org/wiki/Corticospinal_tract" },
   "dendritic-cell": { label: "Wikimedia Commons (Antigen presentation by dendritic cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Antigen_presentation_by_dendritic_cell.jpg" },
+  "dorsal-columns": { label: "Created locally; reference: Dorsal column–medial lemniscus pathway", url: "https://en.wikipedia.org/wiki/Dorsal_column%E2%80%93medial_lemniscus_pathway" },
   "dermal-appendage": { label: "Wikimedia Commons (Skin Hair Follicle (NIH BioArt 657).svg)", url: "https://commons.wikimedia.org/wiki/File:Skin_Hair_Follicle_(NIH_BioArt_657).svg" },
   "desmosome": { label: "Wikimedia Commons (Transmission electron micrograph of a normal apical junctional complex (AJC), the structure between two adjacent enterocytes from the ileal epithelium region of a 21 d old chick.jpg)", url: "https://commons.wikimedia.org/wiki/File:Transmission_electron_micrograph_of_a_normal_apical_junctional_complex_(AJC),_the_structure_between_two_adjacent_enterocytes_from_the_ileal_epithelium_region_of_a_21_d_old_chick.jpg" },
   "detrusor-muscle": { label: "Wikimedia Commons (NCI SEER, public domain)", url: "https://commons.wikimedia.org/wiki/File:Illu_bladder.jpg" },
@@ -334,6 +345,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "gap-junction": { label: "Wikimedia Commons (Gap cell junction-uk.svg)", url: "https://commons.wikimedia.org/wiki/File:Gap_cell_junction-uk.svg" },
   "golgi-tendon-organ": { label: "Wikimedia Commons (Gray938.png)", url: "https://commons.wikimedia.org/wiki/File:Gray938.png" },
   "hemidesmosome": { label: "Wikimedia Commons (Schematic illustration of the basement membrane zones of epithelium.png)", url: "https://commons.wikimedia.org/wiki/File:Schematic_illustration_of_the_basement_membrane_zones_of_epithelium.png" },
+  "hypersegmented-neutrophil": { label: "Created locally; reference: Hypersegmented neutrophil", url: "https://en.wikipedia.org/wiki/Hypersegmented_neutrophil" },
   "hepatocyte": { label: "Wikimedia Commons (Jagiellonian University Medical College, CC BY-SA 3.0)", url: "https://commons.wikimedia.org/wiki/File:Human_liver.jpg" },
   "hepatic-sinusoids": { label: "Wikimedia Commons (Hepatic circulation and microcirculation.png)", url: "https://commons.wikimedia.org/wiki/File:Hepatic_circulation_and_microcirculation.png" },
   "hypothalamus": { label: "Wikimedia Commons (1806 The Hypothalamus-Pituitary Complex.jpg)", url: "https://commons.wikimedia.org/wiki/File:1806_The_Hypothalamus-Pituitary_Complex.jpg" },
@@ -415,7 +427,11 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "cd8-t-lymphocyte": "Clinical or pathologic image illustrating cd8 t lymphocyte",
   "cervical-os": "Clinical or pathologic image illustrating cervical os",
   "chromaffin-cell": "Human adrenal medulla micrograph; chromaffin cells secrete catecholamines after preganglionic sympathetic ACh",
+  "corticospinal-tract":
+    "Upper motor neuron pathway — decussates in medulla; lesion causes contralateral spastic paresis with hyperreflexia",
   "dendritic-cell": "Clinical or pathologic image illustrating dendritic cell",
+  "dorsal-columns":
+    "Posterior spinal cord tracts carrying proprioception and vibration — damaged in B12 deficiency and tabes dorsalis",
   "dermal-appendage": "Clinical or pathologic image illustrating dermal appendage",
   "desmosome": "Clinical or pathologic image illustrating desmosome",
   "detrusor-muscle": "Urinary bladder diagram labeling detrusor smooth muscle, which contracts via pelvic splanchnic M3 signaling",
@@ -430,6 +446,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "gap-junction": "Gap junction (connexon) channels connecting adjacent cells for direct cytoplasmic communication",
   "golgi-tendon-organ": "Clinical or pathologic image illustrating golgi tendon organ",
   "hemidesmosome": "Clinical or pathologic image illustrating hemidesmosome",
+  "hypersegmented-neutrophil":
+    "Neutrophil with >5 nuclear lobes — hallmark of megaloblastic anemia from B12 or folate deficiency",
   "hepatocyte": "Human liver H&E section showing hepatocytes arranged in plates and lobules",
   "hepatic-sinusoids": "Clinical or pathologic image illustrating hepatic sinusoids",
   "hypothalamus": "Clinical or pathologic image illustrating hypothalamus",

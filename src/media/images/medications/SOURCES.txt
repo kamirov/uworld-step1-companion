@@ -47,3 +47,23 @@ daptomycin.svg | Created locally
 linezolid.svg | Created locally
 nafcillin.svg | Created locally
 oxacillin.svg | Created locally
+
+anti-tnf-therapy.png
+  Source: Wikimedia Commons — Human tumor necrosis factor alpha PDB 1TNF.png
+  Page: https://commons.wikimedia.org/wiki/File:Human_tumor_necrosis_factor_alpha_PDB_1TNF.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Human_tumor_necrosis_factor_alpha_PDB_1TNF.png?width=1280
+
+daptomycin.svg
+  Source: Wikimedia Commons — Daptomycin.svg
+  Page: https://commons.wikimedia.org/wiki/File:Daptomycin.svg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Daptomycin.svg?width=1280
+
+linezolid.svg
+  Source: Wikimedia Commons — Struktur Linezolid.svg
+  Page: https://commons.wikimedia.org/wiki/File:Struktur_Linezolid.svg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Struktur_Linezolid.svg?width=1280
+
+oxacillin.svg
+  Source: Wikimedia Commons — Struktur Oxacillin.svg
+  Page: https://commons.wikimedia.org/wiki/File:Struktur_Oxacillin.svg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Struktur_Oxacillin.svg?width=1280

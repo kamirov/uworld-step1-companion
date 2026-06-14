@@ -1,0 +1,10 @@
+
+ifn-alpha.png
+  Source: Wikimedia Commons — 1RH2 Recombinant Human Interferon-Alpha 2b-02.png
+  Page: https://commons.wikimedia.org/wiki/File:1RH2_Recombinant_Human_Interferon-Alpha_2b-02.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:1RH2_Recombinant_Human_Interferon-Alpha_2b-02.png?width=1280
+
+ifn-beta.png
+  Source: Wikimedia Commons — 1AU1 Human Interferon-Beta03.png
+  Page: https://commons.wikimedia.org/wiki/File:1AU1_Human_Interferon-Beta03.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:1AU1_Human_Interferon-Beta03.png?width=1280

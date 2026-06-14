@@ -4036,6 +4036,136 @@ export const CELLS: CellEntry[] = [
     pediatrics:
       "Pediatric TB granulomas may show Langhans giant cells; do not confuse Langerhans cell histiocytosis (CD1a+ clonal proliferation) with granulomatous giant cells.",
   },
+  {
+    id: "dorsal-columns",
+    name: "Dorsal Columns",
+    etymology: "Latin dorsum = back + Latin columna = pillar",
+    aliases: [
+      "dorsal columns",
+      "dorsal column",
+      "posterior columns",
+      "posterior column",
+      "dorsal column-medial lemniscus pathway",
+      "dcml pathway",
+      "fasciculus gracilis",
+      "fasciculus cuneatus",
+    ],
+    definition:
+      "Ascending white matter tracts in the spinal cord posterior funiculus carrying fine touch, vibration, and proprioception — fasciculus gracilis (lower body) and fasciculus cuneatus (upper body) synapse in nucleus gracilis/cuneatus of medulla.",
+    characteristics: [
+      "First-order neuron: ipsilateral dorsal root ganglion → ascends ipsilaterally in dorsal columns",
+      "Synapse in medulla → decussate as internal arcuate fibers → medial lemniscus to thalamus",
+      "Carries discriminative touch, vibration, proprioception — not pain/temperature",
+      "B12 deficiency damages dorsal columns → ↓ vibration and proprioception",
+    ],
+    clinicalRelevance: [
+      "Subacute combined degeneration — B12 deficiency affects dorsal columns + corticospinal tracts",
+      "Tabes dorsalis (tertiary syphilis) — dorsal column degeneration → ataxia, Argyll Robertson pupils",
+      "Lhermitte sign — neck flexion stretches demyelinated dorsal columns in MS",
+      "Posterior cord syndrome — injury to posterior spinal artery territory",
+    ],
+    boardsPearls: [
+      "Dorsal columns = proprioception, vibration, fine touch; decussate in medulla (not cord)",
+      "B12 deficiency → dorsal column signs: positive Romberg, ↓ vibration sense",
+      "vs spinothalamic tract — pain/temperature; crosses in spinal cord within ~2 segments",
+      "Fasciculus gracilis = legs; fasciculus cuneatus = arms (T6 and above)",
+    ],
+    distinguishFrom: [
+      "Spinothalamic tract — pain and temperature; anterior/lateral cord",
+      "Corticospinal tract — voluntary motor; lateral cord",
+      "Anterior spinocerebellar tract — unconscious proprioception to cerebellum",
+    ],
+    pediatrics:
+      "Friedreich ataxia and leukodystrophies can affect dorsal column pathways in children; B12 deficiency in breastfed infants of vegan mothers causes dorsal column injury.",
+  },
+  {
+    id: "corticospinal-tract",
+    name: "Corticospinal Tract",
+    etymology: "Latin cortex = bark + Latin spina = spine + Latin tractus = drawn path",
+    aliases: [
+      "corticospinal tract",
+      "corticospinal tracts",
+      "corticospinal pathway",
+      "pyramidal tract",
+      "pyramidal tracts",
+      "lateral corticospinal tract",
+      "anterior corticospinal tract",
+      "cst",
+    ],
+    definition:
+      "Major descending motor pathway from primary motor cortex through internal capsule and brainstem pyramids to spinal cord anterior horn — mediates voluntary skilled movement; lateral CST decussates in pyramids, anterior CST partially decussates.",
+    characteristics: [
+      "Upper motor neuron (UMN) — cell body in precentral gyrus (layer V Betz cells)",
+      "Decussation at pyramids (medulla) — 85–90% cross to contralateral lateral CST",
+      "Synapse on lower motor neurons in anterior horn (and interneurons)",
+      "Lateral CST controls distal limb fine motor; anterior CST more axial/girdle",
+    ],
+    clinicalRelevance: [
+      "Stroke affecting internal capsule → contralateral spastic hemiparesis",
+      "B12 subacute combined degeneration — lateral corticospinal tract demyelination → spastic paresis",
+      "Amyotrophic lateral sclerosis — UMN (corticospinal) and LMN degeneration",
+      "Spinal cord lesion above LMN → UMN signs below level (spasticity, hyperreflexia, Babinski)",
+    ],
+    boardsPearls: [
+      "UMN lesion: spastic paresis, hyperreflexia, Babinski (+), no significant atrophy early",
+      "LMN lesion: flaccid paralysis, hyporeflexia, atrophy, fasciculations",
+      "Corticospinal tract decussates in pyramids — lesion above vs below determines side of weakness",
+      "B12 deficiency hits lateral corticospinal tracts + dorsal columns (subacute combined degeneration)",
+      "Internal capsule stroke — dense contralateral hemiparesis (compact fibers)",
+    ],
+    distinguishFrom: [
+      "Dorsal columns — sensory ascending; proprioception/vibration",
+      "Rubrospinal/reticulospinal tracts — postural and gross limb flexor control",
+      "Lower motor neuron — anterior horn cell or nerve; flaccid weakness",
+      "Extrapyramidal system — basal ganglia; rigidity and bradykinesia, not spastic paresis pattern",
+    ],
+    pediatrics:
+      "Cerebral palsy spastic hemiplegia/diplegia reflects corticospinal tract injury around birth; UMN pattern with delayed motor milestones.",
+  },
+  {
+    id: "hypersegmented-neutrophil",
+    name: "Hypersegmented Neutrophil",
+    etymology: "Greek hyper = excess + Latin segmentum = cut piece + neuter = neither + philos = loving",
+    aliases: [
+      "hypersegmented neutrophil",
+      "hypersegmented neutrophils",
+      "hypersegmented pmn",
+      "hypersegmented pmns",
+      "hypersegmented polymorphonuclear leukocyte",
+      "hypersegmented polymorphonuclear leukocytes",
+      "six-lobed neutrophil",
+      ">5 lobes neutrophil",
+    ],
+    definition:
+      "Mature neutrophil with more than five nuclear lobes (often six or more) on peripheral smear — hallmark of impaired DNA synthesis in megaloblastic anemia from B12 or folate deficiency.",
+    characteristics: [
+      "Normal mature neutrophil has 3–5 lobes connected by thin filaments",
+      ">5 lobes = hypersegmented — reflects delayed nuclear division from defective DNA synthesis",
+      "Seen in megaloblastic anemia, not in non-megaloblastic macrocytosis (alcohol, reticulocytosis)",
+      "May appear before significant anemia in early B12/folate deficiency",
+    ],
+    clinicalRelevance: [
+      "B12 deficiency anemia — hypersegmented PMNs + macrocytosis + ↑ MMA",
+      "Folate deficiency — hypersegmented PMNs + macrocytosis without ↑ MMA",
+      "Pernicious anemia classic finding on smear",
+      "Myelodysplasia can show pseudo-Pelger-Huet or dysplastic lobes — different context",
+    ],
+    boardsPearls: [
+      "Hypersegmented neutrophils = megaloblastic until proven otherwise (B12 or folate)",
+      "High MCV + hypersegmented PMNs → check B12 and folate; give B12 before folate if both possible",
+      "Alcohol macrocytosis usually lacks hypersegmented neutrophils",
+      "Macro-ovalocytes on smear accompany hypersegmented PMNs in megaloblastic anemia",
+      "vs Pelger-Huet anomaly — hyposegmented (bilobed) neutrophils, benign congenital variant",
+    ],
+    distinguishFrom: [
+      "Normal segmented neutrophil — 3–5 lobes",
+      "Band neutrophil — immature, unsegmented U-shaped nucleus (left shift)",
+      "Pelger-Huet cells — hyposegmented bilobed nuclei, not hypersegmented",
+      "Toxic granulation — cytoplasmic change in infection, not nuclear lobulation",
+    ],
+    pediatrics:
+      "Breastfed infants of B12-deficient mothers may show megaloblastic changes including hypersegmented neutrophils before neurologic injury becomes apparent.",
+  },
 ];
 
 const cellById = new Map(CELLS.map((entry) => [entry.id, entry]));

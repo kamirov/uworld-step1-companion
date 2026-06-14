@@ -22883,6 +22883,464 @@ export const CONDITIONS: ConditionEntry[] = [
     pediatrics:
       "Pediatric cases are rare and usually household exposure to parental occupational dust; diagnosis same with exposure history and BeLPT.",
   },
+  {
+    id: "sideroblastic-anemia",
+    name: "Sideroblastic Anemia",
+    etymology: "Greek sideros = iron + blastos = germ + Greek an- = without + haima = blood",
+    aliases: [
+      "sideroblastic anemia",
+      "sideroblastic anaemia",
+      "sideroblastic anemias",
+      "ringed sideroblast anemia",
+      "ring sideroblast anemia",
+    ],
+    definition:
+      "Anemia with defective heme synthesis causing iron accumulation in mitochondria of erythroid precursors — ringed sideroblasts on bone marrow Prussian blue stain; often microcytic or dimorphic RBC population.",
+    pathophysiology:
+      "Impaired protoporphyrin synthesis or mitochondrial iron handling traps iron in erythroblast mitochondria (rings around nucleus) → ineffective erythropoiesis; causes include ALAS2 mutations, alcohol, isoniazid, chloramphenicol, copper deficiency, B6 deficiency, lead, and MDS.",
+    classicPresentation: [
+      "Fatigue, pallor with anemia refractory to iron alone",
+      "May be microcytic, normocytic, or dimorphic (mixed cell sizes)",
+      "Basophilic stippling with lead poisoning",
+      "Neuropathy if copper or B6 deficiency underlying",
+    ],
+    keyFindings: [
+      "Ringed sideroblasts on bone marrow Prussian blue stain",
+      "↑ serum iron and ferritin with anemia (iron trapped in marrow, not usable)",
+      "Dimorphic RBCs on smear (microcytic + normocytic populations)",
+    ],
+    keyLabs: [
+      "CBC — variable MCV; may look like iron deficiency but ferritin elevated",
+      "↑ Iron, ↑ ferritin, ↑ transferrin saturation in many acquired forms",
+      "Bone marrow — ringed sideroblasts pathognomonic",
+      "Check copper, B6, lead level, alcohol history, drug exposures",
+    ],
+    associations: [
+      "Copper deficiency — zinc excess, malabsorption, bariatric surgery",
+      "Pyridoxine (B6) deficiency — isoniazid, alcoholism",
+      "Lead poisoning — inhibits ALA dehydratase and ferrochelatase",
+      "Myelodysplastic syndrome — acquired clonal ring sideroblasts",
+      "X-linked sideroblastic anemia — ALAS2 mutation",
+      "Alcohol, chloramphenicol",
+    ],
+    complications: [
+      "Transfusion dependence in severe MDS-associated disease",
+      "Iron overload with chronic transfusions",
+      "Underlying copper/B6 deficiency neurologic injury if missed",
+    ],
+    distinguishFrom: [
+      "Iron deficiency anemia — ↓ ferritin, ↓ iron; no ringed sideroblasts",
+      "Thalassemia — microcytic anemia with target cells; normal/decreased iron",
+      "Anemia of chronic disease — low iron with high ferritin but no ringed sideroblasts",
+      "Megaloblastic anemia — macrocytic; B12/folate deficiency pattern",
+    ],
+    treatment: [
+      "Treat underlying cause — stop alcohol/d offending drug, chelate lead, replete copper or B6",
+      "Pyridoxine trial in hereditary or B6-responsive forms",
+      "MDS — supportive care, hypomethylating agents, transplant in selected cases",
+    ],
+    boardsPearls: [
+      "Ringed sideroblasts = iron-laden mitochondria encircling nucleus in erythroblasts",
+      "Copper deficiency + zinc excess → sideroblastic anemia + myelopathy + neutropenia",
+      "Isoniazid causes B6 deficiency → sideroblastic anemia",
+      "Lead poisoning — basophilic stippling + sideroblastic anemia + neuro symptoms",
+      "↑ ferritin with anemia — think sideroblastic, not iron deficiency",
+    ],
+    pediatrics:
+      "X-linked ALAS2 sideroblastic anemia presents in males in infancy/childhood; pyridoxine-responsive forms may improve with B6. Lead exposure remains an important pediatric cause.",
+  },
+  {
+    id: "vitamin-b12-deficiency-anemia",
+    name: "Vitamin B12 Deficiency Anemia",
+    etymology: "vitamin = vital amine + B12 = cobalamin + deficiency = lack + anemia = without blood",
+    aliases: [
+      "vitamin b12 deficiency anemia",
+      "vitamin b12 anemia",
+      "b12 deficiency anemia",
+      "b12 anemia",
+      "cobalamin deficiency anemia",
+      "megaloblastic anemia from b12 deficiency",
+      "megaloblastic anemia from vitamin b12 deficiency",
+    ],
+    definition:
+      "Megaloblastic macrocytic anemia resulting from insufficient vitamin B12 for DNA synthesis and erythropoiesis — may occur with or without neurologic subacute combined degeneration.",
+    pathophysiology:
+      "B12 required as cofactor for methionine synthase and methylmalonyl-CoA mutase → impaired DNA synthesis → megaloblastic anemia; defective myelin maintenance causes dorsal column and corticospinal tract injury if prolonged.",
+    classicPresentation: [
+      "Fatigue, pallor, glossitis",
+      "Macrocytic anemia with hypersegmented neutrophils",
+      "Paresthesias, ataxia, weakness if neurologic involvement",
+      "May present with neurologic symptoms before significant anemia",
+    ],
+    keyFindings: [
+      "↑ MCV, macro-ovalocytes on smear",
+      "Hypersegmented neutrophils (>5 lobes)",
+      "Loss of proprioception and vibration sense with myelopathy",
+      "Positive Romberg, spastic gait if advanced",
+    ],
+    keyLabs: [
+      "↓ Serum vitamin B12",
+      "↑ Methylmalonic acid (specific for B12, not folate deficiency)",
+      "↑ Homocysteine (also elevated in folate deficiency)",
+      "Megaloblastic marrow changes if severe",
+    ],
+    associations: [
+      "Pernicious anemia — autoimmune intrinsic factor deficiency (common cause)",
+      "Terminal ileum disease/resection (Crohn)",
+      "Strict vegan diet without supplementation",
+      "Bariatric surgery malabsorption",
+      "Diphyllobothrium latum (fish tapeworm)",
+      "Metformin, chronic PPI use",
+      "Nitrous oxide recreational abuse",
+    ],
+    complications: [
+      "Irreversible subacute combined degeneration if untreated",
+      "Pancytopenia in severe deficiency",
+      "Heart failure from severe anemia",
+    ],
+    distinguishFrom: [
+      "Folate deficiency anemia — megaloblastic without ↑ MMA or neurologic disease",
+      "Pernicious anemia — specific autoimmune cause of B12 deficiency anemia",
+      "Copper deficiency — sideroblastic/different smear; ↓ copper, not ↓ B12",
+      "Myelodysplastic syndrome — macrocytosis with dysplasia, not purely nutritional",
+      "Non-megaloblastic macrocytosis — alcohol, liver disease, hypothyroidism",
+    ],
+    treatment: [
+      "B12 repletion — IM cyanocobalamin/hydroxocobalamin or high-dose oral B12",
+      "Treat underlying cause (pernicious anemia, malabsorption, diet)",
+      "Do not give folate alone before B12 — can correct anemia but worsen neurologic injury",
+    ],
+    boardsPearls: [
+      "B12 deficiency anemia = megaloblastic macrocytosis + ↑ MMA + neurologic signs possible",
+      "↑ MMA distinguishes B12 from folate deficiency (folate does not raise MMA)",
+      "Subacute combined degeneration — dorsal columns + lateral corticospinal tracts",
+      "Pernicious anemia is one cause, not synonymous with all B12 deficiency anemia",
+      "Give B12 before folate when both may be deficient",
+    ],
+    pediatrics:
+      "Breastfed infants of unsupplemented vegan mothers develop B12 deficiency anemia and developmental delay. Congenital transcobalamin II deficiency causes megaloblastic anemia in infancy.",
+  },
+  {
+    id: "menkes-disease",
+    name: "Menkes Disease",
+    etymology: "eponym: John Menkes + disease = disordered function",
+    aliases: [
+      "menkes disease",
+      "menkes' disease",
+      "menkes syndrome",
+      "kinky hair disease",
+      "steely hair syndrome",
+      "copper transport disease",
+      "atp7a deficiency",
+    ],
+    definition:
+      "X-linked recessive disorder of intestinal copper absorption (ATP7A mutation) causing systemic copper deficiency, connective tissue fragility, and progressive neurodegeneration in infancy.",
+    pathophysiology:
+      "ATP7A encodes copper-transporting ATPase needed for gut copper absorption and blood-brain barrier copper delivery → low serum copper and ceruloplasmin → deficient cuproenzymes (cytochrome c oxidase, lysyl oxidase) → cerebral degeneration, arterial fragility, and characteristic hair.",
+    classicPresentation: [
+      "Male infant — normal early then regression after ~2–3 months",
+      "Sparse, brittle, hypopigmented 'kinky' or 'steely' hair",
+      "Hypotonia, seizures, developmental delay",
+      "Failure to thrive",
+    ],
+    keyFindings: [
+      "Pili torti on microscopy — twisted brittle hair shafts",
+      "Low serum copper and ceruloplasmin",
+      "Cerebral and cerebellar atrophy on imaging",
+      "Generalized arterial tortuosity and aneurysms",
+    ],
+    keyLabs: [
+      "↓ Serum copper",
+      "↓ Ceruloplasmin",
+      "↓ Copper-dependent enzyme activity",
+      "ATP7A genetic testing confirms",
+    ],
+    associations: [
+      "X-linked — affects males; female carriers may have mild features",
+      "Occipital horn syndrome — milder allelic variant of ATP7A",
+      "Opposite pathway to Wilson disease (ATP7B copper overload)",
+    ],
+    complications: [
+      "Progressive neurodegeneration and early death (often by age 3)",
+      "Intracranial hemorrhage from vascular fragility",
+      "Respiratory failure",
+    ],
+    distinguishFrom: [
+      "Wilson disease — copper overload, Kayser-Fleischer rings, liver disease in older children/adults",
+      "Copper deficiency from zinc excess — acquired; older patients, different hair findings",
+      "Other neurodegenerative infantile disorders — organic acidemias, Leigh syndrome",
+    ],
+    treatment: [
+      "Subcutaneous copper histidine if diagnosed very early (before irreversible injury)",
+      "Supportive care for seizures and nutrition",
+      "Genetic counseling",
+    ],
+    boardsPearls: [
+      "Menkes = ↓ copper absorption (ATP7A); Wilson = ↓ copper excretion (ATP7B)",
+      "Kinky hypopigmented hair + infantile neurodegeneration + ↓ ceruloplasmin",
+      "Both Menkes and Wilson show ↓ ceruloplasmin — Menkes has low total copper in infancy; Wilson has overload later",
+      "Early parenteral copper may help only if started before neurologic injury",
+      "Lysyl oxidase deficiency → arterial tortuosity and bladder diverticula",
+    ],
+    pediatrics:
+      "Classic Menkes presents in male infants with regression and characteristic hair; newborn screening for copper metabolism is not universal — high clinical suspicion required. Occipital horn syndrome is a milder ATP7A variant with connective tissue features.",
+  },
+  {
+    id: "gastric-adenocarcinoma",
+    name: "Gastric Adenocarcinoma",
+    etymology: "Greek gaster = stomach + Latin aden = gland + Greek karkinos = crab/cancer + -oma = tumor",
+    aliases: [
+      "gastric adenocarcinoma",
+      "gastric adenocarcinomas",
+      "gastric cancer",
+      "gastric carcinoma",
+      "stomach cancer",
+      "stomach adenocarcinoma",
+      "adenocarcinoma of stomach",
+    ],
+    definition:
+      "Malignant glandular epithelial tumor of the stomach — most common gastric cancer; associated with H. pylori, dietary factors, and chronic atrophic gastritis.",
+    pathophysiology:
+      "Intestinal-type (often antral, ulcerated mass) progresses through atrophic gastritis → intestinal metaplasia → dysplasia; diffuse-type (signet ring cells) infiltrates without early mass — linitis plastica leather bottle stomach.",
+    classicPresentation: [
+      "Weight loss, early satiety, epigastric pain",
+      "Occult GI bleeding → iron deficiency anemia",
+      "Virchow node (left supraclavicular) metastasis",
+      "Krukenberg tumor (ovarian metastasis from diffuse type)",
+    ],
+    keyFindings: [
+      "Endoscopy with biopsy — adenocarcinoma",
+      "Signet ring cells — mucin-filled cytoplasm pushing nucleus to periphery (diffuse type)",
+      "Linitis plastica — rigid thickened stomach wall",
+    ],
+    keyLabs: [
+      "Iron deficiency anemia from chronic blood loss",
+      "CEA may be elevated (nonspecific)",
+    ],
+    associations: [
+      "Helicobacter pylori chronic gastritis",
+      "Pernicious anemia / atrophic gastritis — intestinal type risk",
+      "Nitrosamines, smoked foods, low fruits/vegetables",
+      "Hereditary diffuse gastric cancer (CDH1 mutations)",
+      "Blood type A (historical association)",
+    ],
+    complications: [
+      "Obstruction, perforation, hemorrhage",
+      "Widespread metastases — liver, peritoneum (Sister Mary Joseph nodule)",
+      "Cachexia",
+    ],
+    distinguishFrom: [
+      "Gastric lymphoma (MALT) — often H. pylori associated; different histology",
+      "GIST — mesenchymal c-KIT tumor, not adenocarcinoma",
+      "Peptic ulcer — benign; biopsy distinguishes",
+      "Gastric carcinoid — neuroendocrine tumor",
+    ],
+    treatment: [
+      "Surgical resection when localized",
+      "Chemotherapy for advanced disease",
+      "H. pylori eradication in MALT lymphoma (not primary adenocarcinoma treatment)",
+    ],
+    boardsPearls: [
+      "Most common gastric cancer = adenocarcinoma",
+      "Signet ring cells + linitis plastica = diffuse type",
+      "H. pylori → chronic gastritis → intestinal-type adenocarcinoma risk",
+      "Pernicious anemia/atrophic gastritis increases gastric cancer risk",
+      "Virchow node = left supraclavicular metastasis (Troisier sign)",
+    ],
+    pediatrics:
+      "Gastric adenocarcinoma is rare in children; pediatric GI malignancies more often lymphoma or rhabdomyosarcoma.",
+  },
+  {
+    id: "tropical-sprue",
+    name: "Tropical Sprue",
+    etymology: "Greek tropikos = of the turning/solstice + Dutch spruw = spongy (intestinal)",
+    aliases: [
+      "tropical sprue",
+      "tropical sprues",
+      "tropical malabsorption",
+      "tropical enteropathy",
+    ],
+    definition:
+      "Acquired chronic malabsorptive enteropathy occurring in residents of or travelers to tropical regions — villous atrophy resembling celiac disease but with different epidemiology and antibiotic responsiveness.",
+    pathophysiology:
+      "Likely infectious or post-infectious small bowel injury in tropics → diffuse jejunal/ileal villous blunting → malabsorption of folate, B12, fat, and other nutrients; exact organism debated (Tropheryma whipplei suggested in some cases).",
+    classicPresentation: [
+      "Resident of or prolonged travel to Caribbean, India, Southeast Asia",
+      "Chronic diarrhea, steatorrhea, weight loss, anemia",
+      "Megaloblastic anemia from folate and B12 malabsorption",
+      "May present months after leaving endemic area",
+    ],
+    keyFindings: [
+      "Small bowel biopsy — villous atrophy (similar to celiac)",
+      "Malabsorption of folate and B12",
+      "Steatorrhea and nutritional deficiencies",
+    ],
+    keyLabs: [
+      "↓ Folate and/or ↓ B12 with macrocytic anemia",
+      "Abnormal D-xylose or fecal fat if tested",
+      "Anti-tTG negative (vs celiac)",
+    ],
+    associations: [
+      "Endemic in tropical regions",
+      "Folate and B12 deficiency",
+      "Small intestinal bacterial overgrowth may contribute",
+    ],
+    complications: [
+      "Severe malnutrition and megaloblastic anemia",
+      "Neurologic injury from B12 deficiency if untreated",
+    ],
+    distinguishFrom: [
+      "Celiac disease (nontropical sprue) — anti-tTG+, HLA-DQ2/DQ8, gluten trigger",
+      "Whipple disease — PAS-positive macrophages, arthralgia, Tropheryma",
+      "Giardiasis — acute/traveler's diarrhea; trophozoites on stool",
+      "Crohn disease — transmural, skip lesions, not classic tropical epidemiology",
+    ],
+    treatment: [
+      "Tetracycline (or other antibiotics) for prolonged course",
+      "Replace folate, B12, and other deficiencies",
+      "Supportive nutrition",
+    ],
+    boardsPearls: [
+      "Tropical sprue — tropics + malabsorption + folate/B12 deficiency",
+      "Responds to antibiotics (unlike celiac which needs gluten-free diet)",
+      "Biopsy can mimic celiac — use serology, HLA, and travel/residence history",
+      "vs nontropical sprue = celiac disease",
+    ],
+    pediatrics:
+      "Can affect children in endemic areas; nutritional rehabilitation and antibiotic therapy with folate/B12 replacement essential for growth.",
+  },
+  {
+    id: "alcohol-use-disorder",
+    name: "Alcohol Use Disorder",
+    etymology: "Arabic al-kuhl + Latin usus = use + Latin ordo = order/condition",
+    aliases: [
+      "alcohol use disorder",
+      "alcohol use disorders",
+      "aud",
+      "dsm-5 alcohol use disorder",
+      "problem drinking",
+      "harmful use of alcohol",
+    ],
+    definition:
+      "DSM-5 diagnosis of problematic alcohol use with ≥2 of 11 criteria in 12 months (craving, tolerance, withdrawal, failed control, social/interpersonal problems, hazardous use, continued use despite harm).",
+    pathophysiology:
+      "Chronic ethanol exposure → CNS adaptation (tolerance, dependence), hepatic steatosis/injury, pancreatic toxicity, cardiomyopathy, and thiamine depletion; acute withdrawal can cause autonomic hyperactivity and seizures.",
+    classicPresentation: [
+      "Increased quantity/frequency of drinking with loss of control",
+      "Morning drinking or drinking to avoid withdrawal",
+      "Tolerance and withdrawal (tremor, anxiety, seizures, delirium tremens)",
+      "Continued use despite liver disease, legal, or relationship problems",
+    ],
+    keyFindings: [
+      "Elevated GGT and AST:ALT ratio >2 in alcoholic liver disease",
+      "Macrocytosis on CBC",
+      "Signs of chronic liver disease or neuropathy",
+    ],
+    keyLabs: [
+      "AST, ALT, GGT elevation",
+      "↑ MCV (macrocytosis)",
+      "Thiamine deficiency markers clinically (Wernicke risk)",
+    ],
+    associations: [
+      "Alcoholic liver disease, pancreatitis, cardiomyopathy",
+      "Wernicke-Korsakoff syndrome",
+      "Peripheral neuropathy",
+      "Fetal alcohol syndrome in offspring",
+      "Depression and other psychiatric comorbidity",
+    ],
+    complications: [
+      "Cirrhosis, variceal hemorrhage, hepatocellular carcinoma",
+      "Delirium tremens — mortality if untreated",
+      "Trauma, suicide, social devastation",
+    ],
+    distinguishFrom: [
+      "Alcoholism — overlapping historical term; less formal diagnostic criteria",
+      "Social drinking — no impairment or dependence criteria met",
+      "Alcohol-induced organ injury — consequence/complication, not the disorder itself",
+      "Intoxication or hangover — acute, not the chronic use disorder",
+    ],
+    treatment: [
+      "Counseling, mutual help, pharmacotherapy (naltrexone, acamprosate, disulfiram)",
+      "Thiamine supplementation; treat withdrawal with benzodiazepines",
+      "Treat comorbid psychiatric and medical conditions",
+    ],
+    boardsPearls: [
+      "AUD = DSM-5 term; alcoholism = clinical/historical overlap on boards",
+      "Withdrawal seizures ~12–48 h; delirium tremens ~48–96 h after last drink",
+      "Thiamine before glucose in malnourished AUD patient",
+      "CIWA protocol guides withdrawal benzodiazepine dosing",
+      "Fetal alcohol syndrome — no safe alcohol in pregnancy",
+    ],
+    pediatrics:
+      "Fetal alcohol spectrum disorders result from prenatal exposure; adolescent AUD requires different screening (CRAFFT) and family-based intervention.",
+  },
+  {
+    id: "neural-tube-defects",
+    name: "Neural Tube Defects",
+    etymology: "Latin neuralis = nerve + Old English tub = pipe + Latin defectus = failure",
+    aliases: [
+      "neural tube defect",
+      "neural tube defects",
+      "ntd",
+      "ntds",
+      "open neural tube defects",
+      "closed neural tube defects",
+      "neural tube closure defect",
+      "neural tube closure defects",
+    ],
+    definition:
+      "Congenital malformations from failure of neural tube closure during embryogenesis (days 25–28) — includes anencephaly, spina bifida, and encephalocele; strongly linked to folate deficiency and teratogens.",
+    pathophysiology:
+      "Incomplete fusion of neural folds → persistent opening with exposed neural tissue (open NTD) or covered defect (closed/spina bifida occulta); open defects leak AFP into amniotic fluid; folate required for nucleotide synthesis during rapid neural proliferation.",
+    classicPresentation: [
+      "Open sac on back or cranial defect at birth (myelomeningocele, anencephaly)",
+      "↑ Maternal serum AFP on prenatal screening (open defects)",
+      "Lower limb weakness and bladder dysfunction with spina bifida",
+      "Anencephaly — absent forebrain, polyhydramnios, incompatible with survival",
+    ],
+    keyFindings: [
+      "Vertebral or skull defect on imaging",
+      "Open NTD — meninges/neural tissue in sac",
+      "Prenatal ultrasound — lemon sign, banana sign (Chiari II)",
+    ],
+    keyLabs: [
+      "↑ Maternal serum AFP (open NTDs)",
+      "↑ Amniotic fluid AFP and acetylcholinesterase",
+      "Normal folate does not exclude NTD if teratogen exposure",
+    ],
+    associations: [
+      "Folate deficiency in early pregnancy",
+      "Valproate and other teratogens — ↓ folate metabolism",
+      "Maternal diabetes and obesity",
+      "Previous NTD-affected pregnancy",
+      "Anti-folate medications (methotrexate, trimethoprim)",
+    ],
+    complications: [
+      "Paraplegia, hydrocephalus (spina bifida with Chiari II)",
+      "Anencephaly — stillbirth or neonatal death",
+      "Recurrence risk in subsequent pregnancies without folate prophylaxis",
+    ],
+    distinguishFrom: [
+      "Spina bifida — specific NTD subtype; occulta vs open myelomeningocele",
+      "Anencephaly — specific lethal cranial NTD",
+      "Encephalocele — herniated brain tissue through skull defect",
+      "Amniotic band sequence — asymmetric constriction, not primary NTD closure failure",
+    ],
+    treatment: [
+      "Periconceptional folic acid 400–800 µg daily for prevention",
+      "Higher dose folate (4 mg) if prior NTD pregnancy",
+      "Surgical closure of open defects; multidisciplinary spina bifida care",
+    ],
+    boardsPearls: [
+      "NTD closure by ~28 days — often before pregnancy recognized → need preconception folate",
+      "↑ Maternal AFP = open NTD (not spina bifida occulta)",
+      "Folate prevents NTDs by supporting purine/thymidine synthesis",
+      "Valproate teratogenic — NTD risk via folate antagonism",
+      "Anencephaly + spina bifida are both NTDs at different neuraxis levels",
+    ],
+    pediatrics:
+      "Myelomeningocele requires neonatal neurosurgical closure, hydrocephalus management, and lifelong urologic/orthopedic care; prenatal folate prevents majority of NTDs.",
+  },
 ];
 
 const conditionById = new Map(CONDITIONS.map((c) => [c.id, c]));

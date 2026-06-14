@@ -719,6 +719,115 @@ export const METABOLISM: MetabolismEntry[] = [
     pediatrics:
       "Infantile beriberi from thiamine-deficient breast milk (maternal deficiency); MSUD neonates may respond to thiamine in thiamine-responsive BCKDH subtypes.",
   },
+  {
+    id: "cofactor",
+    name: "Cofactor",
+    etymology: "Latin co- = together + Latin factor = maker/agent",
+    aliases: [
+      "cofactor",
+      "cofactors",
+      "enzyme cofactor",
+      "enzyme cofactors",
+      "coenzyme",
+      "coenzymes",
+    ],
+    definition:
+      "Non-protein chemical helper required for full enzymatic activity — organic coenzymes (often vitamin-derived) or inorganic metal ions that participate in catalysis but are not consumed as substrate.",
+    pathway: [
+      "Organic coenzymes — NAD+/NADH, FAD/FADH₂, TPP, biotin, B12, PLP (B6), CoA, tetrahydrofolate",
+      "Metal cofactors — Zn²⁺, Mg²⁺, Cu²⁺, Fe²⁺/Fe³⁺, Mn²⁺, Mo, Se",
+      "Cosubstrate vs prosthetic group — cosubstrate leaves enzyme (NAD+); prosthetic group stays bound (heme, biotin on carboxylase)",
+      "Vitamin deficiencies often manifest as cofactor deficits → specific enzymatic blocks",
+    ],
+    boardsPearls: [
+      "Cofactor = helper; coenzyme = organic vitamin-derived cofactor",
+      "B12 cofactor for methionine synthase and methylmalonyl-CoA mutase",
+      "TPP (B1) for PDH, α-KGDH, transketolase",
+      "B6 (PLP) for transamination and sideroblastic anemia if deficient",
+      "Copper cofactor for cytochrome c oxidase, lysyl oxidase, ceruloplasmin",
+      "Zinc cofactor for DNA polymerase, carbonic anhydrase, alcohol dehydrogenase",
+    ],
+    distinguishFrom: [
+      "Apoenzyme — protein portion without cofactor; inactive until cofactor binds",
+      "Allosteric activator — regulatory binding, not required for catalytic chemistry",
+      "Substrate — consumed/converted in reaction; cofactor regenerated or reused",
+      "Enzyme — protein catalyst itself",
+    ],
+    pediatrics:
+      "Multiple inborn errors involve cofactor-responsive enzyme defects (e.g., thiamine-responsive MSUD, biotinidase deficiency needing biotin cofactor).",
+  },
+  {
+    id: "purine",
+    name: "Purine",
+    etymology: "Latin purum = pure + -ine = chemical suffix (originally from uric acid in urine)",
+    aliases: [
+      "purine",
+      "purines",
+      "purine base",
+      "purine bases",
+      "purine nucleotide",
+      "purine nucleotides",
+    ],
+    definition:
+      "Heterocyclic aromatic organic compound base (adenine, guanine) used to build nucleotides for DNA, RNA, ATP, GTP, and cyclic nucleotide signaling.",
+    pathway: [
+      "De novo synthesis — IMP from ribose-5-P + glutamine, glycine, aspartate, folate one-carbon units",
+      "Salvage pathway — hypoxanthine-guanine phosphoribosyltransferase (HGPRT) recycles bases to nucleotides",
+      "Adenine → AMP; guanine → GMP; IMP branch point",
+      "Catabolism → uric acid (xanthine oxidase) — excess causes gout/hyperuricemia",
+      "Methotrexate blocks dihydrofolate reductase → ↓ purine (and thymidine) synthesis",
+    ],
+    boardsPearls: [
+      "Purines = adenine (A) and guanine (G); pyrimidines = cytosine, thymine, uracil",
+      "HGPRT deficiency (Lesch-Nyhan) — impaired purine salvage → ↑ uric acid + neurologic disease",
+      "6-MP and azathioprine are purine analogs — metabolized by TPMT/xanthine oxidase",
+      "Allopurinol/febuxostat inhibit xanthine oxidase → ↓ uric acid from purine breakdown",
+      "Folate required for de novo purine ring synthesis (along with thymidine production)",
+    ],
+    distinguishFrom: [
+      "Pyrimidine — cytosine, thymine, uracil; separate synthesis pathway (CAD, UMPS)",
+      "Thymidine — pyrimidine nucleoside, not purine",
+      "Uric acid — purine catabolism end product, not the base itself",
+    ],
+    pediatrics:
+      "Lesch-Nyhan syndrome (HGPRT deficiency) presents in boys with self-injury, gout, and developmental delay; orotic aciduria distinguishes from ornithine transcarbamylase deficiency.",
+  },
+  {
+    id: "thymidine",
+    name: "Thymidine",
+    etymology: "Greek thymon = thyme (early isolation source) + -ide = nucleoside suffix",
+    aliases: [
+      "thymidine",
+      "thymidine nucleoside",
+      "deoxythymidine",
+      "dTMP precursor",
+      "thymidylate",
+    ],
+    definition:
+      "Pyrimidine deoxyribonucleoside (thymine + deoxyribose) that is phosphorylated to dTMP for DNA synthesis — rate-limited by thymidylate synthase using N5,N10-methylenetetrahydrofolate.",
+    pathway: [
+      "dUMP + N5,N10-methylenetetrahydrofolate → thymidylate synthase → dTMP (requires folate)",
+      "Methotrexate inhibits dihydrofolate reductase → ↓ tetrahydrofolate → ↓ dTMP/purine synthesis",
+      "5-FU metabolite FdUMP inhibits thymidylate synthase → blocks DNA synthesis",
+      "dTMP incorporated into DNA as thymine (T pairs with adenine)",
+      "Salvage: thymidine kinase can phosphorylate thymidine in some tissues",
+    ],
+    boardsPearls: [
+      "Thymidine synthesis requires folate — links folate deficiency to megaloblastic anemia",
+      "Thymidylate synthase is target of 5-FU (FdUMP) and methotrexate (indirectly via folate)",
+      "Folinic acid (leucovorin) rescues normal cells from methotrexate by bypassing DHFR block",
+      "Thymine (in DNA) vs uracil (in RNA) — thymidine is DNA-specific base precursor",
+      "vs thiamine — homophone trap; thiamine is vitamin B1, not thymidine",
+    ],
+    distinguishFrom: [
+      "Thymine — base alone without sugar",
+      "dTMP — phosphorylated thymidine monophosphate ready for DNA polymerase",
+      "Uracil/uridine — RNA pyrimidine, not DNA thymidine",
+      "Purine bases — adenine/guanine, separate synthesis pathway",
+    ],
+    pediatrics:
+      "Folate deficiency in pregnancy impairs thymidine (and purine) synthesis → neural tube defects; folic acid supplementation prevents NTDs.",
+  },
 ];
 
 const metabolismById = new Map(METABOLISM.map((entry) => [entry.id, entry]));

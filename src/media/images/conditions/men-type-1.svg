@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">MEN type 1 three P pattern</title>
+  <desc id="desc">Schematic showing MEN1 as parathyroid, pituitary, and pancreatic endocrine tumors.</desc>
+  <rect width="960" height="600" fill="#f8fafc"/>
+  <rect x="54" y="54" width="852" height="492" rx="20" fill="#fff" stroke="#1f2937" stroke-width="3"/>
+  <text x="480" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#1f2937">MEN Type 1</text>
+  <text x="480" y="145" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">MEN1 loss-of-function: menin tumor suppressor</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="240" cy="315" r="92" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+    <text x="240" y="292" text-anchor="middle" font-size="27" font-weight="700" fill="#166534">Parathyroid</text>
+    <text x="240" y="329" text-anchor="middle" font-size="19" fill="#166534">primary</text>
+    <text x="240" y="357" text-anchor="middle" font-size="19" fill="#166534">hyper-PTH</text>
+    <circle cx="480" cy="315" r="92" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+    <text x="480" y="292" text-anchor="middle" font-size="27" font-weight="700" fill="#1e40af">Pituitary</text>
+    <text x="480" y="329" text-anchor="middle" font-size="19" fill="#1e40af">prolactin</text>
+    <text x="480" y="357" text-anchor="middle" font-size="19" fill="#1e40af">or GH</text>
+    <circle cx="720" cy="315" r="92" fill="#ffedd5" stroke="#ea580c" stroke-width="4"/>
+    <text x="720" y="292" text-anchor="middle" font-size="27" font-weight="700" fill="#9a3412">Pancreas</text>
+    <text x="720" y="329" text-anchor="middle" font-size="19" fill="#9a3412">gastrinoma</text>
+    <text x="720" y="357" text-anchor="middle" font-size="19" fill="#9a3412">insulinoma</text>
+  </g>
+  <text x="480" y="488" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#1f2937">Board mnemonic: 3 P's</text>
+</svg>

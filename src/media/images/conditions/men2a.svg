@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">MEN2A triad</title>
+  <desc id="desc">Schematic triad of MEN2A: medullary thyroid carcinoma, pheochromocytoma, and hyperparathyroidism.</desc>
+  <rect width="960" height="600" fill="#f8fafc"/>
+  <rect x="54" y="54" width="852" height="492" rx="20" fill="#fff" stroke="#1f2937" stroke-width="3"/>
+  <text x="480" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#1f2937">MEN2A</text>
+  <text x="480" y="145" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536171">RET mutation: Sipple triad</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="480" cy="255" r="92" fill="#fee2e2" stroke="#dc2626" stroke-width="4"/>
+    <text x="480" y="238" text-anchor="middle" font-size="24" font-weight="700" fill="#991b1b">Medullary</text>
+    <text x="480" y="270" text-anchor="middle" font-size="24" font-weight="700" fill="#991b1b">thyroid CA</text>
+    <circle cx="300" cy="410" r="92" fill="#e0f2fe" stroke="#0284c7" stroke-width="4"/>
+    <text x="300" y="403" text-anchor="middle" font-size="23" font-weight="700" fill="#075985">Pheochromocytoma</text>
+    <text x="300" y="434" text-anchor="middle" font-size="18" fill="#075985">treat first</text>
+    <circle cx="660" cy="410" r="92" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+    <text x="660" y="394" text-anchor="middle" font-size="23" font-weight="700" fill="#166534">Primary</text>
+    <text x="660" y="424" text-anchor="middle" font-size="23" font-weight="700" fill="#166534">hyper-PTH</text>
+  </g>
+</svg>

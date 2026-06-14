@@ -1405,6 +1405,10 @@ export const LAB_VALUES: LabValueEntry[] = [
       "cobalamins",
       "cyanocobalamin",
       "hydroxocobalamin",
+      "vitamin b-12",
+      "vitamin b12 level",
+      "serum b12",
+      "serum vitamin b12",
     ],
     measures:
       "Serum vitamin B12 (cobalamin) — cofactor for methionine synthase and methylmalonyl-CoA mutase; required for DNA synthesis and myelin integrity.",
@@ -1435,6 +1439,44 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Macrocytosis + normal/high folate + ↓ B12 → functional folate trapping; treat B12",
       "Glossitis + paresthesias + megaloblastic anemia → B12 over folate alone",
       "Crohn ileitis + macrocytic anemia → B12 malabsorption",
+    ],
+  },
+  {
+    id: "zinc",
+    name: "Zinc",
+    etymology: "German Zink = spike/prong (crystalline appearance) + chemical element",
+    aliases: [
+      "zinc",
+      "serum zinc",
+      "plasma zinc",
+      "zn",
+      "zinc level",
+      "zinc levels",
+    ],
+    measures:
+      "Serum/plasma zinc reflecting trace mineral status — cofactor for hundreds of enzymes (DNA polymerase, alcohol dehydrogenase, carbonic anhydrase, superoxide dismutase) and structural role in zinc-finger transcription factors.",
+    normalRange: "Serum zinc ~70–120 µg/dL (lab-specific); acute-phase response lowers levels",
+    increasedCauses: [
+      "Recent zinc supplementation",
+      "Hemolysis (release from RBCs)",
+    ],
+    decreasedCauses: [
+      "Malnutrition, alcoholism, malabsorption",
+      "Acrodermatitis enteropathica (SLC39A4 defect)",
+      "Increased losses — diarrhea, burns, nephrotic syndrome",
+      "Copper deficiency treatment with high-dose zinc (Wilson disease)",
+    ],
+    boardsPearls: [
+      "Zinc deficiency → poor wound healing, dysgeusia, alopecia, dermatitis",
+      "Excess zinc → copper deficiency (competitive intestinal absorption)",
+      "Acrodermatitis enteropathica — periorificial/ acral dermatitis in infants; lifelong zinc",
+      "Wilson disease treated with zinc acetate to block copper absorption",
+      "vs copper — excess zinc causes copper deficiency myelopathy/sideroblasts",
+    ],
+    pairWith: [
+      "Periorificial rash + diarrhea + alopecia in infant → acrodermatitis enteropathica",
+      "Myelopathy + sideroblastic anemia + high zinc intake → copper deficiency",
+      "Poor wound healing + malnutrition → zinc deficiency",
     ],
   },
   {

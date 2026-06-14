@@ -3,3 +3,15 @@ Created locally
 Reference: https://en.wikipedia.org/wiki/Adenosine_deaminase
 Description: ADA deficiency mechanism leading to dATP accumulation and SCID
 filaggrin.svg | Created locally
+ceruloplasmin.svg | Created locally
+intrinsic-factor.svg | Created locally
+
+ceruloplasmin.jpg
+  Source: Wikimedia Commons — Kayser-Fleischer ring.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Kayser-Fleischer_ring.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Kayser-Fleischer_ring.jpg?width=1280
+
+intrinsic-factor.png
+  Source: Wikimedia Commons — Histology of gastric chief cell.png
+  Page: https://commons.wikimedia.org/wiki/File:Histology_of_gastric_chief_cell.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Histology_of_gastric_chief_cell.png?width=1280

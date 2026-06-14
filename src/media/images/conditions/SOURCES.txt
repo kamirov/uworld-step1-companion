@@ -217,3 +217,88 @@ berylliosis.svg | Created locally
 food-allergy.svg | Created locally
 hyperthyroidism.svg | Created locally
 melanoma.svg | Created locally
+
+vitamin-d-toxicity.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Vitamin_D_toxicity
+Description: Vitamin D toxicity lab pattern with high 25-OH vitamin D, high calcium, suppressed PTH, and renal calcium complications
+
+multiple-endocrine-neoplasia.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Multiple_endocrine_neoplasia
+Description: MEN overview comparing MEN1 and MEN2 gland/gene patterns
+
+men-type-1.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Multiple_endocrine_neoplasia_type_1
+Description: MEN1 three-P pattern: parathyroid, pituitary, and pancreatic endocrine tumors
+
+men-type-2.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Multiple_endocrine_neoplasia_type_2
+Description: MEN2 RET pattern with medullary thyroid carcinoma and pheochromocytoma
+
+men2a.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Multiple_endocrine_neoplasia_type_2
+Description: MEN2A triad of medullary thyroid carcinoma, pheochromocytoma, and hyperparathyroidism
+
+men2b.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Multiple_endocrine_neoplasia_type_2B
+Description: MEN2B pattern with aggressive medullary thyroid carcinoma, pheochromocytoma, mucosal neuromas, and marfanoid habitus
+
+hypopituitarism.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Hypopituitarism
+Description: Anterior pituitary hormone axis loss in hypopituitarism
+
+sheehan-syndrome.svg
+Created locally
+Reference: https://en.wikipedia.org/wiki/Sheehan%27s_syndrome
+Description: Postpartum hemorrhage causing pituitary ischemic necrosis with failure to lactate and amenorrhea
+sideroblastic-anemia.svg | Created locally
+vitamin-b12-deficiency-anemia.svg | Created locally
+menkes-disease.svg | Created locally
+sideroblastic-anemia.svg | Created locally
+vitamin-b12-deficiency-anemia.svg | Created locally
+menkes-disease.svg | Created locally
+gastric-adenocarcinoma.svg | Created locally
+tropical-sprue.svg | Created locally
+alcohol-use-disorder.svg | Created locally
+neural-tube-defects.svg | Created locally
+
+alcohol-use-disorder.jpg
+  Source: Wikimedia Commons — Cirrhosis of Alcoholic Liver Disease (5517625829).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg?width=1280
+
+basal-cell-carcinoma.jpg
+  Source: Wikimedia Commons — Histopathology of micronodular basal-cell carcinoma (original).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Histopathology_of_micronodular_basal-cell_carcinoma_(original).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Histopathology_of_micronodular_basal-cell_carcinoma_(original).jpg?width=1280
+
+melanoma.jpg
+  Source: Wikimedia Commons — Dysplastic nevi (1).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Dysplastic_nevi_(1).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Dysplastic_nevi_(1).jpg?width=1280
+
+menkes-disease.jpg
+  Source: Wikimedia Commons — Menkes disease4.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Menkes_disease4.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Menkes_disease4.jpg?width=1280
+
+neural-tube-defects.jpg
+  Source: Wikimedia Commons — Spina bifida lombare sagittale.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Spina_bifida_lombare_sagittale.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Spina_bifida_lombare_sagittale.jpg?width=1280
+
+sideroblastic-anemia.jpg
+  Source: Wikimedia Commons — Ring sideroblast.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Ring_sideroblast.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Ring_sideroblast.jpg?width=1280
+
+vitamin-b12-deficiency-anemia.png
+  Source: Wikimedia Commons — Hypersegmented neutrophil.png
+  Page: https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hypersegmented_neutrophil.png?width=1280

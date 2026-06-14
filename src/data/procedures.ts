@@ -925,6 +925,51 @@ export const PROCEDURES: ProcedureEntry[] = [
     pediatrics:
       "Neuroblastoma arises from adrenal medulla in children — distinct from adult adrenal adenoma; pediatric adrenal tumors require specialized oncology workup. Congenital adrenal hyperplasia is managed medically, not routinely by adrenalectomy.",
   },
+  {
+    id: "bariatric-surgery",
+    name: "Bariatric Surgery",
+    etymology: "Greek baros = weight + iatrikos = medical + Latin chirurgia = hand work",
+    aliases: [
+      "bariatric surgery",
+      "bariatric surgeries",
+      "weight loss surgery",
+      "weight-loss surgery",
+      "obesity surgery",
+      "gastric bypass",
+      "roux-en-y gastric bypass",
+      "roux en y gastric bypass",
+      "sleeve gastrectomy",
+      "gastric sleeve",
+      "bariatric procedure",
+    ],
+    definition:
+      "Surgical procedures reducing stomach capacity and/or bypassing portions of the GI tract to achieve weight loss — associated with malabsorption and micronutrient deficiency risks.",
+    indications: [
+      "Morbid obesity (BMI ≥40 or ≥35 with comorbidities) refractory to medical management",
+      "Selected cases of type 2 diabetes improvement with metabolic surgery",
+    ],
+    keyMeasurements: [
+      "Preoperative nutritional assessment — B12, folate, iron, copper, vitamin D",
+      "Postoperative monitoring of micronutrients lifelong",
+      "Weight loss trajectory and comorbidity resolution",
+    ],
+    complications: [
+      "Micronutrient deficiencies — B12, iron, folate, copper, vitamin D, thiamine",
+      "Dumping syndrome (early post-gastric bypass)",
+      "Anastomotic leak, bowel obstruction, gallstones from rapid weight loss",
+      "Copper deficiency myelopathy years after surgery if not supplemented",
+      "Wernicke encephalopathy from thiamine deficiency",
+    ],
+    boardsPearls: [
+      "Roux-en-Y bypass — stomach pouch + jejunal limb bypasses duodenum/proximal jejunum → malabsorption",
+      "B12 deficiency — loss of intrinsic factor absorption site bypass + reduced intake",
+      "Copper and B12 myelopathy can occur years post-op — check supplements",
+      "Dumping syndrome — rapid osmotic load into jejunum → vasomotor symptoms after high-sugar meal",
+      "vs sleeve gastrectomy — restrictive mainly; fewer malabsorptive complications but still nutrient monitoring needed",
+    ],
+    pediatrics:
+      "Adolescent bariatric surgery in severe obesity is specialty-managed; lifelong vitamin and mineral supplementation and growth monitoring required.",
+  },
 ];
 
 const procedureById = new Map(PROCEDURES.map((entry) => [entry.id, entry]));

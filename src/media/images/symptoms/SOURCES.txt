@@ -134,3 +134,40 @@ Description: Delayed wound closure with glucocorticoids and diabetes
 hyperpigmentation.svg | Created locally
 polyuria.svg | Created locally
 polydipsia.svg | Created locally
+myelopathy.svg | Created locally
+neutropenia.svg | Created locally
+myelopathy.svg | Created locally
+neutropenia.svg | Created locally
+ataxia.svg | Created locally
+paresis.svg | Created locally
+spastic-paresis.svg | Created locally
+
+ataxia.jpg
+  Source: Wikimedia Commons — Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg?width=1280
+
+hyperpigmentation.jpg
+  Source: Wikimedia Commons — T. Addison; On...supra-renal capsules Wellcome L0018484.jpg
+  Page: https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg?width=1280
+
+myelopathy.jpg
+  Source: Wikimedia Commons — Cervical Spine MRI (T2W).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cervical_Spine_MRI_(T2W).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Cervical_Spine_MRI_(T2W).jpg?width=1280
+
+neutropenia.jpg
+  Source: Wikimedia Commons — A blood smear with neutropenia in United States.jpg
+  Page: https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:A_blood_smear_with_neutropenia_in_United_States.jpg?width=1280
+
+polydipsia.jpg
+  Source: Wikimedia Commons — Glass of water with ice cubes.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Glass_of_water_with_ice_cubes.JPG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Glass_of_water_with_ice_cubes.JPG?width=1280
+
+spastic-paresis.png
+  Source: Wikimedia Commons — ALS subtypes UMN LMN distribution.png
+  Page: https://commons.wikimedia.org/wiki/File:ALS_subtypes_UMN_LMN_distribution.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:ALS_subtypes_UMN_LMN_distribution.png?width=1280

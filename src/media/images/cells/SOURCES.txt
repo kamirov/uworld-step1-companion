@@ -173,3 +173,31 @@ Description: Schematic clear cell morphology showing optically clear cytoplasm a
 endothelial-cell.svg | Created locally
 fibroblast.svg | Created locally
 multinucleated-giant-cell.svg | Created locally
+dorsal-columns.svg | Created locally
+corticospinal-tract.svg | Created locally
+hypersegmented-neutrophil.svg | Created locally
+
+corticospinal-tract.png
+  Source: Wikimedia Commons — Gray688.png
+  Page: https://commons.wikimedia.org/wiki/File:Gray688.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Gray688.png?width=1280
+
+endothelial-cell.jpg
+  Source: Wikimedia Commons — Interaction between Kupffer cells, Stellate cells and endothelial cells.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg?width=1280
+
+fibroblast.jpg
+  Source: Wikimedia Commons — Cell culture (fibroblasts) (261 20) Fibroblasts (metaphase, anaphase).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cell_culture_(fibroblasts)_(261_20)_Fibroblasts_(metaphase,_anaphase).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Cell_culture_(fibroblasts)_(261_20)_Fibroblasts_(metaphase,_anaphase).jpg?width=1280
+
+hypersegmented-neutrophil.png
+  Source: Wikimedia Commons — Hypersegmented neutrophil.png
+  Page: https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hypersegmented_neutrophil.png?width=1280
+
+multinucleated-giant-cell.jpg
+  Source: Wikimedia Commons — Langhans Giant Cell (10189844503).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Langhans_Giant_Cell_(10189844503).jpg?width=1280

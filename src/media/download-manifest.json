@@ -1233,5 +1233,240 @@
     "title": "File:Gingiva.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Gingiva.jpg",
     "query": "gingiva oral"
+  },
+  "cells/corticospinal-tract.png": {
+    "title": "File:Gray688.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Gray688.png",
+    "query": "pyramidal decussation medulla Gray"
+  },
+  "cells/endothelial-cell.jpg": {
+    "title": "File:Interaction between Kupffer cells, Stellate cells and endothelial cells.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg",
+    "query": "endothelial cell microscopy"
+  },
+  "cells/fibroblast.jpg": {
+    "title": "File:Cell culture (fibroblasts) (261 20) Fibroblasts (metaphase, anaphase).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cell_culture_(fibroblasts)_(261_20)_Fibroblasts_(metaphase,_anaphase).jpg",
+    "query": "fibroblast cell culture"
+  },
+  "cells/hypersegmented-neutrophil.png": {
+    "title": "File:Hypersegmented neutrophil.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.png",
+    "query": "hypersegmented neutrophil blood smear"
+  },
+  "cells/multinucleated-giant-cell.jpg": {
+    "title": "File:Langhans Giant Cell (10189844503).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg",
+    "query": "langhans giant cell granuloma"
+  },
+  "conditions/alcohol-use-disorder.jpg": {
+    "title": "File:Cirrhosis of Alcoholic Liver Disease (5517625829).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg",
+    "query": "alcoholic liver disease cirrhosis histology"
+  },
+  "conditions/basal-cell-carcinoma.jpg": {
+    "title": "File:Histopathology of micronodular basal-cell carcinoma (original).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Histopathology_of_micronodular_basal-cell_carcinoma_(original).jpg",
+    "query": "basal cell carcinoma skin"
+  },
+  "conditions/melanoma.jpg": {
+    "title": "File:Dysplastic nevi (1).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dysplastic_nevi_(1).jpg",
+    "query": "melanoma skin lesion clinical"
+  },
+  "conditions/menkes-disease.jpg": {
+    "title": "File:Menkes disease4.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Menkes_disease4.jpg",
+    "query": "menkes disease kinky hair"
+  },
+  "conditions/neural-tube-defects.jpg": {
+    "title": "File:Spina bifida lombare sagittale.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Spina_bifida_lombare_sagittale.jpg",
+    "query": "spina bifida myelomeningocele"
+  },
+  "conditions/sideroblastic-anemia.jpg": {
+    "title": "File:Ring sideroblast.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ring_sideroblast.jpg",
+    "query": "sideroblastic anemia ring sideroblast"
+  },
+  "conditions/vitamin-b12-deficiency-anemia.png": {
+    "title": "File:Hypersegmented neutrophil.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.png",
+    "query": "megaloblastic anemia blood smear"
+  },
+  "lab-values/zinc.jpg": {
+    "title": "File:Rogatywka.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Rogatywka.jpg",
+    "query": "zinc deficiency acrodermatitis"
+  },
+  "medications/anti-tnf-therapy.png": {
+    "title": "File:Human tumor necrosis factor alpha PDB 1TNF.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_tumor_necrosis_factor_alpha_PDB_1TNF.png",
+    "query": "tumor necrosis factor alpha structure"
+  },
+  "medications/daptomycin.svg": {
+    "title": "File:Daptomycin.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Daptomycin.svg",
+    "query": "daptomycin chemical structure"
+  },
+  "medications/linezolid.svg": {
+    "title": "File:Struktur Linezolid.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Struktur_Linezolid.svg",
+    "query": "linezolid chemical structure"
+  },
+  "medications/oxacillin.svg": {
+    "title": "File:Struktur Oxacillin.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Struktur_Oxacillin.svg",
+    "query": "oxacillin chemical structure"
+  },
+  "metabolism/cofactor.png": {
+    "title": "File:Biosynthesis of seco Cofactor F430.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Biosynthesis_of_seco_Cofactor_F430.png",
+    "query": "enzyme cofactor biochemistry"
+  },
+  "metabolism/purine.jpg": {
+    "title": "File:Purine Nucleotide Cycle.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Purine_Nucleotide_Cycle.jpg",
+    "query": "purine nucleotide structure"
+  },
+  "metabolism/thymidine.jpg": {
+    "title": "File:PDB 1p73 EBI.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:PDB_1p73_EBI.jpg",
+    "query": "thymidine nucleotide structure"
+  },
+  "microbiology/coagulase-positive.jpg": {
+    "title": "File:Tube coagulase test of Staphylococcus aureus -Positive and negative Demonstration.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tube_coagulase_test_of_Staphylococcus_aureus_-Positive_and_negative_Demonstration.jpg",
+    "query": "staphylococcus aureus coagulase test"
+  },
+  "microbiology/mrsa.jpg": {
+    "title": "File:Staphylococcus aureus, 50,000x, USDA, ARS, EMU.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Staphylococcus_aureus,_50,000x,_USDA,_ARS,_EMU.jpg",
+    "query": "MRSA staphylococcus aureus"
+  },
+  "microbiology/mssa.jpg": {
+    "title": "File:Staphylococcus aureus Gram stain.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Staphylococcus_aureus_Gram_stain.jpg",
+    "query": "staphylococcus aureus gram stain"
+  },
+  "microbiology/staphylococcus-epidermidis.jpg": {
+    "title": "File:Gram stain of Staphylococcus epidermidis.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gram_stain_of_Staphylococcus_epidermidis.jpg",
+    "query": "staphylococcus epidermidis gram stain"
+  },
+  "organs/dermis.png": {
+    "title": "File:Epidermis, papillary dermis and reticular dermis.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Epidermis,_papillary_dermis_and_reticular_dermis.png",
+    "query": "dermis skin histology"
+  },
+  "organs/epidermis.png": {
+    "title": "File:502 Layers of epidermis (no labels).png",
+    "page": "https://commons.wikimedia.org/wiki/File:502_Layers_of_epidermis_(no_labels).png",
+    "query": "epidermis skin layers histology"
+  },
+  "pathogenesis/agar.jpg": {
+    "title": "File:Streptococcus pneumoniae M-faze-blood agar-hemolysis detail.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Streptococcus_pneumoniae_M-faze-blood_agar-hemolysis_detail.jpg",
+    "query": "blood agar plate culture"
+  },
+  "pathogenesis/alcoholism.jpg": {
+    "title": "File:Cirrhosis of Alcoholic Liver Disease (5517625829).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg",
+    "query": "alcoholic cirrhosis liver"
+  },
+  "pathogenesis/bacteremia.jpg": {
+    "title": "File:Growth of microbes in blood culture bottle.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Growth_of_microbes_in_blood_culture_bottle.jpg",
+    "query": "blood culture bacteria"
+  },
+  "pathogenesis/foreign-body-granuloma.jpg": {
+    "title": "File:Subepidermal calcified nodule (2 of 4) (2822226262).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Subepidermal_calcified_nodule_(2_of_4)_(2822226262).jpg",
+    "query": "foreign body granuloma histology"
+  },
+  "pathogenesis/hematopoiesis.jpg": {
+    "title": "File:Hematopoietic System of the Bone Marrow.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hematopoietic_System_of_the_Bone_Marrow.jpg",
+    "query": "hematopoiesis bone marrow"
+  },
+  "pathogenesis/malabsorption.jpg": {
+    "title": "File:Inflammed mucous layer of the intestinal villi depicting Celiac disease.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg",
+    "query": "celiac disease villous atrophy"
+  },
+  "pathogenesis/oxidative-burst.png": {
+    "title": "File:Parasite150072-fig1 Role of neutrophils in rodent amebic liver abscess.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Parasite150072-fig1_Role_of_neutrophils_in_rodent_amebic_liver_abscess.png",
+    "query": "neutrophil oxidative burst"
+  },
+  "pathogenesis/reticulocytosis.jpg": {
+    "title": "File:New methylene blue stained smear of peripheral blood for Reticulocytes examination.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:New_methylene_blue_stained_smear_of_peripheral_blood_for_Reticulocytes_examination.jpg",
+    "query": "reticulocyte count blood smear"
+  },
+  "pathogenesis/tea-and-toast-diet.jpg": {
+    "title": "File:Paul Lepper editor of the Young Socialist speaking at the 44th Anniversary of the News Line (10927112626).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Paul_Lepper_editor_of_the_Young_Socialist_speaking_at_the_44th_Anniversary_of_the_News_Line_(10927112626).jpg",
+    "query": "malnutrition elderly"
+  },
+  "proteins/ceruloplasmin.jpg": {
+    "title": "File:Kayser-Fleischer ring.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Kayser-Fleischer_ring.jpg",
+    "query": "kayser fleischer ring wilson"
+  },
+  "proteins/intrinsic-factor.png": {
+    "title": "File:Histology of gastric chief cell.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Histology_of_gastric_chief_cell.png",
+    "query": "gastric parietal cell histology"
+  },
+  "signaling/ifn-alpha.png": {
+    "title": "File:1RH2 Recombinant Human Interferon-Alpha 2b-02.png",
+    "page": "https://commons.wikimedia.org/wiki/File:1RH2_Recombinant_Human_Interferon-Alpha_2b-02.png",
+    "query": "interferon alpha structure"
+  },
+  "signaling/ifn-beta.png": {
+    "title": "File:1AU1 Human Interferon-Beta03.png",
+    "page": "https://commons.wikimedia.org/wiki/File:1AU1_Human_Interferon-Beta03.png",
+    "query": "interferon beta structure"
+  },
+  "symptoms/ataxia.jpg": {
+    "title": "File:Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg",
+    "query": "cerebellar ataxia gait"
+  },
+  "symptoms/hyperpigmentation.jpg": {
+    "title": "File:T. Addison; On...supra-renal capsules Wellcome L0018484.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg",
+    "query": "addison disease hyperpigmentation skin"
+  },
+  "symptoms/myelopathy.jpg": {
+    "title": "File:Cervical Spine MRI (T2W).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cervical_Spine_MRI_(T2W).jpg",
+    "query": "spinal cord compression MRI"
+  },
+  "symptoms/neutropenia.jpg": {
+    "title": "File:A blood smear with neutropenia in United States.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg",
+    "query": "neutropenia blood smear"
+  },
+  "symptoms/polydipsia.jpg": {
+    "title": "File:Glass of water with ice cubes.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Glass_of_water_with_ice_cubes.JPG",
+    "query": "polydipsia thirst water"
+  },
+  "symptoms/spastic-paresis.png": {
+    "title": "File:ALS subtypes UMN LMN distribution.png",
+    "page": "https://commons.wikimedia.org/wiki/File:ALS_subtypes_UMN_LMN_distribution.png",
+    "query": "spasticity upper motor neuron"
+  },
+  "medications/nafcillin.svg": {
+    "title": "File:Nafcillin.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nafcillin.svg",
+    "query": "exact"
+  },
+  "pathogenesis/pyrogen.jpg": {
+    "title": "File:Symptoms of coronavirus disease 2019 2.0.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0.svg",
+    "query": "exact"
   }
 }

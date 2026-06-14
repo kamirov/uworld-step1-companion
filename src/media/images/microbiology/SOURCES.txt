@@ -434,3 +434,23 @@ mssa.svg | Created locally
 mrsa.svg | Created locally
 staphylococcus-epidermidis.svg | Created locally
 coagulase-positive.svg | Created locally
+
+coagulase-positive.jpg
+  Source: Wikimedia Commons — Tube coagulase test of Staphylococcus aureus -Positive and negative Demonstration.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Tube_coagulase_test_of_Staphylococcus_aureus_-Positive_and_negative_Demonstration.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Tube_coagulase_test_of_Staphylococcus_aureus_-Positive_and_negative_Demonstration.jpg?width=1280
+
+mrsa.jpg
+  Source: Wikimedia Commons — Staphylococcus aureus, 50,000x, USDA, ARS, EMU.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Staphylococcus_aureus,_50,000x,_USDA,_ARS,_EMU.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Staphylococcus_aureus,_50,000x,_USDA,_ARS,_EMU.jpg?width=1280
+
+mssa.jpg
+  Source: Wikimedia Commons — Staphylococcus aureus Gram stain.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Staphylococcus_aureus_Gram_stain.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Staphylococcus_aureus_Gram_stain.jpg?width=1280
+
+staphylococcus-epidermidis.jpg
+  Source: Wikimedia Commons — Gram stain of Staphylococcus epidermidis.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Gram_stain_of_Staphylococcus_epidermidis.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Gram_stain_of_Staphylococcus_epidermidis.jpg?width=1280

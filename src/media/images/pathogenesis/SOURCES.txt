@@ -1,0 +1,50 @@
+cytopenias.svg | Created locally
+tea-and-toast-diet.svg | Created locally
+alcoholism.svg | Created locally
+macrocytosis.svg | Created locally
+reticulocytosis.svg | Created locally
+
+agar.jpg
+  Source: Wikimedia Commons — Streptococcus pneumoniae M-faze-blood agar-hemolysis detail.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Streptococcus_pneumoniae_M-faze-blood_agar-hemolysis_detail.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Streptococcus_pneumoniae_M-faze-blood_agar-hemolysis_detail.jpg?width=1280
+
+alcoholism.jpg
+  Source: Wikimedia Commons — Cirrhosis of Alcoholic Liver Disease (5517625829).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg?width=1280
+
+bacteremia.jpg
+  Source: Wikimedia Commons — Growth of microbes in blood culture bottle.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Growth_of_microbes_in_blood_culture_bottle.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Growth_of_microbes_in_blood_culture_bottle.jpg?width=1280
+
+foreign-body-granuloma.jpg
+  Source: Wikimedia Commons — Subepidermal calcified nodule (2 of 4) (2822226262).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Subepidermal_calcified_nodule_(2_of_4)_(2822226262).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Subepidermal_calcified_nodule_(2_of_4)_(2822226262).jpg?width=1280
+
+hematopoiesis.jpg
+  Source: Wikimedia Commons — Hematopoietic System of the Bone Marrow.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Hematopoietic_System_of_the_Bone_Marrow.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hematopoietic_System_of_the_Bone_Marrow.jpg?width=1280
+
+malabsorption.jpg
+  Source: Wikimedia Commons — Inflammed mucous layer of the intestinal villi depicting Celiac disease.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg?width=1280
+
+oxidative-burst.png
+  Source: Wikimedia Commons — Parasite150072-fig1 Role of neutrophils in rodent amebic liver abscess.png
+  Page: https://commons.wikimedia.org/wiki/File:Parasite150072-fig1_Role_of_neutrophils_in_rodent_amebic_liver_abscess.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Parasite150072-fig1_Role_of_neutrophils_in_rodent_amebic_liver_abscess.png?width=1280
+
+reticulocytosis.jpg
+  Source: Wikimedia Commons — New methylene blue stained smear of peripheral blood for Reticulocytes examination.jpg
+  Page: https://commons.wikimedia.org/wiki/File:New_methylene_blue_stained_smear_of_peripheral_blood_for_Reticulocytes_examination.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:New_methylene_blue_stained_smear_of_peripheral_blood_for_Reticulocytes_examination.jpg?width=1280
+
+tea-and-toast-diet.jpg
+  Source: Wikimedia Commons — Paul Lepper editor of the Young Socialist speaking at the 44th Anniversary of the News Line (10927112626).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Paul_Lepper_editor_of_the_Young_Socialist_speaking_at_the_44th_Anniversary_of_the_News_Line_(10927112626).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Paul_Lepper_editor_of_the_Young_Socialist_speaking_at_the_44th_Anniversary_of_the_News_Line_(10927112626).jpg?width=1280

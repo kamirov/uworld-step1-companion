@@ -2,6 +2,7 @@ import type { MediaAttribution } from "./media";
 import type { SymptomEntry } from "./symptoms";
 
 import brudzinskiSign from "../media/images/symptoms/brudzinski-sign.png?url";
+import ataxia from "../media/images/symptoms/ataxia.svg?url";
 import bullae from "../media/images/symptoms/bullae.jpg?url";
 import calcinosis from "../media/images/symptoms/calcinosis.jpg?url";
 import chestPain from "../media/images/symptoms/chest-pain.jpg?url";
@@ -43,14 +44,17 @@ import mania from "../media/images/symptoms/mania.svg?url";
 import melena from "../media/images/symptoms/melena.jpg?url";
 import morningStiffness from "../media/images/symptoms/morning-stiffness.jpg?url";
 import moonFacies from "../media/images/symptoms/moon-facies.svg?url";
+import myelopathy from "../media/images/symptoms/myelopathy.svg?url";
 import nausea from "../media/images/symptoms/nausea.jpg?url";
 import neutrophilia from "../media/images/cells/neutrophil.jpg?url";
+import neutropenia from "../media/images/symptoms/neutropenia.svg?url";
 import nodularLymphangitis from "../media/images/symptoms/nodular-lymphangitis.jpg?url";
 import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.jpg?url";
 import nystagmus from "../media/images/symptoms/nystagmus.svg?url";
 import orthopnea from "../media/images/symptoms/orthopnea.jpg?url";
 import palpitations from "../media/images/symptoms/palpitations.jpg?url";
 import papule from "../media/images/symptoms/papule.jpg?url";
+import paresis from "../media/images/symptoms/paresis.svg?url";
 import peripheralEdema from "../media/images/symptoms/peripheral-edema.jpg?url";
 import plaque from "../media/images/symptoms/plaque.jpg?url";
 import pleuriticChestPain from "../media/images/symptoms/pleuritic-chest-pain.jpg?url";
@@ -66,6 +70,7 @@ import purpura from "../media/images/symptoms/purpura.jpg?url";
 import raynaudPhenomenon from "../media/images/symptoms/raynaud-phenomenon.jpg?url";
 import sclerodactyly from "../media/images/symptoms/sclerodactyly.jpg?url";
 import shortnessOfBreath from "../media/images/symptoms/shortness-of-breath.jpg?url";
+import spasticParesis from "../media/images/symptoms/spastic-paresis.svg?url";
 import skinThickening from "../media/images/symptoms/skin-thickening.jpg?url";
 import syncope from "../media/images/symptoms/syncope.jpg?url";
 import tearingChestPain from "../media/images/symptoms/tearing-chest-pain.jpg?url";
@@ -81,6 +86,7 @@ import xerostomia from "../media/images/symptoms/xerostomia.jpg?url";
 export type SymptomImageId = Extract<
   SymptomEntry["id"],
   | "brudzinski-sign"
+  | "ataxia"
   | "bullae"
   | "calcinosis"
   | "chest-pain"
@@ -122,7 +128,9 @@ export type SymptomImageId = Extract<
   | "melena"
   | "morning-stiffness"
   | "moon-facies"
+  | "myelopathy"
   | "nausea"
+  | "neutropenia"
   | "neutrophilia"
   | "nodular-lymphangitis"
   | "nuchal-rigidity"
@@ -130,6 +138,7 @@ export type SymptomImageId = Extract<
   | "orthopnea"
   | "palpitations"
   | "papule"
+  | "paresis"
   | "peripheral-edema"
   | "plaque"
   | "pleuritic-chest-pain"
@@ -145,6 +154,7 @@ export type SymptomImageId = Extract<
   | "raynaud-phenomenon"
   | "sclerodactyly"
   | "shortness-of-breath"
+  | "spastic-paresis"
   | "skin-thickening"
   | "syncope"
   | "tearing-chest-pain"
@@ -166,6 +176,7 @@ function extensionAssetUrl(path: string): string {
 /** See src/media/images/symptoms/SOURCES.txt */
 export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "brudzinski-sign": extensionAssetUrl(brudzinskiSign),
+  ataxia: extensionAssetUrl(ataxia),
   "bullae": extensionAssetUrl(bullae),
   "calcinosis": extensionAssetUrl(calcinosis),
   "chest-pain": extensionAssetUrl(chestPain),
@@ -207,7 +218,9 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "melena": extensionAssetUrl(melena),
   "morning-stiffness": extensionAssetUrl(morningStiffness),
   "moon-facies": extensionAssetUrl(moonFacies),
+  "myelopathy": extensionAssetUrl(myelopathy),
   "nausea": extensionAssetUrl(nausea),
+  "neutropenia": extensionAssetUrl(neutropenia),
   "neutrophilia": extensionAssetUrl(neutrophilia),
   "nodular-lymphangitis": extensionAssetUrl(nodularLymphangitis),
   "nuchal-rigidity": extensionAssetUrl(nuchalRigidity),
@@ -215,6 +228,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "orthopnea": extensionAssetUrl(orthopnea),
   "palpitations": extensionAssetUrl(palpitations),
   "papule": extensionAssetUrl(papule),
+  paresis: extensionAssetUrl(paresis),
   "peripheral-edema": extensionAssetUrl(peripheralEdema),
   "plaque": extensionAssetUrl(plaque),
   "pleuritic-chest-pain": extensionAssetUrl(pleuriticChestPain),
@@ -230,6 +244,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "raynaud-phenomenon": extensionAssetUrl(raynaudPhenomenon),
   "sclerodactyly": extensionAssetUrl(sclerodactyly),
   "shortness-of-breath": extensionAssetUrl(shortnessOfBreath),
+  "spastic-paresis": extensionAssetUrl(spasticParesis),
   "skin-thickening": extensionAssetUrl(skinThickening),
   "syncope": extensionAssetUrl(syncope),
   "tearing-chest-pain": extensionAssetUrl(tearingChestPain),
@@ -248,6 +263,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   Record<SymptomImageId, MediaAttribution>
 > = {
   "brudzinski-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:brudzinski-sign.png" },
+  ataxia: {
+    label: "Created locally; reference: Ataxia",
+    url: "https://en.wikipedia.org/wiki/Ataxia",
+  },
   "bullae": { label: "Wikimedia Commons (Bullous pemphigoid new image.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg" },
   "calcinosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:calcinosis.jpg" },
   "chest-pain": { label: "Wikimedia Commons (Depiction of a person suffering from chest pain.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png" },
@@ -292,6 +311,14 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "melena": { label: "Wikimedia Commons (Melena Bleeding DU.jpg)", url: "https://commons.wikimedia.org/wiki/File:Melena_Bleeding_DU.jpg" },
   "morning-stiffness": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:morning-stiffness.jpg" },
   "moon-facies": { label: "Created locally; reference: Cushing's syndrome", url: "https://en.wikipedia.org/wiki/Cushing%27s_syndrome" },
+  myelopathy: {
+    label: "Created locally; reference: Myelopathy",
+    url: "https://en.wikipedia.org/wiki/Myelopathy",
+  },
+  neutropenia: {
+    label: "Created locally; reference: Neutropenia",
+    url: "https://en.wikipedia.org/wiki/Neutropenia",
+  },
   "nausea": { label: "Wikimedia Commons (Fphar-09-00913-g005.jpg)", url: "https://commons.wikimedia.org/wiki/File:Fphar-09-00913-g005.jpg" },
   "neutrophilia": { label: "Wikimedia Commons (Blausen Neutrophil)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0676_Neutrophil_(crop).png" },
   "nodular-lymphangitis": { label: "Wikimedia Commons (Sporotrichosis by the fungus Sporothrix schenckii PHIL 3940 lores.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sporotrichosis_by_the_fungus_Sporothrix_schenckii_PHIL_3940_lores.jpg" },
@@ -300,6 +327,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "orthopnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthopnea.jpg" },
   "palpitations": { label: "Wikimedia Commons (ECG Atrial Fibrillation 98 bpm.jpg)", url: "https://commons.wikimedia.org/wiki/File:ECG_Atrial_Fibrillation_98_bpm.jpg" },
   "papule": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:papule.jpg" },
+  paresis: {
+    label: "Created locally; reference: Paresis",
+    url: "https://en.wikipedia.org/wiki/Paresis",
+  },
   "peripheral-edema": { label: "Wikimedia Commons (Pitting Edema2008.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pitting_Edema2008.jpg" },
   "plaque": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:plaque.jpg" },
   "pleuritic-chest-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pleuritic-chest-pain.jpg" },
@@ -321,6 +352,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "raynaud-phenomenon": { label: "Wikimedia Commons (Raynaud syndrome on female airman's hand.jpg)", url: "https://commons.wikimedia.org/wiki/File:Raynaud_syndrome_on_female_airman's_hand.jpg" },
   "sclerodactyly": { label: "Wikimedia Commons (Calcinosis of CREST syndrome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Calcinosis_of_CREST_syndrome.jpg" },
   "shortness-of-breath": { label: "Wikimedia Commons (SymptomsFeverCoughSOB (cropped).jpg)", url: "https://commons.wikimedia.org/wiki/File:SymptomsFeverCoughSOB_(cropped).jpg" },
+  "spastic-paresis": {
+    label: "Created locally; reference: Spasticity",
+    url: "https://en.wikipedia.org/wiki/Spasticity",
+  },
   "skin-thickening": { label: "Wikimedia Commons (On scleroderma (IA 101695003.nlm.nih.gov).pdf)", url: "https://commons.wikimedia.org/wiki/File:On_scleroderma_(IA_101695003.nlm.nih.gov).pdf" },
   "syncope": { label: "Wikimedia Commons (Pietro Longhi 027.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pietro_Longhi_027.jpg" },
   "tearing-chest-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:tearing-chest-pain.jpg" },
@@ -337,6 +372,8 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
 
 export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "brudzinski-sign": "Brudziński sign — passive neck flexion causes involuntary hip/knee flexion in meningitis",
+  ataxia:
+    "Incoordination of voluntary movement — cerebellar, sensory (dorsal column), or vestibular; positive Romberg suggests sensory ataxia",
   "bullae": "Bullous pemphigoid — tense subepidermal bullae",
   "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
   "chest-pain": "Clinical or pathologic image illustrating chest pain",
@@ -377,6 +414,10 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "melena": "Clinical or pathologic image illustrating melena",
   "morning-stiffness": "Clinical or pathologic image illustrating morning stiffness",
   "moon-facies": "Rounded puffy face from cortisol excess — classic Cushingoid feature",
+  myelopathy:
+    "Spinal cord dysfunction — B12/copper deficiency, compression, MS, or HTLV-1 can cause tract signs with a sensory level",
+  neutropenia:
+    "Low ANC increases bacterial infection risk — chemotherapy, copper deficiency, drugs, or marrow failure",
   "nausea": "Clinical or pathologic image illustrating nausea",
   "neutrophilia": "Neutrophil morphology — segmented granulocyte increased in bacterial infection and steroid demargination",
   "nodular-lymphangitis": "Clinical or pathologic image illustrating nodular lymphangitis",
@@ -385,6 +426,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "orthopnea": "Clinical or pathologic image illustrating orthopnea",
   "palpitations": "Clinical or pathologic image illustrating palpitations",
   "papule": "Violaceous flat-topped papules of lichen planus on the shins (solid, ≤1 cm)",
+  paresis:
+    "Partial weakness — stroke causes hemiparesis; B12 myelopathy causes spastic leg paresis with UMN signs",
   "peripheral-edema": "Clinical or pathologic image illustrating peripheral edema",
   "plaque": "Erythematous plaque of psoriasis with silvery scale (solid, >1 cm)",
   "pleuritic-chest-pain": "Clinical or pathologic image illustrating pleuritic chest pain",
@@ -401,6 +444,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "raynaud-phenomenon": "Clinical or pathologic image illustrating raynaud phenomenon",
   "sclerodactyly": "Clinical or pathologic image illustrating sclerodactyly",
   "shortness-of-breath": "Clinical or pathologic image illustrating shortness of breath",
+  "spastic-paresis":
+    "Upper motor neuron paresis — hyperreflexia, spasticity, Babinski sign; seen after stroke and in B12 subacute combined degeneration",
   "skin-thickening": "Clinical or pathologic image illustrating skin thickening",
   "syncope": "Clinical or pathologic image illustrating syncope",
   "tearing-chest-pain": "Clinical or pathologic image illustrating tearing chest pain",

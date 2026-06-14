@@ -2557,6 +2557,73 @@ export const PROTEINS: ProteinEntry[] = [
       "Filaggrin vs filgrastim — homophone trap; filgrastim is G-CSF drug",
     ],
   },
+  {
+    id: "ceruloplasmin",
+    name: "Ceruloplasmin",
+    etymology: "Latin caeruleus = blue + Latin plasma = molded/form + -in protein suffix",
+    aliases: [
+      "ceruloplasmin",
+      "ceruloplasmins",
+      "ferroxidase",
+      "cp",
+      "serum ceruloplasmin",
+    ],
+    gene: "CP",
+    location: "Synthesized in liver; secreted into plasma as major copper-transport protein",
+    function:
+      "Multicopper oxidase (ferroxidase) that oxidizes Fe²⁺ to Fe³⁺ for safe binding to transferrin; carries ~95% of serum copper and participates in copper export from hepatocytes.",
+    mutationCauses: [
+      "Aceruloplasminemia — CP mutations → iron overload in brain/pancreas, diabetes, neurologic disease (rare)",
+      "Low ceruloplasmin is a marker, not usually CP mutation — Wilson disease (ATP7B), Menkes (ATP7A), copper deficiency",
+    ],
+    boardsPearls: [
+      "↓ ceruloplasmin in Wilson disease — copper cannot incorporate into holoceruloplasmin for export",
+      "↓ ceruloplasmin also in Menkes disease, copper deficiency, and malnutrition — interpret with total copper",
+      "Wilson: ↓ ceruloplasmin + Kayser-Fleischer rings + ↑ urinary copper",
+      "Ceruloplasmin is acute-phase reactant — may be normal/high in inflammation despite Wilson",
+      "Copper deficiency and Wilson both ↓ ceruloplasmin — clinical context and copper levels distinguish",
+    ],
+    distinguishFrom: [
+      "Transferrin — iron transport protein; ceruloplasmin oxidizes iron for transferrin loading",
+      "Hephaestin — intestinal ferroxidase homolog for iron absorption, not serum copper carrier",
+      "Serum copper — related but distinct lab; ceruloplasmin is the major copper-carrying protein",
+      "Ferritin — iron storage protein, not copper-related",
+    ],
+  },
+  {
+    id: "intrinsic-factor",
+    name: "Intrinsic Factor",
+    etymology: "Latin intrinsecus = inward + Latin factor = maker/agent",
+    aliases: [
+      "intrinsic factor",
+      "intrinsic factors",
+      "if",
+      "gastric intrinsic factor",
+      "castle intrinsic factor",
+    ],
+    gene: "GIF (gastric intrinsic factor)",
+    location: "Gastric parietal cells — secreted into gastric lumen",
+    function:
+      "Glycoprotein that binds dietary vitamin B12 in the stomach and protects it through the GI tract; B12–intrinsic factor complex is absorbed at ileal cubilin receptors in terminal ileum.",
+    mutationCauses: [
+      "Autoimmune destruction (pernicious anemia) — anti-intrinsic factor antibodies",
+      "Congenital intrinsic factor deficiency — rare infantile B12 malabsorption",
+      "Total gastrectomy or gastric bypass — loss of IF production",
+    ],
+    boardsPearls: [
+      "Parietal cells secrete IF and HCl; IF required for terminal ileal B12 absorption",
+      "Anti-intrinsic factor antibody highly specific for pernicious anemia",
+      "Without IF, oral B12 poorly absorbed — IM B12 or high-dose oral bypasses need in some cases",
+      "Terminal ileum disease (Crohn) impairs IF-B12 complex uptake even if IF present",
+      "vs R-factor (haptocorrin) — salivary B12 binder; IF is the essential ileal absorption factor",
+    ],
+    distinguishFrom: [
+      "Parietal cell — secretes IF and acid; anti-parietal cell antibodies in pernicious anemia",
+      "Cubilin — ileal receptor for IF-B12 complex, not the binding protein itself",
+      "Transcobalamin II — plasma B12 carrier after absorption, downstream of IF",
+      "Folate — absorbed proximally in jejunum; different mechanism from B12/IF",
+    ],
+  },
 ];
 
 const proteinById = new Map(PROTEINS.map((p) => [p.id, p]));

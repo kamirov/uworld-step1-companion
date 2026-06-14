@@ -5731,6 +5731,203 @@ export const SYMPTOMS: SymptomEntry[] = [
     pediatrics:
       "Neonates and malnourished children heal more slowly; corticosteroids for chronic lung disease in prematurity affect skin integrity.",
   },
+  {
+    id: "myelopathy",
+    name: "Myelopathy",
+    etymology: "Greek myelos = marrow (spinal cord) + pathos = suffering/disease",
+    aliases: [
+      "myelopathy",
+      "myelopathies",
+      "spinal cord dysfunction",
+      "spinal cord disease",
+      "spinal cord disorder",
+    ],
+    definition:
+      "Pathologic dysfunction of the spinal cord causing motor, sensory, and/or autonomic deficits below the level of the lesion — may be compressive, inflammatory, metabolic, or degenerative.",
+    mechanism:
+      "Injury to long tracts (corticospinal, spinothalamic, dorsal columns) or anterior horn cells produces level-dependent weakness, sensory loss, reflex changes, and sphincter dysfunction; subacute combined degeneration affects dorsal columns + lateral corticospinal tracts.",
+    thinkOf: [
+      "Vitamin B12 deficiency — subacute combined degeneration",
+      "Copper deficiency — myelopathy mimicking B12 deficiency",
+      "Cervical spondylotic myelopathy — chronic compression in elderly",
+      "Multiple sclerosis — inflammatory demyelinating plaques",
+      "HTLV-1 — tropical spastic paraparesis",
+      "Epidural abscess or metastasis — acute compressive myelopathy",
+      "Transverse myelitis — acute inflammatory cord syndrome",
+    ],
+    pairWith: [
+      "Macrocytic anemia + ataxia + ↓ vibration sense → B12 myelopathy",
+      "Sideroblastic anemia + neuropathy + excess zinc → copper deficiency myelopathy",
+      "Upper motor neuron signs + sensory level + back pain → compressive lesion",
+      "Gradual gait spasticity in elderly + neck pain → cervical myelopathy",
+      "Bilateral leg spasticity + HTLV-1 serology → tropical spastic paraparesis",
+    ],
+    distinguishFrom: [
+      "Neuropathy — peripheral nerve disease; distal stocking-glove pattern without clear sensory level",
+      "Myopathy — muscle weakness without upper motor neuron signs or sensory level",
+      "Radiculopathy — nerve root level; dermatomal pain/weakness without long-tract signs",
+      "Guillain-Barré — ascending weakness, areflexia, no sensory level",
+    ],
+    pediatrics:
+      "Spinal cord tumors, syrinx, and leukodystrophies can cause pediatric myelopathy; Menkes disease causes infantile neurodegeneration with hypotonia and seizures rather than classic adult subacute combined degeneration pattern.",
+  },
+  {
+    id: "neutropenia",
+    name: "Neutropenia",
+    etymology: "Latin neuter = neither + penia = deficiency",
+    aliases: [
+      "neutropenia",
+      "neutropenias",
+      "low neutrophils",
+      "low neutrophil count",
+      "decreased neutrophils",
+      "anc low",
+      "absolute neutrophil count low",
+    ],
+    definition:
+      "Absolute neutrophil count (ANC) below ~1,500/µL (severe <500/µL), increasing risk of bacterial and fungal infections — especially when fever develops (febrile neutropenia).",
+    mechanism:
+      "Decreased marrow production (chemotherapy, drugs, vitamin deficiencies, marrow failure), increased destruction (autoimmune, Felty syndrome), or margination/sequestration reduces circulating neutrophils; low ANC impairs innate bacterial killing.",
+    thinkOf: [
+      "Chemotherapy-induced neutropenia — febrile neutropenia emergency",
+      "Copper deficiency — neutropenia with anemia",
+      "Drug-induced — clozapine, carbimazole, sulfonamides, ganciclovir",
+      "Cyclic neutropenia — periodic every ~21 days",
+      "Kostmann syndrome — severe congenital neutropenia",
+      "Felty syndrome — RA + splenomegaly + neutropenia",
+      "Aplastic anemia / MDS — pancytopenia with neutropenia",
+    ],
+    pairWith: [
+      "Fever + ANC <500 on chemotherapy → febrile neutropenia; broad empiric antibiotics",
+      "Neutropenia + sideroblastic anemia + myelopathy → copper deficiency",
+      "Periodic oral ulcers + infections every 3 weeks → cyclic neutropenia",
+      "RA + splenomegaly + neutropenia → Felty syndrome",
+      "Pancytopenia + blasts → leukemia",
+    ],
+    distinguishFrom: [
+      "Leukopenia — low total WBC; neutropenia is specific to neutrophil lineage",
+      "Lymphopenia — low lymphocytes; different infection susceptibility (viral, opportunistic)",
+      "Neutrophilia — elevated neutrophils; left shift in infection",
+      "Neutropenia vs agranulocytosis — agranulocytosis is severe neutropenia often drug-induced",
+    ],
+    pediatrics:
+      "Febrile neutropenia in children on chemotherapy requires urgent cultures and empiric antibiotics. Severe congenital neutropenia and cyclic neutropenia present in infancy/childhood; G-CSF may be used in selected congenital neutropenia syndromes.",
+  },
+  {
+    id: "ataxia",
+    name: "Ataxia",
+    etymology: "Greek a = without + taxis = order/arrangement",
+    aliases: [
+      "ataxia",
+      "ataxias",
+      "ataxic gait",
+      "cerebellar ataxia",
+      "sensory ataxia",
+    ],
+    definition:
+      "Loss of coordinated voluntary movement causing clumsy, wide-based, or irregular gait and limb incoordination — may be cerebellar, sensory (proprioceptive), or vestibular in origin.",
+    mechanism:
+      "Cerebellar lesions disrupt timing and scaling of movement; dorsal column/proprioceptive loss prevents joint position sense (positive Romberg); vestibular dysfunction causes vertigo-associated imbalance.",
+    thinkOf: [
+      "Cerebellar stroke or hemorrhage — ipsilateral limb ataxia, dysmetria",
+      "Friedreich ataxia — hereditary, hypertrophic cardiomyopathy",
+      "Vitamin B12 deficiency — subacute combined degeneration with sensory ataxia",
+      "Alcohol — cerebellar degeneration (vermis) and Wernicke encephalopathy",
+      "Multiple sclerosis — cerebellar plaques",
+      "Tabes dorsalis — syphilitic dorsal column disease",
+    ],
+    pairWith: [
+      "Ataxia + ↓ vibration/proprioception + macrocytosis → B12 deficiency",
+      "Ataxia + dysmetria + intention tremor → cerebellar lesion",
+      "Positive Romberg + sensory ataxia → dorsal column disease",
+      "Ataxia + ophthalmoplegia + confusion → Wernicke encephalopathy",
+    ],
+    distinguishFrom: [
+      "Weakness (paresis) — reduced power, not coordination problem alone",
+      "Parkinsonian gait — shuffling, festination; not true ataxia",
+      "Vertigo — vestibular spinning sensation; may coexist with vestibular ataxia",
+      "Apraxia — inability to perform learned motor tasks despite intact strength",
+    ],
+    pediatrics:
+      "Ataxic telangiectasia, Friedreich ataxia, and posterior fossa tumors (medulloblastoma) are pediatric differentials; acute ataxia in child also warrants intoxication and post-viral cerebellitis evaluation.",
+  },
+  {
+    id: "paresis",
+    name: "Paresis",
+    etymology: "Greek parienai = to let go / relax + -sis = condition",
+    aliases: [
+      "paresis",
+      "pareses",
+      "partial paralysis",
+      "muscle weakness",
+      "motor weakness",
+      "hemiparesis",
+      "paraparesis",
+    ],
+    definition:
+      "Partial loss of voluntary muscle strength — reduced but not absent movement; contrasts with plegia (complete paralysis).",
+    mechanism:
+      "Disruption anywhere in motor pathway — cortex, UMN tracts, anterior horn, peripheral nerve, neuromuscular junction, or muscle — reduces force generation proportionally to lesion severity.",
+    thinkOf: [
+      "Stroke — contralateral hemiparesis",
+      "Guillain-Barré — ascending symmetric weakness",
+      "Myasthenia gravis — fatigable weakness",
+      "B12 myelopathy — spastic paresis of legs with UMN signs",
+      "Bell palsy — facial paresis (LMN CN VII)",
+    ],
+    pairWith: [
+      "UMN signs (spasticity, Babinski) → corticospinal tract lesion",
+      "LMN signs (atrophy, fasciculations) → anterior horn or nerve",
+      "Fatigable ptosis/diplopia → myasthenia gravis",
+      "Distal > proximal weakness → peripheral neuropathy or myopathy pattern",
+    ],
+    distinguishFrom: [
+      "Plegia — complete paralysis, no voluntary movement",
+      "Paresis vs paresthesia — motor weakness vs sensory tingling",
+      "Fatigue — reduced effort/endurance without true neuromuscular paresis",
+      "Ataxia — incoordination with relatively preserved strength",
+    ],
+    pediatrics:
+      "Pediatric hemiparesis suggests stroke, cerebral palsy, or tumor; Guillain-Barré can cause ascending paresis after infection.",
+  },
+  {
+    id: "spastic-paresis",
+    name: "Spastic Paresis",
+    etymology: "Greek spastikos = drawing/pulling + paresis = partial weakness",
+    aliases: [
+      "spastic paresis",
+      "spastic weakness",
+      "spastic hemiparesis",
+      "spastic paraparesis",
+      "upper motor neuron paresis",
+      "umn paresis",
+    ],
+    definition:
+      "Partial weakness accompanied by upper motor neuron signs — increased tone, hyperreflexia, and pathologic reflexes — from corticospinal tract or other UMN pathway injury.",
+    mechanism:
+      "Loss of descending inhibitory UMN input → unchecked spinal reflex arc activity → velocity-dependent spasticity, hyperreflexia, clonus, and Babinski sign with weakness in affected muscles.",
+    thinkOf: [
+      "Stroke — spastic hemiparesis after initial flaccid phase",
+      "Multiple sclerosis — spastic paraparesis",
+      "B12 subacute combined degeneration — spastic leg paresis + dorsal column loss",
+      "Cervical myelopathy — UMN leg signs ± LMN hand signs",
+      "Cerebral palsy — spastic diplegia/hemiplegia",
+    ],
+    pairWith: [
+      "Spastic paresis + ↓ vibration sense → B12/copper myelopathy",
+      "Babinski + hyperreflexia + weakness → UMN lesion",
+      "Acute flaccid → chronic spastic after stroke — classic evolution",
+      "Spastic bladder with leg spasticity → spinal cord lesion",
+    ],
+    distinguishFrom: [
+      "Flaccid paresis — LMN or acute UMN; hypotonia, hyporeflexia",
+      "Rigidity — extrapyramidal (lead-pipe/cogwheel), not velocity-dependent spasticity",
+      "Plegia — complete paralysis, not partial weakness",
+      "Functional weakness — normal reflexes and tone",
+    ],
+    pediatrics:
+      "Spastic cerebral palsy from perinatal corticospinal injury is the classic pediatric spastic paresis; B12 deficiency in infants can cause spasticity with developmental regression.",
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));

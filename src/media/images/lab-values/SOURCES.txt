@@ -7,3 +7,9 @@ oligoclonal-bands.svg
 Created locally
 Reference: https://en.wikipedia.org/wiki/Oligoclonal_band
 Description: CSF-specific IgG bands indicating intrathecal synthesis in MS
+zinc.svg | Created locally
+
+zinc.jpg
+  Source: Wikimedia Commons — Rogatywka.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Rogatywka.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Rogatywka.jpg?width=1280
