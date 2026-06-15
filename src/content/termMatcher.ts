@@ -56,6 +56,14 @@ function hasWordBoundaryAfter(text: string, index: number): boolean {
 
 const SHORT_ACRONYM_MAX_LENGTH = 2;
 
+/**
+ * Short aliases (≤2 chars) with standard typographic casing — not ALL CAPS.
+ * e.g. pH in lab tables is lowercase p + uppercase H, which fails isAllCapsAcronymInSource.
+ */
+const SHORT_ALIAS_CANONICAL_MATCH: Record<string, RegExp> = {
+  ph: /^pH$/i,
+};
+
 /** Common English function words that must never trigger alias matches. */
 const FUNCTION_WORD_BLOCKLIST = new Set([
   "a",
@@ -154,8 +162,11 @@ export interface AliasMatchContext {
 export function shouldRejectAliasMatch(ctx: AliasMatchContext): boolean {
   const { matchText, term } = ctx;
   if (isFunctionWordBlocked(matchText)) return true;
-  if (isShortAcronymAlias(term.alias) && !isAllCapsAcronymInSource(matchText)) {
-    return true;
+  if (isShortAcronymAlias(term.alias)) {
+    const canonical = SHORT_ALIAS_CANONICAL_MATCH[normalizedWordKey(term.alias)];
+    if (!canonical?.test(matchText) && !isAllCapsAcronymInSource(matchText)) {
+      return true;
+    }
   }
   if (shouldRejectAliasByContext(ctx)) return true;
   return false;
