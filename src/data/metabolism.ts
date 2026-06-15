@@ -198,6 +198,51 @@ export const METABOLISM: MetabolismEntry[] = [
       "PKU patients require tyrosine supplementation because they cannot convert phenylalanine to tyrosine.",
   },
   {
+    id: "tryptophan",
+    name: "Tryptophan",
+    etymology:
+      "Greek tryps = worn/rubbed + phainein = to appear + -an = chemical suffix (named for tryptic digestion products)",
+    aliases: [
+      "tryptophan",
+      "tryptophans",
+      "l-tryptophan",
+      "trp",
+      "triptophan",
+      "triptophans",
+      "essential amino acid tryptophan",
+    ],
+    definition:
+      "Essential aromatic amino acid and precursor to serotonin, melatonin, and niacin (via the kynurenine pathway) — limited availability of dietary tryptophan can contribute to niacin deficiency when conversion pathways are blocked or diverted.",
+    pathway: [
+      "Essential amino acid — cannot be synthesized; mnemonic PVT TIM HALL",
+      "Serotonin synthesis: tryptophan → 5-hydroxytryptophan (tryptophan hydroxylase, BH₄) → serotonin (aromatic L-amino acid decarboxylase, B₆)",
+      "Melatonin synthesized downstream from serotonin (circadian regulation)",
+      "Niacin (NAD⁺) synthesis: ~1/60 of tryptophan converted via kynurenine pathway — requires vitamin B₆",
+      "Catabolism also feeds alanine and acetyl-CoA — glucogenic and ketogenic",
+      "Carcinoid syndrome diverts tryptophan to serotonin → ↓ substrate for niacin synthesis",
+      "Hartnup disease — defective neutral amino acid transport (including tryptophan) → pellagra-like niacin deficiency",
+      "Isoniazid — depletes B₆, impairing kynurenine → niacin pathway",
+    ],
+    boardsPearls: [
+      "Tryptophan → serotonin (mood, GI motility, platelets) and → niacin (NAD⁺ cofactor)",
+      "Essential aromatic amino acid — separate pathway from phenylalanine/tyrosine catabolism",
+      "Carcinoid tumor uses tryptophan for serotonin → risk of pellagra-like niacin deficiency",
+      "Hartnup disease — neutral aminoaciduria with tryptophan malabsorption → niacin deficiency",
+      "Isoniazid + low B₆ → impaired tryptophan-to-niacin conversion",
+      "Tryptophan hydroxylase uses BH₄ — same cofactor family as PAH and tyrosine hydroxylase",
+      "vs tyrosine — catecholamines derive from tyrosine, not tryptophan",
+    ],
+    distinguishFrom: [
+      "Serotonin — decarboxylated neurotransmitter/hormone, not the dietary amino acid",
+      "Niacin (vitamin B₃) — end product of kynurenine pathway, not synonymous with tryptophan",
+      "Phenylalanine/tyrosine — separate aromatic amino acid catabolic pathway to fumarate/acetoacetate",
+      "5-Hydroxytryptophan (5-HTP) — immediate serotonin precursor intermediate",
+      "Melatonin — downstream indoleamine hormone from serotonin",
+    ],
+    pediatrics:
+      "Hartnup disease may present in childhood with pellagra-like dermatitis and ataxia; high-protein diet and niacin supplementation help. Essential amino acid requirements are higher per kg in infants.",
+  },
+  {
     id: "serine",
     name: "Serine",
     etymology: "Latin sericum = silk + -ine = chemical suffix (first found in silk protein)",

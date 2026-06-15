@@ -1183,6 +1183,52 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "SSRIs used cautiously in pediatric depression with monitoring for activation and suicidality; carcinoid tumors are rare in children but 5-HIAA remains the classic screening metabolite.",
   },
   {
+    id: "substance-p",
+    name: "Substance P",
+    etymology:
+      "substance = material + P = powder (original isolation from brain acetone powder fraction)",
+    aliases: [
+      "substance p",
+      "substance ps",
+      "substance-p",
+      "sp",
+      "neurokinin a",
+      "nk-a",
+      "tachykinin substance p",
+      "substance p peptide",
+    ],
+    type: "Neurotransmitter",
+    source:
+      "Sensory C-fiber neurons, dorsal horn interneurons, enteric nervous system, brainstem; stored in synaptic vesicles and released with nociceptive and inflammatory stimuli",
+    receptor: "Neurokinin-1 (NK1) receptor — GPCR coupled to Gq/PLC",
+    function:
+      "Tachykinin neuropeptide mediating pain transmission, neurogenic inflammation, and emesis — promotes vasodilation, plasma extravasation, and spinal cord nociceptive signaling when released with CGRP from sensory nerve endings.",
+    clinicalRelevance: [
+      "Central sensitization in chronic pain and fibromyalgia (↑ substance P in CSF in some studies)",
+      "Neurogenic inflammation after tissue injury or nerve activation",
+      "NK1 receptor antagonists (aprepitant) prevent chemotherapy-induced nausea and vomiting",
+      "Capsaicin (TRPV1 agonist) causes substance P depletion from sensory neurons with repeated application",
+      "Carcinoid and other neuroendocrine tumors may secrete tachykinins along with serotonin",
+    ],
+    boardsPearls: [
+      "Substance P — tachykinin neuropeptide; binds NK1 receptor",
+      "Released from sensory C-fibers with pain and inflammation",
+      "NK1 antagonists (aprepitant) — antiemetic for chemotherapy-induced nausea",
+      "Capsaicin depletes substance P from peripheral nociceptors",
+      "vs bradykinin — kinin from kallikrein; substance P is neuropeptide from neurons",
+      "vs histamine — mast cell mediator; substance P from nociceptive neurons",
+    ],
+    distinguishFrom: [
+      "Bradykinin — plasma kinin causing pain and angioedema; degraded by ACE",
+      "Histamine — H1-mediated allergy and gastric acid; not primary spinal pain transmitter",
+      "Serotonin — indoleamine from tryptophan; mood/GI/platelet roles",
+      "CGRP — co-released neuropeptide causing vasodilation; distinct receptor",
+      "Neurokinin B — related tachykinin with preferential NK3 receptor activity",
+    ],
+    pediatrics:
+      "NK1 antagonists used for pediatric chemotherapy-induced nausea at weight-based dosing; substance P–mediated neurogenic inflammation follows same nociceptor biology in children.",
+  },
+  {
     id: "nitric-oxide",
     name: "Nitric oxide (NO)",
     etymology: "nitric = nitrogen-derived + oxide = oxygen compound",

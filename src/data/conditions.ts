@@ -11192,6 +11192,88 @@ export const CONDITIONS: ConditionEntry[] = [
       "Rheumatic AR still seen globally; bicuspid AV may present in adolescence with exercise intolerance.",
   },
   {
+    id: "mitral-regurgitation",
+    name: "Mitral Regurgitation",
+    etymology:
+      "Latin mitra = bishop's headdress (valve shape) + Latin re- = back + gurges = flood/whirlpool",
+    aliases: [
+      "mitral regurgitation",
+      "mitral regurgitations",
+      "mitral insufficiency",
+      "mitral incompetence",
+      "mr",
+      "chronic mitral regurgitation",
+      "acute mitral regurgitation",
+      "severe mitral regurgitation",
+      "functional mitral regurgitation",
+      "secondary mitral regurgitation",
+      "organic mitral regurgitation",
+      "mitral valve regurgitation",
+    ],
+    definition:
+      "Incompetence of the mitral valve allowing systolic backflow from the left ventricle into the left atrium — causes volume overload of LA and LV with pulmonary venous congestion when severe.",
+    pathophysiology:
+      "Regurgitant jet during systole → ↑ LA pressure and volume → LA dilation; LV receives regurgitant volume plus forward flow → eccentric LV hypertrophy and dilation. Acute severe MR (papillary muscle rupture, chordae rupture) causes sudden LA pressure rise without compensatory LA dilation → acute pulmonary edema. Chronic MR allows gradual LA/LV remodeling.",
+    classicPresentation: [
+      "Exertional dyspnea, orthopnea, PND (chronic severe MR)",
+      "Holosystolic blowing murmur at apex radiating to axilla",
+      "Acute MR post-MI — sudden dyspnea, pulmonary edema, new murmur, cardiogenic shock",
+      "Fatigue from reduced forward cardiac output",
+    ],
+    keyFindings: [
+      "Holosystolic murmur at apex → axilla; ↑ intensity with handgrip (↑ afterload), ↓ with Valsalva",
+      "Soft S1 if valve does not coapt; S3 with volume overload in chronic severe MR",
+      "Laterally displaced PMI with LV dilation",
+      "Echocardiography — regurgitant jet, LA/LV size, valve etiology, severity",
+      "Acute MR — pulmonary edema on CXR without massive chronic LA enlargement",
+    ],
+    keyLabs: [
+      "Echocardiography — diagnostic and for severity grading",
+      "ECG — LA enlargement, AF in chronic disease; LVH",
+      "BNP elevation with decompensated heart failure",
+    ],
+    associations: [
+      "Mitral valve prolapse",
+      "Rheumatic heart disease",
+      "Infective endocarditis",
+      "Ischemic heart disease — papillary muscle rupture or dysfunction post-MI",
+      "Dilated cardiomyopathy — functional MR from annular dilation",
+      "Hypertrophic cardiomyopathy — systolic anterior motion (SAM) causing MR",
+      "LV dilation from any chronic systolic heart failure",
+    ],
+    complications: [
+      "Left-sided heart failure and pulmonary edema",
+      "Atrial fibrillation from LA dilation",
+      "Pulmonary hypertension and right heart failure (chronic severe MR)",
+      "Endocarditis on abnormal valve",
+      "Cardiogenic shock in acute severe MR",
+    ],
+    distinguishFrom: [
+      "Mitral stenosis — diastolic rumble at apex, opening snap; pressure overload not regurgitation",
+      "Tricuspid regurgitation — holosystolic murmur at LLSB, ↑ with inspiration (Carvallo sign)",
+      "Ventricular septal defect — holosystolic at LLSB, not apex-to-axilla radiation",
+      "Aortic stenosis — systolic ejection murmur at RUSB to carotids, crescendo-decrescendo",
+      "MVP without significant MR — mid-systolic click, late systolic murmur only",
+    ],
+    treatment: [
+      "Medical: diuretics for congestion; ACE inhibitors/ARBs in chronic MR with LV dysfunction",
+      "Afterload reduction in acute severe MR when surgery delayed (nitroprusside, IABP as bridge)",
+      "Mitral valve repair preferred over replacement when feasible",
+      "Urgent surgery for acute severe MR (papillary rupture) or symptomatic/severe chronic MR with LV dysfunction",
+      "Treat endocarditis; manage AF and anticoagulation when indicated",
+    ],
+    boardsPearls: [
+      "Holosystolic murmur at apex radiating to axilla = mitral regurgitation",
+      "↑ with handgrip (↑ afterload worsens regurgitation); ↓ with Valsalva",
+      "Acute MR post-MI (3–5 days) — papillary muscle rupture → flash pulmonary edema, surgical emergency",
+      "Chronic MR — LA/LV dilation; AF common",
+      "Functional MR improves if underlying LV failure treated; organic MR needs valve intervention when severe",
+      "vs TR — LLSB murmur louder with inspiration",
+    ],
+    pediatrics:
+      "Rheumatic fever remains a cause of MR globally in children; congenital mitral valve anomalies and endocarditis occur in pediatrics. Papillary muscle rupture is an adult post-MI complication.",
+  },
+  {
     id: "copd",
     name: "COPD",
     etymology: "COPD = chronic obstructive pulmonary disease; Latin pulmo = lung + obstructio = blockage",
@@ -21740,7 +21822,6 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     keyLabs: [
       "Primary: ↑ TSH with ↓ free T4",
-      "Subclinical: ↑ TSH with normal free T4",
       "Central: ↓ free T4 with low/inappropriately normal TSH",
       "Anti-TPO antibodies if autoimmune (Hashimoto)",
     ],
@@ -21778,6 +21859,81 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Congenital hypothyroidism is screened by newborn TSH; untreated disease causes cretinism. Acquired autoimmune hypothyroidism can present with growth delay and school difficulty in children.",
+  },
+  {
+    id: "subclinical-hypothyroidism",
+    name: "Subclinical Hypothyroidism",
+    etymology:
+      "Latin sub = below threshold + Greek klinikos = bed/clinical + hypo = under + thyreos = shield-shaped gland + -ism = condition",
+    aliases: [
+      "subclinical hypothyroidism",
+      "subclinical hypothyroidisms",
+      "subclinical hypothyroid",
+      "mild hypothyroidism",
+      "compensated hypothyroidism",
+      "elevated tsh with normal t4",
+      "high tsh normal t4",
+      "increased tsh normal free t4",
+      "borderline hypothyroidism",
+      "subclinical primary hypothyroidism",
+    ],
+    definition:
+      "Biochemical thyroid dysfunction with elevated TSH and normal free T4 in the absence of overt hypothyroidism — may be asymptomatic or cause mild hypothyroid symptoms; often reflects early or mild primary thyroid failure.",
+    pathophysiology:
+      "Reduced thyroid hormone output (autoimmune destruction, iodine deficiency, prior thyroiditis) → loss of negative feedback → compensatory ↑ TSH maintains normal circulating free T4 until gland reserve is exhausted → progression to overt hypothyroidism possible over time.",
+    classicPresentation: [
+      "Often asymptomatic — discovered on routine labs",
+      "Mild fatigue, weight gain, constipation, or cold intolerance (nonspecific)",
+      "Goiter if underlying Hashimoto thyroiditis",
+      "Infertility or hyperlipidemia workup incidentally reveals ↑ TSH",
+    ],
+    keyFindings: [
+      "Normal examination or mild bradycardia/dry skin",
+      "Goiter in autoimmune thyroiditis",
+      "No myxedema coma or severe hypothermia (overt disease features)",
+    ],
+    keyLabs: [
+      "↑ TSH with normal free T4 — diagnostic pattern",
+      "Repeat TSH and free T4 to confirm persistence (not acute illness artifact)",
+      "Anti-TPO / anti-thyroglobulin antibodies — suggest autoimmune etiology",
+      "Lipids may be mildly elevated",
+    ],
+    associations: [
+      "Hashimoto thyroiditis — most common cause in adults",
+      "Postpartum thyroiditis (hypothyroid phase may be subclinical first)",
+      "Iodine deficiency or excess",
+      "Lithium, amiodarone, prior thyroid surgery or radioiodine",
+      "Increased risk of progression to overt hypothyroidism if anti-TPO positive",
+    ],
+    complications: [
+      "Progression to overt hypothyroidism",
+      "Adverse pregnancy outcomes if untreated in pregnancy (miscarriage, neurodevelopmental risk)",
+      "Mild hyperlipidemia and cardiovascular risk associations (debated in mild TSH elevation)",
+      "Infertility or menstrual irregularity in some patients",
+    ],
+    distinguishFrom: [
+      "Overt primary hypothyroidism — ↑ TSH with ↓ free T4 and clearer symptoms",
+      "Euthyroid sick syndrome — abnormal thyroid tests during acute illness; interpret cautiously",
+      "Central hypothyroidism — low or inappropriately normal TSH with low free T4",
+      "Recovery phase after hyperthyroidism or thyroiditis — transient TSH elevation",
+    ],
+    treatment: [
+      "TSH persistently ≥10 mIU/L — generally treat with levothyroxine",
+      "TSH 4.5–10 mIU/L — individualized: treat if symptomatic, positive anti-TPO, goiter, pregnancy or planning pregnancy, or high progression risk",
+      "Pregnancy — treat when TSH above trimester-specific upper limit (lower threshold than nonpregnant adults)",
+      "Monitor TSH after starting or adjusting levothyroxine",
+    ],
+    boardsPearls: [
+      "Subclinical hypothyroidism = ↑ TSH + normal free T4",
+      "Hashimoto thyroiditis is the most common underlying cause",
+      "Anti-TPO positivity increases risk of progression to overt hypothyroidism",
+      "Treat TSH ≥10; consider treatment for TSH 4.5–10 with symptoms, antibodies, or pregnancy",
+      "Pregnancy — even mild TSH elevation may warrant levothyroxine (maternal/fetal outcomes)",
+      "vs overt hypothyroidism — low free T4 defines overt disease",
+      "Repeat labs before labeling chronic subclinical disease",
+    ],
+    pediatrics:
+      "Autoimmune thyroiditis in adolescents may present with subclinical biochemical changes before overt hypothyroidism; monitor TSH and treat per pediatric endocrine guidelines if persistent or symptomatic.",
   },
   {
     id: "hashimoto-thyroiditis",
