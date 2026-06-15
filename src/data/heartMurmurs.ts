@@ -111,12 +111,65 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
       "ASD murmur is from pulmonary flow, not blood crossing the septum; large ASDs may be asymptomatic until adulthood.",
   },
   {
+    id: "holosystolic-murmur",
+    name: "Holosystolic Murmur",
+    etymology:
+      "Greek holos = whole + systole = contraction + Latin murmur = hum",
+    aliases: [
+      "holosystolic murmur",
+      "holosystolic murmurs",
+      "pansystolic murmur",
+      "pansystolic murmurs",
+      "pan-systolic murmur",
+      "pan systolic murmur",
+      "systolic regurgitant murmur",
+      "regurgitant systolic murmur",
+      "blowing holosystolic murmur",
+    ],
+    meaning:
+      "High-pitched blowing murmur heard throughout systole from regurgitant flow across an incompetent AV valve or a ventricular septal defect — intensity often plateaus rather than peaking mid-systole like ejection murmurs.",
+    conditions: [
+      "Mitral regurgitation — apex, radiates to axilla; ↑ with handgrip, ↓ with Valsalva",
+      "Tricuspid regurgitation — left lower sternal border; ↑ with inspiration (Carvallo sign)",
+      "Ventricular septal defect — harsh holosystolic at LLSB; louder with small restrictive defects",
+      "Mitral valve prolapse with MR — mid-systolic click may precede late systolic murmur",
+      "Papillary muscle rupture post-MI — new holosystolic murmur + pulmonary edema",
+    ],
+    pediatrics:
+      "VSD is the classic pediatric holosystolic murmur at LLSB; small VSDs have loud murmurs. MR from rheumatic fever or MVP also occurs in adolescents.",
+  },
+  {
+    id: "continuous-murmur",
+    name: "Continuous Murmur",
+    etymology: "Latin continuus = unbroken + murmur = hum",
+    aliases: [
+      "continuous murmur",
+      "continuous murmurs",
+      "machinery murmur",
+      "machinery murmurs",
+      "continuous machinery murmur",
+      "systolic-diastolic murmur",
+      "to-and-fro murmur throughout cardiac cycle",
+    ],
+    meaning:
+      "Murmur present throughout systole and diastole without a silent interval — indicates persistent pressure gradient between two connected high- and low-pressure vascular beds during the entire cardiac cycle.",
+    conditions: [
+      "Patent ductus arteriosus — machinery murmur at left infraclavicular area; wide pulse pressure",
+      "Coronary artery fistula — continuous murmur, often diminishes in diastole",
+      "Ruptured sinus of Valsalva aneurysm into RV or RA",
+      "Aortopulmonary window — congenital communication between aorta and PA",
+      "Coarctation of aorta with collaterals — systolic-diatolic murmur over back (not purely continuous at chest)",
+      "Pulmonary AV fistula — continuous murmur over lung fields",
+    ],
+    pediatrics:
+      "PDA is the boards classic continuous murmur in neonates/infants; prostaglandin E1 maintains ductus in ductal-dependent lesions. Indomethacin/ibuprofen or device closure for isolated PDA.",
+  },
+  {
     id: "patent-ductus-arteriosus-murmur",
     name: "Continuous Machinery Murmur",
     etymology: "continuous = uninterrupted + machinery = machine-like + murmur = hum",
     aliases: [
       "continuous machinery murmur",
-      "machinery murmur",
       "patent ductus arteriosus murmur",
       "pda murmur",
     ],

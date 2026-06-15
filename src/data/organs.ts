@@ -53,6 +53,24 @@ export const ORGANS: OrganEntry[] = [
       "Pulmonary veins incorporate into the left atrium; their smooth muscle from splanchnic mesoderm, endothelium from angiogenic mesoderm.",
   },
   {
+    id: "common-cardinal-veins",
+    name: "Common Cardinal Veins",
+    etymology: "Latin communis = shared + cardinalis = principal + vena = vein",
+    aliases: [
+      "common cardinal veins",
+      "common cardinal vein",
+      "ducts of cuvier",
+      "duct of cuvier",
+      "cuvierian ducts",
+      "horner's veins",
+      "horner veins",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Formed by union of anterior (cardinal) and posterior (cardinal) cardinal veins — paired embryonic channels draining the body into the sinus venosus; right common cardinal vein contributes to the superior vena cava.",
+    derivatives: ["Right horn of sinus venosus → SVC", "Left common cardinal component → coronary sinus (partial)"],
+  },
+  {
     id: "svc",
     name: "Superior Vena Cava",
     etymology: "Latin superior = higher + Latin vena = vein + Latin cavus = hollow",
@@ -1496,6 +1514,28 @@ export const ORGANS: OrganEntry[] = [
       "Outpocketing of diencephalon (optic vesicle → optic cup); neuroectoderm forms neural retina.",
   },
   {
+    id: "optic-disc",
+    name: "Optic Disc",
+    etymology: "Latin opticus = of sight + Latin discus = flat circular plate",
+    aliases: [
+      "optic disc",
+      "optic discs",
+      "optic disk",
+      "optic disks",
+      "optic nerve head",
+      "optic nerve heads",
+      "onh",
+      "optic papilla",
+      "optic papillae",
+      "blind spot",
+      "blind spots",
+    ],
+    germLayer: "Ectoderm",
+    origin:
+      "Formed where retinal ganglion cell axons converge and exit the globe through the lamina cribrosa as the optic nerve — the only region of retina lacking photoreceptors (physiologic blind spot).",
+    derivatives: ["Optic nerve (CN II)", "Neuroretinal rim", "Physiologic cup"],
+  },
+  {
     id: "optic-chiasm",
     name: "Optic Chiasm",
     etymology: "Greek optikos = of sight + Greek chiasma = cross/marked with χ (chi)",
@@ -2800,6 +2840,27 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Diabetic retinopathy", "Hypertensive retinopathy", "Retinal detachment", "Retinitis pigmentosa", "Macular degeneration"],
     step1Pearls: ["Rods handle night/peripheral vision; cones handle color/acuity", "Central retinal artery occlusion causes cherry-red spot", "Vitamin A deficiency causes night blindness"],
     pediatrics: "Retinoblastoma presents with leukocoria; mutation of both RB alleles is classic.",
+  },
+  "optic-disc": {
+    functionSummary:
+      "Visible portion of the optic nerve head on fundoscopy — neuroretinal rim surrounds the physiologic cup; assess color, contour, margins, and cup-to-disc ratio for glaucoma, papilledema, and optic neuropathy.",
+    commonPathologies: [
+      "Glaucoma — cupping and neuroretinal rim loss",
+      "Papilledema — disc elevation from raised ICP",
+      "Optic neuritis — disc swelling or normal retrobulbar neuritis",
+      "Ischemic optic neuropathy — pallid swollen disc",
+      "Optic atrophy — pale disc after chronic injury",
+      "Optic disc drusen — pseudopapilledema",
+    ],
+    step1Pearls: [
+      "Cup-to-disc ratio >0.6 or asymmetry >0.2 suggests glaucoma",
+      "Blurred disc margins + venous engorgement → papilledema (↑ ICP)",
+      "Pale disc → prior optic nerve injury (atrophy)",
+      "Physiologic cup is central excavation; pathologic cupping is glaucomatous rim thinning",
+      "No photoreceptors at disc → physiologic blind spot",
+    ],
+    pediatrics:
+      "Optic disc drusen can mimic papilledema in children; retinoblastoma may show disc elevation with tumor infiltration — distinguish from true papilledema with imaging and oncology referral.",
   },
   uvea: {
     functionSummary: "Vascular pigmented middle coat of the eye (iris, ciliary body, choroid); supplies nutrition to outer retina and controls pupil/accommodation.",

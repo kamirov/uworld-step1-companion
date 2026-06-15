@@ -499,3 +499,15 @@ avascular-necrosis.jpg
 https://commons.wikimedia.org/wiki/File:avascular-necrosis.jpg
 Description: Avascular necrosis of the femoral head — cystic radiolucencies and irregular subchondral surface on hip X-ray
 
+multiple-sclerosis.jpg
+https://commons.wikimedia.org/wiki/File:Dawsonsfingers.JPG
+Description: Dawson fingers — periventricular ovoid plaques oriented perpendicular to lateral ventricles on brain MRI in MS
+
+neuromyelitis-optica.jpg
+https://commons.wikimedia.org/wiki/File:MULTIPLE_SCLEROSIS.JPG
+Description: Cervical spine MRI with enhancement — spinal cord demyelination in neuromyelitis optica spectrum disorder
+
+psychotic-mood-disorder.jpg
+https://commons.wikimedia.org/wiki/File:Atypical_Psychosis_Genetic_Map.jpg
+Description: Psychotic mood disorder — overlap of mood and psychotic disorders (schizoaffective spectrum)
+

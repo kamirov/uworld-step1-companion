@@ -297,6 +297,228 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
     pediatrics:
       "Pronounced respiratory sinus arrhythmia is normal in infants and children — reflects high vagal tone; distinguish from pathologic bradyarrhythmias causing syncope or pauses >3 seconds.",
   },
+  {
+    id: "widened-qrs",
+    name: "Widened QRS",
+    etymology: "English wide = broad + QRS = ECG ventricular depolarization complex",
+    aliases: [
+      "widened qrs",
+      "widened qrs complex",
+      "widened qrs complexes",
+      "wide qrs",
+      "wide qrs complex",
+      "wide qrs complexes",
+      "broad qrs",
+      "broad qrs complex",
+      "qrs widening",
+      "prolonged qrs",
+      "prolonged qrs duration",
+      "qrs duration >120 ms",
+      "qrs >120 ms",
+    ],
+    interpretation:
+      "QRS duration ≥120 ms — indicates slowed or abnormal ventricular depolarization from bundle branch block, ventricular origin of rhythm, electrolyte toxicity, or pre-excitation.",
+    territory:
+      "Global conduction pattern — not a coronary territory ST finding; localize with morphology (BBB pattern, axis, rhythm context).",
+    thinkOf: [
+      "Hyperkalemia — progressive widening with peaked T waves toward sine wave",
+      "Right or left bundle branch block — fixed wide QRS morphology",
+      "Ventricular tachycardia or ventricular escape — wide-complex tachycardia/bradycardia",
+      "Wolff-Parkinson-White — delta wave widens QRS in sinus rhythm",
+      "Sodium channel blocker toxicity (TCA, class IC antiarrhythmics, cocaine)",
+      "Hyperkalemia + acidosis + renal failure",
+    ],
+    distinguishFrom: [
+      "Narrow QRS — supraventricular origin with intact His-Purkinje conduction",
+      "Peaked T waves alone — early hyperkalemia before QRS widening",
+      "ST elevation — ischemic injury pattern; QRS may be normal width",
+      "Low-voltage QRS — small amplitude, not necessarily prolonged duration",
+      "Artifact — erratic baseline, not organized BBB morphology",
+    ],
+    boardsPearls: [
+      "Hyperkalemia progression: peaked T → widened QRS → loss of P waves → sine wave → VF/asystole",
+      "QRS ≥120 ms = wide complex — assume VT if tachycardia until proven otherwise",
+      "RBBB: rsR' in V1; LBBB: broad monophasic R in I/aVL/V5–V6",
+      "TCA overdose — wide QRS + prolonged QT + anticholinergic signs → sodium bicarbonate",
+      "WPW — short PR + delta wave + wide QRS; avoid AV nodal blockers in AF",
+    ],
+    pediatrics:
+      "Hyperkalemia in neonates (renal failure, adrenal insufficiency, hemolysis) can widen QRS rapidly — treat urgently. WPW and congenital BBB occur in children; wide-complex tachycardia in infant may be SVT with aberrancy vs VT.",
+  },
+  {
+    id: "peaked-t-waves",
+    name: "Peaked T Waves",
+    etymology: "English peak = pointed summit + T = ECG repolarization wave",
+    aliases: [
+      "peaked t waves",
+      "peaked t wave",
+      "tall t waves",
+      "tall t wave",
+      "tented t waves",
+      "tented t wave",
+      "hyperacute t waves",
+      "sharp t waves",
+      "pointed t waves",
+      "narrow peaked t waves",
+    ],
+    interpretation:
+      "Tall, narrow, symmetrically peaked T waves — earliest classic ECG sign of hyperkalemia; may also appear in early transmural ischemia (hyperacute T waves) or benign early repolarization in young patients.",
+    territory:
+      "Diffuse repolarization change — not regional ST territory alone; hyperkalemia affects all leads; ischemic hyperacute T may be territorial.",
+    thinkOf: [
+      "Hyperkalemia — renal failure, ACEi + K⁺-sparing diuretic, rhabdomyolysis, tumor lysis",
+      "Early STEMI — hyperacute T waves in affected leads before ST elevation",
+      "Benign early repolarization — young athletes, concave ST elevation with tall T",
+      "Hyperacute phase of ischemia — territorial, evolves to ST elevation",
+    ],
+    distinguishFrom: [
+      "Widened QRS — later hyperkalemia stage; peaked T often precedes",
+      "ST elevation with reciprocal changes — established STEMI, not isolated peaked T",
+      "U waves — separate deflection after T in hypokalemia, not tall peaked T",
+      "QT prolongation — long repolarization interval, not necessarily tall narrow T",
+      "Pseudohyperkalemia from hemolyzed sample — repeat if clinically discordant",
+    ],
+    boardsPearls: [
+      "Peaked T waves = earliest ECG sign of hyperkalemia",
+      "Hyperkalemia ECG sequence: peaked T → widened QRS → sine wave → arrest",
+      "Treat ECG changes with calcium gluconate (stabilize membrane) then shift/remove K⁺",
+      "Hyperacute T in ischemia — territorial, evolves to ST elevation within hours",
+      "Peaked T + renal failure + ACE inhibitor → emergent hyperkalemia management",
+    ],
+    pediatrics:
+      "Neonatal hyperkalemia (nonimmune hydrops, renal anomalies, adrenal insufficiency) shows peaked T waves — treat before QRS widens. Pediatric rhabdomyolysis and tumor lysis during chemotherapy require urgent potassium monitoring.",
+  },
+  {
+    id: "u-waves",
+    name: "U Waves",
+    etymology: "U = letter following T on ECG alphabet naming of deflections after T wave",
+    aliases: [
+      "u waves",
+      "u wave",
+      "prominent u waves",
+      "prominent u wave",
+      "large u waves",
+      "large u wave",
+      "u wave fusion",
+      "fused u waves",
+    ],
+    interpretation:
+      "Small deflection after the T wave, best seen in V2–V3 — prominent U waves suggest hypokalemia, bradycardia, or antiarrhythmic drugs; U-wave fusion with T can mimic QT prolongation.",
+    territory:
+      "Global repolarization pattern — not coronary territorial; most prominent in mid-precordial leads.",
+    thinkOf: [
+      "Hypokalemia — flattened T waves with prominent U waves",
+      "Bradycardia and hypothermia",
+      "Class IA/III antiarrhythmics (quinidine, sotalol, amiodarone)",
+      "Congenital long QT syndromes — U wave may contribute to apparent QT prolongation",
+      "Hyperthyroidism and physical training (physiologic U waves)",
+    ],
+    distinguishFrom: [
+      "QT prolongation — measure QT to end of T wave, not U wave (fusion mimics long QT)",
+      "Peaked T waves — hyperkalemia, tall narrow T without following U deflection",
+      "Torsades de pointes — arrhythmia, not a static U-wave morphology",
+      "P waves — atrial activity before QRS, not after T",
+      "Flattened T alone — hypokalemia may show both low T and prominent U",
+    ],
+    boardsPearls: [
+      "Prominent U waves + flattened T → hypokalemia",
+      "U-wave fusion can falsely prolong measured QT — true QT ends at T-wave baseline",
+      "Hypokalemia predisposes to arrhythmias and QT-related torsades",
+      "Replete K⁺ and Mg²⁺ when U waves suggest significant hypokalemia",
+      "vs peaked T — hyperkalemia vs hypokalemia repolarization patterns",
+    ],
+    pediatrics:
+      "Hypokalemia from GI losses, diuretics, or cystic fibrosis may show U waves in children; replete potassium and magnesium. Distinguish prominent U from congenital long QT on ECG screening.",
+  },
+  {
+    id: "torsades-de-pointes",
+    name: "Torsades de Pointes",
+    etymology: "French torsades = twists + de pointes = of points (twisting QRS around baseline)",
+    aliases: [
+      "torsades de pointes",
+      "torsade de pointes",
+      "torsades",
+      "torsade",
+      "tdp",
+      "polymorphic ventricular tachycardia",
+      "polymorphic vt",
+      "twisting of the points",
+      "twisting qrs tachycardia",
+    ],
+    interpretation:
+      "Polymorphic ventricular tachycardia with QRS axis twisting around the baseline — occurs in setting of prolonged QT (acquired or congenital) and can degenerate to ventricular fibrillation.",
+    territory:
+      "Ventricular arrhythmia — not a coronary ST territory pattern; precedes or accompanies QT prolongation on baseline ECG.",
+    thinkOf: [
+      "Prolonged QTc — drugs (class IA/III, macrolides, antipsychotics, TCAs), electrolytes",
+      "Hypomagnesemia and hypokalemia — common precipitants",
+      "Congenital long QT syndrome — syncope, sudden death in young",
+      "Bradycardia-dependent torsades — pauses lengthening QT",
+      "Antiarrhythmic paradox — quinidine, sotalol, dofetilide causing torsades",
+    ],
+    distinguishFrom: [
+      "Monomorphic VT — uniform QRS morphology, fixed axis",
+      "QTc prolongation alone — repolarization risk marker, not the arrhythmia itself",
+      "VF — coarse or fine fibrillation without organized twisting QRS",
+      "SVT with aberrancy — usually narrow or fixed wide beats, not polymorphic twisting",
+      "Artifact — nonphysiologic noise without hemodynamic correlate",
+    ],
+    boardsPearls: [
+      "Torsades = polymorphic VT + prolonged QT — twisting QRS around baseline",
+      "First-line treatment: IV magnesium sulfate (even if Mg normal)",
+      "Stop offending drugs; correct K⁺ and Mg²⁺; consider isoproterenol or overdrive pacing if recurrent",
+      "Avoid class IA/III antiarrhythmics — may worsen QT",
+      "hERG channel blockade — common drug mechanism for acquired long QT → torsades",
+      "Congenital LQT — β-blockers; avoid QT-prolonging medications",
+    ],
+    pediatrics:
+      "Congenital long QT may present as torsades or seizures in children; acquired torsades from electrolyte shifts in DKA treatment or QT-prolonging antibiotics requires magnesium and rhythm stabilization.",
+  },
+  {
+    id: "q-waves",
+    name: "Q Waves",
+    etymology: "Q = first downward deflection of the QRS complex on ECG tracing",
+    aliases: [
+      "q waves",
+      "q wave",
+      "pathologic q waves",
+      "pathologic q wave",
+      "pathological q waves",
+      "significant q waves",
+      "q wave infarction",
+      "q-wave mi",
+      "transmural q waves",
+      "deep q waves",
+    ],
+    interpretation:
+      "Initial negative deflection of the QRS complex — pathologic Q waves (wide and deep) in contiguous leads indicate transmural myocardial infarction or scar from prior necrosis; may appear hours to days after STEMI.",
+    territory:
+      "Territorial by lead group — inferior (II, III, aVF), anterior (V1–V4), lateral (I, aVL, V5–V6), posterior (reciprocal anterior ST depression with tall R in V1–V2).",
+    thinkOf: [
+      "Prior or evolving transmural MI — Q waves develop as necrosis establishes",
+      "STEMI — may have ST elevation before Q waves form",
+      "Old MI — isolated Q waves with flattened T waves, no acute ST changes",
+      "Chronic scar after reperfused STEMI",
+      "Septal Q waves in V5–V6, I, aVL — may be normal variant if narrow and shallow",
+    ],
+    distinguishFrom: [
+      "ST elevation without Q wave — acute STEMI early phase",
+      "NSTEMI — ST depression, troponin rise; Q waves may develop later",
+      "LVH — septal Q waves narrow, with LVH voltage criteria",
+      "Wolff-Parkinson-White — delta wave mimics Q in some leads",
+      "Pulmonary embolism — S1Q3T3 pattern; Q in III alone not pathologic MI",
+      "Normal septal Q — small Q in left lateral leads",
+    ],
+    boardsPearls: [
+      "Pathologic Q: ≥40 ms wide or ≥25% height of ensuing R wave in contiguous leads",
+      "Q waves = transmural infarct/scar — localize territory to culprit artery",
+      "Anterior Q (V1–V4) → LAD; Inferior Q (II, III, aVF) → RCA/circumflex",
+      "New Q waves with troponin rise confirm MI; old Q waves alone suggest prior infarct",
+      "Loss of R wave progression in anterior leads may accompany anterior MI",
+    ],
+    pediatrics:
+      "MI with Q waves is rare in children (Kawasaki, anomalous coronaries); pediatric ECG has smaller Q waves normally. New pathologic Q waves in adolescent with chest pain warrant urgent evaluation.",
+  },
 ];
 
 const ecgFindingById = new Map(ECG_FINDINGS.map((entry) => [entry.id, entry]));

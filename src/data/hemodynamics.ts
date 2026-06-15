@@ -9,6 +9,31 @@ export interface HemodynamicEntry {
 
 export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
+    id: "hemodynamics",
+    name: "Hemodynamics",
+    etymology: "Greek haima = blood + dynamis = power/force",
+    aliases: [
+      "hemodynamics",
+      "haemodynamics",
+      "cardiovascular hemodynamics",
+      "cardiac hemodynamics",
+      "hemodynamic monitoring",
+      "hemodynamic parameters",
+    ],
+    definition:
+      "Study of blood flow, pressures, and resistance in the cardiovascular system — integrates preload, afterload, contractility, and heart rate to determine cardiac output and tissue perfusion.",
+    factors: [
+      "Core determinants: preload (EDV/stretch), afterload (arterial resistance), contractility (inotropy), heart rate",
+      "Cardiac output (CO) = stroke volume × heart rate; SV set by Frank-Starling and afterload",
+      "Systemic vascular resistance (SVR) = (MAP − RAP) / CO — vasopressor vs vasodilator physiology",
+      "Pulmonary vascular resistance (PVR) — pulmonary hypertension and right heart failure",
+      "Pressure-volume loops illustrate loading conditions and contractility changes",
+      "Clinical applications: shock classification, heart failure management, valvular disease, tamponade vs constriction",
+      "Invasive monitoring (Swan-Ganz catheter) measures RA, RV, PA, PCWP, and cardiac output",
+      "Noninvasive surrogates: CVP ≈ RA pressure, echo estimates filling pressures and CO",
+    ],
+  },
+  {
     id: "preload",
     name: "Preload",
     etymology: "pre- = before + load = ventricular stretch before contraction",
@@ -18,6 +43,28 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     factors: [
       "↑ Preload: increased venous return (blood transfusion, fluid loading), sympathetic tone, supine position, muscle pump during exercise, mitral regurgitation",
       "↓ Preload: decreased venous return (hemorrhage, dehydration, diuretics, venodilators), standing, tamponade, pulmonary embolism, mitral stenosis",
+    ],
+  },
+  {
+    id: "venous-return",
+    name: "Venous Return",
+    etymology: "Latin vena = vein + Latin re = back + turnus = turning",
+    aliases: [
+      "venous return",
+      "venous returns",
+      "systemic venous return",
+      "vr",
+      "return of blood to the heart",
+    ],
+    definition:
+      "Flow of deoxygenated blood from the systemic venous circulation into the right atrium — the primary determinant of right ventricular preload and cardiac output via the Frank-Starling mechanism.",
+    factors: [
+      "↑ Venous return: ↑ blood volume, sympathetic venoconstriction, skeletal muscle pump, negative intrathoracic pressure during inspiration, supine position, arteriolar vasoconstriction (↑ MSFP)",
+      "↓ Venous return: hemorrhage, dehydration, venodilators, standing, positive-pressure ventilation, PE, tamponade, obstructive shock",
+      "Mean systemic filling pressure (MSFP) — equilibrium pressure driving blood back to heart",
+      "Right atrial pressure (RAP) — backpressure opposing inflow; ↑ RAP ↓ venous return",
+      "Venous compliance — high-capacitance veins store ~70% of blood volume",
+      "Clinical: ↓ VR → ↓ preload → ↓ CO (shock); ↑ VR in volume resuscitation improves perfusion",
     ],
   },
   {
@@ -609,6 +656,37 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Management: head elevation, osmotherapy (mannitol, hypertonic saline), brief hyperventilation (↓ PaCO₂ → vasoconstriction ↓ CBV), CSF drainage (EVD), treat underlying mass/edema, decompressive craniectomy if refractory",
       "Lumbar puncture contraindicated if mass lesion risks herniation — obtain CT first when indicated",
       "Peds: infants have open fontanelles — bulging fontanelle and separated sutures before cranial suture fusion; ICP still dangerous with rapid volume expansion",
+    ],
+  },
+  {
+    id: "swan-ganz",
+    name: "Swan-Ganz Catheter",
+    etymology:
+      "Eponyms Harold James Swan and William Ganz + Greek katheter = inserted tube",
+    aliases: [
+      "swan-ganz",
+      "swan ganz",
+      "swan-ganz catheter",
+      "swan ganz catheter",
+      "swan-ganz catheters",
+      "pulmonary artery catheter",
+      "pulmonary artery catheters",
+      "pac",
+      "right heart catheter",
+      "flow-directed catheter",
+      "thermodilution catheter",
+    ],
+    definition:
+      "Balloon-tipped flow-directed catheter advanced through the right heart into a pulmonary artery — measures intracardiac pressures, pulmonary capillary wedge pressure (PCWP), and cardiac output (thermodilution) for hemodynamic monitoring.",
+    factors: [
+      "Insertion: central venous access → RA → RV → PA; balloon inflation wedges branch to estimate left atrial pressure (PCWP)",
+      "Key measurements: RA pressure, RV pressure, PA pressure, PCWP, cardiac output/index, mixed venous O₂ saturation (SvO₂)",
+      "Normal PCWP ~6–12 mmHg — ↑ in left heart failure/volume overload; ↓ in hypovolemia",
+      "Cardiac output via thermodilution — cold saline injectate into RA, temperature change in PA",
+      "Clinical uses: cardiogenic vs septic shock differentiation, pulmonary hypertension workup, heart failure management, perioperative monitoring",
+      "Complications: arrhythmias (especially during RV passage), pulmonary artery rupture (rare, catastrophic), infection, thrombosis, balloon rupture",
+      "Declining routine use — echocardiography and less invasive monitors often substitute; still boards-relevant for PCWP and CO concepts",
+      "PCWP ≈ LAP except mitral stenosis (gradient between LA and LV wedge pressure)",
     ],
   },
 ];

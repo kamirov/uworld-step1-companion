@@ -37,6 +37,34 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
     ],
   },
   {
+    id: "fixed-splitting-of-s2",
+    name: "Fixed Splitting of S2",
+    etymology:
+      "Latin fixus = fastened + Latin split = divided + S2 = second heart sound",
+    aliases: [
+      "fixed splitting of s2",
+      "fixed splitting of s2s",
+      "fixed split s2",
+      "fixed split of s2",
+      "wide fixed split s2",
+      "wide fixed splitting of s2",
+      "fixed splitting",
+      "fixed splittings",
+      "fixed s2 split",
+      "fixed s2 splitting",
+      "paradoxically fixed split s2",
+    ],
+    meaning:
+      "Persistent separation of A2 and P2 throughout respiration — the pulmonic component does not move closer to the aortic component during expiration, classically from increased right heart stroke volume delaying pulmonic valve closure.",
+    conditions: [
+      "Atrial septal defect (ostium secundum most common) — boards classic",
+      "Right ventricular volume overload from left-to-right atrial shunt",
+      "May coexist with soft systolic flow murmur at upper LSB (↑ pulmonary valve flow)",
+      "Less commonly: severe MR with ↑ LA pressure transmitted to RV",
+      "Distinguish from wide but physiologic split that narrows on expiration",
+    ],
+  },
+  {
     id: "s3",
     name: "S3 (Third Heart Sound)",
     etymology: "S = sound + third = rapid ventricular filling sound",
