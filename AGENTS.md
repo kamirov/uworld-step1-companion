@@ -24,6 +24,14 @@ Where relevant, include the plural of a term and common acronyms in the alias. F
 
 When new entries are specified for data, if it makes sense to establish a new data type for them (a new file), then please do so
 
+## Additional data
+
+- For any interleukins, include a mnemonic to differentiate from others
+- For any viruses, include a mnemonic to remember if it is:
+  - DNA or RNA
+  - Single or double
+  - Enveloped or not enveloped
+
 ## Pediatric
 
 Where relevant, include a note on pediatrics, e.g. how something changes if the patient is pediatric. If there is nothing Step 1 related to say about pediatrics for this data, then don't include a pediatric section
