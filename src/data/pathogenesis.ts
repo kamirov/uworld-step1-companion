@@ -2764,6 +2764,43 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Congenital stenoses include aortic/pulmonary valve stenosis, pyloric stenosis (2–8 weeks), and subglottic stenosis; hypertrophic pyloric stenosis shows palpable olive and hypochloremic metabolic alkalosis.",
   },
   {
+    id: "analgesia",
+    name: "Analgesia",
+    etymology: "Greek an- = without + algos = pain + -ia = state/condition",
+    aliases: [
+      "analgesia",
+      "pain relief",
+      "absence of pain",
+      "pain-free",
+      "pain free",
+      "analgesic effect",
+    ],
+    definition:
+      "Absence or reduction of pain perception without necessarily causing unconsciousness — can be pharmacologic (opioids, NSAIDs, regional block) or physiologic (descending inhibition, gate control).",
+    examples: [
+      "Opioid μ-receptor agonism — ↓ nociceptive transmission in dorsal horn and brainstem",
+      "NSAIDs — ↓ peripheral prostaglandins → ↓ nociceptor sensitization",
+      "Epidural/spinal anesthesia — blocks afferent pain fibers while patient may remain awake",
+      "Local anesthetics — block Na⁺ channels in peripheral nerves",
+      "Acetaminophen — central COX inhibition for mild analgesia and antipyresis",
+    ],
+    boardsPearls: [
+      "Analgesia ≠ anesthesia — analgesia is pain relief; general anesthesia adds unconsciousness, amnesia, and immobility",
+      "Opioids provide analgesia but can cause respiratory depression — naloxone reversal",
+      "Neuromuscular blockers paralyze muscles without providing analgesia — must pair with anesthetic/analgesic",
+      "NSAIDs treat inflammatory pain; opioids for moderate-to-severe nociceptive pain",
+      "Spinothalamic tract carries pain/temperature — lesion causes contralateral loss of pain sensation",
+    ],
+    distinguishFrom: [
+      "Anesthetized state — includes unconsciousness and often amnesia, not pain relief alone",
+      "Analgesics (drug class) — agents that produce analgesia",
+      "Anesthesia — broader pharmacologic state; regional anesthesia can provide analgesia without general unconsciousness",
+      "Hypoalgesia — partial reduction vs complete absence of pain perception",
+    ],
+    pediatrics:
+      "Neonates have functional nociceptive pathways — procedural analgesia (sucrose, topical anesthetic, appropriate opioids/sedation) is required; myth that infants do not feel pain is false.",
+  },
+  {
     id: "anesthetized-state",
     name: "Anesthetized State",
     etymology: "Greek anaisthēsia = lack of sensation + -ize = make/become",
@@ -4488,6 +4525,46 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Primary Raynaud in adolescents is common and benign; secondary causes (connective tissue disease) need workup if asymmetric, ulceration, or systemic features. Cocaine exposure can cause coronary vasospasm in teens.",
+  },
+  {
+    id: "bronchodilation",
+    name: "Bronchodilation",
+    etymology: "Greek bronchos = windpipe + Latin dilatare = to spread apart/widen",
+    aliases: [
+      "bronchodilation",
+      "bronchial dilation",
+      "bronchial dilatation",
+      "airway dilation",
+      "airway dilatation",
+      "bronchodilator effect",
+    ],
+    definition:
+      "Widening of bronchi from relaxation of airway smooth muscle (and sometimes reduced mucosal edema) — increasing expiratory airflow and decreasing airway resistance.",
+    examples: [
+      "β₂-adrenergic agonists (albuterol, salmeterol) — Gs ↑ cAMP → bronchial smooth muscle relaxation",
+      "Epinephrine low dose — β₂-mediated bronchodilation in anaphylaxis and asthma",
+      "Ipratropium — blocks M3 muscarinic bronchoconstriction, permitting relative bronchodilation",
+      "Methylxanthines (theophylline) — phosphodiesterase inhibition → ↑ cAMP in smooth muscle",
+      "Ketamine — indirect bronchodilation via catecholamine release; useful in reactive airway disease",
+      "Sympathetic β₂ outflow — fight-or-flight bronchodilation alongside vasoconstriction in skeletal muscle beds",
+    ],
+    boardsPearls: [
+      "Bronchodilation = ↑ airway caliber from smooth muscle relaxation",
+      "Albuterol (SABA) is first-line for acute bronchoconstriction — reverses obstruction",
+      "Non-selective β-blockers (propranolol) block β₂ bronchodilation — contraindicated in asthma",
+      "Epinephrine: low dose β₂ bronchodilation; high dose α₁ vasoconstriction predominates",
+      "Asthma PFT reversibility: FEV₁ ↑ ≥12% and ≥200 mL after bronchodilator",
+      "vs bronchoconstriction — opposite smooth muscle effect on airway caliber",
+    ],
+    distinguishFrom: [
+      "Bronchoconstriction — smooth muscle contraction narrowing airways",
+      "Bronchospasm — acute clinical episode of bronchoconstriction, not relaxation",
+      "Bronchiectasis — permanent structural airway dilation from chronic damage, not physiologic smooth muscle relaxation",
+      "Vasodilation — vascular smooth muscle relaxation, not bronchial",
+      "Upper airway patency — glottic or extrathoracic opening, not small-airway smooth muscle effect",
+    ],
+    pediatrics:
+      "Pediatric asthma responds to weight-based albuterol; spacer devices improve delivery in young children. Viral bronchiolitis in infants is not primarily β₂-responsive — bronchodilators often ineffective.",
   },
   {
     id: "bronchoconstriction",

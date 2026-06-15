@@ -829,3 +829,8 @@ klinefelter-syndrome.jpg
   Source: Wikimedia Commons — 47,XXY.jpg
   Page: https://commons.wikimedia.org/wiki/File:47,XXY.jpg
   Description: 47,XXY karyotype with extra X chromosome in Klinefelter syndrome
+
+subclavian-steal.jpg
+  Source: Wikimedia Commons — The promixal part of left subclavian is blocked on left side so no flow in vertebral and to left arm-blood from right vertebral enters left vertebral and flows back to supply left arm 2013-07-05 17-11.jpg
+  Page: https://commons.wikimedia.org/wiki/File:The_promixal_part_of_left_subclavian_is_blocked_on_left_side_so_no_flow_in_vertebral_and_to_left_arm-blood_from_right_vertebral_enters_left_vertebral_and_flows_back_to_supply_left_arm_2013-07-05_17-11.jpg
+  Description: Hemodynamic diagram of left subclavian steal with retrograde vertebral flow

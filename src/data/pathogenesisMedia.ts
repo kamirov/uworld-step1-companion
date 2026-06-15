@@ -29,6 +29,8 @@ import hyperandrogenism from "../media/images/pathogenesis/hyperandrogenism.png?
 import anovulation from "../media/images/pathogenesis/anovulation.svg?url";
 import ovulation from "../media/images/pathogenesis/ovulation.png?url";
 import ovulatoryDysfunction from "../media/images/pathogenesis/ovulatory-dysfunction.png?url";
+import analgesia from "../media/images/pathogenesis/analgesia.png?url";
+import bronchodilation from "../media/images/pathogenesis/bronchodilation.png?url";
 
 export type PathogenesisImageId = Extract<
   PathogenesisEntry["id"],
@@ -60,6 +62,8 @@ export type PathogenesisImageId = Extract<
   | "anovulation"
   | "ovulation"
   | "ovulatory-dysfunction"
+  | "analgesia"
+  | "bronchodilation"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -98,6 +102,8 @@ export const PATHOGENESIS_IMAGES: Partial<
   anovulation: extensionAssetUrl(anovulation),
   ovulation: extensionAssetUrl(ovulation),
   "ovulatory-dysfunction": extensionAssetUrl(ovulatoryDysfunction),
+  analgesia: extensionAssetUrl(analgesia),
+  bronchodilation: extensionAssetUrl(bronchodilation),
 };
 
 export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
@@ -218,6 +224,14 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Ultrasound scans and 3D rendering of polycystic ovaries.png)",
     url: "https://commons.wikimedia.org/wiki/File:Ultrasound_scans_and_3D_rendering_of_polycystic_ovaries.png",
   },
+  analgesia: {
+    label: "Wikimedia Commons (Touch Pain Pathways.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Touch_Pain_Pathways.png",
+  },
+  bronchodilation: {
+    label: "Wikimedia Commons (Beta-2 adrenergic receptor.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Beta-2_adrenergic_receptor.png",
+  },
 };
 
 export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
@@ -279,6 +293,10 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Midcycle LH surge — triggers Graafian follicle rupture and oocyte release approximately 36 hours later",
   "ovulatory-dysfunction":
     "Transvaginal ultrasound of polycystic ovaries with multiple subcapsular follicles — classic morphology in PCOS-related ovulatory dysfunction",
+  analgesia:
+    "Spinothalamic and trigeminal pain pathways — nociceptive afferents ascend to thalamus and cortex; analgesia interrupts transmission at peripheral, spinal, or central sites",
+  bronchodilation:
+    "β₂-adrenergic receptor — Gs-coupled cAMP signaling relaxes bronchial smooth muscle; target of albuterol and epinephrine in reactive airway disease",
 };
 
 export function getPathogenesisImageForId(id: string): string | undefined {

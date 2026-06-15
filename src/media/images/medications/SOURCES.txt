@@ -149,6 +149,16 @@ isoflurane.png
   Source: Wikimedia Commons — Isoflurane 3d.png
   Page: https://commons.wikimedia.org/wiki/File:Isoflurane_3d.png
 
+halothane.svg
+  Source: Wikimedia Commons — Halothane Structure.svg
+  Description: 2D chemical structure of halothane volatile anesthetic
+  Page: https://commons.wikimedia.org/wiki/File:Halothane_Structure.svg
+
+sevoflurane.png
+  Source: Wikimedia Commons — Sevoflurane-3D-balls.png
+  Description: 3D ball-and-stick model of sevoflurane molecule
+  Page: https://commons.wikimedia.org/wiki/File:Sevoflurane-3D-balls.png
+
 sumatriptan.svg
   Source: Wikimedia Commons — Sumatriptan.svg
   Page: https://commons.wikimedia.org/wiki/File:Sumatriptan.svg
@@ -282,4 +292,9 @@ glp-1-agonist.jpg
   Page: https://commons.wikimedia.org/wiki/File:Wegovy_-_Semaglutide.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Wegovy_-_Semaglutide.jpg?width=1280
   Resized to 1280 px width for popover display.
+
+barbiturates.svg
+  Source: Wikimedia Commons — Phenobarbital2DACS.svg
+  Description: 2D chemical structure of phenobarbital, prototypical barbiturate
+  Page: https://commons.wikimedia.org/wiki/File:Phenobarbital2DACS.svg
 

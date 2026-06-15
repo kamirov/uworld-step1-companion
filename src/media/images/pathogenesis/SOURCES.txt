@@ -252,3 +252,14 @@ ovulatory-dysfunction.png
   Page: https://commons.wikimedia.org/wiki/File:Ultrasound_scans_and_3D_rendering_of_polycystic_ovaries.png
   Description: Polycystic ovarian morphology on transvaginal ultrasound
   Resized to 330 px width for popover display.
+
+analgesia.png
+  Source: Wikimedia Commons — Touch Pain Pathways.png
+  Author: Btarski
+  Description: Sensory nerve pathways for touch and pain including spinothalamic tract
+  Page: https://commons.wikimedia.org/wiki/File:Touch_Pain_Pathways.png
+
+bronchodilation.png
+  Source: Wikimedia Commons — Beta-2 adrenergic receptor.png
+  Description: β₂-adrenergic receptor Gs signaling pathway in bronchial smooth muscle relaxation
+  Page: https://commons.wikimedia.org/wiki/File:Beta-2_adrenergic_receptor.png

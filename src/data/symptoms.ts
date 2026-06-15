@@ -4754,6 +4754,57 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Pattern hair loss is uncommon before puberty; adolescent females with vertex thinning plus hyperandrogenic features should be evaluated for PCOS.",
   },
   {
+    id: "central-nervous-system-depression",
+    name: "Central Nervous System Depression",
+    etymology:
+      "Latin centralis = central + nervus = nerve + systema = system + Latin deprimere = to press down",
+    aliases: [
+      "central nervous system depression",
+      "cns depression",
+      "cns depressant effect",
+      "depressed level of consciousness",
+      "decreased level of consciousness",
+      "depressed consciousness",
+      "decreased consciousness",
+      "reduced consciousness",
+      "suppressed consciousness",
+      "neurodepression",
+    ],
+    definition:
+      "Reduced arousal and responsiveness from impaired central nervous system function — a spectrum from lethargy and somnolence through stupor to coma depending on severity.",
+    mechanism:
+      "Enhanced inhibitory neurotransmission (GABA-A potentiation by benzodiazepines, barbiturates, alcohol, or neurosteroids), direct μ-opioid receptor activation suppressing brainstem respiratory and arousal centers, or structural/metabolic insult to the reticular activating system → ↓ cortical and brainstem activity → decreased alertness, reflexes, and often respiratory drive.",
+    thinkOf: [
+      "Opioid overdose — classic triad with respiratory depression and miosis",
+      "Benzodiazepine or sedative-hypnotic toxicity",
+      "Ethanol intoxication",
+      "Barbiturate overdose",
+      "Combined CNS depressants (opioid + benzodiazepine + alcohol)",
+      "Brainstem stroke or hemorrhage",
+      "Hypoglycemia, hypercapnia, severe hyponatremia",
+      "Postictal state after generalized seizure",
+    ],
+    pairWith: [
+      "CNS depression + respiratory depression + pinpoint pupils → opioid toxidrome; give naloxone",
+      "CNS depression + ataxia + slurred speech → alcohol intoxication",
+      "CNS depression + hypothermia + hypotension → barbiturate toxicity",
+      "CNS depression + benzodiazepine ingestion → flumazenil if no chronic dependence (caution seizures)",
+      "CNS depression + asterixis + somnolence in COPD → CO₂ narcosis",
+      "Acute CNS depression + normal glucose → toxic or structural cause",
+      "GCS or AVPU scoring quantifies severity of depressed consciousness",
+    ],
+    distinguishFrom: [
+      "Encephalopathy — diffuse brain dysfunction with broader cognitive/behavioral change; CNS depression emphasizes reduced arousal",
+      "Delirium — fluctuating attention, often agitation or hyperactivity, not pure sedation",
+      "Focal neurologic deficit from stroke — localized weakness/sensory loss with relatively preserved arousal unless large lesion",
+      "Psychiatric catatonia — mute/immobile but may retain awareness; not pharmacologic sedation",
+      "Locked-in syndrome — conscious with only vertical eye movements, not global CNS depression",
+      "Coma from structural lesion vs toxic-metabolic — noncontrast CT if cause unclear after glucose correction",
+    ],
+    pediatrics:
+      "Infants and children are more susceptible to opioid and benzodiazepine respiratory depression; accidental ingestion and unsupervised medication access are common pediatric emergencies. Neonatal opioid exposure causes CNS and respiratory depression — naloxone dosing is weight-based.",
+  },
+  {
     id: "central-adiposity",
     name: "Central Adiposity",
     etymology: "Latin centrum = center + adiposus = fatty",
@@ -8416,6 +8467,49 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Familial dysautonomia (Riley-Day syndrome) — Ashkenazi Jewish infants with absent fungiform papillae, alacrima, labile BP, and GI dysmotility; congenital central hypoventilation (Ondine curse) reflects brainstem autonomic failure.",
+  },
+  {
+    id: "amnesia",
+    name: "Amnesia",
+    etymology: "Greek a- = without + mnēmē = memory + -ia = condition",
+    aliases: [
+      "amnesia",
+      "amnesias",
+      "memory loss",
+      "loss of memory",
+      "anterograde amnesia",
+      "retrograde amnesia",
+      "global amnesia",
+    ],
+    definition:
+      "Pathologic loss of memory — inability to retain new information (anterograde), recall past events (retrograde), or both; contrasts with normal forgetfulness by severity and underlying neurologic or psychiatric cause.",
+    mechanism:
+      "Hippocampus and medial temporal lobe consolidate declarative memories; bilateral hippocampal injury → anterograde amnesia; thiamine deficiency damages mammillary bodies/diencephalon → Korsakoff confabulation; benzodiazepines/ethanol block memory encoding via GABAergic interference; transient global amnesia — transient medial temporal hypoperfusion (mechanism debated).",
+    thinkOf: [
+      "Korsakoff syndrome — thiamine deficiency, anterograde amnesia + confabulation",
+      "Hippocampal/medial temporal lobe injury (herpes encephalitis, stroke, trauma)",
+      "Alzheimer disease — progressive anterograde and retrograde memory loss",
+      "Benzodiazepine or alcohol intoxication — anterograde amnesia",
+      "Transient global amnesia — abrupt hours-long amnesia with preserved identity",
+      "Wernicke encephalopathy — acute thiamine deficiency before chronic Korsakoff",
+      "Hypoxic-ischemic brain injury — hippocampus especially vulnerable",
+    ],
+    pairWith: [
+      "Amnesia + confabulation + chronic alcoholism → Korsakoff syndrome",
+      "Amnesia + fever + personality change + temporal lobe involvement → HSV encephalitis",
+      "Sudden hours of amnesia, repetitive questioning, no focal deficit → transient global amnesia",
+      "Anterograde amnesia after benzo procedural sedation → expected pharmacologic effect",
+      "Amnesia + ataxia + confusion after alcoholism → Wernicke — give thiamine before glucose",
+    ],
+    distinguishFrom: [
+      "Normal forgetfulness — mild, does not impair function",
+      "Dementia — global cognitive decline beyond isolated memory (executive function, language, visuospatial)",
+      "Delirium — acute fluctuating attention and awareness with memory impairment",
+      "Psychogenic/dissociative amnesia — lacks consistent anatomic lesion pattern",
+      "Confabulation — fabricated filling of memory gaps; seen with Korsakoff, not all amnesia",
+    ],
+    pediatrics:
+      "Pediatric head trauma can cause post-concussive memory complaints. HSV encephalitis in children causes fever, behavioral change, and temporal lobe seizures with memory deficits — acyclovir urgency.",
   },
   {
     id: "anxiety",

@@ -6,6 +6,9 @@ import dhrFlow from "../media/images/lab-values/dihydrorhodamine-flow-cytometry.
 import fibrinogen from "../media/images/lab-values/fibrinogen.png?url";
 import gramStain from "../media/images/lab-values/gram-stain.jpg?url";
 import indiaInkStain from "../media/images/lab-values/india-ink-stain.jpg?url";
+import lymphocyticPleocytosis from "../media/images/lab-values/lymphocytic-pleocytosis.jpg?url";
+import traumaticLumbarPuncture from "../media/images/lab-values/traumatic-lumbar-puncture.jpg?url";
+import supernatant from "../media/images/lab-values/supernatant.jpg?url";
 import xanthochromia from "../media/images/lab-values/xanthochromia.jpg?url";
 import oligoclonalBands from "../media/images/lab-values/oligoclonal-bands.svg?url";
 import methylmalonicAcid from "../media/images/lab-values/methylmalonic-acid.png?url";
@@ -24,6 +27,9 @@ export type LabValueImageId = Extract<
   | "fibrinogen"
   | "gram-stain"
   | "india-ink-stain"
+  | "lymphocytic-pleocytosis"
+  | "traumatic-lumbar-puncture"
+  | "supernatant"
   | "xanthochromia"
   | "oligoclonal-bands"
   | "methylmalonic-acid"
@@ -47,6 +53,9 @@ export const LAB_VALUE_IMAGES: Partial<Record<LabValueImageId, string>> = {
   fibrinogen: extensionAssetUrl(fibrinogen),
   "gram-stain": extensionAssetUrl(gramStain),
   "india-ink-stain": extensionAssetUrl(indiaInkStain),
+  "lymphocytic-pleocytosis": extensionAssetUrl(lymphocyticPleocytosis),
+  "traumatic-lumbar-puncture": extensionAssetUrl(traumaticLumbarPuncture),
+  supernatant: extensionAssetUrl(supernatant),
   xanthochromia: extensionAssetUrl(xanthochromia),
   "oligoclonal-bands": extensionAssetUrl(oligoclonalBands),
   "methylmalonic-acid": extensionAssetUrl(methylmalonicAcid),
@@ -79,6 +88,21 @@ export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
     label:
       "Wikimedia Commons (Enapsulated Cryptococcus in nigrosin preparation of CSF.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Enapsulated_Cryptococcus_in_nigrosin_preparation_of_CSF.jpg",
+  },
+  "lymphocytic-pleocytosis": {
+    label:
+      "Wikimedia Commons (HSV1 encephalitis CSF specimen.jpg), Jensflorian, CC BY-SA 4.0",
+    url: "https://commons.wikimedia.org/wiki/File:HSV1_encephalitis_CSF_specimen.jpg",
+  },
+  "traumatic-lumbar-puncture": {
+    label:
+      "Wikimedia Commons (Wikipedian getting a lumbar puncture (2006).jpg), Brainhell, CC BY-SA 3.0",
+    url: "https://commons.wikimedia.org/wiki/File:Wikipedian_getting_a_lumbar_puncture_(2006).jpg",
+  },
+  supernatant: {
+    label:
+      "Wikimedia Commons (Xanthochromia.jpg), William Laborde, Brandon Mong, Joel Mosley, CC BY 4.0",
+    url: "https://commons.wikimedia.org/wiki/File:Xanthochromia.jpg",
   },
   xanthochromia: {
     label: "Wikimedia Commons (Xanthochromia.jpg)",
@@ -140,6 +164,12 @@ export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
     "Gram stain: purple Gram-positive cocci vs pink Gram-negative rods — peptidoglycan thickness determines dye retention",
   "india-ink-stain":
     "India ink (nigrosin) negative stain: encapsulated Cryptococcus with clear halo against dark background in CSF",
+  "lymphocytic-pleocytosis":
+    "CSF cytology with lymphocytic pleocytosis and activated lymphocytes — viral meningitis/encephalitis pattern (Pappenheim stain)",
+  "traumatic-lumbar-puncture":
+    "Lumbar puncture with CSF collection — procedural venous plexus injury can contaminate CSF with blood (traumatic tap)",
+  supernatant:
+    "CSF supernatant after centrifugation — yellow discoloration (xanthochromia) indicates hemoglobin breakdown from prior subarachnoid bleeding",
   xanthochromia:
     "Yellow CSF supernatant (xanthochromia) from hemoglobin breakdown — subarachnoid hemorrhage classic association",
   "oligoclonal-bands":

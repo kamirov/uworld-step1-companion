@@ -467,6 +467,12 @@ anosmia.png
   Page: https://commons.wikimedia.org/wiki/File:Gray771.png
   Description: Olfactory nerve (CN I) anatomy
 
+amnesia.jpg
+  Source: Wikimedia Commons — Brain regions in memory formation updated.jpg
+  Author: Bernstein0275
+  Description: Brain regions involved in long-term memory formation including hippocampus
+  Page: https://commons.wikimedia.org/wiki/File:Brain_regions_in_memory_formation_updated.jpg
+
 decorticate-posturing.jpg
   Source: Wikimedia Commons — Decorticate.PNG (pending); interim local copy from Decerebrate.jpg
   Page: https://commons.wikimedia.org/wiki/File:Decorticate.PNG
@@ -493,3 +499,8 @@ virilization.jpg
   Source: Wikimedia Commons — ClitoromegalyCAH.jpg
   Page: https://commons.wikimedia.org/wiki/File:ClitoromegalyCAH.jpg
   Description: Clitoromegaly in congenital adrenal hyperplasia — virilization from androgen excess
+
+central-nervous-system-depression.png
+  Source: Wikimedia Commons — Escala de Coma de Glasgow - ECG.png
+  Page: https://commons.wikimedia.org/wiki/File:Escala_de_Coma_de_Glasgow_-_ECG.png
+  Description: Glasgow Coma Scale scoring eye, verbal, and motor responses

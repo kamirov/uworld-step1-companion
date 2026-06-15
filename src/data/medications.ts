@@ -2185,6 +2185,45 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "barbiturates",
+    name: "Barbiturates",
+    etymology:
+      "barbitur- from barbituric acid (uric acid derivative) + -ate = salt/ester suffix",
+    aliases: [
+      "barbiturate",
+      "barbiturates",
+      "barbituate",
+      "barbituates",
+      "phenobarbital",
+      "thiopental",
+      "pentobarbital",
+    ],
+    drugClass: "GABA-A receptor positive allosteric modulators (sedative-hypnotic class)",
+    mechanism:
+      "Bind barbiturate site on GABA-A receptor → ↑ duration of Cl⁻ channel opening (and at high doses directly gate the channel even without GABA) → enhanced inhibitory neurotransmission and dose-dependent CNS depression from sedation to anesthesia.",
+    indications: [
+      "Status epilepticus (phenobarbital)",
+      "Induction of anesthesia (thiopental — limited modern use)",
+      "Sedation/hypnosis (historical; largely replaced by benzodiazepines)",
+    ],
+    adverseEffects: [
+      "Respiratory depression — narrow therapeutic index; overdose can be fatal",
+      "Sedation, ataxia, confusion",
+      "Physical dependence and dangerous withdrawal (seizures, delirium)",
+      "Enzyme induction (CYP450) — drug interactions",
+      "Porcelain gallbladder with chronic phenobarbital use",
+    ],
+    boardsPearls: [
+      "Barbiturates ↑ duration of GABA-A Cl⁻ channel opening; benzos ↑ frequency",
+      "High doses directly activate GABA-A channel without GABA — explains narrow safety margin",
+      "Flumazenil does NOT reverse barbiturate overdose",
+      "Phenobarbital induces CYP450 — lowers levels of oral contraceptives, warfarin",
+      "vs benzodiazepines — barbiturates narrower safety margin, more respiratory depression in overdose",
+      "Thiopental — ultra-short-acting IV anesthetic; redistributes quickly from brain",
+      "Barbiturate + benzo/alcohol → synergistic respiratory depression",
+    ],
+  },
+  {
     id: "benzodiazepines",
     name: "Benzodiazepines",
     etymology: "benz- = fused benzene ring + -azepine = seven-member diazepine ring + -am = amide/lactam suffix",
@@ -5536,6 +5575,38 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "halothane",
+    name: "Halothane",
+    etymology:
+      "halo- = halogen substituent + -thane = saturated hydrocarbon anesthetic suffix",
+    aliases: [
+      "halothane",
+      "halothanes",
+      "fluothane",
+    ],
+    drugClass: "Inhalational volatile anesthetic (historical)",
+    mechanism:
+      "Halogenated alkane volatile anesthetic — enhances GABA_A receptor activity, inhibits neuronal excitability, ↓ CMRO₂; causes dose-dependent myocardial depression, vasodilation, and sensitization of the myocardium to catecholamine-induced arrhythmias.",
+    indications: [
+      "Historical maintenance of general anesthesia (largely replaced by sevoflurane/desflurane)",
+    ],
+    adverseEffects: [
+      "Halothane hepatitis — immune-mediated fulminant hepatic necrosis (rare but serious)",
+      "Cardiac arrhythmias — sensitizes myocardium to epinephrine",
+      "Hypotension — myocardial depression and vasodilation",
+      "Malignant hyperthermia trigger (with succinylcholine in RYR1 susceptibility)",
+      "Respiratory depression",
+    ],
+    boardsPearls: [
+      "Halothane hepatitis — fever, jaundice, ↑ transaminases days after exposure; trifluoroacetyl-protein adducts trigger immune response",
+      "Halothane sensitizes heart to catecholamines — avoid epinephrine with halothane (arrhythmia risk)",
+      "High blood/gas partition coefficient → slower induction/emergence than sevoflurane",
+      "Largely replaced by sevoflurane/desflurane due to hepatotoxicity and cardiac effects",
+      "Triggers malignant hyperthermia — dantrolene treatment",
+      "vs sevoflurane — sevoflurane less hepatotoxic, less pungent, preferred modern agent",
+    ],
+  },
+  {
     id: "isoflurane",
     name: "Isoflurane",
     etymology: "iso- = structural isomer + fluorine substituent + -ane = hydrocarbon anesthetic suffix",
@@ -5564,6 +5635,40 @@ export const MEDICATIONS: MedicationEntry[] = [
       "vs sevoflurane — sevoflurane less pungent, preferred for mask induction",
       "vs nitrous oxide — isoflurane is potent volatile liquid vaporized in carrier gas",
       "Peds: same MAC principles; faster induction/desaturation in infants",
+    ],
+  },
+  {
+    id: "sevoflurane",
+    name: "Sevoflurane",
+    etymology:
+      "sev- = seven (fluorine atoms) + fluorine substituent + -ane = hydrocarbon anesthetic suffix",
+    aliases: [
+      "sevoflurane",
+      "sevofluranes",
+      "sevo",
+      "ultane",
+    ],
+    drugClass: "Inhalational volatile anesthetic",
+    mechanism:
+      "Fluorinated ether volatile anesthetic — enhances GABA_A receptor activity, inhibits neuronal excitability, ↓ CMRO₂; low blood/gas solubility → rapid induction and emergence; causes dose-dependent vasodilation → ↓ SVR and ↓ MAP.",
+    indications: [
+      "Induction and maintenance of general anesthesia",
+      "Mask induction (especially pediatrics) — low airway irritancy and nonpungent odor",
+    ],
+    adverseEffects: [
+      "Hypotension — myocardial depression and vasodilation",
+      "Respiratory depression",
+      "Malignant hyperthermia trigger (with succinylcholine in susceptible patients)",
+      "Compound A formation with soda lime (low-flow anesthesia) — renal concern at extreme exposure",
+    ],
+    boardsPearls: [
+      "Sevoflurane = modern volatile anesthetic; preferred for mask induction (nonpungent)",
+      "MAC ~2% — less potent than isoflurane but faster onset/offset (low blood/gas solubility)",
+      "vs halothane — sevoflurane lacks halothane hepatitis risk",
+      "vs isoflurane — sevoflurane less pungent, better tolerated for inhalational induction",
+      "Triggers malignant hyperthermia — dantrolene",
+      "Ketamine alternative when bronchodilation desired; sevoflurane also relatively bronchodilating",
+      "Peds: smooth mask induction; infants desaturate quickly — preoxygenate",
     ],
   },
   {

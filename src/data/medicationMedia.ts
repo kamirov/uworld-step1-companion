@@ -17,7 +17,9 @@ import fluoxetine from "../media/images/medications/fluoxetine.svg?url";
 import gabapentin from "../media/images/medications/gabapentin.png?url";
 import gabapentinoids from "../media/images/medications/gabapentinoids.png?url";
 import generalAnesthetic from "../media/images/medications/general-anesthetic.png?url";
+import halothane from "../media/images/medications/halothane.svg?url";
 import isoflurane from "../media/images/medications/isoflurane.png?url";
+import sevoflurane from "../media/images/medications/sevoflurane.png?url";
 import daptomycin from "../media/images/medications/daptomycin.svg?url";
 import dexamethasone from "../media/images/medications/dexamethasone.svg?url";
 import diazepam from "../media/images/medications/diazepam.svg?url";
@@ -56,6 +58,7 @@ import tramadol from "../media/images/medications/tramadol.png?url";
 import vasopressors from "../media/images/medications/vasopressors.png?url";
 import antiTnfTherapy from "../media/images/medications/anti-tnf-therapy.png?url";
 import benzodiazepines from "../media/images/medications/benzodiazepines.svg?url";
+import barbiturates from "../media/images/medications/barbiturates.svg?url";
 import flumazenil from "../media/images/medications/flumazenil.svg?url";
 import retinoicAcid from "../media/images/medications/retinoic-acid.svg?url";
 import venlafaxine from "../media/images/medications/venlafaxine.svg?url";
@@ -79,7 +82,9 @@ export type MedicationImageId = Extract<
   | "gabapentin"
   | "gabapentinoids"
   | "general-anesthetic"
+  | "halothane"
   | "isoflurane"
+  | "sevoflurane"
   | "daptomycin"
   | "dexamethasone"
   | "diazepam"
@@ -119,6 +124,7 @@ export type MedicationImageId = Extract<
   | "retinoic-acid"
   | "venlafaxine"
   | "benzodiazepines"
+  | "barbiturates"
   | "flumazenil"
 >;
 
@@ -145,7 +151,9 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   gabapentin: extensionAssetUrl(gabapentin),
   gabapentinoids: extensionAssetUrl(gabapentinoids),
   "general-anesthetic": extensionAssetUrl(generalAnesthetic),
+  halothane: extensionAssetUrl(halothane),
   isoflurane: extensionAssetUrl(isoflurane),
+  sevoflurane: extensionAssetUrl(sevoflurane),
   daptomycin: extensionAssetUrl(daptomycin),
   dexamethasone: extensionAssetUrl(dexamethasone),
   diazepam: extensionAssetUrl(diazepam),
@@ -185,6 +193,7 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   "retinoic-acid": extensionAssetUrl(retinoicAcid),
   venlafaxine: extensionAssetUrl(venlafaxine),
   benzodiazepines: extensionAssetUrl(benzodiazepines),
+  barbiturates: extensionAssetUrl(barbiturates),
   flumazenil: extensionAssetUrl(flumazenil),
 };
 
@@ -259,9 +268,17 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Modern lipid hypothesis of mechanism of general anesthesia.png)",
     url: "https://commons.wikimedia.org/wiki/File:Modern_lipid_hypothesis_of_mechanism_of_general_anesthesia.png",
   },
+  halothane: {
+    label: "Wikimedia Commons (Halothane Structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Halothane_Structure.svg",
+  },
   isoflurane: {
     label: "Wikimedia Commons (Isoflurane 3d.png)",
     url: "https://commons.wikimedia.org/wiki/File:Isoflurane_3d.png",
+  },
+  sevoflurane: {
+    label: "Wikimedia Commons (Sevoflurane-3D-balls.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Sevoflurane-3D-balls.png",
   },
   dexamethasone: {
     label: "Wikimedia Commons (Dexamethasone structure.svg)",
@@ -419,6 +436,10 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Diazepam structure.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Diazepam_structure.svg",
   },
+  barbiturates: {
+    label: "Wikimedia Commons (Phenobarbital2DACS.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Phenobarbital2DACS.svg",
+  },
   flumazenil: {
     label: "Wikimedia Commons (Flumazenil.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Flumazenil.svg",
@@ -462,8 +483,12 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Fluoxetine — SSRI with long half-life and active metabolite norfluoxetine",
   "general-anesthetic":
     "General anesthetics reduce CMRO₂ and produce reversible unconsciousness — volatile agents dilate cerebral vessels",
+  halothane:
+    "Halothane — brominated/chlorinated/fluorinated alkane volatile anesthetic associated with immune-mediated hepatitis",
   isoflurane:
     "Isoflurane — halogenated ether volatile anesthetic; MAC ~1.15%; malignant hyperthermia trigger",
+  sevoflurane:
+    "Sevoflurane — fluorinated ether volatile anesthetic with low blood/gas solubility; preferred for mask induction",
   dexamethasone:
     "Potent glucocorticoid — antenatal lung maturity, croup, cerebral edema, meningitis adjunct",
   daptomycin:
@@ -542,6 +567,8 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "All-trans retinoic acid (ATRA) — vitamin A derivative that induces differentiation in acute promyelocytic leukemia",
   benzodiazepines:
     "Benzodiazepines bind GABA-A receptors — enhance inhibitory neurotransmission for anxiety, seizures, and alcohol withdrawal",
+  barbiturates:
+    "Phenobarbital — prototypical barbiturate that prolongs GABA-A Cl⁻ channel opening and induces hepatic CYP450 enzymes",
   flumazenil:
     "Flumazenil — competitive benzodiazepine receptor antagonist reversing benzo sedation and respiratory depression",
 };

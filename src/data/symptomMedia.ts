@@ -9,6 +9,7 @@ import allodynia from "../media/images/symptoms/allodynia.png?url";
 import ankleReflex from "../media/images/symptoms/ankle-reflex.jpg?url";
 import androgenicAlopecia from "../media/images/symptoms/androgenic-alopecia.png?url";
 import anxiety from "../media/images/symptoms/anxiety.png?url";
+import amnesia from "../media/images/symptoms/amnesia.jpg?url";
 import anosmia from "../media/images/symptoms/anosmia.png?url";
 import arthralgia from "../media/images/symptoms/arthralgia.jpg?url";
 import arthritis from "../media/images/symptoms/arthritis.jpg?url";
@@ -28,6 +29,7 @@ import clonicPhase from "../media/images/symptoms/clonic-phase.jpg?url";
 import clubbing from "../media/images/symptoms/clubbing.jpg?url";
 import coldIntolerance from "../media/images/symptoms/cold-intolerance.jpg?url";
 import centralAdiposity from "../media/images/symptoms/central-adiposity.svg?url";
+import centralNervousSystemDepression from "../media/images/symptoms/central-nervous-system-depression.png?url";
 import confluentRash from "../media/images/symptoms/confluent-rash.jpg?url";
 import cottonWoolSpots from "../media/images/symptoms/cotton-wool-spots.png?url";
 import cough from "../media/images/symptoms/cough.jpg?url";
@@ -159,6 +161,7 @@ export type SymptomImageId = Extract<
   | "allodynia"
   | "ankle-reflex"
   | "androgenic-alopecia"
+  | "amnesia"
   | "anxiety"
   | "anosmia"
   | "arthralgia"
@@ -179,6 +182,7 @@ export type SymptomImageId = Extract<
   | "clubbing"
   | "cold-intolerance"
   | "central-adiposity"
+  | "central-nervous-system-depression"
   | "confluent-rash"
   | "cotton-wool-spots"
   | "cough"
@@ -316,6 +320,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "allodynia": extensionAssetUrl(allodynia),
   "ankle-reflex": extensionAssetUrl(ankleReflex),
   "androgenic-alopecia": extensionAssetUrl(androgenicAlopecia),
+  "amnesia": extensionAssetUrl(amnesia),
   "anxiety": extensionAssetUrl(anxiety),
   "anosmia": extensionAssetUrl(anosmia),
   "arthralgia": extensionAssetUrl(arthralgia),
@@ -336,6 +341,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "clubbing": extensionAssetUrl(clubbing),
   "cold-intolerance": extensionAssetUrl(coldIntolerance),
   "central-adiposity": extensionAssetUrl(centralAdiposity),
+  "central-nervous-system-depression": extensionAssetUrl(centralNervousSystemDepression),
   "confluent-rash": extensionAssetUrl(confluentRash),
   "cotton-wool-spots": extensionAssetUrl(cottonWoolSpots),
   "cough": extensionAssetUrl(cough),
@@ -470,6 +476,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "allodynia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:allodynia.png" },
   "ankle-reflex": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ankle-reflex.jpg" },
   "androgenic-alopecia": { label: "Wikimedia Commons (Ludwid scale for female pattern baldness.png)", url: "https://commons.wikimedia.org/wiki/File:Ludwid_scale_for_female_pattern_baldness.png" },
+  "amnesia": {
+    label: "Wikimedia Commons (Brain regions in memory formation updated.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Brain_regions_in_memory_formation_updated.jpg",
+  },
   "anxiety": { label: "Wikimedia Commons (GAD At-A-Glance.png)", url: "https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png" },
   "anosmia": {
     label: "Wikimedia Commons (Gray771.png)",
@@ -499,6 +509,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "clubbing": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clubbing.jpg" },
   "cold-intolerance": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cold-intolerance.jpg" },
   "central-adiposity": { label: "Wikimedia Commons (Waist to hip ratio-en.svg)", url: "https://commons.wikimedia.org/wiki/File:Waist_to_hip_ratio-en.svg" },
+  "central-nervous-system-depression": {
+    label: "Wikimedia Commons (Escala de Coma de Glasgow - ECG.png), CC BY-SA 4.0",
+    url: "https://commons.wikimedia.org/wiki/File:Escala_de_Coma_de_Glasgow_-_ECG.png",
+  },
   "confluent-rash": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:confluent-rash.jpg" },
   "cotton-wool-spots": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cotton-wool-spots.png" },
   "cough": { label: "Wikimedia Commons (Red Star Cough Cure (back) - 8558298660.jpg)", url: "https://commons.wikimedia.org/wiki/File:Red_Star_Cough_Cure_(back)_-_8558298660.jpg" },
@@ -649,6 +663,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "allodynia": "Pain from normally nonpainful light touch — classic in postherpetic neuralgia",
   "ankle-reflex": "Clinical or pathologic image illustrating ankle reflex",
   "androgenic-alopecia": "Ludwig classification of female pattern hair loss — progressive crown thinning grades I–III",
+  "amnesia": "Hippocampus, amygdala, and prefrontal cortex — medial temporal lobe structures essential for declarative memory consolidation",
   "anxiety": "Generalized anxiety — persistent excessive worry with somatic symptoms",
   "anosmia": "Olfactory nerve (CN I) — fila pass through cribriform plate to olfactory bulb",
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
@@ -671,6 +686,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "clubbing": "Finger clubbing — increased convexity of nail bed with loss of Lovibond angle",
   "cold-intolerance": "Clinical or pathologic image illustrating cold intolerance",
   "central-adiposity": "Waist-to-hip ratio silhouettes — apple (central) vs pear (gynoid) body fat distribution",
+  "central-nervous-system-depression":
+    "Glasgow Coma Scale — eye, verbal, and motor scoring to quantify depressed level of consciousness",
   "confluent-rash": "Clinical or pathologic image illustrating confluent rash",
   "cotton-wool-spots": "Clinical or pathologic image illustrating cotton wool spots",
   "cough": "Clinical or pathologic image illustrating cough",

@@ -28894,6 +28894,81 @@ export const CONDITIONS: ConditionEntry[] = [
       "Carotid stenosis from atherosclerosis is rare in children; pediatric carotid disease more often reflects Moyamoya, vasculitis, or dissection — workup and management differ from adult atherosclerotic disease.",
   },
   {
+    id: "subclavian-steal",
+    name: "Subclavian Steal",
+    etymology:
+      "Latin sub = under + clavis = key (clavicle) + English steal = divert flow away from its usual destination",
+    aliases: [
+      "subclavian steal",
+      "subclavian steal syndrome",
+      "subclavian steal phenomenon",
+      "subclavian artery steal",
+      "subclavian artery steal syndrome",
+      "sss",
+      "vertebral steal",
+      "vertebral artery steal",
+    ],
+    definition:
+      "Hemodynamic syndrome in which proximal subclavian artery stenosis or occlusion causes retrograde flow in the ipsilateral vertebral artery, diverting blood from the vertebrobasilar circulation to supply the distal subclavian territory (arm).",
+    pathophysiology:
+      "Stenosis/occlusion of the proximal subclavian artery (classically left, atherosclerotic) → pressure gradient between systemic circulation and distal subclavian bed → during increased arm demand (exercise) or low systemic pressure, blood flows retrograde down the ipsilateral vertebral artery to perfuse the arm → reduced posterior circulation flow → vertebrobasilar hypoperfusion symptoms. Coronary-subclavian steal: proximal subclavian stenosis after LIMA graft diverts flow from the graft back into the subclavian.",
+    classicPresentation: [
+      "Often asymptomatic until arm exercise or hypotension",
+      "Arm claudication, fatigue, or coolness on affected side",
+      "Vertebrobasilar symptoms: dizziness, vertigo, syncope, ataxia, diplopia, visual loss",
+      "Symptoms provoked or worsened by arm exercise",
+      "Blood pressure ≥15 mmHg lower in affected arm",
+      "Diminished or absent radial pulse on affected side",
+    ],
+    keyFindings: [
+      "Inter-arm systolic blood pressure difference ≥15 mmHg",
+      "Weak or absent pulse in affected upper extremity",
+      "Duplex ultrasound — retrograde flow in ipsilateral vertebral artery",
+      "Angiography — proximal subclavian stenosis with retrograde vertebral filling",
+      "Bruit over subclavian artery (variable)",
+    ],
+    keyLabs: [
+      "Carotid/subclavian duplex ultrasound",
+      "CT angiography or MR angiography of arch vessels",
+      "Conventional angiography if intervention planned",
+    ],
+    associations: [
+      "Atherosclerosis — most common cause in older adults",
+      "Takayasu arteritis — young women, large-vessel vasculitis",
+      "Prior CABG with left internal mammary artery graft — coronary-subclavian steal",
+      "Upper extremity hemodialysis access steal (distinct but related hemodynamic concept)",
+    ],
+    complications: [
+      "Recurrent vertebrobasilar TIAs or syncope",
+      "Posterior circulation ischemic stroke (uncommon but reported)",
+      "Arm ischemia with severe steal",
+      "Myocardial ischemia from coronary-subclavian steal after LIMA graft",
+    ],
+    distinguishFrom: [
+      "Carotid stenosis — anterior circulation TIA/stroke, not vertebrobasilar steal",
+      "Vertebrobasilar TIA from intrinsic vertebral disease — no arm BP asymmetry or retrograde vertebral flow",
+      "Orthostatic hypotension — positional, not arm-exercise related",
+      "Dialysis access steal — hand ischemia from fistula shunting, different anatomy",
+      "Peripheral artery disease of arm alone — claudication without vertebral retrograde flow",
+    ],
+    treatment: [
+      "Revascularization — percutaneous subclavian stenting or surgical bypass for symptomatic steal",
+      "Treat underlying atherosclerosis (statin, antiplatelet, risk factor control)",
+      "Revascularize subclavian artery before or when LIMA graft has coronary-subclavian steal",
+      "Asymptomatic incidental steal often observed without intervention",
+    ],
+    boardsPearls: [
+      "BP ≥15 mmHg higher in the unaffected arm — classic screening clue",
+      "Retrograde vertebral artery flow on duplex confirms hemodynamic steal",
+      "Arm exercise provokes vertebrobasilar symptoms (dizziness, syncope)",
+      "Left subclavian most commonly affected",
+      "LIMA graft + proximal left subclavian stenosis → coronary-subclavian steal",
+      "vs carotid disease — posterior circulation symptoms with arm findings",
+    ],
+    pediatrics:
+      "Subclavian steal from atherosclerosis is rare in children; Takayasu arteritis and other large-vessel vasculitides are more likely causes of arch vessel stenosis with steal physiology in adolescents.",
+  },
+  {
     id: "diabetic-neuropathy",
     name: "Diabetic Neuropathy",
     etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek neuron = nerve + pathos = suffering",

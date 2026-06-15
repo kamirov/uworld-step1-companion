@@ -266,6 +266,7 @@ import sporotrichosis from "../media/images/conditions/sporotrichosis.jpg?url";
 import stableAngina from "../media/images/conditions/stable-angina.jpg?url";
 import statusEpilepticus from "../media/images/conditions/status-epilepticus.jpg?url";
 import subarachnoidHemorrhage from "../media/images/conditions/subarachnoid-hemorrhage.jpg?url";
+import subclavianSteal from "../media/images/conditions/subclavian-steal.jpg?url";
 import systemicLupusErythematosus from "../media/images/conditions/systemic-lupus-erythematosus.jpg?url";
 import systemicSclerosis from "../media/images/conditions/systemic-sclerosis.jpg?url";
 import taySachsDisease from "../media/images/conditions/tay-sachs-disease.jpg?url";
@@ -566,6 +567,7 @@ export type ConditionImageId = Extract<
   | "stable-angina"
   | "status-epilepticus"
   | "subarachnoid-hemorrhage"
+  | "subclavian-steal"
   | "systemic-lupus-erythematosus"
   | "systemic-sclerosis"
   | "tension-pneumothorax"
@@ -871,6 +873,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "stable-angina": extensionAssetUrl(stableAngina),
   "status-epilepticus": extensionAssetUrl(statusEpilepticus),
   "subarachnoid-hemorrhage": extensionAssetUrl(subarachnoidHemorrhage),
+  "subclavian-steal": extensionAssetUrl(subclavianSteal),
   "systemic-lupus-erythematosus": extensionAssetUrl(systemicLupusErythematosus),
   "systemic-sclerosis": extensionAssetUrl(systemicSclerosis),
   "tension-pneumothorax": extensionAssetUrl(tensionPneumothorax),
@@ -1221,6 +1224,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "stable-angina": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:stable-angina.jpg" },
   "status-epilepticus": { label: "Wikimedia Commons (MRIinFIRES.jpg)", url: "https://commons.wikimedia.org/wiki/File:MRIinFIRES.jpg" },
   "subarachnoid-hemorrhage": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:subarachnoid-hemorrhage.jpg" },
+  "subclavian-steal": {
+    label: "Wikimedia Commons (The promixal part of left subclavian is blocked...jpg), Rajtheja, CC BY 3.0",
+    url: "https://commons.wikimedia.org/wiki/File:The_promixal_part_of_left_subclavian_is_blocked_on_left_side_so_no_flow_in_vertebral_and_to_left_arm-blood_from_right_vertebral_enters_left_vertebral_and_flows_back_to_supply_left_arm_2013-07-05_17-11.jpg",
+  },
   "systemic-lupus-erythematosus": { label: "Wikimedia Commons (What Black Women Should Know About Lupus (IA whatblackwomensh00usde).pdf)", url: "https://commons.wikimedia.org/wiki/File:What_Black_Women_Should_Know_About_Lupus_(IA_whatblackwomensh00usde).pdf" },
   "systemic-sclerosis": { label: "Wikimedia Commons (Crescentic glomerulonephritis Periodic acid silver methanamine stain.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Crescentic_glomerulonephritis_Periodic_acid_silver_methanamine_stain.JPEG" },
   "tension-pneumothorax": { label: "Wikimedia Commons (Pneumothorax 001 cs.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pneumothorax_001_cs.jpg" },
@@ -1541,6 +1548,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "stable-angina": "Clinical or pathologic image illustrating stable angina",
   "status-epilepticus": "Prolonged seizure activity — neurologic emergency requiring urgent benzodiazepines",
   "subarachnoid-hemorrhage": "Clinical or pathologic image illustrating subarachnoid hemorrhage",
+  "subclavian-steal":
+    "Hemodynamic diagram — proximal left subclavian occlusion with retrograde vertebral flow supplying the arm",
   "systemic-lupus-erythematosus": "Clinical or pathologic image illustrating systemic lupus erythematosus",
   "systemic-sclerosis": "Clinical or pathologic image illustrating systemic sclerosis",
   "tension-pneumothorax": "Clinical or pathologic image illustrating tension pneumothorax",
