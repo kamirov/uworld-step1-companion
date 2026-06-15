@@ -204,6 +204,7 @@ papilledema.jpg
 ankle-reflex.jpg
   Source: Wikimedia Commons — Medical diagnosis for the student and practitioner (1922) (14598069420).jpg
   Page: https://commons.wikimedia.org/wiki/File:Medical_diagnosis_for_the_student_and_practitioner_(1922)_(14598069420).jpg
+Description: Medical diagnosis for the student and practitioner (1922)
 
 generalized-tonic-clonic-seizure.jpg
   Source: Wikimedia Commons — Spike-waves.png
@@ -238,10 +239,12 @@ blueberry-muffin-rash.jpg
 arthralgia.jpg
   Source: Wikimedia Commons — Arthritic hands in pain.jpg
   Page: https://commons.wikimedia.org/wiki/File:Arthritic_hands_in_pain.jpg
+Description: Arthritic hands in pain
 
 arthritis.jpg
   Source: Wikimedia Commons — Rheumatoid Arthritis (Swan Neck Deformity) esp.png
   Page: https://commons.wikimedia.org/wiki/File:Rheumatoid_Arthritis_(Swan_Neck_Deformity)_esp.png
+Description: Rheumatoid Arthritis (Swan Neck Deformity) esp
 
 primitive-nose.jpg
   Source: Wikimedia Commons — Congenital absence of nose.jpg
@@ -269,6 +272,7 @@ psychosis.jpg
 afferent-pupillary-defect.png
   Source: Wikimedia Commons — Gray773.png
   Page: https://commons.wikimedia.org/wiki/File:Gray773.png
+Description: The left optic nerve and the optic tracts.
 
 diplopia.jpg
   Source: Wikimedia Commons — Diplopia.jpg
@@ -374,6 +378,7 @@ akathisia.jpg
   Source: Wikimedia Commons — Overview of reward structures in the human brain.jpg
   Page: https://commons.wikimedia.org/wiki/File:Overview_of_reward_structures_in_the_human_brain.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Overview_of_reward_structures_in_the_human_brain.jpg?width=1280
+Description: Overview of reward structures in the human brain. Dopaminergic neurons are located in the midbrain structures substantia nigra (SNc) and the ventral tegmental area (VTA). Their axons project to the striatum (caudate nucleus, putamen and ventral striatum including nucleus accumbens), the dorsal and v
 
 babinski-reflex.png
   Source: Wikimedia Commons — PlantarReflex.png
@@ -524,3 +529,29 @@ sleep-paralysis.jpg
   Source: Wikimedia Commons — John Henry Fuseli - The NightmareFXD.jpg
   Page: https://commons.wikimedia.org/wiki/File:John_Henry_Fuseli_-_The_NightmareFXD.jpg
   Description: Classic artistic depiction of sleep paralysis
+
+autonomic-symptoms.svg
+  Source: Wikimedia Commons — Horner's Syndrome and Autonomic innervation of the eye.svg
+  Page: https://commons.wikimedia.org/wiki/File:Horner%27s_Syndrome_and_Autonomic_innervation_of_the_eye.svg
+  Description: Sympathetic and parasympathetic innervation of the eye in Horner syndrome
+
+lacrimation.jpg
+  Source: Wikimedia Commons — Conjunctivitis.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Conjunctivitis.jpg
+  Description: Allergic conjunctivitis with conjunctival injection and tearing
+
+periorbital-pain.svg
+  Source: Wikimedia Commons — Cluster headache svg hariadhi.svg
+  Page: https://commons.wikimedia.org/wiki/File:Cluster_headache_svg_hariadhi.svg
+  License: CC BY-SA 4.0 (Hariadhi)
+  Description: Unilateral periorbital pain distribution in cluster headache
+
+ptosis.jpg
+  Source: Wikimedia Commons — Myasthenia gravis ptosis reversal.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Myasthenia_gravis_ptosis_reversal.jpg
+  Description: Partial ptosis before and after edrophonium in myasthenia gravis
+
+rhinorrhea.svg
+  Source: Wikimedia Commons — Symptoms of swine flu-numbered.svg
+  Page: https://commons.wikimedia.org/wiki/File:Symptoms_of_swine_flu-numbered.svg
+  Description: Runny nose (rhinorrhea) illustrated as a respiratory symptom

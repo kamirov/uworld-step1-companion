@@ -64,6 +64,7 @@ import choledocholithiasis from "../media/images/conditions/choledocholithiasis.
 import chronicBronchitis from "../media/images/conditions/chronic-bronchitis.svg?url";
 import cleftLip from "../media/images/conditions/cleft-lip.jpg?url";
 import cleftPalate from "../media/images/conditions/cleft-palate.jpg?url";
+import clusterHeadache from "../media/images/conditions/cluster-headache.svg?url";
 import cll from "../media/images/conditions/cll.jpg?url";
 import cml from "../media/images/conditions/cml.jpg?url";
 import congenitalAdrenalHyperplasia from "../media/images/conditions/congenital-adrenal-hyperplasia.jpg?url";
@@ -373,6 +374,7 @@ export type ConditionImageId = Extract<
   | "chronic-bronchitis"
   | "cleft-lip"
   | "cleft-palate"
+  | "cluster-headache"
   | "cll"
   | "cml"
   | "congenital-adrenal-hyperplasia"
@@ -687,6 +689,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "chronic-bronchitis": extensionAssetUrl(chronicBronchitis),
   "cleft-lip": extensionAssetUrl(cleftLip),
   "cleft-palate": extensionAssetUrl(cleftPalate),
+  "cluster-headache": extensionAssetUrl(clusterHeadache),
   "cll": extensionAssetUrl(cll),
   "cml": extensionAssetUrl(cml),
   "congenital-adrenal-hyperplasia": extensionAssetUrl(congenitalAdrenalHyperplasia),
@@ -1019,6 +1022,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "chronic-bronchitis": { label: "Wikimedia Commons (Chronic obstructive pulmonary disease world map - DALY - WHO2004.svg)", url: "https://commons.wikimedia.org/wiki/File:Chronic_obstructive_pulmonary_disease_world_map_-_DALY_-_WHO2004.svg" },
   "cleft-lip": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cleft-lip.jpg" },
   "cleft-palate": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cleft-palate.jpg" },
+  "cluster-headache": {
+    label: "Wikimedia Commons (Cluster headache svg hariadhi.svg), CC BY-SA 4.0",
+    url: "https://commons.wikimedia.org/wiki/File:Cluster_headache_svg_hariadhi.svg",
+  },
   "cll": { label: "Wikimedia Commons (C Louis Leipoldt05.jpg)", url: "https://commons.wikimedia.org/wiki/File:C_Louis_Leipoldt05.jpg" },
   "cml": { label: "Wikimedia Commons (Bcrablmet.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bcrablmet.jpg" },
   "congenital-adrenal-hyperplasia": { label: "Wikimedia Commons (Congenital adrenal hyperplasia.jpg)", url: "https://commons.wikimedia.org/wiki/File:Congenital_adrenal_hyperplasia.jpg" },
@@ -1362,7 +1369,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "avascular-necrosis": "Clinical or pathologic image illustrating avascular necrosis",
   "azoospermia":
     "Semen analysis specimen under microscopy — used to evaluate sperm concentration in male infertility workup",
-  "bacterial-meningitis": "Clinical or pathologic image illustrating bacterial meningitis",
+  "bacterial-meningitis":
+    "Gram-stained CSF — neutrophilic pleocytosis with intracellular diplococci in bacterial meningitis",
   "basal-cell-carcinoma": "Clinical or pathologic image illustrating basal cell carcinoma",
   "basilar-skull-fracture": "Clinical or pathologic image illustrating basilar skull fracture",
   "beriberi": "Clinical or pathologic image illustrating beriberi",
@@ -1396,6 +1404,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "chronic-bronchitis": "Clinical or pathologic image illustrating chronic bronchitis",
   "cleft-lip": "Clinical or pathologic image illustrating cleft lip",
   "cleft-palate": "Clinical or pathologic image illustrating cleft palate",
+  "cluster-headache":
+    "Cluster headache symptom diagram — unilateral periorbital pain with ipsilateral autonomic features",
   "cll": "Clinical or pathologic image illustrating cll",
   "cml": "Clinical or pathologic image illustrating cml",
   "congenital-adrenal-hyperplasia": "Clinical or pathologic image illustrating congenital adrenal hyperplasia",

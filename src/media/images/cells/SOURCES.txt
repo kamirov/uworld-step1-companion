@@ -60,7 +60,7 @@ Description: CNS gray matter — neuronal cell bodies and synapses
 periventricular-white-matter.jpg
 https://commons.wikimedia.org/wiki/File:Disseminated_sclerosis_(IA_b2810349x).pdf
 Wikimedia Commons
-Description: Periventricular demyelinating plaques in MS
+Description: High magnification micrograph of brain, showing normal white matter and normal grey matter. HPS stain. Brain biopsy. Related images Intermed. mag. High mag. Very high mag.
 
 medial-longitudinal-fasciculus.svg
 Created locally
@@ -196,48 +196,58 @@ endothelial-cell.jpg
   Source: Wikimedia Commons — Interaction between Kupffer cells, Stellate cells and endothelial cells.jpg
   Page: https://commons.wikimedia.org/wiki/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg?width=1280
+Description: Interaction between Kupffer cells, Stellate cells and endothelial cells
 
 fibroblast.jpg
   Source: Wikimedia Commons — Cell culture (fibroblasts) (261 20) Fibroblasts (metaphase, anaphase).jpg
   Page: https://commons.wikimedia.org/wiki/File:Cell_culture_(fibroblasts)_(261_20)_Fibroblasts_(metaphase,_anaphase).jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Cell_culture_(fibroblasts)_(261_20)_Fibroblasts_(metaphase,_anaphase).jpg?width=1280
+Description: This image comes from the archive of Josef Reischig and is part of the 384 pictures kindly donated by the authorship heirs under CC BY SA 3.0 license as a part of Wikimedia Czech Republic's GLAM initiative.
 
 hypersegmented-neutrophil.png
   Source: Wikimedia Commons — Hypersegmented neutrophil.png
   Page: https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hypersegmented_neutrophil.png?width=1280
+Description: This is a peripheral blood smear of a patient with megaloblastic anemia. The red arrow points out a hypersegmented neutrophil. The image was found on a telepathvision site of the US VA: http://www.va.gov/telepathvisn6/megalops.GIF The home page of this collection of images is http://www.va.gov/telep
 
 multinucleated-giant-cell.jpg
   Source: Wikimedia Commons — Langhans Giant Cell (10189844503).jpg
   Page: https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Langhans_Giant_Cell_(10189844503).jpg?width=1280
+Description: Langhans Giant Cell
 
 gray-matter.jpg
   Source: Wikimedia Commons — Grey matter and white matter - high mag.jpg
   Page: https://commons.wikimedia.org/wiki/File:Grey_matter_and_white_matter_-_high_mag.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Grey_matter_and_white_matter_-_high_mag.jpg?width=1280
+Description: High magnification micrograph of brain, showing normal white matter and normal grey matter. HPS stain. Brain biopsy. Related images Intermed. mag. High mag. Very high mag.
 
 medial-longitudinal-fasciculus.png
   Source: Wikimedia Commons — Population-averaged human tractography atlas - Brainstem.png
   Page: https://commons.wikimedia.org/wiki/File:Population-averaged_human_tractography_atlas_-_Brainstem.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Population-averaged_human_tractography_atlas_-_Brainstem.png?width=1280
+Description: Population-averaged human tractography atlas - Brainstem
 
 preterm-lung-maturity.jpg
   Source: Wikimedia Commons — Hyaline membranes - very high mag.jpg
   Page: https://commons.wikimedia.org/wiki/File:Hyaline_membranes_-_very_high_mag.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hyaline_membranes_-_very_high_mag.jpg?width=1280
+Description: Hyaline membranes - very high mag
 
 pneumocyte.jpg
   Source: Local copy from cells/preterm-lung-maturity.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Hyaline_membranes_-_very_high_mag.jpg
+Description: Hyaline membranes - very high mag
 
 type-1-pneumocyte.jpg
   Source: Local copy from conditions/emphysema.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg
+Description: Emphysema H and E
 
 type-2-pneumocyte.jpg
   Source: Local copy from conditions/neonatal-respiratory-distress-syndrome.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Annual_report_-_National_Institutes_of_Health._National_Heart,_Lung,_and_Blood_Advisory_Council_(IA_annualreportnatio1985nati).pdf
+Description: At head of title, 1976: National Heart, Blood Vessel, Lung, and Blood Program Title varies slightly Reports describe the activities of the National Heart, Lung, and Blood Institute Description based on: 9th (Sept. 1981) Subjects: National Heart, Lung, and Blood Institute; National Heart, Lung, and B
 
 white-matter.jpg
   Source: Wikimedia Commons — Grey matter and white matter - high mag.jpg

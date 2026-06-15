@@ -42,6 +42,7 @@ Mysid/Jmarchn, CC BY-SA 3.0
 hyper-ige-syndrome.jpg
 https://commons.wikimedia.org/wiki/File:Person_with_Job%27s_syndrome.jpg
 Asifa et al., CC BY 4.0 (JAAD Case Reports)
+Description: Person with Job's syndrome
 
 selective-iga-deficiency.png
 https://commons.wikimedia.org/wiki/File:Antibody_Isotypes.png
@@ -288,30 +289,36 @@ melanoma.jpg
   Source: Wikimedia Commons — Dysplastic nevi (1).jpg
   Page: https://commons.wikimedia.org/wiki/File:Dysplastic_nevi_(1).jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Dysplastic_nevi_(1).jpg?width=1280
+Description: Dysplastic nevi
 
 menkes-disease.jpg
   Source: Wikimedia Commons — Menkes disease4.jpg
   Page: https://commons.wikimedia.org/wiki/File:Menkes_disease4.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Menkes_disease4.jpg?width=1280
+Description: Menkes disease4
 
 neural-tube-defects.jpg
   Source: Wikimedia Commons — Spina bifida lombare sagittale.jpg
   Page: https://commons.wikimedia.org/wiki/File:Spina_bifida_lombare_sagittale.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Spina_bifida_lombare_sagittale.jpg?width=1280
+Description: Spina bifida lombare sagittale
 
 sideroblastic-anemia.jpg
   Source: Wikimedia Commons — Ring sideroblast.jpg
   Page: https://commons.wikimedia.org/wiki/File:Ring_sideroblast.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Ring_sideroblast.jpg?width=1280
+Description: Ring sideroblast
 
 vitamin-b12-deficiency-anemia.png
   Source: Wikimedia Commons — Hypersegmented neutrophil.png
   Page: https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hypersegmented_neutrophil.png?width=1280
+Description: This is a peripheral blood smear of a patient with megaloblastic anemia. The red arrow points out a hypersegmented neutrophil. The image was found on a telepathvision site of the US VA: http://www.va.gov/telepathvisn6/megalops.GIF The home page of this collection of images is http://www.va.gov/telep
 
 holoprosencephaly.jpg
   Source: Wikimedia Commons — Holoprosencephaly.jpg
   Page: https://commons.wikimedia.org/wiki/File:Holoprosencephaly.jpg
+Description: Holoprosencephaly
 
 trisomy-13.jpg
   Source: Local copy from holoprosencephaly.jpg (trisomy 13 association)
@@ -332,10 +339,12 @@ Description: Cataracts due to Congenital Rubella Syndrome (CRS) PHIL 4284 lores
 scarlet-fever.jpg
   Source: Wikimedia Commons — Scarlet fever rash.jpg
   Page: https://commons.wikimedia.org/wiki/File:Scarlet_fever_rash.jpg
+Description: Scarlet fever rash
 
 roseola.jpg
   Source: Wikimedia Commons — Sestamalattia (2).JPG
   Page: https://commons.wikimedia.org/wiki/File:Sestamalattia_(2).JPG
+Description: Sestamalattia
 
 brief-psychotic-disorder.jpg
   Source: Wikimedia Commons — Climacteric psychosis.jpg
@@ -364,11 +373,13 @@ schizoid-personality-disorder.png
   Source: Wikimedia Commons — Word Cloud SzPD.png
   Page: https://commons.wikimedia.org/wiki/File:Word_Cloud_SzPD.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Word_Cloud_SzPD.png?width=1280
+Description: Word Cloud SzPD
 
 schizotypal-personality-disorder.png
   Source: Wikimedia Commons — Signs of StPD 1.png
   Page: https://commons.wikimedia.org/wiki/File:Signs_of_StPD_1.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Signs_of_StPD_1.png?width=1280
+Description: Signs of StPD 1
 
 basilar-skull-fracture.jpg
   Source: Wikimedia Commons — Battles-sign.jpg
@@ -409,6 +420,7 @@ paroxysmal-supraventricular-tachycardia.svg
   Source: Wikimedia Commons — Supraventricular Tachycardia.svg
   Page: https://commons.wikimedia.org/wiki/File:Supraventricular_Tachycardia.svg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Supraventricular_Tachycardia.svg?width=1280
+Description: Supraventricular Tachycardia
 
 l4-radiculopathy.png
   Source: Wikimedia Commons — Gray797.png (Gray's Anatomy)
@@ -472,6 +484,7 @@ lacunar-stroke.jpg
 pituitary-macroadenoma.jpg
   Source: Wikimedia Commons — ProlactinomaMRI.jpg
   Page: https://commons.wikimedia.org/wiki/File:ProlactinomaMRI.jpg
+Description: Prolactinoma on MRI
 
 pituitary-apoplexy.jpg
   Source: Wikimedia Commons — ProlactinomaMRI.jpg
@@ -494,51 +507,62 @@ carotid-stenosis.jpg
 hypothyroidism.jpg
   Source: Local copy from conditions/hyperthyroidism.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg
+Description: Histopathology of Graves' disease - medium magnification: As shown, Grave's disease shows marked hyperplasia of thyroid follicular cells, generally more so than toxic multinodular goitre, forming papillae into the thyroid follicles, and with scalloping of the peripheral colloid. The cells with round
 
 hirschsprung-disease.jpg
   Source: Local copy from conditions/biliary-atresia.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Biliary_atresia.jpg
-Description: Bilatresia
+Description: Biliary atresia
 
 irritable-bowel-syndrome.jpg
   Source: Local copy from conditions/celiac-disease.jpg
   Reference: https://commons.wikimedia.org/wiki/File:celiac-disease.jpg
+Description: celiac-disease
 
 hydrocephalus.jpg
   Source: Wikimedia Commons — EnlargedLV Reg.png
   Page: https://commons.wikimedia.org/wiki/File:EnlargedLV_Reg.png
+Description: EnlargedLV Reg
 
 subarachnoid-hemorrhage.jpg
   Source: Wikimedia Commons — Subarachnoid hemorrhage CT.jpg
   Page: https://commons.wikimedia.org/wiki/File:Subarachnoid_hemorrhage_CT.jpg
+Description: Subarachnoid hemorrhage CT
 
 idiopathic-intracranial-hypertension.jpg
   Source: Wikimedia Commons — Papilledema.jpg
   Page: https://commons.wikimedia.org/wiki/File:Papilledema.jpg
+Description: Photo demonstrating Papilledema which is a swollen optic disc caused by increased intracranial pressure.
 
 optic-neuritis.jpg
   Source: Wikimedia Commons — OpticNeuritisExample.jpg
   Page: https://commons.wikimedia.org/wiki/File:OpticNeuritisExample.jpg
+Description: OpticNeuritisExample
 
 ischemic-optic-neuropathy.jpg
   Source: Wikimedia Commons — Gray776.png
   Page: https://commons.wikimedia.org/wiki/File:Gray776.png
+Description: Intraorbitale Strukturen in der Aufsicht von oben auf die geöffnete rechte Orbita.
 
 hypertensive-retinopathy.jpg
   Source: Wikimedia Commons — Hypertensiveretinopathy.jpg
   Page: https://commons.wikimedia.org/wiki/File:Hypertensiveretinopathy.jpg
+Description: Hypertensiveretinopathy
 
 encephalitis.jpg
   Source: Wikimedia Commons — Hsv encephalitis.jpg
   Page: https://commons.wikimedia.org/wiki/File:Hsv_encephalitis.jpg
+Description: "This 33 year-old female patient presented with agitation, confusion, mutism, and fever. This coronal T2-weighted MR image shows high signal in the temporal lobes including hippocampal formations and parahippogampal gyrae, insulae, and right inferior frontal gyrus. The right gyrus rectus and the col
 
 otitis-externa.jpg
   Source: Wikimedia Commons — OtitisExterna10.JPG
   Page: https://commons.wikimedia.org/wiki/File:OtitisExterna10.JPG
+Description: OtitisExterna10
 
 mastoiditis.jpg
   Source: Wikimedia Commons — Mastoiditis1.jpg
   Page: https://commons.wikimedia.org/wiki/File:Mastoiditis1.jpg
+Description: Mastoiditis1
 
 alcohol-withdrawal.jpg
   Source: Local copy from conditions/alcohol-use-disorder.jpg
@@ -556,6 +580,7 @@ epilepsy.jpg
   Source: Wikimedia Commons — Spike-waves.png
   Page: https://commons.wikimedia.org/wiki/File:Spike-waves.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Spike-waves.png?width=1280
+Description: Spike-waves
 
 postherpetic-neuralgia.png
   Source: Wikimedia Commons — Herpes zoster chest.png
@@ -565,6 +590,7 @@ huntington-disease.png
   Source: Wikimedia Commons — Overview of reward structures in the human brain.jpg
   Page: https://commons.wikimedia.org/wiki/File:Overview_of_reward_structures_in_the_human_brain.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Overview_of_reward_structures_in_the_human_brain.jpg?width=1280
+Description: Overview of reward structures in the human brain
 
 juvenile-parkinsonism.jpg
   Source: Wikimedia Commons — The Journal of nervous and mental disease (IA journalofnervous49ameruoft).pdf
@@ -573,26 +599,32 @@ juvenile-parkinsonism.jpg
 generalized-anxiety-disorder.png
   Source: Wikimedia Commons — GAD At-A-Glance.png
   Page: https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png
+Description: GAD At-A-Glance
 
 fibromyalgia.jpg
   Source: Local copy from symptoms/morning-stiffness.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Arthritic_hands_in_pain.jpg
+Description: Arthritic hands in pain
 
 serotonin-syndrome.png
   Source: Local copy from medications/mao-inhibitors.png
   Reference: https://commons.wikimedia.org/wiki/File:Synaptic_dopamine_concentration.png
+Description: Synaptic dopamine concentration
 
 ocd.jpg
   Source: Local copy from symptoms/excoriated.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Atopic_dermatitis_child_2.jpg
+Description: Atopic dermatitis child 2
 
 panic-disorder.jpg
   Source: Local copy from symptoms/chest-pain.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png
+Description: Depiction of a person suffering from chest pain
 
 ptsd.png
   Source: Local copy from conditions/generalized-anxiety-disorder.png
   Reference: https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png
+Description: GAD At-A-Glance
 
 premenstrual-dysphoric-disorder.jpg
   Source: Local copy from conditions/dysmenorrhea.jpg
@@ -602,6 +634,7 @@ Description: period pain menstrual cramps uterus
 tuberculoma.jpg
   Source: Local copy from microbiology/mycobacterium-tuberculosis.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Mycobacterium_tuberculosis_Ziehl-Neelsen_stain.jpg
+Description: Mycobacterium tuberculosis in Ziehl-Neelsen stained smear of sputum
 
 achalasia.jpg
   Source: Wikimedia Commons — Acha.JPG
@@ -685,7 +718,7 @@ spherocytosis.jpg
 cardiogenic-shock.jpg
   Source: Local copy from conditions/heart-failure.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_heart_failure.png
-Description: Depiction of a person suffering from heart failure
+Description: Kolloidale Infusionslösungen
 
 carbon-monoxide-poisoning.jpg
   Source: Local copy from symptoms/cyanosis.jpg
@@ -695,6 +728,7 @@ Description: Peripheral Cyanosis due to Ischemia
 korsakoff-syndrome.jpg
   Source: Local copy from conditions/alcohol-use-disorder.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg
+Description: Cirrhosis of Alcoholic Liver Disease
 
 beriberi.jpg
   Source: Local copy from conditions/heart-failure.jpg
@@ -709,10 +743,12 @@ Description: Cystic Fibrosis. See a full animation of this medical topic
 pulmonary-embolism.jpg
   Source: Local copy from conditions/pulmonary-hypertension.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Pulmnary_arterial_atherosclerosis-Pulmonary_hypertension.jpg
+Description: Pulmnary arterial atherosclerosis-Pulmonary hypertension
 
 small-cell-lung-cancer.jpg
   Source: Local copy from conditions/lung-cancer.jpg
   Reference: https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg
+Description: LungCancer-Xray-01
 
 carpal-tunnel-syndrome.png
   Source: Local copy from conditions/c6-radiculopathy.png
@@ -897,3 +933,14 @@ cushing-disease.jpg
   Source: Wikimedia Commons — Straie with cushing syndrome new photo.jpg
   Page: https://commons.wikimedia.org/wiki/File:Straie_with_cushing_syndrome_new_photo.jpg
   Description: Wide purple striae in hypercortisolism from Cushing disease
+
+bacterial-meningitis.jpg
+  Source: Wikimedia Commons — Gram-stained CSF with neutrophils and diplococci
+  Page: https://commons.wikimedia.org/wiki/File:bacterial-meningitis.jpg
+  Description: Neutrophilic pleocytosis with intracellular diplococci on Gram stain of CSF
+
+cluster-headache.svg
+  Source: Wikimedia Commons — Cluster headache svg hariadhi.svg
+  Page: https://commons.wikimedia.org/wiki/File:Cluster_headache_svg_hariadhi.svg
+  License: CC BY-SA 4.0 (Hariadhi)
+  Description: Cluster headache symptoms — unilateral periorbital pain with autonomic features
