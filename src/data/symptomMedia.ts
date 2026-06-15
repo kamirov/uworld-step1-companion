@@ -2,6 +2,7 @@ import type { MediaAttribution } from "./media";
 import type { SymptomEntry } from "./symptoms";
 
 import afferentPupillaryDefect from "../media/images/symptoms/afferent-pupillary-defect.png?url";
+import acanthosisNigricans from "../media/images/symptoms/acanthosis-nigricans.jpg?url";
 import agonalRespirations from "../media/images/symptoms/agonal-respirations.jpg?url";
 import akathisia from "../media/images/symptoms/akathisia.jpg?url";
 import allodynia from "../media/images/symptoms/allodynia.png?url";
@@ -140,6 +141,7 @@ import tonicPhase from "../media/images/symptoms/tonic-phase.jpg?url";
 import trousseauSign from "../media/images/symptoms/trousseau-sign.jpg?url";
 import upwardGazePalsy from "../media/images/symptoms/upward-gaze-palsy.png?url";
 import vertigo from "../media/images/symptoms/vertigo.svg?url";
+import virilization from "../media/images/symptoms/virilization.jpg?url";
 import vesicle from "../media/images/symptoms/vesicle.jpg?url";
 import vomiting from "../media/images/symptoms/vomiting.jpg?url";
 import vomitus from "../media/images/symptoms/vomitus.jpg?url";
@@ -151,6 +153,7 @@ import xerostomia from "../media/images/symptoms/xerostomia.jpg?url";
 export type SymptomImageId = Extract<
   SymptomEntry["id"],
   | "afferent-pupillary-defect"
+  | "acanthosis-nigricans"
   | "agonal-respirations"
   | "akathisia"
   | "allodynia"
@@ -289,6 +292,7 @@ export type SymptomImageId = Extract<
   | "trousseau-sign"
   | "upward-gaze-palsy"
   | "vertigo"
+  | "virilization"
   | "vesicle"
   | "vomiting"
   | "vomitus"
@@ -306,6 +310,7 @@ function extensionAssetUrl(path: string): string {
 /** See src/media/images/symptoms/SOURCES.txt */
 export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "afferent-pupillary-defect": extensionAssetUrl(afferentPupillaryDefect),
+  "acanthosis-nigricans": extensionAssetUrl(acanthosisNigricans),
   "agonal-respirations": extensionAssetUrl(agonalRespirations),
   "akathisia": extensionAssetUrl(akathisia),
   "allodynia": extensionAssetUrl(allodynia),
@@ -444,6 +449,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "trousseau-sign": extensionAssetUrl(trousseauSign),
   "upward-gaze-palsy": extensionAssetUrl(upwardGazePalsy),
   "vertigo": extensionAssetUrl(vertigo),
+  "virilization": extensionAssetUrl(virilization),
   "vesicle": extensionAssetUrl(vesicle),
   "vomiting": extensionAssetUrl(vomiting),
   "vomitus": extensionAssetUrl(vomitus),
@@ -458,6 +464,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   Record<SymptomImageId, MediaAttribution>
 > = {
   "afferent-pupillary-defect": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:afferent-pupillary-defect.png" },
+  "acanthosis-nigricans": { label: "Wikimedia Commons (Acanthosis-nigricans4.jpg)", url: "https://commons.wikimedia.org/wiki/File:Acanthosis-nigricans4.jpg" },
   "agonal-respirations": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:agonal-respirations.jpg" },
   "akathisia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:akathisia.jpg" },
   "allodynia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:allodynia.png" },
@@ -623,6 +630,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "trousseau-sign": { label: "Wikimedia Commons (Trousseau's Sign of Latent Tetany.jpg)", url: "https://commons.wikimedia.org/wiki/File:Trousseau's_Sign_of_Latent_Tetany.jpg" },
   "upward-gaze-palsy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:upward-gaze-palsy.png" },
   "vertigo": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:vertigo.svg" },
+  "virilization": { label: "Wikimedia Commons (ClitoromegalyCAH.jpg)", url: "https://commons.wikimedia.org/wiki/File:ClitoromegalyCAH.jpg" },
   "vesicle": { label: "Wikimedia Commons (Diseases of the mouth; for physicians, dentists, medical and dental students (1912) (14772644622).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_mouth;_for_physicians,_dentists,_medical_and_dental_students_(1912)_(14772644622).jpg" },
   "vomiting": { label: "Wikimedia Commons (Emesis (Emesis Cerea).JPG)", url: "https://commons.wikimedia.org/wiki/File:Emesis_(Emesis_Cerea).JPG" },
   "vomitus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:vomitus.jpg" },
@@ -635,6 +643,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
 
 export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "afferent-pupillary-defect": "Clinical or pathologic image illustrating afferent pupillary defect",
+  "acanthosis-nigricans": "Velvety hyperpigmented plaques in the axilla — cutaneous marker of insulin resistance",
   "agonal-respirations": "Clinical or pathologic image illustrating agonal respirations",
   "akathisia": "Clinical or pathologic image illustrating akathisia",
   "allodynia": "Pain from normally nonpainful light touch — classic in postherpetic neuralgia",
@@ -781,6 +790,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "trousseau-sign": "Clinical or pathologic image illustrating trousseau sign",
   "upward-gaze-palsy": "Clinical or pathologic image illustrating upward gaze palsy",
   "vertigo": "Clinical or pathologic image illustrating vertigo",
+  "virilization": "Clitoromegaly in congenital adrenal hyperplasia — external manifestation of androgen excess",
   "vesicle": "Herpes labialis vesicles — fluid-filled epidermal lesions <1 cm",
   "vomiting": "Clinical or pathologic image illustrating vomiting",
   "vomitus": "Clinical or pathologic image illustrating vomitus",

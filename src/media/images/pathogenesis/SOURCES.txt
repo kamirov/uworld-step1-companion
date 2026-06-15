@@ -199,6 +199,16 @@ clotting-cascade.png
   Source: Local copy from pathogenesis/fibrinolysis.png
   Reference: https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png
 
+intrinsic-pathway.png
+  Source: Wikimedia Commons — Coagulation cascade.png
+  Page: https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png
+  Description: Coagulation cascade diagram highlighting intrinsic pathway (factors XII, XI, IX, VIII)
+
+extrinsic-pathway.png
+  Source: Wikimedia Commons — Coagulation cascade.png
+  Page: https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png
+  Description: Coagulation cascade diagram highlighting extrinsic pathway (tissue factor + factor VII)
+
 protease.png
   Source: Wikimedia Commons — Aspartyl protease mechanism.png
   Page: https://commons.wikimedia.org/wiki/File:Aspartyl_protease_mechanism.png

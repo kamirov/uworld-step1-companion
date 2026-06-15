@@ -483,3 +483,13 @@ otorrhea.jpg
 raccoon-eyes.jpg
   Source: Wikimedia Commons — Bilateral periorbital ecchymosis (raccoon eyes).jpg
   Page: https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg
+
+acanthosis-nigricans.jpg
+  Source: Wikimedia Commons — Acanthosis-nigricans4.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Acanthosis-nigricans4.jpg
+  Description: Velvety hyperpigmented plaques in the axilla — insulin resistance skin marker
+
+virilization.jpg
+  Source: Wikimedia Commons — ClitoromegalyCAH.jpg
+  Page: https://commons.wikimedia.org/wiki/File:ClitoromegalyCAH.jpg
+  Description: Clitoromegaly in congenital adrenal hyperplasia — virilization from androgen excess

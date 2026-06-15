@@ -19,6 +19,8 @@ import toxidrome from "../media/images/pathogenesis/toxidrome.png?url";
 import glycation from "../media/images/pathogenesis/glycation.png?url";
 import vasaNervorum from "../media/images/pathogenesis/vasa-nervorum.jpg?url";
 import clottingCascade from "../media/images/pathogenesis/clotting-cascade.png?url";
+import intrinsicPathway from "../media/images/pathogenesis/intrinsic-pathway.png?url";
+import extrinsicPathway from "../media/images/pathogenesis/extrinsic-pathway.png?url";
 import protease from "../media/images/pathogenesis/protease.png?url";
 import pyogenicInfection from "../media/images/pathogenesis/pyogenic-infection.jpg?url";
 import robertsonianTranslocation from "../media/images/pathogenesis/robertsonian-translocation.png?url";
@@ -48,6 +50,8 @@ export type PathogenesisImageId = Extract<
   | "glycation"
   | "vasa-nervorum"
   | "clotting-cascade"
+  | "intrinsic-pathway"
+  | "extrinsic-pathway"
   | "protease"
   | "pyogenic-infection"
   | "robertsonian-translocation"
@@ -84,6 +88,8 @@ export const PATHOGENESIS_IMAGES: Partial<
   glycation: extensionAssetUrl(glycation),
   "vasa-nervorum": extensionAssetUrl(vasaNervorum),
   "clotting-cascade": extensionAssetUrl(clottingCascade),
+  "intrinsic-pathway": extensionAssetUrl(intrinsicPathway),
+  "extrinsic-pathway": extensionAssetUrl(extrinsicPathway),
   protease: extensionAssetUrl(protease),
   "pyogenic-infection": extensionAssetUrl(pyogenicInfection),
   "robertsonian-translocation": extensionAssetUrl(robertsonianTranslocation),
@@ -171,6 +177,14 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Coagulation cascade.png)",
     url: "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
   },
+  "intrinsic-pathway": {
+    label: "Wikimedia Commons (Coagulation cascade.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
+  },
+  "extrinsic-pathway": {
+    label: "Wikimedia Commons (Coagulation cascade.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
+  },
   protease: {
     label: "Wikimedia Commons (Aspartyl protease mechanism.png)",
     url: "https://commons.wikimedia.org/wiki/File:Aspartyl_protease_mechanism.png",
@@ -245,6 +259,10 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Microvascular ischemia of vasa nervorum — key mechanism in diabetic peripheral neuropathy",
   "clotting-cascade":
     "Coagulation cascade — intrinsic, extrinsic, and common pathways converge on thrombin and fibrin formation",
+  "intrinsic-pathway":
+    "Coagulation cascade diagram — intrinsic pathway (contact activation via factors XII, XI, IX, VIII) converges on factor X",
+  "extrinsic-pathway":
+    "Coagulation cascade diagram — extrinsic pathway (tissue factor + factor VII) converges on factor X",
   protease:
     "Aspartyl protease catalytic mechanism — peptide bond hydrolysis by activated water at the active site",
   "pyogenic-infection":

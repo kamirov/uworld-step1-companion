@@ -638,6 +638,57 @@ export const CELLS: CellEntry[] = [
       "Severe congenital T-cell defects present early with viral, fungal, and opportunistic infections; absent thymic shadow suggests DiGeorge or SCID context.",
   },
   {
+    id: "th1",
+    name: "Th1",
+    etymology: "T helper type 1",
+    aliases: [
+      "th1",
+      "th 1",
+      "th₁",
+      "th1 cell",
+      "th1 cells",
+      "t helper 1",
+      "t-helper 1",
+      "t helper 1 cell",
+      "t helper 1 cells",
+      "type 1 helper t cell",
+      "type 1 helper t cells",
+    ],
+    definition:
+      "CD4⁺ T-helper subset differentiated under IL-12 and IFN-γ signaling (STAT4, T-bet) that activates macrophages and coordinates cell-mediated immunity against intracellular pathogens by secreting IFN-γ and IL-2.",
+    characteristics: [
+      "Differentiation: IL-12 from activated macrophages/dendritic cells + IFN-γ → naïve CD4⁺ → Th1; master transcription factor T-bet (TBX21)",
+      "IFN-γ — activates macrophages (classical/M1), enhances antigen presentation, promotes IgG class switching (opsonizing subclasses)",
+      "IL-2 — T-cell proliferation and clonal expansion of effector and memory cells",
+      "TNF-α — can be produced by Th1 cells; amplifies macrophage activation and granuloma maintenance",
+      "Inhibited by IL-4/Th2 skew and IL-10; reciprocal regulation with Th2 lineage",
+    ],
+    clinicalRelevance: [
+      "Defense against intracellular bacteria (Mycobacterium tuberculosis, Listeria) and viruses",
+      "Granulomatous diseases — sarcoidosis, tuberculosis (epithelioid granulomas driven by Th1/IFN-γ)",
+      "Type IV (delayed-type) hypersensitivity — contact dermatitis, tuberculin skin test (PPD)",
+      "Multiple sclerosis and type 1 diabetes — Th1-skewed autoimmunity (historical paradigm; Th17 also implicated)",
+      "Chronic transplant rejection — Th1-mediated macrophage injury",
+    ],
+    boardsPearls: [
+      "Th1 cytokines: IFN-γ and IL-2 — IFN-γ is the hallmark effector",
+      "IL-12 from macrophages → Th1 differentiation → IFN-γ → macrophage activation (positive feedback loop)",
+      "T-bet drives Th1; GATA3 drives Th2; RORγt drives Th17 — transcription factor favorite",
+      "Th1 (macrophages) vs Th2 (eosinophils/mast cells) vs Th17 (neutrophils) — three helper subsets",
+      "PPD/tuberculin test = type IV hypersensitivity mediated by sensitized Th1 cells",
+      "Th1/IFN-γ needed to contain intracellular pathogens; IL-12 receptor deficiency → disseminated mycobacterial disease",
+    ],
+    distinguishFrom: [
+      "Th2 — IL-4, IL-5, IL-13; eosinophil and IgE-mediated allergy and helminth defense",
+      "Th17 — IL-17; neutrophil recruitment; mucosal fungi and extracellular bacteria",
+      "Treg — FoxP3⁺; suppresses immune responses; maintains tolerance",
+      "CD8⁺ cytotoxic T lymphocyte — directly kills infected cells; Th1 coordinates macrophage killing",
+      "CD4+ T lymphocyte — parent category; Th1 is one effector subset",
+    ],
+    pediatrics:
+      "IL-12 receptor and IFN-γ receptor deficiencies present in infancy with disseminated BCG and environmental mycobacterial infections — impaired Th1 immunity. Th1-skewed responses develop as children encounter intracellular pathogens.",
+  },
+  {
     id: "th2",
     name: "Th2",
     etymology: "T helper type 2",
@@ -4668,6 +4719,52 @@ export const CELLS: CellEntry[] = [
     ],
     pediatrics:
       "Physiologic anovulatory cycles after menarche reflect immature GnRH pulsatility rather than primary theca hyperplasia; persistent hyperandrogenism and oligomenorrhea beyond 2–3 years post-menarche suggests PCOS.",
+  },
+  {
+    id: "leydig-cell",
+    name: "Leydig cell",
+    etymology: "eponym: Franz Leydig + cell",
+    aliases: [
+      "leydig cell",
+      "leydig cells",
+      "leydig's cell",
+      "leydig's cells",
+      "interstitial cell of leydig",
+      "interstitial cells of leydig",
+      "testicular leydig cell",
+      "testicular leydig cells",
+    ],
+    definition:
+      "Steroidogenic endocrine cells in the testicular interstitium between seminiferous tubules that produce testosterone in response to LH — essential for male internal/external genital development, spermatogenesis support, and secondary sexual characteristics.",
+    characteristics: [
+      "Located in interstitium between seminiferous tubules; eosinophilic cytoplasm with lipid droplets on histology",
+      "Express LH receptors; LH stimulation → ↑ cholesterol uptake and steroidogenic enzymes (StAR, CYP11A1, CYP17, 3β-HSD, 17β-HSD)",
+      "Secrete testosterone → local support of spermatogenesis and systemic androgen effects",
+      "Peripheral 5α-reductase converts testosterone → DHT for prostate and external genital development",
+      "Homologous to ovarian theca interna cells in androgen synthesis (two-cell model in ovary vs interstitial Leydig in testis)",
+    ],
+    clinicalRelevance: [
+      "LH deficiency or Leydig cell failure → hypogonadism, delayed/incomplete puberty, infertility",
+      "Klinefelter syndrome — seminiferous tubule damage with relative Leydig dysfunction; ↑ FSH/LH, small firm testes",
+      "Leydig cell tumor — rare testicular sex-cord stromal tumor; precocious puberty in boys or gynecomastia/virilization in adults",
+      "Anabolic androgen abuse suppresses HPG axis and intrinsic testosterone production",
+      "Cryptorchidism and mumps orchitis can impair Leydig and Sertoli function",
+    ],
+    boardsPearls: [
+      "LH → Leydig cells → testosterone; FSH → Sertoli cells → support spermatogenesis",
+      "Leydig cells lie in interstitium; Sertoli cells line seminiferous tubules",
+      "Homolog: Leydig cell (testis) ≈ ovarian theca interna (androgen producer)",
+      "Leydig cell tumor — Reinke crystals on histology; may secrete androgens and/or estrogens",
+      "↑ LH with low testosterone suggests primary testicular (Leydig/Sertoli) failure",
+    ],
+    distinguishFrom: [
+      "Sertoli cell — intratubular support cell; FSH-responsive; blood-testis barrier; makes inhibin B and AMH",
+      "Ovarian theca cell — female homolog producing androgens for granulosa aromatization",
+      "Adrenal zona reticularis — systemic androgen precursor (DHEA/DHEA-S), not gonadal testosterone",
+      "Leydig cell tumor — neoplastic proliferation, not normal interstitial endocrine cell",
+    ],
+    pediatrics:
+      "Fetal Leydig cells produce testosterone for male external genital differentiation (DHT-dependent); deficiency of LH/hCG signaling or Leydig function causes undervirilization in 46,XY infants. Leydig cell tumors may cause isosexual precocious puberty in boys.",
   },
 ];
 

@@ -6426,6 +6426,90 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Diabetic vasa nervorum injury accumulates over years of hyperglycemia; pediatric type 1 diabetes neuropathy is uncommon early but screening begins in adolescents with long-standing disease.",
   },
   {
+    id: "intrinsic-pathway",
+    name: "Intrinsic Pathway",
+    etymology:
+      "Latin intrinsecus = inward + Latin via = way (contact-activated arm of coagulation)",
+    aliases: [
+      "intrinsic pathway",
+      "intrinsic pathways",
+      "intrinsic coagulation pathway",
+      "intrinsic coagulation pathways",
+      "contact activation pathway",
+      "contact activation pathways",
+      "intrinsic arm",
+      "intrinsic arms",
+    ],
+    definition:
+      "Contact-activated coagulation arm initiated on negatively charged phospholipid surfaces — factor XII → XI → IX (with cofactor VIII) forms intrinsic tenase (IXa–VIIIa), which activates factor X and feeds the common pathway to thrombin and fibrin.",
+    examples: [
+      "Hemophilia A — factor VIII deficiency → impaired intrinsic tenase → bleeding with prolonged PTT",
+      "Hemophilia B (Christmas disease) — factor IX deficiency → same clinical pattern",
+      "von Willebrand disease — unstable factor VIII → mildly prolonged PTT",
+      "Lupus anticoagulant — prolongs PTT in vitro despite thrombotic risk",
+      "Heparin — potentiates antithrombin → prolongs PTT",
+    ],
+    boardsPearls: [
+      "PTT (partial thromboplastin time) screens the intrinsic pathway plus common pathway",
+      "Prolonged PTT + normal PT → intrinsic pathway defect (hemophilia, factors VIII/IX/XI/XII)",
+      "Factors VIII, IX, XI, XII are intrinsic-pathway–specific before common pathway convergence",
+      "vs extrinsic pathway — tissue factor + factor VII; isolated defects prolong PT first",
+      "Hemophilia — deep muscle/joint bleeding; platelets and PT normal",
+      "Mixing study: PTT corrects with normal plasma if factor deficiency; not if inhibitor",
+    ],
+    distinguishFrom: [
+      "Extrinsic pathway — tissue factor + factor VII; tested by PT",
+      "Common pathway — factors X, V, II; both PT and PTT prolonged when defective",
+      "Primary hemostasis — platelet plug, not factor cascade",
+      "Fibrinolysis — plasmin degrades fibrin; opposite of clot formation",
+      "Kinin system — overlaps contact activation (XII, prekallikrein, HMWK) but distinct physiology",
+    ],
+    pediatrics:
+      "Hemophilia A/B present after mobility increases — deep bruises, hemarthroses, prolonged PTT with normal PT; neonatal intracranial hemorrhage is a feared complication.",
+  },
+  {
+    id: "extrinsic-pathway",
+    name: "Extrinsic Pathway",
+    etymology:
+      "Latin extrinsecus = outward + Latin via = way (tissue factor–initiated arm of coagulation)",
+    aliases: [
+      "extrinsic pathway",
+      "extrinsic pathways",
+      "extrinsic coagulation pathway",
+      "extrinsic coagulation pathways",
+      "tissue factor pathway",
+      "tissue factor pathways",
+      "extrinsic arm",
+      "extrinsic arms",
+    ],
+    definition:
+      "Tissue factor–initiated coagulation arm triggered when vascular injury exposes subendothelial tissue factor — TF binds factor VIIa to form extrinsic tenase (TF–VIIa), which activates factor X and feeds the common pathway to thrombin and fibrin.",
+    examples: [
+      "Factor VII deficiency — isolated prolonged PT with normal PTT",
+      "Warfarin — ↓ vitamin K–dependent factor VII synthesis → PT rises before PTT",
+      "Vitamin K deficiency — malabsorption, antibiotics, or neonatal VKDB → ↑ PT",
+      "Liver cirrhosis — ↓ synthesis of factor VII (short half-life) → early PT prolongation",
+      "DIC — widespread activation with consumption → ↑ PT and ↑ PTT",
+    ],
+    boardsPearls: [
+      "PT (prothrombin time) screens the extrinsic pathway plus common pathway",
+      "Prolonged PT + normal PTT → extrinsic pathway defect (factor VII, early warfarin/vitamin K deficiency)",
+      "Factor VII has the shortest half-life among vitamin K–dependent factors → PT rises first on warfarin",
+      "vs intrinsic pathway — factors VIII, IX, XI, XII; isolated defects prolong PTT with normal PT",
+      "INR standardizes PT for warfarin monitoring",
+      "Tissue factor (factor III) is the physiological trigger for extrinsic pathway activation",
+    ],
+    distinguishFrom: [
+      "Intrinsic pathway — contact activation via XII, XI, IX, VIII; tested by PTT",
+      "Common pathway — factors X, V, II; both PT and PTT prolonged when defective",
+      "Primary hemostasis — platelet adhesion/aggregation at injury site",
+      "Fibrinolysis — tPA/plasmin-mediated clot breakdown",
+      "Endogenous anticoagulants — protein C/S, antithrombin limit but do not initiate clotting",
+    ],
+    pediatrics:
+      "Neonatal hemorrhagic disease from vitamin K deficiency causes ↑ PT from impaired factor VII synthesis; prophylactic IM vitamin K at birth prevents VKDB.",
+  },
+  {
     id: "clotting-cascade",
     name: "Clotting Cascade",
     etymology:
@@ -6439,12 +6523,10 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "hemostatic cascades",
       "coagulation pathway",
       "coagulation pathways",
-      "intrinsic pathway",
-      "extrinsic pathway",
       "common pathway",
     ],
     definition:
-      "Sequential proteolytic activation of circulating zymogen clotting factors on phospholipid surfaces — intrinsic (XII→XI→IX), extrinsic (tissue factor + VII), and common (X→V→II) pathways converge to generate thrombin, which converts fibrinogen to fibrin and stabilizes the platelet plug.",
+      "Sequential proteolytic activation of circulating zymogen clotting factors on phospholipid surfaces — intrinsic pathway (XII→XI→IX), extrinsic pathway (tissue factor + VII), and common pathway (X→V→II) converge to generate thrombin, which converts fibrinogen to fibrin and stabilizes the platelet plug.",
     examples: [
       "Hemophilia A — factor VIII deficiency → impaired intrinsic tenase (IXa–VIIIa) → bleeding",
       "Hemophilia B — factor IX deficiency (Christmas disease)",
@@ -6454,7 +6536,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Liver cirrhosis — ↓ synthesis of clotting factors → coagulopathy",
     ],
     boardsPearls: [
-      "PT (extrinsic/VII) vs aPTT (intrinsic/VIII, IX, XI, XII) — both prolonged in common pathway defects",
+      "PT (extrinsic pathway/VII) vs PTT (intrinsic pathway/VIII, IX, XI, XII) — both prolonged in common pathway defects",
       "Vitamin K–dependent factors: II, VII, IX, X and proteins C & S",
       "Thrombin (IIa) cleaves fibrinogen → fibrin; activates XIII → cross-links fibrin",
       "Warfarin inhibits vitamin K epoxide reductase; heparin potentiates antithrombin",

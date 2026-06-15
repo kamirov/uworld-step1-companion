@@ -2375,7 +2375,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "protime",
     ],
     measures:
-      "Coagulation test of the extrinsic and common pathways (factors VII, X, V, II, fibrinogen); reported as seconds or INR.",
+      "Coagulation test of the extrinsic pathway and common pathway (factors VII, X, V, II, fibrinogen); reported as seconds or INR.",
     normalRange: "~11–13.5 seconds; INR 0.8–1.2 (not anticoagulated)",
     increasedCauses: [
       "Warfarin (↓ vitamin K–dependent factors)",
@@ -2390,6 +2390,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     boardsPearls: [
       "PT/INR monitors warfarin — target usually 2–3 for most indications",
       "Vitamin K–dependent factors: II, VII, IX, X, protein C & S",
+      "Reflects extrinsic pathway function — factor VII is the most proximal factor assayed",
       "Prolonged PT + prolonged PTT → common pathway or severe liver disease/DIC",
       "Neonatal hemorrhagic disease — ↓ vitamin K → ↑ PT",
     ],
@@ -2410,7 +2411,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "activated ptt",
     ],
     measures:
-      "Coagulation test of the intrinsic and common pathways (factors XII, XI, IX, VIII, X, V, II, fibrinogen); monitors heparin.",
+      "Coagulation test of the intrinsic pathway and common pathway (factors XII, XI, IX, VIII, X, V, II, fibrinogen); monitors heparin.",
     normalRange: "~25–35 seconds",
     increasedCauses: [
       "Heparin / LMWH therapy",
@@ -2423,6 +2424,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Acute phase / factor VIII elevation (rare)",
     ],
     boardsPearls: [
+      "Reflects intrinsic pathway function — factors VIII, IX, XI, XII are proximal to the common pathway",
       "Mixing study: PTT corrects if deficiency, does not correct if inhibitor (lupus anticoagulant, factor inhibitor)",
       "Hemophilia: prolonged PTT, normal PT, normal platelets",
       "Heparin monitoring — therapeutic PTT ~1.5–2.5× control",

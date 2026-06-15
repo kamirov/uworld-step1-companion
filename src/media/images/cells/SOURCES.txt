@@ -14,6 +14,11 @@ Description: 3D illustration of a B lymphocyte with surface immunoglobulin
 
 th17.png
 https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png
+
+th1.png
+  Source: Wikimedia Commons — Helper T Cell Differentiation.png
+  Page: https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png
+  Description: CD4⁺ T-helper subset differentiation — IL-12/IFN-γ Th1 pathway among helper lineages
 סתו כסלו, CC BY-SA 4.0
 Description: CD4⁺ T-helper differentiation pathways including Th17 (TGF-β + IL-6 → RORγt → IL-17)
 
@@ -281,3 +286,8 @@ ovarian-theca-cell.jpg
   Description: Histologic illustration of ovarian follicle granulosa and theca cell layers
   Page: https://commons.wikimedia.org/wiki/File:Granulosa_and_theca_cells._Wellcome_L0002177EC.jpg
   Resized to 330 px width for popover display.
+
+leydig-cell.png
+  Source: Wikimedia Commons — Gray1149.png
+  Page: https://commons.wikimedia.org/wiki/File:Gray1149.png
+  Description: Testis cross-section showing seminiferous tubules and interstitial Leydig cells

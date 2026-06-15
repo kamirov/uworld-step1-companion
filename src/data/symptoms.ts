@@ -2012,6 +2012,45 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Young children with DI may present with polydipsia and preference for water; primary polydipsia in adolescents on psychotropic medications can cause dilutional hyponatremia.",
   },
   {
+    id: "acanthosis-nigricans",
+    name: "Acanthosis Nigricans",
+    etymology: "Greek akantha = thorn/prickle + nigricans = becoming black",
+    aliases: [
+      "acanthosis nigricans",
+      "acanthosis",
+      "velvety hyperpigmented plaques",
+      "hyperkeratotic hyperpigmented skin",
+      "insulin resistance skin marker",
+    ],
+    definition:
+      "Velvety, hyperpigmented, hyperkeratotic plaques in flexural areas (posterior neck, axillae, groin) — a cutaneous marker of insulin resistance and hyperinsulinemia.",
+    mechanism:
+      "↑ Circulating insulin binds IGF-1 receptors on keratinocytes and fibroblasts → epidermal hyperplasia (acanthosis) and papillomatosis with retained melanin, producing velvety brown plaques; seen in obesity, PCOS, type 2 diabetes, and insulin resistance syndromes.",
+    thinkOf: [
+      "Polycystic ovary syndrome",
+      "Type 2 diabetes mellitus and prediabetes",
+      "Obesity and metabolic syndrome",
+      "Gastric adenocarcinoma (malignant acanthosis nigricans — sudden onset)",
+      "Medications — nicotinic acid, protease inhibitors",
+      "Insulin receptor mutations (type A insulin resistance)",
+    ],
+    pairWith: [
+      "Acanthosis nigricans + obesity + oligomenorrhea → PCOS",
+      "Velvety neck plaques + polyuria → new-onset type 2 DM",
+      "Sudden widespread acanthosis + weight loss → search for visceral malignancy",
+      "Acanthosis + central adiposity → insulin resistance",
+      "Diffuse hyperpigmentation without velvety texture → Addison disease, not acanthosis",
+    ],
+    distinguishFrom: [
+      "Hyperpigmentation — increased melanin without epidermal thickening or velvety texture",
+      "Post-inflammatory hyperpigmentation — follows dermatitis, not flexural velvety plaques",
+      "Tinea versicolor — fine scale, KOH-positive, not hyperkeratotic velvety plaques",
+      "Addison disease — diffuse hyperpigmentation in creases and buccal mucosa, not velvety axillary plaques",
+    ],
+    pediatrics:
+      "Obese adolescents commonly develop acanthosis nigricans as an early sign of insulin resistance; evaluate for type 2 diabetes and PCOS when present with menstrual irregularity.",
+  },
+  {
     id: "hyperpigmentation",
     name: "Hyperpigmentation",
     etymology: "Greek hyper = excess + Latin pigmentum = paint/color",

@@ -375,6 +375,21 @@ traumatic-brain-injury.jpg
   Source: Wikimedia Commons — Brain trauma CT.jpg
   Page: https://commons.wikimedia.org/wiki/File:Brain_trauma_CT.jpg
 
+marfan-syndrome.jpg
+  Source: Wikimedia Commons — Arachnodactyly.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Arachnodactyly.jpg
+  Description: Arachnodactyly — long slender fingers in Marfan syndrome
+
+osteogenesis-imperfecta.jpg
+  Source: Wikimedia Commons — Osteogenesis Imperfecta 3.jpg (intended; interim copy of pathogenesis/fibrils.jpg pending Commons rate-limit clearance)
+  Page: https://commons.wikimedia.org/wiki/File:Osteogenesis_Imperfecta_3.jpg
+  Description: Child with osteogenesis imperfecta showing skeletal deformity
+
+ehlers-danlos-syndrome.jpg
+  Source: Wikimedia Commons — Ehlers-Danlos syndrome3.jpg (intended; interim copy of pathogenesis/fibrils.jpg pending Commons rate-limit clearance)
+  Page: https://commons.wikimedia.org/wiki/File:Ehlers-Danlos_syndrome3.jpg
+  Description: Hyperextensible skin in Ehlers-Danlos syndrome
+
 atrial-tachycardia.svg
   Source: Wikimedia Commons — Multifocal Atrial Tachycardia.svg
   Page: https://commons.wikimedia.org/wiki/File:Multifocal_Atrial_Tachycardia.svg
@@ -769,3 +784,48 @@ aspiration-pneumonitis.jpg
   Source: Wikimedia Commons — Aspiration pneumonia (5613145721).jpg
   Page: https://commons.wikimedia.org/wiki/File:Aspiration_pneumonia_(5613145721).jpg
   Description: Chest radiograph showing bilateral infiltrates after aspiration event
+
+hemophilia.jpg
+  Source: Wikimedia Commons — Hemophilia in humans.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Hemophilia_in_humans.jpg
+  Description: Hemarthrosis in hemophilia — joint bleeding from factor deficiency
+
+scurvy.jpg
+  Source: Wikimedia Commons — Scorbutic gums.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Scorbutic_gums.jpg
+  Description: Gingival hypertrophy and bleeding in vitamin C deficiency (scurvy)
+
+precocious-puberty.jpg
+  Source: Wikimedia Commons — Tanner scale female.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Tanner_scale_female.jpg
+  Description: Tanner staging of female breast development for pubertal assessment
+
+azoospermia.jpg
+  Source: Wikimedia Commons — Semen analysis.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Semen_analysis.JPG
+  Description: Semen analysis microscopy used in male infertility evaluation
+
+21-hydroxylase-deficiency.png
+  Source: Wikimedia Commons — Congenital adrenal hyperplasia enzymes.png
+  Page: https://commons.wikimedia.org/wiki/File:Congenital_adrenal_hyperplasia_enzymes.png
+  Description: Adrenal steroid synthesis pathway showing 21-hydroxylase enzyme block
+
+gestational-diabetes-mellitus.jpg
+  Source: Wikimedia Commons — Gestational diabetes kit.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Gestational_diabetes_kit.jpg
+  Description: Blood glucose monitoring kit for gestational diabetes management
+
+juvenile-idiopathic-arthritis.png
+  Source: Wikimedia Commons — JIA systemic onset.png
+  Page: https://commons.wikimedia.org/wiki/File:JIA_systemic_onset.png
+  Description: Quotidian fever pattern in systemic-onset juvenile idiopathic arthritis
+
+psoriatic-arthritis.jpg
+  Source: Wikimedia Commons — Psoriasisarthritis distales Interphalangealgelenk 79M - CR seitlich - 001.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Psoriasisarthritis_distales_Interphalangealgelenk_79M_-_CR_seitlich_-_001.jpg
+  Description: Distal interphalangeal pencil-in-cup deformity on radiograph in psoriatic arthritis
+
+klinefelter-syndrome.jpg
+  Source: Wikimedia Commons — 47,XXY.jpg
+  Page: https://commons.wikimedia.org/wiki/File:47,XXY.jpg
+  Description: 47,XXY karyotype with extra X chromosome in Klinefelter syndrome

@@ -58,6 +58,7 @@ import laminaPropria from "../media/images/cells/lamina-propria.jpg?url";
 import langerhansCell from "../media/images/cells/langerhans-cell.jpg?url";
 import langhansGiantCell from "../media/images/cells/langhans-giant-cell.jpg?url";
 import leukocyte from "../media/images/cells/leukocyte.jpg?url";
+import leydigCell from "../media/images/cells/leydig-cell.png?url";
 import lymphocyte from "../media/images/cells/lymphocyte.png?url";
 import macrophage from "../media/images/cells/macrophage.png?url";
 import mastCell from "../media/images/cells/mast-cell.jpg?url";
@@ -102,6 +103,7 @@ import stroma from "../media/images/cells/stroma.jpg?url";
 import tCellSignaling from "../media/images/cells/t-cell-signaling.svg?url";
 import tLymphocyte from "../media/images/cells/t-lymphocyte.jpg?url";
 import th17 from "../media/images/cells/th17.png?url";
+import th1 from "../media/images/cells/th1.png?url";
 import th2 from "../media/images/cells/th2.png?url";
 import tightJunction from "../media/images/cells/tight-junction.png?url";
 import type1Pneumocyte from "../media/images/cells/type-1-pneumocyte.jpg?url";
@@ -167,6 +169,7 @@ export type CELLImageId = Extract<
   | "langerhans-cell"
   | "langhans-giant-cell"
   | "leukocyte"
+  | "leydig-cell"
   | "lymphocyte"
   | "macrophage"
   | "mast-cell"
@@ -211,6 +214,7 @@ export type CELLImageId = Extract<
   | "t-cell-signaling"
   | "t-lymphocyte"
   | "th17"
+  | "th1"
   | "th2"
   | "tight-junction"
   | "type-1-pneumocyte"
@@ -281,6 +285,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "langerhans-cell": extensionAssetUrl(langerhansCell),
   "langhans-giant-cell": extensionAssetUrl(langhansGiantCell),
   "leukocyte": extensionAssetUrl(leukocyte),
+  "leydig-cell": extensionAssetUrl(leydigCell),
   "lymphocyte": extensionAssetUrl(lymphocyte),
   "macrophage": extensionAssetUrl(macrophage),
   "mast-cell": extensionAssetUrl(mastCell),
@@ -325,6 +330,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "t-cell-signaling": extensionAssetUrl(tCellSignaling),
   "t-lymphocyte": extensionAssetUrl(tLymphocyte),
   "th17": extensionAssetUrl(th17),
+  "th1": extensionAssetUrl(th1),
   "th2": extensionAssetUrl(th2),
   "tight-junction": extensionAssetUrl(tightJunction),
   "type-1-pneumocyte": extensionAssetUrl(type1Pneumocyte),
@@ -392,6 +398,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "langerhans-cell": { label: "Wikimedia Commons (Langerhans Cells in Normal Epidermis, CD1a Immunostain (4435883030).jpg)", url: "https://commons.wikimedia.org/wiki/File:Langerhans_Cells_in_Normal_Epidermis,_CD1a_Immunostain_(4435883030).jpg" },
   "langhans-giant-cell": { label: "Wikimedia Commons (Langhans Giant Cell (10189844503).jpg)", url: "https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg" },
   "leukocyte": { label: "Wikimedia Commons (WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy.jpg)", url: "https://commons.wikimedia.org/wiki/File:WBC_(neutrophil)_at_centre,_numerous_erythrocytes_and_platelets_(dot_like_bodies)_in_Wright's_stained_peripheral_blood_smear_(PBS)_microscopy.jpg" },
+  "leydig-cell": { label: "Wikimedia Commons (Gray1149.png)", url: "https://commons.wikimedia.org/wiki/File:Gray1149.png" },
   "lymphocyte": { label: "Wikimedia Commons (Microphotographs of atypical lymphocytes observed in peripheral blood smears of quokkas on Rottnest Island.png)", url: "https://commons.wikimedia.org/wiki/File:Microphotographs_of_atypical_lymphocytes_observed_in_peripheral_blood_smears_of_quokkas_on_Rottnest_Island.png" },
   "macrophage": { label: "Wikimedia Commons (Infiltration of CD68+ tumor-associated macrophages (TAMs) in distinct histologic location.png)", url: "https://commons.wikimedia.org/wiki/File:Infiltration_of_CD68+_tumor-associated_macrophages_(TAMs)_in_distinct_histologic_location.png" },
   "mast-cell": { label: "Wikimedia Commons (Mast cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Mast_cell.jpg" },
@@ -436,6 +443,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "t-cell-signaling": { label: "Wikimedia Commons (063-T-CellReceptor-MHC-ru.svg)", url: "https://commons.wikimedia.org/wiki/File:063-T-CellReceptor-MHC-ru.svg" },
   "t-lymphocyte": { label: "Wikimedia Commons (HIV-infected T cell (6813384933).jpg)", url: "https://commons.wikimedia.org/wiki/File:HIV-infected_T_cell_(6813384933).jpg" },
   "th17": { label: "Wikimedia Commons (Helper T Cell Differentiation.png)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
+  "th1": { label: "Wikimedia Commons (Helper T Cell Differentiation.png)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "th2": { label: "Wikimedia Commons (M2 macrophages. Sézary cells produce the Th2 cytokines IL-4 and IL-13.png)", url: "https://commons.wikimedia.org/wiki/File:M2_macrophages._Sézary_cells_produce_the_Th2_cytokines_IL-4_and_IL-13.png" },
   "tight-junction": { label: "Wikimedia Commons (Morphological modifications during EMT.png)", url: "https://commons.wikimedia.org/wiki/File:Morphological_modifications_during_EMT.png" },
   "type-1-pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:type-1-pneumocyte.jpg" },
@@ -501,6 +509,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "langerhans-cell": "Clinical or pathologic image illustrating langerhans cell",
   "langhans-giant-cell": "Langhans giant cell with horseshoe-arranged nuclei at the periphery — seen in granulomatous inflammation",
   "leukocyte": "Clinical or pathologic image illustrating leukocyte",
+  "leydig-cell": "Testis cross-section — seminiferous tubules surrounded by interstitial Leydig cells (Gray's anatomy)",
   "lymphocyte": "Clinical or pathologic image illustrating lymphocyte",
   "macrophage": "Clinical or pathologic image illustrating macrophage",
   "mast-cell": "Mast cell with granules containing histamine and heparin — key effector in type I hypersensitivity",
@@ -544,7 +553,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "stroma": "Clinical or pathologic image illustrating stroma",
   "t-cell-signaling": "Clinical or pathologic image illustrating t cell signaling",
   "t-lymphocyte": "Clinical or pathologic image illustrating t lymphocyte",
-  "th17": "Clinical or pathologic image illustrating th17",
+  "th17": "CD4⁺ T-helper subset differentiation pathways — IL-23 sustains Th17 lineage",
+  "th1": "CD4⁺ T-helper subset differentiation — IL-12/IFN-γ drives Th1 macrophage-activating immunity",
   "th2": "Clinical or pathologic image illustrating th2",
   "tight-junction": "Clinical or pathologic image illustrating tight junction",
   "type-1-pneumocyte": "Clinical or pathologic image illustrating type 1 pneumocyte",
