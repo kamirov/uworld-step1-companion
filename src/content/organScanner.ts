@@ -101,6 +101,25 @@ const COALESCE_ROOT_TAGS = new Set([
   "ASIDE",
 ]);
 
+const BLOCK_SEPARATOR_TAGS = new Set([
+  ...COALESCE_ROOT_TAGS,
+  "ADDRESS",
+  "DL",
+  "FIELDSET",
+  "FORM",
+  "HR",
+  "MENU",
+  "NAV",
+  "OL",
+  "PRE",
+  "TABLE",
+  "TBODY",
+  "TFOOT",
+  "THEAD",
+  "TR",
+  "UL",
+]);
+
 interface TextSegment {
   node: Text;
   start: number;
@@ -555,6 +574,10 @@ function appendCoalescedSeparator(text: string): string {
   return `${text} `;
 }
 
+function isBlockSeparatorElement(el: Element, root: Element): boolean {
+  return el !== root && BLOCK_SEPARATOR_TAGS.has(el.tagName);
+}
+
 function buildCoalescedText(root: Element): CoalescedTextView | null {
   const segments: TextSegment[] = [];
   let text = "";
@@ -565,7 +588,6 @@ function buildCoalescedText(root: Element): CoalescedTextView | null {
       if (shouldSkipNode(textNode)) return;
       const content = textNode.textContent ?? "";
       if (!content) return;
-      text = appendCoalescedSeparator(text);
       const start = text.length;
       text += content;
       segments.push({ node: textNode, start, end: text.length });
@@ -582,8 +604,17 @@ function buildCoalescedText(root: Element): CoalescedTextView | null {
       return;
     }
 
+    const separatesBlock = isBlockSeparatorElement(el, root);
+    if (separatesBlock) {
+      text = appendCoalescedSeparator(text);
+    }
+
     for (const child of el.childNodes) {
       walk(child);
+    }
+
+    if (separatesBlock) {
+      text = appendCoalescedSeparator(text);
     }
   }
 
@@ -595,9 +626,14 @@ function buildCoalescedText(root: Element): CoalescedTextView | null {
 function locateOffset(
   segments: TextSegment[],
   offset: number,
+  bias: "start" | "end",
 ): { node: Text; nodeOffset: number } | null {
   for (const segment of segments) {
-    if (offset >= segment.start && offset <= segment.end) {
+    const isInSegment =
+      bias === "start"
+        ? offset >= segment.start && offset < segment.end
+        : offset > segment.start && offset <= segment.end;
+    if (isInSegment) {
       return { node: segment.node, nodeOffset: offset - segment.start };
     }
   }
@@ -620,8 +656,8 @@ function applyCoalescedMatch(
   view: CoalescedTextView,
   match: { start: number; end: number; matchText: string; term: TermMatch },
 ): boolean {
-  const start = locateOffset(view.segments, match.start);
-  const end = locateOffset(view.segments, match.end);
+  const start = locateOffset(view.segments, match.start, "start");
+  const end = locateOffset(view.segments, match.end, "end");
   if (!start || !end) return false;
   if (!start.node.isConnected || !end.node.isConnected) return false;
 
@@ -630,7 +666,9 @@ function applyCoalescedMatch(
   range.setEnd(end.node, end.nodeOffset);
 
   const chip = createChip(root.ownerDocument, match.matchText, match.term);
-  range.deleteContents();
+  const contents = range.extractContents();
+  chip.textContent = "";
+  chip.append(contents);
   range.insertNode(chip);
   recordHighlight(match.term, match.matchText, getScanZone(root));
   return true;

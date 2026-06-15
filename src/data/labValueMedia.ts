@@ -13,6 +13,7 @@ import erythrocyteTransketolase from "../media/images/lab-values/erythrocyte-tra
 import erythrocyteG6pd from "../media/images/lab-values/erythrocyte-glucose-6-phosphate-dehydrogenase.jpg?url";
 import fiveHiaa from "../media/images/lab-values/5-hydroxyindoleacetic-acid.svg?url";
 import homovanillicAcid from "../media/images/lab-values/homovanillic-acid.png?url";
+import paco2BloodGasAnalyzer from "../media/images/lab-values/paco2-blood-gas-analyzer.jpg?url";
 
 export type LabValueImageId = Extract<
   LabValueEntry["id"],
@@ -28,6 +29,7 @@ export type LabValueImageId = Extract<
   | "erythrocyte-glucose-6-phosphate-dehydrogenase"
   | "5-hydroxyindoleacetic-acid"
   | "homovanillic-acid"
+  | "paco2"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -49,6 +51,7 @@ export const LAB_VALUE_IMAGES: Partial<Record<LabValueImageId, string>> = {
     extensionAssetUrl(erythrocyteG6pd),
   "5-hydroxyindoleacetic-acid": extensionAssetUrl(fiveHiaa),
   "homovanillic-acid": extensionAssetUrl(homovanillicAcid),
+  paco2: extensionAssetUrl(paco2BloodGasAnalyzer),
 };
 
 export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
@@ -104,6 +107,11 @@ export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Tyrosine hydroxylase showing all four subunits.png)",
     url: "https://commons.wikimedia.org/wiki/File:Tyrosine_hydroxylase_showing_all_four_subunits.png",
   },
+  paco2: {
+    label:
+      "Wikimedia Commons (Cobas b 121 Measurement Chamber (detail).jpg), J3D3, CC BY-SA 3.0",
+    url: "https://commons.wikimedia.org/wiki/File:Cobas_b_121_Measurement_Chamber_(detail).jpg",
+  },
 };
 
 export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
@@ -133,6 +141,8 @@ export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
     "Urinary 5-HIAA — serotonin metabolite elevated in carcinoid syndrome",
   "homovanillic-acid":
     "HVA — dopamine metabolite; ↑ in neuroblastoma with VMA",
+  paco2:
+    "Blood gas analyzer measurement chamber with pCO2 electrode — PaCO2 reflects alveolar ventilation and respiratory acid-base status",
 };
 
 export function getLabValueImageForId(id: string): string | undefined {

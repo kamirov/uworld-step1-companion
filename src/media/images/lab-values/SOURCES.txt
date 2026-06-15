@@ -51,3 +51,9 @@ d-dimer.png
 fibrinogen.png
   Source: Local copy from pathogenesis/fibrinolysis.png
   Reference: https://commons.wikimedia.org/wiki/File:fibrinolysis.png
+
+paco2-blood-gas-analyzer.jpg
+  Source: Wikimedia Commons — Cobas b 121 Measurement Chamber (detail).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cobas_b_121_Measurement_Chamber_(detail).jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/c/c2/Cobas_b_121_Measurement_Chamber_%28detail%29.jpg
+  Attribution: J3D3, CC BY-SA 3.0
