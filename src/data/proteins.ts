@@ -1091,6 +1091,39 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "plasmin",
+    name: "Plasmin",
+    etymology: "Greek plasma = molded/formed + -in = enzyme suffix",
+    aliases: [
+      "plasmin",
+      "plasmins",
+      "fibrinolysin",
+    ],
+    gene: "PLG (encoded as plasminogen zymogen; active plasmin from proteolytic cleavage)",
+    location: "Plasma and fibrin clot surface (activated locally on thrombi)",
+    function:
+      "Serine protease that degrades fibrin and fibrinogen into fibrin degradation products (FDPs), including D-dimer from cross-linked fibrin — the effector enzyme of fibrinolysis and clot dissolution.",
+    mutationCauses: [
+      "Excessive plasmin activity — bleeding (thrombolytic drugs, DIC fibrinolytic phase, α2-antiplasmin deficiency)",
+      "Insufficient plasmin generation — impaired clot clearance (rare plasminogen deficiency states)",
+    ],
+    boardsPearls: [
+      "Plasminogen → plasmin cleavage by tPA (clot-bound) or uPA/streptokinase",
+      "Plasmin degrades fibrin clots and circulating fibrinogen — systemic fibrinolysis causes bleeding",
+      "D-dimer = plasmin cleavage product of cross-linked fibrin — elevated in DVT/PE, DIC, thrombolysis",
+      "α2-Antiplasmin and PAI-1 restrain plasmin activity — balance with coagulation",
+      "Tranexamic acid and ε-aminocaproic acid block plasmin(ogen) binding to fibrin — antifibrinolytics",
+      "vs thrombin — thrombin polymerizes fibrin; plasmin degrades fibrin",
+    ],
+    distinguishFrom: [
+      "Plasminogen — inactive zymogen precursor, not the active protease",
+      "Tissue plasminogen activator (tPA) — activates plasminogen; does not directly cleave fibrin",
+      "Thrombin (factor IIa) — converts fibrinogen to fibrin (coagulation), opposite function",
+      "Plasminogen activator inhibitor-1 (PAI-1) — inhibits tPA/uPA upstream, not plasmin directly",
+      "α2-Antiplasmin — inhibits plasmin at the fibrin surface",
+    ],
+  },
+  {
     id: "plasminogen-activator-inhibitor-1",
     name: "Plasminogen Activator Inhibitor-1",
     etymology: "plasminogen + activator + Latin inhibitor = restrainer + I = first isoform",

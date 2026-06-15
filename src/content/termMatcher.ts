@@ -1,4 +1,5 @@
 import type { TermMatch } from "./termTypes";
+import { shouldRejectAliasByContext } from "./aliasContextRules";
 
 /** Strip styling/invisible chars so bold, Unicode styled, and plain text dedupe together. */
 export function normalizeForComparison(text: string): string {
@@ -142,11 +143,20 @@ export function isAllCapsAcronymInSource(matchText: string): boolean {
   );
 }
 
-export function shouldRejectAliasMatch(matchText: string, alias: string): boolean {
+export interface AliasMatchContext {
+  text: string;
+  index: number;
+  matchText: string;
+  term: TermMatch;
+}
+
+export function shouldRejectAliasMatch(ctx: AliasMatchContext): boolean {
+  const { matchText, term } = ctx;
   if (isFunctionWordBlocked(matchText)) return true;
-  if (isShortAcronymAlias(alias) && !isAllCapsAcronymInSource(matchText)) {
+  if (isShortAcronymAlias(term.alias) && !isAllCapsAcronymInSource(matchText)) {
     return true;
   }
+  if (shouldRejectAliasByContext(ctx)) return true;
   return false;
 }
 
@@ -217,7 +227,7 @@ export function findNextMatchInTrie(
             if (ctx.isAlreadyHighlighted(term, matchText, ctx.zone)) {
               continue;
             }
-            if (shouldRejectAliasMatch(matchText, term.alias)) {
+            if (shouldRejectAliasMatch({ text, index: i, matchText, term })) {
               continue;
             }
             if (

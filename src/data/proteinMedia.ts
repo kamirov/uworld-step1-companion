@@ -8,6 +8,7 @@ import intrinsicFactor from "../media/images/proteins/intrinsic-factor.png?url";
 import phenylalanineHydroxylase from "../media/images/proteins/phenylalanine-hydroxylase.jpg?url";
 import tyrosineHydroxylase from "../media/images/proteins/tyrosine-hydroxylase.png?url";
 import fourteenThreeThreeProtein from "../media/images/proteins/14-3-3-protein.jpg?url";
+import plasmin from "../media/images/proteins/plasmin.png?url";
 
 export type ProteinImageId = Extract<
   ProteinEntry["id"],
@@ -18,6 +19,7 @@ export type ProteinImageId = Extract<
   | "phenylalanine-hydroxylase"
   | "tyrosine-hydroxylase"
   | "14-3-3-protein"
+  | "plasmin"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -33,6 +35,7 @@ export const PROTEIN_IMAGES: Partial<Record<ProteinImageId, string>> = {
   "phenylalanine-hydroxylase": extensionAssetUrl(phenylalanineHydroxylase),
   "tyrosine-hydroxylase": extensionAssetUrl(tyrosineHydroxylase),
   "14-3-3-protein": extensionAssetUrl(fourteenThreeThreeProtein),
+  plasmin: extensionAssetUrl(plasmin),
 };
 
 export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
@@ -66,6 +69,10 @@ export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Mechanisms of amyloid fibril formation.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg",
   },
+  plasmin: {
+    label: "Wikimedia Commons (Coagulation cascade.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
+  },
 };
 
 export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
@@ -83,6 +90,8 @@ export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
     "Tyrosine hydroxylase tetramer — rate-limiting enzyme converting tyrosine to L-DOPA in catecholamine synthesis",
   "14-3-3-protein":
     "CSF 14-3-3 protein — supportive marker of neuronal injury in Creutzfeldt-Jakob disease",
+  plasmin:
+    "Plasmin — serine protease effector of fibrinolysis that degrades fibrin within the coagulation-fibrinolysis balance",
 };
 
 export function getProteinImageForId(id: string): string | undefined {

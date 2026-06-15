@@ -32,3 +32,8 @@ phenylalanine-hydroxylase.jpg
 
 14-3-3-protein.jpg
   Source: Local copy from pathogenesis/fibrils.jpg
+
+plasmin.png
+  Source: Wikimedia Commons — Coagulation cascade.png
+  Page: https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png
+

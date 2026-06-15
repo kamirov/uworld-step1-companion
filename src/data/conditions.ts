@@ -2669,9 +2669,20 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "parkinson-disease",
     name: "Parkinson Disease",
     etymology: "eponym: James Parkinson + disease = disordered function",
-    aliases: ["parkinson disease", "parkinson's disease", "parkinson", "parkinsons", "parkinsonism"],
+    aliases: [
+      "parkinson disease",
+      "parkinson's disease",
+      "parkinson",
+      "parkinsons",
+      "idiopathic parkinson disease",
+      "idiopathic parkinson's disease",
+      "primary parkinson disease",
+      "primary parkinson's disease",
+      "ipd",
+      "parkinsonism",
+    ],
     definition:
-      "Neurodegenerative disorder with loss of dopaminergic neurons in the substantia nigra pars compacta, causing bradykinesia, rigidity, and tremor.",
+      "Idiopathic neurodegenerative disorder with loss of dopaminergic neurons in the substantia nigra pars compacta, causing bradykinesia, rigidity, and resting tremor — excludes secondary causes (drugs, vascular, atypical parkinsonian syndromes).",
     pathophysiology:
       "Loss of pigmented dopaminergic neurons in substantia nigra → ↓ striatal dopamine → imbalance of direct/indirect basal ganglia pathways → bradykinesia and rigidity.",
     classicPresentation: [
@@ -5675,6 +5686,9 @@ export const CONDITIONS: ConditionEntry[] = [
     aliases: [
       "hirschsprung disease",
       "hirschsprung's disease",
+      "hirschprung disease",
+      "hirschprung's disease",
+      "hirschprung",
       "congenital aganglionic megacolon",
       "aganglionic megacolon",
       "hd",
@@ -5850,6 +5864,70 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Pediatric IBD may present with growth failure and delayed puberty before overt GI symptoms; Crohn perianal disease common. Same step-up therapy principles with growth and bone health monitoring.",
+  },
+  {
+    id: "irritable-bowel-syndrome",
+    name: "Irritable Bowel Syndrome",
+    etymology: "Latin irritare = provoke + bowel = intestine + Greek syndromos = running together",
+    aliases: [
+      "irritable bowel syndrome",
+      "irritable bowel syndromes",
+      "ibs",
+      "irritable colon",
+      "spastic colon",
+      "mucous colitis",
+      "functional bowel disorder",
+    ],
+    definition:
+      "Functional gastrointestinal disorder of recurrent abdominal pain related to defecation with altered stool form or frequency — no structural or biochemical abnormality explaining symptoms.",
+    pathophysiology:
+      "Multifactorial visceral hypersensitivity, altered gut motility, brain-gut axis dysregulation, and post-infectious changes (post-infectious IBS) without mucosal inflammation; Rome criteria define symptom clusters.",
+    classicPresentation: [
+      "Recurrent abdominal pain ≥1 day/week related to defecation or change in stool frequency/form",
+      "Alternating diarrhea and constipation (IBS-M) or predominant diarrhea (IBS-D) or constipation (IBS-C)",
+      "Bloating and mucus in stool without blood",
+      "Symptoms worsen with stress; improve after bowel movement",
+    ],
+    keyFindings: [
+      "Normal CBC, CRP, celiac serologies, and colonoscopy in uncomplicated cases",
+      "No weight loss, nocturnal symptoms, or GI bleeding (alarm features absent)",
+      "Rome IV criteria: pain + stool changes ≥3 months",
+    ],
+    associations: [
+      "Post-infectious IBS after gastroenteritis",
+      "Fibromyalgia, anxiety, depression (brain-gut axis)",
+      "Small intestinal bacterial overgrowth (controversial overlap)",
+      "Food intolerances (FODMAPs, lactose)",
+    ],
+    complications: [
+      "Impaired quality of life and work absenteeism",
+      "Avoidance of social activities due to unpredictable symptoms",
+      "Unnecessary testing if alarm features not heeded",
+    ],
+    distinguishFrom: [
+      "Inflammatory bowel disease — bloody diarrhea, weight loss, ↑ CRP, mucosal inflammation",
+      "Celiac disease — tTG IgA positive, villous atrophy on biopsy",
+      "Lactose intolerance — positive breath test or symptom relief off dairy",
+      "Microscopic colitis — watery diarrhea, normal colonoscopy appearance, abnormal biopsy",
+      "Colon cancer — age >50, anemia, occult blood, alarm features",
+    ],
+    treatment: [
+      "Dietary modification (low FODMAP, fiber adjustment by subtype)",
+      "Antispasmodics (hyoscyamine, dicyclomine) for pain",
+      "IBS-C: linaclotide, lubiprostone, polyethylene glycol",
+      "IBS-D: loperamide, rifaximin (selected cases), alosetron (severe refractory IBS-D)",
+      "Tricyclic antidepressants or SSRIs for pain and comorbid mood disorder",
+      "Cognitive behavioral therapy and gut-directed hypnotherapy",
+    ],
+    boardsPearls: [
+      "IBS = functional disorder; diagnosis of exclusion when alarm features absent",
+      "Rome criteria: recurrent abdominal pain related to defecation ± stool changes",
+      "No inflammation — distinguish from IBD (bloody diarrhea, weight loss, ↑ inflammatory markers)",
+      "Alarm features mandate workup: weight loss, anemia, nocturnal diarrhea, family history of CRC, age >50",
+      "TCAs (e.g., amitriptyline) at low dose help visceral pain — anticholinergic side effects limit use",
+    ],
+    pediatrics:
+      "Pediatric functional abdominal pain and IBS overlap; evaluate for celiac disease and IBD if growth failure, anemia, or inflammatory signs. Reassurance and dietary strategies are first-line when alarm features absent.",
   },
   {
     id: "crohn-disease",
@@ -17255,9 +17333,11 @@ export const CONDITIONS: ConditionEntry[] = [
     aliases: [
       "hypothyroidism",
       "hypothyroid",
+      "hypothyroidisms",
       "low thyroid",
       "myxedema",
       "underactive thyroid",
+      "primary hypothyroidism",
     ],
     definition:
       "Clinical syndrome of insufficient thyroid hormone activity causing slowed metabolism, with elevated TSH in primary disease.",
@@ -22812,6 +22892,72 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Common in children after parental divorce, bullying, or school change; behavioral disturbances may predominate over depressed mood.",
+  },
+  {
+    id: "adhd",
+    name: "Attention-Deficit/Hyperactivity Disorder",
+    etymology: "Latin ad- = toward + tendere = stretch + deficit = lack + hyper- = over + activitas = activity + dis- + ordo",
+    aliases: [
+      "adhd",
+      "attention deficit hyperactivity disorder",
+      "attention-deficit/hyperactivity disorder",
+      "attention deficit disorder",
+      "add",
+      "attention-deficit disorder",
+      "hyperkinetic disorder",
+    ],
+    definition:
+      "Neurodevelopmental disorder of inattention and/or hyperactivity-impulsivity causing functional impairment, with symptoms present before age 12 and in ≥2 settings (e.g., school and home).",
+    pathophysiology:
+      "Dysregulated catecholamine signaling in prefrontal cortex and frontostriatal circuits — ↓ dopamine and norepinephrine tone in attention/executive networks; polygenic inheritance with environmental modifiers (prematurity, low birth weight, prenatal toxin exposure).",
+    classicPresentation: [
+      "Child with poor sustained attention, careless mistakes, losing items",
+      "Fidgeting, leaving seat, excessive talking, interrupting",
+      "Academic underachievement despite normal intelligence",
+      "Symptoms present before age 12 and in multiple environments",
+    ],
+    keyFindings: [
+      "≥6 symptoms of inattention and/or hyperactivity-impulsivity (≥5 if age ≥17)",
+      "Symptoms present ≥6 months",
+      "Clear functional impairment in social, academic, or occupational domains",
+      "Not better explained by another mental disorder",
+    ],
+    associations: [
+      "Family history",
+      "Prematurity, low birth weight",
+      "Prenatal tobacco or alcohol exposure",
+      "Comorbid learning disorders, oppositional defiant disorder, tic disorders",
+    ],
+    complications: [
+      "Academic failure and low self-esteem",
+      "Substance use disorder (especially untreated)",
+      "Motor vehicle accidents in adults",
+      "Comorbid anxiety and depression",
+    ],
+    distinguishFrom: [
+      "Normal developmental activity in preschoolers — symptoms must be excessive for developmental level",
+      "Bipolar disorder — episodic mood elevation, not chronic inattention",
+      "Anxiety/depression — inattention secondary to mood disorder",
+      "Substance intoxication — amphetamines/cocaine cause acute hyperactivity",
+      "Thyrotoxicosis or hyperthyroidism — check TSH if new-onset restlessness",
+      "Sleep deprivation — inattention from poor sleep hygiene",
+    ],
+    treatment: [
+      "Stimulants first-line — methylphenidate or amphetamine salts (DAT/NET modulation)",
+      "Non-stimulants — atomoxetine (NET inhibitor), α₂-agonists (clonidine, guanfacine)",
+      "Behavioral therapy and classroom accommodations",
+      "Treat comorbid learning or mood disorders",
+    ],
+    boardsPearls: [
+      "ADHD = ↓ prefrontal catecholamine tone; stimulants ↑ synaptic DA/NE",
+      "Methylphenidate blocks DAT/NET; amphetamines release + block reuptake",
+      "Diagnosis: symptoms before age 12, ≥2 settings, ≥6 months, functional impairment",
+      "Stimulants are Schedule II — monitor growth, appetite, sleep, and cardiovascular status",
+      "vs normal childhood — symptoms must be developmentally inappropriate and impairing",
+      "Atomoxetine = non-stimulant NET inhibitor when stimulants contraindicated",
+    ],
+    pediatrics:
+      "ADHD is diagnosed in childhood; preschoolers need markedly excessive symptoms for age. Stimulants improve attention but may suppress appetite and growth velocity — monitor BMI and height percentiles; behavioral parent training is first-line for young children when symptoms are mild.",
   },
   {
     id: "schizoid-personality-disorder",

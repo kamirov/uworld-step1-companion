@@ -55,6 +55,7 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "dental-caries": "Occlusal dental caries with enamel cavitation",
         "keratoconjunctivitis-sicca": "Dry eye with ocular surface staining/keratitis pattern",
         "diabetes-insipidus": "Massive polyuria — large volumes of dilute urine in diabetes insipidus",
+        "carotid-stenosis": "Carotid duplex ultrasound showing near-occlusive internal carotid artery stenosis",
     },
     "symptoms": {
         "erythema": "Sharply demarcated erythema of recurrent erysipelas (vasodilation with infection)",

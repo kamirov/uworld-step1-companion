@@ -5550,6 +5550,123 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Penumbra physiology applies to pediatric arterial ischemic stroke as in adults; reperfusion decisions in children follow specialized stroke protocols with imaging demonstrating salvageable tissue.",
   },
+  {
+    id: "fibrinolysis",
+    name: "Fibrinolysis",
+    etymology: "Latin fibra = fiber + Greek lysis = loosening/dissolution",
+    aliases: [
+      "fibrinolysis",
+      "fibrinolytic pathway",
+      "fibrinolytic system",
+      "fibrinolytic cascade",
+      "physiologic fibrinolysis",
+    ],
+    definition:
+      "Enzymatic pathway that degrades fibrin and fibrinogen via plasmin — counterbalances coagulation to limit thrombus growth, clear clots during wound repair, and maintain vascular patency.",
+    examples: [
+      "Plasminogen → plasmin via tPA (endothelial release, fibrin-bound) or uPA",
+      "Plasmin cleaves fibrin → fibrin degradation products and D-dimer",
+      "PAI-1 and α2-antiplasmin restrain fibrinolysis to localize clot lysis",
+      "Thrombolytic drugs (alteplase, streptokinase) pharmacologically amplify fibrinolysis",
+      "Secondary fibrinolysis in DIC — widespread plasmin generation → bleeding",
+      "Antifibrinolytics (tranexamic acid, ε-aminocaproic acid) inhibit plasmin(ogen) on fibrin",
+    ],
+    boardsPearls: [
+      "Coagulation builds clot; fibrinolysis breaks clot — opposing hemostatic arms",
+      "tPA converts plasminogen to plasmin preferentially on fibrin — basis for thrombolytic therapy",
+      "D-dimer reflects fibrin turnover from plasmin activity — not specific but sensitive",
+      "PAI-1 ↑ in metabolic syndrome → hypofibrinolysis → thrombosis risk",
+      "ε-Aminocaproic acid and tranexamic acid — antifibrinolytics used in bleeding states",
+      "vs primary fibrinolysis — pathologic systemic activation (DIC, thrombolytic overdose)",
+    ],
+    distinguishFrom: [
+      "Coagulation — thrombin-mediated fibrin formation, not degradation",
+      "Clot dissolution — broader term for thrombus breakdown including therapeutic contexts",
+      "Thrombolysis — pharmacologic induction of fibrinolysis (clinical intervention)",
+      "Fibrinogenolysis — plasmin degrading circulating fibrinogen without established clot",
+    ],
+    pediatrics:
+      "Neonatal fibrinolytic activity is relatively high; ligneous conjunctivitis from plasminogen deficiency presents in childhood with woody pseudomembranes.",
+  },
+  {
+    id: "clot-dissolution",
+    name: "Clot Dissolution",
+    etymology: "Old English clott = lump + Latin dis = apart + Latin solutio = loosening",
+    aliases: [
+      "clot dissolution",
+      "clot dissolutions",
+      "clot lysis",
+      "thrombus dissolution",
+      "thrombus lysis",
+      "thrombolysis",
+      "lysis of clot",
+    ],
+    definition:
+      "Breakdown and removal of established fibrin thrombi — occurs physiologically via fibrinolysis, pathologically in DIC, and therapeutically with thrombolytic agents to restore vessel patency in MI, stroke, and PE.",
+    examples: [
+      "Physiologic — endothelial tPA activates plasminogen on clot surface → gradual thrombus clearance",
+      "IV alteplase (tPA) for ischemic stroke within 4.5 h — pharmacologic clot dissolution",
+      "Streptokinase or tenecteplase for STEMI when PCI unavailable",
+      "DIC — secondary fibrinolysis dissolves clots systemically → bleeding diathesis",
+      "Pleural/intravascular fibrinolytics (tPA + DNase) for loculated empyema",
+      "Mechanical thrombectomy — physical clot removal, not enzymatic dissolution",
+    ],
+    boardsPearls: [
+      "Thrombolytics dissolve clots by amplifying plasmin generation — major bleeding risk",
+      "tPA for ischemic stroke and PE; streptokinase/alteplase for MI",
+      "Contraindications to thrombolysis — active bleeding, recent surgery, hemorrhagic stroke",
+      "Clot dissolution releases D-dimer and FDPs — monitor in DIC and after thrombolysis",
+      "Antifibrinolytics (tranexamic acid) prevent clot dissolution — used in trauma bleeding",
+      "vs anticoagulation — prevents new clot formation; does not actively dissolve established thrombus as rapidly",
+    ],
+    distinguishFrom: [
+      "Fibrinolysis — enzymatic pathway; clot dissolution is the functional outcome or therapeutic goal",
+      "Anticoagulation — inhibits new thrombin generation; slower effect on existing clot",
+      "Mechanical thrombectomy — physical retrieval, not enzymatic lysis",
+      "Clot formation (coagulation) — opposite process building fibrin mesh",
+    ],
+    pediatrics:
+      "Pediatric ischemic stroke thrombolysis is highly restricted; most children receive antithrombotic therapy rather than systemic thrombolytics. Neonatal arterial clots may be treated with low-dose thrombolytics in specialist centers.",
+  },
+  {
+    id: "blood-brain-barrier",
+    name: "Blood-Brain Barrier",
+    etymology: "blood = circulating plasma + brain = CNS tissue + barrier = restrictive partition",
+    aliases: [
+      "blood-brain barrier",
+      "blood brain barrier",
+      "blood–brain barrier",
+      "bbb",
+      "bbbs",
+      "cns vascular barrier",
+      "neurovascular unit",
+    ],
+    definition:
+      "Highly selective endothelial barrier between systemic circulation and brain interstitium formed by tight junctions, astrocyte end-feet, and pericytes — restricts paracellular diffusion and uses efflux transporters to control CNS drug and solute entry.",
+    examples: [
+      "Levodopa crosses BBB (dopamine cannot) — peripheral carbidopa protects peripheral conversion",
+      "Lipid-soluble drugs (e.g., diazepam, dexamethasone) penetrate more readily than polar/charged molecules",
+      "P-glycoprotein efflux limits many antibiotics and chemotherapeutics in CNS",
+      "Meningitis and neuroinflammation disrupt BBB → ↑ permeability, vasogenic edema, ↓ CSF glucose",
+      "Ammonia (NH₃) crosses BBB as unionized gas → hepatic encephalopathy",
+      "Neonatal meningitis — hematogenous bacterial crossing of immature BBB",
+    ],
+    boardsPearls: [
+      "BBB = tight junctions + no fenestrae + astrocyte foot processes + P-gp efflux",
+      "Dopamine does not cross BBB — use L-DOPA precursor; carbidopa blocks peripheral decarboxylation",
+      "Polar/charged molecules and most proteins excluded; lipid-soluble agents penetrate better",
+      "Inflammation (meningitis, MS, trauma) increases BBB permeability",
+      "vs blood-CSF barrier — choroid plexus epithelium regulates CSF composition separately",
+    ],
+    distinguishFrom: [
+      "Blood-CSF barrier — choroid plexus tight junctions regulating CSF, not capillary endothelium",
+      "Blood-testis barrier — Sertoli cell tight junctions protecting germ cells",
+      "Placental barrier — maternal-fetal exchange, not CNS",
+      "Simple diffusion — BBB is active/selective transport, not passive equilibration",
+    ],
+    pediatrics:
+      "Neonatal BBB is immature — CNS infections and drug penetration differ from adults; kernicterus reflects bilirubin crossing underdeveloped barrier.",
+  },
 ];
 
 const pathogenesisById = new Map(

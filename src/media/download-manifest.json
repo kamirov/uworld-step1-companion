@@ -1633,5 +1633,50 @@
     "title": "File:Polyuria, large dilute volumes of urine (31388976010).jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Polyuria,_large_dilute_volumes_of_urine_(31388976010).jpg",
     "query": "polyuria dilute urine diabetes insipidus"
+  },
+  "conditions/carotid-stenosis.jpg": {
+    "title": "File:Internal carotid artery stenosis in ultrasound near occlusion.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Internal_carotid_artery_stenosis_in_ultrasound_near_occlusion.jpg",
+    "query": "carotid stenosis ultrasound"
+  },
+  "pathogenesis/penumbra.jpg": {
+    "title": "File:Tmax by MRI perfusion in cerebral artery occlusion.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tmax_by_MRI_perfusion_in_cerebral_artery_occlusion.jpg",
+    "query": "ischemic penumbra MRI perfusion"
+  },
+  "clinical-strategies/antiplatelet-therapy.jpg": {
+    "title": "File:WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:WBC_(neutrophil)_at_centre,_numerous_erythrocytes_and_platelets_(dot_like_bodies)_in_Wright's_stained_peripheral_blood_smear_(PBS)_microscopy.jpg",
+    "query": "platelets blood smear"
+  },
+  "proteins/plasmin.jpg": {
+    "title": "Local copy from pathogenesis/proteolytic-enzyme-cleavage.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Proteolytic_enzyme.jpg",
+    "query": "proteolytic enzyme cleavage"
+  },
+  "pathogenesis/fibrinolysis.jpg": {
+    "title": "Local copy from pathogenesis/fibrils.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fibrils.jpg",
+    "query": "fibrin fibrils"
+  },
+  "pathogenesis/clot-dissolution.jpg": {
+    "title": "Local copy for clot dissolution illustration",
+    "page": "https://commons.wikimedia.org/wiki/File:Tmax_by_MRI_perfusion_in_cerebral_artery_occlusion.jpg",
+    "query": "stroke thrombolysis"
+  },
+  "pathogenesis/fibrinolysis.png": {
+    "title": "File:Coagulation cascade.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
+    "query": "coagulation fibrinolysis cascade"
+  },
+  "proteins/plasmin.png": {
+    "title": "File:Coagulation cascade.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
+    "query": "plasmin fibrinolysis"
+  },
+  "pathogenesis/clot-dissolution.png": {
+    "title": "File:D-dimer.png",
+    "page": "https://commons.wikimedia.org/wiki/File:D-dimer.png",
+    "query": "D-dimer fibrin degradation clot lysis"
   }
 }

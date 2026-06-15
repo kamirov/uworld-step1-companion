@@ -164,3 +164,31 @@ metoclopramide.svg
 retinoic-acid.svg
   Source: Wikimedia Commons — Tretinoin structure.svg
   Page: https://commons.wikimedia.org/wiki/File:Tretinoin_structure.svg
+
+cocaine.svg
+  Source: Wikimedia Commons — (-)-Cocaine Structural Formula V1.svg
+  Page: https://commons.wikimedia.org/wiki/File:(-)-Cocaine_Structural_Formula_V1.svg
+
+amphetamines.svg
+  Source: Wikimedia Commons — Amphetamine structure.svg
+  Page: https://commons.wikimedia.org/wiki/File:Amphetamine_structure.svg
+
+reserpine.svg
+  Source: Wikimedia Commons — Reserpine.svg
+  Page: https://commons.wikimedia.org/wiki/File:Reserpine.svg
+
+methylphenidate.svg
+  Source: Wikimedia Commons — Methylphenidate.svg
+  Page: https://commons.wikimedia.org/wiki/File:Methylphenidate.svg
+
+opioids.png
+  Source: Local copy from medications/oxycodone.png
+  Reference: https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png
+
+mao-inhibitors.png
+  Source: Local copy from pathogenesis/synaptic-dopamine-concentration.png
+  Reference: https://commons.wikimedia.org/wiki/File:Synaptic_dopamine_concentration.png
+
+anticholinergics.svg
+  Source: Local copy from medications/diphenhydramine.svg
+  Reference: https://commons.wikimedia.org/wiki/File:Diphenhydramine.svg

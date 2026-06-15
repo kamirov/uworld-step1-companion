@@ -2,10 +2,13 @@ import type { MedicationEntry } from "./medications";
 import type { MediaAttribution } from "./media";
 
 import alprazolam from "../media/images/medications/alprazolam.svg?url";
+import anticholinergics from "../media/images/medications/anticholinergics.svg?url";
 import amitriptyline from "../media/images/medications/amitriptyline.png?url";
+import amphetamines from "../media/images/medications/amphetamines.svg?url";
 import antipsychotics from "../media/images/medications/antipsychotics.jpg?url";
 import calcineurinInhibitors from "../media/images/medications/calcineurin-inhibitors.svg?url";
 import clonazepam from "../media/images/medications/clonazepam.svg?url";
+import cocaine from "../media/images/medications/cocaine.svg?url";
 import duloxetine from "../media/images/medications/duloxetine.svg?url";
 import fluoxetine from "../media/images/medications/fluoxetine.svg?url";
 import generalAnesthetic from "../media/images/medications/general-anesthetic.png?url";
@@ -18,13 +21,17 @@ import glatiramer from "../media/images/medications/glatiramer.webp?url";
 import hydrocortisone from "../media/images/medications/hydrocortisone.svg?url";
 import interferonBeta from "../media/images/medications/interferon-beta.svg?url";
 import linezolid from "../media/images/medications/linezolid.svg?url";
+import maoInhibitors from "../media/images/medications/mao-inhibitors.png?url";
 import metoclopramide from "../media/images/medications/metoclopramide.svg?url";
+import methylphenidate from "../media/images/medications/methylphenidate.svg?url";
 import nafcillin from "../media/images/medications/nafcillin.svg?url";
 import naproxen from "../media/images/medications/naproxen.svg?url";
 import oxacillin from "../media/images/medications/oxacillin.svg?url";
+import opioids from "../media/images/medications/opioids.png?url";
 import oxycodone from "../media/images/medications/oxycodone.png?url";
 import polyclonalFabAntivenom from "../media/images/medications/polyclonal-fab-antivenom.png?url";
 import quetiapine from "../media/images/medications/quetiapine.svg?url";
+import reserpine from "../media/images/medications/reserpine.svg?url";
 import pyridoxine from "../media/images/medications/pyridoxine.svg?url";
 import ramelteon from "../media/images/medications/ramelteon.svg?url";
 import riboflavin from "../media/images/medications/riboflavin.png?url";
@@ -37,11 +44,14 @@ import retinoicAcid from "../media/images/medications/retinoic-acid.svg?url";
 export type MedicationImageId = Extract<
   MedicationEntry["id"],
   | "alprazolam"
+  | "anticholinergics"
   | "amitriptyline"
+  | "amphetamines"
   | "antipsychotics"
   | "anti-tnf-therapy"
   | "calcineurin-inhibitors"
   | "clonazepam"
+  | "cocaine"
   | "duloxetine"
   | "fluoxetine"
   | "general-anesthetic"
@@ -54,13 +64,17 @@ export type MedicationImageId = Extract<
   | "hydrocortisone"
   | "interferon-beta"
   | "linezolid"
+  | "mao-inhibitors"
   | "metoclopramide"
+  | "methylphenidate"
   | "nafcillin"
   | "naproxen"
   | "oxacillin"
+  | "opioids"
   | "oxycodone"
   | "polyclonal-fab-antivenom"
   | "quetiapine"
+  | "reserpine"
   | "pyridoxine"
   | "ramelteon"
   | "riboflavin"
@@ -77,11 +91,14 @@ function extensionAssetUrl(path: string): string {
 /** See src/media/images/medications/SOURCES.txt */
 export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   alprazolam: extensionAssetUrl(alprazolam),
+  anticholinergics: extensionAssetUrl(anticholinergics),
   amitriptyline: extensionAssetUrl(amitriptyline),
+  amphetamines: extensionAssetUrl(amphetamines),
   antipsychotics: extensionAssetUrl(antipsychotics),
   "anti-tnf-therapy": extensionAssetUrl(antiTnfTherapy),
   "calcineurin-inhibitors": extensionAssetUrl(calcineurinInhibitors),
   clonazepam: extensionAssetUrl(clonazepam),
+  cocaine: extensionAssetUrl(cocaine),
   duloxetine: extensionAssetUrl(duloxetine),
   fluoxetine: extensionAssetUrl(fluoxetine),
   "general-anesthetic": extensionAssetUrl(generalAnesthetic),
@@ -94,13 +111,17 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   hydrocortisone: extensionAssetUrl(hydrocortisone),
   "interferon-beta": extensionAssetUrl(interferonBeta),
   linezolid: extensionAssetUrl(linezolid),
+  "mao-inhibitors": extensionAssetUrl(maoInhibitors),
   metoclopramide: extensionAssetUrl(metoclopramide),
+  methylphenidate: extensionAssetUrl(methylphenidate),
   nafcillin: extensionAssetUrl(nafcillin),
   naproxen: extensionAssetUrl(naproxen),
   oxacillin: extensionAssetUrl(oxacillin),
+  opioids: extensionAssetUrl(opioids),
   oxycodone: extensionAssetUrl(oxycodone),
   "polyclonal-fab-antivenom": extensionAssetUrl(polyclonalFabAntivenom),
   quetiapine: extensionAssetUrl(quetiapine),
+  reserpine: extensionAssetUrl(reserpine),
   pyridoxine: extensionAssetUrl(pyridoxine),
   ramelteon: extensionAssetUrl(ramelteon),
   riboflavin: extensionAssetUrl(riboflavin),
@@ -117,9 +138,17 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Alprazolam structure.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Alprazolam_structure.svg",
   },
+  anticholinergics: {
+    label: "Wikimedia Commons (Diphenhydramine.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Diphenhydramine.svg",
+  },
   amitriptyline: {
     label: "Wikimedia Commons (Amitriptyline-from-picrate-xtal-3D-balls.png)",
     url: "https://commons.wikimedia.org/wiki/File:Amitriptyline-from-picrate-xtal-3D-balls.png",
+  },
+  amphetamines: {
+    label: "Wikimedia Commons (Amphetamine structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Amphetamine_structure.svg",
   },
   antipsychotics: {
     label: "Wikimedia Commons (Overview of reward structures in the human brain.jpg)",
@@ -136,6 +165,10 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
   clonazepam: {
     label: "Wikimedia Commons (Clonazepam 200.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Clonazepam_200.svg",
+  },
+  cocaine: {
+    label: "Wikimedia Commons ((-)-Cocaine Structural Formula V1.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:(-)-Cocaine_Structural_Formula_V1.svg",
   },
   duloxetine: {
     label: "Wikimedia Commons (Duloxetine-structure.svg)",
@@ -173,9 +206,17 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Struktur Linezolid.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Struktur_Linezolid.svg",
   },
+  "mao-inhibitors": {
+    label: "Wikimedia Commons (Synaptic dopamine concentration.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Synaptic_dopamine_concentration.png",
+  },
   metoclopramide: {
     label: "Wikimedia Commons (Metoclopramide.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Metoclopramide.svg",
+  },
+  methylphenidate: {
+    label: "Wikimedia Commons (Methylphenidate.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Methylphenidate.svg",
   },
   nafcillin: {
     label: "Wikimedia Commons (Nafcillin.svg)",
@@ -189,9 +230,17 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Struktur Oxacillin.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Struktur_Oxacillin.svg",
   },
+  opioids: {
+    label: "Wikimedia Commons (Oxycodone structure.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png",
+  },
   quetiapine: {
     label: "Wikimedia Commons (Quetiapine2DACS.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Quetiapine2DACS.svg",
+  },
+  reserpine: {
+    label: "Wikimedia Commons (Reserpine.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Reserpine.svg",
   },
   pyridoxine: {
     label: "Wikimedia Commons (Pyridoxine structure ver2.svg)",
@@ -248,8 +297,12 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
 > = {
   alprazolam:
     "Alprazolam — triazolobenzodiazepine enhancing GABA-A inhibition for anxiety and panic disorder",
+  anticholinergics:
+    "Muscarinic receptor antagonists — dry mouth, urinary retention, mydriasis; toxidrome reversed by physostigmine when appropriate",
   amitriptyline:
     "Amitriptyline — tricyclic antidepressant with NE/5-HT reuptake blockade and sodium channel cardiotoxicity in overdose",
+  amphetamines:
+    "Amphetamines — reverse DAT/NET transport to release dopamine and norepinephrine; used in ADHD and narcolepsy",
   antipsychotics:
     "D2 blockade reduces mesolimbic psychosis but causes nigrostriatal EPS and tuberoinfundibular hyperprolactinemia",
   "anti-tnf-therapy":
@@ -258,6 +311,8 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Calcineurin blockade prevents NFAT activation — ↓ IL-2 and T-cell proliferation in transplant",
   clonazepam:
     "Clonazepam — long-acting benzodiazepine used for epilepsy and panic disorder",
+  cocaine:
+    "Cocaine — blocks DAT/NET/SERT reuptake and voltage-gated Na⁺ channels; sympathomimetic toxicity and coronary vasospasm",
   duloxetine:
     "Duloxetine — SNRI inhibiting serotonin and norepinephrine reuptake for depression and neuropathic pain",
   fluoxetine:
@@ -276,16 +331,24 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Diphenhydramine — first-generation H1 blocker with antimuscarinic sedation and toxidrome risk in overdose",
   linezolid:
     "Linezolid inhibits 50S ribosomal initiation — covers MRSA pneumonia with oral bioavailability",
+  "mao-inhibitors":
+    "MAO inhibitors block oxidative deamination of dopamine, norepinephrine, and serotonin — tyramine crisis and serotonin syndrome risks",
   metoclopramide:
     "Metoclopramide — D₂ antagonist antiemetic and prokinetic; EPS risk limits duration",
+  methylphenidate:
+    "Methylphenidate — DAT/NET reuptake inhibitor used as first-line ADHD stimulant",
   nafcillin:
     "Nafcillin — penicillinase-resistant penicillin for MSSA; not active against MRSA",
   naproxen:
     "Naproxen — NSAID with reversible COX inhibition for pain and inflammation",
   oxacillin:
     "Oxacillin — anti-staphylococcal penicillin; oxacillin disk screens for MRSA resistance",
+  opioids:
+    "μ-opioid receptor agonists — analgesia, miosis, and respiratory depression; reversed by naloxone",
   quetiapine:
     "Quetiapine — atypical antipsychotic blocking D2/5-HT2A and H1 (sedation at low doses)",
+  reserpine:
+    "Reserpine — irreversible VMAT2 inhibitor depleting vesicular dopamine, norepinephrine, and serotonin stores",
   pyridoxine:
     "Pyridoxine (vitamin B6) — PLP cofactor precursor; co-administered with isoniazid to prevent neuropathy",
   oxycodone:

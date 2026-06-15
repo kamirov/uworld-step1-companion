@@ -22,8 +22,8 @@ import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.jpg?url";
 import diplopia from "../media/images/symptoms/diplopia.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
-import dystonia from "../media/images/symptoms/dystonia.jpg?url";
 import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
+import dystonia from "../media/images/symptoms/dystonia.jpg?url";
 import dysuria from "../media/images/symptoms/dysuria.jpg?url";
 import easyFatigability from "../media/images/symptoms/easy-fatigability.jpg?url";
 import ecchymosis from "../media/images/symptoms/ecchymosis.jpg?url";
@@ -68,7 +68,7 @@ import myelopathy from "../media/images/symptoms/myelopathy.jpg?url";
 import nausea from "../media/images/symptoms/nausea.jpg?url";
 import neutropenia from "../media/images/symptoms/neutropenia.jpg?url";
 import nodularLymphangitis from "../media/images/symptoms/nodular-lymphangitis.jpg?url";
-import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.jpg?url";
+import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.svg?url";
 import nystagmus from "../media/images/symptoms/nystagmus.svg?url";
 import orthopnea from "../media/images/symptoms/orthopnea.jpg?url";
 import orthostaticHypotension from "../media/images/symptoms/orthostatic-hypotension.jpg?url";
@@ -134,8 +134,8 @@ export type SymptomImageId = Extract<
   | "decreased-skin-turgor"
   | "diplopia"
   | "dry-mucous-membranes"
-  | "dystonia"
   | "dysmorphic-facies"
+  | "dystonia"
   | "dysuria"
   | "easy-fatigability"
   | "ecchymosis"
@@ -252,8 +252,8 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "decreased-skin-turgor": extensionAssetUrl(decreasedSkinTurgor),
   "diplopia": extensionAssetUrl(diplopia),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
-  "dystonia": extensionAssetUrl(dystonia),
   "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
+  "dystonia": extensionAssetUrl(dystonia),
   "dysuria": extensionAssetUrl(dysuria),
   "easy-fatigability": extensionAssetUrl(easyFatigability),
   "ecchymosis": extensionAssetUrl(ecchymosis),
@@ -352,7 +352,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "arthralgia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthralgia.jpg" },
   "arthritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthritis.jpg" },
   "ataxia": { label: "Wikimedia Commons (Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg" },
-  "autonomic-dysfunction": { label: "Wikimedia Commons (Orthostatic hypotension.jpg)", url: "https://commons.wikimedia.org/wiki/File:Orthostatic_hypotension.jpg" },
+  "autonomic-dysfunction": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:autonomic-dysfunction.jpg" },
   "blueberry-muffin-rash": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:blueberry-muffin-rash.jpg" },
   "brudzinski-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:brudzinski-sign.png" },
   "bullae": { label: "Wikimedia Commons (Bullous pemphigoid new image.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg" },
@@ -367,8 +367,8 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "decreased-skin-turgor": { label: "Wikimedia Commons (LowSkinTurgor.jpg)", url: "https://commons.wikimedia.org/wiki/File:LowSkinTurgor.jpg" },
   "diplopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diplopia.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
-  "dystonia": { label: "Wikimedia Commons (Traité des torticolis spasmodiques, spasmes, tics, rythmies du cou, torticolis mental, etc. (1907) (14778054521).jpg)", url: "https://commons.wikimedia.org/wiki/File:Trait%C3%A9_des_torticolis_spasmodiques,_spasmes,_tics,_rythmies_du_cou,_torticolis_mental,_etc._(1907)_(14778054521).jpg" },
   "dysmorphic-facies": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dysmorphic-facies.jpg" },
+  "dystonia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dystonia.jpg" },
   "dysuria": { label: "Wikimedia Commons (Bombax ceiba is a universe unto itself.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_is_a_universe_unto_itself.jpg" },
   "easy-fatigability": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:easy-fatigability.jpg" },
   "ecchymosis": { label: "Wikimedia Commons (Bilateral periorbital ecchymosis (raccoon eyes).jpg)", url: "https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg" },
@@ -413,7 +413,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "nausea": { label: "Wikimedia Commons (Fphar-09-00913-g005.jpg)", url: "https://commons.wikimedia.org/wiki/File:Fphar-09-00913-g005.jpg" },
   "neutropenia": { label: "Wikimedia Commons (A blood smear with neutropenia in United States.jpg)", url: "https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg" },
   "nodular-lymphangitis": { label: "Wikimedia Commons (Sporotrichosis by the fungus Sporothrix schenckii PHIL 3940 lores.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sporotrichosis_by_the_fungus_Sporothrix_schenckii_PHIL_3940_lores.jpg" },
-  "nuchal-rigidity": { label: "Wikimedia Commons (Books from the Library of Congress (IA moderndiagnosi00shef).pdf)", url: "https://commons.wikimedia.org/wiki/File:Books_from_the_Library_of_Congress_(IA_moderndiagnosi00shef).pdf" },
+  "nuchal-rigidity": { label: "Created locally", url: "https://en.wikipedia.org/wiki/Meningism" },
   "nystagmus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:nystagmus.svg" },
   "orthopnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthopnea.jpg" },
   "orthostatic-hypotension": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthostatic-hypotension.jpg" },
@@ -465,7 +465,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
   "arthritis": "Clinical or pathologic image illustrating arthritis",
   "ataxia": "Clinical or pathologic image illustrating ataxia",
-  "autonomic-dysfunction": "Orthostatic hypotension — blood pressure fall on standing from impaired baroreflex in autonomic neuropathy",
+  "autonomic-dysfunction": "Clinical or pathologic image illustrating autonomic dysfunction",
   "blueberry-muffin-rash": "Clinical or pathologic image illustrating blueberry muffin rash",
   "brudzinski-sign": "Brudziński sign — passive neck flexion causes involuntary hip/knee flexion in meningitis",
   "bullae": "Bullous pemphigoid — tense subepidermal bullae",
@@ -480,8 +480,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "decreased-skin-turgor": "Clinical or pathologic image illustrating decreased skin turgor",
   "diplopia": "Clinical or pathologic image illustrating diplopia",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
-  "dystonia": "Spasmodic torticollis — sustained neck muscle contraction causing abnormal head posture in focal dystonia",
   "dysmorphic-facies": "Clinical or pathologic image illustrating dysmorphic facies",
+  "dystonia": "Clinical or pathologic image illustrating dystonia",
   "dysuria": "Clinical or pathologic image illustrating dysuria",
   "easy-fatigability": "Clinical or pathologic image illustrating easy fatigability",
   "ecchymosis": "Periorbital ecchymosis — non-blanching blood extravasation into skin",

@@ -109,3 +109,19 @@ mass-effect.jpg
   Source: Wikimedia Commons — Brain herniation.jpg
   Page: https://commons.wikimedia.org/wiki/File:Brain_herniation.jpg
 
+penumbra.jpg
+  Source: Wikimedia Commons — Tmax by MRI perfusion in cerebral artery occlusion.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Tmax_by_MRI_perfusion_in_cerebral_artery_occlusion.jpg
+
+fibrinolysis.png
+  Source: Wikimedia Commons — Coagulation cascade.png
+  Page: https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png
+
+clot-dissolution.png
+  Source: Wikimedia Commons — D-dimer.png
+  Page: https://commons.wikimedia.org/wiki/File:D-dimer.png
+
+blood-brain-barrier.svg
+  Source: Local copy from conditions/meninges-diagram.svg
+  Reference: https://commons.wikimedia.org/wiki/File:Meninges_diagram.svg
+

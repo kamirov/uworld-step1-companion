@@ -7163,6 +7163,48 @@ export const SYMPTOMS: SymptomEntry[] = [
     pediatrics:
       "Familial dysautonomia (Riley-Day syndrome) — Ashkenazi Jewish infants with absent fungiform papillae, alacrima, labile BP, and GI dysmotility; congenital central hypoventilation (Ondine curse) reflects brainstem autonomic failure.",
   },
+  {
+    id: "anxiety",
+    name: "Anxiety",
+    etymology: "Latin anxietas = distress of mind from anxius = choking/squeezing",
+    aliases: [
+      "anxiety",
+      "anxieties",
+      "anxious",
+      "anxiousness",
+      "nervousness",
+      "feeling anxious",
+      "psychological anxiety",
+    ],
+    definition:
+      "Subjective sense of apprehension, tension, or unease — may be situational, part of an anxiety disorder, or secondary to medical illness, substance use, or withdrawal.",
+    mechanism:
+      "Amygdala hyperreactivity and dysregulated HPA axis with ↑ norepinephrine and cortisol; GABAergic deficit lowers inhibitory tone; hyperventilation can cause respiratory alkalosis and perioral paresthesias.",
+    thinkOf: [
+      "Generalized anxiety disorder",
+      "Panic disorder",
+      "Hyperthyroidism",
+      "Caffeine or stimulant use",
+      "Alcohol or benzodiazepine withdrawal",
+      "Pheochromocytoma",
+      "Adjustment disorder with anxiety",
+    ],
+    pairWith: [
+      "Anxiety + tremor + insomnia after stopping alcohol → withdrawal",
+      "Anxiety + palpitations + weight loss → hyperthyroidism",
+      "Anxiety + episodic sweating/headache/hypertension → pheochromocytoma",
+      "Chronic worry ≥6 months + somatic symptoms → GAD",
+      "Recurrent panic attacks + avoidance → panic disorder",
+    ],
+    distinguishFrom: [
+      "Fear — proportionate response to identifiable threat; anxiety is often anticipatory or excessive",
+      "Depression — anhedonia and low mood predominate; anxiety can coexist",
+      "Akathisia — inner restlessness from antipsychotics, not primary anxiety",
+      "Delirium — acute fluctuating cognition with inattention, not isolated anxiety",
+    ],
+    pediatrics:
+      "Separation anxiety is developmentally normal in young children; GAD in youth presents as worry about performance, catastrophes, and somatic complaints (stomachache, headache).",
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));

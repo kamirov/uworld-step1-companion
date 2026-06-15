@@ -5,6 +5,7 @@ import abscess from "../media/images/conditions/abscess.jpg?url";
 import acromegaly from "../media/images/conditions/acromegaly.jpg?url";
 import acuteCholangitis from "../media/images/conditions/acute-cholangitis.svg?url";
 import addisonDisease from "../media/images/conditions/addison-disease.jpg?url";
+import adhd from "../media/images/conditions/adhd.png?url";
 import adjustmentDisorder from "../media/images/conditions/adjustment-disorder.svg?url";
 import alcoholUseDisorder from "../media/images/conditions/alcohol-use-disorder.jpg?url";
 import allergicContactDermatitis from "../media/images/conditions/allergic-contact-dermatitis.jpg?url";
@@ -33,6 +34,7 @@ import briefPsychoticDisorder from "../media/images/conditions/brief-psychotic-d
 import c6Radiculopathy from "../media/images/conditions/c6-radiculopathy.png?url";
 import c7Radiculopathy from "../media/images/conditions/c7-radiculopathy.png?url";
 import cardiacTamponade from "../media/images/conditions/cardiac-tamponade.jpg?url";
+import carotidStenosis from "../media/images/conditions/carotid-stenosis.jpg?url";
 import catScratchDisease from "../media/images/conditions/cat-scratch-disease.jpg?url";
 import cataracts from "../media/images/conditions/cataracts.jpg?url";
 import celiacDisease from "../media/images/conditions/celiac-disease.jpg?url";
@@ -82,6 +84,7 @@ import handFootAndMouthDisease from "../media/images/conditions/hand-foot-and-mo
 import heartFailure from "../media/images/conditions/heart-failure.jpg?url";
 import hemothorax from "../media/images/conditions/hemothorax.png?url";
 import herpangina from "../media/images/conditions/herpangina.jpg?url";
+import hirschsprungDisease from "../media/images/conditions/hirschsprung-disease.jpg?url";
 import hivInfection from "../media/images/conditions/hiv-infection.jpg?url";
 import hodgkinLymphoma from "../media/images/conditions/hodgkin-lymphoma.jpg?url";
 import holoprosencephaly from "../media/images/conditions/holoprosencephaly.jpg?url";
@@ -96,11 +99,13 @@ import hyperthyroidism from "../media/images/conditions/hyperthyroidism.jpg?url"
 import hypertrophicCardiomyopathy from "../media/images/conditions/hypertrophic-cardiomyopathy.jpg?url";
 import hypogonadism from "../media/images/conditions/hypogonadism.jpg?url";
 import hypopituitarism from "../media/images/conditions/hypopituitarism.svg?url";
+import hypothyroidism from "../media/images/conditions/hypothyroidism.jpg?url";
 import ibd from "../media/images/conditions/ibd.jpg?url";
 import igaVasculitis from "../media/images/conditions/iga-vasculitis.jpg?url";
 import infectiveEndocarditis from "../media/images/conditions/infective-endocarditis.jpg?url";
 import interstitialLungDisease from "../media/images/conditions/interstitial-lung-disease.jpg?url";
 import intestinalPerforation from "../media/images/conditions/intestinal-perforation.jpg?url";
+import irritableBowelSyndrome from "../media/images/conditions/irritable-bowel-syndrome.jpg?url";
 import ischemicStroke from "../media/images/conditions/ischemic-stroke.jpg?url";
 import keratoconjunctivitisSicca from "../media/images/conditions/keratoconjunctivitis-sicca.jpg?url";
 import l4Radiculopathy from "../media/images/conditions/l4-radiculopathy.png?url";
@@ -222,6 +227,7 @@ export type ConditionImageId = Extract<
   | "acromegaly"
   | "acute-cholangitis"
   | "addison-disease"
+  | "adhd"
   | "adjustment-disorder"
   | "alcohol-use-disorder"
   | "allergic-contact-dermatitis"
@@ -250,6 +256,7 @@ export type ConditionImageId = Extract<
   | "c6-radiculopathy"
   | "c7-radiculopathy"
   | "cardiac-tamponade"
+  | "carotid-stenosis"
   | "cat-scratch-disease"
   | "cataracts"
   | "celiac-disease"
@@ -299,6 +306,7 @@ export type ConditionImageId = Extract<
   | "heart-failure"
   | "hemothorax"
   | "herpangina"
+  | "hirschsprung-disease"
   | "hiv-infection"
   | "hodgkin-lymphoma"
   | "holoprosencephaly"
@@ -313,11 +321,13 @@ export type ConditionImageId = Extract<
   | "hypertrophic-cardiomyopathy"
   | "hypogonadism"
   | "hypopituitarism"
+  | "hypothyroidism"
   | "ibd"
   | "iga-vasculitis"
   | "infective-endocarditis"
   | "interstitial-lung-disease"
   | "intestinal-perforation"
+  | "irritable-bowel-syndrome"
   | "ischemic-stroke"
   | "keratoconjunctivitis-sicca"
   | "l4-radiculopathy"
@@ -444,6 +454,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "acromegaly": extensionAssetUrl(acromegaly),
   "acute-cholangitis": extensionAssetUrl(acuteCholangitis),
   "addison-disease": extensionAssetUrl(addisonDisease),
+  "adhd": extensionAssetUrl(adhd),
   "adjustment-disorder": extensionAssetUrl(adjustmentDisorder),
   "alcohol-use-disorder": extensionAssetUrl(alcoholUseDisorder),
   "allergic-contact-dermatitis": extensionAssetUrl(allergicContactDermatitis),
@@ -472,6 +483,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "c6-radiculopathy": extensionAssetUrl(c6Radiculopathy),
   "c7-radiculopathy": extensionAssetUrl(c7Radiculopathy),
   "cardiac-tamponade": extensionAssetUrl(cardiacTamponade),
+  "carotid-stenosis": extensionAssetUrl(carotidStenosis),
   "cat-scratch-disease": extensionAssetUrl(catScratchDisease),
   "cataracts": extensionAssetUrl(cataracts),
   "celiac-disease": extensionAssetUrl(celiacDisease),
@@ -521,6 +533,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "heart-failure": extensionAssetUrl(heartFailure),
   "hemothorax": extensionAssetUrl(hemothorax),
   "herpangina": extensionAssetUrl(herpangina),
+  "hirschsprung-disease": extensionAssetUrl(hirschsprungDisease),
   "hiv-infection": extensionAssetUrl(hivInfection),
   "hodgkin-lymphoma": extensionAssetUrl(hodgkinLymphoma),
   "holoprosencephaly": extensionAssetUrl(holoprosencephaly),
@@ -535,11 +548,13 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hypertrophic-cardiomyopathy": extensionAssetUrl(hypertrophicCardiomyopathy),
   "hypogonadism": extensionAssetUrl(hypogonadism),
   "hypopituitarism": extensionAssetUrl(hypopituitarism),
+  "hypothyroidism": extensionAssetUrl(hypothyroidism),
   "ibd": extensionAssetUrl(ibd),
   "iga-vasculitis": extensionAssetUrl(igaVasculitis),
   "infective-endocarditis": extensionAssetUrl(infectiveEndocarditis),
   "interstitial-lung-disease": extensionAssetUrl(interstitialLungDisease),
   "intestinal-perforation": extensionAssetUrl(intestinalPerforation),
+  "irritable-bowel-syndrome": extensionAssetUrl(irritableBowelSyndrome),
   "ischemic-stroke": extensionAssetUrl(ischemicStroke),
   "keratoconjunctivitis-sicca": extensionAssetUrl(keratoconjunctivitisSicca),
   "l4-radiculopathy": extensionAssetUrl(l4Radiculopathy),
@@ -663,6 +678,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "acromegaly": { label: "Wikimedia Commons (Acromegaly facial features.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Acromegaly_facial_features.JPEG" },
   "acute-cholangitis": { label: "Wikimedia Commons (Charcot's cholangitis triad-en.svg)", url: "https://commons.wikimedia.org/wiki/File:Charcot's_cholangitis_triad-en.svg" },
   "addison-disease": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
+  "adhd": { label: "Wikimedia Commons (ADHD psychological disorders.png)", url: "https://commons.wikimedia.org/wiki/File:ADHD_psychological_disorders.png" },
   "adjustment-disorder": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:adjustment-disorder.svg" },
   "alcohol-use-disorder": { label: "Wikimedia Commons (Cirrhosis of Alcoholic Liver Disease (5517625829).jpg)", url: "https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg" },
   "allergic-contact-dermatitis": { label: "Wikimedia Commons (Blausen 0014 AllergicDermatitis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0014_AllergicDermatitis.png" },
@@ -691,6 +707,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "c6-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:c6-radiculopathy.png" },
   "c7-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:c7-radiculopathy.png" },
   "cardiac-tamponade": { label: "Wikimedia Commons (Electrical Alternans.JPG)", url: "https://commons.wikimedia.org/wiki/File:Electrical_Alternans.JPG" },
+  "carotid-stenosis": { label: "Wikimedia Commons (Internal carotid artery stenosis in ultrasound near occlusion.jpg)", url: "https://commons.wikimedia.org/wiki/File:Internal_carotid_artery_stenosis_in_ultrasound_near_occlusion.jpg" },
   "cat-scratch-disease": { label: "Wikimedia Commons (ICD-10-CM (2010).djvu)", url: "https://commons.wikimedia.org/wiki/File:ICD-10-CM_(2010).djvu" },
   "cataracts": { label: "Wikimedia Commons (Airbus A380 - 9H-MIP parked at LFBT airport.jpg)", url: "https://commons.wikimedia.org/wiki/File:Airbus_A380_-_9H-MIP_parked_at_LFBT_airport.jpg" },
   "celiac-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:celiac-disease.jpg" },
@@ -740,6 +757,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "heart-failure": { label: "Wikimedia Commons (Depiction of a person suffering from heart failure.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_heart_failure.png" },
   "hemothorax": { label: "Wikimedia Commons (Chest-X-ray-Left-sided-hemothorax.png)", url: "https://commons.wikimedia.org/wiki/File:Chest-X-ray-Left-sided-hemothorax.png" },
   "herpangina": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:herpangina.jpg" },
+  "hirschsprung-disease": { label: "Wikimedia Commons (Biliary atresia.jpg)", url: "https://commons.wikimedia.org/wiki/File:Biliary_atresia.jpg" },
   "hiv-infection": { label: "Wikimedia Commons (The George Blumer edition of Billings-Forchheimer's Therapeusis of internal diseases- Anaphylaxis, Dietary, Deficiencies, Endocrins, Dvelopmental, Vasomotor, Metabolic, Digestion ... (IA georgeblumeredit04forc).pdf)", url: "https://commons.wikimedia.org/wiki/File:The_George_Blumer_edition_of_Billings-Forchheimer's_Therapeusis_of_internal_diseases-_Anaphylaxis,_Dietary,_Deficiencies,_Endocrins,_Dvelopmental,_Vasomotor,_Metabolic,_Digestion_..._(IA_georgeblumeredit04forc).pdf" },
   "hodgkin-lymphoma": { label: "Wikimedia Commons (Reed-Sternberg lymphocyte nci-vol-7172-300.jpg)", url: "https://commons.wikimedia.org/wiki/File:Reed-Sternberg_lymphocyte_nci-vol-7172-300.jpg" },
   "holoprosencephaly": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:holoprosencephaly.jpg" },
@@ -754,11 +772,13 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "hypertrophic-cardiomyopathy": { label: "Wikimedia Commons (Hypertrophic obstructive cardiomyopathy.png)", url: "https://commons.wikimedia.org/wiki/File:Hypertrophic_obstructive_cardiomyopathy.png" },
   "hypogonadism": { label: "Wikimedia Commons (The genetic and molecular basis of idiopathic hypogonadotropic hypogonadism.jpg)", url: "https://commons.wikimedia.org/wiki/File:The_genetic_and_molecular_basis_of_idiopathic_hypogonadotropic_hypogonadism.jpg" },
   "hypopituitarism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hypopituitarism.svg" },
+  "hypothyroidism": { label: "Wikimedia Commons (Histopathology of Graves' disease - medium mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg" },
   "ibd": { label: "Wikimedia Commons (CD colitis.jpg)", url: "https://commons.wikimedia.org/wiki/File:CD_colitis.jpg" },
   "iga-vasculitis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:iga-vasculitis.jpg" },
   "infective-endocarditis": { label: "Wikimedia Commons (Janeway lesion.JPG)", url: "https://commons.wikimedia.org/wiki/File:Janeway_lesion.JPG" },
   "interstitial-lung-disease": { label: "Wikimedia Commons (Interstitial lung disease overview.png)", url: "https://commons.wikimedia.org/wiki/File:Interstitial_lung_disease_overview.png" },
   "intestinal-perforation": { label: "Wikimedia Commons (Nicholas Senn intestinal perforation.jpg)", url: "https://commons.wikimedia.org/wiki/File:Nicholas_Senn_intestinal_perforation.jpg" },
+  "irritable-bowel-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:celiac-disease.jpg" },
   "ischemic-stroke": { label: "Wikimedia Commons (Stroke ischemic.jpg)", url: "https://commons.wikimedia.org/wiki/File:Stroke_ischemic.jpg" },
   "keratoconjunctivitis-sicca": { label: "Wikimedia Commons (Dry eyeKell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Dry_eyeKell.jpg" },
   "l4-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:l4-radiculopathy.png" },
@@ -882,6 +902,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "acromegaly": "Coarse facial features and prognathism in acromegaly from chronic growth hormone excess",
   "acute-cholangitis": "Clinical or pathologic image illustrating acute cholangitis",
   "addison-disease": "Clinical or pathologic image illustrating addison disease",
+  "adhd": "ADHD — neurodevelopmental disorder of inattention and/or hyperactivity-impulsivity with frontostriatal catecholamine dysregulation",
   "adjustment-disorder": "Clinical or pathologic image illustrating adjustment disorder",
   "alcohol-use-disorder": "Clinical or pathologic image illustrating alcohol use disorder",
   "allergic-contact-dermatitis": "Clinical or pathologic image illustrating allergic contact dermatitis",
@@ -910,6 +931,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "c6-radiculopathy": "Clinical or pathologic image illustrating c6 radiculopathy",
   "c7-radiculopathy": "Clinical or pathologic image illustrating c7 radiculopathy",
   "cardiac-tamponade": "Clinical or pathologic image illustrating cardiac tamponade",
+  "carotid-stenosis": "Carotid duplex ultrasound showing near-occlusive internal carotid artery stenosis",
   "cat-scratch-disease": "Clinical or pathologic image illustrating cat scratch disease",
   "cataracts": "Clinical or pathologic image illustrating cataracts",
   "celiac-disease": "Clinical or pathologic image illustrating celiac disease",
@@ -959,6 +981,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "heart-failure": "Clinical or pathologic image illustrating heart failure",
   "hemothorax": "Clinical or pathologic image illustrating hemothorax",
   "herpangina": "Clinical or pathologic image illustrating herpangina",
+  "hirschsprung-disease": "Neonatal intestinal obstruction — failure to pass meconium and proximal dilatation in aganglionic megacolon",
   "hiv-infection": "Clinical or pathologic image illustrating hiv infection",
   "hodgkin-lymphoma": "Clinical or pathologic image illustrating hodgkin lymphoma",
   "holoprosencephaly": "Clinical or pathologic image illustrating holoprosencephaly",
@@ -973,11 +996,13 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "hypertrophic-cardiomyopathy": "Clinical or pathologic image illustrating hypertrophic cardiomyopathy",
   "hypogonadism": "Clinical or pathologic image illustrating hypogonadism",
   "hypopituitarism": "Clinical or pathologic image illustrating hypopituitarism",
+  "hypothyroidism": "Thyroid histopathology — autoimmune thyroid disease context for hypothyroidism workup",
   "ibd": "Clinical or pathologic image illustrating ibd",
   "iga-vasculitis": "Clinical or pathologic image illustrating iga vasculitis",
   "infective-endocarditis": "Clinical or pathologic image illustrating infective endocarditis",
   "interstitial-lung-disease": "Clinical or pathologic image illustrating interstitial lung disease",
   "intestinal-perforation": "Clinical or pathologic image illustrating intestinal perforation",
+  "irritable-bowel-syndrome": "Functional bowel disorder — chronic abdominal pain with altered stool habits without mucosal inflammation",
   "ischemic-stroke": "Clinical or pathologic image illustrating ischemic stroke",
   "keratoconjunctivitis-sicca": "Dry eye with ocular surface staining/keratitis pattern",
   "l4-radiculopathy": "Clinical or pathologic image illustrating l4 radiculopathy",

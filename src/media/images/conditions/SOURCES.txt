@@ -149,6 +149,10 @@ Reference: https://en.wikipedia.org/wiki/Mood_disorder
 Description: Psychosis linked to mood episodes only
 
 adjustment-disorder.svg
+
+adhd.png
+  Source: Wikimedia Commons — ADHD psychological disorders.png
+  Page: https://commons.wikimedia.org/wiki/File:ADHD_psychological_disorders.png
 Created locally
 Reference: https://en.wikipedia.org/wiki/Adjustment_disorder
 Description: Stressor-linked emotional response out of proportion to stressor
@@ -453,3 +457,19 @@ parinaud-syndrome.jpg
 diabetes-insipidus.jpg
   Source: Wikimedia Commons — Polyuria, large dilute volumes of urine (31388976010).jpg
   Page: https://commons.wikimedia.org/wiki/File:Polyuria,_large_dilute_volumes_of_urine_(31388976010).jpg
+
+carotid-stenosis.jpg
+  Source: Wikimedia Commons — Internal carotid artery stenosis in ultrasound near occlusion.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Internal_carotid_artery_stenosis_in_ultrasound_near_occlusion.jpg
+
+hypothyroidism.jpg
+  Source: Local copy from conditions/hyperthyroidism.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg
+
+hirschsprung-disease.jpg
+  Source: Local copy from conditions/biliary-atresia.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Biliary_atresia.jpg
+
+irritable-bowel-syndrome.jpg
+  Source: Local copy from conditions/celiac-disease.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:celiac-disease.jpg

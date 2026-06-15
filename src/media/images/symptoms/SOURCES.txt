@@ -56,6 +56,11 @@ brudzinski-sign.png
   Source: Wikimedia Commons — Brud I.png
   Page: https://commons.wikimedia.org/wiki/File:Brud_I.png
 
+nuchal-rigidity.svg
+  Source: Created locally
+  Reference: https://en.wikipedia.org/wiki/Meningism
+  Description: Passive neck flexion resistance from meningeal irritation
+
 calcinosis.jpg
   Source: Wikimedia Commons — Calcinosis cutis.jpg
   Author: James Heilman, MD
