@@ -53,6 +53,7 @@ import copperDeficiency from "../media/images/conditions/copper-deficiency.jpg?u
 import crohnDisease from "../media/images/conditions/crohn-disease.jpg?url";
 import cushingSyndrome from "../media/images/conditions/cushing-syndrome.jpg?url";
 import cysticFibrosis from "../media/images/conditions/cystic-fibrosis.jpg?url";
+import deliriumTremens from "../media/images/conditions/delirium-tremens.jpg?url";
 import dementia from "../media/images/conditions/dementia.jpg?url";
 import dengueRecoveryRash from "../media/images/conditions/dengue-recovery-rash.jpg?url";
 import dentalCaries from "../media/images/conditions/dental-caries.jpg?url";
@@ -89,23 +90,27 @@ import hivInfection from "../media/images/conditions/hiv-infection.jpg?url";
 import hodgkinLymphoma from "../media/images/conditions/hodgkin-lymphoma.jpg?url";
 import holoprosencephaly from "../media/images/conditions/holoprosencephaly.jpg?url";
 import howellJollyBody from "../media/images/conditions/howell-jolly-body.png?url";
+import hydrocephalus from "../media/images/conditions/hydrocephalus.jpg?url";
 import hyperIgeSyndrome from "../media/images/conditions/hyper-ige-syndrome.jpg?url";
 import hyperlipidemia from "../media/images/conditions/hyperlipidemia.jpg?url";
 import hyperosmolarHyperglycemicState from "../media/images/conditions/hyperosmolar-hyperglycemic-state.svg?url";
 import hyperparathyroidism from "../media/images/conditions/hyperparathyroidism.jpg?url";
 import hyperprolactinemia from "../media/images/conditions/hyperprolactinemia.jpg?url";
 import hypertension from "../media/images/conditions/hypertension.jpg?url";
+import hypertensiveRetinopathy from "../media/images/conditions/hypertensive-retinopathy.jpg?url";
 import hyperthyroidism from "../media/images/conditions/hyperthyroidism.jpg?url";
 import hypertrophicCardiomyopathy from "../media/images/conditions/hypertrophic-cardiomyopathy.jpg?url";
 import hypogonadism from "../media/images/conditions/hypogonadism.jpg?url";
 import hypopituitarism from "../media/images/conditions/hypopituitarism.svg?url";
 import hypothyroidism from "../media/images/conditions/hypothyroidism.jpg?url";
 import ibd from "../media/images/conditions/ibd.jpg?url";
+import idiopathicIntracranialHypertension from "../media/images/conditions/idiopathic-intracranial-hypertension.jpg?url";
 import igaVasculitis from "../media/images/conditions/iga-vasculitis.jpg?url";
 import infectiveEndocarditis from "../media/images/conditions/infective-endocarditis.jpg?url";
 import interstitialLungDisease from "../media/images/conditions/interstitial-lung-disease.jpg?url";
 import intestinalPerforation from "../media/images/conditions/intestinal-perforation.jpg?url";
 import irritableBowelSyndrome from "../media/images/conditions/irritable-bowel-syndrome.jpg?url";
+import ischemicOpticNeuropathy from "../media/images/conditions/ischemic-optic-neuropathy.jpg?url";
 import ischemicStroke from "../media/images/conditions/ischemic-stroke.jpg?url";
 import keratoconjunctivitisSicca from "../media/images/conditions/keratoconjunctivitis-sicca.jpg?url";
 import l4Radiculopathy from "../media/images/conditions/l4-radiculopathy.png?url";
@@ -142,6 +147,7 @@ import nephroticSyndrome from "../media/images/conditions/nephrotic-syndrome.jpg
 import neuralTubeDefects from "../media/images/conditions/neural-tube-defects.jpg?url";
 import neuromyelitisOptica from "../media/images/conditions/neuromyelitis-optica.svg?url";
 import nonHodgkinLymphoma from "../media/images/conditions/non-hodgkin-lymphoma.jpg?url";
+import opticNeuritis from "../media/images/conditions/optic-neuritis.jpg?url";
 import osteomyelitis from "../media/images/conditions/osteomyelitis.png?url";
 import otitisMedia from "../media/images/conditions/otitis-media.jpg?url";
 import ovarianDermoidCystHistology from "../media/images/conditions/ovarian-dermoid-cyst-histology.jpg?url";
@@ -192,6 +198,8 @@ import sinusitis from "../media/images/conditions/sinusitis.jpg?url";
 import sjogrenSyndrome from "../media/images/conditions/sjogren-syndrome.jpg?url";
 import sporotrichosis from "../media/images/conditions/sporotrichosis.jpg?url";
 import stableAngina from "../media/images/conditions/stable-angina.jpg?url";
+import statusEpilepticus from "../media/images/conditions/status-epilepticus.jpg?url";
+import subarachnoidHemorrhage from "../media/images/conditions/subarachnoid-hemorrhage.jpg?url";
 import systemicLupusErythematosus from "../media/images/conditions/systemic-lupus-erythematosus.jpg?url";
 import systemicSclerosis from "../media/images/conditions/systemic-sclerosis.jpg?url";
 import tensionPneumothorax from "../media/images/conditions/tension-pneumothorax.jpg?url";
@@ -275,6 +283,7 @@ export type ConditionImageId = Extract<
   | "crohn-disease"
   | "cushing-syndrome"
   | "cystic-fibrosis"
+  | "delirium-tremens"
   | "dementia"
   | "dengue-fever"
   | "dental-caries"
@@ -311,23 +320,27 @@ export type ConditionImageId = Extract<
   | "hodgkin-lymphoma"
   | "holoprosencephaly"
   | "howell-jolly-body"
+  | "hydrocephalus"
   | "hyper-ige-syndrome"
   | "hyperlipidemia"
   | "hyperosmolar-hyperglycemic-state"
   | "hyperparathyroidism"
   | "hyperprolactinemia"
   | "hypertension"
+  | "hypertensive-retinopathy"
   | "hyperthyroidism"
   | "hypertrophic-cardiomyopathy"
   | "hypogonadism"
   | "hypopituitarism"
   | "hypothyroidism"
   | "ibd"
+  | "idiopathic-intracranial-hypertension"
   | "iga-vasculitis"
   | "infective-endocarditis"
   | "interstitial-lung-disease"
   | "intestinal-perforation"
   | "irritable-bowel-syndrome"
+  | "ischemic-optic-neuropathy"
   | "ischemic-stroke"
   | "keratoconjunctivitis-sicca"
   | "l4-radiculopathy"
@@ -364,6 +377,7 @@ export type ConditionImageId = Extract<
   | "neural-tube-defects"
   | "neuromyelitis-optica"
   | "non-hodgkin-lymphoma"
+  | "optic-neuritis"
   | "osteomyelitis"
   | "otitis-media"
   | "teratoma"
@@ -414,6 +428,8 @@ export type ConditionImageId = Extract<
   | "sjogren-syndrome"
   | "sporotrichosis"
   | "stable-angina"
+  | "status-epilepticus"
+  | "subarachnoid-hemorrhage"
   | "systemic-lupus-erythematosus"
   | "systemic-sclerosis"
   | "tension-pneumothorax"
@@ -502,6 +518,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "crohn-disease": extensionAssetUrl(crohnDisease),
   "cushing-syndrome": extensionAssetUrl(cushingSyndrome),
   "cystic-fibrosis": extensionAssetUrl(cysticFibrosis),
+  "delirium-tremens": extensionAssetUrl(deliriumTremens),
   "dementia": extensionAssetUrl(dementia),
   "dengue-fever": extensionAssetUrl(dengueRecoveryRash),
   "dental-caries": extensionAssetUrl(dentalCaries),
@@ -538,23 +555,27 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hodgkin-lymphoma": extensionAssetUrl(hodgkinLymphoma),
   "holoprosencephaly": extensionAssetUrl(holoprosencephaly),
   "howell-jolly-body": extensionAssetUrl(howellJollyBody),
+  "hydrocephalus": extensionAssetUrl(hydrocephalus),
   "hyper-ige-syndrome": extensionAssetUrl(hyperIgeSyndrome),
   "hyperlipidemia": extensionAssetUrl(hyperlipidemia),
   "hyperosmolar-hyperglycemic-state": extensionAssetUrl(hyperosmolarHyperglycemicState),
   "hyperparathyroidism": extensionAssetUrl(hyperparathyroidism),
   "hyperprolactinemia": extensionAssetUrl(hyperprolactinemia),
   "hypertension": extensionAssetUrl(hypertension),
+  "hypertensive-retinopathy": extensionAssetUrl(hypertensiveRetinopathy),
   "hyperthyroidism": extensionAssetUrl(hyperthyroidism),
   "hypertrophic-cardiomyopathy": extensionAssetUrl(hypertrophicCardiomyopathy),
   "hypogonadism": extensionAssetUrl(hypogonadism),
   "hypopituitarism": extensionAssetUrl(hypopituitarism),
   "hypothyroidism": extensionAssetUrl(hypothyroidism),
   "ibd": extensionAssetUrl(ibd),
+  "idiopathic-intracranial-hypertension": extensionAssetUrl(idiopathicIntracranialHypertension),
   "iga-vasculitis": extensionAssetUrl(igaVasculitis),
   "infective-endocarditis": extensionAssetUrl(infectiveEndocarditis),
   "interstitial-lung-disease": extensionAssetUrl(interstitialLungDisease),
   "intestinal-perforation": extensionAssetUrl(intestinalPerforation),
   "irritable-bowel-syndrome": extensionAssetUrl(irritableBowelSyndrome),
+  "ischemic-optic-neuropathy": extensionAssetUrl(ischemicOpticNeuropathy),
   "ischemic-stroke": extensionAssetUrl(ischemicStroke),
   "keratoconjunctivitis-sicca": extensionAssetUrl(keratoconjunctivitisSicca),
   "l4-radiculopathy": extensionAssetUrl(l4Radiculopathy),
@@ -591,6 +612,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "neural-tube-defects": extensionAssetUrl(neuralTubeDefects),
   "neuromyelitis-optica": extensionAssetUrl(neuromyelitisOptica),
   "non-hodgkin-lymphoma": extensionAssetUrl(nonHodgkinLymphoma),
+  "optic-neuritis": extensionAssetUrl(opticNeuritis),
   "osteomyelitis": extensionAssetUrl(osteomyelitis),
   "otitis-media": extensionAssetUrl(otitisMedia),
   "teratoma": extensionAssetUrl(ovarianDermoidCystHistology),
@@ -641,6 +663,8 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "sjogren-syndrome": extensionAssetUrl(sjogrenSyndrome),
   "sporotrichosis": extensionAssetUrl(sporotrichosis),
   "stable-angina": extensionAssetUrl(stableAngina),
+  "status-epilepticus": extensionAssetUrl(statusEpilepticus),
+  "subarachnoid-hemorrhage": extensionAssetUrl(subarachnoidHemorrhage),
   "systemic-lupus-erythematosus": extensionAssetUrl(systemicLupusErythematosus),
   "systemic-sclerosis": extensionAssetUrl(systemicSclerosis),
   "tension-pneumothorax": extensionAssetUrl(tensionPneumothorax),
@@ -678,7 +702,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "acromegaly": { label: "Wikimedia Commons (Acromegaly facial features.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Acromegaly_facial_features.JPEG" },
   "acute-cholangitis": { label: "Wikimedia Commons (Charcot's cholangitis triad-en.svg)", url: "https://commons.wikimedia.org/wiki/File:Charcot's_cholangitis_triad-en.svg" },
   "addison-disease": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
-  "adhd": { label: "Wikimedia Commons (ADHD psychological disorders.png)", url: "https://commons.wikimedia.org/wiki/File:ADHD_psychological_disorders.png" },
+  "adhd": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:adhd.png" },
   "adjustment-disorder": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:adjustment-disorder.svg" },
   "alcohol-use-disorder": { label: "Wikimedia Commons (Cirrhosis of Alcoholic Liver Disease (5517625829).jpg)", url: "https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg" },
   "allergic-contact-dermatitis": { label: "Wikimedia Commons (Blausen 0014 AllergicDermatitis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0014_AllergicDermatitis.png" },
@@ -726,6 +750,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "crohn-disease": { label: "Wikimedia Commons (Severe ulcerative colitis.jpg)", url: "https://commons.wikimedia.org/wiki/File:Severe_ulcerative_colitis.jpg" },
   "cushing-syndrome": { label: "Wikimedia Commons (United States Navy Medical News Letter Vol. 28, No. 5, 7 September 1956 (IA NavyMedicalNewsletter19560907).pdf)", url: "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._28,_No._5,_7_September_1956_(IA_NavyMedicalNewsletter19560907).pdf" },
   "cystic-fibrosis": { label: "Wikimedia Commons (Blausen 0286 CysticFibrosis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0286_CysticFibrosis.png" },
+  "delirium-tremens": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:delirium-tremens.jpg" },
   "dementia": { label: "Wikimedia Commons (Histopathology of Alzheimer's disease.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Alzheimer's_disease.jpg" },
   "dengue-fever": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dengue-recovery-rash.jpg" },
   "dental-caries": { label: "Wikimedia Commons (Dental Caries Lower Right First Molar.jpg)", url: "https://commons.wikimedia.org/wiki/File:Dental_Caries_Lower_Right_First_Molar.jpg" },
@@ -757,28 +782,32 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "heart-failure": { label: "Wikimedia Commons (Depiction of a person suffering from heart failure.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_heart_failure.png" },
   "hemothorax": { label: "Wikimedia Commons (Chest-X-ray-Left-sided-hemothorax.png)", url: "https://commons.wikimedia.org/wiki/File:Chest-X-ray-Left-sided-hemothorax.png" },
   "herpangina": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:herpangina.jpg" },
-  "hirschsprung-disease": { label: "Wikimedia Commons (Biliary atresia.jpg)", url: "https://commons.wikimedia.org/wiki/File:Biliary_atresia.jpg" },
+  "hirschsprung-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hirschsprung-disease.jpg" },
   "hiv-infection": { label: "Wikimedia Commons (The George Blumer edition of Billings-Forchheimer's Therapeusis of internal diseases- Anaphylaxis, Dietary, Deficiencies, Endocrins, Dvelopmental, Vasomotor, Metabolic, Digestion ... (IA georgeblumeredit04forc).pdf)", url: "https://commons.wikimedia.org/wiki/File:The_George_Blumer_edition_of_Billings-Forchheimer's_Therapeusis_of_internal_diseases-_Anaphylaxis,_Dietary,_Deficiencies,_Endocrins,_Dvelopmental,_Vasomotor,_Metabolic,_Digestion_..._(IA_georgeblumeredit04forc).pdf" },
   "hodgkin-lymphoma": { label: "Wikimedia Commons (Reed-Sternberg lymphocyte nci-vol-7172-300.jpg)", url: "https://commons.wikimedia.org/wiki/File:Reed-Sternberg_lymphocyte_nci-vol-7172-300.jpg" },
   "holoprosencephaly": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:holoprosencephaly.jpg" },
   "howell-jolly-body": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:howell-jolly-body.png" },
+  "hydrocephalus": { label: "Wikimedia Commons (EnlargedLV Reg.png)", url: "https://commons.wikimedia.org/wiki/File:EnlargedLV_Reg.png" },
   "hyper-ige-syndrome": { label: "Wikimedia Commons (Person_with_Job's_syndrome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Person_with_Job%27s_syndrome.jpg" },
   "hyperlipidemia": { label: "Wikimedia Commons (Xanthoma histology.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xanthoma_histology.jpg" },
   "hyperosmolar-hyperglycemic-state": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hyperosmolar-hyperglycemic-state.svg" },
   "hyperparathyroidism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hyperparathyroidism.jpg" },
   "hyperprolactinemia": { label: "Wikimedia Commons (Lactation.jpg)", url: "https://commons.wikimedia.org/wiki/File:Lactation.jpg" },
   "hypertension": { label: "Wikimedia Commons (HE pulmonary hypertension artery concentric intimal fibrosis.jpg)", url: "https://commons.wikimedia.org/wiki/File:HE_pulmonary_hypertension_artery_concentric_intimal_fibrosis.jpg" },
+  "hypertensive-retinopathy": { label: "Wikimedia Commons (Hypertensiveretinopathy.jpg)", url: "https://commons.wikimedia.org/wiki/File:Hypertensiveretinopathy.jpg" },
   "hyperthyroidism": { label: "Wikimedia Commons (Histopathology of Graves' disease - medium mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg" },
   "hypertrophic-cardiomyopathy": { label: "Wikimedia Commons (Hypertrophic obstructive cardiomyopathy.png)", url: "https://commons.wikimedia.org/wiki/File:Hypertrophic_obstructive_cardiomyopathy.png" },
   "hypogonadism": { label: "Wikimedia Commons (The genetic and molecular basis of idiopathic hypogonadotropic hypogonadism.jpg)", url: "https://commons.wikimedia.org/wiki/File:The_genetic_and_molecular_basis_of_idiopathic_hypogonadotropic_hypogonadism.jpg" },
   "hypopituitarism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hypopituitarism.svg" },
-  "hypothyroidism": { label: "Wikimedia Commons (Histopathology of Graves' disease - medium mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg" },
+  "hypothyroidism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hypothyroidism.jpg" },
   "ibd": { label: "Wikimedia Commons (CD colitis.jpg)", url: "https://commons.wikimedia.org/wiki/File:CD_colitis.jpg" },
+  "idiopathic-intracranial-hypertension": { label: "Wikimedia Commons (Papilledema.jpg)", url: "https://commons.wikimedia.org/wiki/File:Papilledema.jpg" },
   "iga-vasculitis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:iga-vasculitis.jpg" },
   "infective-endocarditis": { label: "Wikimedia Commons (Janeway lesion.JPG)", url: "https://commons.wikimedia.org/wiki/File:Janeway_lesion.JPG" },
   "interstitial-lung-disease": { label: "Wikimedia Commons (Interstitial lung disease overview.png)", url: "https://commons.wikimedia.org/wiki/File:Interstitial_lung_disease_overview.png" },
   "intestinal-perforation": { label: "Wikimedia Commons (Nicholas Senn intestinal perforation.jpg)", url: "https://commons.wikimedia.org/wiki/File:Nicholas_Senn_intestinal_perforation.jpg" },
-  "irritable-bowel-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:celiac-disease.jpg" },
+  "irritable-bowel-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:irritable-bowel-syndrome.jpg" },
+  "ischemic-optic-neuropathy": { label: "Wikimedia Commons (Gray776.png)", url: "https://commons.wikimedia.org/wiki/File:Gray776.png" },
   "ischemic-stroke": { label: "Wikimedia Commons (Stroke ischemic.jpg)", url: "https://commons.wikimedia.org/wiki/File:Stroke_ischemic.jpg" },
   "keratoconjunctivitis-sicca": { label: "Wikimedia Commons (Dry eyeKell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Dry_eyeKell.jpg" },
   "l4-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:l4-radiculopathy.png" },
@@ -815,6 +844,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "neural-tube-defects": { label: "Wikimedia Commons (Spina bifida lombare sagittale.jpg)", url: "https://commons.wikimedia.org/wiki/File:Spina_bifida_lombare_sagittale.jpg" },
   "neuromyelitis-optica": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:neuromyelitis-optica.svg" },
   "non-hodgkin-lymphoma": { label: "Wikimedia Commons (Centrocyte, centroblast and follicular dendritic cell in a follicular lymphoma.jpg)", url: "https://commons.wikimedia.org/wiki/File:Centrocyte,_centroblast_and_follicular_dendritic_cell_in_a_follicular_lymphoma.jpg" },
+  "optic-neuritis": { label: "Wikimedia Commons (OpticNeuritisExample.jpg)", url: "https://commons.wikimedia.org/wiki/File:OpticNeuritisExample.jpg" },
   "osteomyelitis": { label: "Wikimedia Commons (OsteomylitisMark.png)", url: "https://commons.wikimedia.org/wiki/File:OsteomylitisMark.png" },
   "otitis-media": { label: "Wikimedia Commons (Acute Otitis Media Stage of Resolution.jpg)", url: "https://commons.wikimedia.org/wiki/File:Acute_Otitis_Media_Stage_of_Resolution.jpg" },
   "teratoma": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ovarian-dermoid-cyst-histology.jpg" },
@@ -865,6 +895,8 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "sjogren-syndrome": { label: "Wikimedia Commons (Sjogren's syndrome (2).jpg)", url: "https://commons.wikimedia.org/wiki/File:Sjogren's_syndrome_(2).jpg" },
   "sporotrichosis": { label: "Wikimedia Commons (Feline sporotrichosis 4.jpg)", url: "https://commons.wikimedia.org/wiki/File:Feline_sporotrichosis_4.jpg" },
   "stable-angina": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:stable-angina.jpg" },
+  "status-epilepticus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:status-epilepticus.jpg" },
+  "subarachnoid-hemorrhage": { label: "Wikimedia Commons (Subarachnoid hemorrhage CT.jpg)", url: "https://commons.wikimedia.org/wiki/File:Subarachnoid_hemorrhage_CT.jpg" },
   "systemic-lupus-erythematosus": { label: "Wikimedia Commons (What Black Women Should Know About Lupus (IA whatblackwomensh00usde).pdf)", url: "https://commons.wikimedia.org/wiki/File:What_Black_Women_Should_Know_About_Lupus_(IA_whatblackwomensh00usde).pdf" },
   "systemic-sclerosis": { label: "Wikimedia Commons (Crescentic glomerulonephritis Periodic acid silver methanamine stain.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Crescentic_glomerulonephritis_Periodic_acid_silver_methanamine_stain.JPEG" },
   "tension-pneumothorax": { label: "Wikimedia Commons (Pneumothorax 001 cs.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pneumothorax_001_cs.jpg" },
@@ -902,7 +934,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "acromegaly": "Coarse facial features and prognathism in acromegaly from chronic growth hormone excess",
   "acute-cholangitis": "Clinical or pathologic image illustrating acute cholangitis",
   "addison-disease": "Clinical or pathologic image illustrating addison disease",
-  "adhd": "ADHD — neurodevelopmental disorder of inattention and/or hyperactivity-impulsivity with frontostriatal catecholamine dysregulation",
+  "adhd": "Clinical or pathologic image illustrating adhd",
   "adjustment-disorder": "Clinical or pathologic image illustrating adjustment disorder",
   "alcohol-use-disorder": "Clinical or pathologic image illustrating alcohol use disorder",
   "allergic-contact-dermatitis": "Clinical or pathologic image illustrating allergic contact dermatitis",
@@ -950,6 +982,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "crohn-disease": "Clinical or pathologic image illustrating crohn disease",
   "cushing-syndrome": "Clinical or pathologic image illustrating cushing syndrome",
   "cystic-fibrosis": "Clinical or pathologic image illustrating cystic fibrosis",
+  "delirium-tremens": "Clinical or pathologic image illustrating delirium tremens",
   "dementia": "Clinical or pathologic image illustrating dementia",
   "dengue-fever": "Dengue recovery rash — classic 'white islands in a sea of red' pattern",
   "dental-caries": "Occlusal dental caries with enamel cavitation",
@@ -981,28 +1014,32 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "heart-failure": "Clinical or pathologic image illustrating heart failure",
   "hemothorax": "Clinical or pathologic image illustrating hemothorax",
   "herpangina": "Clinical or pathologic image illustrating herpangina",
-  "hirschsprung-disease": "Neonatal intestinal obstruction — failure to pass meconium and proximal dilatation in aganglionic megacolon",
+  "hirschsprung-disease": "Clinical or pathologic image illustrating hirschsprung disease",
   "hiv-infection": "Clinical or pathologic image illustrating hiv infection",
   "hodgkin-lymphoma": "Clinical or pathologic image illustrating hodgkin lymphoma",
   "holoprosencephaly": "Clinical or pathologic image illustrating holoprosencephaly",
   "howell-jolly-body": "Clinical or pathologic image illustrating howell jolly body",
+  "hydrocephalus": "Enlarged lateral ventricles on imaging — ventricular dilation from impaired CSF flow or absorption",
   "hyper-ige-syndrome": "Clinical or pathologic image illustrating hyper ige syndrome",
   "hyperlipidemia": "Clinical or pathologic image illustrating hyperlipidemia",
   "hyperosmolar-hyperglycemic-state": "Clinical or pathologic image illustrating hyperosmolar hyperglycemic state",
   "hyperparathyroidism": "Clinical or pathologic image illustrating hyperparathyroidism",
   "hyperprolactinemia": "Clinical or pathologic image illustrating hyperprolactinemia",
   "hypertension": "Clinical or pathologic image illustrating hypertension",
+  "hypertensive-retinopathy": "Hypertensive retinopathy — AV nicking, hemorrhages, and cotton-wool spots from chronic elevated BP",
   "hyperthyroidism": "Clinical or pathologic image illustrating hyperthyroidism",
   "hypertrophic-cardiomyopathy": "Clinical or pathologic image illustrating hypertrophic cardiomyopathy",
   "hypogonadism": "Clinical or pathologic image illustrating hypogonadism",
   "hypopituitarism": "Clinical or pathologic image illustrating hypopituitarism",
-  "hypothyroidism": "Thyroid histopathology — autoimmune thyroid disease context for hypothyroidism workup",
+  "hypothyroidism": "Clinical or pathologic image illustrating hypothyroidism",
   "ibd": "Clinical or pathologic image illustrating ibd",
+  "idiopathic-intracranial-hypertension": "Papilledema in IIH — bilateral optic disc swelling from elevated intracranial pressure",
   "iga-vasculitis": "Clinical or pathologic image illustrating iga vasculitis",
   "infective-endocarditis": "Clinical or pathologic image illustrating infective endocarditis",
   "interstitial-lung-disease": "Clinical or pathologic image illustrating interstitial lung disease",
   "intestinal-perforation": "Clinical or pathologic image illustrating intestinal perforation",
-  "irritable-bowel-syndrome": "Functional bowel disorder — chronic abdominal pain with altered stool habits without mucosal inflammation",
+  "irritable-bowel-syndrome": "Clinical or pathologic image illustrating irritable bowel syndrome",
+  "ischemic-optic-neuropathy": "Optic nerve blood supply — posterior ciliary artery hypoperfusion causes ischemic optic neuropathy",
   "ischemic-stroke": "Clinical or pathologic image illustrating ischemic stroke",
   "keratoconjunctivitis-sicca": "Dry eye with ocular surface staining/keratitis pattern",
   "l4-radiculopathy": "Clinical or pathologic image illustrating l4 radiculopathy",
@@ -1039,6 +1076,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "neural-tube-defects": "Clinical or pathologic image illustrating neural tube defects",
   "neuromyelitis-optica": "Clinical or pathologic image illustrating neuromyelitis optica",
   "non-hodgkin-lymphoma": "Clinical or pathologic image illustrating non hodgkin lymphoma",
+  "optic-neuritis": "Optic neuritis — demyelinating inflammation causing painful monocular vision loss and RAPD",
   "osteomyelitis": "Clinical or pathologic image illustrating osteomyelitis",
   "otitis-media": "Clinical or pathologic image illustrating otitis media",
   "teratoma": "H&E histology of ovarian dermoid cyst (mature cystic teratoma) — well-differentiated tissues from multiple germ layers",
@@ -1089,6 +1127,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "sjogren-syndrome": "Clinical or pathologic image illustrating sjogren syndrome",
   "sporotrichosis": "Clinical or pathologic image illustrating sporotrichosis",
   "stable-angina": "Clinical or pathologic image illustrating stable angina",
+  "status-epilepticus": "Clinical or pathologic image illustrating status epilepticus",
+  "subarachnoid-hemorrhage": "Noncontrast CT showing hyperdense blood in basal cisterns — subarachnoid hemorrhage",
   "systemic-lupus-erythematosus": "Clinical or pathologic image illustrating systemic lupus erythematosus",
   "systemic-sclerosis": "Clinical or pathologic image illustrating systemic sclerosis",
   "tension-pneumothorax": "Clinical or pathologic image illustrating tension pneumothorax",

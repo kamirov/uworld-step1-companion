@@ -75,7 +75,7 @@ DOWNLOADS: list[tuple[str, str]] = [
     ("scleroderma skin thickening", "symptoms/skin-thickening.jpg"),
     ("kernig sign", "symptoms/kernig-sign.jpg"),
     ("brudzinski sign", "symptoms/brudzinski-sign.jpg"),
-    ("meningismus neck stiffness", "symptoms/nuchal-rigidity.jpg"),
+    ("neck stiffness meningitis", "symptoms/nuchal-rigidity.jpg"),
     ("lichen planus shin", "conditions/lichen-planus.jpg"),
     ("pemphigus vulgaris", "conditions/pemphigus-vulgaris.jpg"),
     ("atopic dermatitis child", "conditions/atopic-dermatitis.jpg"),

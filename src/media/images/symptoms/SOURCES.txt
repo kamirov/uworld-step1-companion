@@ -56,10 +56,13 @@ brudzinski-sign.png
   Source: Wikimedia Commons — Brud I.png
   Page: https://commons.wikimedia.org/wiki/File:Brud_I.png
 
-nuchal-rigidity.svg
-  Source: Created locally
-  Reference: https://en.wikipedia.org/wiki/Meningism
-  Description: Passive neck flexion resistance from meningeal irritation
+nuchal-rigidity.jpg
+  Source: Wikimedia Commons — Neck stiffness.jpg
+  Author: L.A. Marty, M.D., Kansas City
+  Description: Patient with meningitis and meningism (neck stiffness)
+  License: Public domain in the United States
+  Page: https://commons.wikimedia.org/wiki/File:Neck_stiffness.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Neck_stiffness.jpg/1280px-Neck_stiffness.jpg
 
 calcinosis.jpg
   Source: Wikimedia Commons — Calcinosis cutis.jpg
@@ -315,3 +318,23 @@ autonomic-dysfunction.jpg
   Source: Wikimedia Commons — Orthostatic hypotension.jpg
   Page: https://commons.wikimedia.org/wiki/File:Orthostatic_hypotension.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Orthostatic%20hypotension.jpg?width=1280
+
+cold-intolerance.jpg
+  Source: Local copy from conditions/hypothyroidism.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg
+
+fecal-impaction.jpg
+  Source: Local copy from pathogenesis/malabsorption.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg
+
+fecaloma.jpg
+  Source: Local copy from pathogenesis/malabsorption.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg
+
+cotton-wool-spots.png
+  Source: Wikimedia Commons — A sample retinal image with cotton wool spots and hemorrhages.png
+  Page: https://commons.wikimedia.org/wiki/File:A_sample_retinal_image_with_cotton_wool_spots_and_hemorrhages.png
+
+drusen.jpg
+  Source: Wikimedia Commons — Peripheral Drusen.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Peripheral_Drusen.jpg

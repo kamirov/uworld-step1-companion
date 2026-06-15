@@ -473,3 +473,27 @@ hirschsprung-disease.jpg
 irritable-bowel-syndrome.jpg
   Source: Local copy from conditions/celiac-disease.jpg
   Reference: https://commons.wikimedia.org/wiki/File:celiac-disease.jpg
+
+hydrocephalus.jpg
+  Source: Wikimedia Commons — EnlargedLV Reg.png
+  Page: https://commons.wikimedia.org/wiki/File:EnlargedLV_Reg.png
+
+subarachnoid-hemorrhage.jpg
+  Source: Wikimedia Commons — Subarachnoid hemorrhage CT.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Subarachnoid_hemorrhage_CT.jpg
+
+idiopathic-intracranial-hypertension.jpg
+  Source: Wikimedia Commons — Papilledema.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Papilledema.jpg
+
+optic-neuritis.jpg
+  Source: Wikimedia Commons — OpticNeuritisExample.jpg
+  Page: https://commons.wikimedia.org/wiki/File:OpticNeuritisExample.jpg
+
+ischemic-optic-neuropathy.jpg
+  Source: Wikimedia Commons — Gray776.png
+  Page: https://commons.wikimedia.org/wiki/File:Gray776.png
+
+hypertensive-retinopathy.jpg
+  Source: Wikimedia Commons — Hypertensiveretinopathy.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Hypertensiveretinopathy.jpg

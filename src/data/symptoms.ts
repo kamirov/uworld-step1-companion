@@ -1105,6 +1105,46 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "cold-intolerance",
+    name: "Cold Intolerance",
+    etymology: "cold = low temperature + Latin tolerare = to endure",
+    aliases: [
+      "cold intolerance",
+      "cold intolerances",
+      "intolerance to cold",
+      "sensitivity to cold",
+      "cold sensitivity",
+      "feeling cold",
+      "always cold",
+    ],
+    definition:
+      "Subjective inability to tolerate cold environments or feeling cold when others are comfortable — reflects impaired thermogenesis or peripheral heat conservation.",
+    mechanism:
+      "↓ basal metabolic rate and nonshivering thermogenesis (hypothyroidism), ↓ sympathetic vasoconstriction, anemia reducing O₂ delivery, or malnutrition reduce heat production and conservation; hypothalamic dysfunction is less common on Step 1 than endocrine causes.",
+    thinkOf: [
+      "Hypothyroidism — classic with weight gain, fatigue, constipation, bradycardia",
+      "Anorexia nervosa — low body fat, lanugo, amenorrhea",
+      "Adrenal insufficiency — fatigue, hyperpigmentation, hypotension",
+      "Severe anemia",
+      "Hypothalamic dysfunction (rare on Step 1)",
+    ],
+    pairWith: [
+      "Cold intolerance + weight gain + fatigue + bradycardia → hypothyroidism (↑ TSH, ↓ free T4)",
+      "Cold intolerance + amenorrhea + lanugo → anorexia nervosa",
+      "Cold intolerance + hypotension + hyperpigmentation → Addison disease",
+      "Cold intolerance + pallor + exertional dyspnea → anemia",
+      "Heat intolerance instead → hyperthyroidism (opposite pattern)",
+    ],
+    distinguishFrom: [
+      "Heat intolerance — hyperthyroidism, menopause, sympathomimetic excess",
+      "Raynaud phenomenon — episodic digital vasospasm with color change, not global cold feeling",
+      "Fever with chills — acute infection with pyrogen-mediated temperature rise",
+      "Environmental exposure — inadequate clothing or housing without endocrine disease",
+    ],
+    pediatrics:
+      "Congenital hypothyroidism may present with prolonged jaundice, hypotonia, and large fontanelle; cold intolerance is less prominent in neonates than in acquired hypothyroidism in older children.",
+  },
+  {
     id: "jaundice",
     name: "Jaundice",
     etymology: "French jaune = yellow",
@@ -5527,6 +5567,91 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Functional constipation is very common after toilet training; treat with disimpaction and maintenance laxatives (PEG). Failure to pass meconium within 48 hours, abdominal distension, or poor growth suggests Hirschsprung disease — rectal biopsy. Encopresis often reflects overflow from chronic retentive constipation.",
   },
   {
+    id: "fecal-impaction",
+    name: "Fecal Impaction",
+    etymology: "Latin faex = dregs/dung + impaction = wedged/packed in",
+    aliases: [
+      "fecal impaction",
+      "fecal impactions",
+      "faecal impaction",
+      "faecal impactions",
+      "impacted stool",
+      "impacted stools",
+      "stool impaction",
+      "rectal impaction",
+    ],
+    definition:
+      "Hardened, immobile mass of stool lodged in the rectum or distal colon that cannot be evacuated spontaneously — complication of chronic constipation, especially in elderly, institutionalized, or neurologically impaired patients.",
+    mechanism:
+      "Prolonged stool retention → progressive dehydration and compaction of colonic contents → obstructive mass at rectosigmoid → impaired rectal sensation and ineffective straining; can cause proximal dilation, overflow diarrhea, and urinary retention from pelvic compression.",
+    thinkOf: [
+      "Chronic constipation — opioids, anticholinergics, immobility",
+      "Elderly nursing home patient with altered mental status",
+      "Hypothyroidism, hypercalcemia, Parkinson disease",
+      "Neurogenic bowel — spinal cord injury, dementia",
+      "Pediatric retentive constipation with encopresis",
+    ],
+    pairWith: [
+      "Liquid stool incontinence in elderly → overflow diarrhea from impaction",
+      "Urinary retention + constipation in elderly → check rectum for impaction",
+      "Opioid use + abdominal pain + no bowel movement → impaction likely",
+      "Digital rectal exam with rock-hard stool in ampulla → confirms impaction",
+      "Abdominal distension + no flatus after days without BM → impaction vs obstruction",
+    ],
+    distinguishFrom: [
+      "Simple constipation — hard stools but no fixed obstructing rectal mass",
+      "Fecaloma — larger chronic mass often in sigmoid/colon, may mimic tumor",
+      "Colorectal cancer — annular lesion, weight loss, anemia, occult blood",
+      "Sigmoid volvulus — coffee-bean sign, acute distension",
+      "Ileus — diffuse loss of motility, not localized hardened stool mass",
+    ],
+    pediatrics:
+      "Overflow encopresis in toilet-trained child often reflects fecal impaction from retentive behavior — disimpaction with enemas/PEG before maintenance therapy; do not confuse with primary diarrhea.",
+  },
+  {
+    id: "fecaloma",
+    name: "Fecaloma",
+    etymology: "Latin faex = dregs/dung + -oma = mass/tumor-like growth",
+    aliases: [
+      "fecaloma",
+      "fecalomas",
+      "faecaloma",
+      "faecalomas",
+      "stercoroma",
+      "stercoromas",
+      "fecal mass",
+      "fecal tumor",
+      "giant fecal mass",
+    ],
+    definition:
+      "Large, hardened, tumor-like accumulation of inspissated feces in the colon (often sigmoid) from chronic severe constipation — may cause obstruction, perforation, or be mistaken for neoplasm on imaging.",
+    mechanism:
+      "Years of chronic constipation and slow transit → repeated stool layering and desiccation → giant laminated fecal mass distending colonic lumen → pressure necrosis of mucosa (stercoral ulcer), perforation risk, and extrinsic compression of bladder/ureters.",
+    thinkOf: [
+      "Chronic severe constipation in elderly or psychiatric patients",
+      "Neurogenic bowel — spinal cord injury, multiple sclerosis",
+      "Chagas megacolon with prolonged colonic stasis",
+      "Institutionalized patients with poor mobility and low-fiber diet",
+      "Chagas disease or Hirschsprung (long-segment) with megacolon",
+    ],
+    pairWith: [
+      "Chronic constipation + abdominal mass + intermittent obstruction → fecaloma",
+      "Stercoral ulcer + perforation risk → surgical emergency",
+      "Sigmoid mass on CT that does not enhance like tumor → consider fecaloma",
+      "Chagas megacolon + massive abdominal distension → fecaloma complication",
+      "Rectal exam may not reach proximal giant mass — imaging needed",
+    ],
+    distinguishFrom: [
+      "Fecal impaction — typically rectal/distal lodged mass, smaller scale",
+      "Colorectal adenocarcinoma — irregular mucosal lesion, weight loss, anemia",
+      "Diverticular abscess — fever, localized tenderness, inflammatory mass",
+      "Ovarian mass — separate from colonic fecal layering on CT",
+      "Fecalith — small calcified concretion in appendix or diverticulum, not giant colonic mass",
+    ],
+    pediatrics:
+      "Giant fecaloma is uncommon in children but may complicate severe functional constipation or Hirschsprung-related megacolon; distinguish from abdominal tumor with imaging and history.",
+  },
+  {
     id: "rigors",
     name: "Rigors",
     etymology: "Latin rigor = stiffness/shaking",
@@ -6492,6 +6617,90 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Orthostatic hypotension in adolescents may present as dizziness on standing; POTS is more common in young women — distinguish sustained BP drop from tachycardia-predominant orthostatic intolerance.",
+  },
+  {
+    id: "cotton-wool-spots",
+    name: "Cotton-Wool Spots",
+    etymology: "English cotton = soft fiber + wool = sheep fleece + spot = mark",
+    aliases: [
+      "cotton wool spots",
+      "cotton-wool spots",
+      "cotton wool spot",
+      "cotton-wool spot",
+      "soft exudates",
+      "soft exudate",
+      "nerve fiber layer infarcts",
+      "nerve fiber layer infarct",
+      "nflis",
+    ],
+    definition:
+      "White, fluffy retinal lesions representing microinfarcts of the nerve fiber layer from focal ischemia — visible on fundoscopy as soft exudates distinct from hard lipid exudates.",
+    mechanism:
+      "Focal capillary occlusion or hypoperfusion → axoplasmic flow stasis in retinal nerve fiber layer → swollen opaque axon segments (cytoid bodies) → white fluffy lesions with feathered margins; resolve over weeks leaving minor visual field defects.",
+    thinkOf: [
+      "Diabetic retinopathy",
+      "Hypertensive retinopathy",
+      "HIV retinopathy",
+      "Severe anemia or thrombocytopenia",
+      "Pre-eclampsia / HELLP syndrome",
+      "Radiation retinopathy",
+      "Purtscher retinopathy (compressive trauma)",
+    ],
+    pairWith: [
+      "Cotton-wool spots + microaneurysms + dot-blot hemorrhages → diabetic retinopathy",
+      "Cotton-wool spots + AV nicking + flame hemorrhages → hypertensive retinopathy",
+      "Bilateral cotton-wool spots + immunosuppression → HIV CMV or opportunistic retinopathy",
+      "Cotton-wool spots + severe hypertension + papilledema → malignant hypertension",
+    ],
+    distinguishFrom: [
+      "Hard exudates — yellow waxy lipid deposits from chronic vascular leak (macular star)",
+      "Drusen — yellow deposits under RPE in macula; age-related macular degeneration",
+      "Retinal whitening in CRAO — entire retina pale with cherry-red fovea",
+      "Myelinated nerve fibers — feathered margin along nerve fiber bundle, congenital",
+    ],
+    pediatrics:
+      "Cotton-wool spots are uncommon in children but may appear with severe hypertension, leukemia, or HIV; always evaluate for systemic vascular disease.",
+  },
+  {
+    id: "drusen",
+    name: "Drusen",
+    etymology: "German Druse = geode/mineral nodule",
+    aliases: [
+      "drusen",
+      "druse",
+      "retinal drusen",
+      "macular drusen",
+      "optic disc drusen",
+      "optic nerve head drusen",
+      "ond",
+      "hard drusen",
+      "soft drusen",
+    ],
+    definition:
+      "Yellowish extracellular deposits beneath the retinal pigment epithelium (macular drusen) or within the optic nerve head (optic disc drusen) — macular drusen are hallmark of age-related macular degeneration; optic disc drusen mimic papilledema.",
+    mechanism:
+      "Macular drusen — accumulation of lipoproteinaceous material between Bruch membrane and RPE from chronic oxidative stress and impaired RPE clearance → risk factor for geographic atrophy and neovascular AMD. Optic disc drusen — calcified hyaline deposits anterior to lamina cribrosa from abnormal axonal metabolism → elevated-appearing disc without true axoplasmic stasis.",
+    thinkOf: [
+      "Age-related macular degeneration (macular drusen)",
+      "Optic disc drusen mimicking papilledema",
+      "Family history of AMD",
+      "Older age (macular)",
+      "Congenital optic disc drusen in children",
+    ],
+    pairWith: [
+      "Macular drusen + central vision loss → age-related macular degeneration",
+      "Optic disc drusen + no spontaneous venous pulsations + autofluorescence → pseudopapilledema",
+      "Drusen + disc elevation but no RAPD or vision loss → optic disc drusen not papilledema",
+      "Soft confluent drusen → higher risk of neovascular AMD",
+    ],
+    distinguishFrom: [
+      "Papilledema — bilateral, headache, ↑ ICP, venous engorgement, spontaneous pulsations absent late",
+      "Optic neuritis — painful vision loss, RAPD, demyelination",
+      "Hard exudates — lipid deposits in retina from vascular leak (diabetes, HTN)",
+      "Myelinated nerve fibers — white feathery disc margin, congenital",
+    ],
+    pediatrics:
+      "Optic disc drusen may become visible in childhood/adolescence and mimic papilledema — B-scan ultrasound or autofluorescence shows buried drusen; avoid unnecessary neuroimaging/LP when disc drusen confirmed and exam otherwise benign.",
   },
   {
     id: "papilledema",

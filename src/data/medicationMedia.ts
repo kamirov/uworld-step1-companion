@@ -39,6 +39,8 @@ import sumatriptan from "../media/images/medications/sumatriptan.svg?url";
 import topiramate from "../media/images/medications/topiramate.svg?url";
 import vasopressors from "../media/images/medications/vasopressors.png?url";
 import antiTnfTherapy from "../media/images/medications/anti-tnf-therapy.png?url";
+import benzodiazepines from "../media/images/medications/benzodiazepines.svg?url";
+import flumazenil from "../media/images/medications/flumazenil.svg?url";
 import retinoicAcid from "../media/images/medications/retinoic-acid.svg?url";
 
 export type MedicationImageId = Extract<
@@ -82,6 +84,8 @@ export type MedicationImageId = Extract<
   | "topiramate"
   | "vasopressors"
   | "retinoic-acid"
+  | "benzodiazepines"
+  | "flumazenil"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -129,6 +133,8 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   topiramate: extensionAssetUrl(topiramate),
   vasopressors: extensionAssetUrl(vasopressors),
   "retinoic-acid": extensionAssetUrl(retinoicAcid),
+  benzodiazepines: extensionAssetUrl(benzodiazepines),
+  flumazenil: extensionAssetUrl(flumazenil),
 };
 
 export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
@@ -290,6 +296,14 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Tretinoin structure.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Tretinoin_structure.svg",
   },
+  benzodiazepines: {
+    label: "Wikimedia Commons (Diazepam structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Diazepam_structure.svg",
+  },
+  flumazenil: {
+    label: "Wikimedia Commons (Flumazenil.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Flumazenil.svg",
+  },
 };
 
 export const MEDICATION_IMAGE_CAPTIONS: Partial<
@@ -373,6 +387,10 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Norepinephrine structure — prototypical alpha-adrenergic vasopressor used in septic shock",
   "retinoic-acid":
     "All-trans retinoic acid (ATRA) — vitamin A derivative that induces differentiation in acute promyelocytic leukemia",
+  benzodiazepines:
+    "Benzodiazepines bind GABA-A receptors — enhance inhibitory neurotransmission for anxiety, seizures, and alcohol withdrawal",
+  flumazenil:
+    "Flumazenil — competitive benzodiazepine receptor antagonist reversing benzo sedation and respiratory depression",
 };
 
 export function getMedicationImageForId(id: string): string | undefined {

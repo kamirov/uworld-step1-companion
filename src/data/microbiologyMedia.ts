@@ -9,6 +9,7 @@ import borreliaBurgdorferi from "../media/images/microbiology/borrelia-burgdorfe
 import candidaAlbicans from "../media/images/microbiology/candida-albicans.jpg?url";
 import clostridiumBotulinum from "../media/images/microbiology/clostridium-botulinum.png?url";
 import clostridiumPerfringens from "../media/images/microbiology/clostridium-perfringens.jpg?url";
+import clostridiumTetani from "../media/images/microbiology/clostridium-tetani.jpg?url";
 import coccidioidesImmitis from "../media/images/microbiology/coccidioides-immitis.jpg?url";
 import corynebacteriumDiphtheriae from "../media/images/microbiology/corynebacterium-diphtheriae.jpg?url";
 import cryptosporidiumParvum from "../media/images/microbiology/cryptosporidium-parvum.jpg?url";
@@ -91,6 +92,7 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "neisseria-meningitidis": extensionAssetUrl(neisseriaMeningitidis),
     "clostridium-botulinum": extensionAssetUrl(clostridiumBotulinum),
     "clostridium-perfringens": extensionAssetUrl(clostridiumPerfringens),
+    "clostridium-tetani": extensionAssetUrl(clostridiumTetani),
     "mycobacterium-tuberculosis": extensionAssetUrl(mycobacteriumTuberculosis),
     "treponema-pallidum": extensionAssetUrl(treponemaPallidum),
     hiv: extensionAssetUrl(hiv),
@@ -198,6 +200,10 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
   "clostridium-perfringens": {
     label: "CDC PHIL #2995",
     url: "https://phil.cdc.gov/Details.aspx?pid=2995",
+  },
+  "clostridium-tetani": {
+    label: "Wikimedia Commons (Opisthotonus in a patient suffering from tetanus - Painting by Sir Charles Bell - 1809.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Opisthotonus_in_a_patient_suffering_from_tetanus_-_Painting_by_Sir_Charles_Bell_-_1809.jpg",
   },
   "mycobacterium-tuberculosis": {
     label: "CDC PHIL #5789",

@@ -55,9 +55,9 @@
     "query": "scleroderma skin thickening"
   },
   "symptoms/nuchal-rigidity.jpg": {
-    "title": "File:Books from the Library of Congress (IA moderndiagnosi00shef).pdf",
-    "page": "https://commons.wikimedia.org/wiki/File:Books_from_the_Library_of_Congress_(IA_moderndiagnosi00shef).pdf",
-    "query": "meningismus neck stiffness"
+    "title": "File:Neck stiffness.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Neck_stiffness.jpg",
+    "query": "neck stiffness meningitis"
   },
   "conditions/pemphigus-vulgaris.jpg": {
     "title": "File:Pemphigus vulgaris.jpg",
@@ -1678,5 +1678,40 @@
     "title": "File:D-dimer.png",
     "page": "https://commons.wikimedia.org/wiki/File:D-dimer.png",
     "query": "D-dimer fibrin degradation clot lysis"
+  },
+  "medications/benzodiazepines.svg": {
+    "title": "File:Diazepam structure.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diazepam_structure.svg",
+    "query": "GABA receptor benzodiazepine"
+  },
+  "medications/flumazenil.svg": {
+    "title": "File:Flumazenil.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Flumazenil.svg",
+    "query": "flumazenil"
+  },
+  "symptoms/anxiety.png": {
+    "title": "File:GAD At-A-Glance.png",
+    "page": "https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png",
+    "query": "anxiety disorder illustration"
+  },
+  "conditions/delirium-tremens.jpg": {
+    "title": "File:Delirium tremens Skalarjevo brezno Peter Gedei 2020-8-8.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Delirium_tremens_Skalarjevo_brezno_Peter_Gedei_2020-8-8.jpg",
+    "query": "delirium tremens"
+  },
+  "conditions/status-epilepticus.jpg": {
+    "title": "File:MRIinFIRES.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:MRIinFIRES.jpg",
+    "query": "status epilepticus seizure"
+  },
+  "microbiology/clostridium-tetani.jpg": {
+    "title": "File:Opisthotonus in a patient suffering from tetanus - Painting by Sir Charles Bell - 1809.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Opisthotonus_in_a_patient_suffering_from_tetanus_-_Painting_by_Sir_Charles_Bell_-_1809.jpg",
+    "query": "tetanus opisthotonos"
+  },
+  "conditions/alcohol-withdrawal.jpg": {
+    "title": "Local copy from conditions/alcohol-use-disorder.jpg",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
   }
 }

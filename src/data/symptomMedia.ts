@@ -4,6 +4,7 @@ import type { SymptomEntry } from "./symptoms";
 import afferentPupillaryDefect from "../media/images/symptoms/afferent-pupillary-defect.png?url";
 import agonalRespirations from "../media/images/symptoms/agonal-respirations.jpg?url";
 import ankleReflex from "../media/images/symptoms/ankle-reflex.jpg?url";
+import anxiety from "../media/images/symptoms/anxiety.png?url";
 import arthralgia from "../media/images/symptoms/arthralgia.jpg?url";
 import arthritis from "../media/images/symptoms/arthritis.jpg?url";
 import ataxia from "../media/images/symptoms/ataxia.jpg?url";
@@ -14,13 +15,16 @@ import bullae from "../media/images/symptoms/bullae.jpg?url";
 import calcinosis from "../media/images/symptoms/calcinosis.jpg?url";
 import chestPain from "../media/images/symptoms/chest-pain.jpg?url";
 import clubbing from "../media/images/symptoms/clubbing.jpg?url";
+import coldIntolerance from "../media/images/symptoms/cold-intolerance.jpg?url";
 import confluentRash from "../media/images/symptoms/confluent-rash.jpg?url";
+import cottonWoolSpots from "../media/images/symptoms/cotton-wool-spots.png?url";
 import cough from "../media/images/symptoms/cough.jpg?url";
 import cyanosis from "../media/images/symptoms/cyanosis.jpg?url";
 import cyclopia from "../media/images/symptoms/cyclopia.jpg?url";
 import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.jpg?url";
 import diplopia from "../media/images/symptoms/diplopia.jpg?url";
+import drusen from "../media/images/symptoms/drusen.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
 import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
 import dystonia from "../media/images/symptoms/dystonia.jpg?url";
@@ -34,6 +38,8 @@ import exertionalDyspnea from "../media/images/symptoms/exertional-dyspnea.jpg?u
 import facialCleft from "../media/images/symptoms/facial-cleft.jpg?url";
 import facialPalsy from "../media/images/symptoms/facial-palsy.jpg?url";
 import fasciculation from "../media/images/symptoms/fasciculation.jpg?url";
+import fecalImpaction from "../media/images/symptoms/fecal-impaction.jpg?url";
+import fecaloma from "../media/images/symptoms/fecaloma.jpg?url";
 import fever from "../media/images/symptoms/fever.jpg?url";
 import generalizedTonicClonicSeizure from "../media/images/symptoms/generalized-tonic-clonic-seizure.jpg?url";
 import headache from "../media/images/symptoms/headache.jpg?url";
@@ -68,7 +74,7 @@ import myelopathy from "../media/images/symptoms/myelopathy.jpg?url";
 import nausea from "../media/images/symptoms/nausea.jpg?url";
 import neutropenia from "../media/images/symptoms/neutropenia.jpg?url";
 import nodularLymphangitis from "../media/images/symptoms/nodular-lymphangitis.jpg?url";
-import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.svg?url";
+import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.jpg?url";
 import nystagmus from "../media/images/symptoms/nystagmus.svg?url";
 import orthopnea from "../media/images/symptoms/orthopnea.jpg?url";
 import orthostaticHypotension from "../media/images/symptoms/orthostatic-hypotension.jpg?url";
@@ -116,6 +122,7 @@ export type SymptomImageId = Extract<
   | "afferent-pupillary-defect"
   | "agonal-respirations"
   | "ankle-reflex"
+  | "anxiety"
   | "arthralgia"
   | "arthritis"
   | "ataxia"
@@ -126,13 +133,16 @@ export type SymptomImageId = Extract<
   | "calcinosis"
   | "chest-pain"
   | "clubbing"
+  | "cold-intolerance"
   | "confluent-rash"
+  | "cotton-wool-spots"
   | "cough"
   | "cyanosis"
   | "cyclopia"
   | "dactylitis"
   | "decreased-skin-turgor"
   | "diplopia"
+  | "drusen"
   | "dry-mucous-membranes"
   | "dysmorphic-facies"
   | "dystonia"
@@ -146,6 +156,8 @@ export type SymptomImageId = Extract<
   | "facial-cleft"
   | "facial-palsy"
   | "fasciculation"
+  | "fecal-impaction"
+  | "fecaloma"
   | "fever"
   | "generalized-tonic-clonic-seizure"
   | "headache"
@@ -234,6 +246,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "afferent-pupillary-defect": extensionAssetUrl(afferentPupillaryDefect),
   "agonal-respirations": extensionAssetUrl(agonalRespirations),
   "ankle-reflex": extensionAssetUrl(ankleReflex),
+  "anxiety": extensionAssetUrl(anxiety),
   "arthralgia": extensionAssetUrl(arthralgia),
   "arthritis": extensionAssetUrl(arthritis),
   "ataxia": extensionAssetUrl(ataxia),
@@ -244,13 +257,16 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "calcinosis": extensionAssetUrl(calcinosis),
   "chest-pain": extensionAssetUrl(chestPain),
   "clubbing": extensionAssetUrl(clubbing),
+  "cold-intolerance": extensionAssetUrl(coldIntolerance),
   "confluent-rash": extensionAssetUrl(confluentRash),
+  "cotton-wool-spots": extensionAssetUrl(cottonWoolSpots),
   "cough": extensionAssetUrl(cough),
   "cyanosis": extensionAssetUrl(cyanosis),
   "cyclopia": extensionAssetUrl(cyclopia),
   "dactylitis": extensionAssetUrl(dactylitis),
   "decreased-skin-turgor": extensionAssetUrl(decreasedSkinTurgor),
   "diplopia": extensionAssetUrl(diplopia),
+  "drusen": extensionAssetUrl(drusen),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
   "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
   "dystonia": extensionAssetUrl(dystonia),
@@ -264,6 +280,8 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "facial-cleft": extensionAssetUrl(facialCleft),
   "facial-palsy": extensionAssetUrl(facialPalsy),
   "fasciculation": extensionAssetUrl(fasciculation),
+  "fecal-impaction": extensionAssetUrl(fecalImpaction),
+  "fecaloma": extensionAssetUrl(fecaloma),
   "fever": extensionAssetUrl(fever),
   "generalized-tonic-clonic-seizure": extensionAssetUrl(generalizedTonicClonicSeizure),
   "headache": extensionAssetUrl(headache),
@@ -349,6 +367,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "afferent-pupillary-defect": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:afferent-pupillary-defect.png" },
   "agonal-respirations": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:agonal-respirations.jpg" },
   "ankle-reflex": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ankle-reflex.jpg" },
+  "anxiety": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:anxiety.png" },
   "arthralgia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthralgia.jpg" },
   "arthritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthritis.jpg" },
   "ataxia": { label: "Wikimedia Commons (Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg" },
@@ -359,13 +378,16 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "calcinosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:calcinosis.jpg" },
   "chest-pain": { label: "Wikimedia Commons (Depiction of a person suffering from chest pain.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png" },
   "clubbing": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clubbing.jpg" },
+  "cold-intolerance": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cold-intolerance.jpg" },
   "confluent-rash": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:confluent-rash.jpg" },
+  "cotton-wool-spots": { label: "Wikimedia Commons (A sample retinal image with cotton wool spots and hemorrhages.png)", url: "https://commons.wikimedia.org/wiki/File:A_sample_retinal_image_with_cotton_wool_spots_and_hemorrhages.png" },
   "cough": { label: "Wikimedia Commons (Red Star Cough Cure (back) - 8558298660.jpg)", url: "https://commons.wikimedia.org/wiki/File:Red_Star_Cough_Cure_(back)_-_8558298660.jpg" },
   "cyanosis": { label: "Wikimedia Commons (My Heartbeat and Peripheral Oxygen Saturation (SpO2) (29609885543).jpg)", url: "https://commons.wikimedia.org/wiki/File:My_Heartbeat_and_Peripheral_Oxygen_Saturation_(SpO2)_(29609885543).jpg" },
   "cyclopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cyclopia.jpg" },
   "dactylitis": { label: "Wikimedia Commons (Quick Reference Guide for Clinicians- Sickle Cell Disease- Comprehensive Screening and Management in Newborns and Infants (IA quickreferencegu00unse).pdf)", url: "https://commons.wikimedia.org/wiki/File:Quick_Reference_Guide_for_Clinicians-_Sickle_Cell_Disease-_Comprehensive_Screening_and_Management_in_Newborns_and_Infants_(IA_quickreferencegu00unse).pdf" },
   "decreased-skin-turgor": { label: "Wikimedia Commons (LowSkinTurgor.jpg)", url: "https://commons.wikimedia.org/wiki/File:LowSkinTurgor.jpg" },
   "diplopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diplopia.jpg" },
+  "drusen": { label: "Wikimedia Commons (Peripheral Drusen.jpg)", url: "https://commons.wikimedia.org/wiki/File:Peripheral_Drusen.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
   "dysmorphic-facies": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dysmorphic-facies.jpg" },
   "dystonia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dystonia.jpg" },
@@ -379,6 +401,8 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "facial-cleft": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:facial-cleft.jpg" },
   "facial-palsy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:facial-palsy.jpg" },
   "fasciculation": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:fasciculation.jpg" },
+  "fecal-impaction": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:fecal-impaction.jpg" },
+  "fecaloma": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:fecaloma.jpg" },
   "fever": { label: "Wikimedia Commons (Symptoms of coronavirus disease 2019 2.0.svg)", url: "https://commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0.svg" },
   "generalized-tonic-clonic-seizure": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:generalized-tonic-clonic-seizure.jpg" },
   "headache": { label: "Wikimedia Commons (Migraine.jpg)", url: "https://commons.wikimedia.org/wiki/File:Migraine.jpg" },
@@ -413,7 +437,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "nausea": { label: "Wikimedia Commons (Fphar-09-00913-g005.jpg)", url: "https://commons.wikimedia.org/wiki/File:Fphar-09-00913-g005.jpg" },
   "neutropenia": { label: "Wikimedia Commons (A blood smear with neutropenia in United States.jpg)", url: "https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg" },
   "nodular-lymphangitis": { label: "Wikimedia Commons (Sporotrichosis by the fungus Sporothrix schenckii PHIL 3940 lores.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sporotrichosis_by_the_fungus_Sporothrix_schenckii_PHIL_3940_lores.jpg" },
-  "nuchal-rigidity": { label: "Created locally", url: "https://en.wikipedia.org/wiki/Meningism" },
+  "nuchal-rigidity": { label: "Wikimedia Commons (Neck stiffness.jpg)", url: "https://commons.wikimedia.org/wiki/File:Neck_stiffness.jpg" },
   "nystagmus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:nystagmus.svg" },
   "orthopnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthopnea.jpg" },
   "orthostatic-hypotension": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthostatic-hypotension.jpg" },
@@ -462,6 +486,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "afferent-pupillary-defect": "Clinical or pathologic image illustrating afferent pupillary defect",
   "agonal-respirations": "Clinical or pathologic image illustrating agonal respirations",
   "ankle-reflex": "Clinical or pathologic image illustrating ankle reflex",
+  "anxiety": "Clinical or pathologic image illustrating anxiety",
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
   "arthritis": "Clinical or pathologic image illustrating arthritis",
   "ataxia": "Clinical or pathologic image illustrating ataxia",
@@ -472,13 +497,16 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
   "chest-pain": "Clinical or pathologic image illustrating chest pain",
   "clubbing": "Finger clubbing — increased convexity of nail bed with loss of Lovibond angle",
+  "cold-intolerance": "Clinical or pathologic image illustrating cold intolerance",
   "confluent-rash": "Clinical or pathologic image illustrating confluent rash",
+  "cotton-wool-spots": "Cotton-wool spots — fluffy white nerve fiber layer infarcts from retinal capillary ischemia",
   "cough": "Clinical or pathologic image illustrating cough",
   "cyanosis": "Peripheral cyanosis of the lower extremity due to ischemia",
   "cyclopia": "Clinical or pathologic image illustrating cyclopia",
   "dactylitis": "Painful swelling of the hands — dactylitis in sickle cell disease",
   "decreased-skin-turgor": "Clinical or pathologic image illustrating decreased skin turgor",
   "diplopia": "Clinical or pathologic image illustrating diplopia",
+  "drusen": "Retinal drusen — yellow sub-RPE deposits; macular drusen in AMD, optic disc drusen mimic papilledema",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
   "dysmorphic-facies": "Clinical or pathologic image illustrating dysmorphic facies",
   "dystonia": "Clinical or pathologic image illustrating dystonia",
@@ -492,6 +520,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "facial-cleft": "Clinical or pathologic image illustrating facial cleft",
   "facial-palsy": "Clinical or pathologic image illustrating facial palsy",
   "fasciculation": "Clinical or pathologic image illustrating fasciculation",
+  "fecal-impaction": "Clinical or pathologic image illustrating fecal impaction",
+  "fecaloma": "Clinical or pathologic image illustrating fecaloma",
   "fever": "Clinical or pathologic image illustrating fever",
   "generalized-tonic-clonic-seizure": "Clinical or pathologic image illustrating generalized tonic clonic seizure",
   "headache": "Clinical or pathologic image illustrating headache",

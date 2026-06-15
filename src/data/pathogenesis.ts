@@ -4772,6 +4772,46 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Not a pediatric pattern; children with restrictive eating need evaluation for avoidant/restrictive food intake disorder or neglect-related malnutrition.",
   },
   {
+    id: "low-fiber-diet",
+    name: "Low-Fiber Diet",
+    etymology: "low = reduced + Latin fibra = thread/strand + diet = habitual food intake",
+    aliases: [
+      "low-fiber diet",
+      "low fiber diet",
+      "low-fibre diet",
+      "low fibre diet",
+      "fiber-deficient diet",
+      "fibre-deficient diet",
+      "low dietary fiber",
+      "low dietary fibre",
+      "refined diet",
+    ],
+    definition:
+      "Dietary pattern with inadequate insoluble and soluble fiber from fruits, vegetables, legumes, and whole grains — reduces stool bulk, slows colonic transit, and increases intraluminal pressure.",
+    examples: [
+      "Chronic constipation and diverticulosis risk in Western diet",
+      "Diverticulitis — low fiber predisposes to diverticula formation at vasa recta penetration sites",
+      "Colorectal cancer epidemiologic association with low fiber and high red/processed meat intake",
+      "Hemorrhoids and anal fissures worsened by hard stools from low residue intake",
+      "Elderly institutional diet heavy in processed foods with minimal produce",
+    ],
+    boardsPearls: [
+      "Low fiber → ↓ stool bulk, slow transit, ↑ intraluminal pressure → diverticula",
+      "Diverticulosis prevention/management includes increased dietary fiber when tolerated",
+      "Distinguish from celiac disease — malabsorption with villous atrophy, not just low residue",
+      "Constipation workup: fiber, fluids, activity before extensive testing if no alarm features",
+      "vs high-fiber diet — bulking agent for constipation and IBS-C when introduced gradually",
+    ],
+    distinguishFrom: [
+      "Tea and toast diet — elderly restrictive pattern with micronutrient deficiency focus",
+      "Gluten-free diet without celiac disease — may be low fiber if not planned",
+      "Mechanical obstruction — acute distension, not chronic dietary pattern",
+      "Hypothyroidism — metabolic cause of constipation independent of fiber intake",
+    ],
+    pediatrics:
+      "Children with low fiber and inadequate fluid intake commonly develop functional constipation after toilet training; encourage fruits, vegetables, and whole grains before chronic laxative dependence.",
+  },
+  {
     id: "alcoholism",
     name: "Alcoholism",
     etymology: "Arabic al-kuhl = distilled essence + Greek -ismos = condition/practice",
@@ -5666,6 +5706,43 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Neonatal BBB is immature — CNS infections and drug penetration differ from adults; kernicterus reflects bilirubin crossing underdeveloped barrier.",
+  },
+  {
+    id: "meconium",
+    name: "Meconium",
+    etymology: "Greek mēkōnion = poppy juice (dark sticky appearance)",
+    aliases: [
+      "meconium",
+      "meconiums",
+      "neonatal meconium",
+      "first stool",
+      "first stools",
+      "fetal stool",
+    ],
+    definition:
+      "Sterile, viscous, dark green-black first intestinal contents of the newborn — composed of bile, mucus, lanugo, amniotic fluid, and swallowed debris; normally passed within 24–48 hours after birth.",
+    examples: [
+      "Failure to pass meconium in 48 h → Hirschsprung disease until proven otherwise",
+      "Meconium ileus — inspissated meconium obstructing ileum in cystic fibrosis",
+      "Meconium aspiration syndrome — distressed neonate with meconium-stained amniotic fluid",
+      "Physiologic neonatal jaundice amplified until meconium excretion reduces enterohepatic bilirubin cycling",
+      "Meconium peritonitis — in utero bowel perforation with calcifications on prenatal ultrasound",
+    ],
+    boardsPearls: [
+      "Meconium = first neonatal stool; should pass within 24–48 h",
+      "No meconium + abdominal distension → Hirschsprung disease (rectal biopsy)",
+      "Meconium ileus in newborn ≈ cystic fibrosis until proven otherwise",
+      "Meconium-stained fluid + respiratory distress → meconium aspiration pneumonitis",
+      "vs transitional stool — yellow-green seedy stool after meconium clears (breast/formula feeding)",
+    ],
+    distinguishFrom: [
+      "Transitional stool — lighter, looser stools after day 2–3 of life with feeding",
+      "Melena — digested blood in stool after meconium period; upper GI bleed",
+      "Bilious vomiting without meconium passage — obstruction (atresia, malrotation, Hirschsprung)",
+      "Adult stool — formed brown stool after weaning; not meconium",
+    ],
+    pediatrics:
+      "Failure to pass meconium within 48 hours is a neonatal red flag for Hirschsprung disease or distal obstruction; meconium ileus strongly suggests cystic fibrosis — sweat chloride testing.",
   },
 ];
 

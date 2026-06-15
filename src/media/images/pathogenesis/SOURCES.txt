@@ -125,3 +125,11 @@ blood-brain-barrier.svg
   Source: Local copy from conditions/meninges-diagram.svg
   Reference: https://commons.wikimedia.org/wiki/File:Meninges_diagram.svg
 
+low-fiber-diet.jpg
+  Source: Local copy from pathogenesis/tea-and-toast-diet.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg
+
+meconium.jpg
+  Source: Local copy from conditions/hirschsprung-disease.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Biliary_atresia.jpg
+
