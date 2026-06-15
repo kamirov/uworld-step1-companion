@@ -6,7 +6,9 @@ import agonalRespirations from "../media/images/symptoms/agonal-respirations.jpg
 import akathisia from "../media/images/symptoms/akathisia.jpg?url";
 import allodynia from "../media/images/symptoms/allodynia.png?url";
 import ankleReflex from "../media/images/symptoms/ankle-reflex.jpg?url";
+import androgenicAlopecia from "../media/images/symptoms/androgenic-alopecia.png?url";
 import anxiety from "../media/images/symptoms/anxiety.png?url";
+import anosmia from "../media/images/symptoms/anosmia.png?url";
 import arthralgia from "../media/images/symptoms/arthralgia.jpg?url";
 import arthritis from "../media/images/symptoms/arthritis.jpg?url";
 import ataxia from "../media/images/symptoms/ataxia.jpg?url";
@@ -18,10 +20,12 @@ import brudzinskiSign from "../media/images/symptoms/brudzinski-sign.png?url";
 import bullae from "../media/images/symptoms/bullae.jpg?url";
 import calcinosis from "../media/images/symptoms/calcinosis.jpg?url";
 import chestPain from "../media/images/symptoms/chest-pain.jpg?url";
+import cheyneStokesRespiration from "../media/images/symptoms/cheyne-stokes-respiration.svg?url";
 import chorea from "../media/images/symptoms/chorea.jpg?url";
 import clonicPhase from "../media/images/symptoms/clonic-phase.jpg?url";
 import clubbing from "../media/images/symptoms/clubbing.jpg?url";
 import coldIntolerance from "../media/images/symptoms/cold-intolerance.jpg?url";
+import centralAdiposity from "../media/images/symptoms/central-adiposity.svg?url";
 import confluentRash from "../media/images/symptoms/confluent-rash.jpg?url";
 import cottonWoolSpots from "../media/images/symptoms/cotton-wool-spots.png?url";
 import cough from "../media/images/symptoms/cough.jpg?url";
@@ -29,6 +33,8 @@ import cyanosis from "../media/images/symptoms/cyanosis.jpg?url";
 import cyclopia from "../media/images/symptoms/cyclopia.jpg?url";
 import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.jpg?url";
+import decorticatePosturing from "../media/images/symptoms/decorticate-posturing.jpg?url";
+import decerebratePosturing from "../media/images/symptoms/decerebrate-posturing.jpg?url";
 import diplopia from "../media/images/symptoms/diplopia.jpg?url";
 import drusen from "../media/images/symptoms/drusen.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
@@ -58,11 +64,13 @@ import hematuria from "../media/images/symptoms/hematuria.jpg?url";
 import hemianopsia from "../media/images/symptoms/hemianopsia.svg?url";
 import hemiplegia from "../media/images/symptoms/hemiplegia.jpg?url";
 import hemoptysis from "../media/images/symptoms/hemoptysis.jpg?url";
+import hirsutism from "../media/images/symptoms/hirsutism.png?url";
 import hyperactiveBowelSounds from "../media/images/symptoms/hyperactive-bowel-sounds.jpg?url";
 import hyperpigmentation from "../media/images/symptoms/hyperpigmentation.jpg?url";
 import hypotelorism from "../media/images/symptoms/hypotelorism.jpg?url";
 import hypotonia from "../media/images/symptoms/hypotonia.jpg?url";
 import hypoxemia from "../media/images/symptoms/hypoxemia.jpg?url";
+import hypercapnia from "../media/images/symptoms/hypercapnia.svg?url";
 import impairedWoundHealing from "../media/images/symptoms/impaired-wound-healing.png?url";
 import induratedPlaque from "../media/images/symptoms/indurated-plaque.jpg?url";
 import insomnia from "../media/images/symptoms/insomnia.jpg?url";
@@ -89,6 +97,8 @@ import nodularLymphangitis from "../media/images/symptoms/nodular-lymphangitis.j
 import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.jpg?url";
 import nystagmus from "../media/images/symptoms/nystagmus.svg?url";
 import ophthalmoplegia from "../media/images/symptoms/ophthalmoplegia.svg?url";
+import otorrhea from "../media/images/symptoms/otorrhea.jpg?url";
+import oligomenorrhea from "../media/images/symptoms/oligomenorrhea.png?url";
 import orthopnea from "../media/images/symptoms/orthopnea.jpg?url";
 import orthostaticHypotension from "../media/images/symptoms/orthostatic-hypotension.jpg?url";
 import pallor from "../media/images/symptoms/pallor.jpg?url";
@@ -98,6 +108,7 @@ import papule from "../media/images/symptoms/papule.jpg?url";
 import paresis from "../media/images/symptoms/paresis.jpg?url";
 import peripheralEdema from "../media/images/symptoms/peripheral-edema.jpg?url";
 import photophobia from "../media/images/symptoms/photophobia.jpg?url";
+import pinpointPupils from "../media/images/symptoms/pinpoint-pupils.png?url";
 import plaque from "../media/images/symptoms/plaque.jpg?url";
 import pleuriticChestPain from "../media/images/symptoms/pleuritic-chest-pain.jpg?url";
 import pnd from "../media/images/symptoms/pnd.jpg?url";
@@ -112,6 +123,7 @@ import pruritus from "../media/images/symptoms/pruritus.jpg?url";
 import psychosis from "../media/images/symptoms/psychosis.jpg?url";
 import pulmonaryEdema from "../media/images/symptoms/pulmonary-edema.jpg?url";
 import purpura from "../media/images/symptoms/purpura.jpg?url";
+import raccoonEyes from "../media/images/symptoms/raccoon-eyes.jpg?url";
 import raynaudPhenomenon from "../media/images/symptoms/raynaud-phenomenon.jpg?url";
 import sciatica from "../media/images/symptoms/sciatica.jpg?url";
 import sclerodactyly from "../media/images/symptoms/sclerodactyly.jpg?url";
@@ -142,7 +154,9 @@ export type SymptomImageId = Extract<
   | "akathisia"
   | "allodynia"
   | "ankle-reflex"
+  | "androgenic-alopecia"
   | "anxiety"
+  | "anosmia"
   | "arthralgia"
   | "arthritis"
   | "ataxia"
@@ -154,10 +168,12 @@ export type SymptomImageId = Extract<
   | "bullae"
   | "calcinosis"
   | "chest-pain"
+  | "cheyne-stokes-respiration"
   | "chorea"
   | "clonic-phase"
   | "clubbing"
   | "cold-intolerance"
+  | "central-adiposity"
   | "confluent-rash"
   | "cotton-wool-spots"
   | "cough"
@@ -165,6 +181,8 @@ export type SymptomImageId = Extract<
   | "cyclopia"
   | "dactylitis"
   | "decreased-skin-turgor"
+  | "decorticate-posturing"
+  | "decerebrate-posturing"
   | "diplopia"
   | "drusen"
   | "dry-mucous-membranes"
@@ -194,11 +212,13 @@ export type SymptomImageId = Extract<
   | "hemianopsia"
   | "hemiplegia"
   | "hemoptysis"
+  | "hirsutism"
   | "hyperactive-bowel-sounds"
   | "hyperpigmentation"
   | "hypotelorism"
   | "hypotonia"
   | "hypoxemia"
+  | "hypercapnia"
   | "impaired-wound-healing"
   | "indurated-plaque"
   | "insomnia"
@@ -225,6 +245,8 @@ export type SymptomImageId = Extract<
   | "nuchal-rigidity"
   | "nystagmus"
   | "ophthalmoplegia"
+  | "otorrhea"
+  | "oligomenorrhea"
   | "orthopnea"
   | "orthostatic-hypotension"
   | "pallor"
@@ -234,6 +256,7 @@ export type SymptomImageId = Extract<
   | "paresis"
   | "peripheral-edema"
   | "photophobia"
+  | "pinpoint-pupils"
   | "plaque"
   | "pleuritic-chest-pain"
   | "pnd"
@@ -248,6 +271,7 @@ export type SymptomImageId = Extract<
   | "psychosis"
   | "pulmonary-edema"
   | "purpura"
+  | "raccoon-eyes"
   | "raynaud-phenomenon"
   | "sciatica"
   | "sclerodactyly"
@@ -284,7 +308,9 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "akathisia": extensionAssetUrl(akathisia),
   "allodynia": extensionAssetUrl(allodynia),
   "ankle-reflex": extensionAssetUrl(ankleReflex),
+  "androgenic-alopecia": extensionAssetUrl(androgenicAlopecia),
   "anxiety": extensionAssetUrl(anxiety),
+  "anosmia": extensionAssetUrl(anosmia),
   "arthralgia": extensionAssetUrl(arthralgia),
   "arthritis": extensionAssetUrl(arthritis),
   "ataxia": extensionAssetUrl(ataxia),
@@ -296,10 +322,12 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "bullae": extensionAssetUrl(bullae),
   "calcinosis": extensionAssetUrl(calcinosis),
   "chest-pain": extensionAssetUrl(chestPain),
+  "cheyne-stokes-respiration": extensionAssetUrl(cheyneStokesRespiration),
   "chorea": extensionAssetUrl(chorea),
   "clonic-phase": extensionAssetUrl(clonicPhase),
   "clubbing": extensionAssetUrl(clubbing),
   "cold-intolerance": extensionAssetUrl(coldIntolerance),
+  "central-adiposity": extensionAssetUrl(centralAdiposity),
   "confluent-rash": extensionAssetUrl(confluentRash),
   "cotton-wool-spots": extensionAssetUrl(cottonWoolSpots),
   "cough": extensionAssetUrl(cough),
@@ -307,6 +335,8 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "cyclopia": extensionAssetUrl(cyclopia),
   "dactylitis": extensionAssetUrl(dactylitis),
   "decreased-skin-turgor": extensionAssetUrl(decreasedSkinTurgor),
+  "decorticate-posturing": extensionAssetUrl(decorticatePosturing),
+  "decerebrate-posturing": extensionAssetUrl(decerebratePosturing),
   "diplopia": extensionAssetUrl(diplopia),
   "drusen": extensionAssetUrl(drusen),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
@@ -336,11 +366,13 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "hemianopsia": extensionAssetUrl(hemianopsia),
   "hemiplegia": extensionAssetUrl(hemiplegia),
   "hemoptysis": extensionAssetUrl(hemoptysis),
+  "hirsutism": extensionAssetUrl(hirsutism),
   "hyperactive-bowel-sounds": extensionAssetUrl(hyperactiveBowelSounds),
   "hyperpigmentation": extensionAssetUrl(hyperpigmentation),
   "hypotelorism": extensionAssetUrl(hypotelorism),
   "hypotonia": extensionAssetUrl(hypotonia),
   "hypoxemia": extensionAssetUrl(hypoxemia),
+  "hypercapnia": extensionAssetUrl(hypercapnia),
   "impaired-wound-healing": extensionAssetUrl(impairedWoundHealing),
   "indurated-plaque": extensionAssetUrl(induratedPlaque),
   "insomnia": extensionAssetUrl(insomnia),
@@ -367,6 +399,8 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "nuchal-rigidity": extensionAssetUrl(nuchalRigidity),
   "nystagmus": extensionAssetUrl(nystagmus),
   "ophthalmoplegia": extensionAssetUrl(ophthalmoplegia),
+  "otorrhea": extensionAssetUrl(otorrhea),
+  "oligomenorrhea": extensionAssetUrl(oligomenorrhea),
   "orthopnea": extensionAssetUrl(orthopnea),
   "orthostatic-hypotension": extensionAssetUrl(orthostaticHypotension),
   "pallor": extensionAssetUrl(pallor),
@@ -376,6 +410,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "paresis": extensionAssetUrl(paresis),
   "peripheral-edema": extensionAssetUrl(peripheralEdema),
   "photophobia": extensionAssetUrl(photophobia),
+  "pinpoint-pupils": extensionAssetUrl(pinpointPupils),
   "plaque": extensionAssetUrl(plaque),
   "pleuritic-chest-pain": extensionAssetUrl(pleuriticChestPain),
   "pnd": extensionAssetUrl(pnd),
@@ -390,6 +425,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "psychosis": extensionAssetUrl(psychosis),
   "pulmonary-edema": extensionAssetUrl(pulmonaryEdema),
   "purpura": extensionAssetUrl(purpura),
+  "raccoon-eyes": extensionAssetUrl(raccoonEyes),
   "raynaud-phenomenon": extensionAssetUrl(raynaudPhenomenon),
   "sciatica": extensionAssetUrl(sciatica),
   "sclerodactyly": extensionAssetUrl(sclerodactyly),
@@ -423,7 +459,12 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "akathisia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:akathisia.jpg" },
   "allodynia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:allodynia.png" },
   "ankle-reflex": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ankle-reflex.jpg" },
+  "androgenic-alopecia": { label: "Wikimedia Commons (Ludwid scale for female pattern baldness.png)", url: "https://commons.wikimedia.org/wiki/File:Ludwid_scale_for_female_pattern_baldness.png" },
   "anxiety": { label: "Wikimedia Commons (GAD At-A-Glance.png)", url: "https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png" },
+  "anosmia": {
+    label: "Wikimedia Commons (Gray771.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Gray771.png",
+  },
   "arthralgia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthralgia.jpg" },
   "arthritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthritis.jpg" },
   "ataxia": { label: "Wikimedia Commons (Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg" },
@@ -435,10 +476,15 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "bullae": { label: "Wikimedia Commons (Bullous pemphigoid new image.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg" },
   "calcinosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:calcinosis.jpg" },
   "chest-pain": { label: "Wikimedia Commons (Depiction of a person suffering from chest pain.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png" },
+  "cheyne-stokes-respiration": {
+    label: "Wikimedia Commons (Cheyne-Stokes cs.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Cheyne-Stokes_cs.svg",
+  },
   "chorea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:chorea.jpg" },
   "clonic-phase": { label: "Wikimedia Commons (Grand-mal Epilepsy A.jpg)", url: "https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg" },
   "clubbing": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clubbing.jpg" },
   "cold-intolerance": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cold-intolerance.jpg" },
+  "central-adiposity": { label: "Wikimedia Commons (Waist to hip ratio-en.svg)", url: "https://commons.wikimedia.org/wiki/File:Waist_to_hip_ratio-en.svg" },
   "confluent-rash": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:confluent-rash.jpg" },
   "cotton-wool-spots": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cotton-wool-spots.png" },
   "cough": { label: "Wikimedia Commons (Red Star Cough Cure (back) - 8558298660.jpg)", url: "https://commons.wikimedia.org/wiki/File:Red_Star_Cough_Cure_(back)_-_8558298660.jpg" },
@@ -446,6 +492,14 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "cyclopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cyclopia.jpg" },
   "dactylitis": { label: "Wikimedia Commons (Quick Reference Guide for Clinicians- Sickle Cell Disease- Comprehensive Screening and Management in Newborns and Infants (IA quickreferencegu00unse).pdf)", url: "https://commons.wikimedia.org/wiki/File:Quick_Reference_Guide_for_Clinicians-_Sickle_Cell_Disease-_Comprehensive_Screening_and_Management_in_Newborns_and_Infants_(IA_quickreferencegu00unse).pdf" },
   "decreased-skin-turgor": { label: "Wikimedia Commons (LowSkinTurgor.jpg)", url: "https://commons.wikimedia.org/wiki/File:LowSkinTurgor.jpg" },
+  "decorticate-posturing": {
+    label: "Wikimedia Commons (Decorticate.PNG), Delldot",
+    url: "https://commons.wikimedia.org/wiki/File:Decorticate.PNG",
+  },
+  "decerebrate-posturing": {
+    label: "Wikimedia Commons (Decerebrate.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Decerebrate.jpg",
+  },
   "diplopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diplopia.jpg" },
   "drusen": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:drusen.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
@@ -475,11 +529,16 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "hemianopsia": { label: "Wikimedia Commons (Left-homonymous-hemianopia.svg)", url: "https://commons.wikimedia.org/wiki/File:Left-homonymous-hemianopia.svg" },
   "hemiplegia": { label: "Wikimedia Commons (Hemiatrophy and hemiplegia of the left side of the tongue Wellcome L0062734.jpg)", url: "https://commons.wikimedia.org/wiki/File:Hemiatrophy_and_hemiplegia_of_the_left_side_of_the_tongue_Wellcome_L0062734.jpg" },
   "hemoptysis": { label: "Wikimedia Commons (Krev na gázových čtvercích.jpg)", url: "https://commons.wikimedia.org/wiki/File:Krev_na_gázových_čtvercích.jpg" },
+  "hirsutism": { label: "Wikimedia Commons (PMC4103002 ircmj-16-9410-g001.png)", url: "https://commons.wikimedia.org/wiki/File:PMC4103002_ircmj-16-9410-g001.png" },
   "hyperactive-bowel-sounds": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hyperactive-bowel-sounds.jpg" },
   "hyperpigmentation": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
   "hypotelorism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hypotelorism.jpg" },
   "hypotonia": { label: "Wikimedia Commons (Nervous and mental diseases (1911) (14591720128).jpg)", url: "https://commons.wikimedia.org/wiki/File:Nervous_and_mental_diseases_(1911)_(14591720128).jpg" },
   "hypoxemia": { label: "Wikimedia Commons (My Heartbeat and Peripheral Oxygen Saturation (SpO2) (29609885543).jpg)", url: "https://commons.wikimedia.org/wiki/File:My_Heartbeat_and_Peripheral_Oxygen_Saturation_(SpO2)_(29609885543).jpg" },
+  "hypercapnia": {
+    label: "Wikimedia Commons (Blood gas test hariadhi.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Blood_gas_test_hariadhi.svg",
+  },
   "impaired-wound-healing": { label: "Wikimedia Commons (WIRA-Wiki-GH-011-de-Ulkus-Thermografie-Verlauf-unter-wIRA.png)", url: "https://commons.wikimedia.org/wiki/File:WIRA-Wiki-GH-011-de-Ulkus-Thermografie-Verlauf-unter-wIRA.png" },
   "indurated-plaque": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:indurated-plaque.jpg" },
   "insomnia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:insomnia.jpg" },
@@ -506,6 +565,11 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "nuchal-rigidity": { label: "Wikimedia Commons (Neck stiffness.jpg)", url: "https://commons.wikimedia.org/wiki/File:Neck_stiffness.jpg" },
   "nystagmus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:nystagmus.svg" },
   "ophthalmoplegia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ophthalmoplegia.svg" },
+  "otorrhea": {
+    label: "Wikimedia Commons (Battles-sign.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Battles-sign.jpg",
+  },
+  "oligomenorrhea": { label: "Wikimedia Commons (Hormones estradiol, progesterone, LH and FSH during menstrual cycle.png)", url: "https://commons.wikimedia.org/wiki/File:Hormones_estradiol,_progesterone,_LH_and_FSH_during_menstrual_cycle.png" },
   "orthopnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthopnea.jpg" },
   "orthostatic-hypotension": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthostatic-hypotension.jpg" },
   "pallor": { label: "Wikimedia Commons (Anemia.JPG)", url: "https://commons.wikimedia.org/wiki/File:Anemia.JPG" },
@@ -515,6 +579,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "paresis": { label: "Wikimedia Commons (Hemiatrophy and hemiplegia of the left side of the tongue Wellcome L0062734.jpg)", url: "https://commons.wikimedia.org/wiki/File:Hemiatrophy_and_hemiplegia_of_the_left_side_of_the_tongue_Wellcome_L0062734.jpg" },
   "peripheral-edema": { label: "Wikimedia Commons (Pitting Edema2008.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pitting_Edema2008.jpg" },
   "photophobia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:photophobia.jpg" },
+  "pinpoint-pupils": {
+    label: "Wikimedia Commons (Mydriasis and miosis.png), JohnPaulCook, CC0",
+    url: "https://commons.wikimedia.org/wiki/File:Mydriasis_and_miosis.png",
+  },
   "plaque": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:plaque.jpg" },
   "pleuritic-chest-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pleuritic-chest-pain.jpg" },
   "pnd": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pnd.jpg" },
@@ -529,6 +597,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "psychosis": { label: "Wikimedia Commons (Atypical Psychosis Genetic Map.jpg)", url: "https://commons.wikimedia.org/wiki/File:Atypical_Psychosis_Genetic_Map.jpg" },
   "pulmonary-edema": { label: "Wikimedia Commons (Respiratory system - Pulmonary edema -- Smart-Servier.png)", url: "https://commons.wikimedia.org/wiki/File:Respiratory_system_-_Pulmonary_edema_--_Smart-Servier.png" },
   "purpura": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:purpura.jpg" },
+  "raccoon-eyes": {
+    label: "Wikimedia Commons (Bilateral periorbital ecchymosis (raccoon eyes).jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg",
+  },
   "raynaud-phenomenon": { label: "Wikimedia Commons (Raynaud syndrome on female airman's hand.jpg)", url: "https://commons.wikimedia.org/wiki/File:Raynaud_syndrome_on_female_airman's_hand.jpg" },
   "sciatica": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:sciatica.jpg" },
   "sclerodactyly": { label: "Wikimedia Commons (Calcinosis of CREST syndrome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Calcinosis_of_CREST_syndrome.jpg" },
@@ -560,7 +632,9 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "akathisia": "Clinical or pathologic image illustrating akathisia",
   "allodynia": "Pain from normally nonpainful light touch — classic in postherpetic neuralgia",
   "ankle-reflex": "Clinical or pathologic image illustrating ankle reflex",
+  "androgenic-alopecia": "Ludwig classification of female pattern hair loss — progressive crown thinning grades I–III",
   "anxiety": "Generalized anxiety — persistent excessive worry with somatic symptoms",
+  "anosmia": "Olfactory nerve (CN I) — fila pass through cribriform plate to olfactory bulb",
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
   "arthritis": "Clinical or pathologic image illustrating arthritis",
   "ataxia": "Clinical or pathologic image illustrating ataxia",
@@ -572,10 +646,13 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "bullae": "Bullous pemphigoid — tense subepidermal bullae",
   "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
   "chest-pain": "Clinical or pathologic image illustrating chest pain",
+  "cheyne-stokes-respiration":
+    "Cheyne-Stokes respiration — cyclic crescendo-decrescendo breathing with central apneic pauses",
   "chorea": "Clinical or pathologic image illustrating chorea",
   "clonic-phase": "Clonic phase of generalized seizure — rhythmic convulsive jerking after tonic stiffening",
   "clubbing": "Finger clubbing — increased convexity of nail bed with loss of Lovibond angle",
   "cold-intolerance": "Clinical or pathologic image illustrating cold intolerance",
+  "central-adiposity": "Waist-to-hip ratio silhouettes — apple (central) vs pear (gynoid) body fat distribution",
   "confluent-rash": "Clinical or pathologic image illustrating confluent rash",
   "cotton-wool-spots": "Clinical or pathologic image illustrating cotton wool spots",
   "cough": "Clinical or pathologic image illustrating cough",
@@ -583,6 +660,10 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "cyclopia": "Clinical or pathologic image illustrating cyclopia",
   "dactylitis": "Painful swelling of the hands — dactylitis in sickle cell disease",
   "decreased-skin-turgor": "Clinical or pathologic image illustrating decreased skin turgor",
+  "decorticate-posturing":
+    "Decorticate posture — arms flexed toward core, legs extended; lesion above red nucleus",
+  "decerebrate-posturing":
+    "Decerebrate posture — bilateral arm and leg extension; brainstem injury at or below red nucleus",
   "diplopia": "Clinical or pathologic image illustrating diplopia",
   "drusen": "Clinical or pathologic image illustrating drusen",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
@@ -612,11 +693,14 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "hemianopsia": "Clinical or pathologic image illustrating hemianopsia",
   "hemiplegia": "Clinical or pathologic image illustrating hemiplegia",
   "hemoptysis": "Clinical or pathologic image illustrating hemoptysis",
+  "hirsutism": "Severe hirsutism in a 17-year-old female with polycystic ovary syndrome",
   "hyperactive-bowel-sounds": "Clinical or pathologic image illustrating hyperactive bowel sounds",
   "hyperpigmentation": "Clinical or pathologic image illustrating hyperpigmentation",
   "hypotelorism": "Clinical or pathologic image illustrating hypotelorism",
   "hypotonia": "Hypotonic infant — reduced muscle tone with floppy posture on handling",
   "hypoxemia": "Clinical or pathologic image illustrating hypoxemia",
+  "hypercapnia":
+    "Arterial blood gas analysis — elevated PaCO₂ reflects hypoventilation and CO₂ retention",
   "impaired-wound-healing": "Clinical or pathologic image illustrating impaired wound healing",
   "indurated-plaque": "Clinical or pathologic image illustrating indurated plaque",
   "insomnia": "Clinical or pathologic image illustrating insomnia",
@@ -643,6 +727,9 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "nuchal-rigidity": "Nuchal rigidity — resistance to passive neck flexion in meningeal irritation",
   "nystagmus": "Clinical or pathologic image illustrating nystagmus",
   "ophthalmoplegia": "Clinical or pathologic image illustrating ophthalmoplegia",
+  "otorrhea":
+    "Battle sign — retroauricular ecchymosis associated with basilar skull fracture and possible CSF otorrhea",
+  "oligomenorrhea": "Estradiol, progesterone, LH, and FSH across the normal menstrual cycle — disrupted in anovulatory oligomenorrhea",
   "orthopnea": "Clinical or pathologic image illustrating orthopnea",
   "orthostatic-hypotension": "Clinical or pathologic image illustrating orthostatic hypotension",
   "pallor": "Clinical or pathologic image illustrating pallor",
@@ -652,6 +739,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "paresis": "Clinical or pathologic image illustrating paresis",
   "peripheral-edema": "Clinical or pathologic image illustrating peripheral edema",
   "photophobia": "Clinical or pathologic image illustrating photophobia",
+  "pinpoint-pupils":
+    "Miosis (narrow pupil) vs mydriasis — pinpoint pupils are extreme miosis seen in opioid toxicity and pontine lesions",
   "plaque": "Erythematous plaque of psoriasis with silvery scale (solid, >1 cm)",
   "pleuritic-chest-pain": "Clinical or pathologic image illustrating pleuritic chest pain",
   "pnd": "Clinical or pathologic image illustrating pnd",
@@ -666,6 +755,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "psychosis": "Clinical or pathologic image illustrating psychosis",
   "pulmonary-edema": "Clinical or pathologic image illustrating pulmonary edema",
   "purpura": "Petechiae and purpura on the lower limb from medication-induced leukocytoclastic vasculitis",
+  "raccoon-eyes":
+    "Bilateral periorbital ecchymosis — raccoon eyes in basilar skull fracture",
   "raynaud-phenomenon": "Clinical or pathologic image illustrating raynaud phenomenon",
   "sciatica": "Clinical or pathologic image illustrating sciatica",
   "sclerodactyly": "Clinical or pathologic image illustrating sclerodactyly",

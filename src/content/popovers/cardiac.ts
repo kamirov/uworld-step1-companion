@@ -6,12 +6,18 @@ import {
 import { getHeartMurmurById } from "../../data/heartMurmurs";
 import { getHeartSoundById } from "../../data/heartSounds";
 import { getHemodynamicById } from "../../data/hemodynamics";
+import {
+  getHemodynamicImageAttributionForId,
+  getHemodynamicImageCaptionForId,
+  getHemodynamicImageForId,
+} from "../../data/hemodynamicMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderDefinitionPopover,
   renderListSection,
   renderPediatricsSection,
   renderPopoverAudioBlock,
+  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -78,15 +84,36 @@ export function renderHemodynamicPopover(
   popover: HTMLDivElement,
 ): boolean {
   const term = getHemodynamicById(hemodynamicId);
-  if (!term) return false;
+  if (!term || !popover) return false;
 
-  return renderDefinitionPopover(
-    popover,
-    term.name,
-    "hemodynamic",
-    term.definition,
-    "Factors that affect it",
-    term.factors,
-    term.etymology,
+  const imageSrc = getHemodynamicImageForId(hemodynamicId);
+  const imageCaption = getHemodynamicImageCaptionForId(hemodynamicId);
+  const imageAttribution = getHemodynamicImageAttributionForId(hemodynamicId);
+
+  const bodyContent = renderRichPopoverContent(
+    `
+    ${renderPopoverTitle(term.name, "hemodynamic", term.etymology)}
+    <div class="usmle-organ-popover__meaning">${term.definition}</div>
+  `,
+    renderListSection("Factors that affect it", term.factors),
   );
+
+  popover.classList.add("usmle-organ-popover--rich");
+  if (imageSrc && imageCaption && imageAttribution) {
+    popover.classList.add("usmle-organ-popover--with-media");
+    popover.innerHTML = `
+      <div class="usmle-organ-popover__layout">
+        <div class="usmle-organ-popover__body">${bodyContent}</div>
+        ${renderPopoverMediaBlock({
+          src: imageSrc,
+          alt: `${term.name} illustration`,
+          caption: imageCaption,
+          attribution: imageAttribution,
+        })}
+      </div>
+    `;
+  } else {
+    popover.innerHTML = bodyContent;
+  }
+  return true;
 }

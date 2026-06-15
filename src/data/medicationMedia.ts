@@ -29,6 +29,9 @@ import linezolid from "../media/images/medications/linezolid.svg?url";
 import maoInhibitors from "../media/images/medications/mao-inhibitors.png?url";
 import metoclopramide from "../media/images/medications/metoclopramide.svg?url";
 import methylphenidate from "../media/images/medications/methylphenidate.svg?url";
+import misoprostol from "../media/images/medications/misoprostol.jpg?url";
+import glp1Agonists from "../media/images/medications/glp-1-agonist.jpg?url";
+import sglt2Inhibitors from "../media/images/medications/sglt2-inhibitor.png?url";
 import nafcillin from "../media/images/medications/nafcillin.svg?url";
 import naproxen from "../media/images/medications/naproxen.svg?url";
 import oxacillin from "../media/images/medications/oxacillin.svg?url";
@@ -40,6 +43,9 @@ import quetiapine from "../media/images/medications/quetiapine.svg?url";
 import reserpine from "../media/images/medications/reserpine.svg?url";
 import snris from "../media/images/medications/snris.svg?url";
 import ssris from "../media/images/medications/ssris.svg?url";
+import succinylcholine from "../media/images/medications/succinylcholine.svg?url";
+import propofol from "../media/images/medications/propofol.svg?url";
+import etomidate from "../media/images/medications/etomidate.svg?url";
 import pyridoxine from "../media/images/medications/pyridoxine.svg?url";
 import pregabalin from "../media/images/medications/pregabalin.png?url";
 import ramelteon from "../media/images/medications/ramelteon.svg?url";
@@ -85,6 +91,9 @@ export type MedicationImageId = Extract<
   | "mao-inhibitors"
   | "metoclopramide"
   | "methylphenidate"
+  | "misoprostol"
+  | "glp-1-agonists"
+  | "sglt2-inhibitors"
   | "nafcillin"
   | "naproxen"
   | "oxacillin"
@@ -96,6 +105,9 @@ export type MedicationImageId = Extract<
   | "reserpine"
   | "snris"
   | "ssris"
+  | "succinylcholine"
+  | "propofol"
+  | "etomidate"
   | "pyridoxine"
   | "pregabalin"
   | "ramelteon"
@@ -145,6 +157,9 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   "mao-inhibitors": extensionAssetUrl(maoInhibitors),
   metoclopramide: extensionAssetUrl(metoclopramide),
   methylphenidate: extensionAssetUrl(methylphenidate),
+  misoprostol: extensionAssetUrl(misoprostol),
+  "glp-1-agonists": extensionAssetUrl(glp1Agonists),
+  "sglt2-inhibitors": extensionAssetUrl(sglt2Inhibitors),
   nafcillin: extensionAssetUrl(nafcillin),
   naproxen: extensionAssetUrl(naproxen),
   oxacillin: extensionAssetUrl(oxacillin),
@@ -156,6 +171,9 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   reserpine: extensionAssetUrl(reserpine),
   snris: extensionAssetUrl(snris),
   ssris: extensionAssetUrl(ssris),
+  succinylcholine: extensionAssetUrl(succinylcholine),
+  propofol: extensionAssetUrl(propofol),
+  etomidate: extensionAssetUrl(etomidate),
   pyridoxine: extensionAssetUrl(pyridoxine),
   pregabalin: extensionAssetUrl(pregabalin),
   ramelteon: extensionAssetUrl(ramelteon),
@@ -277,6 +295,18 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Methylphenidate.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Methylphenidate.svg",
   },
+  misoprostol: {
+    label: "Wikimedia Commons (Cytotec photo.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Cytotec_photo.jpg",
+  },
+  "glp-1-agonists": {
+    label: "Wikimedia Commons (Wegovy - Semaglutide.jpg, CC BY-SA 4.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Wegovy_-_Semaglutide.jpg",
+  },
+  "sglt2-inhibitors": {
+    label: "Wikimedia Commons (SGLT2.png)",
+    url: "https://commons.wikimedia.org/wiki/File:SGLT2.png",
+  },
   nafcillin: {
     label: "Wikimedia Commons (Nafcillin.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Nafcillin.svg",
@@ -308,6 +338,18 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
   ssris: {
     label: "Wikimedia Commons ((R)-Fluoxetine structure.svg)",
     url: "https://commons.wikimedia.org/wiki/File:(R)-Fluoxetine_structure.svg",
+  },
+  succinylcholine: {
+    label: "Wikimedia Commons (Suxamethonium Structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Suxamethonium_Structure.svg",
+  },
+  propofol: {
+    label: "Wikimedia Commons (Propofol.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Propofol.svg",
+  },
+  etomidate: {
+    label: "Wikimedia Commons (Etomidate structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Etomidate_structure.svg",
   },
   pyridoxine: {
     label: "Wikimedia Commons (Pyridoxine structure ver2.svg)",
@@ -438,6 +480,12 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Metoclopramide — D₂ antagonist antiemetic and prokinetic; EPS risk limits duration",
   methylphenidate:
     "Methylphenidate — DAT/NET reuptake inhibitor used as first-line ADHD stimulant",
+  misoprostol:
+    "Cytotec tablets containing 200 mcg misoprostol — prostaglandin E₁ analog for gastric protection and uterotonic effects",
+  "glp-1-agonists":
+    "Wegovy semaglutide injection pens — GLP-1 receptor agonist class used for type 2 diabetes and weight loss",
+  "sglt2-inhibitors":
+    "Crystal structure of SGLT2 sodium-glucose cotransporter — target of gliflozin drugs in the proximal renal tubule",
   nafcillin:
     "Nafcillin — penicillinase-resistant penicillin for MSSA; not active against MRSA",
   naproxen:
@@ -454,6 +502,12 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "SNRIs — dual serotonin and norepinephrine reuptake inhibition for depression, anxiety, and neuropathic pain",
   ssris:
     "SSRIs — selective serotonin reuptake inhibitors; first-line for depression and generalized anxiety disorder",
+  succinylcholine:
+    "Succinylcholine (suxamethonium) — depolarizing neuromuscular blocker for rapid sequence intubation; malignant hyperthermia trigger",
+  propofol:
+    "Propofol — 2,6-diisopropylphenol IV anesthetic; rapid induction with significant hypotension",
+  etomidate:
+    "Etomidate — imidazole IV induction agent; hemodynamically stable but transiently inhibits cortisol synthesis",
   pyridoxine:
     "Pyridoxine (vitamin B6) — PLP cofactor precursor; co-administered with isoniazid to prevent neuropathy",
   pregabalin:

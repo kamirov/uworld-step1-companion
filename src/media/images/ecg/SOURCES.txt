@@ -32,3 +32,21 @@ qtc-prolongation.jpg
   License: Creative Commons Attribution-Share Alike 4.0 International
   Page: https://commons.wikimedia.org/wiki/File:Long_QT_syndrome_type_1.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Long_QT_syndrome_type_1.jpg
+
+escape-rhythm.png
+  Source: Wikimedia Commons — ECG of Junctional Rhythm.png
+  Author: Dhaval Desai, MD, MPH (National Library of Medicine)
+  Description: Junctional escape rhythm with regular narrow QRS and absent P waves
+  License: Creative Commons Attribution-Share Alike 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:ECG_of_Junctional_Rhythm.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/ECG_of_Junctional_Rhythm.png?width=1280
+  Resized to 1280 px width for popover display.
+
+saw-toothed-flutter-waves.jpg
+  Source: Wikimedia Commons — AtrialFlutter12.JPG
+  Author: James Heilman, MD
+  Description: 12-lead ECG showing atrial flutter with sawtooth flutter waves
+  License: Creative Commons Attribution-Share Alike 3.0 Unported
+  Page: https://commons.wikimedia.org/wiki/File:AtrialFlutter12.JPG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/AtrialFlutter12.JPG?width=1280
+  Resized to 1280 px width for popover display.

@@ -194,3 +194,29 @@ glycation.png
 vasa-nervorum.jpg
   Source: Local copy from pathogenesis/stocking-glove.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg
+
+clotting-cascade.png
+  Source: Local copy from pathogenesis/fibrinolysis.png
+  Reference: https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png
+
+protease.png
+  Source: Wikimedia Commons — Aspartyl protease mechanism.png
+  Page: https://commons.wikimedia.org/wiki/File:Aspartyl_protease_mechanism.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Aspartyl_protease_mechanism.png?width=960
+
+pyogenic-infection.jpg
+  Source: Wikimedia Commons — Abscess.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Abscess.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Abscess.jpg?width=960
+
+robertsonian-translocation.png
+  Source: Wikimedia Commons — Down syndrome translocation up.png
+  Page: https://commons.wikimedia.org/wiki/File:Down_syndrome_translocation_up.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Down_syndrome_translocation_up.png?width=960
+  Attribution: David Perez derivative, CC BY-SA 3.0
+
+reentrant-circuit.png
+  Source: Wikimedia Commons — Wpw2 (CardioNetworks ECGpedia).svg
+  Page: https://commons.wikimedia.org/wiki/File:Wpw2_(CardioNetworks_ECGpedia).svg
+  Description: Wolff-Parkinson-White pre-excitation — accessory pathway enables AV reentrant tachycardia
+

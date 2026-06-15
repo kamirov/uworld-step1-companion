@@ -1220,6 +1220,47 @@ export const ORGANS: OrganEntry[] = [
       "Juvenile Huntington disease shows caudate atrophy with rigidity and seizures; metabolic disorders (Wilson, PKAN) can affect caudate in childhood.",
   },
   {
+    id: "mammillary-bodies",
+    name: "Mammillary Bodies",
+    etymology: "Latin mamma = breast/nipple + -illary = small + bodies = paired structures (nipple-like gray matter protrusions)",
+    aliases: [
+      "mammillary bodies",
+      "mammillary body",
+      "mamillary bodies",
+      "mamillary body",
+      "corpus mammillare",
+      "mammillary nuclei",
+      "mamillary nuclei",
+    ],
+    origin:
+      "Develop from posterior hypothalamic neuroepithelium as part of the diencephalon; paired ovoid gray-matter nuclei on the ventral surface of the hypothalamus at the floor of the third ventricle, connected to the fornix and anterior thalamic nuclei.",
+    germLayer: "Ectoderm",
+    derivatives: [
+      "Medial mammillary nucleus — Papez circuit memory pathway",
+      "Lateral mammillary nucleus — vestibular and spatial orientation inputs",
+      "Mammillothalamic tract — projects to anterior thalamic nuclei",
+      "Fornix input — hippocampal output reaches mammillary bodies",
+    ],
+    functionSummary:
+      "Key relay in the Papez circuit linking hippocampus → fornix → mammillary bodies → mammillothalamic tract → anterior thalamus → cingulate cortex — critical for episodic memory consolidation and spatial navigation.",
+    commonPathologies: [
+      "Wernicke encephalopathy — petechial hemorrhages and demyelination",
+      "Korsakoff syndrome — chronic atrophy with anterograde amnesia and confabulation",
+      "Thiamine deficiency in chronic alcoholism",
+      "Colloid cyst or third ventricle mass compressing hypothalamus",
+    ],
+    step1Pearls: [
+      "Mammillary bodies = classic site injured in Wernicke-Korsakoff from thiamine deficiency",
+      "Papez circuit: hippocampus → fornix → mammillary bodies → anterior thalamus → cingulate",
+      "MRI mammillary body enhancement or atrophy supports Wernicke/Korsakoff diagnosis",
+      "Give thiamine BEFORE glucose in malnourished patients — glucose without thiamine worsens injury",
+      "Confabulation + mammillary body injury → Korsakoff amnestic disorder",
+      "Lateral mammillary nucleus receives vestibular input — spatial memory",
+    ],
+    pediatrics:
+      "Wernicke encephalopathy occurs in adolescents with eating disorders, malignancy, or hyperemesis gravidarum — mammillary body injury is not limited to adult alcoholism; thiamine repletion is urgent.",
+  },
+  {
     id: "putamen",
     name: "Putamen",
     etymology: "Latin putamen = shell/husk (outer shell of lentiform nucleus)",
@@ -1403,6 +1444,47 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Ectoderm",
     origin:
       "Caudal neural tube (neuroectoderm); alar plate (dorsal) sensory, basal plate (ventral) motor.",
+  },
+  {
+    id: "cauda-equina",
+    name: "Cauda Equina",
+    etymology: "Latin cauda = horse tail + Latin equina = of a horse (bundle of lumbosacral nerve roots resembling a tail)",
+    aliases: [
+      "cauda equina",
+      "cauda equinas",
+      "cauda equina nerve roots",
+      "lumbosacral nerve roots",
+      "horse's tail nerves",
+      "cauda equina bundle",
+    ],
+    germLayer: "Ectoderm (neural crest and neural tube derivatives)",
+    origin:
+      "Caudal spinal cord tapers to conus medullaris (~L1–L2 in adults); below this, lumbar, sacral, and coccygeal nerve roots descend within the thecal sac as the cauda equina before exiting via intervertebral foramina.",
+    derivatives: [
+      "L2–S5 motor and sensory nerve roots",
+      "S2–S4 parasympathetic outflow to pelvic viscera (bladder, bowel, genitalia)",
+      "Pudendal nerve components",
+      "Coccygeal roots",
+    ],
+    functionSummary:
+      "Innervates lower extremities, perineum, and pelvic organs — motor to leg muscles; sensory to saddle area, posterior thighs, and perineum; autonomic control of bladder and bowel via S2–S4.",
+    commonPathologies: [
+      "Cauda equina syndrome — compressive emergency with saddle anesthesia and urinary retention",
+      "Lumbar disc herniation compressing single or multiple roots",
+      "Spinal stenosis — neurogenic claudication",
+      "Epidural abscess or hematoma",
+      "Metastatic tumor in thecal sac",
+    ],
+    step1Pearls: [
+      "Cauda equina = horse's tail of lumbosacral roots below conus medullaris (ends ~L1–L2)",
+      "Cauda equina syndrome — bilateral leg pain/weakness, saddle anesthesia, urinary retention; surgical emergency",
+      "Lower motor neuron signs — ↓ reflexes, flaccid weakness (vs upper motor neuron cord lesion above)",
+      "S2–S4 roots — bladder, bowel, sexual function; areflexic bladder in cauda equina injury",
+      "Lumbar puncture performed below L3/L4 to avoid cord injury (conus ends above)",
+      "vs conus medullaris syndrome — sudden bilateral UMN/LMN mix at cord terminus; earlier bladder dysfunction",
+    ],
+    pediatrics:
+      "In infants the conus medullaris lies lower (L2–L3) and ascends with growth; tethered cord can traction cauda equina roots causing leg weakness, bladder dysfunction, and scoliosis.",
   },
   {
     id: "retina",

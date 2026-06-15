@@ -57,3 +57,15 @@ paco2-blood-gas-analyzer.jpg
   Page: https://commons.wikimedia.org/wiki/File:Cobas_b_121_Measurement_Chamber_(detail).jpg
   Download: https://upload.wikimedia.org/wikipedia/commons/c/c2/Cobas_b_121_Measurement_Chamber_%28detail%29.jpg
   Attribution: J3D3, CC BY-SA 3.0
+
+lipoprotein-a.jpg
+  Source: Wikimedia Commons — Metabolism of lipoproteins.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Metabolism_of_lipoproteins.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Metabolism_of_lipoproteins.jpg?width=1280
+  Attribution: Sander kersten, CC BY-SA 4.0
+
+apolipoprotein-b.png
+  Source: Wikimedia Commons — Apobgene.PNG
+  Page: https://commons.wikimedia.org/wiki/File:Apobgene.PNG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Apobgene.PNG?width=960
+  Attribution: Sryuu

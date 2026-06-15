@@ -1210,6 +1210,49 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "hypercapnia",
+    name: "Hypercapnia",
+    etymology: "Greek hyper = above + kapnos = smoke (carbon dioxide) + -emia = blood condition",
+    aliases: [
+      "hypercapnia",
+      "hypercarbia",
+      "hypercarbias",
+      "elevated paco2",
+      "increased paco2",
+      "high arterial co2",
+      "co2 retention",
+      "carbon dioxide retention",
+    ],
+    definition:
+      "Elevated partial pressure of carbon dioxide in arterial blood (PaCO₂ > ~45 mmHg), reflecting inadequate alveolar ventilation relative to CO₂ production.",
+    mechanism:
+      "↓ alveolar ventilation (hypoventilation) or ↑ dead space → CO₂ cannot be cleared → PaCO₂ rises → respiratory acidosis (↓ pH) unless chronic compensation (↑ HCO₃⁻); central respiratory drive suppression, neuromuscular weakness, airway obstruction, and severe COPD are common mechanisms.",
+    thinkOf: [
+      "COPD exacerbation — blue bloater phenotype with CO₂ retention",
+      "Opioid or sedative overdose — ↓ medullary respiratory drive",
+      "Obesity hypoventilation syndrome (Pickwickian)",
+      "Neuromuscular disease (myasthenia gravis, Guillain-Barré, ALS)",
+      "Inadequate mechanical ventilation",
+      "Carbon dioxide narcosis in severe COPD",
+    ],
+    pairWith: [
+      "Hypercapnia + acidosis (low pH) → acute respiratory acidosis",
+      "Hypercapnia + ↑ HCO₃⁻ + near-normal pH → chronic CO₂ retention with renal compensation",
+      "Somnolence + COPD + asterixis → CO₂ narcosis",
+      "Hypercapnia + normal A-a gradient → pure hypoventilation (not V/Q mismatch alone)",
+      "Obesity + daytime sleepiness + hypercapnia → obesity hypoventilation syndrome",
+    ],
+    distinguishFrom: [
+      "Hypocapnia — low PaCO₂ from hyperventilation (anxiety, PE, salicylates)",
+      "Metabolic acidosis with compensatory low PaCO₂ — Winter formula predicts expected PaCO₂",
+      "Hypoxemia alone — may coexist but distinct gas-exchange abnormality",
+      "Elevated ETCO₂ from rebreathing circuit — technical artifact, not patient hypercapnia",
+      "Chronic metabolic alkalosis — may raise PaCO₂ as compensation, not primary hypoventilation",
+    ],
+    pediatrics:
+      "Neonates and infants have lower baseline PaCO₂; congenital central hypoventilation (Ondine curse) and neuromuscular disorders cause hypercapnia early. Cystic fibrosis and bronchiolitis can progress to CO₂ retention — monitor capnography and ABG in severe respiratory distress.",
+  },
+  {
     id: "clubbing",
     name: "Clubbing",
     etymology: "club = rounded enlargement",
@@ -2148,6 +2191,52 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "DKA in children and adolescents classically presents with Kussmaul respirations; neonatal metabolic acidosis from inborn errors may cause rapid breathing — evaluate glucose and ammonia early.",
+  },
+  {
+    id: "cheyne-stokes-respiration",
+    name: "Cheyne-Stokes Respiration",
+    etymology: "eponym: John Cheyne + William Stokes (Irish physicians) + English respiration = breathing pattern",
+    aliases: [
+      "cheyne-stokes respiration",
+      "cheyne-stokes respirations",
+      "cheyne-stokes breathing",
+      "cheyne-stokes",
+      "cheyne stokes",
+      "cheyne stokes respiration",
+      "cheyne stokes breathing",
+      "periodic breathing",
+      "crescendo-decrescendo respiration",
+      "crescendo decrescendo breathing",
+    ],
+    definition:
+      "Cyclic breathing pattern of waxing and waning tidal volumes alternating with central apneic pauses — crescendo hyperpnea followed by decrescendo breaths, then apnea.",
+    mechanism:
+      "Delayed feedback between ventilation and PaCO₂/CNS perfusion → CO₂ rises during apnea → stimulates medullary respiratory centers → hyperpnea blows off CO₂ → hypocapnia and/or low cerebral perfusion suppress drive → apnea recurs. Common when cardiac output or brainstem perfusion is impaired.",
+    thinkOf: [
+      "Congestive heart failure (low cardiac output)",
+      "Stroke — especially brainstem or bilateral hemispheric",
+      "High-altitude periodic breathing",
+      "Opioid toxicity (late, with reduced arousal)",
+      "Increased intracranial pressure",
+      "End-stage renal disease / uremia",
+      "Normal sleep in elderly (physiologic variant at altitude)",
+    ],
+    pairWith: [
+      "Cheyne-Stokes + orthopnea + S₃ → decompensated heart failure",
+      "Cheyne-Stokes + focal neuro deficits → stroke with brainstem involvement",
+      "Cheyne-Stokes at high altitude + headache → altitude illness",
+      "Cheyne-Stokes + somnolence + pinpoint pupils → opioid overdose",
+      "Cheyne-Stokes + elevated JVP + peripheral edema → low-output CHF",
+    ],
+    distinguishFrom: [
+      "Kussmaul respirations — deep regular hyperpnea in metabolic acidosis; patient usually alert",
+      "Agonal respirations — irregular gasping in terminal hypoxia; not effective ventilation",
+      "Obstructive sleep apnea — upper airway collapse with effort; not classic crescendo-decrescendo central pattern",
+      "Biot respirations — irregular rate and depth without smooth crescendo-decrescendo cycles (brainstem lesion)",
+      "Normal tachypnea — sustained increased rate without cyclic apnea",
+    ],
+    pediatrics:
+      "Central periodic breathing can be physiologic in premature and full-term neonates during sleep; persistent or daytime Cheyne-Stokes pattern in infants suggests congenital heart disease, neurologic injury, or metabolic disorder — not a normal finding outside sleep.",
   },
   {
     id: "vomiting",
@@ -4457,6 +4546,174 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Neonatal 46,XX virilization with ambiguous genitalia → congenital adrenal hyperplasia until proven otherwise; measure 17-hydroxyprogesterone on newborn screen or urgently.",
+  },
+  {
+    id: "oligomenorrhea",
+    name: "Oligomenorrhea",
+    etymology: "Greek oligos = few/scant + men = month + rhoia = flow",
+    aliases: [
+      "oligomenorrhea",
+      "oligomenorrhoea",
+      "infrequent menses",
+      "infrequent menstruation",
+      "scant menses intervals",
+      "prolonged menstrual cycles",
+      "cycles greater than 35 days",
+    ],
+    definition:
+      "Infrequent menstrual bleeding — typically cycles longer than 35 days or fewer than 8–10 menses per year in a reproductive-age female with a uterus.",
+    mechanism:
+      "Usually reflects anovulation or infrequent ovulation: without corpus luteum progesterone, the endometrium proliferates under unopposed estrogen then sheds irregularly; common drivers include PCOS (↑ LH-driven ovarian androgens), hyperprolactinemia, thyroid dysfunction, hypothalamic suppression, and perimenopause.",
+    thinkOf: [
+      "Polycystic ovary syndrome",
+      "Functional hypothalamic amenorrhea (early, before full amenorrhea)",
+      "Hyperprolactinemia / prolactinoma",
+      "Hypothyroidism or hyperthyroidism",
+      "Perimenopause",
+      "Physiologic anovulatory cycles after menarche",
+      "Pregnancy (exclude before labeling oligomenorrhea)",
+    ],
+    pairWith: [
+      "Oligomenorrhea + hirsutism + acne → PCOS",
+      "↑ prolactin + galactorrhea → prolactinoma",
+      "Low BMI + excessive exercise → hypothalamic amenorrhea",
+      "↑ TSH + fatigue → hypothyroidism",
+      "β-hCG positive → pregnancy, not oligomenorrhea",
+      "Oligomenorrhea + virilization → androgen-secreting tumor or CAH",
+    ],
+    distinguishFrom: [
+      "Amenorrhea — absent menses for ≥3 months (secondary) or never established (primary)",
+      "Menorrhagia — abnormally heavy bleeding, cycle frequency may be normal",
+      "Normal adolescent irregularity — common 1–2 years after menarche without hyperandrogenism",
+      "Withdrawal bleeding on progestins — not spontaneous cyclic menses",
+    ],
+    pediatrics:
+      "Irregular cycles for 1–2 years after menarche are common; persistent oligomenorrhea beyond 2–3 years post-menarche, especially with hirsutism or obesity, warrants PCOS evaluation.",
+  },
+  {
+    id: "hirsutism",
+    name: "Hirsutism",
+    etymology: "Latin hirsutus = shaggy/hairy",
+    aliases: [
+      "hirsutism",
+      "hirsute",
+      "excessive terminal hair",
+      "androgen-dependent hair growth",
+      "masculine pattern hair growth",
+      "male-pattern hair growth in women",
+    ],
+    definition:
+      "Excessive coarse, pigmented terminal hair in androgen-dependent male-pattern distribution (chin, upper lip, chest, lower abdomen, inner thighs) in a biologic female.",
+    mechanism:
+      "Circulating androgens (testosterone, DHEA-S) and local 5α-reductase activity stimulate androgen-sensitive hair follicles to produce terminal hairs; ↓ SHBG (PCOS, obesity, insulin resistance) raises free androgen bioavailability. Severity is graded with the Ferriman-Gallwey score.",
+    thinkOf: [
+      "Polycystic ovary syndrome",
+      "Late-onset congenital adrenal hyperplasia (21-hydroxylase deficiency)",
+      "Androgen-secreting ovarian or adrenal tumor",
+      "Cushing syndrome",
+      "Exogenous androgens or danazol",
+      "Idiopathic hirsutism (postmenopausal or familial)",
+    ],
+    pairWith: [
+      "Hirsutism + oligomenorrhea + acne → PCOS",
+      "Rapid onset + clitoromegaly → androgen-secreting tumor",
+      "↑ 17-hydroxyprogesterone → congenital adrenal hyperplasia",
+      "Hirsutism + moon facies + striae → Cushing syndrome",
+      "Mild hirsutism + normal menses → idiopathic or ethnic variation",
+    ],
+    distinguishFrom: [
+      "Hypertrichosis — excess nonandrogenic terminal hair (drugs, porphyria, malnutrition)",
+      "Lanugo — fine unpigmented downy hair in malnutrition",
+      "Virilization — hirsutism plus clitoromegaly, voice deepening, male-pattern baldness",
+      "Normal racial or familial hair density without androgen excess",
+    ],
+    pediatrics:
+      "Pubertal androgen rise can cause mild terminal hair; marked hirsutism with menstrual irregularity in adolescence suggests PCOS. Virilization in a prepubertal child warrants urgent evaluation for CAH or androgen-secreting tumor.",
+  },
+  {
+    id: "androgenic-alopecia",
+    name: "Androgenic Alopecia",
+    etymology: "Greek andro = male + genes = born/produced + alopecia = fox mange (hair loss)",
+    aliases: [
+      "androgenic alopecia",
+      "androgenetic alopecia",
+      "female pattern hair loss",
+      "fphl",
+      "male pattern baldness",
+      "male pattern hair loss",
+      "pattern hair loss",
+      "pattern baldness",
+      "androgen-dependent alopecia",
+    ],
+    definition:
+      "Nonscarring progressive thinning of scalp terminal hair in androgen-sensitive distribution — frontal/temporal recession and vertex loss in males; diffuse crown thinning with preserved frontal hairline in females.",
+    mechanism:
+      "Genetically predisposed follicles miniaturize under dihydrotestosterone (DHT) from 5α-reductase conversion of testosterone → terminal hairs convert to fine vellus hairs. In PCOS and hyperandrogenic states, ovarian/adrenal androgens and ↓ SHBG accelerate follicular androgen exposure.",
+    thinkOf: [
+      "Polycystic ovary syndrome",
+      "Male pattern baldness (androgenetic alopecia in males)",
+      "Hyperandrogenism",
+      "Normal aging and postmenopausal thinning in women",
+      "Finasteride-responsive alopecia",
+    ],
+    pairWith: [
+      "Crown thinning + hirsutism + oligomenorrhea → PCOS",
+      "Bitemporal recession + family history → male pattern androgenetic alopecia",
+      "Diffuse shedding with telogen bulbs → telogen effluvium, not pattern loss",
+      "Patchy bald spots → alopecia areata",
+    ],
+    distinguishFrom: [
+      "Telogen effluvium — diffuse shedding after stress, illness, or postpartum",
+      "Alopecia areata — patchy nonscarring loss with exclamation-point hairs",
+      "Traction alopecia — hair loss along tension hairlines",
+      "Hypothyroid hair loss — diffuse with other thyroid symptoms, not classic pattern",
+    ],
+    pediatrics:
+      "Pattern hair loss is uncommon before puberty; adolescent females with vertex thinning plus hyperandrogenic features should be evaluated for PCOS.",
+  },
+  {
+    id: "central-adiposity",
+    name: "Central Adiposity",
+    etymology: "Latin centrum = center + adiposus = fatty",
+    aliases: [
+      "central adiposity",
+      "central obesity",
+      "abdominal obesity",
+      "visceral obesity",
+      "truncal obesity",
+      "android obesity",
+      "apple-shaped obesity",
+      "apple body shape",
+      "belly fat",
+    ],
+    definition:
+      "Preferential fat deposition in the abdomen and viscera (apple shape) rather than hips and thighs — linked to insulin resistance and cardiometabolic disease even when total BMI is only mildly elevated.",
+    mechanism:
+      "Visceral adipocytes release free fatty acids and pro-inflammatory adipokines (↓ adiponectin, ↑ TNF-α, IL-6) → hepatic and peripheral insulin resistance, dyslipidemia, and endothelial dysfunction. Waist circumference and waist-to-hip ratio quantify central fat. Common in PCOS, metabolic syndrome, and Cushing syndrome.",
+    thinkOf: [
+      "Polycystic ovary syndrome",
+      "Metabolic syndrome",
+      "Type 2 diabetes mellitus",
+      "Cushing syndrome",
+      "Nonalcoholic fatty liver disease",
+      "Obstructive sleep apnea",
+    ],
+    pairWith: [
+      "Central adiposity + acanthosis nigricans → insulin resistance / PCOS",
+      "Moon facies + supraclavicular fat + striae → Cushing syndrome",
+      "Waist circumference ≥80 cm (women) or ≥90 cm (men) → central obesity by WHO Asian criteria",
+      "Central adiposity + hirsutism + oligomenorrhea → PCOS metabolic phenotype",
+      "Generalized fat without visceral predominance → gynoid (pear) distribution",
+    ],
+    distinguishFrom: [
+      "Generalized obesity — BMI elevation without preferential visceral fat",
+      "Gynoid (pear-shaped) obesity — hip/thigh predominant subcutaneous fat",
+      "Ascites — fluid distension, not adipose; shifting dullness",
+      "Pregnancy — gravid uterus enlarging abdomen",
+      "Cushing buffalo hump — dorsocervical fat pad distinct from abdominal visceral fat",
+    ],
+    pediatrics:
+      "Childhood central adiposity (elevated waist circumference for age/sex) predicts adult metabolic disease; screen for insulin resistance and fatty liver in obese adolescents.",
   },
   {
     id: "abdominal-distension",
@@ -7456,6 +7713,49 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Neonatal opioid exposure causes miosis and respiratory depression; organophosphate exposure in children presents with cholinergic crisis including miosis — atropine is antidote after decontamination.",
   },
   {
+    id: "pinpoint-pupils",
+    name: "Pinpoint Pupils",
+    etymology:
+      "English pin + point = tiny sharp tip + Latin pupilla = little doll (reflection seen in the eye)",
+    aliases: [
+      "pinpoint pupils",
+      "pinpoint pupil",
+      "pin point pupils",
+      "pin point pupil",
+      "pin-point pupils",
+      "pin-point pupil",
+    ],
+    definition:
+      "Extremely small pupils (often <1–2 mm), typically bilateral and poorly reactive to light — a high-yield toxicologic and neurologic exam finding.",
+    mechanism:
+      "Marked iris sphincter constriction from parasympathetic overactivity (μ-opioid, cholinergic, or organophosphate effects) or loss of sympathetic dilator tone; pontine lesions can produce fixed pinpoint pupils.",
+    thinkOf: [
+      "Opioid overdose — pinpoint pupils + respiratory depression + altered mental status",
+      "Organophosphate or carbamate poisoning — SLUDGE + miosis",
+      "Pontine hemorrhage or infarction — pinpoint pupils in comatose patient",
+      "Clonidine or other α2-agonist toxicity",
+      "Pilocarpine or other cholinergic eye drops",
+      "Horner syndrome — milder miosis, not classic pinpoints",
+    ],
+    pairWith: [
+      "Pinpoint pupils + ↓ respirations + somnolence → opioid toxicity; give naloxone",
+      "Pinpoint pupils + SLUDGE + fasciculations → organophosphate poisoning; atropine + pralidoxime",
+      "Pinpoint pupils + coma + hyperventilation → pontine lesion",
+      "Pinpoint pupils + ptosis + anhidrosis → Horner syndrome",
+      "vs mydriasis — dilated pupils suggest anticholinergic or sympathomimetic toxidrome",
+      "vs physiologic constriction — normal pupils constrict in bright light but remain reactive",
+    ],
+    distinguishFrom: [
+      "Miotic — broader term for constricted pupils; pinpoint pupils are severe miosis",
+      "Physiologic pupillary constriction in bright light — pupils still react normally",
+      "Horner syndrome — mild miosis with ptosis and anhidrosis, not classic pinpoints",
+      "Argyll Robertson pupil — accommodates but does not react to light (neurosyphilis)",
+      "Anisocoria — unequal pupils; determine which side is abnormal",
+    ],
+    pediatrics:
+      "Neonatal opioid exposure causes pinpoint pupils and respiratory depression. Organophosphate exposure in children presents with cholinergic crisis including miosis — decontaminate and give atropine.",
+  },
+  {
     id: "mydriasis",
     name: "Mydriasis",
     etymology: "Greek mydriasis = enlargement (of pupil)",
@@ -8076,6 +8376,234 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Separation anxiety is developmentally normal in young children; GAD in youth presents as worry about performance, catastrophes, and somatic complaints (stomachache, headache).",
+  },
+  {
+    id: "anosmia",
+    name: "Anosmia",
+    etymology: "Greek an- = without + osmē = smell",
+    aliases: [
+      "anosmia",
+      "anosmias",
+      "loss of smell",
+      "loss of the sense of smell",
+      "absence of smell",
+      "olfactory loss",
+      "smell loss",
+      "unable to smell",
+      "no sense of smell",
+    ],
+    definition:
+      "Complete or near-complete loss of the sense of smell — a high-yield neurologic and rhinologic finding with local, traumatic, infectious, and neurodegenerative causes.",
+    mechanism:
+      "Odorants fail to reach olfactory receptors (conductive: nasal obstruction, polyps, rhinitis) or olfactory signal is interrupted (sensorineural/neural: cribriform plate injury shearing CN I fila, olfactory bulb/tract lesion, neurodegeneration, congenital failed GnRH neuron migration in Kallmann syndrome).",
+    thinkOf: [
+      "Head trauma with cribriform plate fracture — anosmia ± CSF rhinorrhea",
+      "Kallmann syndrome — anosmia + delayed puberty + hypogonadotropic hypogonadism",
+      "COVID-19 — acute transient anosmia",
+      "Chronic rhinosinusitis and nasal polyps — conductive anosmia",
+      "Alzheimer and Parkinson disease — early hyposmia/anosmia",
+      "Olfactory groove meningioma — anosmia + personality change",
+      "Post-viral olfactory dysfunction",
+    ],
+    pairWith: [
+      "Anosmia + CSF rhinorrhea after head trauma → cribriform fracture",
+      "Anosmia + delayed puberty + ↓ GnRH → Kallmann syndrome",
+      "Anosmia + nasal obstruction + polyps → chronic rhinosinusitis",
+      "Anosmia + memory loss + cortical atrophy → Alzheimer disease workup",
+      "Unilateral anosmia + frontal lobe signs → olfactory groove lesion",
+      "vs parosmia — distorted smell, not complete loss",
+    ],
+    distinguishFrom: [
+      "Hyposmia — reduced but not absent smell",
+      "Parosmia — distorted perception of odor",
+      "Phantosmia — olfactory hallucination without external stimulus",
+      "Ageusia — taste loss (distinct cranial nerve/evaluation)",
+      "Nasal congestion alone — reversible conductive loss with decongestion",
+    ],
+    pediatrics:
+      "Kallmann syndrome presents in adolescence with delayed puberty and congenital anosmia. Pediatric head trauma can shear olfactory fila through the cribriform plate; COVID-19 anosmia also occurs in children.",
+  },
+  {
+    id: "decorticate-posturing",
+    name: "Decorticate Posturing",
+    etymology:
+      "Latin de- = away + cortex = bark (cerebral cortex) + posture = positioned body attitude",
+    aliases: [
+      "decorticate posturing",
+      "decorticate posture",
+      "decorticate rigidity",
+      "decorticate postures",
+      "abnormal flexion",
+      "flexor posturing",
+      "decorticate flexion",
+      "decorticate response",
+    ],
+    definition:
+      "Abnormal motor response to painful stimulation — upper extremities flexed and adducted toward the chest, lower extremities extended — indicates severe rostral brain injury above the red nucleus (often corticospinal tract or diencephalic lesion).",
+    mechanism:
+      "Disinhibition of rubrospinal and vestibulospinal pathways with loss of cortical modulation → flexor tone predominates in arms (rubrospinal) and extensor tone in legs (vestibulospinal); often precedes worsening herniation.",
+    thinkOf: [
+      "Traumatic brain injury with ↑ ICP",
+      "Large supratentorial mass or hemorrhage",
+      "Brain herniation syndrome (early)",
+      "Stroke with large hemispheric lesion",
+      "Metabolic encephalopathy with severe CNS depression",
+      "GCS motor score 3",
+    ],
+    pairWith: [
+      "Decorticate posturing + ↓ GCS → severe TBI; emergent neuroimaging",
+      "Decorticate → decerebrate progression → tonsillar herniation risk",
+      "Decorticate + unilateral findings → contralateral hemispheric lesion",
+      "vs decerebrate — arms extended in decerebrate (worse brainstem injury)",
+      "Mnemonic: deCORticate — arms flex toward COR (core/body)",
+      "Treat cause: ↓ ICP (mannitol, hypertonic saline, surgery)",
+    ],
+    distinguishFrom: [
+      "Decerebrate posturing — bilateral arm extension; lesion at/below red nucleus",
+      "Withdrawal to pain — purposeful flexion away from stimulus, not stereotyped posturing",
+      "Spasticity — chronic UMN tone, not acute posturing in coma",
+      "Seizure activity — rhythmic, not sustained tonic posturing",
+      "Opisthotonus — arching of trunk, tetanus or severe brainstem irritation",
+    ],
+    pediatrics:
+      "Same posturing patterns apply in children with severe TBI; mortality remains high with decorticate rigidity and fixed pupils. Non-accidental head trauma must be considered in infants with unexplained altered mental status.",
+  },
+  {
+    id: "decerebrate-posturing",
+    name: "Decerebrate Posturing",
+    etymology:
+      "Latin de- = away + cerebrum = brain + posture = positioned body attitude",
+    aliases: [
+      "decerebrate posturing",
+      "decerebrate posture",
+      "decerebrate rigidity",
+      "decerebrate postures",
+      "abnormal extension",
+      "extensor posturing",
+      "decerebrate extension",
+      "decerebrate response",
+    ],
+    definition:
+      "Abnormal motor response — bilateral extension and internal rotation of upper and lower extremities with opisthotonic neck extension — indicates severe brainstem injury at or below the red nucleus, often midbrain/pons dysfunction or herniation.",
+    mechanism:
+      "Loss of rubrospinal flexor influence with unopposed vestibulospinal and reticulospinal extensor tone → rigid extension of all limbs; associated with poor prognosis and impending tonsillar herniation when acute.",
+    thinkOf: [
+      "Transtentorial herniation compressing midbrain",
+      "Pontine hemorrhage or infarction",
+      "Severe traumatic brain injury",
+      "Metabolic/toxic coma with brainstem involvement",
+      "Late deterioration after head trauma",
+      "GCS motor score 2",
+    ],
+    pairWith: [
+      "Decerebrate posturing + blown pupil + ↓ GCS → herniation emergency",
+      "Decerebrate + post-TBI → poor prognosis; neurosurgery and ICP control",
+      "Progression decorticate → decerebrate → bilateral dilated pupils → brain death workup",
+      "Mnemonic: decerebrate — arms extended (E for extension)",
+      "vs decorticate — decerebrate is worse prognostic sign",
+      "May improve transiently after mannitol if due to ↑ ICP",
+    ],
+    distinguishFrom: [
+      "Decorticate posturing — arms flexed toward core; rostral lesion",
+      "Decorticate rigidity in chronic spastic hemiplegia — not acute coma posturing",
+      "Tetanus — trismus, opisthotonus, autonomic instability; not isolated posturing",
+      "Noxious stimulus withdrawal — non-stereotyped, not sustained extension",
+      "Locked-in syndrome — conscious with only vertical eye movements, not flaccid coma",
+    ],
+    pediatrics:
+      "Decerebrate posturing in children with severe head injury carries very high mortality (~70%+). Extradural hematoma in children may have better outcomes if evacuated urgently.",
+  },
+  {
+    id: "otorrhea",
+    name: "Otorrhea",
+    etymology: "Greek ous = ear + rhoia = flow",
+    aliases: [
+      "otorrhea",
+      "otorrheas",
+      "otorrhoea",
+      "ear discharge",
+      "ear drainage",
+      "drainage from ear",
+      "discharge from ear",
+      "fluid from ear",
+      "bloody otorrhea",
+      "purulent otorrhea",
+      "csf otorrhea",
+      "cerebrospinal fluid otorrhea",
+    ],
+    definition:
+      "Drainage of fluid from the external auditory canal — may be purulent (otitis media with perforation), bloody (trauma), or clear/watery suggesting CSF leak from basilar skull fracture.",
+    mechanism:
+      "Purulent otorrhea — TM perforation with middle-ear infection drains through ear canal; traumatic/CSF otorrhea — basilar skull or temporal bone fracture tears dura with CSF fistula to middle ear → clear persistent drainage, often with hemotympanum; cholesteatoma causes chronic foul otorrhea.",
+    thinkOf: [
+      "Basilar skull fracture — CSF otorrhea ± Battle sign, raccoon eyes, hemotympanum",
+      "Acute otitis media with tympanic membrane perforation — purulent otorrhea",
+      "Cholesteatoma — chronic foul otorrhea, conductive hearing loss",
+      "Malignant otitis externa — severe pain, diabetics, granulation tissue",
+      "Temporal bone fracture — CN VII palsy, hemotympanum",
+    ],
+    pairWith: [
+      "Clear otorrhea + head trauma → CSF leak; β2-transferrin testing",
+      "Otorrhea + Battle sign + raccoon eyes → basilar skull fracture",
+      "Purulent otorrhea + ear pain + fever → AOM with TM perforation",
+      "Otorrhea + facial weakness → temporal bone fracture involving CN VII",
+      "vs rhinorrhea — nasal CSF leak from cribriform fracture",
+      "Do not irrigate or pack ear if CSF leak suspected",
+    ],
+    distinguishFrom: [
+      "Cerumen impaction — waxy discharge, not acute traumatic or infectious drainage",
+      "External otitis — canal inflammation without middle-ear perforation (unless extension)",
+      "CSF rhinorrhea — nasal not aural drainage",
+      "Blood from external ear laceration — localized trauma without skull base signs",
+      "Serous otitis — middle-ear effusion without active drainage through perforation",
+    ],
+    pediatrics:
+      "AOM with perforation is common pediatric otorrhea. CSF otorrhea after head trauma in children requires urgent imaging; non-accidental trauma must be excluded in infants.",
+  },
+  {
+    id: "raccoon-eyes",
+    name: "Raccoon Eyes",
+    etymology:
+      "English raccoon (masked mammal) + eyes — periorbital ecchymosis resembling a raccoon's facial mask",
+    aliases: [
+      "raccoon eyes",
+      "raccoon eye",
+      "raccoon's eyes",
+      "periorbital ecchymosis",
+      "periorbital ecchymoses",
+      "bilateral periorbital ecchymosis",
+      "bilateral periorbital ecchymoses",
+      "panda eyes",
+      "panda eye",
+    ],
+    definition:
+      "Bilateral periorbital ecchymosis — non-blanching bruising around both eyes — classically associated with basilar skull fracture but also seen in amyloidosis, neuroblastoma metastases, and severe facial trauma.",
+    mechanism:
+      "Blood tracks from anterior cranial fossa or facial fracture sites along tissue planes into periorbital soft tissue; may appear hours after injury (delayed). In systemic disease (AL amyloidosis), fragile vessels cause periorbital purpura with minimal trauma.",
+    thinkOf: [
+      "Basilar skull fracture — especially anterior fossa; may accompany Battle sign",
+      "Facial/orbital trauma without skull fracture (less specific)",
+      "AL amyloidosis — periorbital purpura after minor trauma",
+      "Neuroblastoma orbital metastases — periorbital ecchymosis in children",
+      "Coagulopathy with periorbital bleeding",
+    ],
+    pairWith: [
+      "Raccoon eyes + Battle sign + otorrhea/rhinorrhea → basilar skull fracture",
+      "Raccoon eyes + head trauma → noncontrast head CT and skull base imaging",
+      "Raccoon eyes + periorbital purpura after minor trauma → AL amyloidosis",
+      "Child with raccoon eyes + abdominal mass → neuroblastoma",
+      "vs isolated black eye — unilateral, periorbital soft tissue trauma",
+      "Sign may be delayed 1–3 days after injury",
+    ],
+    distinguishFrom: [
+      "Battle sign — retroauricular ecchymosis, not periorbital",
+      "Isolated periorbital hematoma — unilateral blunt trauma to orbit",
+      "Allergic shiners — bilateral dark circles without trauma, atopy",
+      "Orbital cellulitis — erythema, proptosis, fever, not isolated ecchymosis",
+      "Ecchymosis from anticoagulation — diffuse, not classic mask pattern",
+    ],
+    pediatrics:
+      "In children, raccoon eyes after minor trauma raises concern for non-accidental trauma or occult basilar skull fracture. Bilateral periorbital ecchymosis with an abdominal mass suggests neuroblastoma.",
   },
 ];
 

@@ -14,6 +14,7 @@ import alcoholUseDisorder from "../media/images/conditions/alcohol-use-disorder.
 import alcoholWithdrawal from "../media/images/conditions/alcohol-withdrawal.jpg?url";
 import allergicContactDermatitis from "../media/images/conditions/allergic-contact-dermatitis.jpg?url";
 import alpha1AntitrypsinDeficiency from "../media/images/conditions/alpha-1-antitrypsin-deficiency.jpg?url";
+import alzheimerDisease from "../media/images/conditions/alzheimer-disease.jpg?url";
 import amenorrhea from "../media/images/conditions/amenorrhea.jpg?url";
 import aml from "../media/images/conditions/aml.jpg?url";
 import anaphylaxis from "../media/images/conditions/anaphylaxis.svg?url";
@@ -40,6 +41,7 @@ import biliaryAtresia from "../media/images/conditions/biliary-atresia.jpg?url";
 import bph from "../media/images/conditions/bph.jpg?url";
 import briefPsychoticDisorder from "../media/images/conditions/brief-psychotic-disorder.jpg?url";
 import bronchiectasis from "../media/images/conditions/bronchiectasis.jpg?url";
+import c3Deficiency from "../media/images/conditions/c3-deficiency.png?url";
 import c6Radiculopathy from "../media/images/conditions/c6-radiculopathy.png?url";
 import c7Radiculopathy from "../media/images/conditions/c7-radiculopathy.png?url";
 import carbonMonoxidePoisoning from "../media/images/conditions/carbon-monoxide-poisoning.jpg?url";
@@ -52,6 +54,7 @@ import cataracts from "../media/images/conditions/cataracts.jpg?url";
 import celiacDisease from "../media/images/conditions/celiac-disease.jpg?url";
 import cellulitis from "../media/images/conditions/cellulitis.jpg?url";
 import cerebralContusion from "../media/images/conditions/cerebral-contusion.jpg?url";
+import traumaticBrainInjury from "../media/images/conditions/traumatic-brain-injury.jpg?url";
 import chikungunyaRash from "../media/images/conditions/chikungunya-rash.jpg?url";
 import choledocholithiasis from "../media/images/conditions/choledocholithiasis.jpg?url";
 import chronicBronchitis from "../media/images/conditions/chronic-bronchitis.svg?url";
@@ -81,6 +84,7 @@ import duodenalAtresia from "../media/images/conditions/duodenal-atresia.jpg?url
 import dysmenorrhea from "../media/images/conditions/dysmenorrhea.jpg?url";
 import emphysema from "../media/images/conditions/emphysema.jpg?url";
 import empyema from "../media/images/conditions/empyema.jpg?url";
+import ectopicPregnancy from "../media/images/conditions/ectopic-pregnancy.png?url";
 import encephalitis from "../media/images/conditions/encephalitis.jpg?url";
 import endocarditis from "../media/images/conditions/endocarditis.jpg?url";
 import endometriosis from "../media/images/conditions/endometriosis.jpg?url";
@@ -167,6 +171,7 @@ import meningesDiagram from "../media/images/conditions/meninges-diagram.svg?url
 import menkesDisease from "../media/images/conditions/menkes-disease.jpg?url";
 import menopause from "../media/images/conditions/menopause.svg?url";
 import merkelCellCarcinoma from "../media/images/conditions/merkel-cell-carcinoma.jpg?url";
+import minimalChangeDisease from "../media/images/conditions/minimal-change-disease.svg?url";
 import molarPregnancyUltrasound from "../media/images/conditions/molar-pregnancy-ultrasound.jpg?url";
 import multipleEndocrineNeoplasia from "../media/images/conditions/multiple-endocrine-neoplasia.svg?url";
 import multipleSclerosis from "../media/images/conditions/multiple-sclerosis.jpg?url";
@@ -200,6 +205,7 @@ import pheochromocytoma from "../media/images/conditions/pheochromocytoma.jpg?ur
 import pituitaryApoplexy from "../media/images/conditions/pituitary-apoplexy.jpg?url";
 import pituitaryMacroadenoma from "../media/images/conditions/pituitary-macroadenoma.jpg?url";
 import pneumoconiosis from "../media/images/conditions/pneumoconiosis.jpg?url";
+import aspirationPneumonitis from "../media/images/conditions/aspiration-pneumonitis.jpg?url";
 import pneumonia from "../media/images/conditions/pneumonia.jpg?url";
 import postherpeticNeuralgia from "../media/images/conditions/postherpetic-neuralgia.png?url";
 import premenstrualDysphoricDisorder from "../media/images/conditions/premenstrual-dysphoric-disorder.jpg?url";
@@ -210,6 +216,7 @@ import primaryHyperparathyroidism from "../media/images/conditions/primary-hyper
 import primarySclerosingCholangitis from "../media/images/conditions/primary-sclerosing-cholangitis.jpg?url";
 import prolactinoma from "../media/images/conditions/prolactinoma.jpg?url";
 import psoriasis from "../media/images/conditions/psoriasis.jpg?url";
+import pseudodementia from "../media/images/conditions/pseudodementia.jpg?url";
 import psychoticMoodDisorder from "../media/images/conditions/psychotic-mood-disorder.svg?url";
 import ptsd from "../media/images/conditions/ptsd.png?url";
 import pulmonaryEmbolism from "../media/images/conditions/pulmonary-embolism.jpg?url";
@@ -247,6 +254,7 @@ import statusEpilepticus from "../media/images/conditions/status-epilepticus.jpg
 import subarachnoidHemorrhage from "../media/images/conditions/subarachnoid-hemorrhage.jpg?url";
 import systemicLupusErythematosus from "../media/images/conditions/systemic-lupus-erythematosus.jpg?url";
 import systemicSclerosis from "../media/images/conditions/systemic-sclerosis.jpg?url";
+import taySachsDisease from "../media/images/conditions/tay-sachs-disease.jpg?url";
 import tensionPneumothorax from "../media/images/conditions/tension-pneumothorax.jpg?url";
 import tetralogyOfFallotCyanosis from "../media/images/conditions/tetralogy-of-fallot-cyanosis.jpg?url";
 import thromboangiitisObliterans from "../media/images/conditions/thromboangiitis-obliterans.jpg?url";
@@ -292,6 +300,7 @@ export type ConditionImageId = Extract<
   | "alcohol-withdrawal"
   | "allergic-contact-dermatitis"
   | "alpha-1-antitrypsin-deficiency"
+  | "alzheimer-disease"
   | "amenorrhea"
   | "aml"
   | "anaphylaxis"
@@ -318,6 +327,7 @@ export type ConditionImageId = Extract<
   | "bph"
   | "brief-psychotic-disorder"
   | "bronchiectasis"
+  | "c3-deficiency"
   | "c6-radiculopathy"
   | "c7-radiculopathy"
   | "carbon-monoxide-poisoning"
@@ -330,6 +340,7 @@ export type ConditionImageId = Extract<
   | "celiac-disease"
   | "cellulitis"
   | "cerebral-contusion"
+  | "traumatic-brain-injury"
   | "chikungunya-fever"
   | "choledocholithiasis"
   | "chronic-bronchitis"
@@ -359,6 +370,7 @@ export type ConditionImageId = Extract<
   | "dysmenorrhea"
   | "emphysema"
   | "empyema"
+  | "ectopic-pregnancy"
   | "encephalitis"
   | "endocarditis"
   | "endometriosis"
@@ -445,6 +457,7 @@ export type ConditionImageId = Extract<
   | "menkes-disease"
   | "menopause"
   | "merkel-cell-carcinoma"
+  | "minimal-change-disease"
   | "hydatidiform-mole"
   | "multiple-endocrine-neoplasia"
   | "multiple-sclerosis"
@@ -478,6 +491,7 @@ export type ConditionImageId = Extract<
   | "pituitary-apoplexy"
   | "pituitary-macroadenoma"
   | "pneumoconiosis"
+  | "aspiration-pneumonitis"
   | "pneumonia"
   | "postherpetic-neuralgia"
   | "premenstrual-dysphoric-disorder"
@@ -488,6 +502,7 @@ export type ConditionImageId = Extract<
   | "primary-sclerosing-cholangitis"
   | "prolactinoma"
   | "psoriasis"
+  | "pseudodementia"
   | "psychotic-mood-disorder"
   | "ptsd"
   | "pulmonary-embolism"
@@ -526,6 +541,7 @@ export type ConditionImageId = Extract<
   | "systemic-lupus-erythematosus"
   | "systemic-sclerosis"
   | "tension-pneumothorax"
+  | "tay-sachs-disease"
   | "tetralogy-of-fallot"
   | "thromboangiitis-obliterans"
   | "transient-ischemic-attack"
@@ -575,6 +591,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "alcohol-withdrawal": extensionAssetUrl(alcoholWithdrawal),
   "allergic-contact-dermatitis": extensionAssetUrl(allergicContactDermatitis),
   "alpha-1-antitrypsin-deficiency": extensionAssetUrl(alpha1AntitrypsinDeficiency),
+  "alzheimer-disease": extensionAssetUrl(alzheimerDisease),
   "amenorrhea": extensionAssetUrl(amenorrhea),
   "aml": extensionAssetUrl(aml),
   "anaphylaxis": extensionAssetUrl(anaphylaxis),
@@ -601,6 +618,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "bph": extensionAssetUrl(bph),
   "brief-psychotic-disorder": extensionAssetUrl(briefPsychoticDisorder),
   "bronchiectasis": extensionAssetUrl(bronchiectasis),
+  "c3-deficiency": extensionAssetUrl(c3Deficiency),
   "c6-radiculopathy": extensionAssetUrl(c6Radiculopathy),
   "c7-radiculopathy": extensionAssetUrl(c7Radiculopathy),
   "carbon-monoxide-poisoning": extensionAssetUrl(carbonMonoxidePoisoning),
@@ -613,6 +631,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "celiac-disease": extensionAssetUrl(celiacDisease),
   "cellulitis": extensionAssetUrl(cellulitis),
   "cerebral-contusion": extensionAssetUrl(cerebralContusion),
+  "traumatic-brain-injury": extensionAssetUrl(traumaticBrainInjury),
   "chikungunya-fever": extensionAssetUrl(chikungunyaRash),
   "choledocholithiasis": extensionAssetUrl(choledocholithiasis),
   "chronic-bronchitis": extensionAssetUrl(chronicBronchitis),
@@ -642,6 +661,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "dysmenorrhea": extensionAssetUrl(dysmenorrhea),
   "emphysema": extensionAssetUrl(emphysema),
   "empyema": extensionAssetUrl(empyema),
+  "ectopic-pregnancy": extensionAssetUrl(ectopicPregnancy),
   "encephalitis": extensionAssetUrl(encephalitis),
   "endocarditis": extensionAssetUrl(endocarditis),
   "endometriosis": extensionAssetUrl(endometriosis),
@@ -728,6 +748,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "menkes-disease": extensionAssetUrl(menkesDisease),
   "menopause": extensionAssetUrl(menopause),
   "merkel-cell-carcinoma": extensionAssetUrl(merkelCellCarcinoma),
+  "minimal-change-disease": extensionAssetUrl(minimalChangeDisease),
   "hydatidiform-mole": extensionAssetUrl(molarPregnancyUltrasound),
   "multiple-endocrine-neoplasia": extensionAssetUrl(multipleEndocrineNeoplasia),
   "multiple-sclerosis": extensionAssetUrl(multipleSclerosis),
@@ -761,6 +782,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "pituitary-apoplexy": extensionAssetUrl(pituitaryApoplexy),
   "pituitary-macroadenoma": extensionAssetUrl(pituitaryMacroadenoma),
   "pneumoconiosis": extensionAssetUrl(pneumoconiosis),
+  "aspiration-pneumonitis": extensionAssetUrl(aspirationPneumonitis),
   "pneumonia": extensionAssetUrl(pneumonia),
   "postherpetic-neuralgia": extensionAssetUrl(postherpeticNeuralgia),
   "premenstrual-dysphoric-disorder": extensionAssetUrl(premenstrualDysphoricDisorder),
@@ -771,6 +793,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "primary-sclerosing-cholangitis": extensionAssetUrl(primarySclerosingCholangitis),
   "prolactinoma": extensionAssetUrl(prolactinoma),
   "psoriasis": extensionAssetUrl(psoriasis),
+  "pseudodementia": extensionAssetUrl(pseudodementia),
   "psychotic-mood-disorder": extensionAssetUrl(psychoticMoodDisorder),
   "ptsd": extensionAssetUrl(ptsd),
   "pulmonary-embolism": extensionAssetUrl(pulmonaryEmbolism),
@@ -809,6 +832,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "systemic-lupus-erythematosus": extensionAssetUrl(systemicLupusErythematosus),
   "systemic-sclerosis": extensionAssetUrl(systemicSclerosis),
   "tension-pneumothorax": extensionAssetUrl(tensionPneumothorax),
+  "tay-sachs-disease": extensionAssetUrl(taySachsDisease),
   "tetralogy-of-fallot": extensionAssetUrl(tetralogyOfFallotCyanosis),
   "thromboangiitis-obliterans": extensionAssetUrl(thromboangiitisObliterans),
   "transient-ischemic-attack": extensionAssetUrl(transientIschemicAttack),
@@ -855,6 +879,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "alcohol-withdrawal": { label: "Wikimedia Commons (Local copy from conditions/alcohol-use-disorder.jpg)", url: "https://commons.wikimedia.org/" },
   "allergic-contact-dermatitis": { label: "Wikimedia Commons (Blausen 0014 AllergicDermatitis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0014_AllergicDermatitis.png" },
   "alpha-1-antitrypsin-deficiency": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:alpha-1-antitrypsin-deficiency.jpg" },
+  "alzheimer-disease": {
+    label: "Wikimedia Commons (Histopathology of Alzheimer's disease.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Alzheimer%27s_disease.jpg",
+  },
   "amenorrhea": { label: "Wikimedia Commons (Lactational-amenorrhea-method-This-method-of-family-planning-evolved-from (1).jpg)", url: "https://commons.wikimedia.org/wiki/File:Lactational-amenorrhea-method-This-method-of-family-planning-evolved-from_(1).jpg" },
   "aml": { label: "Wikimedia Commons (Acute Myeloid Leukemia (M2 type).jpg)", url: "https://commons.wikimedia.org/wiki/File:Acute_Myeloid_Leukemia_(M2_type).jpg" },
   "anaphylaxis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:anaphylaxis.svg" },
@@ -881,6 +909,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "bph": { label: "Wikimedia Commons (Benign Prostatic Hyperplasia nci-vol-7137-300.jpg)", url: "https://commons.wikimedia.org/wiki/File:Benign_Prostatic_Hyperplasia_nci-vol-7137-300.jpg" },
   "brief-psychotic-disorder": { label: "Wikimedia Commons (Climacteric psychosis.jpg)", url: "https://commons.wikimedia.org/wiki/File:Climacteric_psychosis.jpg" },
   "bronchiectasis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:bronchiectasis.jpg" },
+  "c3-deficiency": {
+    label: "Wikimedia Commons (Complement pathway.png), NIH public domain",
+    url: "https://commons.wikimedia.org/wiki/File:Complement_pathway.png",
+  },
   "c6-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:c6-radiculopathy.png" },
   "c7-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:c7-radiculopathy.png" },
   "carbon-monoxide-poisoning": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:carbon-monoxide-poisoning.jpg" },
@@ -893,6 +925,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "celiac-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:celiac-disease.jpg" },
   "cellulitis": { label: "Wikimedia Commons (Cellulitis3.jpg)", url: "https://commons.wikimedia.org/wiki/File:Cellulitis3.jpg" },
   "cerebral-contusion": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cerebral-contusion.jpg" },
+  "traumatic-brain-injury": {
+    label: "Wikimedia Commons (Brain trauma CT.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Brain_trauma_CT.jpg",
+  },
   "chikungunya-fever": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:chikungunya-rash.jpg" },
   "choledocholithiasis": { label: "Wikimedia Commons (ERCP stone.jpg)", url: "https://commons.wikimedia.org/wiki/File:ERCP_stone.jpg" },
   "chronic-bronchitis": { label: "Wikimedia Commons (Chronic obstructive pulmonary disease world map - DALY - WHO2004.svg)", url: "https://commons.wikimedia.org/wiki/File:Chronic_obstructive_pulmonary_disease_world_map_-_DALY_-_WHO2004.svg" },
@@ -922,6 +958,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "dysmenorrhea": { label: "Wikimedia Commons (Period pain menstrual cramps uterus.jpg)", url: "https://commons.wikimedia.org/wiki/File:Period_pain_menstrual_cramps_uterus.jpg" },
   "emphysema": { label: "Wikimedia Commons (Emphysema H and E.jpg)", url: "https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg" },
   "empyema": { label: "Wikimedia Commons (Empyema of the pleura Wellcome L0061158.jpg)", url: "https://commons.wikimedia.org/wiki/File:Empyema_of_the_pleura_Wellcome_L0061158.jpg" },
+  "ectopic-pregnancy": {
+    label: "Wikimedia Commons (James Heilman, MD, CC BY-SA 3.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Ectopicleftmass.PNG",
+  },
   "encephalitis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:encephalitis.jpg" },
   "endocarditis": { label: "Wikimedia Commons (Endocarditis ultrasound.JPG)", url: "https://commons.wikimedia.org/wiki/File:Endocarditis_ultrasound.JPG" },
   "endometriosis": { label: "Wikimedia Commons (Blausen 0349 Endometriosis-it.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0349_Endometriosis-it.png" },
@@ -1008,6 +1048,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "menkes-disease": { label: "Wikimedia Commons (Menkes disease4.jpg)", url: "https://commons.wikimedia.org/wiki/File:Menkes_disease4.jpg" },
   "menopause": { label: "Wikimedia Commons (TEWL hot flash plot.svg)", url: "https://commons.wikimedia.org/wiki/File:TEWL_hot_flash_plot.svg" },
   "merkel-cell-carcinoma": { label: "Wikimedia Commons (Merkel cell carcinoma - very high mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Merkel_cell_carcinoma_-_very_high_mag.jpg" },
+  "minimal-change-disease": {
+    label: "Wikimedia Commons (Minimal Change Disease Pathology Diagram.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Minimal_Change_Disease_Pathology_Diagram.svg",
+  },
   "hydatidiform-mole": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:molar-pregnancy-ultrasound.jpg" },
   "multiple-endocrine-neoplasia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:multiple-endocrine-neoplasia.svg" },
   "multiple-sclerosis": { label: "Wikimedia Commons (Disseminated sclerosis (IA b2810349x).pdf)", url: "https://commons.wikimedia.org/wiki/File:Disseminated_sclerosis_(IA_b2810349x).pdf" },
@@ -1041,6 +1085,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "pituitary-apoplexy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pituitary-apoplexy.jpg" },
   "pituitary-macroadenoma": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pituitary-macroadenoma.jpg" },
   "pneumoconiosis": { label: "Wikimedia Commons (X-ray of slate pneumoconiosis sufferer's lungs. Wellcome L0029726.jpg)", url: "https://commons.wikimedia.org/wiki/File:X-ray_of_slate_pneumoconiosis_sufferer's_lungs._Wellcome_L0029726.jpg" },
+  "aspiration-pneumonitis": {
+    label: "Wikimedia Commons (Aspiration pneumonia (5613145721).jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Aspiration_pneumonia_(5613145721).jpg",
+  },
   "pneumonia": { label: "Wikimedia Commons (Annual report of the trustees (IA annualreportoftr1819bost).pdf)", url: "https://commons.wikimedia.org/wiki/File:Annual_report_of_the_trustees_(IA_annualreportoftr1819bost).pdf" },
   "postherpetic-neuralgia": { label: "Wikimedia Commons (Herpes zoster chest.png)", url: "https://commons.wikimedia.org/wiki/File:Herpes_zoster_chest.png" },
   "premenstrual-dysphoric-disorder": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:premenstrual-dysphoric-disorder.jpg" },
@@ -1051,6 +1099,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "primary-sclerosing-cholangitis": { label: "Wikimedia Commons (CT of primary sclerosing cholangitis (hy).png)", url: "https://commons.wikimedia.org/wiki/File:CT_of_primary_sclerosing_cholangitis_(hy).png" },
   "prolactinoma": { label: "Wikimedia Commons (ProlactinomaMRI.jpg)", url: "https://commons.wikimedia.org/wiki/File:ProlactinomaMRI.jpg" },
   "psoriasis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:psoriasis.jpg" },
+  "pseudodementia": {
+    label: "Wellcome Collection (Henry Clarke, CC BY 4.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Woman_suffering_from_acute_melancholia;_H._Clarke,_1869_Wellcome_L0018945.jpg",
+  },
   "psychotic-mood-disorder": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:psychotic-mood-disorder.svg" },
   "ptsd": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ptsd.png" },
   "pulmonary-embolism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pulmonary-embolism.jpg" },
@@ -1089,6 +1141,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "systemic-lupus-erythematosus": { label: "Wikimedia Commons (What Black Women Should Know About Lupus (IA whatblackwomensh00usde).pdf)", url: "https://commons.wikimedia.org/wiki/File:What_Black_Women_Should_Know_About_Lupus_(IA_whatblackwomensh00usde).pdf" },
   "systemic-sclerosis": { label: "Wikimedia Commons (Crescentic glomerulonephritis Periodic acid silver methanamine stain.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Crescentic_glomerulonephritis_Periodic_acid_silver_methanamine_stain.JPEG" },
   "tension-pneumothorax": { label: "Wikimedia Commons (Pneumothorax 001 cs.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pneumothorax_001_cs.jpg" },
+  "tay-sachs-disease": {
+    label: "Wikimedia Commons (Tay-sachsUMich.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Tay-sachsUMich.jpg",
+  },
   "tetralogy-of-fallot": { label: "Wikimedia Commons (Heart Surgery Practice.jpg)", url: "https://commons.wikimedia.org/wiki/File:Heart_Surgery_Practice.jpg" },
   "thromboangiitis-obliterans": { label: "Wikimedia Commons (55 year old female with advanced Buerger's disease.jpg)", url: "https://commons.wikimedia.org/wiki/File:55_year_old_female_with_advanced_Buerger's_disease.jpg" },
   "transient-ischemic-attack": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:transient-ischemic-attack.png" },
@@ -1135,6 +1191,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "alcohol-withdrawal": "Alcoholic liver disease — chronic heavy alcohol use underlying withdrawal risk",
   "allergic-contact-dermatitis": "Clinical or pathologic image illustrating allergic contact dermatitis",
   "alpha-1-antitrypsin-deficiency": "Clinical or pathologic image illustrating alpha 1 antitrypsin deficiency",
+  "alzheimer-disease":
+    "Neurofibrillary tangles and senile plaques — hallmark Alzheimer disease histopathology",
   "amenorrhea": "Clinical or pathologic image illustrating amenorrhea",
   "aml": "Clinical or pathologic image illustrating aml",
   "anaphylaxis": "Clinical or pathologic image illustrating anaphylaxis",
@@ -1161,6 +1219,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "bph": "Clinical or pathologic image illustrating bph",
   "brief-psychotic-disorder": "Clinical or pathologic image illustrating brief psychotic disorder",
   "bronchiectasis": "Clinical or pathologic image illustrating bronchiectasis",
+  "c3-deficiency":
+    "Complement cascade — C3 is the central convergence point cleaved by all three activation pathways",
   "c6-radiculopathy": "Clinical or pathologic image illustrating c6 radiculopathy",
   "c7-radiculopathy": "Clinical or pathologic image illustrating c7 radiculopathy",
   "carbon-monoxide-poisoning": "Clinical or pathologic image illustrating carbon monoxide poisoning",
@@ -1173,6 +1233,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "celiac-disease": "Clinical or pathologic image illustrating celiac disease",
   "cellulitis": "Clinical or pathologic image illustrating cellulitis",
   "cerebral-contusion": "Clinical or pathologic image illustrating cerebral contusion",
+  "traumatic-brain-injury":
+    "Noncontrast head CT — hemorrhagic contusion and traumatic brain injury",
   "chikungunya-fever": "Maculopapular chikungunya rash on the abdomen during acute illness",
   "choledocholithiasis": "Clinical or pathologic image illustrating choledocholithiasis",
   "chronic-bronchitis": "Clinical or pathologic image illustrating chronic bronchitis",
@@ -1202,6 +1264,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "dysmenorrhea": "Clinical or pathologic image illustrating dysmenorrhea",
   "emphysema": "Clinical or pathologic image illustrating emphysema",
   "empyema": "Clinical or pathologic image illustrating empyema",
+  "ectopic-pregnancy":
+    "Transvaginal ultrasound showing ectopic pregnancy with gestational sac adjacent to the left ovary",
   "encephalitis": "Clinical or pathologic image illustrating encephalitis",
   "endocarditis": "Clinical or pathologic image illustrating endocarditis",
   "endometriosis": "Clinical or pathologic image illustrating endometriosis",
@@ -1268,7 +1332,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "lacunar-stroke": "Clinical or pathologic image illustrating lacunar stroke",
   "lichen-planus": "Clinical or pathologic image illustrating lichen planus",
   "lung-cancer": "Clinical or pathologic image illustrating lung cancer",
-  "lyme-disease": "Clinical or pathologic image illustrating lyme disease",
+  "lyme-disease": "Erythema migrans bull's-eye rash of early localized Lyme disease",
   "lymphadenitis": "Clinical or pathologic image illustrating lymphadenitis",
   "lymphogranuloma-venereum": "Clinical or pathologic image illustrating lymphogranuloma venereum",
   "lymphoma": "Clinical or pathologic image illustrating lymphoma",
@@ -1288,6 +1352,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "menkes-disease": "Clinical or pathologic image illustrating menkes disease",
   "menopause": "Clinical or pathologic image illustrating menopause",
   "merkel-cell-carcinoma": "Clinical or pathologic image illustrating merkel cell carcinoma",
+  "minimal-change-disease":
+    "Pathology diagram of minimal change disease showing normal light microscopy and podocyte foot-process effacement on electron microscopy",
   "hydatidiform-mole": "Transvaginal ultrasound of molar pregnancy — classic 'snowstorm' / bunch-of-grapes intrauterine pattern",
   "multiple-endocrine-neoplasia": "Clinical or pathologic image illustrating multiple endocrine neoplasia",
   "multiple-sclerosis": "Clinical or pathologic image illustrating multiple sclerosis",
@@ -1321,6 +1387,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "pituitary-apoplexy": "Clinical or pathologic image illustrating pituitary apoplexy",
   "pituitary-macroadenoma": "Clinical or pathologic image illustrating pituitary macroadenoma",
   "pneumoconiosis": "Clinical or pathologic image illustrating pneumoconiosis",
+  "aspiration-pneumonitis":
+    "Aspiration pneumonitis — bilateral dependent infiltrates from chemical lung injury after gastric contents aspiration",
   "pneumonia": "Clinical or pathologic image illustrating pneumonia",
   "postherpetic-neuralgia": "Dermatomal herpes zoster rash — acute shingles preceding postherpetic neuralgia",
   "premenstrual-dysphoric-disorder": "Clinical or pathologic image illustrating premenstrual dysphoric disorder",
@@ -1331,6 +1399,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "primary-sclerosing-cholangitis": "Clinical or pathologic image illustrating primary sclerosing cholangitis",
   "prolactinoma": "Clinical or pathologic image illustrating prolactinoma",
   "psoriasis": "Clinical or pathologic image illustrating psoriasis",
+  "pseudodementia":
+    "Historical portrait of a patient with acute melancholia, illustrating depressive cognitive impairment",
   "psychotic-mood-disorder": "Clinical or pathologic image illustrating psychotic mood disorder",
   "ptsd": "Clinical or pathologic image illustrating ptsd",
   "pulmonary-embolism": "Clinical or pathologic image illustrating pulmonary embolism",
@@ -1369,6 +1439,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "systemic-lupus-erythematosus": "Clinical or pathologic image illustrating systemic lupus erythematosus",
   "systemic-sclerosis": "Clinical or pathologic image illustrating systemic sclerosis",
   "tension-pneumothorax": "Clinical or pathologic image illustrating tension pneumothorax",
+  "tay-sachs-disease":
+    "Tay-Sachs disease — cherry-red macula from foveal sparing over pale swollen retina in GM2 gangliosidosis",
   "tetralogy-of-fallot": "Clinical or pathologic image illustrating tetralogy of fallot",
   "thromboangiitis-obliterans": "Clinical or pathologic image illustrating thromboangiitis obliterans",
   "transient-ischemic-attack": "Clinical or pathologic image illustrating transient ischemic attack",

@@ -14,6 +14,8 @@ import opticChiasm from "../media/images/organs/optic-chiasm.png?url";
 import rightAtrium from "../media/images/organs/right-atrium.png?url";
 import cristaTerminalis from "../media/images/organs/crista-terminalis.png?url";
 import caudate from "../media/images/organs/caudate.png?url";
+import caudaEquina from "../media/images/organs/cauda-equina.png?url";
+import mammillaryBodies from "../media/images/organs/mammillary-bodies.jpg?url";
 import papillaryMuscle from "../media/images/organs/papillary-muscle.png?url";
 import putamen from "../media/images/organs/putamen.png?url";
 import medianSulcusOfTheTongue from "../media/images/organs/median-sulcus-of-the-tongue.jpg?url";
@@ -36,6 +38,8 @@ export type OrganImageId = Extract<
   | "right-atrium"
   | "crista-terminalis"
   | "caudate"
+  | "cauda-equina"
+  | "mammillary-bodies"
   | "papillary-muscle"
   | "putamen"
   | "median-sulcus-of-the-tongue"
@@ -63,6 +67,8 @@ export const ORGAN_IMAGES: Partial<Record<OrganImageId, string>> = {
   "right-atrium": extensionAssetUrl(rightAtrium),
   "crista-terminalis": extensionAssetUrl(cristaTerminalis),
   caudate: extensionAssetUrl(caudate),
+  "cauda-equina": extensionAssetUrl(caudaEquina),
+  "mammillary-bodies": extensionAssetUrl(mammillaryBodies),
   "papillary-muscle": extensionAssetUrl(papillaryMuscle),
   putamen: extensionAssetUrl(putamen),
   "median-sulcus-of-the-tongue": extensionAssetUrl(medianSulcusOfTheTongue),
@@ -126,6 +132,15 @@ export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Overview of reward structures in the human brain.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Overview_of_reward_structures_in_the_human_brain.jpg",
   },
+  "cauda-equina": {
+    label: "Wikimedia Commons (Gray662.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Gray662.png",
+  },
+  "mammillary-bodies": {
+    label:
+      "Wikimedia Commons (Human brain left midsagitttal view closeup description 2.JPG)",
+    url: "https://commons.wikimedia.org/wiki/File:Human_brain_left_midsagitttal_view_closeup_description_2.JPG",
+  },
   "papillary-muscle": {
     label: "Wikimedia Commons (Chordae tendineae spuriae of left ventricle.png)",
     url: "https://commons.wikimedia.org/wiki/File:Chordae_tendineae_spuriae_of_left_ventricle.png",
@@ -180,6 +195,10 @@ export const ORGAN_IMAGE_CAPTIONS: Partial<Record<OrganImageId, string>> = {
     "Crista terminalis — internal ridge separating smooth sinus venarum from trabeculated right atrial appendage",
   caudate:
     "Caudate nucleus — C-shaped dorsal striatum wrapping the lateral ventricle; degenerates in Huntington disease",
+  "cauda-equina":
+    "Cauda equina — lumbosacral nerve roots below the conus medullaris resembling a horse's tail within the thecal sac",
+  "mammillary-bodies":
+    "Midsagittal brain — mammillary bodies on the ventral hypothalamus; injured in Wernicke-Korsakoff syndrome",
   "papillary-muscle":
     "Papillary muscles and chordae tendineae anchoring atrioventricular valve leaflets in the left ventricle",
   putamen:

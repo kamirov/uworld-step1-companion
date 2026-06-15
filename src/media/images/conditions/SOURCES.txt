@@ -371,6 +371,10 @@ cerebral-contusion.jpg
   Source: Wikimedia Commons — Brain trauma CT.jpg
   Page: https://commons.wikimedia.org/wiki/File:Brain_trauma_CT.jpg
 
+traumatic-brain-injury.jpg
+  Source: Wikimedia Commons — Brain trauma CT.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Brain_trauma_CT.jpg
+
 atrial-tachycardia.svg
   Source: Wikimedia Commons — Multifocal Atrial Tachycardia.svg
   Page: https://commons.wikimedia.org/wiki/File:Multifocal_Atrial_Tachycardia.svg
@@ -634,6 +638,17 @@ alpha-1-antitrypsin-deficiency.jpg
   Download: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Alpha-1_antitrypsin_deficiency.PAS_Diastase.jpg/250px-Alpha-1_antitrypsin_deficiency.PAS_Diastase.jpg
   Description: PAS-diastase liver biopsy showing diastase-resistant hepatocyte globules
 
+alzheimer-disease.jpg
+  Source: Wikimedia Commons — Histopathology of Alzheimer's disease.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Histopathology_of_Alzheimer%27s_disease.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Histopathology_of_Alzheimer%27s_disease.jpg?width=960
+
+c3-deficiency.png
+  Source: Wikimedia Commons — Complement pathway.png
+  Page: https://commons.wikimedia.org/wiki/File:Complement_pathway.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Complement_pathway.png?width=960
+  Attribution: NIH public domain
+
 spherocytosis.jpg
   Source: Wikimedia Commons — Hereditary Spherocytosis smear 2010-03-17.JPG
   Page: https://commons.wikimedia.org/wiki/File:Hereditary_Spherocytosis_smear_2010-03-17.JPG
@@ -703,3 +718,41 @@ volvulus.jpg
 malrotation.jpg
   Source: Wikimedia Commons — Depiction of the Ladd's band caused by bowel malrotation.jpg
   Page: https://commons.wikimedia.org/wiki/File:Depiction_of_the_Ladd%E2%80%99s_band_caused_by_bowel_malrotation.jpg
+
+lyme-disease.jpg
+  Source: Wikimedia Commons — lyme-disease.jpg
+  Description: Erythema migrans bull's-eye rash of early localized Lyme disease
+  Page: https://commons.wikimedia.org/wiki/File:lyme-disease.jpg
+
+pseudodementia.jpg
+  Source: Wellcome Collection — Woman suffering from acute melancholia; H. Clarke, 1869
+  Author: Henry Clarke (attributed)
+  Description: Historical portrait of a patient with acute melancholia
+  License: Creative Commons Attribution 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:Woman_suffering_from_acute_melancholia;_H._Clarke,_1869_Wellcome_L0018945.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Woman_suffering_from_acute_melancholia;_H._Clarke,_1869_Wellcome_L0018945.jpg?width=1280
+  Resized to 1280 px width for popover display.
+
+ectopic-pregnancy.png
+  Source: Wikimedia Commons — Ectopicleftmass.PNG
+  Author: James Heilman, MD
+  Description: Ectopic pregnancy adjacent to the left ovary with extrauterine gestational sac
+  License: Creative Commons Attribution-Share Alike 3.0 Unported
+  Page: https://commons.wikimedia.org/wiki/File:Ectopicleftmass.PNG
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Ectopicleftmass.PNG?width=1280
+  Resized to 1280 px width for popover display.
+
+minimal-change-disease.svg
+  Source: Wikimedia Commons — Minimal Change Disease Pathology Diagram.svg
+  Description: Pathology diagram comparing normal glomerulus with minimal change disease foot-process effacement
+  Page: https://commons.wikimedia.org/wiki/File:Minimal_Change_Disease_Pathology_Diagram.svg
+
+tay-sachs-disease.jpg
+  Source: Wikimedia Commons — Tay-sachsUMich.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Tay-sachsUMich.jpg
+  Description: Cherry-red macula in Tay-Sachs disease — foveal sparing over pale swollen retina
+
+aspiration-pneumonitis.jpg
+  Source: Wikimedia Commons — Aspiration pneumonia (5613145721).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Aspiration_pneumonia_(5613145721).jpg
+  Description: Chest radiograph showing bilateral infiltrates after aspiration event

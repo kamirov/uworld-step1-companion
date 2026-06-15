@@ -1898,5 +1898,10 @@
     "title": "Local copy pathogenesis/stocking-glove.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
     "query": "fallback"
+  },
+  "conditions/hemothorax.jpg": {
+    "title": "File:Pneumothorax hemothorax pneumomediastinum contusion.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Pneumothorax_hemothorax_pneumomediastinum_contusion.JPG",
+    "query": "retry"
   }
 }

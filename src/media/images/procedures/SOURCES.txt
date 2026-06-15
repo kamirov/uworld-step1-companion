@@ -17,3 +17,18 @@ methenamine-silver-stain.jpg
   Description: Methenamine silver stain of Histoplasma capsulatum yeast in tissue (GMS stain example)
   Page: https://phil.cdc.gov/Details.aspx?pid=4223
 
+sellick-maneuver.jpg
+  Source: Wikimedia Commons — Larynx detailed.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Larynx_detailed.jpg
+  Description: Laryngeal anatomy showing cricoid cartilage landmark for Sellick maneuver
+
+capnography.png
+  Source: Wikimedia Commons — Capnogram.png
+  Page: https://commons.wikimedia.org/wiki/File:Capnogram.png
+  Description: Normal capnogram waveform with end-tidal CO₂ plateau
+
+percutaneous-coronary-intervention.png
+  Source: Wikimedia Commons — Blausen 0034 Angioplasty Stent 01.png
+  Page: https://commons.wikimedia.org/wiki/File:Blausen_0034_Angioplasty_Stent_01.png
+  Description: Coronary balloon angioplasty with stent deployment
+

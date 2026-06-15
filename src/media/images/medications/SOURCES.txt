@@ -245,3 +245,41 @@ pregabalin.png
   Source: Wikimedia Commons — Pregabalin ball-and-stick.png
   Page: https://commons.wikimedia.org/wiki/File:Pregabalin_ball-and-stick.png
 
+succinylcholine.svg
+  Source: Wikimedia Commons — Suxamethonium Structure.svg
+  Page: https://commons.wikimedia.org/wiki/File:Suxamethonium_Structure.svg
+  Description: Chemical structure of succinylcholine (suxamethonium)
+
+propofol.svg
+  Source: Wikimedia Commons — Propofol.svg
+  Page: https://commons.wikimedia.org/wiki/File:Propofol.svg
+  Description: Chemical structure of propofol (2,6-diisopropylphenol)
+
+etomidate.svg
+  Source: Wikimedia Commons — Etomidate structure.svg
+  Page: https://commons.wikimedia.org/wiki/File:Etomidate_structure.svg
+  Description: Chemical structure of etomidate
+
+misoprostol.jpg
+  Source: Wikimedia Commons — Cytotec photo.jpg
+  Author: Guineapigmom (Flickr)
+  Description: Cytotec tablets containing 200 mcg misoprostol
+  Page: https://commons.wikimedia.org/wiki/File:Cytotec_photo.jpg
+
+sglt2-inhibitor.png
+  Source: Wikimedia Commons — SGLT2.png
+  Author: Goultard59
+  Description: Crystal structure visualization of SGLT2 protein (PDB 7VSI)
+  Page: https://commons.wikimedia.org/wiki/File:SGLT2.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/SGLT2.png?width=1280
+  Resized to 1280 px width for popover display.
+
+glp-1-agonist.jpg
+  Source: Wikimedia Commons — Wegovy - Semaglutide.jpg
+  Author: Nelson R. de Lima Filho
+  Description: Four dose strengths of Wegovy semaglutide injection pens
+  License: Creative Commons Attribution-Share Alike 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:Wegovy_-_Semaglutide.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Wegovy_-_Semaglutide.jpg?width=1280
+  Resized to 1280 px width for popover display.
+

@@ -18,6 +18,11 @@ import stockingGlove from "../media/images/pathogenesis/stocking-glove.jpg?url";
 import toxidrome from "../media/images/pathogenesis/toxidrome.png?url";
 import glycation from "../media/images/pathogenesis/glycation.png?url";
 import vasaNervorum from "../media/images/pathogenesis/vasa-nervorum.jpg?url";
+import clottingCascade from "../media/images/pathogenesis/clotting-cascade.png?url";
+import protease from "../media/images/pathogenesis/protease.png?url";
+import pyogenicInfection from "../media/images/pathogenesis/pyogenic-infection.jpg?url";
+import robertsonianTranslocation from "../media/images/pathogenesis/robertsonian-translocation.png?url";
+import reentrantCircuit from "../media/images/pathogenesis/reentrant-circuit.png?url";
 
 export type PathogenesisImageId = Extract<
   PathogenesisEntry["id"],
@@ -38,6 +43,11 @@ export type PathogenesisImageId = Extract<
   | "toxidrome"
   | "glycation"
   | "vasa-nervorum"
+  | "clotting-cascade"
+  | "protease"
+  | "pyogenic-infection"
+  | "robertsonian-translocation"
+  | "reentrant-circuit"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -65,6 +75,11 @@ export const PATHOGENESIS_IMAGES: Partial<
   toxidrome: extensionAssetUrl(toxidrome),
   glycation: extensionAssetUrl(glycation),
   "vasa-nervorum": extensionAssetUrl(vasaNervorum),
+  "clotting-cascade": extensionAssetUrl(clottingCascade),
+  protease: extensionAssetUrl(protease),
+  "pyogenic-infection": extensionAssetUrl(pyogenicInfection),
+  "robertsonian-translocation": extensionAssetUrl(robertsonianTranslocation),
+  "reentrant-circuit": extensionAssetUrl(reentrantCircuit),
 };
 
 export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
@@ -140,6 +155,27 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Diabetic Neuropathy Device pic.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
   },
+  "clotting-cascade": {
+    label: "Wikimedia Commons (Coagulation cascade.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Coagulation_cascade.png",
+  },
+  protease: {
+    label: "Wikimedia Commons (Aspartyl protease mechanism.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Aspartyl_protease_mechanism.png",
+  },
+  "pyogenic-infection": {
+    label: "Wikimedia Commons (Abscess.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Abscess.jpg",
+  },
+  "robertsonian-translocation": {
+    label:
+      "Wikimedia Commons (Down syndrome translocation up.png), David Perez derivative, CC BY-SA 3.0",
+    url: "https://commons.wikimedia.org/wiki/File:Down_syndrome_translocation_up.png",
+  },
+  "reentrant-circuit": {
+    label: "Wikimedia Commons (Wpw2 (CardioNetworks ECGpedia).svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Wpw2_(CardioNetworks_ECGpedia).svg",
+  },
 };
 
 export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
@@ -179,6 +215,16 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Nonenzymatic glycation — HbA1c reflects glucose-bound hemoglobin and chronic hyperglycemia exposure",
   "vasa-nervorum":
     "Microvascular ischemia of vasa nervorum — key mechanism in diabetic peripheral neuropathy",
+  "clotting-cascade":
+    "Coagulation cascade — intrinsic, extrinsic, and common pathways converge on thrombin and fibrin formation",
+  protease:
+    "Aspartyl protease catalytic mechanism — peptide bond hydrolysis by activated water at the active site",
+  "pyogenic-infection":
+    "Cutaneous abscess with surrounding erythema — classic suppurative pyogenic bacterial infection",
+  "robertsonian-translocation":
+    "Robertsonian translocation — fusion of acrocentric chromosome long arms (14;21) producing balanced carrier karyotype",
+  "reentrant-circuit":
+    "Wolff-Parkinson-White pre-excitation — accessory pathway enables atrioventricular reentrant tachycardia (AVRT) circuit",
 };
 
 export function getPathogenesisImageForId(id: string): string | undefined {

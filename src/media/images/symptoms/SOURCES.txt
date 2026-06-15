@@ -309,6 +309,12 @@ photophobia.jpg
   Page: https://commons.wikimedia.org/wiki/File:Iritis.jpg
   Download: https://upload.wikimedia.org/wikipedia/commons/e/ec/Iritis.jpg
 
+pinpoint-pupils.png
+  Source: Wikimedia Commons — Mydriasis and miosis.png
+  Page: https://commons.wikimedia.org/wiki/File:Mydriasis_and_miosis.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Mydriasis_and_miosis.png?width=960
+  Attribution: JohnPaulCook, CC0
+
 hypotonia.jpg
   Source: Wikimedia Commons — Nervous and mental diseases (1911) (14591720128).jpg
   Page: https://commons.wikimedia.org/wiki/File:Nervous_and_mental_diseases_(1911)_(14591720128).jpg
@@ -420,3 +426,55 @@ allodynia.png
 formication.svg
   Source: Wikimedia Commons — Kokain - Cocaine.svg
   Page: https://commons.wikimedia.org/wiki/File:Kokain_-_Cocaine.svg
+
+cheyne-stokes-respiration.svg
+  Source: Wikimedia Commons — Cheyne-Stokes cs.svg
+  Page: https://commons.wikimedia.org/wiki/File:Cheyne-Stokes_cs.svg
+  Description: Waveform of Cheyne-Stokes respiration showing crescendo-decrescendo cycles with apneic pauses
+
+hypercapnia.svg
+  Source: Wikimedia Commons — Blood gas test hariadhi.svg
+  Page: https://commons.wikimedia.org/wiki/File:Blood_gas_test_hariadhi.svg
+  Description: Arterial blood gas sampling and analysis for PaCO₂ measurement
+
+oligomenorrhea.png
+  Source: Wikimedia Commons — Hormones estradiol, progesterone, LH and FSH during menstrual cycle.png
+  Page: https://commons.wikimedia.org/wiki/File:Hormones_estradiol,_progesterone,_LH_and_FSH_during_menstrual_cycle.png
+  Description: Hormone levels across the normal menstrual cycle — relevant to anovulatory oligomenorrhea
+
+hirsutism.png
+  Source: Wikimedia Commons — PMC4103002 ircmj-16-9410-g001.png
+  Page: https://commons.wikimedia.org/wiki/File:PMC4103002_ircmj-16-9410-g001.png
+  Description: Severe hirsutism in a 17-year-old female with polycystic ovary syndrome
+
+androgenic-alopecia.png
+  Source: Wikimedia Commons — Ludwid scale for female pattern baldness.png
+  Page: https://commons.wikimedia.org/wiki/File:Ludwid_scale_for_female_pattern_baldness.png
+  Description: Ludwig classification grades of female pattern androgenetic alopecia
+
+central-adiposity.svg
+  Source: Wikimedia Commons — Waist to hip ratio-en.svg
+  Page: https://commons.wikimedia.org/wiki/File:Waist_to_hip_ratio-en.svg
+  Description: Waist-to-hip ratio silhouettes comparing apple (central) and pear (gynoid) fat distribution
+
+anosmia.png
+  Source: Wikimedia Commons — Gray771.png
+  Page: https://commons.wikimedia.org/wiki/File:Gray771.png
+  Description: Olfactory nerve (CN I) anatomy
+
+decorticate-posturing.jpg
+  Source: Wikimedia Commons — Decorticate.PNG (pending); interim local copy from Decerebrate.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Decorticate.PNG
+  Reference: https://commons.wikimedia.org/wiki/File:Decerebrate.jpg
+
+decerebrate-posturing.jpg
+  Source: Wikimedia Commons — Decerebrate.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Decerebrate.jpg
+
+otorrhea.jpg
+  Source: Local copy from conditions/basilar-skull-fracture.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Battles-sign.jpg
+
+raccoon-eyes.jpg
+  Source: Wikimedia Commons — Bilateral periorbital ecchymosis (raccoon eyes).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Bilateral_periorbital_ecchymosis_(raccoon_eyes).jpg

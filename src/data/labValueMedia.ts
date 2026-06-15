@@ -14,6 +14,8 @@ import erythrocyteG6pd from "../media/images/lab-values/erythrocyte-glucose-6-ph
 import fiveHiaa from "../media/images/lab-values/5-hydroxyindoleacetic-acid.svg?url";
 import homovanillicAcid from "../media/images/lab-values/homovanillic-acid.png?url";
 import paco2BloodGasAnalyzer from "../media/images/lab-values/paco2-blood-gas-analyzer.jpg?url";
+import lipoproteinA from "../media/images/lab-values/lipoprotein-a.jpg?url";
+import apolipoproteinB from "../media/images/lab-values/apolipoprotein-b.png?url";
 
 export type LabValueImageId = Extract<
   LabValueEntry["id"],
@@ -30,6 +32,8 @@ export type LabValueImageId = Extract<
   | "5-hydroxyindoleacetic-acid"
   | "homovanillic-acid"
   | "paco2"
+  | "lpa"
+  | "apob"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -52,6 +56,8 @@ export const LAB_VALUE_IMAGES: Partial<Record<LabValueImageId, string>> = {
   "5-hydroxyindoleacetic-acid": extensionAssetUrl(fiveHiaa),
   "homovanillic-acid": extensionAssetUrl(homovanillicAcid),
   paco2: extensionAssetUrl(paco2BloodGasAnalyzer),
+  lpa: extensionAssetUrl(lipoproteinA),
+  apob: extensionAssetUrl(apolipoproteinB),
 };
 
 export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
@@ -112,6 +118,15 @@ export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
       "Wikimedia Commons (Cobas b 121 Measurement Chamber (detail).jpg), J3D3, CC BY-SA 3.0",
     url: "https://commons.wikimedia.org/wiki/File:Cobas_b_121_Measurement_Chamber_(detail).jpg",
   },
+  lpa: {
+    label:
+      "Wikimedia Commons (Metabolism of lipoproteins.jpg), Sander kersten, CC BY-SA 4.0",
+    url: "https://commons.wikimedia.org/wiki/File:Metabolism_of_lipoproteins.jpg",
+  },
+  apob: {
+    label: "Wikimedia Commons (Apobgene.PNG), Sryuu",
+    url: "https://commons.wikimedia.org/wiki/File:Apobgene.PNG",
+  },
 };
 
 export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
@@ -143,6 +158,10 @@ export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
     "HVA — dopamine metabolite; ↑ in neuroblastoma with VMA",
   paco2:
     "Blood gas analyzer measurement chamber with pCO2 electrode — PaCO2 reflects alveolar ventilation and respiratory acid-base status",
+  lpa:
+    "Exogenous and endogenous lipoprotein metabolism — Lp(a) is an LDL-like particle with covalently bound apolipoprotein(a)",
+  apob:
+    "APOB gene expression in liver (ApoB-100 on VLDL/LDL) and intestine (ApoB-48 on chylomicrons)",
 };
 
 export function getLabValueImageForId(id: string): string | undefined {

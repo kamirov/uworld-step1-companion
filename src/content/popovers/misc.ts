@@ -6,6 +6,11 @@ import {
 } from "../../data/clinicalStrategyMedia";
 import { getNephronSegmentById } from "../../data/nephron";
 import { getProcedureById } from "../../data/procedures";
+import {
+  getProcedureImageAttributionForId,
+  getProcedureImageCaptionForId,
+  getProcedureImageForId,
+} from "../../data/procedureMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
@@ -44,8 +49,11 @@ export function renderProcedurePopover(
   const procedure = getProcedureById(procedureId);
   if (!procedure || !popover) return false;
 
-  popover.classList.add("usmle-organ-popover--rich");
-  popover.innerHTML = renderRichPopoverContent(
+  const imageSrc = getProcedureImageForId(procedureId);
+  const imageCaption = getProcedureImageCaptionForId(procedureId);
+  const imageAttribution = getProcedureImageAttributionForId(procedureId);
+
+  const bodyContent = renderRichPopoverContent(
     `
     ${renderPopoverTitle(procedure.name, "procedure", procedure.etymology)}
     <div class="usmle-organ-popover__meaning">${procedure.definition}</div>
@@ -58,6 +66,24 @@ export function renderProcedurePopover(
     ${procedure.pediatrics ? renderPediatricsSection(procedure.pediatrics) : ""}
   `,
   );
+
+  popover.classList.add("usmle-organ-popover--rich");
+  if (imageSrc && imageCaption && imageAttribution) {
+    popover.classList.add("usmle-organ-popover--with-media");
+    popover.innerHTML = `
+      <div class="usmle-organ-popover__layout">
+        <div class="usmle-organ-popover__body">${bodyContent}</div>
+        ${renderPopoverMediaBlock({
+          src: imageSrc,
+          alt: `${procedure.name} clinical photo`,
+          caption: imageCaption,
+          attribution: imageAttribution,
+        })}
+      </div>
+    `;
+  } else {
+    popover.innerHTML = bodyContent;
+  }
   return true;
 }
 

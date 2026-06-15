@@ -2846,6 +2846,101 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
   },
   {
+    id: "lpa",
+    name: "Lipoprotein(a)",
+    etymology:
+      "Lp(a) = lipoprotein + (a) for attached apolipoprotein(a) moiety",
+    aliases: [
+      "lpa",
+      "lp(a)",
+      "lp (a)",
+      "lipoprotein a",
+      "lipoprotein(a)",
+      "lipoprotein (a)",
+      "lipoproteins a",
+      "lipoproteins(a)",
+      "lipoprotein-a",
+    ],
+    measures:
+      "Circulating lipoprotein particle with an LDL-like core (apoB-100) covalently linked to apolipoprotein(a); genetically determined independent ASCVD risk marker.",
+    normalRange:
+      "<30 mg/dL (<75 nmol/L) desirable; levels largely set by LPA gene kringle IV-2 repeat number",
+    increasedCauses: [
+      "Genetic elevation (LPA gene — most cases)",
+      "Familial hypercholesterolemia (often co-elevated)",
+      "Chronic kidney disease",
+      "Hypothyroidism",
+      "Postmenopausal state",
+      "Uncontrolled diabetes",
+    ],
+    decreasedCauses: [
+      "Estrogen therapy (modest ↓)",
+      "Severe liver disease (↓ synthesis)",
+      "Niacin or PCSK9 inhibitor therapy (variable ↓)",
+    ],
+    boardsPearls: [
+      "Independent ASCVD risk factor — not fully captured by LDL-C alone",
+      "~90% genetically determined; kringle IV type 2 repeat number inversely correlates with Lp(a) level",
+      "Structurally: LDL-like particle + disulfide-linked apo(a) resembling plasminogen",
+      "May promote atherothrombosis via LDL-like uptake and competition with plasminogen/fibrinolysis",
+      "Statins do not reliably lower Lp(a); niacin and PCSK9 inhibitors can lower levels",
+      "Peds: elevated Lp(a) in children with FH or family history of premature ASCVD — screen relatives",
+    ],
+    pairWith: [
+      "↑ Lp(a) + premature CAD in family → genetic ASCVD risk beyond LDL",
+      "↑ Lp(a) + ↑ LDL + tendon xanthomas → familial hypercholesterolemia workup",
+      "↑ Lp(a) + CKD → additive cardiovascular risk",
+    ],
+  },
+  {
+    id: "apob",
+    name: "Apolipoprotein B",
+    etymology:
+      "apo = detached/separate + lipoprotein + B (second major apolipoprotein class)",
+    aliases: [
+      "apob",
+      "apo b",
+      "apo-b",
+      "apob-100",
+      "apo b-100",
+      "apo b 100",
+      "apob100",
+      "apolipoprotein b",
+      "apolipoprotein b-100",
+      "apolipoprotein b 100",
+      "apolipoprotein b100",
+    ],
+    measures:
+      "Structural apolipoprotein on atherogenic lipoprotein particles; one ApoB molecule per VLDL, IDL, or LDL particle — serves as an atherogenic particle-count marker.",
+    normalRange:
+      "Optimal <90 mg/dL; <80 mg/dL for high ASCVD risk (guideline-dependent)",
+    increasedCauses: [
+      "Familial hypercholesterolemia (ApoB-100 mutations)",
+      "Metabolic syndrome, type 2 diabetes, obesity",
+      "Hypothyroidism, nephrotic syndrome",
+      "High saturated-fat diet",
+      "Familial combined hyperlipidemia",
+    ],
+    decreasedCauses: [
+      "Abetalipoproteinemia (MTP mutation — absent chylomicrons/VLDL)",
+      "Malnutrition, severe liver disease",
+      "Statin, ezetimibe, or PCSK9 inhibitor therapy",
+    ],
+    boardsPearls: [
+      "ApoB-100 on hepatic VLDL → IDL → LDL; ApoB-48 on intestinal chylomicrons",
+      "One ApoB per atherogenic particle — ApoB reflects particle number better than LDL-C when discordant",
+      "Homozygous FH can involve LDLR, ApoB-100, or PCSK9 defects",
+      "Abetalipoproteinemia: MTP defect → fat malabsorption, acanthocytes, vitamin E deficiency, ataxia",
+      "Hypobetalipoproteinemia: truncated ApoB → low LDL and ApoB, usually benign",
+      "Peds: abetalipoproteinemia presents in infancy with steatorrhea and failure to thrive",
+    ],
+    pairWith: [
+      "↑ ApoB + ↑ LDL + tendon xanthomas → familial hypercholesterolemia",
+      "Normal LDL-C but ↑ ApoB → small dense LDL / high particle number",
+      "Very low ApoB + steatorrhea + neurologic signs → abetalipoproteinemia",
+    ],
+  },
+  {
     id: "vldl",
     name: "VLDL Cholesterol",
     etymology: "VLDL = very-low-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",

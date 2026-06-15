@@ -88,3 +88,13 @@ meninges.svg
 arachnoid-villi.jpg
   Source: Wikimedia Commons — Pacchionische Granulation mit kleiner Enzephalozele 60M - MR - 001.jpg
   Page: https://commons.wikimedia.org/wiki/File:Pacchionische_Granulation_mit_kleiner_Enzephalozele_60M_-_MR_-_001.jpg
+
+mammillary-bodies.jpg
+  Source: Wikimedia Commons — Human brain left midsagitttal view closeup description 2.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Human_brain_left_midsagitttal_view_closeup_description_2.JPG
+  Description: Midsagittal brain with mammillary bodies labeled on ventral hypothalamus
+
+cauda-equina.png
+  Source: Wikimedia Commons — Gray662.png
+  Page: https://commons.wikimedia.org/wiki/File:Gray662.png
+  Description: Cauda equina — lumbosacral nerve roots below the conus medullaris (Gray's anatomy)
