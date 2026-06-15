@@ -1,7 +1,7 @@
 import type { MediaAttribution } from "./media";
 import type { ConditionEntry } from "./conditions";
 
-import hydroxylase21Deficiency from "../media/images/conditions/21-hydroxylase-deficiency.png?url";
+import 21HydroxylaseDeficiency from "../media/images/conditions/21-hydroxylase-deficiency.png?url";
 import abscess from "../media/images/conditions/abscess.jpg?url";
 import achalasia from "../media/images/conditions/achalasia.jpg?url";
 import acromegaly from "../media/images/conditions/acromegaly.jpg?url";
@@ -632,7 +632,7 @@ function extensionAssetUrl(path: string): string {
 
 /** See src/media/images/conditions/SOURCES.txt */
 export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
-  "21-hydroxylase-deficiency": extensionAssetUrl(hydroxylase21Deficiency),
+  "21-hydroxylase-deficiency": extensionAssetUrl(21HydroxylaseDeficiency),
   "abscess": extensionAssetUrl(abscess),
   "achalasia": extensionAssetUrl(achalasia),
   "acromegaly": extensionAssetUrl(acromegaly),
@@ -1168,10 +1168,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "pericarditis": { label: "Wikimedia Commons (PericarditisMyocarditis.jpg)", url: "https://commons.wikimedia.org/wiki/File:PericarditisMyocarditis.jpg" },
   "peripheral-artery-disease": { label: "Wikimedia Commons (Peripheral artery disease.svg)", url: "https://commons.wikimedia.org/wiki/File:Peripheral_artery_disease.svg" },
   "pheochromocytoma": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pheochromocytoma.jpg" },
-  "piriformis-syndrome": {
-    label: "Wikimedia Commons (Gray1243.png)",
-    url: "https://commons.wikimedia.org/wiki/File:Gray1243.png",
-  },
+  "piriformis-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:piriformis-syndrome.png" },
   "pituitary-apoplexy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pituitary-apoplexy.jpg" },
   "pituitary-macroadenoma": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pituitary-macroadenoma.jpg" },
   "pneumoconiosis": { label: "Wikimedia Commons (X-ray of slate pneumoconiosis sufferer's lungs. Wellcome L0029726.jpg)", url: "https://commons.wikimedia.org/wiki/File:X-ray_of_slate_pneumoconiosis_sufferer's_lungs._Wellcome_L0029726.jpg" },
@@ -1486,8 +1483,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "pericarditis": "PericarditisMyocarditis",
   "peripheral-artery-disease": "Peripheral artery disease",
   "pheochromocytoma": "CT image showing adrenal pheochromocytoma in a symptomatic patient",
-  "piriformis-syndrome":
-    "Hip landmarks — greater trochanter and Nélaton's line; piriformis inserts on greater trochanter near sciatic nerve",
+  "piriformis-syndrome": "Piriformis Syndrome",
   "pituitary-apoplexy": "Pituitary MRI sellar mass — substrate for hemorrhagic pituitary apoplexy",
   "pituitary-macroadenoma": "Prolactinoma on MRI",
   "pneumoconiosis": "X-ray of slate pneumoconiosis sufferer's lungs. Wellcome L0029726",

@@ -167,10 +167,7 @@ export const MUSCULOSKELETAL_IMAGE_ATTRIBUTIONS: Partial<
   "pelvic-floor": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pelvic-floor.png" },
   "peroneal-nerve-compression": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:peroneal-nerve-compression.jpg" },
   "phrenic-nerve": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:phrenic-nerve.png" },
-  "piriformis": {
-    label: "Wikimedia Commons (Gluteus maximus.png)",
-    url: "https://commons.wikimedia.org/wiki/File:Gluteus_maximus.png",
-  },
+  "piriformis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:piriformis.png" },
   "recurrent-laryngeal-nerve": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:recurrent-laryngeal-nerve.png" },
   "rotator-cuff": { label: "Wikimedia Commons (Rotator cuff injury.svg)", url: "https://commons.wikimedia.org/wiki/File:Rotator_cuff_injury.svg" },
   "s2-s4-sacral-segments": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:s2-s4-sacral-segments.png" },
@@ -214,8 +211,7 @@ export const MUSCULOSKELETAL_IMAGE_CAPTIONS: Partial<Record<MUSCULOSKELETALImage
   "pelvic-floor": "Internal view of left levator ani, a major pelvic floor muscle",
   "peroneal-nerve-compression": "Foot drop from common peroneal nerve palsy",
   "phrenic-nerve": "Position of esophagus, trachea, heart, and phrenic nerves",
-  "piriformis":
-    "Posterior gluteal region — gluteus maximus overlies deep external rotators including piriformis at the greater sciatic foramen",
+  "piriformis": "Piriformis",
   "recurrent-laryngeal-nerve": "Laryngeal muscles and nerves",
   "rotator-cuff": "Rotator cuff injury",
   "s2-s4-sacral-segments": "Plan of sacral and pudendal plexuses showing S2, S3, and S4 branches",

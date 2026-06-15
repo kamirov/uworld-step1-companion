@@ -37,12 +37,6 @@
   },
   {
     "category": "symptoms",
-    "entry_id": "insomnia",
-    "filename": "insomnia.svg",
-    "query": "insomnia sleeplessness"
-  },
-  {
-    "category": "symptoms",
     "entry_id": "internuclear-ophthalmoplegia",
     "filename": "internuclear-ophthalmoplegia.svg",
     "query": "internuclear ophthalmoplegia MLF"
@@ -70,11 +64,5 @@
     "entry_id": "ophthalmoplegia",
     "filename": "ophthalmoplegia.svg",
     "query": "ophthalmoplegia cranial nerve palsy"
-  },
-  {
-    "category": "symptoms",
-    "entry_id": "vertigo",
-    "filename": "vertigo.svg",
-    "query": "benign paroxysmal positional vertigo"
   }
 ]
