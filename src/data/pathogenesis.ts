@@ -7327,6 +7327,97 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Neonatal hemorrhagic disease from vitamin K deficiency causes ↑ PT from impaired factor VII synthesis; prophylactic IM vitamin K at birth prevents VKDB.",
   },
   {
+    id: "virchow-triad",
+    name: "Virchow Triad",
+    etymology:
+      "eponym: Rudolf Virchow (German pathologist) + Greek trias = group of three",
+    aliases: [
+      "virchow triad",
+      "virchow's triad",
+      "virchows triad",
+      "virchos triad",
+      "virchow triad of thrombosis",
+      "triad of virchow",
+      "virchow triad stasis",
+      "virchow triad hypercoagulability",
+      "virchow triad endothelial injury",
+      "three factors of virchow",
+    ],
+    definition:
+      "Framework for venous thrombosis pathogenesis — three interrelated contributors: venous stasis, endothelial injury, and hypercoagulability — any one or combination can precipitate deep vein thrombosis and pulmonary embolism.",
+    examples: [
+      "Stasis — prolonged immobilization, postoperative bed rest, long travel, heart failure, pregnancy compression of iliac veins",
+      "Endothelial injury — surgery, trauma, central venous catheters, prior DVT, vasculitis",
+      "Hypercoagulability — factor V Leiden, prothrombin G20210A, antiphospholipid syndrome, malignancy (Trousseau), OCP/estrogen, pregnancy, nephrotic syndrome (antithrombin loss)",
+      "Postoperative patient — stasis + endothelial injury + transient hypercoagulability → DVT/PE risk",
+      "Malignancy — hypercoagulable state with migratory superficial thrombophlebitis (Trousseau syndrome)",
+    ],
+    boardsPearls: [
+      "Virchow triad = stasis + endothelial injury + hypercoagulability → DVT and PE",
+      "All three need not be present — any component can tip balance toward thrombosis",
+      "Stasis: immobility, surgery, long flights — classic board vignette setup",
+      "Hypercoagulability: factor V Leiden, malignancy, OCP, pregnancy, antiphospholipid syndrome",
+      "Endothelial injury: trauma, catheter, orthopedic/ pelvic surgery",
+      "Also applied to arterial graft thrombosis and prosthetic surface thrombosis on boards",
+      "vs Virchow node — left supraclavicular metastasis (Troisier sign), unrelated eponym",
+    ],
+    distinguishFrom: [
+      "Virchow node — left supraclavicular lymph node metastasis from abdominal/thoracic cancer",
+      "Trousseau syndrome — malignancy-associated migratory thrombophlebitis (hypercoagulability manifestation)",
+      "Coagulation cascade — molecular enzymatic pathway; Virchow triad is clinical/pathophysiologic framework",
+      "Arterial thrombosis — platelet-rich clots on atherosclerotic plaque; Virchow triad classically taught for venous thrombosis",
+    ],
+    pediatrics:
+      "Children with central venous lines, malignancy, or congenital thrombophilia have hypercoagulability; neonatal renal vein thrombosis involves stasis and hypercoagulability in the newborn period.",
+  },
+  {
+    id: "iliofemoral-thrombosis",
+    name: "Iliofemoral Thrombosis",
+    etymology:
+      "Latin ilium = flank/hip bone + femur = thigh bone + Greek thrombos = clot",
+    aliases: [
+      "iliofemoral thrombosis",
+      "iliofemoral thromboses",
+      "iliofemoral",
+      "iliofemoral vein thrombosis",
+      "iliofemoral vein thromboses",
+      "iliofemoral veins",
+      "iliofemoral vein",
+      "iliofemoral dvt",
+      "iliofemoral deep vein thrombosis",
+      "proximal iliofemoral dvt",
+      "iliofemoral venous thrombosis",
+      "femoroiliac thrombosis",
+      "femoroiliac dvt",
+    ],
+    definition:
+      "Proximal deep vein thrombosis involving the iliac and/or common femoral veins — large clot burden with high risk of pulmonary embolism and post-thrombotic syndrome; may cause phlegmasia cerulea dolens when massive.",
+    examples: [
+      "Massive unilateral leg swelling extending to groin and thigh — iliofemoral DVT",
+      "PE source in ~90% of pulmonary emboli — often proximal (iliofemoral) rather than calf-only DVT",
+      "Phlegmasia cerulea dolens — severe iliofemoral thrombosis with cyanosis and threatened limb viability",
+      "Pregnancy — gravid uterus compresses left common iliac vein → left-sided iliofemoral stasis",
+      "May-Thurner syndrome — left iliac vein compressed by right iliac artery → iliofemoral DVT in young women",
+    ],
+    boardsPearls: [
+      "Iliofemoral = proximal DVT — higher PE risk than isolated calf DVT",
+      "Large clot burden → massive PE and RV strain more likely than small distal clot",
+      "Phlegmasia cerulea dolens — medical emergency; consider thrombolysis/thrombectomy",
+      "Left leg predilection in pregnancy (iliac vein compression)",
+      "Anticoagulation standard; catheter-directed therapy for selected massive proximal DVT",
+      "vs popliteal/calf DVT — distal; lower immediate PE risk but can propagate proximally",
+    ],
+    distinguishFrom: [
+      "Calf (distal) DVT — isolated popliteal or infrapopliteal; smaller embolic risk initially",
+      "Superficial thrombophlebitis — saphenous vein; not iliofemoral deep system unless extends to junction",
+      "Cellulitis — skin infection without venous noncompressibility on ultrasound",
+      "Lymphedema — chronic nonpitting edema without acute thrombotic presentation",
+      "Phlegmasia alba dolens — white leg from arterial spasm (historical); cerulea dolens is venous with cyanosis",
+    ],
+    pediatrics:
+      "Iliofemoral DVT is rare in children; consider May-Thurner anatomy, malignancy, or thrombophilia in adolescents with unprovoked proximal DVT.",
+  },
+  {
     id: "clotting-cascade",
     name: "Clotting Cascade",
     etymology:
