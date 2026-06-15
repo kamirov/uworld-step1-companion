@@ -3,6 +3,13 @@
   "name": "USMLE Study Tools",
   "version": "0.1.0",
   "description": "USMLE Step 1 study aids for medical question banks, references, journals, and communities.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "USMLE Study Tools"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -204,8 +211,12 @@
         "https://new.reddit.com/r/pathology",
         "https://new.reddit.com/r/pathology/*"
       ],
-      "js": ["src/content/index.ts"],
-      "css": ["src/styles/content.css"],
+      "js": [
+        "src/content/index.ts"
+      ],
+      "css": [
+        "src/styles/content.css"
+      ],
       "run_at": "document_idle"
     }
   ]

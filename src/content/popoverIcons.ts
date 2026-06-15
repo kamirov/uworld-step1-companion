@@ -1,69 +1,10 @@
+import { createElement } from "lucide";
 import {
-  Activity,
-  Atom,
-  AudioLines,
-  Bone,
-  CircleDot,
-  ClipboardList,
-  createElement,
-  Dna,
-  Droplets,
-  FlaskConical,
-  Gauge,
-  GitBranch,
-  HeartPulse,
-  Layers,
-  Lightbulb,
-  Microscope,
-  Pill,
-  Radio,
-  Stethoscope,
-  Syringe,
-  type IconNode,
-} from "lucide";
+  CATEGORY_ICONS,
+  type PopoverCategory,
+} from "../shared/categoryLegend";
 
-export type PopoverCategory =
-  | "organ"
-  | "heart-sound"
-  | "heart-murmur"
-  | "hemodynamic"
-  | "symptom"
-  | "medication"
-  | "lab"
-  | "nephron"
-  | "condition"
-  | "protein"
-  | "signaling"
-  | "ecg"
-  | "procedure"
-  | "clinical-strategy"
-  | "cell"
-  | "pathogenesis"
-  | "metabolism"
-  | "microbiology"
-  | "musculoskeletal";
-
-const CATEGORY_ICONS: Record<PopoverCategory, IconNode> = {
-  organ: Layers,
-  "heart-sound": HeartPulse,
-  "heart-murmur": AudioLines,
-  hemodynamic: Gauge,
-  symptom: Stethoscope,
-  medication: Pill,
-  lab: FlaskConical,
-  nephron: Droplets,
-  condition: ClipboardList,
-  protein: Dna,
-  signaling: Radio,
-  ecg: Activity,
-  procedure: Syringe,
-  "clinical-strategy": Lightbulb,
-  cell: CircleDot,
-  pathogenesis: GitBranch,
-  metabolism: Atom,
-  microbiology: Microscope,
-  musculoskeletal: Bone,
-};
+export type { PopoverCategory } from "../shared/categoryLegend";
 
 function popoverTitleClass(category: PopoverCategory): string {
   const modifier =

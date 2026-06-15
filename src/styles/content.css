@@ -668,3 +668,53 @@
 .usmle-organ-popover__derivatives li {
   margin-bottom: 2px;
 }
+
+.usmle-organ-popover__media-image-wrap {
+  position: relative;
+}
+
+.usmle-organ-popover__media-flag {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #64748b;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.usmle-organ-popover__media-image-wrap:hover .usmle-organ-popover__media-flag,
+.usmle-organ-popover__media-image-wrap:focus-within .usmle-organ-popover__media-flag,
+.usmle-organ-popover__media-flag--marked,
+.usmle-organ-popover__media-flag:focus-visible {
+  opacity: 1;
+}
+
+.usmle-organ-popover__media-flag:hover,
+.usmle-organ-popover__media-flag:focus-visible {
+  color: #dc2626;
+  background: #fff;
+  outline: 2px solid rgba(220, 38, 38, 0.35);
+  outline-offset: 1px;
+}
+
+.usmle-organ-popover__media-flag--marked {
+  color: #dc2626;
+  background: #fef2f2;
+  border-color: rgba(220, 38, 38, 0.35);
+}
+
+.usmle-organ-popover__media-flag-icon {
+  display: block;
+  stroke: currentColor;
+}

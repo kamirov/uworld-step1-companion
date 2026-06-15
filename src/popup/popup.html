@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USMLE Study Tools</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <header class="popup-header">
+      <h1 class="popup-title">USMLE Study Tools</h1>
+      <p class="popup-description">
+        Step 1 study aids on question banks, references, journals, and communities.
+      </p>
+    </header>
+
+    <section class="popup-section">
+      <h2 class="popup-section-title">Legend</h2>
+      <div id="legend" class="legend-grid" aria-label="Category legend"></div>
+    </section>
+
+    <section class="popup-section">
+      <h2 class="popup-section-title">Image regeneration</h2>
+      <div class="regeneration-row">
+        <p id="regeneration-count" class="regeneration-count">
+          0 images need to be regenerated
+        </p>
+        <button id="generate-prompt" class="popup-button" type="button" disabled>
+          Generate prompt
+        </button>
+      </div>
+      <p id="copy-feedback" class="copy-feedback" hidden>Copied!</p>
+    </section>
+
+    <script type="module" src="./popup.ts"></script>
+  </body>
+</html>

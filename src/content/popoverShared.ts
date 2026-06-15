@@ -1,4 +1,6 @@
 import type { MediaAttribution } from "../data/media";
+import { IMAGE_FLAG_LEGEND } from "../shared/categoryLegend";
+import { createElement, ImageOff } from "lucide";
 import { renderPopoverTitle, type PopoverCategory } from "./popoverIcons";
 
 export function renderListSection(label: string, items: string[]): string {
@@ -28,6 +30,17 @@ export function renderMediaAttribution(attribution: MediaAttribution): string {
   `;
 }
 
+function renderImageFlagIcon(): string {
+  const icon = createElement(IMAGE_FLAG_LEGEND.icon, {
+    class: "usmle-organ-popover__media-flag-icon",
+    "stroke-width": 2,
+    width: 14,
+    height: 14,
+    "aria-hidden": "true",
+  });
+  return icon.outerHTML;
+}
+
 export function renderPopoverMediaBlock(options: {
   src: string;
   alt: string;
@@ -36,7 +49,15 @@ export function renderPopoverMediaBlock(options: {
 }): string {
   return `
     <div class="usmle-organ-popover__media">
-      <img src="${options.src}" alt="${options.alt}" />
+      <div class="usmle-organ-popover__media-image-wrap">
+        <img src="${options.src}" alt="${options.alt}" />
+        <button
+          type="button"
+          class="usmle-organ-popover__media-flag"
+          aria-label="${IMAGE_FLAG_LEGEND.label}"
+          title="${IMAGE_FLAG_LEGEND.label}"
+        >${renderImageFlagIcon()}</button>
+      </div>
       <div class="usmle-organ-popover__media-caption">${options.caption}</div>
       ${renderMediaAttribution(options.attribution)}
     </div>

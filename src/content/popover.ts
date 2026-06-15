@@ -1,3 +1,5 @@
+import type { PopoverCategory } from "../shared/categoryLegend";
+import { isMarked, toggleItem } from "../shared/regenerationQueue";
 import { schedulePopoverRootScan } from "./organScanner";
 import { getChipPopoverTarget, renderChipPopover } from "./popoverLoader";
 
@@ -202,6 +204,51 @@ function bindPopoverImageReposition(
   }
 }
 
+
+const MEDIA_FLAG_SELECTOR = ".usmle-organ-popover__media-flag";
+
+async function bindMediaRegenerationButtons(
+  chip: HTMLElement,
+  popover: HTMLDivElement,
+): Promise<void> {
+  const target = getChipPopoverTarget(chip);
+  if (!target) return;
+
+  const category = target.kind as PopoverCategory;
+  const displayName =
+    popover.querySelector(".usmle-organ-popover__title-text")?.textContent?.trim() ??
+    target.id;
+
+  const buttons = popover.querySelectorAll<HTMLButtonElement>(MEDIA_FLAG_SELECTOR);
+  if (buttons.length === 0) return;
+
+  const marked = await isMarked(category, target.id);
+
+  for (const button of buttons) {
+    button.classList.toggle("usmle-organ-popover__media-flag--marked", marked);
+
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      void toggleItem({
+        category,
+        id: target.id,
+        name: displayName,
+      }).then((isNowMarked) => {
+        for (const btn of popover.querySelectorAll<HTMLButtonElement>(
+          MEDIA_FLAG_SELECTOR,
+        )) {
+          btn.classList.toggle(
+            "usmle-organ-popover__media-flag--marked",
+            isNowMarked,
+          );
+        }
+      });
+    });
+  }
+}
+
 function renderLoadingPopover(popover: HTMLDivElement): void {
   popover.innerHTML =
     '<div class="usmle-organ-popover__loading">Loading…</div>';
@@ -254,6 +301,7 @@ async function showPopover(chip: HTMLElement): Promise<void> {
   preparePopoverForDisplay(popover);
   repositionPopoverStackFrom(popoverStack.length - 1);
   bindPopoverImageReposition(entry, popover);
+  await bindMediaRegenerationButtons(chip, popover);
   playPopoverAudio(popover);
   const scanTarget = getChipPopoverTarget(chip);
   if (scanTarget) schedulePopoverRootScan(popover, scanTarget);
