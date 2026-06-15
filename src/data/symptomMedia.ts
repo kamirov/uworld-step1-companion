@@ -106,7 +106,6 @@ import neuropathicPain from "../media/images/symptoms/neuropathic-pain.jpg?url";
 import neutropenia from "../media/images/symptoms/neutropenia.jpg?url";
 import nodularLymphangitis from "../media/images/symptoms/nodular-lymphangitis.jpg?url";
 import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.jpg?url";
-import nystagmus from "../media/images/symptoms/nystagmus.jpg?url";
 import oligomenorrhea from "../media/images/symptoms/oligomenorrhea.png?url";
 import ophthalmoplegia from "../media/images/symptoms/ophthalmoplegia.jpg?url";
 import orthopnea from "../media/images/symptoms/orthopnea.jpg?url";
@@ -138,6 +137,7 @@ import pulmonaryEdema from "../media/images/symptoms/pulmonary-edema.jpg?url";
 import purpura from "../media/images/symptoms/purpura.jpg?url";
 import raccoonEyes from "../media/images/symptoms/raccoon-eyes.jpg?url";
 import raynaudPhenomenon from "../media/images/symptoms/raynaud-phenomenon.jpg?url";
+import redReflex from "../media/images/symptoms/red-reflex.jpg?url";
 import rhinorrhea from "../media/images/symptoms/rhinorrhea.svg?url";
 import sciatica from "../media/images/symptoms/sciatica.jpg?url";
 import sclerodactyly from "../media/images/symptoms/sclerodactyly.jpg?url";
@@ -270,7 +270,6 @@ export type SymptomImageId = Extract<
   | "neutropenia"
   | "nodular-lymphangitis"
   | "nuchal-rigidity"
-  | "nystagmus"
   | "oligomenorrhea"
   | "ophthalmoplegia"
   | "orthopnea"
@@ -302,6 +301,7 @@ export type SymptomImageId = Extract<
   | "purpura"
   | "raccoon-eyes"
   | "raynaud-phenomenon"
+  | "red-reflex"
   | "rhinorrhea"
   | "sciatica"
   | "sclerodactyly"
@@ -440,7 +440,6 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "neutropenia": extensionAssetUrl(neutropenia),
   "nodular-lymphangitis": extensionAssetUrl(nodularLymphangitis),
   "nuchal-rigidity": extensionAssetUrl(nuchalRigidity),
-  "nystagmus": extensionAssetUrl(nystagmus),
   "oligomenorrhea": extensionAssetUrl(oligomenorrhea),
   "ophthalmoplegia": extensionAssetUrl(ophthalmoplegia),
   "orthopnea": extensionAssetUrl(orthopnea),
@@ -472,6 +471,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "purpura": extensionAssetUrl(purpura),
   "raccoon-eyes": extensionAssetUrl(raccoonEyes),
   "raynaud-phenomenon": extensionAssetUrl(raynaudPhenomenon),
+  "red-reflex": extensionAssetUrl(redReflex),
   "rhinorrhea": extensionAssetUrl(rhinorrhea),
   "sciatica": extensionAssetUrl(sciatica),
   "sclerodactyly": extensionAssetUrl(sclerodactyly),
@@ -607,7 +607,6 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "neutropenia": { label: "Wikimedia Commons (A blood smear with neutropenia in United States.jpg)", url: "https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg" },
   "nodular-lymphangitis": { label: "Wikimedia Commons (Sporotrichosis by the fungus Sporothrix schenckii PHIL 3940 lores.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sporotrichosis_by_the_fungus_Sporothrix_schenckii_PHIL_3940_lores.jpg" },
   "nuchal-rigidity": { label: "Wikimedia Commons (Neck stiffness.jpg)", url: "https://commons.wikimedia.org/wiki/File:Neck_stiffness.jpg" },
-  "nystagmus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:nystagmus.jpg" },
   "oligomenorrhea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:oligomenorrhea.png" },
   "ophthalmoplegia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ophthalmoplegia.jpg" },
   "orthopnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthopnea.jpg" },
@@ -639,6 +638,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "purpura": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:purpura.jpg" },
   "raccoon-eyes": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:raccoon-eyes.jpg" },
   "raynaud-phenomenon": { label: "Wikimedia Commons (Raynaud syndrome on female airman's hand.jpg)", url: "https://commons.wikimedia.org/wiki/File:Raynaud_syndrome_on_female_airman's_hand.jpg" },
+  "red-reflex": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:red-reflex.jpg" },
   "rhinorrhea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:rhinorrhea.svg" },
   "sciatica": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:sciatica.jpg" },
   "sclerodactyly": { label: "Wikimedia Commons (Calcinosis of CREST syndrome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Calcinosis_of_CREST_syndrome.jpg" },
@@ -772,7 +772,6 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "neutropenia": "A blood smear with neutropenia in United States",
   "nodular-lymphangitis": "Sporotrichosis by the fungus Sporothrix schenckii",
   "nuchal-rigidity": "Nuchal rigidity — resistance to passive neck flexion in meningeal irritation",
-  "nystagmus": "Nystagmus — rhythmic involuntary oscillation of the eyes",
   "oligomenorrhea": "Estradiol, progesterone, LH, and FSH across the normal menstrual cycle — disrupted in anovulatory oligomenorrhea",
   "ophthalmoplegia": "Ophthalmoplegia — weakness or paralysis of extraocular muscles",
   "orthopnea": "Orthopnea",
@@ -804,6 +803,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "purpura": "Petechiae and purpura on the lower limb from medication-induced leukocytoclastic vasculitis",
   "raccoon-eyes": "Bilateral periorbital ecchymosis — raccoon eyes in basilar skull fracture",
   "raynaud-phenomenon": "Raynaud syndrome on female airman's hand",
+  "red-reflex": "Clinical or pathologic image illustrating red reflex",
   "rhinorrhea": "Illustration of runny nose (rhinorrhea) as a respiratory symptom",
   "sciatica": "Sciatica — radicular leg pain along L4–S1 distribution from lumbosacral nerve root compression",
   "sclerodactyly": "Calcinosis of CREST syndrome",

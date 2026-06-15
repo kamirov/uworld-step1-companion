@@ -424,13 +424,6 @@ l4-radiculopathy.png
   Description: Anterior dermatomes of trunk and limbs
   Page: https://commons.wikimedia.org/wiki/File:Gray797.png
 
-l5-radiculopathy.png
-  Source: Wikimedia Commons — L4-l5-disc-herniation.png
-  Author: Edave
-  License: CC BY 3.0
-  Description: MRI of L4–L5 disc extrusion compressing L5 nerve root
-  Page: https://commons.wikimedia.org/wiki/File:L4-l5-disc-herniation.png
-
 s1-radiculopathy.jpg
   Source: Wikimedia Commons — Herniated-Disc.jpg
   License: Public domain (check file page)
@@ -501,4 +494,8 @@ restless-legs-syndrome.png
   Page: https://commons.wikimedia.org/wiki/File:Lokalisation_sensorischer_Missempfindungen_beim_Restless-Legs-Syndrom.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Lokalisation_sensorischer_Missempfindungen_beim_Restless-Legs-Syndrom.png?width=1280
   Resized to 1280 px width for popover display.
+
+avascular-necrosis.jpg
+https://commons.wikimedia.org/wiki/File:avascular-necrosis.jpg
+Description: Avascular necrosis of the femoral head — cystic radiolucencies and irregular subchondral surface on hip X-ray
 

@@ -10,12 +10,12 @@ import acuteLymphoblasticLeukemia from "../media/images/conditions/acute-lymphob
 import acuteMegakaryoblasticLeukemia from "../media/images/conditions/acute-megakaryoblastic-leukemia.jpg?url";
 import addisonDisease from "../media/images/conditions/addison-disease.jpg?url";
 import adhd from "../media/images/conditions/adhd.png?url";
-import adjustmentDisorder from "../media/images/conditions/adjustment-disorder.png?url";
 import alcoholUseDisorder from "../media/images/conditions/alcohol-use-disorder.jpg?url";
 import alcoholWithdrawal from "../media/images/conditions/alcohol-withdrawal.jpg?url";
 import allergicContactDermatitis from "../media/images/conditions/allergic-contact-dermatitis.jpg?url";
 import alpha1AntitrypsinDeficiency from "../media/images/conditions/alpha-1-antitrypsin-deficiency.jpg?url";
 import alzheimerDisease from "../media/images/conditions/alzheimer-disease.jpg?url";
+import amblyopia from "../media/images/conditions/amblyopia.jpg?url";
 import amenorrhea from "../media/images/conditions/amenorrhea.jpg?url";
 import aml from "../media/images/conditions/aml.jpg?url";
 import anaphylaxis from "../media/images/conditions/anaphylaxis.svg?url";
@@ -326,12 +326,12 @@ export type ConditionImageId = Extract<
   | "acute-megakaryoblastic-leukemia"
   | "addison-disease"
   | "adhd"
-  | "adjustment-disorder"
   | "alcohol-use-disorder"
   | "alcohol-withdrawal"
   | "allergic-contact-dermatitis"
   | "alpha-1-antitrypsin-deficiency"
   | "alzheimer-disease"
+  | "amblyopia"
   | "amenorrhea"
   | "aml"
   | "anaphylaxis"
@@ -647,12 +647,12 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "acute-megakaryoblastic-leukemia": extensionAssetUrl(acuteMegakaryoblasticLeukemia),
   "addison-disease": extensionAssetUrl(addisonDisease),
   "adhd": extensionAssetUrl(adhd),
-  "adjustment-disorder": extensionAssetUrl(adjustmentDisorder),
   "alcohol-use-disorder": extensionAssetUrl(alcoholUseDisorder),
   "alcohol-withdrawal": extensionAssetUrl(alcoholWithdrawal),
   "allergic-contact-dermatitis": extensionAssetUrl(allergicContactDermatitis),
   "alpha-1-antitrypsin-deficiency": extensionAssetUrl(alpha1AntitrypsinDeficiency),
   "alzheimer-disease": extensionAssetUrl(alzheimerDisease),
+  "amblyopia": extensionAssetUrl(amblyopia),
   "amenorrhea": extensionAssetUrl(amenorrhea),
   "aml": extensionAssetUrl(aml),
   "anaphylaxis": extensionAssetUrl(anaphylaxis),
@@ -965,12 +965,12 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "acute-megakaryoblastic-leukemia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:acute-megakaryoblastic-leukemia.jpg" },
   "addison-disease": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
   "adhd": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:adhd.png" },
-  "adjustment-disorder": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:adjustment-disorder.png" },
   "alcohol-use-disorder": { label: "Wikimedia Commons (Cirrhosis of Alcoholic Liver Disease (5517625829).jpg)", url: "https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg" },
   "alcohol-withdrawal": { label: "Wikimedia Commons (Local copy from conditions/alcohol-use-disorder.jpg)", url: "https://commons.wikimedia.org/" },
   "allergic-contact-dermatitis": { label: "Wikimedia Commons (Blausen 0014 AllergicDermatitis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0014_AllergicDermatitis.png" },
   "alpha-1-antitrypsin-deficiency": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:alpha-1-antitrypsin-deficiency.jpg" },
   "alzheimer-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:alzheimer-disease.jpg" },
+  "amblyopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:amblyopia.jpg" },
   "amenorrhea": { label: "Wikimedia Commons (HPO axis - follicular phase.png)", url: "https://commons.wikimedia.org/wiki/File:HPO_axis_-_follicular_phase.png" },
   "aml": { label: "Wikimedia Commons (Acute Myeloid Leukemia (M2 type).jpg)", url: "https://commons.wikimedia.org/wiki/File:Acute_Myeloid_Leukemia_(M2_type).jpg" },
   "anaphylaxis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:anaphylaxis.svg" },
@@ -1116,7 +1116,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "korsakoff-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:korsakoff-syndrome.jpg" },
   "l4-radiculopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:l4-radiculopathy.png" },
   "l5-radiculopathy": { label: "Wikimedia Commons (Spinal disc herniation stage 3.jpg)", url: "https://commons.wikimedia.org/wiki/File:Spinal_disc_herniation_stage_3.jpg" },
-  "lacunar-stroke": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lacunar-stroke.jpg" },
+  "lacunar-stroke": { label: "Wikimedia Commons (Lacunar stroke MRI.jpg)", url: "https://commons.wikimedia.org/wiki/File:Lacunar_stroke_MRI.jpg" },
   "lambert-eaton-myasthenic-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lambert-eaton-myasthenic-syndrome.png" },
   "lichen-planus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:lichen-planus.jpg" },
   "lung-cancer": { label: "Wikimedia Commons (LungCancer-Xray-01.jpg)", url: "https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg" },
@@ -1283,12 +1283,12 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "acute-megakaryoblastic-leukemia": "Bone marrow blasts of acute megakaryoblastic leukemia",
   "addison-disease": "T. Addison; On...supra-renal capsules Wellcome L0018484",
   "adhd": "Stressor-linked emotional response out of proportion to stressor",
-  "adjustment-disorder": "Adjustment disorder — emotional or behavioral symptoms within 3 months of an identifiable stressor",
   "alcohol-use-disorder": "Reticulin stain Pathological and histological images courtesy of Ed Uthman at flickr.",
   "alcohol-withdrawal": "Alcoholic liver disease — chronic heavy alcohol use underlying withdrawal risk",
   "allergic-contact-dermatitis": "Allergic contact dermatitis — pruritic eczematous eruption at site of allergen exposure",
   "alpha-1-antitrypsin-deficiency": "PAS-diastase liver biopsy showing diastase-resistant hepatocyte globules",
   "alzheimer-disease": "Neurofibrillary tangles and senile plaques — hallmark Alzheimer disease histopathology",
+  "amblyopia": "Clinical or pathologic image illustrating amblyopia",
   "amenorrhea": "HPO axis during follicular phase — hypothalamic GnRH, pituitary LH/FSH, and ovarian steroidogenesis disrupted in amenorrhea",
   "aml": "Acute Myeloid Leukemia",
   "anaphylaxis": "Signs and symptoms of anaphylaxis across skin, airway, GI, and cardiovascular systems",
@@ -1434,7 +1434,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "korsakoff-syndrome": "Cirrhosis of Alcoholic Liver Disease",
   "l4-radiculopathy": "Anterior dermatomes of trunk and limbs",
   "l5-radiculopathy": "Lumbar disc herniation compressing the traversing nerve root (radiculopathy)",
-  "lacunar-stroke": "CT showing lacunar strokes",
+  "lacunar-stroke": "MRI showing chronic lacunar infarct in the left corona radiata",
   "lambert-eaton-myasthenic-syndrome": "Neuromuscular junction synapse — presynaptic VGCC antibodies in Lambert-Eaton reduce acetylcholine release",
   "lichen-planus": "Lichen Planus",
   "lung-cancer": "LungCancer-Xray-01",

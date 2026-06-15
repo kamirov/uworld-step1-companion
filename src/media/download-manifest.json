@@ -799,6 +799,11 @@
     "page": "https://commons.wikimedia.org/wiki/File:Spinal_disc_herniation_stage_3.jpg",
     "title": "File:Spinal disc herniation stage 3.jpg"
   },
+  "conditions/lacunar-stroke.jpg": {
+    "caption": "MRI showing chronic lacunar infarct in the left corona radiata",
+    "page": "https://commons.wikimedia.org/wiki/File:Lacunar_stroke_MRI.jpg",
+    "title": "File:Lacunar stroke MRI.jpg"
+  },
   "conditions/lung-cancer.jpg": {
     "page": "https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg",
     "query": "lung cancer chest xray",
