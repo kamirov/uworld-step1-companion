@@ -3106,6 +3106,83 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
   },
   {
+    id: "multiple-myeloma",
+    name: "Multiple Myeloma",
+    etymology:
+      "Latin multi = many + Greek myelos = marrow + -oma = tumor — clonal plasma cell malignancy of bone marrow",
+    aliases: [
+      "multiple myeloma",
+      "multiple myelomas",
+      "myeloma",
+      "myelomas",
+      "plasma cell myeloma",
+      "plasma cell dyscrasia",
+      "kahler disease",
+      "mm",
+    ],
+    definition:
+      "Malignant clonal proliferation of plasma cells in bone marrow producing monoclonal immunoglobulin (M protein) or free light chains — characterized by CRAB features and lytic bone lesions.",
+    pathophysiology:
+      "Clonal plasma cell expansion in marrow → secretion of monoclonal immunoglobulin or free κ/λ light chains → osteoclast activation (RANKL/osteoprotegerin imbalance) → punched-out lytic bone lesions; light chains precipitate in renal tubules (cast nephropathy) or deposit as AL amyloid; marrow replacement causes anemia and hypercalcemia from bone resorption.",
+    classicPresentation: [
+      "Older adult with bone pain (back, ribs) and fatigue",
+      "Pathologic fracture after minimal trauma",
+      "Recurrent bacterial infections",
+      "Hypercalcemia — confusion, constipation, polyuria",
+      "Renal insufficiency with Bence Jones proteinuria",
+    ],
+    keyFindings: [
+      "Punched-out lytic lesions on skeletal survey (skull, spine, pelvis)",
+      "Rouleaux formation on peripheral smear",
+      "Monoclonal M spike on serum protein electrophoresis (SPEP)",
+      "Bence Jones protein (free light chains) in urine",
+      "Plasmacytosis on bone marrow biopsy (>10% clonal plasma cells)",
+    ],
+    keyLabs: [
+      "SPEP/UPEP with immunofixation — identifies monoclonal spike isotype",
+      "Serum free light chains with abnormal κ/λ ratio",
+      "CBC — normocytic anemia; thrombocytopenia late",
+      "Calcium, creatinine, β2-microglobulin",
+      "Skeletal survey or low-dose whole-body CT for lytic lesions",
+    ],
+    associations: [
+      "Monoclonal gammopathy of undetermined significance (MGUS) precursor",
+      "AL amyloidosis from light chain deposition",
+      "Hyperviscosity syndrome (especially IgA myeloma)",
+      "Secondary amyloidosis less common than AL",
+    ],
+    complications: [
+      "Renal failure (cast nephropathy, hypercalcemia, light chain deposition)",
+      "Pathologic fractures and spinal cord compression",
+      "Hypercalcemic crisis",
+      "Hyperviscosity — bleeding, neurologic symptoms",
+      "Recurrent infections (hypogammaglobulinemia)",
+    ],
+    distinguishFrom: [
+      "MGUS — M spike <3 g/dL, <10% marrow plasma cells, no CRAB",
+      "Waldenström macroglobulinemia — IgM paraprotein, lymphoplasmacytic lymphoma",
+      "Metastatic bone cancer — often osteoblastic or mixed lesions; different marrow picture",
+      "Osteoporosis — diffuse demineralization, not punched-out lytic lesions",
+      "AL amyloidosis — may overlap; amyloid defines organ deposition pattern",
+    ],
+    treatment: [
+      "Chemo/immunotherapy regimens (bortezomib, lenalidomide, dexamethasone — Step 2 detail)",
+      "Bisphosphonates or denosumab for bone disease",
+      "Treat hypercalcemia and renal failure supportively",
+      "Autologous stem cell transplant in eligible patients",
+    ],
+    boardsPearls: [
+      "CRAB: hyperCalcemia, Renal failure, Anemia, Bone lesions",
+      "M spike on SPEP + bone pain + anemia → multiple myeloma",
+      "Punched-out lytic skull lesions on X-ray — classic boards image",
+      "Bence Jones proteins = free light chains in urine; dipstick may miss (detects albumin)",
+      "Rouleaux on smear from elevated paraprotein",
+      "Most common primary malignant bone tumor in adults >40",
+    ],
+    pediatrics:
+      "Multiple myeloma is extremely rare in children; pediatric plasma cell neoplasms are distinct entities — consider other causes of bone pain and anemia in pediatrics.",
+  },
+  {
     id: "optic-neuritis",
     name: "Optic Neuritis",
     etymology: "Latin opticus = of sight + Greek neuron = nerve + -itis = inflammation",
@@ -3655,6 +3732,78 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Diabetic nephropathy is uncommon in childhood but screen with urine albumin once diabetes duration warrants; tight glycemic control from diagnosis delays microvascular complications.",
+  },
+  {
+    id: "hypertensive-nephrosclerosis",
+    name: "Hypertensive Nephrosclerosis",
+    etymology:
+      "Greek hyper = over + Latin tensio = stretching + Greek nephros = kidney + Greek sklerosis = hardening",
+    aliases: [
+      "hypertensive nephrosclerosis",
+      "hypertensive nephroscleroses",
+      "benign nephrosclerosis",
+      "hypertensive kidney disease",
+      "hypertensive renal disease",
+      "arteriolar nephrosclerosis",
+      "nephrosclerosis",
+      "chronic hypertensive nephropathy",
+    ],
+    definition:
+      "Chronic kidney disease from long-standing hypertension causing arteriolar injury, glomerular ischemia, and progressive nephron loss — a common cause of CKD and ESRD in adults.",
+    pathophysiology:
+      "Chronic elevated intraluminal pressure → hyaline arteriolosclerosis (plasma protein insudation in arteriolar walls) → luminal narrowing → glomerular ischemia and global glomerulosclerosis → proportional tubulointerstitial fibrosis and declining GFR; malignant hypertension adds hyperplastic onion-skin arteriolosclerosis and fibrinoid necrosis.",
+    classicPresentation: [
+      "Long-standing hypertension with gradual rise in creatinine",
+      "Mild proteinuria (usually subnephrotic)",
+      "Hypertensive retinopathy and left ventricular hypertrophy",
+      "Often diagnosed incidentally on routine labs",
+      "More aggressive course in African Americans (APOL1 risk alleles)",
+    ],
+    keyFindings: [
+      "Chronic hypertension predating kidney disease",
+      "Mild proteinuria without active urinary sediment (no RBC casts)",
+      "Hypertensive retinopathy changes",
+      "Small kidneys with cortical thinning on imaging (late)",
+      "Hyaline arteriolosclerosis and glomerulosclerosis on biopsy",
+    ],
+    keyLabs: [
+      "↑ serum creatinine with ↓ eGFR over years",
+      "Urinalysis — mild proteinuria; bland sediment",
+      "No alternative cause of CKD on workup",
+      "Renal ultrasound — small echogenic kidneys in advanced disease",
+    ],
+    associations: [
+      "Essential (primary) hypertension",
+      "African American ancestry (APOL1 G1/G2 risk variants)",
+      "Diabetes mellitus (may coexist and accelerate injury)",
+      "Cardiovascular disease and LVH",
+    ],
+    complications: [
+      "Progressive CKD and end-stage renal disease",
+      "Accelerated hypertension with malignant nephrosclerosis (fibrinoid necrosis)",
+      "Cardiovascular morbidity and mortality",
+    ],
+    distinguishFrom: [
+      "Diabetic nephropathy — diabetic retinopathy, nodular glomerulosclerosis, heavier albuminuria",
+      "Nephritic glomerulonephritis — RBC casts, active sediment, abrupt onset",
+      "Renal artery stenosis — refractory hypertension, asymmetric kidney size",
+      "Contrast nephropathy — acute creatinine rise after contrast",
+    ],
+    treatment: [
+      "Strict blood pressure control (ACE inhibitor or ARB preferred for renoprotection)",
+      "Lifestyle modification — sodium restriction, weight loss",
+      "Manage cardiovascular risk factors",
+      "Dialysis or transplant for ESRD",
+    ],
+    boardsPearls: [
+      "Benign nephrosclerosis = chronic HTN → hyaline arteriolosclerosis → CKD",
+      "Hypertension must precede kidney disease; bland urine sediment",
+      "Malignant HTN → hyperplastic onion-skin arterioles + fibrinoid necrosis",
+      "vs diabetic nephropathy — Kimmelstiel-Wilson nodules and diabetic retinopathy",
+      "APOL1 risk alleles increase CKD progression in African Americans",
+    ],
+    pediatrics:
+      "Hypertensive nephrosclerosis is an adult disease; pediatric CKD from hypertension usually reflects secondary causes (renal artery stenosis, coarctation) rather than benign arteriolar nephrosclerosis.",
   },
   {
     id: "diabetic-retinopathy",
