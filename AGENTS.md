@@ -34,6 +34,8 @@ For each new data item, attach a media item to it. This could be an image, a vid
 
 Do not generate your own SVGs or your own media, browse the internet for an appropriate image. Prefer pictures of symptoms where possible
 
+A lot of data uses "Clinical or pathologic image illustrating **\_\_**". This is outdated and incorrect. Use a title for your media that is based on either what the source website says, or based on your own analysis of the image's content
+
 ## Attributions
 
 Any media fetched should have their URLs in SOURCES.txt. Any media used should show an attribution somewhere
