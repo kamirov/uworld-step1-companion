@@ -725,7 +725,6 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
     aliases: [
       "clostridium perfringens",
       "c. perfringens",
-      "clostridium",
     ],
     type: "anaerobe",
     definition:

@@ -8303,6 +8303,52 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Neonatal surfactant deficiency removes a key defense against high surface tension — RDS manifests as atelectasis from effectively increased collapsing forces. Premature lungs also have less structural elastic tissue.",
   },
+  {
+    id: "squamous-metaplasia",
+    name: "Squamous Metaplasia",
+    etymology:
+      "Latin squama = scale + Greek meta = change + plassein = to form — adaptive replacement of another mature epithelial cell type by stratified squamous epithelium",
+    aliases: [
+      "squamous metaplasia",
+      "squamous metaplasias",
+      "squamous cell metaplasia",
+      "metaplastic squamous epithelium",
+      "squamous metaplastic change",
+      "bronchial squamous metaplasia",
+      "cervical squamous metaplasia",
+      "transformation zone metaplasia",
+    ],
+    definition:
+      "Reversible adaptive metaplasia in which a non-squamous epithelium (usually columnar) is replaced by stratified squamous epithelium better suited to withstand chronic irritation — not neoplastic itself, but persistent injury can progress to dysplasia and carcinoma at the same site.",
+    examples: [
+      "Cervical transformation zone — columnar endocervical epithelium replaced by squamous epithelium at squamocolumnar junction; normal physiologic metaplasia but also site of HPV-related neoplasia",
+      "Bronchial epithelium in smokers — pseudostratified ciliated columnar → squamous metaplasia → dysplasia → squamous cell lung carcinoma pathway",
+      "Chronic bronchitis — airway irritation with squamous metaplasia and goblet cell hyperplasia",
+      "Vitamin A deficiency — squamous metaplasia of respiratory and ocular epithelia (xerophthalmia, Bitot spots)",
+      "Bladder in chronic irritation — squamous metaplasia; schistosomiasis-associated bladder cancer pathway",
+      "Chronic salpingitis — tubal epithelial change contributing to impaired function",
+    ],
+    boardsPearls: [
+      "Metaplasia = reversible change of one mature cell type to another — adaptive, NOT yet neoplastic",
+      "Squamous metaplasia — columnar/ciliated epithelium → stratified squamous under chronic stress",
+      "Cervix transformation zone — physiologic squamous metaplasia; HPV acts in metaplastic basal cells",
+      "Smoking → bronchial squamous metaplasia → dysplasia → lung SCC",
+      "Vitamin A deficiency → squamous metaplasia (respiratory, conjunctival)",
+      "vs dysplasia — disordered architecture/cytology; metaplasia alone is not dysplasia",
+      "vs Barrett esophagus — intestinal metaplasia (goblet cells), not squamous metaplasia",
+      "Persistent irritant + metaplasia can progress to cancer — remove irritant when possible",
+    ],
+    distinguishFrom: [
+      "Dysplasia — premalignant disordered growth with cytologic atypia; may follow metaplasia",
+      "Hyperplasia — increased number of normal-appearing cells, not change in cell type",
+      "Neoplasia — autonomous clonal proliferation; metaplasia is reactive and reversible",
+      "Barrett esophagus — intestinal (columnar with goblet cells) metaplasia in esophagus, not squamous",
+      "Keratinizing stratified squamous epithelium of normal skin/esophagus ectocervix — native type, not metaplastic change",
+      "Anaplasia — undifferentiated malignant cells, not adaptive metaplasia",
+    ],
+    pediatrics:
+      "Cervical squamous metaplasia accelerates after menarche and in adolescence at the transformation zone — normal physiology but explains why HPV acquisition in teens targets this region. Vitamin A deficiency squamous metaplasia remains a global pediatric concern where malnutrition persists.",
+  },
 ];
 
 const pathogenesisById = new Map(

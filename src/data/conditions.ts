@@ -12489,6 +12489,82 @@ export const CONDITIONS: ConditionEntry[] = [
       "Most common cyanotic CHD beyond infancy; infants may have pink tets if mild RVOT obstruction. Endocarditis prophylaxis when indicated.",
   },
   {
+    id: "truncus-arteriosus",
+    name: "Truncus Arteriosus",
+    etymology:
+      "Latin truncus = trunk + arteriosus = arterial — single common arterial trunk arising from the heart instead of separate aorta and pulmonary artery",
+    aliases: [
+      "truncus arteriosus",
+      "common arterial trunk",
+      "common arterial trunks",
+      "persistent truncus arteriosus",
+      "truncus arteriosus communis",
+      "ta",
+      "conotruncal anomaly truncus",
+    ],
+    definition:
+      "Cyanotic conotruncal congenital heart defect in which a single arterial trunk arises from the heart and supplies systemic, pulmonary, and coronary circulations — always accompanied by a large ventricular septal defect beneath the truncal valve from failure of aorticopulmonary septation.",
+    pathophysiology:
+      "Failure of neural crest–derived aorticopulmonary septum to spiral and divide the embryonic truncus arteriosus into separate aorta and pulmonary artery → single truncal vessel overrides a large outlet VSD → mixing of systemic and pulmonary blood → cyanosis and often early heart failure from pulmonary overcirculation when PVR is low; truncal valve may be insufficient or stenotic.",
+    classicPresentation: [
+      "Neonatal cyanosis and signs of heart failure (tachypnea, poor feeding, diaphoresis)",
+      "Single loud systolic murmur from high flow across VSD/truncal valve and pulmonary run-off",
+      "Bounding pulses if significant pulmonary overcirculation with low PVR",
+      "Early presentation within first weeks of life as PVR falls",
+    ],
+    keyFindings: [
+      "Single great vessel overriding large VSD on echocardiography",
+      "Cyanosis with variable degree depending on pulmonary blood flow and PVR",
+      "Signs of heart failure — hepatomegaly, tachypnea, failure to thrive",
+      "Truncal valve regurgitation or stenosis may be present",
+      "No separate aortic and pulmonic valves arising independently from ventricles",
+    ],
+    keyLabs: [
+      "Echocardiography — defines single trunk, VSD, pulmonary artery origin (Collett-Edwards type), truncal valve function",
+      "ECG — biventricular hypertrophy or RVH; may show combined ventricular volume/pressure load",
+      "Pulse oximetry — desaturation",
+      "Chest X-ray — increased pulmonary vascular markings with heart failure",
+      "FISH/microarray for 22q11.2 if DiGeorge suspected (hypocalcemia, thymic aplasia)",
+    ],
+    associations: [
+      "22q11.2 deletion (DiGeorge syndrome) — conotruncal defect with hypocalcemia, T-cell deficiency",
+      "Large malalignment-type outlet VSD (always present)",
+      "Truncal valve abnormalities — regurgitation or stenosis",
+      "Interrupted aortic arch (may coexist in conotruncal spectrum)",
+      "Collett-Edwards types I–III by pulmonary artery origin from common trunk",
+    ],
+    complications: [
+      "Heart failure from pulmonary overcirculation in infancy",
+      "Pulmonary vascular disease if unrepaired with prolonged high flow",
+      "Truncal valve regurgitation worsening heart failure",
+      "Infective endocarditis",
+      "Hypocalcemic seizures if associated DiGeorge",
+    ],
+    distinguishFrom: [
+      "Tetralogy of Fallot — separate aorta and pulmonary artery; RVOT obstruction drives cyanosis",
+      "Transposition of the great arteries — two separate great vessels with parallel circulation",
+      "Pulmonary atresia with VSD — no antegrade pulmonary artery from heart; ductal-dependent pulmonary flow",
+      "Isolated VSD — two normally formed great vessels; acyanotic left-to-right shunt",
+      "Double outlet right ventricle — both vessels from RV but two separate vessels, not single trunk",
+    ],
+    treatment: [
+      "Early complete surgical repair — VSD closure and RV-to-pulmonary artery conduit (or equivalent reconstruction)",
+      "Medical stabilization for heart failure before surgery — diuretics, afterload reduction as appropriate",
+      "Treat hypocalcemia if DiGeorge syndrome",
+      "Avoid prolonged delay to prevent irreversible pulmonary hypertension",
+    ],
+    boardsPearls: [
+      "Truncus arteriosus = single arterial trunk + always large VSD — conotruncal neural crest defect",
+      "Cyanotic CHD with early heart failure as PVR drops — pulmonary overcirculation",
+      "Strong association with 22q11 deletion (DiGeorge) — hypocalcemia, absent thymus, conotruncal face",
+      "vs ToF — two great vessels (aorta + PA), RVOT obstruction; vs TGA — two vessels, wrong connections",
+      "Failure of aorticopulmonary septation — truncus not divided into aorta and pulmonary artery",
+      "Surgical repair required in infancy — not ductal-dependent like some other cyanotic lesions",
+    ],
+    pediatrics:
+      "Presents in early infancy with cyanosis and heart failure as pulmonary vascular resistance falls; evaluate for 22q11.2 deletion with hypocalcemia or recurrent infections. Early surgical repair before pulmonary vascular disease develops.",
+  },
+  {
     id: "rvot-obstruction",
     name: "RVOT Obstruction",
     etymology:
