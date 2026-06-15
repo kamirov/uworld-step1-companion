@@ -1825,6 +1825,62 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Treg development supports prevention of neonatal autoimmunity; Th17/TGF-β + IL-6 balance relevant in pediatric autoimmune and autoinflammatory disease.",
   },
   {
+    id: "tyrosine-kinase",
+    name: "Tyrosine Kinase",
+    etymology:
+      "Greek tyros = cheese (amino acid name) + Greek kinein = to move + -ase = enzyme",
+    aliases: [
+      "tyrosine kinase",
+      "tyrosine kinases",
+      "protein tyrosine kinase",
+      "protein tyrosine kinases",
+      "ptk",
+      "ptks",
+      "receptor tyrosine kinase",
+      "receptor tyrosine kinases",
+      "rtk",
+      "rtks",
+      "non-receptor tyrosine kinase",
+      "non-receptor tyrosine kinases",
+      "tyrosine phosphorylation kinase",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Receptor tyrosine kinases (RTKs) on cell surface — EGF receptor, PDGFR, c-KIT, insulin/IGF-1 receptors; non-receptor tyrosine kinases in cytoplasm — Abl, Src family, BTK, Syk, and receptor-associated JAKs",
+    receptor:
+      "RTKs — ligand-induced dimerization → trans-autophosphorylation of tyrosine residues → docking sites for SH2-domain adaptors (Grb2, PI3K) → downstream Ras-MAPK and PI3K/Akt cascades",
+    function:
+      "Phosphorylates tyrosine residues on substrate proteins to propagate growth factor, cytokine, and antigen-receptor signals — controls proliferation, differentiation, metabolism, and survival; constitutive activation from fusion proteins or point mutations drives oncogenesis.",
+    clinicalRelevance: [
+      "BCR-ABL fusion tyrosine kinase — chronic myeloid leukemia (Philadelphia chromosome); imatinib inhibits",
+      "c-KIT (D816V and other mutations) — systemic mastocytosis, GIST; imatinib/sunitinib",
+      "PDGFR — imatinib target; glioblastoma and dermatofibrosarcoma protuberans associations",
+      "EGFR mutations — non-small cell lung cancer; erlotinib/gefitinib (TKIs)",
+      "BTK deficiency — X-linked agammaglobulinemia; ibrutinib inhibits BTK in CLL/lymphoma",
+      "ABL1 — BCR-ABL in CML/ALL; also targeted by dasatinib, nilotinib",
+      "VEGF receptor TKIs — sorafenib, sunitinib in renal cell carcinoma",
+    ],
+    boardsPearls: [
+      "Tyrosine kinase phosphorylates tyrosine (not serine/threonine like many other kinases)",
+      "RTK pathway: ligand → dimerization → autophosphorylation → Ras-MAPK and/or PI3K/Akt",
+      "BCR-ABL = constitutively active tyrosine kinase in CML → imatinib (first-line TKI)",
+      "Imatinib also hits c-KIT and PDGFR — GIST and some mast cell disorders",
+      "vs JAK-STAT — JAKs are tyrosine kinases associated with cytokine receptors but signal via STATs, not classic RTK→Ras-MAPK alone",
+      "vs TGF-β receptor — serine/threonine kinase phosphorylates Smads, not tyrosine substrates",
+      "vs tyrosine hydroxylase — rate-limiting enzyme in catecholamine synthesis, not a signaling kinase",
+      "X-linked agammaglobulinemia — BTK tyrosine kinase defect → no mature B cells",
+    ],
+    distinguishFrom: [
+      "JAK-STAT pathway — cytokine receptor–associated JAK tyrosine kinases phosphorylate STAT transcription factors",
+      "Serine/threonine kinase — e.g., TGF-β receptors, PKA, PKC; different amino acid target",
+      "Tyrosine hydroxylase — converts tyrosine to L-DOPA in catecholamine synthesis",
+      "Tyrosine — amino acid substrate; not the kinase enzyme",
+      "MAP kinase (ERK) — downstream serine/threonine kinase in Ras pathway, not tyrosine kinase itself",
+    ],
+    pediatrics:
+      "X-linked agammaglobulinemia (BTK deficiency) presents after maternal IgG wanes with recurrent encapsulated bacterial infections. Philadelphia-positive ALL in children may require TKI plus chemotherapy.",
+  },
+  {
     id: "il-11",
     name: "Interleukin-11 (IL-11)",
     etymology: "interleukin = between leukocytes + 11 = cytokine number",
@@ -2172,6 +2228,60 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
   },
   {
+    id: "gs-protein",
+    name: "Gs Protein",
+    etymology:
+      "G = GTP-binding regulatory protein + s = stimulatory (activates adenylyl cyclase)",
+    aliases: [
+      "gs protein",
+      "gs proteins",
+      "gs",
+      "gαs",
+      "g alpha s",
+      "g-alpha-s",
+      "gαs protein",
+      "stimulatory g protein",
+      "stimulatory g proteins",
+      "g protein s",
+      "g-protein s",
+      "g protein stimulatory",
+      "g stimulatory protein",
+      "heterotrimeric g protein gs",
+      "adenylyl cyclase stimulatory g protein",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Membrane-associated heterotrimeric G protein (αs, β, γ subunits) linked to stimulatory GPCRs on many endocrine, neural, and metabolic target cells",
+    receptor:
+      "Gs-coupled GPCRs — β₁/β₂/β₃ adrenergic, D₁ dopamine, H₂ histamine, V₂ vasopressin, glucagon, TSH, LH, FSH, PTH₁, CRH, calcitonin, and related receptors",
+    function:
+      "Inactive Gαs–GDP–Gβγ complex at rest; ligand-activated receptor catalyzes GDP→GTP exchange on Gαs → Gαs–GTP dissociates from Gβγ → active Gαs stimulates adenylyl cyclase → ↑ cAMP → PKA activation; intrinsic GTPase on Gαs terminates signal by hydrolyzing GTP to GDP.",
+    clinicalRelevance: [
+      "Cholera toxin ADP-ribosylates Gαs → impaired GTPase → constitutive adenylyl cyclase activity → ↑ cAMP in enterocytes → secretory diarrhea",
+      "McCune-Albright syndrome — activating GNAS (Gαs) mutations → autonomous cAMP signaling in bone, skin, and endocrine tissues",
+      "β-agonists (albuterol) and glucagon act through Gs → cAMP in lung and liver",
+      "PTH, TSH, LH/FSH, ADH (V2), and H2-mediated gastric acid secretion use Gs pathways",
+      "Pertussis toxin affects Gi (inhibitory), not Gs — contrast for boards",
+    ],
+    boardsPearls: [
+      "Gs = stimulatory G protein → activates adenylyl cyclase → ↑ cAMP → PKA",
+      "Gi = inhibitory G protein → ↓ adenylyl cyclase → ↓ cAMP (opposite coupling)",
+      "Gq activates phospholipase C (IP3/DAG), not adenylyl cyclase",
+      "Cholera toxin locks Gαs ON — classic ↑ cAMP secretory diarrhea vignette",
+      "Classic Gs ligands: glucagon, β-adrenergic agonists, PTH, TSH, LH/FSH, ADH (V2), H2 histamine",
+      "GTP-bound Gαs is active; GDP-bound is inactive",
+    ],
+    distinguishFrom: [
+      "Gi protein — inhibits adenylyl cyclase; pertussis toxin target",
+      "Gq protein — activates phospholipase C → IP3/DAG/Ca²⁺",
+      "cAMP–PKA pathway — downstream second-messenger cascade activated by Gs",
+      "Receptor tyrosine kinase — does not use heterotrimeric Gαs for adenylyl cyclase activation",
+      "G12/13 — Rho pathway, not cAMP",
+    ],
+    pediatrics:
+      "McCune-Albright can present in childhood with café-au-lait macules, precocious puberty, and polyostotic fibrous dysplasia from mosaic Gαs activation. Cholera physiology is the same across ages; dehydration risk is higher in infants.",
+  },
+  {
     id: "camp-pka-pathway",
     name: "Cyclic AMP–Protein Kinase A Pathway",
     etymology: "cyclic = ring + AMP = adenosine monophosphate + protein + kinase = phosphorylating enzyme + A = first named isoform",
@@ -2182,7 +2292,6 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "camp pka pathway",
       "camp/protein kinase a pathway",
       "adenylyl cyclase-camp-pka pathway",
-      "gs-camp-pka pathway",
     ],
     type: "Signaling pathway",
     source:

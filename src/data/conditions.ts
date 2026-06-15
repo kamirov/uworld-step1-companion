@@ -24189,6 +24189,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "migraine without aura",
       "common migraine",
       "classic migraine",
+      "migraine disorder",
+      "migraine disorders",
+      "migrainous headache",
+      "migrainous headaches",
     ],
     definition:
       "Recurrent primary headache disorder characterized by unilateral or bilateral pulsating headache, often with nausea, photophobia, and phonophobia; may include transient focal neurologic aura.",
@@ -24242,6 +24246,87 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Childhood migraine often bilateral and shorter; abdominal migraine presents with recurrent abdominal pain and nausea. Infant colic is unrelated. Pediatric prophylaxis considered when school absence is significant.",
+  },
+  {
+    id: "tension-type-headache",
+    name: "Tension-Type Headache",
+    etymology:
+      "Latin tensio = stretching/strain + Greek typos = form + Greek kephalē = head + Greek algos = pain",
+    aliases: [
+      "tension-type headache",
+      "tension-type headaches",
+      "tension type headache",
+      "tension type headaches",
+      "tension headache",
+      "tension headaches",
+      "tth",
+      "stress headache",
+      "stress headaches",
+      "muscle contraction headache",
+      "muscle contraction headaches",
+      "episodic tension-type headache",
+      "chronic tension-type headache",
+      "primary tension headache",
+    ],
+    definition:
+      "Most common primary headache disorder — recurrent bilateral pressing or tightening head pain, typically mild to moderate intensity, without the nausea, vomiting, and marked photophobia/phonophobia that characterize migraine.",
+    pathophysiology:
+      "Peripheral myofascial nociception from pericranial muscles and cervical structures plus central sensitization in chronic forms; stress, poor posture, jaw clenching, and sleep disturbance contribute. Not primarily a meningeal vasodilation disorder like migraine.",
+    classicPresentation: [
+      "Bilateral band-like or pressing headache",
+      "Mild to moderate intensity",
+      "Not aggravated by routine physical activity",
+      "No nausea or vomiting (key vs migraine)",
+      "No or only mild photophobia/phonophobia",
+      "Episodic (<15 days/month) or chronic (≥15 days/month for >3 months)",
+      "Tenderness of pericranial muscles may be present",
+    ],
+    keyFindings: [
+      "Normal neurologic examination",
+      "No fever, papilledema, or focal deficits",
+      "Absence of migrainous features (pulsatility, unilateral predominance, prominent nausea)",
+      "No thunderclap onset",
+    ],
+    keyLabs: [
+      "Clinical diagnosis when criteria met and exam normal",
+      "Neuroimaging only if red flags (SNOOP) or abnormal neurologic exam",
+    ],
+    associations: [
+      "Stress, anxiety, and depression",
+      "Poor sleep and eyestrain",
+      "Temporomandibular joint dysfunction and cervical strain",
+      "Fibromyalgia and other chronic pain syndromes",
+      "Medication-overuse headache if frequent analgesic use",
+    ],
+    complications: [
+      "Chronic daily headache pattern",
+      "Medication-overuse headache from excessive acetaminophen/NSAID/opioid use",
+      "Functional impairment and reduced quality of life",
+    ],
+    distinguishFrom: [
+      "Migraine — unilateral pulsating pain, nausea/vomiting, photophobia/phonophobia, worsened by activity",
+      "Cluster headache — severe unilateral periorbital pain with autonomic symptoms, brief attacks",
+      "Subarachnoid hemorrhage — thunderclap maximal-at-onset headache",
+      "Meningitis — fever, neck stiffness, altered mental status",
+      "Giant cell arteritis — age >50, jaw claudication, elevated ESR",
+      "Cervicogenic headache — neck pain with occipital radiation, limited neck ROM",
+    ],
+    treatment: [
+      "Acute: simple analgesics (acetaminophen, NSAIDs)",
+      "Nonpharmacologic: stress reduction, sleep hygiene, physical therapy, relaxation/biofeedback",
+      "Prophylaxis for chronic frequent TTH: amitriptyline (first-line on boards), other TCAs",
+      "Avoid medication overuse — limit acute analgesic days per month",
+    ],
+    boardsPearls: [
+      "Tension-type headache = bilateral pressing/tightening, mild–moderate, no nausea/vomiting",
+      "Most common primary headache — vs migraine's pulsatile unilateral pain with autonomic features",
+      "Not worsened by routine activity (migraine is)",
+      "Amitriptyline — prophylaxis for chronic tension-type headache",
+      "Red flags (SNOOP) → secondary headache workup regardless of presumed primary type",
+      "vs cluster — excruciating periorbital attacks with lacrimation/rhinorrhea",
+    ],
+    pediatrics:
+      "Common in school-age children and adolescents, often related to stress or musculoskeletal strain; bilateral location is typical. Evaluate for secondary causes if morning vomiting, papilledema, or neurologic signs.",
   },
   {
     id: "cluster-headache",

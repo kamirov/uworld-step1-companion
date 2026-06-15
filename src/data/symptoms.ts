@@ -402,6 +402,59 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "basal-lung-crackles",
+    name: "Basal Lung Crackles",
+    etymology:
+      "Greek basis = base + Latin pulmo = lung + Middle English crakel = to make a sharp sound",
+    aliases: [
+      "basal lung crackles",
+      "basal lung crackle",
+      "basilar lung crackles",
+      "basilar lung crackle",
+      "bibasilar crackles",
+      "bibasilar crackle",
+      "bibasilar rales",
+      "basilar crackles",
+      "basilar crackle",
+      "basilar rales",
+      "lung base crackles",
+      "lung base crackle",
+      "crackles at lung bases",
+      "crackles at the lung bases",
+      "fine basal crackles",
+      "coarse basal crackles",
+    ],
+    definition:
+      "Discontinuous adventitious lung sounds heard on inspiration at the posterior and lateral lung bases — produced by sudden opening of collapsed airways or movement of fluid through small airways; bibasilar distribution is classic for cardiogenic pulmonary edema and many interstitial lung diseases.",
+    mechanism:
+      "Gravity-dependent alveolar and interstitial fluid (cardiogenic edema) or fibrotic stiffening of basilar lung (interstitial disease) creates fine or coarse crackles as inflating airways pop open or secretions shift; dependent atelectasis and aspiration also localize crackles to the bases.",
+    thinkOf: [
+      "Left heart failure / cardiogenic pulmonary edema — fine crackles, orthopnea, ↑ BNP",
+      "Interstitial lung disease (idiopathic pulmonary fibrosis) — fine velcro-like inspiratory crackles",
+      "Aspiration pneumonia — dependent lung zone consolidation",
+      "Atelectasis — postoperative or immobility-related basilar collapse",
+      "ARDS — diffuse but often prominent basilar crackles early",
+      "Pulmonary fibrosis from connective tissue disease or asbestosis",
+    ],
+    pairWith: [
+      "Bibasilar crackles + orthopnea + S3 → cardiogenic pulmonary edema",
+      "Bibasilar crackles + JVD + peripheral edema → decompensated heart failure",
+      "Fine bibasilar crackles + restrictive PFTs + ↓ DLCO → interstitial lung disease",
+      "Bibasilar crackles + fever + focal consolidation → pneumonia (may be aspiration)",
+      "Bibasilar crackles + dry cough + clubbing → pulmonary fibrosis",
+      "Crackles that clear after diuresis → cardiogenic edema",
+    ],
+    distinguishFrom: [
+      "Wheezes — continuous musical sounds; asthma/COPD predominant",
+      "Rhonchi — low-pitched secretions in larger airways, often clear with cough",
+      "Upper lobe crackles — consider TB, sarcoidosis, or Pancoast processes",
+      "Diffuse crackles throughout lung fields — severe ARDS or widespread edema, not isolated bases",
+      "Normal breath sounds — no adventitious discontinuous sounds",
+    ],
+    pediatrics:
+      "Congenital heart disease with left-to-right shunt or LV failure may present with tachypnea and basal crackles in infants. Cystic fibrosis and interstitial lung disease can cause crackles in children; bronchiolitis more often causes wheeze than crackles.",
+  },
+  {
     id: "edema",
     name: "Edema",
     etymology: "Greek oidema = swelling",
@@ -761,6 +814,96 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Asthma is the most common cause of chest tightness in children and adolescents; exercise-induced bronchospasm presents with tightness during sports. Cardiac ischemia is rare but consider anomalous coronaries or HOCM with exertional tightness/syncope.",
+  },
+  {
+    id: "cheilosis",
+    name: "Cheilosis",
+    etymology:
+      "Greek cheilos = lip + -osis = condition",
+    aliases: [
+      "cheilosis",
+      "cheiloses",
+      "cheilitis",
+      "chapped lips",
+      "lip fissuring",
+      "lip fissures",
+      "fissured lips",
+      "cracked lips",
+      "inflammation of the lips",
+      "lip inflammation",
+    ],
+    definition:
+      "Inflammation, fissuring, scaling, or maceration of the lips — often at the labial commissures (angular involvement) from nutritional deficiency, irritation, or infection.",
+    mechanism:
+      "Riboflavin (B₂) and other B-vitamin deficiencies impair rapidly turning over oral epithelium → fissured, erythematous lips; moisture, saliva pooling at commissures, and Candida superinfection worsen angular cheilosis; iron deficiency also contributes to angular lesions.",
+    thinkOf: [
+      "Riboflavin (vitamin B₂) deficiency — with glossitis and corneal vascularization",
+      "Pellagra (niacin deficiency) — stomatitis and photosensitive dermatitis",
+      "Iron deficiency anemia — angular cheilosis",
+      "Malnutrition and alcohol use disorder",
+      "Candida superinfection at lip commissures",
+      "Contact or irritant cheilitis (lip cosmetics, sun)",
+    ],
+    pairWith: [
+      "Cheilosis + glossitis + corneal changes → riboflavin deficiency",
+      "Angular fissures + glossitis + dermatitis → pellagra (3 D's)",
+      "Cheilosis + microcytic anemia → iron deficiency",
+      "Painful lip fissures + malnutrition → B-complex deficiency workup",
+    ],
+    distinguishFrom: [
+      "Angular stomatitis — inflammation localized to mouth corners; often overlaps with cheilosis",
+      "Herpes labialis — grouped vesicles on vermillion border, not nutritional fissuring",
+      "Actinic cheilitis — chronic sun damage in older adults, not acute deficiency",
+      "Aphthous ulcers — intraoral mucosal ulcers, not primarily lip fissuring",
+    ],
+    pediatrics:
+      "Riboflavin and iron deficiency can present with angular lip fissures in malnourished children; restrictive diets and celiac disease increase risk.",
+  },
+  {
+    id: "stomatitis",
+    name: "Stomatitis",
+    etymology:
+      "Greek stoma = mouth + -itis = inflammation",
+    aliases: [
+      "stomatitis",
+      "stomatitides",
+      "inflammation of the mouth",
+      "mouth inflammation",
+      "oral mucositis",
+      "oral mucositides",
+      "inflamed oral mucosa",
+      "oral mucosal inflammation",
+    ],
+    definition:
+      "Inflammation of the oral mucosa — erythema, ulceration, pain, and dysphagia from infection, chemotherapy, autoimmune disease, or nutritional deficiency.",
+    mechanism:
+      "Direct cytotoxic injury (chemotherapy/radiation), viral cytopathic effect (HSV, Coxsackie), immune-mediated ulceration (aphthous, Behçet), or deficiency of B vitamins and niacin → mucosal breakdown, pain, and impaired oral intake.",
+    thinkOf: [
+      "Chemotherapy-induced mucositis",
+      "Aphthous stomatitis (canker sores)",
+      "Herpetic gingivostomatitis (HSV-1)",
+      "Hand-foot-and-mouth disease (Coxsackie A)",
+      "Pellagra and B-vitamin deficiencies — glossitis and stomatitis",
+      "Behçet disease — oral ulcers plus genital ulcers and uveitis",
+      "Stevens-Johnson syndrome / TEN — mucosal involvement",
+    ],
+    pairWith: [
+      "Painful oral ulcers + fever in child → HSV gingivostomatitis",
+      "Stomatitis after chemotherapy → mucositis grading and supportive care",
+      "Recurrent round ulcers + normal exam otherwise → aphthous stomatitis",
+      "Stomatitis + dermatitis + diarrhea + dementia → pellagra",
+      "Oral + genital ulcers + eye inflammation → Behçet disease",
+      "Vesicles on hands and feet + oral ulcers → hand-foot-and-mouth",
+    ],
+    distinguishFrom: [
+      "Pharyngitis — throat inflammation; may coexist but stomatitis emphasizes oral mucosa",
+      "Glossitis — tongue-specific inflammation; may accompany stomatitis",
+      "Cheilosis — lip fissuring, not diffuse oral mucosal inflammation",
+      "Dental caries/abscess — localized tooth source, not generalized mucositis",
+      "Oral thrush — white plaques from Candida, typically painless scraping",
+    ],
+    pediatrics:
+      "HSV gingivostomatitis and hand-foot-and-mouth disease are common pediatric causes; chemotherapy mucositis occurs in childhood oncology. Vitamin deficiency stomatitis reflects global malnutrition.",
   },
   {
     id: "palpitations",
@@ -2696,6 +2839,52 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "dermatitis",
+    name: "Dermatitis",
+    etymology:
+      "Greek derma = skin + -itis = inflammation",
+    aliases: [
+      "dermatitis",
+      "dermatitides",
+      "skin inflammation",
+      "inflamed skin",
+      "eczematous dermatitis",
+      "eczematous eruption",
+      "inflammatory skin eruption",
+      "inflammatory skin eruptions",
+    ],
+    definition:
+      "Inflammation of the skin producing erythema, pruritus, scaling, vesicles, or lichenification — encompasses eczematous, contact, seborrheic, and nutritional deficiency–related eruptions.",
+    mechanism:
+      "Type I/IV hypersensitivity, barrier dysfunction (filaggrin loss in atopy), irritant injury, seborrheic yeast colonization, or systemic deficiency (niacin, zinc) → epidermal/dermal inflammation with variable morphology depending on chronicity and trigger.",
+    thinkOf: [
+      "Atopic dermatitis — flexural pruritic eczema",
+      "Allergic contact dermatitis — nickel, poison ivy (type IV)",
+      "Seborrheic dermatitis — greasy scales on scalp and face",
+      "Pellagra — photosensitive dermatitis (casal necklace)",
+      "Zinc deficiency — periorificial and acral dermatitis",
+      "Drug eruption or Stevens-Johnson syndrome",
+      "Venous stasis dermatitis — lower extremity in chronic venous insufficiency",
+    ],
+    pairWith: [
+      "Pruritic flexural plaques + asthma/rhinitis → atopic dermatitis",
+      "Linear vesicular eruption after plant exposure → allergic contact dermatitis",
+      "Photosensitive collar rash + diarrhea + confusion → pellagra",
+      "Periorificial dermatitis + alopecia + diarrhea in infant → zinc deficiency (acrodermatitis enteropathica)",
+      "Greasy yellow scales on scalp → seborrheic dermatitis",
+      "Bilateral ankle erythema + edema + varicosities → stasis dermatitis",
+    ],
+    distinguishFrom: [
+      "Atopic dermatitis — specific eczematous phenotype; subset of dermatitis",
+      "Psoriasis — well-demarcated silvery plaques, not primary eczematous dermatitis",
+      "Urticaria — transient wheals without chronic eczematous change",
+      "Cellulitis — acute bacterial infection with warmth and tenderness",
+      "Lichen planus — violaceous flat-topped papules, Wickham striae",
+    ],
+    pediatrics:
+      "Atopic dermatitis often begins in infancy; contact dermatitis to nickel or irritants occurs in children. Acrodermatitis enteropathica presents with periorificial dermatitis, diarrhea, and alopecia.",
+  },
+  {
     id: "skin-thickening",
     name: "Skin Thickening",
     etymology: "Old Norse skinn = hide + Old English thicce = thick + -ening = process",
@@ -2910,6 +3099,61 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "HOCM may present in adolescents with exertional syncope and bifid carotid pulse on exam; family screening indicated. Distinguish from physiologic vigorous pulses in athletic teens without murmur or hypertrophy.",
+  },
+  {
+    id: "rapid-upstroke-carotid-pulse",
+    name: "Rapid Upstroke Carotid Pulse",
+    etymology:
+      "Latin rapidus = seizing + Greek anatole = rising + Greek karotos = deep sleep (artery) + Latin pulsus = beat",
+    aliases: [
+      "rapid upstroke carotid pulse",
+      "rapid upstroke carotid pulses",
+      "rapid carotid upstroke",
+      "rapid carotid upstrokes",
+      "brisk carotid upstroke",
+      "brisk carotid upstrokes",
+      "brisk carotid pulse",
+      "water hammer pulse",
+      "water-hammer pulse",
+      "water hammer pulses",
+      "collapsing pulse",
+      "collapsing pulses",
+      "corrigan pulse",
+      "corrigan pulses",
+      "bounding pulse",
+      "bounding pulses",
+      "hyperdynamic pulse",
+      "hyperdynamic pulses",
+    ],
+    definition:
+      "Abnormally quick systolic rise of the carotid arterial pulse — often followed by a rapid collapse (water-hammer or collapsing pulse) when diastolic runoff is increased; reflects high stroke volume, wide pulse pressure, or reduced arterial compliance.",
+    mechanism:
+      "Large systolic ejection into a compliant arterial tree produces a sharp upstroke; rapid diastolic pressure fall (aortic regurgitation, patent ductus arteriosus) or hyperdynamic circulation (fever, anemia, hyperthyroidism, beriberi) accentuates the brisk rise-and-fall contour palpated at the carotid.",
+    thinkOf: [
+      "Aortic regurgitation — wide pulse pressure, early diastolic decrescendo murmur, head bobbing (de Musset)",
+      "Chronic severe AR — LV volume overload with hyperdynamic circulation",
+      "Patent ductus arteriosus — bounding pulses, continuous machinery murmur",
+      "Hyperdynamic states — fever, sepsis (early), anemia, hyperthyroidism, wet beriberi",
+      "High-output heart failure",
+      "Pregnancy — physiologic increased stroke volume",
+    ],
+    pairWith: [
+      "Rapid upstroke + wide pulse pressure + diastolic murmur → aortic regurgitation",
+      "Rapid upstroke + continuous murmur + wide pulse pressure → PDA",
+      "Rapid upstroke + warm extremities + fever → hyperdynamic sepsis or hyperthyroidism",
+      "Rapid upstroke + anemia + tachycardia → high-output state",
+      "Rapid upstroke + slow-rising pulse in same patient unlikely — AS causes parvus et tardus, opposite finding",
+      "Quincke pulse (nail bed pulsation), Traube sign (pistol-shot femoral) — associated AR peripheral signs",
+    ],
+    distinguishFrom: [
+      "Pulsus parvus et tardus — slow, weak, delayed upstroke in severe aortic stenosis",
+      "Bifid carotid pulse — two systolic peaks (spike and dome) in HOCM, not a single brisk rise",
+      "Pulsus alternans — alternating strong and weak beats in severe LV dysfunction",
+      "Pulsus paradoxus — inspiratory fall in systolic BP, not carotid upstroke quality",
+      "Normal brisk pulse in young athletic patients — vigorous but without wide pulse pressure or murmur",
+    ],
+    pediatrics:
+      "Large PDA causes bounding pulses and wide pulse pressure in infants; untreated AR is less common in children but may follow rheumatic or congenital bicuspid valve disease. Distinguish physiologic brisk pulses in febrile infants from pathologic high-output lesions.",
   },
   {
     id: "muffled-heart-sounds",
@@ -4665,6 +4909,47 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "xerophthalmia",
+    name: "Xerophthalmia",
+    etymology:
+      "Greek xeros = dry + ophthalmos = eye + -ia = condition",
+    aliases: [
+      "xerophthalmia",
+      "xerophthalmias",
+      "dry eye from vitamin a deficiency",
+      "vitamin a deficiency eye disease",
+      "vitamin a deficient xerophthalmia",
+    ],
+    definition:
+      "Ocular manifestation of vitamin A (retinol) deficiency — progressive dryness of the conjunctiva and cornea ranging from night blindness and Bitot spots to ulceration and keratomalacia with vision loss.",
+    mechanism:
+      "Retinal (from retinol) is essential for rhodopsin in rod photoreceptors; deficiency impairs night vision first → conjunctival and corneal epithelial metaplasia (xerosis, Bitot spots) → corneal ulceration and liquefactive necrosis (keratomalacia) if untreated.",
+    thinkOf: [
+      "Vitamin A deficiency — malnutrition, fat malabsorption, restrictive diets",
+      "Measles in deficient children — worsens outcome; vitamin A supplementation indicated",
+      "Night blindness as earliest symptom",
+      "Bitot spots — foamy keratin debris on conjunctiva",
+      "Keratomalacia — corneal melting and blindness",
+      "Cystic fibrosis or celiac disease with fat-soluble vitamin malabsorption",
+    ],
+    pairWith: [
+      "Night blindness + follicular hyperkeratosis → vitamin A deficiency",
+      "Xerophthalmia + measles in child → urgent vitamin A therapy",
+      "Bitot spots on conjunctiva → vitamin A deficiency",
+      "Dry eyes + malabsorption + steatorrhea → fat-soluble vitamin loss",
+      "vs keratoconjunctivitis sicca — autoimmune dry eye without deficiency Bitot spots",
+    ],
+    distinguishFrom: [
+      "Keratoconjunctivitis sicca — Sjögren syndrome dry eye; not vitamin A deficiency",
+      "Xerosis (dry skin) — skin finding, not ocular",
+      "Bacterial keratitis — infectious ulcer with purulent discharge, not deficiency spectrum",
+      "Conjunctivitis alone — injection and discharge without corneal xerosis/Bitot spots",
+      "Retinol — vitamin molecule; xerophthalmia is the clinical ocular syndrome",
+    ],
+    pediatrics:
+      "Vitamin A deficiency is a leading preventable cause of childhood blindness worldwide; measles treatment includes vitamin A per WHO guidelines. Early night blindness responds to repletion before irreversible keratomalacia.",
+  },
+  {
     id: "xerosis",
     name: "Xerosis (dry skin)",
     etymology: "Greek xeros = dry + -osis = condition",
@@ -5093,6 +5378,54 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Pubertal androgen rise can cause mild terminal hair; marked hirsutism with menstrual irregularity in adolescence suggests PCOS. Virilization in a prepubertal child warrants urgent evaluation for CAH or androgen-secreting tumor.",
+  },
+  {
+    id: "alopecia",
+    name: "Alopecia",
+    etymology:
+      "Greek alopex = fox mange (hair loss) + -ia = condition",
+    aliases: [
+      "alopecia",
+      "alopecias",
+      "hair loss",
+      "hair losses",
+      "loss of hair",
+      "baldness",
+      "nonscarring hair loss",
+      "diffuse hair loss",
+      "diffuse alopecia",
+    ],
+    definition:
+      "Partial or complete loss of hair from the scalp or body — may be nonscarring (potentially reversible) or scarring (irreversible follicular destruction); pattern and distribution narrow the differential.",
+    mechanism:
+      "Follicular miniaturization (androgens), autoimmune attack on bulb (alopecia areata), synchronized shedding after stress (telogen effluvium), nutritional deficiency (zinc, protein), endocrine disease (hypothyroidism), or cytotoxic drugs → reduced hair shaft production or follicle destruction.",
+    thinkOf: [
+      "Telogen effluvium — diffuse shedding after illness, surgery, or postpartum",
+      "Alopecia areata — patchy nonscarring bald spots",
+      "Androgenic alopecia — patterned scalp thinning",
+      "Hypothyroidism — diffuse hair thinning with cold intolerance",
+      "Zinc deficiency — alopecia with periorificial dermatitis",
+      "Chemotherapy — anagen effluvium",
+      "Secondary syphilis — moth-eaten alopecia",
+      "Tinea capitis — patchy with scaling and broken hairs",
+    ],
+    pairWith: [
+      "Diffuse shedding + recent stress or illness → telogen effluvium",
+      "Patchy smooth bald spots + exclamation-point hairs → alopecia areata",
+      "Pattern vertex/temporal loss + family history → androgenic alopecia",
+      "Alopecia + periorificial dermatitis + diarrhea → zinc deficiency",
+      "Diffuse alopecia + weight gain + constipation → hypothyroidism",
+      "Patchy scaling + cervical lymphadenopathy in child → tinea capitis",
+    ],
+    distinguishFrom: [
+      "Androgenic alopecia — specific patterned nonscarring thinning; subset of alopecia",
+      "Hypertrichosis — excess hair growth, not loss",
+      "Trichotillomania — broken hairs of varying length, irregular patches",
+      "Scarring alopecia (lichen planopilaris, discoid lupus) — permanent follicle loss with scalp scarring",
+      "Normal hairline maturation in adolescent males — not pathologic alopecia",
+    ],
+    pediatrics:
+      "Tinea capitis and alopecia areata are common in children; telogen effluvium follows high fever or surgery. Zinc deficiency and hypothyroidism cause diffuse pediatric alopecia with systemic clues.",
   },
   {
     id: "androgenic-alopecia",
@@ -8771,6 +9104,59 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Fourth nerve palsy is a common congenital cause of head tilt and vertical diplopia; cranial nerve palsy after otitis media or trauma warrants imaging; myasthenia can present at any age with fatigable diplopia.",
   },
   {
+    id: "displaced-apical-impulse",
+    name: "Displaced Apical Impulse",
+    etymology:
+      "Latin dis- = apart + positus = placed + Latin apex = tip + Latin impellere = to push + pulsus = beat",
+    aliases: [
+      "displaced apical impulse",
+      "displaced apical impulses",
+      "displaced pmi",
+      "displaced pmis",
+      "displaced point of maximal impulse",
+      "displaced apex beat",
+      "displaced apex beats",
+      "laterally displaced apical impulse",
+      "laterally displaced pmi",
+      "lateral displacement of apical impulse",
+      "apical impulse displacement",
+      "pmi displacement",
+      "point of maximal impulse displacement",
+    ],
+    definition:
+      "Palpable cardiac apex beat located lateral and/or inferior to the normal position (5th intercostal space at the midclavicular line) — a physical sign of left ventricular enlargement, cardiomegaly, or altered cardiac position.",
+    mechanism:
+      "LV dilation from chronic volume overload (mitral/aortic regurgitation, dilated cardiomyopathy) or eccentric hypertrophy shifts the apex laterally and downward; enlarged ventricular mass displaces the point of maximal outward thrust during systole; thoracic shape, pectus excavatum, or dextrocardia can mimic displacement without true LV enlargement.",
+    thinkOf: [
+      "Dilated cardiomyopathy / systolic heart failure",
+      "Chronic mitral regurgitation — LV volume overload",
+      "Chronic aortic regurgitation — LV dilation",
+      "Left ventricular aneurysm post-MI",
+      "Large left-to-right shunt with LV volume overload (VSD, PDA)",
+      "Pericardial effusion with cardiomegaly (less specific)",
+      "Chronic hypertension with LV dilation (late)",
+    ],
+    pairWith: [
+      "Displaced PMI + S3 gallop → volume overload / dilated ventricle",
+      "Displaced PMI + holosystolic murmur at apex → mitral regurgitation",
+      "Displaced PMI + wide pulse pressure + diastolic murmur → aortic regurgitation",
+      "Displaced PMI + crackles + JVD → decompensated heart failure",
+      "Displaced but not sustained PMI → eccentric dilation (MR, DCM)",
+      "Sustained PMI (may be less displaced) → pressure overload (AS, HOCM)",
+      "Echo confirms LV enlargement and guides etiology",
+    ],
+    distinguishFrom: [
+      "Normal PMI — 5th ICS midclavicular line, brief tap",
+      "Sustained apical impulse — increased force and duration (>50% systole), not necessarily displaced; think AS or HOCM",
+      "Parasternal heave — RV hypertrophy (pulmonary HTN, ToF), not LV apex displacement",
+      "Downward displacement from hyperinflated lungs (COPD) — palpable lower but heart not enlarged on imaging",
+      "Dextrocardia — apex beat on right chest",
+      "Pectus excavatum — altered chest wall mechanics may shift palpable impulse",
+    ],
+    pediatrics:
+      "Large VSD or dilated cardiomyopathy may cause a displaced apical impulse in children; neonatal heart failure from congenital lesions presents with tachypnea and hepatomegaly — apex palpation is less reliable in infants.",
+  },
+  {
     id: "blurry-vision",
     name: "Blurry Vision",
     etymology: "Middle English blerre = blurred + Latin visio = sight",
@@ -9837,6 +10223,55 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Congenital ptosis may threaten amblyopia if the visual axis is blocked — early ophthalmology referral. Neonatal Horner from birth trauma or neuroblastoma presents with mild ptosis and miosis. Myasthenia gravis is less common in children but juvenile MG occurs.",
+  },
+  {
+    id: "conjunctivitis",
+    name: "Conjunctivitis",
+    etymology:
+      "Latin conjunctiva = joined together + -itis = inflammation",
+    aliases: [
+      "conjunctivitis",
+      "conjunctivitides",
+      "conjunctivities",
+      "pink eye",
+      "pink eyes",
+      "red eye",
+      "red eyes",
+      "inflamed conjunctiva",
+      "conjunctival inflammation",
+    ],
+    definition:
+      "Inflammation of the bulbar and/or palpebral conjunctiva — presents with injection, discharge, irritation, and lacrimation; classified as infectious (viral, bacterial) or noninfectious (allergic, irritant).",
+    mechanism:
+      "Viral or bacterial infection, IgE-mediated allergen exposure, or direct irritant injury → conjunctival vasodilation, chemosis, follicular or papillary reaction, and discharge (watery in viral/allergic, purulent in bacterial). Neonatal forms from vertical transmission (gonorrhea, chlamydia).",
+    thinkOf: [
+      "Viral conjunctivitis — watery discharge, preauricular lymphadenopathy, adenovirus",
+      "Bacterial conjunctivitis — purulent discharge, Staph/Strep/H. influenzae",
+      "Allergic conjunctivitis — bilateral itching, cobblestone papillae, seasonal",
+      "Neonatal ophthalmia neonatorum — gonorrhea (days 2–5) or chlamydia (days 5–14)",
+      "Measles — conjunctivitis with cough and coryza in prodrome",
+      "Pharyngoconjunctival fever — adenovirus pharyngitis plus conjunctivitis",
+      "Gonococcal conjunctivitis — hyperacute, corneal perforation risk",
+    ],
+    pairWith: [
+      "Purulent discharge + eyelids stuck shut → bacterial conjunctivitis",
+      "Watery discharge + preauricular node + URI symptoms → viral conjunctivitis",
+      "Bilateral itching + rhinorrhea + seasonal pattern → allergic conjunctivitis",
+      "Neonatal conjunctivitis day 2–5 → Neisseria gonorrhoeae emergency",
+      "Neonatal conjunctivitis day 5–14 → Chlamydia trachomatis",
+      "Conjunctivitis + pharyngitis + fever → adenovirus",
+      "Conjunctivitis + cough + coryza + rash → measles",
+    ],
+    distinguishFrom: [
+      "Episcleritis/scleritis — deeper eye wall inflammation, severe pain, may threaten vision",
+      "Acute angle-closure glaucoma — painful red eye with fixed mid-dilated pupil",
+      "Uveitis — photophobia, ciliary flush, anterior chamber cells",
+      "Keratitis — corneal involvement with photophobia; HSV dendrites",
+      "Subconjunctival hemorrhage — isolated blood patch without discharge",
+      "Xerophthalmia — vitamin A deficiency dry eye with Bitot spots, not primary infectious conjunctivitis",
+    ],
+    pediatrics:
+      "Neonatal conjunctivitis requires urgent gonorrhea and chlamydia coverage; prophylaxis at birth prevents gonococcal ophthalmia. Adenovirus spreads in daycare; measles conjunctivitis warrants vitamin A in deficient populations.",
   },
   {
     id: "lacrimation",

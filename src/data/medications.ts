@@ -2943,11 +2943,6 @@ export const MEDICATIONS: MedicationEntry[] = [
       "sildenafil",
       "viagra",
       "revatio",
-      "phosphodiesterase type 5 inhibitor",
-      "phosphodiesterase-5 inhibitor",
-      "phosphodiesterase 5 inhibitor",
-      "pde-5 inhibitor",
-      "pde5 inhibitor",
     ],
     drugClass: "Phosphodiesterase type 5 (PDE-5) inhibitor",
     mechanism:
@@ -2968,6 +2963,71 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Metabolized by CYP3A4 — levels ↑ with ritonavir and grapefruit",
       "Same drug as Revatio; PAH dosing differs from erectile dysfunction dosing",
       "Pediatrics: approved for PAH in children ≥1 year (weight-based dosing)",
+    ],
+  },
+  {
+    id: "tadalafil",
+    name: "Tadalafil",
+    etymology:
+      "tadal- = PDE-5 inhibitor naming element + -afil = PDE-5 inhibitor suffix",
+    aliases: [
+      "tadalafil",
+      "cialis",
+      "adcirca",
+    ],
+    drugClass: "Phosphodiesterase type 5 (PDE-5) inhibitor",
+    mechanism:
+      "Inhibits PDE-5 → prevents cGMP degradation → ↑ cGMP in vascular and smooth muscle → vasodilation (systemic, pulmonary, and prostatic/ bladder smooth muscle).",
+    indications: [
+      "Erectile dysfunction",
+      "Pulmonary arterial hypertension (PAH)",
+      "Benign prostatic hyperplasia (BPH) — lower urinary tract symptoms",
+    ],
+    adverseEffects: [
+      "Headache, flushing, dyspepsia, back pain, myalgia",
+      "Hypotension (especially with nitrates or α-blockers)",
+      "Priapism (rare)",
+      "Visual disturbances (less common than sildenafil; PDE-6 cross-reactivity possible)",
+    ],
+    boardsPearls: [
+      "Same class as sildenafil — PDE-5 inhibitor ↑ cGMP → vasodilation",
+      "Absolute contraindication with nitrates (nitroglycerin) → life-threatening hypotension",
+      "Longer half-life than sildenafil — allows once-daily dosing (ED and PAH)",
+      "Also used for BPH/LUTS — smooth muscle relaxation in prostate and bladder neck",
+      "Metabolized by CYP3A4 — levels ↑ with strong inhibitors (ritonavir, ketoconazole)",
+      "vs sildenafil — longer duration; tadalafil additionally labeled for BPH",
+    ],
+  },
+  {
+    id: "vardenafil",
+    name: "Vardenafil",
+    etymology:
+      "varden- = PDE-5 inhibitor naming element + -afil = PDE-5 inhibitor suffix",
+    aliases: [
+      "vardenafil",
+      "levitra",
+      "staxyn",
+    ],
+    drugClass: "Phosphodiesterase type 5 (PDE-5) inhibitor",
+    mechanism:
+      "Inhibits PDE-5 → prevents cGMP degradation → ↑ cGMP in vascular smooth muscle → penile and systemic vasodilation.",
+    indications: [
+      "Erectile dysfunction",
+    ],
+    adverseEffects: [
+      "Headache, flushing, dyspepsia, nasal congestion",
+      "Hypotension (especially with nitrates or α-blockers)",
+      "Visual disturbances (PDE-6 cross-reactivity possible, generally less than sildenafil)",
+      "Priapism (rare)",
+      "QT prolongation at high doses (boards association with other -afil drugs)",
+    ],
+    boardsPearls: [
+      "PDE-5 inhibitor — same cGMP mechanism as sildenafil and tadalafil",
+      "Absolute contraindication with nitrates → life-threatening hypotension",
+      "Shorter duration of action similar to sildenafil (not long-acting like tadalafil)",
+      "Metabolized by CYP3A4 — avoid strong inhibitors and grapefruit excess",
+      "vs tadalafil — vardenafil not used for BPH or PAH on boards",
+      "vs sildenafil — similar ED indication and nitrate contraindication; vardenafil may have slightly greater PDE-5 selectivity",
     ],
   },
   {
