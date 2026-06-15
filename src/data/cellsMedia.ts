@@ -7,6 +7,7 @@ import actin from "../media/images/cells/actin.svg?url";
 import adherensJunction from "../media/images/cells/adherens-junction.svg?url";
 import adventitia from "../media/images/cells/adventitia.svg?url";
 import antigenPresentingCell from "../media/images/cells/antigen-presenting-cell.png?url";
+import anteriorPituitaryHistology from "../media/images/cells/anterior-pituitary-histology.jpg?url";
 import astrocyte from "../media/images/cells/astrocyte.jpg?url";
 import bLymphocyteBlausen from "../media/images/cells/b-lymphocyte-blausen.png?url";
 import bLymphocyte from "../media/images/cells/b-lymphocyte.png?url";
@@ -127,6 +128,7 @@ export type CELLImageId = Extract<
   | "cd8-t-lymphocyte"
   | "cervical-os"
   | "chromaffin-cell"
+  | "corticotroph"
   | "clear-cytoplasm"
   | "core-promoter-elements"
   | "corticospinal-tract"
@@ -150,6 +152,7 @@ export type CELLImageId = Extract<
   | "fenestrae"
   | "fibroblast"
   | "gap-junction"
+  | "gonadotroph"
   | "golgi-tendon-organ"
   | "gray-matter"
   | "helper-t-cell-differentiation"
@@ -168,6 +171,7 @@ export type CELLImageId = Extract<
   | "lamina-propria"
   | "langerhans-cell"
   | "langhans-giant-cell"
+  | "lactotroph"
   | "leukocyte"
   | "leydig-cell"
   | "lymphocyte"
@@ -209,6 +213,7 @@ export type CELLImageId = Extract<
   | "serosa"
   | "siderophage"
   | "signet-ring-cells"
+  | "somatotroph"
   | "stem-cell"
   | "stroma"
   | "t-cell-signaling"
@@ -216,6 +221,7 @@ export type CELLImageId = Extract<
   | "th17"
   | "th1"
   | "th2"
+  | "thyrotroph"
   | "tight-junction"
   | "type-1-pneumocyte"
   | "type-2-pneumocyte"
@@ -243,6 +249,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "cd8-t-lymphocyte": extensionAssetUrl(cd8TLymphocyte),
   "cervical-os": extensionAssetUrl(cervicalOs),
   "chromaffin-cell": extensionAssetUrl(chromaffinCell),
+  corticotroph: extensionAssetUrl(anteriorPituitaryHistology),
   "clear-cytoplasm": extensionAssetUrl(clearCytoplasm),
   "core-promoter-elements": extensionAssetUrl(corePromoterElements),
   "corticospinal-tract": extensionAssetUrl(corticospinalTract),
@@ -266,6 +273,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "fenestrae": extensionAssetUrl(fenestrae),
   "fibroblast": extensionAssetUrl(fibroblast),
   "gap-junction": extensionAssetUrl(gapJunction),
+  gonadotroph: extensionAssetUrl(anteriorPituitaryHistology),
   "golgi-tendon-organ": extensionAssetUrl(golgiTendonOrgan),
   "gray-matter": extensionAssetUrl(grayMatter),
   "helper-t-cell-differentiation": extensionAssetUrl(helperTCellDifferentiation),
@@ -284,6 +292,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "lamina-propria": extensionAssetUrl(laminaPropria),
   "langerhans-cell": extensionAssetUrl(langerhansCell),
   "langhans-giant-cell": extensionAssetUrl(langhansGiantCell),
+  lactotroph: extensionAssetUrl(anteriorPituitaryHistology),
   "leukocyte": extensionAssetUrl(leukocyte),
   "leydig-cell": extensionAssetUrl(leydigCell),
   "lymphocyte": extensionAssetUrl(lymphocyte),
@@ -325,6 +334,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "serosa": extensionAssetUrl(serosa),
   "siderophage": extensionAssetUrl(siderophage),
   "signet-ring-cells": extensionAssetUrl(signetRingCells),
+  somatotroph: extensionAssetUrl(anteriorPituitaryHistology),
   "stem-cell": extensionAssetUrl(stemCell),
   "stroma": extensionAssetUrl(stroma),
   "t-cell-signaling": extensionAssetUrl(tCellSignaling),
@@ -332,6 +342,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "th17": extensionAssetUrl(th17),
   "th1": extensionAssetUrl(th1),
   "th2": extensionAssetUrl(th2),
+  thyrotroph: extensionAssetUrl(anteriorPituitaryHistology),
   "tight-junction": extensionAssetUrl(tightJunction),
   "type-1-pneumocyte": extensionAssetUrl(type1Pneumocyte),
   "type-2-pneumocyte": extensionAssetUrl(type2Pneumocyte),
@@ -356,6 +367,10 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "cd8-t-lymphocyte": { label: "Wikimedia Commons (Killer T cells surround a cancer cell.png)", url: "https://commons.wikimedia.org/wiki/File:Killer_T_cells_surround_a_cancer_cell.png" },
   "cervical-os": { label: "Wikimedia Commons (Macro Os, vertèbres cervicales - Métastases 55-o.apatho-219d-os.jpg)", url: "https://commons.wikimedia.org/wiki/File:Macro_Os,_vertèbres_cervicales_-_Métastases_55-o.apatho-219d-os.jpg" },
   "chromaffin-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:chromaffin-cell.jpg" },
+  corticotroph: {
+    label: "Wikimedia Commons (Histology of pars distalis of the anterior pituitary with chromophobes, basophils, and acidophils, annotated.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Histology_of_pars_distalis_of_the_anterior_pituitary_with_chromophobes,_basophils,_and_acidophils,_annotated.jpg",
+  },
   "clear-cytoplasm": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clear-cytoplasm.svg" },
   "core-promoter-elements": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:core-promoter-elements.svg" },
   "corticospinal-tract": { label: "Wikimedia Commons (Gray688.png)", url: "https://commons.wikimedia.org/wiki/File:Gray688.png" },
@@ -379,6 +394,10 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "fenestrae": { label: "Wikimedia Commons (Glandula parathyroidea – overview (HE stain).jpg)", url: "https://commons.wikimedia.org/wiki/File:Glandula_parathyroidea_–_overview_(HE_stain).jpg" },
   "fibroblast": { label: "Wikimedia Commons (Cell culture (fibroblasts) (261 20) Fibroblasts (metaphase, anaphase).jpg)", url: "https://commons.wikimedia.org/wiki/File:Cell_culture_(fibroblasts)_(261_20)_Fibroblasts_(metaphase,_anaphase).jpg" },
   "gap-junction": { label: "Wikimedia Commons (Gap cell junction-uk.svg)", url: "https://commons.wikimedia.org/wiki/File:Gap_cell_junction-uk.svg" },
+  gonadotroph: {
+    label: "Wikimedia Commons (Histology of pars distalis of the anterior pituitary with chromophobes, basophils, and acidophils, annotated.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Histology_of_pars_distalis_of_the_anterior_pituitary_with_chromophobes,_basophils,_and_acidophils,_annotated.jpg",
+  },
   "golgi-tendon-organ": { label: "Wikimedia Commons (Gray938.png)", url: "https://commons.wikimedia.org/wiki/File:Gray938.png" },
   "gray-matter": { label: "Wikimedia Commons (Grey matter and white matter - high mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Grey_matter_and_white_matter_-_high_mag.jpg" },
   "helper-t-cell-differentiation": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:helper-t-cell-differentiation.png" },
@@ -397,6 +416,10 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "lamina-propria": { label: "Wikimedia Commons (Stomach - Iron Crystals In Gastric Lamina Propria And Epithelium (49270585877).jpg)", url: "https://commons.wikimedia.org/wiki/File:Stomach_-_Iron_Crystals_In_Gastric_Lamina_Propria_And_Epithelium_(49270585877).jpg" },
   "langerhans-cell": { label: "Wikimedia Commons (Langerhans Cells in Normal Epidermis, CD1a Immunostain (4435883030).jpg)", url: "https://commons.wikimedia.org/wiki/File:Langerhans_Cells_in_Normal_Epidermis,_CD1a_Immunostain_(4435883030).jpg" },
   "langhans-giant-cell": { label: "Wikimedia Commons (Langhans Giant Cell (10189844503).jpg)", url: "https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg" },
+  lactotroph: {
+    label: "Wikimedia Commons (Histology of pars distalis of the anterior pituitary with chromophobes, basophils, and acidophils, annotated.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Histology_of_pars_distalis_of_the_anterior_pituitary_with_chromophobes,_basophils,_and_acidophils,_annotated.jpg",
+  },
   "leukocyte": { label: "Wikimedia Commons (WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy.jpg)", url: "https://commons.wikimedia.org/wiki/File:WBC_(neutrophil)_at_centre,_numerous_erythrocytes_and_platelets_(dot_like_bodies)_in_Wright's_stained_peripheral_blood_smear_(PBS)_microscopy.jpg" },
   "leydig-cell": { label: "Wikimedia Commons (Gray1149.png)", url: "https://commons.wikimedia.org/wiki/File:Gray1149.png" },
   "lymphocyte": { label: "Wikimedia Commons (Microphotographs of atypical lymphocytes observed in peripheral blood smears of quokkas on Rottnest Island.png)", url: "https://commons.wikimedia.org/wiki/File:Microphotographs_of_atypical_lymphocytes_observed_in_peripheral_blood_smears_of_quokkas_on_Rottnest_Island.png" },
@@ -438,6 +461,10 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "serosa": { label: "Wikimedia Commons (Chicken embryo at the stage of formation of trunk and amniotic folds.jpg)", url: "https://commons.wikimedia.org/wiki/File:Chicken_embryo_at_the_stage_of_formation_of_trunk_and_amniotic_folds.jpg" },
   "siderophage": { label: "Wikimedia Commons (Siderophage CSF cytology.jpg)", url: "https://commons.wikimedia.org/wiki/File:Siderophage_CSF_cytology.jpg" },
   "signet-ring-cells": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:signet-ring-cells.jpg" },
+  somatotroph: {
+    label: "Wikimedia Commons (Histology of pars distalis of the anterior pituitary with chromophobes, basophils, and acidophils, annotated.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Histology_of_pars_distalis_of_the_anterior_pituitary_with_chromophobes,_basophils,_and_acidophils,_annotated.jpg",
+  },
   "stem-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:stem-cell.png" },
   "stroma": { label: "Wikimedia Commons (Spiral arteries in endometrial stroma.jpg)", url: "https://commons.wikimedia.org/wiki/File:Spiral_arteries_in_endometrial_stroma.jpg" },
   "t-cell-signaling": { label: "Wikimedia Commons (063-T-CellReceptor-MHC-ru.svg)", url: "https://commons.wikimedia.org/wiki/File:063-T-CellReceptor-MHC-ru.svg" },
@@ -445,6 +472,10 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "th17": { label: "Wikimedia Commons (Helper T Cell Differentiation.png)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "th1": { label: "Wikimedia Commons (Helper T Cell Differentiation.png)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "th2": { label: "Wikimedia Commons (M2 macrophages. Sézary cells produce the Th2 cytokines IL-4 and IL-13.png)", url: "https://commons.wikimedia.org/wiki/File:M2_macrophages._Sézary_cells_produce_the_Th2_cytokines_IL-4_and_IL-13.png" },
+  thyrotroph: {
+    label: "Wikimedia Commons (Histology of pars distalis of the anterior pituitary with chromophobes, basophils, and acidophils, annotated.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Histology_of_pars_distalis_of_the_anterior_pituitary_with_chromophobes,_basophils,_and_acidophils,_annotated.jpg",
+  },
   "tight-junction": { label: "Wikimedia Commons (Morphological modifications during EMT.png)", url: "https://commons.wikimedia.org/wiki/File:Morphological_modifications_during_EMT.png" },
   "type-1-pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:type-1-pneumocyte.jpg" },
   "type-2-pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:type-2-pneumocyte.jpg" },
@@ -467,6 +498,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "cd8-t-lymphocyte": "Clinical or pathologic image illustrating cd8 t lymphocyte",
   "cervical-os": "Clinical or pathologic image illustrating cervical os",
   "chromaffin-cell": "Clinical or pathologic image illustrating chromaffin cell",
+  corticotroph:
+    "Anterior pituitary pars distalis — basophils include corticotrophs secreting ACTH (FLAT mnemonic: FSH/LH, ACTH, TSH)",
   "clear-cytoplasm": "Clinical or pathologic image illustrating clear cytoplasm",
   "core-promoter-elements": "Clinical or pathologic image illustrating core promoter elements",
   "corticospinal-tract": "Clinical or pathologic image illustrating corticospinal tract",
@@ -490,6 +523,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "fenestrae": "Clinical or pathologic image illustrating fenestrae",
   "fibroblast": "Clinical or pathologic image illustrating fibroblast",
   "gap-junction": "Gap junction (connexon) channels connecting adjacent cells for direct cytoplasmic communication",
+  gonadotroph:
+    "Anterior pituitary pars distalis — basophils include gonadotrophs secreting LH and FSH in response to pulsatile GnRH",
   "golgi-tendon-organ": "Clinical or pathologic image illustrating golgi tendon organ",
   "gray-matter": "Clinical or pathologic image illustrating gray matter",
   "helper-t-cell-differentiation": "Clinical or pathologic image illustrating helper t cell differentiation",
@@ -508,6 +543,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "lamina-propria": "Clinical or pathologic image illustrating lamina propria",
   "langerhans-cell": "Clinical or pathologic image illustrating langerhans cell",
   "langhans-giant-cell": "Langhans giant cell with horseshoe-arranged nuclei at the periphery — seen in granulomatous inflammation",
+  lactotroph:
+    "Anterior pituitary pars distalis — acidophils include lactotrophs secreting prolactin under tonic dopamine inhibition",
   "leukocyte": "Clinical or pathologic image illustrating leukocyte",
   "leydig-cell": "Testis cross-section — seminiferous tubules surrounded by interstitial Leydig cells (Gray's anatomy)",
   "lymphocyte": "Clinical or pathologic image illustrating lymphocyte",
@@ -549,6 +586,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "serosa": "Clinical or pathologic image illustrating serosa",
   "siderophage": "Clinical or pathologic image illustrating siderophage",
   "signet-ring-cells": "Clinical or pathologic image illustrating signet ring cells",
+  somatotroph:
+    "Anterior pituitary pars distalis — acidophils include somatotrophs secreting growth hormone (GH → IGF-1)",
   "stem-cell": "Clinical or pathologic image illustrating stem cell",
   "stroma": "Clinical or pathologic image illustrating stroma",
   "t-cell-signaling": "Clinical or pathologic image illustrating t cell signaling",
@@ -556,6 +595,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "th17": "CD4⁺ T-helper subset differentiation pathways — IL-23 sustains Th17 lineage",
   "th1": "CD4⁺ T-helper subset differentiation — IL-12/IFN-γ drives Th1 macrophage-activating immunity",
   "th2": "Clinical or pathologic image illustrating th2",
+  thyrotroph:
+    "Anterior pituitary pars distalis — basophils include thyrotrophs secreting TSH under TRH stimulation",
   "tight-junction": "Clinical or pathologic image illustrating tight junction",
   "type-1-pneumocyte": "Clinical or pathologic image illustrating type 1 pneumocyte",
   "type-2-pneumocyte": "Clinical or pathologic image illustrating type 2 pneumocyte",

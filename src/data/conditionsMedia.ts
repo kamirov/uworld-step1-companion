@@ -72,6 +72,7 @@ import copperDeficiency from "../media/images/conditions/copper-deficiency.jpg?u
 import creutzfeldtJakobDisease from "../media/images/conditions/creutzfeldt-jakob-disease.jpg?url";
 import crohnDisease from "../media/images/conditions/crohn-disease.jpg?url";
 import cushingSyndrome from "../media/images/conditions/cushing-syndrome.jpg?url";
+import cushingDisease from "../media/images/conditions/cushing-disease.jpg?url";
 import cysticFibrosis from "../media/images/conditions/cystic-fibrosis.jpg?url";
 import deliriumTremens from "../media/images/conditions/delirium-tremens.jpg?url";
 import dementia from "../media/images/conditions/dementia.jpg?url";
@@ -380,6 +381,7 @@ export type ConditionImageId = Extract<
   | "creutzfeldt-jakob-disease"
   | "crohn-disease"
   | "cushing-syndrome"
+  | "cushing-disease"
   | "cystic-fibrosis"
   | "delirium-tremens"
   | "dementia"
@@ -693,6 +695,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "creutzfeldt-jakob-disease": extensionAssetUrl(creutzfeldtJakobDisease),
   "crohn-disease": extensionAssetUrl(crohnDisease),
   "cushing-syndrome": extensionAssetUrl(cushingSyndrome),
+  "cushing-disease": extensionAssetUrl(cushingDisease),
   "cystic-fibrosis": extensionAssetUrl(cysticFibrosis),
   "delirium-tremens": extensionAssetUrl(deliriumTremens),
   "dementia": extensionAssetUrl(dementia),
@@ -1024,6 +1027,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "creutzfeldt-jakob-disease": { label: "Wikimedia Commons (Local copy proteins/prion-protein.jpg)", url: "https://commons.wikimedia.org/" },
   "crohn-disease": { label: "Wikimedia Commons (Severe ulcerative colitis.jpg)", url: "https://commons.wikimedia.org/wiki/File:Severe_ulcerative_colitis.jpg" },
   "cushing-syndrome": { label: "Wikimedia Commons (United States Navy Medical News Letter Vol. 28, No. 5, 7 September 1956 (IA NavyMedicalNewsletter19560907).pdf)", url: "https://commons.wikimedia.org/wiki/File:United_States_Navy_Medical_News_Letter_Vol._28,_No._5,_7_September_1956_(IA_NavyMedicalNewsletter19560907).pdf" },
+  "cushing-disease": {
+    label: "Wikimedia Commons (Straie with cushing syndrome new photo.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Straie_with_cushing_syndrome_new_photo.jpg",
+  },
   "cystic-fibrosis": { label: "Wikimedia Commons (Blausen 0286 CysticFibrosis.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0286_CysticFibrosis.png" },
   "delirium-tremens": { label: "Wikimedia Commons (Delirium tremens Skalarjevo brezno Peter Gedei 2020-8-8.jpg)", url: "https://commons.wikimedia.org/wiki/File:Delirium_tremens_Skalarjevo_brezno_Peter_Gedei_2020-8-8.jpg" },
   "dementia": { label: "Wikimedia Commons (Histopathology of Alzheimer's disease.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Alzheimer's_disease.jpg" },
@@ -1397,6 +1404,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "creutzfeldt-jakob-disease": "Creutzfeldt-Jakob disease — rapidly progressive prion encephalopathy with spongiform change",
   "crohn-disease": "Clinical or pathologic image illustrating crohn disease",
   "cushing-syndrome": "Clinical or pathologic image illustrating cushing syndrome",
+  "cushing-disease":
+    "Wide purple striae in hypercortisolism — classic skin finding in Cushing disease from pituitary ACTH excess",
   "cystic-fibrosis": "Clinical or pathologic image illustrating cystic fibrosis",
   "delirium-tremens": "Severe alcohol withdrawal delirium with autonomic hyperactivity",
   "dementia": "Clinical or pathologic image illustrating dementia",

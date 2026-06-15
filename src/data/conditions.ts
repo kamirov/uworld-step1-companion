@@ -5241,7 +5241,7 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "prolactinoma",
     name: "Prolactinoma",
     etymology: "Latin pro = forward + lac = milk + -in = substance + Greek -oma = tumor/mass",
-    aliases: ["prolactinoma", "prolactin-secreting pituitary adenoma"],
+    aliases: ["prolactinoma", "prolactinomas", "prolactin-secreting pituitary adenoma", "lactotroph adenoma", "macroprolactinoma", "microprolactinoma"],
     definition:
       "Pituitary adenoma secreting prolactin, causing hyperprolactinemia and mass effect on surrounding structures.",
     pathophysiology:
@@ -5897,6 +5897,74 @@ export const CONDITIONS: ConditionEntry[] = [
       "Purple striae >1 cm wide are specific",
       "High-dose dex suppression: pituitary source suppresses; ectopic/adrenal does not",
     ],
+  },
+  {
+    id: "cushing-disease",
+    name: "Cushing Disease",
+    etymology: "eponym: Harvey Cushing + Latin dis = apart + ease = condition (specific pituitary form)",
+    aliases: [
+      "cushing disease",
+      "cushing's disease",
+      "pituitary cushing disease",
+      "acth-dependent cushing disease",
+      "pituitary acth adenoma",
+      "corticotroph adenoma",
+      "corticotroph adenomas",
+    ],
+    definition:
+      "ACTH-dependent Cushing syndrome caused by a pituitary corticotroph adenoma secreting excess ACTH — the most common endogenous ACTH-dependent cause of hypercortisolism in adults.",
+    pathophysiology:
+      "Pituitary corticotroph microadenoma (or macroadenoma) → ↑ ACTH → bilateral adrenal hyperplasia and cortisol excess → protein catabolism, central adiposity, hyperglycemia, immunosuppression; loss of normal diurnal cortisol rhythm and impaired feedback.",
+    classicPresentation: [
+      "Moon facies, central obesity, buffalo hump, supraclavicular fat pads",
+      "Purple abdominal striae >1 cm, thin skin, easy bruising",
+      "Proximal muscle weakness, hyperglycemia, hypertension",
+      "Often women with menstrual irregularity; osteoporosis from chronic hypercortisolism",
+    ],
+    keyLabs: [
+      "↑ Late-night salivary cortisol or ↑ 24-hour urine free cortisol",
+      "↑ ACTH (ACTH-dependent pattern)",
+      "Failure to suppress cortisol on low-dose dexamethasone suppression test",
+      "High-dose dexamethasone suppression — cortisol and ACTH suppress in most pituitary Cushing disease",
+      "MRI pituitary — corticotroph adenoma (may be microadenoma <10 mm)",
+    ],
+    keyFindings: [
+      "Purple wide striae, facial plethora, proximal weakness",
+      "Pituitary adenoma on MRI (not always visualized if microadenoma)",
+    ],
+    associations: [
+      "Pituitary corticotroph adenoma",
+      "Nelson syndrome risk after bilateral adrenalectomy if residual corticotroph tissue",
+      "Osteoporosis, diabetes, hypertension from chronic hypercortisolism",
+    ],
+    complications: [
+      "Infections from cortisol immunosuppression",
+      "Vertebral compression fractures",
+      "Nelson syndrome — aggressive corticotroph tumor after adrenalectomy",
+      "Cardiovascular disease",
+    ],
+    distinguishFrom: [
+      "Cushing syndrome — broader hypercortisolism from any cause (exogenous steroids most common overall)",
+      "Ectopic ACTH syndrome (SCLC) — high ACTH, often no suppression with high-dose dexamethasone, hypokalemia",
+      "Adrenal adenoma/carcinoma — ACTH-independent; low ACTH",
+      "Pseudo-Cushing states — depression, alcoholism, obesity",
+      "Exogenous glucocorticoids — suppressed ACTH and adrenal atrophy",
+    ],
+    treatment: [
+      "Transsphenoidal pituitary surgery — first-line for corticotroph adenoma",
+      "Pituitary radiation or bilateral adrenalectomy if surgery fails",
+      "Metyrapone or ketoconazole to block cortisol synthesis while awaiting definitive therapy",
+    ],
+    boardsPearls: [
+      "Cushing disease = pituitary ACTH adenoma (corticotroph adenoma)",
+      "vs Cushing syndrome — syndrome is any hypercortisolism; disease is specific pituitary cause",
+      "ACTH elevated + high-dose dex suppression → pituitary source",
+      "Ectopic ACTH (SCLC) — often no high-dose dex suppression; hypokalemia from mineralocorticoid effect",
+      "Most common endogenous cause of ACTH-dependent Cushing in adults",
+      "Inferior petrosal sinus sampling distinguishes pituitary vs ectopic ACTH when imaging equivocal",
+    ],
+    pediatrics:
+      "Pediatric Cushing disease is uncommon; children may present with growth arrest and weight gain. Pituitary microadenomas predominate; transsphenoidal surgery is preferred when feasible.",
   },
   {
     id: "addison-disease",

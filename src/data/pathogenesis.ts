@@ -2876,6 +2876,43 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Kawasaki disease coronary aneurysms peak risk when untreated after day 10 of fever — IVIG + aspirin reduce aneurysm formation.",
   },
   {
+    id: "autocrine",
+    name: "Autocrine",
+    etymology: "Greek autos = self + krinein = to separate/secrete",
+    aliases: [
+      "autocrine",
+      "autocrine signaling",
+      "autocrine signalling",
+      "autocrine signal",
+      "autocrine signals",
+      "autocrine communication",
+    ],
+    definition:
+      "Signaling mode in which a cell secretes a molecule that binds receptors on the same cell, producing a self-directed response — local feedback without requiring neighboring cells or systemic circulation.",
+    examples: [
+      "IL-2 secretion by activated T cells → autocrine IL-2 receptor signaling → clonal proliferation",
+      "PDGF released by platelets and smooth muscle cells → autocrine growth stimulation in wound repair",
+      "TGF-β in fibroblasts and tumor cells — autocrine loops promoting fibrosis or malignancy",
+      "Growth factor autocrine loops in cancer — tumor cells stimulate their own proliferation",
+      "Prostaglandins and cytokines in macrophages — autocrine amplification of inflammation",
+    ],
+    boardsPearls: [
+      "Autocrine = cell signals itself (auto = self)",
+      "vs paracrine — paracrine acts on adjacent cells; autocrine on same cell",
+      "vs endocrine — endocrine uses bloodstream to distant targets",
+      "IL-2 autocrine loop is classic in T-cell clonal expansion",
+      "Oncogene-driven growth factor autocrine signaling contributes to tumor autonomy",
+    ],
+    distinguishFrom: [
+      "Paracrine — secreted factor acts on neighboring cells, not the secreting cell",
+      "Endocrine — hormone travels via blood to distant target organs",
+      "Juxtacrine — membrane-bound ligand on one cell contacts receptor on adjacent cell (direct contact)",
+      "Synaptic — neurotransmitter across specialized synaptic cleft",
+    ],
+    pediatrics:
+      "Autocrine IL-7 supports T-cell development in pediatric bone marrow and thymus; autocrine growth loops are less emphasized in Step 1 pediatrics than oncologic and immune examples.",
+  },
+  {
     id: "cerebral-aneurysm",
     name: "Cerebral Aneurysm",
     etymology: "Latin cerebrum = brain + Greek aneurysma = dilation",
@@ -3375,6 +3412,46 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Barth syndrome (X-linked tafazzin defect) presents in boys with dilated cardiomyopathy, neutropenia, and 3-methylglutaconic aciduria from abnormal cardiolipin metabolism.",
+  },
+  {
+    id: "paracrine",
+    name: "Paracrine",
+    etymology: "Greek para = beside + krinein = to separate/secrete",
+    aliases: [
+      "paracrine",
+      "paracrine signaling",
+      "paracrine signalling",
+      "paracrine signal",
+      "paracrine signals",
+      "paracrine communication",
+      "paracrine regulation",
+    ],
+    definition:
+      "Signaling mode in which a cell secretes a molecule that acts on nearby target cells in the local microenvironment without entering systemic circulation — short-range intercellular communication.",
+    examples: [
+      "Pancreatic islet — insulin from β cells inhibits glucagon secretion from neighboring α cells",
+      "Somatostatin from δ cells paracrinely inhibits both α and β cells within the islet",
+      "Macula densa → JG apparatus renin release — tubuloglomerular feedback",
+      "Histamine from mast cells acts paracrinely on local vessels and smooth muscle",
+      "Hepatic stellate cell cytokine signaling to neighboring hepatocytes in fibrosis",
+      "Prostaglandins mediating paracrine uterine myometrial contraction",
+    ],
+    boardsPearls: [
+      "Paracrine = acts on adjacent/local cells (para = beside)",
+      "vs autocrine — same cell; vs endocrine — distant via blood",
+      "Islet hormones (insulin, glucagon, somatostatin) classic paracrine regulation",
+      "Tubuloglomerular feedback — macula densa paracrine control of renin",
+      "Gap junctions are not paracrine — direct cytoplasmic coupling without secreted ligand",
+    ],
+    distinguishFrom: [
+      "Autocrine — ligand feeds back on the secreting cell itself",
+      "Endocrine — hormone released into bloodstream for distant targets",
+      "Juxtacrine — membrane-tethered ligand requires cell-cell contact",
+      "Synaptic neurotransmission — specialized junctional release to postsynaptic neuron",
+      "Gap junction communication — direct ion/small molecule passage without secreted mediator",
+    ],
+    pediatrics:
+      "Neonatal islet paracrine immaturity contributes to dysregulated glucose homeostasis in prematurity; paracrine signaling is foundational in organogenesis across fetal development.",
   },
   {
     id: "paraneoplastic-syndrome",

@@ -30,7 +30,9 @@ import anovulation from "../media/images/pathogenesis/anovulation.svg?url";
 import ovulation from "../media/images/pathogenesis/ovulation.png?url";
 import ovulatoryDysfunction from "../media/images/pathogenesis/ovulatory-dysfunction.png?url";
 import analgesia from "../media/images/pathogenesis/analgesia.png?url";
+import autocrine from "../media/images/pathogenesis/autocrine.png?url";
 import bronchodilation from "../media/images/pathogenesis/bronchodilation.png?url";
+import paracrine from "../media/images/pathogenesis/paracrine.png?url";
 
 export type PathogenesisImageId = Extract<
   PathogenesisEntry["id"],
@@ -63,7 +65,9 @@ export type PathogenesisImageId = Extract<
   | "ovulation"
   | "ovulatory-dysfunction"
   | "analgesia"
+  | "autocrine"
   | "bronchodilation"
+  | "paracrine"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -103,7 +107,9 @@ export const PATHOGENESIS_IMAGES: Partial<
   ovulation: extensionAssetUrl(ovulation),
   "ovulatory-dysfunction": extensionAssetUrl(ovulatoryDysfunction),
   analgesia: extensionAssetUrl(analgesia),
+  autocrine: extensionAssetUrl(autocrine),
   bronchodilation: extensionAssetUrl(bronchodilation),
+  paracrine: extensionAssetUrl(paracrine),
 };
 
 export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
@@ -228,9 +234,17 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Touch Pain Pathways.png)",
     url: "https://commons.wikimedia.org/wiki/File:Touch_Pain_Pathways.png",
   },
+  autocrine: {
+    label: "Wikimedia Commons (Autocrine and Paracrine.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Autocrine_and_Paracrine.png",
+  },
   bronchodilation: {
     label: "Wikimedia Commons (Beta-2 adrenergic receptor.png)",
     url: "https://commons.wikimedia.org/wiki/File:Beta-2_adrenergic_receptor.png",
+  },
+  paracrine: {
+    label: "Wikimedia Commons (Autocrine and Paracrine.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Autocrine_and_Paracrine.png",
   },
 };
 
@@ -295,8 +309,12 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Transvaginal ultrasound of polycystic ovaries with multiple subcapsular follicles — classic morphology in PCOS-related ovulatory dysfunction",
   analgesia:
     "Spinothalamic and trigeminal pain pathways — nociceptive afferents ascend to thalamus and cortex; analgesia interrupts transmission at peripheral, spinal, or central sites",
+  autocrine:
+    "Autocrine signaling — secreted ligand binds receptors on the same cell that released it",
   bronchodilation:
     "β₂-adrenergic receptor — Gs-coupled cAMP signaling relaxes bronchial smooth muscle; target of albuterol and epinephrine in reactive airway disease",
+  paracrine:
+    "Paracrine signaling — secreted factor acts on neighboring cells in the local microenvironment",
 };
 
 export function getPathogenesisImageForId(id: string): string | undefined {
