@@ -23,6 +23,10 @@ import protease from "../media/images/pathogenesis/protease.png?url";
 import pyogenicInfection from "../media/images/pathogenesis/pyogenic-infection.jpg?url";
 import robertsonianTranslocation from "../media/images/pathogenesis/robertsonian-translocation.png?url";
 import reentrantCircuit from "../media/images/pathogenesis/reentrant-circuit.png?url";
+import hyperandrogenism from "../media/images/pathogenesis/hyperandrogenism.png?url";
+import anovulation from "../media/images/pathogenesis/anovulation.svg?url";
+import ovulation from "../media/images/pathogenesis/ovulation.png?url";
+import ovulatoryDysfunction from "../media/images/pathogenesis/ovulatory-dysfunction.png?url";
 
 export type PathogenesisImageId = Extract<
   PathogenesisEntry["id"],
@@ -48,6 +52,10 @@ export type PathogenesisImageId = Extract<
   | "pyogenic-infection"
   | "robertsonian-translocation"
   | "reentrant-circuit"
+  | "hyperandrogenism"
+  | "anovulation"
+  | "ovulation"
+  | "ovulatory-dysfunction"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -80,6 +88,10 @@ export const PATHOGENESIS_IMAGES: Partial<
   "pyogenic-infection": extensionAssetUrl(pyogenicInfection),
   "robertsonian-translocation": extensionAssetUrl(robertsonianTranslocation),
   "reentrant-circuit": extensionAssetUrl(reentrantCircuit),
+  hyperandrogenism: extensionAssetUrl(hyperandrogenism),
+  anovulation: extensionAssetUrl(anovulation),
+  ovulation: extensionAssetUrl(ovulation),
+  "ovulatory-dysfunction": extensionAssetUrl(ovulatoryDysfunction),
 };
 
 export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
@@ -176,6 +188,22 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Wpw2 (CardioNetworks ECGpedia).svg)",
     url: "https://commons.wikimedia.org/wiki/File:Wpw2_(CardioNetworks_ECGpedia).svg",
   },
+  hyperandrogenism: {
+    label: "Wikimedia Commons (PMC4103002 ircmj-16-9410-g001.png)",
+    url: "https://commons.wikimedia.org/wiki/File:PMC4103002_ircmj-16-9410-g001.png",
+  },
+  anovulation: {
+    label: "Wikimedia Commons (Hormones estradiol, progesterone, LH and FSH during menstrual cycle.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Hormones_estradiol,_progesterone,_LH_and_FSH_during_menstrual_cycle.svg",
+  },
+  ovulation: {
+    label: "Wikimedia Commons (Luteinizing hormone (LH) during menstrual cycle.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Luteinizing_hormone_(LH)_during_menstrual_cycle.png",
+  },
+  "ovulatory-dysfunction": {
+    label: "Wikimedia Commons (Ultrasound scans and 3D rendering of polycystic ovaries.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Ultrasound_scans_and_3D_rendering_of_polycystic_ovaries.png",
+  },
 };
 
 export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
@@ -225,6 +253,14 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Robertsonian translocation — fusion of acrocentric chromosome long arms (14;21) producing balanced carrier karyotype",
   "reentrant-circuit":
     "Wolff-Parkinson-White pre-excitation — accessory pathway enables atrioventricular reentrant tachycardia (AVRT) circuit",
+  hyperandrogenism:
+    "Severe hirsutism in a 17-year-old female with polycystic ovary syndrome — clinical manifestation of hyperandrogenism",
+  anovulation:
+    "Menstrual cycle hormone profile — anovulatory cycles lack the midcycle LH surge and luteal progesterone rise",
+  ovulation:
+    "Midcycle LH surge — triggers Graafian follicle rupture and oocyte release approximately 36 hours later",
+  "ovulatory-dysfunction":
+    "Transvaginal ultrasound of polycystic ovaries with multiple subcapsular follicles — classic morphology in PCOS-related ovulatory dysfunction",
 };
 
 export function getPathogenesisImageForId(id: string): string | undefined {

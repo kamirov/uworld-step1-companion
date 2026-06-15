@@ -52,3 +52,17 @@ beta-amyloid.jpg
   Page: https://commons.wikimedia.org/wiki/File:Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg
   Download: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg/250px-Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg
   Description: Amyloid beta immunostaining showing extracellular Aβ deposits
+
+immunoglobulin-heavy-chain.svg
+  Source: Wikimedia Commons — AntibodyChains.svg
+  Author: Sbmehta (based on Yohan)
+  Description: Cartoon of antibody showing heavy chains, light chains, Fab and Fc fragments
+  Page: https://commons.wikimedia.org/wiki/File:AntibodyChains.svg
+
+immunoglobulin-light-chain.png
+  Source: Wikimedia Commons — Antibody IgG1 structure.png
+  Author: RCSB PDB structure 1IGY
+  Description: IgG1 antibody structure with light chains and heavy chains labeled
+  License: Creative Commons Attribution-Share Alike 4.0 International
+  Page: https://commons.wikimedia.org/wiki/File:Antibody_IgG1_structure.png
+  Resized to 320 px width for popover display.

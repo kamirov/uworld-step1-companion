@@ -1808,6 +1808,130 @@ export const ORGANS: OrganEntry[] = [
       "Internal muscular ridge in the right atrium marking the junction between the smooth-walled sinus venarum (sinus venosus derivative) and the trabeculated atrial appendage; sinoatrial node cluster lies at its superior aspect near the SVC orifice.",
   },
   {
+    id: "cavotricuspid-isthmus",
+    name: "Cavotricuspid Isthmus",
+    etymology: "Latin cavus = hollow (vena cava) + Latin tri = three + Latin cuspis = point (tricuspid) + Greek isthmos = narrow neck/bridge",
+    aliases: [
+      "cavotricuspid isthmus",
+      "cavo-tricuspid isthmus",
+      "cavo tricuspid isthmus",
+      "cti",
+      "cavotricuspid isthmuses",
+      "isthmus between ivc and tricuspid valve",
+      "tricuspid-ivc isthmus",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Subeustachian right atrial myocardium forming a narrow conduction bridge between the inferior vena cava–tricuspid annulus line and the coronary sinus/eustachian ridge — the critical slow-conduction zone for typical atrial flutter macroreentry.",
+    derivatives: [
+      "Slow pathway substrate for counterclockwise atrial flutter",
+      "Target for radiofrequency ablation lines",
+    ],
+    functionSummary:
+      "Anatomic isthmus in the low right atrium that serves as the preferred pathway for macroreentrant atrial flutter circuits — ablation across this region interrupts the circuit and is curative for typical flutter.",
+    commonPathologies: [
+      "Typical (type I) atrial flutter — counterclockwise macroreentry using CTI",
+      "Iatrogenic flutter after cardiac surgery (atriotomy scars)",
+      "Atrial tachycardia circuits involving low right atrium",
+    ],
+    step1Pearls: [
+      "CTI = cavotricuspid isthmus — ablation target for typical atrial flutter",
+      "Bounded by tricuspid annulus, IVC, and eustachian valve/coronary sinus ridge",
+      "Sawtooth flutter waves + 2:1 block → ventricular rate ~150; carotid massage reveals F waves",
+      "Same stroke risk as atrial fibrillation — anticoagulate",
+      "vs atypical flutter — does not use CTI; harder to ablate",
+    ],
+    pediatrics:
+      "Atrial flutter occurs in congenital heart disease and post-surgical atria; CTI ablation is performed in older children/adolescents at experienced EP centers.",
+  },
+  {
+    id: "av-node",
+    name: "AV Node",
+    etymology: "atrioventricular + Latin nodus = knot = atrioventricular junctional pacemaker tissue",
+    aliases: [
+      "av node",
+      "av nodes",
+      "atrioventricular node",
+      "atrioventricular nodes",
+      "a-v node",
+      "node of aschoff and tawara",
+      "koch node",
+    ],
+    germLayer: "Mesoderm (neural crest contribution to conduction system)",
+    origin:
+      "Develops from cardiogenic mesoderm at the atrioventricular canal; located in the inferior interatrial septum near the coronary sinus ostium within the anatomic Koch triangle.",
+    derivatives: [
+      "AV nodal tissue — delays impulse between atria and ventricles",
+      "Compact node → bundle of His",
+      "Dual AV nodal pathways (fast and slow) in some patients — substrate for AVNRT",
+    ],
+    functionSummary:
+      "Only normal electrical connection between atria and ventricles — slows conduction (~100 ms delay) and prevents 1:1 conduction of rapid atrial arrhythmias; intrinsic junctional pacemaker if higher pacemakers fail.",
+    commonPathologies: [
+      "AV nodal reentrant tachycardia (AVNRT)",
+      "First-degree AV block — prolonged PR interval",
+      "Mobitz I (Wenckebach) — usually AV nodal block",
+      "Inferior MI — RCA supplies AV node → bradycardia/heart block",
+      "Lyme carditis — AV block",
+      "Digoxin toxicity — increased vagal tone + direct AV nodal depression",
+    ],
+    step1Pearls: [
+      "AV node delays impulse — PR interval on ECG",
+      "Koch triangle boundaries: coronary sinus, tendon of Todaro, septal tricuspid annulus",
+      "Adenosine blocks AV node — terminates AVNRT, diagnostic for SVT",
+      "Inferior MI → AV block (RCA supplies AV node in most people)",
+      "Mobitz I = Wenckebach at AV node; Mobitz II = infranodal (His-Purkinje)",
+      "AV node ablation + pacemaker for refractory AF rate control (destroys AV conduction)",
+    ],
+    pediatrics:
+      "Congenital complete heart block from maternal anti-Ro/La antibodies damages fetal AV node; neonatal junctional escape rhythm may require pacing.",
+  },
+  {
+    id: "his-purkinje-system",
+    name: "His-Purkinje System",
+    etymology: "eponym: Wilhelm His Jr. + eponym: Johannes Evangelista Purkinje + English system = specialized ventricular conduction network",
+    aliases: [
+      "his-purkinje system",
+      "his purkinje system",
+      "his-purkinje",
+      "his purkinje",
+      "his bundle and purkinje fibers",
+      "bundle of his and purkinje network",
+      "ventricular conduction system",
+      "infranodal conduction system",
+      "specialized conduction system",
+      "purkinje network",
+    ],
+    germLayer: "Mesoderm (neural crest–derived conduction cells)",
+    origin:
+      "AV node continues as the bundle of His penetrating the fibrous cardiac skeleton; bifurcates into right and left bundle branches coursing along the interventricular septum, then ramifies into subendocardial Purkinje fibers distributing impulses rapidly to ventricular myocardium.",
+    derivatives: [
+      "Bundle of His (common bundle)",
+      "Right bundle branch",
+      "Left bundle branch (anterior and posterior fascicles)",
+      "Subendocardial Purkinje fiber network",
+    ],
+    functionSummary:
+      "Rapidly conducts depolarization from AV node to ventricular myocardium — synchronizes ventricular contraction; injury causes bundle branch block, wide QRS, and Mobitz II / third-degree block.",
+    commonPathologies: [
+      "Right or left bundle branch block",
+      "Mobitz II second-degree AV block — infranodal",
+      "Third-degree (complete) heart block with wide escape rhythm",
+      "Trifascicular block — risk of complete heart block",
+      "Lenègre/Lev disease — degenerative conduction fibrosis",
+    ],
+    step1Pearls: [
+      "His-Purkinje = infranodal conduction — bundle of His → bundle branches → Purkinje fibers",
+      "Wide QRS escape in complete heart block → ventricular (Purkinje) escape below AV node",
+      "Mobitz II and complete heart block with wide QRS → His-Purkinje disease → pacemaker",
+      "RBBB — V1 RSR' (rabbit ears); LBBB — broad notched R in V5-V6",
+      "Bifascicular block (RBBB + LAFB) + PR prolongation = trifascicular block",
+      "vs AV nodal block — narrow QRS escape, Mobitz I pattern",
+    ],
+    pediatrics:
+      "Congenital complete heart block may be isolated or with structural heart disease; wide-complex neonatal escape suggests infranodal disease — permanent pacemaker often required.",
+  },
+  {
     id: "papillary-muscle",
     name: "Papillary Muscle",
     etymology: "Latin papilla = nipple + Latin musculus = little mouse/muscle",

@@ -274,3 +274,10 @@ cytoskeleton.jpg
   Page: https://commons.wikimedia.org/wiki/File:0317_Cytoskeletal_Components.jpg
   Download: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/0317_Cytoskeletal_Components.jpg/330px-0317_Cytoskeletal_Components.jpg
   Description: Cytoskeletal components showing microtubules, actin microfilaments, and intermediate filaments
+
+ovarian-theca-cell.jpg
+  Source: Wikimedia Commons — Granulosa and theca cells. Wellcome L0002177EC.jpg
+  Author: Wellcome Collection
+  Description: Histologic illustration of ovarian follicle granulosa and theca cell layers
+  Page: https://commons.wikimedia.org/wiki/File:Granulosa_and_theca_cells._Wellcome_L0002177EC.jpg
+  Resized to 330 px width for popover display.

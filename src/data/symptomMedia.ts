@@ -19,6 +19,7 @@ import bradykinesia from "../media/images/symptoms/bradykinesia.jpg?url";
 import brudzinskiSign from "../media/images/symptoms/brudzinski-sign.png?url";
 import bullae from "../media/images/symptoms/bullae.jpg?url";
 import calcinosis from "../media/images/symptoms/calcinosis.jpg?url";
+import cannonAWaves from "../media/images/symptoms/cannon-a-waves.jpg?url";
 import chestPain from "../media/images/symptoms/chest-pain.jpg?url";
 import cheyneStokesRespiration from "../media/images/symptoms/cheyne-stokes-respiration.svg?url";
 import chorea from "../media/images/symptoms/chorea.jpg?url";
@@ -167,6 +168,7 @@ export type SymptomImageId = Extract<
   | "brudzinski-sign"
   | "bullae"
   | "calcinosis"
+  | "cannon-a-waves"
   | "chest-pain"
   | "cheyne-stokes-respiration"
   | "chorea"
@@ -321,6 +323,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "brudzinski-sign": extensionAssetUrl(brudzinskiSign),
   "bullae": extensionAssetUrl(bullae),
   "calcinosis": extensionAssetUrl(calcinosis),
+  "cannon-a-waves": extensionAssetUrl(cannonAWaves),
   "chest-pain": extensionAssetUrl(chestPain),
   "cheyne-stokes-respiration": extensionAssetUrl(cheyneStokesRespiration),
   "chorea": extensionAssetUrl(chorea),
@@ -475,6 +478,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "brudzinski-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:brudzinski-sign.png" },
   "bullae": { label: "Wikimedia Commons (Bullous pemphigoid new image.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg" },
   "calcinosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:calcinosis.jpg" },
+  "cannon-a-waves": {
+    label: "Wikimedia Commons (Elevated Jugular Venous Pressure.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Elevated_Jugular_Venous_Pressure.jpg",
+  },
   "chest-pain": { label: "Wikimedia Commons (Depiction of a person suffering from chest pain.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png" },
   "cheyne-stokes-respiration": {
     label: "Wikimedia Commons (Cheyne-Stokes cs.svg)",
@@ -645,6 +652,8 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "brudzinski-sign": "Brudziński sign — passive neck flexion causes involuntary hip/knee flexion in meningitis",
   "bullae": "Bullous pemphigoid — tense subepidermal bullae",
   "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
+  "cannon-a-waves":
+    "Elevated jugular venous pressure — prominent neck vein pulsations seen with AV dissociation and cannon A waves",
   "chest-pain": "Clinical or pathologic image illustrating chest pain",
   "cheyne-stokes-respiration":
     "Cheyne-Stokes respiration — cyclic crescendo-decrescendo breathing with central apneic pauses",

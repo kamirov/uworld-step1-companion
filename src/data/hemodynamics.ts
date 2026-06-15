@@ -583,6 +583,34 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Traumatic brain injury — disrupted autoregulation with pressure-passive CBV changes",
     ],
   },
+  {
+    id: "intracranial-pressure",
+    name: "Intracranial Pressure",
+    etymology:
+      "Latin intra = within + cranium = skull + Latin pressura = pressing force",
+    aliases: [
+      "intracranial pressure",
+      "intracranial pressures",
+      "icp",
+      "raised intracranial pressure",
+      "increased intracranial pressure",
+      "elevated intracranial pressure",
+      "intracranial hypertension",
+      "high intracranial pressure",
+      "↑ icp",
+    ],
+    definition:
+      "Pressure within the rigid skull exerted by brain parenchyma, blood, and CSF — normally ~5–15 mmHg in adults; elevation impairs cerebral perfusion (CPP = MAP − ICP) and can cause herniation.",
+    factors: [
+      "Monro-Kellie doctrine — fixed skull volume; ↑ brain, blood, or CSF raises ICP",
+      "↑ ICP causes: mass lesion (tumor, hematoma), cerebral edema (TBI, stroke, infection), hydrocephalus, impaired CSF absorption, venous sinus thrombosis, idiopathic intracranial hypertension",
+      "Clinical signs: headache, nausea/vomiting, papilledema, ↓ consciousness, Cushing triad (hypertension, bradycardia, irregular respirations — late)",
+      "CPP = MAP − ICP — maintain MAP; ICP must stay below MAP for perfusion",
+      "Management: head elevation, osmotherapy (mannitol, hypertonic saline), brief hyperventilation (↓ PaCO₂ → vasoconstriction ↓ CBV), CSF drainage (EVD), treat underlying mass/edema, decompressive craniectomy if refractory",
+      "Lumbar puncture contraindicated if mass lesion risks herniation — obtain CT first when indicated",
+      "Peds: infants have open fontanelles — bulging fontanelle and separated sutures before cranial suture fusion; ICP still dangerous with rapid volume expansion",
+    ],
+  },
 ];
 
 const hemodynamicById = new Map(HEMODYNAMICS.map((h) => [h.id, h]));

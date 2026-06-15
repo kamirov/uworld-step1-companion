@@ -6,6 +6,8 @@ import amyloidPrecursorProtein from "../media/images/proteins/amyloid-precursor-
 import betaAmyloid from "../media/images/proteins/beta-amyloid.jpg?url";
 import ceruloplasmin from "../media/images/proteins/ceruloplasmin.jpg?url";
 import filaggrin from "../media/images/proteins/filaggrin.png?url";
+import immunoglobulinHeavyChain from "../media/images/proteins/immunoglobulin-heavy-chain.svg?url";
+import immunoglobulinLightChain from "../media/images/proteins/immunoglobulin-light-chain.png?url";
 import intrinsicFactor from "../media/images/proteins/intrinsic-factor.png?url";
 import phenylalanineHydroxylase from "../media/images/proteins/phenylalanine-hydroxylase.jpg?url";
 import tyrosineHydroxylase from "../media/images/proteins/tyrosine-hydroxylase.png?url";
@@ -20,6 +22,8 @@ export type ProteinImageId = Extract<
   | "beta-amyloid"
   | "ceruloplasmin"
   | "filaggrin"
+  | "immunoglobulin-heavy-chain"
+  | "immunoglobulin-light-chain"
   | "intrinsic-factor"
   | "phenylalanine-hydroxylase"
   | "tyrosine-hydroxylase"
@@ -39,6 +43,8 @@ export const PROTEIN_IMAGES: Partial<Record<ProteinImageId, string>> = {
   "beta-amyloid": extensionAssetUrl(betaAmyloid),
   ceruloplasmin: extensionAssetUrl(ceruloplasmin),
   filaggrin: extensionAssetUrl(filaggrin),
+  "immunoglobulin-heavy-chain": extensionAssetUrl(immunoglobulinHeavyChain),
+  "immunoglobulin-light-chain": extensionAssetUrl(immunoglobulinLightChain),
   "intrinsic-factor": extensionAssetUrl(intrinsicFactor),
   "phenylalanine-hydroxylase": extensionAssetUrl(phenylalanineHydroxylase),
   "tyrosine-hydroxylase": extensionAssetUrl(tyrosineHydroxylase),
@@ -70,6 +76,14 @@ export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
   filaggrin: {
     label: "Wikimedia Commons (502 Layers of epidermis (no labels).png)",
     url: "https://commons.wikimedia.org/wiki/File:502_Layers_of_epidermis_(no_labels).png",
+  },
+  "immunoglobulin-heavy-chain": {
+    label: "Wikimedia Commons (AntibodyChains.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:AntibodyChains.svg",
+  },
+  "immunoglobulin-light-chain": {
+    label: "Wikimedia Commons (Antibody IgG1 structure.png, CC BY-SA 4.0)",
+    url: "https://commons.wikimedia.org/wiki/File:Antibody_IgG1_structure.png",
   },
   "intrinsic-factor": {
     label: "Wikimedia Commons (Histology of gastric chief cell.png)",
@@ -108,6 +122,10 @@ export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
     "Hepatic ferroxidase and copper carrier — low in Wilson disease, Menkes disease, and copper deficiency",
   filaggrin:
     "Filaggrin aggregates keratin filaments in the stratum corneum — FLG loss-of-function increases atopic dermatitis and ichthyosis vulgaris risk",
+  "immunoglobulin-heavy-chain":
+    "Schematic antibody cartoon labeling heavy chains, light chains, Fab antigen-binding arms, and Fc effector stem",
+  "immunoglobulin-light-chain":
+    "IgG1 crystal structure showing paired κ and λ light chains with heavy chains in the Fab and Fc regions",
   "intrinsic-factor":
     "Gastric parietal cell glycoprotein that binds B12 for ileal absorption — autoantibodies cause pernicious anemia",
   "phenylalanine-hydroxylase":

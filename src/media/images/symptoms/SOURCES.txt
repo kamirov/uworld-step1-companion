@@ -437,6 +437,11 @@ hypercapnia.svg
   Page: https://commons.wikimedia.org/wiki/File:Blood_gas_test_hariadhi.svg
   Description: Arterial blood gas sampling and analysis for PaCO₂ measurement
 
+cannon-a-waves.jpg
+  Source: Wikimedia Commons — Elevated Jugular Venous Pressure.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Elevated_Jugular_Venous_Pressure.jpg
+  Description: Elevated jugular venous pressure with prominent neck vein pulsations
+
 oligomenorrhea.png
   Source: Wikimedia Commons — Hormones estradiol, progesterone, LH and FSH during menstrual cycle.png
   Page: https://commons.wikimedia.org/wiki/File:Hormones_estradiol,_progesterone,_LH_and_FSH_during_menstrual_cycle.png

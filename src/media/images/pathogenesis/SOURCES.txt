@@ -220,3 +220,25 @@ reentrant-circuit.png
   Page: https://commons.wikimedia.org/wiki/File:Wpw2_(CardioNetworks_ECGpedia).svg
   Description: Wolff-Parkinson-White pre-excitation — accessory pathway enables AV reentrant tachycardia
 
+hyperandrogenism.png
+  Source: Wikimedia Commons — PMC4103002 ircmj-16-9410-g001.png
+  Page: https://commons.wikimedia.org/wiki/File:PMC4103002_ircmj-16-9410-g001.png
+  Description: Severe hirsutism in adolescent female with polycystic ovary syndrome
+  Resized to 330 px width for popover display.
+
+anovulation.svg
+  Source: Wikimedia Commons — Hormones estradiol, progesterone, LH and FSH during menstrual cycle.svg
+  Page: https://commons.wikimedia.org/wiki/File:Hormones_estradiol,_progesterone,_LH_and_FSH_during_menstrual_cycle.svg
+  Description: Menstrual cycle hormone levels — anovulatory cycles lack LH surge and luteal progesterone rise
+
+ovulation.png
+  Source: Wikimedia Commons — Luteinizing hormone (LH) during menstrual cycle.png
+  Page: https://commons.wikimedia.org/wiki/File:Luteinizing_hormone_(LH)_during_menstrual_cycle.png
+  Description: Midcycle LH surge that triggers ovulation
+  Resized to 330 px width for popover display.
+
+ovulatory-dysfunction.png
+  Source: Wikimedia Commons — Ultrasound scans and 3D rendering of polycystic ovaries.png
+  Page: https://commons.wikimedia.org/wiki/File:Ultrasound_scans_and_3D_rendering_of_polycystic_ovaries.png
+  Description: Polycystic ovarian morphology on transvaginal ultrasound
+  Resized to 330 px width for popover display.

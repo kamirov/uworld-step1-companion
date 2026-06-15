@@ -747,6 +747,19 @@ minimal-change-disease.svg
   Description: Pathology diagram comparing normal glomerulus with minimal change disease foot-process effacement
   Page: https://commons.wikimedia.org/wiki/File:Minimal_Change_Disease_Pathology_Diagram.svg
 
+multiple-myeloma.png
+  Source: Wikimedia Commons — MMPlainSkull.png
+  Description: Skull radiograph with punched-out lytic lesions of multiple myeloma
+  Page: https://commons.wikimedia.org/wiki/File:MMPlainSkull.png
+  Resized to 320 px width for popover display.
+
+hypertensive-nephrosclerosis.jpg
+  Source: Wikimedia Commons — Arteriolosclerosis, kidney, HE 1.JPG
+  Author: Patho
+  Description: Hyaline arteriolosclerosis of renal arteriole in chronic hypertension
+  Page: https://commons.wikimedia.org/wiki/File:Arteriolosclerosis,_kidney,_HE_1.JPG
+  Resized to 1280 px width for popover display.
+
 tay-sachs-disease.jpg
   Source: Wikimedia Commons — Tay-sachsUMich.jpg
   Page: https://commons.wikimedia.org/wiki/File:Tay-sachsUMich.jpg

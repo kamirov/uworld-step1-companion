@@ -82,6 +82,7 @@ import neutrophil from "../media/images/cells/neutrophil.jpg?url";
 import oligodendrocyte from "../media/images/cells/oligodendrocyte.svg?url";
 import osteoblast from "../media/images/cells/osteoblast.jpg?url";
 import osteoclast from "../media/images/cells/osteoclast.jpg?url";
+import ovarianThecaCell from "../media/images/cells/ovarian-theca-cell.jpg?url";
 import pancreaticBetaCell from "../media/images/cells/pancreatic-beta-cell.jpg?url";
 import periventricularWhiteMatter from "../media/images/cells/periventricular-white-matter.jpg?url";
 import pneumocyte from "../media/images/cells/pneumocyte.jpg?url";
@@ -190,6 +191,7 @@ export type CELLImageId = Extract<
   | "oligodendrocyte"
   | "osteoblast"
   | "osteoclast"
+  | "ovarian-theca-cell"
   | "pancreatic-beta-cell"
   | "periventricular-white-matter"
   | "pneumocyte"
@@ -303,6 +305,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "oligodendrocyte": extensionAssetUrl(oligodendrocyte),
   "osteoblast": extensionAssetUrl(osteoblast),
   "osteoclast": extensionAssetUrl(osteoclast),
+  "ovarian-theca-cell": extensionAssetUrl(ovarianThecaCell),
   "pancreatic-beta-cell": extensionAssetUrl(pancreaticBetaCell),
   "periventricular-white-matter": extensionAssetUrl(periventricularWhiteMatter),
   "pneumocyte": extensionAssetUrl(pneumocyte),
@@ -413,6 +416,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "oligodendrocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:oligodendrocyte.svg" },
   "osteoblast": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:osteoblast.jpg" },
   "osteoclast": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:osteoclast.jpg" },
+  "ovarian-theca-cell": { label: "Wellcome Collection (Granulosa and theca cells. Wellcome L0002177EC.jpg)", url: "https://commons.wikimedia.org/wiki/File:Granulosa_and_theca_cells._Wellcome_L0002177EC.jpg" },
   "pancreatic-beta-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pancreatic-beta-cell.jpg" },
   "periventricular-white-matter": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:periventricular-white-matter.jpg" },
   "pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pneumocyte.jpg" },
@@ -521,6 +525,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "oligodendrocyte": "Clinical or pathologic image illustrating oligodendrocyte",
   "osteoblast": "Clinical or pathologic image illustrating osteoblast",
   "osteoclast": "Clinical or pathologic image illustrating osteoclast",
+  "ovarian-theca-cell": "Ovarian follicle histology showing granulosa and theca cell layers surrounding the oocyte",
   "pancreatic-beta-cell": "Clinical or pathologic image illustrating pancreatic beta cell",
   "periventricular-white-matter": "Clinical or pathologic image illustrating periventricular white matter",
   "pneumocyte": "Clinical or pathologic image illustrating pneumocyte",

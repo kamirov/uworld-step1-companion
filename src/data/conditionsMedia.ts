@@ -31,6 +31,7 @@ import atrialSeptalDefect from "../media/images/conditions/atrial-septal-defect.
 import atrialTachycardia from "../media/images/conditions/atrial-tachycardia.svg?url";
 import atrioventricularBlock from "../media/images/conditions/atrioventricular-block.png?url";
 import avascularNecrosis from "../media/images/conditions/avascular-necrosis.svg?url";
+import azoospermia from "../media/images/conditions/azoospermia.jpg?url";
 import bacterialMeningitis from "../media/images/conditions/bacterial-meningitis.jpg?url";
 import basalCellCarcinoma from "../media/images/conditions/basal-cell-carcinoma.jpg?url";
 import basilarSkullFracture from "../media/images/conditions/basilar-skull-fracture.jpg?url";
@@ -92,6 +93,7 @@ import eosinophilicGranulomatosisWithPolyangiitis from "../media/images/conditio
 import epilepsy from "../media/images/conditions/epilepsy.jpg?url";
 import esophagealVarices from "../media/images/conditions/esophageal-varices.jpg?url";
 import ewingSarcoma from "../media/images/conditions/ewing-sarcoma.jpg?url";
+import ehlersDanlosSyndrome from "../media/images/conditions/ehlers-danlos-syndrome.jpg?url";
 import fabryDisease from "../media/images/conditions/fabry-disease.jpg?url";
 import fecalIncontinence from "../media/images/conditions/fecal-incontinence.jpg?url";
 import femaleAthleteTriad from "../media/images/conditions/female-athlete-triad.svg?url";
@@ -112,6 +114,7 @@ import gravesDisease from "../media/images/conditions/graves-disease.jpg?url";
 import guillainBarreSyndrome from "../media/images/conditions/guillain-barre-syndrome.jpg?url";
 import handFootAndMouthDisease from "../media/images/conditions/hand-foot-and-mouth-disease.jpg?url";
 import heartFailure from "../media/images/conditions/heart-failure.jpg?url";
+import hemophilia from "../media/images/conditions/hemophilia.jpg?url";
 import hemothorax from "../media/images/conditions/hemothorax.png?url";
 import herpangina from "../media/images/conditions/herpangina.jpg?url";
 import hirschsprungDisease from "../media/images/conditions/hirschsprung-disease.jpg?url";
@@ -128,6 +131,7 @@ import hyperosmolarHyperglycemicState from "../media/images/conditions/hyperosmo
 import hyperparathyroidism from "../media/images/conditions/hyperparathyroidism.jpg?url";
 import hyperprolactinemia from "../media/images/conditions/hyperprolactinemia.jpg?url";
 import hypertension from "../media/images/conditions/hypertension.jpg?url";
+import hypertensiveNephrosclerosis from "../media/images/conditions/hypertensive-nephrosclerosis.jpg?url";
 import hypertensiveRetinopathy from "../media/images/conditions/hypertensive-retinopathy.jpg?url";
 import hyperthyroidism from "../media/images/conditions/hyperthyroidism.jpg?url";
 import hypertrophicCardiomyopathy from "../media/images/conditions/hypertrophic-cardiomyopathy.jpg?url";
@@ -158,6 +162,7 @@ import lymphoma from "../media/images/conditions/lymphoma.jpg?url";
 import majorDepressiveDisorder from "../media/images/conditions/major-depressive-disorder.jpg?url";
 import malaria from "../media/images/conditions/malaria.jpg?url";
 import malrotation from "../media/images/conditions/malrotation.jpg?url";
+import marfanSyndrome from "../media/images/conditions/marfan-syndrome.jpg?url";
 import mastocytosis from "../media/images/conditions/mastocytosis.jpg?url";
 import mastoiditis from "../media/images/conditions/mastoiditis.jpg?url";
 import meckelDiverticulum from "../media/images/conditions/meckel-diverticulum.jpg?url";
@@ -175,6 +180,7 @@ import minimalChangeDisease from "../media/images/conditions/minimal-change-dise
 import molarPregnancyUltrasound from "../media/images/conditions/molar-pregnancy-ultrasound.jpg?url";
 import multipleEndocrineNeoplasia from "../media/images/conditions/multiple-endocrine-neoplasia.svg?url";
 import multipleSclerosis from "../media/images/conditions/multiple-sclerosis.jpg?url";
+import multipleMyeloma from "../media/images/conditions/multiple-myeloma.png?url";
 import myocardialInfarction from "../media/images/conditions/myocardial-infarction.jpg?url";
 import neonatalRespiratoryDistressSyndrome from "../media/images/conditions/neonatal-respiratory-distress-syndrome.jpg?url";
 import nephriticSyndrome from "../media/images/conditions/nephritic-syndrome.jpg?url";
@@ -186,6 +192,7 @@ import nonHodgkinLymphoma from "../media/images/conditions/non-hodgkin-lymphoma.
 import ocd from "../media/images/conditions/ocd.jpg?url";
 import opticNeuritis from "../media/images/conditions/optic-neuritis.jpg?url";
 import oralCandidiasis from "../media/images/conditions/oral-candidiasis.jpg?url";
+import osteogenesisImperfecta from "../media/images/conditions/osteogenesis-imperfecta.jpg?url";
 import osteomyelitis from "../media/images/conditions/osteomyelitis.png?url";
 import osteoporosis from "../media/images/conditions/osteoporosis.jpg?url";
 import otitisExterna from "../media/images/conditions/otitis-externa.jpg?url";
@@ -209,6 +216,7 @@ import aspirationPneumonitis from "../media/images/conditions/aspiration-pneumon
 import pneumonia from "../media/images/conditions/pneumonia.jpg?url";
 import postherpeticNeuralgia from "../media/images/conditions/postherpetic-neuralgia.png?url";
 import premenstrualDysphoricDisorder from "../media/images/conditions/premenstrual-dysphoric-disorder.jpg?url";
+import precociousPuberty from "../media/images/conditions/precocious-puberty.jpg?url";
 import pressureUlcer from "../media/images/conditions/pressure-ulcer.jpg?url";
 import primaryBiliaryCholangitis from "../media/images/conditions/primary-biliary-cholangitis.jpg?url";
 import primaryBrainTumor from "../media/images/conditions/primary-brain-tumor.png?url";
@@ -240,6 +248,7 @@ import schizotypalPersonalityDisorder from "../media/images/conditions/schizotyp
 import selectiveIgaDeficiency from "../media/images/conditions/selective-iga-deficiency.png?url";
 import serotoninSyndrome from "../media/images/conditions/serotonin-syndrome.png?url";
 import serumSickness from "../media/images/conditions/serum-sickness.jpg?url";
+import scurvy from "../media/images/conditions/scurvy.jpg?url";
 import sheehanSyndrome from "../media/images/conditions/sheehan-syndrome.svg?url";
 import shock from "../media/images/conditions/shock.jpg?url";
 import sickleCellDisease from "../media/images/conditions/sickle-cell-disease.jpg?url";
@@ -317,6 +326,7 @@ export type ConditionImageId = Extract<
   | "atrial-tachycardia"
   | "atrioventricular-block"
   | "avascular-necrosis"
+  | "azoospermia"
   | "bacterial-meningitis"
   | "basal-cell-carcinoma"
   | "basilar-skull-fracture"
@@ -371,6 +381,7 @@ export type ConditionImageId = Extract<
   | "emphysema"
   | "empyema"
   | "ectopic-pregnancy"
+  | "ehlers-danlos-syndrome"
   | "encephalitis"
   | "endocarditis"
   | "endometriosis"
@@ -398,6 +409,7 @@ export type ConditionImageId = Extract<
   | "guillain-barre-syndrome"
   | "hand-foot-and-mouth-disease"
   | "heart-failure"
+  | "hemophilia"
   | "hemothorax"
   | "herpangina"
   | "hirschsprung-disease"
@@ -414,6 +426,7 @@ export type ConditionImageId = Extract<
   | "hyperparathyroidism"
   | "hyperprolactinemia"
   | "hypertension"
+  | "hypertensive-nephrosclerosis"
   | "hypertensive-retinopathy"
   | "hyperthyroidism"
   | "hypertrophic-cardiomyopathy"
@@ -444,6 +457,7 @@ export type ConditionImageId = Extract<
   | "major-depressive-disorder"
   | "malaria"
   | "malrotation"
+  | "marfan-syndrome"
   | "mastocytosis"
   | "mastoiditis"
   | "meckel-diverticulum"
@@ -460,6 +474,7 @@ export type ConditionImageId = Extract<
   | "minimal-change-disease"
   | "hydatidiform-mole"
   | "multiple-endocrine-neoplasia"
+  | "multiple-myeloma"
   | "multiple-sclerosis"
   | "myocardial-infarction"
   | "neonatal-respiratory-distress-syndrome"
@@ -472,6 +487,7 @@ export type ConditionImageId = Extract<
   | "ocd"
   | "optic-neuritis"
   | "oral-candidiasis"
+  | "osteogenesis-imperfecta"
   | "osteomyelitis"
   | "osteoporosis"
   | "otitis-externa"
@@ -495,6 +511,7 @@ export type ConditionImageId = Extract<
   | "pneumonia"
   | "postherpetic-neuralgia"
   | "premenstrual-dysphoric-disorder"
+  | "precocious-puberty"
   | "pressure-ulcer"
   | "primary-biliary-cholangitis"
   | "primary-brain-tumor"
@@ -525,6 +542,7 @@ export type ConditionImageId = Extract<
   | "schizotypal-personality-disorder"
   | "selective-iga-deficiency"
   | "serotonin-syndrome"
+  | "scurvy"
   | "serum-sickness"
   | "sheehan-syndrome"
   | "shock"
@@ -608,6 +626,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "atrial-tachycardia": extensionAssetUrl(atrialTachycardia),
   "atrioventricular-block": extensionAssetUrl(atrioventricularBlock),
   "avascular-necrosis": extensionAssetUrl(avascularNecrosis),
+  "azoospermia": extensionAssetUrl(azoospermia),
   "bacterial-meningitis": extensionAssetUrl(bacterialMeningitis),
   "basal-cell-carcinoma": extensionAssetUrl(basalCellCarcinoma),
   "basilar-skull-fracture": extensionAssetUrl(basilarSkullFracture),
@@ -662,6 +681,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "emphysema": extensionAssetUrl(emphysema),
   "empyema": extensionAssetUrl(empyema),
   "ectopic-pregnancy": extensionAssetUrl(ectopicPregnancy),
+  "ehlers-danlos-syndrome": extensionAssetUrl(ehlersDanlosSyndrome),
   "encephalitis": extensionAssetUrl(encephalitis),
   "endocarditis": extensionAssetUrl(endocarditis),
   "endometriosis": extensionAssetUrl(endometriosis),
@@ -689,6 +709,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "guillain-barre-syndrome": extensionAssetUrl(guillainBarreSyndrome),
   "hand-foot-and-mouth-disease": extensionAssetUrl(handFootAndMouthDisease),
   "heart-failure": extensionAssetUrl(heartFailure),
+  "hemophilia": extensionAssetUrl(hemophilia),
   "hemothorax": extensionAssetUrl(hemothorax),
   "herpangina": extensionAssetUrl(herpangina),
   "hirschsprung-disease": extensionAssetUrl(hirschsprungDisease),
@@ -705,6 +726,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hyperparathyroidism": extensionAssetUrl(hyperparathyroidism),
   "hyperprolactinemia": extensionAssetUrl(hyperprolactinemia),
   "hypertension": extensionAssetUrl(hypertension),
+  "hypertensive-nephrosclerosis": extensionAssetUrl(hypertensiveNephrosclerosis),
   "hypertensive-retinopathy": extensionAssetUrl(hypertensiveRetinopathy),
   "hyperthyroidism": extensionAssetUrl(hyperthyroidism),
   "hypertrophic-cardiomyopathy": extensionAssetUrl(hypertrophicCardiomyopathy),
@@ -735,6 +757,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "major-depressive-disorder": extensionAssetUrl(majorDepressiveDisorder),
   "malaria": extensionAssetUrl(malaria),
   "malrotation": extensionAssetUrl(malrotation),
+  "marfan-syndrome": extensionAssetUrl(marfanSyndrome),
   "mastocytosis": extensionAssetUrl(mastocytosis),
   "mastoiditis": extensionAssetUrl(mastoiditis),
   "meckel-diverticulum": extensionAssetUrl(meckelDiverticulum),
@@ -751,6 +774,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "minimal-change-disease": extensionAssetUrl(minimalChangeDisease),
   "hydatidiform-mole": extensionAssetUrl(molarPregnancyUltrasound),
   "multiple-endocrine-neoplasia": extensionAssetUrl(multipleEndocrineNeoplasia),
+  "multiple-myeloma": extensionAssetUrl(multipleMyeloma),
   "multiple-sclerosis": extensionAssetUrl(multipleSclerosis),
   "myocardial-infarction": extensionAssetUrl(myocardialInfarction),
   "neonatal-respiratory-distress-syndrome": extensionAssetUrl(neonatalRespiratoryDistressSyndrome),
@@ -763,6 +787,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "ocd": extensionAssetUrl(ocd),
   "optic-neuritis": extensionAssetUrl(opticNeuritis),
   "oral-candidiasis": extensionAssetUrl(oralCandidiasis),
+  "osteogenesis-imperfecta": extensionAssetUrl(osteogenesisImperfecta),
   "osteomyelitis": extensionAssetUrl(osteomyelitis),
   "osteoporosis": extensionAssetUrl(osteoporosis),
   "otitis-externa": extensionAssetUrl(otitisExterna),
@@ -786,6 +811,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "pneumonia": extensionAssetUrl(pneumonia),
   "postherpetic-neuralgia": extensionAssetUrl(postherpeticNeuralgia),
   "premenstrual-dysphoric-disorder": extensionAssetUrl(premenstrualDysphoricDisorder),
+  "precocious-puberty": extensionAssetUrl(precociousPuberty),
   "pressure-ulcer": extensionAssetUrl(pressureUlcer),
   "primary-biliary-cholangitis": extensionAssetUrl(primaryBiliaryCholangitis),
   "primary-brain-tumor": extensionAssetUrl(primaryBrainTumor),
@@ -816,6 +842,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "schizotypal-personality-disorder": extensionAssetUrl(schizotypalPersonalityDisorder),
   "selective-iga-deficiency": extensionAssetUrl(selectiveIgaDeficiency),
   "serotonin-syndrome": extensionAssetUrl(serotoninSyndrome),
+  "scurvy": extensionAssetUrl(scurvy),
   "serum-sickness": extensionAssetUrl(serumSickness),
   "sheehan-syndrome": extensionAssetUrl(sheehanSyndrome),
   "shock": extensionAssetUrl(shock),
@@ -962,6 +989,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (James Heilman, MD, CC BY-SA 3.0)",
     url: "https://commons.wikimedia.org/wiki/File:Ectopicleftmass.PNG",
   },
+  "ehlers-danlos-syndrome": {
+    label: "Wikimedia Commons (Ehlers-Danlos syndrome3.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Ehlers-Danlos_syndrome3.jpg",
+  },
   "encephalitis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:encephalitis.jpg" },
   "endocarditis": { label: "Wikimedia Commons (Endocarditis ultrasound.JPG)", url: "https://commons.wikimedia.org/wiki/File:Endocarditis_ultrasound.JPG" },
   "endometriosis": { label: "Wikimedia Commons (Blausen 0349 Endometriosis-it.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0349_Endometriosis-it.png" },
@@ -1005,6 +1036,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "hyperparathyroidism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hyperparathyroidism.jpg" },
   "hyperprolactinemia": { label: "Wikimedia Commons (Lactation.jpg)", url: "https://commons.wikimedia.org/wiki/File:Lactation.jpg" },
   "hypertension": { label: "Wikimedia Commons (HE pulmonary hypertension artery concentric intimal fibrosis.jpg)", url: "https://commons.wikimedia.org/wiki/File:HE_pulmonary_hypertension_artery_concentric_intimal_fibrosis.jpg" },
+  "hypertensive-nephrosclerosis": {
+    label: "Wikimedia Commons (Arteriolosclerosis, kidney, HE 1.JPG)",
+    url: "https://commons.wikimedia.org/wiki/File:Arteriolosclerosis,_kidney,_HE_1.JPG",
+  },
   "hypertensive-retinopathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hypertensive-retinopathy.jpg" },
   "hyperthyroidism": { label: "Wikimedia Commons (Histopathology of Graves' disease - medium mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Graves'_disease_-_medium_mag.jpg" },
   "hypertrophic-cardiomyopathy": { label: "Wikimedia Commons (Hypertrophic obstructive cardiomyopathy.png)", url: "https://commons.wikimedia.org/wiki/File:Hypertrophic_obstructive_cardiomyopathy.png" },
@@ -1035,6 +1070,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "major-depressive-disorder": { label: "Wikimedia Commons (A woman suffering from Clinical Depression.png)", url: "https://commons.wikimedia.org/wiki/File:A_woman_suffering_from_Clinical_Depression.png" },
   "malaria": { label: "Wikimedia Commons (Ring Forms of Plasmodium falciparum.jpg)", url: "https://commons.wikimedia.org/wiki/File:Ring_Forms_of_Plasmodium_falciparum.jpg" },
   "malrotation": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:malrotation.jpg" },
+  "marfan-syndrome": {
+    label: "Wikimedia Commons (Arachnodactyly.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Arachnodactyly.jpg",
+  },
   "mastocytosis": { label: "Wikimedia Commons (Urticaria pigmentosa lesions on a child.jpg)", url: "https://commons.wikimedia.org/wiki/File:Urticaria_pigmentosa_lesions_on_a_child.jpg" },
   "mastoiditis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:mastoiditis.jpg" },
   "meckel-diverticulum": { label: "Wikimedia Commons (Meckel's Diverticulum by Technetium-99m Pertechnetate Scan.jpg)", url: "https://commons.wikimedia.org/wiki/File:Meckel's_Diverticulum_by_Technetium-99m_Pertechnetate_Scan.jpg" },
@@ -1054,6 +1093,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   },
   "hydatidiform-mole": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:molar-pregnancy-ultrasound.jpg" },
   "multiple-endocrine-neoplasia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:multiple-endocrine-neoplasia.svg" },
+  "multiple-myeloma": {
+    label: "Wikimedia Commons (MMPlainSkull.png)",
+    url: "https://commons.wikimedia.org/wiki/File:MMPlainSkull.png",
+  },
   "multiple-sclerosis": { label: "Wikimedia Commons (Disseminated sclerosis (IA b2810349x).pdf)", url: "https://commons.wikimedia.org/wiki/File:Disseminated_sclerosis_(IA_b2810349x).pdf" },
   "myocardial-infarction": { label: "Wikimedia Commons (ST elevation myocardial infarction ECG (cropped).jpg)", url: "https://commons.wikimedia.org/wiki/File:ST_elevation_myocardial_infarction_ECG_(cropped).jpg" },
   "neonatal-respiratory-distress-syndrome": { label: "Wikimedia Commons (Annual report - National Institutes of Health. National Heart, Lung, and Blood Advisory Council (IA annualreportnatio1985nati).pdf)", url: "https://commons.wikimedia.org/wiki/File:Annual_report_-_National_Institutes_of_Health._National_Heart,_Lung,_and_Blood_Advisory_Council_(IA_annualreportnatio1985nati).pdf" },
@@ -1066,6 +1109,10 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "ocd": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ocd.jpg" },
   "optic-neuritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:optic-neuritis.jpg" },
   "oral-candidiasis": { label: "Wikimedia Commons (Fungal tongue.jpg)", url: "https://commons.wikimedia.org/wiki/File:Fungal_tongue.jpg" },
+  "osteogenesis-imperfecta": {
+    label: "Wikimedia Commons (Osteogenesis Imperfecta 3.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Osteogenesis_Imperfecta_3.jpg",
+  },
   "osteomyelitis": { label: "Wikimedia Commons (OsteomylitisMark.png)", url: "https://commons.wikimedia.org/wiki/File:OsteomylitisMark.png" },
   "osteoporosis": { label: "Wikimedia Commons (Osteop.jpg)", url: "https://commons.wikimedia.org/wiki/File:Osteop.jpg" },
   "otitis-externa": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:otitis-externa.jpg" },
@@ -1266,6 +1313,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "empyema": "Clinical or pathologic image illustrating empyema",
   "ectopic-pregnancy":
     "Transvaginal ultrasound showing ectopic pregnancy with gestational sac adjacent to the left ovary",
+  "ehlers-danlos-syndrome":
+    "Hyperextensible skin in Ehlers-Danlos syndrome — skin stretches beyond normal and returns slowly",
   "encephalitis": "Clinical or pathologic image illustrating encephalitis",
   "endocarditis": "Clinical or pathologic image illustrating endocarditis",
   "endometriosis": "Clinical or pathologic image illustrating endometriosis",
@@ -1309,6 +1358,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "hyperparathyroidism": "Clinical or pathologic image illustrating hyperparathyroidism",
   "hyperprolactinemia": "Clinical or pathologic image illustrating hyperprolactinemia",
   "hypertension": "Clinical or pathologic image illustrating hypertension",
+  "hypertensive-nephrosclerosis":
+    "Hyaline arteriolosclerosis of a renal arteriole with luminal narrowing in chronic hypertensive kidney disease",
   "hypertensive-retinopathy": "Clinical or pathologic image illustrating hypertensive retinopathy",
   "hyperthyroidism": "Clinical or pathologic image illustrating hyperthyroidism",
   "hypertrophic-cardiomyopathy": "Clinical or pathologic image illustrating hypertrophic cardiomyopathy",
@@ -1339,6 +1390,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "major-depressive-disorder": "Clinical or pathologic image illustrating major depressive disorder",
   "malaria": "Clinical or pathologic image illustrating malaria",
   "malrotation": "Ladd bands from intestinal malrotation — peritoneal bands crossing and compressing the duodenum",
+  "marfan-syndrome":
+    "Arachnodactyly — long slender fingers characteristic of Marfan syndrome",
   "mastocytosis": "Clinical or pathologic image illustrating mastocytosis",
   "mastoiditis": "Clinical or pathologic image illustrating mastoiditis",
   "meckel-diverticulum": "Clinical or pathologic image illustrating meckel diverticulum",
@@ -1356,6 +1409,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
     "Pathology diagram of minimal change disease showing normal light microscopy and podocyte foot-process effacement on electron microscopy",
   "hydatidiform-mole": "Transvaginal ultrasound of molar pregnancy — classic 'snowstorm' / bunch-of-grapes intrauterine pattern",
   "multiple-endocrine-neoplasia": "Clinical or pathologic image illustrating multiple endocrine neoplasia",
+  "multiple-myeloma":
+    "Skull radiograph showing punched-out lytic lesions characteristic of multiple myeloma",
   "multiple-sclerosis": "Clinical or pathologic image illustrating multiple sclerosis",
   "myocardial-infarction": "Clinical or pathologic image illustrating myocardial infarction",
   "neonatal-respiratory-distress-syndrome": "Clinical or pathologic image illustrating neonatal respiratory distress syndrome",
@@ -1368,6 +1423,8 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "ocd": "Clinical or pathologic image illustrating ocd",
   "optic-neuritis": "Clinical or pathologic image illustrating optic neuritis",
   "oral-candidiasis": "Clinical or pathologic image illustrating oral candidiasis",
+  "osteogenesis-imperfecta":
+    "Child with osteogenesis imperfecta showing skeletal deformity from recurrent fractures",
   "osteomyelitis": "Clinical or pathologic image illustrating osteomyelitis",
   "osteoporosis": "Clinical or pathologic image illustrating osteoporosis",
   "otitis-externa": "Clinical or pathologic image illustrating otitis externa",

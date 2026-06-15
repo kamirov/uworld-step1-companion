@@ -13,6 +13,9 @@ import meninges from "../media/images/organs/meninges.svg?url";
 import opticChiasm from "../media/images/organs/optic-chiasm.png?url";
 import rightAtrium from "../media/images/organs/right-atrium.png?url";
 import cristaTerminalis from "../media/images/organs/crista-terminalis.png?url";
+import cavotricuspidIsthmus from "../media/images/organs/cavotricuspid-isthmus.png?url";
+import avNode from "../media/images/organs/av-node.jpg?url";
+import hisPurkinjeSystem from "../media/images/organs/his-purkinje-system.png?url";
 import caudate from "../media/images/organs/caudate.png?url";
 import caudaEquina from "../media/images/organs/cauda-equina.png?url";
 import mammillaryBodies from "../media/images/organs/mammillary-bodies.jpg?url";
@@ -37,6 +40,9 @@ export type OrganImageId = Extract<
   | "meninges"
   | "right-atrium"
   | "crista-terminalis"
+  | "cavotricuspid-isthmus"
+  | "av-node"
+  | "his-purkinje-system"
   | "caudate"
   | "cauda-equina"
   | "mammillary-bodies"
@@ -66,6 +72,9 @@ export const ORGAN_IMAGES: Partial<Record<OrganImageId, string>> = {
   meninges: extensionAssetUrl(meninges),
   "right-atrium": extensionAssetUrl(rightAtrium),
   "crista-terminalis": extensionAssetUrl(cristaTerminalis),
+  "cavotricuspid-isthmus": extensionAssetUrl(cavotricuspidIsthmus),
+  "av-node": extensionAssetUrl(avNode),
+  "his-purkinje-system": extensionAssetUrl(hisPurkinjeSystem),
   caudate: extensionAssetUrl(caudate),
   "cauda-equina": extensionAssetUrl(caudaEquina),
   "mammillary-bodies": extensionAssetUrl(mammillaryBodies),
@@ -127,6 +136,18 @@ export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
   "crista-terminalis": {
     label: "Wikimedia Commons (Crista terminalis.png)",
     url: "https://commons.wikimedia.org/wiki/File:Crista_terminalis.png",
+  },
+  "cavotricuspid-isthmus": {
+    label: "Wikimedia Commons (Heart numlabels.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Heart_numlabels.svg",
+  },
+  "av-node": {
+    label: "Wikimedia Commons (Triangle of Koch (large).jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Triangle_of_Koch_(large).jpg",
+  },
+  "his-purkinje-system": {
+    label: "Wikimedia Commons (Electrical conduction system of the heart it.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Electrical_conduction_system_of_the_heart_it.svg",
   },
   caudate: {
     label: "Wikimedia Commons (Overview of reward structures in the human brain.jpg)",
@@ -193,6 +214,12 @@ export const ORGAN_IMAGE_CAPTIONS: Partial<Record<OrganImageId, string>> = {
     "Right atrium — receives SVC, IVC, and coronary sinus; contains fossa ovalis, crista terminalis, and SA node",
   "crista-terminalis":
     "Crista terminalis — internal ridge separating smooth sinus venarum from trabeculated right atrial appendage",
+  "cavotricuspid-isthmus":
+    "Heart anatomy — cavotricuspid isthmus in the low right atrium is the ablation target for typical atrial flutter",
+  "av-node":
+    "Triangle of Koch — anatomic boundaries containing the atrioventricular node in the interatrial septum",
+  "his-purkinje-system":
+    "Cardiac conduction system — AV node, bundle of His, bundle branches, and Purkinje fibers synchronize ventricular depolarization",
   caudate:
     "Caudate nucleus — C-shaped dorsal striatum wrapping the lateral ventricle; degenerates in Huntington disease",
   "cauda-equina":

@@ -4620,6 +4620,55 @@ export const CELLS: CellEntry[] = [
     pediatrics:
       "Breastfed infants of B12-deficient mothers may show megaloblastic changes including hypersegmented neutrophils before neurologic injury becomes apparent.",
   },
+  {
+    id: "ovarian-theca-cell",
+    name: "Ovarian theca cell",
+    etymology: "Greek thēkē = sheath/case + cell",
+    aliases: [
+      "ovarian theca cell",
+      "ovarian theca cells",
+      "theca cell",
+      "theca cells",
+      "ovarian theca",
+      "theca interna",
+      "theca interna cells",
+      "theca externa",
+      "theca externa cells",
+      "theca lutein cell",
+      "theca lutein cells",
+      "theca lutein cells of the ovary",
+    ],
+    definition:
+      "Steroidogenic stromal cells surrounding the ovarian follicle — theca interna (androgen-producing, LH-responsive) and theca externa (fibrous capsule) — that cooperate with granulosa cells in the two-cell, two-gonadotropin model of estrogen biosynthesis.",
+    characteristics: [
+      "Theca interna lies external to granulosa cells; expresses LH receptors and cytochrome P450 enzymes (e.g., CYP17) for androgen synthesis",
+      "LH stimulates theca interna → androstenedione and testosterone production",
+      "Granulosa cells (FSH-responsive) aromatize theca-derived androgens to estradiol via aromatase",
+      "After ovulation, theca and granulosa cells luteinize into theca-lutein and granulosa-lutein cells of the corpus luteum (progesterone production)",
+      "Theca externa — collagenous connective tissue layer; less steroidogenic",
+    ],
+    clinicalRelevance: [
+      "PCOS — ↑ LH drives theca interna androgen overproduction → hyperandrogenism and follicular arrest",
+      "Complete androgen insensitivity syndrome — testicular androgens aromatized peripherally; no uterus/ovaries but estrogen effects",
+      "Theca lutein cysts — bilateral ovarian cysts from massive β-hCG stimulation (molar pregnancy, multifetal gestation)",
+      "Theca cell tumor — rare ovarian sex-cord stromal tumor producing androgens",
+    ],
+    boardsPearls: [
+      "Two-cell, two-gonadotropin model: LH → theca androgens; FSH → granulosa aromatase → estrogen",
+      "PCOS mechanism: ↑ LH:FSH → theca androgen excess → anovulation",
+      "Theca lutein cysts — bilateral, β-hCG-driven; seen in complete mole and multifetal pregnancy",
+      "vs granulosa cell — granulosa is inner, FSH-driven, aromatizes androgens; theca is outer, LH-driven, makes androgens",
+      "vs thecal sac — spinal dural CSF sac; unrelated anatomic term",
+    ],
+    distinguishFrom: [
+      "Granulosa cell — inner follicular layer; FSH receptor; aromatizes theca androgens to estrogen",
+      "Leydig cell — testicular androgen-producing cell; homologous steroidogenic role in male gonad",
+      "Thecal sac — dural envelope of spinal CSF and nerve roots, not ovarian",
+      "Theca lutein cyst — cystic enlargement of theca-lutein cells, not a normal follicular theca layer",
+    ],
+    pediatrics:
+      "Physiologic anovulatory cycles after menarche reflect immature GnRH pulsatility rather than primary theca hyperplasia; persistent hyperandrogenism and oligomenorrhea beyond 2–3 years post-menarche suggests PCOS.",
+  },
 ];
 
 const cellById = new Map(CELLS.map((entry) => [entry.id, entry]));

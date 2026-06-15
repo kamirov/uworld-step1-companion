@@ -2638,6 +2638,49 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "cannon-a-waves",
+    name: "Cannon A Waves",
+    etymology: "English cannon = large gun + Latin unda = wave (jugular venous pulse) = forceful atrial contraction against closed tricuspid valve",
+    aliases: [
+      "cannon a waves",
+      "cannon a wave",
+      "cannon waves",
+      "cannon wave",
+      "cannon a",
+      "giant a waves",
+      "large a waves",
+      "prominent a waves in jvp",
+      "jugular cannon waves",
+    ],
+    definition:
+      "Intermittent large pulsations in the jugular venous pulse caused by atrial contraction against a closed tricuspid valve — occurs when atria and ventricles contract independently (AV dissociation).",
+    mechanism:
+      "Normally the c wave follows atrial contraction after the tricuspid valve has opened, so the jugular a wave is small. When the AV node fails to conduct (complete heart block) or an independent ventricular pacemaker fires early (VT with AV dissociation, ventricular pacing), the atrium contracts against a closed tricuspid valve → sharp giant a wave visible in the JVP.",
+    thinkOf: [
+      "Third-degree (complete) AV block — independent atrial and ventricular rhythms",
+      "Ventricular tachycardia with AV dissociation",
+      "Ventricular paced rhythm with intact atrial activity",
+      "Junctional rhythm with retrograde atrial activation (less common)",
+      "Tricuspid stenosis — large a waves without full AV dissociation (different mechanism)",
+    ],
+    pairWith: [
+      "Cannon A waves + bradycardia + irregular rhythm → complete heart block",
+      "Cannon A waves + wide QRS tachycardia → VT with AV dissociation",
+      "Variable intensity jugular pulsations + cannon waves → AV dissociation",
+      "Inferior MI + bradycardia + cannon A waves → AV nodal ischemia",
+      "Regular cannon waves at ventricular rate → VT",
+    ],
+    distinguishFrom: [
+      "Large v waves — tricuspid regurgitation (systolic venous pulsation, not atrial cannon a)",
+      "Kussmaul sign — JVP rises with inspiration in constrictive pericarditis (not cannon a morphology)",
+      "Normal a wave — small, consistent with sinus rhythm and conducted beats",
+      "CV waves — tricuspid regurgitation cannon-like systolic pulsation in neck veins",
+      "Pulsus alternans — beat-to-beat BP alternans in severe LV dysfunction, not JVP finding",
+    ],
+    pediatrics:
+      "Complete congenital heart block in neonates may show cannon a waves with junctional escape; maternal anti-Ro/La is a key risk factor. VT with AV dissociation is rare but catastrophic in children with cardiomyopathy or channelopathies.",
+  },
+  {
     id: "raynaud-phenomenon",
     name: "Raynaud Phenomenon",
     etymology: "eponym: Maurice Raynaud + Greek phainomenon = thing appearing",
