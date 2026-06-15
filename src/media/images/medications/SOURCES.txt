@@ -160,3 +160,7 @@ topiramate.svg
 metoclopramide.svg
   Source: Wikimedia Commons — Metoclopramide.svg
   Page: https://commons.wikimedia.org/wiki/File:Metoclopramide.svg
+
+retinoic-acid.svg
+  Source: Wikimedia Commons — Tretinoin structure.svg
+  Page: https://commons.wikimedia.org/wiki/File:Tretinoin_structure.svg

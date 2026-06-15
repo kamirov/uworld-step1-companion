@@ -54,6 +54,7 @@ import cysticFibrosis from "../media/images/conditions/cystic-fibrosis.jpg?url";
 import dementia from "../media/images/conditions/dementia.jpg?url";
 import dengueRecoveryRash from "../media/images/conditions/dengue-recovery-rash.jpg?url";
 import dentalCaries from "../media/images/conditions/dental-caries.jpg?url";
+import diabetesInsipidus from "../media/images/conditions/diabetes-insipidus.jpg?url";
 import diabeticKetoacidosis from "../media/images/conditions/diabetic-ketoacidosis.jpg?url";
 import diabeticNephropathy from "../media/images/conditions/diabetic-nephropathy.jpg?url";
 import diabeticNeuropathy from "../media/images/conditions/diabetic-neuropathy.jpg?url";
@@ -270,6 +271,7 @@ export type ConditionImageId = Extract<
   | "dementia"
   | "dengue-fever"
   | "dental-caries"
+  | "diabetes-insipidus"
   | "diabetic-ketoacidosis"
   | "diabetic-nephropathy"
   | "diabetic-neuropathy"
@@ -491,6 +493,7 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "dementia": extensionAssetUrl(dementia),
   "dengue-fever": extensionAssetUrl(dengueRecoveryRash),
   "dental-caries": extensionAssetUrl(dentalCaries),
+  "diabetes-insipidus": extensionAssetUrl(diabetesInsipidus),
   "diabetic-ketoacidosis": extensionAssetUrl(diabeticKetoacidosis),
   "diabetic-nephropathy": extensionAssetUrl(diabeticNephropathy),
   "diabetic-neuropathy": extensionAssetUrl(diabeticNeuropathy),
@@ -709,6 +712,7 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "dementia": { label: "Wikimedia Commons (Histopathology of Alzheimer's disease.jpg)", url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_Alzheimer's_disease.jpg" },
   "dengue-fever": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dengue-recovery-rash.jpg" },
   "dental-caries": { label: "Wikimedia Commons (Dental Caries Lower Right First Molar.jpg)", url: "https://commons.wikimedia.org/wiki/File:Dental_Caries_Lower_Right_First_Molar.jpg" },
+  "diabetes-insipidus": { label: "Wikimedia Commons (Polyuria, large dilute volumes of urine (31388976010).jpg)", url: "https://commons.wikimedia.org/wiki/File:Polyuria,_large_dilute_volumes_of_urine_(31388976010).jpg" },
   "diabetic-ketoacidosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diabetic-ketoacidosis.jpg" },
   "diabetic-nephropathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diabetic-nephropathy.jpg" },
   "diabetic-neuropathy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diabetic-neuropathy.jpg" },
@@ -927,6 +931,7 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "dementia": "Clinical or pathologic image illustrating dementia",
   "dengue-fever": "Dengue recovery rash — classic 'white islands in a sea of red' pattern",
   "dental-caries": "Occlusal dental caries with enamel cavitation",
+  "diabetes-insipidus": "Massive polyuria — large volumes of dilute urine in diabetes insipidus",
   "diabetic-ketoacidosis": "Clinical or pathologic image illustrating diabetic ketoacidosis",
   "diabetic-nephropathy": "Clinical or pathologic image illustrating diabetic nephropathy",
   "diabetic-neuropathy": "Clinical or pathologic image illustrating diabetic neuropathy",

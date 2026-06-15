@@ -906,6 +906,44 @@ export const METABOLISM: MetabolismEntry[] = [
     pediatrics:
       "Neonatal TB and disseminated mycobacterial disease require multi-drug therapy including isoniazid; BCG vaccination does not prevent all TB but protects against severe miliary/meningeal disease in infants.",
   },
+  {
+    id: "tetrahydrobiopterin",
+    name: "Tetrahydrobiopterin",
+    etymology: "Greek tetra = four + hydro = water + biopterin = bicyclic pterin compound",
+    aliases: [
+      "tetrahydrobiopterin",
+      "tetrahydrobiopterins",
+      "bh4",
+      "bh₄",
+      "thb",
+      "sapropterin",
+      "6r-l-erythro-5,6,7,8-tetrahydrobiopterin",
+    ],
+    definition:
+      "Reduced pteridine cofactor essential for aromatic amino acid hydroxylases (phenylalanine, tyrosine, tryptophan hydroxylases) and nitric oxide synthase — links phenylalanine catabolism to monoamine and NO biosynthesis.",
+    pathway: [
+      "De novo synthesis from GTP: GTP cyclohydrolase I (GCH1) → 6-pyruvoyltetrahydropterin synthase (PTPS) → sepiapterin reductase (SR) → BH₄",
+      "Regeneration: aromatic hydroxylase reactions oxidize BH₄ to qBH₂ → dihydropteridine reductase (DHPR) or dihydrofolate reductase (DHFR) → BH₄",
+      "Cofactor for PAH (Phe → Tyr), TH (Tyr → L-DOPA), TPH (Trp → 5-HTP), and NOS (Arg → NO)",
+      "BH₄ deficiency → hyperphenylalaninemia plus ↓ dopamine/serotonin (dystonia, seizures) — distinguish from isolated PAH deficiency",
+      "Sapropterin (synthetic BH₄) treats responsive PKU variants and some BH₄ synthesis defects",
+    ],
+    boardsPearls: [
+      "BH₄ = cofactor for PAH, TH, TPH, and NOS — high-yield link between PKU pathway and catecholamine/serotonin synthesis",
+      "PAH deficiency → PKU with hyperphenylalaninemia only; BH₄ pathway defect → PKU-like plus neurotransmitter deficiency (dystonia, seizures)",
+      "GTPCH deficiency (Segawa disease) — autosomal dominant, diurnal fluctuating dystonia, L-DOPA responsive",
+      "DHPR deficiency — PKU screen positive; check pterins and neurotransmitter metabolites",
+      "BH₄ is regenerated after hydroxylation — DHPR defect blocks recycling",
+    ],
+    distinguishFrom: [
+      "Phenylalanine hydroxylase — enzyme using BH₄; PAH mutation causes classic PKU without primary neurotransmitter deficit",
+      "Tetrahydrofolate (THF) — one-carbon carrier for nucleotide synthesis, not aromatic hydroxylase cofactor",
+      "Biopterin — oxidized pterin precursor; BH₄ is the active reduced form",
+      "Tyrosine — amino acid product of PAH reaction, not the cofactor",
+    ],
+    pediatrics:
+      "Neonatal hyperphenylalaninemia on screening may reflect PAH or BH₄ defects — pterin studies and neurotransmitter metabolites distinguish; untreated BH₄ deficiency causes progressive dystonia, seizures, and developmental regression beyond diet alone.",
+  },
 ];
 
 const metabolismById = new Map(METABOLISM.map((entry) => [entry.id, entry]));

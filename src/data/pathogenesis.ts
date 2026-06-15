@@ -5513,6 +5513,43 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     pediatrics:
       "Posterior fossa tumors in children cause mass effect on fourth ventricle early — morning headache, vomiting, and papilledema before subtle focal signs.",
   },
+  {
+    id: "penumbra",
+    name: "Penumbra",
+    etymology: "Latin paene = almost + umbra = shadow — the partially shadowed zone around the infarct core",
+    aliases: [
+      "penumbra",
+      "penumbras",
+      "ischemic penumbra",
+      "ischemic penumbras",
+      "salvageable brain tissue",
+      "at-risk tissue",
+    ],
+    definition:
+      "Ischemic but still viable brain tissue surrounding the irreversibly injured infarct core — hypoperfused neurons lose function but remain structurally intact for a limited time; timely reperfusion can restore function.",
+    examples: [
+      "MCA occlusion — core infarct with surrounding penumbra on CT perfusion/DWI mismatch",
+      "tPA or mechanical thrombectomy — targets penumbra salvage before conversion to infarct",
+      "DWI-FLAIR mismatch in acute stroke — suggests tissue still at risk",
+      "Prolonged ischemia — penumbra progresses to infarct core (time is brain)",
+    ],
+    boardsPearls: [
+      "Core = irreversible injury; penumbra = potentially salvageable with reperfusion",
+      "Penumbra concept underlies tPA and thrombectomy treatment windows",
+      "CT perfusion: increased Tmax/MTT with preserved CBV suggests penumbra",
+      "DWI positive + FLAIR negative early — may indicate salvageable tissue",
+      "Collateral flow from circle of Willis sustains penumbra temporarily",
+      "vs vasogenic edema — reactive swelling around infarct, not the ischemic zone itself",
+    ],
+    distinguishFrom: [
+      "Infarct core — irreversible cytotoxic edema and cell death",
+      "Benign oligemia — mildly reduced flow without metabolic failure",
+      "Vasogenic edema — extracellular fluid accumulation, often around mass or infarct",
+      "Luxury perfusion — hyperemia after reperfusion, not ischemic penumbra",
+    ],
+    pediatrics:
+      "Penumbra physiology applies to pediatric arterial ischemic stroke as in adults; reperfusion decisions in children follow specialized stroke protocols with imaging demonstrating salvageable tissue.",
+  },
 ];
 
 const pathogenesisById = new Map(

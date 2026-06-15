@@ -24645,6 +24645,76 @@ export const CONDITIONS: ConditionEntry[] = [
       "TIAs are rare in children; acute focal deficits more often reflect migraine, seizure, or Moyamoya disease — pediatric stroke workup differs from adult atherosclerotic disease.",
   },
   {
+    id: "carotid-stenosis",
+    name: "Carotid Stenosis",
+    etymology: "Greek karos = deep sleep (carotid = artery to brain) + Greek stenosis = narrowing",
+    aliases: [
+      "carotid stenosis",
+      "carotid artery stenosis",
+      "carotid stenoses",
+      "internal carotid stenosis",
+      "ica stenosis",
+      "extracranial carotid stenosis",
+      "symptomatic carotid stenosis",
+      "asymptomatic carotid stenosis",
+    ],
+    definition:
+      "Atherosclerotic (or rarely fibromuscular dysplasia) narrowing of the carotid artery — a major source of artery-to-artery embolic stroke and TIA, especially when ulcerated plaque is present.",
+    pathophysiology:
+      "Atherosclerotic plaque at the carotid bifurcation (often at the origin of the internal carotid artery) → luminal narrowing and turbulent flow → platelet-fibrin thrombus or plaque emboli travel to intracranial arteries → focal cerebral ischemia; hemodynamically significant stenosis can also cause hypoperfusion in watershed territories during hypotension.",
+    classicPresentation: [
+      "Often asymptomatic until TIA or stroke",
+      "Amaurosis fugax — monocular vision loss from retinal/ophthalmic artery embolism",
+      "Contralateral hemiparesis or hemisensory loss (anterior circulation embolism)",
+      "Carotid bruit on auscultation (sensitive but not specific)",
+      "Vascular risk factors: hypertension, smoking, hyperlipidemia, diabetes",
+    ],
+    keyFindings: [
+      "Carotid bruit over the neck (internal carotid territory)",
+      "Carotid duplex ultrasound — peak systolic velocity estimates stenosis severity",
+      "CTA/MRA showing luminal narrowing at carotid bifurcation",
+      "Ulcerated or heterogeneous plaque on imaging increases embolic risk",
+    ],
+    keyLabs: [
+      "Carotid duplex — first-line screening and surveillance",
+      "CT angiography or MR angiography for preoperative planning",
+      "Lipid panel and vascular risk factor labs",
+    ],
+    associations: [
+      "Coronary artery disease and peripheral artery disease (systemic atherosclerosis)",
+      "Atrial fibrillation (coexisting cardioembolic risk)",
+      "Fibromuscular dysplasia — younger women, beaded mid-artery pattern",
+      "TIA and ischemic stroke",
+    ],
+    complications: [
+      "Ischemic stroke — especially within days of symptomatic TIA",
+      "Recurrent TIAs",
+      "Cognitive decline with bilateral severe disease (less common boards focus)",
+    ],
+    distinguishFrom: [
+      "Carotid dissection — younger patient, neck pain/Horner syndrome, often traumatic",
+      "Vertebrobasilar disease — posterior circulation symptoms, not carotid territory",
+      "Cardioembolic stroke — AF, valvular disease; carotid may be incidental",
+      "Carotid bruit alone — does not prove hemodynamically significant stenosis",
+    ],
+    treatment: [
+      "Medical therapy: antiplatelet therapy, statin, blood pressure control, smoking cessation",
+      "Carotid endarterectomy (CEA) for symptomatic high-grade stenosis (≥70% or 50–69% with symptoms)",
+      "Carotid artery stenting (CAS) — alternative in selected patients",
+      "Asymptomatic severe stenosis — individualized CEA/CAS vs medical therapy",
+    ],
+    boardsPearls: [
+      "Symptomatic high-grade carotid stenosis → carotid endarterectomy reduces stroke risk",
+      "Amaurosis fugax = retinal TIA from carotid/ophthalmic embolism",
+      "Plaque at carotid bifurcation is the classic location",
+      "NASCET criteria — percent stenosis measured on angiography/duplex",
+      "AF stroke needs anticoagulation, not CEA alone",
+      "vs renal artery stenosis — renovascular HTN, not embolic stroke",
+    ],
+    pediatrics:
+      "Carotid stenosis from atherosclerosis is rare in children; pediatric carotid disease more often reflects Moyamoya, vasculitis, or dissection — workup and management differ from adult atherosclerotic disease.",
+  },
+  {
     id: "diabetic-neuropathy",
     name: "Diabetic Neuropathy",
     etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek neuron = nerve + pathos = suffering",
@@ -24783,6 +24853,65 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Lacunar strokes are essentially an adult small-vessel disease; childhood stroke more often reflects cardioembolism, arteriopathy (Moyamoya), or sickle cell disease.",
+  },
+  {
+    id: "diabetes-insipidus",
+    name: "Diabetes Insipidus",
+    etymology: "Greek diabetes = siphon/pass through + Latin insipidus = tasteless (urine lacks glucose sweetness of diabetes mellitus)",
+    aliases: [
+      "diabetes insipidus",
+      "di",
+      "central diabetes insipidus",
+      "nephrogenic diabetes insipidus",
+      "cranial diabetes insipidus",
+    ],
+    definition:
+      "Disorder of water balance causing dilute polyuria and compensatory polydipsia from deficient ADH secretion (central) or renal resistance to ADH (nephrogenic).",
+    pathophysiology:
+      "Central DI — hypothalamic/pituitary stalk injury or ADH deficiency → absent ADH → collecting duct cannot reabsorb free water → dilute polyuria, rising serum sodium. Nephrogenic DI — V2 receptor or aquaporin-2 defect/dysfunction (lithium, hypercalcemia, hereditary) → kidneys fail to concentrate urine despite adequate ADH.",
+    classicPresentation: [
+      "Massive polyuria (3–20 L/day) of dilute urine",
+      "Intense polydipsia; thirst out of proportion to urine volume",
+      "Hypernatremia if access to water is restricted",
+      "No glucosuria (distinguishes from diabetes mellitus)",
+      "Nocturia and enuresis",
+    ],
+    keyLabs: [
+      "Low urine osmolality (<300 mOsm/kg) with high serum osmolality/sodium",
+      "Water deprivation test — urine remains dilute in DI",
+      "Central DI — urine concentrates after desmopressin (DDAVP)",
+      "Nephrogenic DI — no response to desmopressin",
+      "↑ serum ADH in nephrogenic DI; ↓ or inappropriately low in central DI",
+    ],
+    associations: [
+      "Central — pituitary surgery, craniopharyngioma, head trauma, Langerhans cell histiocytosis, infiltrative stalk disease",
+      "Nephrogenic — lithium, demeclocycline, hypercalcemia, hypokalemia, autosomal or X-linked AQP2/V2R mutations",
+      "Gestational DI — placental vasopressinase",
+    ],
+    complications: [
+      "Hypernatremic dehydration and altered mental status",
+      "Electrolyte seizures",
+      "Volume depletion if thirst mechanism impaired",
+    ],
+    distinguishFrom: [
+      "Diabetes mellitus — glucosuria, hyperglycemia, osmotic diuresis",
+      "Primary polydipsia (psychogenic) — dilute urine but normal/low serum sodium; urine concentrates with water deprivation",
+      "Osmotic diuresis (mannitol, urea) — solute diuresis, not ADH defect",
+    ],
+    treatment: [
+      "Central DI — desmopressin (DDAVP) intranasal or oral",
+      "Nephrogenic DI — treat cause; thiazide diuretics (paradoxical antidiuresis), low-solute diet, amiloride (lithium-induced)",
+      "Ensure free water access; correct hypernatremia slowly",
+    ],
+    boardsPearls: [
+      "Insipidus = tasteless urine (no sugar) vs mellitus = sweet urine",
+      "Desmopressin response distinguishes central from nephrogenic DI",
+      "Lithium → nephrogenic DI (↓ AQP2 expression in collecting duct)",
+      "Cranial DI after pituitary surgery is common boards scenario",
+      "Hypernatremia + dilute urine + high serum osmolality = DI until proven otherwise",
+    ],
+    pediatrics:
+      "Congenital nephrogenic DI (X-linked V2 receptor or AQP2 mutations) presents in infancy with failure to thrive, fever, and vomiting from hypernatremic dehydration; central DI in children may follow craniopharyngioma or Langerhans cell histiocytosis.",
   },
 ];
 

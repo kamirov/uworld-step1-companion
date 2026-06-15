@@ -4663,6 +4663,40 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Peds: same MAC principles; faster induction/desaturation in infants",
     ],
   },
+  {
+    id: "retinoic-acid",
+    name: "Retinoic Acid (All-Trans Retinoic Acid)",
+    etymology: "Latin retina = net (retinal tissue) + -ic = pertaining to + acid = sour compound",
+    aliases: [
+      "retinoic acid",
+      "all-trans retinoic acid",
+      "atra",
+      "tretinoin",
+      "trans-retinoic acid",
+    ],
+    drugClass: "Vitamin A derivative / differentiating agent",
+    mechanism:
+      "Binds nuclear retinoic acid receptors (RAR) and RXR → transcriptional activation of differentiation programs → drives maturation of malignant promyelocytes in APL; in development, retinoic acid gradients pattern HOX gene expression along the anterior-posterior axis.",
+    indications: [
+      "Acute promyelocytic leukemia (APL) — with arsenic trioxide",
+      "Topical acne (tretinoin)",
+      "Note: isotretinoin (13-cis-retinoic acid) is a related oral agent for severe acne",
+    ],
+    adverseEffects: [
+      "Differentiation syndrome (ATRA syndrome) — fever, pulmonary infiltrates, edema, hypotension",
+      "Teratogenic — craniofacial, cardiac, thymic, and CNS defects (isotretinoin pregnancy category X)",
+      "Mucocutaneous dryness, cheilitis",
+      "Hypertriglyceridemia, pseudotumor cerebri",
+      "Headache",
+    ],
+    boardsPearls: [
+      "APL t(15;17) PML-RARA — abnormal RAR blocks differentiation; ATRA reverses block",
+      "Start ATRA immediately on suspicion of APL — do not wait for genetics",
+      "Differentiation syndrome — treat with dexamethasone; can be life-threatening",
+      "Vitamin A excess (isotretinoin) teratogen — neural crest and pharyngeal arch defects",
+      "Retinoic acid from vitamin A (retinol) via oxidation in target tissues",
+    ],
+  },
 ];
 
 const medicationById = new Map(MEDICATIONS.map((m) => [m.id, m]));

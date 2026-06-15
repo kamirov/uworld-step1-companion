@@ -7,6 +7,7 @@ import ankleReflex from "../media/images/symptoms/ankle-reflex.jpg?url";
 import arthralgia from "../media/images/symptoms/arthralgia.jpg?url";
 import arthritis from "../media/images/symptoms/arthritis.jpg?url";
 import ataxia from "../media/images/symptoms/ataxia.jpg?url";
+import autonomicDysfunction from "../media/images/symptoms/autonomic-dysfunction.jpg?url";
 import blueberryMuffinRash from "../media/images/symptoms/blueberry-muffin-rash.jpg?url";
 import brudzinskiSign from "../media/images/symptoms/brudzinski-sign.png?url";
 import bullae from "../media/images/symptoms/bullae.jpg?url";
@@ -21,6 +22,7 @@ import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.jpg?url";
 import diplopia from "../media/images/symptoms/diplopia.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
+import dystonia from "../media/images/symptoms/dystonia.jpg?url";
 import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
 import dysuria from "../media/images/symptoms/dysuria.jpg?url";
 import easyFatigability from "../media/images/symptoms/easy-fatigability.jpg?url";
@@ -43,6 +45,7 @@ import hemoptysis from "../media/images/symptoms/hemoptysis.jpg?url";
 import hyperactiveBowelSounds from "../media/images/symptoms/hyperactive-bowel-sounds.jpg?url";
 import hyperpigmentation from "../media/images/symptoms/hyperpigmentation.jpg?url";
 import hypotelorism from "../media/images/symptoms/hypotelorism.jpg?url";
+import hypotonia from "../media/images/symptoms/hypotonia.jpg?url";
 import hypoxemia from "../media/images/symptoms/hypoxemia.jpg?url";
 import impairedWoundHealing from "../media/images/symptoms/impaired-wound-healing.png?url";
 import induratedPlaque from "../media/images/symptoms/indurated-plaque.jpg?url";
@@ -74,8 +77,8 @@ import papilledema from "../media/images/symptoms/papilledema.jpg?url";
 import papule from "../media/images/symptoms/papule.jpg?url";
 import paresis from "../media/images/symptoms/paresis.jpg?url";
 import peripheralEdema from "../media/images/symptoms/peripheral-edema.jpg?url";
-import plaque from "../media/images/symptoms/plaque.jpg?url";
 import photophobia from "../media/images/symptoms/photophobia.jpg?url";
+import plaque from "../media/images/symptoms/plaque.jpg?url";
 import pleuriticChestPain from "../media/images/symptoms/pleuritic-chest-pain.jpg?url";
 import pnd from "../media/images/symptoms/pnd.jpg?url";
 import polydipsia from "../media/images/symptoms/polydipsia.jpg?url";
@@ -116,6 +119,7 @@ export type SymptomImageId = Extract<
   | "arthralgia"
   | "arthritis"
   | "ataxia"
+  | "autonomic-dysfunction"
   | "blueberry-muffin-rash"
   | "brudzinski-sign"
   | "bullae"
@@ -130,6 +134,7 @@ export type SymptomImageId = Extract<
   | "decreased-skin-turgor"
   | "diplopia"
   | "dry-mucous-membranes"
+  | "dystonia"
   | "dysmorphic-facies"
   | "dysuria"
   | "easy-fatigability"
@@ -152,6 +157,7 @@ export type SymptomImageId = Extract<
   | "hyperactive-bowel-sounds"
   | "hyperpigmentation"
   | "hypotelorism"
+  | "hypotonia"
   | "hypoxemia"
   | "impaired-wound-healing"
   | "indurated-plaque"
@@ -183,6 +189,7 @@ export type SymptomImageId = Extract<
   | "papule"
   | "paresis"
   | "peripheral-edema"
+  | "photophobia"
   | "plaque"
   | "pleuritic-chest-pain"
   | "pnd"
@@ -216,7 +223,6 @@ export type SymptomImageId = Extract<
   | "xerosis"
   | "xerostomia"
   | "petechiae"
-  | "photophobia"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -231,6 +237,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "arthralgia": extensionAssetUrl(arthralgia),
   "arthritis": extensionAssetUrl(arthritis),
   "ataxia": extensionAssetUrl(ataxia),
+  "autonomic-dysfunction": extensionAssetUrl(autonomicDysfunction),
   "blueberry-muffin-rash": extensionAssetUrl(blueberryMuffinRash),
   "brudzinski-sign": extensionAssetUrl(brudzinskiSign),
   "bullae": extensionAssetUrl(bullae),
@@ -245,6 +252,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "decreased-skin-turgor": extensionAssetUrl(decreasedSkinTurgor),
   "diplopia": extensionAssetUrl(diplopia),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
+  "dystonia": extensionAssetUrl(dystonia),
   "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
   "dysuria": extensionAssetUrl(dysuria),
   "easy-fatigability": extensionAssetUrl(easyFatigability),
@@ -267,6 +275,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "hyperactive-bowel-sounds": extensionAssetUrl(hyperactiveBowelSounds),
   "hyperpigmentation": extensionAssetUrl(hyperpigmentation),
   "hypotelorism": extensionAssetUrl(hypotelorism),
+  "hypotonia": extensionAssetUrl(hypotonia),
   "hypoxemia": extensionAssetUrl(hypoxemia),
   "impaired-wound-healing": extensionAssetUrl(impairedWoundHealing),
   "indurated-plaque": extensionAssetUrl(induratedPlaque),
@@ -298,6 +307,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "papule": extensionAssetUrl(papule),
   "paresis": extensionAssetUrl(paresis),
   "peripheral-edema": extensionAssetUrl(peripheralEdema),
+  "photophobia": extensionAssetUrl(photophobia),
   "plaque": extensionAssetUrl(plaque),
   "pleuritic-chest-pain": extensionAssetUrl(pleuriticChestPain),
   "pnd": extensionAssetUrl(pnd),
@@ -331,7 +341,6 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "xerosis": extensionAssetUrl(xerosis),
   "xerostomia": extensionAssetUrl(xerostomia),
   "petechiae": extensionAssetUrl(purpura),
-  "photophobia": extensionAssetUrl(photophobia),
 };
 
 export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
@@ -343,6 +352,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "arthralgia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthralgia.jpg" },
   "arthritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthritis.jpg" },
   "ataxia": { label: "Wikimedia Commons (Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg" },
+  "autonomic-dysfunction": { label: "Wikimedia Commons (Orthostatic hypotension.jpg)", url: "https://commons.wikimedia.org/wiki/File:Orthostatic_hypotension.jpg" },
   "blueberry-muffin-rash": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:blueberry-muffin-rash.jpg" },
   "brudzinski-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:brudzinski-sign.png" },
   "bullae": { label: "Wikimedia Commons (Bullous pemphigoid new image.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bullous_pemphigoid_new_image.jpg" },
@@ -357,6 +367,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "decreased-skin-turgor": { label: "Wikimedia Commons (LowSkinTurgor.jpg)", url: "https://commons.wikimedia.org/wiki/File:LowSkinTurgor.jpg" },
   "diplopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diplopia.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
+  "dystonia": { label: "Wikimedia Commons (Traité des torticolis spasmodiques, spasmes, tics, rythmies du cou, torticolis mental, etc. (1907) (14778054521).jpg)", url: "https://commons.wikimedia.org/wiki/File:Trait%C3%A9_des_torticolis_spasmodiques,_spasmes,_tics,_rythmies_du_cou,_torticolis_mental,_etc._(1907)_(14778054521).jpg" },
   "dysmorphic-facies": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dysmorphic-facies.jpg" },
   "dysuria": { label: "Wikimedia Commons (Bombax ceiba is a universe unto itself.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_is_a_universe_unto_itself.jpg" },
   "easy-fatigability": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:easy-fatigability.jpg" },
@@ -367,7 +378,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "exertional-dyspnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:exertional-dyspnea.jpg" },
   "facial-cleft": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:facial-cleft.jpg" },
   "facial-palsy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:facial-palsy.jpg" },
-  "fasciculation": { label: "CDC PHIL #8171", url: "https://phil.cdc.gov/Details.aspx?pid=8171" },
+  "fasciculation": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:fasciculation.jpg" },
   "fever": { label: "Wikimedia Commons (Symptoms of coronavirus disease 2019 2.0.svg)", url: "https://commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0.svg" },
   "generalized-tonic-clonic-seizure": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:generalized-tonic-clonic-seizure.jpg" },
   "headache": { label: "Wikimedia Commons (Migraine.jpg)", url: "https://commons.wikimedia.org/wiki/File:Migraine.jpg" },
@@ -379,6 +390,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "hyperactive-bowel-sounds": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hyperactive-bowel-sounds.jpg" },
   "hyperpigmentation": { label: "Wikimedia Commons (T. Addison; On...supra-renal capsules Wellcome L0018484.jpg)", url: "https://commons.wikimedia.org/wiki/File:T._Addison;_On...supra-renal_capsules_Wellcome_L0018484.jpg" },
   "hypotelorism": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hypotelorism.jpg" },
+  "hypotonia": { label: "Wikimedia Commons (Nervous and mental diseases (1911) (14591720128).jpg)", url: "https://commons.wikimedia.org/wiki/File:Nervous_and_mental_diseases_(1911)_(14591720128).jpg" },
   "hypoxemia": { label: "Wikimedia Commons (My Heartbeat and Peripheral Oxygen Saturation (SpO2) (29609885543).jpg)", url: "https://commons.wikimedia.org/wiki/File:My_Heartbeat_and_Peripheral_Oxygen_Saturation_(SpO2)_(29609885543).jpg" },
   "impaired-wound-healing": { label: "Wikimedia Commons (WIRA-Wiki-GH-011-de-Ulkus-Thermografie-Verlauf-unter-wIRA.png)", url: "https://commons.wikimedia.org/wiki/File:WIRA-Wiki-GH-011-de-Ulkus-Thermografie-Verlauf-unter-wIRA.png" },
   "indurated-plaque": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:indurated-plaque.jpg" },
@@ -410,6 +422,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "papule": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:papule.jpg" },
   "paresis": { label: "Wikimedia Commons (Hemiatrophy and hemiplegia of the left side of the tongue Wellcome L0062734.jpg)", url: "https://commons.wikimedia.org/wiki/File:Hemiatrophy_and_hemiplegia_of_the_left_side_of_the_tongue_Wellcome_L0062734.jpg" },
   "peripheral-edema": { label: "Wikimedia Commons (Pitting Edema2008.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pitting_Edema2008.jpg" },
+  "photophobia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:photophobia.jpg" },
   "plaque": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:plaque.jpg" },
   "pleuritic-chest-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pleuritic-chest-pain.jpg" },
   "pnd": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pnd.jpg" },
@@ -443,7 +456,6 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "xerosis": { label: "Wikimedia Commons (Xeroderma knuckles.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xeroderma_knuckles.jpg" },
   "xerostomia": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
   "petechiae": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:purpura.jpg" },
-  "photophobia": { label: "Wikimedia Commons (Iritis.jpg)", url: "https://commons.wikimedia.org/wiki/File:Iritis.jpg" },
 };
 
 export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
@@ -453,6 +465,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
   "arthritis": "Clinical or pathologic image illustrating arthritis",
   "ataxia": "Clinical or pathologic image illustrating ataxia",
+  "autonomic-dysfunction": "Orthostatic hypotension — blood pressure fall on standing from impaired baroreflex in autonomic neuropathy",
   "blueberry-muffin-rash": "Clinical or pathologic image illustrating blueberry muffin rash",
   "brudzinski-sign": "Brudziński sign — passive neck flexion causes involuntary hip/knee flexion in meningitis",
   "bullae": "Bullous pemphigoid — tense subepidermal bullae",
@@ -467,6 +480,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "decreased-skin-turgor": "Clinical or pathologic image illustrating decreased skin turgor",
   "diplopia": "Clinical or pathologic image illustrating diplopia",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
+  "dystonia": "Spasmodic torticollis — sustained neck muscle contraction causing abnormal head posture in focal dystonia",
   "dysmorphic-facies": "Clinical or pathologic image illustrating dysmorphic facies",
   "dysuria": "Clinical or pathologic image illustrating dysuria",
   "easy-fatigability": "Clinical or pathologic image illustrating easy fatigability",
@@ -477,7 +491,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "exertional-dyspnea": "Clinical or pathologic image illustrating exertional dyspnea",
   "facial-cleft": "Clinical or pathologic image illustrating facial cleft",
   "facial-palsy": "Clinical or pathologic image illustrating facial palsy",
-  "fasciculation": "Visible muscle fasciculation — spontaneous motor unit twitching in lower motor neuron disease",
+  "fasciculation": "Clinical or pathologic image illustrating fasciculation",
   "fever": "Clinical or pathologic image illustrating fever",
   "generalized-tonic-clonic-seizure": "Clinical or pathologic image illustrating generalized tonic clonic seizure",
   "headache": "Clinical or pathologic image illustrating headache",
@@ -489,6 +503,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "hyperactive-bowel-sounds": "Clinical or pathologic image illustrating hyperactive bowel sounds",
   "hyperpigmentation": "Clinical or pathologic image illustrating hyperpigmentation",
   "hypotelorism": "Clinical or pathologic image illustrating hypotelorism",
+  "hypotonia": "Hypotonic infant — reduced muscle tone with floppy posture on handling",
   "hypoxemia": "Clinical or pathologic image illustrating hypoxemia",
   "impaired-wound-healing": "Clinical or pathologic image illustrating impaired wound healing",
   "indurated-plaque": "Clinical or pathologic image illustrating indurated plaque",
@@ -520,6 +535,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "papule": "Violaceous flat-topped papules of lichen planus on the shins (solid, ≤1 cm)",
   "paresis": "Clinical or pathologic image illustrating paresis",
   "peripheral-edema": "Clinical or pathologic image illustrating peripheral edema",
+  "photophobia": "Clinical or pathologic image illustrating photophobia",
   "plaque": "Erythematous plaque of psoriasis with silvery scale (solid, >1 cm)",
   "pleuritic-chest-pain": "Clinical or pathologic image illustrating pleuritic chest pain",
   "pnd": "Clinical or pathologic image illustrating pnd",
@@ -553,7 +569,6 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "xerosis": "Dry, scaling skin over the knuckles consistent with xerosis",
   "xerostomia": "Dry mouth illustration showing reduced salivary moisture",
   "petechiae": "Non-blanching petechiae on the lower limb from leukocytoclastic vasculitis",
-  "photophobia": "Acute iritis — painful red eye with photophobia from intraocular inflammation",
 };
 
 export function getSymptomImageForId(id: string): string | undefined {

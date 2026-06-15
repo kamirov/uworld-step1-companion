@@ -450,3 +450,6 @@ parinaud-syndrome.jpg
   Page: https://commons.wikimedia.org/wiki/File:Midbrain-axial-showing-tectum-and-tegmentum.jpg
   Description: Axial midbrain — dorsal midbrain (tectum/pretectum) site of Parinaud syndrome
 
+diabetes-insipidus.jpg
+  Source: Wikimedia Commons — Polyuria, large dilute volumes of urine (31388976010).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Polyuria,_large_dilute_volumes_of_urine_(31388976010).jpg

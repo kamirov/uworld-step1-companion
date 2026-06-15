@@ -297,3 +297,16 @@ photophobia.jpg
   Page: https://commons.wikimedia.org/wiki/File:Iritis.jpg
   Download: https://upload.wikimedia.org/wikipedia/commons/e/ec/Iritis.jpg
 
+hypotonia.jpg
+  Source: Wikimedia Commons — Nervous and mental diseases (1911) (14591720128).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Nervous_and_mental_diseases_(1911)_(14591720128).jpg
+
+dystonia.jpg
+  Source: Wikimedia Commons — Traité des torticolis spasmodiques, spasmes, tics, rythmies du cou, torticolis mental, etc. (1907) (14778054521).jpg
+  Page: https://commons.wikimedia.org/wiki/File:Trait%C3%A9_des_torticolis_spasmodiques,_spasmes,_tics,_rythmies_du_cou,_torticolis_mental,_etc._(1907)_(14778054521).jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Traite%CC%81%20des%20torticolis%20spasmodiques,%20spasmes,%20tics,%20rythmies%20du%20cou,%20torticolis%20mental,%20etc.%20(1907)%20(14778054521).jpg?width=1280
+
+autonomic-dysfunction.jpg
+  Source: Wikimedia Commons — Orthostatic hypotension.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Orthostatic_hypotension.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Orthostatic%20hypotension.jpg?width=1280

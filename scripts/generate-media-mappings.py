@@ -54,6 +54,7 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "aphthous-ulcer": "Aphthous ulcer on nonkeratinized oral mucosa",
         "dental-caries": "Occlusal dental caries with enamel cavitation",
         "keratoconjunctivitis-sicca": "Dry eye with ocular surface staining/keratitis pattern",
+        "diabetes-insipidus": "Massive polyuria — large volumes of dilute urine in diabetes insipidus",
     },
     "symptoms": {
         "erythema": "Sharply demarcated erythema of recurrent erysipelas (vasodilation with infection)",
@@ -79,6 +80,7 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "ecchymosis": "Periorbital ecchymosis — non-blanching blood extravasation into skin",
         "xerosis": "Dry, scaling skin over the knuckles consistent with xerosis",
         "xerostomia": "Dry mouth illustration showing reduced salivary moisture",
+        "hypotonia": "Hypotonic infant — reduced muscle tone with floppy posture on handling",
     },
     "cells": {
         "oxidative-phosphorylation": "Inner mitochondrial membrane respiratory chain: complexes I–IV pass electrons to O₂; proton pumping drives ATP synthase (Complex V)",

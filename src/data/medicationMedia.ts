@@ -32,6 +32,7 @@ import sumatriptan from "../media/images/medications/sumatriptan.svg?url";
 import topiramate from "../media/images/medications/topiramate.svg?url";
 import vasopressors from "../media/images/medications/vasopressors.png?url";
 import antiTnfTherapy from "../media/images/medications/anti-tnf-therapy.png?url";
+import retinoicAcid from "../media/images/medications/retinoic-acid.svg?url";
 
 export type MedicationImageId = Extract<
   MedicationEntry["id"],
@@ -66,6 +67,7 @@ export type MedicationImageId = Extract<
   | "sumatriptan"
   | "topiramate"
   | "vasopressors"
+  | "retinoic-acid"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -105,6 +107,7 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   sumatriptan: extensionAssetUrl(sumatriptan),
   topiramate: extensionAssetUrl(topiramate),
   vasopressors: extensionAssetUrl(vasopressors),
+  "retinoic-acid": extensionAssetUrl(retinoicAcid),
 };
 
 export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
@@ -234,6 +237,10 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Norepinephrine.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Norepinephrine.svg",
   },
+  "retinoic-acid": {
+    label: "Wikimedia Commons (Tretinoin structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Tretinoin_structure.svg",
+  },
 };
 
 export const MEDICATION_IMAGE_CAPTIONS: Partial<
@@ -301,6 +308,8 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Topiramate — anticonvulsant used for migraine prophylaxis with weight loss and paresthesia side effects",
   vasopressors:
     "Norepinephrine structure — prototypical alpha-adrenergic vasopressor used in septic shock",
+  "retinoic-acid":
+    "All-trans retinoic acid (ATRA) — vitamin A derivative that induces differentiation in acute promyelocytic leukemia",
 };
 
 export function getMedicationImageForId(id: string): string | undefined {

@@ -25,5 +25,10 @@ tyrosine-hydroxylase.png
   Source: Wikimedia Commons — Tyrosine hydroxylase showing all four subunits.png
   Page: https://commons.wikimedia.org/wiki/File:Tyrosine_hydroxylase_showing_all_four_subunits.png
 
+phenylalanine-hydroxylase.jpg
+  Source: Wikimedia Commons — Phenylalanine hydroxylase.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Phenylalanine_hydroxylase.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Phenylalanine%20hydroxylase.jpg?width=1280
+
 14-3-3-protein.jpg
   Source: Local copy from pathogenesis/fibrils.jpg

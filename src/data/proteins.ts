@@ -788,7 +788,12 @@ export const PROTEINS: ProteinEntry[] = [
     id: "phenylalanine-hydroxylase",
     name: "Phenylalanine hydroxylase",
     etymology: "phenyl = benzene ring + alanine amino acid + hydroxy = OH group + -ase enzyme",
-    aliases: ["phenylalanine hydroxylase", "pah"],
+    aliases: [
+      "phenylalanine hydroxylase",
+      "phenylalanine 4-monooxygenase",
+      "pah",
+      "phenylalanine 4 hydroxylase",
+    ],
     gene: "PAH",
     location: "Hepatocyte cytoplasm",
     function:

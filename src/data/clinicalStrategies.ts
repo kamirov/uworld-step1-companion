@@ -369,6 +369,44 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     pediatrics:
       "Pediatric GCS uses modified verbal/motor criteria in infants; infants may have lower baseline irritability scores — trend over time matters as much as single value.",
   },
+  {
+    id: "antiplatelet-therapy",
+    name: "Antiplatelet Therapy",
+    etymology: "anti- = against + platelet = small plate + Greek therapeia = healing/treatment",
+    aliases: [
+      "antiplatelet therapy",
+      "antiplatelet therapies",
+      "antiplatelet treatment",
+      "antiplatelet agent",
+      "antiplatelet agents",
+      "antiplatelet drugs",
+      "platelet inhibition therapy",
+      "dual antiplatelet therapy",
+      "dapt",
+    ],
+    definition:
+      "Pharmacologic inhibition of platelet activation and aggregation to prevent arterial thrombosis — cornerstone of secondary prevention after MI, ischemic stroke/TIA, and peripheral artery disease, and essential with coronary stenting.",
+    details: [
+      "Aspirin — irreversible COX-1 inhibition → ↓ thromboxane A₂; low-dose daily for most indications",
+      "P2Y12 inhibitors (clopidogrel, prasugrel, ticagrelor) — block ADP-mediated platelet activation",
+      "Glycoprotein IIb/IIIa inhibitors (abciximab, eptifibatide, tirofiban) — block final common aggregation pathway; IV use in high-risk ACS/PCI",
+      "Dual antiplatelet therapy (DAPT) — aspirin + P2Y12 inhibitor for ACS, post-PCI, and high-risk TIA/minor stroke (short course)",
+      "Dipyridamole + aspirin — secondary stroke prevention (ESPS2 framework)",
+      "Duration individualized: lifelong aspirin for most secondary prevention; DAPT duration depends on stent type and bleeding risk",
+    ],
+    boardsPearls: [
+      "Arterial thrombosis → antiplatelet; venous thromboembolism → anticoagulation (heparin/warfarin/DOAC)",
+      "ACS/PCI — DAPT (aspirin + P2Y12 inhibitor); ticagrelor/prasugrel more potent than clopidogrel",
+      "Ischemic stroke/TIA — aspirin; short-term DAPT for high-risk TIA or minor stroke",
+      "Carotid stenosis, PAD, CAD — long-term aspirin (or clopidogrel if aspirin intolerant)",
+      "Clopidogrel is a prodrug — CYP2C19 poor metabolizers have reduced effect",
+      "Bleeding is primary risk — GI bleed, intracranial hemorrhage; avoid with active bleeding",
+      "Aspirin contraindicated in children with viral febrile illness (Reye syndrome)",
+      "vs anticoagulation — antiplatelet for platelet-rich arterial clots; anticoagulation for fibrin-rich venous/LA clots",
+    ],
+    pediatrics:
+      "Aspirin avoided for fever in children (Reye syndrome); aspirin used in Kawasaki disease with IVIG. Pediatric stroke secondary prevention is specialist-guided — antiplatelet therapy may be used but differs from adult DAPT protocols.",
+  },
 ];
 
 const strategyById = new Map(

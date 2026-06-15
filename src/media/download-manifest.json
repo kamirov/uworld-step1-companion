@@ -1613,5 +1613,25 @@
     "title": "File:Atypical Psychosis Genetic Map.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Atypical_Psychosis_Genetic_Map.jpg",
     "query": "schizophrenia psychosis"
+  },
+  "organs/septum-pellucidum.jpg": {
+    "title": "File:Cavum septi pellucidi - Cavum vergae.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cavum_septi_pellucidi_-_Cavum_vergae.jpg",
+    "query": "septum pellucidum brain MRI"
+  },
+  "medications/retinoic-acid.svg": {
+    "title": "File:Tretinoin structure.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tretinoin_structure.svg",
+    "query": "tretinoin retinoic acid structure"
+  },
+  "symptoms/hypotonia.jpg": {
+    "title": "File:Nervous and mental diseases (1911) (14591720128).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nervous_and_mental_diseases_(1911)_(14591720128).jpg",
+    "query": "hypotonia floppy infant"
+  },
+  "conditions/diabetes-insipidus.jpg": {
+    "title": "File:Polyuria, large dilute volumes of urine (31388976010).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Polyuria,_large_dilute_volumes_of_urine_(31388976010).jpg",
+    "query": "polyuria dilute urine diabetes insipidus"
   }
 }

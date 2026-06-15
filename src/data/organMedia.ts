@@ -15,6 +15,7 @@ import cristaTerminalis from "../media/images/organs/crista-terminalis.png?url";
 import papillaryMuscle from "../media/images/organs/papillary-muscle.png?url";
 import medianSulcusOfTheTongue from "../media/images/organs/median-sulcus-of-the-tongue.jpg?url";
 import foramenCecum from "../media/images/organs/foramen-cecum.jpg?url";
+import septumPellucidum from "../media/images/organs/septum-pellucidum.jpg?url";
 
 export type OrganImageId = Extract<
   OrganEntry["id"],
@@ -32,6 +33,7 @@ export type OrganImageId = Extract<
   | "papillary-muscle"
   | "median-sulcus-of-the-tongue"
   | "foramen-cecum"
+  | "septum-pellucidum"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -54,6 +56,7 @@ export const ORGAN_IMAGES: Partial<Record<OrganImageId, string>> = {
   "papillary-muscle": extensionAssetUrl(papillaryMuscle),
   "median-sulcus-of-the-tongue": extensionAssetUrl(medianSulcusOfTheTongue),
   "foramen-cecum": extensionAssetUrl(foramenCecum),
+  "septum-pellucidum": extensionAssetUrl(septumPellucidum),
 };
 
 export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
@@ -115,6 +118,10 @@ export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
     label: "CDC PHIL #12080",
     url: "https://phil.cdc.gov/Details.aspx?pid=12080",
   },
+  "septum-pellucidum": {
+    label: "Wikimedia Commons (Cavum septi pellucidi - Cavum vergae.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Cavum_septi_pellucidi_-_Cavum_vergae.jpg",
+  },
 };
 
 export const ORGAN_IMAGE_CAPTIONS: Partial<Record<OrganImageId, string>> = {
@@ -146,6 +153,8 @@ export const ORGAN_IMAGE_CAPTIONS: Partial<Record<OrganImageId, string>> = {
     "Dorsal tongue anatomy — midline median sulcus dividing the tongue into right and left halves",
   "foramen-cecum":
     "Thyroglossal duct embryology — foramen cecum marks thyroid diverticulum origin at the tongue base",
+  "septum-pellucidum":
+    "Septum pellucidum — thin midline membrane separating the lateral ventricles beneath the corpus callosum",
 };
 
 export function getOrganImageForId(id: string): string | undefined {

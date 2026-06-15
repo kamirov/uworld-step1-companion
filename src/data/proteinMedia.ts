@@ -5,12 +5,19 @@ import adenosineDeaminase from "../media/images/proteins/adenosine-deaminase.jpg
 import ceruloplasmin from "../media/images/proteins/ceruloplasmin.jpg?url";
 import filaggrin from "../media/images/proteins/filaggrin.png?url";
 import intrinsicFactor from "../media/images/proteins/intrinsic-factor.png?url";
+import phenylalanineHydroxylase from "../media/images/proteins/phenylalanine-hydroxylase.jpg?url";
 import tyrosineHydroxylase from "../media/images/proteins/tyrosine-hydroxylase.png?url";
 import fourteenThreeThreeProtein from "../media/images/proteins/14-3-3-protein.jpg?url";
 
 export type ProteinImageId = Extract<
   ProteinEntry["id"],
-  "adenosine-deaminase" | "ceruloplasmin" | "filaggrin" | "intrinsic-factor" | "tyrosine-hydroxylase" | "14-3-3-protein"
+  | "adenosine-deaminase"
+  | "ceruloplasmin"
+  | "filaggrin"
+  | "intrinsic-factor"
+  | "phenylalanine-hydroxylase"
+  | "tyrosine-hydroxylase"
+  | "14-3-3-protein"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -23,6 +30,7 @@ export const PROTEIN_IMAGES: Partial<Record<ProteinImageId, string>> = {
   ceruloplasmin: extensionAssetUrl(ceruloplasmin),
   filaggrin: extensionAssetUrl(filaggrin),
   "intrinsic-factor": extensionAssetUrl(intrinsicFactor),
+  "phenylalanine-hydroxylase": extensionAssetUrl(phenylalanineHydroxylase),
   "tyrosine-hydroxylase": extensionAssetUrl(tyrosineHydroxylase),
   "14-3-3-protein": extensionAssetUrl(fourteenThreeThreeProtein),
 };
@@ -46,6 +54,10 @@ export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Histology of gastric chief cell.png)",
     url: "https://commons.wikimedia.org/wiki/File:Histology_of_gastric_chief_cell.png",
   },
+  "phenylalanine-hydroxylase": {
+    label: "Wikimedia Commons (Phenylalanine hydroxylase.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Phenylalanine_hydroxylase.jpg",
+  },
   "tyrosine-hydroxylase": {
     label: "Wikimedia Commons (Tyrosine hydroxylase showing all four subunits.png)",
     url: "https://commons.wikimedia.org/wiki/File:Tyrosine_hydroxylase_showing_all_four_subunits.png",
@@ -65,6 +77,8 @@ export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
     "Filaggrin aggregates keratin filaments in the stratum corneum — FLG loss-of-function increases atopic dermatitis and ichthyosis vulgaris risk",
   "intrinsic-factor":
     "Gastric parietal cell glycoprotein that binds B12 for ileal absorption — autoantibodies cause pernicious anemia",
+  "phenylalanine-hydroxylase":
+    "Phenylalanine hydroxylase — converts phenylalanine to tyrosine using BH₄; PAH deficiency causes PKU",
   "tyrosine-hydroxylase":
     "Tyrosine hydroxylase tetramer — rate-limiting enzyme converting tyrosine to L-DOPA in catecholamine synthesis",
   "14-3-3-protein":

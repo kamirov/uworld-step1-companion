@@ -1209,6 +1209,39 @@ export const ORGANS: OrganEntry[] = [
       "Neonatal hydrocephalus often presents with enlarging head circumference and bulging fontanelle; congenital aqueductal stenosis dilates lateral and third ventricles.",
   },
   {
+    id: "septum-pellucidum",
+    name: "Septum Pellucidum",
+    etymology: "Latin septum = partition + Latin pellucidum = transparent",
+    aliases: [
+      "septum pellucidum",
+      "septa pellucida",
+      "transparent septum",
+      "sp",
+    ],
+    germLayer: "Ectoderm",
+    origin:
+      "Thin glial membrane derived from the medial walls of the developing telencephalic hemispheres; forms the medial boundary of each lateral ventricle and fuses in the midline between the corpus callosum above and fornix below.",
+    derivatives: [
+      "Medial wall of lateral ventricle",
+      "Cavum septum pellucidum (potential fluid space between leaflets)",
+    ],
+    functionSummary:
+      "Separates the lateral ventricles in the midline; absence or malformation signals forebrain cleavage defects.",
+    commonPathologies: [
+      "Absent septum pellucidum — holoprosencephaly, septo-optic dysplasia",
+      "Cavum septum pellucidum — normal fetal/infant variant; enlarged cavum in fetal alcohol syndrome",
+      "Cavum septum pellucidum et vergae — extension posterior to columns of fornix",
+    ],
+    step1Pearls: [
+      "Absent septum pellucidum + optic nerve hypoplasia → septo-optic dysplasia",
+      "Absent septum pellucidum in holoprosencephaly — failed telencephalic cleavage",
+      "Cavum septum pellucidum closes postnatally in most children",
+      "Visible on coronal MRI between lateral ventricles beneath corpus callosum",
+    ],
+    pediatrics:
+      "Isolated cavum septum pellucidum is common in neonates and usually benign; absent septum pellucidum on prenatal or neonatal imaging warrants evaluation for holoprosencephaly or septo-optic dysplasia.",
+  },
+  {
     id: "spinal-cord",
     name: "Spinal Cord",
     etymology: "Latin spina = thorn/spine + Latin chorda = string",

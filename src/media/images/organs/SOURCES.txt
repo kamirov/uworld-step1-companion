@@ -65,3 +65,7 @@ papillary-muscle.png
   Source: Wikimedia Commons — Chordae tendineae spuriae of left ventricle.png
   Page: https://commons.wikimedia.org/wiki/File:Chordae_tendineae_spuriae_of_left_ventricle.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Chordae_tendineae_spuriae_of_left_ventricle.png?width=1280
+
+septum-pellucidum.jpg
+  Source: Wikimedia Commons — Cavum septi pellucidi - Cavum vergae.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cavum_septi_pellucidi_-_Cavum_vergae.jpg

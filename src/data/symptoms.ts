@@ -7032,6 +7032,137 @@ export const SYMPTOMS: SymptomEntry[] = [
     pediatrics:
       "Disc herniation is less common in children than adults; pediatric back pain with radicular symptoms warrants evaluation for spondylolysis, infection, or tumor. Sciatica in adolescents may follow sports injury or rapid growth.",
   },
+  {
+    id: "hypotonia",
+    name: "Hypotonia",
+    etymology: "Greek hypo = under/below + tonos = tension + -ia = condition",
+    aliases: [
+      "hypotonia",
+      "hypotonic",
+      "decreased muscle tone",
+      "low muscle tone",
+      "floppy infant",
+      "floppy baby",
+    ],
+    definition:
+      "Reduced resting muscle tension — limbs feel floppy on passive movement; the infant feels like a rag doll when held under the arms.",
+    mechanism:
+      "Decreased α-motor neuron output, impaired neuromuscular transmission, primary muscle disease, or central pathways (cerebellum, basal ganglia) that normally maintain postural tone → reduced resistance to passive stretch.",
+    thinkOf: [
+      "Down syndrome (trisomy 21)",
+      "Prader-Willi syndrome",
+      "Spinal muscular atrophy (SMN1 deletion)",
+      "Congenital hypothyroidism",
+      "Botulism (descending flaccid paralysis)",
+      "Zellweger syndrome / peroxisomal disorders",
+      "Metabolic disorders (organic acidemias, urea cycle defects)",
+    ],
+    pairWith: [
+      "Hypotonia + single palmar crease + upslanting fissures → Down syndrome",
+      "Hypotonia + macroglossia + umbilical hernia → congenital hypothyroidism",
+      "Hypotonia + tongue fasciculations → spinal muscular atrophy",
+      "Hypotonia + hyperreflexia → UMN lesion (unusual pairing — think mixed or evolving process)",
+      "Hypotonia + areflexia → LMN or myopathic process",
+    ],
+    distinguishFrom: [
+      "Paresis — weakness on active movement; hypotonia is reduced tone at rest",
+      "Hypertonia/spasticity — increased resistance to stretch (UMN)",
+      "Rigidity — constant resistance throughout range (parkinsonism)",
+      "Normal neonatal tone — mild physiologic hypotonia in preterm infants",
+    ],
+    pediatrics:
+      "Floppy infant is a neonatal emergency workup — karyotype, newborn screen (hypothyroidism), CK, SMN1 testing, and brain MRI when dysmorphic features or seizures present. Down syndrome and congenital hypothyroidism are highest-yield Step 1 associations.",
+  },
+  {
+    id: "dystonia",
+    name: "Dystonia",
+    etymology: "Greek dys = abnormal + tonos = tension/tone",
+    aliases: [
+      "dystonia",
+      "dystonias",
+      "dystonic",
+      "dystonic posturing",
+      "dystonic movements",
+      "sustained muscle contraction",
+      "sustained muscle contractions",
+    ],
+    definition:
+      "Movement disorder of sustained or intermittent muscle contractions causing twisting, repetitive movements, or abnormal fixed postures — may be focal, segmental, or generalized.",
+    mechanism:
+      "Basal ganglia circuit dysfunction (imbalance of direct vs indirect striatal pathways) or impaired dopamine signaling causes loss of normal inhibitory control over muscle groups, producing co-contraction and overflow into adjacent muscles.",
+    thinkOf: [
+      "Acute dystonic reaction — antipsychotics (high-potency D₂ blockers), metoclopramide; treat with benztropine or diphenhydramine",
+      "DOPA-responsive dystonia (Segawa disease) — GTPCH or tyrosine hydroxylase deficiency, diurnal fluctuation",
+      "BH₄ deficiency — PKU-like screen plus dystonia and seizures",
+      "Wilson disease — hepatolenticular degeneration with wing-beating tremor and dystonia",
+      "Lesch-Nyhan syndrome — self-mutilation, hyperuricemia, dystonia",
+      "Cervical dystonia (torticollis) — focal sustained neck deviation",
+      "Writer's cramp — task-specific focal dystonia",
+    ],
+    pairWith: [
+      "Dystonia after antipsychotic start → acute extrapyramidal reaction; give anticholinergic",
+      "Dystonia worse in evening, improves with sleep → DOPA-responsive dystonia (Segawa)",
+      "Dystonia + hyperphenylalaninemia + seizures → BH₄ pathway defect, not isolated PKU",
+      "Dystonia + Kayser-Fleischer rings + liver disease → Wilson disease",
+      "Dystonia + self-biting + ↑ uric acid → Lesch-Nyhan (HGPRT deficiency)",
+      "Task-specific hand spasm with writing → focal dystonia, not electrolyte cramp",
+    ],
+    distinguishFrom: [
+      "Chorea — brief, random, flowing movements without sustained posturing",
+      "Tremor — rhythmic oscillation, not sustained twisting postures",
+      "Spasticity — velocity-dependent UMN hypertonia, not dystonic co-contraction pattern",
+      "Tetany — carpopedal spasm from hypocalcemia/hyperventilation; intermittent not postural",
+      "Akathisia — inner restlessness and inability to sit still, not sustained abnormal postures",
+      "Tardive dyskinesia — choreiform lip/tongue movements after chronic antipsychotic use",
+    ],
+    pediatrics:
+      "DOPA-responsive dystonia often presents in childhood with gait disturbance and diurnal worsening; acute dystonic reactions occur in children given antiemetics or antipsychotics — treat promptly with diphenhydramine.",
+  },
+  {
+    id: "autonomic-dysfunction",
+    name: "Autonomic Dysfunction",
+    etymology: "Greek autos = self + nomos = law + Latin dis- = apart + Latin functio = performance",
+    aliases: [
+      "autonomic dysfunction",
+      "autonomic dysfunctions",
+      "autonomic neuropathy",
+      "autonomic neuropathies",
+      "dysautonomia",
+      "dysautonomias",
+      "autonomic failure",
+      "autonomic insufficiency",
+    ],
+    definition:
+      "Impaired regulation by the autonomic nervous system affecting cardiovascular, gastrointestinal, genitourinary, thermoregulatory, and sudomotor functions — may reflect peripheral neuropathy or central autonomic failure.",
+    mechanism:
+      "Damage to sympathetic/parasympathetic pathways (peripheral small-fiber neuropathy, dorsal motor nucleus of vagus, intermediolateral cell column) or central autonomic integration (hypothalamus, brainstem) disrupts reflex arcs — baroreceptor responses, GI motility, bladder emptying, and sweating fail to adapt to postural or metabolic demands.",
+    thinkOf: [
+      "Diabetic autonomic neuropathy — gastroparesis, orthostatic hypotension, neurogenic bladder, silent MI",
+      "Parkinson disease — orthostatic hypotension, constipation, urinary urgency",
+      "Pure autonomic failure — isolated sympathetic/parasympathetic failure without prominent motor deficits",
+      "Multiple system atrophy — autonomic failure plus parkinsonism or cerebellar signs",
+      "Amyloidosis — infiltrative autonomic neuropathy",
+      "Chagas disease — destruction of autonomic ganglia (megaesophagus, megacolon)",
+      "Vincristine or cisplatin toxicity — autonomic peripheral neuropathy",
+    ],
+    pairWith: [
+      "Orthostatic hypotension + resting tremor + rigidity → Parkinson disease autonomic involvement",
+      "Gastroparesis + early satiety + orthostatic symptoms in diabetic → autonomic neuropathy",
+      "Urinary retention + constipation + anhidrosis → widespread autonomic neuropathy",
+      "Silent MI (no chest pain) in diabetic → autonomic denervation of cardiac afferents",
+      "Postural dizziness + supine hypertension → baroreflex failure (common in autonomic failure)",
+      "Orthostatic hypotension without motor parkinsonism → pure autonomic failure vs volume depletion",
+    ],
+    distinguishFrom: [
+      "Orthostatic hypotension alone — single manifestation; autonomic dysfunction is broader syndrome",
+      "Volume depletion — orthostatic symptoms resolve with fluids; autonomic neuropathy persists",
+      "Medication-induced hypotension — alpha-blockers, nitrates; review drugs before labeling dysautonomia",
+      "Somatic peripheral neuropathy — stocking-glove sensory loss without autonomic features",
+      "Adrenal insufficiency — hypotension plus hyperpigmentation and electrolyte abnormalities",
+    ],
+    pediatrics:
+      "Familial dysautonomia (Riley-Day syndrome) — Ashkenazi Jewish infants with absent fungiform papillae, alacrima, labile BP, and GI dysmotility; congenital central hypoventilation (Ondine curse) reflects brainstem autonomic failure.",
+  },
 ];
 
 const symptomById = new Map(SYMPTOMS.map((s) => [s.id, s]));
