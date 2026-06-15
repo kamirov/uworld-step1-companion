@@ -4488,6 +4488,75 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Peds: pediatric Crohn and JIA indications; mandatory TB screening",
     ],
   },
+  {
+    id: "general-anesthetic",
+    name: "General Anesthetic",
+    etymology: "Greek anaisthēsia = lack of sensation + Latin generalis = whole",
+    aliases: [
+      "general anesthetic",
+      "general anesthetics",
+      "anesthetic",
+      "anesthetics",
+      "general anesthesia drug",
+      "inhalational anesthetic",
+      "inhalational anesthetics",
+      "volatile anesthetic",
+      "volatile anesthetics",
+    ],
+    drugClass: "General anesthetic (inhalational and IV)",
+    mechanism:
+      "Produce reversible unconsciousness, analgesia, amnesia, and immobility — inhalational agents (isoflurane, sevoflurane) enhance GABA_A inhibition and ↓ neuronal excitability; IV agents (propofol, etomidate) potentiate GABA_A; ketamine blocks NMDA receptors; all reduce cerebral metabolic demand (CMRO₂) dose-dependently.",
+    indications: [
+      "Induction and maintenance of general anesthesia for surgery",
+      "Sedation in ICU (propofol infusion — careful hypotension)",
+    ],
+    adverseEffects: [
+      "Hypotension — ↓ MAP and ↓ SVR (especially propofol, volatile agents)",
+      "Respiratory depression and apnea",
+      "Malignant hyperthermia — volatile agents and succinylcholine in RYR1 susceptibility",
+      "Postoperative nausea and vomiting",
+      "Halothane hepatitis (historical halothane)",
+    ],
+    boardsPearls: [
+      "Volatile anesthetics ↓ CMRO₂ and CBF — cerebral vasodilation can ↑ ICP at high doses",
+      "MAC (minimum alveolar concentration) — potency measure for inhalational agents",
+      "Ketamine ↑ sympathetic tone → often preserves MAP; dissociative anesthesia",
+      "Malignant hyperthermia — dantrolene; hypermetabolism, rigidity, hyperthermia",
+      "Nitrous oxide — analgesic/anesthetic; expands closed air spaces (pneumothorax, bowel obstruction)",
+      "vs local anesthetic — systemic unconsciousness not required; lidocaine blocks Na⁺ channels locally",
+    ],
+  },
+  {
+    id: "isoflurane",
+    name: "Isoflurane",
+    etymology: "iso- = structural isomer + fluorine substituent + -ane = hydrocarbon anesthetic suffix",
+    aliases: [
+      "isoflurane",
+      "isoflurane inhalation",
+      "volatile isoflurane",
+    ],
+    drugClass: "Inhalational volatile anesthetic",
+    mechanism:
+      "Halogenated ether volatile anesthetic — enhances GABA_A receptor activity, inhibits neuronal excitability, ↓ CMRO₂ and cerebral metabolic demand; causes dose-dependent vasodilation → ↓ SVR and ↓ MAP.",
+    indications: [
+      "Maintenance of general anesthesia",
+      "Induction in selected settings (pungent — less common for mask induction than sevoflurane)",
+    ],
+    adverseEffects: [
+      "Hypotension — myocardial depression and vasodilation",
+      "Respiratory depression",
+      "Malignant hyperthermia trigger (with succinylcholine in susceptible patients)",
+      "Coronary steal concern historically (less clinical issue than thought)",
+    ],
+    boardsPearls: [
+      "Isoflurane = volatile anesthetic; ↓ CMRO₂; cerebral vasodilator",
+      "MAC ~1.15% — measure of potency",
+      "Triggers malignant hyperthermia — treat with dantrolene",
+      "vs sevoflurane — sevoflurane less pungent, preferred for mask induction",
+      "vs nitrous oxide — isoflurane is potent volatile liquid vaporized in carrier gas",
+      "Peds: same MAC principles; faster induction/desaturation in infants",
+    ],
+  },
 ];
 
 const medicationById = new Map(MEDICATIONS.map((m) => [m.id, m]));

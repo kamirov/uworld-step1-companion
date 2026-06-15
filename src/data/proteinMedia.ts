@@ -6,10 +6,11 @@ import ceruloplasmin from "../media/images/proteins/ceruloplasmin.jpg?url";
 import filaggrin from "../media/images/proteins/filaggrin.png?url";
 import intrinsicFactor from "../media/images/proteins/intrinsic-factor.png?url";
 import tyrosineHydroxylase from "../media/images/proteins/tyrosine-hydroxylase.png?url";
+import fourteenThreeThreeProtein from "../media/images/proteins/14-3-3-protein.jpg?url";
 
 export type ProteinImageId = Extract<
   ProteinEntry["id"],
-  "adenosine-deaminase" | "ceruloplasmin" | "filaggrin" | "intrinsic-factor" | "tyrosine-hydroxylase"
+  "adenosine-deaminase" | "ceruloplasmin" | "filaggrin" | "intrinsic-factor" | "tyrosine-hydroxylase" | "14-3-3-protein"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -23,6 +24,7 @@ export const PROTEIN_IMAGES: Partial<Record<ProteinImageId, string>> = {
   filaggrin: extensionAssetUrl(filaggrin),
   "intrinsic-factor": extensionAssetUrl(intrinsicFactor),
   "tyrosine-hydroxylase": extensionAssetUrl(tyrosineHydroxylase),
+  "14-3-3-protein": extensionAssetUrl(fourteenThreeThreeProtein),
 };
 
 export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
@@ -48,6 +50,10 @@ export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Tyrosine hydroxylase showing all four subunits.png)",
     url: "https://commons.wikimedia.org/wiki/File:Tyrosine_hydroxylase_showing_all_four_subunits.png",
   },
+  "14-3-3-protein": {
+    label: "Wikimedia Commons (Mechanisms of amyloid fibril formation.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg",
+  },
 };
 
 export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
@@ -61,6 +67,8 @@ export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
     "Gastric parietal cell glycoprotein that binds B12 for ileal absorption — autoantibodies cause pernicious anemia",
   "tyrosine-hydroxylase":
     "Tyrosine hydroxylase tetramer — rate-limiting enzyme converting tyrosine to L-DOPA in catecholamine synthesis",
+  "14-3-3-protein":
+    "CSF 14-3-3 protein — supportive marker of neuronal injury in Creutzfeldt-Jakob disease",
 };
 
 export function getProteinImageForId(id: string): string | undefined {

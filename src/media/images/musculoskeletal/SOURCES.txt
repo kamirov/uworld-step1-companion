@@ -39,3 +39,109 @@ l1-l2-spinal-level.png
   Description: Cauda equina and conus medullaris diagram supporting the adult L1-L2 spinal cord termination level
   Page: https://commons.wikimedia.org/wiki/File:Gray662.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray662.png
+
+accessory-nerve.png
+  Source: Wikimedia Commons — Gray793.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Spinal accessory nerve course
+  Page: https://commons.wikimedia.org/wiki/File:Gray793.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray793.png
+
+long-thoracic-nerve.jpg
+  Source: Wikimedia Commons — Scapula Winging in Long Thoracic Nerve Palsy.jpg
+  License: CC BY-SA 3.0
+  Description: Medial scapular winging from long thoracic nerve palsy
+  Page: https://commons.wikimedia.org/wiki/File:Scapula_Winging_in_Long_Thoracic_Nerve_Palsy.jpg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Scapula_Winging_in_Long_Thoracic_Nerve_Palsy.jpg
+
+phrenic-nerve.png
+  Source: Wikimedia Commons — Gray819.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Position of esophagus, trachea, heart, and phrenic nerves
+  Page: https://commons.wikimedia.org/wiki/File:Gray819.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray819.png
+
+recurrent-laryngeal-nerve.png
+  Source: Wikimedia Commons — Gray605.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Laryngeal muscles and nerves
+  Page: https://commons.wikimedia.org/wiki/File:Gray605.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray605.png
+
+sympathetic-trunk.png
+  Source: Wikimedia Commons — Gray832.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Sympathetic trunk and splanchnic nerves
+  Page: https://commons.wikimedia.org/wiki/File:Gray832.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray832.png
+
+sciatic-nerve-injury.png
+  Source: Wikimedia Commons — Sciatic nerve and tibial nerve.svg
+  License: CC BY-SA 4.0
+  Description: Anatomy of sciatic nerve and tibial nerve
+  Page: https://commons.wikimedia.org/wiki/File:Sciatic_nerve_and_tibial_nerve.svg
+
+peroneal-nerve-compression.jpg
+  Source: Wikimedia Commons — Foot drop.jpg
+  License: CC BY-SA 3.0
+  Description: Foot drop from common peroneal nerve palsy
+  Page: https://commons.wikimedia.org/wiki/File:Foot_drop.jpg
+
+chorda-tympani.png
+  Source: Wikimedia Commons — Gray788.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Tympanic cavity showing chorda tympani course
+  Page: https://commons.wikimedia.org/wiki/File:Gray788.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray788.png
+
+trigeminal-nerve.png
+  Source: Wikimedia Commons — Gray777.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Trigeminal nerve and divisions
+  Page: https://commons.wikimedia.org/wiki/File:Gray777.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray777.png
+
+maxillary-division.png
+  Source: Wikimedia Commons — Gray778.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Distribution of maxillary division (V2) of trigeminal nerve
+  Page: https://commons.wikimedia.org/wiki/File:Gray778.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray778.png
+
+mandibular-division.png
+  Source: Wikimedia Commons — Gray779.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Distribution of mandibular division (V3) of trigeminal nerve
+  Page: https://commons.wikimedia.org/wiki/File:Gray779.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray779.png
+
+glossopharyngeal-nerve.png
+  Source: Wikimedia Commons — Gray790.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Glossopharyngeal, vagus, and accessory nerves
+  Page: https://commons.wikimedia.org/wiki/File:Gray790.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray790.png
+
+vagus-nerve.png
+  Source: Wikimedia Commons — Gray792.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Vagus nerve course in neck and thorax
+  Page: https://commons.wikimedia.org/wiki/File:Gray792.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/Gray792.png
+
+cn-ii.png
+  Source: Wikimedia Commons — Gray729.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Optic nerve and visual pathway
+  Page: https://commons.wikimedia.org/wiki/File:Gray729.png

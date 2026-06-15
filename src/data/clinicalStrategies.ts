@@ -305,6 +305,37 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     pediatrics:
       "Evidence-supported for pediatric anxiety, OCD, and depression; parental involvement and school coordination improve outcomes.",
   },
+  {
+    id: "glasgow-coma-scale",
+    name: "Glasgow Coma Scale",
+    etymology: "eponym: Graham Teasdale and Bryan Jennett (Glasgow, Scotland) + coma = deep sleep + Latin scala = ladder",
+    aliases: [
+      "glasgow coma scale",
+      "glasgow coma scales",
+      "gcs",
+      "glasgow coma score",
+      "glasgow coma scores",
+    ],
+    definition:
+      "Standardized 3–15 point clinical score quantifying level of consciousness after brain injury — sums Eye (1–4), Verbal (1–5), and Motor (1–6) responses; lower scores indicate worse impairment.",
+    details: [
+      "Eye opening: 4 spontaneous, 3 to voice, 2 to pain, 1 none",
+      "Verbal: 5 oriented, 4 confused, 3 inappropriate words, 2 incomprehensible sounds, 1 none",
+      "Motor: 6 obeys commands, 5 localizes pain, 4 withdraws, 3 abnormal flexion (decorticate), 2 extension (decerebrate), 1 none",
+      "GCS ≤8 often used as threshold for intubation to protect airway (with clinical context)",
+      "Best eye, verbal, and motor response in each category — use non-dominant side if asymmetric",
+    ],
+    boardsPearls: [
+      "GCS 3 = minimum (no response in all categories); 15 = normal",
+      "Decorticate posturing (abnormal flexion) — motor score 3; decerebrate extension — motor score 2",
+      "Severe TBI often GCS ≤8; moderate 9–12; mild 13–15 (definitions vary slightly)",
+      "Intubated/sedated patients — record 'T' for untestable verbal component; use motor and eye primarily",
+      "vs AVPU — simpler alert/voice/pain/unresponsive scale; GCS more granular",
+      "Pupillary and motor asymmetry add prognostic information beyond GCS alone",
+    ],
+    pediatrics:
+      "Pediatric GCS uses modified verbal/motor criteria in infants; infants may have lower baseline irritability scores — trend over time matters as much as single value.",
+  },
 ];
 
 const strategyById = new Map(

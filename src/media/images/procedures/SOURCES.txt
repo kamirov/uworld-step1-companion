@@ -1,1 +1,13 @@
 bariatric-surgery.svg | Created locally
+
+rapid-sequence-intubation.png
+  Source: Wikimedia Commons — Sagittal cross section view of laryngoscopy intubation with mac 3.png
+  Page: https://commons.wikimedia.org/wiki/File:Sagittal_cross_section_view_of_laryngoscopy_intubation_with_mac_3.png
+
+funduscopy.jpg
+  Source: Wikimedia Commons — Fundus photograph of normal left eye.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_left_eye.jpg
+
+radiofrequency-ablation.jpg
+  Source: Local copy from symptoms/palpitations.jpg
+  Page: https://commons.wikimedia.org/wiki/File:ECG_Atrial_Fibrillation_98_bpm.jpg

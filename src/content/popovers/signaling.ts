@@ -1,8 +1,14 @@
 import { getSignalingById } from "../../data/signaling";
+import {
+  getSignalingImageAttributionForId,
+  getSignalingImageCaptionForId,
+  getSignalingImageForId,
+} from "../../data/signalingMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
   renderPediatricsSection,
+  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -13,6 +19,10 @@ export function renderSignalingPopover(
   const molecule = getSignalingById(signalingId);
   if (!molecule || !popover) return false;
 
+  const imageSrc = getSignalingImageForId(signalingId);
+  const imageCaption = getSignalingImageCaptionForId(signalingId);
+  const imageAttribution = getSignalingImageAttributionForId(signalingId);
+
   const meta = [
     `<strong>Type:</strong> ${molecule.type}`,
     molecule.source ? `<strong>Source:</strong> ${molecule.source}` : "",
@@ -21,8 +31,7 @@ export function renderSignalingPopover(
     .filter(Boolean)
     .join(" · ");
 
-  popover.classList.add("usmle-organ-popover--rich");
-  popover.innerHTML = renderRichPopoverContent(
+  const bodyContent = renderRichPopoverContent(
     `
     ${renderPopoverTitle(molecule.name, "signaling", molecule.etymology)}
     ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
@@ -37,5 +46,21 @@ export function renderSignalingPopover(
     ${molecule.pediatrics ? renderPediatricsSection(molecule.pediatrics) : ""}
   `,
   );
+
+  popover.classList.add("usmle-organ-popover--rich");
+  if (imageSrc && imageCaption && imageAttribution) {
+    popover.classList.add("usmle-organ-popover--with-media");
+    popover.innerHTML = `
+      ${renderPopoverMediaBlock({
+        src: imageSrc,
+        alt: molecule.name,
+        caption: imageCaption,
+        attribution: imageAttribution,
+      })}
+      ${bodyContent}
+    `;
+  } else {
+    popover.innerHTML = bodyContent;
+  }
   return true;
 }

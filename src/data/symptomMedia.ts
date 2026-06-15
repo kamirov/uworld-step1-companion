@@ -1,6 +1,7 @@
 import type { MediaAttribution } from "./media";
 import type { SymptomEntry } from "./symptoms";
 
+import afferentPupillaryDefect from "../media/images/symptoms/afferent-pupillary-defect.png?url";
 import agonalRespirations from "../media/images/symptoms/agonal-respirations.jpg?url";
 import ankleReflex from "../media/images/symptoms/ankle-reflex.jpg?url";
 import arthralgia from "../media/images/symptoms/arthralgia.jpg?url";
@@ -18,6 +19,7 @@ import cyanosis from "../media/images/symptoms/cyanosis.jpg?url";
 import cyclopia from "../media/images/symptoms/cyclopia.jpg?url";
 import dactylitis from "../media/images/symptoms/dactylitis.jpg?url";
 import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.jpg?url";
+import diplopia from "../media/images/symptoms/diplopia.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
 import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
 import dysuria from "../media/images/symptoms/dysuria.jpg?url";
@@ -28,7 +30,10 @@ import erythema from "../media/images/symptoms/erythema.jpg?url";
 import excoriated from "../media/images/symptoms/excoriated.jpg?url";
 import exertionalDyspnea from "../media/images/symptoms/exertional-dyspnea.jpg?url";
 import facialCleft from "../media/images/symptoms/facial-cleft.jpg?url";
+import facialPalsy from "../media/images/symptoms/facial-palsy.jpg?url";
+import fasciculation from "../media/images/symptoms/fasciculation.jpg?url";
 import fever from "../media/images/symptoms/fever.jpg?url";
+import generalizedTonicClonicSeizure from "../media/images/symptoms/generalized-tonic-clonic-seizure.jpg?url";
 import headache from "../media/images/symptoms/headache.jpg?url";
 import hematochezia from "../media/images/symptoms/hematochezia.jpg?url";
 import hematuria from "../media/images/symptoms/hematuria.jpg?url";
@@ -52,8 +57,10 @@ import lymphadenopathy from "../media/images/symptoms/lymphadenopathy.jpg?url";
 import maculopapularRash from "../media/images/symptoms/maculopapular-rash.jpg?url";
 import mania from "../media/images/symptoms/mania.svg?url";
 import melena from "../media/images/symptoms/melena.jpg?url";
+import miotic from "../media/images/symptoms/miotic.jpg?url";
 import moonFacies from "../media/images/symptoms/moon-facies.svg?url";
 import morningStiffness from "../media/images/symptoms/morning-stiffness.jpg?url";
+import mydriasis from "../media/images/symptoms/mydriasis.jpg?url";
 import myelopathy from "../media/images/symptoms/myelopathy.jpg?url";
 import nausea from "../media/images/symptoms/nausea.jpg?url";
 import neutropenia from "../media/images/symptoms/neutropenia.jpg?url";
@@ -80,14 +87,18 @@ import psychosis from "../media/images/symptoms/psychosis.jpg?url";
 import pulmonaryEdema from "../media/images/symptoms/pulmonary-edema.jpg?url";
 import purpura from "../media/images/symptoms/purpura.jpg?url";
 import raynaudPhenomenon from "../media/images/symptoms/raynaud-phenomenon.jpg?url";
+import sciatica from "../media/images/symptoms/sciatica.jpg?url";
 import sclerodactyly from "../media/images/symptoms/sclerodactyly.jpg?url";
 import shortnessOfBreath from "../media/images/symptoms/shortness-of-breath.jpg?url";
 import skinThickening from "../media/images/symptoms/skin-thickening.jpg?url";
+import slurredSpeech from "../media/images/symptoms/slurred-speech.jpg?url";
 import spasticParesis from "../media/images/symptoms/spastic-paresis.png?url";
 import syncope from "../media/images/symptoms/syncope.jpg?url";
 import tearingChestPain from "../media/images/symptoms/tearing-chest-pain.jpg?url";
 import telangiectasia from "../media/images/symptoms/telangiectasia.jpg?url";
 import thrombocytopenia from "../media/images/symptoms/thrombocytopenia.jpg?url";
+import upwardGazePalsy from "../media/images/symptoms/upward-gaze-palsy.png?url";
+import vertigo from "../media/images/symptoms/vertigo.svg?url";
 import vesicle from "../media/images/symptoms/vesicle.jpg?url";
 import vomiting from "../media/images/symptoms/vomiting.jpg?url";
 import vomitus from "../media/images/symptoms/vomitus.jpg?url";
@@ -98,6 +109,7 @@ import xerostomia from "../media/images/symptoms/xerostomia.jpg?url";
 
 export type SymptomImageId = Extract<
   SymptomEntry["id"],
+  | "afferent-pupillary-defect"
   | "agonal-respirations"
   | "ankle-reflex"
   | "arthralgia"
@@ -115,6 +127,7 @@ export type SymptomImageId = Extract<
   | "cyclopia"
   | "dactylitis"
   | "decreased-skin-turgor"
+  | "diplopia"
   | "dry-mucous-membranes"
   | "dysmorphic-facies"
   | "dysuria"
@@ -125,7 +138,10 @@ export type SymptomImageId = Extract<
   | "excoriated"
   | "exertional-dyspnea"
   | "facial-cleft"
+  | "facial-palsy"
+  | "fasciculation"
   | "fever"
+  | "generalized-tonic-clonic-seizure"
   | "headache"
   | "hematochezia"
   | "hematuria"
@@ -149,8 +165,10 @@ export type SymptomImageId = Extract<
   | "maculopapular-rash"
   | "mania"
   | "melena"
+  | "miotic"
   | "moon-facies"
   | "morning-stiffness"
+  | "mydriasis"
   | "myelopathy"
   | "nausea"
   | "neutropenia"
@@ -177,14 +195,18 @@ export type SymptomImageId = Extract<
   | "pulmonary-edema"
   | "purpura"
   | "raynaud-phenomenon"
+  | "sciatica"
   | "sclerodactyly"
   | "shortness-of-breath"
   | "skin-thickening"
+  | "slurred-speech"
   | "spastic-paresis"
   | "syncope"
   | "tearing-chest-pain"
   | "telangiectasia"
   | "thrombocytopenia"
+  | "upward-gaze-palsy"
+  | "vertigo"
   | "vesicle"
   | "vomiting"
   | "vomitus"
@@ -201,6 +223,7 @@ function extensionAssetUrl(path: string): string {
 
 /** See src/media/images/symptoms/SOURCES.txt */
 export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
+  "afferent-pupillary-defect": extensionAssetUrl(afferentPupillaryDefect),
   "agonal-respirations": extensionAssetUrl(agonalRespirations),
   "ankle-reflex": extensionAssetUrl(ankleReflex),
   "arthralgia": extensionAssetUrl(arthralgia),
@@ -218,6 +241,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "cyclopia": extensionAssetUrl(cyclopia),
   "dactylitis": extensionAssetUrl(dactylitis),
   "decreased-skin-turgor": extensionAssetUrl(decreasedSkinTurgor),
+  "diplopia": extensionAssetUrl(diplopia),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
   "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
   "dysuria": extensionAssetUrl(dysuria),
@@ -228,7 +252,10 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "excoriated": extensionAssetUrl(excoriated),
   "exertional-dyspnea": extensionAssetUrl(exertionalDyspnea),
   "facial-cleft": extensionAssetUrl(facialCleft),
+  "facial-palsy": extensionAssetUrl(facialPalsy),
+  "fasciculation": extensionAssetUrl(fasciculation),
   "fever": extensionAssetUrl(fever),
+  "generalized-tonic-clonic-seizure": extensionAssetUrl(generalizedTonicClonicSeizure),
   "headache": extensionAssetUrl(headache),
   "hematochezia": extensionAssetUrl(hematochezia),
   "hematuria": extensionAssetUrl(hematuria),
@@ -252,8 +279,10 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "maculopapular-rash": extensionAssetUrl(maculopapularRash),
   "mania": extensionAssetUrl(mania),
   "melena": extensionAssetUrl(melena),
+  "miotic": extensionAssetUrl(miotic),
   "moon-facies": extensionAssetUrl(moonFacies),
   "morning-stiffness": extensionAssetUrl(morningStiffness),
+  "mydriasis": extensionAssetUrl(mydriasis),
   "myelopathy": extensionAssetUrl(myelopathy),
   "nausea": extensionAssetUrl(nausea),
   "neutropenia": extensionAssetUrl(neutropenia),
@@ -280,14 +309,18 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "pulmonary-edema": extensionAssetUrl(pulmonaryEdema),
   "purpura": extensionAssetUrl(purpura),
   "raynaud-phenomenon": extensionAssetUrl(raynaudPhenomenon),
+  "sciatica": extensionAssetUrl(sciatica),
   "sclerodactyly": extensionAssetUrl(sclerodactyly),
   "shortness-of-breath": extensionAssetUrl(shortnessOfBreath),
   "skin-thickening": extensionAssetUrl(skinThickening),
+  "slurred-speech": extensionAssetUrl(slurredSpeech),
   "spastic-paresis": extensionAssetUrl(spasticParesis),
   "syncope": extensionAssetUrl(syncope),
   "tearing-chest-pain": extensionAssetUrl(tearingChestPain),
   "telangiectasia": extensionAssetUrl(telangiectasia),
   "thrombocytopenia": extensionAssetUrl(thrombocytopenia),
+  "upward-gaze-palsy": extensionAssetUrl(upwardGazePalsy),
+  "vertigo": extensionAssetUrl(vertigo),
   "vesicle": extensionAssetUrl(vesicle),
   "vomiting": extensionAssetUrl(vomiting),
   "vomitus": extensionAssetUrl(vomitus),
@@ -301,11 +334,9 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
 export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   Record<SymptomImageId, MediaAttribution>
 > = {
+  "afferent-pupillary-defect": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:afferent-pupillary-defect.png" },
   "agonal-respirations": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:agonal-respirations.jpg" },
-  "ankle-reflex": {
-    label: "Wikimedia Commons (Medical diagnosis for the student and practitioner, 1922)",
-    url: "https://commons.wikimedia.org/wiki/File:Medical_diagnosis_for_the_student_and_practitioner_(1922)_(14598069420).jpg",
-  },
+  "ankle-reflex": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ankle-reflex.jpg" },
   "arthralgia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthralgia.jpg" },
   "arthritis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthritis.jpg" },
   "ataxia": { label: "Wikimedia Commons (Diseases of the nervous system - a text-book of neurology and psychiatry (1915) (14780493694).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_nervous_system_-_a_text-book_of_neurology_and_psychiatry_(1915)_(14780493694).jpg" },
@@ -321,6 +352,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "cyclopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cyclopia.jpg" },
   "dactylitis": { label: "Wikimedia Commons (Quick Reference Guide for Clinicians- Sickle Cell Disease- Comprehensive Screening and Management in Newborns and Infants (IA quickreferencegu00unse).pdf)", url: "https://commons.wikimedia.org/wiki/File:Quick_Reference_Guide_for_Clinicians-_Sickle_Cell_Disease-_Comprehensive_Screening_and_Management_in_Newborns_and_Infants_(IA_quickreferencegu00unse).pdf" },
   "decreased-skin-turgor": { label: "Wikimedia Commons (LowSkinTurgor.jpg)", url: "https://commons.wikimedia.org/wiki/File:LowSkinTurgor.jpg" },
+  "diplopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diplopia.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
   "dysmorphic-facies": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dysmorphic-facies.jpg" },
   "dysuria": { label: "Wikimedia Commons (Bombax ceiba is a universe unto itself.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_is_a_universe_unto_itself.jpg" },
@@ -331,7 +363,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "excoriated": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:excoriated.jpg" },
   "exertional-dyspnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:exertional-dyspnea.jpg" },
   "facial-cleft": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:facial-cleft.jpg" },
+  "facial-palsy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:facial-palsy.jpg" },
+  "fasciculation": { label: "CDC PHIL #8171", url: "https://phil.cdc.gov/Details.aspx?pid=8171" },
   "fever": { label: "Wikimedia Commons (Symptoms of coronavirus disease 2019 2.0.svg)", url: "https://commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0.svg" },
+  "generalized-tonic-clonic-seizure": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:generalized-tonic-clonic-seizure.jpg" },
   "headache": { label: "Wikimedia Commons (Migraine.jpg)", url: "https://commons.wikimedia.org/wiki/File:Migraine.jpg" },
   "hematochezia": { label: "Wikimedia Commons (Hämatochezie Dezember 2021.jpg)", url: "https://commons.wikimedia.org/wiki/File:Hämatochezie_Dezember_2021.jpg" },
   "hematuria": { label: "Wikimedia Commons (HematuriaTrauma.JPG)", url: "https://commons.wikimedia.org/wiki/File:HematuriaTrauma.JPG" },
@@ -355,8 +390,10 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "maculopapular-rash": { label: "Wikimedia Commons (Generalized ACLE.jpg)", url: "https://commons.wikimedia.org/wiki/File:Generalized_ACLE.jpg" },
   "mania": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:mania.svg" },
   "melena": { label: "Wikimedia Commons (Melena Bleeding DU.jpg)", url: "https://commons.wikimedia.org/wiki/File:Melena_Bleeding_DU.jpg" },
+  "miotic": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:miotic.jpg" },
   "moon-facies": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:moon-facies.svg" },
   "morning-stiffness": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:morning-stiffness.jpg" },
+  "mydriasis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:mydriasis.jpg" },
   "myelopathy": { label: "Wikimedia Commons (Cervical Spine MRI (T2W).jpg)", url: "https://commons.wikimedia.org/wiki/File:Cervical_Spine_MRI_(T2W).jpg" },
   "nausea": { label: "Wikimedia Commons (Fphar-09-00913-g005.jpg)", url: "https://commons.wikimedia.org/wiki/File:Fphar-09-00913-g005.jpg" },
   "neutropenia": { label: "Wikimedia Commons (A blood smear with neutropenia in United States.jpg)", url: "https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg" },
@@ -383,14 +420,18 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "pulmonary-edema": { label: "Wikimedia Commons (Respiratory system - Pulmonary edema -- Smart-Servier.png)", url: "https://commons.wikimedia.org/wiki/File:Respiratory_system_-_Pulmonary_edema_--_Smart-Servier.png" },
   "purpura": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:purpura.jpg" },
   "raynaud-phenomenon": { label: "Wikimedia Commons (Raynaud syndrome on female airman's hand.jpg)", url: "https://commons.wikimedia.org/wiki/File:Raynaud_syndrome_on_female_airman's_hand.jpg" },
+  "sciatica": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:sciatica.jpg" },
   "sclerodactyly": { label: "Wikimedia Commons (Calcinosis of CREST syndrome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Calcinosis_of_CREST_syndrome.jpg" },
   "shortness-of-breath": { label: "Wikimedia Commons (SymptomsFeverCoughSOB (cropped).jpg)", url: "https://commons.wikimedia.org/wiki/File:SymptomsFeverCoughSOB_(cropped).jpg" },
   "skin-thickening": { label: "Wikimedia Commons (On scleroderma (IA 101695003.nlm.nih.gov).pdf)", url: "https://commons.wikimedia.org/wiki/File:On_scleroderma_(IA_101695003.nlm.nih.gov).pdf" },
+  "slurred-speech": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:slurred-speech.jpg" },
   "spastic-paresis": { label: "Wikimedia Commons (ALS subtypes UMN LMN distribution.png)", url: "https://commons.wikimedia.org/wiki/File:ALS_subtypes_UMN_LMN_distribution.png" },
   "syncope": { label: "Wikimedia Commons (Pietro Longhi 027.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pietro_Longhi_027.jpg" },
   "tearing-chest-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:tearing-chest-pain.jpg" },
   "telangiectasia": { label: "Wikimedia Commons (SpiderAngioma.jpg)", url: "https://commons.wikimedia.org/wiki/File:SpiderAngioma.jpg" },
   "thrombocytopenia": { label: "Wikimedia Commons (Oral petechiae.JPG)", url: "https://commons.wikimedia.org/wiki/File:Oral_petechiae.JPG" },
+  "upward-gaze-palsy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:upward-gaze-palsy.png" },
+  "vertigo": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:vertigo.svg" },
   "vesicle": { label: "Wikimedia Commons (Diseases of the mouth; for physicians, dentists, medical and dental students (1912) (14772644622).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_mouth;_for_physicians,_dentists,_medical_and_dental_students_(1912)_(14772644622).jpg" },
   "vomiting": { label: "Wikimedia Commons (Emesis (Emesis Cerea).JPG)", url: "https://commons.wikimedia.org/wiki/File:Emesis_(Emesis_Cerea).JPG" },
   "vomitus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:vomitus.jpg" },
@@ -402,9 +443,9 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
 };
 
 export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
+  "afferent-pupillary-defect": "Clinical or pathologic image illustrating afferent pupillary defect",
   "agonal-respirations": "Clinical or pathologic image illustrating agonal respirations",
-  "ankle-reflex":
-    "Achilles (ankle) deep tendon reflex — plantar flexion after tendon tap; primarily S1",
+  "ankle-reflex": "Clinical or pathologic image illustrating ankle reflex",
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
   "arthritis": "Clinical or pathologic image illustrating arthritis",
   "ataxia": "Clinical or pathologic image illustrating ataxia",
@@ -420,6 +461,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "cyclopia": "Clinical or pathologic image illustrating cyclopia",
   "dactylitis": "Painful swelling of the hands — dactylitis in sickle cell disease",
   "decreased-skin-turgor": "Clinical or pathologic image illustrating decreased skin turgor",
+  "diplopia": "Clinical or pathologic image illustrating diplopia",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
   "dysmorphic-facies": "Clinical or pathologic image illustrating dysmorphic facies",
   "dysuria": "Clinical or pathologic image illustrating dysuria",
@@ -430,7 +472,10 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "excoriated": "Clinical or pathologic image illustrating excoriated",
   "exertional-dyspnea": "Clinical or pathologic image illustrating exertional dyspnea",
   "facial-cleft": "Clinical or pathologic image illustrating facial cleft",
+  "facial-palsy": "Clinical or pathologic image illustrating facial palsy",
+  "fasciculation": "Visible muscle fasciculation — spontaneous motor unit twitching in lower motor neuron disease",
   "fever": "Clinical or pathologic image illustrating fever",
+  "generalized-tonic-clonic-seizure": "Clinical or pathologic image illustrating generalized tonic clonic seizure",
   "headache": "Clinical or pathologic image illustrating headache",
   "hematochezia": "Clinical or pathologic image illustrating hematochezia",
   "hematuria": "Clinical or pathologic image illustrating hematuria",
@@ -454,8 +499,10 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "maculopapular-rash": "Maculopapular eruption — coalescent erythematous macules and papules",
   "mania": "Clinical or pathologic image illustrating mania",
   "melena": "Clinical or pathologic image illustrating melena",
+  "miotic": "Clinical or pathologic image illustrating miotic",
   "moon-facies": "Clinical or pathologic image illustrating moon facies",
   "morning-stiffness": "Clinical or pathologic image illustrating morning stiffness",
+  "mydriasis": "Clinical or pathologic image illustrating mydriasis",
   "myelopathy": "Clinical or pathologic image illustrating myelopathy",
   "nausea": "Clinical or pathologic image illustrating nausea",
   "neutropenia": "Clinical or pathologic image illustrating neutropenia",
@@ -482,14 +529,18 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "pulmonary-edema": "Clinical or pathologic image illustrating pulmonary edema",
   "purpura": "Petechiae and purpura on the lower limb from medication-induced leukocytoclastic vasculitis",
   "raynaud-phenomenon": "Clinical or pathologic image illustrating raynaud phenomenon",
+  "sciatica": "Clinical or pathologic image illustrating sciatica",
   "sclerodactyly": "Clinical or pathologic image illustrating sclerodactyly",
   "shortness-of-breath": "Clinical or pathologic image illustrating shortness of breath",
   "skin-thickening": "Clinical or pathologic image illustrating skin thickening",
+  "slurred-speech": "Clinical or pathologic image illustrating slurred speech",
   "spastic-paresis": "Clinical or pathologic image illustrating spastic paresis",
   "syncope": "Clinical or pathologic image illustrating syncope",
   "tearing-chest-pain": "Clinical or pathologic image illustrating tearing chest pain",
   "telangiectasia": "Spider angioma — central arteriole with radiating telangiectasias",
   "thrombocytopenia": "Clinical or pathologic image illustrating thrombocytopenia",
+  "upward-gaze-palsy": "Clinical or pathologic image illustrating upward gaze palsy",
+  "vertigo": "Clinical or pathologic image illustrating vertigo",
   "vesicle": "Herpes labialis vesicles — fluid-filled epidermal lesions <1 cm",
   "vomiting": "Clinical or pathologic image illustrating vomiting",
   "vomitus": "Clinical or pathologic image illustrating vomitus",

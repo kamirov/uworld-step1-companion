@@ -9,6 +9,12 @@ import prosencephalon from "../media/images/organs/prosencephalon.jpg?url";
 import midbrain from "../media/images/organs/midbrain.jpg?url";
 import hindbrain from "../media/images/organs/hindbrain.jpg?url";
 import lateralVentricles from "../media/images/organs/lateral-ventricles.svg?url";
+import opticChiasm from "../media/images/organs/optic-chiasm.png?url";
+import rightAtrium from "../media/images/organs/right-atrium.png?url";
+import cristaTerminalis from "../media/images/organs/crista-terminalis.png?url";
+import papillaryMuscle from "../media/images/organs/papillary-muscle.png?url";
+import medianSulcusOfTheTongue from "../media/images/organs/median-sulcus-of-the-tongue.jpg?url";
+import foramenCecum from "../media/images/organs/foramen-cecum.jpg?url";
 
 export type OrganImageId = Extract<
   OrganEntry["id"],
@@ -18,8 +24,14 @@ export type OrganImageId = Extract<
   | "forebrain"
   | "prosencephalon"
   | "midbrain"
+  | "optic-chiasm"
   | "hindbrain"
   | "lateral-ventricles"
+  | "right-atrium"
+  | "crista-terminalis"
+  | "papillary-muscle"
+  | "median-sulcus-of-the-tongue"
+  | "foramen-cecum"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -34,8 +46,14 @@ export const ORGAN_IMAGES: Partial<Record<OrganImageId, string>> = {
   forebrain: extensionAssetUrl(forebrain),
   prosencephalon: extensionAssetUrl(prosencephalon),
   midbrain: extensionAssetUrl(midbrain),
+  "optic-chiasm": extensionAssetUrl(opticChiasm),
   hindbrain: extensionAssetUrl(hindbrain),
   "lateral-ventricles": extensionAssetUrl(lateralVentricles),
+  "right-atrium": extensionAssetUrl(rightAtrium),
+  "crista-terminalis": extensionAssetUrl(cristaTerminalis),
+  "papillary-muscle": extensionAssetUrl(papillaryMuscle),
+  "median-sulcus-of-the-tongue": extensionAssetUrl(medianSulcusOfTheTongue),
+  "foramen-cecum": extensionAssetUrl(foramenCecum),
 };
 
 export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
@@ -65,6 +83,10 @@ export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Midbrain-axial-showing-tectum-and-tegmentum.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Midbrain-axial-showing-tectum-and-tegmentum.jpg",
   },
+  "optic-chiasm": {
+    label: "Wikimedia Commons (Gray729.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Gray729.png",
+  },
   hindbrain: {
     label: "Wikimedia Commons (Lateral Ventricles - DK ATLAS.png)",
     url: "https://commons.wikimedia.org/wiki/File:Lateral_Ventricles_-_DK_ATLAS.png",
@@ -72,6 +94,26 @@ export const ORGAN_IMAGE_ATTRIBUTIONS: Partial<
   "lateral-ventricles": {
     label: "Wikimedia Commons (Lateral Ventricles - DK ATLAS.png)",
     url: "https://commons.wikimedia.org/wiki/File:Lateral_Ventricles_-_DK_ATLAS.png",
+  },
+  "right-atrium": {
+    label: "Wikimedia Commons (Right atrium.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Right_atrium.png",
+  },
+  "crista-terminalis": {
+    label: "Wikimedia Commons (Crista terminalis.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Crista_terminalis.png",
+  },
+  "papillary-muscle": {
+    label: "Wikimedia Commons (Chordae tendineae spuriae of left ventricle.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Chordae_tendineae_spuriae_of_left_ventricle.png",
+  },
+  "median-sulcus-of-the-tongue": {
+    label: "CDC PHIL #8325",
+    url: "https://phil.cdc.gov/Details.aspx?pid=8325",
+  },
+  "foramen-cecum": {
+    label: "CDC PHIL #12080",
+    url: "https://phil.cdc.gov/Details.aspx?pid=12080",
   },
 };
 
@@ -88,10 +130,22 @@ export const ORGAN_IMAGE_CAPTIONS: Partial<Record<OrganImageId, string>> = {
     "Embryologic forebrain vesicle dividing into telencephalon and diencephalon",
   midbrain:
     "Axial midbrain (mesencephalon) — tectum and tegmentum with cerebral aqueduct",
+  "optic-chiasm":
+    "Optic chiasm — nasal retinal fibers decussate above the sella turcica",
   hindbrain:
     "Hindbrain (rhombencephalon) — pons, cerebellum, and medulla oblongata",
   "lateral-ventricles":
     "Lateral ventricles within the telencephalon — CSF-filled cavities connected to the third ventricle via foramen of Monro",
+  "right-atrium":
+    "Right atrium — receives SVC, IVC, and coronary sinus; contains fossa ovalis, crista terminalis, and SA node",
+  "crista-terminalis":
+    "Crista terminalis — internal ridge separating smooth sinus venarum from trabeculated right atrial appendage",
+  "papillary-muscle":
+    "Papillary muscles and chordae tendineae anchoring atrioventricular valve leaflets in the left ventricle",
+  "median-sulcus-of-the-tongue":
+    "Dorsal tongue anatomy — midline median sulcus dividing the tongue into right and left halves",
+  "foramen-cecum":
+    "Thyroglossal duct embryology — foramen cecum marks thyroid diverticulum origin at the tongue base",
 };
 
 export function getOrganImageForId(id: string): string | undefined {

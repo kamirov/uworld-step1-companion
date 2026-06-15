@@ -182,6 +182,11 @@ corticospinal-tract.png
   Page: https://commons.wikimedia.org/wiki/File:Gray688.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Gray688.png?width=1280
 
+decussate.png
+  Source: Wikimedia Commons — Gray688.png (corticospinal and lemniscal decussation pathways)
+  Page: https://commons.wikimedia.org/wiki/File:Gray688.png
+  Description: Neural fiber decussation — pyramidal decussation and related crossing pathways
+
 endothelial-cell.jpg
   Source: Wikimedia Commons — Interaction between Kupffer cells, Stellate cells and endothelial cells.jpg
   Page: https://commons.wikimedia.org/wiki/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg
@@ -221,3 +226,33 @@ white-matter.jpg
   Source: Wikimedia Commons — Grey matter and white matter - high mag.jpg
   Page: https://commons.wikimedia.org/wiki/File:Grey_matter_and_white_matter_-_high_mag.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Grey_matter_and_white_matter_-_high_mag.jpg?width=1280
+
+astrocyte.jpg
+  Source: Wikimedia Commons — Astrocyte5.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Astrocyte5.jpg
+  Author: GerryShaw, CC BY-SA 3.0
+  Description: Astrocyte stained for GFAP and vimentin in tissue culture
+
+ependymal-cell.png
+  Source: Wikimedia Commons — Ependyma.png
+  Page: https://commons.wikimedia.org/wiki/File:Ependyma.png
+  Author: Martin Hasselblatt MD, CC BY-SA 3.0
+  Description: H&E photomicrograph of normal ependymal cells at 400× magnification
+
+microglial-cell.jpg
+  Source: Wikimedia Commons — Microglia and neurons.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Microglia_and_neurons.jpg
+  Author: GerryShaw, CC BY-SA 3.0
+  Description: Microglia (coronin 1a, green) and neuronal processes (alpha-internexin, red) in rat brain culture
+
+oligodendrocyte.svg
+  Source: Wikimedia Commons — Neuron with oligodendrocyte and myelin sheath.svg
+  Page: https://commons.wikimedia.org/wiki/File:Neuron_with_oligodendrocyte_and_myelin_sheath.svg
+  Author: Andrew c (derivative of LadyofHats), public domain
+  Description: Oligodendrocyte forming myelin sheath around a CNS axon
+
+schwann-cell.jpg
+  Source: Wikimedia Commons — Diagram of Schwann cells.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Diagram_of_Schwann_cells.JPG
+  Author: Gareth Jones (Hbdgaz), CC BY-SA 3.0
+  Description: Diagram of Schwann cells myelinating peripheral nerve axons

@@ -193,6 +193,18 @@ ankle-reflex.jpg
   Source: Wikimedia Commons — Medical diagnosis for the student and practitioner (1922) (14598069420).jpg
   Page: https://commons.wikimedia.org/wiki/File:Medical_diagnosis_for_the_student_and_practitioner_(1922)_(14598069420).jpg
 
+generalized-tonic-clonic-seizure.jpg
+  Source: Wikimedia Commons — Spike-waves.png
+  Page: https://commons.wikimedia.org/wiki/File:Spike-waves.png
+
+miotic.jpg
+  Source: Wikimedia Commons — Example of Horner's syndrome in a cat.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Example_of_Horner%27s_syndrome_in_a_cat.jpg
+
+mydriasis.jpg
+  Source: Wikimedia Commons — Mydriasis due to LSD usage.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Mydriasis_due_to_LSD_usage.jpg
+
 koplik-spots.jpg
   Source: Wikimedia Commons — Koplik spots, measles 6111 lores.jpg
   Page: https://commons.wikimedia.org/wiki/File:Koplik_spots,_measles_6111_lores.jpg
@@ -241,3 +253,41 @@ psychosis.jpg
   Source: Wikimedia Commons — Atypical Psychosis Genetic Map.jpg
   Page: https://commons.wikimedia.org/wiki/File:Atypical_Psychosis_Genetic_Map.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Atypical_Psychosis_Genetic_Map.jpg?width=1280
+
+afferent-pupillary-defect.png
+  Source: Wikimedia Commons — Gray773.png
+  Page: https://commons.wikimedia.org/wiki/File:Gray773.png
+
+diplopia.jpg
+  Source: Wikimedia Commons — Diplopia.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Diplopia.jpg
+
+slurred-speech.jpg
+  Source: Local copy from symptoms/hemiplegia.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Hemiatrophy_and_hemiplegia_of_the_left_side_of_the_tongue_Wellcome_L0062734.jpg
+
+vertigo.svg
+  Source: Local copy from symptoms/nystagmus.svg
+  Page: https://commons.wikimedia.org/wiki/File:Nystagmus_recording.svg
+
+sciatica.jpg
+  Source: Wikimedia Commons — The Tallerman treatment by superheated dry air in rheumatism gout rheumatic arthritis stiff and painful joints sprains sciatica (IA 39002086176915.med.yale.edu).pdf
+  License: Public domain
+  Description: Historical illustration of sciatica treatment
+  Page: https://commons.wikimedia.org/wiki/File:The_Tallerman_treatment_by_superheated_dry_air_in_rheumatism_gout_rheumatic_arthritis_stiff_and_painful_joints_sprains_sciatica_(IA_39002086176915.med.yale.edu).pdf
+
+facial-palsy.jpg
+  Source: Wikimedia Commons — Bells Palsy CDC.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Bells_Palsy_CDC.jpg
+
+upward-gaze-palsy.png
+  Source: Wikimedia Commons — Gray719.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Dorsal midbrain and vertical gaze centers
+  Page: https://commons.wikimedia.org/wiki/File:Gray719.png
+
+fasciculation.jpg
+  Source: CDC PHIL #8171
+  Description: Visible muscle fasciculation in neuromuscular disease
+  Page: https://phil.cdc.gov/Details.aspx?pid=8171

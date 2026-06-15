@@ -9,19 +9,9 @@ type HighlightJob = {
 let queue: HighlightJob[] = [];
 let draining = false;
 let isApplyingHighlights = false;
-let onHighlightIdle: (() => void) | null = null;
 
 export function getIsApplyingHighlights(): boolean {
   return isApplyingHighlights;
-}
-
-export function setOnHighlightIdle(callback: (() => void) | null): void {
-  onHighlightIdle = callback;
-}
-
-function notifyHighlightIdle(): void {
-  if (queue.length > 0 || draining || isApplyingHighlights) return;
-  onHighlightIdle?.();
 }
 
 function requestIdleWork(run: () => void): void {
@@ -53,8 +43,6 @@ function drainQueue(highlightRoot: (root: Element, zone: number) => void): void 
       draining = false;
       if (queue.length > 0) {
         drainQueue(highlightRoot);
-      } else {
-        notifyHighlightIdle();
       }
     }
   });
@@ -99,6 +87,5 @@ export function flushHighlightQueueSync(
   } finally {
     isApplyingHighlights = false;
     draining = false;
-    notifyHighlightIdle();
   }
 }

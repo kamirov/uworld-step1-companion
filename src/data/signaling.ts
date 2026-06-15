@@ -549,6 +549,53 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "NEMO (IKKγ) deficiency — X-linked combined immunodeficiency with ectodermal dysplasia and susceptibility to pyogenic and mycobacterial infection. MyD88/IRAK-4 deficiency impairs TLR/IL-1R→NF-κB signaling → recurrent bacterial infections in infancy without severe viral susceptibility. Neonatal gram-negative sepsis — excessive NF-κB-driven cytokine release.",
   },
   {
+    id: "insulin-like-growth-factor-1",
+    name: "Insulin-like growth factor-1",
+    etymology: "insulin-like = structurally homologous to insulin + growth factor = mitogenic signal + 1 = primary circulating isoform",
+    aliases: [
+      "insulin-like growth factor-1",
+      "insulin-like growth factor 1",
+      "insulin like growth factor 1",
+      "insulin-like growth factor-i",
+      "insulin-like growth factor i",
+      "igf-1",
+      "igf1",
+      "igf 1",
+      "somatomedin c",
+      "somatomedin-c",
+    ],
+    type: "Growth factor",
+    source:
+      "Liver (major source under GH stimulation) and local autocrine/paracrine production in bone, muscle, and other tissues",
+    receptor:
+      "IGF-1 receptor (IGF-1R; receptor tyrosine kinase) → PI3K/Akt and MAPK pathways",
+    function:
+      "Primary mediator of growth hormone anabolic effects: promotes linear growth (endochondral ossification), protein synthesis, and tissue growth; circulating levels reflect integrated GH secretion over time because GH stimulates hepatic IGF-1 production.",
+    clinicalRelevance: [
+      "↑ IGF-1 — screening test for acromegaly (more stable than pulsatile GH)",
+      "↓ IGF-1 — supports GH deficiency diagnosis (with failed GH stimulation test)",
+      "Laron syndrome — GH receptor defect → low IGF-1 despite high GH",
+      "IGF-1 used to monitor treatment response in acromegaly (octreotide, surgery)",
+      "Graves ophthalmopathy — orbital fibroblasts express IGF-1R cross-reactivity with TSH receptor antibodies",
+    ],
+    boardsPearls: [
+      "GH → liver IGF-1 → growth and anabolic effects",
+      "Screen acromegaly with IGF-1, not random GH (GH is pulsatile)",
+      "Confirm acromegaly: oral glucose fails to suppress GH; IGF-1 elevated",
+      "GH deficiency: ↓ IGF-1 + failed stimulation test",
+      "vs GH — measure IGF-1 for screening; GH for dynamic suppression/stimulation testing",
+      "Somatomedin C = older name for IGF-1",
+    ],
+    distinguishFrom: [
+      "Growth hormone (GH) — anterior pituitary hormone that stimulates IGF-1 production; pulsatile secretion",
+      "IGF-2 — fetal growth factor; imprinting disorders (Beckwith-Wiedemann)",
+      "Insulin — metabolic glucose uptake hormone; homologous structure but distinct receptor and function",
+      "GHRH — hypothalamic releasing hormone stimulating GH, not IGF-1 directly",
+    ],
+    pediatrics:
+      "Low IGF-1 with growth failure suggests GH deficiency; congenital GH resistance (Laron syndrome) shows high GH with low IGF-1; before epiphyseal closure, GH excess causes gigantism with elevated IGF-1.",
+  },
+  {
     id: "il-1",
     name: "Interleukin-1 (IL-1)",
     etymology: "Latin inter = between + Greek leukos = white cell + 1 = first numbered subtype",
@@ -2614,6 +2661,290 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Anticholinergics reduce secretions before surgery; paradoxical CNS excitation possible in children with atropine overdose.",
   },
   {
+    id: "histamine-h1-receptor",
+    name: "Histamine H1 Receptor",
+    etymology:
+      "Greek histos = tissue + amine + H1 = first histamine receptor subtype + receptor = receiver",
+    aliases: [
+      "histamine h1 receptor",
+      "histamine h1 receptors",
+      "h1 receptor",
+      "h1 receptors",
+      "h1 histamine receptor",
+      "h1 histamine receptors",
+      "histaminergic h1",
+      "histaminergic h1 receptor",
+      "histaminergic h1 receptors",
+      "histamine-1 receptor",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Smooth muscle (bronchial, GI, vascular), endothelial cells, sensory nerve endings, CNS histaminergic neurons, and immune cells",
+    receptor: "Gq-coupled GPCR → phospholipase C → IP3/DAG → ↑ intracellular Ca²⁺",
+    function:
+      "Mediates classic allergic and inflammatory effects of histamine: bronchoconstriction, vasodilation with increased capillary permeability, pruritus, and CNS arousal; first-generation H1 blockers cross the BBB and cause sedation.",
+    clinicalRelevance: [
+      "First-generation H1 antihistamines (diphenhydramine, chlorpheniramine) — allergy, urticaria, motion sickness; sedation and anticholinergic effects",
+      "Second-generation H1 blockers (loratadine, cetirizine, fexofenadine) — less CNS penetration, less sedation",
+      "Type I hypersensitivity — IgE cross-linking on mast cells releases histamine → H1-mediated wheal, flare, bronchospasm",
+      "Antipsychotics and TCAs block H1 → sedation and weight gain",
+      "Epinephrine is first-line in anaphylaxis; antihistamines are adjunct only",
+    ],
+    boardsPearls: [
+      "H1 = Gq → IP3/Ca²⁺ → bronchoconstriction, vasodilation, pruritus",
+      "H1 vs H2: H1 allergy/itch (Gq); H2 gastric acid on parietal cells (Gs)",
+      "First-gen H1 blockers cross BBB → sedation; second-gen less sedating",
+      "Diphenhydramine — H1 block + antimuscarinic → anticholinergic toxidrome in overdose",
+      "vs H2 — famotidine blocks gastric acid, not allergy",
+    ],
+    distinguishFrom: [
+      "Histamine H2 receptor — Gs on parietal cells → gastric acid secretion",
+      "Muscarinic M3 receptor — also Gq smooth muscle effects but ACh-mediated, not histamine",
+      "Histamine — ligand released from mast cells; not the receptor protein",
+      "Leukotrienes — slower mast cell mediators in asthma late phase",
+    ],
+    pediatrics:
+      "First-generation H1 antihistamines used cautiously in young children; paradoxical excitation possible. Food allergy anaphylaxis — H1 blockers adjunct to epinephrine.",
+  },
+  {
+    id: "muscarinic-m1-receptor",
+    name: "Muscarinic M1 Receptor",
+    etymology:
+      "Latin musca = fly (muscarine from Amanita muscaria) + -inic = related + M1 = first muscarinic subtype + receptor = receiver",
+    aliases: [
+      "muscarinic m1 receptor",
+      "muscarinic m1 receptors",
+      "m1 receptor",
+      "m1 receptors",
+      "m1 muscarinic receptor",
+      "m1 muscarinic receptors",
+      "muscarinic acetylcholine m1 receptor",
+      "muscarinic acetylcholine m1 receptors",
+    ],
+    type: "Signaling pathway",
+    source:
+      "CNS (cortical and hippocampal neurons — cognition), gastric parietal cells, and autonomic ganglia (minor postsynaptic role)",
+    receptor: "Gq-coupled GPCR → phospholipase C → IP3/DAG → ↑ intracellular Ca²⁺",
+    function:
+      "Predominantly postsynaptic excitatory muscarinic receptor in the brain supporting learning, memory, and cortical arousal; on gastric parietal cells contributes (with H2 and gastrin) to acid secretion; nonselective muscarinic antagonists block M1 along with other subtypes.",
+    clinicalRelevance: [
+      "Atropine/scopolamine — nonselective muscarinic antagonists block M1 → anticholinergic toxidrome and delirium",
+      "Donepezil/rivastigmine — AChE inhibitors ↑ synaptic ACh → enhanced M1 (and other muscarinic) signaling in Alzheimer disease",
+      "Pilocarpine — muscarinic agonist used in glaucoma (primarily M3 on iris sphincter)",
+      "Antipsychotics with anticholinergic activity block M1 → cognitive impairment and dry mouth",
+      "Organophosphate poisoning — excess ACh overstimulates all muscarinic subtypes",
+    ],
+    boardsPearls: [
+      "M1 = Gq in CNS and parietal cells — cognition and acid secretion",
+      "M1 vs M2: M1 mainly CNS/GI excitation (Gq); M2 on SA node is Gi ↓ HR",
+      "M1 vs M3: M3 dominates peripheral smooth muscle and glands; M1 more CNS/parietal",
+      "AChE inhibitors (donepezil) enhance cholinergic tone at M1 in Alzheimer disease",
+      "Atropine blocks all muscarinic subtypes nonselectively",
+    ],
+    distinguishFrom: [
+      "Muscarinic M2 receptor — Gi on cardiac SA/AV node ↓ heart rate",
+      "Muscarinic M3 receptor — Gq on smooth muscle, glands, and bladder detrusor",
+      "Nicotinic acetylcholine receptor — ion channel at NMJ and autonomic ganglia",
+      "Histamine H2 receptor — Gs gastric acid, not muscarinic",
+    ],
+    pediatrics:
+      "Atropine overdose in children can cause hyperthermia, delirium, and paradoxical CNS excitation from M1 blockade in an immature CNS.",
+  },
+  {
+    id: "serotonin-5-ht2a-receptor",
+    name: "Serotonin 5-HT2A Receptor",
+    etymology:
+      "5-hydroxytryptamine (5-HT) + 2A = second family subtype A + receptor = receiver",
+    aliases: [
+      "serotonin 5-ht2a receptor",
+      "serotonin 5-ht2a receptors",
+      "5-ht2a receptor",
+      "5-ht2a receptors",
+      "5ht2a receptor",
+      "5ht2a receptors",
+      "5-ht-2a receptor",
+      "5-ht-2a receptors",
+      "serotonergic 5-ht2a",
+      "serotonergic 5-ht2a receptor",
+      "serotonergic 5-ht2a receptors",
+      "ht2a receptor",
+      "ht2a receptors",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Cortical and limbic pyramidal neurons, platelets, vascular smooth muscle, and peripheral tissues",
+    receptor: "Gq-coupled GPCR → phospholipase C → IP3/DAG → ↑ intracellular Ca²⁺",
+    function:
+      "Key postsynaptic serotonergic receptor mediating cortical signaling, mood, perception, and vascular tone; activation by psychedelics causes hallucinations; antagonism by atypical antipsychotics reduces psychosis and may lessen extrapyramidal symptoms when combined with D2 blockade.",
+    clinicalRelevance: [
+      "Atypical antipsychotics (risperidone, olanzapine, quetiapine) — 5-HT2A antagonism with D2 blockade → antipsychotic effect with less EPS than typical antipsychotics",
+      "LSD and psilocybin — 5-HT2A agonists → perceptual distortion and hallucinations",
+      "Serotonin syndrome — excess serotonergic signaling (hyperthermia, clonus, autonomic instability) from SSRI + MAOI or other combinations",
+      "Trazodone — 5-HT2A antagonist contributing to sedation and antidepressant effect",
+      "Clozapine — potent 5-HT2A antagonism with broad receptor profile",
+    ],
+    boardsPearls: [
+      "5-HT2A = Gq → IP3/Ca²⁺ — cortical signaling, vascular effects",
+      "Atypical antipsychotics: D2 block + 5-HT2A block → less EPS than haloperidol",
+      "LSD/psilocybin — 5-HT2A agonists (boards association)",
+      "5-HT2A vs 5-HT3: 5-HT3 is ion channel (ondansetron target); 5-HT2A is Gq GPCR",
+      "5-HT2A vs 5-HT1B/1D: triptans are 5-HT1 agonists for migraine, not 5-HT2A",
+    ],
+    distinguishFrom: [
+      "Serotonin 5-HT3 receptor — ligand-gated ion channel; ondansetron antagonist for nausea",
+      "Serotonin 5-HT1B/1D receptors — Gi/Gq subtypes; triptan targets for migraine",
+      "Dopamine D2 receptor — primary antipsychotic target; often co-blocked with 5-HT2A",
+      "Serotonin — neurotransmitter ligand from tryptophan; not the receptor",
+    ],
+    pediatrics:
+      "SSRIs used cautiously in pediatric depression; serotonergic drug combinations increase serotonin syndrome risk at any age.",
+  },
+  {
+    id: "alpha-1-adrenergic-receptor",
+    name: "Alpha-1 Adrenergic Receptor",
+    etymology:
+      "Greek alpha = first letter + -ergic = work/active + 1 = subtype + receptor = receiver",
+    aliases: [
+      "alpha-1 adrenergic receptor",
+      "alpha-1 adrenergic receptors",
+      "α1 adrenergic receptor",
+      "α1 adrenergic receptors",
+      "alpha-1 receptor",
+      "alpha-1 receptors",
+      "α1 receptor",
+      "α1 receptors",
+      "alpha 1 adrenergic receptor",
+      "alpha 1 adrenergic receptors",
+      "a1 receptor",
+      "a1 receptors",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Vascular smooth muscle, pupillary dilator muscle, bladder trigone and sphincter, prostatic smooth muscle, and hepatic portal system",
+    receptor: "Gq-coupled GPCR → phospholipase C → IP3/DAG → ↑ intracellular Ca²⁺ → smooth muscle contraction",
+    function:
+      "Mediates sympathetic vasoconstriction, mydriasis (pupillary dilation), bladder outlet resistance, and prostatic smooth muscle tone; norepinephrine and epinephrine activate α1 at higher concentrations after β effects.",
+    clinicalRelevance: [
+      "Prazosin, terazosin, tamsulosin — selective α1 blockers for hypertension and BPH (tamsulosin more uroselective)",
+      "Phenoxybenzamine — irreversible α-blocker used before pheochromocytoma surgery",
+      "Pheochromocytoma — must block α1 before β to prevent unopposed α vasoconstriction",
+      "Antipsychotics and TCAs block α1 → orthostatic hypotension and reflex tachycardia",
+      "Epinephrine at high dose → α1 vasoconstriction predominates over β2 bronchodilation",
+    ],
+    boardsPearls: [
+      "α1 = Gq → IP3/Ca²⁺ → vasoconstriction, mydriasis, BPH urinary obstruction",
+      "Alpha before beta in pheochromocytoma — unopposed α1 if β blocked first",
+      "Tamsulosin — α1A-selective for BPH with less orthostatic hypotension",
+      "Phenylephrine — selective α1 agonist (mydriatic, vasoconstrictor)",
+      "vs α2 — α1 postsynaptic Gq contraction; α2 presynaptic Gi ↓ NE release",
+    ],
+    distinguishFrom: [
+      "Alpha-2 adrenergic receptor — Gi presynaptic autoreceptor and central sympatholytic target",
+      "Beta-1 adrenergic receptor — Gs cardiac ↑ HR and contractility",
+      "Beta-2 adrenergic receptor — Gs bronchodilation and uterine relaxation",
+      "Muscarinic M3 receptor — also Gq smooth muscle contraction but ACh-mediated",
+    ],
+    pediatrics:
+      "Decongestants with α-agonist activity (pseudoephedrine) used cautiously in young children; pheochromocytoma rare in pediatrics but same α-before-β principle applies.",
+  },
+  {
+    id: "dopamine-d2-receptor",
+    name: "Dopamine D2 Receptor",
+    etymology:
+      "Dopamine + D2 = second dopamine receptor family subtype + receptor = receiver",
+    aliases: [
+      "dopamine d2 receptor",
+      "dopamine d2 receptors",
+      "d2 receptor",
+      "d2 receptors",
+      "d2 dopamine receptor",
+      "d2 dopamine receptors",
+      "dopaminergic d2",
+      "dopaminergic d2 receptor",
+      "dopaminergic d2 receptors",
+      "drd2",
+      "drd2 receptor",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Striatum (nigrostriatal and mesolimbic pathways), pituitary lactotrophs, chemoreceptor trigger zone, and presynaptic dopaminergic terminals (autoreceptors)",
+    receptor: "Gi/Go-coupled GPCR → inhibits adenylyl cyclase → ↓ cAMP",
+    function:
+      "Primary postsynaptic target of antipsychotic drugs; mesolimbic D2 blockade reduces positive psychotic symptoms; nigrostriatal D2 blockade causes extrapyramidal symptoms and tardive dyskinesia; pituitary D2 activation (or blockade by antipsychotics) regulates prolactin secretion.",
+    clinicalRelevance: [
+      "Typical antipsychotics (haloperidol, fluphenazine) — potent D2 blockade → EPS and hyperprolactinemia",
+      "Atypical antipsychotics — D2 blockade plus 5-HT2A antagonism → antipsychotic effect with lower EPS risk",
+      "Bromocriptine/cabergoline — D2 agonists for prolactinoma and Parkinson disease",
+      "Metoclopramide/domperidone — D2 antagonists → antiemetic but risk galactorrhea and EPS",
+      "Parkinson disease — ↓ dopamine in substantia nigra → relative D2 understimulation in striatum",
+    ],
+    boardsPearls: [
+      "D2 = Gi → ↓ cAMP — mesolimbic blockade treats psychosis; nigrostriatal blockade → EPS",
+      "D2 blockade on lactotrophs → ↑ prolactin → amenorrhea, galactorrhea, gynecomastia",
+      "Typical antipsychotics — high D2 affinity → more EPS; atypicals add 5-HT2A block",
+      "D2 vs D1: D1 is Gs ↑ cAMP (striatal direct pathway); D2 is Gi (indirect pathway)",
+      "Bromocriptine — D2 agonist for prolactinoma",
+    ],
+    distinguishFrom: [
+      "Dopamine D1 receptor — Gs ↑ cAMP; striatal direct pathway; less antipsychotic target",
+      "Serotonin 5-HT2A receptor — co-target of atypical antipsychotics reducing EPS",
+      "Dopamine — neurotransmitter ligand; Parkinson is deficiency of dopamine, not the receptor",
+      "Dopamine at renal doses — low-dose dopamine activates D1 (dilation), not selective D2",
+    ],
+    pediatrics:
+      "Antipsychotic-induced hyperprolactinemia can cause galactorrhea and menstrual irregularity in adolescents; tardive dyskinesia risk with prolonged D2 blockade.",
+  },
+  {
+    id: "gaba-a-receptor",
+    name: "GABA-A Receptor",
+    etymology:
+      "Gamma-aminobutyric acid + A = first GABA receptor class + receptor = receiver",
+    aliases: [
+      "gaba-a receptor",
+      "gaba-a receptors",
+      "gabaa receptor",
+      "gabaa receptors",
+      "gaba a receptor",
+      "gaba a receptors",
+      "gaba-a ion channel",
+      "gaba-a ion channels",
+      "gaba-a chloride channel",
+      "gaba-a chloride channels",
+      "gaba-a receptor channel",
+      "type a gaba receptor",
+      "type a gaba receptors",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Postsynaptic membranes throughout the CNS — especially cortex, thalamus, limbic system, and spinal cord inhibitory synapses",
+    receptor:
+      "Pentameric ligand-gated Cl⁻ channel (ionotropic); GABA binding → Cl⁻ influx → hyperpolarization; modulated by benzodiazepine, barbiturate, and neurosteroid sites",
+    function:
+      "Primary fast inhibitory neurotransmission in the CNS; chloride influx hyperpolarizes postsynaptic neurons and raises firing threshold; benzodiazepines increase frequency of channel opening; barbiturates increase duration of opening and can directly gate the channel at high doses.",
+    clinicalRelevance: [
+      "Benzodiazepines (diazepam, lorazepam, midazolam) — bind benzodiazepine site on GABA-A → anxiolysis, sedation, anticonvulsant, muscle relaxation",
+      "Barbiturates (phenobarbital, thiopental) — enhance GABA-A at barbiturate site → CNS depression; overdose risk with respiratory depression",
+      "Flumazenil — competitive benzodiazepine antagonist at GABA-A benzodiazepine site",
+      "Alcohol and neurosteroids — allosteric GABA-A modulators → CNS depression",
+      "Alcohol/benzodiazepine withdrawal — ↓ GABA-A tone → seizures, autonomic hyperactivity",
+    ],
+    boardsPearls: [
+      "GABA-A = Cl⁻ channel — benzos ↑ opening frequency; barbiturates ↑ opening duration",
+      "GABA-A vs GABA-B: GABA-A is ionotropic (Cl⁻); GABA-B is metabotropic Gi (baclofen target)",
+      "Flumazenil reverses benzodiazepine overdose — not barbiturates",
+      "Barbiturate + benzo synergy — both enhance GABA-A → dangerous respiratory depression",
+      "Phenobarbital used in neonatal seizures via GABA-A potentiation",
+    ],
+    distinguishFrom: [
+      "GABA-B receptor — Gi-coupled metabotropic receptor; baclofen is agonist",
+      "GABA — inhibitory neurotransmitter ligand synthesized from glutamate via GAD",
+      "Glycine receptor — Cl⁻ channel inhibitory transmitter in spinal cord",
+      "Nicotinic acetylcholine receptor — cation channel excitatory at NMJ, not GABAergic",
+    ],
+    pediatrics:
+      "Neonatal GABAergic signaling is developmentally distinct (GABA can be depolarizing early); phenobarbital enhances GABA-A for neonatal seizures; benzodiazepines used cautiously in infants.",
+  },
+  {
     id: "aflatoxin",
     name: "Aflatoxin",
     etymology: "Aspergillus flavus toxin — a = Aspergillus + flavus = yellow + toxin",
@@ -3022,6 +3353,83 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "MS in adolescents may use interferon-β; pediatric MS is rare — distinguish from ADEM and other demyelinating disorders.",
+  },
+  {
+    id: "melatonin",
+    name: "Melatonin",
+    etymology: "Greek melas = black + tonos = tension (serotonin derivative)",
+    aliases: [
+      "melatonin",
+      "n-acetyl-5-methoxytryptamine",
+      "pineal hormone melatonin",
+    ],
+    type: "Hormone",
+    source: "Pineal gland (epithalamus); secretion ↑ in darkness, suppressed by light via retinohypothalamic tract",
+    receptor: "MT1 and MT2 melatonin receptors (GPCR) in suprachiasmatic nucleus",
+    function:
+      "Regulates circadian rhythm and sleep-wake cycle — promotes sleep onset in darkness; modulates seasonal reproduction in some species; antioxidant properties.",
+    clinicalRelevance: [
+      "Jet lag and shift-work sleep disorder — exogenous melatonin may aid sleep timing",
+      "Ramelteon — MT1/MT2 agonist for insomnia",
+      "Pineal tumors — rare; can disrupt circadian regulation",
+      "Seasonal affective disorder — light therapy affects melatonin suppression",
+    ],
+    boardsPearls: [
+      "Melatonin from pineal gland; synthesis from serotonin via N-acetyltransferase",
+      "Light inhibits melatonin — suprachiasmatic nucleus is master circadian clock",
+      "Ramelteon mimics melatonin at MT1/MT2 — sleep onset without GABA activity",
+      "vs cortisol — peaks in morning (ACTH axis), melatonin peaks at night",
+      "Pineal gland calcification (brain sand) — common incidental CT finding in adults",
+    ],
+    distinguishFrom: [
+      "Serotonin — melatonin precursor; wake/mood neurotransmitter",
+      "Cortisol — HPA axis stress hormone with morning peak",
+      "GABA — inhibitory neurotransmitter; benzodiazepine target, not melatonin pathway",
+      "Ramelteon — synthetic MT1/MT2 agonist drug, not endogenous melatonin",
+    ],
+    pediatrics:
+      "Melatonin sometimes used in pediatric circadian rhythm disorders and autism-related insomnia under specialist guidance; pineal tumors are rare in children.",
+  },
+  {
+    id: "hypocretin-1",
+    name: "Hypocretin-1",
+    etymology: "hypo- = under + Latin creare = to create + -in = peptide suffix (orexin A)",
+    aliases: [
+      "hypocretin-1",
+      "hypocretin 1",
+      "hypocretin-1 orexin a",
+      "orexin a",
+      "orexin-a",
+      "orexin a",
+      "hcrt-1",
+      "hcrt1",
+    ],
+    type: "Neurotransmitter",
+    source: "Lateral hypothalamic orexin/hypocretin neurons",
+    receptor: "Orexin-1 (OX1R) and orexin-2 (OX2R) GPCRs",
+    function:
+      "Stabilizes wakefulness and arousal — promotes monoaminergic and cholinergic wake-active systems; inhibits REM sleep; regulates appetite and energy balance with hypocretin-2 (orexin B).",
+    clinicalRelevance: [
+      "Narcolepsy type 1 — autoimmune loss of hypocretin neurons; low CSF hypocretin-1",
+      "Cataplexy — sudden loss of muscle tone triggered by emotion; associated with hypocretin deficiency",
+      "Suvorexant — dual orexin receptor antagonist for insomnia (blocks OX1R/OX2R)",
+      "Obesity research — orexin neurons link arousal and feeding",
+    ],
+    boardsPearls: [
+      "Narcolepsy type 1 = low CSF hypocretin-1 + cataplexy + excessive daytime sleepiness",
+      "Hypocretin = orexin; same peptides, dual naming",
+      "Narcolepsy — ↓ REM latency, sleep attacks, hypnagogic hallucinations, sleep paralysis",
+      "vs narcolepsy type 2 — EDS without cataplexy; hypocretin levels may be normal",
+      "vs sleep apnea — disrupted sleep from obstruction, not primary hypocretin loss",
+    ],
+    distinguishFrom: [
+      "Melatonin — pineal hormone promoting sleep timing, not orexin wake stability",
+      "Histamine (H1) — tuberomammillary wake pathway; blocked by sedating antihistamines",
+      "Modafinil — wake-promoting drug used in narcolepsy, not hypocretin replacement",
+      "Hypocretin-2 (orexin B) — sibling peptide; both from same precursor prepro-orexin",
+    ],
+    pediatrics:
+      "Narcolepsy often begins in adolescence; excessive daytime sleepiness mistaken for laziness or depression — low CSF hypocretin-1 confirms type 1.",
   },
 ];
 

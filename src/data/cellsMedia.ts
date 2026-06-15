@@ -7,6 +7,7 @@ import actin from "../media/images/cells/actin.svg?url";
 import adherensJunction from "../media/images/cells/adherens-junction.svg?url";
 import adventitia from "../media/images/cells/adventitia.svg?url";
 import antigenPresentingCell from "../media/images/cells/antigen-presenting-cell.png?url";
+import astrocyte from "../media/images/cells/astrocyte.jpg?url";
 import bLymphocyteBlausen from "../media/images/cells/b-lymphocyte-blausen.png?url";
 import bLymphocyte from "../media/images/cells/b-lymphocyte.png?url";
 import basophil from "../media/images/cells/basophil.jpg?url";
@@ -18,6 +19,7 @@ import chromaffinCell from "../media/images/cells/chromaffin-cell.jpg?url";
 import clearCytoplasm from "../media/images/cells/clear-cytoplasm.svg?url";
 import corePromoterElements from "../media/images/cells/core-promoter-elements.svg?url";
 import corticospinalTract from "../media/images/cells/corticospinal-tract.png?url";
+import decussate from "../media/images/cells/decussate.png?url";
 import dendriticCell from "../media/images/cells/dendritic-cell.jpg?url";
 import dermalAppendage from "../media/images/cells/dermal-appendage.svg?url";
 import desmosome from "../media/images/cells/desmosome.jpg?url";
@@ -28,6 +30,7 @@ import dorsalColumns from "../media/images/cells/dorsal-columns.jpg?url";
 import endometrium from "../media/images/cells/endometrium.jpg?url";
 import endothelialCell from "../media/images/cells/endothelial-cell.jpg?url";
 import eosinophil from "../media/images/cells/eosinophil.jpg?url";
+import ependymalCell from "../media/images/cells/ependymal-cell.png?url";
 import epigenetics from "../media/images/cells/epigenetics.jpg?url";
 import epithelialPolarity from "../media/images/cells/epithelial-polarity.svg?url";
 import epithelioidCell from "../media/images/cells/epithelioid-cell.jpg?url";
@@ -62,6 +65,7 @@ import melanocyte from "../media/images/cells/melanocyte.jpg?url";
 import melanosome from "../media/images/cells/melanosome.jpg?url";
 import merkelCell from "../media/images/cells/merkel-cell.jpg?url";
 import metanephricBlastema from "../media/images/cells/metanephric-blastema.svg?url";
+import microglialCell from "../media/images/cells/microglial-cell.jpg?url";
 import microtubule from "../media/images/cells/microtubule.png?url";
 import mitochondrialRespiratoryChain from "../media/images/cells/mitochondrial-respiratory-chain.svg?url";
 import monocyte from "../media/images/cells/monocyte.jpg?url";
@@ -74,6 +78,7 @@ import myometrium from "../media/images/cells/myometrium.jpg?url";
 import naturalKillerCell from "../media/images/cells/natural-killer-cell.jpg?url";
 import neuralCrest from "../media/images/cells/neural-crest.svg?url";
 import neutrophil from "../media/images/cells/neutrophil.jpg?url";
+import oligodendrocyte from "../media/images/cells/oligodendrocyte.svg?url";
 import osteoblast from "../media/images/cells/osteoblast.jpg?url";
 import osteoclast from "../media/images/cells/osteoclast.jpg?url";
 import pancreaticBetaCell from "../media/images/cells/pancreatic-beta-cell.jpg?url";
@@ -85,6 +90,7 @@ import pretermLungMaturity from "../media/images/cells/preterm-lung-maturity.jpg
 import proteinKinasePhosphorylTransfer from "../media/images/cells/protein-kinase-phosphoryl-transfer.png?url";
 import renalCorpuscle from "../media/images/cells/renal-corpuscle.svg?url";
 import saltatoryConduction from "../media/images/cells/saltatory-conduction.svg?url";
+import schwannCell from "../media/images/cells/schwann-cell.jpg?url";
 import serosa from "../media/images/cells/serosa.jpg?url";
 import siderophage from "../media/images/cells/siderophage.jpg?url";
 import signetRingCells from "../media/images/cells/signet-ring-cells.jpg?url";
@@ -105,6 +111,7 @@ export type CELLImageId = Extract<
   | "adherens-junction"
   | "adventitia"
   | "antigen-presenting-cell"
+  | "astrocyte"
   | "naive-b-lymphocyte"
   | "b-lymphocyte"
   | "basophil"
@@ -116,6 +123,7 @@ export type CELLImageId = Extract<
   | "clear-cytoplasm"
   | "core-promoter-elements"
   | "corticospinal-tract"
+  | "decussate"
   | "dendritic-cell"
   | "dermal-appendage"
   | "desmosome"
@@ -126,6 +134,7 @@ export type CELLImageId = Extract<
   | "endometrium"
   | "endothelial-cell"
   | "eosinophil"
+  | "ependymal-cell"
   | "epigenetics"
   | "epithelial-polarity"
   | "epithelioid-cell"
@@ -160,6 +169,7 @@ export type CELLImageId = Extract<
   | "melanosome"
   | "merkel-cell"
   | "metanephric-blastema"
+  | "microglial-cell"
   | "microtubule"
   | "oxidative-phosphorylation"
   | "monocyte"
@@ -172,6 +182,7 @@ export type CELLImageId = Extract<
   | "natural-killer-cell"
   | "neural-crest"
   | "neutrophil"
+  | "oligodendrocyte"
   | "osteoblast"
   | "osteoclast"
   | "pancreatic-beta-cell"
@@ -183,6 +194,7 @@ export type CELLImageId = Extract<
   | "protein-kinase-phosphoryl-transfer"
   | "renal-corpuscle"
   | "saltatory-conduction"
+  | "schwann-cell"
   | "serosa"
   | "siderophage"
   | "signet-ring-cells"
@@ -208,6 +220,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "adherens-junction": extensionAssetUrl(adherensJunction),
   "adventitia": extensionAssetUrl(adventitia),
   "antigen-presenting-cell": extensionAssetUrl(antigenPresentingCell),
+  "astrocyte": extensionAssetUrl(astrocyte),
   "naive-b-lymphocyte": extensionAssetUrl(bLymphocyteBlausen),
   "b-lymphocyte": extensionAssetUrl(bLymphocyte),
   "basophil": extensionAssetUrl(basophil),
@@ -219,6 +232,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "clear-cytoplasm": extensionAssetUrl(clearCytoplasm),
   "core-promoter-elements": extensionAssetUrl(corePromoterElements),
   "corticospinal-tract": extensionAssetUrl(corticospinalTract),
+  "decussate": extensionAssetUrl(decussate),
   "dendritic-cell": extensionAssetUrl(dendriticCell),
   "dermal-appendage": extensionAssetUrl(dermalAppendage),
   "desmosome": extensionAssetUrl(desmosome),
@@ -229,6 +243,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "endometrium": extensionAssetUrl(endometrium),
   "endothelial-cell": extensionAssetUrl(endothelialCell),
   "eosinophil": extensionAssetUrl(eosinophil),
+  "ependymal-cell": extensionAssetUrl(ependymalCell),
   "epigenetics": extensionAssetUrl(epigenetics),
   "epithelial-polarity": extensionAssetUrl(epithelialPolarity),
   "epithelioid-cell": extensionAssetUrl(epithelioidCell),
@@ -263,6 +278,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "melanosome": extensionAssetUrl(melanosome),
   "merkel-cell": extensionAssetUrl(merkelCell),
   "metanephric-blastema": extensionAssetUrl(metanephricBlastema),
+  "microglial-cell": extensionAssetUrl(microglialCell),
   "microtubule": extensionAssetUrl(microtubule),
   "oxidative-phosphorylation": extensionAssetUrl(mitochondrialRespiratoryChain),
   "monocyte": extensionAssetUrl(monocyte),
@@ -275,6 +291,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "natural-killer-cell": extensionAssetUrl(naturalKillerCell),
   "neural-crest": extensionAssetUrl(neuralCrest),
   "neutrophil": extensionAssetUrl(neutrophil),
+  "oligodendrocyte": extensionAssetUrl(oligodendrocyte),
   "osteoblast": extensionAssetUrl(osteoblast),
   "osteoclast": extensionAssetUrl(osteoclast),
   "pancreatic-beta-cell": extensionAssetUrl(pancreaticBetaCell),
@@ -286,6 +303,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "protein-kinase-phosphoryl-transfer": extensionAssetUrl(proteinKinasePhosphorylTransfer),
   "renal-corpuscle": extensionAssetUrl(renalCorpuscle),
   "saltatory-conduction": extensionAssetUrl(saltatoryConduction),
+  "schwann-cell": extensionAssetUrl(schwannCell),
   "serosa": extensionAssetUrl(serosa),
   "siderophage": extensionAssetUrl(siderophage),
   "signet-ring-cells": extensionAssetUrl(signetRingCells),
@@ -308,6 +326,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "adherens-junction": { label: "Wikimedia Commons (Adherens Junctions structural proteins-LangNeutral.svg)", url: "https://commons.wikimedia.org/wiki/File:Adherens_Junctions_structural_proteins-LangNeutral.svg" },
   "adventitia": { label: "Wikimedia Commons (Microscopic anatomy of an artery de.svg)", url: "https://commons.wikimedia.org/wiki/File:Microscopic_anatomy_of_an_artery_de.svg" },
   "antigen-presenting-cell": { label: "Wikimedia Commons (An MHC tetramer binding to T-cell receptors (left), and an MHC molecule on the surface of an antigen presenting cell binding to T-cell receptors (right).png)", url: "https://commons.wikimedia.org/wiki/File:An_MHC_tetramer_binding_to_T-cell_receptors_(left),_and_an_MHC_molecule_on_the_surface_of_an_antigen_presenting_cell_binding_to_T-cell_receptors_(right).png" },
+  "astrocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:astrocyte.jpg" },
   "naive-b-lymphocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:b-lymphocyte-blausen.png" },
   "b-lymphocyte": { label: "Wikimedia Commons (Plasma B Cell (NIH BioArt 640981).png)", url: "https://commons.wikimedia.org/wiki/File:Plasma_B_Cell_(NIH_BioArt_640981).png" },
   "basophil": { label: "Wikimedia Commons (Blood-basophil2.jpg)", url: "https://commons.wikimedia.org/wiki/File:Blood-basophil2.jpg" },
@@ -319,6 +338,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "clear-cytoplasm": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clear-cytoplasm.svg" },
   "core-promoter-elements": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:core-promoter-elements.svg" },
   "corticospinal-tract": { label: "Wikimedia Commons (Gray688.png)", url: "https://commons.wikimedia.org/wiki/File:Gray688.png" },
+  "decussate": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:decussate.png" },
   "dendritic-cell": { label: "Wikimedia Commons (Antigen presentation by dendritic cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Antigen_presentation_by_dendritic_cell.jpg" },
   "dermal-appendage": { label: "Wikimedia Commons (Skin Hair Follicle (NIH BioArt 657).svg)", url: "https://commons.wikimedia.org/wiki/File:Skin_Hair_Follicle_(NIH_BioArt_657).svg" },
   "desmosome": { label: "Wikimedia Commons (Transmission electron micrograph of a normal apical junctional complex (AJC), the structure between two adjacent enterocytes from the ileal epithelium region of a 21 d old chick.jpg)", url: "https://commons.wikimedia.org/wiki/File:Transmission_electron_micrograph_of_a_normal_apical_junctional_complex_(AJC),_the_structure_between_two_adjacent_enterocytes_from_the_ileal_epithelium_region_of_a_21_d_old_chick.jpg" },
@@ -329,6 +349,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "endometrium": { label: "Wikimedia Commons (Diseases of women and abdominal surgery (1889) (14779613431).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_women_and_abdominal_surgery_(1889)_(14779613431).jpg" },
   "endothelial-cell": { label: "Wikimedia Commons (Interaction between Kupffer cells, Stellate cells and endothelial cells.jpg)", url: "https://commons.wikimedia.org/wiki/File:Interaction_between_Kupffer_cells,_Stellate_cells_and_endothelial_cells.jpg" },
   "eosinophil": { label: "Wikimedia Commons (Eosinophil blood smear.JPG)", url: "https://commons.wikimedia.org/wiki/File:Eosinophil_blood_smear.JPG" },
+  "ependymal-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ependymal-cell.png" },
   "epigenetics": { label: "Wikimedia Commons (Nematode C. elegans germline chromatin Epigenetic imprint on the paternal X chromosome.jpg)", url: "https://commons.wikimedia.org/wiki/File:Nematode_C._elegans_germline_chromatin_Epigenetic_imprint_on_the_paternal_X_chromosome.jpg" },
   "epithelial-polarity": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:epithelial-polarity.svg" },
   "epithelioid-cell": { label: "Wikimedia Commons (Sarcoidosis - Apoptotic bodies (6200975751).jpg)", url: "https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Apoptotic_bodies_(6200975751).jpg" },
@@ -363,6 +384,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "melanosome": { label: "Wikimedia Commons (Anuran melanosoms3 - Falk etal 2025.jpg)", url: "https://commons.wikimedia.org/wiki/File:Anuran_melanosoms3_-_Falk_etal_2025.jpg" },
   "merkel-cell": { label: "Wikimedia Commons (Blausen 0805 Skin MerkelCell nl01.png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0805_Skin_MerkelCell_nl01.png" },
   "metanephric-blastema": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:metanephric-blastema.svg" },
+  "microglial-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:microglial-cell.jpg" },
   "microtubule": { label: "Wikimedia Commons (Chlorophyte-cell-diagram.png)", url: "https://commons.wikimedia.org/wiki/File:Chlorophyte-cell-diagram.png" },
   "oxidative-phosphorylation": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:mitochondrial-respiratory-chain.svg" },
   "monocyte": { label: "Wikimedia Commons (Blood-monocyte.jpg)", url: "https://commons.wikimedia.org/wiki/File:Blood-monocyte.jpg" },
@@ -375,6 +397,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "natural-killer-cell": { label: "Wikimedia Commons (Human Natural Killer Cell (29120480442).jpg)", url: "https://commons.wikimedia.org/wiki/File:Human_Natural_Killer_Cell_(29120480442).jpg" },
   "neural-crest": { label: "Wikimedia Commons (Neural.crest.cells.migration.svg)", url: "https://commons.wikimedia.org/wiki/File:Neural.crest.cells.migration.svg" },
   "neutrophil": { label: "Wikimedia Commons (Blausen 0676 Neutrophil (crop).png)", url: "https://commons.wikimedia.org/wiki/File:Blausen_0676_Neutrophil_(crop).png" },
+  "oligodendrocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:oligodendrocyte.svg" },
   "osteoblast": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:osteoblast.jpg" },
   "osteoclast": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:osteoclast.jpg" },
   "pancreatic-beta-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pancreatic-beta-cell.jpg" },
@@ -386,6 +409,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "protein-kinase-phosphoryl-transfer": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:protein-kinase-phosphoryl-transfer.png" },
   "renal-corpuscle": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:renal-corpuscle.svg" },
   "saltatory-conduction": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:saltatory-conduction.svg" },
+  "schwann-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:schwann-cell.jpg" },
   "serosa": { label: "Wikimedia Commons (Chicken embryo at the stage of formation of trunk and amniotic folds.jpg)", url: "https://commons.wikimedia.org/wiki/File:Chicken_embryo_at_the_stage_of_formation_of_trunk_and_amniotic_folds.jpg" },
   "siderophage": { label: "Wikimedia Commons (Siderophage CSF cytology.jpg)", url: "https://commons.wikimedia.org/wiki/File:Siderophage_CSF_cytology.jpg" },
   "signet-ring-cells": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:signet-ring-cells.jpg" },
@@ -406,6 +430,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "adherens-junction": "Clinical or pathologic image illustrating adherens junction",
   "adventitia": "Clinical or pathologic image illustrating adventitia",
   "antigen-presenting-cell": "Clinical or pathologic image illustrating antigen presenting cell",
+  "astrocyte": "Clinical or pathologic image illustrating astrocyte",
   "naive-b-lymphocyte": "B lymphocyte with surface immunoglobulin (BCR) — naïve B cells express IgM and IgD awaiting first antigen encounter",
   "b-lymphocyte": "Clinical or pathologic image illustrating b lymphocyte",
   "basophil": "Clinical or pathologic image illustrating basophil",
@@ -417,6 +442,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "clear-cytoplasm": "Clinical or pathologic image illustrating clear cytoplasm",
   "core-promoter-elements": "Clinical or pathologic image illustrating core promoter elements",
   "corticospinal-tract": "Clinical or pathologic image illustrating corticospinal tract",
+  "decussate": "Clinical or pathologic image illustrating decussate",
   "dendritic-cell": "Clinical or pathologic image illustrating dendritic cell",
   "dermal-appendage": "Clinical or pathologic image illustrating dermal appendage",
   "desmosome": "Clinical or pathologic image illustrating desmosome",
@@ -427,6 +453,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "endometrium": "Clinical or pathologic image illustrating endometrium",
   "endothelial-cell": "Clinical or pathologic image illustrating endothelial cell",
   "eosinophil": "Clinical or pathologic image illustrating eosinophil",
+  "ependymal-cell": "Clinical or pathologic image illustrating ependymal cell",
   "epigenetics": "Clinical or pathologic image illustrating epigenetics",
   "epithelial-polarity": "Clinical or pathologic image illustrating epithelial polarity",
   "epithelioid-cell": "Clinical or pathologic image illustrating epithelioid cell",
@@ -461,6 +488,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "melanosome": "Clinical or pathologic image illustrating melanosome",
   "merkel-cell": "Clinical or pathologic image illustrating merkel cell",
   "metanephric-blastema": "Clinical or pathologic image illustrating metanephric blastema",
+  "microglial-cell": "Clinical or pathologic image illustrating microglial cell",
   "microtubule": "Clinical or pathologic image illustrating microtubule",
   "oxidative-phosphorylation": "Inner mitochondrial membrane respiratory chain: complexes I–IV pass electrons to O₂; proton pumping drives ATP synthase (Complex V)",
   "monocyte": "Clinical or pathologic image illustrating monocyte",
@@ -473,6 +501,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "natural-killer-cell": "Clinical or pathologic image illustrating natural killer cell",
   "neural-crest": "Clinical or pathologic image illustrating neural crest",
   "neutrophil": "Clinical or pathologic image illustrating neutrophil",
+  "oligodendrocyte": "Clinical or pathologic image illustrating oligodendrocyte",
   "osteoblast": "Clinical or pathologic image illustrating osteoblast",
   "osteoclast": "Clinical or pathologic image illustrating osteoclast",
   "pancreatic-beta-cell": "Clinical or pathologic image illustrating pancreatic beta cell",
@@ -484,6 +513,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "protein-kinase-phosphoryl-transfer": "Clinical or pathologic image illustrating protein kinase phosphoryl transfer",
   "renal-corpuscle": "Clinical or pathologic image illustrating renal corpuscle",
   "saltatory-conduction": "Clinical or pathologic image illustrating saltatory conduction",
+  "schwann-cell": "Clinical or pathologic image illustrating schwann cell",
   "serosa": "Clinical or pathologic image illustrating serosa",
   "siderophage": "Clinical or pathologic image illustrating siderophage",
   "signet-ring-cells": "Clinical or pathologic image illustrating signet ring cells",

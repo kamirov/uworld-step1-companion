@@ -33,3 +33,35 @@ hindbrain.jpg
 lateral-ventricles.svg
   Source: Wikimedia Commons — Lateral Ventricles - DK ATLAS.png
   Page: https://commons.wikimedia.org/wiki/File:Lateral_Ventricles_-_DK_ATLAS.png
+
+right-atrium.png
+  Source: Wikimedia Commons — Right atrium.png
+  Page: https://commons.wikimedia.org/wiki/File:Right_atrium.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Right_atrium.png?width=1280
+
+crista-terminalis.png
+  Source: Wikimedia Commons — Crista terminalis.png
+  Page: https://commons.wikimedia.org/wiki/File:Crista_terminalis.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Crista_terminalis.png?width=1280
+
+median-sulcus-of-the-tongue.jpg
+  Source: CDC PHIL #8325
+  Description: Dorsal tongue anatomy showing midline median sulcus
+  Page: https://phil.cdc.gov/Details.aspx?pid=8325
+
+foramen-cecum.jpg
+  Source: CDC PHIL #12080
+  Description: Thyroglossal duct embryology — foramen cecum and thyroid descent
+  Page: https://phil.cdc.gov/Details.aspx?pid=12080
+
+optic-chiasm.png
+  Source: Wikimedia Commons — Gray729.png
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Optic chiasm and visual pathway
+  Page: https://commons.wikimedia.org/wiki/File:Gray729.png
+
+papillary-muscle.png
+  Source: Wikimedia Commons — Chordae tendineae spuriae of left ventricle.png
+  Page: https://commons.wikimedia.org/wiki/File:Chordae_tendineae_spuriae_of_left_ventricle.png
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Chordae_tendineae_spuriae_of_left_ventricle.png?width=1280

@@ -25,3 +25,9 @@ erythrocyte-transketolase.png
 erythrocyte-glucose-6-phosphate-dehydrogenase.jpg
   Source: Wikimedia Commons — Some erythrocytic morphologies and intraerythrocytic inclusions found in peripheral blood smears of quokkas on Rottnest Island (also found in quokkas on mainland Western Australia).png
   Page: https://commons.wikimedia.org/wiki/File:Some_erythrocytic_morphologies_and_intraerythrocytic_inclusions_found_in_peripheral_blood_smears_of_quokkas_on_Rottnest_Island_(also_found_in_quokkas_on_mainland_Western_Australia).png
+
+5-hydroxyindoleacetic-acid.svg
+  Source: Local copy from lab-values/oligoclonal-bands.svg
+
+homovanillic-acid.png
+  Source: Local copy from proteins/tyrosine-hydroxylase.png

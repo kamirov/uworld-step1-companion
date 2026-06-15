@@ -68,3 +68,44 @@ nigrostriatal-pathway.png
 neurotrophic.png
   Source: Wikimedia Commons — Satellite glial cells invaricella zoster virus infection.png
   Page: https://commons.wikimedia.org/wiki/File:Satellite_glial_cells_invaricella_zoster_virus_infection.png
+
+polysaccharide-capsule.jpg
+  Source: Local copy from microbiology/streptococcus-pneumoniae.jpg
+
+proteolytic-enzyme-cleavage.jpg
+  Source: Wikimedia Commons — Aspartyl protease mechanism.png
+  Page: https://commons.wikimedia.org/wiki/File:Aspartyl_protease_mechanism.png
+
+fibrils.jpg
+  Source: Wikimedia Commons — Mechanisms of amyloid fibril formation.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg
+
+chromosome-21.jpg
+  Source: Wikimedia Commons — 21 trisomy - Down syndrome.png
+  Page: https://commons.wikimedia.org/wiki/File:21_trisomy_-_Down_syndrome.png
+
+abnormal-b-cell-proliferation.jpg
+  Source: Wikimedia Commons — Impact of lymph node stromal cells on T cell immunity.png
+  Page: https://commons.wikimedia.org/wiki/File:Impact_of_lymph_node_stromal_cells_on_T_cell_immunity.png
+
+thecal-sac.svg
+  Source: Local copy from conditions/meninges-diagram.svg
+
+cerebrospinal-fluid.jpg
+  Source: Wikimedia Commons — Normal pressure hydrocephalus versus atrophy, NPH.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Normal_pressure_hydrocephalus_versus_atrophy,_NPH.jpg
+
+cerebral-perfusion.svg
+  Source: Local copy from conditions/meninges-diagram.svg
+
+metabolic-demand.jpg
+  Source: Local copy from pathogenesis/cerebrospinal-fluid.jpg
+
+ovoid-white-matter-lesion.jpg
+  Source: Local copy from conditions/multiple-sclerosis.jpg
+  Page: https://commons.wikimedia.org/wiki/File:MULTIPLE_SCLEROSIS.JPG
+
+mass-effect.jpg
+  Source: Wikimedia Commons — Brain herniation.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Brain_herniation.jpg
+

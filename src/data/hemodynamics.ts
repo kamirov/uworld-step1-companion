@@ -489,6 +489,72 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "ACE inhibitors/ARBs ↓ intraglomerular pressure — renoprotective in diabetic and proteinuric kidney disease",
     ],
   },
+  {
+    id: "cerebral-perfusion",
+    name: "Cerebral Perfusion",
+    etymology: "Latin cerebrum = brain + perfundere = to pour through",
+    aliases: [
+      "cerebral perfusion",
+      "cerebral blood flow",
+      "cbf",
+      "brain perfusion",
+      "cerebral perfusion pressure",
+      "cpp",
+    ],
+    definition:
+      "Delivery of oxygenated blood to brain tissue — driven by cerebral perfusion pressure (CPP = MAP − ICP) and regulated by cerebral autoregulation maintaining relatively constant blood flow across a range of MAP (~60–160 mmHg).",
+    factors: [
+      "CPP = MAP − ICP — perfusion fails when ICP approaches or exceeds MAP",
+      "Autoregulation — arteriolar constriction/dilation maintains CBF between ~60–160 mmHg MAP",
+      "↓ CPP: hemorrhage, septic shock, ↑ ICP (mass, edema, hydrocephalus), herniation",
+      "↑ CPP: hypertensive crisis (can exceed autoregulation → hyperperfusion edema)",
+      "PaCO₂ — potent cerebral vasodilator; hypercapnia ↑ CBF; hypocapnia ↓ CBF (used in ↑ ICP management)",
+      "Hypoxemia and severe anemia impair oxygen delivery despite preserved flow",
+      "Cerebral metabolic demand (CMRO₂) — ↑ neuronal activity or fever ↑ flow; deep anesthesia ↓ CMRO₂ and CBF in parallel",
+      "Coupling — CBF normally matches metabolic demand; uncoupling in ischemia, seizure, or post-TBI hyperemia",
+    ],
+  },
+  {
+    id: "cerebral-vascular-resistance",
+    name: "Cerebral Vascular Resistance",
+    etymology: "Latin cerebrum = brain + vasculum = small vessel + resistere = to stand against",
+    aliases: [
+      "cerebral vascular resistance",
+      "cerebrovascular resistance",
+      "cvr",
+      "cerebral resistance",
+      "cerebral arteriolar resistance",
+    ],
+    definition:
+      "Resistance to blood flow within the cerebral arterial circulation — primarily determined by small vessel (arteriolar) tone; autoregulatory vasoconstriction and vasodilation adjust CVR to stabilize cerebral blood flow.",
+    factors: [
+      "CVR inversely related to CBF when CPP is constant (Ohm-like relationship)",
+      "↓ CVR (vasodilation): hypercapnia (↑ PaCO₂), hypoxemia, seizures, autoregulatory response to ↓ MAP",
+      "↑ CVR (vasoconstriction): hypocapnia (hyperventilation), autoregulatory response to ↑ MAP",
+      "Loss of autoregulation in severe TBI or stroke — CBF becomes pressure-passive",
+      "Chronic hypertension shifts autoregulation curve rightward — cerebral hypoperfusion if BP lowered too rapidly",
+    ],
+  },
+  {
+    id: "cerebral-blood-volume",
+    name: "Cerebral Blood Volume",
+    etymology: "Latin cerebrum = brain + German Blut = blood + Latin volumen = roll/amount",
+    aliases: [
+      "cerebral blood volume",
+      "cbv",
+      "brain blood volume",
+      "intracranial blood volume",
+    ],
+    definition:
+      "Volume of blood within the cerebral vasculature at a given time — one component of intracranial volume in the Monro-Kellie doctrine (brain + blood + CSF in fixed skull); changes affect ICP.",
+    factors: [
+      "Monro-Kellie doctrine — ↑ CBV, brain edema, or CSF volume raises ICP when skull is non-expandable",
+      "↑ CBV: cerebral vasodilation (hypercapnia, hypoxia), autoregulatory vasodilation in hypotension",
+      "↓ CBV: hyperventilation (hypocapnia-induced vasoconstriction), hyperosmolar therapy (mannitol), barbiturate coma",
+      "Venous outflow obstruction can ↑ CBV and ICP",
+      "Traumatic brain injury — disrupted autoregulation with pressure-passive CBV changes",
+    ],
+  },
 ];
 
 const hemodynamicById = new Map(HEMODYNAMICS.map((h) => [h.id, h]));

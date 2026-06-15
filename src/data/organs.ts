@@ -1227,6 +1227,22 @@ export const ORGANS: OrganEntry[] = [
       "Outpocketing of diencephalon (optic vesicle → optic cup); neuroectoderm forms neural retina.",
   },
   {
+    id: "optic-chiasm",
+    name: "Optic Chiasm",
+    etymology: "Greek optikos = of sight + Greek chiasma = cross/marked with χ (chi)",
+    aliases: [
+      "optic chiasm",
+      "optic chiasma",
+      "optic chiasms",
+      "chiasm",
+      "chiasma",
+      "optic decussation",
+    ],
+    germLayer: "Ectoderm",
+    origin:
+      "Formed where nasal retinal ganglion cell axons from each optic nerve decussate to join temporal fibers of the contralateral optic tract — lies above the sella turcica in the suprasellar cistern.",
+  },
+  {
     id: "uvea",
     name: "Uvea",
     etymology: "Latin uva = grape (grape-like appearance of iris folds)",
@@ -1397,6 +1413,78 @@ export const ORGANS: OrganEntry[] = [
       "Anterior 2/3 muscles from occipital somites; body from pharyngeal arches. Taste buds and mucosa mixed endoderm/ectoderm.",
   },
   {
+    id: "median-sulcus-of-the-tongue",
+    name: "Median Sulcus of the Tongue",
+    etymology: "Latin medius = middle + sulcus = groove + lingua = tongue",
+    aliases: [
+      "median sulcus of the tongue",
+      "median sulcus of tongue",
+      "median lingual sulcus",
+      "midline groove of tongue",
+      "dorsal median sulcus",
+      "sulcus medianus linguae",
+    ],
+    germLayer: "Ectoderm / Endoderm",
+    origin:
+      "Midline surface groove on the dorsal tongue formed where the two lateral lingual swellings fuse during embryologic development; posteriorly it leads toward the foramen cecum and terminal sulcus.",
+    derivatives: [
+      "Dorsal tongue mucosa midline landmark",
+      "Posteriorly continuous with region of foramen cecum and circumvallate papillae",
+    ],
+    functionSummary:
+      "Anatomic midline landmark dividing the dorsal tongue into right and left halves; helps orient taste, motor, and sensory innervation territories.",
+    commonPathologies: [
+      "Median rhomboid glossitis (central papillary atrophy)",
+      "Congenital tongue malformations along midline fusion",
+      "Surgical landmark in tongue base procedures",
+    ],
+    step1Pearls: [
+      "Midline groove on dorsal tongue — fusion line of lateral lingual swellings",
+      "Posterior tongue midline → foramen cecum and terminal sulcus region",
+      "Separates right vs left tongue motor/sensory organization clinically",
+      "Not the same as terminal sulcus — sulcus is surface groove; terminal sulcus is V-shaped boundary between oral and pharyngeal tongue",
+    ],
+    pediatrics:
+      "Midline tongue lesions in children (e.g., median rhomboid glossitis) may mimic infection but often reflect benign mucosal change; true midline fusion defects are rare and may accompany other craniofacial anomalies.",
+  },
+  {
+    id: "foramen-cecum",
+    name: "Foramen Cecum",
+    etymology: "Latin foramen = opening + caecum = blind",
+    aliases: [
+      "foramen cecum",
+      "foramen cecum of tongue",
+      "foramen cecum linguae",
+      "lingual foramen cecum",
+      "tongue foramen cecum",
+    ],
+    germLayer: "Endoderm",
+    origin:
+      "Blind midline pit at the posterior dorsal tongue (at the apex of the terminal sulcus) marking the embryologic site where the thyroid diverticulum invaginates from floor-of-mouth endoderm before descending via the thyroglossal duct.",
+    derivatives: [
+      "Thyroid gland (descends from this endodermal invagination)",
+      "Thyroglossal duct remnant — pyramidal lobe or thyroglossal duct cyst",
+      "Lingual thyroid if descent fails",
+    ],
+    functionSummary:
+      "Embryologic landmark for thyroid development and thyroglossal duct anatomy; clinically relevant for thyroglossal duct cysts and ectopic lingual thyroid.",
+    commonPathologies: [
+      "Thyroglossal duct cyst",
+      "Lingual thyroid (failed descent)",
+      "Pyramidal lobe of thyroid",
+      "Midline neck mass moving with tongue protrusion",
+    ],
+    step1Pearls: [
+      "Foramen cecum = blind pit at posterior dorsal tongue midline",
+      "Site of thyroid diverticulum origin — thyroid descends via thyroglossal duct",
+      "Thyroglossal duct cyst — midline neck mass that rises with tongue protrusion",
+      "Lingual thyroid may present at foramen cecum if gland fails to descend",
+      "Connected conceptually to median sulcus and terminal sulcus landmarks",
+    ],
+    pediatrics:
+      "Thyroglossal duct cyst is a common pediatric midline neck mass; Sistrunk procedure removes cyst and central hyoid portion of duct. Lingual thyroid at the foramen cecum may be the only thyroid tissue — do not remove without confirming elsewhere.",
+  },
+  {
     id: "diaphragm",
     name: "Diaphragm",
     etymology: "Greek dia = across + phragma = fence/partition",
@@ -1413,6 +1501,79 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Mesoderm",
     origin:
       "Parietal pericardium from pleuropericardial membranes (splanchnic mesoderm); visceral layer is epicardium.",
+  },
+  {
+    id: "right-atrium",
+    name: "Right Atrium",
+    etymology: "Latin atrium = entrance hall + dexter = right",
+    aliases: [
+      "right atrium",
+      "right atria",
+      "ra",
+      "right atrial chamber",
+      "right atrial",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Forms from the primitive atrium during cardiac looping; smooth-walled sinus venarum derives from the sinus venosus (right horn), while the trabeculated auricle forms from the primitive atrial body.",
+    derivatives: [
+      "Sinus venarum (smooth posterior wall)",
+      "Right atrial appendage (auricle)",
+      "Fossa ovalis",
+      "Crista terminalis",
+      "Sinoatrial node",
+    ],
+  },
+  {
+    id: "crista-terminalis",
+    name: "Crista Terminalis",
+    etymology: "Latin crista = crest/ridge + terminalis = at the end/boundary",
+    aliases: [
+      "crista terminalis",
+      "crista terminalis ridge",
+      "terminal crest",
+      "terminal crest of right atrium",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Internal muscular ridge in the right atrium marking the junction between the smooth-walled sinus venarum (sinus venosus derivative) and the trabeculated atrial appendage; sinoatrial node cluster lies at its superior aspect near the SVC orifice.",
+  },
+  {
+    id: "papillary-muscle",
+    name: "Papillary Muscle",
+    etymology: "Latin papilla = nipple + Latin musculus = little mouse/muscle",
+    aliases: [
+      "papillary muscle",
+      "papillary muscles",
+      "ventricular papillary muscle",
+      "ventricular papillary muscles",
+      "papillary musculature",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Muscular projections from the ventricular myocardium that anchor the chordae tendineae to the atrioventricular valve leaflets — preventing prolapse of the mitral and tricuspid valves into the atria during ventricular systole.",
+    derivatives: [
+      "Anterolateral and posteromedial papillary muscles (left ventricle — mitral valve)",
+      "Anterior, posterior, and septal papillary muscles (right ventricle — tricuspid valve)",
+      "Chordae tendineae attachments",
+    ],
+    functionSummary:
+      "Contract with ventricular systole to tense chordae tendineae and hold AV valve leaflets in place, preventing regurgitation into the atria.",
+    commonPathologies: [
+      "Ischemic papillary muscle rupture post-MI (3–5 days) → acute mitral regurgitation",
+      "Ischemic papillary muscle dysfunction without rupture → mitral regurgitation",
+      "Endocarditis involving chordae/papillary apparatus",
+      "Mitral valve prolapse — redundant chordae and myxomatous leaflets",
+    ],
+    step1Pearls: [
+      "Papillary muscles + chordae tendineae tether AV valve leaflets during systole",
+      "Posteromedial papillary muscle — single blood supply (PDA), more vulnerable to rupture",
+      "Anterolateral — dual supply (LAD + circumflex)",
+      "Papillary muscle rupture 3–5 days post-MI → acute severe MR, pulmonary edema",
+      "Acute MR murmur + flash pulmonary edema after recent MI → think papillary rupture",
+    ],
+    pediatrics:
+      "Papillary muscle rupture is an adult post-MI complication; pediatric mitral regurgitation more often congenital mitral valve disease or rheumatic fever rather than ischemic papillary rupture.",
   },
   {
     id: "appendix",
@@ -2222,6 +2383,25 @@ const ORGAN_DETAILS: Record<
     commonPathologies: ["Spinal cord injury", "Syringomyelia", "Subacute combined degeneration", "Poliomyelitis", "Multiple sclerosis lesions"],
     step1Pearls: ["Dorsal columns carry vibration/proprioception; spinothalamic carries pain/temp", "Anterior horn lesions cause LMN signs", "Brown-Sequard gives ipsilateral motor/proprioception loss and contralateral pain/temp loss"],
   },
+  "optic-chiasm": {
+    functionSummary: "Site where nasal retinal fibers cross to the contralateral optic tract — reorganizes monocular visual fields into left and right hemifield representations for the brain.",
+    commonPathologies: [
+      "Pituitary macroadenoma compression",
+      "Craniopharyngioma",
+      "Meningioma (suprasellar)",
+      "Optic glioma",
+      "Pituitary apoplexy",
+    ],
+    step1Pearls: [
+      "Nasal retinal fibers cross at chiasm — carry temporal visual fields",
+      "Bitemporal hemianopia = chiasm compression (pituitary macroadenoma boards classic)",
+      "Lesion anterior to chiasm → monocular vision loss",
+      "Post-chiasmal lesion → homonymous hemianopia",
+      "Chiasm lies directly above sella turcica",
+    ],
+    pediatrics:
+      "Craniopharyngioma and optic pathway glioma (NF1) compress the chiasm in children — decreased visual acuity and bitemporal or junctional field defects.",
+  },
   retina: {
     functionSummary: "Converts light into neural signals via rods/cones and retinal ganglion cells.",
     commonPathologies: ["Diabetic retinopathy", "Hypertensive retinopathy", "Retinal detachment", "Retinitis pigmentosa", "Macular degeneration"],
@@ -2308,6 +2488,36 @@ const ORGAN_DETAILS: Record<
     functionSummary: "Fibroserous sac that limits acute cardiac dilation and reduces friction around the beating heart.",
     commonPathologies: ["Pericarditis", "Pericardial effusion", "Cardiac tamponade", "Constrictive pericarditis"],
     step1Pearls: ["Tamponade causes Beck triad and pulsus paradoxus", "Pericarditis pain improves leaning forward", "Uremia can cause fibrinous pericarditis"],
+  },
+  "right-atrium": {
+    functionSummary: "Receives systemic and coronary venous blood (SVC, IVC, coronary sinus) and passively fills the right ventricle; site of SA node and fossa ovalis.",
+    commonPathologies: [
+      "Right atrial enlargement (tricuspid regurgitation, pulmonary hypertension)",
+      "Atrial thrombus (less common than left atrial thrombus)",
+      "Atrial septal defect at fossa ovalis",
+      "Atrial arrhythmia foci",
+    ],
+    step1Pearls: [
+      "Smooth sinus venarum (posterior) vs trabeculated auricle — embryologic boundary at crista terminalis",
+      "SA node at superior crista terminalis near SVC orifice",
+      "Koch triangle (AV node) bounded by coronary sinus, tendon of Todaro, tricuspid annulus",
+      "RA pressure ↑ in RV failure, tricuspid regurgitation, pulmonary hypertension",
+      "Fossa ovalis = remnant of foramen ovale",
+    ],
+    pediatrics: "Patent foramen ovale is common in neonates; secundum ASD at fossa ovalis is a frequent congenital lesion.",
+  },
+  "crista-terminalis": {
+    functionSummary: "Internal ridge separating smooth sinus venarum from trabeculated right atrial appendage; anchors the sinoatrial node at its superior end.",
+    commonPathologies: [
+      "Echocardiographic pseudotumor (prominent ridge mimicking RA mass)",
+      "Atrial tachycardia foci near crista terminalis",
+    ],
+    step1Pearls: [
+      "Crista terminalis = junction of sinus venosus-derived smooth RA and primitive atrial trabeculations",
+      "SA node at superior crista terminalis — pacemaker of normal sinus rhythm",
+      "Prominent crista terminalis on echo can mimic right atrial thrombus or tumor",
+      "Sulcus terminalis is the external groove corresponding to the internal crista",
+    ],
   },
   appendix: {
     functionSummary: "Lymphoid-rich blind pouch with minor gut immune function.",

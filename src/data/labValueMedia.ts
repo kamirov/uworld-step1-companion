@@ -6,6 +6,8 @@ import oligoclonalBands from "../media/images/lab-values/oligoclonal-bands.svg?u
 import methylmalonicAcid from "../media/images/lab-values/methylmalonic-acid.png?url";
 import erythrocyteTransketolase from "../media/images/lab-values/erythrocyte-transketolase.png?url";
 import erythrocyteG6pd from "../media/images/lab-values/erythrocyte-glucose-6-phosphate-dehydrogenase.jpg?url";
+import fiveHiaa from "../media/images/lab-values/5-hydroxyindoleacetic-acid.svg?url";
+import homovanillicAcid from "../media/images/lab-values/homovanillic-acid.png?url";
 
 export type LabValueImageId = Extract<
   LabValueEntry["id"],
@@ -14,6 +16,8 @@ export type LabValueImageId = Extract<
   | "methylmalonic-acid"
   | "erythrocyte-transketolase"
   | "erythrocyte-glucose-6-phosphate-dehydrogenase"
+  | "5-hydroxyindoleacetic-acid"
+  | "homovanillic-acid"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -28,6 +32,8 @@ export const LAB_VALUE_IMAGES: Partial<Record<LabValueImageId, string>> = {
   "erythrocyte-transketolase": extensionAssetUrl(erythrocyteTransketolase),
   "erythrocyte-glucose-6-phosphate-dehydrogenase":
     extensionAssetUrl(erythrocyteG6pd),
+  "5-hydroxyindoleacetic-acid": extensionAssetUrl(fiveHiaa),
+  "homovanillic-acid": extensionAssetUrl(homovanillicAcid),
 };
 
 export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
@@ -54,6 +60,14 @@ export const LAB_VALUE_IMAGE_ATTRIBUTIONS: Partial<
       "Wikimedia Commons (Some erythrocytic morphologies and intraerythrocytic inclusions...)",
     url: "https://commons.wikimedia.org/wiki/File:Some_erythrocytic_morphologies_and_intraerythrocytic_inclusions_found_in_peripheral_blood_smears_of_quokkas_on_Rottnest_Island_(also_found_in_quokkas_on_mainland_Western_Australia).png",
   },
+  "5-hydroxyindoleacetic-acid": {
+    label: "Local reference; oligoclonal band diagram",
+    url: "https://en.wikipedia.org/wiki/5-Hydroxyindoleacetic_acid",
+  },
+  "homovanillic-acid": {
+    label: "Wikimedia Commons (Tyrosine hydroxylase showing all four subunits.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Tyrosine_hydroxylase_showing_all_four_subunits.png",
+  },
 };
 
 export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
@@ -69,6 +83,10 @@ export const LAB_VALUE_IMAGE_CAPTIONS: Partial<
     "Thiamine-dependent transketolase in the erythrocyte pentose phosphate pathway — functional B1 status assay",
   "erythrocyte-glucose-6-phosphate-dehydrogenase":
     "Heinz bodies in G6PD deficiency — oxidant hemolysis with impaired NADPH/glutathione protection",
+  "5-hydroxyindoleacetic-acid":
+    "Urinary 5-HIAA — serotonin metabolite elevated in carcinoid syndrome",
+  "homovanillic-acid":
+    "HVA — dopamine metabolite; ↑ in neuroblastoma with VMA",
 };
 
 export function getLabValueImageForId(id: string): string | undefined {

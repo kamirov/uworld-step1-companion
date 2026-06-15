@@ -358,3 +358,95 @@ schizotypal-personality-disorder.png
   Source: Wikimedia Commons — Signs of StPD 1.png
   Page: https://commons.wikimedia.org/wiki/File:Signs_of_StPD_1.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Signs_of_StPD_1.png?width=1280
+
+basilar-skull-fracture.jpg
+  Source: Wikimedia Commons — Battles-sign.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Battles-sign.jpg
+
+cerebral-contusion.jpg
+  Source: Wikimedia Commons — Brain trauma CT.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Brain_trauma_CT.jpg
+
+atrial-tachycardia.svg
+  Source: Wikimedia Commons — Multifocal Atrial Tachycardia.svg
+  Page: https://commons.wikimedia.org/wiki/File:Multifocal_Atrial_Tachycardia.svg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Multifocal_Atrial_Tachycardia.svg?width=1280
+
+paroxysmal-supraventricular-tachycardia.svg
+  Source: Wikimedia Commons — Supraventricular Tachycardia.svg
+  Page: https://commons.wikimedia.org/wiki/File:Supraventricular_Tachycardia.svg
+  Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Supraventricular_Tachycardia.svg?width=1280
+
+l4-radiculopathy.png
+  Source: Wikimedia Commons — Gray797.png (Gray's Anatomy)
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Anterior dermatomes of trunk and limbs
+  Page: https://commons.wikimedia.org/wiki/File:Gray797.png
+
+l5-radiculopathy.png
+  Source: Wikimedia Commons — L4-l5-disc-herniation.png
+  Author: Edave
+  License: CC BY 3.0
+  Description: MRI of L4–L5 disc extrusion compressing L5 nerve root
+  Page: https://commons.wikimedia.org/wiki/File:L4-l5-disc-herniation.png
+
+s1-radiculopathy.jpg
+  Source: Wikimedia Commons — Herniated-Disc.jpg
+  License: Public domain (check file page)
+  Description: Herniated spinal disc illustration
+  Page: https://commons.wikimedia.org/wiki/File:Herniated-Disc.jpg
+
+c6-radiculopathy.png
+  Source: Wikimedia Commons — Gray784.png (Gray's Anatomy)
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Dermatomes of the limbs
+  Page: https://commons.wikimedia.org/wiki/File:Gray784.png
+
+c7-radiculopathy.png
+  Source: Wikimedia Commons — Gray802.png (Gray's Anatomy)
+  Author: Henry Vandyke Carter / Gray's Anatomy
+  License: Public domain
+  Description: Cutaneous branches of posterior spinal nerve divisions
+  Page: https://commons.wikimedia.org/wiki/File:Gray802.png
+
+femoral-neck-fracture.jpg
+  Source: Wikimedia Commons — Structural analysis and optimization of the support device used for a proximal fracture of the femur (IA structuralnalysi109453713).pdf
+  License: Public domain
+  Description: Proximal femur fracture illustration
+  Page: https://commons.wikimedia.org/wiki/File:Structural_analysis_and_optimization_of_the_support_device_used_for_a_proximal_fracture_of_the_femur_(IA_structuralnalysi109453713).pdf
+
+transient-ischemic-attack.png
+  Source: Wikimedia Commons — Transient ischemic attack by hariadhi dedicated to my dad.svg
+  Author: Hariadhi
+  License: CC BY-SA 4.0
+  Description: Illustration of transient ischemic attack
+  Page: https://commons.wikimedia.org/wiki/File:Transient_ischemic_attack_by_hariadhi_dedicated_to_my_dad.svg
+
+diabetic-neuropathy.jpg
+  Source: Wikimedia Commons — Diabetic Neuropathy Device pic.jpg
+  License: CC BY-SA 3.0
+  Description: Diabetic neuropathy foot examination device
+  Page: https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg
+
+lacunar-stroke.jpg
+  Source: Wikimedia Commons — CT of lacunar strokes.jpg
+  License: CC BY-SA 3.0
+  Description: CT showing lacunar strokes
+  Page: https://commons.wikimedia.org/wiki/File:CT_of_lacunar_strokes.jpg
+
+pituitary-macroadenoma.jpg
+  Source: Wikimedia Commons — ProlactinomaMRI.jpg
+  Page: https://commons.wikimedia.org/wiki/File:ProlactinomaMRI.jpg
+
+pituitary-apoplexy.jpg
+  Source: Wikimedia Commons — ProlactinomaMRI.jpg
+  Page: https://commons.wikimedia.org/wiki/File:ProlactinomaMRI.jpg
+  Description: Pituitary MRI sellar mass — substrate for hemorrhagic pituitary apoplexy
+
+parinaud-syndrome.jpg
+  Source: Wikimedia Commons — Midbrain-axial-showing-tectum-and-tegmentum.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Midbrain-axial-showing-tectum-and-tegmentum.jpg
+  Description: Axial midbrain — dorsal midbrain (tectum/pretectum) site of Parinaud syndrome
+

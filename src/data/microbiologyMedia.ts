@@ -44,6 +44,7 @@ import strongyloidesStercoralis from "../media/images/microbiology/strongyloides
 import treponemaPallidum from "../media/images/microbiology/treponema-pallidum.jpg?url";
 import toxoplasmaGondii from "../media/images/microbiology/toxoplasma-gondii.jpg?url";
 import varicellaZosterVirus from "../media/images/microbiology/varicella-zoster-virus.jpg?url";
+import yeast from "../media/images/microbiology/yeast.jpg?url";
 import measlesVirus from "../media/images/microbiology/measles-virus.jpg?url";
 import mumpsVirus from "../media/images/microbiology/mumps-virus.jpg?url";
 import rubellaVirus from "../media/images/microbiology/rubella-virus.jpg?url";
@@ -68,6 +69,8 @@ import staphylococcusEpidermidis from "../media/images/microbiology/staphylococc
 import paramyxovirus from "../media/images/microbiology/paramyxovirus.jpg?url";
 import parvovirusB19 from "../media/images/microbiology/parvovirus-b19.jpg?url";
 import protozoanParasite from "../media/images/microbiology/protozoan-parasite.jpg?url";
+import poliovirus from "../media/images/microbiology/poliovirus.jpg?url";
+import westNileVirus from "../media/images/microbiology/west-nile-virus.jpg?url";
 
 export type MicrobiologyImageId = MicrobiologyEntry["id"];
 
@@ -148,6 +151,9 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     paramyxovirus: extensionAssetUrl(paramyxovirus),
     "parvovirus-b19": extensionAssetUrl(parvovirusB19),
     "protozoan-parasite": extensionAssetUrl(protozoanParasite),
+    yeast: extensionAssetUrl(yeast),
+    poliovirus: extensionAssetUrl(poliovirus),
+    "west-nile-virus": extensionAssetUrl(westNileVirus),
   };
 
 export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
@@ -433,6 +439,18 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Giardia-spp.--infected--gerbil-intestine.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Giardia-spp.--infected--gerbil-intestine.jpg",
   },
+  yeast: {
+    label: "Wikimedia Commons (Gram positive budding yeast cells.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Gram_positive_budding_yeast_cells.jpg",
+  },
+  poliovirus: {
+    label: "CDC PHIL #1623",
+    url: "https://phil.cdc.gov/Details.aspx?pid=1623",
+  },
+  "west-nile-virus": {
+    label: "CDC PHIL #8149",
+    url: "https://phil.cdc.gov/Details.aspx?pid=8149",
+  },
 };
 
 export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
@@ -553,6 +571,12 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "Serratia marcescens colonies with red prodigiosin pigment on agar",
   "protozoan-parasite":
     "Giardia trophozoites in infected intestinal mucosa — representative unicellular protozoan parasite",
+  yeast:
+    "Gram-positive budding yeast cells — unicellular fungal morphology (Candida-like)",
+  poliovirus:
+    "Transmission electron micrograph of poliovirus virions — icosahedral picornavirus enterovirus",
+  "west-nile-virus":
+    "Culex mosquito — primary vector for West Nile virus enzootic transmission",
 };
 
 export function getMicrobiologyImageForId(

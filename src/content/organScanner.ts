@@ -7,7 +7,6 @@ import {
   enqueueHighlightRoot,
   enqueueHighlightRoots,
   getIsApplyingHighlights,
-  setOnHighlightIdle,
 } from "./scanScheduler";
 import {
   buildTermTrie,
@@ -20,7 +19,6 @@ import {
   getSiteScanConfig,
   SCAN_ZONE,
   type ScanAreaSelector,
-  type SiteScanConfig,
 } from "./siteConfig";
 import type { TermKind, TermMatch } from "./termTypes";
 
@@ -120,19 +118,22 @@ let termTrie: TermTrie | null = null;
 let highlightedOnQuestion = new Set<string>();
 let highlightedWordsOnQuestion = new Set<string>();
 let highlightedTermZone = new Map<string, number>();
-let pageFingerprint = "";
+let questionFingerprint = "";
 let allowPopoverScan = false;
 const pendingScanRoots = new Set<Element>();
 const siteScanConfig = getSiteScanConfig();
+const isUWorld = siteScanConfig.kind === "uworld";
 
 const QUESTION_HEADER_RE =
   /(?:Question|Q\.?|Item)\s*\d+(?:\s*(?:of|\/)\s*\d+)?/i;
 
+/** UWorld question areas — avoid scanning the entire app shell on every mutation. */
+const SCAN_AREA_SELECTORS = ["#questionInformation", "#explanation"] as const;
+
 const SCAN_DEBOUNCE_MS = 400;
 const SCAN_IDLE_TIMEOUT_MS = 800;
-const SETTLE_SCAN_DELAYS_MS = [1500, 4000] as const;
 
-interface ScanArea {
+interface ScanAreaRecord {
   element: Element;
   zone: number;
   forceVisible: boolean;
@@ -166,6 +167,48 @@ function unwrapAllChips(): void {
   for (const chip of document.querySelectorAll(CHIP_SELECTOR)) {
     unwrapChip(chip);
   }
+}
+
+function getScanZone(node: Node): number {
+  const el = node instanceof Element ? node : node.parentElement;
+  if (!el) return SCAN_ZONE.OTHER;
+
+  if (isUWorld) {
+    if (el.closest("#explanation")) return SCAN_ZONE.EXPLANATION;
+    if (el.closest("#questionInformation")) return SCAN_ZONE.QUESTION;
+    return SCAN_ZONE.OTHER;
+  }
+
+  const record = getConfiguredScanAreaRecords().find((area) =>
+    area.element.contains(el),
+  );
+  return record?.zone ?? SCAN_ZONE.OTHER;
+}
+
+function isVisibleElement(el: Element): boolean {
+  if (allowPopoverScan && el.closest(`.${POPOVER_CLASS}`)) {
+    return true;
+  }
+  if (isUWorld) {
+    if (el.closest("#questionInformation, #explanation")) {
+      return true;
+    }
+  } else if (
+    getConfiguredScanAreaRecords().some(
+      (area) => area.forceVisible && area.element.contains(el),
+    )
+  ) {
+    return true;
+  }
+  if (el instanceof HTMLElement && typeof el.checkVisibility === "function") {
+    return el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true });
+  }
+  const style = getComputedStyle(el);
+  return (
+    style.display !== "none" &&
+    style.visibility !== "hidden" &&
+    style.opacity !== "0"
+  );
 }
 
 function chipSelectorForTerm(term: TermMatch): string {
@@ -271,8 +314,10 @@ function excludePopoverOwnTerm(target: ChipPopoverTarget, zone: number): void {
   recordHighlight(termMatchFromPopoverTarget(target), "", zone);
 }
 
-function collectAreasForGroup(group: readonly ScanAreaSelector[]): ScanArea[] {
-  const areas: ScanArea[] = [];
+function collectAreasForGroup(
+  group: readonly ScanAreaSelector[],
+): ScanAreaRecord[] {
+  const areas: ScanAreaRecord[] = [];
   const seen = new Set<Element>();
 
   for (const areaSelector of group) {
@@ -290,8 +335,8 @@ function collectAreasForGroup(group: readonly ScanAreaSelector[]): ScanArea[] {
   return areas;
 }
 
-function getScanAreas(config: SiteScanConfig = siteScanConfig): ScanArea[] {
-  for (const group of config.areaGroups) {
+function getConfiguredScanAreaRecords(): ScanAreaRecord[] {
+  for (const group of siteScanConfig.areaGroups) {
     const areas = collectAreasForGroup(group);
     if (areas.length > 0) return areas;
   }
@@ -301,58 +346,37 @@ function getScanAreas(config: SiteScanConfig = siteScanConfig): ScanArea[] {
     : [];
 }
 
-function getScanAreaForNode(node: Node): ScanArea | null {
-  const el = node instanceof Element ? node : node.parentElement;
-  if (!el) return null;
-  return getScanAreas().find((area) => area.element.contains(el)) ?? null;
-}
-
-function getScanZone(node: Node): number {
-  return getScanAreaForNode(node)?.zone ?? SCAN_ZONE.OTHER;
-}
-
-function isInForceVisibleArea(el: Element): boolean {
-  return getScanAreas().some(
-    (area) => area.forceVisible && area.element.contains(el),
-  );
-}
-
-function isVisibleElement(el: Element): boolean {
-  if (allowPopoverScan && el.closest(`.${POPOVER_CLASS}`)) {
-    return true;
+function getScanAreas(): Element[] {
+  if (isUWorld) {
+    const areas = SCAN_AREA_SELECTORS.flatMap((selector) => {
+      const el = document.querySelector(selector);
+      return el ? [el] : [];
+    });
+    if (areas.length > 0) return areas;
+    return document.body ? [document.body] : [];
   }
-  if (isInForceVisibleArea(el)) {
-    return true;
-  }
-  if (el instanceof HTMLElement && typeof el.checkVisibility === "function") {
-    return el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true });
-  }
-  const style = getComputedStyle(el);
-  return (
-    style.display !== "none" &&
-    style.visibility !== "hidden" &&
-    style.opacity !== "0"
-  );
+
+  return getConfiguredScanAreaRecords().map((area) => area.element);
 }
 
 function nodeInScanArea(node: Node): boolean {
   const areas = getScanAreas();
-  if (areas.length === 1 && areas[0]?.element === document.body) {
+  if (areas.length === 1 && areas[0] === document.body) {
     return !isInsidePopover(node);
   }
   const el = node instanceof Element ? node : node.parentElement;
   if (!el || isInsidePopover(el)) return false;
-  return areas.some((area) => area.element.contains(el));
+  return areas.some((area) => area.contains(el));
 }
 
-function getPageFingerprint(): string {
-  if (siteScanConfig.fingerprintMode === "url") {
+function getQuestionFingerprint(): string {
+  if (!isUWorld && siteScanConfig.fingerprintMode === "url") {
     return window.location.href;
   }
 
   const parts: string[] = [];
   for (const area of getScanAreas()) {
-    parts.push((area.element as HTMLElement).innerText ?? "");
+    parts.push((area as HTMLElement).innerText ?? "");
   }
   const text = parts.join(" ").replace(/\s+/g, " ").trim();
   const header = text.match(QUESTION_HEADER_RE)?.[0] ?? "";
@@ -363,12 +387,12 @@ function resetQuestionHighlights(): void {
   highlightedOnQuestion.clear();
   highlightedWordsOnQuestion.clear();
   highlightedTermZone.clear();
-  pageFingerprint = "";
+  questionFingerprint = "";
 }
 
-function syncPageContext(): boolean {
-  const next = getPageFingerprint();
-  const changed = pageFingerprint !== "" && next !== pageFingerprint;
+function syncQuestionContext(): boolean {
+  const next = getQuestionFingerprint();
+  const changed = questionFingerprint !== "" && next !== questionFingerprint;
   if (changed) {
     unwrapAllChips();
     highlightedOnQuestion.clear();
@@ -377,7 +401,7 @@ function syncPageContext(): boolean {
     pendingScanRoots.clear();
     clearHighlightQueue();
   }
-  pageFingerprint = next;
+  questionFingerprint = next;
   return changed;
 }
 
@@ -659,10 +683,7 @@ function compareNodeDocumentOrder(a: Node, b: Node): number {
 }
 
 function collectHighlightableTextNodes(root: Node): Text[] {
-  const textNodes: Text[] = [];
-  const seen = new Set<Text>();
-
-  const acceptNode = (node: Node): NodeFilter => {
+  const acceptNode = (node: Node): number => {
     if (!allowPopoverScan && isInsidePopover(node)) {
       return NodeFilter.FILTER_REJECT;
     }
@@ -672,37 +693,54 @@ function collectHighlightableTextNodes(root: Node): Text[] {
     return NodeFilter.FILTER_ACCEPT;
   };
 
-  const collectFrom = (scanRoot: Node): void => {
-    const walker = scanRoot.ownerDocument.createTreeWalker(
-      scanRoot,
-      NodeFilter.SHOW_TEXT,
-      { acceptNode },
-    );
+  const textNodes: Text[] = [];
+
+  if (isUWorld) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode,
+    });
 
     let current = walker.nextNode();
     while (current) {
-      const textNode = current as Text;
-      if (!seen.has(textNode)) {
-        seen.add(textNode);
-        textNodes.push(textNode);
-      }
+      textNodes.push(current as Text);
       current = walker.nextNode();
     }
+  } else {
+    const seen = new Set<Text>();
 
-    const elementWalker = scanRoot.ownerDocument.createTreeWalker(
-      scanRoot,
-      NodeFilter.SHOW_ELEMENT,
-    );
-    let element = elementWalker.nextNode();
-    while (element) {
-      if (element instanceof Element && element.shadowRoot) {
-        collectFrom(element.shadowRoot);
+    const collectFrom = (scanRoot: Node): void => {
+      const doc = scanRoot.ownerDocument ?? document;
+      const walker = doc.createTreeWalker(
+        scanRoot,
+        NodeFilter.SHOW_TEXT,
+        { acceptNode },
+      );
+
+      let current = walker.nextNode();
+      while (current) {
+        const textNode = current as Text;
+        if (!seen.has(textNode)) {
+          seen.add(textNode);
+          textNodes.push(textNode);
+        }
+        current = walker.nextNode();
       }
-      element = elementWalker.nextNode();
-    }
-  };
 
-  collectFrom(root);
+      const elementWalker = doc.createTreeWalker(
+        scanRoot,
+        NodeFilter.SHOW_ELEMENT,
+      );
+      let element = elementWalker.nextNode();
+      while (element) {
+        if (element instanceof Element && element.shadowRoot) {
+          collectFrom(element.shadowRoot);
+        }
+        element = elementWalker.nextNode();
+      }
+    };
+
+    collectFrom(root);
+  }
 
   return textNodes.sort((a, b) => {
     const zoneDiff = getScanZone(a) - getScanZone(b);
@@ -746,14 +784,21 @@ function flushPendingScans(): void {
 }
 
 function scheduleIncrementalScan(from: Node): void {
-  const rootsToScan: Node[] = [];
+  if (isUWorld) {
+    if (!nodeInScanArea(from)) return;
+    for (const root of collectCoalesceRoots(from)) {
+      pendingScanRoots.add(root);
+    }
+    return;
+  }
 
+  const rootsToScan: Node[] = [];
   if (nodeInScanArea(from)) {
     rootsToScan.push(from);
   } else if (from instanceof Element) {
     for (const area of getScanAreas()) {
-      if (from.contains(area.element)) {
-        rootsToScan.push(area.element);
+      if (from.contains(area)) {
+        rootsToScan.push(area);
       }
     }
   }
@@ -766,8 +811,8 @@ function scheduleIncrementalScan(from: Node): void {
 }
 
 function runScanWork(): void {
-  const pageChanged = syncPageContext();
-  if (pageChanged || pendingScanRoots.size === 0) {
+  const questionChanged = syncQuestionContext();
+  if (questionChanged || pendingScanRoots.size === 0) {
     performFullScan();
     return;
   }
@@ -778,14 +823,12 @@ function performFullScan(): void {
   if (!document.body || isInsidePopover(document.body)) return;
 
   pendingScanRoots.clear();
-  const coalesceRoots = collectCoalesceRootsForAreas(
-    getScanAreas().map((area) => area.element),
-  );
+  const coalesceRoots = collectCoalesceRootsForAreas(getScanAreas());
   enqueueHighlightRoots(coalesceRoots, getScanZone, highlightCoalescedRoot);
 }
 
 function scanPage(): void {
-  syncPageContext();
+  syncQuestionContext();
   performFullScan();
 }
 
@@ -796,7 +839,7 @@ export function scanRoot(root: Node): void {
     return;
   }
 
-  syncPageContext();
+  syncQuestionContext();
   if (!nodeInScanArea(root)) return;
 
   for (const coalesceRoot of collectCoalesceRoots(root)) {
@@ -858,57 +901,62 @@ export function startOrganScanner(): void {
 
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
   let scanScheduled = false;
-  let deferredScanNeeded = false;
-
-  const requestIdleScan = (run: () => void): void => {
-    const idle =
-      window.requestIdleCallback ??
-      ((cb: IdleRequestCallback) =>
-        window.setTimeout(
-          () => cb({ didTimeout: false, timeRemaining: () => 50 }),
-          0,
-        ));
-    idle(run, { timeout: SCAN_IDLE_TIMEOUT_MS });
-  };
 
   const runDebouncedScan = (): void => {
     if (debounceTimer) clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
-      requestIdleScan(() => {
-        runScanWork();
-        scanScheduled = false;
-        debounceTimer = null;
-      });
+      const idle =
+        window.requestIdleCallback ??
+        ((cb: IdleRequestCallback) =>
+          window.setTimeout(
+            () => cb({ didTimeout: false, timeRemaining: () => 50 }),
+            0,
+          ));
+      idle(
+        () => {
+          runScanWork();
+          scanScheduled = false;
+          debounceTimer = null;
+        },
+        { timeout: SCAN_IDLE_TIMEOUT_MS },
+      );
     }, SCAN_DEBOUNCE_MS);
   };
 
-  const scheduleScan = (): void => {
-    scanScheduled = true;
-    runDebouncedScan();
+  const processUWorldMutations = (mutations: MutationRecord[]): void => {
+    for (const mutation of mutations) {
+      if (!nodeInScanArea(mutation.target)) continue;
+
+      if (mutation.type === "characterData") {
+        scheduleIncrementalScan(mutation.target);
+        scanScheduled = true;
+        continue;
+      }
+
+      for (const node of mutation.addedNodes) {
+        if (node instanceof Element) {
+          let isOurChip = false;
+          for (const cls of OUR_CHIP_CLASSES) {
+            if (node.classList.contains(cls)) {
+              isOurChip = true;
+              break;
+            }
+          }
+          if (isOurChip) continue;
+        }
+        scheduleIncrementalScan(node);
+        scanScheduled = true;
+      }
+    }
   };
 
-  setOnHighlightIdle(() => {
-    if (!deferredScanNeeded) return;
-    deferredScanNeeded = false;
-    scheduleScan();
-  });
-
-  const observer = new MutationObserver((mutations) => {
-    if (getIsApplyingHighlights()) {
-      deferredScanNeeded = true;
-      return;
-    }
-
+  const processGenericMutations = (mutations: MutationRecord[]): void => {
     if (
       siteScanConfig.fingerprintMode === "url" &&
-      pageFingerprint !== "" &&
-      getPageFingerprint() !== pageFingerprint
+      questionFingerprint !== "" &&
+      getQuestionFingerprint() !== questionFingerprint
     ) {
       scanScheduled = true;
-    }
-
-    if (mutationsRemovedOurChips(mutations)) {
-      resetQuestionHighlights();
     }
 
     for (const mutation of mutations) {
@@ -935,12 +983,26 @@ export function startOrganScanner(): void {
         if (!targetInScanArea && !nodeInScanArea(node)) {
           const containsScanArea =
             node instanceof Element &&
-            getScanAreas().some((area) => node.contains(area.element));
+            getScanAreas().some((area) => node.contains(area));
           if (!containsScanArea) continue;
         }
         scheduleIncrementalScan(node);
         scanScheduled = true;
       }
+    }
+  };
+
+  const observer = new MutationObserver((mutations) => {
+    if (getIsApplyingHighlights()) return;
+
+    if (mutationsRemovedOurChips(mutations)) {
+      resetQuestionHighlights();
+    }
+
+    if (isUWorld) {
+      processUWorldMutations(mutations);
+    } else {
+      processGenericMutations(mutations);
     }
 
     if (!scanScheduled) return;
@@ -953,35 +1015,31 @@ export function startOrganScanner(): void {
     characterData: true,
   });
 
-  const onNavigation = (): void => {
-    scheduleScan();
-  };
+  if (!isUWorld) {
+    const onNavigation = (): void => {
+      scanScheduled = true;
+      runDebouncedScan();
+    };
 
-  window.addEventListener("popstate", onNavigation);
-  window.addEventListener("hashchange", onNavigation);
+    window.addEventListener("popstate", onNavigation);
+    window.addEventListener("hashchange", onNavigation);
 
-  const { pushState, replaceState } = history;
-  history.pushState = function pushStatePatched(
-    this: History,
-    ...args: Parameters<History["pushState"]>
-  ) {
-    const result = pushState.apply(this, args);
-    onNavigation();
-    return result;
-  };
-  history.replaceState = function replaceStatePatched(
-    this: History,
-    ...args: Parameters<History["replaceState"]>
-  ) {
-    const result = replaceState.apply(this, args);
-    onNavigation();
-    return result;
-  };
-
-  for (const delayMs of SETTLE_SCAN_DELAYS_MS) {
-    window.setTimeout(() => {
-      if (!document.body) return;
-      scheduleScan();
-    }, delayMs);
+    const { pushState, replaceState } = history;
+    history.pushState = function pushStatePatched(
+      this: History,
+      ...args: Parameters<History["pushState"]>
+    ) {
+      const result = pushState.apply(this, args);
+      onNavigation();
+      return result;
+    };
+    history.replaceState = function replaceStatePatched(
+      this: History,
+      ...args: Parameters<History["replaceState"]>
+    ) {
+      const result = replaceState.apply(this, args);
+      onNavigation();
+      return result;
+    };
   }
 }

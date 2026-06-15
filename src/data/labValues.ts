@@ -4541,6 +4541,82 @@ export const LAB_VALUES: LabValueEntry[] = [
       "IgG index elevation supports intrathecal synthesis",
     ],
   },
+  {
+    id: "5-hydroxyindoleacetic-acid",
+    name: "5-Hydroxyindoleacetic Acid",
+    etymology: "5-position hydroxy + indole ring + acetic acid side chain",
+    aliases: [
+      "5-hydroxyindoleacetic acid",
+      "5 hydroxyindoleacetic acid",
+      "5-hiaa",
+      "5 hiaa",
+      "5hiiaa",
+      "urine 5-hiaa",
+      "serotonin metabolite 5-hiaa",
+    ],
+    measures:
+      "Major urinary metabolite of serotonin — produced by monoamine oxidase and aldehyde dehydrogenase from 5-hydroxytryptamine; elevated in serotonin-secreting neuroendocrine tumors.",
+    normalRange: "Typically <25–40 mg/24 h (lab-specific); spot urine may use creatinine normalization",
+    increasedCauses: [
+      "Carcinoid syndrome / carcinoid tumor — serotonin-secreting neuroendocrine tumor",
+      "Serotonin-producing medullary thyroid carcinoma (rare)",
+      "Niacin supplementation — can interfere with assay (false effects)",
+      "Recent serotonin-rich foods — avoid before collection (bananas, avocados, walnuts)",
+    ],
+    decreasedCauses: [
+      "Not typically clinically emphasized — malabsorption may lower excretion",
+    ],
+    boardsPearls: [
+      "↑ urine 5-HIAA = carcinoid syndrome classic tumor marker",
+      "Carcinoid — flushing, diarrhea, wheezing, right-sided valvular fibrosis (lung inactivates serotonin)",
+      "Avoid serotonin-rich foods and certain drugs before 24-h urine collection",
+      "vs VMA/HVA — catecholamine metabolites for pheochromocytoma/neuroblastoma, not serotonin",
+      "Octreotide treats carcinoid symptoms by inhibiting serotonin release",
+    ],
+    pairWith: [
+      "Flushing + diarrhea + ↑ 5-HIAA → carcinoid syndrome",
+      "Right-sided cardiac lesions + GI symptoms → metastatic carcinoid",
+      "↑ HVA/VMA + abdominal mass in child → neuroblastoma (not 5-HIAA primary)",
+    ],
+  },
+  {
+    id: "homovanillic-acid",
+    name: "Homovanillic Acid",
+    etymology: "homo- = same + vanillyl = vanilla-like aromatic + acetic acid",
+    aliases: [
+      "homovanillic acid",
+      "homovanillic acids",
+      "hva",
+      "urine hva",
+      "dopamine metabolite hva",
+      "homovanillate",
+    ],
+    measures:
+      "Primary terminal metabolite of dopamine — formed by MAO and COMT; measured in urine (often with VMA) as tumor marker for catecholamine-secreting tumors especially neuroblastoma.",
+    normalRange: "Age-dependent in pediatrics; adult 24-h urine reference varies by lab",
+    increasedCauses: [
+      "Neuroblastoma — pediatric abdominal tumor; ↑ urine HVA and VMA",
+      "Pheochromocytoma / paraganglioma — catecholamine excess",
+      "Ganglioneuroblastoma / ganglioneuroma",
+      "Dopamine-secreting tumors",
+      "L-DOPA therapy — may elevate HVA",
+    ],
+    decreasedCauses: [
+      "Dopamine beta-hydroxylase deficiency — ↓ NE, altered catecholamine metabolites",
+    ],
+    boardsPearls: [
+      "Neuroblastoma — child with abdominal mass + ↑ urine HVA and VMA",
+      "HVA = dopamine metabolite; VMA = norepinephrine/epinephrine metabolite",
+      "Opsoclonus-myoclonus syndrome associated with neuroblastoma",
+      "vs 5-HIAA — serotonin metabolite in carcinoid, not catecholamine pathway",
+      "Pheochromocytoma — ↑ plasma/urine metanephrines often preferred; VMA/HVA may be ↑",
+    ],
+    pairWith: [
+      "Child <5 + abdominal mass + ↑ HVA/VMA → neuroblastoma",
+      "Hypertensive spells + ↑ VMA → pheochromocytoma workup",
+      "↑ 5-HIAA + flushing → carcinoid (not HVA pathway)",
+    ],
+  },
 ];
 
 const labValueById = new Map(LAB_VALUES.map((l) => [l.id, l]));

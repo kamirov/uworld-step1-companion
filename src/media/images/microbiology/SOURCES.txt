@@ -470,3 +470,17 @@ toxoplasmosis.jpg
 protozoan-parasite.jpg
   Source: Wikimedia Commons — Giardia-spp.--infected--gerbil-intestine.jpg
   Page: https://commons.wikimedia.org/wiki/File:Giardia-spp.--infected--gerbil-intestine.jpg
+
+yeast.jpg
+  Source: Wikimedia Commons — Gram positive budding yeast cells.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Gram_positive_budding_yeast_cells.jpg
+
+poliovirus.jpg
+  Source: CDC PHIL #1623
+  Description: Transmission electron micrograph of poliovirus virions
+  Page: https://phil.cdc.gov/Details.aspx?pid=1623
+
+west-nile-virus.jpg
+  Source: CDC PHIL #8149
+  Description: Culex mosquito — West Nile virus vector
+  Page: https://phil.cdc.gov/Details.aspx?pid=8149

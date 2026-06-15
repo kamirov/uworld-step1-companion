@@ -140,3 +140,11 @@ oxycodone.png
 pyridoxine.svg
   Source: Wikimedia Commons — Pyridoxine structure ver2.svg
   Page: https://commons.wikimedia.org/wiki/File:Pyridoxine_structure_ver2.svg
+
+general-anesthetic.png
+  Source: Wikimedia Commons — Modern lipid hypothesis of mechanism of general anesthesia.png
+  Page: https://commons.wikimedia.org/wiki/File:Modern_lipid_hypothesis_of_mechanism_of_general_anesthesia.png
+
+isoflurane.png
+  Source: Wikimedia Commons — Isoflurane 3d.png
+  Page: https://commons.wikimedia.org/wiki/File:Isoflurane_3d.png

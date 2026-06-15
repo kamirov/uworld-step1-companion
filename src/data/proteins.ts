@@ -2658,6 +2658,38 @@ export const PROTEINS: ProteinEntry[] = [
       "Tyrosinase — melanin synthesis in melanocytes, not neurotransmitter pathway",
     ],
   },
+  {
+    id: "14-3-3-protein",
+    name: "14-3-3 Protein",
+    etymology: "protein fraction elutes at 14.3 on protein electrophoresis + 3 duplicate bands on gel",
+    aliases: [
+      "14-3-3 protein",
+      "14-3-3 proteins",
+      "14 3 3 protein",
+      "csf 14-3-3 protein",
+      "14-3-3",
+    ],
+    function:
+      "Family of regulatory phosphoserine-binding adaptor proteins involved in cell signaling, apoptosis, and protein trafficking — released into CSF from damaged neurons; used as supportive marker in prion disease.",
+    location: "Ubiquitous intracellular; detectable in CSF when CNS neuronal injury occurs",
+    mutationCauses: [
+      "Not a genetic disease gene on boards — marker of neuronal damage",
+    ],
+    boardsPearls: [
+      "↑ CSF 14-3-3 protein supports Creutzfeldt-Jakob disease (prion disease) diagnosis",
+      "CJD — rapidly progressive dementia, myoclonus, periodic sharp waves on EEG, spongiform change on biopsy",
+      "14-3-3 also ↑ in stroke, encephalitis, metastatic cancer — not specific alone",
+      "Prion protein (PrP^Sc) — misfolded β-sheet form; resistant to proteases",
+      "vs oligoclonal bands — MS marker; different CSF protein pattern",
+      "Variant CJD — younger patients, psychiatric symptoms, bovine spongiform exposure history",
+    ],
+    distinguishFrom: [
+      "Oligoclonal bands — intrathecal IgG in MS, not 14-3-3",
+      "Prion protein (PrP) — causative misfolded protein, not the 14-3-3 marker",
+      "Tau protein — elevated in Alzheimer CSF research assays, not classic CJD screen",
+      "S100B — astrocytic marker in brain injury, not specific CJD test",
+    ],
+  },
 ];
 
 const proteinById = new Map(PROTEINS.map((p) => [p.id, p]));

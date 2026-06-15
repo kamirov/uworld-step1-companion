@@ -24,3 +24,6 @@ adenosine-deaminase.jpg
 tyrosine-hydroxylase.png
   Source: Wikimedia Commons — Tyrosine hydroxylase showing all four subunits.png
   Page: https://commons.wikimedia.org/wiki/File:Tyrosine_hydroxylase_showing_all_four_subunits.png
+
+14-3-3-protein.jpg
+  Source: Local copy from pathogenesis/fibrils.jpg

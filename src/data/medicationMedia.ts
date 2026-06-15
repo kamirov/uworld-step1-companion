@@ -8,6 +8,8 @@ import calcineurinInhibitors from "../media/images/medications/calcineurin-inhib
 import clonazepam from "../media/images/medications/clonazepam.svg?url";
 import duloxetine from "../media/images/medications/duloxetine.svg?url";
 import fluoxetine from "../media/images/medications/fluoxetine.svg?url";
+import generalAnesthetic from "../media/images/medications/general-anesthetic.png?url";
+import isoflurane from "../media/images/medications/isoflurane.png?url";
 import daptomycin from "../media/images/medications/daptomycin.svg?url";
 import dexamethasone from "../media/images/medications/dexamethasone.svg?url";
 import diazepam from "../media/images/medications/diazepam.svg?url";
@@ -38,6 +40,8 @@ export type MedicationImageId = Extract<
   | "clonazepam"
   | "duloxetine"
   | "fluoxetine"
+  | "general-anesthetic"
+  | "isoflurane"
   | "daptomycin"
   | "dexamethasone"
   | "diazepam"
@@ -72,6 +76,8 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   clonazepam: extensionAssetUrl(clonazepam),
   duloxetine: extensionAssetUrl(duloxetine),
   fluoxetine: extensionAssetUrl(fluoxetine),
+  "general-anesthetic": extensionAssetUrl(generalAnesthetic),
+  isoflurane: extensionAssetUrl(isoflurane),
   daptomycin: extensionAssetUrl(daptomycin),
   dexamethasone: extensionAssetUrl(dexamethasone),
   diazepam: extensionAssetUrl(diazepam),
@@ -126,6 +132,14 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
   fluoxetine: {
     label: "Wikimedia Commons ((R)-Fluoxetine structure.svg)",
     url: "https://commons.wikimedia.org/wiki/File:(R)-Fluoxetine_structure.svg",
+  },
+  "general-anesthetic": {
+    label: "Wikimedia Commons (Modern lipid hypothesis of mechanism of general anesthesia.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Modern_lipid_hypothesis_of_mechanism_of_general_anesthesia.png",
+  },
+  isoflurane: {
+    label: "Wikimedia Commons (Isoflurane 3d.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Isoflurane_3d.png",
   },
   dexamethasone: {
     label: "Wikimedia Commons (Dexamethasone structure.svg)",
@@ -220,6 +234,10 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Duloxetine — SNRI inhibiting serotonin and norepinephrine reuptake for depression and neuropathic pain",
   fluoxetine:
     "Fluoxetine — SSRI with long half-life and active metabolite norfluoxetine",
+  "general-anesthetic":
+    "General anesthetics reduce CMRO₂ and produce reversible unconsciousness — volatile agents dilate cerebral vessels",
+  isoflurane:
+    "Isoflurane — halogenated ether volatile anesthetic; MAC ~1.15%; malignant hyperthermia trigger",
   dexamethasone:
     "Potent glucocorticoid — antenatal lung maturity, croup, cerebral edema, meningitis adjunct",
   daptomycin:
