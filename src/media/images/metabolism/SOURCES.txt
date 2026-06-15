@@ -33,3 +33,7 @@ nadph.png
   Source: Wikimedia Commons — Pentosephosphatweg NADPH.png
   Page: https://commons.wikimedia.org/wiki/File:Pentosephosphatweg_NADPH.png
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Biosynthesis_and_regeneration_of_tetrahydrobiopterin_and_its_functions.png?width=1280
+
+d-lactate.png
+  Source: Local copy from metabolism/nadph.png
+  Reference: https://commons.wikimedia.org/wiki/File:Pentosephosphatweg_NADPH.png

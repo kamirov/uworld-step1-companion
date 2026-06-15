@@ -28,7 +28,13 @@ function hasTemporalPeriodLeftContext(ctx: AliasContextRuleContext): boolean {
   return TEMPORAL_PERIOD_LEFT_CONTEXT_RE.test(leftContext);
 }
 
+function isNotAllCapsMatch(ctx: AliasContextRuleContext): boolean {
+  return ctx.matchText !== ctx.matchText.toUpperCase();
+}
+
 const ALIAS_CONTEXT_RULES: Record<string, readonly AliasContextRule[]> = {
+  "condition:acute-lymphoblastic-leukemia:all": [isNotAllCapsMatch],
+  "protein:amyloid-precursor-protein:app": [isNotAllCapsMatch],
   "symptom:menses:period": [hasTemporalPeriodLeftContext],
   "symptom:menses:periods": [hasTemporalPeriodLeftContext],
 };

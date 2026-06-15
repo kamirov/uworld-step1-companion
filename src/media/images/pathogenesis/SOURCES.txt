@@ -153,3 +153,44 @@ acid-fast-bacteria.jpg
   Source: Wikimedia Commons — Acid fast bacilli of Mycobacterium tuberculosis.jpg
   Page: https://commons.wikimedia.org/wiki/File:Acid_fast_bacilli_of_Mycobacterium_tuberculosis.jpg
 
+spongiform-vacuole.jpg
+  Source: Local copy from proteins/prion-protein.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg
+
+amyloid-plaques.jpg
+  Source: Wikimedia Commons — Cerebral amyloid angiopathy -2a- amyloid beta - high mag.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg/250px-Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg
+  Description: Amyloid beta immunostaining used to illustrate amyloid plaque deposits
+
+strenuous-exercise.jpg
+  Source: Local copy from symptoms/easy-fatigability.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Fatigue.jpg
+
+v-q-mismatch.jpg
+  Source: Local copy from conditions/emphysema.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg
+
+malnutrition.jpg
+  Source: Local copy from conditions/anemia.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Anemia.JPG
+
+radiculopathy.png
+  Source: Local copy from conditions/l5-radiculopathy.png
+  Reference: https://commons.wikimedia.org/wiki/File:l5-radiculopathy.png
+
+stocking-glove.jpg
+  Source: Wikimedia Commons — Diabetic Neuropathy Device pic.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg
+
+toxidrome.png
+  Source: Local copy from conditions/serotonin-syndrome.png
+  Reference: https://commons.wikimedia.org/wiki/File:Synaptic_dopamine_concentration.png
+
+glycation.png
+  Source: Wikimedia Commons — HbA1c ודמנציה.png
+  Page: https://commons.wikimedia.org/wiki/File:HbA1c_%D7%95%D7%93%D7%9E%D7%A0%D7%A6%D7%99%D7%94.png
+
+vasa-nervorum.jpg
+  Source: Local copy from pathogenesis/stocking-glove.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg

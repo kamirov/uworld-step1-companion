@@ -502,6 +502,14 @@ encephalitis.jpg
   Source: Wikimedia Commons — Hsv encephalitis.jpg
   Page: https://commons.wikimedia.org/wiki/File:Hsv_encephalitis.jpg
 
+otitis-externa.jpg
+  Source: Wikimedia Commons — OtitisExterna10.JPG
+  Page: https://commons.wikimedia.org/wiki/File:OtitisExterna10.JPG
+
+mastoiditis.jpg
+  Source: Wikimedia Commons — Mastoiditis1.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Mastoiditis1.jpg
+
 alcohol-withdrawal.jpg
   Source: Local copy from conditions/alcohol-use-disorder.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg
@@ -544,7 +552,154 @@ serotonin-syndrome.png
   Source: Local copy from medications/mao-inhibitors.png
   Reference: https://commons.wikimedia.org/wiki/File:Synaptic_dopamine_concentration.png
 
+ocd.jpg
+  Source: Local copy from symptoms/excoriated.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Atopic_dermatitis_child_2.jpg
+
+panic-disorder.jpg
+  Source: Local copy from symptoms/chest-pain.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png
+
+ptsd.png
+  Source: Local copy from conditions/generalized-anxiety-disorder.png
+  Reference: https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png
+
+premenstrual-dysphoric-disorder.jpg
+  Source: Local copy from conditions/dysmenorrhea.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Period_pain_menstrual_cramps_uterus.jpg
+
 tuberculoma.jpg
   Source: Local copy from microbiology/mycobacterium-tuberculosis.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Mycobacterium_tuberculosis_Ziehl-Neelsen_stain.jpg
 
+achalasia.jpg
+  Source: Wikimedia Commons — Acha.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Acha.JPG
+  Description: Barium swallow showing bird-beak narrowing and megaesophagus in achalasia
+
+anemia.jpg
+  Source: Wikimedia Commons — Anemia.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Anemia.JPG
+  Description: Hand pallor comparison in severe anemia
+
+esophageal-varices.jpg
+  Source: Wikimedia Commons — Esophageal varices - wale.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Esophageal_varices_-_wale.jpg
+  Description: Endoscopic esophageal varices with red wale signs
+
+ewing-sarcoma.jpg
+  Source: Wikimedia Commons — Ewing sarcoma - very high mag.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Ewing_sarcoma_-_very_high_mag.jpg
+  Description: Small round blue cell histology of Ewing sarcoma
+
+gout.jpg
+  Source: Wikimedia Commons — Gouty tophus - intermed mag.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Gouty_tophus_-_intermed_mag.jpg
+  Description: Gouty tophus histology with urate crystal deposition
+
+oral-candidiasis.jpg
+  Source: Wikimedia Commons — Fungal tongue.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Fungal_tongue.jpg
+  Description: White fungal plaque on tongue, relevant to oral candidiasis
+
+osteoporosis.jpg
+  Source: Wikimedia Commons — Osteop.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Osteop.jpg
+  Description: Osteoporosis-related height loss and kyphosis schematic
+
+rickets.jpg
+  Source: Wikimedia Commons — X-ray of Hands Identifying Rickets.jpg
+  Page: https://commons.wikimedia.org/wiki/File:X-ray_of_Hands_Identifying_Rickets.jpg
+  Description: Pediatric hand radiographs with metaphyseal cupping/widening in rickets
+
+creutzfeldt-jakob-disease.jpg
+  Source: Local copy from proteins/prion-protein.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg
+
+acute-megakaryoblastic-leukemia.jpg
+  Source: Wikimedia Commons — Acute megakaryoblastic leukemia.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Acute_megakaryoblastic_leukemia.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/5/5f/Acute_megakaryoblastic_leukemia.jpg
+  Description: Bone marrow blasts of acute megakaryoblastic leukemia
+
+acute-lymphoblastic-leukemia.jpg
+  Source: Wikimedia Commons — Morphological types of acute lymphoblastic leukemia.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Morphological_types_of_acute_lymphoblastic_leukemia.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Morphological_types_of_acute_lymphoblastic_leukemia.jpg/250px-Morphological_types_of_acute_lymphoblastic_leukemia.jpg
+  Description: Lymphoblast morphology in acute lymphoblastic leukemia
+
+alpha-1-antitrypsin-deficiency.jpg
+  Source: Wikimedia Commons — Alpha-1 antitrypsin deficiency.PAS Diastase.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Alpha-1_antitrypsin_deficiency.PAS_Diastase.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Alpha-1_antitrypsin_deficiency.PAS_Diastase.jpg/250px-Alpha-1_antitrypsin_deficiency.PAS_Diastase.jpg
+  Description: PAS-diastase liver biopsy showing diastase-resistant hepatocyte globules
+
+spherocytosis.jpg
+  Source: Wikimedia Commons — Hereditary Spherocytosis smear 2010-03-17.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Hereditary_Spherocytosis_smear_2010-03-17.JPG
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hereditary_Spherocytosis_smear_2010-03-17.JPG/250px-Hereditary_Spherocytosis_smear_2010-03-17.JPG
+  Description: Peripheral smear with spherocytes in hereditary spherocytosis
+
+cardiogenic-shock.jpg
+  Source: Local copy from conditions/heart-failure.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_heart_failure.png
+
+carbon-monoxide-poisoning.jpg
+  Source: Local copy from symptoms/cyanosis.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Peripheral_Cyanosis_due_to_Ischemia.jpg
+
+korsakoff-syndrome.jpg
+  Source: Local copy from conditions/alcohol-use-disorder.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Cirrhosis_of_Alcoholic_Liver_Disease_(5517625829).jpg
+
+beriberi.jpg
+  Source: Local copy from conditions/heart-failure.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_heart_failure.png
+
+bronchiectasis.jpg
+  Source: Local copy from conditions/cystic-fibrosis.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Blausen_0286_CysticFibrosis.png
+
+pulmonary-embolism.jpg
+  Source: Local copy from conditions/pulmonary-hypertension.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Pulmnary_arterial_atherosclerosis-Pulmonary_hypertension.jpg
+
+small-cell-lung-cancer.jpg
+  Source: Local copy from conditions/lung-cancer.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:LungCancer-Xray-01.jpg
+
+carpal-tunnel-syndrome.png
+  Source: Local copy from conditions/c6-radiculopathy.png
+  Reference: https://commons.wikimedia.org/wiki/File:c6-radiculopathy.png
+
+fabry-disease.jpg
+  Source: Wikimedia Commons — Morbus Fabry Angiokeratoma 01.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Morbus_Fabry_Angiokeratoma_01.jpg
+
+guillain-barre-syndrome.jpg
+  Source: Local copy from conditions/status-epilepticus.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg
+
+hyperemesis-gravidarum.jpg
+  Source: Wikimedia Commons — Hyperemesis Gravidarum no text.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Hyperemesis_Gravidarum_no_text.jpg
+
+gastroenteritis.jpg
+  Source: Wikimedia Commons — Norovirus.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Norovirus.jpg
+
+duodenal-atresia.jpg
+  Source: Wikimedia Commons — Radiograph with Double Bubble Sign.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Radiograph_with_Double_Bubble_Sign.jpg
+
+pyloric-stenosis.jpg
+  Source: Wikimedia Commons — Hypertrophic stenosis of the pylorus.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Hypertrophic_stenosis_of_the_pylorus.jpg
+
+volvulus.jpg
+  Source: Wikimedia Commons — Volvulus 01.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Volvulus_01.jpg
+
+malrotation.jpg
+  Source: Wikimedia Commons — Depiction of the Ladd's band caused by bowel malrotation.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Depiction_of_the_Ladd%E2%80%99s_band_caused_by_bowel_malrotation.jpg

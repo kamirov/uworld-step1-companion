@@ -4994,6 +4994,90 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
     pediatrics:
       "Children usually have milder illness than elderly adults; severe neuroinvasive disease is less common but can occur. Congenital transmission is rare. Pediatric West Nile fever presents with fever and rash; flaccid paralysis in a child warrants urgent neuroimaging and CSF IgM testing in endemic season.",
   },
+  {
+    id: "mycobacterial",
+    name: "Mycobacterial",
+    etymology: "Greek mykes = fungus (wax-like growth on cultures) + bacterion = small rod",
+    aliases: [
+      "mycobacterial",
+      "mycobacteria",
+      "mycobacterium",
+      "mycobacteriums",
+      "acid-fast bacteria",
+      "acid fast bacteria",
+      "acid-fast bacilli",
+      "acid fast bacilli",
+      "afb",
+      "atypical mycobacteria",
+      "nontuberculous mycobacteria",
+      "ntm",
+    ],
+    type: "acid-fast",
+    definition:
+      "Rod-shaped bacteria with high lipid mycolic acid cell walls that retain carbol fuchsin on acid-fast staining — includes M. tuberculosis complex, M. leprae, and nontuberculous mycobacteria (MAC, M. kansasii); slow-growing and often intracellular.",
+    morphology: [
+      "Acid-fast bacilli (red rods on Ziehl-Neelsen/Kinyoun stain)",
+      "Cannot be visualized well on standard Gram stain (waxy envelope)",
+      "Slow growth on Lowenstein-Jensen medium or liquid culture",
+      "Runyon groups for NTM by pigment and growth rate",
+    ],
+    virulenceFactors: [
+      "Mycolic acid and cord factor — granuloma formation",
+      "Sulfatides — block phagosome-lysosome fusion in macrophages",
+      "Lipoarabinomannan — immunomodulation",
+      "Intracellular survival within macrophages",
+    ],
+    transmission: [
+      "M. tuberculosis — airborne droplet nuclei",
+      "MAC/NTM — environmental (water, soil); not person-to-person",
+      "M. leprae — prolonged close contact (low infectivity)",
+    ],
+    diseases: [
+      "Pulmonary tuberculosis (M. tuberculosis)",
+      "TB meningitis, miliary TB, Pott disease",
+      "Mycobacterium avium complex (MAC) in AIDS (CD4 <50)",
+      "Leprosy (M. leprae) — tuberculoid vs lepromatous",
+      "Cervical lymphadenitis in children (NTM)",
+      "Mycobacterial cervical adenitis (scrofula)",
+    ],
+    classicPresentation: [
+      "Chronic cough, night sweats, weight loss, upper lobe cavitary CXR → TB",
+      "Subacute basilar meningitis with cranial nerve palsies → TB meningitis",
+      "Disseminated MAC in advanced HIV — fever, diarrhea, hepatosplenomegaly",
+      "Hypopigmented anesthetic skin patches + thickened nerves → leprosy",
+      "Chronic cervical lymphadenitis with violaceous overlying skin in child → NTM",
+    ],
+    diagnosis: [
+      "Acid-fast bacilli on smear (sputum, CSF, tissue)",
+      "Mycobacterial culture — gold standard; slow turnaround",
+      "PPD/IGRA for latent TB (not active disease monitoring)",
+      "Nucleic acid amplification (GeneXpert) for TB",
+      "Biopsy with granulomas and AFB in tissue",
+    ],
+    treatment: [
+      "TB — RIPE (rifampin, isoniazid, pyrazinamide, ethambutol) then continuation RI",
+      "MAC in AIDS — azithromycin/clarithromycin + ethambutol; start ART",
+      "Leprosy — dapsone + rifampin ± clofazimine (multidrug regimens)",
+      "Isoniazid activates INH with catalase-peroxidase (katG) — mycolic acid synthesis inhibitor",
+      "Rifampin inhibits DNA-dependent RNA polymerase",
+    ],
+    distinguishFrom: [
+      "Nocardia — weakly acid-fast branching filaments; sulfonamide treatment",
+      "Rhodococcus — partially acid-fast coccobacillus",
+      "Cryptosporidium oocysts — acid-fast but not bacteria",
+      "Fungi — KOH/GMS stains, not AFB on tissue (except Nocardia overlap)",
+    ],
+    boardsPearls: [
+      "Acid-fast = mycolic acid-rich wall; Ziehl-Neelsen stain",
+      "TB RIPE — isoniazid needs katG; rifampin CYP inducer; ethambutol optic neuritis",
+      "MAC in AIDS when CD4 <50 — prophylaxis with azithromycin after ART",
+      "NTM vs TB — MAC not contagious; often cervical nodes in children",
+      "vs Nocardia — filamentous, weakly acid-fast, treated with sulfonamides",
+      "PPD/IGRA detects immune sensitization, not active disease alone",
+    ],
+    pediatrics:
+      "BCG vaccine given in endemic countries — causes PPD positivity without latent TB. Nontuberculous mycobacterial cervical lymphadenitis is common in children 1–5 years. Neonatal TB and congenital infection are rare but severe.",
+  },
 ];
 
 const microbiologyById = new Map(

@@ -28,6 +28,7 @@ import klebsiellaPneumoniae from "../media/images/microbiology/klebsiella-pneumo
 import legionellaPneumophila from "../media/images/microbiology/legionella-pneumophila.jpg?url";
 import listeriaMonocytogenes from "../media/images/microbiology/listeria-monocytogenes.jpg?url";
 import mycobacteriumTuberculosis from "../media/images/microbiology/mycobacterium-tuberculosis.jpg?url";
+import mycobacterial from "../media/images/microbiology/mycobacterial.jpg?url";
 import mycoplasmaPneumoniae from "../media/images/microbiology/mycoplasma-pneumoniae.jpeg?url";
 import neisseriaGenus from "../media/images/microbiology/neisseria-genus.jpg?url";
 import neisseriaMeningitidis from "../media/images/microbiology/neisseria-meningitidis.jpg?url";
@@ -94,6 +95,7 @@ export const MICROBIOLOGY_IMAGES: Partial<Record<MicrobiologyImageId, string>> =
     "clostridium-perfringens": extensionAssetUrl(clostridiumPerfringens),
     "clostridium-tetani": extensionAssetUrl(clostridiumTetani),
     "mycobacterium-tuberculosis": extensionAssetUrl(mycobacteriumTuberculosis),
+    mycobacterial: extensionAssetUrl(mycobacterial),
     "treponema-pallidum": extensionAssetUrl(treponemaPallidum),
     hiv: extensionAssetUrl(hiv),
     "candida-albicans": extensionAssetUrl(candidaAlbicans),
@@ -208,6 +210,10 @@ export const MICROBIOLOGY_IMAGE_ATTRIBUTIONS: Partial<
   "mycobacterium-tuberculosis": {
     label: "CDC PHIL #5789",
     url: "https://phil.cdc.gov/Details.aspx?pid=5789",
+  },
+  mycobacterial: {
+    label: "Wikimedia Commons (Acid-Fast Bacilli (Mycobacterium tuberculosis) under microscope after Ziehl Neelsen staining.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Acid-Fast_Bacilli_(Mycobacterium_tuberculosis)_under_microscope_after_Ziehl_Neelsen_staining.jpg",
   },
   "treponema-pallidum": {
     label: "CDC PHIL #1977",
@@ -481,6 +487,8 @@ export const MICROBIOLOGY_IMAGE_CAPTIONS: Partial<
     "Opisthotonos in tetanus — sustained spasm from tetanospasmin blocking inhibitory neurotransmitter release",
   "mycobacterium-tuberculosis":
     "Ziehl-Neelsen acid-fast stain: red bacilli (1000×)",
+  mycobacterial:
+    "Acid-fast mycobacteria — mycolic acid-rich cell wall retains carbol fuchsin on Ziehl-Neelsen stain",
   "treponema-pallidum": "Electron micrograph of spirochetes on epithelium",
   hiv: "Scanning EM: HIV-1 budding from lymphocyte (colored)",
   "candida-albicans": "Gram stain: yeast and pseudohyphae",

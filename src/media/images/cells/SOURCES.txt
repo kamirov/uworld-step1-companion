@@ -222,6 +222,18 @@ preterm-lung-maturity.jpg
   Page: https://commons.wikimedia.org/wiki/File:Hyaline_membranes_-_very_high_mag.jpg
   Download: https://commons.wikimedia.org/wiki/Special:FilePath/File:Hyaline_membranes_-_very_high_mag.jpg?width=1280
 
+pneumocyte.jpg
+  Source: Local copy from cells/preterm-lung-maturity.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Hyaline_membranes_-_very_high_mag.jpg
+
+type-1-pneumocyte.jpg
+  Source: Local copy from conditions/emphysema.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg
+
+type-2-pneumocyte.jpg
+  Source: Local copy from conditions/neonatal-respiratory-distress-syndrome.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Annual_report_-_National_Institutes_of_Health._National_Heart,_Lung,_and_Blood_Advisory_Council_(IA_annualreportnatio1985nati).pdf
+
 white-matter.jpg
   Source: Wikimedia Commons — Grey matter and white matter - high mag.jpg
   Page: https://commons.wikimedia.org/wiki/File:Grey_matter_and_white_matter_-_high_mag.jpg
@@ -256,3 +268,9 @@ schwann-cell.jpg
   Page: https://commons.wikimedia.org/wiki/File:Diagram_of_Schwann_cells.JPG
   Author: Gareth Jones (Hbdgaz), CC BY-SA 3.0
   Description: Diagram of Schwann cells myelinating peripheral nerve axons
+
+cytoskeleton.jpg
+  Source: Wikimedia Commons — 0317 Cytoskeletal Components.jpg
+  Page: https://commons.wikimedia.org/wiki/File:0317_Cytoskeletal_Components.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/0317_Cytoskeletal_Components.jpg/330px-0317_Cytoskeletal_Components.jpg
+  Description: Cytoskeletal components showing microtubules, actin microfilaments, and intermediate filaments

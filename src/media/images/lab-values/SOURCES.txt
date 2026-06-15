@@ -31,3 +31,23 @@ erythrocyte-glucose-6-phosphate-dehydrogenase.jpg
 
 homovanillic-acid.png
   Source: Local copy from proteins/tyrosine-hydroxylase.png
+
+gram-stain.jpg
+  Source: Wikimedia Commons — Gram stain 01.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Gram_stain_01.jpg
+
+india-ink-stain.jpg
+  Source: Wikimedia Commons — Enapsulated Cryptococcus in nigrosin preparation of CSF.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Enapsulated_Cryptococcus_in_nigrosin_preparation_of_CSF.jpg
+
+xanthochromia.jpg
+  Source: Wikimedia Commons — Xanthochromia.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Xanthochromia.jpg
+
+d-dimer.png
+  Source: Local copy from conditions/venous-thrombosis.png
+  Reference: https://commons.wikimedia.org/wiki/File:venous-thrombosis.png
+
+fibrinogen.png
+  Source: Local copy from pathogenesis/fibrinolysis.png
+  Reference: https://commons.wikimedia.org/wiki/File:fibrinolysis.png

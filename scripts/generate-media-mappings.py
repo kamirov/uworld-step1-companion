@@ -61,6 +61,16 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "status-epilepticus": "Prolonged seizure activity — neurologic emergency requiring urgent benzodiazepines",
         "postherpetic-neuralgia": "Dermatomal herpes zoster rash — acute shingles preceding postherpetic neuralgia",
         "tuberculoma": "Mycobacterium tuberculosis — acid-fast bacilli associated with tuberculoma and CNS TB",
+        "creutzfeldt-jakob-disease": "Creutzfeldt-Jakob disease — rapidly progressive prion encephalopathy with spongiform change",
+        "carpal-tunnel-syndrome": "Carpal tunnel anatomy — median nerve compression beneath flexor retinaculum at wrist",
+        "fabry-disease": "Fabry disease — angiokeratomas and α-galactosidase A deficiency with Gb3 accumulation",
+        "guillain-barre-syndrome": "Guillain-Barré syndrome — acute ascending symmetric weakness with areflexia",
+        "hyperemesis-gravidarum": "Hyperemesis gravidarum — severe pregnancy vomiting with dehydration and ketosis",
+        "gastroenteritis": "Norovirus — leading cause of epidemic viral gastroenteritis with vomiting and watery diarrhea",
+        "duodenal-atresia": "Double bubble sign on abdominal radiograph — dilated stomach and proximal duodenum in duodenal atresia",
+        "pyloric-stenosis": "Hypertrophic pyloric stenosis — thickened pyloric muscle causing gastric outlet obstruction in infant",
+        "volvulus": "Mesenteric volvulus — twisted bowel on mesenteric axis with risk of ischemia",
+        "malrotation": "Ladd bands from intestinal malrotation — peritoneal bands crossing and compressing the duodenum",
     },
     "symptoms": {
         "erythema": "Sharply demarcated erythema of recurrent erysipelas (vasodilation with infection)",
@@ -89,6 +99,12 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
         "hypotonia": "Hypotonic infant — reduced muscle tone with floppy posture on handling",
         "anxiety": "Generalized anxiety — persistent excessive worry with somatic symptoms",
         "enuresis": "Nocturnal enuresis — involuntary bedwetting during sleep in children",
+        "myoclonus": "Sudden shock-like myoclonic jerk — classic in Creutzfeldt-Jakob disease and metabolic encephalopathy",
+        "tonic-phase": "Tonic phase of generalized seizure — sustained bilateral muscle stiffening before clonic jerking",
+        "clonic-phase": "Clonic phase of generalized seizure — rhythmic convulsive jerking after tonic stiffening",
+        "dysesthesia": "Unpleasant burning or abnormal sensation — neuropathic symptom in peripheral neuropathy",
+        "allodynia": "Pain from normally nonpainful light touch — classic in postherpetic neuralgia",
+        "formication": "Sensation of insects crawling on skin — cocaine intoxication or withdrawal",
     },
     "cells": {
         "oxidative-phosphorylation": "Inner mitochondrial membrane respiratory chain: complexes I–IV pass electrons to O₂; proton pumping drives ATP synthase (Complex V)",
@@ -109,6 +125,12 @@ PRESERVE_CAPTIONS: dict[str, dict[str, str]] = {
     "pathogenesis": {
         "neuralgia": "Trigeminal nerve distribution — classic site of lancinating neuralgic pain",
         "acid-fast-bacteria": "Ziehl-Neelsen stain — red acid-fast bacilli (mycolic acid cell wall) of Mycobacterium tuberculosis",
+        "spongiform-vacuole": "Spongiform vacuolation of cerebral cortex — hallmark histology of prion diseases such as Creutzfeldt-Jakob disease",
+        "radiculopathy": "Lumbar disc herniation compressing nerve root — classic cause of radiculopathy",
+        "stocking-glove": "Length-dependent peripheral neuropathy — distal symmetric sensory loss in stocking-glove distribution",
+        "toxidrome": "Opioid toxidrome — miosis, respiratory depression, and decreased consciousness",
+        "glycation": "Nonenzymatic glycation — HbA1c reflects glucose-bound hemoglobin and chronic hyperglycemia exposure",
+        "vasa-nervorum": "Microvascular ischemia of vasa nervorum — key mechanism in diabetic peripheral neuropathy",
     },
 }
 

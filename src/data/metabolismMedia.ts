@@ -2,11 +2,12 @@ import type { MediaAttribution } from "./media";
 import type { MetabolismEntry } from "./metabolism";
 
 import tetrahydrobiopterin from "../media/images/metabolism/tetrahydrobiopterin.png?url";
+import dLactate from "../media/images/metabolism/d-lactate.png?url";
 import nadph from "../media/images/metabolism/nadph.png?url";
 
 export type MetabolismImageId = Extract<
   MetabolismEntry["id"],
-  "tetrahydrobiopterin" | "nadph"
+  "tetrahydrobiopterin" | "d-lactate" | "nadph"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -16,6 +17,7 @@ function extensionAssetUrl(path: string): string {
 /** See src/media/images/metabolism/SOURCES.txt */
 export const METABOLISM_IMAGES: Partial<Record<MetabolismImageId, string>> = {
   tetrahydrobiopterin: extensionAssetUrl(tetrahydrobiopterin),
+  "d-lactate": extensionAssetUrl(dLactate),
   nadph: extensionAssetUrl(nadph),
 };
 
@@ -26,6 +28,10 @@ export const METABOLISM_IMAGE_ATTRIBUTIONS: Partial<
     label:
       "Wikimedia Commons (Biosynthesis and regeneration of tetrahydrobiopterin and its functions.png)",
     url: "https://commons.wikimedia.org/wiki/File:Biosynthesis_and_regeneration_of_tetrahydrobiopterin_and_its_functions.png",
+  },
+  "d-lactate": {
+    label: "Wikimedia Commons (Pentosephosphatweg NADPH.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Pentosephosphatweg_NADPH.png",
   },
   nadph: {
     label: "Wikimedia Commons (Pentosephosphatweg NADPH.png)",
@@ -38,6 +44,8 @@ export const METABOLISM_IMAGE_CAPTIONS: Partial<
 > = {
   tetrahydrobiopterin:
     "BH₄ biosynthesis from GTP and cofactor role for PAH, TH, and TPH in phenylalanine catabolism and monoamine synthesis",
+  "d-lactate":
+    "Bacterial fermentation in colon produces D-lactate — not measured on standard L-lactate assays",
   nadph:
     "Pentose phosphate pathway — glucose-6-phosphate dehydrogenase generates NADPH for glutathione reduction and biosynthesis",
 };

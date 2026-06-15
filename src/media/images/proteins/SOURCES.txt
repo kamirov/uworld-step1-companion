@@ -41,3 +41,14 @@ prion-protein.jpg
   Source: Local copy from proteins/14-3-3-protein.jpg
   Reference: https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg
 
+amyloid-precursor-protein.png
+  Source: Wikimedia Commons — APP processing.png
+  Page: https://commons.wikimedia.org/wiki/File:APP_processing.png
+  Download: https://upload.wikimedia.org/wikipedia/commons/c/c6/APP_processing.png
+  Description: Amyloidogenic APP processing by beta-secretase and gamma-secretase to form beta-amyloid
+
+beta-amyloid.jpg
+  Source: Wikimedia Commons — Cerebral amyloid angiopathy -2a- amyloid beta - high mag.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg
+  Download: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg/250px-Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg
+  Description: Amyloid beta immunostaining showing extracellular Aβ deposits

@@ -2728,6 +2728,84 @@ export const PROTEINS: ProteinEntry[] = [
       "S100B — astrocytic marker in brain injury, not specific CJD test",
     ],
   },
+  {
+    id: "amyloid-precursor-protein",
+    name: "Amyloid Precursor Protein (APP)",
+    etymology:
+      "Greek amylon = starch + -oid = resembling + Latin praecurrere = run before + protein = primary molecule",
+    aliases: [
+      "amyloid precursor protein",
+      "amyloid precursor proteins",
+      "amyloid-beta precursor protein",
+      "amyloid beta precursor protein",
+      "app",
+      "app protein",
+      "abpp",
+      "a4 precursor protein",
+    ],
+    gene: "APP (chromosome 21)",
+    location:
+      "Single-pass transmembrane protein enriched at neuronal synapses; APP gene on chromosome 21q21",
+    function:
+      "Neuronal membrane protein involved in synapse formation, plasticity, repair signaling, and iron export; amyloidogenic cleavage by beta-secretase then gamma-secretase releases beta-amyloid peptides.",
+    mutationCauses: [
+      "Familial early-onset Alzheimer disease from pathogenic APP mutations",
+      "Down syndrome gene dosage effect — extra APP copy contributes to early Alzheimer pathology",
+      "Cerebral amyloid angiopathy in some APP variants",
+    ],
+    boardsPearls: [
+      "APP is on chromosome 21 — trisomy 21 adults develop early Alzheimer neuropathology",
+      "Non-amyloidogenic pathway: alpha-secretase cuts within Aβ region → no beta-amyloid",
+      "Amyloidogenic pathway: beta-secretase + gamma-secretase → Aβ40/Aβ42",
+      "Presenilin is part of gamma-secretase; PSEN1/PSEN2 mutations also cause early-onset Alzheimer disease",
+      "Aβ42 is more amyloidogenic than Aβ40 and is enriched in neuritic plaques",
+    ],
+    distinguishFrom: [
+      "Beta-amyloid — peptide fragment generated from APP, not the full transmembrane precursor",
+      "Tau — microtubule-associated protein forming neurofibrillary tangles",
+      "Transthyretin — systemic ATTR amyloid protein, not Alzheimer plaque precursor",
+    ],
+  },
+  {
+    id: "beta-amyloid",
+    name: "Beta-amyloid (Aβ)",
+    etymology:
+      "Greek beta = second letter + amylon = starch + -oid = resembling",
+    aliases: [
+      "beta-amyloid",
+      "beta amyloid",
+      "β-amyloid",
+      "amyloid beta",
+      "amyloid-beta",
+      "a beta",
+      "aβ",
+      "abeta",
+      "aβ40",
+      "aβ42",
+    ],
+    gene: "Derived from APP; not a separate gene",
+    location:
+      "Extracellular brain parenchyma and cerebral vessels after APP cleavage; plaque deposits in Alzheimer disease",
+    function:
+      "Peptide fragments (usually 40 or 42 amino acids) produced from APP; soluble oligomers and aggregated fibrils are central to Alzheimer amyloid plaques and cerebral amyloid angiopathy.",
+    mutationCauses: [
+      "Aβ42 aggregation → neuritic plaques in Alzheimer disease",
+      "Cerebral amyloid angiopathy from vascular beta-amyloid deposition",
+      "APP or presenilin mutations shift processing toward amyloidogenic Aβ accumulation",
+    ],
+    boardsPearls: [
+      "Beta-secretase + gamma-secretase cleavage of APP produces beta-amyloid",
+      "Aβ plaques are extracellular; tau tangles are intracellular",
+      "Alzheimer gross pathology: cortical atrophy, widened sulci, narrowed gyri, enlarged ventricles",
+      "Down syndrome: extra APP dosage → early beta-amyloid deposition",
+      "Congo red apple-green birefringence is amyloid in general; Alzheimer plaques are Aβ-specific",
+    ],
+    distinguishFrom: [
+      "Amyloid precursor protein — membrane precursor cleaved to form beta-amyloid",
+      "Tau — intracellular paired helical filaments in neurofibrillary tangles",
+      "AL amyloid — immunoglobulin light chains in systemic amyloidosis",
+    ],
+  },
 ];
 
 const proteinById = new Map(PROTEINS.map((p) => [p.id, p]));

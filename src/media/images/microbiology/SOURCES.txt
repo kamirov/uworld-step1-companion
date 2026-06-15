@@ -59,6 +59,10 @@ mycobacterium-tuberculosis.jpg
   Page: https://phil.cdc.gov/Details.aspx?pid=5789
   Commons: https://commons.wikimedia.org/wiki/File:Mycobacterium_tuberculosis_Ziehl-Neelsen_stain_02.jpg
 
+mycobacterial.jpg
+  Source: Wikimedia Commons — Acid-Fast Bacilli (Mycobacterium tuberculosis) under microscope after Ziehl Neelsen staining.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Acid-Fast_Bacilli_(Mycobacterium_tuberculosis)_under_microscope_after_Ziehl_Neelsen_staining.jpg
+
 treponema-pallidum.jpg
   Source: CDC PHIL #1977
   Author: CDC/Dr. David Cox

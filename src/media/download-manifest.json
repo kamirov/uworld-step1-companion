@@ -999,11 +999,6 @@
     "page": "https://commons.wikimedia.org/wiki/File:Spiral_arteries_in_endometrial_stroma.jpg",
     "query": "retry"
   },
-  "conditions/hemothorax.jpg": {
-    "title": "File:Pneumothorax hemothorax pneumomediastinum contusion.JPG",
-    "page": "https://commons.wikimedia.org/wiki/File:Pneumothorax_hemothorax_pneumomediastinum_contusion.JPG",
-    "query": "retry"
-  },
   "conditions/thromboangiitis-obliterans.jpg": {
     "title": "File:55 year old female with advanced Buerger's disease.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:55_year_old_female_with_advanced_Buerger's_disease.jpg",
@@ -1803,5 +1798,105 @@
     "title": "File:Trousseau's Sign of Latent Tetany.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Trousseau's_Sign_of_Latent_Tetany.jpg",
     "query": "retry"
+  },
+  "symptoms/tonic-phase.jpg": {
+    "title": "File:Grand-mal Epilepsy A.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg",
+    "query": "tonic clonic seizure convulsion"
+  },
+  "symptoms/clonic-phase.jpg": {
+    "title": "File:Grand-mal Epilepsy A.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg",
+    "query": "clonic seizure convulsion"
+  },
+  "conditions/creutzfeldt-jakob-disease.jpg": {
+    "title": "Local copy proteins/prion-protein.jpg",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "symptoms/myoclonus.jpg": {
+    "title": "Local copy symptoms/generalized-tonic-clonic-seizure.jpg",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "pathogenesis/spongiform-vacuole.jpg": {
+    "title": "Local copy proteins/prion-protein.jpg",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "conditions/fabry-disease.jpg": {
+    "title": "File:Morbus Fabry Angiokeratoma 01.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Morbus_Fabry_Angiokeratoma_01.jpg",
+    "query": "fabry disease angiokeratoma"
+  },
+  "pathogenesis/stocking-glove.jpg": {
+    "title": "File:Diabetic Neuropathy Device pic.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
+    "query": "diabetic peripheral neuropathy foot ulcer"
+  },
+  "symptoms/dysesthesia.jpg": {
+    "title": "File:Diabetic Neuropathy Device pic.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
+    "query": "diabetic neuropathy foot"
+  },
+  "symptoms/formication.svg": {
+    "title": "File:Kokain - Cocaine.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Kokain_-_Cocaine.svg",
+    "query": "cocaine intoxication"
+  },
+  "conditions/carpal-tunnel-syndrome.png": {
+    "title": "Local copy conditions/c6-radiculopathy.png",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "conditions/guillain-barre-syndrome.jpg": {
+    "title": "Local copy conditions/status-epilepticus.jpg",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "pathogenesis/radiculopathy.png": {
+    "title": "Local copy conditions/l5-radiculopathy.png",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "pathogenesis/toxidrome.png": {
+    "title": "Local copy conditions/serotonin-syndrome.png",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "conditions/hyperemesis-gravidarum.jpg": {
+    "title": "File:Hyperemesis Gravidarum no text.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hyperemesis_Gravidarum_no_text.jpg",
+    "query": "hyperemesis gravidarum pregnancy vomiting"
+  },
+  "medications/percocet.png": {
+    "title": "Local copy medications/oxycodone.png",
+    "page": "https://commons.wikimedia.org/",
+    "query": "fallback"
+  },
+  "medications/venlafaxine.svg": {
+    "title": "File:Venlafaxine structure.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Venlafaxine_structure.svg",
+    "query": "venlafaxine structure SNRI"
+  },
+  "medications/gabapentinoids.png": {
+    "title": "File:Gabapentinoids.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Gabapentinoids.png",
+    "query": "gabapentin pregabalin"
+  },
+  "medications/pregabalin.png": {
+    "title": "File:Pregabalin ball-and-stick.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Pregabalin_ball-and-stick.png",
+    "query": "pregabalin structure"
+  },
+  "pathogenesis/glycation.png": {
+    "title": "File:HbA1c \u05d5\u05d3\u05de\u05e0\u05e6\u05d9\u05d4.png",
+    "page": "https://commons.wikimedia.org/wiki/File:HbA1c_\u05d5\u05d3\u05de\u05e0\u05e6\u05d9\u05d4.png",
+    "query": "HbA1c glycated hemoglobin"
+  },
+  "pathogenesis/vasa-nervorum.jpg": {
+    "title": "Local copy pathogenesis/stocking-glove.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
+    "query": "fallback"
   }
 }

@@ -3,6 +3,8 @@ import type { MediaAttribution } from "./media";
 
 import alprazolam from "../media/images/medications/alprazolam.svg?url";
 import analgesics from "../media/images/medications/analgesics.png?url";
+import antipyretics from "../media/images/medications/antipyretics.png?url";
+import anxiolytics from "../media/images/medications/anxiolytics.svg?url";
 import anticholinergics from "../media/images/medications/anticholinergics.svg?url";
 import amitriptyline from "../media/images/medications/amitriptyline.png?url";
 import amphetamines from "../media/images/medications/amphetamines.svg?url";
@@ -12,6 +14,8 @@ import clonazepam from "../media/images/medications/clonazepam.svg?url";
 import cocaine from "../media/images/medications/cocaine.svg?url";
 import duloxetine from "../media/images/medications/duloxetine.svg?url";
 import fluoxetine from "../media/images/medications/fluoxetine.svg?url";
+import gabapentin from "../media/images/medications/gabapentin.png?url";
+import gabapentinoids from "../media/images/medications/gabapentinoids.png?url";
 import generalAnesthetic from "../media/images/medications/general-anesthetic.png?url";
 import isoflurane from "../media/images/medications/isoflurane.png?url";
 import daptomycin from "../media/images/medications/daptomycin.svg?url";
@@ -30,12 +34,14 @@ import naproxen from "../media/images/medications/naproxen.svg?url";
 import oxacillin from "../media/images/medications/oxacillin.svg?url";
 import opioids from "../media/images/medications/opioids.png?url";
 import oxycodone from "../media/images/medications/oxycodone.png?url";
+import percocet from "../media/images/medications/percocet.png?url";
 import polyclonalFabAntivenom from "../media/images/medications/polyclonal-fab-antivenom.png?url";
 import quetiapine from "../media/images/medications/quetiapine.svg?url";
 import reserpine from "../media/images/medications/reserpine.svg?url";
 import snris from "../media/images/medications/snris.svg?url";
 import ssris from "../media/images/medications/ssris.svg?url";
 import pyridoxine from "../media/images/medications/pyridoxine.svg?url";
+import pregabalin from "../media/images/medications/pregabalin.png?url";
 import ramelteon from "../media/images/medications/ramelteon.svg?url";
 import riboflavin from "../media/images/medications/riboflavin.png?url";
 import sumatriptan from "../media/images/medications/sumatriptan.svg?url";
@@ -46,11 +52,14 @@ import antiTnfTherapy from "../media/images/medications/anti-tnf-therapy.png?url
 import benzodiazepines from "../media/images/medications/benzodiazepines.svg?url";
 import flumazenil from "../media/images/medications/flumazenil.svg?url";
 import retinoicAcid from "../media/images/medications/retinoic-acid.svg?url";
+import venlafaxine from "../media/images/medications/venlafaxine.svg?url";
 
 export type MedicationImageId = Extract<
   MedicationEntry["id"],
   | "alprazolam"
   | "analgesics"
+  | "antipyretics"
+  | "anxiolytics"
   | "anticholinergics"
   | "amitriptyline"
   | "amphetamines"
@@ -61,6 +70,8 @@ export type MedicationImageId = Extract<
   | "cocaine"
   | "duloxetine"
   | "fluoxetine"
+  | "gabapentin"
+  | "gabapentinoids"
   | "general-anesthetic"
   | "isoflurane"
   | "daptomycin"
@@ -79,12 +90,14 @@ export type MedicationImageId = Extract<
   | "oxacillin"
   | "opioids"
   | "oxycodone"
+  | "percocet"
   | "polyclonal-fab-antivenom"
   | "quetiapine"
   | "reserpine"
   | "snris"
   | "ssris"
   | "pyridoxine"
+  | "pregabalin"
   | "ramelteon"
   | "riboflavin"
   | "sumatriptan"
@@ -92,6 +105,7 @@ export type MedicationImageId = Extract<
   | "tramadol"
   | "vasopressors"
   | "retinoic-acid"
+  | "venlafaxine"
   | "benzodiazepines"
   | "flumazenil"
 >;
@@ -104,6 +118,8 @@ function extensionAssetUrl(path: string): string {
 export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   alprazolam: extensionAssetUrl(alprazolam),
   analgesics: extensionAssetUrl(analgesics),
+  antipyretics: extensionAssetUrl(antipyretics),
+  anxiolytics: extensionAssetUrl(anxiolytics),
   anticholinergics: extensionAssetUrl(anticholinergics),
   amitriptyline: extensionAssetUrl(amitriptyline),
   amphetamines: extensionAssetUrl(amphetamines),
@@ -114,6 +130,8 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   cocaine: extensionAssetUrl(cocaine),
   duloxetine: extensionAssetUrl(duloxetine),
   fluoxetine: extensionAssetUrl(fluoxetine),
+  gabapentin: extensionAssetUrl(gabapentin),
+  gabapentinoids: extensionAssetUrl(gabapentinoids),
   "general-anesthetic": extensionAssetUrl(generalAnesthetic),
   isoflurane: extensionAssetUrl(isoflurane),
   daptomycin: extensionAssetUrl(daptomycin),
@@ -132,12 +150,14 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   oxacillin: extensionAssetUrl(oxacillin),
   opioids: extensionAssetUrl(opioids),
   oxycodone: extensionAssetUrl(oxycodone),
+  percocet: extensionAssetUrl(percocet),
   "polyclonal-fab-antivenom": extensionAssetUrl(polyclonalFabAntivenom),
   quetiapine: extensionAssetUrl(quetiapine),
   reserpine: extensionAssetUrl(reserpine),
   snris: extensionAssetUrl(snris),
   ssris: extensionAssetUrl(ssris),
   pyridoxine: extensionAssetUrl(pyridoxine),
+  pregabalin: extensionAssetUrl(pregabalin),
   ramelteon: extensionAssetUrl(ramelteon),
   riboflavin: extensionAssetUrl(riboflavin),
   sumatriptan: extensionAssetUrl(sumatriptan),
@@ -145,6 +165,7 @@ export const MEDICATION_IMAGES: Partial<Record<MedicationImageId, string>> = {
   tramadol: extensionAssetUrl(tramadol),
   vasopressors: extensionAssetUrl(vasopressors),
   "retinoic-acid": extensionAssetUrl(retinoicAcid),
+  venlafaxine: extensionAssetUrl(venlafaxine),
   benzodiazepines: extensionAssetUrl(benzodiazepines),
   flumazenil: extensionAssetUrl(flumazenil),
 };
@@ -159,6 +180,14 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
   analgesics: {
     label: "Wikimedia Commons (Oxycodone structure.png)",
     url: "https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png",
+  },
+  antipyretics: {
+    label: "Wikimedia Commons (Oxycodone structure.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png",
+  },
+  anxiolytics: {
+    label: "Wikimedia Commons (Diazepam structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Diazepam_structure.svg",
   },
   anticholinergics: {
     label: "Wikimedia Commons (Diphenhydramine.svg)",
@@ -195,6 +224,14 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
   duloxetine: {
     label: "Wikimedia Commons (Duloxetine-structure.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Duloxetine-structure.svg",
+  },
+  gabapentin: {
+    label: "Wikimedia Commons (Gabapentinoids.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Gabapentinoids.png",
+  },
+  gabapentinoids: {
+    label: "Wikimedia Commons (Gabapentinoids.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Gabapentinoids.png",
   },
   fluoxetine: {
     label: "Wikimedia Commons ((R)-Fluoxetine structure.svg)",
@@ -276,7 +313,15 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Pyridoxine structure ver2.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Pyridoxine_structure_ver2.svg",
   },
+  pregabalin: {
+    label: "Wikimedia Commons (Pregabalin ball-and-stick.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Pregabalin_ball-and-stick.png",
+  },
   oxycodone: {
+    label: "Wikimedia Commons (Oxycodone structure.png)",
+    url: "https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png",
+  },
+  percocet: {
     label: "Wikimedia Commons (Oxycodone structure.png)",
     url: "https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png",
   },
@@ -316,6 +361,10 @@ export const MEDICATION_IMAGE_ATTRIBUTIONS: Partial<
     label: "Wikimedia Commons (Oxycodone structure.png)",
     url: "https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png",
   },
+  venlafaxine: {
+    label: "Wikimedia Commons (Venlafaxine structure.svg)",
+    url: "https://commons.wikimedia.org/wiki/File:Venlafaxine_structure.svg",
+  },
   vasopressors: {
     label: "Wikimedia Commons (Norepinephrine.svg)",
     url: "https://commons.wikimedia.org/wiki/File:Norepinephrine.svg",
@@ -341,6 +390,10 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Alprazolam — triazolobenzodiazepine enhancing GABA-A inhibition for anxiety and panic disorder",
   analgesics:
     "Analgesic drug classes — opioids, NSAIDs, and acetaminophen reduce pain via distinct mechanisms",
+  antipyretics:
+    "Antipyretics — acetaminophen and NSAIDs lower fever by inhibiting hypothalamic prostaglandin synthesis",
+  anxiolytics:
+    "Anxiolytic drug classes — benzodiazepines (GABA-A), buspirone (5-HT₁A), and SSRIs for chronic anxiety",
   anticholinergics:
     "Muscarinic receptor antagonists — dry mouth, urinary retention, mydriasis; toxidrome reversed by physostigmine when appropriate",
   amitriptyline:
@@ -359,6 +412,10 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Cocaine — blocks DAT/NET/SERT reuptake and voltage-gated Na⁺ channels; sympathomimetic toxicity and coronary vasospasm",
   duloxetine:
     "Duloxetine — SNRI inhibiting serotonin and norepinephrine reuptake for depression and neuropathic pain",
+  gabapentin:
+    "Gabapentin — α2δ calcium channel ligand for neuropathic pain; not a GABA receptor agonist",
+  gabapentinoids:
+    "Gabapentinoids (gabapentin, pregabalin) — α2δ ligands reducing excitatory neurotransmitter release in neuropathic pain",
   fluoxetine:
     "Fluoxetine — SSRI with long half-life and active metabolite norfluoxetine",
   "general-anesthetic":
@@ -399,8 +456,12 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "SSRIs — selective serotonin reuptake inhibitors; first-line for depression and generalized anxiety disorder",
   pyridoxine:
     "Pyridoxine (vitamin B6) — PLP cofactor precursor; co-administered with isoniazid to prevent neuropathy",
+  pregabalin:
+    "Pregabalin — gabapentinoid α2δ ligand for neuropathic pain, fibromyalgia, and partial seizures",
   oxycodone:
     "Oxycodone — μ-opioid agonist for moderate to severe pain; reversed by naloxone in overdose",
+  percocet:
+    "Percocet — fixed combination of oxycodone and acetaminophen; monitor total APAP dose for hepatotoxicity",
   ramelteon:
     "Ramelteon — selective MT1/MT2 melatonin receptor agonist for sleep-onset insomnia without GABA activity",
   glatiramer:
@@ -419,6 +480,8 @@ export const MEDICATION_IMAGE_CAPTIONS: Partial<
     "Topiramate — anticonvulsant used for migraine prophylaxis with weight loss and paresthesia side effects",
   tramadol:
     "Tramadol — weak μ-opioid agonist with serotonin and norepinephrine reuptake inhibition; serotonin syndrome risk",
+  venlafaxine:
+    "Venlafaxine — SNRI with dose-dependent NET inhibition; monitor blood pressure at higher doses",
   vasopressors:
     "Norepinephrine structure — prototypical alpha-adrenergic vasopressor used in septic shock",
   "retinoic-acid":

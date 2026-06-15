@@ -19,6 +19,7 @@ import chromaffinCell from "../media/images/cells/chromaffin-cell.jpg?url";
 import clearCytoplasm from "../media/images/cells/clear-cytoplasm.svg?url";
 import corePromoterElements from "../media/images/cells/core-promoter-elements.svg?url";
 import corticospinalTract from "../media/images/cells/corticospinal-tract.png?url";
+import cytoskeleton from "../media/images/cells/cytoskeleton.jpg?url";
 import decussate from "../media/images/cells/decussate.png?url";
 import dendriticCell from "../media/images/cells/dendritic-cell.jpg?url";
 import dermalAppendage from "../media/images/cells/dermal-appendage.svg?url";
@@ -83,6 +84,7 @@ import osteoblast from "../media/images/cells/osteoblast.jpg?url";
 import osteoclast from "../media/images/cells/osteoclast.jpg?url";
 import pancreaticBetaCell from "../media/images/cells/pancreatic-beta-cell.jpg?url";
 import periventricularWhiteMatter from "../media/images/cells/periventricular-white-matter.jpg?url";
+import pneumocyte from "../media/images/cells/pneumocyte.jpg?url";
 import polymerization from "../media/images/cells/polymerization.svg?url";
 import preMrna from "../media/images/cells/pre-mrna.jpg?url";
 import preganglionicNeuron from "../media/images/cells/preganglionic-neuron.png?url";
@@ -101,6 +103,8 @@ import tLymphocyte from "../media/images/cells/t-lymphocyte.jpg?url";
 import th17 from "../media/images/cells/th17.png?url";
 import th2 from "../media/images/cells/th2.png?url";
 import tightJunction from "../media/images/cells/tight-junction.png?url";
+import type1Pneumocyte from "../media/images/cells/type-1-pneumocyte.jpg?url";
+import type2Pneumocyte from "../media/images/cells/type-2-pneumocyte.jpg?url";
 import whiteMatter from "../media/images/cells/white-matter.jpg?url";
 
 export type CELLImageId = Extract<
@@ -123,6 +127,7 @@ export type CELLImageId = Extract<
   | "clear-cytoplasm"
   | "core-promoter-elements"
   | "corticospinal-tract"
+  | "cytoskeleton"
   | "decussate"
   | "dendritic-cell"
   | "dermal-appendage"
@@ -187,6 +192,7 @@ export type CELLImageId = Extract<
   | "osteoclast"
   | "pancreatic-beta-cell"
   | "periventricular-white-matter"
+  | "pneumocyte"
   | "polymerization"
   | "pre-mrna"
   | "preganglionic-neuron"
@@ -205,6 +211,8 @@ export type CELLImageId = Extract<
   | "th17"
   | "th2"
   | "tight-junction"
+  | "type-1-pneumocyte"
+  | "type-2-pneumocyte"
   | "white-matter"
 >;
 
@@ -232,6 +240,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "clear-cytoplasm": extensionAssetUrl(clearCytoplasm),
   "core-promoter-elements": extensionAssetUrl(corePromoterElements),
   "corticospinal-tract": extensionAssetUrl(corticospinalTract),
+  "cytoskeleton": extensionAssetUrl(cytoskeleton),
   "decussate": extensionAssetUrl(decussate),
   "dendritic-cell": extensionAssetUrl(dendriticCell),
   "dermal-appendage": extensionAssetUrl(dermalAppendage),
@@ -296,6 +305,7 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "osteoclast": extensionAssetUrl(osteoclast),
   "pancreatic-beta-cell": extensionAssetUrl(pancreaticBetaCell),
   "periventricular-white-matter": extensionAssetUrl(periventricularWhiteMatter),
+  "pneumocyte": extensionAssetUrl(pneumocyte),
   "polymerization": extensionAssetUrl(polymerization),
   "pre-mrna": extensionAssetUrl(preMrna),
   "preganglionic-neuron": extensionAssetUrl(preganglionicNeuron),
@@ -314,6 +324,8 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "th17": extensionAssetUrl(th17),
   "th2": extensionAssetUrl(th2),
   "tight-junction": extensionAssetUrl(tightJunction),
+  "type-1-pneumocyte": extensionAssetUrl(type1Pneumocyte),
+  "type-2-pneumocyte": extensionAssetUrl(type2Pneumocyte),
   "white-matter": extensionAssetUrl(whiteMatter),
 };
 
@@ -338,6 +350,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "clear-cytoplasm": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clear-cytoplasm.svg" },
   "core-promoter-elements": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:core-promoter-elements.svg" },
   "corticospinal-tract": { label: "Wikimedia Commons (Gray688.png)", url: "https://commons.wikimedia.org/wiki/File:Gray688.png" },
+  "cytoskeleton": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cytoskeleton.jpg" },
   "decussate": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:decussate.png" },
   "dendritic-cell": { label: "Wikimedia Commons (Antigen presentation by dendritic cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Antigen_presentation_by_dendritic_cell.jpg" },
   "dermal-appendage": { label: "Wikimedia Commons (Skin Hair Follicle (NIH BioArt 657).svg)", url: "https://commons.wikimedia.org/wiki/File:Skin_Hair_Follicle_(NIH_BioArt_657).svg" },
@@ -402,6 +415,7 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "osteoclast": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:osteoclast.jpg" },
   "pancreatic-beta-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pancreatic-beta-cell.jpg" },
   "periventricular-white-matter": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:periventricular-white-matter.jpg" },
+  "pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pneumocyte.jpg" },
   "polymerization": { label: "Wikimedia Commons (CSIRO ScienceImage 3020 Starch to Polymer.jpg)", url: "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_3020_Starch_to_Polymer.jpg" },
   "pre-mrna": { label: "Wikimedia Commons (Gene with introns and exons.jpg)", url: "https://commons.wikimedia.org/wiki/File:Gene_with_introns_and_exons.jpg" },
   "preganglionic-neuron": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:preganglionic-neuron.png" },
@@ -420,6 +434,8 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "th17": { label: "Wikimedia Commons (Helper T Cell Differentiation.png)", url: "https://commons.wikimedia.org/wiki/File:Helper_T_Cell_Differentiation.png" },
   "th2": { label: "Wikimedia Commons (M2 macrophages. Sézary cells produce the Th2 cytokines IL-4 and IL-13.png)", url: "https://commons.wikimedia.org/wiki/File:M2_macrophages._Sézary_cells_produce_the_Th2_cytokines_IL-4_and_IL-13.png" },
   "tight-junction": { label: "Wikimedia Commons (Morphological modifications during EMT.png)", url: "https://commons.wikimedia.org/wiki/File:Morphological_modifications_during_EMT.png" },
+  "type-1-pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:type-1-pneumocyte.jpg" },
+  "type-2-pneumocyte": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:type-2-pneumocyte.jpg" },
   "white-matter": { label: "Wikimedia Commons (Grey matter and white matter - high mag.jpg)", url: "https://commons.wikimedia.org/wiki/File:Grey_matter_and_white_matter_-_high_mag.jpg" },
 };
 
@@ -442,6 +458,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "clear-cytoplasm": "Clinical or pathologic image illustrating clear cytoplasm",
   "core-promoter-elements": "Clinical or pathologic image illustrating core promoter elements",
   "corticospinal-tract": "Clinical or pathologic image illustrating corticospinal tract",
+  "cytoskeleton": "Clinical or pathologic image illustrating cytoskeleton",
   "decussate": "Clinical or pathologic image illustrating decussate",
   "dendritic-cell": "Clinical or pathologic image illustrating dendritic cell",
   "dermal-appendage": "Clinical or pathologic image illustrating dermal appendage",
@@ -506,6 +523,7 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "osteoclast": "Clinical or pathologic image illustrating osteoclast",
   "pancreatic-beta-cell": "Clinical or pathologic image illustrating pancreatic beta cell",
   "periventricular-white-matter": "Clinical or pathologic image illustrating periventricular white matter",
+  "pneumocyte": "Clinical or pathologic image illustrating pneumocyte",
   "polymerization": "Clinical or pathologic image illustrating polymerization",
   "pre-mrna": "Clinical or pathologic image illustrating pre mrna",
   "preganglionic-neuron": "Clinical or pathologic image illustrating preganglionic neuron",
@@ -524,6 +542,8 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "th17": "Clinical or pathologic image illustrating th17",
   "th2": "Clinical or pathologic image illustrating th2",
   "tight-junction": "Clinical or pathologic image illustrating tight junction",
+  "type-1-pneumocyte": "Clinical or pathologic image illustrating type 1 pneumocyte",
+  "type-2-pneumocyte": "Clinical or pathologic image illustrating type 2 pneumocyte",
   "white-matter": "Clinical or pathologic image illustrating white matter",
 };
 

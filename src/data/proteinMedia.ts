@@ -2,6 +2,8 @@ import type { MediaAttribution } from "./media";
 import type { ProteinEntry } from "./proteins";
 
 import adenosineDeaminase from "../media/images/proteins/adenosine-deaminase.jpg?url";
+import amyloidPrecursorProtein from "../media/images/proteins/amyloid-precursor-protein.png?url";
+import betaAmyloid from "../media/images/proteins/beta-amyloid.jpg?url";
 import ceruloplasmin from "../media/images/proteins/ceruloplasmin.jpg?url";
 import filaggrin from "../media/images/proteins/filaggrin.png?url";
 import intrinsicFactor from "../media/images/proteins/intrinsic-factor.png?url";
@@ -14,6 +16,8 @@ import prionProtein from "../media/images/proteins/prion-protein.jpg?url";
 export type ProteinImageId = Extract<
   ProteinEntry["id"],
   | "adenosine-deaminase"
+  | "amyloid-precursor-protein"
+  | "beta-amyloid"
   | "ceruloplasmin"
   | "filaggrin"
   | "intrinsic-factor"
@@ -31,6 +35,8 @@ function extensionAssetUrl(path: string): string {
 /** See src/media/images/proteins/SOURCES.txt */
 export const PROTEIN_IMAGES: Partial<Record<ProteinImageId, string>> = {
   "adenosine-deaminase": extensionAssetUrl(adenosineDeaminase),
+  "amyloid-precursor-protein": extensionAssetUrl(amyloidPrecursorProtein),
+  "beta-amyloid": extensionAssetUrl(betaAmyloid),
   ceruloplasmin: extensionAssetUrl(ceruloplasmin),
   filaggrin: extensionAssetUrl(filaggrin),
   "intrinsic-factor": extensionAssetUrl(intrinsicFactor),
@@ -47,6 +53,15 @@ export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
   "adenosine-deaminase": {
     label: "Wikimedia Commons (Person with Job's syndrome.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Person_with_Job%27s_syndrome.jpg",
+  },
+  "amyloid-precursor-protein": {
+    label: "Wikimedia Commons (APP processing.png)",
+    url: "https://commons.wikimedia.org/wiki/File:APP_processing.png",
+  },
+  "beta-amyloid": {
+    label:
+      "Wikimedia Commons (Cerebral amyloid angiopathy -2a- amyloid beta - high mag.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg",
   },
   ceruloplasmin: {
     label: "Wikimedia Commons (Kayser-Fleischer ring.jpg)",
@@ -85,6 +100,10 @@ export const PROTEIN_IMAGE_ATTRIBUTIONS: Partial<
 export const PROTEIN_IMAGE_CAPTIONS: Partial<Record<ProteinImageId, string>> = {
   "adenosine-deaminase":
     "ADA deficiency causes toxic dATP accumulation, impaired DNA synthesis, and SCID with T, B, and NK-cell failure",
+  "amyloid-precursor-protein":
+    "APP amyloidogenic processing — beta-secretase and gamma-secretase cleavage releases beta-amyloid peptide",
+  "beta-amyloid":
+    "Beta-amyloid immunostaining — extracellular Aβ deposits form neuritic plaques and cerebral amyloid angiopathy",
   ceruloplasmin:
     "Hepatic ferroxidase and copper carrier — low in Wilson disease, Menkes disease, and copper deficiency",
   filaggrin:

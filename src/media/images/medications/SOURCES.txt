@@ -217,3 +217,31 @@ analgesics.png
   Source: Local copy from medications/opioids.png
   Reference: https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png
 
+anxiolytics.svg
+  Source: Local copy from medications/benzodiazepines.svg
+  Reference: https://commons.wikimedia.org/wiki/File:Diazepam_structure.svg
+
+antipyretics.png
+  Source: Local copy from medications/analgesics.png
+  Reference: https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png
+
+percocet.png
+  Source: Local copy from medications/oxycodone.png
+  Reference: https://commons.wikimedia.org/wiki/File:Oxycodone_structure.png
+
+venlafaxine.svg
+  Source: Wikimedia Commons — Venlafaxine structure.svg
+  Page: https://commons.wikimedia.org/wiki/File:Venlafaxine_structure.svg
+
+gabapentinoids.png
+  Source: Wikimedia Commons — Gabapentinoids.png
+  Page: https://commons.wikimedia.org/wiki/File:Gabapentinoids.png
+
+gabapentin.png
+  Source: Local copy from medications/gabapentinoids.png
+  Reference: https://commons.wikimedia.org/wiki/File:Gabapentinoids.png
+
+pregabalin.png
+  Source: Wikimedia Commons — Pregabalin ball-and-stick.png
+  Page: https://commons.wikimedia.org/wiki/File:Pregabalin_ball-and-stick.png
+

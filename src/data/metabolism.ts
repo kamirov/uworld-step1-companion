@@ -594,6 +594,44 @@ export const METABOLISM: MetabolismEntry[] = [
       "Neonatal lactic acidosis may reflect sepsis, inborn errors of metabolism, or mitochondrial disorders; LDH is elevated with hemolysis of newborn samples.",
   },
   {
+    id: "d-lactate",
+    name: "D-Lactate",
+    etymology: "D = dextrorotatory stereoisomer + Latin lac = milk + -ate = salt/ester suffix",
+    aliases: [
+      "d-lactate",
+      "d lactate",
+      "d-lactic acid",
+      "d lactic acid",
+      "d-lactic acidosis",
+      "d lactic acidosis",
+      "d-lactate acidosis",
+    ],
+    definition:
+      "Non-physiologic stereoisomer of lactate produced by bacterial fermentation in the colon — not measured on standard L-lactate assays — accumulating in short bowel syndrome and jejunoileal bypass to cause anion gap acidosis and encephalopathy.",
+    pathway: [
+      "Colonic bacteria (e.g., Lactobacillus, Streptococcus bovis) ferment carbohydrates → D-lactate",
+      "Short bowel or blind loop — increased substrate delivery to colon → ↑ D-lactate absorption",
+      "Human lactate dehydrogenase metabolizes L-lactate, not D-lactate → D-lactate accumulates",
+      "Standard serum lactate assay measures L-lactate only — D-lactate requires specialized testing",
+      "D-lactate crosses blood-brain barrier → altered mental status without severe L-lactate elevation",
+    ],
+    boardsPearls: [
+      "D-lactic acidosis — short bowel syndrome + high-carb diet + encephalopathy",
+      "Anion gap metabolic acidosis with normal or mildly ↑ L-lactate",
+      "Slurred speech, ataxia, confusion after carbohydrate load",
+      "vs L-lactic acidosis — shock, sepsis, metformin, mitochondrial disease raise L-lactate",
+      "Treat with low-carbohydrate diet, antibiotics targeting colonic flora, correction of acidosis",
+    ],
+    distinguishFrom: [
+      "L-lactic acidosis — hypoperfusion, sepsis, metformin, cyanide, mitochondrial disorders",
+      "Lactic acid — physiologic L-isomer from anaerobic glycolysis",
+      "Ethylene glycol/methanol poisoning — osmolar gap, different toxidrome",
+      "Hyperchloremic metabolic acidosis — normal anion gap",
+    ],
+    pediatrics:
+      "Short bowel syndrome in neonates (necrotizing enterocolitis, gastroschisis) predisposes to D-lactic acidosis with enteral feeds; suspect when encephalopathy out of proportion to L-lactate.",
+  },
+  {
     id: "erythropoiesis",
     name: "Erythropoiesis",
     etymology:

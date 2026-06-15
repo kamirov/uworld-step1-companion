@@ -110,6 +110,10 @@ Created locally
 Reference: https://en.wikipedia.org/wiki/Internuclear_ophthalmoplegia
 Description: INO — impaired adduction ipsilateral eye, abducting nystagmus contralateral eye
 
+ophthalmoplegia.svg
+  Source: Local copy from symptoms/internuclear-ophthalmoplegia.svg
+  Reference: https://en.wikipedia.org/wiki/Internuclear_ophthalmoplegia
+
 lhermitte-sign.svg
 Created locally
 Reference: https://en.wikipedia.org/wiki/Lhermitte%27s_sign
@@ -373,3 +377,46 @@ neuropathic-pain.jpg
   Source: Wikimedia Commons — Diabetic Neuropathy Device pic.jpg
   Page: https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg
 
+goiter.jpg
+  Source: Wikimedia Commons — Thyroid, Diffuse Hyperplasia.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Thyroid,_Diffuse_Hyperplasia.jpg
+  Description: Diffuse thyroid hyperplasia gross pathology, relevant to goiter
+
+pallor.jpg
+  Source: Wikimedia Commons — Anemia.JPG
+  Page: https://commons.wikimedia.org/wiki/File:Anemia.JPG
+  Description: Hand pallor comparison in severe anemia
+
+proptosis.jpg
+  Source: Wikimedia Commons — Proptosis and lid retraction from Graves' Disease.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Proptosis_and_lid_retraction_from_Graves'_Disease.jpg
+  Description: Proptosis and lid retraction in Graves disease
+
+trousseau-sign.jpg
+  Source: Wikimedia Commons — Trousseau's Sign of Latent Tetany.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Trousseau's_Sign_of_Latent_Tetany.jpg
+  Description: Carpopedal spasm pattern of Trousseau sign of latent tetany
+
+myoclonus.jpg
+  Source: Local copy from symptoms/generalized-tonic-clonic-seizure.jpg
+  Reference: https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg
+
+tonic-phase.jpg
+  Source: Wikimedia Commons — Grand-mal Epilepsy A.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg
+
+clonic-phase.jpg
+  Source: Wikimedia Commons — Grand-mal Epilepsy A.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg
+
+dysesthesia.jpg
+  Source: Wikimedia Commons — Diabetic Neuropathy Device pic.jpg
+  Page: https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg
+
+allodynia.png
+  Source: Local copy from conditions/postherpetic-neuralgia.png
+  Reference: https://commons.wikimedia.org/wiki/File:Herpes_zoster_chest.png
+
+formication.svg
+  Source: Wikimedia Commons — Kokain - Cocaine.svg
+  Page: https://commons.wikimedia.org/wiki/File:Kokain_-_Cocaine.svg

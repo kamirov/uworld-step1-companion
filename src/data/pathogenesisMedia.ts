@@ -4,20 +4,40 @@ import type { PathogenesisEntry } from "./pathogenesis";
 import bloodBrainBarrier from "../media/images/pathogenesis/blood-brain-barrier.svg?url";
 import hepatotoxicity from "../media/images/pathogenesis/hepatotoxicity.jpg?url";
 import lowFiberDiet from "../media/images/pathogenesis/low-fiber-diet.jpg?url";
+import malnutrition from "../media/images/pathogenesis/malnutrition.jpg?url";
 import meconium from "../media/images/pathogenesis/meconium.jpg?url";
 import oxidativeStress from "../media/images/pathogenesis/oxidative-stress.png?url";
 import reuptake from "../media/images/pathogenesis/reuptake.png?url";
 import acidFastBacteria from "../media/images/pathogenesis/acid-fast-bacteria.jpg?url";
+import amyloidPlaques from "../media/images/pathogenesis/amyloid-plaques.jpg?url";
+import spongiformVacuole from "../media/images/pathogenesis/spongiform-vacuole.jpg?url";
+import strenuousExercise from "../media/images/pathogenesis/strenuous-exercise.jpg?url";
+import vqMismatch from "../media/images/pathogenesis/v-q-mismatch.jpg?url";
+import radiculopathy from "../media/images/pathogenesis/radiculopathy.png?url";
+import stockingGlove from "../media/images/pathogenesis/stocking-glove.jpg?url";
+import toxidrome from "../media/images/pathogenesis/toxidrome.png?url";
+import glycation from "../media/images/pathogenesis/glycation.png?url";
+import vasaNervorum from "../media/images/pathogenesis/vasa-nervorum.jpg?url";
 
 export type PathogenesisImageId = Extract<
   PathogenesisEntry["id"],
   | "blood-brain-barrier"
   | "hepatotoxicity"
   | "low-fiber-diet"
+  | "malnutrition"
   | "meconium"
   | "oxidative-stress"
   | "reuptake"
   | "acid-fast-bacteria"
+  | "amyloid-plaques"
+  | "spongiform-vacuole"
+  | "strenuous-exercise"
+  | "v-q-mismatch"
+  | "radiculopathy"
+  | "stocking-glove"
+  | "toxidrome"
+  | "glycation"
+  | "vasa-nervorum"
 >;
 
 function extensionAssetUrl(path: string): string {
@@ -31,10 +51,20 @@ export const PATHOGENESIS_IMAGES: Partial<
   "blood-brain-barrier": extensionAssetUrl(bloodBrainBarrier),
   hepatotoxicity: extensionAssetUrl(hepatotoxicity),
   "low-fiber-diet": extensionAssetUrl(lowFiberDiet),
+  malnutrition: extensionAssetUrl(malnutrition),
   meconium: extensionAssetUrl(meconium),
   "oxidative-stress": extensionAssetUrl(oxidativeStress),
   reuptake: extensionAssetUrl(reuptake),
   "acid-fast-bacteria": extensionAssetUrl(acidFastBacteria),
+  "amyloid-plaques": extensionAssetUrl(amyloidPlaques),
+  "spongiform-vacuole": extensionAssetUrl(spongiformVacuole),
+  "strenuous-exercise": extensionAssetUrl(strenuousExercise),
+  "v-q-mismatch": extensionAssetUrl(vqMismatch),
+  radiculopathy: extensionAssetUrl(radiculopathy),
+  "stocking-glove": extensionAssetUrl(stockingGlove),
+  toxidrome: extensionAssetUrl(toxidrome),
+  glycation: extensionAssetUrl(glycation),
+  "vasa-nervorum": extensionAssetUrl(vasaNervorum),
 };
 
 export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
@@ -51,6 +81,10 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
   "low-fiber-diet": {
     label: "Wikimedia Commons (Inflammed mucous layer of the intestinal villi depicting Celiac disease.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Inflammed_mucous_layer_of_the_intestinal_villi_depicting_Celiac_disease.jpg",
+  },
+  malnutrition: {
+    label: "Wikimedia Commons (Anemia.JPG)",
+    url: "https://commons.wikimedia.org/wiki/File:Anemia.JPG",
   },
   meconium: {
     label: "Wikimedia Commons (Biliary atresia.jpg)",
@@ -69,6 +103,43 @@ export const PATHOGENESIS_IMAGE_ATTRIBUTIONS: Partial<
       "Wikimedia Commons (Acid fast bacilli of Mycobacterium tuberculosis.jpg)",
     url: "https://commons.wikimedia.org/wiki/File:Acid_fast_bacilli_of_Mycobacterium_tuberculosis.jpg",
   },
+  "amyloid-plaques": {
+    label:
+      "Wikimedia Commons (Cerebral amyloid angiopathy -2a- amyloid beta - high mag.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Cerebral_amyloid_angiopathy_-2a-_amyloid_beta_-_high_mag.jpg",
+  },
+  "spongiform-vacuole": {
+    label: "Wikimedia Commons (Mechanisms of amyloid fibril formation.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Mechanisms_of_amyloid_fibril_formation.jpg",
+  },
+  "strenuous-exercise": {
+    label: "Wikimedia Commons (Fatigue.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Fatigue.jpg",
+  },
+  "v-q-mismatch": {
+    label: "Wikimedia Commons (Emphysema H and E.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg",
+  },
+  radiculopathy: {
+    label: "Wikimedia Commons (l5-radiculopathy.png)",
+    url: "https://commons.wikimedia.org/wiki/File:l5-radiculopathy.png",
+  },
+  "stocking-glove": {
+    label: "Wikimedia Commons (Diabetic Neuropathy Device pic.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
+  },
+  toxidrome: {
+    label: "Wikimedia Commons (Local copy conditions/serotonin-syndrome.png)",
+    url: "https://commons.wikimedia.org/",
+  },
+  glycation: {
+    label: "Wikimedia Commons (HbA1c ודמנציה.png)",
+    url: "https://commons.wikimedia.org/wiki/File:HbA1c_%D7%95%D7%93%D7%9E%D7%A0%D7%A6%D7%99%D7%94.png",
+  },
+  "vasa-nervorum": {
+    label: "Wikimedia Commons (Diabetic Neuropathy Device pic.jpg)",
+    url: "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg",
+  },
 };
 
 export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
@@ -80,6 +151,8 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Alcoholic cirrhosis — chronic hepatotoxic injury with nodular regeneration and portal hypertension",
   "low-fiber-diet":
     "Low dietary fiber reduces stool bulk and slows transit — predisposes to constipation and diverticulosis",
+  malnutrition:
+    "Severe anemia and pallor — protein-calorie malnutrition with wasting and micronutrient deficits",
   meconium:
     "Neonatal intestinal obstruction — failure to pass meconium suggests Hirschsprung disease or meconium ileus",
   "oxidative-stress":
@@ -88,6 +161,24 @@ export const PATHOGENESIS_IMAGE_CAPTIONS: Partial<
     "Presynaptic monoamine reuptake transporters — SERT, NET, and DAT terminate synaptic signaling",
   "acid-fast-bacteria":
     "Ziehl-Neelsen stain — red acid-fast bacilli (mycolic acid cell wall) of Mycobacterium tuberculosis",
+  "amyloid-plaques":
+    "Amyloid beta immunostain — extracellular brown Aβ deposits illustrate plaque-forming Alzheimer pathology",
+  "spongiform-vacuole":
+    "Spongiform vacuolation of cerebral cortex — hallmark histology of prion diseases such as Creutzfeldt-Jakob disease",
+  "strenuous-exercise":
+    "Physiologic fatigue after vigorous exertion — transient lactate and CK elevations expected",
+  "v-q-mismatch":
+    "Emphysema destroys alveolar walls — high V/Q dead-space physiology with impaired gas exchange",
+  radiculopathy:
+    "Lumbar disc herniation compressing nerve root — classic cause of radiculopathy",
+  "stocking-glove":
+    "Length-dependent peripheral neuropathy — distal symmetric sensory loss in stocking-glove distribution",
+  toxidrome:
+    "Opioid toxidrome — miosis, respiratory depression, and decreased consciousness",
+  glycation:
+    "Nonenzymatic glycation — HbA1c reflects glucose-bound hemoglobin and chronic hyperglycemia exposure",
+  "vasa-nervorum":
+    "Microvascular ischemia of vasa nervorum — key mechanism in diabetic peripheral neuropathy",
 };
 
 export function getPathogenesisImageForId(id: string): string | undefined {

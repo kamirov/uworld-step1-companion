@@ -4,6 +4,7 @@ import type { SymptomEntry } from "./symptoms";
 import afferentPupillaryDefect from "../media/images/symptoms/afferent-pupillary-defect.png?url";
 import agonalRespirations from "../media/images/symptoms/agonal-respirations.jpg?url";
 import akathisia from "../media/images/symptoms/akathisia.jpg?url";
+import allodynia from "../media/images/symptoms/allodynia.png?url";
 import ankleReflex from "../media/images/symptoms/ankle-reflex.jpg?url";
 import anxiety from "../media/images/symptoms/anxiety.png?url";
 import arthralgia from "../media/images/symptoms/arthralgia.jpg?url";
@@ -18,6 +19,7 @@ import bullae from "../media/images/symptoms/bullae.jpg?url";
 import calcinosis from "../media/images/symptoms/calcinosis.jpg?url";
 import chestPain from "../media/images/symptoms/chest-pain.jpg?url";
 import chorea from "../media/images/symptoms/chorea.jpg?url";
+import clonicPhase from "../media/images/symptoms/clonic-phase.jpg?url";
 import clubbing from "../media/images/symptoms/clubbing.jpg?url";
 import coldIntolerance from "../media/images/symptoms/cold-intolerance.jpg?url";
 import confluentRash from "../media/images/symptoms/confluent-rash.jpg?url";
@@ -30,6 +32,7 @@ import decreasedSkinTurgor from "../media/images/symptoms/decreased-skin-turgor.
 import diplopia from "../media/images/symptoms/diplopia.jpg?url";
 import drusen from "../media/images/symptoms/drusen.jpg?url";
 import dryMucousMembranes from "../media/images/symptoms/dry-mucous-membranes.jpg?url";
+import dysesthesia from "../media/images/symptoms/dysesthesia.jpg?url";
 import dysmorphicFacies from "../media/images/symptoms/dysmorphic-facies.jpg?url";
 import dystonia from "../media/images/symptoms/dystonia.jpg?url";
 import dysuria from "../media/images/symptoms/dysuria.jpg?url";
@@ -46,6 +49,7 @@ import fasciculation from "../media/images/symptoms/fasciculation.jpg?url";
 import fecalImpaction from "../media/images/symptoms/fecal-impaction.jpg?url";
 import fecaloma from "../media/images/symptoms/fecaloma.jpg?url";
 import fever from "../media/images/symptoms/fever.jpg?url";
+import formication from "../media/images/symptoms/formication.svg?url";
 import generalizedTonicClonicSeizure from "../media/images/symptoms/generalized-tonic-clonic-seizure.jpg?url";
 import goiter from "../media/images/symptoms/goiter.jpg?url";
 import headache from "../media/images/symptoms/headache.jpg?url";
@@ -77,12 +81,14 @@ import moonFacies from "../media/images/symptoms/moon-facies.svg?url";
 import morningStiffness from "../media/images/symptoms/morning-stiffness.jpg?url";
 import mydriasis from "../media/images/symptoms/mydriasis.jpg?url";
 import myelopathy from "../media/images/symptoms/myelopathy.jpg?url";
+import myoclonus from "../media/images/symptoms/myoclonus.jpg?url";
 import nausea from "../media/images/symptoms/nausea.jpg?url";
 import neuropathicPain from "../media/images/symptoms/neuropathic-pain.jpg?url";
 import neutropenia from "../media/images/symptoms/neutropenia.jpg?url";
 import nodularLymphangitis from "../media/images/symptoms/nodular-lymphangitis.jpg?url";
 import nuchalRigidity from "../media/images/symptoms/nuchal-rigidity.jpg?url";
 import nystagmus from "../media/images/symptoms/nystagmus.svg?url";
+import ophthalmoplegia from "../media/images/symptoms/ophthalmoplegia.svg?url";
 import orthopnea from "../media/images/symptoms/orthopnea.jpg?url";
 import orthostaticHypotension from "../media/images/symptoms/orthostatic-hypotension.jpg?url";
 import pallor from "../media/images/symptoms/pallor.jpg?url";
@@ -117,6 +123,7 @@ import syncope from "../media/images/symptoms/syncope.jpg?url";
 import tearingChestPain from "../media/images/symptoms/tearing-chest-pain.jpg?url";
 import telangiectasia from "../media/images/symptoms/telangiectasia.jpg?url";
 import thrombocytopenia from "../media/images/symptoms/thrombocytopenia.jpg?url";
+import tonicPhase from "../media/images/symptoms/tonic-phase.jpg?url";
 import trousseauSign from "../media/images/symptoms/trousseau-sign.jpg?url";
 import upwardGazePalsy from "../media/images/symptoms/upward-gaze-palsy.png?url";
 import vertigo from "../media/images/symptoms/vertigo.svg?url";
@@ -133,6 +140,7 @@ export type SymptomImageId = Extract<
   | "afferent-pupillary-defect"
   | "agonal-respirations"
   | "akathisia"
+  | "allodynia"
   | "ankle-reflex"
   | "anxiety"
   | "arthralgia"
@@ -147,6 +155,7 @@ export type SymptomImageId = Extract<
   | "calcinosis"
   | "chest-pain"
   | "chorea"
+  | "clonic-phase"
   | "clubbing"
   | "cold-intolerance"
   | "confluent-rash"
@@ -159,6 +168,7 @@ export type SymptomImageId = Extract<
   | "diplopia"
   | "drusen"
   | "dry-mucous-membranes"
+  | "dysesthesia"
   | "dysmorphic-facies"
   | "dystonia"
   | "dysuria"
@@ -175,6 +185,7 @@ export type SymptomImageId = Extract<
   | "fecal-impaction"
   | "fecaloma"
   | "fever"
+  | "formication"
   | "generalized-tonic-clonic-seizure"
   | "goiter"
   | "headache"
@@ -206,12 +217,14 @@ export type SymptomImageId = Extract<
   | "morning-stiffness"
   | "mydriasis"
   | "myelopathy"
+  | "myoclonus"
   | "nausea"
   | "neuropathic-pain"
   | "neutropenia"
   | "nodular-lymphangitis"
   | "nuchal-rigidity"
   | "nystagmus"
+  | "ophthalmoplegia"
   | "orthopnea"
   | "orthostatic-hypotension"
   | "pallor"
@@ -246,6 +259,7 @@ export type SymptomImageId = Extract<
   | "tearing-chest-pain"
   | "telangiectasia"
   | "thrombocytopenia"
+  | "tonic-phase"
   | "trousseau-sign"
   | "upward-gaze-palsy"
   | "vertigo"
@@ -268,6 +282,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "afferent-pupillary-defect": extensionAssetUrl(afferentPupillaryDefect),
   "agonal-respirations": extensionAssetUrl(agonalRespirations),
   "akathisia": extensionAssetUrl(akathisia),
+  "allodynia": extensionAssetUrl(allodynia),
   "ankle-reflex": extensionAssetUrl(ankleReflex),
   "anxiety": extensionAssetUrl(anxiety),
   "arthralgia": extensionAssetUrl(arthralgia),
@@ -282,6 +297,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "calcinosis": extensionAssetUrl(calcinosis),
   "chest-pain": extensionAssetUrl(chestPain),
   "chorea": extensionAssetUrl(chorea),
+  "clonic-phase": extensionAssetUrl(clonicPhase),
   "clubbing": extensionAssetUrl(clubbing),
   "cold-intolerance": extensionAssetUrl(coldIntolerance),
   "confluent-rash": extensionAssetUrl(confluentRash),
@@ -294,6 +310,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "diplopia": extensionAssetUrl(diplopia),
   "drusen": extensionAssetUrl(drusen),
   "dry-mucous-membranes": extensionAssetUrl(dryMucousMembranes),
+  "dysesthesia": extensionAssetUrl(dysesthesia),
   "dysmorphic-facies": extensionAssetUrl(dysmorphicFacies),
   "dystonia": extensionAssetUrl(dystonia),
   "dysuria": extensionAssetUrl(dysuria),
@@ -310,6 +327,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "fecal-impaction": extensionAssetUrl(fecalImpaction),
   "fecaloma": extensionAssetUrl(fecaloma),
   "fever": extensionAssetUrl(fever),
+  "formication": extensionAssetUrl(formication),
   "generalized-tonic-clonic-seizure": extensionAssetUrl(generalizedTonicClonicSeizure),
   "goiter": extensionAssetUrl(goiter),
   "headache": extensionAssetUrl(headache),
@@ -341,12 +359,14 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "morning-stiffness": extensionAssetUrl(morningStiffness),
   "mydriasis": extensionAssetUrl(mydriasis),
   "myelopathy": extensionAssetUrl(myelopathy),
+  "myoclonus": extensionAssetUrl(myoclonus),
   "nausea": extensionAssetUrl(nausea),
   "neuropathic-pain": extensionAssetUrl(neuropathicPain),
   "neutropenia": extensionAssetUrl(neutropenia),
   "nodular-lymphangitis": extensionAssetUrl(nodularLymphangitis),
   "nuchal-rigidity": extensionAssetUrl(nuchalRigidity),
   "nystagmus": extensionAssetUrl(nystagmus),
+  "ophthalmoplegia": extensionAssetUrl(ophthalmoplegia),
   "orthopnea": extensionAssetUrl(orthopnea),
   "orthostatic-hypotension": extensionAssetUrl(orthostaticHypotension),
   "pallor": extensionAssetUrl(pallor),
@@ -381,6 +401,7 @@ export const SYMPTOM_IMAGES: Partial<Record<SymptomImageId, string>> = {
   "tearing-chest-pain": extensionAssetUrl(tearingChestPain),
   "telangiectasia": extensionAssetUrl(telangiectasia),
   "thrombocytopenia": extensionAssetUrl(thrombocytopenia),
+  "tonic-phase": extensionAssetUrl(tonicPhase),
   "trousseau-sign": extensionAssetUrl(trousseauSign),
   "upward-gaze-palsy": extensionAssetUrl(upwardGazePalsy),
   "vertigo": extensionAssetUrl(vertigo),
@@ -400,6 +421,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "afferent-pupillary-defect": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:afferent-pupillary-defect.png" },
   "agonal-respirations": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:agonal-respirations.jpg" },
   "akathisia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:akathisia.jpg" },
+  "allodynia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:allodynia.png" },
   "ankle-reflex": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ankle-reflex.jpg" },
   "anxiety": { label: "Wikimedia Commons (GAD At-A-Glance.png)", url: "https://commons.wikimedia.org/wiki/File:GAD_At-A-Glance.png" },
   "arthralgia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:arthralgia.jpg" },
@@ -414,6 +436,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "calcinosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:calcinosis.jpg" },
   "chest-pain": { label: "Wikimedia Commons (Depiction of a person suffering from chest pain.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_chest_pain.png" },
   "chorea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:chorea.jpg" },
+  "clonic-phase": { label: "Wikimedia Commons (Grand-mal Epilepsy A.jpg)", url: "https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg" },
   "clubbing": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:clubbing.jpg" },
   "cold-intolerance": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:cold-intolerance.jpg" },
   "confluent-rash": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:confluent-rash.jpg" },
@@ -426,6 +449,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "diplopia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:diplopia.jpg" },
   "drusen": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:drusen.jpg" },
   "dry-mucous-membranes": { label: "Wikimedia Commons (Xerostomia - Dry Mouth.jpg)", url: "https://commons.wikimedia.org/wiki/File:Xerostomia_-_Dry_Mouth.jpg" },
+  "dysesthesia": { label: "Wikimedia Commons (Diabetic Neuropathy Device pic.jpg)", url: "https://commons.wikimedia.org/wiki/File:Diabetic_Neuropathy_Device_pic.jpg" },
   "dysmorphic-facies": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dysmorphic-facies.jpg" },
   "dystonia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:dystonia.jpg" },
   "dysuria": { label: "Wikimedia Commons (Bombax ceiba is a universe unto itself.jpg)", url: "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_is_a_universe_unto_itself.jpg" },
@@ -442,8 +466,9 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "fecal-impaction": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:fecal-impaction.jpg" },
   "fecaloma": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:fecaloma.jpg" },
   "fever": { label: "Wikimedia Commons (Symptoms of coronavirus disease 2019 2.0.svg)", url: "https://commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0.svg" },
+  "formication": { label: "Wikimedia Commons (Kokain - Cocaine.svg)", url: "https://commons.wikimedia.org/wiki/File:Kokain_-_Cocaine.svg" },
   "generalized-tonic-clonic-seizure": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:generalized-tonic-clonic-seizure.jpg" },
-  "goiter": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:goiter.jpg" },
+  "goiter": { label: "Wikimedia Commons (Thyroid, Diffuse Hyperplasia.jpg)", url: "https://commons.wikimedia.org/wiki/File:Thyroid,_Diffuse_Hyperplasia.jpg" },
   "headache": { label: "Wikimedia Commons (Migraine.jpg)", url: "https://commons.wikimedia.org/wiki/File:Migraine.jpg" },
   "hematochezia": { label: "Wikimedia Commons (Hämatochezie Dezember 2021.jpg)", url: "https://commons.wikimedia.org/wiki/File:Hämatochezie_Dezember_2021.jpg" },
   "hematuria": { label: "Wikimedia Commons (HematuriaTrauma.JPG)", url: "https://commons.wikimedia.org/wiki/File:HematuriaTrauma.JPG" },
@@ -473,15 +498,17 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "morning-stiffness": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:morning-stiffness.jpg" },
   "mydriasis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:mydriasis.jpg" },
   "myelopathy": { label: "Wikimedia Commons (Cervical Spine MRI (T2W).jpg)", url: "https://commons.wikimedia.org/wiki/File:Cervical_Spine_MRI_(T2W).jpg" },
+  "myoclonus": { label: "Wikimedia Commons (Local copy symptoms/generalized-tonic-clonic-seizure.jpg)", url: "https://commons.wikimedia.org/" },
   "nausea": { label: "Wikimedia Commons (Fphar-09-00913-g005.jpg)", url: "https://commons.wikimedia.org/wiki/File:Fphar-09-00913-g005.jpg" },
   "neuropathic-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:neuropathic-pain.jpg" },
   "neutropenia": { label: "Wikimedia Commons (A blood smear with neutropenia in United States.jpg)", url: "https://commons.wikimedia.org/wiki/File:A_blood_smear_with_neutropenia_in_United_States.jpg" },
   "nodular-lymphangitis": { label: "Wikimedia Commons (Sporotrichosis by the fungus Sporothrix schenckii PHIL 3940 lores.jpg)", url: "https://commons.wikimedia.org/wiki/File:Sporotrichosis_by_the_fungus_Sporothrix_schenckii_PHIL_3940_lores.jpg" },
   "nuchal-rigidity": { label: "Wikimedia Commons (Neck stiffness.jpg)", url: "https://commons.wikimedia.org/wiki/File:Neck_stiffness.jpg" },
   "nystagmus": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:nystagmus.svg" },
+  "ophthalmoplegia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:ophthalmoplegia.svg" },
   "orthopnea": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthopnea.jpg" },
   "orthostatic-hypotension": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:orthostatic-hypotension.jpg" },
-  "pallor": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:pallor.jpg" },
+  "pallor": { label: "Wikimedia Commons (Anemia.JPG)", url: "https://commons.wikimedia.org/wiki/File:Anemia.JPG" },
   "palpitations": { label: "Wikimedia Commons (ECG Atrial Fibrillation 98 bpm.jpg)", url: "https://commons.wikimedia.org/wiki/File:ECG_Atrial_Fibrillation_98_bpm.jpg" },
   "papilledema": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:papilledema.jpg" },
   "papule": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:papule.jpg" },
@@ -497,7 +524,7 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "presyncope": { label: "Wikimedia Commons (Pietro Longhi 027.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pietro_Longhi_027.jpg" },
   "primitive-nose": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:primitive-nose.jpg" },
   "prodromal": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:prodromal.jpg" },
-  "proptosis": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:proptosis.jpg" },
+  "proptosis": { label: "Wikimedia Commons (Proptosis and lid retraction from Graves' Disease.jpg)", url: "https://commons.wikimedia.org/wiki/File:Proptosis_and_lid_retraction_from_Graves'_Disease.jpg" },
   "pruritus": { label: "Wikimedia Commons (Photographic atlas of the diseases of the skin; a series of ninety-six plates, comprising nearly two hundred illustrations, with descriptive text, and a treatise on cutaneous therapeutics (1905) (14783268942).jpg)", url: "https://commons.wikimedia.org/wiki/File:Photographic_atlas_of_the_diseases_of_the_skin;_a_series_of_ninety-six_plates,_comprising_nearly_two_hundred_illustrations,_with_descriptive_text,_and_a_treatise_on_cutaneous_therapeutics_(1905)_(14783268942).jpg" },
   "psychosis": { label: "Wikimedia Commons (Atypical Psychosis Genetic Map.jpg)", url: "https://commons.wikimedia.org/wiki/File:Atypical_Psychosis_Genetic_Map.jpg" },
   "pulmonary-edema": { label: "Wikimedia Commons (Respiratory system - Pulmonary edema -- Smart-Servier.png)", url: "https://commons.wikimedia.org/wiki/File:Respiratory_system_-_Pulmonary_edema_--_Smart-Servier.png" },
@@ -513,7 +540,8 @@ export const SYMPTOM_IMAGE_ATTRIBUTIONS: Partial<
   "tearing-chest-pain": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:tearing-chest-pain.jpg" },
   "telangiectasia": { label: "Wikimedia Commons (SpiderAngioma.jpg)", url: "https://commons.wikimedia.org/wiki/File:SpiderAngioma.jpg" },
   "thrombocytopenia": { label: "Wikimedia Commons (Oral petechiae.JPG)", url: "https://commons.wikimedia.org/wiki/File:Oral_petechiae.JPG" },
-  "trousseau-sign": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:trousseau-sign.jpg" },
+  "tonic-phase": { label: "Wikimedia Commons (Grand-mal Epilepsy A.jpg)", url: "https://commons.wikimedia.org/wiki/File:Grand-mal_Epilepsy_A.jpg" },
+  "trousseau-sign": { label: "Wikimedia Commons (Trousseau's Sign of Latent Tetany.jpg)", url: "https://commons.wikimedia.org/wiki/File:Trousseau's_Sign_of_Latent_Tetany.jpg" },
   "upward-gaze-palsy": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:upward-gaze-palsy.png" },
   "vertigo": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:vertigo.svg" },
   "vesicle": { label: "Wikimedia Commons (Diseases of the mouth; for physicians, dentists, medical and dental students (1912) (14772644622).jpg)", url: "https://commons.wikimedia.org/wiki/File:Diseases_of_the_mouth;_for_physicians,_dentists,_medical_and_dental_students_(1912)_(14772644622).jpg" },
@@ -530,6 +558,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "afferent-pupillary-defect": "Clinical or pathologic image illustrating afferent pupillary defect",
   "agonal-respirations": "Clinical or pathologic image illustrating agonal respirations",
   "akathisia": "Clinical or pathologic image illustrating akathisia",
+  "allodynia": "Pain from normally nonpainful light touch — classic in postherpetic neuralgia",
   "ankle-reflex": "Clinical or pathologic image illustrating ankle reflex",
   "anxiety": "Generalized anxiety — persistent excessive worry with somatic symptoms",
   "arthralgia": "Clinical or pathologic image illustrating arthralgia",
@@ -544,6 +573,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "calcinosis": "Calcinosis cutis — subcutaneous calcium deposits in systemic sclerosis",
   "chest-pain": "Clinical or pathologic image illustrating chest pain",
   "chorea": "Clinical or pathologic image illustrating chorea",
+  "clonic-phase": "Clonic phase of generalized seizure — rhythmic convulsive jerking after tonic stiffening",
   "clubbing": "Finger clubbing — increased convexity of nail bed with loss of Lovibond angle",
   "cold-intolerance": "Clinical or pathologic image illustrating cold intolerance",
   "confluent-rash": "Clinical or pathologic image illustrating confluent rash",
@@ -556,6 +586,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "diplopia": "Clinical or pathologic image illustrating diplopia",
   "drusen": "Clinical or pathologic image illustrating drusen",
   "dry-mucous-membranes": "Clinical or pathologic image illustrating dry mucous membranes",
+  "dysesthesia": "Unpleasant burning or abnormal sensation — neuropathic symptom in peripheral neuropathy",
   "dysmorphic-facies": "Clinical or pathologic image illustrating dysmorphic facies",
   "dystonia": "Clinical or pathologic image illustrating dystonia",
   "dysuria": "Clinical or pathologic image illustrating dysuria",
@@ -572,6 +603,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "fecal-impaction": "Clinical or pathologic image illustrating fecal impaction",
   "fecaloma": "Clinical or pathologic image illustrating fecaloma",
   "fever": "Clinical or pathologic image illustrating fever",
+  "formication": "Sensation of insects crawling on skin — cocaine intoxication or withdrawal",
   "generalized-tonic-clonic-seizure": "Clinical or pathologic image illustrating generalized tonic clonic seizure",
   "goiter": "Clinical or pathologic image illustrating goiter",
   "headache": "Clinical or pathologic image illustrating headache",
@@ -603,12 +635,14 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "morning-stiffness": "Clinical or pathologic image illustrating morning stiffness",
   "mydriasis": "Clinical or pathologic image illustrating mydriasis",
   "myelopathy": "Clinical or pathologic image illustrating myelopathy",
+  "myoclonus": "Sudden shock-like myoclonic jerk — classic in Creutzfeldt-Jakob disease and metabolic encephalopathy",
   "nausea": "Clinical or pathologic image illustrating nausea",
   "neuropathic-pain": "Clinical or pathologic image illustrating neuropathic pain",
   "neutropenia": "Clinical or pathologic image illustrating neutropenia",
   "nodular-lymphangitis": "Clinical or pathologic image illustrating nodular lymphangitis",
   "nuchal-rigidity": "Nuchal rigidity — resistance to passive neck flexion in meningeal irritation",
   "nystagmus": "Clinical or pathologic image illustrating nystagmus",
+  "ophthalmoplegia": "Clinical or pathologic image illustrating ophthalmoplegia",
   "orthopnea": "Clinical or pathologic image illustrating orthopnea",
   "orthostatic-hypotension": "Clinical or pathologic image illustrating orthostatic hypotension",
   "pallor": "Clinical or pathologic image illustrating pallor",
@@ -643,6 +677,7 @@ export const SYMPTOM_IMAGE_CAPTIONS: Partial<Record<SymptomImageId, string>> = {
   "tearing-chest-pain": "Clinical or pathologic image illustrating tearing chest pain",
   "telangiectasia": "Spider angioma — central arteriole with radiating telangiectasias",
   "thrombocytopenia": "Clinical or pathologic image illustrating thrombocytopenia",
+  "tonic-phase": "Tonic phase of generalized seizure — sustained bilateral muscle stiffening before clonic jerking",
   "trousseau-sign": "Clinical or pathologic image illustrating trousseau sign",
   "upward-gaze-palsy": "Clinical or pathologic image illustrating upward gaze palsy",
   "vertigo": "Clinical or pathologic image illustrating vertigo",
