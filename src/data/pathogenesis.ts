@@ -2151,6 +2151,98 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Neonatal skin has higher permeability to topical agents and water loss (TEWL). Cystic fibrosis alters epithelial ion and water permeability from birth. Congenital nephrotic syndrome reflects loss of glomerular selective permeability to protein.",
   },
   {
+    id: "cotransporter",
+    name: "Cotransporter",
+    etymology:
+      "Latin co- = together + transportare = to carry across — coupled transport of multiple solutes in the same direction",
+    aliases: [
+      "cotransporter",
+      "cotransporters",
+      "co-transporter",
+      "co-transporters",
+      "contransporter",
+      "contransporters",
+      "symporter",
+      "symporters",
+      "coupled transport",
+      "coupled transporter",
+      "coupled cotransport",
+      "secondary active cotransport",
+    ],
+    definition:
+      "Membrane transport protein that moves two or more solutes across a membrane in the same direction, often coupling uphill movement of one solute to the downhill electrochemical gradient of another (secondary active transport).",
+    examples: [
+      "SGLT2/SGLT1 — Na⁺-glucose cotransport in proximal tubule and intestine",
+      "NKCC2 — Na⁺/K⁺/2Cl⁻ cotransporter in thick ascending limb (loop diuretic target)",
+      "NCC — Na⁺/Cl⁻ cotransporter in distal convoluted tubule (thiazide target)",
+      "NIS — Na⁺/I⁻ symporter in thyroid follicular cells (iodide trapping)",
+      "Amino acid and neurotransmitter Na⁺-coupled cotransporters in intestine and CNS reuptake",
+    ],
+    boardsPearls: [
+      "Cotransporter (symporter) = two+ solutes move in SAME direction",
+      "Often secondary active transport — Na⁺ gradient from Na⁺/K⁺-ATPase drives glucose, amino acids, or ions",
+      "Loop diuretics block NKCC2; thiazides block NCC; SGLT2 inhibitors block renal glucose cotransport",
+      "vs antiporter — cotransporter moves solutes same direction; antiporter exchanges opposite directions",
+      "vs uniporter — single solute carrier (e.g., GLUT facilitative glucose transporter)",
+      "vs ion channel — cotransport is coupled carrier-mediated, not open pore diffusion",
+    ],
+    distinguishFrom: [
+      "Antiporter — exchanges solutes in opposite directions across membrane",
+      "Uniporter — transports one solute type (facilitated diffusion or passive carrier)",
+      "Ion channel — selective pore without obligatory coupling to second solute",
+      "Primary active transport — ATPase directly hydrolyzes ATP (e.g., Na⁺/K⁺-ATPase), not gradient-coupled symport",
+      "Simple diffusion — passive movement without carrier protein",
+    ],
+    pediatrics:
+      "Congenital glucose-galactose malabsorption from SGLT1 defect causes neonatal osmotic diarrhea. Bartter syndrome involves NKCC2 cotransporter loss. Thyroid hormone synthesis requires NIS-mediated iodide cotransport from birth.",
+  },
+  {
+    id: "antiporter",
+    name: "Antiporter",
+    etymology:
+      "Latin anti- = opposite + transportare = to carry across — exchange transport of solutes in opposite directions",
+    aliases: [
+      "antiporter",
+      "antiporters",
+      "anti-porter",
+      "anti-porters",
+      "exchanger",
+      "exchangers",
+      "exchange transporter",
+      "exchange transporters",
+      "counter-transporter",
+      "countertransporter",
+      "countertransporters",
+      "ion exchanger",
+      "ion exchangers",
+    ],
+    definition:
+      "Membrane transport protein that exchanges two solutes across a membrane in opposite directions — one entering as the other leaves — often using existing ion gradients to move a second species uphill (secondary active transport).",
+    examples: [
+      "Na⁺/H⁺ exchanger (NHE) — proximal tubule H⁺ secretion coupled to Na⁺ entry",
+      "Na⁺/Ca²⁺ exchanger (NCX) — removes Ca²⁺ from cardiomyocytes using Na⁺ gradient",
+      "Cl⁻/HCO₃⁻ exchanger (AE1) — RBC chloride shift and basolateral acid-base transport",
+      "Anion exchanger in collecting duct intercalated cells for acid-base handling",
+    ],
+    boardsPearls: [
+      "Antiporter (exchanger) = solutes move in OPPOSITE directions",
+      "Na⁺/H⁺ exchanger in proximal tubule — key for H⁺ secretion and bicarbonate reclamation",
+      "NCX — 3 Na⁺ in, 1 Ca²⁺ out; important in cardiac excitation-contraction coupling",
+      "vs cotransporter (symporter) — same direction coupled transport",
+      "vs Na⁺/K⁺-ATPase — primary active pump using ATP, not gradient-coupled exchange",
+      "Digitalis toxicity — ↑ intracellular Na⁺ impairs NCX → ↑ Ca²⁺ → contractility (therapeutic) or arrhythmia (toxic)",
+    ],
+    distinguishFrom: [
+      "Cotransporter (symporter) — coupled transport in same direction",
+      "Uniporter — single solute carrier without obligatory exchange",
+      "Na⁺/K⁺-ATPase — electrogenic pump hydrolyzing ATP; not classic antiport exchange",
+      "Ion channel — passive pore without stoichiometric exchange of second solute",
+      "Osmosis — water movement, not coupled ion exchange protein",
+    ],
+    pediatrics:
+      "Proximal renal tubular acidosis and carbonic anhydrase defects impair H⁺/HCO₃⁻ handling involving antiporter-linked acid secretion. Same exchanger physiology applies in neonatal acid-base regulation.",
+  },
+  {
     id: "receptor-internalization",
     name: "Receptor Internalization",
     etymology: "Latin recipere = receive + internus = inside + -ization = process",
@@ -9602,6 +9694,48 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Neonatal renal vein thrombosis and umbilical catheter–associated arterial/venous thrombotic occlusion occur with dehydration, sepsis, or indwelling lines. Kawasaki disease can predispose to coronary thrombotic occlusion at aneurysm sites.",
+  },
+  {
+    id: "transmural-inflammation",
+    name: "Transmural Inflammation",
+    etymology:
+      "Latin trans = across + murus = wall + inflammatio = setting on fire — inflammation through full thickness of a tissue wall",
+    aliases: [
+      "transmural inflammation",
+      "transmural inflammations",
+      "full-thickness inflammation",
+      "full thickness inflammation",
+      "transmural inflammatory process",
+      "inflammation through full thickness",
+      "full-thickness wall inflammation",
+      "transmural involvement",
+    ],
+    definition:
+      "Inflammatory process extending through the entire thickness of a hollow organ or vessel wall (from luminal surface through to serosa/adventitia or outer myocardium) — producing deeper injury than mucosal-only inflammation and predisposing to fistulae, perforation, strictures, or transmural necrosis.",
+    examples: [
+      "Crohn disease — transmural granulomatous inflammation with skip lesions and fistulae",
+      "STEMI — transmural myocardial infarction with ST elevation and Q waves",
+      "Polyarteritis nodosa — transmural fibrinoid necrotizing inflammation of medium arteries",
+      "Advanced appendicitis — transmural inflammation progressing to necrosis and perforation",
+      "Mesenteric arterial occlusion — transmural bowel infarction with peritoneal signs",
+    ],
+    boardsPearls: [
+      "Transmural = full-thickness wall involvement",
+      "Crohn vs UC — Crohn is transmural; UC is mucosal/submucosal only",
+      "STEMI = transmural MI (ST elevation); NSTEMI often subendocardial",
+      "PAN — transmural arterial inflammation with fibrinoid necrosis",
+      "Transmural bowel ischemia → peritoneal signs, lactic acidosis, surgical emergency",
+      "vs mucosal inflammation — limited to inner lining (e.g., ulcerative colitis, infectious colitis)",
+    ],
+    distinguishFrom: [
+      "Mucosal inflammation — confined to epithelium and lamina propria (ulcerative colitis)",
+      "Submucosal edema — deeper than mucosa but not necessarily full-thickness inflammatory disease (ischemic colitis thumbprinting)",
+      "Serous inflammation — effusion or surface inflammation without full wall penetration",
+      "Subendocardial ischemia — inner myocardial layer only; not transmural STEMI pattern",
+      "Intramural hematoma — blood within wall without primary inflammatory infiltrate",
+    ],
+    pediatrics:
+      "Crohn disease can present in childhood with transmural inflammation, fistulae, and growth failure. Necrotizing enterocolitis involves transmural intestinal injury in preterm neonates.",
   },
   {
     id: "third-spacing",

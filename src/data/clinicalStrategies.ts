@@ -806,6 +806,186 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     pediatrics:
       "Pediatric combination therapy follows same synergy principles, but toxicity synergy (renal/ototoxic/neurotoxic) is often more clinically limiting because of narrower dosing margins.",
   },
+  {
+    id: "dietary-salt-restriction",
+    name: "Dietary Salt Restriction",
+    etymology:
+      "Latin dieta = way of life + sal = salt + Latin restrictio = limitation",
+    aliases: [
+      "dietary salt restriction",
+      "dietary salt restrictions",
+      "salt restriction",
+      "salt restrictions",
+      "sodium restriction",
+      "sodium restrictions",
+      "dietary sodium restriction",
+      "low salt diet",
+      "low-salt diet",
+      "low sodium diet",
+      "low-sodium diet",
+      "salt restricted diet",
+      "salt-restricted diet",
+      "sodium restricted diet",
+      "reduced sodium intake",
+      "dietary na restriction",
+    ],
+    definition:
+      "Nonpharmacologic limitation of dietary sodium chloride intake to reduce extracellular fluid volume, blood pressure, and edema — a cornerstone lifestyle intervention in hypertension, heart failure, cirrhosis with ascites, nephrotic syndrome, and chronic kidney disease.",
+    details: [
+      "Typical goal ~2–2.3 g sodium/day (≈5–6 g salt) for general hypertension prevention; stricter limits (≈1.5–2 g sodium/day) often used in heart failure, cirrhosis, and advanced CKD per guidelines",
+      "Component of DASH diet and comprehensive lifestyle modification for hypertension",
+      "↓ effective circulating volume and preload → ↓ BP, ↓ peripheral edema, ↓ ascites formation",
+      "Synergizes with diuretics and RAAS blockers; poor adherence blunts antihypertensive and decongestive therapy",
+      "Hidden sodium in processed foods, restaurant meals, and IV fluids must be considered in hospitalized patients",
+    ],
+    boardsPearls: [
+      "Salt restriction = ↓ Na⁺ intake → ↓ volume → ↓ BP and edema",
+      "First-line lifestyle measure for hypertension alongside weight loss and exercise",
+      "Heart failure and cirrhotic ascites — sodium restriction plus diuretics",
+      "Nephrotic syndrome edema — sodium restriction with albumin/diuretics as indicated",
+      "vs fluid restriction — limits water intake; salt restriction limits sodium solute load",
+      "vs potassium restriction — different electrolyte target (hyperkalemia in CKD)",
+      "Loop diuretics cause natriuresis; dietary salt opposes or complements depending on clinical goal",
+    ],
+    pediatrics:
+      "Important in pediatric nephrotic syndrome, heart failure, and CKD; infants on formula or IV fluids need careful sodium content monitoring. Salt craving in Bartter/Gitelman requires supplementation rather than restriction.",
+  },
+  {
+    id: "screening",
+    name: "Screening",
+    etymology:
+      "Old English scyran = to separate/sift — testing asymptomatic people to detect disease early",
+    aliases: [
+      "screening",
+      "screenings",
+      "medical screening",
+      "medical screenings",
+      "disease screening",
+      "health screening",
+      "preventive screening",
+      "screening test",
+      "screening tests",
+      "screening examination",
+      "screening program",
+    ],
+    definition:
+      "Systematic testing of asymptomatic individuals to identify disease or risk factors before clinical presentation — a key tool of secondary prevention when early treatment improves outcomes.",
+    details: [
+      "Performed in populations at risk (age, sex, exposure, family history) per guideline recommendations (e.g., USPSTF)",
+      "Examples: mammography, colonoscopy/fecal occult blood testing, Pap smear/HPV testing, AAA ultrasound in older male smokers, lipid screening, newborn metabolic screening, TB testing in high-risk groups",
+      "Requires acceptable test characteristics (sensitivity/specificity) and evidence that early detection changes outcomes",
+      "Lead-time and length biases can make screened populations appear to survive longer without true mortality benefit",
+      "Positive screen requires confirmatory diagnostic testing",
+    ],
+    boardsPearls: [
+      "Screening = test asymptomatic patients to find early disease",
+      "Screening is secondary prevention when it enables early treatment",
+      "Sensitivity vs specificity tradeoff — false positives vs missed disease",
+      "AAA screening: ultrasound in men 65–75 who have smoked",
+      "vs diagnostic testing — performed because symptoms or high clinical suspicion already exist",
+      "vs case finding — testing symptomatic or known high-risk individuals in clinical encounter",
+    ],
+    pediatrics:
+      "Newborn screening (heel prick) for PKU, congenital hypothyroidism, sickle cell, and other disorders is classic pediatric screening. Universal hearing and critical congenital heart disease screening are standard in many regions.",
+  },
+  {
+    id: "primary-prevention",
+    name: "Primary Prevention",
+    etymology:
+      "Latin primus = first + praeventio = act of coming before — preventing disease onset in unaffected individuals",
+    aliases: [
+      "primary prevention",
+      "primary preventions",
+      "primary preventive care",
+      "primary preventive medicine",
+      "disease prevention",
+      "prevent disease onset",
+      "prevention of disease",
+    ],
+    definition:
+      "Interventions applied before disease develops to prevent initial occurrence — targeting healthy or at-risk but still disease-free individuals.",
+    details: [
+      "Goals: remove risk factors, strengthen host defenses, or block exposure before pathology begins",
+      "Examples: vaccinations, smoking cessation, statins in high-risk primary ASCVD prevention, seat belts/helmets, water fluoridation, contraception, HPV vaccine, lifestyle counseling (diet, exercise)",
+      "Population-level measures: sanitation, clean water, tobacco control",
+      "Pharmacologic primary prevention when risk is high (e.g., aspirin in select high CV risk — bleeding tradeoff)",
+    ],
+    boardsPearls: [
+      "Primary prevention = stop disease before it starts",
+      "Vaccines are classic primary prevention",
+      "Statins for high LDL/ASCVD risk in patient without established ASCVD = primary prevention",
+      "vs secondary prevention — disease already present; prevent progression/complications",
+      "vs tertiary prevention — reduce disability from established advanced disease",
+      "vs screening — screening detects disease; primary prevention prevents incidence",
+    ],
+    pediatrics:
+      "Childhood immunization schedule is primary prevention cornerstone. Injury prevention (car seats, pool fencing) and nutrition counseling prevent disease before onset.",
+  },
+  {
+    id: "secondary-prevention",
+    name: "Secondary Prevention",
+    etymology:
+      "Latin secundus = second + praeventio = act of coming before — early detection and treatment to prevent progression",
+    aliases: [
+      "secondary prevention",
+      "secondary preventions",
+      "secondary preventive care",
+      "secondary preventive medicine",
+      "early disease prevention",
+      "prevent disease progression",
+    ],
+    definition:
+      "Interventions that detect and treat asymptomatic or early-stage disease to halt progression and prevent complications — disease is present but often not yet clinically apparent or advanced.",
+    details: [
+      "Screening followed by early treatment is the classic secondary prevention pathway",
+      "Examples: mammography → early breast cancer treatment; colonoscopy polypectomy; treating hypertension to prevent stroke; treating HIV to prevent AIDS; aspirin and statins after MI (prevent recurrent events)",
+      "Antiplatelet therapy after ischemic stroke/MI — prevent recurrent thrombosis",
+      "Treating latent TB infection to prevent active TB",
+    ],
+    boardsPearls: [
+      "Secondary prevention = disease present but early; treat to prevent worsening/complications",
+      "Screening tests are tools of secondary prevention when effective early therapy exists",
+      "Post-MI aspirin/statins/β-blockers — secondary prevention of recurrent events",
+      "vs primary prevention — no disease yet",
+      "vs tertiary prevention — established disease with disability; focus on rehab/limiting sequelae",
+      "Treating pre-diabetes to prevent diabetes spans secondary prevention framework",
+    ],
+    pediatrics:
+      "Newborn screening with immediate treatment (e.g., PKU diet, hypothyroid hormone) is secondary prevention. Lead screening and chelation in exposed children prevents neurotoxic progression.",
+  },
+  {
+    id: "tertiary-prevention",
+    name: "Tertiary Prevention",
+    etymology:
+      "Latin tertius = third + praeventio = act of coming before — limiting disability and complications from established disease",
+    aliases: [
+      "tertiary prevention",
+      "tertiary preventions",
+      "tertiary preventive care",
+      "tertiary preventive medicine",
+      "disability prevention",
+      "complication prevention",
+      "rehabilitative prevention",
+    ],
+    definition:
+      "Interventions in patients with established, often chronic or advanced disease to reduce morbidity, disability, complications, and mortality — optimizing function and quality of life rather than preventing first onset.",
+    details: [
+      "Goals: rehabilitation, complication prevention, symptom control, and limiting further organ damage",
+      "Examples: cardiac rehabilitation after MI; stroke physical/occupational therapy; insulin in diabetes to prevent neuropathy/nephropathy/retinopathy; ACE inhibitors in CKD to slow progression; ICD for secondary VT prevention post-MI; joint protection in rheumatoid arthritis",
+      "Pain management and fall prevention in frail elderly with established disease",
+      "Not the same as palliative/hospice care, though overlap exists in advanced illness",
+    ],
+    boardsPearls: [
+      "Tertiary prevention = disease already established; reduce disability and complications",
+      "Cardiac rehab, stroke rehab, diabetic complication prevention = tertiary",
+      "vs secondary prevention — catch disease early before major sequelae",
+      "vs primary prevention — before any disease",
+      "ICD after MI for VT — tertiary/secondary overlap (prevents sudden death in established heart disease)",
+      "Physical therapy in COPD to improve function — tertiary",
+    ],
+    pediatrics:
+      "Rehabilitation after cerebral palsy, congenital heart disease surgery follow-up, and tight glycemic control in established type 1 diabetes to prevent retinopathy/nephropathy exemplify tertiary prevention in children.",
+  },
 ];
 
 const strategyById = new Map(

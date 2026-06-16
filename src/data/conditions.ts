@@ -6387,6 +6387,78 @@ export const CONDITIONS: ConditionEntry[] = [
       "Neonatal severe primary hyperparathyroidism is rare with marked hypercalcemia and failure to thrive; familial hypocalciuric hypercalcemia mimics primary disease but is benign.",
   },
   {
+    id: "familial-hypocalciuric-hypercalcemia",
+    name: "Familial Hypocalciuric Hypercalcemia",
+    etymology:
+      "Latin familia = household + hypo- = low + calci- = calcium + uria = urine + hyper- = excess + calcemia = blood calcium",
+    aliases: [
+      "familial hypocalciuric hypercalcemia",
+      "familial hypocalciuric hypercalcemias",
+      "fhh",
+      "familial benign hypercalcemia",
+      "familial benign hypercalcemias",
+      "benign familial hypercalcemia",
+      "familial hypercalcemia with hypocalciuria",
+      "casr-related hypercalcemia",
+    ],
+    definition:
+      "Autosomal dominant inactivating mutation of the calcium-sensing receptor (CaSR) causing mild lifelong hypercalcemia with hypocalciuria and normal or inappropriately normal PTH — a benign mimic of primary hyperparathyroidism that does not require parathyroidectomy.",
+    pathophysiology:
+      "Loss-of-function CaSR (CASR) or related pathway mutations (GNA11, AP2S1) → parathyroid and renal tubule set point for calcium sensing shifted upward → mild hypercalcemia with inadequate PTH suppression and enhanced renal calcium reabsorption → low fractional excretion of calcium (hypocalciuria). Homozygous CASR mutations cause neonatal severe hyperparathyroidism.",
+    classicPresentation: [
+      "Often asymptomatic mild hypercalcemia discovered incidentally",
+      "Family history of hypercalcemia in multiple relatives",
+      "Generally no nephrolithiasis or significant bone disease",
+      "Homozygous disease — neonatal severe hypercalcemia, failure to thrive, hypotonia",
+    ],
+    keyFindings: [
+      "Mild hypercalcemia (often 10.5–12 mg/dL range)",
+      "Normal or mildly elevated PTH (not appropriately suppressed)",
+      "Low 24-hour urinary calcium excretion",
+      "Calcium/creatinine clearance ratio <0.01 (vs >0.02 in primary hyperparathyroidism)",
+    ],
+    keyLabs: [
+      "↑ serum calcium (mild, stable)",
+      "PTH normal or mildly ↑",
+      "↓ urinary calcium excretion / low calcium-creatinine clearance ratio",
+      "CASR genetic testing if diagnosis uncertain",
+    ],
+    associations: [
+      "Autosomal dominant CASR mutation (most common)",
+      "GNA11 or AP2S1 mutations (FHH types 2 and 3)",
+      "Family members with similar mild hypercalcemia",
+      "Homozygous CASR → neonatal severe primary hyperparathyroidism phenotype",
+    ],
+    complications: [
+      "Unnecessary parathyroidectomy if misdiagnosed as primary hyperparathyroidism",
+      "Pancreatitis (rare, with marked hypercalcemia in homozygous disease)",
+      "Generally benign in heterozygous FHH",
+    ],
+    distinguishFrom: [
+      "Primary hyperparathyroidism — hypercalciuria, stones/bone symptoms; parathyroidectomy curative",
+      "Secondary hyperparathyroidism — hypocalcemia-driven ↑ PTH (CKD, vitamin D deficiency)",
+      "Malignancy-associated hypercalcemia — PTH suppressed; PTHrP or osteolysis",
+      "Vitamin D toxicity — ↑ 25-OH vitamin D; suppressed PTH",
+      "Bartter syndrome type 5 — activating CaSR mutation causes hypocalcemia, not FHH hypercalcemia",
+    ],
+    treatment: [
+      "Reassurance and monitoring — no parathyroidectomy for typical heterozygous FHH",
+      "Avoid misdiagnosis as primary hyperparathyroidism",
+      "Adequate hydration; avoid unnecessary calcium/vitamin D excess",
+      "Neonatal severe hyperparathyroidism (homozygous) — specialist management; may require parathyroidectomy",
+    ],
+    boardsPearls: [
+      "FHH = mild hypercalcemia + hypocalciuria + family history + benign course",
+      "CaSR loss-of-function → high calcium set point → ↑ PTH at 'normal' high calcium",
+      "Calcium/creatinine clearance ratio <0.01 favors FHH over primary hyperparathyroidism",
+      "Do NOT operate — parathyroidectomy does not fix CaSR defect and can cause hypocalcemia",
+      "vs primary hyperparathyroidism — stones, bones, groans; hypercalciuria; surgery indicated when symptomatic",
+      "Homozygous CASR → neonatal severe hyperparathyroidism (not benign)",
+    ],
+    pediatrics:
+      "Heterozygous FHH is usually asymptomatic in children with mild stable hypercalcemia. Homozygous inactivating CASR mutations present in the neonatal period with severe hypercalcemia, hypotonia, and failure to thrive — distinct emergency from benign familial disease.",
+  },
+  {
     id: "vitamin-d-toxicity",
     name: "Vitamin D Toxicity",
     etymology: "vitamin = vital amine + D + Greek toxikon = poison",
@@ -26975,6 +27047,156 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Neonatal coarctation may present when PDA closes; prostaglandin maintains lower-body perfusion until repair.",
+  },
+  {
+    id: "aortic-aneurysm",
+    name: "Aortic Aneurysm",
+    etymology:
+      "Greek aneurysma = dilation + aorte = artery — focal pathologic enlargement of the aortic wall",
+    aliases: [
+      "aortic aneurysm",
+      "aortic aneurysms",
+      "aneurysm of the aorta",
+      "aortic artery aneurysm",
+      "thoracic aortic aneurysm",
+      "thoracic aortic aneurysms",
+      "taa",
+      "ascending aortic aneurysm",
+      "aortic root aneurysm",
+      "aortic root aneurysms",
+    ],
+    definition:
+      "Focal abnormal dilation of the aorta from wall weakening and outward expansion — classified by location (thoracic vs abdominal) — that may grow silently, thrombose, compress adjacent structures, dissect, or rupture.",
+    pathophysiology:
+      "Chronic wall stress and degeneration (atherosclerosis, hypertension, connective tissue defects, syphilitic aortitis, bicuspid valve-associated disease) weaken elastic and muscular layers → progressive luminal dilation → risk of thrombus formation, embolization, aortic regurgitation (root/ascending), dissection, or rupture.",
+    classicPresentation: [
+      "Often asymptomatic until large or complicated",
+      "Thoracic — chest/back pain, dyspnea, hoarseness (recurrent laryngeal), dysphagia from compression",
+      "Large ascending/root aneurysm — aortic regurgitation murmur",
+      "Acute expansion, dissection, or rupture — sudden severe pain and hemodynamic collapse",
+    ],
+    keyFindings: [
+      "Widened mediastinum or aortic silhouette on chest imaging (thoracic)",
+      "New or worsening aortic regurgitation",
+      "Marfan habitus, bicuspid aortic valve, or history of tertiary syphilis",
+    ],
+    keyLabs: [
+      "CT angiography or MRI for size and extent",
+      "Echocardiography for aortic root/ascending diameter and valve competence",
+      "Serial imaging to monitor growth",
+    ],
+    associations: [
+      "Marfan syndrome and Ehlers-Danlos vascular type (thoracic)",
+      "Bicuspid aortic valve",
+      "Hypertension and atherosclerosis",
+      "Tertiary syphilis (tree-bark aortitis, thoracic)",
+      "Turner syndrome",
+      "Chronic smoking",
+    ],
+    complications: [
+      "Aortic dissection",
+      "Rupture with hemorrhagic shock",
+      "Aortic regurgitation",
+      "Distal embolization of mural thrombus",
+      "Compression of airways, esophagus, or SVC",
+    ],
+    distinguishFrom: [
+      "Abdominal aortic aneurysm — infrarenal/suprarenal abdominal disease; separate entity on boards",
+      "Aortic dissection — intimal tear with false lumen; acute tearing pain and pulse deficits",
+      "Aortic stenosis — fixed outflow obstruction without focal aneurysmal dilation",
+      "Pseudoaneurysm — contained rupture, not true three-layer wall dilation",
+      "Pericardial cyst or mediastinal mass — nonvascular on CTA",
+    ],
+    treatment: [
+      "Risk factor modification — BP control, smoking cessation",
+      "Serial imaging surveillance for moderate aneurysms",
+      "Elective surgical or endovascular repair when diameter exceeds threshold or rapid growth",
+      "β-blockers in Marfan and selected high-risk thoracic disease",
+      "Emergent surgery for rupture or complicated dissection",
+    ],
+    boardsPearls: [
+      "Aortic aneurysm = focal dilation; thoracic causes include Marfan, bicuspid valve, syphilis",
+      "Monitor ascending/root size in Marfan and bicuspid AV — prophylactic repair before dissection",
+      "vs dissection — tearing pain, pulse/BP asymmetry, false lumen on imaging",
+      "Syphilitic aortitis — tree-bark intima, aortic regurgitation, thoracic aneurysm",
+      "Abdominal aortic aneurysm is most common overall — see separate AAA entry",
+    ],
+    pediatrics:
+      "Kawasaki disease can cause coronary artery aneurysms, not typical aortic aneurysm. Marfan and bicuspid aortic valve may present in adolescence with aortic root dilation requiring surveillance.",
+  },
+  {
+    id: "abdominal-aortic-aneurysm",
+    name: "Abdominal Aortic Aneurysm",
+    etymology:
+      "Latin abdomin- = belly + aorte = artery + aneurysma = dilation",
+    aliases: [
+      "abdominal aortic aneurysm",
+      "abdominal aortic aneurysms",
+      "aaa",
+      "aaas",
+      "infrarenal aortic aneurysm",
+      "infrarenal aaa",
+      "abdominal aorta aneurysm",
+      "ruptured abdominal aortic aneurysm",
+      "ruptured aaa",
+    ],
+    definition:
+      "Pathologic focal dilation of the abdominal aorta (usually infrarenal, below renal arteries) from atherosclerotic and degenerative wall disease — often asymptomatic until rupture, which is frequently fatal.",
+    pathophysiology:
+      "Chronic smoking, hypertension, and atherosclerosis cause elastin and collagen breakdown in the aortic media → progressive infrarenal dilation → mural thrombus may form → rupture into retroperitoneum or peritoneal cavity causes life-threatening hemorrhage.",
+    classicPresentation: [
+      "Asymptomatic pulsatile abdominal mass on exam or incidental imaging finding",
+      "Chronic abdominal or back pain with large/expanding aneurysm",
+      "Rupture — sudden severe abdominal/back pain, syncope, hypotension/shock",
+      "Classic risk profile: elderly male smoker with hypertension",
+    ],
+    keyFindings: [
+      "Pulsatile periumbilical or epigastric mass",
+      "Systolic bruit over midline aorta",
+      "Hypotension and peritoneal signs if ruptured",
+    ],
+    keyLabs: [
+      "Ultrasound — screening and initial diagnosis",
+      "CT angiography — size, extent, rupture, and surgical planning",
+      "Hemoglobin drop and shock labs if ruptured",
+    ],
+    associations: [
+      "Tobacco smoking (strongest modifiable risk)",
+      "Hypertension and atherosclerosis",
+      "Male sex, age >65, family history of AAA",
+      "Other atherosclerotic disease (PAD, CAD)",
+      "Less commonly connective tissue disorders",
+    ],
+    complications: [
+      "Rupture with exsanguination",
+      "Distal embolization of mural thrombus",
+      "Compression of adjacent structures (ureter, spine) when large",
+      "Concurrent aortic dissection (less common than thoracic)",
+    ],
+    distinguishFrom: [
+      "Aortic dissection — tearing pain, pulse deficits; may coexist but acute syndrome differs",
+      "Thoracic aortic aneurysm — chest/mediastinal disease, Marfan/syphilis associations",
+      "Mesenteric ischemia — pain out of proportion without pulsatile mass",
+      "Renal colic — colicky flank pain; CT shows ureteral stone not aortic dilation",
+      "Pancreatitis — epigastric pain with lipase elevation",
+    ],
+    treatment: [
+      "Ultrasound screening in men 65–75 with smoking history",
+      "Elective open repair or EVAR when diameter ≥5.5 cm (men) or rapid expansion",
+      "Smaller aneurysms — surveillance ultrasound/CT every 6–12 months",
+      "Smoking cessation and BP control",
+      "Emergent surgery for symptomatic or ruptured AAA",
+    ],
+    boardsPearls: [
+      "AAA = infrarenal aortic dilation; most common aortic aneurysm location",
+      "Screen ultrasound: men 65–75 who have ever smoked",
+      "Repair threshold ~5.5 cm diameter (or symptomatic/rapid growth)",
+      "Rupture triad: abdominal/back pain + hypotension + pulsatile mass",
+      "Ruptured AAA may bleed into retroperitoneum initially — can be temporarily contained",
+      "vs dissection — tearing radiating pain, pulse deficits; AAA rupture is hemorrhagic shock",
+    ],
+    pediatrics:
+      "AAA is a disease of older adults; not a pediatric Step 1 focus except as contrast to congenital aortic disease (coarctation, Marfan root dilation).",
   },
   {
     id: "aortic-dissection",
