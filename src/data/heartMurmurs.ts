@@ -174,6 +174,36 @@ export const HEART_MURMURS: HeartMurmurEntry[] = [
       "VSD is the classic pediatric holosystolic murmur at LLSB; small VSDs have loud murmurs. MR from rheumatic fever or MVP also occurs in adolescents.",
   },
   {
+    id: "midsystolic-murmur",
+    name: "Midsystolic Murmur",
+    etymology:
+      "Latin medius = middle + Greek systole = contraction + Latin murmur = hum",
+    aliases: [
+      "midsystolic murmur",
+      "midsystolic murmurs",
+      "mid-systolic murmur",
+      "mid-systolic murmurs",
+      "mid systolic murmur",
+      "mid systolic murmurs",
+      "middle systolic murmur",
+      "middle systolic murmurs",
+      "systolic murmur peaking in mid-systole",
+      "murmur loudest in mid-systole",
+    ],
+    meaning:
+      "Systolic murmur whose intensity peaks in mid-systole — classically the diamond-shaped crescendo-decrescendo pattern of ejection murmurs as ventricular ejection velocity is greatest, then falls before S2; begins after a brief post-S1 silent period and does not span all of systole.",
+    conditions: [
+      "Aortic stenosis — harsh midsystolic crescendo-decrescendo at RUSB, radiates to carotids; ↓ with Valsalva",
+      "Pulmonic stenosis — midsystolic ejection murmur at LUSB; may have ejection click",
+      "Innocent Still murmur — low-pitched vibratory midsystolic murmur at LLSB in children; normal echo",
+      "Physiologic flow murmurs — soft midsystolic murmur with ↑ cardiac output (anemia, pregnancy, hyperthyroidism, fever)",
+      "ASD — soft midsystolic pulmonary flow murmur at upper LSB with fixed split S2",
+      "Hypertrophic cardiomyopathy — harsh midsystolic/late systolic murmur from dynamic LVOT obstruction; ↑ with Valsalva",
+    ],
+    pediatrics:
+      "Still murmur is the classic benign vibratory midsystolic murmur at LLSB in school-age children — loudest supine, softer upright, no pathologic findings. Distinguish from holosystolic VSD murmur and from MVP late systolic murmur preceded by a mid-systolic click.",
+  },
+  {
     id: "continuous-murmur",
     name: "Continuous Murmur",
     etymology: "Latin continuus = unbroken + murmur = hum",
