@@ -1475,6 +1475,88 @@ export const ORGANS: OrganEntry[] = [
       "Congenital aqueductal stenosis causes pediatric hydrocephalus; pineal region tumors may compress dorsal midbrain causing Parinaud syndrome in children/adolescents.",
   },
   {
+    id: "inferior-colliculus",
+    name: "Inferior Colliculus",
+    etymology:
+      "Latin inferior = lower + Latin colliculus = small hill — paired eminence on the dorsal midbrain tectum below the superior colliculus",
+    aliases: [
+      "inferior colliculus",
+      "inferior colliculi",
+      "ic",
+      "inferior colliculus nucleus",
+      "inferior colliculus nuclei",
+      "caudal colliculus",
+      "auditory colliculus",
+      "midbrain inferior colliculus",
+    ],
+    germLayer: "Ectoderm (neural tube — mesencephalon)",
+    origin:
+      "Develops from the alar plate of the midbrain tectum; paired nucleus forming the caudal half of the quadrigeminal plate (corpora quadrigemina), receiving ascending auditory input via the lateral lemniscus.",
+    derivatives: [
+      "Central nucleus of inferior colliculus (main auditory integration)",
+      "External and dorsal cortex subdivisions",
+      "Commissure connecting bilateral inferior colliculi",
+    ],
+    functionSummary:
+      "Principal midbrain auditory integration center — receives input from the lateral lemniscus (brainstem auditory pathway) and projects to the medial geniculate body of the thalamus; also involved in startle reflex and orienting head toward sound.",
+    commonPathologies: [
+      "Dorsal midbrain lesions affecting tectum (less common isolated IC stroke)",
+      "CN IV nucleus nearby at level of inferior colliculus — trochlear nerve palsy with tectal lesions",
+      "Parinaud syndrome involves superior colliculus/pretectum more than inferior colliculus",
+    ],
+    step1Pearls: [
+      "Inferior colliculus = midbrain auditory center on dorsal tectum",
+      "Auditory pathway: cochlear nuclei → superior olivary → lateral lemniscus → inferior colliculus → MGN → auditory cortex",
+      "Superior colliculus = visual reflexes; inferior colliculus = auditory integration",
+      "Trochlear nerve (CN IV) decussates at level of inferior colliculus",
+      "vs medial geniculate body — thalamic relay after inferior colliculus, not midbrain integration site",
+      "vs cochlear nucleus — first CNS auditory synapse in brainstem, upstream of IC",
+    ],
+    pediatrics:
+      "Congenital hearing loss workup traces the auditory pathway from cochlea through brainstem to cortex; inferior colliculus is an obligatory midbrain relay in the lemniscal auditory system.",
+  },
+  {
+    id: "medial-geniculate-body",
+    name: "Medial Geniculate Body",
+    etymology:
+      "Latin medialis = middle + Latin geniculatus = bent like a knee + corpus = body — medial knee-shaped thalamic nucleus",
+    aliases: [
+      "medial geniculate body",
+      "medial geniculate bodies",
+      "medial geniculate nucleus",
+      "medial geniculate nuclei",
+      "mgn",
+      "medial geniculate",
+      "medial geniculates",
+      "geniculate body medial",
+      "auditory thalamic nucleus",
+    ],
+    germLayer: "Ectoderm (neural tube — diencephalon)",
+    origin:
+      "Develops from the thalamus (diencephalon); three subdivisions (ventral, dorsal, medial) receiving input from inferior colliculus and projecting via auditory radiations to primary auditory cortex (transverse temporal/Heschl gyrus).",
+    derivatives: [
+      "Ventral division (tonotopic relay to primary auditory cortex)",
+      "Dorsal and medial divisions (polysensory and modulatory)",
+      "Auditory radiations to temporal lobe",
+    ],
+    functionSummary:
+      "Primary thalamic relay nucleus of the auditory pathway — receives processed auditory information from the inferior colliculus and projects to primary auditory cortex; tonotopic organization preserved in ventral division.",
+    commonPathologies: [
+      "Thalamic stroke or hemorrhage — may affect MGN with sensory deficits",
+      "Central auditory processing disorders (higher-order, not isolated MGN lesion on boards)",
+    ],
+    step1Pearls: [
+      "MGN = thalamic auditory relay; inferior colliculus → MGN → auditory cortex",
+      "Lateral geniculate = vision; medial geniculate = hearing — both geniculate bodies in thalamus",
+      "Auditory radiations from MGN to transverse temporal gyrus (Brodmann 41/42)",
+      "vs inferior colliculus — midbrain integration before thalamic relay",
+      "vs cochlear nucleus — first brainstem synapse, not thalamic",
+      "CN VIII enters brainstem at pontomedullary junction — upstream of IC/MGN",
+    ],
+    pediatrics:
+      "Auditory brainstem response (ABR) testing in infants evaluates brainstem auditory pathway integrity upstream of medial geniculate; congenital deafness may require cochlear implant to restore input to central auditory pathway.",
+  },
+  {
     id: "substantia-nigra",
     name: "Substantia Nigra",
     etymology:
@@ -1719,10 +1801,76 @@ export const ORGANS: OrganEntry[] = [
       "chiasm",
       "chiasma",
       "optic decussation",
+      "optic chiasm decussation",
     ],
     germLayer: "Ectoderm",
     origin:
-      "Formed where nasal retinal ganglion cell axons from each optic nerve decussate to join temporal fibers of the contralateral optic tract — lies above the sella turcica in the suprasellar cistern.",
+      "Formed where nasal retinal ganglion cell axons from each optic nerve decussate to join temporal fibers of the contralateral optic tract — lies in the suprasellar cistern above the diaphragma sellae and pituitary gland.",
+    derivatives: [
+      "Decussating nasal retinal fibers (temporal visual field of each eye)",
+      "Non-crossing temporal retinal fibers (nasal visual field of each eye)",
+      "Continuations as left and right optic tracts",
+    ],
+    functionSummary:
+      "Partial decussation point of the visual pathway — integrates binocular input so each optic tract carries information from the contralateral visual hemifield of both eyes.",
+    commonPathologies: [
+      "Pituitary macroadenoma compressing chiasm → bitemporal hemianopia",
+      "Craniopharyngioma, meningioma, suprasellar mass",
+      "Optic glioma (NF1)",
+      "Pituitary apoplexy — acute chiasmal compression",
+    ],
+    step1Pearls: [
+      "Nasal retinal fibers cross at chiasm; temporal fibers stay ipsilateral",
+      "Nasal retina sees temporal visual field — chiasm lesion → bitemporal hemianopia",
+      "Pituitary adenoma above sella compresses central chiasm — classic boards link",
+      "Anterior to chiasm → monocular loss; chiasm → bitemporal; post-chiasm → homonymous hemianopia",
+      "Optic tract carries contralateral homonymous hemifield information to LGN",
+    ],
+    pediatrics:
+      "Suprasellar tumors (craniopharyngioma, optic pathway glioma) in children may present with bitemporal field loss and endocrine dysfunction before visual acuity decline.",
+  },
+  {
+    id: "lateral-geniculate-body",
+    name: "Lateral Geniculate Body",
+    etymology:
+      "Latin lateralis = side + Latin geniculatus = bent like a knee + corpus = body — lateral knee-shaped thalamic nucleus",
+    aliases: [
+      "lateral geniculate body",
+      "lateral geniculate bodies",
+      "lateral geniculate nucleus",
+      "lateral geniculate nuclei",
+      "lgn",
+      "lateral geniculate",
+      "lateral geniculates",
+      "geniculate body lateral",
+      "visual thalamic nucleus",
+    ],
+    germLayer: "Ectoderm (neural tube — diencephalon)",
+    origin:
+      "Develops from the alar plate of the diencephalon (thalamus); six layered nucleus receiving retinotopic input from optic tract and projecting via optic radiations to primary visual cortex (V1, calcarine sulcus).",
+    derivatives: [
+      "Magnocellular layers (motion, contrast)",
+      "Parvocellular layers (color, fine detail)",
+      "Koniocellular layers (color, blue-yellow pathway)",
+      "Optic radiations (geniculocalcarine tract)",
+    ],
+    functionSummary:
+      "Primary thalamic relay nucleus of the visual pathway — receives contralateral retinal input via optic tract and sends organized projections to primary visual cortex; also receives cortical and brainstem modulatory input.",
+    commonPathologies: [
+      "Lateral geniculate artery stroke (LGB infarct) — sectoranopia/homonymous field defect",
+      "Thalamic hemorrhage involving LGN",
+      "Compressive lesions of optic tract before LGN",
+    ],
+    step1Pearls: [
+      "LGN = thalamic visual relay; optic tract → LGN → optic radiations → V1",
+      "Retinotopic organization preserved through LGN layers",
+      "Magnocellular (M) vs parvocellular (P) pathways — motion vs color/detail",
+      "Chiasm lesion affects both eyes (bitemporal); post-LGN lesion → homonymous hemianopia",
+      "vs superior colliculus — reflexive visual tracking, not conscious visual relay to cortex",
+      "vs medial geniculate body — auditory thalamic relay, not visual",
+    ],
+    pediatrics:
+      "Visual pathway development depends on retinal input to LGN; congenital cataracts or strabismus amblyopia reflect critical period plasticity in geniculocortical connections.",
   },
   {
     id: "uvea",
