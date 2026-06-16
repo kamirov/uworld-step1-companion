@@ -6798,6 +6798,52 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Juvenile parkinsonism is rare; nigrostriatal pathway physiology explains why antipsychotics cause EPS in children and why L-DOPA treats motor symptoms in genetic dopamine deficiency disorders.",
   },
   {
+    id: "mesolimbic-pathway",
+    name: "Mesolimbic Pathway",
+    etymology:
+      "Greek mesos = middle + Latin limbus = border/edge + Latin via = way — midbrain dopamine projection to limbic striatal targets",
+    aliases: [
+      "mesolimbic pathway",
+      "mesolimbic pathways",
+      "mesolimbic tract",
+      "mesolimbic tracts",
+      "mesolimbic dopamine pathway",
+      "mesolimbic dopaminergic pathway",
+      "vta to nucleus accumbens pathway",
+      "vta-nucleus accumbens pathway",
+      "reward pathway",
+      "reward pathways",
+      "mesolimbic system",
+    ],
+    definition:
+      "Dopaminergic projection from the ventral tegmental area (VTA) in the midbrain to limbic targets — especially the nucleus accumbens (ventral striatum), amygdala, and hippocampus — mediating reward, motivation, reinforcement, and positive symptoms of psychosis when dysregulated.",
+    examples: [
+      "Schizophrenia positive symptoms — ↑ mesolimbic dopamine → hallucinations and delusions",
+      "Antipsychotic D₂ blockade in mesolimbic pathway → ↓ psychotic symptoms",
+      "Cocaine and amphetamines — ↑ synaptic dopamine in nucleus accumbens → euphoria and addiction",
+      "Nicotine, opioids, alcohol — activate mesolimbic reward circuitry",
+      "Parkinson disease therapy — dopaminergic drugs may cause psychosis via mesolimbic overstimulation",
+    ],
+    boardsPearls: [
+      "Mesolimbic = VTA → nucleus accumbens (reward/psychosis pathway)",
+      "↑ mesolimbic dopamine → positive psychotic symptoms (hallucinations, delusions)",
+      "Antipsychotics work partly by D₂ blockade in mesolimbic pathway",
+      "vs nigrostriatal — substantia nigra → dorsal striatum (motor); D₂ blockade → EPS",
+      "vs mesocortical — VTA → prefrontal cortex; ↓ dopamine → negative/cognitive symptoms of schizophrenia",
+      "vs tuberoinfundibular — hypothalamic dopamine inhibiting prolactin",
+      "Addiction drugs hijack mesolimbic reward circuitry via ↑ dopamine in nucleus accumbens",
+    ],
+    distinguishFrom: [
+      "Nigrostriatal pathway — motor dopamine; Parkinson disease; EPS from D₂ blockade",
+      "Mesocortical pathway — prefrontal cognition; negative symptoms when dopamine low",
+      "Tuberoinfundibular pathway — prolactin regulation; D₂ block → hyperprolactinemia",
+      "Medial forebrain bundle — fiber tract carrying VTA projections; not synonymous but related anatomy",
+      "Nucleus accumbens — target structure of mesolimbic pathway, not the pathway itself",
+    ],
+    pediatrics:
+      "Adolescent substance use strongly activates mesolimbic reward pathways; antipsychotics used in early-onset psychosis block mesolimbic D₂ with same EPS and metabolic risks as in adults.",
+  },
+  {
     id: "neurotrophic",
     name: "Neurotrophic",
     etymology: "Greek neuron = nerve + Greek trophikos = nourishing",

@@ -1234,6 +1234,281 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Hypoglossal palsy in neonate may follow birth trauma or congenital anomaly; tongue tie (ankyloglossia) is mechanical, not CN XII palsy.",
   },
   {
+    id: "cerebellopontine-angle",
+    name: "Cerebellopontine Angle",
+    etymology:
+      "Latin cerebellum = little brain + pons = bridge + angulus = corner — cistern at the junction of pons, cerebellum, and medulla",
+    aliases: [
+      "cerebellopontine angle",
+      "cerebellopontine angles",
+      "cerebello-pontine angle",
+      "cerebello-pontine angles",
+      "cpa",
+      "cp angle",
+      "cp angles",
+      "cerebellopontine angle cistern",
+      "cerebellopontine cistern",
+    ],
+    definition:
+      "CSF-filled cistern at the lateral junction of the pons and cerebellum where cranial nerves VII and VIII enter the brainstem from the internal auditory meatus — common site of extra-axial skull-base tumors.",
+    anatomy:
+      "Bounded by the pons medially, cerebellum laterally, and petrous temporal bone anteriorly. CN VII (facial) and CN VIII (vestibulocochlear) pass from internal auditory meatus into the CPA cistern before entering the brainstem. Anterior inferior cerebellar artery (AICA) courses through the region.",
+    action: [
+      "CSF cistern allowing CN VII/VIII passage from temporal bone to brainstem",
+      "Anatomic corridor for vessels including AICA and veins of the petrosal surface",
+    ],
+    innervation: "CN VII and CN VIII traverse the CPA; adjacent to CN V root entry zone",
+    clinicalRelevance: [
+      "Vestibular schwannoma (acoustic neuroma) — unilateral sensorineural hearing loss, tinnitus, imbalance",
+      "Meningioma at CPA — may involve multiple cranial nerves",
+      "Epidermoid cyst at CPA",
+      "Facial weakness or trigeminal sensory loss with large CPA mass",
+    ],
+    boardsPearls: [
+      "CPA = cerebellopontine angle — classic site of acoustic neuroma (CN VIII schwannoma)",
+      "Unilateral SNHL + tinnitus → CPA mass until proven otherwise",
+      "CN VII and VIII travel together through internal auditory meatus into CPA",
+      "Large CPA tumor may affect CN V (facial numbness) and brainstem compression",
+      "vs internal auditory meatus — canal within temporal bone; CPA is cistern just medial to it",
+    ],
+    distinguishFrom: [
+      "Internal auditory meatus — bony canal in petrous temporal bone housing CN VII/VIII",
+      "Pineal region — dorsal midbrain, not CPA",
+      "Meckel cave — trigeminal ganglion in middle cranial fossa",
+      "Cholesteatoma — middle ear disease, not CPA cistern mass",
+      "Bilateral SNHL — usually not CPA schwannoma (except NF2)",
+    ],
+    pediatrics:
+      "Acoustic neuroma is rare in children except with NF2; unilateral SNHL in an adolescent warrants MRI of internal auditory meatus and CPA.",
+  },
+  {
+    id: "foramen-magnum",
+    name: "Foramen Magnum",
+    etymology:
+      "Latin foramen = opening + magnum = great — largest skull opening transmitting medulla and upper cervical structures",
+    aliases: [
+      "foramen magnum",
+      "foramen magnums",
+      "occipital foramen",
+      "great foramen",
+      "cranial foramen magnum",
+      "skull foramen magnum",
+    ],
+    definition:
+      "Large opening in the occipital bone through which the medulla oblongata becomes the spinal cord and through which vertebral arteries, spinal accessory nerve roots, and meninges pass between skull and vertebral canal.",
+    anatomy:
+      "Medulla and meninges continue as spinal cord and thecal sac. Vertebral arteries ascend through foramen magnum. Spinal roots of CN XI ascend from cervical cord through foramen magnum to join cranial accessory root. Apical ligament of dens and alar ligaments anchor odontoid near anterior margin.",
+    action: [
+      "Major conduit between posterior cranial fossa and vertebral canal",
+      "Passage for vertebral arteries to posterior circulation",
+      "Meningeal continuity between intracranial and spinal subarachnoid space",
+    ],
+    innervation: "Spinal roots of CN XI ascend through foramen magnum; C1 nerve roots adjacent",
+    clinicalRelevance: [
+      "Chiari malformation — cerebellar tonsils herniate through foramen magnum → syringomyelia, headache",
+      "Foramen magnum meningioma — lower CN palsies, upper motor neuron signs",
+      "Basilar invagination / odontoid abnormalities compressing medulla",
+      "Vertebrobasilar insufficiency from vertebral artery pathology at skull base",
+    ],
+    boardsPearls: [
+      "Foramen magnum = medulla → spinal cord + vertebral arteries + spinal CN XI roots",
+      "Chiari I — tonsillar herniation >5 mm below foramen magnum",
+      "Chiari II — associated with myelomeningocele and aqueductal malformation",
+      "Foramen magnum tumor — progressive lower cranial nerve deficits and long-tract signs",
+      "vs jugular foramen — lateral skull base; CN IX/X/XI exit, not medullary transition",
+    ],
+    distinguishFrom: [
+      "Jugular foramen — lateral exit for CN IX, X, XI (cranial part); not medulla/spinal cord junction",
+      "Hypoglossal canal — anterolateral occipital canal for CN XII only",
+      "Foramen ovale — middle cranial fossa for V3, not posterior fossa",
+      "Central canal of spinal cord — tiny ependymal canal, not skull foramen",
+      "Cardiac foramen ovale — interatrial fetal shunt, unrelated skull opening",
+    ],
+    pediatrics:
+      "Chiari II with myelomeningocele presents in neonates; Chiari I may cause syringomyelia and scoliosis in older children. Foramen magnum decompression is neurosurgical treatment for symptomatic Chiari.",
+  },
+  {
+    id: "foramen-ovale",
+    name: "Foramen Ovale (Skull)",
+    etymology:
+      "Latin foramen = opening + ovale = oval — oval foramen in sphenoid bone of middle cranial fossa",
+    aliases: [
+      "foramen ovale",
+      "foramen ovales",
+      "skull foramen ovale",
+      "cranial foramen ovale",
+      "sphenoid foramen ovale",
+      "mandibular foramen ovale",
+    ],
+    definition:
+      "Oval opening in the greater wing of the sphenoid bone in the middle cranial fossa — exit point of the mandibular division of the trigeminal nerve (CN V3) into the infratemporal fossa.",
+    anatomy:
+      "Located posterolateral to foramen rotundum and anteromedial to foramen spinosum. Transmits mandibular nerve (V3), motor root to muscles of mastication, sensory branches to lower face and anterior tongue (general sensation), and occasionally lesser petrosal nerve and accessory meningeal artery.",
+    action: [
+      "Skull base passage for CN V3 from middle cranial fossa to infratemporal fossa",
+      "Motor exit for mastication muscles; sensory exit for lower face and mandibular teeth",
+    ],
+    innervation: "CN V3 (mandibular division of trigeminal nerve) — only trigeminal division with motor fibers",
+    clinicalRelevance: [
+      "Trigeminal neuralgia involving V3 distribution",
+      "Perineural spread of head and neck malignancy through foramen ovale",
+      "Skull base fracture involving sphenoid",
+      "Otic ganglion and parotid innervation nearby via mandibular nerve branches",
+    ],
+    boardsPearls: [
+      "Skull foramen ovale = CN V3 exit (motor + sensory mandibular division)",
+      "V3 innervates muscles of mastication + anterior 2/3 tongue general sensation + lower face",
+      "vs cardiac foramen ovale — interatrial shunt in fetal heart / PFO, NOT skull",
+      "Foramen rotundum = V2; foramen ovale = V3; superior orbital fissure = V1",
+      "Lesser petrosal nerve may pass through to reach otic ganglion (parasympathetic to parotid)",
+    ],
+    distinguishFrom: [
+      "Patent foramen ovale (heart) — interatrial right-to-left shunt; unrelated to skull",
+      "Foramen rotundum — V2 maxillary division exit",
+      "Foramen spinosum — middle meningeal artery, not CN V3",
+      "Mandibular foramen — on mandible bone for inferior alveolar nerve entry, not skull base",
+      "Oval window (fenestra vestibuli) — inner ear, not skull base foramen",
+    ],
+    pediatrics:
+      "Skull foramen ovale anatomy is the same in children; patent foramen ovale (cardiac) is a separate neonatal/childhood concept for right-to-left shunting.",
+  },
+  {
+    id: "foramen-rotundum",
+    name: "Foramen Rotundum",
+    etymology:
+      "Latin foramen = opening + rotundum = round — round foramen in sphenoid bone for maxillary nerve passage",
+    aliases: [
+      "foramen rotundum",
+      "foramen rotundums",
+      "rotundum foramen",
+      "sphenoid foramen rotundum",
+      "maxillary foramen",
+      "v2 foramen",
+    ],
+    definition:
+      "Round opening in the greater wing of the sphenoid bone connecting the middle cranial fossa to the pterygopalatine fossa — exit route of the maxillary division of the trigeminal nerve (CN V2).",
+    anatomy:
+      "Located anteromedial to foramen ovale. Maxillary nerve (V2) passes into pterygopalatine fossa and gives rise to infraorbital, zygomatic, palatine, and nasopalatine branches. Purely sensory division — midface, maxillary teeth, palate, maxillary sinus.",
+    action: [
+      "Skull base passage for CN V2 from middle cranial fossa to pterygopalatine fossa",
+      "Sensory distribution to midface, upper teeth, palate, and maxillary sinus mucosa",
+    ],
+    innervation: "CN V2 (maxillary division of trigeminal) — sensory only",
+    clinicalRelevance: [
+      "Trigeminal neuralgia V2 distribution",
+      "Maxillary sinusitis pain via V2 branches",
+      "Infraorbital nerve block for upper lip/cheek anesthesia",
+      "Skull base tumor spread through pterygopalatine fossa",
+    ],
+    boardsPearls: [
+      "Foramen rotundum = CN V2 (maxillary, sensory only)",
+      "V2 → pterygopalatine fossa → infraorbital nerve (via infraorbital foramen), palatine nerves",
+      "Trigeminal foramina: V1 superior orbital fissure, V2 rotundum, V3 ovale",
+      "Midface numbness → V2 lesion or pterygopalatine fossa pathology",
+      "vs foramen ovale — V3 mandibular with motor fibers",
+    ],
+    distinguishFrom: [
+      "Foramen ovale — V3 mandibular exit with motor fibers",
+      "Superior orbital fissure — V1 ophthalmic division",
+      "Infraorbital foramen — facial exit of infraorbital nerve (branch of V2), not skull base foramen",
+      "Foramen spinosum — middle meningeal artery",
+      "Cardiac foramen ovale — unrelated heart structure",
+    ],
+    pediatrics:
+      "V2 anesthesia after midface trauma or dental procedures follows same foramen rotundum anatomy in all ages.",
+  },
+  {
+    id: "hypoglossal-canal",
+    name: "Hypoglossal Canal",
+    etymology:
+      "Greek hypo = under + glossa = tongue + Latin canalis = channel — bony canal for hypoglossal nerve exit",
+    aliases: [
+      "hypoglossal canal",
+      "hypoglossal canals",
+      "canalis hypoglossi",
+      "hypoglossal foramen",
+      "cn xii canal",
+      "cranial nerve xii canal",
+    ],
+    definition:
+      "Paired canal in the occipital bone anterolateral to the foramen magnum through which cranial nerve XII (hypoglossal nerve) exits the posterior cranial fossa to the neck.",
+    anatomy:
+      "CN XII exits between pyramid and olive of medulla, traverses hypoglossal canal to emerge lateral to occipital condyle. Nerve then descends between internal carotid artery and internal jugular vein, hooks around occipital artery, and passes to tongue muscles.",
+    action: [
+      "Skull exit for CN XII motor fibers to intrinsic and extrinsic tongue muscles",
+      "Allows hypoglossal nerve passage from posterior fossa to upper neck",
+    ],
+    innervation: "CN XII (hypoglossal nerve) — motor to tongue except palatoglossus (CN X)",
+    clinicalRelevance: [
+      "CN XII palsy — tongue deviation toward lesion, atrophy, fasciculations",
+      "Skull base tumor or metastasis compressing hypoglossal canal",
+      "Occipital condyle fracture or post-surgical injury",
+      "Combined lower cranial neuropathies with jugular foramen lesions",
+    ],
+    boardsPearls: [
+      "Hypoglossal canal = CN XII exit from skull",
+      "Tongue deviates toward side of LMN XII lesion",
+      "Canal lies anterolateral to foramen magnum in occipital bone",
+      "vs jugular foramen — IX, X, XI exit laterally; XII has own canal",
+      "UMN tongue lesion — deviates away from lesion (contralateral weakness)",
+    ],
+    distinguishFrom: [
+      "Jugular foramen — CN IX, X, XI; not CN XII",
+      "Foramen magnum — medulla/spinal cord and vertebral arteries, not CN XII canal",
+      "Olfactory foramina — CN I cribriform plate",
+      "Stylomastoid foramen — CN VII exit to face, not tongue",
+      "Lingual nerve (V3 branch) — general sensation anterior tongue, not motor CN XII",
+    ],
+    pediatrics:
+      "Hypoglossal palsy from birth trauma or skull base anomaly is rare; tongue-tie is mechanical restriction, not CN XII canal pathology.",
+  },
+  {
+    id: "jugular-foramen",
+    name: "Jugular Foramen",
+    etymology:
+      "Latin jugularis = of the throat/yoke + foramen = opening — gap between temporal and occipital bones for jugular vein and lower cranial nerves",
+    aliases: [
+      "jugular foramen",
+      "jugular foramina",
+      "jugular foramen syndrome",
+      "posterolateral foramen",
+    ],
+    definition:
+      "Large irregular opening between the temporal and occipital bones in the posterior cranial fossa — transmits internal jugular vein, sigmoid sinus continuation, and cranial nerves IX, X, and XI (cranial root of accessory).",
+    anatomy:
+      "Divided conceptually into pars nervosa (anteromedial — CN IX) and pars vascularis (posterolateral — CN X, XI, IJV). Glossopharyngeal (IX), vagus (X), and accessory (XI cranial portion joining XI spinal roots) exit here. Tympanic branch of IX (Jacobson) and auricular branch of X (Arnold) arise nearby.",
+    action: [
+      "Venous drainage of brain via internal jugular vein from sigmoid sinus",
+      "Exit for CN IX, X, and XI to neck and thoracoabdominal viscera",
+      "Spinal accessory nerve joins after XI spinal roots ascend through foramen magnum",
+    ],
+    innervation: "CN IX (glossopharyngeal), CN X (vagus), CN XI (accessory — cranial and spinal roots unite)",
+    clinicalRelevance: [
+      "Jugular foramen syndrome (Vernet syndrome) — IX, X, XI palsy",
+      "Glomus jugulare (paraganglioma) at skull base",
+      "Schwannoma of CN IX/X/XI",
+      "Basilar skull fracture with lower CN deficits",
+      "IJV thrombosis or central venous catheter complications",
+    ],
+    boardsPearls: [
+      "Jugular foramen = CN IX + X + XI + internal jugular vein",
+      "Vernet syndrome — jugular foramen lesion → hoarseness (X), absent gag (IX), SCM/trapezius weakness (XI)",
+      "CN IX — taste posterior 1/3 tongue, parotid (via otic ganglion), stylopharyngeus",
+      "CN X — larynx/pharynx, heart, lungs, GI to splenic flexure parasympathetics",
+      "CN XI — SCM and trapezius (spinal roots ascend foramen magnum, exit jugular foramen)",
+      "vs hypoglossal canal — CN XII only, separate anterolateral opening",
+    ],
+    distinguishFrom: [
+      "Hypoglossal canal — CN XII exit only",
+      "Foramen magnum — medulla, spinal cord, vertebral arteries, spinal XI roots ascending",
+      "Carotid canal — internal carotid artery, not lower CNs",
+      "Stylomastoid foramen — CN VII facial nerve exit",
+      "Jugular vein (neck) — venous structure distally; jugular foramen is skull opening",
+    ],
+    pediatrics:
+      "Lower cranial nerve palsies in children may follow skull base infection, trauma, or tumor (glomus tumors rare); jugular foramen syndrome presents with dysphagia, hoarseness, and weak shoulder shrug.",
+  },
+  {
     id: "acromion",
     name: "Acromion",
     etymology: "Greek akros = highest + omos = shoulder",

@@ -475,6 +475,58 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
       "Congenital long QT may present as torsades or seizures in children; acquired torsades from electrolyte shifts in DKA treatment or QT-prolonging antibiotics requires magnesium and rhythm stabilization.",
   },
   {
+    id: "ventricular-fibrillation",
+    name: "Ventricular Fibrillation",
+    etymology:
+      "Latin ventriculus = little belly + fibrilla = small fiber + -ation = process — chaotic ventricular quivering without effective contraction",
+    aliases: [
+      "ventricular fibrillation",
+      "ventricular fibrillations",
+      "vfib",
+      "v-fib",
+      "v fib",
+      "vf",
+      "v fibrillation",
+      "pulseless vf",
+      "pulseless ventricular fibrillation",
+      "coarse vf",
+      "fine vf",
+      "ventricular fibrillation arrest",
+    ],
+    interpretation:
+      "Chaotic, disorganized ventricular electrical activity without coordinated contraction — pulseless cardiac arrest rhythm requiring immediate unsynchronized defibrillation and ACLS.",
+    territory:
+      "Ventricular arrhythmia — not coronary territory-specific; may complicate acute MI, ischemia, electrolyte crisis, or degenerate from VT/torsades.",
+    thinkOf: [
+      "Acute myocardial infarction — most common cause in adults",
+      "Pulseless ventricular tachycardia degenerating to VF",
+      "Torsades de pointes degenerating to VF",
+      "Severe hyperkalemia — sine wave progression to VF/asystole",
+      "WPW with AF conducting rapidly down accessory pathway",
+      "Hypothermia, electrocution, commotio cordis",
+      "Post-MI scar-related reentrant VT → VF",
+    ],
+    distinguishFrom: [
+      "Ventricular tachycardia — organized wide-complex rhythm; may have pulse (stable VT) vs pulseless VT (treat like VF)",
+      "Torsades de pointes — polymorphic VT with twisting QRS; may degenerate to VF",
+      "Atrial fibrillation — irregular atrial activity with variable ventricular response; not pulseless VF pattern",
+      "Asystole — flat line; epinephrine priority; still check for fine VF",
+      "Artifact — nonphysiologic noise; confirm patient unresponsive and pulseless",
+      "SVT with aberrancy — usually organized, may have pulse",
+    ],
+    boardsPearls: [
+      "VF = pulseless arrest rhythm — immediate CPR + defibrillation (unsynchronized shock)",
+      "ACLS: CPR, epinephrine, defibrillation; amiodarone or lidocaine after refractory VF/VT",
+      "Post-MI VF in first 48 h may reflect ischemia; late VF suggests scar (reentry)",
+      "Hyperkalemia → peaked T → widened QRS → sine wave → VF/asystole",
+      "Torsades → Mg²⁺ first; VF → defibrillation first",
+      "vs cardioversion — synchronized shock for unstable SVT/AF with pulse; defibrillation is unsynchronized for VF/pulseless VT",
+      "Fine VF may mimic asystole — continue CPR and shock",
+    ],
+    pediatrics:
+      "Pediatric VF is less common than bradyasystole in arrest; still shockable rhythm in PALS. Commotio cordis (chest blow during vulnerable phase) can cause immediate VF in young athletes.",
+  },
+  {
     id: "q-waves",
     name: "Q Waves",
     etymology: "Q = first downward deflection of the QRS complex on ECG tracing",

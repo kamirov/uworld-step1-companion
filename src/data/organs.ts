@@ -1224,6 +1224,49 @@ export const ORGANS: OrganEntry[] = [
       "Neonatal meningitis inflames leptomeninges with subtle signs (bulging fontanelle); myelomeningocele exposes meninges and neural tissue through vertebral defect.",
   },
   {
+    id: "pia-mater",
+    name: "Pia Mater",
+    etymology:
+      "Latin pia = tender/soft + mater = mother — delicate innermost meningeal layer closely investing the brain and spinal cord",
+    aliases: [
+      "pia mater",
+      "pia maters",
+      "pia",
+      "pial",
+      "pial membrane",
+      "pial membranes",
+      "inner meningeal layer",
+      "leptomeninges pia",
+      "pia mater layer",
+    ],
+    germLayer: "Neural crest (leptomeninges)",
+    origin:
+      "Innermost of the three meninges; derived from neural crest mesenchyme surrounding the developing neural tube — intimately adherent to the brain and spinal cord surface, extending into sulci and following vessels into parenchyma as perivascular (Virchow-Robin) spaces.",
+    derivatives: [
+      "Pial blood vessels entering CNS",
+      "Perivascular (Virchow-Robin) spaces",
+      "Continuity with spinal pia and filum terminale",
+    ],
+    functionSummary:
+      "Delimits the subarachnoid space internally; closely invests CNS surface and vessels; with arachnoid forms leptomeninges; contributes to blood-brain barrier interface at vessel entry points.",
+    commonPathologies: [
+      "Meningitis — inflammation extends to leptomeninges (arachnoid and pia)",
+      "Subarachnoid hemorrhage — blood in space between arachnoid and pia",
+      "Pial vascular injury in traumatic brain injury",
+      "Spread of infection along perivascular spaces",
+    ],
+    step1Pearls: [
+      "Pia = innermost meningeal layer, adherent to brain/spinal cord",
+      "Subarachnoid space lies between arachnoid (outer boundary) and pia (inner boundary)",
+      "Leptomeninges = arachnoid + pia (vs dura alone as outer tough layer)",
+      "LP needle enters subarachnoid space — CSF sampled below arachnoid, external to pia",
+      "Epidural hematoma — above dura; subdural — between dura and arachnoid; SAH — in subarachnoid space",
+      "Pia follows vessels into brain — perivascular spaces for CSF/interstitial fluid exchange",
+    ],
+    pediatrics:
+      "Neonatal meningitis inflames leptomeninges including pia; myelomeningocele exposes spinal cord and pia through vertebral defect without intact meningeal coverage.",
+  },
+  {
     id: "arachnoid-villi",
     name: "Arachnoid Villi",
     etymology: "Greek arachne = spider + -oid = like + Latin villus = shaggy hair/tuft",
@@ -1516,6 +1559,51 @@ export const ORGANS: OrganEntry[] = [
       "Congenital hearing loss workup traces the auditory pathway from cochlea through brainstem to cortex; inferior colliculus is an obligatory midbrain relay in the lemniscal auditory system.",
   },
   {
+    id: "periaqueductal-gray",
+    name: "Periaqueductal Gray",
+    etymology:
+      "Latin peri = around + aqueductus = water channel + gray = gray matter — midbrain gray matter surrounding the cerebral aqueduct",
+    aliases: [
+      "periaqueductal gray",
+      "periaqueductal grey",
+      "pag",
+      "central gray",
+      "central grey",
+      "central gray matter",
+      "central gray matter of midbrain",
+      "periaqueductal gray matter",
+      "periaqueductal grey matter",
+      "midbrain periaqueductal gray",
+      "aqueductal gray",
+    ],
+    germLayer: "Ectoderm (neural tube — mesencephalon)",
+    origin:
+      "Develops from the central tegmental gray matter of the midbrain surrounding the cerebral aqueduct (connects third to fourth ventricle); integrates descending pain-modulation, autonomic, and defensive behavioral circuits.",
+    derivatives: [
+      "Descending analgesia pathways to dorsal horn (opioid-mediated)",
+      "Autonomic and defensive behavior centers",
+      "Vertical gaze-related connections with pretectum and riMLF nearby",
+    ],
+    functionSummary:
+      "Midbrain integrative center for pain modulation, autonomic responses, and defensive behaviors — major site of opioid analgesia via descending projections that inhibit spinal pain transmission; compression causes Parinaud syndrome features and setting-sun sign in hydrocephalus.",
+    commonPathologies: [
+      "Wernicke encephalopathy — hemorrhagic lesions in PAG and mammillary bodies",
+      "Hydrocephalus — aqueductal stenosis or compression → periaqueductal dysfunction → upgaze palsy",
+      "Parinaud syndrome — dorsal midbrain compression (pineal tumor)",
+      "Midbrain stroke or hemorrhage affecting PAG",
+    ],
+    step1Pearls: [
+      "PAG = gray matter around cerebral aqueduct in midbrain",
+      "Major site of opioid analgesia — μ-receptor activation → descending pain inhibition to spinal cord",
+      "Wernicke encephalopathy affects PAG, mammillary bodies, medial thalamus",
+      "Hydrocephalus compresses PAG → Parinaud syndrome (upgaze palsy, setting-sun eyes in infants)",
+      "vs periventricular gray — location around aqueduct specifically, not all periventricular tissue",
+      "Adjacent to pretectum and superior/inferior colliculi — dorsal midbrain anatomy cluster",
+    ],
+    pediatrics:
+      "Infants with hydrocephalus show setting-sun eyes (upgaze paresis) from periaqueductal compression; congenital aqueductal stenosis is a common cause of noncommunicating hydrocephalus.",
+  },
+  {
     id: "medial-geniculate-body",
     name: "Medial Geniculate Body",
     etymology:
@@ -1762,11 +1850,96 @@ export const ORGANS: OrganEntry[] = [
   {
     id: "retina",
     name: "Retina",
-    etymology: "Latin rete = net",
-    aliases: ["retina", "retinal"],
+    etymology: "Latin rete = net — layered neural tissue lining the posterior globe",
+    aliases: [
+      "retina",
+      "retinas",
+      "retinal",
+      "retinal tissue",
+      "neural retina",
+      "neural retinas",
+      "posterior retina",
+      "ocular retina",
+    ],
     germLayer: "Ectoderm",
     origin:
-      "Outpocketing of diencephalon (optic vesicle → optic cup); neuroectoderm forms neural retina.",
+      "Inner layer of the optic cup (neuroectoderm) invaginates to form the neural retina; outer optic cup becomes retinal pigment epithelium (RPE). Retinal ganglion cell axons converge at the optic disc to form CN II.",
+    derivatives: [
+      "Photoreceptors (rods and cones)",
+      "Bipolar, horizontal, amacrine, and ganglion cells",
+      "Retinal nerve fiber layer (ganglion cell axons toward optic disc)",
+      "Macula and fovea (central high-acuity region)",
+      "Optic nerve (CN II) from ganglion cell axons",
+    ],
+    functionSummary:
+      "Transduces light into neural signals — photoreceptors → bipolar cells → retinal ganglion cells → optic nerve; macula/fovea provides highest visual acuity; nasal vs temporal hemiretina map to contralateral vs ipsilateral visual hemifields at the chiasm.",
+    commonPathologies: [
+      "Diabetic retinopathy — microaneurysms, hemorrhages, neovascularization",
+      "Hypertensive retinopathy — AV nicking, flame hemorrhages, cotton-wool spots",
+      "Retinal detachment — photoreceptor separation from RPE",
+      "Central retinal artery occlusion (CRAO) — pale retina, cherry-red fovea",
+      "Central retinal vein occlusion (CRVO) — diffuse hemorrhages, cotton-wool spots",
+      "Retinitis pigmentosa — rod-cone dystrophy, bone-spicule pigmentation",
+      "Age-related macular degeneration — drusen, geographic atrophy, choroidal neovascularization",
+      "Retinopathy of prematurity",
+    ],
+    step1Pearls: [
+      "Retina = neural layer of optic cup; RPE = outer pigmented layer",
+      "Inner retina supplied by central retinal artery (branch of ophthalmic → internal carotid); outer retina/photoreceptors nourished by choroid",
+      "Macula = central retina; fovea = avascular zone of maximal cone density",
+      "Nasal hemiretina projects to temporal visual field; nasal fibers cross at chiasm",
+      "CRAO — sudden painless monocular vision loss; cherry-red fovea against pale edematous retina",
+      "Flame hemorrhages = superficial NFL; dot-blot = deeper retinal layers",
+    ],
+    pediatrics:
+      "Retinopathy of prematurity affects premature infants exposed to supplemental oxygen; retinoblastoma arises from retinal cells (leukocoria). Abusive head trauma may cause retinal hemorrhages in multiple layers.",
+  },
+  {
+    id: "hemiretina",
+    name: "Hemiretina",
+    etymology:
+      "Greek hemi = half + Latin rete = net — one half of the retinal surface",
+    aliases: [
+      "hemiretina",
+      "hemiretinas",
+      "hemi-retina",
+      "hemi-retinas",
+      "half retina",
+      "half retinas",
+      "retinal hemifield",
+      "retinal hemifields",
+      "nasal hemiretina",
+      "nasal hemiretinas",
+      "temporal hemiretina",
+      "temporal hemiretinas",
+      "superior hemiretina",
+      "inferior hemiretina",
+    ],
+    germLayer: "Ectoderm",
+    origin:
+      "Anatomic and functional half of the retina — most boards-relevant division is nasal vs temporal hemiretina relative to the vertical meridian through the fovea; each hemiretina corresponds to the opposite hemifield of visual space.",
+    derivatives: [
+      "Nasal hemiretina — ganglion cell axons decussate at optic chiasm",
+      "Temporal hemiretina — axons remain ipsilateral in optic tract",
+      "Superior/inferior hemiretina — map to inferior/superior visual fields (inverted image)",
+    ],
+    functionSummary:
+      "Half-retina organization links retinal anatomy to visual field defects — nasal hemiretina sees temporal visual field and crosses at the chiasm; temporal hemiretina sees nasal visual field and stays ipsilateral; understanding hemiretinal mapping explains bitemporal vs homonymous field loss.",
+    commonPathologies: [
+      "Chiasmal compression — affects crossing nasal retinal fibers from both eyes → bitemporal hemianopia",
+      "Optic tract lesion — homonymous hemianopia from contralateral hemiretinal input loss",
+      "Branch retinal vein occlusion — hemorrhages in affected hemiretinal sector",
+      "Quadrantanopia from partial optic radiation or cortex lesion",
+    ],
+    step1Pearls: [
+      "Nasal hemiretina → temporal visual field; temporal hemiretina → nasal visual field",
+      "Nasal retinal fibers cross at optic chiasm — key to bitemporal hemianopia",
+      "Each optic tract carries contralateral hemiretinal input (both eyes' temporal field from one side + nasal field from other)",
+      "Superior retina sees inferior visual field (inverted and reversed mapping)",
+      "Hemiretina concept explains why chiasm lesions affect both eyes but post-chiasmal lesions cause homonymous defects",
+    ],
+    pediatrics:
+      "Visual field testing is difficult in young children; hemiretinal pathway anatomy still explains bitemporal defects from suprasellar tumors (craniopharyngioma) and homonymous field loss from post-chiasmal pathology in older children.",
   },
   {
     id: "optic-disc",
