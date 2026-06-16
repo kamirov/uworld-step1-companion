@@ -11310,6 +11310,48 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Bell palsy occurs in children; Lyme facial palsy must be excluded in endemic areas. Congenital facial palsy from forceps or Möbius syndrome presents at birth.",
   },
   {
+    id: "nasolabial-fold",
+    name: "Nasolabial Fold",
+    etymology: "Latin nasus = nose + labium = lip + fold = skin crease",
+    aliases: [
+      "nasolabial fold",
+      "nasolabial folds",
+      "nasolabial crease",
+      "nasolabial creases",
+      "nasolabial sulcus",
+      "nasolabial sulci",
+      "smile line",
+      "smile lines",
+      "laugh lines",
+    ],
+    definition:
+      "Skin crease running from each side of the nose to the corner of the mouth — a key landmark on facial exam for CN VII function, dermatologic distribution, and aging changes.",
+    mechanism:
+      "Formed where cheek skin meets the upper lip and nose; contour reflects zygomaticus major, levator labii superioris, orbicularis oris, and subcutaneous fat. Effacement (flattening) on one side indicates ipsilateral weakness of muscles of facial expression; deepening occurs with dermal aging.",
+    thinkOf: [
+      "Bell palsy / LMN CN VII palsy — unilateral flattening of nasolabial fold",
+      "Stroke (UMN facial palsy) — contralateral lower-face weakness with fold flattening; forehead spared",
+      "SLE — malar (butterfly) rash classically spares nasolabial folds",
+      "Seborrheic dermatitis — greasy yellow scale in nasolabial folds",
+      "Aging — deepening smile lines from dermal elastin loss",
+    ],
+    pairWith: [
+      "Flattened fold + ipsilateral forehead weakness → peripheral (LMN) CN VII palsy",
+      "Flattened fold + forehead sparing → central (UMN) facial palsy — stroke",
+      "Malar erythema sparing nasolabial folds → systemic lupus erythematosus",
+      "Greasy scale in scalp and nasolabial folds → seborrheic dermatitis",
+      "Bilateral fold flattening + areflexia → Guillain-Barré / Miller Fisher",
+    ],
+    distinguishFrom: [
+      "Marionette lines — creases extending downward from mouth corners, not nose to mouth",
+      "Philtrum — vertical groove between nasal septum and upper lip, not lateral cheek crease",
+      "Rosacea — centrofacial erythema often involves nasolabial area (unlike SLE malar rash)",
+      "Normal facial asymmetry — subtle contour difference without true weakness on smile test",
+    ],
+    pediatrics:
+      "Folds may be less prominent in infants. Unilateral flattening at birth suggests congenital CN VII palsy (forceps injury, Möbius syndrome). Seborrheic dermatitis commonly affects the nasolabial area in infants as part of \"cradle cap\" distribution.",
+  },
+  {
     id: "upward-gaze-palsy",
     name: "Upward Gaze Palsy",
     etymology: "Old English up + weard = toward + Latin palus = stake/fixation + Greek paralyein = to disable",

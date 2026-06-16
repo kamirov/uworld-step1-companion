@@ -256,6 +256,55 @@ export const ORGANS: OrganEntry[] = [
     ],
   },
   {
+    id: "branchial-arch",
+    name: "Branchial Arch",
+    etymology:
+      "Greek branchion = gill + Latin arcus = bow — embryologic pharyngeal arch (branchial arch); gives rise to head and neck structures",
+    aliases: [
+      "branchial arch",
+      "branchial arches",
+      "branchial archs",
+      "pharyngeal arch",
+      "pharyngeal arches",
+      "pharyngeal arch system",
+      "visceral arch",
+      "visceral arches",
+      "gill arch",
+      "gill arches",
+      "branchial apparatus arch",
+    ],
+    germLayer: "Mesoderm (arch core) + neural crest (skeletal/connective derivatives) + surface ectoderm (clefts)",
+    origin:
+      "Six paired mesodermal bars with neural crest and ectodermal clefts/pouches surrounding the embryonic pharynx (weeks 4–7); each arch has cartilaginous template, CN, muscular, and arterial derivatives — classic Step 1 embryology framework (pharyngeal arch = modern term; branchial arch = synonymous).",
+    derivatives: [
+      "1st arch — CN V; malleus/incus; maxillary/mandibular processes; muscles of mastication; anterior belly digastric",
+      "2nd arch — CN VII; stapes; stylohyoid; facial expression muscles; posterior belly digastric",
+      "3rd arch — CN IX; stylopharyngeus; greater horn of hyoid; common/carotid artery proximal derivative",
+      "4th arch — CN X (superior laryngeal branch); pharyngeal constrictors; thyroid/cricoid cartilages; right subclavian (partial)",
+      "6th arch — CN X (recurrent laryngeal branch); intrinsic laryngeal muscles; pulmonary arteries and ductus arteriosus (left 6th)",
+    ],
+    functionSummary:
+      "Scaffold for development of face, jaw, ear bones, hyoid, laryngeal cartilages, and arch-associated cranial nerves and arteries; abnormal development causes Treacher Collins, Pierre Robin, and vascular arch anomalies.",
+    commonPathologies: [
+      "Treacher Collins — 1st and 2nd arch neural crest defect (mandibulofacial dysostosis)",
+      "Pierre Robin sequence — micrognathia (1st arch) with glossoptosis and cleft palate",
+      "DiGeorge — 3rd/4th pouch (not arch) but related pharyngeal apparatus",
+      "Branchial cleft cyst/fistula/sinus — persistent 2nd cleft ectoderm",
+      "Persistent stapedial artery — 2nd arch arterial remnant",
+    ],
+    step1Pearls: [
+      "Branchial arch = pharyngeal arch (same structure; pouches are endodermal, arches are mesoderm/neural crest)",
+      "1st arch = Meckel cartilage, CN V, mastication; 2nd = Reichert, CN VII, facial muscles",
+      "3rd arch = CN IX, stylopharyngeus; 4th–6th = CN X branches, laryngeal cartilages/muscles",
+      "6th arch → pulmonary arteries and ductus arteriosus (left); recurrent laryngeal loops under 6th arch derivatives",
+      "1st arch artery → maxillary artery; 2nd → stapedial (normally obliterates); 3rd → common/carotid; 4th → aortic arch (left) / subclavian (right); 6th → pulmonary arteries",
+      "Treacher Collins = 1st/2nd arch neural crest problem; cleft palate and micrognathia associations",
+      "vs pharyngeal pouch — endodermal outpocketings (thymus, parathyroids, tonsil epithelium)",
+    ],
+    pediatrics:
+      "Branchial cleft anomalies present as lateral neck pits/cysts in children; Pierre Robin and Treacher Collins are neonatal 1st/2nd arch spectrum disorders. Isotretinoin and vitamin A excess disrupt neural crest/pharyngeal arch development.",
+  },
+  {
     id: "nasopharynx",
     name: "Nasopharynx",
     etymology: "Latin nasus = nose + Greek pharynx = throat",

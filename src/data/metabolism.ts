@@ -49,6 +49,49 @@ export const METABOLISM: MetabolismEntry[] = [
       "Infants and growing children have higher essential amino acid requirements per kg; PKU, MSUD, and maple syrup–type disorders detected on newborn screening reflect impaired handling of essential amino acids.",
   },
   {
+    id: "essential-fatty-acid",
+    name: "Essential Fatty Acid",
+    etymology:
+      "Latin essentia = being + fatty + acid = must be obtained from diet because humans lack desaturases to synthesize them",
+    aliases: [
+      "essential fatty acid",
+      "essential fatty acids",
+      "efa",
+      "efas",
+      "indispensable fatty acid",
+      "indispensable fatty acids",
+      "essential fat",
+      "essential fats",
+      "dietary essential fatty acid",
+    ],
+    definition:
+      "Polyunsaturated fatty acids that humans cannot synthesize de novo and must obtain from diet — principally linoleic acid (18:2 ω-6) and α-linolenic acid (18:3 ω-3) — precursors to longer eicosanoids and structural membrane lipids.",
+    pathway: [
+      "Linoleic acid (ω-6) → γ-linolenic → arachidonic acid (AA) — prostaglandin/leukotriene precursor",
+      "α-Linolenic acid (ω-3) → EPA → DHA — anti-inflammatory mediators and neural membrane lipids",
+      "Humans lack Δ12 and Δ15 desaturases — cannot make linoleic or α-linolenic from simpler fats",
+      "Essential fatty acid deficiency → scaly dermatitis, alopecia, poor wound healing, growth failure in infants",
+      "Arachidonic acid in membranes — substrate for cyclooxygenase and lipoxygenase (aspirin/NSAIDs target COX on AA products)",
+    ],
+    boardsPearls: [
+      "Essential fatty acids = linoleic (ω-6) and α-linolenic (ω-3) — must be dietary",
+      "Arachidonic acid (ω-6) → prostaglandins, thromboxanes, leukotrienes — NSAIDs inhibit COX",
+      "EPA/DHA (ω-3 from fish oils) — cardiovascular and anti-inflammatory effects",
+      "Essential fatty acid deficiency in TPN without lipid emulsion — dermatitis, alopecia, thrombocytopenia",
+      "vs essential amino acid — nitrogen/protein building blocks, not lipid precursors",
+      "vs cholesterol — steroid membrane component synthesized endogenously (HMG-CoA pathway)",
+    ],
+    distinguishFrom: [
+      "Essential amino acid — protein building blocks (PVT TIM HALL), not fatty acids",
+      "Saturated fatty acids — can be synthesized; not essential",
+      "Cholesterol — synthesized de novo; essential for membranes but not dietary essential fatty acid",
+      "Trans fats — dietary but not essential; atherogenic",
+      "Ketone bodies — water-soluble fuel from fatty acid oxidation, not essential dietary fats",
+    ],
+    pediatrics:
+      "Premature infants and children on fat-free TPN develop essential fatty acid deficiency — require intravenous lipid emulsion. DHA important for retinal and cortical development in infancy.",
+  },
+  {
     id: "leucine",
     name: "Leucine",
     etymology: "Greek leukos = white + -ine = chemical suffix for amino acids",
