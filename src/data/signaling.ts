@@ -425,6 +425,57 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Neonatal seizures may involve GABAergic immaturity; phenobarbital enhances GABA-A in neonatal epilepsy.",
   },
   {
+    id: "glutamate",
+    name: "Glutamate",
+    etymology:
+      "Latin gluten = glue + -ate = chemical anion form — principal excitatory CNS neurotransmitter",
+    aliases: [
+      "glutamate neurotransmitter",
+      "glutamate neurotransmitters",
+      "cns glutamate",
+      "synaptic glutamate",
+      "excitatory neurotransmitter glutamate",
+      "excitatory amino acid neurotransmitter",
+      "excitatory amino acid neurotransmitters",
+      "l-glutamate neurotransmitter",
+      "glutamatergic neurotransmission",
+      "glutamatergic signaling",
+    ],
+    type: "Neurotransmitter",
+    source:
+      "Glutamatergic projection neurons and local circuit neurons throughout the CNS; synthesized from α-ketoglutarate or recycled via glutamine–glutamate cycle with astrocytes; stored in synaptic vesicles and released by Ca²⁺-dependent exocytosis",
+    receptor:
+      "Ionotropic glutamate receptors — NMDA (glutamate + glycine co-agonists, voltage-dependent Mg²⁺ block, Ca²⁺ permeable), AMPA (fast EPSC), kainate; metabotropic glutamate receptors (mGluR, GPCR-linked modulators)",
+    function:
+      "Primary excitatory neurotransmitter in the CNS — depolarizes postsynaptic neurons via cation influx; NMDA receptor activation (requires glutamate, glycine, and depolarization) mediates synaptic plasticity (LTP) and learning; excess extracellular glutamate causes excitotoxic neuronal injury when uptake fails.",
+    clinicalRelevance: [
+      "Ischemic stroke and hypoxic-ischemic encephalopathy — impaired astrocytic EAAT uptake → glutamate accumulation → NMDA/AMPA excitotoxicity",
+      "Status epilepticus — sustained glutamatergic firing → Ca²⁺ overload and neuronal loss",
+      "Memantine — blocks pathologic NMDA receptor activity downstream of glutamate excess in Alzheimer disease",
+      "Alcohol withdrawal — chronic NMDA inhibition unmasked → relative glutamate excitotoxicity and seizures",
+      "Anti-NMDA receptor encephalitis — autoantibodies reduce functional NMDA signaling despite glutamate presence",
+      "Riluzole in ALS — ↓ presynaptic glutamate release (among other mechanisms)",
+    ],
+    boardsPearls: [
+      "Glutamate = main excitatory CNS neurotransmitter; GABA = main inhibitory (synthesized from glutamate via GAD)",
+      "Glutamate binds NMDA, AMPA, and kainate ionotropic receptors — NMDA requires glycine co-agonist + depolarization",
+      "Astrocytes clear synaptic glutamate via EAAT transporters — failure → excitotoxicity",
+      "vs glutamic acid metabolism — same molecule; this entry is synaptic/neurotransmitter focus (see metabolism entry for amino acid pathways)",
+      "Alcohol/benzo withdrawal — ↓ inhibition + unmasked glutamate → seizures",
+      "Ketamine/PCP — NMDA receptor antagonists block glutamate signaling at NMDA subtype",
+    ],
+    distinguishFrom: [
+      "GABA — inhibitory neurotransmitter derived from glutamate via glutamate decarboxylase (GAD)",
+      "Glycine — co-agonist at NMDA receptor; separate inhibitory transmitter at spinal cord glycine receptors",
+      "Glutamine — astrocytic storage/transport form; converted to glutamate by glutaminase",
+      "NMDA receptor — ion channel protein that binds glutamate; not the neurotransmitter itself",
+      "Monosodium glutamate (MSG) — dietary flavoring; not synaptic neurotransmitter physiology",
+      "Glutamic acid (metabolism) — amino acid hub for transamination and urea cycle; overlapping molecule, metabolic context",
+    ],
+    pediatrics:
+      "Immature brain is vulnerable to glutamate excitotoxicity in perinatal hypoxia-ischemia; therapeutic hypothermia reduces secondary glutamate-mediated injury. Neonatal GABA/glutamate balance differs from adult — GABA can be depolarizing early in development.",
+  },
+  {
     id: "neurotransmitter",
     name: "Neurotransmitter",
     etymology: "Greek neuron = nerve + Latin transmittere = to send across",
@@ -3402,6 +3453,69 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Neonatal GABAergic signaling is developmentally distinct (GABA can be depolarizing early); phenobarbital enhances GABA-A for neonatal seizures; benzodiazepines used cautiously in infants.",
+  },
+  {
+    id: "nmda-receptor",
+    name: "NMDA Receptor",
+    etymology:
+      "N-methyl-D-aspartate = synthetic glutamate analog used to characterize this receptor subtype + receptor = receiver",
+    aliases: [
+      "nmda receptor",
+      "nmda receptors",
+      "nmda",
+      "n-methyl-d-aspartate receptor",
+      "n-methyl-d-aspartate receptors",
+      "n methyl d aspartate receptor",
+      "nmda receptor channel",
+      "nmda ion channel",
+      "nmda glutamate receptor",
+      "nmda-type glutamate receptor",
+      "glutamate nmda receptor",
+      "glutamate nmda receptors",
+      "glutamate and nmda receptor",
+      "glutamate-nmda receptor",
+      "glutamate nmda receptor channel",
+      "nmda glutamate receptor channel",
+      "ionotropic glutamate receptor nmda",
+      "nmdar",
+      "nmda-r",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Postsynaptic membranes at excitatory synapses throughout the CNS — especially hippocampus (CA1), cortex, and spinal cord; critical for synaptic plasticity and learning",
+    receptor:
+      "Tetrameric ligand-gated cation channel (ionotropic glutamate receptor); glutamate + glycine co-agonism required; voltage-dependent Mg²⁺ block in channel pore must be relieved by postsynaptic depolarization before Ca²⁺/Na⁺ influx — coincidence detector for LTP",
+    function:
+      "Mediates slow excitatory postsynaptic currents with substantial Ca²⁺ influx; essential for long-term potentiation (LTP), synaptic plasticity, learning, and memory; excessive or dysregulated activation causes excitotoxic neuronal injury.",
+    clinicalRelevance: [
+      "Memantine — uncompetitive NMDA open-channel blocker; reduces pathologic glutamate signaling in Alzheimer disease",
+      "Ketamine and phencyclidine (PCP) — NMDA receptor antagonists → dissociative anesthesia, psychotomimetic effects",
+      "Alcohol — chronic ethanol inhibits NMDA receptors → compensatory upregulation → withdrawal seizures and excitotoxicity on cessation",
+      "Magnesium — physiologic voltage-dependent NMDA channel blocker; Mg²⁺ sulfate used in eclampsia (seizure prevention) and torsades",
+      "Anti-NMDA receptor encephalitis — autoantibodies against NR1/NR2 subunits → psychiatric symptoms, seizures, dyskinesias, autonomic instability; ovarian teratoma association in young women",
+      "Excitotoxicity in stroke and status epilepticus — excessive NMDA-mediated Ca²⁺ influx drives neuronal death",
+      "Dextromethorphan — NMDA antagonist at high doses (toxicity concern in overdose)",
+    ],
+    boardsPearls: [
+      "NMDA requires THREE conditions: glutamate + glycine + depolarization (Mg²⁺ unblock)",
+      "NMDA = Ca²⁺ permeable ionotropic glutamate receptor — key to LTP and excitotoxicity",
+      "Memantine — NMDA antagonist for moderate Alzheimer disease (with donepezil in advanced disease)",
+      "Ketamine — NMDA antagonist; dissociative anesthetic; maintains sympathetic tone (useful in shock)",
+      "Anti-NMDA encephalitis — psychosis → seizures → movement disorder; check for ovarian teratoma",
+      "Alcohol withdrawal seizures — chronic NMDA inhibition → upregulation → unmasked excitotoxicity",
+      "vs AMPA receptor — faster EPSC, less Ca²⁺; NMDA is coincidence detector for LTP",
+      "vs GABA-A — excitatory cation influx (Ca²⁺/Na⁺) vs inhibitory Cl⁻ influx",
+    ],
+    distinguishFrom: [
+      "AMPA receptor — fast ionotropic glutamate receptor; primary rapid EPSC; less Ca²⁺ permeability",
+      "Kainate receptor — ionotropic glutamate receptor; less emphasized on Step 1 than NMDA/AMPA",
+      "Metabotropic glutamate receptors (mGluR) — GPCR-linked; modulate synaptic transmission indirectly",
+      "GABA-A receptor — inhibitory Cl⁻ channel; opposite effect on neuronal excitability",
+      "Nicotinic acetylcholine receptor — cation channel at NMJ and autonomic ganglia; ACh not glutamate",
+      "Glycine receptor — inhibitory Cl⁻ channel in spinal cord; glycine is co-agonist at NMDA but separate receptor elsewhere",
+    ],
+    pediatrics:
+      "Anti-NMDA receptor encephalitis is a leading autoimmune encephalitis in children and young adults — psychiatric presentation, seizures, and dysautonomia; immunotherapy and tumor removal if teratoma present. Ketamine used for procedural sedation in pediatrics via NMDA antagonism.",
   },
   {
     id: "aflatoxin",
