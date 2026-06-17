@@ -1465,6 +1465,56 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "V2 anesthesia after midface trauma or dental procedures follows same foramen rotundum anatomy in all ages.",
   },
   {
+    id: "cavernous-sinus",
+    name: "Cavernous Sinus",
+    etymology: "Latin cavernosus = full of hollows/caves + Latin sinus = bay/channel",
+    aliases: [
+      "cavernous sinus",
+      "cavernous sinuses",
+      "cavernous venous sinus",
+      "cavernous venous sinuses",
+      "paired cavernous sinus",
+      "dural cavernous sinus",
+    ],
+    definition:
+      "Paired dural venous sinuses on either side of the sella turcica — a clinically critical neurovascular crossroads where cranial nerves III, IV, V1, V2, and VI course alongside the internal carotid artery and postganglionic sympathetic fibers.",
+    anatomy:
+      "Located in the middle cranial fossa lateral to the body of the sphenoid and pituitary fossa, between layers of dura; trabeculated venous channels receive blood from superior and inferior ophthalmic veins and sphenoparietal sinus, then drain via superior and inferior petrosal sinuses to sigmoid sinus/internal jugular vein. Connects across the intercavernous sinuses anterior/posterior to pituitary and communicates with pterygoid venous plexus (valveless — facial/orbital infection can spread). CN III, IV, V1, and V2 run in the lateral wall; CN VI and internal carotid artery traverse the sinus lumen.",
+    action: [
+      "Venous drainage conduit for orbit, meninges, and midface",
+      "Passage for oculomotor (III), trochlear (IV), abducens (VI), and ophthalmic/maxillary (V1/V2) nerves to orbit and face",
+      "Internal carotid artery courses through sinus with surrounding sympathetic plexus fibers to orbit",
+      "Valveless connections allow bidirectional venous flow — route for septic thrombosis from midface infections",
+    ],
+    innervation:
+      "Not a nerve — transmits CN III, IV, V1, V2, VI and sympathetic fibers from internal carotid plexus; CN VI is uniquely within the sinus (not confined to lateral wall)",
+    clinicalRelevance: [
+      "Cavernous sinus thrombosis — fever, severe headache, proptosis, chemosis, ophthalmoplegia (III/IV/VI), V1/V2 facial numbness",
+      "Spread from sinusitis, orbital cellulitis, facial infection (danger triangle), or otitis",
+      "Carotid-cavernous fistula — traumatic or spontaneous; pulsatile exophthalmos, conjunctival arterialization, bruit",
+      "Pituitary macroadenoma or meningioma invasion → CN palsies",
+      "Internal carotid aneurysm within cavernous segment — painful ophthalmoplegia",
+    ],
+    boardsPearls: [
+      "Cavernous sinus contents: CN III, IV, V1, V2, VI + internal carotid artery + sympathetic fibers",
+      "CN VI runs through the sinus; III/IV/V1/V2 in lateral dural wall",
+      "Cavernous sinus thrombosis — fever + headache + proptosis + ophthalmoplegia + V1/V2 loss",
+      "Valveless venous drainage from face/orbit → cavernous sinus thrombosis from midface infection",
+      "Carotid-cavernous fistula — pulsatile proptosis and cranial bruit",
+      "vs prostatic cavernous nerves — pelvic autonomic erection nerves; unrelated cranial structure",
+      "vs sphenoid sinus — air-filled paranasal sinus in sphenoid bone, not dural venous sinus",
+    ],
+    distinguishFrom: [
+      "Sphenoid sinus — paranasal air sinus; sinusitis can spread to cavernous sinus but is distinct structure",
+      "Superior sagittal sinus — midline dural sinus on falx cerebri, not lateral sellar sinus",
+      "Pterygoid venous plexus — infratemporal venous network communicating with cavernous sinus",
+      "Cavernous nerves (prostatic plexus) — pelvic parasympathetic fibers for erection, not cranial sinus",
+      "Superior orbital fissure — orbital entry for III/IV/V1/V2/VI after exiting cavernous region",
+    ],
+    pediatrics:
+      "Cavernous sinus thrombosis occurs in children from complicated sinusitis or orbital cellulitis — same cranial nerve findings as adults; urgent antibiotics and evaluation for septic thrombosis.",
+  },
+  {
     id: "hypoglossal-canal",
     name: "Hypoglossal Canal",
     etymology:
@@ -2020,6 +2070,104 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Sacral agenesis and tethered cord can impair S2–S4 function → neurogenic bladder and constipation; posterior urethral valves cause bladder outlet obstruction independent of sacral cord but chronic retention damages upper tracts.",
+  },
+  {
+    id: "pudendal-nerve",
+    name: "Pudendal Nerve",
+    etymology: "Latin pudendum = external genitals + Latin nervus = nerve",
+    aliases: [
+      "pudendal nerve",
+      "pudendal nerves",
+      "nervus pudendus",
+      "pudendal canal nerve",
+      "alcock nerve",
+    ],
+    definition:
+      "Major somatic nerve of the perineum formed from S2–S4 ventral rami — providing motor innervation to the external urethral and anal sphincters and perineal muscles and sensory innervation to the perineum and external genitalia.",
+    anatomy:
+      "Formed from S2–S4 ventral rami; exits pelvis through greater sciatic foramen, passes posterior to ischial spine/sacrospinous ligament, re-enters pelvis via lesser sciatic foramen, and courses in the pudendal (Alcock) canal on the medial surface of the ischium. Terminal branches: inferior rectal nerve, perineal nerve (muscular branches to superficial perineal pouch and external urethral sphincter), and dorsal nerve of the penis or clitoris.",
+    action: [
+      "Motor — external urethral sphincter, external anal sphincter, bulbospongiosus, ischiocavernosus, and other perineal striated muscles",
+      "Sensory — perineal skin, posterior scrotum or labia, and glans penis/clitoris (via dorsal nerve)",
+      "Voluntary continence of urine and stool via tonic sphincter contraction",
+      "Coordinated relaxation during voiding and defecation under central (pontine) control",
+    ],
+    innervation:
+      "S2–S4 somatic nerve — motor and sensory; distinct from parasympathetic pelvic splanchnic nerves (S2–S4) that mediate detrusor contraction and erection via autonomic pathways",
+    clinicalRelevance: [
+      "Pudendal nerve block — obstetric perineal analgesia and anorectal/perineal surgery anesthesia",
+      "Pudendal neuralgia — chronic perineal pain worse with sitting; entrapment at ischial spine or Alcock canal",
+      "Obstetric perineal trauma or prolonged cycling may injure pudendal nerve",
+      "Cauda equina syndrome — S2–S4 root compression → saddle anesthesia, sphincter weakness, ↓ anal wink",
+      "Fourth-degree obstetric laceration involving anal sphincter — pudendal branch injury risk",
+    ],
+    boardsPearls: [
+      "Pudendal nerve = S2–S4 somatic — external urethral/anal sphincters + perineal sensation",
+      "vs pelvic splanchnic nerves — parasympathetic autonomic (detrusor, erection), not pudendal somatic",
+      "Course: greater sciatic foramen → ischial spine → lesser sciatic foramen → Alcock canal",
+      "Dorsal nerve of penis/clitoris — glans sensation branch of pudendal",
+      "Anal wink reflex tests S2–S4 pudendal integrity",
+      "Cauda equina — saddle anesthesia + urinary retention + ↓ anal wink",
+      "vs prostatic plexus — autonomic cavernous nerves for erection; pudendal is somatic sphincter/perineum",
+    ],
+    distinguishFrom: [
+      "Pelvic splanchnic nerves (S2–S4) — parasympathetic autonomic to detrusor and erectile tissue",
+      "Prostatic plexus / cavernous nerves — autonomic erection fibers, not somatic sphincter control",
+      "Inferior gluteal nerve — motor to gluteus maximus; exits greater sciatic foramen but not perineal",
+      "Pudendal canal (Alcock canal) — fascial tunnel housing the nerve, not the nerve itself",
+      "Internal urethral sphincter — smooth muscle with sympathetic innervation, not pudendal somatic",
+    ],
+    pediatrics:
+      "Pudendal nerve block used for obstetric delivery analgesia. Perineal trauma and sphincter injury in childbirth can affect pudendal branches; anal wink and sphincter tone assess S2–S4 integrity in suspected cauda equina or sacral dysraphism.",
+  },
+  {
+    id: "prostatic-plexus",
+    name: "Prostatic Plexus",
+    etymology: "Greek prostatēs = one standing before + Latin plexus = braid/network",
+    aliases: [
+      "prostatic plexus",
+      "prostatic plexuses",
+      "plexus prostaticus",
+      "prostate plexus",
+      "prostate plexuses",
+      "pelvic prostatic plexus",
+    ],
+    definition:
+      "Autonomic nerve network on the posterolateral prostate formed from the inferior hypogastric (pelvic) plexus — containing sympathetic and parasympathetic fibers that innervate the prostate, seminal vesicles, ejaculatory ducts, bladder neck, and corpora cavernosa (via cavernous nerves in the neurovascular bundles).",
+    anatomy:
+      "Arises from the inferior hypogastric (pelvic) plexus flanking the rectum and bladder base; receives sympathetic fibers via the hypogastric nerves (from superior hypogastric plexus, T10–L2) and parasympathetic fibers via pelvic splanchnic nerves (S2–S4); neurovascular bundles course posterolateral to the prostate carrying cavernous nerves (parasympathetic) alongside prostatic vessels — critical landmark in radical prostatectomy.",
+    action: [
+      "Parasympathetic (pelvic splanchnic) fibers → vasodilation and erection via cavernous nerves and nitric oxide in corpora cavernosa",
+      "Sympathetic fibers → smooth muscle contraction of seminal tract and bladder neck during emission phase of ejaculation",
+      "Innervates prostate gland, seminal vesicles, ejaculatory ducts, and distal urethra",
+      "Coordinates with somatic pudendal innervation for ejaculation and continence",
+    ],
+    innervation:
+      "Mixed autonomic plexus — sympathetic preganglionic (T10–L2) via hypogastric nerves; parasympathetic preganglionic (S2–S4) via pelvic splanchnic nerves; postganglionic fibers distributed to prostate and erectile tissue; distinct from pudendal somatic motor supply to external sphincter",
+    clinicalRelevance: [
+      "Radical prostatectomy — injury to neurovascular bundles/prostatic plexus causes erectile dysfunction",
+      "Nerve-sparing radical prostatectomy preserves cavernous nerves when oncologically feasible",
+      "Diabetic autonomic neuropathy can impair prostatic plexus function → erectile dysfunction",
+      "Pelvic surgery, radiation, or extensive lymph node dissection may damage pelvic plexus branches",
+      "Alpha-adrenergic drugs (e.g., phenylephrine) constrict prostatic/trigonal smooth muscle via sympathetic fibers",
+    ],
+    boardsPearls: [
+      "Prostatic plexus = part of inferior hypogastric (pelvic) plexus on posterolateral prostate",
+      "Parasympathetic S2–S4 (pelvic splanchnic) → erection via cavernous nerves in neurovascular bundles",
+      "Sympathetic hypogastric → emission/ejaculation and bladder neck contraction",
+      "Radical prostatectomy ED risk — damage to prostatic plexus / neurovascular bundle cavernous nerves",
+      "vs pudendal nerve — somatic (external sphincter, perineum), not autonomic prostatic plexus",
+      "vs superior hypogastric plexus — presynaptic sympathetic only; prostatic plexus is distal mixed autonomic network",
+    ],
+    distinguishFrom: [
+      "Inferior hypogastric (pelvic) plexus — parent plexus; prostatic plexus is prostate-focused subdivision",
+      "Superior hypogastric plexus — presynaptic sympathetic at aortic bifurcation; not mixed parasympathetic",
+      "Pudendal nerve — somatic S2–S4 motor/sensory to perineum and external sphincters",
+      "Pelvic splanchnic nerves — parasympathetic fibers that join pelvic plexus; not the plexus itself",
+      "Cavernous nerves — parasympathetic branches from prostatic plexus to penis for erection",
+    ],
+    pediatrics:
+      "Prostatic plexus anatomy is relevant only in adults for prostate surgery and autonomic sexual function. Pediatric pelvic neuroanatomy matters for imperforate anus, cloacal malformations, and sacral agenesis affecting S2–S4 outflow.",
   },
   {
     id: "fontanelle",
