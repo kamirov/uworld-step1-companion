@@ -10880,6 +10880,47 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Ankle reflexes may be difficult to elicit in infants; physiologic hyperreflexia is common early in life. Absent reflexes with hypotonia in infancy suggest peripheral neuropathy or spinal muscular atrophy; asymmetric reflexes warrant neurologic evaluation.",
   },
   {
+    id: "cremasteric-reflex",
+    name: "Cremasteric Reflex",
+    etymology: "Greek kremastos = hung/suspended + Latin reflexus = bent back",
+    aliases: [
+      "cremasteric reflex",
+      "cremasteric reflexes",
+      "cremaster reflex",
+      "cremaster reflexes",
+      "cremasteric response",
+      "genitofemoral reflex",
+      "testicular elevation reflex",
+    ],
+    definition:
+      "Superficial reflex elicited by stroking the inner thigh — produces ipsilateral elevation of the testis via contraction of the cremaster muscle — mediated by the genitofemoral nerve (L1–L2).",
+    mechanism:
+      "Light touch or stroke of the medial upper thigh → afferent fibers in the genitofemoral nerve (L1–L2) → spinal integration → efferent genitofemoral motor fibers to the cremaster muscle → ipsilateral testicular ascent; absence suggests disruption of the reflex arc or severe scrotal pathology (e.g., testicular torsion).",
+    thinkOf: [
+      "Testicular torsion — sudden scrotal pain with absent cremasteric reflex (high-yield emergency sign)",
+      "Epididymitis — painful scrotum but cremasteric reflex usually preserved",
+      "Retractile testis — hyperactive cremaster reflex pulls testis into inguinal canal",
+      "Genitofemoral nerve injury — absent reflex",
+      "Normal symmetric reflex in healthy males",
+    ],
+    pairWith: [
+      "Acute scrotal pain + absent cremasteric reflex + absent Doppler flow → testicular torsion (surgical emergency)",
+      "Scrotal pain + preserved cremasteric reflex + positive Prehn sign → epididymitis over torsion",
+      "Retractile testis — testis ascends with reflex but can be milked into scrotum and stays briefly",
+      "Absent cremasteric reflex + normal exam otherwise — consider unilateral genitofemoral neuropathy",
+      "Boys with intermittent scrotal asymmetry + brisk reflex → retractile testis, not torsion",
+    ],
+    distinguishFrom: [
+      "Ankle reflex (Achilles) — deep tendon reflex testing S1, not genitofemoral superficial reflex",
+      "Babinski sign — plantar superficial reflex for UMN lesion, unrelated to scrotum",
+      "Prehn sign — relief of scrotal pain with testicular elevation (epididymitis); not the same as reflex-mediated elevation from thigh stroke",
+      "Cremaster muscle spasm from cold or anxiety — not the same as elicited reflex from standardized thigh stroke",
+      "Testicular retraction from pain alone — nonspecific guarding, not formal reflex testing",
+    ],
+    pediatrics:
+      "Retractile testis is common in boys — hyperactive cremasteric reflex pulls a normal testis into the inguinal canal; it descends with manipulation and requires observation, not surgery. Absent cremasteric reflex in a boy with acute scrotal pain strongly favors testicular torsion — emergent urology evaluation.",
+  },
+  {
     id: "babinski-reflex",
     name: "Babinski Reflex",
     etymology: "Eponym: Joseph Babinski (Polish-French neurologist, 1857–1932) + Latin reflexus = bent back",

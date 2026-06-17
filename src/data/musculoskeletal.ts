@@ -1912,6 +1912,60 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Pediatric enuresis and voiding dysfunction may involve pelvic floor dyssynergia; congenital anomalies (epispadias, cloaca) disrupt normal pelvic floor anatomy.",
   },
   {
+    id: "external-urethral-sphincter",
+    name: "External Urethral Sphincter",
+    etymology: "Latin externus = outward + Greek ouron = urine + thraúō = to rub/wear + Greek sphinktēr = that which binds tight",
+    aliases: [
+      "external urethral sphincter",
+      "external urethral sphincters",
+      "eus",
+      "external sphincter",
+      "external sphincters",
+      "urethral rhabdosphincter",
+      "urethral rhabdosphincters",
+      "rhabdosphincter",
+      "rhabdosphincters",
+      "striated urethral sphincter",
+    ],
+    definition:
+      "Skeletal (striated) muscle sphincter encircling the membranous urethra — under voluntary somatic control via the pudendal nerve — that maintains urinary continence during bladder storage and relaxes during coordinated voiding.",
+    anatomy:
+      "Rhabdosphincter of circular skeletal muscle fibers surrounding the membranous urethra in the deep perineal pouch; in females it is a primary continence mechanism at the mid-urethra; in males it lies distal to the prostate and internal (smooth muscle) sphincter at the bladder neck; works with levator ani and pelvic floor for urethral closure pressure.",
+    action: [
+      "Tonic contraction during bladder storage to maintain continence against intra-abdominal pressure",
+      "Voluntary relaxation during micturition when pontine micturition center permits voiding",
+      "Coordinates with detrusor contraction and internal sphincter relaxation for efficient emptying",
+      "Contributes urethral closure pressure — deficiency causes stress urinary incontinence",
+    ],
+    innervation:
+      "Pudendal nerve (S2–S4) — somatic motor innervation; voluntary cortical control via pontine micturition center; distinct from parasympathetic detrusor control and sympathetic internal sphincter tone",
+    clinicalRelevance: [
+      "Stress urinary incontinence — sphincter/pelvic floor weakness with cough, sneeze, or Valsalva",
+      "Intrinsic sphincter deficiency after radical prostatectomy — post-prostatectomy incontinence",
+      "Detrusor-sphincter dyssynergia — external sphincter contracts against detrusor in spinal cord injury",
+      "Pudendal nerve injury or cauda equina syndrome — impaired voluntary sphincter control",
+      "Epispadias and severe pelvic trauma — anatomic disruption of sphincter mechanism",
+    ],
+    boardsPearls: [
+      "External urethral sphincter = skeletal muscle + pudendal nerve (S2–S4) + voluntary control",
+      "Internal urethral sphincter = smooth muscle at bladder neck + sympathetic α1 tone",
+      "Storage: external sphincter contracted; voiding: external sphincter relaxes + detrusor contracts",
+      "Stress incontinence — leakage with ↑ intra-abdominal pressure from sphincter/pelvic floor failure",
+      "Post-prostatectomy incontinence — intrinsic sphincter deficiency (external mechanism)",
+      "Detrusor-sphincter dyssynergia in SCI — both contract → high bladder pressure, hydronephrosis risk",
+      "vs internal sphincter — smooth vs skeletal; sympathetic vs pudendal somatic",
+    ],
+    distinguishFrom: [
+      "Internal urethral sphincter — smooth muscle at bladder neck; sympathetic α1-mediated tone; not voluntary",
+      "Detrusor muscle — bladder wall smooth muscle that contracts to expel urine, not a sphincter",
+      "Pelvic floor (levator ani) — broader support sling; external sphincter is distinct circular rhabdosphincter",
+      "External anal sphincter — skeletal continence for anus; same pudendal innervation pattern but separate structure",
+      "Urethral stricture — fibrotic luminal narrowing, not neuromuscular sphincter dysfunction",
+    ],
+    pediatrics:
+      "Toilet training reflects maturation of voluntary external sphincter control over the micturition reflex. Epispadias and cloacal anomalies disrupt normal sphincter anatomy. Voiding dysfunction in children may involve failure to relax pelvic floor/sphincter during voiding (dyssynergia).",
+  },
+  {
     id: "s2-s4-sacral-segments",
     name: "S2–S4 Sacral Segments",
     etymology: "S = sacral + 2–4 = second through fourth sacral spinal cord segments",
