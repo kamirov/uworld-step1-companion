@@ -596,6 +596,53 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Pediatric jaw weakness is uncommon from isolated V3 lesions; consider myopathy or neuromuscular disease if bilateral. Lingual nerve injury after third molar extraction can occur in adolescents.",
   },
   {
+    id: "median-nerve",
+    name: "Median Nerve",
+    etymology: "Latin medius = middle + Greek neuron = sinew/nerve",
+    aliases: [
+      "median nerve",
+      "median nerves",
+      "nervus medianus",
+      "median n",
+    ],
+    definition:
+      "Major mixed nerve of the upper limb formed from the lateral and medial cords of the brachial plexus — supplying thenar muscles, most forearm flexors, and sensation to the lateral palm and radial three and a half digits.",
+    anatomy:
+      "C5–T1 roots → lateral cord (C6–C7) + medial cord (C8–T1) → median nerve. Courses medial to brachial artery in arm (no motor branches in arm), through cubital fossa, between two heads of pronator teres, deep to flexor digitorum superficialis. Anterior interosseous branch in forearm. Enters hand through carpal tunnel (bounded by carpal bones and flexor retinaculum) with flexor tendons.",
+    action: [
+      "Motor — pronator teres, flexor carpi radialis, palmaris longus, flexor digitorum superficialis (index/middle), flexor pollicis longus, pronator quadratus (anterior interosseous); thenar muscles (LOAF: lateral two lumbricals, opponens pollicis, abductor pollicis brevis, flexor pollicis brevis)",
+      "Sensory — lateral palm, palmar thumb, index, middle, and radial half of ring finger",
+      "Palmar cutaneous branch arises proximal to carpal tunnel — supplies thenar skin sensation, spared in carpal tunnel syndrome",
+    ],
+    innervation: "Lateral cord (C6–C7) + medial cord (C8–T1) of brachial plexus",
+    clinicalRelevance: [
+      "Carpal tunnel syndrome — compression at wrist; nocturnal paresthesias, Phalen/Tinel positive",
+      "Pronator teres syndrome — proximal compression at elbow; forearm pain, no nocturnal pattern",
+      "Anterior interosseous nerve syndrome — motor branch palsy; inability to make OK sign (FPL + FDP index)",
+      "Supracondylar humerus fracture (children) — median or anterior interosseous nerve injury",
+      "Wrist laceration — median nerve injury at carpal tunnel",
+      "C6/C7 radiculopathy mimics median sensory symptoms but has neck pain and reflex changes",
+    ],
+    boardsPearls: [
+      "LOAF — median thenar muscles: Lateral two lumbricals, Opponens pollicis, Abductor pollicis brevis, Flexor pollicis brevis",
+      "Carpal tunnel — median nerve compression at wrist; thumb, index, middle finger paresthesias",
+      "Palmar cutaneous branch spared in CTS — thenar eminence sensation preserved",
+      "Anterior interosseous palsy — cannot flex IP joint of thumb or DIP of index (OK sign test)",
+      "vs ulnar nerve — claw hand, ring/little finger, hypothenar muscles, interossei",
+      "vs C6 radiculopathy — neck pain, Spurling positive, biceps reflex changes",
+      "Supracondylar fracture in child — check median nerve and brachial artery",
+    ],
+    distinguishFrom: [
+      "Ulnar nerve — ring/little finger sensation, interossei/ulnar lumbricals, claw hand",
+      "Radial nerve — wrist/finger extension, posterior arm/forearm sensation",
+      "Musculocutaneous nerve — biceps/brachialis, lateral forearm sensation",
+      "C6 or C7 radiculopathy — dermatomal pattern with neck symptoms and reflex loss",
+      "Carpal tunnel syndrome — entrapment at wrist, not the nerve anatomy itself",
+    ],
+    pediatrics:
+      "Supracondylar humerus fracture is the classic pediatric median nerve (or anterior interosseous) injury — assess radial pulse and distal motor function after reduction. Carpal tunnel syndrome is uncommon in children; consider metabolic or inherited neuropathy if bilateral hand numbness.",
+  },
+  {
     id: "chorda-tympani",
     name: "Chorda Tympani",
     etymology: "Latin chorda = string/cord + Latin tympanum = drum (eardrum/middle ear)",

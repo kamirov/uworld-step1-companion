@@ -648,6 +648,54 @@ export const PROCEDURES: ProcedureEntry[] = [
       "Pediatric indications include perforated appendicitis, volvulus/malrotation, NEC perforation, and trauma; decision is weight/physiology and diagnosis dependent.",
   },
   {
+    id: "appendectomy",
+    name: "Appendectomy",
+    etymology: "Latin appendere = hang from + Greek ektome = cutting out",
+    aliases: [
+      "appendectomy",
+      "appendectomies",
+      "appendix removal",
+      "surgical removal of appendix",
+      "laparoscopic appendectomy",
+      "laparoscopic appendectomies",
+      "open appendectomy",
+      "open appendectomies",
+      "interval appendectomy",
+      "interval appendectomies",
+    ],
+    definition:
+      "Surgical removal of the vermiform appendix — definitive treatment for acute appendicitis and prophylactic during certain abdominal operations (e.g., Ladd procedure for malrotation).",
+    indications: [
+      "Acute uncomplicated appendicitis — laparoscopic or open appendectomy",
+      "Perforated appendicitis with peritonitis — emergent appendectomy after resuscitation",
+      "Appendiceal abscess — IV antibiotics ± percutaneous drainage, then interval appendectomy in selected cases",
+      "Prophylactic appendectomy during Ladd procedure (malrotation) — abnormally positioned appendix would confuse future appendicitis diagnosis",
+      "Incidental carcinoid at appendiceal tip — appendectomy often curative if margins clear",
+    ],
+    keyMeasurements: [
+      "Clinical: RLQ tenderness, McBurney point, Rovsing/psoas/obturator signs",
+      "Labs: leukocytosis with left shift; urinalysis to exclude UTI",
+      "Imaging: ultrasound (pediatrics/pregnancy) or CT showing noncompressible appendix >6 mm",
+      "Operative finding: inflamed/perforated appendix; assess for abscess or generalized peritonitis",
+    ],
+    complications: [
+      "Wound infection or intra-abdominal abscess (higher after perforation)",
+      "Ileus or small bowel obstruction from adhesions",
+      "Stump appendicitis (retained appendiceal stump)",
+      "Injury to ileum, cecum, or ureter (rare)",
+    ],
+    boardsPearls: [
+      "Gold standard treatment for appendicitis — do not delay surgery for uncomplicated disease",
+      "Laparoscopic appendectomy preferred when expertise available — ↓ wound complications",
+      "Perforated appendicitis → antibiotics + surgery; contained abscess may be drained first",
+      "Negative appendectomy rate acceptable tradeoff when diagnosis uncertain and clinical suspicion high",
+      "vs interval appendectomy — delayed surgery after abscess drainage in stable selected patients",
+      "Anorexia nearly universal in appendicitis — hungry patient makes diagnosis less likely",
+    ],
+    pediatrics:
+      "Most common acute surgical abdomen in children; higher perforation rate with delayed diagnosis because presentation is often atypical. Ultrasound is first-line imaging. Broad-spectrum antibiotics perioperatively for perforated disease.",
+  },
+  {
     id: "spontaneous-vaginal-delivery",
     name: "Spontaneous vaginal delivery",
     etymology: "Latin sponte = of one's own accord + vagina = sheath + Latin deliver = to set free",
@@ -694,6 +742,48 @@ export const PROCEDURES: ProcedureEntry[] = [
     ],
     pediatrics:
       "Neonate born via SVD may acquire maternal vaginal/flora at passage; early-onset GBS sepsis prevention depends on intrapartum antibiotics. Shoulder dystocia and birth asphyxia are acute neonatal emergencies during vaginal birth.",
+  },
+  {
+    id: "vasectomy",
+    name: "Vasectomy",
+    etymology: "Latin vas = vessel/duct + Greek ektome = cutting out",
+    aliases: [
+      "vasectomy",
+      "vasectomies",
+      "male sterilization",
+      "male sterilizations",
+      "vas deferens ligation",
+      "vas deferens division",
+      "bilateral vasectomy",
+      "bilateral vasectomies",
+    ],
+    definition:
+      "Minor surgical procedure dividing or ligating both vasa deferentia to interrupt sperm transport — highly effective permanent male contraception causing obstructive azoospermia.",
+    indications: [
+      "Permanent male contraception in men who do not desire future fertility",
+      "Alternative to tubal ligation when couple seeks male sterilization",
+    ],
+    keyMeasurements: [
+      "Post-vasectomy semen analysis — confirm azoospermia or rare nonmotile sperm before relying on contraception (typically after ~20 ejaculations or 3 months)",
+      "Preoperative counseling — considered permanent though reversal exists with variable success",
+      "Scrotal exam — identify vas deferens in spermatic cord",
+    ],
+    complications: [
+      "Scrotal hematoma or infection",
+      "Chronic scrotal pain syndrome (uncommon)",
+      "Early contraceptive failure if unprotected sex before confirmed azoospermia",
+      "Late recanalization (rare) — sperm may reappear in ejaculate",
+      "Sperm granuloma at transection site",
+    ],
+    boardsPearls: [
+      "Vasectomy → obstructive azoospermia — normal testicular size, normal FSH, sperm production continues but cannot reach ejaculate",
+      "Not immediately effective — backup contraception until post-vasectomy semen analysis confirms azoospermia",
+      "vs CBAVD — congenital bilateral absence of vas deferens; associated with cystic fibrosis",
+      "Vasectomy reversal (vasovasostomy) possible but success declines with time since procedure",
+      "Complication of inguinal hernia repair — iatrogenic vas deferens injury",
+    ],
+    pediatrics:
+      "Not performed in children; relevant on boards as cause of adult obstructive azoospermia and as male contraceptive counterpart to tubal ligation.",
   },
   {
     id: "voiding-cystourethrography",
