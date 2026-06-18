@@ -6044,6 +6044,50 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Same cortical localization principles apply to childhood arterial ischemic stroke. Aphasia and neglect may be harder to assess in young children but hemianopia and gaze preference remain useful. Moyamoya and sickle cell arteriopathy are common pediatric stroke etiologies when cortical signs are present.",
   },
   {
+    id: "gerstmann-syndrome",
+    name: "Gerstmann Syndrome",
+    etymology:
+      "Eponym for Josef Gerstmann (1887–1969), Austrian neurologist who described the tetrad of parietal association cortex deficits",
+    aliases: [
+      "gerstmann syndrome",
+      "gerstmann's syndrome",
+      "gerstmann tetrad",
+      "gerstmann tetrad syndrome",
+      "angular gyrus syndrome",
+      "dominant parietal lobe syndrome",
+      "acalculia agraphia finger agnosia left-right disorientation",
+    ],
+    definition:
+      "Tetrad of higher cortical deficits from dominant (usually left) inferior parietal lobule injury — classically the angular gyrus (Brodmann area 39): acalculia, agraphia, finger agnosia, and left-right disorientation.",
+    mechanism:
+      "The angular gyrus integrates somatosensory, spatial, and language association networks. Lesion disrupts finger identification and body-schema orientation (finger agnosia, left-right confusion), numerical processing (acalculia), and written language output (agraphia) while primary motor strength and sensation may be preserved. Most commonly MCA territory ischemia or hemorrhage; also tumor, trauma, or demyelination.",
+    thinkOf: [
+      "Left angular gyrus / inferior parietal lobule lesion — dominant hemisphere",
+      "MCA territorial stroke with isolated cognitive deficits",
+      "All four components present together — acalculia + agraphia + finger agnosia + left-right disorientation",
+      "Parietal lobe tumor or metastasis with progressive calculation and writing difficulty",
+      "Cortical infarct without pure motor hemiparesis — strategic angular gyrus stroke",
+    ],
+    pairWith: [
+      "Four deficits together → Gerstmann syndrome; localize to dominant angular gyrus",
+      "Acalculia + agraphia + finger agnosia + left-right confusion → left inferior parietal (angular gyrus)",
+      "Coexisting aphasia → broader dominant MCA cortical territory involvement",
+      "Hemineglect without Gerstmann tetrad → non-dominant (usually right) parietal lesion",
+      "Pure motor hemiparesis without Gerstmann signs → subcortical lacune, not angular gyrus cortex",
+      "Mnemonic — 4 A's of Gerstmann: Agraphia, Acalculia, finger Agnosia, left-Right disorientation",
+    ],
+    distinguishFrom: [
+      "Alexia without agraphia — splenial / visual pathway lesion; reading impaired, writing preserved",
+      "Isolated acalculia or agraphia — single deficit without full tetrad; broader or different localization",
+      "Developmental left-right confusion — normal in young children; not Gerstmann without other tetrad features",
+      "Hemineglect — spatial inattention to contralateral hemispace; non-dominant parietal, not Gerstmann pattern",
+      "Constructional apraxia alone — parietal dysfunction without full Gerstmann tetrad",
+      "Lacunar pure motor or sensory stroke — subcortical, no higher cortical Gerstmann deficits",
+    ],
+    pediatrics:
+      "Isolated left-right confusion is common in early childhood and does not imply Gerstmann syndrome. The full tetrad together in a child warrants structural imaging — arterial ischemic stroke, Moyamoya, or tumor can affect the dominant parietal lobe with the same localization principles as in adults.",
+  },
+  {
     id: "nodular-lymphangitis",
     name: "Nodular Lymphangitis",
     etymology: "Latin nodulus = little knot + Latin lympha = clear fluid + Greek angeion = vessel + -itis = inflammation",
