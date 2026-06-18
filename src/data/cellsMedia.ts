@@ -54,13 +54,11 @@ import intermediateFilament from "../media/images/cells/intermediate-filament.jp
 import intestinalLCell from "../media/images/cells/intestinal-l-cell.png?url";
 import keratinocyte from "../media/images/cells/keratinocyte.png?url";
 import kupfferCell from "../media/images/cells/kupffer-cell.jpg?url";
-import kupfferCell from "../media/images/cells/kupffer-cell.png?url";
 import laminaPropria from "../media/images/cells/lamina-propria.jpg?url";
 import langerhansCell from "../media/images/cells/langerhans-cell.jpg?url";
 import langhansGiantCell from "../media/images/cells/langhans-giant-cell.jpg?url";
 import leukocyte from "../media/images/cells/leukocyte.jpg?url";
 import leydigCell from "../media/images/cells/leydig-cell.png?url";
-import lymphocyte from "../media/images/cells/lymphocyte.jpg?url";
 import lymphocyte from "../media/images/cells/lymphocyte.png?url";
 import macrophage from "../media/images/cells/macrophage.png?url";
 import mastCell from "../media/images/cells/mast-cell.jpg?url";
@@ -167,13 +165,11 @@ export type CELLImageId = Extract<
   | "intestinal-l-cell"
   | "keratinocyte"
   | "kupffer-cell"
-  | "kupffer-cell"
   | "lamina-propria"
   | "langerhans-cell"
   | "langhans-giant-cell"
   | "leukocyte"
   | "leydig-cell"
-  | "lymphocyte"
   | "lymphocyte"
   | "macrophage"
   | "mast-cell"
@@ -285,13 +281,11 @@ export const CELL_IMAGES: Partial<Record<CELLImageId, string>> = {
   "intestinal-l-cell": extensionAssetUrl(intestinalLCell),
   "keratinocyte": extensionAssetUrl(keratinocyte),
   "kupffer-cell": extensionAssetUrl(kupfferCell),
-  "kupffer-cell": extensionAssetUrl(kupfferCell),
   "lamina-propria": extensionAssetUrl(laminaPropria),
   "langerhans-cell": extensionAssetUrl(langerhansCell),
   "langhans-giant-cell": extensionAssetUrl(langhansGiantCell),
   "leukocyte": extensionAssetUrl(leukocyte),
   "leydig-cell": extensionAssetUrl(leydigCell),
-  "lymphocyte": extensionAssetUrl(lymphocyte),
   "lymphocyte": extensionAssetUrl(lymphocyte),
   "macrophage": extensionAssetUrl(macrophage),
   "mast-cell": extensionAssetUrl(mastCell),
@@ -400,13 +394,11 @@ export const CELL_IMAGE_ATTRIBUTIONS: Partial<
   "intestinal-l-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:intestinal-l-cell.png" },
   "keratinocyte": { label: "Wikimedia Commons (Épiderme - FR.png)", url: "https://commons.wikimedia.org/wiki/File:Épiderme_-_FR.png" },
   "kupffer-cell": { label: "Wikimedia Commons (Kupffer cells high mag cropped.jpg)", url: "https://commons.wikimedia.org/wiki/File:Kupffer_cells_high_mag_cropped.jpg" },
-  "kupffer-cell": { label: "Wikimedia Commons (Hepatic circulation and microcirculation.png)", url: "https://commons.wikimedia.org/wiki/File:Hepatic_circulation_and_microcirculation.png" },
   "lamina-propria": { label: "Wikimedia Commons (Stomach - Iron Crystals In Gastric Lamina Propria And Epithelium (49270585877).jpg)", url: "https://commons.wikimedia.org/wiki/File:Stomach_-_Iron_Crystals_In_Gastric_Lamina_Propria_And_Epithelium_(49270585877).jpg" },
   "langerhans-cell": { label: "Wikimedia Commons (Langerhans Cells in Normal Epidermis, CD1a Immunostain (4435883030).jpg)", url: "https://commons.wikimedia.org/wiki/File:Langerhans_Cells_in_Normal_Epidermis,_CD1a_Immunostain_(4435883030).jpg" },
   "langhans-giant-cell": { label: "Wikimedia Commons (Langhans Giant Cell (10189844503).jpg)", url: "https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg" },
   "leukocyte": { label: "Wikimedia Commons (WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy.jpg)", url: "https://commons.wikimedia.org/wiki/File:WBC_(neutrophil)_at_centre,_numerous_erythrocytes_and_platelets_(dot_like_bodies)_in_Wright's_stained_peripheral_blood_smear_(PBS)_microscopy.jpg" },
   "leydig-cell": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:leydig-cell.png" },
-  "lymphocyte": { label: "Wikimedia Commons (A blood smear of rainbow trout.jpg)", url: "https://commons.wikimedia.org/wiki/File:A_blood_smear_of_rainbow_trout.jpg" },
   "lymphocyte": { label: "Wikimedia Commons (Microphotographs of atypical lymphocytes observed in peripheral blood smears of quokkas on Rottnest Island.png)", url: "https://commons.wikimedia.org/wiki/File:Microphotographs_of_atypical_lymphocytes_observed_in_peripheral_blood_smears_of_quokkas_on_Rottnest_Island.png" },
   "macrophage": { label: "Wikimedia Commons (Infiltration of CD68+ tumor-associated macrophages (TAMs) in distinct histologic location.png)", url: "https://commons.wikimedia.org/wiki/File:Infiltration_of_CD68+_tumor-associated_macrophages_(TAMs)_in_distinct_histologic_location.png" },
   "mast-cell": { label: "Wikimedia Commons (Mast cell.jpg)", url: "https://commons.wikimedia.org/wiki/File:Mast_cell.jpg" },
@@ -513,13 +505,11 @@ export const CELL_IMAGE_CAPTIONS: Partial<Record<CELLImageId, string>> = {
   "intestinal-l-cell": "Confocal ileum image showing PYY-GFP enteroendocrine L cells in green",
   "keratinocyte": "Epidermal keratinocytes in stratified squamous epithelium",
   "kupffer-cell": "Kupffer cells high mag cropped",
-  "kupffer-cell": "Kupffer cells high mag cropped",
   "lamina-propria": "Stomach - Iron Crystals In Gastric Lamina Propria And Epithelium",
   "langerhans-cell": "Langerhans Cells in Normal Epidermis, CD1a Immunostain",
   "langhans-giant-cell": "Langhans giant cell with horseshoe-arranged nuclei at the periphery — seen in granulomatous inflammation",
   "leukocyte": "WBC (neutrophil) at centre, numerous erythrocytes and platelets (dot like bodies) in Wright's stained peripheral blood smear (PBS) microscopy",
   "leydig-cell": "Testis cross-section — seminiferous tubules surrounded by interstitial Leydig cells (Gray's anatomy)",
-  "lymphocyte": "Microphotographs of atypical lymphocytes observed in peripheral blood smears of quokkas on Rottnest Island",
   "lymphocyte": "Microphotographs of atypical lymphocytes observed in peripheral blood smears of quokkas on Rottnest Island",
   "macrophage": "Infiltration of CD68+ tumor-associated macrophages (TAMs) in distinct histologic location",
   "mast-cell": "Mast cell with granules containing histamine and heparin — key effector in type I hypersensitivity",

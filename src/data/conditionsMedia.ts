@@ -120,7 +120,6 @@ import guillainBarreSyndrome from "../media/images/conditions/guillain-barre-syn
 import handFootAndMouthDisease from "../media/images/conditions/hand-foot-and-mouth-disease.jpg?url";
 import heartFailure from "../media/images/conditions/heart-failure.jpg?url";
 import hemophilia from "../media/images/conditions/hemophilia.jpg?url";
-import hemothorax from "../media/images/conditions/hemothorax.jpg?url";
 import hemothorax from "../media/images/conditions/hemothorax.png?url";
 import herpangina from "../media/images/conditions/herpangina.jpg?url";
 import hirschsprungDisease from "../media/images/conditions/hirschsprung-disease.jpg?url";
@@ -285,7 +284,6 @@ import systemicLupusErythematosus from "../media/images/conditions/systemic-lupu
 import systemicSclerosis from "../media/images/conditions/systemic-sclerosis.jpg?url";
 import taySachsDisease from "../media/images/conditions/tay-sachs-disease.jpg?url";
 import tensionPneumothorax from "../media/images/conditions/tension-pneumothorax.jpg?url";
-import tetralogyOfFallotCyanosis from "../media/images/conditions/tetralogy-of-fallot-cyanosis.jpg?url";
 import tetralogyOfFallot from "../media/images/conditions/tetralogy-of-fallot.svg?url";
 import thromboangiitisObliterans from "../media/images/conditions/thromboangiitis-obliterans.jpg?url";
 import touretteSyndrome from "../media/images/conditions/tourette-syndrome.jpg?url";
@@ -439,7 +437,6 @@ export type ConditionImageId = Extract<
   | "hand-foot-and-mouth-disease"
   | "heart-failure"
   | "hemophilia"
-  | "hemothorax"
   | "hemothorax"
   | "herpangina"
   | "hirschsprung-disease"
@@ -605,7 +602,6 @@ export type ConditionImageId = Extract<
   | "tay-sachs-disease"
   | "tension-pneumothorax"
   | "tetralogy-of-fallot"
-  | "tetralogy-of-fallot"
   | "thromboangiitis-obliterans"
   | "tourette-syndrome"
   | "transient-ischemic-attack"
@@ -763,7 +759,6 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "hand-foot-and-mouth-disease": extensionAssetUrl(handFootAndMouthDisease),
   "heart-failure": extensionAssetUrl(heartFailure),
   "hemophilia": extensionAssetUrl(hemophilia),
-  "hemothorax": extensionAssetUrl(hemothorax),
   "hemothorax": extensionAssetUrl(hemothorax),
   "herpangina": extensionAssetUrl(herpangina),
   "hirschsprung-disease": extensionAssetUrl(hirschsprungDisease),
@@ -928,7 +923,6 @@ export const CONDITION_IMAGES: Partial<Record<ConditionImageId, string>> = {
   "systemic-sclerosis": extensionAssetUrl(systemicSclerosis),
   "tay-sachs-disease": extensionAssetUrl(taySachsDisease),
   "tension-pneumothorax": extensionAssetUrl(tensionPneumothorax),
-  "tetralogy-of-fallot": extensionAssetUrl(tetralogyOfFallotCyanosis),
   "tetralogy-of-fallot": extensionAssetUrl(tetralogyOfFallot),
   "thromboangiitis-obliterans": extensionAssetUrl(thromboangiitisObliterans),
   "tourette-syndrome": extensionAssetUrl(touretteSyndrome),
@@ -1084,7 +1078,6 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "hand-foot-and-mouth-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hand-foot-and-mouth-disease.jpg" },
   "heart-failure": { label: "Wikimedia Commons (Depiction of a person suffering from heart failure.png)", url: "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_suffering_from_heart_failure.png" },
   "hemophilia": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hemophilia.jpg" },
-  "hemothorax": { label: "Wikimedia Commons (Pneumothorax hemothorax pneumomediastinum contusion.JPG)", url: "https://commons.wikimedia.org/wiki/File:Pneumothorax_hemothorax_pneumomediastinum_contusion.JPG" },
   "hemothorax": { label: "Wikimedia Commons (Chest-X-ray-Left-sided-hemothorax.png)", url: "https://commons.wikimedia.org/wiki/File:Chest-X-ray-Left-sided-hemothorax.png" },
   "herpangina": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:herpangina.jpg" },
   "hirschsprung-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:hirschsprung-disease.jpg" },
@@ -1249,7 +1242,6 @@ export const CONDITION_IMAGE_ATTRIBUTIONS: Partial<
   "systemic-sclerosis": { label: "Wikimedia Commons (Crescentic glomerulonephritis Periodic acid silver methanamine stain.JPEG)", url: "https://commons.wikimedia.org/wiki/File:Crescentic_glomerulonephritis_Periodic_acid_silver_methanamine_stain.JPEG" },
   "tay-sachs-disease": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:tay-sachs-disease.jpg" },
   "tension-pneumothorax": { label: "Wikimedia Commons (Pneumothorax 001 cs.jpg)", url: "https://commons.wikimedia.org/wiki/File:Pneumothorax_001_cs.jpg" },
-  "tetralogy-of-fallot": { label: "Wikimedia Commons (Heart Surgery Practice.jpg)", url: "https://commons.wikimedia.org/wiki/File:Heart_Surgery_Practice.jpg" },
   "tetralogy-of-fallot": { label: "Wikimedia Commons (Tetralogy of Fallot-IT.png)", url: "https://commons.wikimedia.org/wiki/File:Tetralogy_of_Fallot-IT.png" },
   "thromboangiitis-obliterans": { label: "Wikimedia Commons (55 year old female with advanced Buerger's disease.jpg)", url: "https://commons.wikimedia.org/wiki/File:55_year_old_female_with_advanced_Buerger's_disease.jpg" },
   "tourette-syndrome": { label: "Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:tourette-syndrome.jpg" },
@@ -1405,7 +1397,6 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "hand-foot-and-mouth-disease": "Characteristic vesicular rash on the sole in hand-foot-and-mouth disease",
   "heart-failure": "Depiction of a person suffering from heart failure",
   "hemophilia": "Hemarthrosis in hemophilia — recurrent joint bleeding from factor VIII or IX deficiency",
-  "hemothorax": "Chest-X-ray-Left-sided-hemothorax",
   "hemothorax": "Chest-X-ray-Left-sided-hemothorax",
   "herpangina": "Posterior oropharyngeal vesicles and uvular ulceration in herpangina",
   "hirschsprung-disease": "Biliary atresia",
@@ -1570,7 +1561,6 @@ export const CONDITION_IMAGE_CAPTIONS: Partial<
   "systemic-sclerosis": "Crescentic glomerulonephritis Periodic acid silver methanamine stain",
   "tay-sachs-disease": "Tay-Sachs disease — cherry-red macula from foveal sparing over pale swollen retina in GM2 gangliosidosis",
   "tension-pneumothorax": "Pneumothorax 001 cs",
-  "tetralogy-of-fallot": "Tetralogy of Fallot-IT",
   "tetralogy-of-fallot": "Tetralogy of Fallot-IT",
   "thromboangiitis-obliterans": "55 year old female with advanced Buerger's disease",
   "tourette-syndrome": "Tourette syndrome — motor and vocal tics with urge-suppression premonitory sensation",
