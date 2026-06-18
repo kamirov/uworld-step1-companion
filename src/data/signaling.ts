@@ -1748,10 +1748,6 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     aliases: [
       "estrogen",
       "estrogens",
-      "estradiol",
-      "estradiol-17β",
-      "e2",
-      "17β-estradiol",
       "estrone",
       "e1",
       "estriol",
@@ -1773,7 +1769,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "OCPs — ethinyl estradiol + progestin for contraception and cycle regulation",
     ],
     boardsPearls: [
-      "Estradiol (E2) — most potent endogenous estrogen; drives endometrial proliferation in follicular phase",
+      "Estradiol (E2) — most potent endogenous estrogen; see estradiol entry",
       "Estrone (E1) dominant after menopause; estriol (E3) from placenta in pregnancy",
       "Unopposed estrogen ↑ endometrial cancer risk — progesterone/progestin opposes proliferation",
       "Turner: streak gonads → ↓ estrogen → webbed neck, short stature, primary amenorrhea",
@@ -1781,12 +1777,67 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Follicular phase: estrogen ↑ → LH surge → ovulation; luteal phase dominated by progesterone",
     ],
     distinguishFrom: [
+      "Estradiol — most potent endogenous estrogen; dedicated entry",
       "Progesterone — stabilizes endometrium, secretory phase; opposes estrogen-driven proliferation",
       "Prolactin — milk synthesis; high prolactin suppresses GnRH → ↓ estrogen",
       "Testosterone — androgen; aromatized to estrogen peripherally",
     ],
     pediatrics:
       "Precocious puberty — early estrogen exposure → breast development, accelerated bone age; McCune-Albright or ovarian tumor workup.",
+  },
+  {
+    id: "estradiol",
+    name: "Estradiol",
+    etymology: "Latin oestrus = fertile period + di- = two + -ol = alcohol (steroid hydroxyl group)",
+    aliases: [
+      "estradiol",
+      "estradiols",
+      "estradiol-17β",
+      "estradiol-17beta",
+      "17β-estradiol",
+      "17beta-estradiol",
+      "17-beta estradiol",
+      "e2",
+      "serum estradiol",
+      "plasma estradiol",
+      "17β-estradiol hormone",
+    ],
+    type: "Hormone",
+    source:
+      "Ovarian granulosa cells — aromatize theca interna androgens (androstenedione, testosterone) to estradiol via aromatase (CYP19); small amounts from testicular Leydig cell aromatization and adipose tissue in males; placenta contributes estriol in pregnancy but estradiol dominates in nonpregnant cycling women",
+    receptor:
+      "Estrogen receptor α (ERα) and ERβ — intracellular/nuclear ligand-activated transcription factors; membrane-associated ER signaling also modulates rapid non-genomic effects",
+    function:
+      "Principal potent endogenous estrogen in reproductive-age women — drives follicular-phase endometrial proliferation, breast ductal development, negative feedback on FSH (with inhibin) and mid-cycle positive feedback triggering LH surge, epiphyseal closure, and bone mineralization; maintains vaginal epithelium and cardiovascular effects.",
+    clinicalRelevance: [
+      "Follicular phase — rising estradiol from dominant follicle → endometrial thickening and LH surge at peak",
+      "Menopause and Turner syndrome — ↓ estradiol → hot flashes, osteoporosis, primary amenorrhea",
+      "Unopposed estradiol — endometrial hyperplasia and cancer risk without progesterone opposition",
+      "Aromatase inhibitors (anastrozole, letrozole) — block peripheral and tumor estradiol synthesis in ER+ breast cancer",
+      "OCPs — ethinyl estradiol (synthetic analog) for contraception and cycle regulation",
+      "Tamoxifen — SERM with antagonist effect on breast ER, partial agonist in endometrium",
+      "Granulosa cell tumor — may secrete estradiol → precocious puberty or postmenopausal bleeding",
+    ],
+    boardsPearls: [
+      "Estradiol (E2) — most potent endogenous estrogen; dominant in follicular phase",
+      "Two-cell, two-gonadotropin model: LH → theca androgens; FSH → granulosa aromatase → estradiol",
+      "Peak estradiol → positive feedback → LH surge → ovulation",
+      "↓ Estradiol after menopause; estrone (E1) becomes relatively dominant from adipose aromatization",
+      "Unopposed estrogen ↑ endometrial cancer — progesterone opposes proliferation",
+      "vs estriol (E3) — weak estrogen from placenta in pregnancy",
+      "vs estrone (E1) — weaker estrogen; ↑ after menopause",
+      "Aromatase converts androgens → estradiol — inhibitors for postmenopausal ER+ breast cancer",
+    ],
+    distinguishFrom: [
+      "Estrogen — umbrella class including estrone, estriol, and estradiol",
+      "Estrone (E1) — weaker estrogen; dominant after ovarian failure",
+      "Estriol (E3) — pregnancy/placental estrogen; weak receptor binding",
+      "Ethinyl estradiol — synthetic estrogen in OCPs; high oral potency",
+      "Progesterone — luteal-phase hormone; opposes estradiol-driven endometrial proliferation",
+      "Testosterone — androgen precursor aromatized to estradiol in granulosa/adipose",
+    ],
+    pediatrics:
+      "Precocious puberty from ovarian tumor or McCune-Albright — ↑ estradiol → breast development and accelerated bone age before age 8 in girls. Turner syndrome — streak gonads → low estradiol, webbed neck, short stature, primary amenorrhea.",
   },
   {
     id: "progesterone",
@@ -2032,6 +2083,56 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Fetal Sertoli AMH is essential for male internal genital patterning by 8–10 weeks gestation. AMH measurement helps distinguish testicular tissue in infants with ambiguous genitalia. Persistent Müllerian duct syndrome presents in boys with cryptorchidism, hernia containing uterus, or infertility with retained Müllerian structures.",
+  },
+  {
+    id: "activin",
+    name: "Activin",
+    etymology: "Latin activus = active + -in = peptide hormone suffix",
+    aliases: [
+      "activin",
+      "activins",
+      "activin a",
+      "activin-a",
+      "activin b",
+      "activin-b",
+      "activin ab",
+      "activin-ab",
+      "serum activin",
+    ],
+    type: "Peptide hormone",
+    mnemonic: "Activin Activates FSH — gonadal/pituitary TGF-β superfamily peptide opposing inhibin",
+    source:
+      "Granulosa cells of ovarian follicles; Sertoli cells of seminiferous tubules; anterior pituitary gonadotrophs; placenta and other tissues — homo- and heterodimers of inhibin β subunits (βA, βB) forming activin A, activin B, and activin AB",
+    receptor:
+      "Type II activin receptors (ActRIIA, ActRIIB) with type I receptors (ALK4/ACVR1B) → phosphorylation of receptor-regulated Smads (Smad2/3) → nuclear transcription of FSH β-subunit and other targets; follistatin binds activin and neutralizes its activity",
+    function:
+      "Stimulates pituitary FSH β-subunit synthesis and secretion — tonic positive drive on FSH release balanced by inhibin negative feedback from gonads; in ovary supports granulosa proliferation and follicle responsiveness to FSH; in testis contributes to FSH regulation and Sertoli cell function; broader roles in embryogenesis and tissue repair.",
+    clinicalRelevance: [
+      "Pituitary FSH regulation — activin stimulates FSH; inhibin and estradiol suppress FSH",
+      "Granulosa/Sertoli cell function — reflects gonadal support of gametogenesis",
+      "Follistatin — high-affinity activin-binding protein that limits activin bioactivity",
+      "TGF-β superfamily — activin shares signaling with inhibin (inhibin uses betaglycan coreceptor to antagonize activin at pituitary)",
+      "Excess activin activity conceptually linked to ↑ FSH states; inhibin deficiency → relative activin dominance → ↑ FSH",
+    ],
+    boardsPearls: [
+      "Activin stimulates FSH; inhibin inhibits FSH — classic pituitary-gonad feedback pair",
+      "Granulosa cells (ovary) and Sertoli cells (testis) produce both activin and inhibin",
+      "Follistatin binds and neutralizes activin",
+      "FSH stimulates Sertoli/granulosa → spermatogenesis support and inhibin B secretion (negative feedback)",
+      "vs inhibin — selective FSH suppression; activin is FSH-stimulatory",
+      "vs AMH — Müllerian duct regression and ovarian reserve marker, not primary FSH driver",
+      "TGF-β superfamily — Smad2/3 signaling downstream of activin receptors",
+    ],
+    distinguishFrom: [
+      "Inhibin — antagonizes activin at pituitary; selectively ↓ FSH secretion",
+      "Follistatin — extracellular activin-binding antagonist, not a receptor ligand with identical function",
+      "FSH — pituitary gonadotropin whose secretion activin promotes",
+      "Estradiol — dominant ovarian steroid feedback on GnRH/FSH/LH, not the activin-inhibin peptide axis",
+      "AMH — Sertoli/granulosa product for Müllerian regression and ovarian reserve",
+      "TGF-β — related superfamily member with overlapping Smad pathways but distinct receptors and roles",
+    ],
+    pediatrics:
+      "Pubertal rise in FSH drives Sertoli and granulosa maturation; activin-inhibin balance emerges with gonadal development. Disorders of sex development workup may include AMH and gonadotropins; activin itself is not a routine clinical assay on boards.",
   },
   {
     id: "inhibin",
