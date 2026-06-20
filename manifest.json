@@ -64,6 +64,8 @@
         "https://*.radiopaedia.org/*",
         "https://dermnetnz.org/*",
         "https://*.dermnetnz.org/*",
+        "https://litfl.com/*",
+        "https://*.litfl.com/*",
         "https://pathologyoutlines.com/*",
         "https://*.pathologyoutlines.com/*",
         "https://reddit.com/r/step1",

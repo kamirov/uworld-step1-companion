@@ -650,6 +650,73 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Acute lymphoblastic leukemia is the most common childhood malignancy — multiagent chemotherapy with CNS prophylaxis; TLS prophylaxis mandatory in high-burden disease. Late effects include growth impairment, cardiomyopathy (anthracyclines), infertility, and secondary malignancies. Febrile neutropenia requires urgent evaluation in children on treatment.",
   },
   {
+    id: "adjuvant-therapy",
+    name: "Adjuvant Therapy",
+    etymology: "Latin adjuvare = to help",
+    aliases: [
+      "adjuvant",
+      "adjuvants",
+      "adjuvant therapy",
+      "adjuvant therapies",
+      "adjuvant treatment",
+      "adjuvant treatments",
+      "adjuvant chemotherapy",
+      "adjuvant radiation",
+      "adjuvant radiotherapy",
+    ],
+    definition:
+      "Additional treatment given after definitive local therapy, usually surgery, to eradicate occult microscopic disease and reduce recurrence risk.",
+    details: [
+      "Classic oncology sequence: surgery removes visible tumor, then adjuvant chemotherapy/radiation/endocrine therapy targets residual microscopic disease",
+      "Used when recurrence risk remains despite apparently complete resection, often guided by stage, margins, nodal status, receptor status, or tumor biology",
+      "Examples: adjuvant chemotherapy after colon cancer resection with nodal disease; adjuvant endocrine therapy for ER-positive breast cancer; adjuvant radiation after breast-conserving surgery",
+      "Contrast with neoadjuvant therapy, which is given before surgery to shrink tumor, treat micrometastases early, or improve resectability",
+    ],
+    boardsPearls: [
+      "Adjuvant = after main/definitive therapy; helps prevent recurrence",
+      "Neoadjuvant = before surgery; adjuvant = after surgery",
+      "Micrometastatic disease can persist despite negative margins and no visible metastases",
+      "Step 1 framing: use treatment timing to infer purpose rather than memorizing full cancer protocols",
+      "Adjuvant in vaccines is different: immune-stimulating additive such as aluminum salts, not post-surgical cancer therapy",
+    ],
+    pediatrics:
+      "Pediatric solid tumor protocols often combine surgery with adjuvant chemotherapy or radiation, but Step 1 usually tests the timing concept rather than exact pediatric regimens.",
+  },
+  {
+    id: "palliative-care",
+    name: "Palliative Care",
+    etymology: "Latin pallium = cloak; palliare = to cloak/relieve",
+    aliases: [
+      "palliative",
+      "palliation",
+      "palliative care",
+      "palliative cares",
+      "palliative therapy",
+      "palliative therapies",
+      "palliative treatment",
+      "palliative treatments",
+      "symptom-directed care",
+      "comfort-focused care",
+    ],
+    definition:
+      "Interdisciplinary care focused on relief of suffering, symptom burden, and psychosocial stress in serious illness; it can be given alongside disease-directed treatment.",
+    details: [
+      "Targets quality of life: pain, dyspnea, nausea, anxiety, delirium, caregiver stress, goals-of-care communication, and advance care planning",
+      "Not limited to terminal disease; can start at diagnosis of a serious illness while chemotherapy, dialysis, transplant evaluation, or other disease-directed therapy continues",
+      "Hospice is a subset of palliative care for patients near end of life who generally forgo curative-intent treatment",
+      "Common Step 1 ethics frame: align treatment with patient autonomy, capacity, substituted judgment, best interest, and symptom relief",
+    ],
+    boardsPearls: [
+      "Palliative care = symptom relief and quality of life, not automatically 'giving up'",
+      "Can be concurrent with curative or life-prolonging therapy",
+      "Hospice = end-of-life palliative model, typically prognosis of months and comfort-focused goals",
+      "Opioids for severe cancer pain are appropriate when titrated to relief; respiratory depression fear should not block indicated analgesia",
+      "Advance directives and surrogate decision-makers guide care when capacity is lost",
+    ],
+    pediatrics:
+      "Pediatric palliative care uses family-centered shared decision-making while still respecting the child's developing assent when possible; it can accompany curative treatment for cancer or severe congenital disease.",
+  },
+  {
     id: "high-dose-dexamethasone",
     name: "High-Dose Dexamethasone",
     etymology: "Greek hyper = above + Latin dosi = giving + dexa- + methasone = synthetic glucocorticoid",
