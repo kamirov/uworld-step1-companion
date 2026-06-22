@@ -20,7 +20,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "myocardial-infarction",
     name: "Myocardial Infarction",
-    etymology: "Greek myo- = muscle + kardia = heart + Latin infarctus = stuffed/blocked tissue",
+    etymology:
+      "Greek myo- = muscle + kardia = heart + Latin infarctus = stuffed/blocked tissue",
     aliases: [
       "myocardial infarction",
       "infarction",
@@ -278,8 +279,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "prinzmetal-angina",
     name: "Prinzmetal Angina",
-    etymology:
-      "eponym: Myron Prinzmetal + Latin angere = to choke/strangle",
+    etymology: "eponym: Myron Prinzmetal + Latin angere = to choke/strangle",
     aliases: [
       "prinzmetal angina",
       "prinzmetal anginas",
@@ -438,7 +438,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "valvular-heart-disease",
     name: "Valvular Heart Disease",
-    etymology: "Latin valva = folding door + heart = cardiac pump + disease = disordered function",
+    etymology:
+      "Latin valva = folding door + heart = cardiac pump + disease = disordered function",
     aliases: [
       "valvular heart disease",
       "valvular disease",
@@ -545,7 +546,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "infective-endocarditis",
     name: "Infective Endocarditis",
-    etymology: "infective = caused by infection + Greek endon = within + kardia = heart + -itis = inflammation",
+    etymology:
+      "infective = caused by infection + Greek endon = within + kardia = heart + -itis = inflammation",
     aliases: [
       "infective endocarditis",
       "bacterial endocarditis",
@@ -1135,8 +1137,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "barotrauma",
     name: "Barotrauma",
-    etymology:
-      "Greek baros = pressure + trauma = injury",
+    etymology: "Greek baros = pressure + trauma = injury",
     aliases: [
       "barotrauma",
       "barotraumas",
@@ -1332,7 +1333,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "parapneumonic-effusion",
     name: "Parapneumonic Effusion",
-    etymology: "Greek para = beside + pneumon = lung + Latin effundere = pour out",
+    etymology:
+      "Greek para = beside + pneumon = lung + Latin effundere = pour out",
     aliases: [
       "parapneumonic effusion",
       "parapneumonic effusions",
@@ -1480,7 +1482,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cellulitis",
     name: "Cellulitis",
-    etymology: "Latin cellula = small cell/compartment + Greek -itis = inflammation",
+    etymology:
+      "Latin cellula = small cell/compartment + Greek -itis = inflammation",
     aliases: [
       "cellulitis",
       "skin cellulitis",
@@ -1610,7 +1613,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lymphadenitis",
     name: "Lymphadenitis",
-    etymology: "Latin lympha = clear water + Greek aden = gland + -itis = inflammation",
+    etymology:
+      "Latin lympha = clear water + Greek aden = gland + -itis = inflammation",
     aliases: [
       "lymphadenitis",
       "acute lymphadenitis",
@@ -1825,8 +1829,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pleural-effusion",
     name: "Pleural Effusion",
-    etymology:
-      "Greek pleura = side/rib + Latin effusio = pouring out",
+    etymology: "Greek pleura = side/rib + Latin effusio = pouring out",
     aliases: [
       "pleural effusion",
       "pleural effusions",
@@ -1972,7 +1975,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "thromboangiitis-obliterans",
     name: "Thromboangiitis Obliterans (Buerger Disease)",
-    etymology: "Greek thrombos = clot + angeion = vessel + -itis = inflammation + Latin obliterare = erase/close",
+    etymology:
+      "Greek thrombos = clot + angeion = vessel + -itis = inflammation + Latin obliterare = erase/close",
     aliases: [
       "thromboangiitis obliterans",
       "buerger disease",
@@ -2098,7 +2102,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "heart-failure",
     name: "Congestive Heart Failure",
-    etymology: "Latin congerere = heap together + heart = pump + failure = inability to perform",
+    etymology:
+      "Latin congerere = heap together + heart = pump + failure = inability to perform",
     aliases: [
       "congestive heart failure",
       "heart failure",
@@ -2292,7 +2297,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cardiogenic-shock",
     name: "Cardiogenic Shock",
-    etymology: "Greek kardia = heart + gennan = to produce + French choc = violent blow",
+    etymology:
+      "Greek kardia = heart + gennan = to produce + French choc = violent blow",
     aliases: [
       "cardiogenic shock",
       "cardiogenic shocks",
@@ -2518,7 +2524,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "carbon-monoxide-poisoning",
     name: "Carbon Monoxide Poisoning",
-    etymology: "Latin carbo = charcoal + Greek oxys = sharp/acid + poison = toxic substance",
+    etymology:
+      "Latin carbo = charcoal + Greek oxys = sharp/acid + poison = toxic substance",
     aliases: [
       "carbon monoxide",
       "carbon monoxides",
@@ -2988,7 +2995,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hypertrophic-cardiomyopathy",
     name: "Hypertrophic Cardiomyopathy",
-    etymology: "Greek hyper = excess + trophe = nourishment/growth + kardia = heart + mys = muscle + -pathy = disease",
+    etymology:
+      "Greek hyper = excess + trophe = nourishment/growth + kardia = heart + mys = muscle + -pathy = disease",
     aliases: [
       "hypertrophic cardiomyopathy",
       "hcm",
@@ -3104,7 +3112,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "dilated-cardiomyopathy",
     name: "Dilated Cardiomyopathy",
-    etymology: "Latin dilatare = widen + Greek kardia = heart + mys = muscle + -pathy = disease",
+    etymology:
+      "Latin dilatare = widen + Greek kardia = heart + mys = muscle + -pathy = disease",
     aliases: ["dilated cardiomyopathy", "dcm"],
     definition:
       "Cardiomyopathy with ventricular dilation and impaired systolic function (↓ EF), leading to heart failure.",
@@ -3147,7 +3156,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "restrictive-cardiomyopathy",
     name: "Restrictive Cardiomyopathy",
-    etymology: "Latin restringere = bind tight + Greek kardia = heart + mys = muscle + -pathy = disease",
+    etymology:
+      "Latin restringere = bind tight + Greek kardia = heart + mys = muscle + -pathy = disease",
     aliases: ["restrictive cardiomyopathy", "rcm"],
     definition:
       "Cardiomyopathy with impaired ventricular filling due to stiff, noncompliant myocardium, with preserved or near-normal systolic function.",
@@ -3240,7 +3250,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "atherosclerosis",
     name: "Atherosclerosis",
-    etymology: "Greek athere = gruel + skleros = hard; lipid gruel hardening arteries",
+    etymology:
+      "Greek athere = gruel + skleros = hard; lipid gruel hardening arteries",
     aliases: [
       "atherosclerosis",
       "coronary artery disease",
@@ -3300,7 +3311,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "peripheral-artery-disease",
     name: "Peripheral Artery Disease",
-    etymology: "Greek peri = around + pherein = carry + arteria = artery + disease = disordered function",
+    etymology:
+      "Greek peri = around + pherein = carry + arteria = artery + disease = disordered function",
     aliases: [
       "peripheral artery disease",
       "peripheral arterial disease",
@@ -3369,7 +3381,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hyper-ige-syndrome",
     name: "Hyper-IgE Syndrome",
-    etymology: "Greek hyper = excess + IgE = immunoglobulin E + syndrome = running together of findings",
+    etymology:
+      "Greek hyper = excess + IgE = immunoglobulin E + syndrome = running together of findings",
     aliases: [
       "hyper-ige syndrome",
       "hyper ige syndrome",
@@ -3454,7 +3467,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "selective-iga-deficiency",
     name: "Selective IgA Deficiency",
-    etymology: "Latin seligere = choose + IgA = immunoglobulin A + de- = away + facere = make",
+    etymology:
+      "Latin seligere = choose + IgA = immunoglobulin A + de- = away + facere = make",
     aliases: [
       "selective iga deficiency",
       "selective ig a deficiency",
@@ -3528,7 +3542,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "x-linked-agammaglobulinemia",
     name: "X-linked Agammaglobulinemia",
-    etymology: "X chromosome linked + Greek a- = absent + gamma globulin = antibody fraction + -emia = blood condition",
+    etymology:
+      "X chromosome linked + Greek a- = absent + gamma globulin = antibody fraction + -emia = blood condition",
     aliases: [
       "x-linked agammaglobulinemia",
       "x linked agammaglobulinemia",
@@ -3693,7 +3708,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "chronic-granulomatous-disease",
     name: "Chronic Granulomatous Disease",
-    etymology: "Greek chronos = time + Latin granulum = small grain + -oma = mass + disease = disordered function",
+    etymology:
+      "Greek chronos = time + Latin granulum = small grain + -oma = mass + disease = disordered function",
     aliases: [
       "chronic granulomatous disease",
       "cgd",
@@ -4002,7 +4018,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "asplenic-sepsis",
     name: "Asplenic Sepsis",
-    etymology: "Greek a- = without + Greek splen = spleen + Greek sepsis = putrefaction/infection",
+    etymology:
+      "Greek a- = without + Greek splen = spleen + Greek sepsis = putrefaction/infection",
     aliases: [
       "asplenic sepsis",
       "overwhelming post-splenectomy infection",
@@ -4453,7 +4470,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "atrial-fibrillation",
     name: "Atrial Fibrillation",
-    etymology: "Latin atrium = entrance hall + fibrilla = small fiber; quivering atrial fibers",
+    etymology:
+      "Latin atrium = entrance hall + fibrilla = small fiber; quivering atrial fibers",
     aliases: [
       "atrial fibrillation",
       "afib",
@@ -4522,7 +4540,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "atrial-tachycardia",
     name: "Atrial Tachycardia",
-    etymology: "Latin atrium = entrance hall + Greek tachy = fast + kardia = heart",
+    etymology:
+      "Latin atrium = entrance hall + Greek tachy = fast + kardia = heart",
     aliases: [
       "atrial tachycardia",
       "atrial tachycardias",
@@ -4593,7 +4612,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "paroxysmal-supraventricular-tachycardia",
     name: "Paroxysmal Supraventricular Tachycardia",
-    etymology: "Greek paroxysmos = sudden fit + Latin supra = above + ventriculus = little belly + tachy = fast + kardia = heart",
+    etymology:
+      "Greek paroxysmos = sudden fit + Latin supra = above + ventriculus = little belly + tachy = fast + kardia = heart",
     aliases: [
       "paroxysmal supraventricular tachycardia",
       "psvt",
@@ -4828,7 +4848,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "atrioventricular-block",
     name: "Atrioventricular Heart Block",
-    etymology: "Latin atrium = entrance hall + ventriculus = little belly + heart = pump + block = obstruction",
+    etymology:
+      "Latin atrium = entrance hall + ventriculus = little belly + heart = pump + block = obstruction",
     aliases: [
       "atrioventricular heart block",
       "av block",
@@ -4879,7 +4900,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ischemic-stroke",
     name: "Ischemic Stroke",
-    etymology: "Greek ischein = to hold back + haima = blood + stroke = sudden blow",
+    etymology:
+      "Greek ischein = to hold back + haima = blood + stroke = sudden blow",
     aliases: ["ischemic stroke", "stroke", "cva", "cerebrovascular accident"],
     definition:
       "Focal neurologic deficit from cerebral infarction due to arterial occlusion (thrombotic or embolic).",
@@ -4986,7 +5008,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "subarachnoid-hemorrhage",
     name: "Subarachnoid Hemorrhage",
-    etymology: "Latin sub = under + Greek arachne = spider + eidos = form + haima = blood",
+    etymology:
+      "Latin sub = under + Greek arachne = spider + eidos = form + haima = blood",
     aliases: [
       "subarachnoid hemorrhage",
       "subarachnoid haemorrhage",
@@ -5053,7 +5076,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "idiopathic-intracranial-hypertension",
     name: "Idiopathic Intracranial Hypertension",
-    etymology: "Greek idios = one's own + pathos = suffering + Latin intra = within + cranium = skull + hyper = over + tension = pressure",
+    etymology:
+      "Greek idios = one's own + pathos = suffering + Latin intra = within + cranium = skull + hyper = over + tension = pressure",
     aliases: [
       "idiopathic intracranial hypertension",
       "iih",
@@ -5125,7 +5149,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "primary-brain-tumor",
     name: "Primary Brain Tumor",
-    etymology: "Latin primarius = first + brain = encephalon + Greek -oma = mass/tumor",
+    etymology:
+      "Latin primarius = first + brain = encephalon + Greek -oma = mass/tumor",
     aliases: [
       "primary brain tumor",
       "brain tumor",
@@ -5246,7 +5271,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Bilateral cape-like loss of pain and temperature in shoulders/upper trunk and arms",
       "Preserved light touch and proprioception early (dissociated sensory loss)",
       "Segmental muscle weakness, atrophy, and fasciculations at syrinx level (LMN/anterior horn)",
-      "Hand muscle wasting — \"syringomyelic hand\" with claw deformity in chronic cases",
+      'Hand muscle wasting — "syringomyelic hand" with claw deformity in chronic cases',
       "Neck pain, headache, and occipital discomfort if associated Chiari I malformation",
       "Progressive gait spasticity if syrinx expands to involve corticospinal tracts",
       "Insidious course over months to years",
@@ -5537,7 +5562,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "optic-neuritis",
     name: "Optic Neuritis",
-    etymology: "Latin opticus = of sight + Greek neuron = nerve + -itis = inflammation",
+    etymology:
+      "Latin opticus = of sight + Greek neuron = nerve + -itis = inflammation",
     aliases: [
       "optic neuritis",
       "optic neuritides",
@@ -5602,7 +5628,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ischemic-optic-neuropathy",
     name: "Ischemic Optic Neuropathy",
-    etymology: "Greek ischein = to hold back + haima = blood + Latin opticus = of sight + Greek neuron = nerve + pathos = suffering",
+    etymology:
+      "Greek ischein = to hold back + haima = blood + Latin opticus = of sight + Greek neuron = nerve + pathos = suffering",
     aliases: [
       "ischemic optic neuropathy",
       "ischemic optic neuropathies",
@@ -5670,7 +5697,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "neuromyelitis-optica",
     name: "Neuromyelitis optica",
-    etymology: "Greek neuron = nerve + myelos = marrow + ops = eye + Latin optica = of vision",
+    etymology:
+      "Greek neuron = nerve + myelos = marrow + ops = eye + Latin optica = of vision",
     aliases: [
       "neuromyelitis optica",
       "neuromyelitis opticas",
@@ -5731,7 +5759,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "parinaud-syndrome",
     name: "Parinaud Syndrome",
-    etymology: "eponym: Henri Parinaud + syndrome = running together of findings",
+    etymology:
+      "eponym: Henri Parinaud + syndrome = running together of findings",
     aliases: [
       "parinaud syndrome",
       "parinaud's syndrome",
@@ -5977,7 +6006,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "juvenile-parkinsonism",
     name: "Juvenile Parkinsonism",
-    etymology: "Latin juvenilis = young + James Parkinson + Greek -ismos = condition",
+    etymology:
+      "Latin juvenilis = young + James Parkinson + Greek -ismos = condition",
     aliases: [
       "juvenile parkinsonism",
       "juvenile parkinsonisms",
@@ -6142,7 +6172,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "type-2-diabetes-mellitus",
     name: "Type 2 Diabetes Mellitus",
-    etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + type 2 = insulin-resistant subtype",
+    etymology:
+      "Greek diabainein = pass through + Latin mellitus = honey-sweet + type 2 = insulin-resistant subtype",
     aliases: [
       "type 2 diabetes mellitus",
       "type 2 diabetes",
@@ -6189,7 +6220,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "diabetic-nephropathy",
     name: "Diabetic Nephropathy",
-    etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek nephros = kidney + Greek pathos = suffering",
+    etymology:
+      "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek nephros = kidney + Greek pathos = suffering",
     aliases: [
       "diabetic nephropathy",
       "diabetic kidney disease",
@@ -6400,7 +6432,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hypertensive-retinopathy",
     name: "Hypertensive Retinopathy",
-    etymology: "Greek hyper = over + Latin tensio = stretching + Latin rete = net + Greek pathos = suffering",
+    etymology:
+      "Greek hyper = over + Latin tensio = stretching + Latin rete = net + Greek pathos = suffering",
     aliases: [
       "hypertensive retinopathy",
       "hypertensive retinopathies",
@@ -6461,7 +6494,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "type-1-diabetes-mellitus",
     name: "Type 1 Diabetes Mellitus",
-    etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + type 1 = autoimmune insulin-deficient subtype",
+    etymology:
+      "Greek diabainein = pass through + Latin mellitus = honey-sweet + type 1 = autoimmune insulin-deficient subtype",
     aliases: [
       "type 1 diabetes mellitus",
       "type 1 diabetes",
@@ -6510,7 +6544,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "diabetic-ketoacidosis",
     name: "Diabetic Ketoacidosis",
-    etymology: "Greek diabainein = pass through + ketone = acetone-like body + Latin acidus = sour + -osis = condition",
+    etymology:
+      "Greek diabainein = pass through + ketone = acetone-like body + Latin acidus = sour + -osis = condition",
     aliases: ["diabetic ketoacidosis", "dka"],
     definition:
       "Acute metabolic emergency of uncontrolled diabetes with hyperglycemia, ketosis, and anion gap metabolic acidosis.",
@@ -6662,7 +6697,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "medullary-thyroid-carcinoma",
     name: "Medullary Thyroid Carcinoma",
-    etymology: "Latin medulla = middle/core + Greek thyreos = shield + carcinoma = malignant epithelial tumor",
+    etymology:
+      "Latin medulla = middle/core + Greek thyreos = shield + carcinoma = malignant epithelial tumor",
     aliases: [
       "medullary thyroid carcinoma",
       "medullary thyroid cancer",
@@ -6885,7 +6921,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "carcinoid-syndrome",
     name: "Carcinoid Syndrome",
-    etymology: "Greek karkinos = crab (cancer) + -oid = like + Greek syndromē = running together",
+    etymology:
+      "Greek karkinos = crab (cancer) + -oid = like + Greek syndromē = running together",
     aliases: [
       "carcinoid syndrome",
       "carcinoid syndromes",
@@ -6957,7 +6994,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hyperparathyroidism",
     name: "Hyperparathyroidism",
-    etymology: "Greek hyper = excess + para = beside + thyreos = shield gland + -ism = condition",
+    etymology:
+      "Greek hyper = excess + para = beside + thyreos = shield gland + -ism = condition",
     aliases: [
       "hyperparathyroidism",
       "secondary hyperparathyroidism",
@@ -7027,7 +7065,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "primary-hyperparathyroidism",
     name: "Primary Hyperparathyroidism",
-    etymology: "Latin primus = first + Greek hyper = excess + para = beside + thyreos = shield gland + -ism = condition",
+    etymology:
+      "Latin primus = first + Greek hyper = excess + para = beside + thyreos = shield gland + -ism = condition",
     aliases: [
       "primary hyperparathyroidism",
       "primary hyperparathyroidisms",
@@ -7228,7 +7267,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "thyrotoxicosis",
     name: "Thyrotoxicosis",
-    etymology: "Greek thyreos = shield gland + Latin toxicum = poison + -osis = condition",
+    etymology:
+      "Greek thyreos = shield gland + Latin toxicum = poison + -osis = condition",
     aliases: [
       "thyrotoxicosis",
       "thyrotoxic",
@@ -7294,7 +7334,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "multiple-endocrine-neoplasia",
     name: "Multiple Endocrine Neoplasia",
-    etymology: "Latin multi = many + endocrine = internal secretion + Greek neos = new + plasis = formation",
+    etymology:
+      "Latin multi = many + endocrine = internal secretion + Greek neos = new + plasis = formation",
     aliases: [
       "multiple endocrine neoplasia",
       "multiple endocrine neoplasia syndrome",
@@ -7353,7 +7394,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "men-type-1",
     name: "MEN Type 1",
-    etymology: "multiple endocrine neoplasia + type 1 + eponym: Paul Wermer framework",
+    etymology:
+      "multiple endocrine neoplasia + type 1 + eponym: Paul Wermer framework",
     aliases: [
       "men type 1",
       "men1",
@@ -7420,7 +7462,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "men-type-2",
     name: "MEN Type 2",
-    etymology: "multiple endocrine neoplasia + type 2 + RET proto-oncogene association",
+    etymology:
+      "multiple endocrine neoplasia + type 2 + RET proto-oncogene association",
     aliases: [
       "men type 2",
       "men2",
@@ -7712,10 +7755,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "RET germline mutation",
       "Screen metanephrines to exclude MEN2A before labeling FMTC",
     ],
-    associations: [
-      "RET proto-oncogene mutations",
-      "Part of MEN2 spectrum",
-    ],
+    associations: ["RET proto-oncogene mutations", "Part of MEN2 spectrum"],
     complications: [
       "Metastatic medullary thyroid carcinoma",
       "Missed pheochromocytoma if inadequate screening",
@@ -7742,7 +7782,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "congenital-adrenal-hyperplasia",
     name: "Congenital Adrenal Hyperplasia",
-    etymology: "Latin congenitus = born with + ad = near + renal = kidney + Greek hyper = excess + plasis = formation",
+    etymology:
+      "Latin congenitus = born with + ad = near + renal = kidney + Greek hyper = excess + plasis = formation",
     aliases: [
       "congenital adrenal hyperplasia",
       "cah",
@@ -7787,7 +7828,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "21-hydroxylase-deficiency",
     name: "21-Hydroxylase Deficiency",
-    etymology: "C-21 position hydroxylation step + Greek hydroxys = water + -yl + -ase = enzyme + Latin deficientia = lack",
+    etymology:
+      "C-21 position hydroxylation step + Greek hydroxys = water + -yl + -ase = enzyme + Latin deficientia = lack",
     aliases: [
       "21-hydroxylase deficiency",
       "21 hydroxylase deficiency",
@@ -7857,8 +7899,16 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "prolactinoma",
     name: "Prolactinoma",
-    etymology: "Latin pro = forward + lac = milk + -in = substance + Greek -oma = tumor/mass",
-    aliases: ["prolactinoma", "prolactinomas", "prolactin-secreting pituitary adenoma", "lactotroph adenoma", "macroprolactinoma", "microprolactinoma"],
+    etymology:
+      "Latin pro = forward + lac = milk + -in = substance + Greek -oma = tumor/mass",
+    aliases: [
+      "prolactinoma",
+      "prolactinomas",
+      "prolactin-secreting pituitary adenoma",
+      "lactotroph adenoma",
+      "macroprolactinoma",
+      "microprolactinoma",
+    ],
     definition:
       "Pituitary adenoma secreting prolactin, causing hyperprolactinemia and mass effect on surrounding structures.",
     pathophysiology:
@@ -7893,7 +7943,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pituitary-macroadenoma",
     name: "Pituitary Macroadenoma",
-    etymology: "Latin pituita = phlegm + Greek makros = large + -aden = gland + -oma = tumor",
+    etymology:
+      "Latin pituita = phlegm + Greek makros = large + -aden = gland + -oma = tumor",
     aliases: [
       "pituitary macroadenoma",
       "pituitary macroadenomas",
@@ -7961,7 +8012,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pituitary-apoplexy",
     name: "Pituitary Apoplexy",
-    etymology: "Latin pituita = phlegm (pituitary) + Greek apoplexia = sudden stroke",
+    etymology:
+      "Latin pituita = phlegm (pituitary) + Greek apoplexia = sudden stroke",
     aliases: [
       "pituitary apoplexy",
       "pituitary apoplexies",
@@ -8029,7 +8081,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hyperprolactinemia",
     name: "Hyperprolactinemia",
-    etymology: "Greek hyper = excess + Latin pro = forward + lac = milk + -emia = blood condition",
+    etymology:
+      "Greek hyper = excess + Latin pro = forward + lac = milk + -emia = blood condition",
     aliases: [
       "hyperprolactinemia",
       "elevated prolactin",
@@ -8249,7 +8302,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "medication-induced-gynecomastia",
     name: "Medication-Induced Gynecomastia",
-    etymology: "Latin medicamentum = drug + Latin inducere = to lead in + Greek gynē = woman + mastos = breast",
+    etymology:
+      "Latin medicamentum = drug + Latin inducere = to lead in + Greek gynē = woman + mastos = breast",
     aliases: [
       "medication-induced gynecomastia",
       "medication induced gynecomastia",
@@ -8329,7 +8383,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hypopituitarism",
     name: "Hypopituitarism",
-    etymology: "Greek hypo = deficient + Latin pituita = phlegm (pituitary) + -ism = condition",
+    etymology:
+      "Greek hypo = deficient + Latin pituita = phlegm (pituitary) + -ism = condition",
     aliases: [
       "hypopituitarism",
       "anterior pituitary insufficiency",
@@ -8400,7 +8455,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "sheehan-syndrome",
     name: "Sheehan Syndrome",
-    etymology: "eponym: Harold Leeming Sheehan + syndrome = running together of findings",
+    etymology:
+      "eponym: Harold Leeming Sheehan + syndrome = running together of findings",
     aliases: [
       "sheehan syndrome",
       "sheehan's syndrome",
@@ -8458,7 +8514,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hemochromatosis",
     name: "Hemochromatosis",
-    etymology: "Greek haima = blood + Greek chroma = color + -osis = condition (iron overload darkens tissues)",
+    etymology:
+      "Greek haima = blood + Greek chroma = color + -osis = condition (iron overload darkens tissues)",
     aliases: [
       "hemochromatosis",
       "hereditary hemochromatosis",
@@ -8524,7 +8581,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lymphocytic-hypophysitis",
     name: "Lymphocytic Hypophysitis",
-    etymology: "Latin lympha = water + Greek kytos = cell + Greek hypo = under + physis = growth (pituitary) + -itis = inflammation",
+    etymology:
+      "Latin lympha = water + Greek kytos = cell + Greek hypo = under + physis = growth (pituitary) + -itis = inflammation",
     aliases: [
       "lymphocytic hypophysitis",
       "autoimmune hypophysitis",
@@ -8582,7 +8640,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pituitary-infiltration",
     name: "Pituitary infiltration",
-    etymology: "Latin pituita = phlegm (pituitary) + Latin infiltratio = permeation into tissue",
+    etymology:
+      "Latin pituita = phlegm (pituitary) + Latin infiltratio = permeation into tissue",
     aliases: [
       "pituitary infiltration",
       "infiltrative hypopituitarism",
@@ -8646,7 +8705,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cushing-syndrome",
     name: "Cushing Syndrome",
-    etymology: "eponym: Harvey Cushing + syndrome = running together of findings",
+    etymology:
+      "eponym: Harvey Cushing + syndrome = running together of findings",
     aliases: ["cushing syndrome", "cushing's syndrome", "hypercortisolism"],
     definition:
       "Clinical syndrome of excess cortisol from endogenous overproduction or exogenous glucocorticoid administration.",
@@ -8685,7 +8745,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cushing-disease",
     name: "Cushing Disease",
-    etymology: "eponym: Harvey Cushing + Latin dis = apart + ease = condition (specific pituitary form)",
+    etymology:
+      "eponym: Harvey Cushing + Latin dis = apart + ease = condition (specific pituitary form)",
     aliases: [
       "cushing disease",
       "cushing's disease",
@@ -8753,7 +8814,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "adrenal-insufficiency",
     name: "Adrenal Insufficiency",
-    etymology: "Latin ad- = toward + ren = kidney (adrenal gland) + Latin insufficiens = not sufficient",
+    etymology:
+      "Latin ad- = toward + ren = kidney (adrenal gland) + Latin insufficiens = not sufficient",
     aliases: [
       "adrenal insufficiency",
       "adrenal insufficiencies",
@@ -8869,7 +8931,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "autoimmune-adrenalitis",
     name: "Autoimmune Adrenalitis",
-    etymology: "Greek autos = self + Latin immunis = exempt + Latin ad- + ren = kidney/near kidney + Greek -itis = inflammation",
+    etymology:
+      "Greek autos = self + Latin immunis = exempt + Latin ad- + ren = kidney/near kidney + Greek -itis = inflammation",
     aliases: [
       "autoimmune adrenalitis",
       "autoimmune adrenalitides",
@@ -8945,7 +9008,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hyperaldosteronism",
     name: "Hyperaldosteronism",
-    etymology: "hyper- = excess + aldosterone mineralocorticoid hormone + -ism = condition",
+    etymology:
+      "hyper- = excess + aldosterone mineralocorticoid hormone + -ism = condition",
     aliases: [
       "hyperaldosteronism",
       "hyperaldosteronisms",
@@ -9067,7 +9131,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "zollinger-ellison-syndrome",
     name: "Zollinger-Ellison Syndrome",
-    etymology: "eponyms: Zollinger + Ellison + syndrome = running together of findings",
+    etymology:
+      "eponyms: Zollinger + Ellison + syndrome = running together of findings",
     aliases: ["zollinger-ellison syndrome", "zes", "gastrinoma"],
     definition:
       "Gastrin-secreting neuroendocrine tumor (gastrinoma) causing refractory peptic ulcer disease and diarrhea.",
@@ -9158,7 +9223,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "rickets",
     name: "Rickets",
-    etymology: "origin uncertain; possibly Old English wricken = twist (bowed legs)",
+    etymology:
+      "origin uncertain; possibly Old English wricken = twist (bowed legs)",
     aliases: [
       "rickets",
       "vitamin d deficiency rickets",
@@ -9583,7 +9649,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "wilson-disease",
     name: "Wilson Disease",
-    etymology: "eponym: Samuel Alexander Kinnier Wilson + disease = disordered function",
+    etymology:
+      "eponym: Samuel Alexander Kinnier Wilson + disease = disordered function",
     aliases: [
       "wilson disease",
       "wilson's disease",
@@ -9633,12 +9700,9 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "alkaptonuria",
     name: "Alkaptonuria",
-    etymology: "Greek alkapton = nitrogenous substance that absorbs strongly + ouron = urine",
-    aliases: [
-      "alkaptonuria",
-      "aku",
-      "homogentisic aciduria",
-    ],
+    etymology:
+      "Greek alkapton = nitrogenous substance that absorbs strongly + ouron = urine",
+    aliases: ["alkaptonuria", "aku", "homogentisic aciduria"],
     definition:
       "Autosomal recessive inborn error of phenylalanine and tyrosine catabolism caused by homogentisate oxidase deficiency, with homogentisic acid accumulation and urine that darkens on standing.",
     pathophysiology:
@@ -9775,12 +9839,9 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ochronosis",
     name: "Ochronosis",
-    etymology: "Greek ochros = pale yellow + -osis = condition (pigment appears yellow-brown microscopically)",
-    aliases: [
-      "ochronosis",
-      "ochronotic arthritis",
-      "endogenous ochronosis",
-    ],
+    etymology:
+      "Greek ochros = pale yellow + -osis = condition (pigment appears yellow-brown microscopically)",
+    aliases: ["ochronosis", "ochronotic arthritis", "endogenous ochronosis"],
     definition:
       "Tissue deposition of blue-black oxidized homogentisic acid pigment in connective tissue, classically from alkaptonuria but also rarely from exogenous phenolic compounds.",
     pathophysiology:
@@ -9891,7 +9952,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "maple-syrup-urine-disease",
     name: "Maple Syrup Urine Disease",
-    etymology: "maple syrup = sweet odor descriptor + urine = excreted fluid + disease = disordered function",
+    etymology:
+      "maple syrup = sweet odor descriptor + urine = excreted fluid + disease = disordered function",
     aliases: [
       "maple syrup urine disease",
       "msud",
@@ -10220,7 +10282,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "inguinal-hernia",
     name: "Inguinal Hernia",
-    etymology: "Latin inguen = groin + hernia = protrusion through weakened wall",
+    etymology:
+      "Latin inguen = groin + hernia = protrusion through weakened wall",
     aliases: [
       "inguinal hernia",
       "inguinal hernias",
@@ -10293,12 +10356,9 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "umbilical-hernia",
     name: "Umbilical Hernia",
-    etymology: "Latin umbilicus = navel + hernia = protrusion through weakened wall",
-    aliases: [
-      "umbilical hernia",
-      "umbilical hernias",
-      "belly button hernia",
-    ],
+    etymology:
+      "Latin umbilicus = navel + hernia = protrusion through weakened wall",
+    aliases: ["umbilical hernia", "umbilical hernias", "belly button hernia"],
     definition:
       "Protrusion of abdominal contents through a defect in the linea alba at the umbilicus, common in infants and usually benign when small.",
     pathophysiology:
@@ -10347,7 +10407,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ibd",
     name: "Inflammatory Bowel Disease (IBD)",
-    etymology: "Latin inflammare = set on fire + bowel = intestine + disease = disordered function",
+    etymology:
+      "Latin inflammare = set on fire + bowel = intestine + disease = disordered function",
     aliases: [
       "ibd",
       "inflammatory bowel disease",
@@ -10412,7 +10473,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "irritable-bowel-syndrome",
     name: "Irritable Bowel Syndrome",
-    etymology: "Latin irritare = provoke + bowel = intestine + Greek syndromos = running together",
+    etymology:
+      "Latin irritare = provoke + bowel = intestine + Greek syndromos = running together",
     aliases: [
       "irritable bowel syndrome",
       "irritable bowel syndromes",
@@ -10586,7 +10648,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ischemic-colitis",
     name: "Ischemic Colitis",
-    etymology: "Greek ischein = restrain + haima = blood + kolon = colon + -itis = inflammation",
+    etymology:
+      "Greek ischein = restrain + haima = blood + kolon = colon + -itis = inflammation",
     aliases: [
       "ischemic colitis",
       "colonic ischemia",
@@ -10652,7 +10715,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ulcerative-colitis",
     name: "Ulcerative Colitis",
-    etymology: "Latin ulcus = sore + Greek kolon = colon + -itis = inflammation",
+    etymology:
+      "Latin ulcus = sore + Greek kolon = colon + -itis = inflammation",
     aliases: ["ulcerative colitis", "uc"],
     definition:
       "Chronic inflammatory bowel disease limited to the colon and rectum, with continuous mucosal inflammation starting at the rectum.",
@@ -10963,7 +11027,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "peptic-ulcer-disease",
     name: "Peptic Ulcer Disease",
-    etymology: "Greek peptikos = digestive + Latin ulcus = sore + disease = disordered function",
+    etymology:
+      "Greek peptikos = digestive + Latin ulcus = sore + disease = disordered function",
     aliases: [
       "peptic ulcer disease",
       "pud",
@@ -11001,7 +11066,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "gerd",
     name: "Gastroesophageal Reflux Disease",
-    etymology: "gastro = stomach + esophageal = food tube + reflux = backflow + disease = disordered function",
+    etymology:
+      "gastro = stomach + esophageal = food tube + reflux = backflow + disease = disordered function",
     aliases: [
       "gerd",
       "gastroesophageal reflux disease",
@@ -11091,10 +11157,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Obesity, white male sex, smoking",
       "Hiatal hernia",
     ],
-    complications: [
-      "Esophageal adenocarcinoma",
-      "Esophageal stricture",
-    ],
+    complications: ["Esophageal adenocarcinoma", "Esophageal stricture"],
     distinguishFrom: [
       "GERD without metaplasia — squamous mucosa on biopsy",
       "Esophageal adenocarcinoma — invasive malignancy, not premalignant metaplasia alone",
@@ -11311,7 +11374,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "esophageal-squamous-cell-carcinoma",
     name: "Esophageal Squamous Cell Carcinoma",
-    etymology: "Greek oisophagos = food tube + squama = scale + carcinoma = malignant epithelial tumor",
+    etymology:
+      "Greek oisophagos = food tube + squama = scale + carcinoma = malignant epithelial tumor",
     aliases: [
       "esophageal squamous cell carcinoma",
       "esophageal squamous carcinoma",
@@ -11329,10 +11393,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Odynophagia, chest or back pain",
       "Smoking and heavy alcohol use",
     ],
-    keyFindings: [
-      "Progressive solid-food dysphagia",
-      "Weight loss and anemia",
-    ],
+    keyFindings: ["Progressive solid-food dysphagia", "Weight loss and anemia"],
     keyLabs: [
       "Endoscopy with biopsy — confirms SCC histology",
       "CT/PET for staging",
@@ -11369,7 +11430,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "esophageal-adenocarcinoma",
     name: "Esophageal Adenocarcinoma",
-    etymology: "Greek oisophagos = food tube + aden = gland + carcinoma = malignant epithelial tumor",
+    etymology:
+      "Greek oisophagos = food tube + aden = gland + carcinoma = malignant epithelial tumor",
     aliases: [
       "esophageal adenocarcinoma",
       "esophageal adenocarcinomas",
@@ -11504,8 +11566,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "spherocytosis",
     name: "Spherocytosis",
-    etymology:
-      "Greek sphaira = sphere + kytos = cell + -osis = condition",
+    etymology: "Greek sphaira = sphere + kytos = cell + -osis = condition",
     aliases: [
       "spherocytosis",
       "spherocytoses",
@@ -11576,7 +11637,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pernicious-anemia",
     name: "Pernicious Anemia",
-    etymology: "Latin perniciosus = destructive/deadly + Greek an- = without + haima = blood",
+    etymology:
+      "Latin perniciosus = destructive/deadly + Greek an- = without + haima = blood",
     aliases: [
       "pernicious anemia",
       "pernicious anaemia",
@@ -11642,7 +11704,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "sickle-cell-disease",
     name: "Sickle Cell Disease",
-    etymology: "Old English sicol = curved blade + cell = small biological unit + disease = disordered function",
+    etymology:
+      "Old English sicol = curved blade + cell = small biological unit + disease = disordered function",
     aliases: ["sickle cell disease", "sickle cell anemia", "scd", "hbss"],
     definition:
       "Autosomal recessive hemoglobinopathy from HbS (β6 Glu→Val) causing red cell sickling, hemolysis, and vaso-occlusion.",
@@ -11692,7 +11755,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "sickle-cell-trait",
     name: "Sickle Cell Trait",
-    etymology: "Old English sicol = curved blade + cell = small biological unit + Latin tractus = drawn path",
+    etymology:
+      "Old English sicol = curved blade + cell = small biological unit + Latin tractus = drawn path",
     aliases: [
       "sickle cell trait",
       "sickle cell carrier",
@@ -11755,7 +11819,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "beta-thalassemia-minor",
     name: "Beta-Thalassemia Minor",
-    etymology: "Greek beta = second letter + thalassa = sea + haima = blood + Latin minor = smaller/lesser",
+    etymology:
+      "Greek beta = second letter + thalassa = sea + haima = blood + Latin minor = smaller/lesser",
     aliases: [
       "beta-thalassemia minor",
       "β-thalassemia minor",
@@ -11820,7 +11885,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "beta-thalassemia-major",
     name: "Beta-Thalassemia Major",
-    etymology: "Greek beta = second letter + thalassa = sea + haima = blood + Latin major = greater",
+    etymology:
+      "Greek beta = second letter + thalassa = sea + haima = blood + Latin major = greater",
     aliases: [
       "beta-thalassemia major",
       "β-thalassemia major",
@@ -12581,7 +12647,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Proliferation of stromal and epithelial components within a terminal duct lobular unit — estrogen sensitivity causes growth during pregnancy or with oral contraceptives; not premalignant but requires distinction from carcinoma clinically and radiologically.",
     classicPresentation: [
       "Young woman (teens–30s) with painless, mobile, firm rubbery breast mass",
-      "\"Breast mouse\" — mass moves easily under the skin",
+      '"Breast mouse" — mass moves easily under the skin',
       "May enlarge during pregnancy or with estrogen exposure",
       "Often discovered incidentally on self-exam or imaging",
     ],
@@ -12618,7 +12684,7 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     boardsPearls: [
       "Most common breast mass in young women — mobile, rubbery, painless",
-      "\"Breast mouse\" — classic exam descriptor for fibroadenoma",
+      '"Breast mouse" — classic exam descriptor for fibroadenoma',
       "Benign biphasic tumor (stroma + glands); not a precursor to carcinoma",
       "vs breast cancer — cancer is hard, irregular, fixed; fibroadenoma is mobile and smooth",
       "Phyllodes tumor — stromal-predominant; can recur or metastasize if malignant",
@@ -12630,7 +12696,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "breast-cancer",
     name: "Breast Cancer",
-    etymology: "Old English breost = breast/chest + Greek karkinos = crab/cancer",
+    etymology:
+      "Old English breost = breast/chest + Greek karkinos = crab/cancer",
     aliases: [
       "breast cancer",
       "breast carcinoma",
@@ -12772,7 +12839,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cystic-fibrosis",
     name: "Cystic Fibrosis",
-    etymology: "Greek kystis = bladder/sac + Latin fibra = fiber + -osis = condition",
+    etymology:
+      "Greek kystis = bladder/sac + Latin fibra = fiber + -osis = condition",
     aliases: ["cystic fibrosis", "cf"],
     definition:
       "Autosomal recessive disorder from CFTR chloride channel dysfunction causing thick secretions in lungs, pancreas, and other organs.",
@@ -12814,7 +12882,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "primary-ciliary-dyskinesia",
     name: "Primary Ciliary Dyskinesia",
-    etymology: "Latin primarius = first + cilium = hair-like projection + Greek dys = bad + kinesis = movement",
+    etymology:
+      "Latin primarius = first + cilium = hair-like projection + Greek dys = bad + kinesis = movement",
     aliases: [
       "primary ciliary dyskinesia",
       "primary ciliary dyskinesias",
@@ -12896,7 +12965,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "situs-inversus",
     name: "Situs Inversus",
-    etymology: "Latin situs = position + Latin inversus = turned upside down/reversed",
+    etymology:
+      "Latin situs = position + Latin inversus = turned upside down/reversed",
     aliases: [
       "situs inversus",
       "situs inversus totalis",
@@ -13290,7 +13360,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "atopic-dermatitis",
     name: "Atopic Dermatitis",
-    etymology: "Greek a- = not + topos = place + derma = skin + -itis = inflammation",
+    etymology:
+      "Greek a- = not + topos = place + derma = skin + -itis = inflammation",
     aliases: [
       "atopic dermatitis",
       "ad",
@@ -13370,7 +13441,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "allergic-contact-dermatitis",
     name: "Allergic Contact Dermatitis",
-    etymology: "Greek allos = other + ergon = reaction/work + Latin contactus = touching + derma = skin + -itis = inflammation",
+    etymology:
+      "Greek allos = other + ergon = reaction/work + Latin contactus = touching + derma = skin + -itis = inflammation",
     aliases: [
       "allergic contact dermatitis",
       "contact dermatitis",
@@ -13433,7 +13505,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "venous-stasis-dermatitis",
     name: "Venous Stasis Dermatitis",
-    etymology: "Latin vena = vein + Greek stasis = standing still + derma = skin + -itis = inflammation",
+    etymology:
+      "Latin vena = vein + Greek stasis = standing still + derma = skin + -itis = inflammation",
     aliases: [
       "venous stasis dermatitis",
       "stasis dermatitis",
@@ -13452,7 +13525,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Dependent edema worse at end of day; improves with elevation",
       "Brownish hemosiderin staining of skin",
       "Varicose veins and leg heaviness/aching",
-      "Chronic changes: lipodermatosclerosis (firm, woody induration) → \"inverted champagne bottle\" leg",
+      'Chronic changes: lipodermatosclerosis (firm, woody induration) → "inverted champagne bottle" leg',
     ],
     keyFindings: [
       "Eczematous dermatitis localized to lower legs, especially medial ankle",
@@ -13566,7 +13639,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "psoriatic-arthritis",
     name: "Psoriatic Arthritis",
-    etymology: "Greek psora = itch + Latin arthr = joint + Greek -itis = inflammation",
+    etymology:
+      "Greek psora = itch + Latin arthr = joint + Greek -itis = inflammation",
     aliases: [
       "psoriatic arthritis",
       "psa",
@@ -13752,7 +13826,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "mastocytosis",
     name: "Mastocytosis",
-    etymology: "German Mastzelle = well-fed cell + Greek kytos = cell + -osis = condition",
+    etymology:
+      "German Mastzelle = well-fed cell + Greek kytos = cell + -osis = condition",
     aliases: [
       "mastocytosis",
       "systemic mastocytosis",
@@ -13821,7 +13896,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "otitis-media",
     name: "Otitis Media",
-    etymology: "Greek ous/otos = ear + -itis = inflammation + Latin medius = middle",
+    etymology:
+      "Greek ous/otos = ear + -itis = inflammation + Latin medius = middle",
     aliases: [
       "otitis media",
       "acute otitis media",
@@ -13882,7 +13958,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "otitis-externa",
     name: "Otitis Externa",
-    etymology: "Greek ous/otos = ear + -itis = inflammation + Latin externus = outer",
+    etymology:
+      "Greek ous/otos = ear + -itis = inflammation + Latin externus = outer",
     aliases: [
       "otitis",
       "otitis externa",
@@ -13948,7 +14025,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "mastoiditis",
     name: "Mastoiditis",
-    etymology: "Greek mastos = breast/nipple (shape of mastoid process) + -itis = inflammation",
+    etymology:
+      "Greek mastos = breast/nipple (shape of mastoid process) + -itis = inflammation",
     aliases: [
       "mastoiditis",
       "mastoiditides",
@@ -14070,7 +14148,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lofgren-syndrome",
     name: "Löfgren Syndrome",
-    etymology: "eponym: Sven Löfgren (Swedish physician) + syndrome = grouped concurrent findings",
+    etymology:
+      "eponym: Sven Löfgren (Swedish physician) + syndrome = grouped concurrent findings",
     aliases: [
       "lofgren syndrome",
       "löfgren syndrome",
@@ -14293,7 +14372,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "neonatal-respiratory-distress-syndrome",
     name: "Neonatal Respiratory Distress Syndrome",
-    etymology: "Greek neos = new + Latin natus = born + respirare = breathe + distringere = pull apart + syndrome = grouped findings",
+    etymology:
+      "Greek neos = new + Latin natus = born + respirare = breathe + distringere = pull apart + syndrome = grouped findings",
     aliases: [
       "neonatal respiratory distress syndrome",
       "nrds",
@@ -14353,7 +14433,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "digeorge-syndrome",
     name: "DiGeorge Syndrome",
-    etymology: "eponym Angelo DiGeorge + Greek syn = together + dromos = running (syndrome)",
+    etymology:
+      "eponym Angelo DiGeorge + Greek syn = together + dromos = running (syndrome)",
     aliases: [
       "digeorge syndrome",
       "digeorge syndromes",
@@ -14423,7 +14504,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tetralogy-of-fallot",
     name: "Tetralogy of Fallot",
-    etymology: "Greek tetra = four + logos = account + eponym: Etienne-Louis Fallot",
+    etymology:
+      "Greek tetra = four + logos = account + eponym: Etienne-Louis Fallot",
     aliases: [
       "tetralogy of fallot",
       "tetralogy of fallot's",
@@ -14860,7 +14942,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ventricular-septal-defect",
     name: "Ventricular Septal Defect",
-    etymology: "Latin ventriculus = little belly + septum = partition + defectus = failing/lack",
+    etymology:
+      "Latin ventriculus = little belly + septum = partition + defectus = failing/lack",
     aliases: [
       "ventricular septal defect",
       "vsd",
@@ -14918,7 +15001,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "atrial-septal-defect",
     name: "Atrial Septal Defect",
-    etymology: "Latin atrium = entrance hall + septum = partition + defectus = failing/lack",
+    etymology:
+      "Latin atrium = entrance hall + septum = partition + defectus = failing/lack",
     aliases: [
       "atrial septal defect",
       "asd",
@@ -15052,7 +15136,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "bicuspid-aortic-valve",
     name: "Bicuspid Aortic Valve",
-    etymology: "Latin bi = two + cuspis = point + Greek aorte = artery + valva = folding door",
+    etymology:
+      "Latin bi = two + cuspis = point + Greek aorte = artery + valva = folding door",
     aliases: [
       "bicuspid aortic valve",
       "bicuspid aortic valve disease",
@@ -15185,7 +15270,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "aortic-regurgitation",
     name: "Aortic Regurgitation",
-    etymology: "Greek aorte = artery + Latin re- = back + gurges = flood/whirlpool",
+    etymology:
+      "Greek aorte = artery + Latin re- = back + gurges = flood/whirlpool",
     aliases: ["aortic regurgitation", "aortic insufficiency", "ar", "ai"],
     definition:
       "Incompetence of the aortic valve allowing diastolic backflow from the aorta into the left ventricle, causing volume overload.",
@@ -15322,7 +15408,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "copd",
     name: "COPD",
-    etymology: "COPD = chronic obstructive pulmonary disease; Latin pulmo = lung + obstructio = blockage",
+    etymology:
+      "COPD = chronic obstructive pulmonary disease; Latin pulmo = lung + obstructio = blockage",
     aliases: [
       "copd",
       "chronic obstructive pulmonary disease",
@@ -15516,7 +15603,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "interstitial-lung-disease",
     name: "Interstitial Lung Disease",
-    etymology: "Latin inter = between + sistere = stand + lung = respiratory organ + disease = disordered function",
+    etymology:
+      "Latin inter = between + sistere = stand + lung = respiratory organ + disease = disordered function",
     aliases: [
       "interstitial lung disease",
       "interstitial lung diseases",
@@ -15815,7 +15903,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pulmonary-hypertension",
     name: "Pulmonary Hypertension",
-    etymology: "Latin pulmo = lung + Greek hyper = excess + Latin tensio = pressure/stretching",
+    etymology:
+      "Latin pulmo = lung + Greek hyper = excess + Latin tensio = pressure/stretching",
     aliases: [
       "pulmonary hypertension",
       "pah",
@@ -16017,7 +16106,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "chronic-bronchitis",
     name: "Chronic Bronchitis",
-    etymology: "Greek chronos = time + bronchos = airway + -itis = inflammation",
+    etymology:
+      "Greek chronos = time + bronchos = airway + -itis = inflammation",
     aliases: ["chronic bronchitis"],
     definition:
       "COPD phenotype defined clinically as productive cough for ≥3 months in ≥2 consecutive years, with airway inflammation and mucus hypersecretion.",
@@ -16056,7 +16146,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "glomerulonephritis",
     name: "Glomerulonephritis",
-    etymology: "Latin glomerulus = small ball + Greek nephros = kidney + -itis = inflammation",
+    etymology:
+      "Latin glomerulus = small ball + Greek nephros = kidney + -itis = inflammation",
     aliases: [
       "glomerulonephritis",
       "glomerular nephritis",
@@ -16129,8 +16220,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "goodpasture-syndrome",
     name: "Goodpasture Syndrome",
-    etymology:
-      "Eponym for Ernest Goodpasture + syndrome = grouped findings",
+    etymology: "Eponym for Ernest Goodpasture + syndrome = grouped findings",
     aliases: [
       "goodpasture",
       "goodpasture syndrome",
@@ -16200,7 +16290,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "nephritic-syndrome",
     name: "Nephritic Syndrome",
-    etymology: "Greek nephros = kidney + -itis = inflammation + syndrome = grouped findings",
+    etymology:
+      "Greek nephros = kidney + -itis = inflammation + syndrome = grouped findings",
     aliases: ["nephritic syndrome", "nephritic"],
     definition:
       "Glomerular disease presenting with hematuria, RBC casts, oliguria, hypertension, and variable proteinuria (<3.5 g/day).",
@@ -16317,7 +16408,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "nephrotic-syndrome",
     name: "Nephrotic Syndrome",
-    etymology: "Greek nephros = kidney + -otic = condition + syndrome = grouped findings",
+    etymology:
+      "Greek nephros = kidney + -otic = condition + syndrome = grouped findings",
     aliases: ["nephrotic syndrome", "nephrotic"],
     definition:
       "Glomerular disease with heavy proteinuria (>3.5 g/day), hypoalbuminemia, edema, hyperlipidemia, and lipiduria.",
@@ -16490,7 +16582,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "calcium-nephrolithiasis",
     name: "Calcium Nephrolithiasis",
-    etymology: "Latin calx = lime + Greek nephros = kidney + lithos = stone + -iasis = condition",
+    etymology:
+      "Latin calx = lime + Greek nephros = kidney + lithos = stone + -iasis = condition",
     aliases: [
       "calcium nephrolithiasis",
       "calcium kidney stones",
@@ -16563,7 +16656,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "renal-cell-carcinoma",
     name: "Renal Cell Carcinoma",
-    etymology: "Latin ren = kidney + cellula = small cell + carcinoma = malignant epithelial tumor",
+    etymology:
+      "Latin ren = kidney + cellula = small cell + carcinoma = malignant epithelial tumor",
     aliases: [
       "renal cell carcinoma",
       "renal cell carcinomas",
@@ -16636,7 +16730,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "stauffer-syndrome",
     name: "Stauffer Syndrome",
-    etymology: "Stauffer = eponym (hepatologist) + syndrome = group of concurrent signs",
+    etymology:
+      "Stauffer = eponym (hepatologist) + syndrome = group of concurrent signs",
     aliases: [
       "stauffer syndrome",
       "stauffer syndome",
@@ -16695,7 +16790,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "autosomal-dominant-polycystic-kidney-disease",
     name: "Autosomal Dominant Polycystic Kidney Disease",
-    etymology: "autos = self + dominus = lord + Greek poly = many + kystis = bladder/sac + nephros = kidney",
+    etymology:
+      "autos = self + dominus = lord + Greek poly = many + kystis = bladder/sac + nephros = kidney",
     aliases: [
       "autosomal dominant polycystic kidney disease",
       "adpkd",
@@ -16763,7 +16859,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "autosomal-recessive-polycystic-kidney-disease",
     name: "Autosomal Recessive Polycystic Kidney Disease",
-    etymology: "autos = self + recessus = withdrawn/hidden + Greek poly = many + kystis = bladder/sac + nephros = kidney",
+    etymology:
+      "autos = self + recessus = withdrawn/hidden + Greek poly = many + kystis = bladder/sac + nephros = kidney",
     aliases: [
       "autosomal recessive polycystic kidney disease",
       "arpkd",
@@ -16825,7 +16922,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "oligohydramnios",
     name: "Oligohydramnios",
-    etymology: "Greek oligos = few/scant + hydor = water + amnion = membrane around fetus",
+    etymology:
+      "Greek oligos = few/scant + hydor = water + amnion = membrane around fetus",
     aliases: [
       "oligohydramnios",
       "oligohydramnion",
@@ -16891,7 +16989,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "polyhydramnios",
     name: "Polyhydramnios",
-    etymology: "Greek poly = many + hydor = water + amnion = membrane around fetus",
+    etymology:
+      "Greek poly = many + hydor = water + amnion = membrane around fetus",
     aliases: [
       "polyhydramnios",
       "polyhydramnion",
@@ -16958,7 +17057,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "potter-syndrome",
     name: "Potter Syndrome",
-    etymology: "eponym: Edith Potter + syndrome = grouped findings from shared cause",
+    etymology:
+      "eponym: Edith Potter + syndrome = grouped findings from shared cause",
     aliases: [
       "potter syndrome",
       "potter sequence",
@@ -17019,7 +17119,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "urinary-tract-infection",
     name: "Urinary Tract Infection",
-    etymology: "Greek ouron = urine + Latin tractus = drawn path + infectio = contamination",
+    etymology:
+      "Greek ouron = urine + Latin tractus = drawn path + infectio = contamination",
     aliases: ["urinary tract infection", "uti", "bladder infection"],
     definition:
       "Bacterial infection of the urinary tract — most often uncomplicated cystitis (lower UTI); may ascend to pyelonephritis or progress to urosepsis.",
@@ -17067,7 +17168,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "rotator-cuff-syndrome",
     name: "Rotator Cuff Syndrome",
-    etymology: "Latin rotare = turn + cuff = encircling band + syndrome = grouped findings",
+    etymology:
+      "Latin rotare = turn + cuff = encircling band + syndrome = grouped findings",
     aliases: [
       "rotator cuff syndrome",
       "rotator cuff tendinopathy",
@@ -17134,7 +17236,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ankylosing-spondylitis",
     name: "Ankylosing Spondylitis",
-    etymology: "Greek ankylos = bent/stiff + spondylos = vertebra + -itis = inflammation",
+    etymology:
+      "Greek ankylos = bent/stiff + spondylos = vertebra + -itis = inflammation",
     aliases: [
       "ankylosing spondylitis",
       "bekhterev disease",
@@ -17203,7 +17306,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "juvenile-idiopathic-arthritis",
     name: "Juvenile Idiopathic Arthritis",
-    etymology: "Latin juvenilis = youthful + Greek idios = one's own + pathos = suffering + Greek arthron = joint + -itis = inflammation",
+    etymology:
+      "Latin juvenilis = youthful + Greek idios = one's own + pathos = suffering + Greek arthron = joint + -itis = inflammation",
     aliases: [
       "juvenile idiopathic arthritis",
       "juvenile idiopathic arthritides",
@@ -17280,7 +17384,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "rheumatoid-arthritis",
     name: "Rheumatoid Arthritis",
-    etymology: "Greek rheuma = flow + -oid = resembling + arthron = joint + -itis = inflammation",
+    etymology:
+      "Greek rheuma = flow + -oid = resembling + arthron = joint + -itis = inflammation",
     aliases: ["rheumatoid arthritis", "ra"],
     definition:
       "Chronic autoimmune inflammatory arthritis with symmetric polyarticular involvement and systemic features, often leading to joint destruction.",
@@ -17459,7 +17564,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lesch-nyhan-syndrome",
     name: "Lesch-Nyhan Syndrome",
-    etymology: "eponym: Michael Lesch and William Nyhan + Greek syn = together + dromos = running course",
+    etymology:
+      "eponym: Michael Lesch and William Nyhan + Greek syn = together + dromos = running course",
     aliases: [
       "lesch nyhan syndrome",
       "lesch-nyhan",
@@ -17549,7 +17655,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Depression disrupts prefrontal and hippocampal circuits involved in attention, working memory, and executive function → subjective and objective cognitive deficits without primary neurodegeneration; HPA axis dysregulation and reduced neuroplasticity contribute; cognitive symptoms may partially persist after mood remission in some patients.",
     classicPresentation: [
       "Older adult with depressed mood, anhedonia, and prominent memory complaints",
-      "\"I don't know\" answers on cognitive testing rather than confabulation",
+      '"I don\'t know" answers on cognitive testing rather than confabulation',
       "Patient often aware of and distressed by cognitive deficits (contrast with Alzheimer denial)",
       "Rapid onset relative to dementia; personal history of prior depressive episodes",
       "Cognitive symptoms improve with antidepressant therapy or ECT",
@@ -17593,7 +17699,7 @@ export const CONDITIONS: ConditionEntry[] = [
     boardsPearls: [
       "Pseudodementia = depression mimicking dementia — reversible with antidepressant treatment",
       "Depressed elderly patient + memory complaints → treat depression before labeling dementia",
-      "Patients often say \"I don't know\" on recall testing; less confabulation than Alzheimer",
+      'Patients often say "I don\'t know" on recall testing; less confabulation than Alzheimer',
       "Temporal relationship: if cognitive symptoms predate and persist after depression treatment, consider true dementia",
       "vs delirium — pseudodementia is subacute/chronic without acute fluctuating inattention",
     ],
@@ -17603,7 +17709,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pseudogout",
     name: "Pseudogout",
-    etymology: "Greek pseudes = false + gutta = drop + -itis pattern (mimics gout)",
+    etymology:
+      "Greek pseudes = false + gutta = drop + -itis pattern (mimics gout)",
     aliases: [
       "pseudogout",
       "cppd disease",
@@ -17951,7 +18058,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "androgen-insensitivity-syndrome",
     name: "Androgen Insensitivity Syndrome",
-    etymology: "androgen + Latin in- = not + sensus = feeling/perception + syndrome = grouped findings",
+    etymology:
+      "androgen + Latin in- = not + sensus = feeling/perception + syndrome = grouped findings",
     aliases: [
       "androgen insensitivity syndrome",
       "androgen insensitivity syndromes",
@@ -18044,7 +18152,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "systemic-lupus-erythematosus",
     name: "Systemic Lupus Erythematosus",
-    etymology: "systemic = whole body + Latin lupus = wolf + Greek erythros = red",
+    etymology:
+      "systemic = whole body + Latin lupus = wolf + Greek erythros = red",
     aliases: ["systemic lupus erythematosus", "sle", "lupus"],
     definition:
       "Multisystem autoimmune disease with autoantibodies against nuclear antigens, causing inflammation of skin, joints, kidneys, and other organs.",
@@ -18096,7 +18205,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lupus-nephritis",
     name: "Lupus Nephritis",
-    etymology: "Latin lupus = wolf + Greek nephros = kidney + -itis = inflammation",
+    etymology:
+      "Latin lupus = wolf + Greek nephros = kidney + -itis = inflammation",
     aliases: [
       "lupus nephritis",
       "lupus nephritides",
@@ -18247,7 +18357,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "granulomatosis-with-polyangiitis",
     name: "Granulomatosis with Polyangiitis",
-    etymology: "Latin granulum = small grain + Greek -oma = mass + poly = many + angeion = vessel + -itis = inflammation",
+    etymology:
+      "Latin granulum = small grain + Greek -oma = mass + poly = many + angeion = vessel + -itis = inflammation",
     aliases: [
       "granulomatosis with polyangiitis",
       "wegener granulomatosis",
@@ -18305,7 +18416,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "eosinophilic-granulomatosis-with-polyangiitis",
     name: "Eosinophilic Granulomatosis with Polyangiitis",
-    etymology: "Greek eos = dawn-red + philos = loving + granulum = small grain + poly = many + angeion = vessel + -itis = inflammation",
+    etymology:
+      "Greek eos = dawn-red + philos = loving + granulum = small grain + poly = many + angeion = vessel + -itis = inflammation",
     aliases: [
       "eosinophilic granulomatosis with polyangiitis",
       "churg-strauss syndrome",
@@ -18363,7 +18475,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "iga-vasculitis",
     name: "IgA Vasculitis",
-    etymology: "IgA = immunoglobulin A + Latin vasculum = small vessel + -itis = inflammation",
+    etymology:
+      "IgA = immunoglobulin A + Latin vasculum = small vessel + -itis = inflammation",
     aliases: [
       "iga vasculitis",
       "henoch-schonlein purpura",
@@ -18434,7 +18547,12 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "schizophrenia",
     name: "Schizophrenia",
     etymology: "Greek schizein = split + phren = mind",
-    aliases: ["schizophrenia", "schizophrenias", "schizophrenic", "schizophrenic disorder"],
+    aliases: [
+      "schizophrenia",
+      "schizophrenias",
+      "schizophrenic",
+      "schizophrenic disorder",
+    ],
     definition:
       "Chronic psychotic disorder with positive symptoms (hallucinations, delusions), negative symptoms, and cognitive dysfunction lasting ≥6 months.",
     pathophysiology:
@@ -18566,7 +18684,7 @@ export const CONDITIONS: ConditionEntry[] = [
     classicPresentation: [
       "Sudden onset of paralysis, weakness, gait disturbance, blindness, or non-epileptic spells after stressor",
       "Symptoms not explained by anatomy or disease on objective testing",
-      "Patient may appear surprisingly calm (\"la belle indifférence\") but distress is not required for diagnosis",
+      'Patient may appear surprisingly calm ("la belle indifférence") but distress is not required for diagnosis',
       "More common in women; peak adolescence to young adulthood",
       "Symptoms may fluctuate or improve with distraction",
     ],
@@ -18843,7 +18961,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "delusional-disorder",
     name: "Delusional Disorder",
-    etymology: "Latin de- = away/from + ludere = play/trick + disorder = disturbed order",
+    etymology:
+      "Latin de- = away/from + ludere = play/trick + disorder = disturbed order",
     aliases: [
       "delusional disorder",
       "delusional disorder persecutory type",
@@ -18898,7 +19017,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "major-depressive-disorder",
     name: "Major Depressive Disorder",
-    etymology: "Latin major = greater + deprimere = press down + disorder = disturbed order",
+    etymology:
+      "Latin major = greater + deprimere = press down + disorder = disturbed order",
     aliases: [
       "major depressive disorder",
       "depression",
@@ -19038,7 +19158,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "dysthymia",
     name: "Dysthymia",
-    etymology: "Greek dys = bad + thymos = mind/spirit + -ia = condition (persistent depressive disorder in DSM-5)",
+    etymology:
+      "Greek dys = bad + thymos = mind/spirit + -ia = condition (persistent depressive disorder in DSM-5)",
     aliases: [
       "dysthymia",
       "dysthymias",
@@ -19174,7 +19295,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "generalized-anxiety-disorder",
     name: "Generalized Anxiety Disorder",
-    etymology: "Latin generalis = overall + anxiety + disorder = disturbed order",
+    etymology:
+      "Latin generalis = overall + anxiety + disorder = disturbed order",
     aliases: [
       "generalized anxiety disorder",
       "generalized anxiety disorders",
@@ -19236,7 +19358,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "panic-disorder",
     name: "Panic Disorder",
-    etymology: "Greek pan = all + -ic = pertaining to + disorder = disturbed order",
+    etymology:
+      "Greek pan = all + -ic = pertaining to + disorder = disturbed order",
     aliases: [
       "panic disorder",
       "panic disorders",
@@ -19363,7 +19486,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ocd",
     name: "Obsessive-Compulsive Disorder",
-    etymology: "Latin obsessio = siege/blockade + compellere = to force + disorder",
+    etymology:
+      "Latin obsessio = siege/blockade + compellere = to force + disorder",
     aliases: [
       "ocd",
       "obsessive compulsive disorder",
@@ -19426,7 +19550,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "body-dysmorphic-disorder",
     name: "Body Dysmorphic Disorder",
-    etymology: "Greek dys = bad + morphē = form + Latin corpus = body + disorder = disturbed function",
+    etymology:
+      "Greek dys = bad + morphē = form + Latin corpus = body + disorder = disturbed function",
     aliases: [
       "body dysmorphic disorder",
       "body dysmorphic disorders",
@@ -19508,7 +19633,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "trichotillomania",
     name: "Trichotillomania",
-    etymology: "Greek thrix = hair + tillein = to pull + mania = excessive impulse",
+    etymology:
+      "Greek thrix = hair + tillein = to pull + mania = excessive impulse",
     aliases: [
       "trichotillomania",
       "trichotillomanias",
@@ -19956,7 +20082,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hodgkin-lymphoma",
     name: "Hodgkin Lymphoma",
-    etymology: "eponym: Thomas Hodgkin + Latin lympha = clear fluid + Greek -oma = tumor/mass",
+    etymology:
+      "eponym: Thomas Hodgkin + Latin lympha = clear fluid + Greek -oma = tumor/mass",
     aliases: [
       "hodgkin lymphoma",
       "hodgkin's lymphoma",
@@ -20025,7 +20152,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "non-hodgkin-lymphoma",
     name: "Non-Hodgkin Lymphoma",
-    etymology: "non- = not + eponym: Hodgkin + Latin lympha = clear fluid + Greek -oma = tumor/mass",
+    etymology:
+      "non- = not + eponym: Hodgkin + Latin lympha = clear fluid + Greek -oma = tumor/mass",
     aliases: [
       "non-hodgkin lymphoma",
       "non-hodgkin's lymphoma",
@@ -20093,7 +20221,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tumor-lysis-syndrome",
     name: "Tumor Lysis Syndrome",
-    etymology: "Latin tumor = swelling/mass + Greek lysis = loosening/dissolution + Greek syn = together + dromos = running course",
+    etymology:
+      "Latin tumor = swelling/mass + Greek lysis = loosening/dissolution + Greek syn = together + dromos = running course",
     aliases: [
       "tumor lysis syndrome",
       "tumor lysis syndromes",
@@ -20258,7 +20387,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cll",
     name: "Chronic Lymphocytic Leukemia (CLL)",
-    etymology: "Greek chronos = time + lympha = clear fluid + kytos = cell + leukos = white + -emia = blood condition",
+    etymology:
+      "Greek chronos = time + lympha = clear fluid + kytos = cell + leukos = white + -emia = blood condition",
     aliases: [
       "chronic lymphocytic leukemia",
       "chronic lymphocytic leukaemia",
@@ -20319,7 +20449,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hairy-cell-leukemia",
     name: "Hairy Cell Leukemia",
-    etymology: "descriptive — hairy cytoplasmic projections on malignant B cells + Greek leukos = white + -emia = blood condition",
+    etymology:
+      "descriptive — hairy cytoplasmic projections on malignant B cells + Greek leukos = white + -emia = blood condition",
     aliases: [
       "hairy cell leukemia",
       "hairy cell leukaemia",
@@ -20330,7 +20461,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "hairy cells",
     ],
     definition:
-      "Indolent mature B-cell neoplasm with clonal proliferation of lymphocytes bearing fine cytoplasmic \"hairy\" projections — classically causes pancytopenia and massive splenomegaly with marrow fibrosis and dry tap on aspiration.",
+      'Indolent mature B-cell neoplasm with clonal proliferation of lymphocytes bearing fine cytoplasmic "hairy" projections — classically causes pancytopenia and massive splenomegaly with marrow fibrosis and dry tap on aspiration.',
     pathophysiology:
       "Activating BRAF V600E mutation in most cases → clonal expansion of mature-appearing B cells infiltrating marrow, spleen, and liver → reticulin fibrosis impairs aspiration and hematopoiesis → cytopenias; splenic sequestration and marrow infiltration cause pancytopenia despite relatively low circulating blast burden.",
     classicPresentation: [
@@ -20394,7 +20525,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "polycythemia-vera",
     name: "Polycythemia Vera",
-    etymology: "Greek poly = many + kytos = cell + haima = blood + Latin verus = true",
+    etymology:
+      "Greek poly = many + kytos = cell + haima = blood + Latin verus = true",
     aliases: [
       "polycythemia vera",
       "polycythaemia vera",
@@ -20461,7 +20593,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cml",
     name: "Chronic Myelogenous Leukemia (CML)",
-    etymology: "Greek chronos = time + myelos = marrow + genos = producing + leukos = white + -emia = blood condition",
+    etymology:
+      "Greek chronos = time + myelos = marrow + genos = producing + leukos = white + -emia = blood condition",
     aliases: [
       "chronic myelogenous leukemia",
       "chronic myeloid leukemia",
@@ -20520,7 +20653,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "myeloproliferative-disorders",
     name: "Myeloproliferative Disorders",
-    etymology: "Greek myelos = marrow + Latin pro = forward + Latin ferre = to bear + Latin dis = apart + Greek order = arrangement",
+    etymology:
+      "Greek myelos = marrow + Latin pro = forward + Latin ferre = to bear + Latin dis = apart + Greek order = arrangement",
     aliases: [
       "myeloproliferative disorders",
       "myeloproliferative disorder",
@@ -20596,7 +20730,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "aml",
     name: "Acute Myeloid Leukemia (AML)",
-    etymology: "Latin acutus = sharp/sudden + Greek myelos = marrow + -oid = resembling + leukos = white + -emia = blood condition",
+    etymology:
+      "Latin acutus = sharp/sudden + Greek myelos = marrow + -oid = resembling + leukos = white + -emia = blood condition",
     aliases: [
       "acute myeloid leukemia",
       "acute myelogenous leukemia",
@@ -20805,7 +20940,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "apl",
     name: "Acute Promyelocytic Leukemia (APL)",
-    etymology: "Latin acutus = sharp/sudden + pro- = before + myelos = marrow + kytos = cell + leukos = white + -emia = blood condition",
+    etymology:
+      "Latin acutus = sharp/sudden + pro- = before + myelos = marrow + kytos = cell + leukos = white + -emia = blood condition",
     aliases: [
       "acute promyelocytic leukemia",
       "apl",
@@ -20936,7 +21072,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "merkel-cell-carcinoma",
     name: "Merkel Cell Carcinoma",
-    etymology: "eponym: Friedrich Merkel + cell = small biological unit + Greek karkinos = crab/cancer + -oma = tumor",
+    etymology:
+      "eponym: Friedrich Merkel + cell = small biological unit + Greek karkinos = crab/cancer + -oma = tumor",
     aliases: [
       "merkel cell carcinoma",
       "merkel cell cancer",
@@ -21149,7 +21286,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "secondary-amenorrhea",
     name: "Secondary Amenorrhea",
-    etymology: "Latin secundarius = following + Greek a- = absent + men = month + rhoia = flow",
+    etymology:
+      "Latin secundarius = following + Greek a- = absent + men = month + rhoia = flow",
     aliases: [
       "secondary amenorrhea",
       "secondary amenorrhoea",
@@ -21215,7 +21353,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "polycystic-ovary-syndrome",
     name: "Polycystic Ovary Syndrome",
-    etymology: "Greek poly = many + kystis = bladder/pouch + Latin ovarium = egg vessel + syndrome = grouped findings",
+    etymology:
+      "Greek poly = many + kystis = bladder/pouch + Latin ovarium = egg vessel + syndrome = grouped findings",
     aliases: [
       "polycystic ovary syndrome",
       "polycystic ovarian syndrome",
@@ -21288,12 +21427,9 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "anorexia-nervosa",
     name: "Anorexia Nervosa",
-    etymology: "Greek an- = without + orexis = appetite + Latin nervus = nerve/sinew (disordered drive)",
-    aliases: [
-      "anorexia nervosa",
-      "anorexia",
-      "restrictive eating disorder",
-    ],
+    etymology:
+      "Greek an- = without + orexis = appetite + Latin nervus = nerve/sinew (disordered drive)",
+    aliases: ["anorexia nervosa", "anorexia", "restrictive eating disorder"],
     definition:
       "Eating disorder characterized by restrictive energy intake, intense fear of weight gain, and distorted body image, leading to significantly low body weight and medical complications.",
     pathophysiology:
@@ -21357,7 +21493,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "bulimia-nervosa",
     name: "Bulimia Nervosa",
-    etymology: "Greek bous = ox + limos = hunger + Latin nervus = nerve/sinew (ox-hunger = bingeing)",
+    etymology:
+      "Greek bous = ox + limos = hunger + Latin nervus = nerve/sinew (ox-hunger = bingeing)",
     aliases: [
       "bulimia nervosa",
       "bulimia",
@@ -21424,7 +21561,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "premenstrual-dysphoric-disorder",
     name: "Premenstrual Dysphoric Disorder",
-    etymology: "Latin prae = before + menstrualis = monthly + Greek dysphoria = difficult to bear + disorder",
+    etymology:
+      "Latin prae = before + menstrualis = monthly + Greek dysphoria = difficult to bear + disorder",
     aliases: [
       "premenstrual dysphoric disorder",
       "premenstrual dysphoric disorders",
@@ -21633,7 +21771,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "uterine-fibroid",
     name: "Uterine Leiomyoma",
-    etymology: "Latin uterus = womb + Greek leios = smooth + mys = muscle + -oma = tumor/mass",
+    etymology:
+      "Latin uterus = womb + Greek leios = smooth + mys = muscle + -oma = tumor/mass",
     aliases: [
       "uterine fibroid",
       "uterine fibroids",
@@ -21797,7 +21936,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "female-athlete-triad",
     name: "Female Athlete Triad",
-    etymology: "female = sex class + athlete = competitor + triad = group of three",
+    etymology:
+      "female = sex class + athlete = competitor + triad = group of three",
     aliases: [
       "female athlete triad",
       "athlete triad",
@@ -21946,7 +22086,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "perforated-appendicitis",
     name: "Perforated Appendicitis",
-    etymology: "Latin perforare = to pierce through + appendere = hang from + Greek -itis = inflammation",
+    etymology:
+      "Latin perforare = to pierce through + appendere = hang from + Greek -itis = inflammation",
     aliases: [
       "perforated appendicitis",
       "perforated appendicitides",
@@ -22461,7 +22602,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "aspiration-pneumonia",
     name: "Aspiration Pneumonia",
-    etymology: "Latin aspirare = breathe in + Greek pneumon = lung + -ia = condition",
+    etymology:
+      "Latin aspirare = breathe in + Greek pneumon = lung + -ia = condition",
     aliases: [
       "aspiration pneumonia",
       "aspiration pneumonias",
@@ -22530,7 +22672,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lung-abscess",
     name: "Lung Abscess",
-    etymology: "Latin pulmo = lung + Latin abscedere = to go away (pus walled off)",
+    etymology:
+      "Latin pulmo = lung + Latin abscedere = to go away (pus walled off)",
     aliases: [
       "lung abscess",
       "lung abscesses",
@@ -22608,7 +22751,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "mendelson-syndrome",
     name: "Mendelson Syndrome",
-    etymology: "eponym: Curtis Lester Mendelson (American obstetric anesthesiologist, 1946 description) + Greek syn = together + dromos = running course",
+    etymology:
+      "eponym: Curtis Lester Mendelson (American obstetric anesthesiologist, 1946 description) + Greek syn = together + dromos = running course",
     aliases: [
       "mendelson syndrome",
       "mendelson's syndrome",
@@ -22682,7 +22826,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "aspiration-pneumonitis",
     name: "Aspiration Pneumonitis",
-    etymology: "Latin aspirare = breathe in + Greek pneumon = lung + -itis = inflammation",
+    etymology:
+      "Latin aspirare = breathe in + Greek pneumon = lung + -itis = inflammation",
     aliases: [
       "aspiration pneumonitis",
       "aspiration pneumonitides",
@@ -22827,7 +22972,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "bph",
     name: "Benign Prostatic Hyperplasia",
-    etymology: "Latin benignus = kind + Greek prostates = standing before + hyper = excess + plasis = formation",
+    etymology:
+      "Latin benignus = kind + Greek prostates = standing before + hyper = excess + plasis = formation",
     aliases: [
       "bph",
       "benign prostatic hyperplasia",
@@ -22900,7 +23046,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "prostate-adenocarcinoma",
     name: "Prostate Adenocarcinoma",
-    etymology: "Greek prostatēs = one standing before + Greek aden = gland + karkinos = crab/malignancy",
+    etymology:
+      "Greek prostatēs = one standing before + Greek aden = gland + karkinos = crab/malignancy",
     aliases: [
       "prostate adenocarcinoma",
       "prostate cancer",
@@ -22962,7 +23109,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "acute-bacterial-prostatitis",
     name: "Acute Bacterial Prostatitis",
-    etymology: "Latin acutus = sharp/sudden + Latin bacterium = small rod + Greek prostatēs = one standing before + -itis = inflammation",
+    etymology:
+      "Latin acutus = sharp/sudden + Latin bacterium = small rod + Greek prostatēs = one standing before + -itis = inflammation",
     aliases: [
       "acute bacterial prostatitis",
       "acute bacterial prostatitides",
@@ -23394,7 +23542,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hypospadias",
     name: "Hypospadias",
-    etymology: "Greek hypo = under + spadon = torn/open → urethral opening on ventral penis below normal glanular location",
+    etymology:
+      "Greek hypo = under + spadon = torn/open → urethral opening on ventral penis below normal glanular location",
     aliases: [
       "hypospadias",
       "hypospadia",
@@ -23455,7 +23604,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "epispadias",
     name: "Epispadias",
-    etymology: "Greek epi = upon/over + spadon = torn/open → urethral opening on dorsal penis or pubis",
+    etymology:
+      "Greek epi = upon/over + spadon = torn/open → urethral opening on dorsal penis or pubis",
     aliases: [
       "epispadias",
       "epispadia",
@@ -23834,7 +23984,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "erectile-dysfunction",
     name: "Erectile Dysfunction",
-    etymology: "Latin erectus = upright + Latin dis- = apart + function = impaired performance",
+    etymology:
+      "Latin erectus = upright + Latin dis- = apart + function = impaired performance",
     aliases: [
       "erectile dysfunction",
       "ed",
@@ -23987,7 +24138,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "peyronie-disease",
     name: "Peyronie Disease",
-    etymology: "eponym: François de la Peyronie + disease = disordered function",
+    etymology:
+      "eponym: François de la Peyronie + disease = disordered function",
     aliases: [
       "peyronie disease",
       "peyronie's disease",
@@ -24113,7 +24265,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "phimosis",
     name: "Phimosis",
-    etymology: "Greek phimos = muzzle → tight foreskin unable to retract over glans",
+    etymology:
+      "Greek phimos = muzzle → tight foreskin unable to retract over glans",
     aliases: [
       "phimosis",
       "physiologic phimosis",
@@ -24177,7 +24330,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "paraphimosis",
     name: "Paraphimosis",
-    etymology: "Greek para = beside/beyond + phimos = muzzle → foreskin retracted and trapped proximal to glans",
+    etymology:
+      "Greek para = beside/beyond + phimos = muzzle → foreskin retracted and trapped proximal to glans",
     aliases: [
       "paraphimosis",
       "trapped foreskin",
@@ -24190,7 +24344,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Foreskin retracted behind corona (often after catheterization, exam, or forced retraction) → tight ring compresses glans → impaired venous and lymphatic drainage → progressive glans and prepuce edema → worsening constriction → arterial compromise if untreated.",
     classicPresentation: [
       "Painful swollen glans with retracted foreskin trapped behind coronal sulcus",
-      "Edematous preputial ring — \"donut\" appearance",
+      'Edematous preputial ring — "donut" appearance',
       "Often after urinary catheter placement without foreskin reduction",
       "Child or uncircumcised adult after manipulation",
     ],
@@ -24199,9 +24353,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Edematous, painful glans",
       "Constricting band at neck of penis",
     ],
-    keyLabs: [
-      "Clinical diagnosis — no labs required for diagnosis",
-    ],
+    keyLabs: ["Clinical diagnosis — no labs required for diagnosis"],
     associations: [
       "Iatrogenic — Foley catheter placed without reducing foreskin",
       "Forced retraction of physiologic phimosis",
@@ -24235,7 +24387,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "fecal-incontinence",
     name: "Fecal Incontinence",
-    etymology: "Latin faex = dregs/stool + in- = not + continere = hold together",
+    etymology:
+      "Latin faex = dregs/stool + in- = not + continere = hold together",
     aliases: [
       "fecal incontinence",
       "faecal incontinence",
@@ -24309,7 +24462,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pyelonephritis",
     name: "Pyelonephritis",
-    etymology: "Greek pyelos = renal pelvis/basin + nephros = kidney + -itis = inflammation",
+    etymology:
+      "Greek pyelos = renal pelvis/basin + nephros = kidney + -itis = inflammation",
     aliases: [
       "pyelonephritis",
       "acute pyelonephritis",
@@ -24385,7 +24539,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "xanthogranulomatous-pyelonephritis",
     name: "Xanthogranulomatous Pyelonephritis",
-    etymology: "Greek xanthos = yellow + granulum = small grain + Greek pyelos = renal pelvis + nephros = kidney + -itis = inflammation (yellow granulomatous renal inflammation)",
+    etymology:
+      "Greek xanthos = yellow + granulum = small grain + Greek pyelos = renal pelvis + nephros = kidney + -itis = inflammation (yellow granulomatous renal inflammation)",
     aliases: [
       "xanthogranulomatous pyelonephritis",
       "xanthogranulomatous pyelonephritides",
@@ -24408,7 +24563,7 @@ export const CONDITIONS: ConditionEntry[] = [
     keyFindings: [
       "CVA tenderness and flank mass",
       "Nonfunctioning kidney on renography (DMSA or MAG-3)",
-      "CT — enlarged kidney with low-attenuation areas and central calculus; \"bear paw\" sign (lobulated contour)",
+      'CT — enlarged kidney with low-attenuation areas and central calculus; "bear paw" sign (lobulated contour)',
       "Histology — granulomatous inflammation with foamy lipid-laden macrophages (xanthoma cells)",
       "Urine culture often positive for Proteus, E. coli, or other uropathogens",
     ],
@@ -24452,7 +24607,7 @@ export const CONDITIONS: ConditionEntry[] = [
     boardsPearls: [
       "XGP = chronic destructive pyelonephritis with foamy lipid-laden macrophages (xanthoma cells)",
       "Staghorn calculus + Proteus + chronic UTI not responding to antibiotics → think XGP",
-      "CT \"bear paw\" sign — lobulated enlarged kidney with central stone",
+      'CT "bear paw" sign — lobulated enlarged kidney with central stone',
       "Middle-aged woman with flank mass + recurrent infection — nephrectomy often required",
       "vs acute pyelonephritis — subacute/chronic course, nonfunctioning kidney, granulomatous histology",
       "vs RCC — XGP is inflammatory destructive process; may mimic malignancy on imaging",
@@ -24464,7 +24619,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "emphysematous-pyelonephritis",
     name: "Emphysematous Pyelonephritis",
-    etymology: "Greek emphysa = inflate/blown in + Greek pyelos = renal pelvis + nephros = kidney + -itis = inflammation (gas-forming renal infection)",
+    etymology:
+      "Greek emphysa = inflate/blown in + Greek pyelos = renal pelvis + nephros = kidney + -itis = inflammation (gas-forming renal infection)",
     aliases: [
       "emphysematous pyelonephritis",
       "emphysematous pyelonephritides",
@@ -24487,7 +24643,7 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     keyFindings: [
       "CT abdomen/pelvis — gas within renal parenchyma, collecting system, or perinephric space (diagnostic)",
-      "Ultrasound — echogenic foci within kidney with \"dirty\" posterior acoustic shadowing",
+      'Ultrasound — echogenic foci within kidney with "dirty" posterior acoustic shadowing',
       "KUB may show gas outlining renal fossa (less sensitive than CT)",
       "Nonfunctioning or poorly functioning affected kidney on renography",
       "CVA tenderness and systemic toxicity",
@@ -24616,7 +24772,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "primary-biliary-cholangitis",
     name: "Primary Biliary Cholangitis",
-    etymology: "Latin primarius = first + bilis = bile + Greek cholangeion = bile vessel + -itis = inflammation",
+    etymology:
+      "Latin primarius = first + bilis = bile + Greek cholangeion = bile vessel + -itis = inflammation",
     aliases: [
       "primary biliary cholangitis",
       "primary biliary cirrhosis",
@@ -24681,7 +24838,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "primary-sclerosing-cholangitis",
     name: "Primary Sclerosing Cholangitis",
-    etymology: "Latin primarius = first + Greek skleros = hard + cholangeion = bile vessel + -itis = inflammation",
+    etymology:
+      "Latin primarius = first + Greek skleros = hard + cholangeion = bile vessel + -itis = inflammation",
     aliases: [
       "primary sclerosing cholangitis",
       "psc",
@@ -24745,7 +24903,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "acute-cholangitis",
     name: "Acute Cholangitis",
-    etymology: "Latin acutus = sharp/sudden + Greek cholangeion = bile vessel + -itis = inflammation",
+    etymology:
+      "Latin acutus = sharp/sudden + Greek cholangeion = bile vessel + -itis = inflammation",
     aliases: [
       "acute cholangitis",
       "ascending cholangitis",
@@ -24881,7 +25040,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "choledocholithiasis",
     name: "Choledocholithiasis",
-    etymology: "Greek chole = bile + dochos = receiving duct + lithos = stone + -iasis = condition",
+    etymology:
+      "Greek chole = bile + dochos = receiving duct + lithos = stone + -iasis = condition",
     aliases: [
       "choledocholithiasis",
       "cbd stone",
@@ -24947,7 +25107,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "biliary-atresia",
     name: "Biliary Atresia",
-    etymology: "Latin bilis = bile + Greek a- = absent + tresis = perforation/opening",
+    etymology:
+      "Latin bilis = bile + Greek a- = absent + tresis = perforation/opening",
     aliases: [
       "biliary atresia",
       "extrahepatic biliary atresia",
@@ -25073,8 +25234,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pyloric-stenosis",
     name: "Pyloric Stenosis",
-    etymology:
-      "Greek pyloros = gatekeeper + Greek stenosis = narrowing",
+    etymology: "Greek pyloros = gatekeeper + Greek stenosis = narrowing",
     aliases: [
       "pyloric stenosis",
       "hypertrophic pyloric stenosis",
@@ -25139,8 +25299,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "malrotation",
     name: "Malrotation",
-    etymology:
-      "Latin malus = bad/abnormal + Latin rotatio = turning",
+    etymology: "Latin malus = bad/abnormal + Latin rotatio = turning",
     aliases: [
       "malrotation",
       "intestinal malrotation",
@@ -25344,7 +25503,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cholera",
     name: "Cholera",
-    etymology: "Greek kholera = bile (from yellowish diarrhea) + disease name for epidemic secretory illness",
+    etymology:
+      "Greek kholera = bile (from yellowish diarrhea) + disease name for epidemic secretory illness",
     aliases: [
       "cholera",
       "cholera infection",
@@ -25357,9 +25517,9 @@ export const CONDITIONS: ConditionEntry[] = [
     definition:
       "Acute secretory diarrheal illness caused by toxigenic Vibrio cholerae — massive isotonic fluid loss from enterocyte ion secretion driven by cholera toxin activation of Gαs and cAMP, with high dehydration and mortality risk without rapid rehydration.",
     pathophysiology:
-      "V. cholerae colonizes small intestine → cholera toxin (AB5 exotoxin) enters enterocyte via GM1 ganglioside receptor → A subunit ADP-ribosylates Gαs → impaired GTPase → constitutive adenylyl cyclase activation → ↑ cAMP → PKA phosphorylation → ↑ CFTR-mediated Cl⁻ secretion and ↓ NaCl absorption in crypt cells → massive water efflux into lumen → secretory \"rice-water\" diarrhea; minimal mucosal invasion or inflammation.",
+      'V. cholerae colonizes small intestine → cholera toxin (AB5 exotoxin) enters enterocyte via GM1 ganglioside receptor → A subunit ADP-ribosylates Gαs → impaired GTPase → constitutive adenylyl cyclase activation → ↑ cAMP → PKA phosphorylation → ↑ CFTR-mediated Cl⁻ secretion and ↓ NaCl absorption in crypt cells → massive water efflux into lumen → secretory "rice-water" diarrhea; minimal mucosal invasion or inflammation.',
     classicPresentation: [
-      "Profuse watery diarrhea — \"rice-water\" stools (gray, flecked, no blood or pus)",
+      'Profuse watery diarrhea — "rice-water" stools (gray, flecked, no blood or pus)',
       "Minimal or no fever; patient often alert despite severe volume depletion",
       "Rapid dehydration — dry mucous membranes, sunken eyes, poor skin turgor, oliguria",
       "Hypovolemic shock, metabolic acidosis, and electrolyte losses (K⁺, HCO₃⁻) in severe disease",
@@ -25417,7 +25577,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "mitochondrial-encephalomyopathy",
     name: "Mitochondrial Encephalomyopathy",
-    etymology: "Greek mitos = thread + chondrion = granule + enkephalos = brain + myos = muscle + -pathy = disease",
+    etymology:
+      "Greek mitos = thread + chondrion = granule + enkephalos = brain + myos = muscle + -pathy = disease",
     aliases: [
       "mitochondrial encephalomyopathy",
       "mitochondrial encephalomyopathies",
@@ -25574,7 +25735,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cat-scratch-disease",
     name: "Cat-Scratch Disease",
-    etymology: "cat scratch = inoculating scratch + disease = disordered function",
+    etymology:
+      "cat scratch = inoculating scratch + disease = disordered function",
     aliases: [
       "cat-scratch disease",
       "cat scratch disease",
@@ -25645,7 +25807,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hydatidiform-mole",
     name: "Hydatidiform Mole",
-    etymology: "Greek hydatis = watery vesicle + Latin forma = shape + mola = mass",
+    etymology:
+      "Greek hydatis = watery vesicle + Latin forma = shape + mola = mass",
     aliases: [
       "hydatidiform mole",
       "hydatidiform moles",
@@ -26236,7 +26399,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "rocky-mountain-spotted-fever",
     name: "Rocky Mountain Spotted Fever",
-    etymology: "Rocky Mountain = geographic name + spotted = rash with spots + fever = febrile illness",
+    etymology:
+      "Rocky Mountain = geographic name + spotted = rash with spots + fever = febrile illness",
     aliases: [
       "rocky mountain spotted fever",
       "rocky mountain spotted fevers",
@@ -26393,7 +26557,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "dengue-fever",
     name: "Dengue Fever",
-    etymology: "Swahili ka-dinga pepo = cramp-like seizure + fever = febrile illness",
+    etymology:
+      "Swahili ka-dinga pepo = cramp-like seizure + fever = febrile illness",
     aliases: [
       "dengue fever",
       "dengue",
@@ -26472,7 +26637,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "chikungunya-fever",
     name: "Chikungunya Fever",
-    etymology: "Kimakonde chikungunya = to become contorted + fever = febrile illness",
+    etymology:
+      "Kimakonde chikungunya = to become contorted + fever = febrile illness",
     aliases: [
       "chikungunya fever",
       "chikungunya",
@@ -26549,7 +26715,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "zika-virus-infection",
     name: "Zika Virus Infection",
-    etymology: "Zika = Ugandan forest name + virus = poison/viral agent + infection = contamination",
+    etymology:
+      "Zika = Ugandan forest name + virus = poison/viral agent + infection = contamination",
     aliases: [
       "zika virus infection",
       "zika infection",
@@ -26767,7 +26934,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lymphogranuloma-venereum",
     name: "Lymphogranuloma Venereum",
-    etymology: "Latin lympha = clear fluid + granulum = small grain + -oma = mass + venereus = sexual",
+    etymology:
+      "Latin lympha = clear fluid + granulum = small grain + -oma = mass + venereus = sexual",
     aliases: [
       "lymphogranuloma venereum",
       "lymphogranuloma venereums",
@@ -26975,7 +27143,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "urethritis",
     name: "Urethritis",
-    etymology: "Greek ouron = urine + thraúō = to rub/wear + -itis = inflammation",
+    etymology:
+      "Greek ouron = urine + thraúō = to rub/wear + -itis = inflammation",
     aliases: [
       "urethritis",
       "urethritides",
@@ -27056,7 +27225,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "genital-herpes",
     name: "Genital Herpes",
-    etymology: "Latin genitalis = of birth/reproduction + Greek herpein = to creep",
+    etymology:
+      "Latin genitalis = of birth/reproduction + Greek herpein = to creep",
     aliases: [
       "genital herpes",
       "herpes genitalis",
@@ -27201,7 +27371,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "postherpetic-neuralgia",
     name: "Postherpetic Neuralgia",
-    etymology: "Latin post = after + Greek herpes = creeping/shingles + neuron = nerve + algos = pain",
+    etymology:
+      "Latin post = after + Greek herpes = creeping/shingles + neuron = nerve + algos = pain",
     aliases: [
       "postherpetic neuralgia",
       "postherpetic neuralgias",
@@ -27271,8 +27442,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cervical-cancer",
     name: "Cervical Cancer",
-    etymology:
-      "Latin cervix = neck (of uterus) + Greek karkinos = crab/cancer",
+    etymology: "Latin cervix = neck (of uterus) + Greek karkinos = crab/cancer",
     aliases: [
       "cervical cancer",
       "cervical cancers",
@@ -27360,7 +27530,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cervical-polyp",
     name: "Cervical Polyp",
-    etymology: "Latin cervix = neck + Greek polypous = many-footed (fleshy growth)",
+    etymology:
+      "Latin cervix = neck + Greek polypous = many-footed (fleshy growth)",
     aliases: [
       "cervical polyp",
       "cervical polyps",
@@ -27493,7 +27664,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "botulism",
     name: "Botulism",
-    etymology: "Latin botulus = sausage + -ism = condition (first linked to spoiled sausage)",
+    etymology:
+      "Latin botulus = sausage + -ism = condition (first linked to spoiled sausage)",
     aliases: [
       "botulism",
       "foodborne botulism",
@@ -27632,7 +27804,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "myasthenia-gravis",
     name: "Myasthenia Gravis",
-    etymology: "Greek mys = muscle + asthenes = weak + Latin gravis = heavy/severe",
+    etymology:
+      "Greek mys = muscle + asthenes = weak + Latin gravis = heavy/severe",
     aliases: [
       "myasthenia gravis",
       "myasthenia gravises",
@@ -27705,8 +27878,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "dermatomyositis",
     name: "Dermatomyositis",
-    etymology:
-      "Greek derma = skin + mys = muscle + -itis = inflammation",
+    etymology: "Greek derma = skin + mys = muscle + -itis = inflammation",
     aliases: [
       "dermatomyositis",
       "dermatomyositides",
@@ -27788,8 +27960,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "polymyositis",
     name: "Polymyositis",
-    etymology:
-      "Greek poly = many + mys = muscle + -itis = inflammation",
+    etymology: "Greek poly = many + mys = muscle + -itis = inflammation",
     aliases: [
       "polymyositis",
       "polymyositides",
@@ -27956,7 +28127,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "neurosyphilis",
     name: "Neurosyphilis",
-    etymology: "Greek neuron = nerve + syphilis (poem character) + -is = disease state",
+    etymology:
+      "Greek neuron = nerve + syphilis (poem character) + -is = disease state",
     aliases: [
       "neurosyphilis",
       "neurosyphilides",
@@ -28037,7 +28209,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "bacterial-meningitis",
     name: "Bacterial Meningitis",
-    etymology: "Greek bakterion = small staff + Latin meninges = membranes + Greek -itis = inflammation",
+    etymology:
+      "Greek bakterion = small staff + Latin meninges = membranes + Greek -itis = inflammation",
     aliases: [
       "bacterial meningitis",
       "bacterial meningitides",
@@ -28276,7 +28449,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "herpangina",
     name: "Herpangina",
-    etymology: "Greek herpes = creeping eruption + Latin angina = throat tightness",
+    etymology:
+      "Greek herpes = creeping eruption + Latin angina = throat tightness",
     aliases: [
       "herpangina",
       "herpangina virus",
@@ -28346,7 +28520,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hand-foot-and-mouth-disease",
     name: "Hand-Foot-and-Mouth Disease",
-    etymology: "hand + foot + mouth = rash/mucosal sites + disease = disordered function",
+    etymology:
+      "hand + foot + mouth = rash/mucosal sites + disease = disordered function",
     aliases: [
       "hand-foot-and-mouth disease",
       "hand foot and mouth disease",
@@ -28615,7 +28790,13 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "aphthous-ulcer",
     name: "Aphthous Ulcer",
     etymology: "Greek aphtha = ulcer/eruption + Latin ulcus = sore",
-    aliases: ["aphthous ulcer", "aphtous ulcer", "aphthous ulcers", "canker sore", "canker sores"],
+    aliases: [
+      "aphthous ulcer",
+      "aphtous ulcer",
+      "aphthous ulcers",
+      "canker sore",
+      "canker sores",
+    ],
     definition:
       "Painful, shallow, round oral mucosal ulcer with erythematous halo and yellow-white base; not caused by HSV.",
     pathophysiology:
@@ -28640,7 +28821,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Behçet disease",
       "HIV or neutropenia when severe/refractory",
     ],
-    complications: ["Pain-limited oral intake", "Rare scarring with major aphthae"],
+    complications: [
+      "Pain-limited oral intake",
+      "Rare scarring with major aphthae",
+    ],
     distinguishFrom: [
       "HSV gingivostomatitis — vesicles, keratinized mucosa, fever",
       "Oral candidiasis — scrapeable plaques",
@@ -28662,7 +28846,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "keratoconjunctivitis-sicca",
     name: "Keratoconjunctivitis Sicca (dry eyes)",
-    etymology: "Greek keras = cornea + conjunctiva = joined membrane + Latin siccus = dry",
+    etymology:
+      "Greek keras = cornea + conjunctiva = joined membrane + Latin siccus = dry",
     aliases: [
       "keratoconjunctivitis sicca",
       "dry eyes",
@@ -28715,7 +28900,13 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "dental-caries",
     name: "Dental Caries",
     etymology: "Latin dens = tooth + caries = decay/rottenness",
-    aliases: ["dental caries", "caries", "tooth decay", "cavities", "dental cavity"],
+    aliases: [
+      "dental caries",
+      "caries",
+      "tooth decay",
+      "cavities",
+      "dental cavity",
+    ],
     definition:
       "Localized demineralization and destruction of tooth enamel/dentin caused by acid-producing bacterial biofilm.",
     pathophysiology:
@@ -28737,7 +28928,11 @@ export const CONDITIONS: ConditionEntry[] = [
       "Xerostomia / Sjögren syndrome",
       "Poor fluoride exposure",
     ],
-    complications: ["Pulpitis", "Dental abscess", "Contiguous spread to jaw/soft tissue"],
+    complications: [
+      "Pulpitis",
+      "Dental abscess",
+      "Contiguous spread to jaw/soft tissue",
+    ],
     distinguishFrom: [
       "Periodontitis — gum/attachment loss, not primary enamel decay",
       "Aphthous ulcer — mucosal ulcer, not tooth lesion",
@@ -28779,7 +28974,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Erythematous, swollen gingival margins",
       "Halitosis",
       "May be painless unless acute necrotizing form",
-      "Acute necrotizing ulcerative gingivitis (ANUG) — painful bleeding gums, pseudomembrane, foul odor, \"punched-out\" papillae (trench mouth)",
+      'Acute necrotizing ulcerative gingivitis (ANUG) — painful bleeding gums, pseudomembrane, foul odor, "punched-out" papillae (trench mouth)',
     ],
     keyFindings: [
       "Erythema and edema of gingival margins",
@@ -28835,7 +29030,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "periodontal-disease",
     name: "Periodontal Disease",
-    etymology: "Greek peri = around + odous = tooth + Latin -alis = relating to",
+    etymology:
+      "Greek peri = around + odous = tooth + Latin -alis = relating to",
     aliases: [
       "periodontal disease",
       "periodontal diseases",
@@ -28917,7 +29113,12 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "glossitis",
     name: "Glossitis",
     etymology: "Greek glossa = tongue + -itis = inflammation",
-    aliases: ["glossitis", "inflamed tongue", "tongue inflammation", "atrophic glossitis"],
+    aliases: [
+      "glossitis",
+      "inflamed tongue",
+      "tongue inflammation",
+      "atrophic glossitis",
+    ],
     definition:
       "Inflammation or morphologic change of the tongue mucosa, often reflecting local irritation, infection, or systemic nutritional or inflammatory disease.",
     pathophysiology:
@@ -28943,7 +29144,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Median rhomboid glossitis with Candida",
       "Geographic tongue (benign migratory glossitis)",
     ],
-    complications: ["Pain-limited oral intake", "Underlying deficiency or malabsorption if untreated"],
+    complications: [
+      "Pain-limited oral intake",
+      "Underlying deficiency or malabsorption if untreated",
+    ],
     distinguishFrom: [
       "Oral candidiasis — scrapeable white plaques",
       "Aphthous ulcer — discrete painful ulcer, not diffuse tongue inflammation",
@@ -29000,7 +29204,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Diabetes mellitus, dentures, xerostomia",
       "Neutropenia and chronic mucocutaneous candidiasis",
     ],
-    complications: ["Esophageal candidiasis with odynophagia", "Systemic candidiasis in severe immunocompromise"],
+    complications: [
+      "Esophageal candidiasis with odynophagia",
+      "Systemic candidiasis in severe immunocompromise",
+    ],
     distinguishFrom: [
       "Oral hairy leukoplakia (EBV) — lateral tongue, does not scrape off",
       "Leukoplakia — white patch that cannot be scraped off; premalignant",
@@ -29022,7 +29229,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tongue-cancer",
     name: "Tongue Cancer",
-    etymology: "Latin cancer = crab (spread like crab legs) + Old English tunge = tongue",
+    etymology:
+      "Latin cancer = crab (spread like crab legs) + Old English tunge = tongue",
     aliases: [
       "tongue cancer",
       "oral tongue cancer",
@@ -29056,7 +29264,11 @@ export const CONDITIONS: ConditionEntry[] = [
       "Chronic mechanical irritation",
       "HPV-associated SCC more classically at base of tongue/oropharynx",
     ],
-    complications: ["Cervical nodal metastasis", "Local invasion affecting speech/swallowing", "Recurrence after treatment"],
+    complications: [
+      "Cervical nodal metastasis",
+      "Local invasion affecting speech/swallowing",
+      "Recurrence after treatment",
+    ],
     distinguishFrom: [
       "Aphthous ulcer — painful, shallow, heals within weeks",
       "Oral candidiasis — scrapeable white plaques",
@@ -29077,7 +29289,12 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "macroglossia",
     name: "Macroglossia",
     etymology: "Greek makros = large + glossa = tongue",
-    aliases: ["macroglossia", "enlarged tongue", "tongue enlargement", "large tongue"],
+    aliases: [
+      "macroglossia",
+      "enlarged tongue",
+      "tongue enlargement",
+      "large tongue",
+    ],
     definition:
       "Abnormally enlarged tongue that may be congenital or acquired, causing airway, feeding, speech, or dental problems.",
     pathophysiology:
@@ -29104,7 +29321,11 @@ export const CONDITIONS: ConditionEntry[] = [
       "Primary (AL) amyloidosis",
       "Beckwith-Wiedemann syndrome",
     ],
-    complications: ["Airway obstruction", "Obstructive sleep apnea", "Malocclusion and drooling"],
+    complications: [
+      "Airway obstruction",
+      "Obstructive sleep apnea",
+      "Malocclusion and drooling",
+    ],
     distinguishFrom: [
       "Ankyloglossia — restricted tongue mobility from short frenulum, not true enlargement",
       "Glossitis — inflammation/atrophy rather than organomegaly",
@@ -29127,7 +29348,13 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "ankyloglossia",
     name: "Ankyloglossia",
     etymology: "Greek ankylos = stiff/fixed + glossa = tongue",
-    aliases: ["ankyloglossia", "tongue-tie", "tongue tie", "short lingual frenulum", "lingual frenulum anomaly"],
+    aliases: [
+      "ankyloglossia",
+      "tongue-tie",
+      "tongue tie",
+      "short lingual frenulum",
+      "lingual frenulum anomaly",
+    ],
     definition:
       "Congenital short, thick, or anteriorly inserted lingual frenulum restricting tongue elevation and protrusion.",
     pathophysiology:
@@ -29148,7 +29375,10 @@ export const CONDITIONS: ConditionEntry[] = [
       "Speech articulation issues in select children",
       "May coexist with other craniofacial anomalies",
     ],
-    complications: ["Poor infant weight gain from feeding difficulty", "Speech delay in some cases"],
+    complications: [
+      "Poor infant weight gain from feeding difficulty",
+      "Speech delay in some cases",
+    ],
     distinguishFrom: [
       "Macroglossia — enlarged tongue, not restricted by frenulum",
       "Neurologic tongue weakness (CN XII palsy) — weakness rather than tethering",
@@ -29169,7 +29399,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "chronic-kidney-disease",
     name: "Chronic Kidney Disease",
-    etymology: "Greek chronos = time + Old English cwið + Latin ren = kidney + Latin dis = apart + ease = comfort",
+    etymology:
+      "Greek chronos = time + Old English cwið + Latin ren = kidney + Latin dis = apart + ease = comfort",
     aliases: [
       "chronic kidney disease",
       "chronic kidney diseases",
@@ -29239,7 +29470,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "end-stage-renal-disease",
     name: "End-Stage Renal Disease",
-    etymology: "Latin finis = end + Latin status = state + Latin ren = kidney + Latin dis = apart + ease = comfort",
+    etymology:
+      "Latin finis = end + Latin status = state + Latin ren = kidney + Latin dis = apart + ease = comfort",
     aliases: [
       "end-stage renal disease",
       "esrd",
@@ -29306,7 +29538,13 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "cystitis",
     name: "Cystitis",
     etymology: "Greek kystis = bladder + -itis = inflammation",
-    aliases: ["cystitis", "acute cystitis", "uncomplicated cystitis", "bladder infection", "lower uti"],
+    aliases: [
+      "cystitis",
+      "acute cystitis",
+      "uncomplicated cystitis",
+      "bladder infection",
+      "lower uti",
+    ],
     definition:
       "Acute bacterial infection and inflammation of the bladder, the most common form of lower urinary tract infection.",
     pathophysiology:
@@ -29358,7 +29596,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "interstitial-cystitis",
     name: "Interstitial Cystitis",
-    etymology: "Latin interstitium = space between tissues + Greek kystis = bladder + -itis = inflammation",
+    etymology:
+      "Latin interstitium = space between tissues + Greek kystis = bladder + -itis = inflammation",
     aliases: [
       "interstitial cystitis",
       "interstitial cystitides",
@@ -29576,7 +29815,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "neurogenic-bladder",
     name: "Neurogenic Bladder",
-    etymology: "Greek neuron = nerve + Latin gignere = to produce + Old English blædre = bladder",
+    etymology:
+      "Greek neuron = nerve + Latin gignere = to produce + Old English blædre = bladder",
     aliases: [
       "neurogenic bladder",
       "neurogenic lower urinary tract dysfunction",
@@ -29635,7 +29875,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "primary-vesicoureteral-reflux",
     name: "Primary Vesicoureteral Reflux",
-    etymology: "Latin primarius = first + vesica = bladder + ureter + re = back + fluxus = flow",
+    etymology:
+      "Latin primarius = first + vesica = bladder + ureter + re = back + fluxus = flow",
     aliases: [
       "primary vesicoureteral reflux",
       "primary vur",
@@ -29691,7 +29932,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "bilateral-vesicoureteral-reflux",
     name: "Bilateral Vesicoureteral Reflux",
-    etymology: "Latin bilateralis = two-sided + vesica = bladder + ureter + re = back + fluxus = flow",
+    etymology:
+      "Latin bilateralis = two-sided + vesica = bladder + ureter + re = back + fluxus = flow",
     aliases: [
       "bilateral vesicoureteral reflux",
       "bilateral vur",
@@ -29748,7 +29990,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "obstructive-uropathy",
     name: "Obstructive Uropathy",
-    etymology: "Latin obstructio = blockage + Greek ouron = urine + pathos = suffering",
+    etymology:
+      "Latin obstructio = blockage + Greek ouron = urine + pathos = suffering",
     aliases: [
       "obstructive uropathy",
       "obstructive uropathies",
@@ -29907,7 +30150,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "horseshoe-kidney",
     name: "Horseshoe Kidney",
-    etymology: "English horse + shoe + kidney — fused renal lower poles forming a U-shaped organ",
+    etymology:
+      "English horse + shoe + kidney — fused renal lower poles forming a U-shaped organ",
     aliases: [
       "horseshoe kidney",
       "horseshoe kidneys",
@@ -29972,7 +30216,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "patent-urachus",
     name: "Patent Urachus",
-    etymology: "Latin patere = to be open + Greek oura = tail (urachus) = persistent fetal bladder-umbilical connection",
+    etymology:
+      "Latin patere = to be open + Greek oura = tail (urachus) = persistent fetal bladder-umbilical connection",
     aliases: [
       "patent urachus",
       "urachal fistula",
@@ -30033,7 +30278,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "posterior-urethral-injury",
     name: "Posterior Urethral Injury",
-    etymology: "Latin posterior = behind + Greek ourethra = urinary passage + Latin injuria = wrong/harm",
+    etymology:
+      "Latin posterior = behind + Greek ourethra = urinary passage + Latin injuria = wrong/harm",
     aliases: [
       "posterior urethral injury",
       "posterior urethral injuries",
@@ -30117,7 +30363,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "posterior-urethral-valves",
     name: "Posterior Urethral Valves",
-    etymology: "Latin posterior = behind + Greek ourethra = urinary passage + Latin valva = fold/door",
+    etymology:
+      "Latin posterior = behind + Greek ourethra = urinary passage + Latin valva = fold/door",
     aliases: [
       "posterior urethral valves",
       "posterior urethral valve",
@@ -30184,7 +30431,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "vesicoureteral-reflux",
     name: "Vesicoureteral Reflux",
-    etymology: "Latin vesica = bladder + ureter + Latin re = back + fluxus = flow",
+    etymology:
+      "Latin vesica = bladder + ureter + Latin re = back + fluxus = flow",
     aliases: [
       "vesicoureteral reflux",
       "vesico ureteral reflux",
@@ -30251,7 +30499,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hypothyroidism",
     name: "Hypothyroidism",
-    etymology: "Greek hypo = under + thyreos = shield-shaped gland + -ism = condition",
+    etymology:
+      "Greek hypo = under + thyreos = shield-shaped gland + -ism = condition",
     aliases: [
       "hypothyroidism",
       "hypothyroid",
@@ -30394,7 +30643,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hashimoto-thyroiditis",
     name: "Hashimoto Thyroiditis",
-    etymology: "eponym: Hakaru Hashimoto + Greek thyreos = shield-shaped gland + -itis = inflammation",
+    etymology:
+      "eponym: Hakaru Hashimoto + Greek thyreos = shield-shaped gland + -itis = inflammation",
     aliases: [
       "hashimoto thyroiditis",
       "hashimotos thyroiditis",
@@ -30575,7 +30825,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "congenital-hypothyroidism",
     name: "Congenital Hypothyroidism",
-    etymology: "Latin con = together + nasci = to be born + Greek hypo = under + thyreos = shield + -ism = condition",
+    etymology:
+      "Latin con = together + nasci = to be born + Greek hypo = under + thyreos = shield + -ism = condition",
     aliases: [
       "congenital hypothyroidism",
       "neonatal hypothyroidism",
@@ -30708,7 +30959,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "rapidly-progressive-glomerulonephritis",
     name: "Rapidly Progressive Glomerulonephritis",
-    etymology: "Latin rapidus = seizing + Latin progressus = advance + glomerulus + nephros + -itis",
+    etymology:
+      "Latin rapidus = seizing + Latin progressus = advance + glomerulus + nephros + -itis",
     aliases: [
       "rapidly progressive glomerulonephritis",
       "rpgn",
@@ -30768,7 +31020,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tracheoesophageal-fistula",
     name: "Tracheoesophageal Fistula",
-    etymology: "Greek trachys = rough + oisophagos = food carrier + Latin fistula = pipe/connection",
+    etymology:
+      "Greek trachys = rough + oisophagos = food carrier + Latin fistula = pipe/connection",
     aliases: [
       "tracheoesophageal fistula",
       "te fistula",
@@ -30885,7 +31138,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "foreign-body-airway-obstruction",
     name: "Foreign Body Airway Obstruction",
-    etymology: "Latin foris = outside + corpus = body + Latin obstructio = blockade",
+    etymology:
+      "Latin foris = outside + corpus = body + Latin obstructio = blockade",
     aliases: [
       "foreign body obstruction",
       "foreign body airway obstruction",
@@ -31082,7 +31336,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "croup",
     name: "Croup",
-    etymology: "Middle English croup = to cry hoarsely (describing the cough sound)",
+    etymology:
+      "Middle English croup = to cry hoarsely (describing the cough sound)",
     aliases: [
       "croup",
       "viral croup",
@@ -31146,7 +31401,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "epiglottitis",
     name: "Epiglottitis",
-    etymology: "Greek epi = upon + glottis = tongue/tongue-shaped laryngeal structure + -itis = inflammation",
+    etymology:
+      "Greek epi = upon + glottis = tongue/tongue-shaped laryngeal structure + -itis = inflammation",
     aliases: [
       "epiglottitis",
       "epiglottitides",
@@ -31230,7 +31486,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hyperemesis-gravidarum",
     name: "Hyperemesis Gravidarum",
-    etymology: "Greek hyper- = excessive + emesis = vomiting + Latin gravidus = pregnant",
+    etymology:
+      "Greek hyper- = excessive + emesis = vomiting + Latin gravidus = pregnant",
     aliases: [
       "hyperemesis gravidarum",
       "hyperemesis in pregnancy",
@@ -31308,7 +31565,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "gestational-diabetes-mellitus",
     name: "Gestational Diabetes Mellitus",
-    etymology: "Latin gestare = to carry + diabetes = siphon/pass through + mellitus = honey-sweet",
+    etymology:
+      "Latin gestare = to carry + diabetes = siphon/pass through + mellitus = honey-sweet",
     aliases: [
       "gestational diabetes mellitus",
       "gestational diabetes",
@@ -31376,7 +31634,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "preeclampsia",
     name: "Preeclampsia",
-    etymology: "Latin prae = before + Greek eklampsis = flashing out (originally pre-convulsive toxemia)",
+    etymology:
+      "Latin prae = before + Greek eklampsis = flashing out (originally pre-convulsive toxemia)",
     aliases: [
       "preeclampsia",
       "pre-eclampsia",
@@ -31491,7 +31750,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "placental-abruption",
     name: "Placental Abruption",
-    etymology: "Latin placenta = flat cake + ab = away + Latin rumpere = to break",
+    etymology:
+      "Latin placenta = flat cake + ab = away + Latin rumpere = to break",
     aliases: [
       "placental abruption",
       "abruptio placentae",
@@ -31605,7 +31865,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "coarctation-of-the-aorta",
     name: "Coarctation of the Aorta",
-    etymology: "Latin co = together + arctare = to narrow + Greek aorte = artery",
+    etymology:
+      "Latin co = together + arctare = to narrow + Greek aorte = artery",
     aliases: [
       "coarctation of the aorta",
       "coarctation",
@@ -31739,8 +32000,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "abdominal-aortic-aneurysm",
     name: "Abdominal Aortic Aneurysm",
-    etymology:
-      "Latin abdomin- = belly + aorte = artery + aneurysma = dilation",
+    etymology: "Latin abdomin- = belly + aorte = artery + aneurysma = dilation",
     aliases: [
       "abdominal aortic aneurysm",
       "abdominal aortic aneurysms",
@@ -31870,7 +32130,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hepatitis-b",
     name: "Hepatitis B",
-    etymology: "Greek hepar = liver + -itis = inflammation + B = second identified hepatitis virus",
+    etymology:
+      "Greek hepar = liver + -itis = inflammation + B = second identified hepatitis virus",
     aliases: [
       "hepatitis b",
       "hepatitis b virus",
@@ -31936,7 +32197,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hepatitis-c",
     name: "Hepatitis C",
-    etymology: "Greek hepar = liver + -itis = inflammation + C = third identified hepatitis virus",
+    etymology:
+      "Greek hepar = liver + -itis = inflammation + C = third identified hepatitis virus",
     aliases: [
       "hepatitis c",
       "hepatitis c virus",
@@ -32122,7 +32384,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "portal-hypertension",
     name: "Portal Hypertension",
-    etymology: "Latin porta = gate + Greek hyper = excess + Latin tensio = pressure",
+    etymology:
+      "Latin porta = gate + Greek hyper = excess + Latin tensio = pressure",
     aliases: [
       "portal hypertension",
       "portal venous hypertension",
@@ -32183,7 +32446,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hepatocellular-carcinoma",
     name: "Hepatocellular Carcinoma",
-    etymology: "Greek hepar = liver + Latin cellula = small cell + carcinoma = malignant epithelial tumor",
+    etymology:
+      "Greek hepar = liver + Latin cellula = small cell + carcinoma = malignant epithelial tumor",
     aliases: [
       "hepatocellular carcinoma",
       "hepatocellular cancer",
@@ -32245,7 +32509,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "fatty-liver-disease",
     name: "Fatty Liver Disease",
-    etymology: "Old English fǣtt = fat + Old English lifer = liver + Latin dis = apart + ease = condition",
+    etymology:
+      "Old English fǣtt = fat + Old English lifer = liver + Latin dis = apart + ease = condition",
     aliases: [
       "fatty liver disease",
       "fatty liver",
@@ -32313,7 +32578,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "rhabdomyolysis",
     name: "Rhabdomyolysis",
-    etymology: "Greek rhabdos = rod/striated + mys = muscle + -lysis = breakdown",
+    etymology:
+      "Greek rhabdos = rod/striated + mys = muscle + -lysis = breakdown",
     aliases: [
       "rhabdomyolysis",
       "rhabdo",
@@ -32380,7 +32646,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "prerenal-azotemia",
     name: "Prerenal Azotemia",
-    etymology: "Latin prae = before + ren = kidney + Greek azote = without life (nitrogen) + haima = blood",
+    etymology:
+      "Latin prae = before + ren = kidney + Greek azote = without life (nitrogen) + haima = blood",
     aliases: [
       "prerenal azotemia",
       "prerenal azotaemia",
@@ -32454,7 +32721,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "acute-tubular-necrosis",
     name: "Acute Tubular Necrosis",
-    etymology: "Latin acutus = sudden + Latin tubulus = little tube + Greek nekros = dead tissue",
+    etymology:
+      "Latin acutus = sudden + Latin tubulus = little tube + Greek nekros = dead tissue",
     aliases: [
       "acute tubular necrosis",
       "atn",
@@ -32473,10 +32741,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Recent rhabdomyolysis, contrast administration, or aminoglycoside use",
       "Recovery: increasing urine output with hypotonic polyuria",
     ],
-    keyFindings: [
-      "Oliguria (not universal)",
-      "Uremic symptoms if severe",
-    ],
+    keyFindings: ["Oliguria (not universal)", "Uremic symptoms if severe"],
     keyLabs: [
       "↑ creatinine and BUN",
       "Muddy brown granular casts on urine microscopy",
@@ -32521,7 +32786,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ards",
     name: "Acute Respiratory Distress Syndrome",
-    etymology: "Latin acutus = sudden + respirare = breathe + distrahere = pull apart + syndrome = grouped findings",
+    etymology:
+      "Latin acutus = sudden + respirare = breathe + distrahere = pull apart + syndrome = grouped findings",
     aliases: [
       "acute respiratory distress syndrome",
       "ards",
@@ -32803,7 +33069,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cluster-headache",
     name: "Cluster Headache",
-    etymology: "English cluster = grouped attacks occurring in clusters over weeks",
+    etymology:
+      "English cluster = grouped attacks occurring in clusters over weeks",
     aliases: [
       "cluster headache",
       "cluster headaches",
@@ -32878,7 +33145,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "medulloblastoma",
     name: "Medulloblastoma",
-    etymology: "Latin medulla = marrow/middle + Greek blastos = germ + -oma = tumor",
+    etymology:
+      "Latin medulla = marrow/middle + Greek blastos = germ + -oma = tumor",
     aliases: [
       "medulloblastoma",
       "medulloblastomas",
@@ -32930,7 +33198,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "mca-stroke",
     name: "MCA Stroke",
-    etymology: "Middle = central + cerebral = brain + artery = vessel + stroke = sudden vascular insult",
+    etymology:
+      "Middle = central + cerebral = brain + artery = vessel + stroke = sudden vascular insult",
     aliases: [
       "mca stroke",
       "mca strokes",
@@ -32959,7 +33228,12 @@ export const CONDITIONS: ConditionEntry[] = [
       "Hemineglect with non-dominant (usually right) parietal involvement",
       "Noncontrast CT excludes hemorrhage; MRI DWI confirms acute infarct in MCA territory",
     ],
-    keyLabs: ["Noncontrast head CT", "MRI brain with DWI", "ECG for atrial fibrillation", "Carotid imaging if large-vessel disease suspected"],
+    keyLabs: [
+      "Noncontrast head CT",
+      "MRI brain with DWI",
+      "ECG for atrial fibrillation",
+      "Carotid imaging if large-vessel disease suspected",
+    ],
     associations: [
       "Atrial fibrillation (cardioembolic MCA occlusion)",
       "Internal carotid atherosclerosis",
@@ -32992,7 +33266,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "renal-artery-stenosis",
     name: "Renal Artery Stenosis",
-    etymology: "Latin ren = kidney + Greek arteria = artery + Greek stenosis = narrowing",
+    etymology:
+      "Latin ren = kidney + Greek arteria = artery + Greek stenosis = narrowing",
     aliases: [
       "renal artery stenosis",
       "renal artery stenoses",
@@ -33067,7 +33342,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "fibromuscular-dysplasia",
     name: "Fibromuscular Dysplasia",
-    etymology: "Latin fibra = fiber + musculus = muscle + Greek dys = abnormal + plassein = to form",
+    etymology:
+      "Latin fibra = fiber + musculus = muscle + Greek dys = abnormal + plassein = to form",
     aliases: [
       "fibromuscular dysplasia",
       "fibromuscular dysplasias",
@@ -33126,7 +33402,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "renal-infarction",
     name: "Renal Infarction",
-    etymology: "Latin ren = kidney + Latin infarcire = to stuff/block + -tion = process",
+    etymology:
+      "Latin ren = kidney + Latin infarcire = to stuff/block + -tion = process",
     aliases: [
       "renal infarction",
       "renal infarctions",
@@ -33188,7 +33465,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "waterhouse-friderichsen-syndrome",
     name: "Waterhouse-Friderichsen Syndrome",
-    etymology: "Eponym: Rupert Waterhouse + Carl Friderichsen + Greek syn = together + dromos = running course",
+    etymology:
+      "Eponym: Rupert Waterhouse + Carl Friderichsen + Greek syn = together + dromos = running course",
     aliases: [
       "waterhouse-friderichsen syndrome",
       "waterhouse friderichsen syndrome",
@@ -33259,7 +33537,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "meningococcemia",
     name: "Meningococcemia",
-    etymology: "Greek meninx = membrane + kokkos = berry + haima = blood + -ia = condition",
+    etymology:
+      "Greek meninx = membrane + kokkos = berry + haima = blood + -ia = condition",
     aliases: [
       "meningococcemia",
       "meningococcemias",
@@ -33473,7 +33752,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "peritoneal-carcinomatosis",
     name: "Peritoneal Carcinomatosis",
-    etymology: "Latin peritoneum = stretched around + Greek karkinos = crab/cancer + -osis = condition",
+    etymology:
+      "Latin peritoneum = stretched around + Greek karkinos = crab/cancer + -osis = condition",
     aliases: [
       "peritoneal carcinomatosis",
       "peritoneal carcinomatoses",
@@ -33543,7 +33823,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "mesenteric-ischemia",
     name: "Mesenteric Ischemia",
-    etymology: "Greek mesenterion = middle intestine + Greek ischein = restrain + haima = blood",
+    etymology:
+      "Greek mesenterion = middle intestine + Greek ischein = restrain + haima = blood",
     aliases: [
       "mesenteric ischemia",
       "mesenteric ischemias",
@@ -33687,7 +33968,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "small-bowel-obstruction",
     name: "Small Bowel Obstruction",
-    etymology: "Old English smæl = narrow + Old English bog = intestine + Latin obstructio = blockage",
+    etymology:
+      "Old English smæl = narrow + Old English bog = intestine + Latin obstructio = blockage",
     aliases: [
       "small bowel obstruction",
       "small bowel obstructions",
@@ -33763,7 +34045,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "short-bowel-syndrome",
     name: "Short Bowel Syndrome",
-    etymology: "Old English sceort = not long + Old English bog = intestine + Greek syn = together + dromos = running course",
+    etymology:
+      "Old English sceort = not long + Old English bog = intestine + Greek syn = together + dromos = running course",
     aliases: [
       "short bowel syndrome",
       "short bowel syndromes",
@@ -33839,7 +34122,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lactose-intolerance",
     name: "Lactose Intolerance",
-    etymology: "Latin lac = milk + Greek -ose = sugar + Latin in = not + tolerare = to bear/endure",
+    etymology:
+      "Latin lac = milk + Greek -ose = sugar + Latin in = not + tolerare = to bear/endure",
     aliases: [
       "lactose intolerance",
       "lactose intolerant",
@@ -33912,7 +34196,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "siadh",
     name: "SIADH",
-    etymology: "S = syndrome + I = inappropriate + A = antidiuretic + D = hormone + H = hormone",
+    etymology:
+      "S = syndrome + I = inappropriate + A = antidiuretic + D = hormone + H = hormone",
     aliases: [
       "siadh",
       "syndrome of inappropriate antidiuretic hormone",
@@ -34046,7 +34331,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "nonalcoholic-steatohepatitis",
     name: "Nonalcoholic Steatohepatitis",
-    etymology: "Latin non = not + alcohol + Greek steat = fat + hēpar = liver + -itis = inflammation",
+    etymology:
+      "Latin non = not + alcohol + Greek steat = fat + hēpar = liver + -itis = inflammation",
     aliases: [
       "nonalcoholic steatohepatitis",
       "nash",
@@ -34109,7 +34395,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "viral-hepatitis",
     name: "Viral Hepatitis",
-    etymology: "Latin virus = poison + Greek hepar = liver + -itis = inflammation",
+    etymology:
+      "Latin virus = poison + Greek hepar = liver + -itis = inflammation",
     aliases: [
       "viral hepatitis",
       "viral hepatitides",
@@ -34174,7 +34461,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "autoimmune-hepatitis",
     name: "Autoimmune Hepatitis",
-    etymology: "Greek auto = self + Latin immunitas = exemption + Greek hepar = liver + -itis = inflammation",
+    etymology:
+      "Greek auto = self + Latin immunitas = exemption + Greek hepar = liver + -itis = inflammation",
     aliases: [
       "autoimmune hepatitis",
       "autoimmune hepatitides",
@@ -34237,7 +34525,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "wernicke-encephalopathy",
     name: "Wernicke Encephalopathy",
-    etymology: "Eponym: Carl Wernicke + Greek enkephalos = brain + -pathy = disease",
+    etymology:
+      "Eponym: Carl Wernicke + Greek enkephalos = brain + -pathy = disease",
     aliases: [
       "wernicke encephalopathy",
       "wernicke's encephalopathy",
@@ -34299,7 +34588,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "wernicke-korsakoff-syndrome",
     name: "Wernicke-Korsakoff Syndrome",
-    etymology: "Eponym: Carl Wernicke + Sergei Korsakoff + Greek syn = together + dromos = course",
+    etymology:
+      "Eponym: Carl Wernicke + Sergei Korsakoff + Greek syn = together + dromos = course",
     aliases: [
       "wernicke-korsakoff syndrome",
       "wernicke korsakoff syndrome",
@@ -34360,7 +34650,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "korsakoff-syndrome",
     name: "Korsakoff Syndrome",
-    etymology: "Eponym: Sergei Korsakoff + Greek syn = together + dromos = course",
+    etymology:
+      "Eponym: Sergei Korsakoff + Greek syn = together + dromos = course",
     aliases: [
       "korsakoff syndrome",
       "korsakoff's syndrome",
@@ -34427,7 +34718,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "fetal-alcohol-syndrome",
     name: "Fetal Alcohol Syndrome",
-    etymology: "Latin fetus = offspring + Arabic al-kuhl + Greek syn = together + dromos = course",
+    etymology:
+      "Latin fetus = offspring + Arabic al-kuhl + Greek syn = together + dromos = course",
     aliases: [
       "fetal alcohol syndrome",
       "fetal alcohol syndromes",
@@ -34490,7 +34782,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "alcoholic-cardiomyopathy",
     name: "Alcoholic Cardiomyopathy",
-    etymology: "Arabic al-kuhl + Greek kardia = heart + mys = muscle + -pathy = disease",
+    etymology:
+      "Arabic al-kuhl + Greek kardia = heart + mys = muscle + -pathy = disease",
     aliases: [
       "alcoholic cardiomyopathy",
       "alcoholic cardiomyopathies",
@@ -34696,7 +34989,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "pancreatic-adenocarcinoma",
     name: "Pancreatic Adenocarcinoma",
-    etymology: "Greek pan = all + kreas = flesh + aden = gland + karkinos = crab/cancer + -oma = tumor",
+    etymology:
+      "Greek pan = all + kreas = flesh + aden = gland + karkinos = crab/cancer + -oma = tumor",
     aliases: [
       "pancreatic adenocarcinoma",
       "pancreatic adenocarcinomas",
@@ -34768,7 +35062,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "superior-mesenteric-artery-syndrome",
     name: "Superior Mesenteric Artery Syndrome",
-    etymology: "Latin superior = above + Greek mesenterion = middle intestine + Latin arteria = artery + Greek syn = together + dromos = course",
+    etymology:
+      "Latin superior = above + Greek mesenterion = middle intestine + Latin arteria = artery + Greek syn = together + dromos = course",
     aliases: [
       "superior mesenteric artery syndrome",
       "superior mesenteric artery syndromes",
@@ -34980,7 +35275,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "peritonsillar-abscess",
     name: "Peritonsillar Abscess",
-    etymology: "Latin peri = around + tonsilla = tonsil + Latin abcessus = departure (collection of pus)",
+    etymology:
+      "Latin peri = around + tonsilla = tonsil + Latin abcessus = departure (collection of pus)",
     aliases: [
       "peritonsillar abscess",
       "peritonsillar abscesses",
@@ -35044,7 +35340,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "adenotonsillar-hypertrophy",
     name: "Adenotonsillar Hypertrophy",
-    etymology: "Latin ad = toward + tonsilla = tonsil + Greek hyper = excessive + trophē = nourishment/growth",
+    etymology:
+      "Latin ad = toward + tonsilla = tonsil + Greek hyper = excessive + trophē = nourishment/growth",
     aliases: [
       "adenotonsillar hypertrophy",
       "adenotonsillar hypertrophies",
@@ -35111,7 +35408,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "oropharyngeal-cancer",
     name: "Oropharyngeal Cancer",
-    etymology: "Latin oro = mouth + Greek pharynx = throat + karkinos = crab/cancer",
+    etymology:
+      "Latin oro = mouth + Greek pharynx = throat + karkinos = crab/cancer",
     aliases: [
       "oropharyngeal cancer",
       "oropharyngeal cancers",
@@ -35184,7 +35482,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "zenker-diverticulum",
     name: "Zenker Diverticulum",
-    etymology: "eponym: Ludwig Zenker (German pathologist) + Latin diverticulum = byway/outpouching",
+    etymology:
+      "eponym: Ludwig Zenker (German pathologist) + Latin diverticulum = byway/outpouching",
     aliases: [
       "zenker diverticulum",
       "zenker diverticula",
@@ -35250,7 +35549,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "methanol-poisoning",
     name: "Methanol Poisoning",
-    etymology: "Greek methy = wine + Greek hylē = wood + Latin toxicum = poison",
+    etymology:
+      "Greek methy = wine + Greek hylē = wood + Latin toxicum = poison",
     aliases: [
       "methanol",
       "methanol poisoning",
@@ -35319,7 +35619,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "salicylate-toxicity",
     name: "Salicylate Toxicity",
-    etymology: "Latin salix = willow + -ate = salt/ester + Greek toxikon = poison",
+    etymology:
+      "Latin salix = willow + -ate = salt/ester + Greek toxikon = poison",
     aliases: [
       "salicylate",
       "salicylates",
@@ -35393,7 +35694,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "amyotrophic-lateral-sclerosis",
     name: "Amyotrophic Lateral Sclerosis",
-    etymology: "Greek a- = without + mys = muscle + trophē = nourishment + Latin lateralis = side + sclerosis = hardening",
+    etymology:
+      "Greek a- = without + mys = muscle + trophē = nourishment + Latin lateralis = side + sclerosis = hardening",
     aliases: [
       "amyotrophic lateral sclerosis",
       "amyotrophic lateral scleroses",
@@ -35474,7 +35776,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "amyloidosis",
     name: "Amyloidosis",
-    etymology: "Greek amylon = starch + -oid = resembling + -osis = condition (misnamed — not starch)",
+    etymology:
+      "Greek amylon = starch + -oid = resembling + -osis = condition (misnamed — not starch)",
     aliases: [
       "amyloidosis",
       "amyloid",
@@ -35946,7 +36249,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "megaloblastic-anemia",
     name: "Megaloblastic Anemia",
-    etymology: "Greek megas = large + blastos = germ + Greek an- = without + haima = blood",
+    etymology:
+      "Greek megas = large + blastos = germ + Greek an- = without + haima = blood",
     aliases: [
       "megaloblastic anemia",
       "megaloblastic anaemia",
@@ -36013,7 +36317,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "anemia-of-chronic-disease",
     name: "Anemia of Chronic Disease",
-    etymology: "Greek an- = without + haima = blood + Greek chronos = time + Latin dis = apart + ease = comfort",
+    etymology:
+      "Greek an- = without + haima = blood + Greek chronos = time + Latin dis = apart + ease = comfort",
     aliases: [
       "anemia of chronic disease",
       "anemia of chronic diseases",
@@ -36081,7 +36386,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "folate-deficiency",
     name: "Folate Deficiency",
-    etymology: "Latin folium = leaf + -ate = chemical anion + Latin deficientia = lack",
+    etymology:
+      "Latin folium = leaf + -ate = chemical anion + Latin deficientia = lack",
     aliases: [
       "folate deficiency",
       "folic acid deficiency",
@@ -36368,7 +36674,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "aspergilloma",
     name: "Aspergilloma",
-    etymology: "Latin aspergillum = holy-water sprinkler + Greek -oma = mass/tumor",
+    etymology:
+      "Latin aspergillum = holy-water sprinkler + Greek -oma = mass/tumor",
     aliases: [
       "aspergilloma",
       "aspergillomas",
@@ -36447,7 +36754,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "aspergillus-pneumonia",
     name: "Aspergillus Pneumonia",
-    etymology: "Latin aspergillum = holy-water sprinkler + Greek pneumon = lung + -ia = condition",
+    etymology:
+      "Latin aspergillum = holy-water sprinkler + Greek pneumon = lung + -ia = condition",
     aliases: [
       "aspergillus pneumonia",
       "aspergillus pneumonias",
@@ -36599,7 +36907,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "vascular-graft-thrombosis",
     name: "Vascular Graft Thrombosis",
-    etymology: "Latin vasculum = small vessel + graft = transplanted tissue + Greek thrombos = clot + -osis = condition",
+    etymology:
+      "Latin vasculum = small vessel + graft = transplanted tissue + Greek thrombos = clot + -osis = condition",
     aliases: [
       "vascular graft thrombosis",
       "vascular graft thromboses",
@@ -36680,7 +36989,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "ckd-mineral-bone-disorder",
     name: "CKD Mineral and Bone Disorder",
-    etymology: "Greek chronos = time + nephros = kidney + Latin mineralis = ore + Old English ban = bone + Latin dis = apart + ease = comfort",
+    etymology:
+      "Greek chronos = time + nephros = kidney + Latin mineralis = ore + Old English ban = bone + Latin dis = apart + ease = comfort",
     aliases: [
       "ckd mineral and bone disorder",
       "ckd-mineral and bone disorder",
@@ -36764,7 +37074,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "factitious-fever",
     name: "Factitious Fever",
-    etymology: "Latin facere = to make + -itious = resulting from + Latin febris = fever",
+    etymology:
+      "Latin facere = to make + -itious = resulting from + Latin febris = fever",
     aliases: [
       "factitious fever",
       "factitious fevers",
@@ -36902,7 +37213,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cataracts",
     name: "Cataracts",
-    etymology: "Latin cataracta = waterfall (opacity obscuring vision like falling water)",
+    etymology:
+      "Latin cataracta = waterfall (opacity obscuring vision like falling water)",
     aliases: ["cataract", "cataracts", "lens opacity", "lens opacities"],
     definition:
       "Opacification of the lens that reduces light transmission and causes progressive painless vision loss — may be age-related, congenital, metabolic, traumatic, or drug-induced.",
@@ -36950,7 +37262,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "astigmatism",
     name: "Astigmatism",
-    etymology: "Greek a = without + stigma = point (light does not focus to a single point)",
+    etymology:
+      "Greek a = without + stigma = point (light does not focus to a single point)",
     aliases: [
       "astigmatism",
       "astigmatisms",
@@ -37014,7 +37327,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "amblyopia",
     name: "Amblyopia",
-    etymology: "Greek amblus = dull + ops = eye (reduced vision despite structurally normal eye)",
+    etymology:
+      "Greek amblus = dull + ops = eye (reduced vision despite structurally normal eye)",
     aliases: [
       "amblyopia",
       "amblyopias",
@@ -37161,7 +37475,12 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "glaucoma",
     name: "Glaucoma",
     etymology: "Greek glaukos = bluish-green (cloudy hue of advanced disease)",
-    aliases: ["glaucoma", "glaucomas", "open angle glaucoma", "angle closure glaucoma"],
+    aliases: [
+      "glaucoma",
+      "glaucomas",
+      "open angle glaucoma",
+      "angle closure glaucoma",
+    ],
     definition:
       "Optic neuropathy characterized by progressive retinal ganglion cell loss and visual field defects, usually associated with elevated intraocular pressure — leading cause of irreversible blindness worldwide.",
     pathophysiology:
@@ -37404,7 +37723,12 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "dementia",
     name: "Dementia",
     etymology: "Latin de- = away + mens = mind",
-    aliases: ["dementia", "dementias", "major neurocognitive disorder", "neurocognitive disorder"],
+    aliases: [
+      "dementia",
+      "dementias",
+      "major neurocognitive disorder",
+      "neurocognitive disorder",
+    ],
     definition:
       "Syndrome of chronic progressive cognitive decline in memory, executive function, language, or visuospatial skills severe enough to impair independence in daily activities — not due to delirium or psychiatric disorder alone.",
     pathophysiology:
@@ -37455,7 +37779,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "creutzfeldt-jakob-disease",
     name: "Creutzfeldt-Jakob Disease",
-    etymology: "German neurologists Hans Gerhard Creutzfeldt and Alfons Jakob + Latin morbus = disease",
+    etymology:
+      "German neurologists Hans Gerhard Creutzfeldt and Alfons Jakob + Latin morbus = disease",
     aliases: [
       "creutzfeldt jakob disease",
       "creutzfeldt-jakob disease",
@@ -37583,7 +37908,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "psychotic-mood-disorder",
     name: "Psychotic Mood Disorder",
-    etymology: "Greek psyche = mind + -osis + Latin mood + dis- = apart + ordo = order",
+    etymology:
+      "Greek psyche = mind + -osis + Latin mood + dis- = apart + ordo = order",
     aliases: [
       "psychotic mood disorder",
       "psychotic mood disorders",
@@ -37690,7 +38016,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "adhd",
     name: "Attention-Deficit/Hyperactivity Disorder",
-    etymology: "Latin ad- = toward + tendere = stretch + deficit = lack + hyper- = over + activitas = activity + dis- + ordo",
+    etymology:
+      "Latin ad- = toward + tendere = stretch + deficit = lack + hyper- = over + activitas = activity + dis- + ordo",
     aliases: [
       "adhd",
       "attention deficit hyperactivity disorder",
@@ -37756,7 +38083,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tourette-syndrome",
     name: "Tourette Syndrome",
-    etymology: "Named for Georges Gilles de la Tourette — French neurologist who described the disorder in 1885",
+    etymology:
+      "Named for Georges Gilles de la Tourette — French neurologist who described the disorder in 1885",
     aliases: [
       "tourette syndrome",
       "tourette syndromes",
@@ -37901,7 +38229,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "schizoid-personality-disorder",
     name: "Schizoid Personality Disorder",
-    etymology: "Greek schizein = split + -oid = resembling + Latin persona = mask",
+    etymology:
+      "Greek schizein = split + -oid = resembling + Latin persona = mask",
     aliases: [
       "schizoid personality disorder",
       "schizoid personality disorders",
@@ -38008,7 +38337,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "nut-allergy",
     name: "Nut Allergy",
-    etymology: "Old English hnutu = hard seed + Greek allos = other + ergon = work",
+    etymology:
+      "Old English hnutu = hard seed + Greek allos = other + ergon = work",
     aliases: [
       "nut allergy",
       "nut allergies",
@@ -38160,7 +38490,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "food-allergy",
     name: "Food Allergy",
-    etymology: "Old English foda = nourishment + Greek allos = other + ergon = work",
+    etymology:
+      "Old English foda = nourishment + Greek allos = other + ergon = work",
     aliases: [
       "food allergy",
       "food allergies",
@@ -38282,7 +38613,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "basal-cell-carcinoma",
     name: "Basal Cell Carcinoma",
-    etymology: "Latin basis = base + cell + Greek karkinos = crab/cancer + -oma = tumor",
+    etymology:
+      "Latin basis = base + cell + Greek karkinos = crab/cancer + -oma = tumor",
     aliases: [
       "basal cell carcinoma",
       "basal cell carcinomas",
@@ -38341,7 +38673,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "hyperthyroidism",
     name: "Hyperthyroidism",
-    etymology: "Greek hyper = excess + thyreos = shield (thyroid) + -ism = condition",
+    etymology:
+      "Greek hyper = excess + thyreos = shield (thyroid) + -ism = condition",
     aliases: [
       "hyperthyroidism",
       "hyperthyroid",
@@ -38404,7 +38737,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "beriberi",
     name: "Beriberi",
-    etymology: "Sinhalese beri = weakness (repeated) — \"I cannot, I cannot\"",
+    etymology: 'Sinhalese beri = weakness (repeated) — "I cannot, I cannot"',
     aliases: [
       "beriberi",
       "beri beri",
@@ -38611,7 +38944,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "sideroblastic-anemia",
     name: "Sideroblastic Anemia",
-    etymology: "Greek sideros = iron + blastos = germ + Greek an- = without + haima = blood",
+    etymology:
+      "Greek sideros = iron + blastos = germ + Greek an- = without + haima = blood",
     aliases: [
       "sideroblastic anemia",
       "sideroblastic anaemia",
@@ -39067,7 +39401,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "gastric-adenocarcinoma",
     name: "Gastric Adenocarcinoma",
-    etymology: "Greek gaster = stomach + Latin aden = gland + Greek karkinos = crab/cancer + -oma = tumor",
+    etymology:
+      "Greek gaster = stomach + Latin aden = gland + Greek karkinos = crab/cancer + -oma = tumor",
     aliases: [
       "gastric adenocarcinoma",
       "gastric adenocarcinomas",
@@ -39132,7 +39467,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tropical-sprue",
     name: "Tropical Sprue",
-    etymology: "Greek tropikos = of the turning/solstice + Dutch spruw = spongy (intestinal)",
+    etymology:
+      "Greek tropikos = of the turning/solstice + Dutch spruw = spongy (intestinal)",
     aliases: [
       "tropical sprue",
       "tropical sprues",
@@ -39191,7 +39527,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "alcohol-use-disorder",
     name: "Alcohol Use Disorder",
-    etymology: "Arabic al-kuhl + Latin usus = use + Latin ordo = order/condition",
+    etymology:
+      "Arabic al-kuhl + Latin usus = use + Latin ordo = order/condition",
     aliases: [
       "alcohol use disorder",
       "alcohol use disorders",
@@ -39256,7 +39593,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "alcohol-withdrawal",
     name: "Alcohol Withdrawal",
-    etymology: "Arabic al-kuhl + Old English withdrawan = draw back + Latin -al = pertaining to",
+    etymology:
+      "Arabic al-kuhl + Old English withdrawan = draw back + Latin -al = pertaining to",
     aliases: [
       "alcohol withdrawal",
       "alcohol withdrawals",
@@ -39326,7 +39664,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "serotonin-syndrome",
     name: "Serotonin Syndrome",
-    etymology: "serotonin = 5-HT neurotransmitter + syndrome = running together of symptoms",
+    etymology:
+      "serotonin = 5-HT neurotransmitter + syndrome = running together of symptoms",
     aliases: [
       "serotonin syndrome",
       "serotonin syndromes",
@@ -39394,7 +39733,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "delirium-tremens",
     name: "Delirium Tremens",
-    etymology: "Latin delirium = derailment of mind + Latin tremere = to tremble",
+    etymology:
+      "Latin delirium = derailment of mind + Latin tremere = to tremble",
     aliases: [
       "delirium tremens",
       "dts",
@@ -39467,7 +39807,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "neural-tube-defects",
     name: "Neural Tube Defects",
-    etymology: "Latin neuralis = nerve + Old English tub = pipe + Latin defectus = failure",
+    etymology:
+      "Latin neuralis = nerve + Old English tub = pipe + Latin defectus = failure",
     aliases: [
       "neural tube defect",
       "neural tube defects",
@@ -39597,11 +39938,7 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "holoprosencephaly",
     name: "Holoprosencephaly",
     etymology: "Greek holos = whole + pros = forward + enkephalos = brain",
-    aliases: [
-      "holoprosencephaly",
-      "holoprosencephalies",
-      "hpe",
-    ],
+    aliases: ["holoprosencephaly", "holoprosencephalies", "hpe"],
     definition:
       "Forebrain malformation from failed cleavage of the prosencephalon into paired cerebral hemispheres and lateral ventricles — ranges from alobar (most severe) to lobar (mildest) forms with characteristic midline facial anomalies.",
     pathophysiology:
@@ -39655,7 +39992,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "congenital-rubella-syndrome",
     name: "Congenital Rubella Syndrome",
-    etymology: "Latin congenitus = born with + Latin ruber = red + syndrome = grouped findings",
+    etymology:
+      "Latin congenitus = born with + Latin ruber = red + syndrome = grouped findings",
     aliases: [
       "congenital rubella syndrome",
       "congenital rubella",
@@ -39838,11 +40176,7 @@ export const CONDITIONS: ConditionEntry[] = [
     id: "scarlet-fever",
     name: "Scarlet Fever",
     etymology: "Latin scarlatum = scarlet cloth + fever = elevated temperature",
-    aliases: [
-      "scarlet fever",
-      "scarlatina",
-      "scarlet fever rash",
-    ],
+    aliases: ["scarlet fever", "scarlatina", "scarlet fever rash"],
     definition:
       "Exotoxin-mediated illness caused by Streptococcus pyogenes (group A strep) pharyngitis producing a diffuse sandpaper-like erythematous rash, strawberry tongue, and circumoral pallor.",
     pathophysiology:
@@ -39959,7 +40293,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "basilar-skull-fracture",
     name: "Basilar Skull Fracture",
-    etymology: "Greek basis = base + Latin skulle = cranium + Latin fractura = break",
+    etymology:
+      "Greek basis = base + Latin skulle = cranium + Latin fractura = break",
     aliases: [
       "basilar skull fracture",
       "basilar skull fractures",
@@ -40074,8 +40409,7 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "traumatic-brain-injury",
     name: "Traumatic Brain Injury",
-    etymology:
-      "Latin trauma = wound + brain + Latin injuria = wrong/harm",
+    etymology: "Latin trauma = wound + brain + Latin injuria = wrong/harm",
     aliases: [
       "traumatic brain injury",
       "traumatic brain injuries",
@@ -40162,7 +40496,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "herniated-disc",
     name: "Herniated Disc",
-    etymology: "Latin hernia = rupture/protrusion + Latin discus = disc/platter",
+    etymology:
+      "Latin hernia = rupture/protrusion + Latin discus = disc/platter",
     aliases: [
       "herniated disc",
       "herniated discs",
@@ -40244,7 +40579,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "l4-radiculopathy",
     name: "L4 Radiculopathy",
-    etymology: "L = lumbar 4th segment + Latin radix = root + Greek -pathy = disease",
+    etymology:
+      "L = lumbar 4th segment + Latin radix = root + Greek -pathy = disease",
     aliases: [
       "l4 radiculopathy",
       "l4 nerve root compression",
@@ -40300,7 +40636,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "l5-radiculopathy",
     name: "L5 Radiculopathy",
-    etymology: "L = lumbar 5th segment + Latin radix = root + Greek -pathy = disease",
+    etymology:
+      "L = lumbar 5th segment + Latin radix = root + Greek -pathy = disease",
     aliases: [
       "l5 radiculopathy",
       "l5 nerve root compression",
@@ -40359,7 +40696,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "piriformis-syndrome",
     name: "Piriformis Syndrome",
-    etymology: "Latin pirum = pear + forma = shape + Greek syndromos = running together",
+    etymology:
+      "Latin pirum = pear + forma = shape + Greek syndromos = running together",
     aliases: [
       "piriformis syndrome",
       "piriformis syndromes",
@@ -40428,7 +40766,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "s1-radiculopathy",
     name: "S1 Radiculopathy",
-    etymology: "S = sacral 1st segment + Latin radix = root + Greek -pathy = disease",
+    etymology:
+      "S = sacral 1st segment + Latin radix = root + Greek -pathy = disease",
     aliases: [
       "s1 radiculopathy",
       "s1 nerve root compression",
@@ -40486,7 +40825,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "c6-radiculopathy",
     name: "C6 Radiculopathy",
-    etymology: "C = cervical 6th segment + Latin radix = root + Greek -pathy = disease",
+    etymology:
+      "C = cervical 6th segment + Latin radix = root + Greek -pathy = disease",
     aliases: [
       "c6 radiculopathy",
       "c6 nerve root compression",
@@ -40543,7 +40883,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "c7-radiculopathy",
     name: "C7 Radiculopathy",
-    etymology: "C = cervical 7th segment + Latin radix = root + Greek -pathy = disease",
+    etymology:
+      "C = cervical 7th segment + Latin radix = root + Greek -pathy = disease",
     aliases: [
       "c7 radiculopathy",
       "c7 nerve root compression",
@@ -40600,7 +40941,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "femoral-neck-fracture",
     name: "Femoral Neck Fracture",
-    etymology: "Latin femur = thigh bone + Latin collum = neck + Latin fractura = break",
+    etymology:
+      "Latin femur = thigh bone + Latin collum = neck + Latin fractura = break",
     aliases: [
       "femoral neck fracture",
       "femoral neck fractures",
@@ -40629,7 +40971,11 @@ export const CONDITIONS: ConditionEntry[] = [
       "Garden classification describes displacement (I–IV)",
       "MRI if radiographs negative but high suspicion (occult fracture)",
     ],
-    keyLabs: ["Hip radiographs (AP and frog-leg lateral)", "DEXA if osteoporosis suspected", "Preoperative labs for surgical planning"],
+    keyLabs: [
+      "Hip radiographs (AP and frog-leg lateral)",
+      "DEXA if osteoporosis suspected",
+      "Preoperative labs for surgical planning",
+    ],
     associations: [
       "Osteoporosis",
       "Advanced age",
@@ -40667,7 +41013,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "transient-ischemic-attack",
     name: "Transient Ischemic Attack",
-    etymology: "Latin transire = to pass across + Greek ischein = to hold back + Latin attack = sudden onset",
+    etymology:
+      "Latin transire = to pass across + Greek ischein = to hold back + Latin attack = sudden onset",
     aliases: [
       "transient ischemic attack",
       "transient ischemic attacks",
@@ -40736,7 +41083,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "carotid-stenosis",
     name: "Carotid Stenosis",
-    etymology: "Greek karos = deep sleep (carotid = artery to brain) + Greek stenosis = narrowing",
+    etymology:
+      "Greek karos = deep sleep (carotid = artery to brain) + Greek stenosis = narrowing",
     aliases: [
       "carotid stenosis",
       "carotid artery stenosis",
@@ -40881,7 +41229,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "diabetic-neuropathy",
     name: "Diabetic Neuropathy",
-    etymology: "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek neuron = nerve + pathos = suffering",
+    etymology:
+      "Greek diabainein = pass through + Latin mellitus = honey-sweet + Greek neuron = nerve + pathos = suffering",
     aliases: [
       "diabetic neuropathy",
       "diabetic neuropathies",
@@ -40953,7 +41302,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "lacunar-stroke",
     name: "Lacunar Stroke",
-    etymology: "Latin lacuna = small pit/pool + stroke = sudden vascular insult",
+    etymology:
+      "Latin lacuna = small pit/pool + stroke = sudden vascular insult",
     aliases: [
       "lacunar stroke",
       "lacunar strokes",
@@ -40983,7 +41333,12 @@ export const CONDITIONS: ConditionEntry[] = [
       "MRI DWI positive for acute lacune",
       "Hypertension and diabetes as major risk factors",
     ],
-    keyLabs: ["Noncontrast head CT", "MRI brain with DWI", "Blood pressure, glucose, lipids", "ECG (exclude cardioembolic large-vessel stroke)"],
+    keyLabs: [
+      "Noncontrast head CT",
+      "MRI brain with DWI",
+      "Blood pressure, glucose, lipids",
+      "ECG (exclude cardioembolic large-vessel stroke)",
+    ],
     associations: [
       "Hypertension (most important risk factor)",
       "Diabetes mellitus",
@@ -41021,7 +41376,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "diabetes-insipidus",
     name: "Diabetes Insipidus",
-    etymology: "Greek diabetes = siphon/pass through + Latin insipidus = tasteless (urine lacks glucose sweetness of diabetes mellitus)",
+    etymology:
+      "Greek diabetes = siphon/pass through + Latin insipidus = tasteless (urine lacks glucose sweetness of diabetes mellitus)",
     aliases: [
       "diabetes insipidus",
       "di",
@@ -41080,7 +41436,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "epilepsy",
     name: "Epilepsy",
-    etymology: "Greek epilēpsia = seizure (epi = upon + lambanein = to take hold)",
+    etymology:
+      "Greek epilēpsia = seizure (epi = upon + lambanein = to take hold)",
     aliases: [
       "epilepsy",
       "epilepsies",
@@ -41162,7 +41519,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "status-epilepticus",
     name: "Status Epilepticus",
-    etymology: "Latin status = standing/continuing + Greek epilēpsia = seizure + -icus = pertaining to",
+    etymology:
+      "Latin status = standing/continuing + Greek epilēpsia = seizure + -icus = pertaining to",
     aliases: [
       "status epilepticus",
       "status epilepticuses",
@@ -41237,7 +41595,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "carpal-tunnel-syndrome",
     name: "Carpal Tunnel Syndrome",
-    etymology: "Greek karpos = wrist + Latin tunnel = passage + Greek syndromos = running together",
+    etymology:
+      "Greek karpos = wrist + Latin tunnel = passage + Greek syndromos = running together",
     aliases: [
       "carpal tunnel syndrome",
       "carpal tunnel syndromes",
@@ -41302,7 +41661,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "fabry-disease",
     name: "Fabry Disease",
-    etymology: "Johannes Fabry + Moritz Anderson (German dermatologists) + Latin morbus = disease",
+    etymology:
+      "Johannes Fabry + Moritz Anderson (German dermatologists) + Latin morbus = disease",
     aliases: [
       "fabry disease",
       "fabry's disease",
@@ -41378,7 +41738,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "guillain-barre-syndrome",
     name: "Guillain-Barré Syndrome",
-    etymology: "French neurologists Georges Guillain and Jean Alexandre Barré + syndrome = running together",
+    etymology:
+      "French neurologists Georges Guillain and Jean Alexandre Barré + syndrome = running together",
     aliases: [
       "guillain barre syndrome",
       "guillain-barre syndrome",
@@ -41471,7 +41832,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "tay-sachs-disease",
     name: "Tay-Sachs Disease",
-    etymology: "eponym: Warren Tay (British ophthalmologist) + Bernard Sachs (American neurologist) + English disease = disorder",
+    etymology:
+      "eponym: Warren Tay (British ophthalmologist) + Bernard Sachs (American neurologist) + English disease = disorder",
     aliases: [
       "tay-sachs disease",
       "tay sachs disease",
@@ -41548,7 +41910,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "gaucher-disease",
     name: "Gaucher Disease",
-    etymology: "eponym: Philippe Gaucher (French physician) + English disease = disorder",
+    etymology:
+      "eponym: Philippe Gaucher (French physician) + English disease = disorder",
     aliases: [
       "gaucher disease",
       "gauchers disease",
@@ -41884,7 +42247,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "scurvy",
     name: "Scurvy",
-    etymology: "Low German or Dutch scorbuk/scheurbuik = sore belly (historical term for the disease)",
+    etymology:
+      "Low German or Dutch scorbuk/scheurbuik = sore belly (historical term for the disease)",
     aliases: [
       "scurvy",
       "scorbutus",
@@ -41953,12 +42317,13 @@ export const CONDITIONS: ConditionEntry[] = [
       "vs rickets — both nutritional; rickets = bone mineralization (vitamin D), scurvy = collagen (vitamin C)",
     ],
     pediatrics:
-      "Infantile scurvy (Barlow disease) in 6–12 months on heat-treated milk without vitamin C — irritability, tenderness, \"frog-leg\" positioning from bone pain, and subperiosteal hemorrhages on X-ray; responds rapidly to ascorbate.",
+      'Infantile scurvy (Barlow disease) in 6–12 months on heat-treated milk without vitamin C — irritability, tenderness, "frog-leg" positioning from bone pain, and subperiosteal hemorrhages on X-ray; responds rapidly to ascorbate.',
   },
   {
     id: "mccune-albright-syndrome",
     name: "McCune-Albright Syndrome",
-    etymology: "Named for Donovan McCune and Fuller Albright (1937) + Greek syn = together + dromos = running course",
+    etymology:
+      "Named for Donovan McCune and Fuller Albright (1937) + Greek syn = together + dromos = running course",
     aliases: [
       "mccune-albright syndrome",
       "mccune albright syndrome",
@@ -41974,13 +42339,13 @@ export const CONDITIONS: ConditionEntry[] = [
       "Early embryonic GNAS (Gαs) activating mutation → mosaic distribution of constitutively active Gαs in affected tissues → unregulated adenylyl cyclase → ↑ cAMP → PKA-driven autonomous hormone secretion and abnormal bone remodeling; not inherited (somatic mosaicism, not germline).",
     classicPresentation: [
       "Young girl with vaginal bleeding or breast development before age 8 (peripheral precocious puberty)",
-      "Irregular café-au-lait macules with jagged \"coast of Maine\" borders",
+      'Irregular café-au-lait macules with jagged "coast of Maine" borders',
       "Bone pain, deformity, or pathologic fracture from polyostotic fibrous dysplasia (often femur, skull, ribs)",
       "May also have hyperthyroidism, GH excess (gigantism/acromegaly), or Cushing syndrome from autonomous endocrine tissue",
       "Asymmetric involvement reflects mosaicism",
     ],
     keyFindings: [
-      "Café-au-lait spots — large, irregular borders (vs smooth \"coast of California\" in NF1)",
+      'Café-au-lait spots — large, irregular borders (vs smooth "coast of California" in NF1)',
       "Polyostotic fibrous dysplasia on X-ray — ground-glass bone lesions, shepherd's crook deformity of femur",
       "Peripheral precocious puberty — elevated estradiol with suppressed LH/FSH",
       "No neurofibromas, Lisch nodules, or axillary freckling (distinguishes NF1)",
@@ -42022,7 +42387,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "GNAS activating mutation → constitutive Gαs → ↑ cAMP → autonomous signaling (links to cholera/McCune boards thread)",
       "Triad: café-au-lait + fibrous dysplasia + precocious puberty",
       "Peripheral precocious puberty — ↑ estradiol, ↓ LH/FSH (GnRH-independent)",
-      "Café-au-lait borders irregular \"coast of Maine\" — vs NF1 smooth \"coast of California\"",
+      'Café-au-lait borders irregular "coast of Maine" — vs NF1 smooth "coast of California"',
       "Mosaic post-zygotic — not familial; mutation in affected tissue may not appear in blood",
       "Aromatase inhibitors for estrogen-driven precocious puberty — not GnRH agonists (those treat central CPP)",
     ],
@@ -42192,7 +42557,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "delayed-puberty",
     name: "Delayed Puberty",
-    etymology: "Latin de = away + Latin tardus = slow + Latin pubertas = sexual maturity",
+    etymology:
+      "Latin de = away + Latin tardus = slow + Latin pubertas = sexual maturity",
     aliases: [
       "delayed puberty",
       "delayed puberties",
@@ -42280,7 +42646,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "cbavd",
     name: "Congenital Bilateral Absence of the Vas Deferens",
-    etymology: "Latin congenitus = born with + Latin bilateralis = two-sided + Latin absentia = being away + vas = vessel/duct + deferens = carrying away",
+    etymology:
+      "Latin congenitus = born with + Latin bilateralis = two-sided + Latin absentia = being away + vas = vessel/duct + deferens = carrying away",
     aliases: [
       "cbavd",
       "congenital bilateral absence of vas deferens",
@@ -42360,7 +42727,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "obstructive-azoospermia",
     name: "Obstructive Azoospermia",
-    etymology: "Latin obstructio = blockage + Greek a- = absent + zoon = animal (sperm) + sperma = seed",
+    etymology:
+      "Latin obstructio = blockage + Greek a- = absent + zoon = animal (sperm) + sperma = seed",
     aliases: [
       "obstructive azoospermia",
       "obstructive azoospermias",
@@ -42602,7 +42970,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "oligospermia",
     name: "Oligospermia",
-    etymology: "Greek oligos = few/scanty + zoon = animal (sperm) + sperma = seed",
+    etymology:
+      "Greek oligos = few/scanty + zoon = animal (sperm) + sperma = seed",
     aliases: [
       "oligospermia",
       "oligospermic",
@@ -43661,7 +44030,8 @@ export const CONDITIONS: ConditionEntry[] = [
   {
     id: "anencephaly",
     name: "Anencephaly",
-    etymology: "Greek an- = without + enkephalos = brain — open cranial neural tube defect with absent cerebral hemispheres",
+    etymology:
+      "Greek an- = without + enkephalos = brain — open cranial neural tube defect with absent cerebral hemispheres",
     aliases: [
       "anencephaly",
       "anencephalies",

@@ -11472,6 +11472,85 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Children with narcolepsy may show cataplexy as facial drooping, tongue protrusion, or knee buckling during play or laughter — often misdiagnosed as seizures or behavioral problems.",
   },
   {
+    id: "hypnagogic",
+    name: "Hypnagogic",
+    etymology: "Greek hypnos = sleep + agogos = leading (leading into sleep)",
+    aliases: [
+      "hypnagogic",
+      "hypnagogic state",
+      "hypnagogic states",
+      "sleep onset transition",
+      "transition to sleep",
+      "falling asleep transition",
+    ],
+    definition:
+      "Relating to or occurring during the transitional state from wakefulness to sleep at sleep onset — the boundary where consciousness fades and sleep phenomena may intrude.",
+    mechanism:
+      "Descending arousal from wakefulness allows partial intrusion of NREM/REM sleep processes (dream imagery, motor atonia pathways) before full sleep is established; unstable sleep-wake borders in narcolepsy amplify hypnagogic phenomena.",
+    thinkOf: [
+      "Narcolepsy — hypnagogic hallucinations and sleep paralysis at sleep onset",
+      "Sleep deprivation or irregular sleep schedule",
+      "Jet lag or shift work disrupting sleep architecture",
+      "Benign isolated hypnagogic experiences in healthy individuals",
+      "Contrast hypnopompic — same phenomena upon awakening, not at sleep onset",
+    ],
+    pairWith: [
+      "Hypnagogic hallucinations + sleep paralysis + EDS → narcolepsy type 1",
+      "Hypnagogic phenomena after sleep loss → usually benign if isolated",
+      "Hypnagogic (sleep onset) vs hypnopompic (awakening) — timing distinguishes the terms",
+      "Myoclonic jerks (hypnic jerks) at sleep onset — normal, not hallucinatory",
+    ],
+    distinguishFrom: [
+      "Hypnopompic — occurs upon awakening from sleep, not while falling asleep",
+      "Dream — occurs during established sleep, not at the wake-sleep transition",
+      "Delirium — fluctuating consciousness and inattention while awake, not sleep-onset transition",
+      "Psychotic hallucinations — occur during full wakefulness without sleep-transition context",
+    ],
+    pediatrics:
+      "Adolescents with recurrent hypnagogic hallucinations or sleep paralysis plus daytime sleepiness warrant evaluation for narcolepsy; isolated hypnic jerks at sleep onset are common and benign in children.",
+  },
+  {
+    id: "hypnagogic-hallucinations",
+    name: "Hypnagogic Hallucinations",
+    etymology: "Greek hypnos = sleep + agogos = leading + Latin hallucinari = wander in mind",
+    aliases: [
+      "hypnagogic hallucination",
+      "hypnagogic hallucinations",
+      "sleep-onset hallucination",
+      "sleep-onset hallucinations",
+      "hypnagogic imagery",
+      "vivid hallucinations at sleep onset",
+      "hallucinations while falling asleep",
+    ],
+    definition:
+      "Vivid, often multisensory (visual, auditory, or tactile) perceptual experiences occurring while falling asleep — experienced as real but without an external stimulus.",
+    mechanism:
+      "REM-sleep dream imagery and perceptual networks intrude into wakefulness at the sleep-onset transition; in narcolepsy, orexin/hypocretin neuron loss destabilizes REM-wake borders so hallucinations cluster with sleep paralysis and cataplexy.",
+    thinkOf: [
+      "Narcolepsy type 1 — hypnagogic hallucinations with cataplexy and EDS",
+      "Sleep paralysis at sleep onset — often co-occurs",
+      "Sleep deprivation, jet lag, or irregular sleep",
+      "Isolated benign episodes in otherwise healthy individuals",
+      "Schizophrenia — auditory hallucinations while fully awake (different timing and context)",
+    ],
+    pairWith: [
+      "Hypnagogic hallucinations + cataplexy + EDS → narcolepsy type 1",
+      "Hypnagogic hallucinations + sleep paralysis → narcolepsy spectrum",
+      "Hypnagogic (falling asleep) vs hypnopompic (waking up) hallucinations — same mechanism, different timing",
+      "Isolated episodes after sleep deprivation → benign if no other narcolepsy features",
+    ],
+    distinguishFrom: [
+      "Hypnopompic hallucinations — occur upon awakening, not at sleep onset",
+      "Nightmares — occur during established REM sleep with recall on awakening mid/late night",
+      "Psychotic hallucinations — occur during full wakefulness; often auditory in schizophrenia",
+      "Charles Bonnet syndrome — visual hallucinations in visually impaired elderly while awake",
+      "Formication — tactile crawling sensation; often toxicologic or withdrawal-related while awake",
+      "Sleep paralysis — motor inability without necessarily vivid perceptual content",
+    ],
+    pediatrics:
+      "Recurrent hypnagogic hallucinations with daytime sleepiness or emotion-triggered weakness in adolescents should prompt narcolepsy evaluation; isolated vivid imagery at sleep onset after sleep loss can be normal.",
+  },
+  {
     id: "sleep-paralysis",
     name: "Sleep Paralysis",
     etymology: "Old English slæp = sleep + Latin paralysis = loss of movement",

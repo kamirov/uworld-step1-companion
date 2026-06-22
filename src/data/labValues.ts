@@ -72,12 +72,9 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "mcv",
     name: "MCV",
     etymology: "MCV = mean corpuscular volume",
-    aliases: [
-      "mcv",
-      "mean corpuscular volume",
-      "mean cell volume",
-    ],
-    measures: "Average volume of red blood cells; classifies anemia morphology.",
+    aliases: ["mcv", "mean corpuscular volume", "mean cell volume"],
+    measures:
+      "Average volume of red blood cells; classifies anemia morphology.",
     normalRange: "~80–100 fL",
     increasedCauses: [
       "Macrocytic anemia: B12 or folate deficiency",
@@ -150,7 +147,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Panel quantifying red blood cells (RBC count, hemoglobin, hematocrit, MCV, RDW), white blood cells (total WBC and differential), and platelets — first-line test for anemia, infection, cytopenias, and polycythemia.",
-    normalRange: "Component-specific: Hgb ~13.5–17.5 (M)/12–15.5 (F) g/dL; WBC ~4.5–11k/µL; platelets ~150–400k/µL (age-dependent in pediatrics)",
+    normalRange:
+      "Component-specific: Hgb ~13.5–17.5 (M)/12–15.5 (F) g/dL; WBC ~4.5–11k/µL; platelets ~150–400k/µL (age-dependent in pediatrics)",
     increasedCauses: [
       "Leukocytosis — bacterial infection, leukemia, steroids, stress demargination",
       "Polycythemia — polycythemia vera, chronic hypoxia, dehydration (relative ↑ Hct)",
@@ -209,7 +207,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "peripheral-blood-smear",
     name: "Peripheral Blood Smear",
-    etymology: "Latin peripheria = outer boundary + Greek haima = blood + Old English smeoru = grease/film (spread thin)",
+    etymology:
+      "Latin peripheria = outer boundary + Greek haima = blood + Old English smeoru = grease/film (spread thin)",
     aliases: [
       "peripheral blood smear",
       "peripheral blood smears",
@@ -329,7 +328,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     name: "Sodium",
     etymology: "English soda + -ium element suffix",
     aliases: ["sodium", "serum sodium", "na+"],
-    measures: "Primary extracellular cation; reflects water balance more than total body Na⁺.",
+    measures:
+      "Primary extracellular cation; reflects water balance more than total body Na⁺.",
     normalRange: "~136–145 mEq/L",
     increasedCauses: [
       "Hypertonic fluid loss (diabetes insipidus, osmotic diuresis)",
@@ -358,7 +358,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     name: "Potassium",
     etymology: "English potash + -ium element suffix",
     aliases: ["potassium", "serum potassium", "k+"],
-    measures: "Primary intracellular cation; critical for membrane potential and arrhythmia risk.",
+    measures:
+      "Primary intracellular cation; critical for membrane potential and arrhythmia risk.",
     normalRange: "~3.5–5.0 mEq/L",
     increasedCauses: [
       "Renal failure",
@@ -481,7 +482,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ph",
     name: "pH",
-    etymology: "p = German Potenz (power/potential) + H = hydrogen ion — logarithmic measure of acidity",
+    etymology:
+      "p = German Potenz (power/potential) + H = hydrogen ion — logarithmic measure of acidity",
     aliases: [
       "ph",
       "p h",
@@ -499,7 +501,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Negative logarithm of hydrogen ion activity in blood — integrated index of acid-base status reflecting balance of metabolic (HCO₃⁻) and respiratory (PaCO₂) components per the Henderson-Hasselbalch equation.",
-    normalRange: "Arterial pH ~7.35–7.45; venous pH ~0.03–0.05 lower than arterial",
+    normalRange:
+      "Arterial pH ~7.35–7.45; venous pH ~0.03–0.05 lower than arterial",
     increasedCauses: [
       "Metabolic alkalosis — vomiting, diuretics, hyperaldosteronism (↑ HCO₃⁻)",
       "Respiratory alkalosis — hyperventilation, anxiety, PE, high altitude (↓ PaCO₂)",
@@ -534,8 +537,14 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "bun",
     name: "BUN",
     etymology: "BUN = blood urea nitrogen",
-    aliases: ["bun", "blood urea nitrogen", "urea nitrogen", "serum urea nitrogen"],
-    measures: "Nitrogen component of urea; marker of nitrogen waste and renal function.",
+    aliases: [
+      "bun",
+      "blood urea nitrogen",
+      "urea nitrogen",
+      "serum urea nitrogen",
+    ],
+    measures:
+      "Nitrogen component of urea; marker of nitrogen waste and renal function.",
     normalRange: "~7–20 mg/dL",
     increasedCauses: [
       "Prerenal azotemia (hypovolemia, heart failure)",
@@ -620,7 +629,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "fasting-glucose",
     name: "Fasting Glucose",
-    etymology: "Old English fæst = firm/abstaining from food + Greek gleukos = sweet wine/sugar",
+    etymology:
+      "Old English fæst = firm/abstaining from food + Greek gleukos = sweet wine/sugar",
     aliases: [
       "fasting glucose",
       "fasting blood glucose",
@@ -630,7 +640,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Serum or plasma glucose after ≥8 hours without caloric intake; primary screening and diagnostic test for diabetes mellitus.",
-    normalRange: "<100 mg/dL normal; 100–125 mg/dL impaired fasting glucose (prediabetes); ≥126 mg/dL diabetes (confirm on repeat or with other criteria)",
+    normalRange:
+      "<100 mg/dL normal; 100–125 mg/dL impaired fasting glucose (prediabetes); ≥126 mg/dL diabetes (confirm on repeat or with other criteria)",
     increasedCauses: [
       "Diabetes mellitus (type 1 or type 2)",
       "Stress hyperglycemia (infection, MI, corticosteroids)",
@@ -661,12 +672,9 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "albumin",
     name: "Serum Albumin",
-    etymology: "Latin serum = watery fluid + Latin albus = white + -in protein suffix",
-    aliases: [
-      "serum albumin",
-      "serum albumin concentration",
-      "albumin",
-    ],
+    etymology:
+      "Latin serum = watery fluid + Latin albus = white + -in protein suffix",
+    aliases: ["serum albumin", "serum albumin concentration", "albumin"],
     measures:
       "Major plasma protein maintaining oncotic pressure; binds calcium and many drugs.",
     normalRange: "~3.5–5.5 g/dL",
@@ -693,7 +701,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     name: "AST",
     etymology: "AST = aspartate aminotransferase",
     aliases: ["ast", "aspartate aminotransferase", "sgot"],
-    measures: "Enzyme in liver and muscle; released with hepatocellular or muscle injury.",
+    measures:
+      "Enzyme in liver and muscle; released with hepatocellular or muscle injury.",
     normalRange: "~10–40 U/L",
     increasedCauses: [
       "Viral hepatitis",
@@ -702,7 +711,9 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Rhabdomyolysis / MI (also in muscle)",
       "Toxic liver injury (acetaminophen)",
     ],
-    decreasedCauses: ["Severe end-stage liver disease (rarely clinically noted)"],
+    decreasedCauses: [
+      "Severe end-stage liver disease (rarely clinically noted)",
+    ],
     boardsPearls: [
       "AST:ALT >2:1 suggests alcoholic hepatitis",
       "Very high transaminases (>1000) → ischemic hepatitis, acute viral hepatitis, toxin",
@@ -789,7 +800,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "uric-acid",
     name: "Serum Uric Acid",
-    etymology: "Latin serum = watery fluid + Greek ouron = urine + -ic = relating to + Latin acidus = sour",
+    etymology:
+      "Latin serum = watery fluid + Greek ouron = urine + -ic = relating to + Latin acidus = sour",
     aliases: [
       "serum uric acid",
       "serum uric acid concentration",
@@ -873,7 +885,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     name: "INR",
     etymology: "INR = international normalized ratio",
     aliases: ["inr", "international normalized ratio", "pt/inr"],
-    measures: "Standardized prothrombin time; extrinsic coagulation pathway activity.",
+    measures:
+      "Standardized prothrombin time; extrinsic coagulation pathway activity.",
     normalRange: "~0.8–1.2 (not on warfarin)",
     increasedCauses: [
       "Warfarin therapy",
@@ -920,7 +933,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Laboratory panel detecting myocardial injury — historically CK and CK-MB; current standard centers on cardiac troponin I or T with optional CK-MB; used with ECG and clinical context to diagnose acute coronary syndromes.",
-    normalRange: "Troponin assay-dependent (often undetectable at baseline); CK/CK-MB sex and muscle-mass dependent",
+    normalRange:
+      "Troponin assay-dependent (often undetectable at baseline); CK/CK-MB sex and muscle-mass dependent",
     increasedCauses: [
       "Acute myocardial infarction (type 1) — plaque rupture with thrombosis",
       "Demand ischemia (type 2 MI) — tachycardia, anemia, sepsis, hypotension",
@@ -976,7 +990,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "d-dimer",
     name: "D-Dimer",
-    etymology: "D = fibrin D-domain fragment + dimer = two identical subunits cross-linked",
+    etymology:
+      "D = fibrin D-domain fragment + dimer = two identical subunits cross-linked",
     aliases: [
       "d-dimer",
       "d dimer",
@@ -1079,7 +1094,15 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "tsh",
     name: "TSH",
     etymology: "TSH = thyroid-stimulating hormone",
-    aliases: ["tsh", "thyroid stimulating hormone", "thyrotropin", "thyrotropins", "thyroid-stimulating hormone", "thyroid stimulating hormone", "tsh hormone"],
+    aliases: [
+      "tsh",
+      "thyroid stimulating hormone",
+      "thyrotropin",
+      "thyrotropins",
+      "thyroid-stimulating hormone",
+      "thyroid stimulating hormone",
+      "tsh hormone",
+    ],
     measures: "Pituitary hormone regulating thyroid hormone production.",
     normalRange: "~0.4–4.0 mIU/L",
     increasedCauses: [
@@ -1113,10 +1136,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Inflammation / infection / liver disease (acute-phase reactant)",
       "Hemophagocytic lymphohistiocytosis",
     ],
-    decreasedCauses: [
-      "Iron deficiency anemia",
-      "Chronic blood loss",
-    ],
+    decreasedCauses: ["Iron deficiency anemia", "Chronic blood loss"],
     boardsPearls: [
       "Low ferritin is specific for iron deficiency",
       "Normal/high ferritin does not exclude iron deficiency if inflammatory state",
@@ -1202,7 +1222,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "pleural-fluid",
     name: "Pleural Fluid Analysis",
-    etymology: "Greek pleura = side/rib + fluid = liquid + analysis = breaking apart for study",
+    etymology:
+      "Greek pleura = side/rib + fluid = liquid + analysis = breaking apart for study",
     aliases: [
       "pleural fluid",
       "pleural fluid analysis",
@@ -1211,7 +1232,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Fluid collected by thoracentesis from the pleural space; analyzed to classify effusion as transudate or exudate and identify infection, malignancy, or other cause.",
-    normalRange: "Normally only a small volume (~0.1–0.2 mL/kg) lubricates pleura; any clinically significant collection is pathologic",
+    normalRange:
+      "Normally only a small volume (~0.1–0.2 mL/kg) lubricates pleura; any clinically significant collection is pathologic",
     increasedCauses: [
       "Transudate: CHF, cirrhosis, nephrotic syndrome, hypoalbuminemia, peritoneal dialysis",
       "Exudate: parapneumonic effusion/empyema, malignancy, pulmonary embolism, TB, pancreatitis, rheumatologic disease",
@@ -1265,7 +1287,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "calcium",
     name: "Serum Calcium",
-    etymology: "Latin serum = watery fluid + Latin calx = lime + -ium element suffix",
+    etymology:
+      "Latin serum = watery fluid + Latin calx = lime + -ium element suffix",
     aliases: [
       "calcium",
       "serum calcium",
@@ -1316,7 +1339,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Major circulating lipid stored in adipose tissue and VLDL; energy reserve and pancreatitis risk marker when severely elevated.",
-    normalRange: "Fasting <150 mg/dL (desirable); 150–199 borderline; ≥500 very high",
+    normalRange:
+      "Fasting <150 mg/dL (desirable); 150–199 borderline; ≥500 very high",
     increasedCauses: [
       "Familial hypertriglyceridemia",
       "Uncontrolled diabetes, obesity, metabolic syndrome",
@@ -1353,7 +1377,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Glucocorticoid from adrenal cortex; regulates glucose, stress response, and immune function. Diurnal variation — highest in early morning.",
-    normalRange: "Morning serum ~5–25 µg/dL (assay-dependent); must interpret with timing and ACTH",
+    normalRange:
+      "Morning serum ~5–25 µg/dL (assay-dependent); must interpret with timing and ACTH",
     increasedCauses: [
       "Cushing syndrome (endogenous or exogenous steroids)",
       "Stress, illness, pregnancy",
@@ -1401,7 +1426,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Total free (unbound) cortisol excreted in urine over 24 hours — integrates cortisol production and avoids single time-point diurnal sampling issues; primary screening test for hypercortisolism.",
-    normalRange: "Typically <45–100 µg/24 h (assay- and lab-specific); interpret with collection completeness",
+    normalRange:
+      "Typically <45–100 µg/24 h (assay- and lab-specific); interpret with collection completeness",
     increasedCauses: [
       "Cushing syndrome — ACTH-dependent (pituitary, ectopic) or ACTH-independent (adrenal adenoma/carcinoma)",
       "Exogenous glucocorticoid use",
@@ -1430,7 +1456,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "acth",
     name: "ACTH",
-    etymology: "ACTH = adrenocorticotropic hormone; Latin ad = toward + cortex = bark + Greek tropos = turning",
+    etymology:
+      "ACTH = adrenocorticotropic hormone; Latin ad = toward + cortex = bark + Greek tropos = turning",
     aliases: [
       "acth",
       "adrenocorticotropic hormone",
@@ -1441,7 +1468,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Anterior pituitary peptide that stimulates adrenal cortisol and androgen synthesis; key for distinguishing ACTH-dependent vs ACTH-independent hypercortisolism.",
-    normalRange: "Morning plasma ~10–60 pg/mL (assay-dependent); interpret with cortisol and dexamethasone suppression",
+    normalRange:
+      "Morning plasma ~10–60 pg/mL (assay-dependent); interpret with cortisol and dexamethasone suppression",
     increasedCauses: [
       "Cushing disease (pituitary ACTH adenoma)",
       "Ectopic ACTH secretion (e.g. small cell lung cancer)",
@@ -1469,14 +1497,11 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "aldosterone",
     name: "Aldosterone",
     etymology: "Latin ald(o)- = aldehyde + sterol = steroid hormone",
-    aliases: [
-      "aldosterone",
-      "serum aldosterone",
-      "plasma aldosterone",
-    ],
+    aliases: ["aldosterone", "serum aldosterone", "plasma aldosterone"],
     measures:
       "Mineralocorticoid from adrenal zona glomerulosa that promotes distal nephron Na⁺ reabsorption and K⁺/H⁺ secretion.",
-    normalRange: "Supine/upright and salt intake affect levels; interpret with renin and volume status",
+    normalRange:
+      "Supine/upright and salt intake affect levels; interpret with renin and volume status",
     increasedCauses: [
       "Primary hyperaldosteronism (Conn syndrome, adrenal adenoma/hyperplasia)",
       "Secondary hyperaldosteronism (renin-driven: renal artery stenosis, diuretics, heart failure)",
@@ -1512,7 +1537,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Protease released by juxtaglomerular cells that cleaves angiotensinogen to angiotensin I, initiating RAAS.",
-    normalRange: "Highly sensitive to posture, salt intake, and diuretics; interpret with aldosterone",
+    normalRange:
+      "Highly sensitive to posture, salt intake, and diuretics; interpret with aldosterone",
     increasedCauses: [
       "Renal artery stenosis",
       "Diuretic use, volume depletion, heart failure",
@@ -1539,7 +1565,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "creatine-kinase",
     name: "Creatine Kinase",
-    etymology: "Greek kreas = flesh + -ine substance suffix + Greek kinein = move + -ase enzyme suffix",
+    etymology:
+      "Greek kreas = flesh + -ine substance suffix + Greek kinein = move + -ase enzyme suffix",
     aliases: [
       "creatine kinase",
       "ck",
@@ -1670,7 +1697,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Anterior pituitary gonadotropin that stimulates ovarian follicle development and spermatogenesis; central to puberty and fertility evaluation.",
-    normalRange: "Cyclic in women; ~1–12 mIU/mL (follicular, lab-dependent); postmenopausal ↑",
+    normalRange:
+      "Cyclic in women; ~1–12 mIU/mL (follicular, lab-dependent); postmenopausal ↑",
     increasedCauses: [
       "Primary gonadal failure (Turner syndrome, premature ovarian insufficiency, Klinefelter)",
       "Menopause",
@@ -1696,12 +1724,9 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "lh",
     name: "Luteinizing Hormone",
-    etymology: "Latin luteus = yellow + -izing = causing + Greek hormaein = set in motion/excite",
-    aliases: [
-      "luteinizing hormone",
-      "lh",
-      "serum lh",
-    ],
+    etymology:
+      "Latin luteus = yellow + -izing = causing + Greek hormaein = set in motion/excite",
+    aliases: ["luteinizing hormone", "lh", "serum lh"],
     measures:
       "Anterior pituitary gonadotropin that triggers ovulation (LH surge) and stimulates Leydig cells to produce testosterone.",
     normalRange: "Cyclic in women; midcycle surge; postmenopausal ↑",
@@ -1729,7 +1754,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "gh-arginine-stimulation",
     name: "Growth Hormone Arginine Stimulation Test",
-    etymology: "growth = size increase + hormone = signal + arginine = amino acid stimulus + test = assay",
+    etymology:
+      "growth = size increase + hormone = signal + arginine = amino acid stimulus + test = assay",
     aliases: [
       "growth hormone-arginine stimulation",
       "growth hormone arginine stimulation",
@@ -1739,7 +1765,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Provocative test measuring peak growth hormone response after IV arginine infusion; used to diagnose growth hormone deficiency when basal GH is insufficient.",
-    normalRange: "Peak GH ≥10 ng/mL (assay-dependent) generally excludes GHD in adults; pediatric cutoffs vary by age",
+    normalRange:
+      "Peak GH ≥10 ng/mL (assay-dependent) generally excludes GHD in adults; pediatric cutoffs vary by age",
     increasedCauses: [
       "Normal robust response in healthy children",
       "Acromegaly (elevated baseline and blunted suppression on glucose test instead)",
@@ -1763,12 +1790,9 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "iron",
     name: "Serum Iron",
-    etymology: "Latin serum = watery fluid + Old English iren + Latin ferrum = iron",
-    aliases: [
-      "iron",
-      "serum iron",
-      "fe",
-    ],
+    etymology:
+      "Latin serum = watery fluid + Old English iren + Latin ferrum = iron",
+    aliases: ["iron", "serum iron", "fe"],
     measures:
       "Circulating iron bound mainly to transferrin; reflects recent iron intake and availability (diurnal variation — draw fasting AM).",
     normalRange: "~60–170 µg/dL (M), 40–160 (F)",
@@ -1797,18 +1821,13 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "folate",
     name: "Folate",
-    etymology: "Latin folium = leaf + -ate = chemical anion (abundant in leafy greens)",
-    aliases: [
-      "folate",
-      "folates",
-      "folic acid",
-      "folacin",
-      "vitamin b9",
-      "b9",
-    ],
+    etymology:
+      "Latin folium = leaf + -ate = chemical anion (abundant in leafy greens)",
+    aliases: ["folate", "folates", "folic acid", "folacin", "vitamin b9", "b9"],
     measures:
       "Serum or red blood cell folate reflecting one-carbon metabolism cofactor stores; essential for purine and thymidine synthesis in DNA replication.",
-    normalRange: "Serum folate ~>3 ng/mL; RBC folate ~>140 ng/mL packed cells (lab-specific)",
+    normalRange:
+      "Serum folate ~>3 ng/mL; RBC folate ~>140 ng/mL packed cells (lab-specific)",
     increasedCauses: [
       "Recent folic acid supplementation",
       "Vitamin B12 deficiency (functional folate trapping in methyl form — may show normal/high serum folate with macrocytic anemia)",
@@ -1837,7 +1856,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "vitamin-b12",
     name: "Vitamin B12",
-    etymology: "vitamin = vital amine + B = second B-complex vitamin + 12 = cobalamin group identifier",
+    etymology:
+      "vitamin = vital amine + B = second B-complex vitamin + 12 = cobalamin group identifier",
     aliases: [
       "vitamin b12",
       "vitamin b 12",
@@ -1853,7 +1873,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Serum vitamin B12 (cobalamin) — cofactor for methionine synthase and methylmalonyl-CoA mutase; required for DNA synthesis and myelin integrity.",
-    normalRange: "Serum B12 ~200–900 pg/mL (lab-specific); functional deficiency may occur at low-normal levels",
+    normalRange:
+      "Serum B12 ~200–900 pg/mL (lab-specific); functional deficiency may occur at low-normal levels",
     increasedCauses: [
       "Recent B12 injection or supplementation",
       "Myeloproliferative disorders (rare)",
@@ -1896,7 +1917,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Serum or urine methylmalonic acid (MMA) — downstream metabolite that accumulates when vitamin B12–dependent methylmalonyl-CoA mutase activity is impaired.",
-    normalRange: "Serum MMA typically <0.4 µmol/L (lab-specific); elevated in functional B12 deficiency",
+    normalRange:
+      "Serum MMA typically <0.4 µmol/L (lab-specific); elevated in functional B12 deficiency",
     increasedCauses: [
       "Vitamin B12 deficiency — impaired methylmalonyl-CoA mutase (B12-specific marker)",
       "Low-normal serum B12 with tissue deficiency",
@@ -1923,7 +1945,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "erythrocyte-transketolase",
     name: "Erythrocyte Transketolase",
-    etymology: "Greek erythros = red + kytos = cell + trans = across + ketos = ketone + -olase = enzyme",
+    etymology:
+      "Greek erythros = red + kytos = cell + trans = across + ketos = ketone + -olase = enzyme",
     aliases: [
       "erythrocyte transketolase",
       "erythrocyte transketolase activity",
@@ -1935,7 +1958,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Red blood cell transketolase enzyme activity (often reported as activity coefficient with/without thiamine pyrophosphate stimulation) — functional assay for thiamine (vitamin B1) status in the pentose phosphate pathway.",
-    normalRange: "Activity coefficient <1.15 after TPP stimulation suggests adequate thiamine (lab-specific)",
+    normalRange:
+      "Activity coefficient <1.15 after TPP stimulation suggests adequate thiamine (lab-specific)",
     increasedCauses: [
       "Thiamine repletion — enzyme activity normalizes after supplementation",
       "Not typically reported as 'high'; assay focuses on deficiency detection",
@@ -1963,7 +1987,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "erythrocyte-glucose-6-phosphate-dehydrogenase",
     name: "Erythrocyte Glucose-6-Phosphate Dehydrogenase",
-    etymology: "Greek erythros = red + kytos = cell + glucose + phosphate + de- = remove + hydrogen + -ase = enzyme",
+    etymology:
+      "Greek erythros = red + kytos = cell + glucose + phosphate + de- = remove + hydrogen + -ase = enzyme",
     aliases: [
       "erythrocyte glucose-6-phosphate dehydrogenase",
       "erythrocyte glucose 6 phosphate dehydrogenase",
@@ -1977,7 +2002,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Red blood cell G6PD enzyme activity (quantitative assay or qualitative screening) — rate-limiting enzyme of the pentose phosphate pathway producing NADPH for glutathione reduction and oxidative protection of hemoglobin.",
-    normalRange: "Activity typically >60% of normal (lab-specific); males <10% diagnostic of deficiency",
+    normalRange:
+      "Activity typically >60% of normal (lab-specific); males <10% diagnostic of deficiency",
     increasedCauses: [
       "Reticulocytosis — young RBCs have higher G6PD activity (may mask deficiency in acute hemolysis)",
       "Not a clinically emphasized finding",
@@ -2004,7 +2030,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "zinc",
     name: "Zinc",
-    etymology: "German Zink = spike/prong (crystalline appearance) + chemical element",
+    etymology:
+      "German Zink = spike/prong (crystalline appearance) + chemical element",
     aliases: [
       "zinc",
       "serum zinc",
@@ -2015,7 +2042,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Serum/plasma zinc reflecting trace mineral status — cofactor for hundreds of enzymes (DNA polymerase, alcohol dehydrogenase, carbonic anhydrase, superoxide dismutase) and structural role in zinc-finger transcription factors.",
-    normalRange: "Serum zinc ~70–120 µg/dL (lab-specific); acute-phase response lowers levels",
+    normalRange:
+      "Serum zinc ~70–120 µg/dL (lab-specific); acute-phase response lowers levels",
     increasedCauses: [
       "Recent zinc supplementation",
       "Hemolysis (release from RBCs)",
@@ -2043,12 +2071,9 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "tibc",
     name: "Total Iron Binding Capacity",
-    etymology: "Latin totus = whole + Old English iren + Latin ferrum = iron + binding = attaching + Latin capacitas = holding ability",
-    aliases: [
-      "total iron binding capacity",
-      "tibc",
-      "iron binding capacity",
-    ],
+    etymology:
+      "Latin totus = whole + Old English iren + Latin ferrum = iron + binding = attaching + Latin capacitas = holding ability",
+    aliases: ["total iron binding capacity", "tibc", "iron binding capacity"],
     measures:
       "Indirect measure of transferrin capacity to bind iron; reflects transferrin concentration in blood.",
     normalRange: "~250–450 µg/dL",
@@ -2076,11 +2101,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "transferrin",
     name: "Transferrin",
     etymology: "Latin transferre = carry across + -in protein suffix",
-    aliases: [
-      "transferrin",
-      "serum transferrin",
-      "transferrin saturation",
-    ],
+    aliases: ["transferrin", "serum transferrin", "transferrin saturation"],
     measures:
       "Plasma glycoprotein that transports iron from gut and macrophages to bone marrow; TIBC approximates transferrin iron-binding capacity.",
     normalRange: "~200–360 mg/dL; saturation 20–50%",
@@ -2117,7 +2138,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Concentration of solute particles per kg solvent; serum ~275–295 mOsm/kg reflects sodium, glucose, and BUN. Urine osmolality assesses concentrating ability.",
-    normalRange: "Serum ~275–295 mOsm/kg; urine varies 50–1200 mOsm/kg with hydration/ADH",
+    normalRange:
+      "Serum ~275–295 mOsm/kg; urine varies 50–1200 mOsm/kg with hydration/ADH",
     increasedCauses: [
       "Hypernatremia (water deficit)",
       "Hyperglycemia (unmeasured osmoles)",
@@ -2182,7 +2204,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "trabecular-bone-density",
     name: "Trabecular Bone Density",
-    etymology: "Latin trabecula = small beam + bone + Latin densitas = thickness/compression",
+    etymology:
+      "Latin trabecula = small beam + bone + Latin densitas = thickness/compression",
     aliases: [
       "trabecular bone density",
       "trabecular bone densities",
@@ -2284,15 +2307,11 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "prolactin",
     name: "Prolactin",
     etymology: "Latin pro = forward + lac = milk + -in protein suffix",
-    aliases: [
-      "prolactin",
-      "hprl",
-      "hp rl",
-      "serum prolactin",
-    ],
+    aliases: ["prolactin", "hprl", "hp rl", "serum prolactin"],
     measures:
       "Anterior pituitary hormone promoting lactation; inhibits GnRH → hypogonadism when elevated.",
-    normalRange: "~2–25 ng/mL (nonpregnant; lab-dependent); physiologically ↑ in pregnancy and postpartum",
+    normalRange:
+      "~2–25 ng/mL (nonpregnant; lab-dependent); physiologically ↑ in pregnancy and postpartum",
     increasedCauses: [
       "Prolactinoma (micro- or macro-)",
       "Dopamine antagonists (antipsychotics, metoclopramide)",
@@ -2356,7 +2375,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "iodine-uptake",
     name: "Radioactive Iodine Uptake",
-    etymology: "radius = ray + active = emitting + Greek iodes = violet-colored + uptake = taking up",
+    etymology:
+      "radius = ray + active = emitting + Greek iodes = violet-colored + uptake = taking up",
     aliases: [
       "iodine",
       "radioactive iodine uptake",
@@ -2392,7 +2412,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "thyroxine",
     name: "Thyroxine (T4)",
-    etymology: "Greek thyreos = shield/thyroid + oxygen + -ine = hormone suffix + T4 = four iodine atoms",
+    etymology:
+      "Greek thyreos = shield/thyroid + oxygen + -ine = hormone suffix + T4 = four iodine atoms",
     aliases: [
       "thyroxine",
       "t4",
@@ -2429,7 +2450,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "triiodothyronine",
     name: "Triiodothyronine (T3)",
-    etymology: "tri- = three + iodo = iodine + thyronine = thyroid amino-acid hormone + T3 = three iodine atoms",
+    etymology:
+      "tri- = three + iodo = iodine + thyronine = thyroid amino-acid hormone + T3 = three iodine atoms",
     aliases: [
       "triiodothyronine",
       "t3",
@@ -2478,7 +2500,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Antibody classes (IgG, IgM, IgA, IgE, IgD) produced by B cells; measured quantitatively or as fractions on serum protein electrophoresis.",
-    normalRange: "IgG ~700–1600, IgA ~70–400, IgM ~40–230 mg/dL (lab-dependent)",
+    normalRange:
+      "IgG ~700–1600, IgA ~70–400, IgM ~40–230 mg/dL (lab-dependent)",
     increasedCauses: [
       "Infection (especially IgM acute, IgG convalescent)",
       "Autoimmune disease, chronic inflammation",
@@ -2506,12 +2529,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "iga",
     name: "IgA",
     etymology: "IgA = immunoglobulin A",
-    aliases: [
-      "iga",
-      "immunoglobulin a",
-      "immunoglobulin a (iga)",
-      "serum iga",
-    ],
+    aliases: ["iga", "immunoglobulin a", "immunoglobulin a (iga)", "serum iga"],
     measures:
       "Predominant immunoglobulin in mucosal secretions (tears, saliva, breast milk, GI/genitourinary mucosa); dimer with secretory component in secretions.",
     normalRange: "Serum IgA ~70–400 mg/dL",
@@ -2550,7 +2568,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Immunoglobulin involved in type I hypersensitivity and defense against helminths; bound to mast cells and basophils via FcεRI.",
-    normalRange: "Serum IgE ~0–100 IU/mL (lab-dependent); markedly higher in atopy",
+    normalRange:
+      "Serum IgE ~0–100 IU/mL (lab-dependent); markedly higher in atopy",
     increasedCauses: [
       "Atopic disease: asthma, allergic rhinitis, eczema",
       "Parasitic (helminth) infection",
@@ -2578,12 +2597,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "igg",
     name: "IgG",
     etymology: "IgG = immunoglobulin G",
-    aliases: [
-      "igg",
-      "immunoglobulin g",
-      "immunoglobulin g (igg)",
-      "serum igg",
-    ],
+    aliases: ["igg", "immunoglobulin g", "immunoglobulin g (igg)", "serum igg"],
     measures:
       "Most abundant serum immunoglobulin; major opsonin and the only class that crosses the placenta (maternal-fetal immunity).",
     normalRange: "Serum IgG ~700–1600 mg/dL",
@@ -2616,12 +2630,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "igm",
     name: "IgM",
     etymology: "IgM = immunoglobulin M",
-    aliases: [
-      "igm",
-      "immunoglobulin m",
-      "immunoglobulin m (igm)",
-      "serum igm",
-    ],
+    aliases: ["igm", "immunoglobulin m", "immunoglobulin m (igm)", "serum igm"],
     measures:
       "Pentameric immunoglobulin; first antibody produced in primary immune response. Best at complement activation (classic pathway). Too large to cross placenta.",
     normalRange: "Serum IgM ~40–230 mg/dL",
@@ -2689,7 +2698,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hba1c",
     name: "Hemoglobin A1c",
-    etymology: "Greek haima = blood + Latin globus = sphere + -in = protein + A1c = glycated hemoglobin fraction",
+    etymology:
+      "Greek haima = blood + Latin globus = sphere + -in = protein + A1c = glycated hemoglobin fraction",
     aliases: [
       "hemoglobin a1c",
       "hemoglobin a₁c",
@@ -2702,7 +2712,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Fraction of hemoglobin nonenzymatically glycated; reflects average blood glucose over ~120 days (weighted toward recent weeks).",
-    normalRange: "<5.7% normal; 5.7–6.4% prediabetes; ≥6.5% diagnostic for diabetes (ADA criteria)",
+    normalRange:
+      "<5.7% normal; 5.7–6.4% prediabetes; ≥6.5% diagnostic for diabetes (ADA criteria)",
     increasedCauses: [
       "Diabetes mellitus (poor glycemic control)",
       "Iron deficiency (falsely ↑ A1c — fewer young RBCs)",
@@ -2728,7 +2739,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hemoglobin-a2",
     name: "Hemoglobin A2",
-    etymology: "Greek haima = blood + Latin globus = sphere + -in = protein + A2 = alpha2-delta2 variant",
+    etymology:
+      "Greek haima = blood + Latin globus = sphere + -in = protein + A2 = alpha2-delta2 variant",
     aliases: [
       "hemoglobin a2",
       "hemoglobin a₂",
@@ -2763,7 +2775,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hemoglobin-s",
     name: "Hemoglobin S",
-    etymology: "Greek haima = blood + Latin globus = sphere + -in = protein + S = sickle variant",
+    etymology:
+      "Greek haima = blood + Latin globus = sphere + -in = protein + S = sickle variant",
     aliases: [
       "hemoglobin s",
       "hbs",
@@ -2780,9 +2793,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Sickle β-thalassemia (HbS with variable HbA and HbF)",
       "Double heterozygote states with other β-globin variants",
     ],
-    decreasedCauses: [
-      "Normal hemoglobin (no HbS allele)",
-    ],
+    decreasedCauses: ["Normal hemoglobin (no HbS allele)"],
     boardsPearls: [
       "HbS results from β6 Glu→Val substitution",
       "HbSS = sickle cell disease; HbAS = sickle cell trait (usually asymptomatic)",
@@ -2799,7 +2810,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "reticulocyte",
     name: "Reticulocyte Count",
-    etymology: "Latin reticulum = little net + Greek kytos = cell + count = measured number",
+    etymology:
+      "Latin reticulum = little net + Greek kytos = cell + count = measured number",
     aliases: [
       "reticulocyte",
       "reticulocytes",
@@ -2837,11 +2849,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "pt",
     name: "Prothrombin Time",
     etymology: "pro- = before + thrombin = clotting enzyme + measured duration",
-    aliases: [
-      "pt",
-      "prothrombin time",
-      "protime",
-    ],
+    aliases: ["pt", "prothrombin time", "protime"],
     measures:
       "Coagulation test of the extrinsic pathway and common pathway (factors VII, X, V, II, fibrinogen); reported as seconds or INR.",
     normalRange: "~11–13.5 seconds; INR 0.8–1.2 (not anticoagulated)",
@@ -2852,9 +2860,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "DIC (consumption)",
       "Factor VII deficiency",
     ],
-    decreasedCauses: [
-      "Rare; not clinically emphasized",
-    ],
+    decreasedCauses: ["Rare; not clinically emphasized"],
     boardsPearls: [
       "PT/INR monitors warfarin — target usually 2–3 for most indications",
       "Vitamin K–dependent factors: II, VII, IX, X, protein C & S",
@@ -2870,7 +2876,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ptt",
     name: "Partial Thromboplastin Time",
-    etymology: "Latin pars = part + Greek thrombos = clot + plastos = molded + measured duration",
+    etymology:
+      "Latin pars = part + Greek thrombos = clot + plastos = molded + measured duration",
     aliases: [
       "ptt",
       "partial thromboplastin time",
@@ -2888,9 +2895,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Lupus anticoagulant (prolongs PTT in vitro — paradoxically thrombotic)",
       "Liver disease, DIC, vitamin K deficiency (less than PT)",
     ],
-    decreasedCauses: [
-      "Acute phase / factor VIII elevation (rare)",
-    ],
+    decreasedCauses: ["Acute phase / factor VIII elevation (rare)"],
     boardsPearls: [
       "Reflects intrinsic pathway function — factors VIII, IX, XI, XII are proximal to the common pathway",
       "Mixing study: PTT corrects if deficiency, does not correct if inhibitor (lupus anticoagulant, factor inhibitor)",
@@ -2906,7 +2911,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "mixing-study",
     name: "Mixing Study",
-    etymology: "Latin miscere = to mix + Old English studu = diligent inquiry/examination",
+    etymology:
+      "Latin miscere = to mix + Old English studu = diligent inquiry/examination",
     aliases: [
       "mixing study",
       "mixing studies",
@@ -2988,10 +2994,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "mchc",
     name: "MCHC",
     etymology: "MCHC = mean corpuscular hemoglobin concentration",
-    aliases: [
-      "mchc",
-      "mean corpuscular hemoglobin concentration",
-    ],
+    aliases: ["mchc", "mean corpuscular hemoglobin concentration"],
     measures:
       "Average concentration of hemoglobin per unit volume of red cells; reflects RBC hypochromia.",
     normalRange: "~32–36 g/dL",
@@ -3035,9 +3038,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Vitamin C excess (metabolized to oxalate)",
       "High oxalate diet (spinach, rhubarb, nuts)",
     ],
-    decreasedCauses: [
-      "Not clinically emphasized",
-    ],
+    decreasedCauses: ["Not clinically emphasized"],
     boardsPearls: [
       "Calcium oxalate stones — envelope-shaped crystals on urinalysis",
       "Ethylene glycol toxicity: anion gap acidosis + calcium oxalate crystals + ↑ osm gap",
@@ -3066,7 +3067,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Excessive calcium excretion in urine (typically on 24-h collection) — major risk factor for calcium-containing kidney stones and nephrocalcinosis.",
-    normalRange: "Often defined as urine Ca >200–300 mg/24 h or >4 mg/kg/day (lab/protocol-dependent)",
+    normalRange:
+      "Often defined as urine Ca >200–300 mg/24 h or >4 mg/kg/day (lab/protocol-dependent)",
     increasedCauses: [
       "Idiopathic hypercalciuria (most common in stone formers)",
       "Primary hyperparathyroidism",
@@ -3115,7 +3117,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Excessive uric acid excretion in urine — promotes uric acid stone formation and can increase calcium oxalate stone risk via urate nidus.",
-    normalRange: "Urine uric acid typically ~250–750 mg/24 h (lab-dependent); values >600–800 mg/24 h often considered elevated",
+    normalRange:
+      "Urine uric acid typically ~250–750 mg/24 h (lab-dependent); values >600–800 mg/24 h often considered elevated",
     increasedCauses: [
       "High dietary purine intake (red meat, shellfish, organ meats)",
       "Myeloproliferative disorders and high cell turnover",
@@ -3165,7 +3168,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Steroid intermediate proximal to 21-hydroxylase and 11β-hydroxylase in adrenal cortex — accumulates when 21-hydroxylase is deficient; primary newborn screen analyte for congenital adrenal hyperplasia.",
-    normalRange: "Age- and sex-dependent; neonatal screening cutoffs assay-specific (elevated in classic 21-hydroxylase CAH)",
+    normalRange:
+      "Age- and sex-dependent; neonatal screening cutoffs assay-specific (elevated in classic 21-hydroxylase CAH)",
     increasedCauses: [
       "21-hydroxylase–deficient congenital adrenal hyperplasia (classic and nonclassic)",
       "11β-hydroxylase deficiency (also ↑ deoxycorticosterone, hypertension)",
@@ -3196,7 +3200,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "17-hydroxycorticosteroids",
     name: "17-Hydroxycorticosteroids",
-    etymology: "17 = steroid carbon position + hydroxy = OH group + cortex = adrenal bark + steroid = sterol-like compound",
+    etymology:
+      "17 = steroid carbon position + hydroxy = OH group + cortex = adrenal bark + steroid = sterol-like compound",
     aliases: [
       "17-hydroxycorticosteroids",
       "17 hydroxycorticosteroids",
@@ -3207,7 +3212,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Urinary metabolites of cortisol and cortisone (17-hydroxy group); historical marker of glucocorticoid production and adrenal cortex activity.",
-    normalRange: "~2–8 mg/24 h (lab-dependent; largely superseded by direct cortisol assays)",
+    normalRange:
+      "~2–8 mg/24 h (lab-dependent; largely superseded by direct cortisol assays)",
     increasedCauses: [
       "Cushing syndrome (endogenous or exogenous steroids)",
       "Stress, pregnancy",
@@ -3232,7 +3238,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "17-ketosteroids",
     name: "17-Ketosteroids",
-    etymology: "17 = steroid carbon position + keto = carbonyl group + steroid = sterol-like compound",
+    etymology:
+      "17 = steroid carbon position + keto = carbonyl group + steroid = sterol-like compound",
     aliases: [
       "17-ketosteroids",
       "17 ketosteroids",
@@ -3267,14 +3274,13 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "bmi",
     name: "Body Mass Index",
-    etymology: "body = whole organism + Greek massa = lump + Latin indicare = point out",
-    aliases: [
-      "bmi",
-      "body mass index",
-    ],
+    etymology:
+      "body = whole organism + Greek massa = lump + Latin indicare = point out",
+    aliases: ["bmi", "body mass index"],
     measures:
       "Weight (kg) / height (m)²; screening measure for underweight, overweight, and obesity.",
-    normalRange: "18.5–24.9 normal; 25–29.9 overweight; ≥30 obese; <18.5 underweight",
+    normalRange:
+      "18.5–24.9 normal; 25–29.9 overweight; ≥30 obese; <18.5 underweight",
     increasedCauses: [
       "Obesity (caloric excess, sedentary lifestyle)",
       "Endocrine: hypothyroidism, Cushing syndrome",
@@ -3319,7 +3325,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Fasting (or nonfasting per guidelines) blood panel of total cholesterol, LDL cholesterol, HDL cholesterol, and triglycerides — screens for atherosclerotic cardiovascular disease risk and guides statin therapy.",
-    normalRange: "LDL optimal <100 mg/dL (<70 high-risk); HDL >40 (M)/>50 (F) mg/dL; TG <150 mg/dL; total cholesterol <200 mg/dL desirable (interpret components)",
+    normalRange:
+      "LDL optimal <100 mg/dL (<70 high-risk); HDL >40 (M)/>50 (F) mg/dL; TG <150 mg/dL; total cholesterol <200 mg/dL desirable (interpret components)",
     increasedCauses: [
       "Primary dyslipidemia — familial hypercholesterolemia, familial combined hyperlipidemia, hypertriglyceridemia",
       "Secondary: hypothyroidism, nephrotic syndrome, diabetes, obesity, cholestasis, alcohol excess (TG)",
@@ -3347,7 +3354,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "cholesterol",
     name: "Total Cholesterol",
-    etymology: "Latin totus = whole + Greek chole = bile + stereos = solid + -ol alcohol suffix",
+    etymology:
+      "Latin totus = whole + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "cholesterol",
       "total cholesterol",
@@ -3357,7 +3365,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Sum of cholesterol carried in all lipoproteins (LDL, HDL, VLDL); screening component of the fasting lipid panel.",
-    normalRange: "Desirable <200 mg/dL; 200–239 borderline; ≥240 high (with LDL/HDL context)",
+    normalRange:
+      "Desirable <200 mg/dL; 200–239 borderline; ≥240 high (with LDL/HDL context)",
     increasedCauses: [
       "Primary hyperlipidemia (familial, polygenic)",
       "Hypothyroidism",
@@ -3385,7 +3394,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ldl",
     name: "LDL Cholesterol",
-    etymology: "LDL = low-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
+    etymology:
+      "LDL = low-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "ldl",
       "ldl cholesterol",
@@ -3399,7 +3409,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Cholesterol in low-density lipoprotein particles; primary atherogenic lipoprotein driving foam cell formation and plaque.",
-    normalRange: "Optimal <100 mg/dL; <70 mg/dL for high ASCVD risk (guideline-dependent)",
+    normalRange:
+      "Optimal <100 mg/dL; <70 mg/dL for high ASCVD risk (guideline-dependent)",
     increasedCauses: [
       "Familial hypercholesterolemia (LDLR, ApoB, PCSK9 mutations)",
       "Diet, obesity, sedentary lifestyle",
@@ -3426,7 +3437,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hdl",
     name: "HDL Cholesterol",
-    etymology: "HDL = high-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
+    etymology:
+      "HDL = high-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "hdl",
       "hdl cholesterol",
@@ -3439,7 +3451,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Cholesterol in high-density lipoprotein particles; participates in reverse cholesterol transport from periphery to liver.",
-    normalRange: "≥60 mg/dL protective; <40 mg/dL (M) or <50 (F) = low HDL risk factor",
+    normalRange:
+      "≥60 mg/dL protective; <40 mg/dL (M) or <50 (F) = low HDL risk factor",
     increasedCauses: [
       "Regular aerobic exercise",
       "Moderate alcohol intake (not a treatment recommendation)",
@@ -3562,7 +3575,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "vldl",
     name: "VLDL Cholesterol",
-    etymology: "VLDL = very-low-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
+    etymology:
+      "VLDL = very-low-density lipoprotein + Greek chole = bile + stereos = solid + -ol alcohol suffix",
     aliases: [
       "vldl",
       "vldl cholesterol",
@@ -3619,7 +3633,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Rate at which erythrocytes settle in anticoagulated blood over one hour (Westergren) — indirect marker of acute-phase reactants (especially fibrinogen) that promote RBC rouleaux formation.",
-    normalRange: "~0–15 mm/h (M), 0–20 mm/h (F) — increases with age and female sex (lab-dependent)",
+    normalRange:
+      "~0–15 mm/h (M), 0–20 mm/h (F) — increases with age and female sex (lab-dependent)",
     increasedCauses: [
       "Inflammation and infection (bacterial, viral, autoimmune)",
       "Temporal arteritis and polymyalgia rheumatica (often markedly elevated)",
@@ -3655,7 +3670,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "c-reactive-protein",
     name: "C-Reactive Protein",
-    etymology: "C = pneumococcal C-polysaccharide reactive + Greek proteios = primary + -in protein suffix",
+    etymology:
+      "C = pneumococcal C-polysaccharide reactive + Greek proteios = primary + -in protein suffix",
     aliases: [
       "c-reactive protein",
       "c reactive protein",
@@ -3668,7 +3684,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Acute-phase reactant synthesized by the liver (mainly IL-6 driven) that rises rapidly with inflammation, infection, and tissue injury — opsonizes pathogens and activates complement.",
-    normalRange: "<10 mg/L for general inflammation marker (lab-dependent); hs-CRP <1 mg/L low CV risk, 1–3 intermediate, >3 mg/L high CV risk",
+    normalRange:
+      "<10 mg/L for general inflammation marker (lab-dependent); hs-CRP <1 mg/L low CV risk, 1–3 intermediate, >3 mg/L high CV risk",
     increasedCauses: [
       "Bacterial infection, sepsis",
       "Autoimmune inflammatory arthritis (RA, lupus flare)",
@@ -3699,7 +3716,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "rheumatoid-factor",
     name: "Rheumatoid Factor",
-    etymology: "Greek rheuma = flow + -oid = resembling + Latin facere = do/make; causal agent",
+    etymology:
+      "Greek rheuma = flow + -oid = resembling + Latin facere = do/make; causal agent",
     aliases: [
       "rheumatoid factor",
       "rf",
@@ -3709,7 +3727,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Autoantibody (classically IgM) directed against the Fc portion of IgG — detected by agglutination or immunoassay; associated with rheumatoid arthritis but not specific.",
-    normalRange: "Negative by laboratory cutoff (often <14–20 IU/mL, assay-dependent)",
+    normalRange:
+      "Negative by laboratory cutoff (often <14–20 IU/mL, assay-dependent)",
     increasedCauses: [
       "Rheumatoid arthritis (~70–80% of cases)",
       "Sjögren syndrome",
@@ -3741,7 +3760,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "anti-ccp",
     name: "Anti-CCP (ACPA)",
-    etymology: "anti-CCP = antibody against cyclic citrullinated peptide + ACPA = anti-citrullinated protein antibody",
+    etymology:
+      "anti-CCP = antibody against cyclic citrullinated peptide + ACPA = anti-citrullinated protein antibody",
     aliases: [
       "anti-ccp",
       "anti ccp",
@@ -3767,7 +3787,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "IgG autoantibodies against citrullinated peptides (anti-citrullinated protein antibodies, ACPA) — highly associated with rheumatoid arthritis; citrullination is post-translational modification of arginine residues in proteins (e.g., filaggrin, vimentin).",
-    normalRange: "Negative by laboratory cutoff (typically <20 U/mL, assay-dependent)",
+    normalRange:
+      "Negative by laboratory cutoff (typically <20 U/mL, assay-dependent)",
     increasedCauses: [
       "Rheumatoid arthritis (high specificity ~95%)",
       "May precede clinical RA by years (predictive in at-risk patients)",
@@ -3797,7 +3818,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "ana",
     name: "Antinuclear Antibodies",
-    etymology: "anti- = against + nuclear = cell nucleus + anti- = against + body = immune protein",
+    etymology:
+      "anti- = against + nuclear = cell nucleus + anti- = against + body = immune protein",
     aliases: [
       "antinuclear antibodies",
       "antinuclear antibody",
@@ -3812,7 +3834,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Screening autoantibodies directed against nuclear antigens (DNA, histones, RNP, Sm, and other nuclear components), usually detected by indirect immunofluorescence on HEp-2 cells with reported pattern and titer.",
-    normalRange: "Negative at screening dilution (often ≥1:80 or 1:160 cutoff, lab-dependent)",
+    normalRange:
+      "Negative at screening dilution (often ≥1:80 or 1:160 cutoff, lab-dependent)",
     increasedCauses: [
       "Systemic lupus erythematosus (~95% sensitive)",
       "Drug-induced lupus (hydralazine, procainamide, isoniazid, minocycline, anti-TNF agents)",
@@ -3939,13 +3962,11 @@ export const LAB_VALUES: LabValueEntry[] = [
     id: "lactic-acidosis",
     name: "Lactic Acidosis",
     etymology: "Latin lac = milk + Latin acidus = sour + -osis = condition",
-    aliases: [
-      "lactic acidosis",
-      "lactate acidosis",
-    ],
+    aliases: ["lactic acidosis", "lactate acidosis"],
     measures:
       "Anion-gap metabolic acidosis from accumulation of lactate (L-lactate) when aerobic metabolism fails or lactate production exceeds clearance — reflects tissue hypoperfusion or impaired mitochondrial oxidation.",
-    normalRange: "Typically serum lactate >4–5 mmol/L with ↓ HCO₃⁻ and ↑ anion gap",
+    normalRange:
+      "Typically serum lactate >4–5 mmol/L with ↓ HCO₃⁻ and ↑ anion gap",
     increasedCauses: [
       "Type A (hypoxic/hypoperfusion): septic shock, cardiogenic shock, hypovolemia, severe anemia, CO poisoning, seizures, strenuous exercise",
       "Type B (non-hypoperfusion): metformin (especially with renal failure), liver failure, malignancy (Warburg effect), thiamine deficiency, linezolid, nucleoside reverse transcriptase inhibitors, mitochondrial disorders",
@@ -3975,7 +3996,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "carboxyhemoglobin",
     name: "Carboxyhemoglobin",
-    etymology: "Latin carbo = charcoal + Greek oxys = acid + Greek haima = blood + Latin globus = sphere",
+    etymology:
+      "Latin carbo = charcoal + Greek oxys = acid + Greek haima = blood + Latin globus = sphere",
     aliases: [
       "carboxyhemoglobin",
       "carboxyhemoglobins",
@@ -4082,7 +4104,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "alpha-fetoprotein",
     name: "Alpha-Fetoprotein",
-    etymology: "Greek alpha = first + Latin fetus = offspring + Greek pherein = to carry + -in = protein",
+    etymology:
+      "Greek alpha = first + Latin fetus = offspring + Greek pherein = to carry + -in = protein",
     aliases: [
       "alpha-fetoprotein",
       "alpha fetoprotein",
@@ -4133,8 +4156,15 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "anti-ro-ssa-lab",
     name: "Anti-Ro/SSA Antibody",
-    etymology: "anti- = against + Ro = original patient name + SSA = Sjögren syndrome antigen A",
-    aliases: ["anti-ro test", "anti ro test", "anti-ssa test", "anti ssa antibody", "anti-ro antibody"],
+    etymology:
+      "anti- = against + Ro = original patient name + SSA = Sjögren syndrome antigen A",
+    aliases: [
+      "anti-ro test",
+      "anti ro test",
+      "anti-ssa test",
+      "anti ssa antibody",
+      "anti-ro antibody",
+    ],
     measures:
       "Serum autoantibodies against Ro/SSA ribonucleoprotein antigens, used in Sjögren/SLE evaluation and pregnancy risk stratification.",
     normalRange: "Negative",
@@ -4144,7 +4174,9 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Subacute cutaneous lupus",
       "Neonatal lupus risk in fetus/newborn of antibody-positive mother",
     ],
-    decreasedCauses: ["Not applicable — negative test lowers likelihood but does not exclude Sjögren/SLE"],
+    decreasedCauses: [
+      "Not applicable — negative test lowers likelihood but does not exclude Sjögren/SLE",
+    ],
     boardsPearls: [
       "Anti-Ro/SSA + anti-La/SSB = classic Sjögren antibody pair",
       "Maternal anti-Ro/SSA can cause congenital heart block",
@@ -4158,13 +4190,26 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "anti-la-ssb-lab",
     name: "Anti-La/SSB Antibody",
-    etymology: "anti- = against + La = original patient name + SSB = Sjögren syndrome antigen B",
-    aliases: ["anti-la test", "anti la test", "anti-ssb test", "anti ssb antibody", "anti-la antibody"],
+    etymology:
+      "anti- = against + La = original patient name + SSB = Sjögren syndrome antigen B",
+    aliases: [
+      "anti-la test",
+      "anti la test",
+      "anti-ssb test",
+      "anti ssb antibody",
+      "anti-la antibody",
+    ],
     measures:
       "Serum autoantibodies against La/SSB ribonucleoprotein antigen, commonly paired with anti-Ro/SSA in Sjögren syndrome workup.",
     normalRange: "Negative",
-    increasedCauses: ["Sjögren syndrome", "SLE overlap", "Neonatal lupus risk when maternal antibodies present"],
-    decreasedCauses: ["Not applicable — negative test does not exclude Sjögren syndrome"],
+    increasedCauses: [
+      "Sjögren syndrome",
+      "SLE overlap",
+      "Neonatal lupus risk when maternal antibodies present",
+    ],
+    decreasedCauses: [
+      "Not applicable — negative test does not exclude Sjögren syndrome",
+    ],
     boardsPearls: [
       "Anti-La/SSB is more specific but less sensitive than anti-Ro/SSA for Sjögren",
       "Often appears with anti-Ro/SSA rather than alone",
@@ -4176,8 +4221,10 @@ export const LAB_VALUES: LabValueEntry[] = [
     name: "Serum Tryptase",
     etymology: "trypsin-like protease + -ase = enzyme",
     aliases: ["tryptase level", "serum tryptase", "tryptase"],
-    measures: "Mast cell granule protease level in serum; marker of mast cell activation or burden.",
-    normalRange: "Usually <11.4 ng/mL (assay-dependent); systemic mastocytosis minor criterion >20 ng/mL baseline",
+    measures:
+      "Mast cell granule protease level in serum; marker of mast cell activation or burden.",
+    normalRange:
+      "Usually <11.4 ng/mL (assay-dependent); systemic mastocytosis minor criterion >20 ng/mL baseline",
     increasedCauses: [
       "Anaphylaxis / mast cell activation",
       "Systemic mastocytosis",
@@ -4195,7 +4242,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "dihydrorhodamine-flow-cytometry",
     name: "Dihydrorhodamine Flow Cytometry",
-    etymology: "Greek di- = two + hydro = water/hydrogen + rhodon = rose + flow cytometry = cell measurement in flow",
+    etymology:
+      "Greek di- = two + hydro = water/hydrogen + rhodon = rose + flow cytometry = cell measurement in flow",
     aliases: [
       "dihydrorhodamine flow cytometry",
       "dihydrorhodamine test",
@@ -4230,8 +4278,15 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "tuberculin-skin-test",
     name: "Tuberculin Skin Test",
-    etymology: "tuberculin = tuberculosis-derived protein extract + skin test = dermal assay",
-    aliases: ["tuberculin", "tuberculin skin test", "ppd", "mantoux test", "purified protein derivative"],
+    etymology:
+      "tuberculin = tuberculosis-derived protein extract + skin test = dermal assay",
+    aliases: [
+      "tuberculin",
+      "tuberculin skin test",
+      "ppd",
+      "mantoux test",
+      "purified protein derivative",
+    ],
     measures:
       "Delayed-type (type IV) hypersensitivity induration 48-72 hours after intradermal purified protein derivative injection.",
     normalRange: "Negative if induration below risk-based cutoff",
@@ -4251,12 +4306,16 @@ export const LAB_VALUES: LabValueEntry[] = [
       "IGRA is more specific after BCG vaccination",
       "Positive screen does not distinguish latent from active TB",
     ],
-    pairWith: ["Positive PPD + normal CXR/no symptoms → latent TB", "Cough/night sweats/weight loss → evaluate active TB"],
+    pairWith: [
+      "Positive PPD + normal CXR/no symptoms → latent TB",
+      "Cough/night sweats/weight loss → evaluate active TB",
+    ],
   },
   {
     id: "fecal-occult-blood-test",
     name: "Fecal Occult Blood Test",
-    etymology: "Latin faex = dregs + occultus = hidden + Old English blod + Old English test = trial",
+    etymology:
+      "Latin faex = dregs + occultus = hidden + Old English blod + Old English test = trial",
     aliases: [
       "fecal occult blood test",
       "fecal occult blood",
@@ -4296,7 +4355,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "prostate-specific-antigen",
     name: "Prostate-Specific Antigen",
-    etymology: "Greek prostatēs = one standing before + Latin specificus = particular + antigen = antibody generator",
+    etymology:
+      "Greek prostatēs = one standing before + Latin specificus = particular + antigen = antibody generator",
     aliases: [
       "prostate-specific antigen",
       "prostate specific antigen",
@@ -4306,7 +4366,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Kallikrein-like serine protease produced mainly by prostatic epithelium; used to screen for prostate cancer and monitor recurrence.",
-    normalRange: "Age-dependent; commonly <4 ng/mL in many labs (interpret with DRE and trend)",
+    normalRange:
+      "Age-dependent; commonly <4 ng/mL in many labs (interpret with DRE and trend)",
     increasedCauses: [
       "Prostate adenocarcinoma",
       "Benign prostatic hyperplasia",
@@ -4341,7 +4402,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Microscopic or genomic arrangement of an individual's chromosomes used to detect aneuploidy, translocations, and large structural abnormalities.",
-    normalRange: "46,XX in females and 46,XY in males (modal chromosome complement)",
+    normalRange:
+      "46,XX in females and 46,XY in males (modal chromosome complement)",
     increasedCauses: [
       "Aneuploidy detected on analysis — trisomies, monosomies, sex chromosome disorders",
       "Structural chromosomal rearrangements — translocations, deletions, inversions",
@@ -4362,7 +4424,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "titer",
     name: "Titer",
-    etymology: "Latin titulus = title/label → titration = measured dilution endpoint",
+    etymology:
+      "Latin titulus = title/label → titration = measured dilution endpoint",
     aliases: [
       "titer",
       "titers",
@@ -4377,7 +4440,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Highest dilution of serum (or other specimen) at which a serologic test remains positive, reported as a reciprocal (e.g., 1:80, 1:640); higher titer generally reflects greater antibody concentration or avidity.",
-    normalRange: "Negative or below lab-specific cutoff dilution (test- and population-dependent)",
+    normalRange:
+      "Negative or below lab-specific cutoff dilution (test- and population-dependent)",
     increasedCauses: [
       "Active or recent infection with rising antibody response (e.g., ASO after streptococcal pharyngitis)",
       "Autoimmune disease with high-titer specific autoantibodies (e.g., anti-dsDNA in active SLE)",
@@ -4427,7 +4491,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Quantitative serologic titer of IgG (and early IgM) antibodies against streptolysin O — a hemolytic toxin of group A Streptococcus (GAS) — used as evidence of recent streptococcal pharyngitis when evaluating post-infectious sequelae.",
-    normalRange: "Below lab-specific cutoff (often <200 Todd units in adults; age-adjusted in children)",
+    normalRange:
+      "Below lab-specific cutoff (often <200 Todd units in adults; age-adjusted in children)",
     increasedCauses: [
       "Recent group A streptococcal pharyngitis (titers rise 1–3 weeks after infection, peak 3–5 weeks)",
       "Post-streptococcal glomerulonephritis following pharyngitis",
@@ -4458,7 +4523,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "urine-specific-gravity",
     name: "Urine Specific Gravity",
-    etymology: "Latin urina = urine + specificus = particular + Latin gravitas = weight",
+    etymology:
+      "Latin urina = urine + specificus = particular + Latin gravitas = weight",
     aliases: [
       "specific gravity",
       "urine specific gravity",
@@ -4469,7 +4535,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Ratio of urine density to water density, reflecting renal concentrating and diluting ability on urinalysis dipstick or refractometry.",
-    normalRange: "1.005–1.030 (isosthenuric ~1.010 when kidneys cannot concentrate or dilute)",
+    normalRange:
+      "1.005–1.030 (isosthenuric ~1.010 when kidneys cannot concentrate or dilute)",
     increasedCauses: [
       "Dehydration / low urine volume",
       "Diabetes mellitus (glucosuria increases osmoles)",
@@ -4513,7 +4580,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Standard urine evaluation combining dipstick chemistry (specific gravity, pH, protein, glucose, ketones, blood, bilirubin, urobilinogen, nitrite, leukocyte esterase) with microscopic examination of sediment (RBCs, WBCs, casts, crystals, bacteria).",
-    normalRange: "Negative protein/glucose/ketones/blood/nitrite/leukocyte esterase; few or no RBCs/WBCs; no casts (except occasional hyaline)",
+    normalRange:
+      "Negative protein/glucose/ketones/blood/nitrite/leukocyte esterase; few or no RBCs/WBCs; no casts (except occasional hyaline)",
     increasedCauses: [
       "Proteinuria — glomerular or tubular kidney disease",
       "Hematuria — glomerulonephritis (RBC casts), stones, UTI, malignancy",
@@ -4548,7 +4616,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "muddy-brown-casts",
     name: "Muddy Brown Casts",
-    etymology: "muddy = brownish granular appearance + brown = color + cast = molded urine sediment plug",
+    etymology:
+      "muddy = brownish granular appearance + brown = color + cast = molded urine sediment plug",
     aliases: [
       "muddy brown casts",
       "muddy brown cast",
@@ -4593,7 +4662,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hpf",
     name: "HPF (High Power Field)",
-    etymology: "high = magnification level + power = lens strength + field = microscope view area",
+    etymology:
+      "high = magnification level + power = lens strength + field = microscope view area",
     aliases: [
       "hpf",
       "hpfs",
@@ -4692,7 +4762,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "leukocyte-esterase",
     name: "Leukocyte Esterase",
-    etymology: "Greek leukos = white + kytos = cell + Latin aestas = vinegar/ester + -ase = enzyme",
+    etymology:
+      "Greek leukos = white + kytos = cell + Latin aestas = vinegar/ester + -ase = enzyme",
     aliases: [
       "leukocyte esterase",
       "leukocyte esterases",
@@ -4741,8 +4812,10 @@ export const LAB_VALUES: LabValueEntry[] = [
       "low calcium",
       "low serum calcium",
     ],
-    measures: "Abnormally low serum calcium impairing neuromuscular excitability, coagulation, and bone mineralization.",
-    normalRange: "Total Ca²⁺ below ~8.5 mg/dL (correct for albumin; check ionized Ca²⁺ if albumin abnormal)",
+    measures:
+      "Abnormally low serum calcium impairing neuromuscular excitability, coagulation, and bone mineralization.",
+    normalRange:
+      "Total Ca²⁺ below ~8.5 mg/dL (correct for albumin; check ionized Ca²⁺ if albumin abnormal)",
     increasedCauses: [
       "Hungry bone syndrome after parathyroidectomy (transient rapid uptake into bone)",
       "Acute pancreatitis (saponification — early)",
@@ -4772,14 +4845,16 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hypercalcemia",
     name: "Hypercalcemia",
-    etymology: "Greek hyper = excess + Latin calx = lime + -emia = blood condition",
+    etymology:
+      "Greek hyper = excess + Latin calx = lime + -emia = blood condition",
     aliases: [
       "hypercalcemia",
       "hypercalcaemia",
       "high calcium",
       "high serum calcium",
     ],
-    measures: "Abnormally elevated serum calcium causing polyuria, constipation, neuropsychiatric symptoms, and shortened QT interval.",
+    measures:
+      "Abnormally elevated serum calcium causing polyuria, constipation, neuropsychiatric symptoms, and shortened QT interval.",
     normalRange: "Total Ca²⁺ above ~10.5 mg/dL (or ionized above ~5.3 mg/dL)",
     increasedCauses: [
       "Primary hyperparathyroidism (most common outpatient cause)",
@@ -4862,14 +4937,16 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hyponatremia",
     name: "Hyponatremia",
-    etymology: "Greek hypo = low + English soda (sodium) + -emia = blood condition",
+    etymology:
+      "Greek hypo = low + English soda (sodium) + -emia = blood condition",
     aliases: [
       "hyponatremia",
       "hyponatraemia",
       "low sodium",
       "low serum sodium",
     ],
-    measures: "Serum Na⁺ below normal reflecting relative water excess or sodium loss; severity and chronicity guide correction rate.",
+    measures:
+      "Serum Na⁺ below normal reflecting relative water excess or sodium loss; severity and chronicity guide correction rate.",
     normalRange: "Na⁺ below ~136 mEq/L",
     increasedCauses: [
       "Not applicable — hyponatremia is by definition low sodium",
@@ -4898,14 +4975,16 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hypernatremia",
     name: "Hypernatremia",
-    etymology: "Greek hyper = excess + English soda (sodium) + -emia = blood condition",
+    etymology:
+      "Greek hyper = excess + English soda (sodium) + -emia = blood condition",
     aliases: [
       "hypernatremia",
       "hypernatraemia",
       "high sodium",
       "high serum sodium",
     ],
-    measures: "Serum Na⁺ above normal, almost always representing a free-water deficit relative to total body sodium.",
+    measures:
+      "Serum Na⁺ above normal, almost always representing a free-water deficit relative to total body sodium.",
     normalRange: "Na⁺ above ~145 mEq/L",
     increasedCauses: [
       "Diabetes insipidus (central or nephrogenic) — water loss without proportional Na loss",
@@ -4932,14 +5011,16 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hypokalemia",
     name: "Hypokalemia",
-    etymology: "Greek hypo = low + English potash (potassium) + -emia = blood condition",
+    etymology:
+      "Greek hypo = low + English potash (potassium) + -emia = blood condition",
     aliases: [
       "hypokalemia",
       "hypokalaemia",
       "low potassium",
       "low serum potassium",
     ],
-    measures: "Serum K⁺ below normal — increases risk of arrhythmia, muscle weakness, and metabolic alkalosis.",
+    measures:
+      "Serum K⁺ below normal — increases risk of arrhythmia, muscle weakness, and metabolic alkalosis.",
     normalRange: "K⁺ below ~3.5 mEq/L",
     increasedCauses: [
       "Not applicable — hypokalemia is by definition low potassium",
@@ -4968,7 +5049,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hypomagnesemia",
     name: "Hypomagnesemia",
-    etymology: "Greek hypo = low + Magnesia (region name) + -emia = blood condition",
+    etymology:
+      "Greek hypo = low + Magnesia (region name) + -emia = blood condition",
     aliases: [
       "hypomagnesemia",
       "hypomagnesaemia",
@@ -5013,14 +5095,16 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hyperkalemia",
     name: "Hyperkalemia",
-    etymology: "Greek hyper = excess + English potash (potassium) + -emia = blood condition",
+    etymology:
+      "Greek hyper = excess + English potash (potassium) + -emia = blood condition",
     aliases: [
       "hyperkalemia",
       "hyperkalaemia",
       "high potassium",
       "high serum potassium",
     ],
-    measures: "Serum K⁺ above normal — depolarizes cardiac myocytes and risks fatal arrhythmias.",
+    measures:
+      "Serum K⁺ above normal — depolarizes cardiac myocytes and risks fatal arrhythmias.",
     normalRange: "K⁺ above ~5.0 mEq/L",
     increasedCauses: [
       "Renal failure (decreased K⁺ excretion)",
@@ -5052,7 +5136,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "hyperglycemia",
     name: "Hyperglycemia",
-    etymology: "Greek hyper = excess + gleukos = sweet + -emia = blood condition",
+    etymology:
+      "Greek hyper = excess + gleukos = sweet + -emia = blood condition",
     aliases: [
       "hyperglycemia",
       "hyperglycaemia",
@@ -5063,7 +5148,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Abnormally elevated blood glucose from impaired insulin action or secretion, causing osmotic symptoms and acute metabolic complications when severe.",
-    normalRange: "Fasting <100 mg/dL; random <140 mg/dL in non-diabetic context (diagnostic thresholds vary)",
+    normalRange:
+      "Fasting <100 mg/dL; random <140 mg/dL in non-diabetic context (diagnostic thresholds vary)",
     increasedCauses: [
       "Diabetes mellitus (type 1 and type 2)",
       "Diabetic ketoacidosis and hyperosmolar hyperglycemic state",
@@ -5072,9 +5158,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Stress response (infection, MI, trauma)",
       "Total parenteral nutrition, refeeding",
     ],
-    decreasedCauses: [
-      "Not applicable — term describes elevated glucose state",
-    ],
+    decreasedCauses: ["Not applicable — term describes elevated glucose state"],
     boardsPearls: [
       "Fasting ≥126 mg/dL or random ≥200 with symptoms supports diabetes diagnosis",
       "DKA: hyperglycemia usually >250 mg/dL + ketones + anion gap acidosis",
@@ -5104,10 +5188,9 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Abnormally low blood glucose causing neuroglycopenic and autonomic symptoms; requires prompt correction to prevent seizures, coma, and brain injury.",
-    normalRange: "Generally <70 mg/dL warrants treatment in diabetics; symptomatic hypoglycemia is clinical emergency",
-    increasedCauses: [
-      "Not applicable — term describes low glucose state",
-    ],
+    normalRange:
+      "Generally <70 mg/dL warrants treatment in diabetics; symptomatic hypoglycemia is clinical emergency",
+    increasedCauses: ["Not applicable — term describes low glucose state"],
     decreasedCauses: [
       "Excess insulin (injection, pump, sulfonylureas)",
       "Insulinoma (Whipple triad)",
@@ -5135,7 +5218,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "anion-gap-metabolic-acidosis",
     name: "Anion Gap Metabolic Acidosis",
-    etymology: "Greek anion = upward-going ion + gap = difference + metabolic = body chemistry + acidosis = excess acid",
+    etymology:
+      "Greek anion = upward-going ion + gap = difference + metabolic = body chemistry + acidosis = excess acid",
     aliases: [
       "anion gap metabolic acidosis",
       "anion-gap metabolic acidosis",
@@ -5148,7 +5232,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Metabolic acidosis with elevated serum anion gap (Na⁺ − [Cl⁻ + HCO₃⁻]), indicating accumulation of unmeasured acids beyond chloride and bicarbonate.",
-    normalRange: "Anion gap ~8–12 mEq/L (lab-dependent); metabolic acidosis when pH low with ↓ HCO₃⁻ and AG above normal",
+    normalRange:
+      "Anion gap ~8–12 mEq/L (lab-dependent); metabolic acidosis when pH low with ↓ HCO₃⁻ and AG above normal",
     increasedCauses: [
       "MUDPILES: Methanol, Uremia, DKA, Propylene glycol, Isoniazid/Iron, Lactic acidosis, Ethylene glycol, Salicylates",
       "Ketoacidosis (alcoholic, starvation)",
@@ -5179,7 +5264,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "metabolic-alkalosis",
     name: "Metabolic Alkalosis",
-    etymology: "Greek meta = change + ballein = to throw + -osis = condition + alkalosis = base excess",
+    etymology:
+      "Greek meta = change + ballein = to throw + -osis = condition + alkalosis = base excess",
     aliases: [
       "metabolic alkalosis",
       "metabolic alkaloses",
@@ -5190,7 +5276,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Primary increase in serum bicarbonate (HCO₃⁻) with elevated arterial pH — net gain of base or loss of fixed acid (H⁺) from the body.",
-    normalRange: "pH >7.45 with ↑ HCO₃⁻ (typically >28 mEq/L); assess chloride and volume status to classify cause",
+    normalRange:
+      "pH >7.45 with ↑ HCO₃⁻ (typically >28 mEq/L); assess chloride and volume status to classify cause",
     increasedCauses: [
       "Vomiting or NG suction — loss of gastric H⁺ and Cl⁻",
       "Loop or thiazide diuretics — volume contraction + Cl⁻ loss + secondary hyperaldosteronism",
@@ -5233,7 +5320,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Primary decrease in serum bicarbonate (HCO₃⁻) with low arterial pH from accumulation of nonvolatile acid or loss of base — classified by anion gap as high-gap (unmeasured acids) or normal-gap (hyperchloremic).",
-    normalRange: "pH <7.35 with ↓ HCO₃⁻ (typically <22 mEq/L); calculate anion gap = Na⁺ − (Cl⁻ + HCO₃⁻)",
+    normalRange:
+      "pH <7.35 with ↓ HCO₃⁻ (typically <22 mEq/L); calculate anion gap = Na⁺ − (Cl⁻ + HCO₃⁻)",
     increasedCauses: [
       "High anion gap — MUDPILES: methanol, uremia, DKA, propylene glycol, INH/iron, lactic acidosis, ethylene glycol, salicylates",
       "Normal anion gap (hyperchloremic) — diarrhea, renal tubular acidosis, ureterosigmoidostomy, large-volume normal saline resuscitation",
@@ -5276,7 +5364,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Primary increase in arterial PaCO₂ from alveolar hypoventilation causing decreased arterial pH — renal compensation raises HCO₃⁻ over hours to days in chronic states.",
-    normalRange: "pH <7.35 with ↑ PaCO₂ (>45 mmHg); assess acute vs chronic by degree of HCO₃⁻ compensation",
+    normalRange:
+      "pH <7.35 with ↑ PaCO₂ (>45 mmHg); assess acute vs chronic by degree of HCO₃⁻ compensation",
     increasedCauses: [
       "COPD and severe asthma with CO₂ retention",
       "CNS depression — opioids, sedatives, stroke, sleep apnea",
@@ -5319,7 +5408,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Primary decrease in arterial PaCO₂ from alveolar hyperventilation causing increased arterial pH — acute renal compensation lowers HCO₃⁻ over hours to days.",
-    normalRange: "pH >7.45 with ↓ PaCO₂ (<35 mmHg); assess acute vs chronic by HCO₃⁻ change",
+    normalRange:
+      "pH >7.45 with ↓ PaCO₂ (<35 mmHg); assess acute vs chronic by HCO₃⁻ change",
     increasedCauses: [
       "Anxiety and panic hyperventilation",
       "Pain, fever, pregnancy (progesterone stimulates respiratory center)",
@@ -5352,7 +5442,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "microcytic-anemia",
     name: "Microcytic Anemia",
-    etymology: "Greek mikros = small + kytos = cell + an- = without + haima = blood",
+    etymology:
+      "Greek mikros = small + kytos = cell + an- = without + haima = blood",
     aliases: [
       "microcytic anemia",
       "microcytic anaemia",
@@ -5390,7 +5481,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "macrocytic-anemia",
     name: "Macrocytic Anemia",
-    etymology: "Greek makros = large + kytos = cell + an- = without + haima = blood",
+    etymology:
+      "Greek makros = large + kytos = cell + an- = without + haima = blood",
     aliases: [
       "macrocytic anemia",
       "macrocytic anaemia",
@@ -5429,7 +5521,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "normocytic-anemia",
     name: "Normocytic Anemia",
-    etymology: "Latin norma = rule/standard + kytos = cell + an- = without + haima = blood",
+    etymology:
+      "Latin norma = rule/standard + kytos = cell + an- = without + haima = blood",
     aliases: [
       "normocytic anemia",
       "normocytic anaemia",
@@ -5439,9 +5532,7 @@ export const LAB_VALUES: LabValueEntry[] = [
     measures:
       "Anemia with MCV within the normal range (~80–100 fL); reticulocyte count separates hemolytic/bleeding (marrow response) from hypoproliferative causes.",
     normalRange: "MCV 80–100 fL with low hemoglobin/hematocrit",
-    increasedCauses: [
-      "Not applicable — normocytic anemia is a classification",
-    ],
+    increasedCauses: ["Not applicable — normocytic anemia is a classification"],
     decreasedCauses: [
       "Acute blood loss (early, before microcytosis from iron depletion)",
       "Anemia of chronic disease / inflammation",
@@ -5467,7 +5558,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "fev1",
     name: "FEV₁",
-    etymology: "FEV = forced expiratory volume + subscript 1 = first second of expiration",
+    etymology:
+      "FEV = forced expiratory volume + subscript 1 = first second of expiration",
     aliases: [
       "fev1",
       "fev₁",
@@ -5480,7 +5572,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Maximum volume of air forcefully exhaled in the first second of a forced vital capacity maneuver; reflects expiratory flow and small/medium airway patency.",
-    normalRange: "≥80% of predicted for age, sex, height, and race/ethnicity (reported as percent predicted on PFT printout)",
+    normalRange:
+      "≥80% of predicted for age, sex, height, and race/ethnicity (reported as percent predicted on PFT printout)",
     increasedCauses: [
       "Rarely elevated above predicted — bronchodilator response in asthma (↑ ≥12% and ≥200 mL from baseline)",
       "Spurious ↑ with poor effort standardization (uncommon boards focus)",
@@ -5510,7 +5603,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "fvc",
     name: "FVC",
-    etymology: "FVC = forced vital capacity (Latin vis = force + Latin capacitas = holding capacity)",
+    etymology:
+      "FVC = forced vital capacity (Latin vis = force + Latin capacitas = holding capacity)",
     aliases: [
       "fvc",
       "forced vital capacity",
@@ -5549,7 +5643,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "fev1-fvc-ratio",
     name: "FEV₁/FVC Ratio",
-    etymology: "Ratio of forced expiratory volume in 1 second to forced vital capacity",
+    etymology:
+      "Ratio of forced expiratory volume in 1 second to forced vital capacity",
     aliases: [
       "fev1/fvc",
       "fev1/fvc ratio",
@@ -5561,7 +5656,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Proportion of the forced vital capacity exhaled in the first second; key discriminator between obstructive and non-obstructive ventilatory patterns.",
-    normalRange: "≥0.70–0.75 in healthy adults (age-dependent; lower normal in elderly); post-bronchodilator value used to diagnose persistent obstruction",
+    normalRange:
+      "≥0.70–0.75 in healthy adults (age-dependent; lower normal in elderly); post-bronchodilator value used to diagnose persistent obstruction",
     increasedCauses: [
       "Restrictive lung disease — FVC falls more than FEV₁, so ratio preserved or relatively ↑",
       "Early termination artifact can spuriously ↑ ratio",
@@ -5647,7 +5743,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "tlc",
     name: "TLC",
-    etymology: "TLC = total lung capacity (Latin totus = whole + Latin capacitas = holding capacity)",
+    etymology:
+      "TLC = total lung capacity (Latin totus = whole + Latin capacitas = holding capacity)",
     aliases: [
       "tlc",
       "total lung capacity",
@@ -5656,7 +5753,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Total volume of air in the lungs after maximal inspiration (RV + IC); requires body plethysmography or helium dilution — not measured by spirometry alone.",
-    normalRange: "80–120% of predicted for age, sex, height, and race/ethnicity",
+    normalRange:
+      "80–120% of predicted for age, sex, height, and race/ethnicity",
     increasedCauses: [
       "Obstructive hyperinflation — COPD, asthma during exacerbation, α₁-antitrypsin deficiency emphysema",
       "Air trapping with ↑ RV disproportionately",
@@ -5687,7 +5785,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "rv",
     name: "RV",
-    etymology: "RV = residual volume (Latin residuus = remaining + Latin volumen = volume)",
+    etymology:
+      "RV = residual volume (Latin residuus = remaining + Latin volumen = volume)",
     aliases: [
       "rv",
       "residual volume",
@@ -5697,7 +5796,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Volume of air remaining in the lungs after maximal forced exhalation; reflects air trapping and small airway closure — measured by plethysmography or helium dilution, not spirometry.",
-    normalRange: "Typically 75–125% of predicted; interpreted with TLC and FEV₁/FVC",
+    normalRange:
+      "Typically 75–125% of predicted; interpreted with TLC and FEV₁/FVC",
     increasedCauses: [
       "Obstructive air trapping — COPD, asthma, bronchiectasis",
       "Premature small airway closure during exhalation",
@@ -5740,7 +5840,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Volume of air that can still be forcefully exhaled after a normal passive tidal expiration — the portion of vital capacity between functional residual capacity (FRC) and residual volume (RV); reflects how much additional gas can be expelled beyond resting end-expiration.",
-    normalRange: "~1.0–1.5 L in healthy adults (~15–20% of vital capacity); varies with age, sex, and height",
+    normalRange:
+      "~1.0–1.5 L in healthy adults (~15–20% of vital capacity); varies with age, sex, and height",
     increasedCauses: [
       "Young healthy adults with large vital capacity",
       "Athletic training with greater lung volumes (modest ↑ in total VC and ERV)",
@@ -5784,7 +5885,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Volume of air remaining in the lungs at the end of a normal passive expiration — the equilibrium lung volume where outward chest wall recoil balances inward lung elastic recoil; equals residual volume (RV) plus expiratory reserve volume (ERV).",
-    normalRange: "~2.5–3.5 L in healthy adults (varies with height/sex); ~30–35 mL/kg; reported as percent predicted on lung volume testing",
+    normalRange:
+      "~2.5–3.5 L in healthy adults (varies with height/sex); ~30–35 mL/kg; reported as percent predicted on lung volume testing",
     increasedCauses: [
       "Obstructive air trapping — COPD, asthma (↑ RV component)",
       "Premature small airway closure with hyperinflation",
@@ -5822,7 +5924,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "dlco",
     name: "DLCO",
-    etymology: "DLCO = diffusing capacity of the lung for carbon monoxide (Latin diffundere = spread + CO = carbon monoxide)",
+    etymology:
+      "DLCO = diffusing capacity of the lung for carbon monoxide (Latin diffundere = spread + CO = carbon monoxide)",
     aliases: [
       "dlco",
       "dlco sb",
@@ -5837,7 +5940,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Rate of transfer of carbon monoxide from alveoli to pulmonary capillary blood; reflects alveolar-capillary membrane surface area, membrane thickness, and capillary blood volume.",
-    normalRange: "80–120% of predicted (corrected for hemoglobin when available)",
+    normalRange:
+      "80–120% of predicted (corrected for hemoglobin when available)",
     increasedCauses: [
       "Polycythemia (↑ hemoglobin binding capacity)",
       "Left-to-right intracardiac shunt (more blood through lungs)",
@@ -5872,7 +5976,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "pulmonary-function-test",
     name: "Pulmonary Function Test",
-    etymology: "Latin pulmo = lung + Latin functio = performance + Latin testum = earthen pot (trial)",
+    etymology:
+      "Latin pulmo = lung + Latin functio = performance + Latin testum = earthen pot (trial)",
     aliases: [
       "pulmonary function test",
       "pulmonary function tests",
@@ -5887,7 +5992,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Suite of tests quantifying ventilatory mechanics and gas exchange — spirometry (FEV₁, FVC), lung volumes (TLC, RV by plethysmography), and diffusing capacity (DLCO).",
-    normalRange: "Interpretation uses percent predicted and pattern analysis (obstructive vs restrictive vs mixed)",
+    normalRange:
+      "Interpretation uses percent predicted and pattern analysis (obstructive vs restrictive vs mixed)",
     increasedCauses: [
       "Not a single directional lab — patterns matter",
       "Obstructive pattern: ↓ FEV₁/FVC with ↑ RV/TLC (air trapping)",
@@ -6019,9 +6125,7 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Multiple sclerosis — mild lymphocytic pleocytosis with oligoclonal bands",
       "Traumatic lumbar puncture — RBCs and WBCs from blood contamination (interpret with caution)",
     ],
-    decreasedCauses: [
-      "Normal CSF cell count",
-    ],
+    decreasedCauses: ["Normal CSF cell count"],
     boardsPearls: [
       "Pleocytosis = pathologically elevated CSF WBC count (normal has ≤5 WBC/µL)",
       "Neutrophil predominance → bacterial meningitis until proven otherwise",
@@ -6170,7 +6274,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "supernatant",
     name: "Supernatant",
-    etymology: "Latin super = above + natare = to swim (the layer that floats on top)",
+    etymology:
+      "Latin super = above + natare = to swim (the layer that floats on top)",
     aliases: [
       "supernatant",
       "supernatants",
@@ -6211,7 +6316,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "oligoclonal-bands",
     name: "Oligoclonal bands",
-    etymology: "Greek oligos = few + klonos = twig/branch + Latin banda = strip",
+    etymology:
+      "Greek oligos = few + klonos = twig/branch + Latin banda = strip",
     aliases: [
       "oligoclonal bands",
       "oligoclonal band",
@@ -6222,7 +6328,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Discrete IgG bands on CSF protein electrophoresis/immunofixation that are absent in matched serum — indicates intrathecal IgG synthesis by clonally expanded B cells/plasma cells in the CNS.",
-    normalRange: "Absent in CSF or present in CSF only if identical bands appear in serum (systemic source)",
+    normalRange:
+      "Absent in CSF or present in CSF only if identical bands appear in serum (systemic source)",
     increasedCauses: [
       "Multiple sclerosis — most classic Step 1 association",
       "CNS infections (neurosyphilis, Lyme neuroborreliosis, viral encephalitis)",
@@ -6263,7 +6370,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Major urinary metabolite of serotonin — produced by monoamine oxidase and aldehyde dehydrogenase from 5-hydroxytryptamine; elevated in serotonin-secreting neuroendocrine tumors.",
-    normalRange: "Typically <25–40 mg/24 h (lab-specific); spot urine may use creatinine normalization",
+    normalRange:
+      "Typically <25–40 mg/24 h (lab-specific); spot urine may use creatinine normalization",
     increasedCauses: [
       "Carcinoid syndrome / carcinoid tumor — serotonin-secreting neuroendocrine tumor",
       "Serotonin-producing medullary thyroid carcinoma (rare)",
@@ -6300,7 +6408,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Primary terminal metabolite of dopamine — formed by MAO and COMT; measured in urine (often with VMA) as tumor marker for catecholamine-secreting tumors especially neuroblastoma.",
-    normalRange: "Age-dependent in pediatrics; adult 24-h urine reference varies by lab",
+    normalRange:
+      "Age-dependent in pediatrics; adult 24-h urine reference varies by lab",
     increasedCauses: [
       "Neuroblastoma — pediatric abdominal tumor; ↑ urine HVA and VMA",
       "Pheochromocytoma / paraganglioma — catecholamine excess",
@@ -6350,7 +6459,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "24-hour excretion of metanephrine and normetanephrine — stable O-methylated metabolites of epinephrine and norepinephrine produced continuously by catecholamine-secreting tumors; preferred screening for pheochromocytoma and paraganglioma.",
-    normalRange: "Age-adjusted upper reference limit varies by lab (often total metanephrines <400 µg/24 h adult; assay-specific)",
+    normalRange:
+      "Age-adjusted upper reference limit varies by lab (often total metanephrines <400 µg/24 h adult; assay-specific)",
     increasedCauses: [
       "Pheochromocytoma",
       "Paraganglioma / extra-adrenal chromaffin tumor",
@@ -6381,7 +6491,8 @@ export const LAB_VALUES: LabValueEntry[] = [
   {
     id: "reid-index",
     name: "Reid Index",
-    etymology: "eponym: James Reid (Scottish pathologist) + Latin index = pointer/measure",
+    etymology:
+      "eponym: James Reid (Scottish pathologist) + Latin index = pointer/measure",
     aliases: [
       "reid index",
       "reid's index",
@@ -6436,7 +6547,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Fraction of oxygen in the gas mixture delivered to the patient — room air ≈0.21 (21%); supplemental O₂ or ventilator settings raise FiO₂ toward 1.0 (100% O₂).",
-    normalRange: "0.21 (21%) on room air; titrated upward for hypoxemia on supplemental O₂ or mechanical ventilation",
+    normalRange:
+      "0.21 (21%) on room air; titrated upward for hypoxemia on supplemental O₂ or mechanical ventilation",
     increasedCauses: [
       "Hypoxemic respiratory failure — ARDS, pneumonia, pulmonary edema requiring ↑ supplemental O₂",
       "Mechanical ventilation with elevated FiO₂ setting",
@@ -6477,7 +6589,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Volume of gas entering the lungs with each breath during spontaneous or mechanical ventilation; on a ventilator, the set volume delivered per machine breath (unless pressure-targeted mode limits volume).",
-    normalRange: "~500 mL in average adult spontaneous breathing (~6–8 mL/kg actual body weight); lung-protective ventilation in ARDS targets ~6 mL/kg predicted body weight (PBW)",
+    normalRange:
+      "~500 mL in average adult spontaneous breathing (~6–8 mL/kg actual body weight); lung-protective ventilation in ARDS targets ~6 mL/kg predicted body weight (PBW)",
     increasedCauses: [
       "Inappropriately high ventilator Vₜ settings — volutrauma risk in ARDS",
       "Metabolic acidosis — compensatory ↑ minute ventilation (often via ↑ rate or depth)",
@@ -6524,7 +6637,8 @@ export const LAB_VALUES: LabValueEntry[] = [
     ],
     measures:
       "Positive airway pressure maintained at the end of expiration during mechanical ventilation (or CPAP/BiPAP) — keeps alveoli open, improves oxygenation, and increases functional residual capacity by preventing end-expiratory alveolar collapse.",
-    normalRange: "Spontaneous breathing at atmospheric end-expiratory pressure (~0 cm H₂O); ventilator PEEP commonly 5–15 cm H₂O (higher in severe ARDS per recruitment strategy); Berlin ARDS criteria require PEEP ≥5 cm H₂O for severity classification",
+    normalRange:
+      "Spontaneous breathing at atmospheric end-expiratory pressure (~0 cm H₂O); ventilator PEEP commonly 5–15 cm H₂O (higher in severe ARDS per recruitment strategy); Berlin ARDS criteria require PEEP ≥5 cm H₂O for severity classification",
     increasedCauses: [
       "ARDS and refractory hypoxemia — ↑ PEEP for alveolar recruitment and ↑ PaO₂/FiO₂",
       "General anesthesia and mechanical ventilation — routine low PEEP (~5 cm H₂O) to prevent atelectasis",

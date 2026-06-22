@@ -2473,6 +2473,58 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Nursemaid's elbow (radial head subluxation) in toddlers — axial traction injury; reduced by supination-flexion maneuver. Patellar subluxation common in adolescent athletes.",
   },
   {
+    id: "anterior-humerus-dislocation",
+    name: "Anterior Dislocation of the Humerus",
+    etymology: "Latin anterior = before + dislocare = displace from place + Latin humerus = upper arm",
+    aliases: [
+      "anterior dislocation of the humerus",
+      "anterior dislocation of humerus",
+      "anterior humerus dislocation",
+      "anterior humeral dislocation",
+      "anterior shoulder dislocation",
+      "anterior shoulder dislocations",
+      "anterior glenohumeral dislocation",
+      "anterior glenohumeral dislocations",
+      "glenohumeral dislocation anterior",
+    ],
+    definition:
+      "Complete displacement of the humeral head anteriorly and inferiorly from the glenoid fossa — the most common direction of glenohumeral (shoulder) dislocation.",
+    anatomy:
+      "Glenohumeral joint: shallow glenoid socket with large humeral head. Anterior dislocation typically occurs with the arm abducted, externally rotated, and extended (e.g., fall on outstretched hand, tackle). Humeral head rests inferior to the coracoid process. Anterior-inferior glenohumeral ligament and labrum often tear (Bankart lesion); posterolateral humeral head may impact glenoid rim (Hill-Sachs defect). Axillary nerve wraps the surgical neck of the humerus deep to deltoid.",
+    action: [
+      "Loss of normal rounded shoulder contour with prominent acromion ('squared-off' shoulder)",
+      "Arm held in slight abduction and external rotation; patient resists movement",
+      "May damage anterior labrum, capsule, rotator cuff (subscapularis), and adjacent neurovascular structures",
+    ],
+    innervation:
+      "Axillary nerve (C5–C6) at risk at surgical neck — deltoid motor function and sensation over lateral shoulder ('regimental badge' area)",
+    clinicalRelevance: [
+      "Most common major joint dislocation — young athletes (contact sports) and recurrent instability",
+      "Axillary nerve neuropraxia — weak abduction, flat deltoid, lateral shoulder numbness",
+      "Brachial plexus or axillary artery injury — rare but serious complications",
+      "Recurrent anterior instability after initial dislocation — especially in young patients",
+      "Bankart lesion (anterior labral tear) and Hill-Sachs defect on MRI after first-time dislocation",
+    ],
+    boardsPearls: [
+      "Anterior shoulder dislocation = arm abducted/externally rotated injury → humeral head anterior-inferior to coracoid",
+      "Post-reduction — always document axillary nerve function (deltoid contour, abduction strength, lateral sensation)",
+      "Apprehension test — anterior instability with arm abducted and externally rotated",
+      "Bankart = anterior labrum; Hill-Sachs = posterolateral humeral head impaction defect",
+      "Posterior dislocation — seizure or electric shock; arm internally rotated/adducted; easy to miss on AP X-ray",
+      "Young patient after first dislocation — high recurrence risk; discuss immobilization and rehab vs surgical stabilization",
+    ],
+    distinguishFrom: [
+      "Posterior glenohumeral dislocation — internal rotation, adducted arm; 'light-bulb' sign on axillary view",
+      "Inferior dislocation (luxatio erecta) — arm fixed overhead abduction",
+      "Subluxation — partial loss of articular congruity without complete dislocation",
+      "Fracture-dislocation — fracture of humeral head/neck or glenoid with dislocation",
+      "Rotator cuff tear — pain and weakness without gross deformity or loss of glenohumeral congruity",
+      "Acromioclavicular joint separation — tenderness at AC joint, not glenohumeral step-off",
+    ],
+    pediatrics:
+      "Anterior shoulder dislocation in adolescents can injure the axillary nerve — assess deltoid contour, abduction strength, and lateral shoulder sensation after reduction. Physeal injuries (Little League shoulder) and proximal humerus fractures can mimic shoulder trauma; obtain appropriate imaging.",
+  },
+  {
     id: "atlantoaxial",
     name: "Atlantoaxial Joint (C1–C2)",
     etymology: "Atlas = C1 vertebra + axis = C2 vertebra + joint = articulation",
