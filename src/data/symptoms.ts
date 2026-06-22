@@ -3276,6 +3276,132 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Juvenile parkinsonism and DOPA-responsive dystonia can present with gait bradykinesia in childhood; drug-induced parkinsonism occurs in children given antiemetics or antipsychotics.",
   },
   {
+    id: "cogwheel-rigidity",
+    name: "Cogwheel Rigidity",
+    etymology:
+      "cogwheel = toothed gear wheel + Latin rigiditas = stiffness — ratchet-like resistance felt during passive limb movement in parkinsonism",
+    aliases: [
+      "cogwheel rigidity",
+      "cogwheel rigidities",
+      "cog wheel rigidity",
+      "ratchet rigidity",
+      "ratchet rigidities",
+      "cogwheeling",
+      "cogwheel phenomenon",
+    ],
+    definition:
+      "Velocity-independent increase in muscle tone with superimposed tremor-related jerks during passive range of motion — examiner feels intermittent give-and-catch like a ratcheted gear, classic of extrapyramidal parkinsonism.",
+    mechanism:
+      "Basal ganglia dopamine deficiency (nigrostriatal pathway) → abnormal tonic stretch reflex activity and co-contraction of agonist-antagonist pairs → uniform rigidity plus resting tremor superimposed produces cogwheel sensation; also seen with lead-pipe rigidity when tremor absent.",
+    thinkOf: [
+      "Parkinson disease — resting tremor, bradykinesia, postural instability (TRAP)",
+      "Drug-induced parkinsonism — antipsychotics, metoclopramide (D₂ blockade)",
+      "Juvenile parkinsonism — early-onset genetic dopamine disorders",
+      "Vascular parkinsonism — lower-body rigidity and gait slowing",
+      "Wilson disease — rigidity with wing-beating tremor and liver disease",
+    ],
+    pairWith: [
+      "Cogwheel rigidity + resting pill-rolling tremor + bradykinesia → Parkinson disease",
+      "Cogwheel rigidity after starting antipsychotic → drug-induced parkinsonism",
+      "Cogwheel rigidity + Kayser-Fleischer rings + hepatitis → Wilson disease",
+      "Rigidity + lead-pipe quality without tremor → extrapyramidal hypertonia variant",
+    ],
+    distinguishFrom: [
+      "Spasticity — velocity-dependent increase in tone (UMN lesion); clasp-knife, not cogwheel",
+      "Rigidity (lead-pipe) — uniform resistance throughout ROM without ratchet jerks",
+      "Paratonia ( gegenhalten ) — variable resistance in dementia, not true rigidity",
+      "Muscle guarding — voluntary splinting from pain, not basal ganglia tone",
+      "Decerebrate/decorticate posturing — acute brainstem/cortical injury, not parkinsonian rigidity",
+    ],
+    pediatrics:
+      "Drug-induced parkinsonism from antiemetics or antipsychotics causes rigidity in children. Wilson disease should be considered with rigidity plus liver or psychiatric symptoms in adolescents.",
+  },
+  {
+    id: "intention-tremor",
+    name: "Intention Tremor",
+    etymology:
+      "Latin intentio = stretching toward + tremor = shaking — tremor whose amplitude increases as a limb approaches a target",
+    aliases: [
+      "intention tremor",
+      "intention tremors",
+      "intentional tremor",
+      "intentional tremors",
+      "kinetic tremor",
+      "terminal tremor",
+      "cerebellar tremor",
+      "cerebellar tremors",
+    ],
+    definition:
+      "Oscillatory tremor that worsens during visually guided movement toward a target — hallmark of cerebellar or cerebellar outflow pathway dysfunction, often accompanied by dysmetria and ataxia.",
+    mechanism:
+      "Cerebellar lesions (stroke, MS plaque, tumor, alcohol toxicity, Friedrich ataxia) disrupt timing and scaling of antagonist muscle activation during goal-directed movement → tremor amplitude increases near endpoint; distinct from postural/action tremor of essential tremor and resting tremor of Parkinson disease.",
+    thinkOf: [
+      "Cerebellar stroke or hemorrhage — acute ataxia, dysmetria, ipsilateral limb signs",
+      "Multiple sclerosis — cerebellar plaque with scanning speech and nystagmus",
+      "Chronic alcohol use / Wernicke encephalopathy — cerebellar degeneration",
+      "Wilson disease — wing-beating tremor with arm extension (related but distinct pattern)",
+      "Essential tremor — postural/action tremor without cerebellar dysmetria",
+      "Posterior fossa tumor in child — headache, ataxia, intention tremor",
+    ],
+    pairWith: [
+      "Intention tremor + dysmetria + ataxia → cerebellar lesion",
+      "Intention tremor + scanning speech + nystagmus → MS or cerebellar degeneration",
+      "Finger-to-nose test worsening near nose → classic intention tremor",
+      "Intention tremor + papilledema + morning headache → posterior fossa mass",
+    ],
+    distinguishFrom: [
+      "Resting tremor — maximal with limb at rest (Parkinson disease); diminishes with movement",
+      "Postural/action tremor — essential tremor when holding posture, not specifically worsening at target",
+      "Physiologic tremor — fine, symmetric, enhanced by caffeine/anxiety without dysmetria",
+      "Wing-beating tremor — Wilson disease with arms abducted and elbows flexed, not pure cerebellar intention tremor",
+      "Myoclonus — sudden jerks, not rhythmic oscillation increasing toward target",
+    ],
+    pediatrics:
+      "Posterior fossa medulloblastoma or pilocytic astrocytoma may present with truncal ataxia and intention tremor in children. Friedreich ataxia causes progressive cerebellar and spinal signs in adolescence.",
+  },
+  {
+    id: "pill-rolling-tremor",
+    name: "Pill-Rolling Tremor",
+    etymology:
+      "pill + rolling — describes slow 4–6 Hz flexion-extension of thumb and fingers as if rolling a small pill between them",
+    aliases: [
+      "pill-rolling tremor",
+      "pill rolling tremor",
+      "pill-rolling tremors",
+      "pill rolling tremors",
+      "resting tremor",
+      "parkinsonian tremor",
+      "parkinsonian tremors",
+      "rest tremor",
+    ],
+    definition:
+      "Low-frequency (4–6 Hz) resting tremor of the hands in which the thumb and index finger move in opposition resembling pill-rolling — classic but not universal sign of Parkinson disease and nigrostriatal dopamine deficiency.",
+    mechanism:
+      "Loss of substantia nigra pars compacta dopaminergic neurons → impaired basal ganglia filtering of thalamocortical motor output → oscillatory activity in antagonist forearm muscles when limb is relaxed and supported; tremor decreases with voluntary movement and sleep, increases with stress or walking.",
+    thinkOf: [
+      "Parkinson disease — asymmetric onset, bradykinesia, cogwheel rigidity, masked facies",
+      "Drug-induced parkinsonism — antipsychotics, metoclopramide",
+      "Juvenile parkinsonism — rare genetic early-onset disease",
+      "Essential tremor — action/postural tremor, not classic pill-rolling at rest",
+      "Enhanced physiologic tremor — faster, bilateral, no other parkinsonian signs",
+    ],
+    pairWith: [
+      "Pill-rolling tremor + bradykinesia + cogwheel rigidity → Parkinson disease",
+      "Unilateral rest tremor spreading to contralateral side → typical PD onset pattern",
+      "Pill-rolling tremor after starting antipsychotic → drug-induced parkinsonism",
+      "Rest tremor improves with voluntary movement → supports parkinsonian over essential tremor",
+    ],
+    distinguishFrom: [
+      "Essential tremor — bilateral action/postural tremor, no rigidity or bradykinesia",
+      "Intention tremor — worsens approaching target with cerebellar ataxia",
+      "Physiologic tremor — 8–12 Hz, fine, no parkinsonian features",
+      "Wing-beating tremor — Wilson disease with arms extended",
+      "Orthostatic tremor — legs on standing, very high frequency",
+    ],
+    pediatrics:
+      "Classic Parkinson pill-rolling tremor is rare in children; juvenile parkinsonism or drug-induced parkinsonism should be considered. Wilson disease causes different tremor phenomenology with hepatic and psychiatric features.",
+  },
+  {
     id: "jaundice",
     name: "Jaundice",
     etymology: "French jaune = yellow",
@@ -4758,6 +4884,55 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Diaphoresis while feeding in an infant suggests increased work of breathing or heart failure (left-to-right shunt, cardiomyopathy) — evaluate with exam, CXR, and echo. Hypoglycemia in children on insulin or with inborn errors of metabolism presents with diaphoresis, irritability, and altered mental status; treat glucose urgently.",
   },
   {
+    id: "sweaty-palms",
+    name: "Sweaty Palms",
+    etymology:
+      "Old English swætan = to perspire + Latin palma = palm of the hand — excess eccrine sweat on the volar hand surfaces",
+    aliases: [
+      "sweaty palms",
+      "sweaty palm",
+      "palmar sweating",
+      "palmar hyperhidrosis",
+      "sweaty hands",
+      "sweaty hand",
+      "clammy palms",
+      "clammy hands",
+      "moist palms",
+      "wet palms",
+      "palmar diaphoresis",
+    ],
+    definition:
+      "Excessive sweating localized to the palms — usually eccrine gland secretion from sympathetic cholinergic fibers; may be primary (idiopathic focal hyperhidrosis) or secondary to autonomic activation from anxiety, endocrine disease, or catecholamine excess.",
+    mechanism:
+      "Acetylcholine release from sympathetic sudomotor fibers stimulates eccrine sweat glands in palms (and often soles/axillae) — ↑ with emotional stress, hyperthyroidism (↑ β-adrenergic sensitivity), hypoglycemia, pheochromocytoma catecholamine surges, or menopausal hot flashes; primary palmar hyperhidrosis is exaggerated normal thermoregulatory/emotional sweating without underlying systemic disease.",
+    thinkOf: [
+      "Primary focal hyperhidrosis — bilateral palms ± soles/axillae, onset in childhood/adolescence",
+      "Anxiety or panic disorder — acute sympathetic surge with tachycardia",
+      "Hyperthyroidism — heat intolerance, weight loss, fine tremor, palmar warmth",
+      "Pheochromocytoma — episodic sweating with headache and hypertension",
+      "Hypoglycemia — diaphoresis with tremor and confusion in diabetes",
+      "Acute coronary syndrome — diaphoresis with chest pain (may include sweaty palms)",
+      "Menopause — vasomotor hot flashes with transient sweating",
+    ],
+    pairWith: [
+      "Bilateral sweaty palms since adolescence without systemic illness → primary palmar hyperhidrosis",
+      "Sweaty palms + fine tremor + weight loss → hyperthyroidism",
+      "Sweaty palms + episodic headache + hypertension → pheochromocytoma",
+      "Sweaty palms + tremor + diabetes → check fingerstick glucose",
+      "Sweaty palms + chest pain → acute coronary syndrome",
+      "Sweaty palms + anxiety + palpitations → panic attack",
+    ],
+    distinguishFrom: [
+      "Generalized diaphoresis — whole-body sweating from fever, infection, shock, or night sweats",
+      "Palmar erythema — red palms without necessarily excess sweat (liver disease, pregnancy, hyperthyroidism)",
+      "Anhidrosis — absent sweating (Horner syndrome, anticholinergic toxidrome)",
+      "Gustatory sweating — Frey syndrome or diabetic autonomic neuropathy after eating",
+      "Salty skin on palms — cystic fibrosis (elevated sweat chloride), not simple hyperhidrosis",
+    ],
+    pediatrics:
+      "Primary palmar hyperhidrosis often begins in childhood and may cause social distress; rule out hyperthyroidism and glucose disorders if new or accompanied by systemic symptoms. CF screening uses quantitative pilocarpine sweat chloride, not hyperhidrosis alone.",
+  },
+  {
     id: "dactylitis",
     name: "Dactylitis",
     etymology: "Greek daktylos = finger/toe + -itis = inflammation",
@@ -6158,6 +6333,52 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Acute urticaria in children is commonly post-viral; wheals plus respiratory distress, hypotension, or repetitive vomiting still means anaphylaxis.",
   },
   {
+    id: "winging-of-the-scapula",
+    name: "Winging of the Scapula",
+    etymology:
+      "Old Norse vængr = wing + Latin scapula = shoulder blade — abnormal prominence of the medial or lateral scapular border off the thoracic wall during arm movement",
+    aliases: [
+      "winging of the scapula",
+      "winged scapula",
+      "winged scapulas",
+      "scapular winging",
+      "scapular wingings",
+      "medial winging of the scapula",
+      "lateral winging of the scapula",
+      "winged shoulder blade",
+      "winged shoulder blades",
+    ],
+    definition:
+      "Visible lifting of the medial or lateral border of the scapula away from the rib cage during shoulder motion — sign of paralysis or weakness of scapular stabilizer muscles or their innervating nerves.",
+    mechanism:
+      "Loss of scapulothoracic stabilization → scapula cannot remain flush against chest wall during protraction, upward rotation, or retraction — medial winging from serratus anterior (long thoracic nerve) failure; lateral winging from trapezius (accessory nerve) failure.",
+    thinkOf: [
+      "Long thoracic nerve injury → serratus anterior paralysis → medial winging (classic wall push-up test)",
+      "Axillary lymph node dissection (mastectomy) — iatrogenic long thoracic nerve injury",
+      "Accessory nerve (CN XI) injury → trapezius paralysis → lateral winging and shoulder droop",
+      "Parsonage-Turner syndrome — acute painful brachial neuritis with scapular winging",
+      "Facioscapulohumeral muscular dystrophy — bilateral winging with facial weakness",
+      "Spinal accessory nerve injury during cervical node biopsy or neck surgery",
+    ],
+    pairWith: [
+      "Medial winging + difficulty overhead elevation → long thoracic nerve / serratus anterior",
+      "Lateral winging + inability to shrug shoulder against resistance → accessory nerve / trapezius",
+      "Wall push-up reproduces medial border prominence → serratus anterior dysfunction",
+      "Recent mastectomy or axillary dissection + medial winging → long thoracic nerve injury",
+      "Acute severe shoulder pain then weakness → Parsonage-Turner brachial plexus neuritis",
+      "Bilateral winging + facial weakness → facioscapulohumeral dystrophy",
+    ],
+    distinguishFrom: [
+      "Scapular dyskinesis — abnormal motion without clear nerve palsy; often muscular imbalance or pain avoidance",
+      "Scoliosis — rib cage deformity may alter scapular appearance, not nerve palsy winging",
+      "Shoulder subluxation — glenohumeral instability, not scapula lifting off thorax",
+      "Medial vs lateral winging — different nerves and muscles; localization is boards-high-yield",
+      "Levator scapulae/rhomboid strain — pain without true winging on push-up",
+    ],
+    pediatrics:
+      "Winged scapula is uncommon in children; consider Parsonage-Turner after viral illness, long thoracic nerve injury from heavy backpacks, or facioscapulohumeral dystrophy when bilateral winging accompanies facial weakness. Suprascapular nerve injury causes cuff weakness, not classic medial winging.",
+  },
+  {
     id: "cyst",
     name: "Cyst",
     etymology: "Greek kystis = bladder/sac",
@@ -6645,17 +6866,20 @@ export const SYMPTOMS: SymptomEntry[] = [
       "enthesopathies",
       "inflamed enthesis",
       "inflamed entheses",
+      "enthesis inflammation",
+      "periarticular enthesitis",
     ],
     definition:
       "Inflammation at the enthesis — site where tendon, ligament, or joint capsule attaches to bone — hallmark of spondyloarthritis causing localized pain, swelling, and tenderness often at the heel, patella, or iliac crest.",
     mechanism:
-      "IL-23/IL-17 and TNF-driven inflammation at fibrocartilaginous entheses (stress-concentration points) → microdamage, edema, and erosive change; distinct from intra-articular synovitis alone — explains heel and axial symptoms in HLA-B27–associated disease.",
+      "IL-23/IL-17 and TNF-driven inflammation at fibrocartilaginous entheses (stress-concentration points where tendon/ligament meets bone) → microdamage, bone marrow edema, erosions, and new bone formation; distinct from intra-articular synovitis — explains heel pain, spinal entheses, and sacroiliac symptoms in HLA-B27–associated spondyloarthritis.",
     thinkOf: [
       "Reactive arthritis — Achilles enthesitis after chlamydia/enteric infection",
-      "Ankylosing spondylitis — spinal and peripheral enthesitis",
-      "Psoriatic arthritis — plantar fascia, Achilles, patellar tendon",
-      "Juvenile idiopathic arthritis — enthesitis-related arthritis subtype",
-      "Diffuse idiopathic skeletal hyperostosis (DISH) — osteophytes at entheses (noninflammatory)",
+      "Ankylosing spondylitis — spinal entheses, sacroiliac joints, Achilles insertion",
+      "Psoriatic arthritis — plantar fascia, Achilles, patellar tendon, dactylitis",
+      "Juvenile idiopathic arthritis — enthesitis-related arthritis (ERA) subtype",
+      "IBD-associated spondyloarthritis — enthesitis with Crohn or ulcerative colitis",
+      "Diffuse idiopathic skeletal hyperostosis (DISH) — flowing osteophytes at entheses without inflammatory synovitis",
     ],
     pairWith: [
       "Heel pain + Achilles tenderness + HLA-B27 → spondyloarthritis enthesitis",
@@ -6672,11 +6896,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Calcaneal stress fracture — trauma/overuse bone injury",
     ],
     boardsPearls: [
-      "Enthesitis = inflammation at tendon/ligament bone insertion — key spondyloarthritis feature",
-      "Classic sites: Achilles tendon, plantar fascia, patellar tendon, iliac crest",
+      "Enthesitis = inflammation at tendon/ligament bone insertion — hallmark of spondyloarthritis",
+      "Classic sites: Achilles tendon, plantar fascia (heel), patellar tendon, iliac crest, spinous processes",
+      "IL-17 inhibitors (secukinumab) target entheseal inflammation pathway in spondyloarthritis",
       "Reactive arthritis and psoriatic arthritis — peripheral enthesitis common",
-      "vs synovitis — enthesitis is extra-articular at insertion site",
-      "Enthesitis-related JIA — HLA-B27–associated adolescent subtype",
+      "vs synovitis — enthesitis is at insertion site outside joint space",
+      "vs tendinitis — mid-substance tendon pain, not bony insertion",
+      "Enthesitis-related JIA (ERA) — HLA-B27–associated adolescent subtype with heel pain",
+      "MRI shows bone marrow edema at enthesis before plain X-ray changes",
     ],
     pediatrics:
       "Enthesitis-related arthritis is a JIA category — often boys with lower-extremity enthesitis and sacroiliitis. Differentiate from apophysitis (Osgood-Schlatter, Sever) which is traction overuse not autoimmune enthesitis.",
@@ -7652,16 +7879,23 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "single-palmar-crease",
-    name: "Single Palmar Crease",
-    etymology: "Latin singulus = one + palma = palm + crease = skin fold",
+    name: "Palmar Crease (Single Transverse Crease)",
+    etymology:
+      "Latin palma = palm + crease = skin fold; singulus = one — single transverse flexion line across the palm (simian crease)",
     aliases: [
+      "palmar crease",
+      "palmar creases",
       "single palmar crease",
       "single palmar creases",
       "single transverse palmar crease",
+      "single transverse palmar creases",
+      "transverse palmar crease",
       "simian crease",
       "simian line",
       "simian creases",
+      "simian lines",
       "single simian crease",
+      "simian palmar crease",
     ],
     definition:
       "One transverse crease across the palm formed by fusion of proximal and distal palmar flexion lines, instead of the usual two or three creases.",
@@ -11070,19 +11304,22 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hypoplastic-mandible",
-    name: "Hypoplastic Mandible",
+    name: "Micrognathia (Hypoplastic Mandible)",
     etymology:
-      "Greek hypo = under + plassein = to form + Latin mandibula = jaw — underdeveloped lower jaw",
+      "Greek mikros = small + gnathos = jaw; Greek hypo = under + plassein = to form + Latin mandibula = jaw — congenitally small underdeveloped mandible",
     aliases: [
-      "hypoplastic mandible",
-      "hypoplastic mandibles",
       "micrognathia",
       "micrognathias",
+      "micrognathic jaw",
+      "micrognathic jaws",
+      "hypoplastic mandible",
+      "hypoplastic mandibles",
       "small mandible",
       "small mandibles",
       "small jaw",
       "small jaws",
       "mandibular hypoplasia",
+      "mandibular micrognathia",
       "underdeveloped mandible",
       "underdeveloped mandibles",
       "receding jaw",
@@ -11116,6 +11353,55 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Neonatal Pierre Robin sequence requires airway monitoring for obstructive apnea and feeding support; prone positioning relieves glossoptosis. Mandibular distraction osteogenesis or tracheostomy for refractory obstruction. Screen for syndromic associations when micrognathia is not isolated.",
+  },
+  {
+    id: "prognathism",
+    name: "Prognathism",
+    etymology:
+      "Greek pro = forward + gnathos = jaw + -ism = condition — prominent forward projection of the mandible",
+    aliases: [
+      "prognathism",
+      "prognathisms",
+      "prognathia",
+      "mandibular prognathism",
+      "mandibular prognathia",
+      "prominent jaw",
+      "prominent jaws",
+      "protruding jaw",
+      "protruding jaws",
+      "protruding mandible",
+      "protruding mandibles",
+      "forward jaw",
+      "jaw protrusion",
+      "class iii jaw",
+      "class 3 jaw",
+    ],
+    definition:
+      "Abnormal forward projection of the mandible beyond the normal maxillomandibular relationship — may be developmental, syndromic, or acquired from excessive growth hormone after skeletal maturity.",
+    mechanism:
+      "Mandibular overgrowth or forward positioning relative to the maxilla — from pituitary GH excess remodeling mandible and facial bones (acromegaly), skeletal dysplasia (achondroplasia relative mandibular prominence), or congenital craniofacial syndromes with midface hypoplasia making the jaw appear relatively prognathic.",
+    thinkOf: [
+      "Acromegaly — coarse facies, enlarged hands/feet, macroglossia, frontal bossing",
+      "Achondroplasia — midface hypoplasia with relative mandibular prominence",
+      "Apert syndrome — craniosynostosis with midface retrusion and mandibular prognathism",
+      "Basal cell nevus syndrome (Gorlin) — mandibular cysts and jaw abnormalities",
+      "Normal ethnic/familial mandibular prominence — exclude pathology if isolated",
+    ],
+    pairWith: [
+      "Prognathism + enlarged hands/feet + ↑ IGF-1 → acromegaly",
+      "Prognathism + rhizomelic shortening + frontal bossing → achondroplasia",
+      "Prognathism + craniosynostosis + syndactyly → Apert syndrome",
+      "Prognathism + macroglossia + sleep apnea → acromegaly workup",
+      "vs retrognathia/micrognathia — Pierre Robin, fetal alcohol syndrome",
+    ],
+    distinguishFrom: [
+      "Micrognathia / retrognathia — underdeveloped or posterior mandible (opposite finding)",
+      "Macroglossia — enlarged tongue may mimic jaw prominence (Beckwith-Wiedemann, acromegaly)",
+      "Maxillary retrusion — midface deficiency makes mandible appear prominent without true mandibular overgrowth",
+      "Dental malocclusion alone — orthodontic Class III without syndromic bone overgrowth",
+    ],
+    pediatrics:
+      "True acromegaly is rare before epiphyseal closure (presents as gigantism). Achondroplasia shows relative prognathism from infancy with midface hypoplasia. Craniosynostosis syndromes need early craniofacial team evaluation.",
   },
   {
     id: "psychosis",
@@ -11908,6 +12194,99 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Septic arthritis in children requires urgent joint aspiration — most commonly S. aureus; juvenile idiopathic arthritis presents with morning stiffness and joint swelling without infection.",
+  },
+  {
+    id: "joint-hypermobility",
+    name: "Joint Hypermobility (Joint Laxity)",
+    etymology:
+      "Greek hyper = excess + Latin mobilis = movable + Latin laxitas = looseness — greater-than-normal passive range of joint motion from connective tissue compliance",
+    aliases: [
+      "joint hypermobility",
+      "joint hypermobilities",
+      "hypermobility",
+      "hypermobilities",
+      "joint laxity",
+      "joint laxities",
+      "ligamentous laxity",
+      "ligamentous laxities",
+      "hypermobile joints",
+      "hypermobile joint",
+      "loose joints",
+      "loose joint",
+      "double-jointed",
+      "double jointed",
+      "generalized joint hypermobility",
+    ],
+    definition:
+      "Excessive passive range of motion at one or more joints beyond normal limits for age and sex — reflects increased connective tissue compliance (collagen/elastin) of capsule and ligaments; may be benign or feature of heritable connective tissue disorders.",
+    mechanism:
+      "Altered collagen cross-linking or fibrillin/elastin structure (genetic or acquired) → weaker restraining ligaments and joint capsules → joints exceed normal arc; Beighton score quantifies hypermobility; may predispose to subluxation, soft-tissue injury, and chronic pain in some patients.",
+    thinkOf: [
+      "Ehlers-Danlos syndrome (especially hypermobile type) — soft velvety skin, easy bruising, joint pain",
+      "Marfan syndrome — tall stature, arachnodactyly, lens dislocation, aortic root dilation",
+      "Down syndrome — hypotonia and ligamentous laxity, atlantoaxial instability risk",
+      "Benign joint hypermobility — asymptomatic, no systemic features",
+      "Osteogenesis imperfecta — joint laxity with fractures and blue sclerae",
+      "Stickler syndrome — joint hypermobility with Pierre Robin, myopia, hearing loss",
+    ],
+    pairWith: [
+      "Hypermobility + skin hyperextensibility + atrophic scars → Ehlers-Danlos syndrome",
+      "Hypermobility + tall habitus + murmur + lens subluxation → Marfan syndrome",
+      "Hypermobility + hypotonia + single palmar crease → Down syndrome (screen C-spine)",
+      "Beighton score ≥5/9 in adult → generalized hypermobility threshold",
+      "Recurrent shoulder subluxation + hypermobility → multidirectional instability",
+    ],
+    distinguishFrom: [
+      "Joint subluxation/dislocation — episodic complete or partial separation, not baseline ROM",
+      "Spasticity — increased tone limiting motion, opposite of laxity",
+      "Hyperflexibility from training — dancers/gymnasts may have acquired range without genetic laxity",
+      "Arthritis — painful swollen joints with inflammation, not isolated excess ROM",
+      "Hypotonia — reduced muscle tone causing floppy limbs; may coexist but distinct from ligament laxity",
+    ],
+    pediatrics:
+      "Down syndrome requires cervical spine screening before contact sports due to atlantoaxial instability. Benign hypermobility common in children; EDS/Marfan need cardiovascular and ocular workup when systemic features present.",
+  },
+  {
+    id: "marfanoid-habitus",
+    name: "Marfanoid Habitus",
+    etymology:
+      "eponym Marfan + Greek -oid = resembling — body habitus mimicking Marfan syndrome (tall, long limbs) without necessarily having FBN1 mutation",
+    aliases: [
+      "marfanoid",
+      "marfanoid habitus",
+      "marfanoid habituses",
+      "marfanoid features",
+      "marfanoid appearance",
+      "marfanoid body habitus",
+      "marfan-like habitus",
+      "marfan-like features",
+      "marfanoid habitus medullary thyroid carcinoma syndrome",
+    ],
+    definition:
+      "Tall, thin body habitus with long limbs, arachnodactyly, and sometimes pectus deformity resembling Marfan syndrome — a descriptive finding that occurs in Marfan syndrome but also in homocystinuria, MEN2B, Shprintzen-Goldberg syndrome, and other connective tissue or genetic disorders.",
+    mechanism:
+      "Altered connective tissue matrix (fibrillin-1 in Marfan, homocysteine toxicity in homocystinuria, RET-associated syndromes in MEN2B) or disproportionate skeletal growth → increased arm span, arachnodactyly, pectus excavatum/carinatum, and joint hypermobility — lens position and cardiovascular findings distinguish underlying etiology.",
+    thinkOf: [
+      "Marfan syndrome — FBN1, superotemporal lens dislocation, aortic root dilation",
+      "Homocystinuria — downward lens dislocation, thrombosis, intellectual disability, AR",
+      "MEN2B — mucosal neuromas, medullary thyroid carcinoma, pheochromocytoma",
+      "Shprintzen-Goldberg syndrome — craniosynostosis, intellectual disability",
+      "Klinefelter syndrome — tall eunuchoid habitus without arachnodactyly classic pattern",
+    ],
+    pairWith: [
+      "Marfanoid + inferonasal lens dislocation + thrombosis → homocystinuria not Marfan",
+      "Marfanoid + superotemporal lens dislocation + aortic root dilation → Marfan syndrome",
+      "Marfanoid + mucosal neuromas + medullary thyroid cancer → MEN2B",
+      "Marfanoid + joint hypermobility alone → evaluate cardiovascular and ocular systems before labeling Marfan",
+    ],
+    distinguishFrom: [
+      "Marfan syndrome — specific FBN1 diagnosis with aortic risk, not just habitus descriptor",
+      "Constitutional tall stature — tall without arachnodactyly, pectus, or lens/aortic disease",
+      "Eunuchoid proportions — Klinefelter; long legs but different endocrine and gonadal context",
+      "Prognathism/acromegaly — adult overgrowth from GH excess, not marfanoid childhood habitus",
+    ],
+    pediatrics:
+      "Marfanoid appearance in a child warrants echocardiography and slit-lamp exam — distinguish Marfan from homocystinuria by lens direction and intellectual/thrombotic history. MEN2B may present in infancy with marfanoid habitus and feeding problems from neuromas.",
   },
   {
     id: "oligoarthritis",
@@ -15488,14 +15867,98 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Homozygous familial hypercholesterolemia causes tendon xanthomas and premature CAD in childhood. Type I hyperchylomicronemia presents with eruptive xanthomas and pancreatitis in infants/children — treat with very low-fat diet and MCT oil.",
   },
   {
+    id: "eruptive-xanthomas",
+    name: "Eruptive Xanthomas",
+    etymology:
+      "Latin eruptivus = bursting forth + Greek xanthos = yellow + -oma = mass — sudden crops of small yellow papules from severe hypertriglyceridemia",
+    aliases: [
+      "eruptive xanthoma",
+      "eruptive xanthomas",
+      "eruptive xanthomata",
+      "eruptive cutaneous xanthoma",
+      "eruptive cutaneous xanthomas",
+      "chylomicronemia xanthoma",
+      "chylomicronemia xanthomas",
+    ],
+    definition:
+      "Sudden appearance of multiple small yellow-red papules on extensor surfaces (buttocks, shoulders, elbows, knees) from chylomicron and VLDL infiltration into skin — pathognomonic for severe hypertriglyceridemia, especially type I hyperchylomicronemia.",
+    mechanism:
+      "When triglycerides typically exceed ~1000 mg/dL, chylomicrons extravasate into dermis → lipid-laden macrophages form inflammatory papules; often accompanies lipemia retinalis and acute pancreatitis from chylomicronemia.",
+    thinkOf: [
+      "Type I hyperlipoproteinemia — LPL or ApoC-II deficiency; fasting chylomicronemia",
+      "Uncontrolled diabetes with extreme hypertriglyceridemia",
+      "Alcohol or estrogen-induced TG spike",
+      "Familial chylomicronemia syndrome",
+      "Acute pancreatitis in same patient",
+    ],
+    pairWith: [
+      "Eruptive xanthomas + TG >1000 + abdominal pain → hyperchylomicronemia with pancreatitis",
+      "Eruptive xanthomas + lipemia retinalis → severe chylomicronemia",
+      "Eruptive xanthomas + normal LDL but very high TG → type I not familial hypercholesterolemia",
+      "vs tendon xanthomas — eruptive = TG/chylomicrons; tendon = LDL/FH",
+    ],
+    distinguishFrom: [
+      "Tendon xanthomas — Achilles/elbow thickening in familial hypercholesterolemia (↑ LDL)",
+      "Tuberous xanthomas — larger nodules on elbows/knees in type III dysbetalipoproteinemia",
+      "Palmar xanthomas — yellow crease deposits in type III (ApoE2/E2)",
+      "Xanthelasma — eyelid plaques, not eruptive papules on extensors",
+      "Pustular or follicular rash — infectious or inflammatory, not lipid foam cells",
+    ],
+    pediatrics:
+      "Type I hyperchylomicronemia in infants/children causes eruptive xanthomas, lipemia retinalis, and recurrent pancreatitis — very low-fat diet and medium-chain triglycerides (absorbed portal, not chylomicron) are mainstay.",
+  },
+  {
+    id: "tendon-xanthomas",
+    name: "Tendon Xanthomas",
+    etymology:
+      "Greek tenon = tendon + xanthos = yellow + -oma = mass — lipid-laden foam cell deposits within tendons, especially weight-bearing extensor tendons",
+    aliases: [
+      "tendon xanthoma",
+      "tendon xanthomas",
+      "tendon xanthomata",
+      "tendinous xanthoma",
+      "tendinous xanthomas",
+      "achilles xanthoma",
+      "achilles xanthomas",
+      "achilles tendon xanthoma",
+      "extensor tendon xanthoma",
+    ],
+    definition:
+      "Painless thickening or nodularity of tendons (classically Achilles and extensor tendons of hands) from cholesterol ester–laden macrophage infiltration — hallmark of prolonged severe LDL elevation, especially familial hypercholesterolemia.",
+    mechanism:
+      "Elevated circulating LDL infiltrates tendon extracellular matrix or is taken up by macrophages → foam cell aggregates within tendon sheath and body → palpable nodularity on exam and thickening on imaging; develops over years of hypercholesterolemia.",
+    thinkOf: [
+      "Familial hypercholesterolemia — LDLR, APOB, or PCSK9 mutations; premature CAD",
+      "Homozygous FH — very high LDL (>500 mg/dL), childhood tendon xanthomas",
+      "Severe secondary hypercholesterolemia (hypothyroidism, nephrotic syndrome)",
+      "Corneal arcus and xanthelasma in same patient",
+    ],
+    pairWith: [
+      "Tendon xanthomas + ↑ LDL + family history premature MI → familial hypercholesterolemia",
+      "Achilles thickening + xanthelasma + corneal arcus in young adult → check LDL and FH genes",
+      "Tendon xanthomas + normal TG + no eruptive lesions → LDL disorder not chylomicronemia",
+      "vs eruptive xanthomas — tendon = LDL; eruptive = hypertriglyceridemia",
+    ],
+    distinguishFrom: [
+      "Eruptive xanthomas — small papules on extensor skin with TG >1000, not tendon thickening",
+      "Tuberous xanthomas — subcutaneous nodules at elbows/knees in type III dysbetalipoproteinemia",
+      "Xanthelasma — eyelid plaques, may coexist but distinct site",
+      "Tendinitis — painful inflammation, not lipid deposit thickening",
+      "Achilles tendinopathy — pain with activity, degenerative not xanthomatous",
+    ],
+    pediatrics:
+      "Homozygous familial hypercholesterolemia causes tendon xanthomas and premature atherosclerosis in childhood — early statin therapy and LDL apheresis; screen siblings and parents.",
+  },
+  {
     id: "xanthelasma",
-    name: "Xanthelasma",
+    name: "Xanthelasma (Xanthelasmas)",
     etymology:
       "Greek xanthos = yellow + Greek elasma = beaten metal plate — yellowish plaque on eyelid",
     aliases: [
       "xanthelasma",
       "xanthelasmas",
       "xanthelasma palpebrarum",
+      "xanthelasma palpebrarums",
       "eyelid xanthoma",
       "eyelid xanthomas",
       "xanthoma palpebrarum",
@@ -15541,6 +16004,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "milky retinal vessels",
       "salmon-colored retinal vessels",
       "retinal lipemia",
+      "lipemia of the retina",
+      "lipemic retinopathy",
     ],
     definition:
       "Fundoscopic finding of salmon-pink to creamy-white retinal arteries and veins caused by high circulating chylomicrons or very elevated triglycerides scattering light through vessel blood columns.",

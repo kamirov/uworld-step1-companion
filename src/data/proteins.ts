@@ -626,6 +626,48 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "elastase",
+    name: "Elastase",
+    etymology:
+      "Greek elastos = ductile/stretchable + -ase = enzyme — protease that degrades elastin and other connective tissue proteins",
+    aliases: [
+      "elastase",
+      "elastases",
+      "pancreatic elastase",
+      "pancreatic elastases",
+      "neutrophil elastase",
+      "neutrophil elastases",
+      "leukocyte elastase",
+      "elastase enzyme",
+      "elastase enzymes",
+    ],
+    gene: "ELANE (neutrophil elastase); pancreatic elastase encoded by CELA genes (e.g., CELA3B)",
+    location:
+      "Pancreatic acinar zymogen granules (digestive elastase secreted into duodenum); neutrophil azurophil (primary) granules (tissue-destructive elastase in inflammation)",
+    function:
+      "Serine protease degrading elastin and other matrix proteins — pancreatic elastase aids protein digestion in the intestinal lumen; neutrophil elastase participates in pathogen killing and tissue remodeling but causes lung damage when unchecked.",
+    mutationCauses: [
+      "α1-antitrypsin deficiency — unopposed neutrophil elastase → panacinar emphysema and liver disease",
+      "Pancreatic insufficiency (CF, chronic pancreatitis) — ↓ pancreatic elastase secretion → fat malabsorption",
+      "ELANE mutations — cyclic neutropenia and severe congenital neutropenia",
+    ],
+    boardsPearls: [
+      "Two boards-relevant elastases: pancreatic (digestion) vs neutrophil (inflammation)",
+      "Pancreatic elastase — exocrine pancreas marker; low in CF and chronic pancreatitis",
+      "Neutrophil elastase — inhibited by α1-antitrypsin; deficiency → emphysema",
+      "Fecal elastase-1 measures pancreatic exocrine output noninvasively",
+      "vs elastin — structural protein substrate; elastase is the degrading enzyme",
+      "vs trypsin/chymotrypsin — other pancreatic proteases; elastase is elastin-preferring serine protease",
+    ],
+    distinguishFrom: [
+      "Elastin — structural elastic fiber protein degraded by elastase",
+      "α1-Antitrypsin — inhibitor of neutrophil elastase, not an elastase itself",
+      "Fecal elastase — stool assay of pancreatic elastase activity, not the enzyme in serum",
+      "Collagenase — degrades collagen; elastase prefers elastin",
+      "Trypsin — broader pancreatic protease activating other zymogens including elastase",
+    ],
+  },
+  {
     id: "elastin",
     name: "Elastin",
     etymology: "Greek elastos = ductile/stretchable + -in protein",
@@ -2088,6 +2130,8 @@ export const PROTEINS: ProteinEntry[] = [
       "hla b 27",
       "human leukocyte antigen b27",
       "human leukocyte antigen b-27",
+      "hla class I b27",
+      "hla-b*27",
     ],
     gene: "HLA-B*27 — class I MHC gene on chromosome 6p21",
     location:
@@ -2105,11 +2149,14 @@ export const PROTEINS: ProteinEntry[] = [
     boardsPearls: [
       "HLA-B27 — seronegative spondyloarthropathy marker; RF and anti-CCP negative",
       "PAIR: Psoriatic arthritis, Ankylosing spondylitis, IBD-associated, Reactive arthritis",
+      ">90% of ankylosing spondylitis patients are B27+ — but ~8% of population carries B27 and most never develop disease",
       "Ankylosing spondylitis — inflammatory back pain, sacroiliitis, bamboo spine; uveitis",
       "Reactive arthritis — can't see, can't pee, can't climb a tree (conjunctivitis, urethritis, arthritis) — often B27+",
-      "Presence of B27 is not diagnostic alone — most B27+ individuals are healthy",
+      "Presence of B27 is not diagnostic alone — need clinical and imaging criteria",
       "vs RF/anti-CCP — rheumatoid arthritis markers; spondyloarthropathies are seronegative",
       "vs HLA-DQ2/DQ8 — celiac disease association, not B27",
+      "vs HLA-B51 — Behçet disease association, not spondyloarthritis",
+      "Mechanism: aberrant peptide presentation and IL-23/IL-17 axis — molecular mimicry debated",
     ],
     distinguishFrom: [
       "MHC class I — broader family (HLA-A/B/C); B27 is one B locus allele",
@@ -3320,6 +3367,52 @@ export const PROTEINS: ProteinEntry[] = [
       "NPHS1 (nephrin) — congenital nephrotic syndrome of Finnish type",
       "Hyperfiltration — hemodynamic FSGS from reduced nephron mass, not APOL1 variant",
     ],
+  },
+  {
+    id: "apolipoprotein",
+    name: "Apolipoprotein",
+    etymology:
+      "Greek apo = detached/separate + lipoprotein = lipid-protein particle — protein moieties that define lipoprotein structure, receptor binding, and enzyme activation",
+    aliases: [
+      "apolipoprotein",
+      "apolipoproteins",
+      "apo protein",
+      "apo proteins",
+      "apoprotein",
+      "apoproteins",
+      "lipoprotein apoprotein",
+      "lipoprotein apoproteins",
+    ],
+    gene: "Multiple genes — APOA1, APOB, APOC1/2/3, APOE, APO(a), etc.",
+    location:
+      "Surface and core-associated proteins on circulating chylomicrons, VLDL, IDL, LDL, HDL, and Lp(a) particles; synthesized mainly in liver and intestine",
+    function:
+      "Structural and regulatory proteins enabling lipoprotein assembly, receptor recognition, and lipase activation — ApoB (one per atherogenic particle), ApoA-I (major HDL protein), ApoC-II (activates lipoprotein lipase), ApoE (remnant receptor ligand), Apo(a) (Lp(a) moiety).",
+    mutationCauses: [
+      "APOC2 deficiency — type I hyperchylomicronemia, eruptive xanthomas, pancreatitis",
+      "APOE ε2/ε2 homozygosity — type III dysbetalipoproteinemia (broad β band)",
+      "APOE ε4 alleles — ↑ late-onset Alzheimer disease and atherosclerosis risk",
+      "APOB mutations — familial hypercholesterolemia (impaired LDL receptor binding)",
+      "LPL deficiency — chylomicronemia (needs ApoC-II as cofactor)",
+    ],
+    boardsPearls: [
+      "ApoB-100 — one molecule per VLDL/LDL particle; marker of atherogenic particle number",
+      "ApoA-I — major HDL protein; activates LCAT; ABCA1 loads lipid onto nascent HDL",
+      "ApoC-II — cofactor for lipoprotein lipase; deficiency → type I hyperchylomicronemia",
+      "ApoE — mediates hepatic uptake of chylomicron/VLDL remnants via LDL receptor family",
+      "Apo(a) — covalently linked to ApoB on Lp(a); independent ASCVD risk",
+      "Mnemonic: C-II calls LPL; E clears remnants; B is bulk of bad particles",
+      "vs lipoprotein lipase — enzyme that hydrolyzes TG; ApoC-II activates it",
+    ],
+    distinguishFrom: [
+      "Apolipoprotein E3/E4/C2 — specific isoforms/genes; apolipoprotein is the family umbrella",
+      "Lipoprotein lipase (LPL) — endothelial enzyme, not apolipoprotein",
+      "LDL receptor — membrane receptor recognizing ApoB/ApoE, not a lipoprotein protein itself",
+      "Cholesterol — lipid cargo; apolipoproteins are protein components of particles",
+      "APOL1 — distinct apolipoprotein L family member linked to FSGS, not classic dyslipidemia",
+    ],
+    pediatrics:
+      "ApoC-II or LPL deficiency presents in infancy with failure to thrive, eruptive xanthomas, and pancreatitis. Homozygous FH from LDLR/APOB defects causes tendon xanthomas in childhood.",
   },
   {
     id: "apolipoprotein-e3",

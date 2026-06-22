@@ -1811,10 +1811,13 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     etymology: "Latin vas = vessel + pressus = pressed + -in = protein suffix",
     aliases: [
       "vasopressin",
+      "vasopressins",
       "antidiuretic hormone",
+      "antidiuretic hormones",
       "adh",
       "arginine vasopressin",
       "avp",
+      "pitressin",
     ],
     type: "Peptide hormone",
     source:
@@ -1834,6 +1837,10 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "DI: high serum osm + low urine osm; SIADH: low serum osm + inappropriately concentrated urine",
       "Desmopressin treats central DI; nephrogenic DI does not respond (collecting duct defect)",
       "Ethanol inhibits ADH — beer potomania/hyponatremia context",
+      "V1 vasoconstriction — exogenous vasopressin (pitressin) for vasodilatory shock and variceal bleeding",
+      "V2 water retention — aquaporin-2 insertion in collecting duct principal cells",
+      "Mnemonic: ADH Adds H₂O — concentrates urine when serum osmolality is high",
+      "CRH and vasopressin from PVN synergize to ↑ ACTH during stress",
     ],
     distinguishFrom: [
       "Oxytocin — uterine contraction and milk ejection, not primary water retention hormone",
@@ -1891,6 +1898,55 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Congenital adrenal hyperplasia and adrenal insufficiency alter cortisol feedback on CRH/ACTH — neonates may present with salt wasting or virilization. Chronic exogenous steroids suppress the HPA axis; stress-dose steroids needed if axis suppressed.",
+  },
+  {
+    id: "gastrin",
+    name: "Gastrin",
+    etymology:
+      "Greek gaster = stomach + -in = protein suffix — peptide hormone stimulating gastric acid secretion",
+    aliases: [
+      "gastrin",
+      "gastrins",
+      "g-17",
+      "g17",
+      "little gastrin",
+      "big gastrin",
+      "gastric gastrin",
+      "g cell hormone",
+    ],
+    type: "Peptide hormone",
+    source:
+      "G cells in gastric antrum and duodenum (enteroendocrine cells); secretion stimulated by gastric distension, vagal input (GRP), and amino acids/peptides in stomach; suppressed by acidic gastric pH (negative feedback)",
+    receptor:
+      "CCK-B (CCK2) gastrin receptor on gastric parietal cells and enterochromaffin-like (ECL) cells → Gq/Gs pathways → ↑ H⁺/K⁺-ATPase activity and histamine release",
+    function:
+      "Primary hormonal stimulus for gastric acid secretion — acts directly on parietal cells and indirectly via histamine from ECL cells; trophic (growth-promoting) effect on gastric mucosa increases parietal and ECL cell mass when chronically elevated.",
+    clinicalRelevance: [
+      "Zollinger-Ellison syndrome (gastrinoma) — ectopic gastrin secretion → refractory peptic ulcers, diarrhea, ↑ parietal cell mass",
+      "Secretin stimulation test — IV secretin normally ↓ gastrin; gastrinoma shows paradoxical ↑ gastrin",
+      "Chronic PPI use → achlorhydria → loss of acid feedback → hypergastrinemia and parietal cell hyperplasia",
+      "Pernicious anemia / atrophic gastritis — achlorhydria → secondary hypergastrinemia",
+      "MEN1 — pancreatic gastrinoma is common functional NET",
+    ],
+    boardsPearls: [
+      "G cells (antrum) → gastrin → parietal cell acid + ECL histamine (potentiation with ACh M3 and H2)",
+      "Acid in stomach ↓ gastrin release — negative feedback loop",
+      "Gastrinoma: ulcers in jejunum, diarrhea, hypergastrinemia, ↑ parietal cell mass",
+      "Secretin test: gastrinoma → paradoxical ↑ gastrin (diagnostic pearl)",
+      "Chronic PPI → elevated gastrin → trophic mucosal changes; rebound acid on withdrawal",
+      "vs CCK — CCK-B receptor shared but gastrin is primary acid secretagogue from G cells",
+      "vs histamine — ECL-derived H2 signal potentiates gastrin on parietal cells",
+    ],
+    distinguishFrom: [
+      "Histamine (H2) — from ECL cells; potentiates gastrin but not primary G-cell hormone",
+      "Acetylcholine (M3) — vagal stimulation of parietal cells; third acid secretagogue",
+      "Secretin — duodenal hormone inhibiting acid; used diagnostically for gastrinoma",
+      "Somatostatin — inhibits gastrin release from G cells",
+      "CCK — primarily stimulates pancreatic enzymes and gallbladder; overlaps CCK-B receptor",
+      "GRP (bombesin-like) — vagal stimulus for G-cell gastrin release, not gastrin itself",
+    ],
+    pediatrics:
+      "Gastrinoma is rare in children but occurs in MEN1 kindreds — suspect with refractory PUD and diarrhea. Neonatal achlorhydria alters gastrin feedback physiology.",
   },
   {
     id: "ghrh",

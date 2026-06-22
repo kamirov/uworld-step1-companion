@@ -1883,6 +1883,57 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Superior orbital fissure and orbital apex syndromes are rare in children but may follow skull base trauma, orbital cellulitis with cavernous sinus spread, or sphenoid wing meningioma; same cranial nerve anatomy applies.",
   },
   {
+    id: "superior-mesenteric-artery",
+    name: "Superior Mesenteric Artery",
+    etymology:
+      "Latin superior = above + Greek mesenterion = middle intestine + Latin arteria = artery — major arterial supply of the midgut",
+    aliases: [
+      "superior mesenteric artery",
+      "superior mesenteric arteries",
+      "sma",
+      "smas",
+      "superior mesenteric trunk",
+      "superior mesenteric arterial supply",
+    ],
+    definition:
+      "Second unpaired branch of the abdominal aorta (at ~L1, distal to celiac trunk) supplying the midgut — from distal duodenum through proximal two-thirds of transverse colon — including jejunum, ileum, cecum, appendix, ascending colon, and transverse colon; embryologic axis of midgut rotation.",
+    anatomy:
+      "Arises from anterior aorta ~1 cm below celiac trunk at L1. Courses inferiorly behind neck of pancreas and crosses third part of duodenum anteriorly. Branches: inferior pancreaticoduodenal, jejunal and ileal arcades, ileocolic (appendix, cecum, ascending colon), right colic, middle colic. Superior mesenteric vein parallels SMA and joins splenic vein to form portal vein. Marginal artery of Drummond connects SMA and IMA circulations at splenic flexure (watershed).",
+    action: [
+      "Delivers ~25% of cardiac output to small intestine and proximal colon after meals (postprandial hyperemia)",
+      "Midgut embryologic blood supply — rotation of gut occurs around SMA axis during development",
+      "Collateral flow via pancreaticoduodenal arcades with celiac trunk when proximal SMA stenosis",
+      "Venous drainage via SMV to portal circulation for hepatic first-pass metabolism",
+    ],
+    innervation:
+      "Sympathetic fibers from celiac and superior mesenteric ganglia (T10–T12) — vasoconstriction with sympathetic activation; parasympathetic via vagus to gut wall",
+    clinicalRelevance: [
+      "Acute mesenteric ischemia — SMA embolus (often from atrial fibrillation) or thrombosis → severe abdominal pain out of proportion to exam, bloody stools, lactic acidosis",
+      "Chronic mesenteric ischemia — SMA stenosis → postprandial pain (intestinal angina), food fear, weight loss",
+      "SMA syndrome (Wilkie) — compressed third portion of duodenum between SMA and aorta → vomiting, weight loss in cachectic states",
+      "Midgut volvulus in malrotation — twists around SMA axis in infants",
+      "SMA branch ischemia at splenic flexure watershed — ischemic colitis",
+    ],
+    boardsPearls: [
+      "SMA = midgut supply: distal duodenum → proximal 2/3 transverse colon",
+      "Celiac = foregut; SMA = midgut; IMA = hindgut — embryology framework",
+      "Acute SMA embolus — AFib patient, pain out of proportion, metabolic acidosis",
+      "Chronic SMA disease — postprandial pain, weight loss, fear of eating",
+      "SMA crosses anterior to third part of duodenum — SMA syndrome if aortomesenteric angle narrows",
+      "SMV + splenic vein → portal vein — portal hypertension affects mesenteric venous drainage",
+      "vs celiac trunk — celiac supplies foregut (stomach, proximal duodenum, liver, spleen, pancreas)",
+    ],
+    distinguishFrom: [
+      "Celiac trunk — foregut artery; first aortic branch above SMA",
+      "Inferior mesenteric artery — hindgut (distal colon, rectum)",
+      "Renal arteries — lateral aortic branches at L1–L2, not anterior visceral supply",
+      "Superior mesenteric vein — venous counterpart draining to portal vein",
+      "Splanchnic circulation — broader visceral perfusion concept including celiac, SMA, IMA",
+    ],
+    pediatrics:
+      "Midgut malrotation with volvulus twists around SMA — bilious vomiting in neonate is surgical emergency. Necrotizing enterocolitis involves immature mesenteric circulation and mucosa in preterm infants.",
+  },
+  {
     id: "cavernous-sinus",
     name: "Cavernous Sinus",
     etymology: "Latin cavernosus = full of hollows/caves + Latin sinus = bay/channel",
@@ -2618,6 +2669,61 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Same sarcomere band anatomy in pediatric skeletal and cardiac muscle. Sarcomere gene mutations (e.g., MYH7, MYBPC3) cause familial hypertrophic cardiomyopathy that may present in adolescents with syncope or sudden death.",
   },
   {
+    id: "muscle-contraction",
+    name: "Muscle Contraction",
+    etymology:
+      "Latin musculus = little mouse + Latin contractio = drawing together — ATP-dependent sliding of actin and myosin filaments shortening the sarcomere",
+    aliases: [
+      "muscle contraction",
+      "muscle contractions",
+      "skeletal muscle contraction",
+      "striated muscle contraction",
+      "excitation-contraction coupling",
+      "ecc contraction coupling",
+      "cross-bridge cycling",
+      "sliding filament contraction",
+    ],
+    definition:
+      "Process by which skeletal muscle converts electrical excitation at the neuromuscular junction into mechanical force via Ca²⁺-regulated actin–myosin cross-bridge cycling in sarcomeres — shortening the muscle (isotonic) or increasing tension (isometric).",
+    anatomy:
+      "Motor neuron → neuromuscular junction (ACh, nicotinic receptors) → sarcolemma and T-tubules → sarcoplasmic reticulum terminal cisternae with ryanodine receptors → sarcomere with actin (thin), myosin (thick), troponin/tropomyosin regulatory proteins.",
+    action: [
+      "Step 1 — Action potential arrives at motor nerve terminal → voltage-gated Ca²⁺ channels open → ACh vesicles fuse and release ACh into synaptic cleft",
+      "Step 2 — ACh binds nicotinic receptors on motor end plate → Na⁺ influx → end-plate potential → muscle action potential propagates along sarcolemma and into T-tubules",
+      "Step 3 — T-tubule depolarization activates dihydropyridine (DHPR) voltage sensors → conformational coupling opens ryanodine receptors (RyR) on sarcoplasmic reticulum",
+      "Step 4 — Ca²⁺ floods sarcoplasm from SR (calcium-induced calcium release)",
+      "Step 5 — Ca²⁺ binds troponin C on thin filaments → tropomyosin shifts off actin binding sites → myosin head can bind actin",
+      "Step 6 — Cross-bridge cycle: myosin (already bound ADP+Pi from prior ATP hydrolysis) binds actin → power stroke releases Pi then ADP → sarcomere shortens as thin filaments slide toward M line",
+      "Step 7 — New ATP binds myosin head → detachment from actin (rigor mortis when ATP absent postmortem)",
+      "Step 8 — ATP hydrolysis recocks myosin head for next cycle while Ca²⁺ remains elevated",
+      "Step 9 — When nerve signal stops, ACh broken down by acetylcholinesterase → SR reuptakes Ca²⁺ via SERCA pumps → troponin–tropomyosin reblocks actin → relaxation",
+    ],
+    clinicalRelevance: [
+      "Lambert-Eaton — impaired ACh release at NMJ → reduced contraction",
+      "Myasthenia gravis — antibody to nicotinic receptor → fatigable weakness",
+      "Malignant hyperthermia — RyR1 mutation → uncontrolled Ca²⁺ release with succinylcholine/volatile anesthetics",
+      "Dantrolene treats MH by blocking RyR Ca²⁺ release",
+      "Organophosphate poisoning — AChE inhibition → sustained contraction (fasciculations, paralysis)",
+    ],
+    boardsPearls: [
+      "Excitation-contraction coupling: AP → DHPR → RyR → Ca²⁺ → troponin C → cross-bridge cycling",
+      "A band constant; I band and H zone shorten during contraction",
+      "ATP needed for detachment, not attachment/power stroke",
+      "T-tubules conduct AP to interior of muscle fiber",
+      "Smooth muscle uses calmodulin–MLCK pathway, not troponin",
+      "Cardiac muscle — same sliding filament; Ca²⁺ also enters via L-type channels (EC coupling variant)",
+    ],
+    distinguishFrom: [
+      "Sarcomere — structural unit; muscle contraction is the dynamic process",
+      "Muscle spasm — pathologic sustained contraction, not regulated E-C coupling",
+      "Smooth muscle contraction — lacks striated sarcomere/troponin system",
+      "Isometric vs isotonic — tension vs length change; same molecular cross-bridge mechanism",
+      "Tetanus toxin — blocks inhibitory interneurons, not NMJ cross-bridge directly",
+    ],
+    pediatrics:
+      "Neonatal myasthenia gravis from transplacental anti-AChR antibodies causes hypotonia and weak cry. Duchenne muscular dystrophy — dystrophin loss causes membrane instability during repeated contraction cycles.",
+  },
+  {
     id: "trabeculae",
     name: "Trabeculae",
     etymology:
@@ -3336,6 +3442,60 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Salter-Harris fractures are defining pediatric orthopedic injuries — always compare bilateral growth plates on X-ray. Monitor for physeal arrest after types III–V. Type II fragment is metaphyseal (Thurston-Holland sign), not epiphyseal.",
+  },
+  {
+    id: "cubital-fossa",
+    name: "Cubital Fossa",
+    etymology:
+      "Latin cubitus = elbow + fossa = ditch/depression — triangular anterior depression at the elbow joint",
+    aliases: [
+      "cubital fossa",
+      "cubital fossae",
+      "antecubital fossa",
+      "antecubital fossae",
+      "elbow fossa",
+      "elbow fossae",
+      "anterior elbow fossa",
+      "anterior elbow fossae",
+      "cubital region",
+    ],
+    definition:
+      "Triangular anterior depression at the elbow bounded by the humerus proximally and the forearm bones distally — a high-yield anatomic landmark containing the terminal brachial artery, median nerve, biceps tendon, and brachial vein, with the radial nerve nearby laterally.",
+    anatomy:
+      "Boundaries: lateral — brachioradialis; medial — pronator teres; base (proximal) — imaginary line between epicondyles; floor — brachialis and supinator; roof — skin and fascia. Contents (medial to lateral): median nerve, brachial artery, biceps tendon, radial nerve (more lateral/deep). Brachial artery bifurcates into radial and ulnar arteries at the level of the neck of the radius within the fossa.",
+    action: [
+      "Clinical site for brachial pulse palpation and blood pressure cuff placement (antecubital)",
+      "Venipuncture and IV access in antecubital veins (cephalic, basilic, median cubital)",
+      "Forearm flexion and supination occur at the elbow joint deep to the fossa",
+      "Biceps tendon transmits flexion force across the fossa to the radial tuberosity",
+    ],
+    innervation:
+      "Median nerve (C6–T1) traverses fossa medially; radial nerve (C5–T1) passes deep/lateral near radial head; musculocutaneous nerve terminates as lateral antebrachial cutaneous nerve lateral to biceps",
+    clinicalRelevance: [
+      "Supracondylar humerus fracture (children) — brachial artery and median nerve vulnerable anteriorly",
+      "Brachial artery laceration or compression in elbow trauma",
+      "Median nerve injury at elbow — pronator teres syndrome or supracondylar fracture",
+      "Radial head/neck fracture — radial nerve injury with wrist drop",
+      "Antecubital venipuncture — avoid medial basilic if possible to reduce median nerve/artery injury risk",
+      "Lymph nodes in cubital fossa — sentinel for upper limb drainage (less emphasized on Step 1 than axillary)",
+    ],
+    boardsPearls: [
+      "Medial to lateral in cubital fossa: Median nerve, Brachial artery, Biceps tendon, Radial nerve — MBBR mnemonic",
+      "Brachial artery bifurcates into radial + ulnar at neck of radius in cubital fossa",
+      "Supracondylar fracture → check radial pulse and anterior interosseous branch function",
+      "Antecubital fossa = same region; cubital fossa is preferred anatomic term",
+      "Radial nerve injury at elbow → wrist drop; median nerve → 'hand of benediction' on attempted fist",
+      "vs popliteal fossa — posterior knee equivalent landmark for popliteal artery",
+    ],
+    distinguishFrom: [
+      "Antecubital fossa — synonymous clinical term for cubital fossa",
+      "Anatomical snuff box — distal radial styloid landmark for radial artery, not cubital fossa",
+      "Popliteal fossa — posterior knee depression with popliteal artery",
+      "Axilla — proximal upper limb neurovascular bundle, not elbow",
+      "Epicondyles — bony prominences forming proximal boundary, not the fossa itself",
+    ],
+    pediatrics:
+      "Supracondylar humerus fracture is the classic pediatric elbow injury threatening brachial artery and median nerve in the cubital fossa region — emergently assess radial pulse, capillary refill, and AIN function (OK sign). Gartland classification guides reduction and pinning.",
   },
   {
     id: "cortical-bone",

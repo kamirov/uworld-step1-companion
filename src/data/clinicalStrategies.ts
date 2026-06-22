@@ -1924,6 +1924,46 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Important in pediatric nephrotic syndrome, heart failure, and CKD; infants on formula or IV fluids need careful sodium content monitoring. Salt craving in Bartter/Gitelman requires supplementation rather than restriction.",
   },
   {
+    id: "diabetic-diet",
+    name: "Diabetic Diet",
+    etymology:
+      "Greek diabētēs = siphon/passing through + Latin dieta = way of life — structured nutritional plan to manage blood glucose in diabetes mellitus",
+    aliases: [
+      "diabetic diet",
+      "diabetic diets",
+      "diabetes diet",
+      "diabetes diets",
+      "diabetic meal plan",
+      "diabetic meal plans",
+      "medical nutrition therapy for diabetes",
+      "diabetes medical nutrition therapy",
+      "diabetic nutrition therapy",
+      "carbohydrate counting diet",
+      "consistent carbohydrate diet",
+    ],
+    definition:
+      "Medical nutrition therapy for diabetes mellitus emphasizing balanced macronutrients, carbohydrate consistency or counting, caloric moderation, and fiber-rich whole foods — foundational first-line management for type 2 diabetes and essential adjunct to insulin dosing in type 1 diabetes.",
+    details: [
+      "Type 2 diabetes — weight loss (if overweight), Mediterranean or DASH-style eating, limit sugar-sweetened beverages and refined carbohydrates, ↑ dietary fiber",
+      "Carbohydrate counting or consistent-carbohydrate meals — match insulin to carbohydrate intake in type 1 diabetes",
+      "Pair with regular physical activity — synergistic ↓ insulin resistance and A1c",
+      "Individualize calories and macronutrients for age, activity, comorbidities (CKD → protein/potassium moderation)",
+      "Avoid extreme fasting without supervision in insulin- or sulfonylurea-treated patients — hypoglycemia risk",
+      "First-line lifestyle intervention before pharmacotherapy in most type 2 diabetes (with metformin when indicated)",
+    ],
+    boardsPearls: [
+      "Lifestyle (diet + exercise + weight loss) is first-line for type 2 diabetes",
+      "Carbohydrate counting — essential for type 1 insulin adjustment",
+      "Limit simple sugars and refined carbs; emphasize fiber and whole grains",
+      "vs glycemic control strategy — diet is component of broader glucose management plan",
+      "vs diabetic ketoacidosis treatment — DKA requires insulin + fluids + electrolytes, not diet alone",
+      "MNT reduces A1c ~0.5–1% when adhered — comparable to one oral agent",
+      "Gestational diabetes — controlled carbohydrate distribution across meals",
+    ],
+    pediatrics:
+      "Type 1 diabetes in children requires family-centered carbohydrate counting with weight-based insulin dosing. Type 2 diabetes in adolescents emphasizes weight management and activity alongside metformin when needed. Avoid restrictive fad diets; growth and puberty alter caloric needs.",
+  },
+  {
     id: "screening",
     name: "Screening",
     etymology:
