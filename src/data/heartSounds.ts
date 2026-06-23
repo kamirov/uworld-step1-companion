@@ -71,6 +71,39 @@ export const HEART_SOUNDS: HeartSoundEntry[] = [
     ],
   },
   {
+    id: "s2-splitting",
+    name: "S2 Splitting",
+    etymology:
+      "S = second heart sound + splitting = separation of aortic (A2) and pulmonic (P2) valve closure components — normally varies with respiration",
+    aliases: [
+      "s2 splitting",
+      "s2 split",
+      "split s2",
+      "split second heart sound",
+      "splitting of s2",
+      "splitting of the second heart sound",
+      "second heart sound splitting",
+      "second heart sound split",
+      "physiologic s2 split",
+      "physiologic s2 splitting",
+      "physiologic splitting of s2",
+      "wide s2 split",
+      "wide s2 splitting",
+      "widened s2 split",
+    ],
+    meaning:
+      "Audible separation of the aortic (A2) and pulmonic (P2) components of the second heart sound — physiologic splitting widens during inspiration as delayed P2 closure; pathologic patterns (fixed, paradoxical, or single S2) localize to ASD, RBBB, pulmonary stenosis, aortic stenosis, or LBBB.",
+    conditions: [
+      "Physiologic split — P2 follows A2; split widens on inspiration, narrows on expiration (normal youth, athletes)",
+      "Wide split — RBBB, pulmonary stenosis, ASD with delayed RV ejection",
+      "Fixed split — atrial septal defect (ASD); split does not narrow on expiration (see dedicated entry)",
+      "Paradoxical (reversed) split — severe aortic stenosis, LBBB; split narrows on inspiration (see dedicated entry)",
+      "Single S2 — severe aortic stenosis (soft A2) or pulmonary hypertension (loud P2 alone)",
+      "Heard best at left upper sternal border (pulmonic area) with diaphragm of stethoscope",
+      "Inspiration delays P2 (↑ RV stroke volume, ↑ pulmonary vascular capacitance) — basis of physiologic widening",
+    ],
+  },
+  {
     id: "fixed-splitting-of-s2",
     name: "Fixed Splitting of S2",
     etymology:

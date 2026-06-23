@@ -2489,6 +2489,130 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     pediatrics:
       "Neonatal eye prophylaxis, GBS intrapartum antibiotics, and vitamin K at birth are classic pediatric chemoprophylaxis examples. HIV-exposed infants receive antiretroviral prophylaxis; children with sickle cell disease may receive penicillin to prevent pneumococcal sepsis.",
   },
+  {
+    id: "sensitivity",
+    name: "Sensitivity",
+    etymology:
+      "Latin sensus = feeling/perception + -ivity = quality of — proportion of truly diseased individuals correctly identified as positive by a diagnostic test (true positive rate)",
+    aliases: [
+      "sensitivity",
+      "sensitivities",
+      "test sensitivity",
+      "test sensitivities",
+      "diagnostic sensitivity",
+      "diagnostic sensitivities",
+      "true positive rate",
+      "true positive rates",
+      "tpr",
+      "recall",
+    ],
+    definition:
+      "Proportion of people with the disease who test positive — sensitivity = TP / (TP + FN); measures how well a test detects disease when disease is truly present; high sensitivity minimizes false negatives.",
+    details: [
+      "Formula: sensitivity = true positives / (true positives + false negatives)",
+      "High-sensitivity test — few false negatives; a negative result reliably rules out disease when pretest probability is low (SNOUT: Sensitive test, Negative rules OUT)",
+      "Examples: high-sensitivity D-dimer for VTE exclusion in low Wells score; HIV ELISA screening; ANA as sensitive but nonspecific screen for lupus",
+      "Low sensitivity — misses disease (false negatives); dangerous for ruling out serious conditions",
+      "Sensitivity is intrinsic to the test but can vary by disease stage, threshold, and population",
+      "Increasing test cutoff (↑ threshold) generally ↓ sensitivity but ↑ specificity — tradeoff on ROC curve",
+    ],
+    boardsPearls: [
+      "Sensitivity = TP / (TP + FN) — catches disease when present",
+      "SNOUT — Sensitive test, Negative rules OUT (e.g., negative D-dimer in low-risk patient)",
+      "High sensitivity preferred for screening and ruling out disease",
+      "vs specificity — specificity rules in disease; sensitivity rules out disease",
+      "Sensitive but nonspecific test — many false positives (ANA, ESR, D-dimer in wrong population)",
+      "100% sensitivity = no false negatives — but may have many false positives if specificity low",
+      "PPV/NPV depend on prevalence; sensitivity and specificity are test properties independent of prevalence",
+    ],
+    pediatrics:
+      "Newborn screening tests are designed for high sensitivity to avoid missing treatable metabolic and genetic disorders — positive screens require confirmatory testing with higher specificity.",
+  },
+  {
+    id: "specificity",
+    name: "Specificity",
+    etymology:
+      "Latin specificus = particular/distinct + -ity = quality of — proportion of truly disease-free individuals correctly identified as negative by a diagnostic test (true negative rate)",
+    aliases: [
+      "specificity",
+      "specificities",
+      "test specificity",
+      "test specificities",
+      "diagnostic specificity",
+      "diagnostic specificities",
+      "true negative rate",
+      "true negative rates",
+      "tnr",
+    ],
+    definition:
+      "Proportion of people without the disease who test negative — specificity = TN / (TN + FP); measures how well a test excludes disease when disease is truly absent; high specificity minimizes false positives.",
+    details: [
+      "Formula: specificity = true negatives / (true negatives + false positives)",
+      "High-specificity test — few false positives; a positive result reliably rules in disease when pretest probability is moderate (SPIN: Specific test, Positive rules IN)",
+      "Examples: anti–citrullinated peptide (anti-CCP) more specific than RF for rheumatoid arthritis; SPP1 (osteopontin) patterns vary; Western blot confirmatory after ELISA for HIV",
+      "Low specificity — many false positives in healthy population; problematic for screening without confirmatory test",
+      "Confirmatory tests after screening should have high specificity",
+      "Increasing test cutoff (↑ threshold) generally ↑ specificity but ↓ sensitivity",
+    ],
+    boardsPearls: [
+      "Specificity = TN / (TN + FP) — excludes disease when absent",
+      "SPIN — Specific test, Positive rules IN (e.g., anti-CCP for RA, biopsy-proven diagnosis)",
+      "High specificity preferred for confirmatory diagnosis after positive screen",
+      "vs sensitivity — tradeoff on ROC curve; perfect test has both 100%",
+      "Low-prevalence disease + low specificity → most positives are false positives (Bayesian reasoning)",
+      "Screening favors sensitivity; confirmation favors specificity",
+      "Likelihood ratio positive incorporates sensitivity and specificity: LR+ = sens / (1 − spec)",
+    ],
+    pediatrics:
+      "Confirmatory testing after positive newborn screen (e.g., second-tier metabolic assay, genetic sequencing) uses higher specificity to avoid unnecessary treatment for false-positive screens.",
+  },
+  {
+    id: "independent-in-daily-activities",
+    name: "Independent in Daily Activities",
+    etymology:
+      "Latin independens = not hanging from another + Latin dies = day + activitas = doing — able to perform routine self-care and household tasks without assistance",
+    aliases: [
+      "independent in daily activities",
+      "independent in her daily activities",
+      "independent in his daily activities",
+      "independent in daily activity",
+      "independent with daily activities",
+      "independent with activities of daily living",
+      "independent in adls",
+      "independent adls",
+      "adl independent",
+      "adls independent",
+      "functionally independent",
+      "functional independence",
+      "independent for adls",
+      "independent for activities of daily living",
+      "maintains independence in daily activities",
+      "lives independently",
+      "lives independently at home",
+    ],
+    definition:
+      "Clinical descriptor that the patient performs activities of daily living (ADLs) — bathing, dressing, toileting, transferring, feeding, and often instrumental ADLs such as shopping and managing medications — without requiring another person's assistance; signals preserved functional status in vignettes.",
+    details: [
+      "ADLs — basic self-care: bathing, dressing, grooming, toileting, transferring, continence, feeding",
+      "Instrumental ADLs (IADLs) — managing finances, medications, transportation, meal preparation, housekeeping",
+      "Independent in daily activities implies outpatient-capable, ambulatory or self-managing at home context",
+      "Contrast with dependent — needs assistance for one or more ADLs (nursing home level, home health)",
+      "Used in stroke/TIA vignettes to support minor event or good recovery",
+      "In dementia staging — mild cognitive impairment may remain ADL-independent; moderate Alzheimer disease often loses independence",
+      "Surgical risk and discharge planning — independence predicts home discharge vs rehab placement",
+    ],
+    boardsPearls: [
+      "Independent in daily activities = preserved ADL function — favorable functional status clue",
+      "Stroke vignette with independence + mild deficit → consider TIA or minor stroke; outpatient workup may be appropriate",
+      "vs dependent in ADLs — needs assistance; suggests severe stroke, advanced dementia, or deconditioning",
+      "Mild cognitive impairment — cognitive complaints but ADLs still independent",
+      "Katz ADL and Lawton IADL scales quantify independence (Step 2 clinical context)",
+      "Elderly independent at home does not exclude serious diagnosis (e.g., silent MI, early cancer)",
+      "Loss of independence in progressive disease → plan caregiver support, safety, advanced directives",
+    ],
+    pediatrics:
+      "Pediatric functional independence is developmental — toddlers gain ADL skills progressively. In adolescent vignettes, independence in daily activities indicates ability to self-manage outpatient therapy (e.g., diabetes, mild asthma). Dependence in a teenager suggests severe disability or acute illness.",
+  },
 ];
 
 const strategyById = new Map(

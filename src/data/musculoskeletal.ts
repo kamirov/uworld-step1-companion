@@ -655,6 +655,63 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Infants with bronchiolitis show intercostal retractions from increased work of breathing — a clinical sign of chest wall recession, not nerve injury. Pediatric zoster is uncommon but follows the same dermatomal intercostal pattern when it occurs.",
   },
   {
+    id: "costal-margin",
+    name: "Costal Margin",
+    etymology:
+      "Latin costa = rib + Latin margo = edge/border — inferior border of the thoracic cage formed by the costal cartilages of ribs 7–10 and the xiphisternal junction",
+    aliases: [
+      "costal margin",
+      "costal margins",
+      "costal arch",
+      "costal arches",
+      "costal border",
+      "costal borders",
+      "costal angle",
+      "subcostal margin",
+      "subcostal margins",
+      "inferior costal margin",
+      "rib cage margin",
+      "rib cage margins",
+      "thoracic costal margin",
+    ],
+    definition:
+      "The inferior anterolateral border of the bony thorax — the arch formed where costal cartilages of ribs 7–10 join and meet the sternum at the xiphisternal junction — serving as a key surface landmark for abdominal organ palpation and percussion.",
+    anatomy:
+      "Formed by the cartilages of ribs 7–10 (false ribs) joining each other and the sternum; the right and left margins meet at the infrasternal angle (subcostal angle) below the xiphoid process. Rib 7 articulates with sternum; ribs 8–10 attach via shared costal cartilage to the cartilage above. Below the margin lies the upper abdominal viscera — liver (right), stomach and spleen (left).",
+    action: [
+      "Structural landmark — defines inferior thoracic cavity boundary",
+      "Attachment site for rectus abdominis and external oblique aponeuroses",
+      "Moves with respiration — descends with inspiration as diaphragm contracts",
+      "Reference for subcostal plane (approximately L3 vertebral level)",
+    ],
+    clinicalRelevance: [
+      "Hepatomegaly — liver edge palpable below right costal margin",
+      "Splenomegaly — spleen tip palpable below left costal margin",
+      "Murphy sign — fingers placed beneath right costal margin during deep inspiration",
+      "Subcostal recession — inward drawing below margin during respiratory distress (infants)",
+      "Subcostal nerve (T12) courses just inferior to last rib/costal margin",
+      "Percussion and auscultation landmarks for liver span and pleural effusion",
+    ],
+    boardsPearls: [
+      "Costal margin = inferior rib cage border — palpation landmark for liver and spleen",
+      "Murphy sign — examiner's hand under right costal margin during inspiration",
+      "Hepatomegaly — liver edge palpable >2 cm below right costal margin in midclavicular line",
+      "Splenomegaly — spleen palpable below left costal margin",
+      "Subcostal angle (infrasternal angle) widens with inspiration and COPD hyperinflation",
+      "vs costal groove — groove on inferior rib surface housing intercostal neurovascular bundle",
+      "vs xiphoid process — midline sternal landmark at center of costal margin junction",
+    ],
+    distinguishFrom: [
+      "Costal groove — inferior surface channel of individual rib for intercostal nerve/artery/vein",
+      "Xiphoid process — midline cartilaginous sternal tip at costal margin apex",
+      "Subcostal plane — transverse anatomic plane at L3; related but not synonymous with margin",
+      "Diaphragm — muscular dome deep to costal margin, not the bony-cartilaginous border itself",
+      "Abdominal wall — musculofascial layers below and attached to costal margin",
+    ],
+    pediatrics:
+      "Infants and young children have a more horizontal costal margin and compliant chest wall — subcostal retractions visible with increased work of breathing in bronchiolitis or pneumonia. Hepatosplenomegaly in children (storage disease, hemolytic anemia, infection) detected by palpation below costal margins.",
+  },
+  {
     id: "recurrent-laryngeal-nerve",
     name: "Recurrent Laryngeal Nerve",
     etymology: "Latin recurrere = to run back + laryngeal = of the larynx + Greek neuron = sinew/nerve",
@@ -897,6 +954,61 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Supracondylar humerus fracture is the classic pediatric median nerve (or anterior interosseous) injury — assess radial pulse and distal motor function after reduction. Carpal tunnel syndrome is uncommon in children; consider metabolic or inherited neuropathy if bilateral hand numbness.",
+  },
+  {
+    id: "thenar-eminence",
+    name: "Thenar Eminence",
+    etymology:
+      "Greek thenar = palm of the hand + Latin eminentia = projection — fleshy muscular prominence at the radial base of the palm overlying the thumb's intrinsic muscles",
+    aliases: [
+      "thenar eminence",
+      "thenar eminences",
+      "thenar muscles",
+      "thenar muscle group",
+      "thenar muscle groups",
+      "thenar prominence",
+      "thenar prominences",
+      "ball of thumb",
+      "thumb eminence",
+      "thenar region",
+      "thenar area",
+    ],
+    definition:
+      "Bulging muscular mass at the radial aspect of the palm formed chiefly by the three thenar intrinsic muscles (abductor pollicis brevis, flexor pollicis brevis, opponens pollicis) — responsible for thumb opposition and grip; motor innervation predominantly from the median nerve.",
+    anatomy:
+      "Superficial thenar muscles: abductor pollicis brevis (ABP), flexor pollicis brevis (FPB), opponens pollicis (OP) — all median nerve (recurrent branch) except FPB deep head may receive ulnar fibers. Adductor pollicis lies deeper/adducts thumb but is not part of superficial thenar eminence bulk — ulnar nerve. Lateral two lumbricals (index/middle) are median-innervated but not thenar eminence muscles. Palmar cutaneous branch of median nerve supplies skin over thenar eminence proximal to carpal tunnel.",
+    action: [
+      "Abductor pollicis brevis — abducts thumb from palm",
+      "Flexor pollicis brevis — flexes thumb at MCP",
+      "Opponens pollicis — opposition of thumb to fingers (key precision grip)",
+      "Thenar strength tested by thumb opposition to little finger and resistance to abduction",
+    ],
+    innervation: "Recurrent branch of median nerve (C8–T1) — motor to thenar eminence muscles; palmar cutaneous branch (proximal to carpal tunnel) — sensation over thenar skin",
+    clinicalRelevance: [
+      "Carpal tunnel syndrome — thenar motor weakness and atrophy late; palmar cutaneous sensation often spared",
+      "Median nerve laceration at wrist — thenar paralysis and flat thenar eminence",
+      "Anterior interosseous nerve palsy — spares thenar muscles (motor branch given off before AIN)",
+      "Ulnar nerve intact — adductor pollicis and interossei function preserved in isolated median lesion",
+      "Thenar atrophy — chronic median neuropathy, severe CTS, or cervical radiculopathy if chronic",
+    ],
+    boardsPearls: [
+      "Thenar eminence = ABP + FPB + OP — median nerve recurrent branch (LOAF minus lumbricals)",
+      "CTS spares thenar skin sensation — palmar cutaneous branch arises proximal to carpal tunnel",
+      "Thenar atrophy + median nerve distribution numbness → severe median neuropathy/CTS",
+      "vs hypothenar eminence — ulnar nerve muscles (abductor digiti minimi, flexor digiti minimi brevis, opponens digiti minimi)",
+      "vs thumb CMC joint — arthritis causes pain at base of thumb, not primary thenar motor loss",
+      "Recurrent median nerve injury during carpal tunnel release — thenar motor deficit",
+    ],
+    distinguishFrom: [
+      "Hypothenar eminence — ulnar-innervated muscles at little-finger base of palm",
+      "Median nerve — innervates thenar muscles; thenar eminence is anatomic structure",
+      "Carpal tunnel syndrome — compressive neuropathy at wrist affecting median nerve to thenar muscles",
+      "Adductor pollicis — deep thumb adductor; ulnar nerve, not part of superficial thenar bulk",
+      "First dorsal interosseous — ulnar-innervated; forms index finger web space, not thenar eminence",
+      "Thumb MCP joint — skeletal articulation at thumb base, not muscular eminence",
+    ],
+    pediatrics:
+      "Thenar weakness is uncommon in children — supracondylar fracture median nerve injury is the classic pediatric median nerve lesion. Bilateral thenar atrophy in a child raises neuromuscular disease (SMA, neuropathy) rather than CTS.",
   },
   {
     id: "chorda-tympani",
@@ -1943,6 +2055,56 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Superior orbital fissure and orbital apex syndromes are rare in children but may follow skull base trauma, orbital cellulitis with cavernous sinus spread, or sphenoid wing meningioma; same cranial nerve anatomy applies.",
   },
   {
+    id: "round-ligament",
+    name: "Round Ligament of the Uterus",
+    etymology:
+      "Latin ligamentum = band + rotundus = round — fibromuscular remnant of the embryonic gubernaculum extending from the uterine horn through the inguinal canal to the labia majora",
+    aliases: [
+      "round ligament",
+      "round ligaments",
+      "round ligament of uterus",
+      "round ligament of the uterus",
+      "round ligaments of uterus",
+      "ligamentum teres uteri",
+      "uterine round ligament",
+      "uterine round ligaments",
+    ],
+    definition:
+      "Paired fibromuscular bands arising from the uterine horns (cornua) that course anterolaterally in the broad ligament, enter the deep inguinal ring, traverse the inguinal canal, and insert into the labia majora — embryologic remnant of the gubernaculum that guided ovarian descent (not testicular descent in males).",
+    anatomy:
+      "Origin: uterine horn near uterotubal junction. Passes through broad ligament anterior to the fallopian tube. Enters inguinal canal at deep ring alongside the ilioinguinal nerve. Exits superficial ring to terminate in subcutaneous tissue of labia majora. Contains smooth muscle, connective tissue, nerves, and small vessels. Not to be confused with ligamentum teres hepatis (round ligament of liver) in the falciform ligament.",
+    action: [
+      "Maintains anteverted uterine position (with uterosacral and cardinal ligaments)",
+      "Embryologic remnant — gubernaculum guides ovarian descent to pelvis",
+      "Smooth muscle contracts with uterine activity — may cause round ligament pain in pregnancy",
+      "Route for ectopic endometrial tissue to inguinal region (rare endometriosis)",
+    ],
+    innervation:
+      "Ilioinguinal nerve region; visceral afferents contribute to round ligament pain in pregnancy",
+    clinicalRelevance: [
+      "Round ligament pain — sharp groin pain in pregnancy from stretching/uterine growth",
+      "Inguinal endometriosis — ectopic endometrium along round ligament path",
+      "Surgical landmark in inguinal and pelvic procedures",
+      "Distinct from round ligament of liver (ligamentum teres hepatis)",
+    ],
+    boardsPearls: [
+      "Round ligament of uterus = ligamentum teres uteri — NOT round ligament of liver",
+      "Gubernaculum remnant — uterine horn → inguinal canal → labia majora",
+      "Round ligament pain in pregnancy — benign stretching pain in groin",
+      "vs ligamentum teres hepatis — obliterated umbilical vein in falciform ligament of liver",
+      "vs ovarian ligament — connects ovary to uterine horn; round ligament continues to inguinal canal",
+      "Broad ligament contains round ligament, fallopian tube, uterine artery, and ureter",
+    ],
+    distinguishFrom: [
+      "Round ligament of liver (ligamentum teres hepatis) — fetal umbilical vein remnant in falciform ligament",
+      "Ovarian ligament — attaches ovary to uterine horn; does not traverse inguinal canal to labia",
+      "Cardinal ligament (transverse cervical ligament) — supports cervix; contains uterine artery and ureter",
+      "Inguinal ligament — Poupart ligament from ASIS to pubic tubercle; not uterine",
+    ],
+    pediatrics:
+      "Same anatomy from birth; round ligament pain is a pregnancy phenomenon. Inguinal endometriosis along the round ligament is rare in adolescents but may present as cyclic groin pain after menarche.",
+  },
+  {
     id: "falciform-ligament",
     name: "Falciform Ligament",
     etymology:
@@ -2333,6 +2495,56 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Midgut malrotation with volvulus twists around SMA — bilious vomiting in neonate is surgical emergency. Necrotizing enterocolitis involves immature mesenteric circulation and mucosa in preterm infants.",
+  },
+  {
+    id: "uterine-artery",
+    name: "Uterine Artery",
+    etymology:
+      "Latin uterus = womb + Greek arteria = artery — branch of the anterior division of the internal iliac artery supplying the uterus, cervix, and upper vagina",
+    aliases: [
+      "uterine artery",
+      "uterine arteries",
+      "uterine arterial",
+      "uterine arterial supply",
+      "arteria uterina",
+      "hypogastric uterine branch",
+    ],
+    definition:
+      "Major pelvic branch of the anterior division of the internal iliac (hypogastric) artery that courses medially in the broad ligament to supply the uterus, cervix, and proximal vagina — anastomosing with the ovarian artery at the uterine fundus; critical landmark in pelvic surgery because it crosses superior to the ureter.",
+    anatomy:
+      "Origin: anterior division of internal iliac artery. Travels in the base of the broad ligament (cardinal ligament region) toward the uterine isthmus. Crosses the ureter anteriorly/superiorly ('water under the bridge') before ascending along the lateral uterine wall. Anastomoses with ovarian artery at fundus. Terminal branches supply cervix and vagina. Venous drainage via uterine veins to internal iliac venous plexus.",
+    action: [
+      "Supply uterine myometrium and endometrium — increases dramatically in pregnancy",
+      "Spiral artery remodeling in pregnancy — trophoblast invasion converts spiral arteries for low-resistance placental perfusion",
+      "Collateral pathway with ovarian artery at fundus",
+      "Target for uterine artery embolization in fibroids and postpartum hemorrhage",
+    ],
+    innervation:
+      "Sympathetic vasomotor fibers from inferior hypogastric (pelvic) plexus accompany arterial supply",
+    clinicalRelevance: [
+      "Ligation or embolization for postpartum hemorrhage and uterine atony",
+      "Uterine artery embolization (UAE) — treats symptomatic leiomyomas and AVM bleeding",
+      "Iatrogenic ureteral injury during hysterectomy when uterine artery is clamped without identifying ureter below",
+      "Placental abruption and preeclampsia involve abnormal spiral artery development",
+    ],
+    boardsPearls: [
+      "Uterine artery — branch of anterior internal iliac (hypogastric) artery",
+      "Crosses ureter superiorly — 'water under the bridge' (ureter is the water)",
+      "Hysterectomy risk — clamp uterine artery only after ureter is identified inferiorly",
+      "UAE for fibroids — particles occlude uterine artery branches",
+      "Spiral arteries — endometrial branches remodeled in pregnancy; failure → preeclampsia/IUGR",
+      "Anastomoses with ovarian artery at uterine fundus",
+      "vs ovarian artery — arises from abdominal aorta; supplies ovary and anastomoses at fundus",
+    ],
+    distinguishFrom: [
+      "Ovarian artery — direct branch of abdominal aorta below renal arteries",
+      "Internal iliac artery — parent trunk; uterine artery is anterior division branch",
+      "Ureter — passes under uterine artery in cardinal ligament; surgical landmark",
+      "Vaginal artery — separate branch supplying vagina; overlaps uterine branches",
+      "Uterine vein — venous drainage, not arterial supply",
+    ],
+    pediatrics:
+      "Same pelvic anatomy applies; uterine artery embolization is rarely used in adolescents but may be considered for refractory AVM or trauma in specialized centers. Spiral artery pathology in pregnancy is relevant across reproductive ages.",
   },
   {
     id: "mesenteric-arteries",
@@ -5468,6 +5680,123 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "DDH screening with Ortolani/Barlow in newborns; shallow acetabulum on ultrasound warrants Pavlik harness. Late-presenting DDH may need closed or open reduction. Acetabular dysplasia persists into adulthood if untreated — early osteoarthritis risk.",
+  },
+  {
+    id: "slow-twitch-muscle-fiber",
+    name: "Slow-Twitch Muscle Fiber",
+    etymology:
+      "slow = prolonged contraction cycle + twitch = brief muscle contraction + fiber = thread-like myocyte",
+    aliases: [
+      "slow-twitch muscle fiber",
+      "slow-twitch muscle fibers",
+      "slow twitch muscle fiber",
+      "slow twitch muscle fibers",
+      "type i muscle fiber",
+      "type i muscle fibers",
+      "type 1 muscle fiber",
+      "type 1 muscle fibers",
+      "slow oxidative fiber",
+      "slow oxidative fibers",
+      "slow oxidative muscle fiber",
+      "slow oxidative muscle fibers",
+      "so fiber",
+      "so fibers",
+      "red muscle fiber",
+      "red muscle fibers",
+      "type i fiber",
+      "type i fibers",
+    ],
+    definition:
+      "Skeletal muscle fiber subtype (type I) specialized for aerobic, fatigue-resistant contractions via abundant mitochondria, myoglobin, and oxidative metabolism — predominates in postural and endurance muscles.",
+    anatomy:
+      "Type I myosin heavy chain with slow ATPase activity; high mitochondrial density, myoglobin content, and capillary supply; generally smaller fiber diameter than type II in mixed muscles; histochemical staining shows dark (oxidative) profile on myosin ATPase at alkaline pH.",
+    action: [
+      "Sustained low-force contractions with slow fatigue (posture, walking, endurance activity)",
+      "Primary reliance on oxidative phosphorylation and fatty acid oxidation for ATP",
+      "Maintains tonic postural tone in back extensors, soleus, and deep neck muscles",
+    ],
+    clinicalRelevance: [
+      "Endurance athletes may have relative type I fiber predominance in trained muscles",
+      "Disuse atrophy and denervation preferentially affect fiber size and oxidative capacity",
+      "Mitochondrial myopathies impair slow-twitch oxidative function → exercise intolerance",
+      "Becker/Duchenne muscular dystrophy eventually involve all fiber types but weakness affects mobility and posture",
+    ],
+    boardsPearls: [
+      "Type I = slow-twitch = slow oxidative (SO) = red fibers — high mitochondria, myoglobin, capillaries",
+      "Mnemonic: Type I = 'I endure' — aerobic, fatigue-resistant, postural/endurance",
+      "vs Type II (fast-twitch) — glycolytic, white, rapid high-force contraction but fatigue quickly",
+      "Soleus (postural standing) is type I–rich; gastrocnemius (jumping) is more type II",
+      "Myosin ATPase: type I = slow; type IIa/IIx = fast",
+    ],
+    distinguishFrom: [
+      "Fast-twitch muscle fiber (type II) — glycolytic, pale, rapid force, quick fatigue",
+      "Cardiac muscle — involuntary striated muscle with own fiber physiology, not skeletal type I/II",
+      "Smooth muscle — non-striated, tonic contractile tissue in viscera and vessels",
+      "Red blood cell — 'red' refers to hemoglobin, not myoglobin-rich muscle",
+    ],
+    pediatrics:
+      "Infants have lower absolute muscle mass but normal developmental milestones depend on postural slow-twitch function; hypotonia from congenital myopathy or neuromuscular disease may present as delayed sitting/crawling before specific fiber-type pathology is known.",
+  },
+  {
+    id: "fast-twitch-muscle-fiber",
+    name: "Fast-Twitch Muscle Fiber",
+    etymology:
+      "fast = rapid contraction cycle + twitch = brief muscle contraction + fiber = thread-like myocyte",
+    aliases: [
+      "fast-twitch muscle fiber",
+      "fast-twitch muscle fibers",
+      "fast twitch muscle fiber",
+      "fast twitch muscle fibers",
+      "type ii muscle fiber",
+      "type ii muscle fibers",
+      "type 2 muscle fiber",
+      "type 2 muscle fibers",
+      "type iia muscle fiber",
+      "type iia muscle fibers",
+      "type iix muscle fiber",
+      "type iix muscle fibers",
+      "fast glycolytic fiber",
+      "fast glycolytic fibers",
+      "fast glycolytic muscle fiber",
+      "fast glycolytic muscle fibers",
+      "fg fiber",
+      "fg fibers",
+      "white muscle fiber",
+      "white muscle fibers",
+      "type ii fiber",
+      "type ii fibers",
+    ],
+    definition:
+      "Skeletal muscle fiber subtype (type II) specialized for rapid, high-force contractions via glycolytic ATP production — fatigues quickly compared with slow-twitch fibers; includes type IIa (fast oxidative-glycolytic) and type IIx/IIb (fast glycolytic) subtypes.",
+    anatomy:
+      "Type II myosin heavy chains with fast ATPase activity; fewer mitochondria and less myoglobin than type I; larger fiber diameter in strength-trained muscle; histochemical staining shows pale (glycolytic) profile; abundant glycogen and glycolytic enzymes.",
+    action: [
+      "Rapid forceful contractions for sprinting, jumping, and brief maximal efforts",
+      "Primary reliance on anaerobic glycolysis and phosphocreatine system for immediate ATP",
+      "Predominates in muscles requiring quick power — gastrocnemius, extraocular muscles, finger flexors",
+    ],
+    clinicalRelevance: [
+      "Strength and power training preferentially hypertrophies type II fibers",
+      "Fatigue during high-intensity exercise reflects type II glycolytic limitation",
+      "Malignant hyperthermia — ryanodine receptor defect causes uncontrolled Ca²⁺ release during anesthesia, affecting fast fibers prominently",
+      "Hypothyroid myopathy and disuse atrophy can reduce fiber size across types",
+    ],
+    boardsPearls: [
+      "Type II = fast-twitch = white fibers — glycolytic, rapid force, quick fatigue",
+      "Mnemonic: Type II = 'II am fast' — sprint, jump, lift heavy; fatigues quickly",
+      "vs Type I (slow-twitch) — oxidative, red, endurance, fatigue-resistant",
+      "Gastrocnemius (jumping) is type II–rich; soleus (standing) is type I–rich",
+      "Type IIa = fast oxidative-glycolytic (intermediate); Type IIx/IIb = fast glycolytic (most fatigable)",
+      "Myosin ATPase: type II = fast; histology shows pale fibers",
+    ],
+    distinguishFrom: [
+      "Slow-twitch muscle fiber (type I) — oxidative, red, endurance, fatigue-resistant",
+      "Cardiac muscle — involuntary striated muscle with own contractile physiology",
+      "Smooth muscle — non-striated tonic contractions in viscera and vessels",
+      "White appearance on gross exam — from low myoglobin, not absence of striations",
+    ],
+    pediatrics:
+      "Infants develop muscle power for milestones (rolling, walking) with increasing type II recruitment; congenital myopathies and neuromuscular disease affect all fiber types. Malignant hyperthermia risk requires avoiding triggering anesthetics in susceptible families.",
   },
 ];
 

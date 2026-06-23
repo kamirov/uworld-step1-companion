@@ -462,6 +462,52 @@ export const ORGANS: OrganEntry[] = [
       "Patent ductus arteriosus is common in premature infants; prostaglandin E1 maintains ductal patency in ductal-dependent cyanotic lesions (TGA, pulmonary atresia, critical coarctation) until definitive repair.",
   },
   {
+    id: "aortic-isthmus",
+    name: "Aortic Isthmus",
+    etymology:
+      "Greek aorte = great artery + Latin isthmus = narrow passage — physiologically narrowed segment of the aortic arch just distal to the left subclavian artery and proximal to the ductus arteriosus insertion",
+    aliases: [
+      "aortic isthmus",
+      "aortic isthmuses",
+      "isthmus of aorta",
+      "isthmus of the aorta",
+      "aortic isthmic segment",
+      "aortic isthmic segments",
+      "juxtaductal aorta",
+      "juxtaductal aortic segment",
+      "aortic narrowing",
+      "aortic narrowings",
+      "isthmic aorta",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Forms from the left fourth aortic arch derivative and distal dorsal aorta — the narrowest portion of the fetal and neonatal aortic arch between the left subclavian artery origin and the ductus arteriosus (ligamentum arteriosum after closure).",
+    derivatives: [
+      "Adjacent ligamentum arteriosum (ductal remnant)",
+      "Descending thoracic aorta distal to isthmus",
+    ],
+    functionSummary:
+      "Anatomic landmark and hemodynamically significant narrowing of the aortic arch — in fetal life the ductus arteriosus shunts blood across the isthmus; after birth the isthmus is the classic site of coarctation when tissue fails to remodel adequately.",
+    commonPathologies: [
+      "Coarctation of the aorta — focal narrowing at or near the isthmus",
+      "Preductal coarctation — proximal to ductus; neonatal ductal-dependent systemic flow",
+      "Postductal coarctation — distal to ductus; collaterals via intercostal arteries",
+      "Aortic arch hypoplasia involving the isthmic segment",
+      "Turner syndrome — associated coarctation at isthmus",
+    ],
+    step1Pearls: [
+      "Aortic isthmus = narrow segment distal to left subclavian, near ductus/ligamentum arteriosum",
+      "Coarctation of the aorta occurs at the isthmus — ↑ BP arms, ↓ BP legs, rib notching",
+      "Ductus arteriosus inserts just distal to isthmus — PGE₁ maintains flow in ductal-dependent lesions",
+      "Preductal coarctation — severe neonatal presentation; ductal closure worsens shock",
+      "Postductal coarctation — collaterals enlarge internal thoracic → intercostal arteries → rib notching",
+      "Associated bicuspid aortic valve and Turner syndrome (45,X)",
+      "vs aortic stenosis — valvular obstruction at sinotubular junction, not arch isthmus",
+    ],
+    pediatrics:
+      "Neonatal coarctation at the isthmus may present when the ductus closes — prostaglandin E1 reopening the ductus is temporizing. Turner syndrome and bicuspid aortic valve are common associations. Check four-extremity blood pressures and femoral pulses.",
+  },
+  {
     id: "ductus-venosus",
     name: "Ductus Venosus",
     etymology: "Latin ductus = channel + Latin venosus = venous",
@@ -776,6 +822,54 @@ export const ORGANS: OrganEntry[] = [
       "Strep pharyngitis common in school-age children; peritonsillar abscess presents with trismus and uvular deviation. Tonsillectomy for recurrent GAS or obstructive sleep apnea.",
   },
   {
+    id: "hypopharyngeal-mucosa",
+    name: "Hypopharyngeal Mucosa",
+    etymology:
+      "Greek hypo = under + pharynx = throat + Latin mucosa = mucous membrane — stratified squamous epithelial lining of the laryngopharynx (hypopharynx) from epiglottis to cricoid cartilage",
+    aliases: [
+      "hypopharyngeal mucosa",
+      "hypopharyngeal mucosae",
+      "hypopharynx mucosa",
+      "hypopharynx mucosae",
+      "laryngopharyngeal mucosa",
+      "laryngopharyngeal mucosae",
+      "laryngopharynx mucosa",
+      "hypopharyngeal lining",
+      "hypopharyngeal epithelium",
+      "posterior hypopharyngeal mucosa",
+    ],
+    germLayer: "Endoderm (epithelium) / Mesoderm (lamina propria and muscularis)",
+    origin:
+      "Lined by non-keratinized stratified squamous epithelium from foregut endoderm in the inferior pharyngeal segment (laryngopharynx/hypopharynx) — bounded superiorly by epiglottis, inferiorly by cricoid cartilage where it continues as esophageal mucosa; includes piriform sinuses, posterior pharyngeal wall, and postcricoid region.",
+    derivatives: [
+      "Piriform sinuses (lateral hypopharyngeal recesses)",
+      "Posterior pharyngeal wall mucosa",
+      "Postcricoid hypopharyngeal mucosa",
+      "Continuity with esophageal stratified squamous mucosa inferiorly",
+    ],
+    functionSummary:
+      "Channels food bolus around the larynx into the esophagus while separating airway (larynx) from digestive tract — mucosa withstands mechanical trauma of swallowed solids; cricopharyngeus (upper esophageal sphincter) guards the esophageal inlet.",
+    commonPathologies: [
+      "Zenker diverticulum — mucosal herniation through Killian dehiscence (cricopharyngeal dysfunction)",
+      "Hypopharyngeal squamous cell carcinoma — piriform sinus and postcricoid tumors",
+      "Laryngopharyngeal reflux (extraesophageal GERD)",
+      "Caustic or pill injury at esophageal inlet",
+      "Foreign body impaction in piriform sinus",
+      "Plummer-Vinson syndrome — postcricoid esophageal web (related hypopharyngeal/esophageal junction)",
+    ],
+    step1Pearls: [
+      "Hypopharynx = laryngopharynx — epiglottis to cricoid; below oropharynx",
+      "Zenker diverticulum — false diverticulum of hypopharyngeal mucosa through Killian triangle (cricopharyngeal failure)",
+      "Piriform sinuses — common site of hypopharyngeal SCC and fish bone impaction",
+      "Killian dehiscence — weak point between thyropharyngeus and cricopharyngeus where Zenker herniates",
+      "vs oropharynx — above epiglottis; palatine tonsils and base of tongue",
+      "vs esophageal mucosa — continuous inferiorly at cricopharyngeus; same squamous histology",
+      "Barium swallow — posterior hypopharyngeal outpouching in Zenker (C5–C6 level)",
+    ],
+    pediatrics:
+      "Foreign body ingestion may lodge in hypopharyngeal piriform sinus in children — drooling, dysphagia, or stridor depending on location. Caustic ingestion causes severe hypopharyngeal and esophageal mucosal injury with stricture risk.",
+  },
+  {
     id: "trachea",
     name: "Trachea",
     etymology: "Greek trachys = rough",
@@ -792,6 +886,55 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Endoderm",
     origin:
       "Branching airways from the respiratory diverticulum (foregut endoderm); cartilage and smooth muscle from surrounding splanchnic mesoderm.",
+  },
+  {
+    id: "alveoli",
+    name: "Alveoli",
+    etymology: "Latin alveolus = small cavity/cup (diminutive of alveus = trough)",
+    aliases: [
+      "alveoli",
+      "alveolus",
+      "alveoluses",
+      "pulmonary alveoli",
+      "pulmonary alveolus",
+      "lung alveoli",
+      "lung alveolus",
+      "air sac",
+      "air sacs",
+      "gas exchange unit",
+      "gas exchange units",
+      "respiratory alveoli",
+    ],
+    germLayer: "Endoderm (epithelium) + mesoderm (capillaries and interstitium)",
+    origin:
+      "Terminal sacs of the respiratory tree formed during canalicular and saccular stages of lung development (weeks 24–36); septation subdivides saccules into mature alveoli continuing into early childhood.",
+    derivatives: [
+      "Type I pneumocytes — thin squamous gas-exchange epithelium",
+      "Type II pneumocytes — surfactant-producing cuboidal progenitor cells",
+      "Alveolar macrophages — innate immune phagocytes in alveolar lumen",
+      "Pulmonary capillary network in alveolar septa",
+    ],
+    functionSummary:
+      "Primary site of pulmonary gas exchange — O₂ diffuses from alveolar air into capillary blood and CO₂ diffuses out across the thin air-blood barrier (type I pneumocyte + shared basement membrane + capillary endothelium).",
+    commonPathologies: [
+      "Pneumonia — inflammatory exudate fills alveolar spaces (consolidation)",
+      "Pulmonary edema — fluid transudate floods alveoli",
+      "ARDS — diffuse alveolar damage with hyaline membranes",
+      "Emphysema — alveolar wall destruction and enlarged airspaces",
+      "Neonatal RDS — surfactant deficiency → alveolar collapse (atelectasis)",
+      "Pneumocystis pneumonia — alveolar foamy exudate in immunocompromised hosts",
+      "Pulmonary hemorrhage — RBCs in alveolar spaces",
+    ],
+    step1Pearls: [
+      "Alveolus = terminal gas-exchange sac; ~300 million alveoli in adult lungs",
+      "Type I pneumocytes line ~97% of surface area; type II produce surfactant",
+      "Surfactant ↓ surface tension → prevents alveolar collapse at end-expiration",
+      "Consolidation = alveolar air replaced by fluid/cells/pus — dense opacity on CXR",
+      "Alveolar dead space — ventilated but perfused poorly (e.g., PE); distinct from anatomic dead space in conducting airways",
+      "vs respiratory bronchiole — proximal to alveoli; conducting vs gas-exchange zone boundary",
+    ],
+    pediatrics:
+      "Alveolar septation continues after birth; premature infants have fewer mature alveoli and deficient surfactant → neonatal RDS. CF thick mucus impairs ventilation of peripheral alveoli. Meconium aspiration coats alveoli and inactivates surfactant.",
   },
   {
     id: "pleura",
@@ -961,6 +1104,63 @@ export const ORGANS: OrganEntry[] = [
       "H. pylori acquisition often in childhood; antral gastritis can present with dyspepsia or iron deficiency. Gastrin physiology is immature in neonates.",
   },
   {
+    id: "fundus",
+    name: "Fundus",
+    etymology:
+      "Latin fundus = bottom/base — anatomical dome or expanded superior portion of a hollow organ; homonymous term in stomach and uterus (and eye)",
+    aliases: [
+      "fundus",
+      "fundi",
+      "gastric fundus",
+      "gastric fundi",
+      "fundus of stomach",
+      "fundus of the stomach",
+      "stomach fundus",
+      "uterine fundus",
+      "fundus of uterus",
+      "fundus of the uterus",
+      "fundus uteri",
+      "body-fundus",
+    ],
+    germLayer: "Endoderm (gastric mucosa) / Mesoderm (uterine wall)",
+    origin:
+      "Gastric fundus — superior dilated portion of foregut stomach above the body; uterine fundus — dome of fused paramesonephric (Müllerian) ducts above the internal cervical os.",
+    derivatives: [
+      "Gastric fundus — oxyntic (fundic) glands with parietal and chief cells; acid and pepsinogen secretion",
+      "Gastric fundus — enterochromaffin-like (ECL) cells and somatostatin (D) cells in oxyntic mucosa",
+      "Uterine fundus — thickest myometrial dome; main site of physiologic implantation",
+      "Uterine fundus — common location of leiomyomas (fibroids) and fundal placentation",
+    ],
+    functionSummary:
+      "Gastric fundus — primary reservoir and acid-secreting oxyntic mucosa; distension contributes to receptive relaxation and gastrin negative feedback from luminal acid. Uterine fundus — muscular dome that contracts during labor; endometrial lining undergoes cyclic proliferation and decidualization in pregnancy.",
+    commonPathologies: [
+      "Autoimmune atrophic gastritis — fundus/body oxyntic mucosa destroyed first",
+      "Fundic gland polyps — often PPI-associated hyperplasia of oxyntic glands",
+      "Uterine leiomyoma (fibroid) — fundal subserosal or intramural masses",
+      "Fundal placenta previa / accreta spectrum — abnormal placentation over prior scar or fundus",
+      "Gastric varices (rare) vs esophageal — fundus involved in splenic vein thrombosis (left-sided portal hypertension)",
+    ],
+    step1Pearls: [
+      "Fundus = dome — stomach fundus (superior, oxyntic) and uterine fundus (dome above internal os)",
+      "Gastric fundus/body — parietal cells, acid secretion; antrum has G cells",
+      "Autoimmune gastritis targets fundus/body oxyntic mucosa → atrophy, achlorhydria, B12 deficiency",
+      "Uterine fundus — IUD strings, fibroids, fundal implantation in pregnancy",
+      "vs funduscopy — ocular fundus (retina); different anatomical fundus",
+      "vs gastric body — fundus is superior dome; body is intermediate zone; both oxyntic",
+      "vs antrum — distal stomach with gastrin-secreting G cells, not primary acid region",
+    ],
+    distinguishFrom: [
+      "Gastric antrum — distal stomach with G cells; H. pylori gastritis often antral first",
+      "Gastric body — intermediate oxyntic zone between fundus and antrum",
+      "Uterine cervix — inferior neck below internal os; not the fundal dome",
+      "Ocular fundus — posterior interior of eye examined by funduscopy",
+      "Cardia — gastroesophageal junction region; fundus is superior to body",
+      "Corpus uteri — uterine body including fundus and isthmus; fundus is the dome specifically",
+    ],
+    pediatrics:
+      "Hypertrophic pyloric stenosis affects pyloric outlet, not fundus. Uterine fundal fibroids are uncommon in pediatrics; adolescent abnormal uterine bleeding workup may include ultrasound of fundus and cavity. Gastric fundus oxyntic mucosa is mature in term infants.",
+  },
+  {
     id: "pylorus",
     name: "Pylorus",
     etymology:
@@ -1024,6 +1224,61 @@ export const ORGANS: OrganEntry[] = [
       "Greater omentum (apron over intestines)",
       "Lesser omentum (hepatogastric and hepatoduodenal ligaments)",
     ],
+  },
+  {
+    id: "mesentery",
+    name: "Mesentery",
+    etymology:
+      "Greek mesos = middle + enteron = intestine — double layer of peritoneum suspending the intestine from the posterior abdominal wall and containing blood vessels, lymphatics, and nerves",
+    aliases: [
+      "mesentery",
+      "mesenteries",
+      "mesentary",
+      "mesentaries",
+      "mesenteric",
+      "intestinal mesentery",
+      "intestinal mesenteries",
+      "dorsal mesentery",
+      "dorsal mesenteries",
+      "ventral mesentery",
+      "ventral mesenteries",
+      "mesenteric fold",
+      "mesenteric folds",
+      "mesentery proper",
+      "small bowel mesentery",
+      "small intestinal mesentery",
+    ],
+    germLayer: "Mesoderm (splanchnic mesoderm within peritoneal folds)",
+    origin:
+      "Derived from dorsal and ventral mesenteries of the embryonic gut tube — dorsal mesentery persists for most of the midgut and hindgut; ventral mesentery largely regresses except for lesser omentum and falciform ligament region; midgut rotation and fixation determine final mesenteric attachment to posterior body wall.",
+    derivatives: [
+      "Mesentery proper — suspends jejunum and ileum",
+      "Transverse mesocolon — transverse colon",
+      "Sigmoid mesocolon — sigmoid colon",
+      "Mesoappendix — appendix",
+      "Contains superior and inferior mesenteric vessels, lymph nodes, autonomic nerves, and fat",
+    ],
+    functionSummary:
+      "Anchors intraperitoneal bowel to the posterior abdominal wall while permitting mobility; conduit for arterial supply, venous drainage, lymphatic return, and neural innervation to the gastrointestinal tract.",
+    commonPathologies: [
+      "Midgut volvulus — twisting of bowel on narrow mesentery around SMA axis",
+      "Mesenteric ischemia — SMA or vein thrombosis/embolus",
+      "Mesenteric lymphadenitis — especially Yersinia in adolescents",
+      "Crohn disease — mesenteric fat wrapping (creeping fat)",
+      "Mesenteric cysts and tumors (rare)",
+      "Internal hernia through mesenteric defects",
+    ],
+    boardsPearls: [
+      "Mesentery = peritoneal fold carrying SMA/IMV vessels and lymphatics to bowel",
+      "Narrow mesentery in malrotation → midgut volvulus risk — bilious vomiting in neonate",
+      "Ladd procedure broadens mesentery during malrotation repair",
+      "Superior mesenteric artery runs through mesentery to supply midgut",
+      "Whirl sign on CT — twisted mesentery and bowel around SMA",
+      "vs omentum — fatty apron; mesentery is suspensory ligament to posterior wall",
+      "vs retroperitoneal colon — ascending/descending colon lack mesentery (secondarily retroperitoneal)",
+    ],
+    pediatrics:
+      "Malrotation with narrow mesentery predisposes to midgut volvulus — surgical emergency in neonate with bilious vomiting. Mesenteric lymphadenitis mimics appendicitis in children (often Yersinia).",
   },
   {
     id: "peritoneum",
@@ -1098,6 +1353,61 @@ export const ORGANS: OrganEntry[] = [
       "Distal midgut derivative; forms the lower portion of the small intestine before the cecum.",
   },
   {
+    id: "ileocecal-valve",
+    name: "Ileocecal Valve",
+    etymology:
+      "Latin ileum = twisted gut + caecus = blind + Latin valva = folding door — muscular and mucosal structure at the ileum–cecum junction regulating one-way flow into the colon",
+    aliases: [
+      "ileocecal valve",
+      "ileocecal valves",
+      "ileocaecal valve",
+      "ileocaecal valves",
+      "ileocolic valve",
+      "ileocolic valves",
+      "ileocecal sphincter",
+      "ileocecal sphincters",
+      "bauhin valve",
+      "bauhin valves",
+      "valve of bauhin",
+      "valves of bauhin",
+      "gerlach valve",
+      "gerlach valves",
+      "ileocecal junction",
+      "ileocecal junctions",
+      "ic valve",
+      "ic valves",
+    ],
+    germLayer: "Endoderm (mucosa) with muscularis propria and submucosal lymphoid tissue",
+    origin:
+      "Forms at the junction of ileum and cecum during midgut development — two muscular lips (superior and inferior ileocecal folds) with underlying submucosal lymphoid tissue (ileocecal valve lymphoid patch) create a one-way valve preventing colonic reflux into the terminal ileum.",
+    derivatives: [
+      "Superior and inferior ileocecal lips (mucosal folds)",
+      "Ileocecal valve lymphoid patch — GALT component at barrier site",
+      "No separate adult organ — functional valve at ileocolic junction",
+    ],
+    functionSummary:
+      "Regulates passage of ileal contents into the cecum while limiting retrograde colonic bacterial and gas reflux into the terminal ileum — important barrier protecting small-intestinal milieu; also a common site of Crohn disease, tuberculosis, and lymphoma involvement.",
+    commonPathologies: [
+      "Crohn disease — terminal ileitis and ileocecal valve inflammation/stenosis",
+      "Tuberculosis — ileocecal involvement with caseating granulomas",
+      "Carcinoid tumor of terminal ileum near valve",
+      "Intussusception — ileocolic intussusception in children",
+      "Burkitt lymphoma — sporadic ileocecal mass in children/young adults",
+      "Post-surgical loss in short bowel syndrome — bacterial overgrowth if valve resected",
+    ],
+    step1Pearls: [
+      "Ileocecal valve = Bauhin valve — prevents colonic reflux into ileum",
+      "Terminal ileum + ileocecal valve = classic Crohn disease location",
+      "TB enteritis often affects ileocecal region",
+      "Preserve ileocecal valve during bowel resection when possible — reduces bacterial overgrowth in short bowel syndrome",
+      "Meckel diverticulum ~60 cm (2 feet) proximal to ileocecal valve (rule of 2s)",
+      "vs ileocecal sphincter dysfunction — bacterial overgrowth if incompetent",
+      "Sporadic Burkitt lymphoma — ileocecal mass in child/young adult",
+    ],
+    pediatrics:
+      "Ileocolic intussusception often occurs near the ileocecal junction in infants. Crohn disease may present in adolescents with terminal ileitis. Preserving the ileocecal valve during pediatric bowel resection limits post–short bowel bacterial overgrowth.",
+  },
+  {
     id: "peyer-patches",
     name: "Peyer Patches",
     etymology: "eponym: Johann Conrad Peyer + patch = localized area",
@@ -1141,6 +1451,16 @@ export const ORGANS: OrganEntry[] = [
       "small intestinal crypts",
       "crypt",
       "crypts",
+      "intestinal crypt",
+      "intestinal crypts",
+      "duodenal crypt",
+      "duodenal crypts",
+      "jejunal crypt",
+      "jejunal crypts",
+      "ileal crypt",
+      "ileal crypts",
+      "small bowel crypt",
+      "small bowel crypts",
       "colonic crypt",
       "colonic crypts",
       "colon crypt",
@@ -1374,6 +1694,16 @@ export const ORGANS: OrganEntry[] = [
       "duodenal papillas",
       "papilla of vater",
       "papilla of Vater",
+      "ampullary region",
+      "ampullary regions",
+      "ampullary region of pancreas",
+      "ampullary region of the pancreas",
+      "pancreatic ampullary region",
+      "pancreatic ampullary regions",
+      "periampullary region",
+      "periampullary regions",
+      "periampullary region of pancreas",
+      "hepatopancreatic ampullary region",
     ],
     germLayer: "Endoderm (foregut–midgut junction)",
     origin:
@@ -1381,6 +1711,25 @@ export const ORGANS: OrganEntry[] = [
     derivatives: [
       "Sphincter of Oddi (smooth muscle complex at ampullary orifice) — see dedicated entry",
     ],
+    functionSummary:
+      "Common outlet for bile and pancreatic secretions into the duodenum — gallstone impaction here can obstruct both ducts; pancreatic juice and bile are delivered together for fat digestion after sphincter of Oddi relaxation with CCK and secretin.",
+    commonPathologies: [
+      "Gallstone lodged at ampulla — biliary obstruction and gallstone pancreatitis",
+      "Ampullary adenocarcinoma and periampullary tumors",
+      "Post-ERCP papillary edema and pancreatitis",
+      "Choledochal cyst with anomalous pancreaticobiliary junction",
+      "Pancreas divisum — main pancreatic duct may drain via accessory papilla instead",
+    ],
+    step1Pearls: [
+      "Ampulla of Vater = major duodenal papilla where CBD + main pancreatic duct meet",
+      "Ampullary region of pancreas — pancreatic head/terminal duct at hepatopancreatic ampulla",
+      "Gallstone at ampulla → ↑ direct bilirubin + pancreatitis",
+      "vs minor duodenal papilla (Santorini) — accessory pancreatic duct drainage; relevant in pancreas divisum",
+      "ERCP accesses ampulla for cholangiography, sphincterotomy, and stone extraction",
+      "Periampullary carcinoma — pancreatic head, CBD, ampulla, or duodenal papilla tumors",
+    ],
+    pediatrics:
+      "Choledochal cyst and anomalous pancreaticobiliary junction involve abnormal bile drainage at the ampullary region. Annular pancreas encircles duodenum near the ampulla causing neonatal obstruction.",
   },
   {
     id: "sphincter-of-oddi",
@@ -1628,6 +1977,82 @@ export const ORGANS: OrganEntry[] = [
     ],
   },
   {
+    id: "metanephric-diverticulum",
+    name: "Metanephric Diverticulum",
+    etymology:
+      "Greek meta = after/change + nephros = kidney + Latin diverticulum = out-pouching/branch",
+    aliases: [
+      "metanephric diverticulum",
+      "metanephric diverticula",
+      "ureteric bud",
+      "ureteric buds",
+      "metanephric ureteric bud",
+      "metanephric ureteric buds",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Epithelial outgrowth (diverticulum) from the caudal mesonephric (Wolffian) duct that invades metanephric mesenchyme; reciprocal induction with blastema forms the definitive kidney collecting system.",
+    derivatives: [
+      "Ureter",
+      "Renal pelvis",
+      "Major and minor calyces",
+      "Collecting ducts",
+    ],
+  },
+  {
+    id: "renal-pelvis",
+    name: "Renal Pelvis",
+    etymology: "Latin ren = kidney + Latin pelvis = basin/trough",
+    aliases: [
+      "renal pelvis",
+      "renal pelvises",
+      "pelvis of kidney",
+      "pelvis of the kidney",
+      "kidney pelvis",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Proximal dilated segment of the ureteric bud (metanephric diverticulum) within the renal hilum; receives urine from major calyces and funnels it into the ureter.",
+    derivatives: ["Ureter (distal continuation of ureteric bud)"],
+  },
+  {
+    id: "major-calyx",
+    name: "Major Calyx",
+    etymology: "Latin major = larger + Greek kalyx = cup/husk",
+    aliases: [
+      "major calyx",
+      "major calyces",
+      "major calices",
+      "major calyxes",
+      "major renal calyx",
+      "major renal calyces",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Formed by branching of the ureteric bud (metanephric diverticulum); each major calyx receives urine from two or more minor calyces and drains into the renal pelvis.",
+    derivatives: [],
+  },
+  {
+    id: "minor-calyx",
+    name: "Minor Calyx",
+    etymology: "Latin minor = smaller + Greek kalyx = cup/husk",
+    aliases: [
+      "minor calyx",
+      "minor calyces",
+      "minor calices",
+      "minor calyxes",
+      "minor renal calyx",
+      "minor renal calyces",
+      "renal calyx",
+      "renal calyces",
+      "renal calices",
+    ],
+    germLayer: "Mesoderm",
+    origin:
+      "Terminal cup-shaped branches of the ureteric bud that encircle renal papillae (tips of medullary pyramids); collect urine from papillary ducts of Bellini and drain into major calyces.",
+    derivatives: [],
+  },
+  {
     id: "ureter",
     name: "Ureter",
     etymology: "Greek oureter = urinary canal",
@@ -1848,6 +2273,55 @@ export const ORGANS: OrganEntry[] = [
     ],
     pediatrics:
       "Adolescent varicocele is the most common scrotal mass in teen boys — usually left-sided; monitor testicular volume for asymmetry and semen parameters when older. Most pediatric varicoceles are managed conservatively unless testicular growth is affected.",
+  },
+  {
+    id: "gonadal-vein",
+    name: "Gonadal Vein",
+    etymology:
+      "Greek gonos = seed/offspring + Latin vena = vein — paired veins draining the testis (testicular vein) or ovary (ovarian vein) into the systemic venous circulation",
+    aliases: [
+      "gonadal vein",
+      "gonadal veins",
+      "gonadal venous",
+      "testicular vein",
+      "testicular veins",
+      "ovarian vein",
+      "ovarian veins",
+      "internal spermatic vein",
+      "internal spermatic veins",
+      "left gonadal vein",
+      "right gonadal vein",
+      "left testicular vein",
+      "right testicular vein",
+      "left ovarian vein",
+      "right ovarian vein",
+    ],
+    germLayer: "Mesoderm (endothelium)",
+    origin:
+      "Forms from coalescence of the pampiniform plexus (testis) or ovarian venous plexus; left gonadal vein drains into the left renal vein; right gonadal vein drains directly into the inferior vena cava — asymmetric drainage explains left-sided predominance of varicocele and nutcracker-related pathology.",
+    derivatives: [
+      "Testicular vein (male gonadal vein)",
+      "Ovarian vein (female gonadal vein)",
+    ],
+    functionSummary:
+      "Drains venous blood from the testis/ovary and associated structures — left gonadal vein enters left renal vein at nearly 90°; right gonadal vein enters IVC directly at a more acute angle, favoring left-sided venous hypertension and varicocele.",
+    commonPathologies: [
+      "Left-sided varicocele — dilated pampiniform plexus/testicular vein (nutcracker physiology)",
+      "Ovarian vein thrombosis — postpartum or post-hysterectomy; flank/abdominal pain ± leg swelling",
+      "Nutcracker syndrome — left renal vein compressed between aorta and SMA → gonadal vein reflux",
+      "Gonadal vein compression or thrombosis (rare)",
+    ],
+    step1Pearls: [
+      "Gonadal vein = testicular vein (male) or ovarian vein (female)",
+      "Left gonadal vein → left renal vein; right gonadal vein → IVC",
+      "Left > right varicocele — left testicular vein enters renal vein at right angle",
+      "Nutcracker syndrome — compressed left renal vein → flank pain, hematuria, left varicocele",
+      "Postpartum ovarian vein thrombosis — fever, flank pain, unilateral leg swelling",
+      "vs left renal vein — receives left gonadal vein; not the same vessel",
+      "vs pampiniform plexus — venous network that coalesces into gonadal vein in spermatic cord",
+    ],
+    pediatrics:
+      "Adolescent left varicocele is common; monitor testicular volume. Ovarian vein thrombosis is rare in children but can occur with severe infection or hypercoagulable states.",
   },
   {
     id: "scrotum",
@@ -2281,6 +2755,95 @@ export const ORGANS: OrganEntry[] = [
     ],
     pediatrics:
       "Pediatric intracranial aneurysms are rare; when present they may occur at atypical locations. Moyamoya and sickle cell vasculopathy are more common pediatric stroke mimics than communicating artery aneurysms.",
+  },
+  {
+    id: "carotid-sinus",
+    name: "Carotid Sinus",
+    etymology:
+      "Greek karos = deep sleep (historical term for carotid region) + Latin sinus = curve/bay — dilated baroreceptor-rich region at the origin of the internal carotid artery at the carotid bifurcation",
+    aliases: [
+      "carotid sinus",
+      "carotid sinuses",
+      "carotid sinus baroreceptor",
+      "carotid sinus baroreceptors",
+      "carotid sinus region",
+      "carotid sinus area",
+      "carotid sinus dilation",
+      "carotid sinus dilations",
+      "carotid bifurcation sinus",
+      "sinus caroticus",
+    ],
+    germLayer: "Mesoderm (vessel wall) with neural crest–associated baroreceptor innervation",
+    origin:
+      "Dilated proximal internal carotid bulb at the common carotid bifurcation — wall contains stretch-sensitive baroreceptors with afferent fibers in the carotid sinus nerve (branch of glossopharyngeal nerve, CN IX).",
+    derivatives: [
+      "Carotid sinus nerve (CN IX afferent limb of baroreflex)",
+      "Adjacent carotid body chemoreceptor at medial bifurcation",
+    ],
+    functionSummary:
+      "Arterial baroreceptor zone that senses blood pressure and wall stretch — increased firing during hypertension triggers medullary reflexes that increase vagal tone and decrease sympathetic vasomotor output, lowering heart rate and blood pressure.",
+    commonPathologies: [
+      "Carotid sinus hypersensitivity — exaggerated reflex syncope with neck pressure",
+      "Carotid sinus massage — diagnostic/therapeutic vagal stimulation",
+      "Tumor or surgery at carotid bifurcation — mechanical baroreceptor stimulation",
+      "Carotid sinus syndrome — reflex bradycardia or hypotension",
+    ],
+    step1Pearls: [
+      "Carotid sinus = baroreceptor dilation at internal carotid origin (carotid bifurcation)",
+      "Afferent limb — glossopharyngeal nerve (CN IX) carotid sinus nerve",
+      "↑ BP/stretch → ↑ baroreceptor firing → ↓ HR and vasodilation",
+      "Carotid sinus massage may terminate AVNRT or unmask hypersensitivity",
+      "vs carotid body — chemoreceptor medial at bifurcation senses O₂/CO₂/pH, not pressure",
+      "Aortic arch baroreceptors use CN X — complementary to carotid sinus",
+      "Avoid bilateral carotid massage — cerebral hypoperfusion risk",
+    ],
+    pediatrics:
+      "Carotid sinus baroreceptor reflex is functional in children but carotid sinus hypersensitivity is primarily an adult diagnosis. Avoid carotid massage in pediatric patients outside specialist settings.",
+  },
+  {
+    id: "carotid-body",
+    name: "Carotid Body",
+    etymology:
+      "Greek karos = deep sleep + Latin corpus = body — small chemoreceptor organ at the medial aspect of the carotid bifurcation sensing arterial blood gases",
+    aliases: [
+      "carotid body",
+      "carotid bodies",
+      "carotid body chemoreceptor",
+      "carotid body chemoreceptors",
+      "carotid glomus",
+      "carotid glomus bodies",
+      "glomus caroticum",
+      "carotid body paraganglion",
+      "carotid body paraganglions",
+      "carotid chemoreceptor",
+      "carotid chemoreceptors",
+    ],
+    germLayer: "Neural crest (paraganglion / neuroectodermal chemoreceptor tissue)",
+    origin:
+      "Neural crest–derived paraganglion situated at the medial carotid bifurcation between the external and internal carotid arteries — richly vascularized chemoreceptor tissue with afferents via the carotid sinus nerve (CN IX) and glossopharyngeal pathway to the medulla.",
+    derivatives: [
+      "Type I glomus (chemoreceptor) cells and supporting type II cells",
+      "Carotid body tumor (paraganglioma / chemodectoma) from same tissue",
+    ],
+    functionSummary:
+      "Peripheral chemoreceptor detecting arterial hypoxemia, hypercapnia, and acidosis — stimulates increased ventilation and sympathetic tone; primary O₂ sensor at rest and during acute hypoxia.",
+    commonPathologies: [
+      "Carotid body paraganglioma (chemodectoma) — neck mass at bifurcation, may cause cranial nerve palsy",
+      "Chronic hypoxemia (COPD, high altitude) — carotid body hypertrophy",
+      "Cluster headache therapies — carotid body modulation (clinical context)",
+      "Bilateral carotid body resection — abolishes hypoxic ventilatory drive (historical)",
+    ],
+    step1Pearls: [
+      "Carotid body = peripheral chemoreceptor at medial carotid bifurcation",
+      "Stimuli — hypoxemia (primary), hypercapnia, acidosis",
+      "Afferent — CN IX (glossopharyngeal) via carotid sinus nerve",
+      "vs carotid sinus — sinus is baroreceptor (pressure) at internal carotid dilation",
+      "vs central chemoreceptors — medulla senses CSF H⁺ from CO₂ (main chronic CO₂ sensor)",
+      "Carotid body tumor = paraganglioma at bifurcation — CN IX/X/XII palsy possible",
+      "High altitude and COPD — chronic hypoxic chemoreceptor stimulation",
+    ],
+    pediatrics:
+      "Carotid body paragangliomas are rare in children but occur in familial paraganglioma syndromes (SDHx mutations). Neonatal hypoxic respiratory drive relies on peripheral chemoreceptors including the carotid body.",
   },
   {
     id: "meninges",
@@ -4018,6 +4581,56 @@ export const ORGANS: OrganEntry[] = [
       "Congenital complete heart block from maternal anti-Ro/La antibodies damages fetal AV node; neonatal junctional escape rhythm may require pacing.",
   },
   {
+    id: "bundle-of-his",
+    name: "Bundle of His",
+    etymology:
+      "eponym: Wilhelm His Jr. + Latin fasciculus = little bundle — specialized atrioventricular bundle connecting the AV node to the right and left bundle branches through the fibrous cardiac skeleton",
+    aliases: [
+      "bundle of his",
+      "bundles of his",
+      "his bundle",
+      "his bundles",
+      "av bundle",
+      "av bundles",
+      "atrioventricular bundle",
+      "atrioventricular bundles",
+      "common bundle",
+      "common bundles",
+      "bundle of his av junction",
+      "his common bundle",
+      "penetrating bundle",
+      "penetrating atrioventricular bundle",
+    ],
+    germLayer: "Mesoderm (neural crest–derived conduction tissue)",
+    origin:
+      "Continuation of the compact AV node penetrating the central fibrous body (cardiac skeleton) at the membranous interventricular septum — bifurcates into right and left bundle branches on the crest of the muscular interventricular septum.",
+    derivatives: [
+      "Right bundle branch — courses along right side of interventricular septum toward RV",
+      "Left bundle branch — divides into anterior and posterior fascicles on left septum",
+      "Connection between AV nodal tissue and infranodal Purkinje network",
+    ],
+    functionSummary:
+      "Rapidly conducts the delayed AV nodal impulse through the insulated bundle into the interventricular septum — only normal pathway for ventricular activation after AV nodal delay; injury causes infranodal block with wide QRS escape rhythms.",
+    commonPathologies: [
+      "Mobitz II second-degree AV block — infranodal (His/bundle branch level)",
+      "Third-degree (complete) heart block with wide ventricular escape",
+      "Lenègre/Lev degenerative fibrosis involving His bundle",
+      "Surgical or catheter trauma near membranous septum",
+      "Infiltrative disease (sarcoidosis, amyloidosis)",
+    ],
+    step1Pearls: [
+      "Bundle of His = AV node → septum → right and left bundle branches",
+      "Penetrates fibrous cardiac skeleton — only electrical bridge at AV canal",
+      "Infranodal block (His/bundle branches) → Mobitz II, wide QRS escape in complete block",
+      "vs AV node — nodal block gives Mobitz I and narrow QRS escape",
+      "Right bundle on right septum; left bundle fans into anterior/posterior fascicles",
+      "Part of His-Purkinje system — see dedicated entry for full conduction network",
+      "Lev/Lenègre disease — fibrosis affects His bundle and branches",
+    ],
+    pediatrics:
+      "Congenital complete heart block often reflects fetal AV nodal injury (anti-Ro/La); wide-complex neonatal escape suggests infranodal (His-Purkinje) disease requiring permanent pacing.",
+  },
+  {
     id: "his-purkinje-system",
     name: "His-Purkinje System",
     etymology:
@@ -4280,6 +4893,53 @@ export const ORGANS: OrganEntry[] = [
       "Extraembryonic mesoderm surrounds allantois and vitelline vessels; contains two arteries and one vein.",
   },
   {
+    id: "yolk-sac",
+    name: "Yolk Sac",
+    etymology:
+      "Old English geoloca = yolk + Old English sæc = bag — extraembryonic endoderm-lined sac providing early embryonic nutrition and the site of first hematopoiesis",
+    aliases: [
+      "yolk sac",
+      "yolk sacs",
+      "umbilical vesicle",
+      "umbilical vesicles",
+      "vitelline sac",
+      "vitelline sacs",
+      "primary yolk sac",
+      "secondary yolk sac",
+      "exocoelomic cyst",
+      "exocoelomic cysts",
+    ],
+    germLayer: "Extraembryonic endoderm (lining) with extraembryonic mesoderm",
+    origin:
+      "Forms during week 2–3 from hypoblast-related extraembryonic endoderm as the primary nutrition and hematopoietic organ before placental function is established; connected to the midgut by the vitelline duct; gives rise to the allantoic diverticulum; diminishes as placental circulation assumes nutrient and gas exchange.",
+    derivatives: [
+      "Primordial germ cells — originate in yolk sac endoderm, migrate to gonadal ridge",
+      "First hematopoietic stem cells — yolk sac blood islands (mesoderm) weeks 3–8",
+      "Vitelline (omphalomesenteric) duct — connects yolk sac to midgut until obliteration",
+      "Allantois — arises from yolk sac endoderm, contributes to urachus and umbilical cord vessels",
+      "No significant adult structure after involution — remnants cause congenital anomalies if ducts persist",
+    ],
+    functionSummary:
+      "Early embryonic nutrient source, site of initial blood cell formation, and origin of primordial germ cells; produces alpha-fetoprotein (AFP) during fetal development; largely replaced by placental function after the embryonic period.",
+    commonPathologies: [
+      "Vitelline duct remnants — Meckel diverticulum, vitelline fistula, cyst, sinus (failure of duct obliteration)",
+      "Yolk sac tumor (endodermal sinus tumor) — malignant germ cell tumor with ↑ AFP (testis, ovary)",
+      "Abnormal yolk sac on early pregnancy ultrasound — miscarriage risk marker",
+      "Meckel diverticulum bleeding from vitelline duct remnant, not yolk sac tissue per se",
+    ],
+    step1Pearls: [
+      "Yolk sac = first site of hematopoiesis (blood islands) weeks 3–8, then liver → spleen → bone marrow",
+      "Primordial germ cells arise in yolk sac endoderm and migrate to gonadal ridge",
+      "Vitelline duct connects yolk sac to midgut — obliterates by ~week 7; persistence → Meckel diverticulum",
+      "Allantois buds from yolk sac — urachus remnant if not obliterated",
+      "AFP produced by fetal yolk sac and liver — ↑ in yolk sac tumor and HCC",
+      "vs amnion — amnion surrounds embryo in amniotic fluid; yolk sac is separate extraembryonic structure early",
+      "Fetal hematopoiesis sequence: yolk sac → liver → spleen → bone marrow",
+    ],
+    pediatrics:
+      "Meckel diverticulum and vitelline fistula are pediatric consequences of incomplete vitelline duct obliteration from the yolk sac connection. Yolk sac tumors (endodermal sinus tumors) are pediatric germ cell malignancies with markedly elevated AFP. Early pregnancy yolk sac visibility on ultrasound confirms intrauterine location.",
+  },
+  {
     id: "allantois",
     name: "Allantois",
     etymology: "Greek allantoeides = sausage-shaped",
@@ -4301,10 +4961,7 @@ export const ORGANS: OrganEntry[] = [
     aliases: [
       "omphalomesenteric duct",
       "omphalomesenteric ducts",
-      "vitelline duct",
-      "vitelline ducts",
       "omphalomesenteric duct remnant",
-      "vitelline duct remnant",
       "yolk stalk",
       "yolk stalks",
       "vitelloumbilical duct",
@@ -4330,7 +4987,7 @@ export const ORGANS: OrganEntry[] = [
       "Ectopic gastric mucosa in Meckel — painless lower GI bleeding in child",
     ],
     step1Pearls: [
-      "Omphalomesenteric duct = vitelline duct = yolk stalk",
+      "Omphalomesenteric duct = yolk stalk; same structure as vitelline duct (see dedicated entry)",
       "Normally obliterates by week 7 — persistence → Meckel diverticulum (most common congenital GI anomaly)",
       "Meckel rule of 2s: 2% population, 2 feet from ileocecal valve, 2 inches, 2 types ectopic tissue, often <2 years at presentation",
       "Technetium-99m pertechnetate scan detects ectopic gastric mucosa in Meckel",
@@ -4742,6 +5399,25 @@ const ORGAN_DETAILS: Record<
     ],
     pediatrics:
       "Recurrent strep pharyngitis and tonsillar hypertrophy common in children; peritonsillar abscess requires drainage.",
+  },
+  "hypopharyngeal-mucosa": {
+    functionSummary:
+      "Mucosal lining of laryngopharynx (hypopharynx) guiding food around the larynx to the esophagus — stratified squamous epithelium over piriform sinuses and posterior wall; cricopharyngeus guards the inlet.",
+    commonPathologies: [
+      "Zenker diverticulum",
+      "Hypopharyngeal squamous cell carcinoma",
+      "Laryngopharyngeal reflux",
+      "Foreign body in piriform sinus",
+      "Caustic ingestion injury",
+    ],
+    step1Pearls: [
+      "Hypopharyngeal mucosa herniates in Zenker through Killian triangle",
+      "Piriform sinus — hypopharyngeal SCC and fish bone impaction site",
+      "Epiglottis to cricoid = hypopharynx; continues as esophageal mucosa",
+      "vs oropharynx — superior segment above epiglottis",
+    ],
+    pediatrics:
+      "Foreign bodies may lodge in piriform sinuses; caustic ingestion causes severe mucosal injury in toddlers.",
   },
   trachea: {
     functionSummary:
@@ -5358,6 +6034,81 @@ const ORGAN_DETAILS: Record<
     ],
     pediatrics:
       "Congenital renal anomalies originate in metanephric development; Wilms tumor arises from persistent blastema.",
+  },
+  "metanephric-diverticulum": {
+    functionSummary:
+      "Epithelial sprout from mesonephric duct that induces metanephric mesenchyme and undergoes branching morphogenesis to form the ureter and intrarenal collecting system.",
+    commonPathologies: [
+      "Renal agenesis (failed bud formation or mesenchyme induction)",
+      "Renal dysplasia / multicystic dysplastic kidney",
+      "Ureteropelvic junction obstruction",
+      "Duplicated collecting system (early bud bifurcation)",
+      "Horseshoe kidney (abnormal ascent/fusion)",
+    ],
+    step1Pearls: [
+      "Synonym: ureteric bud = metanephric diverticulum",
+      "Ureteric bud derivatives — ureter, renal pelvis, calyces, collecting ducts",
+      "Metanephric mesenchyme (blastema) → nephron; ureteric bud → collecting system",
+      "Reciprocal induction — GDNF from mesenchyme signals RET on bud; failure → renal agenesis",
+      "Branching morphogenesis of bud forms pelvis → calyces → collecting ducts",
+      "vs mesonephric duct — bud is an outgrowth; duct also forms male reproductive tract (Wolffian)",
+    ],
+    pediatrics:
+      "Congenital solitary kidney, UPJ obstruction, and duplicated ureters trace to abnormal ureteric bud branching or ascent; bilateral agenesis causes oligohydramnios and Potter sequence.",
+  },
+  "renal-pelvis": {
+    functionSummary:
+      "Funnel-shaped expansion of the proximal ureter within the renal hilum that collects urine from major calyces and delivers it to the ureter.",
+    commonPathologies: [
+      "Ureteropelvic junction (UPJ) obstruction",
+      "Renal pelvis urothelial carcinoma",
+      "Hydronephrosis from downstream obstruction",
+      "Staghorn calculi filling calyces and pelvis",
+    ],
+    step1Pearls: [
+      "Ureteric bud derivative — not from metanephric mesenchyme",
+      "UPJ obstruction — most common site of congenital urinary obstruction",
+      "Urine flow: papillary ducts → minor calyces → major calyces → renal pelvis → ureter",
+      "vs renal medulla — pelvis is collecting system lumen, not nephron parenchyma",
+      "Transitional (urothelial) epithelium lines pelvis, calyces, ureter, and bladder",
+    ],
+    pediatrics:
+      "Congenital UPJ obstruction may present with flank mass or UTI in infancy; prenatal hydronephrosis on ultrasound often first clue.",
+  },
+  "major-calyx": {
+    functionSummary:
+      "Large collecting-system recess that receives urine from two or more minor calyces and drains into the renal pelvis.",
+    commonPathologies: [
+      "Hydronephrosis (upstream obstruction)",
+      "Calyceal diverticulum",
+      "Renal calculi lodging at calyceal infundibulum",
+    ],
+    step1Pearls: [
+      "Ureteric bud branching product — embryologically distinct from nephron",
+      "Typically 2–3 major calyces per kidney (variable)",
+      "Each major calyx drains multiple minor calyces",
+      "vs minor calyx — major is larger conduit to pelvis; minor cups individual papillae",
+    ],
+    pediatrics:
+      "Calyceal anatomy is adult-pattern at birth; congenital collecting-system anomalies (duplication, dysplasia) reflect abnormal ureteric bud branching in fetal life.",
+  },
+  "minor-calyx": {
+    functionSummary:
+      "Cup-shaped collecting-system recess that surrounds a renal papilla and receives urine from papillary ducts of Bellini.",
+    commonPathologies: [
+      "Hydronephrosis",
+      "Calyceal microlithiasis / nephrolithiasis",
+      "Papillary necrosis (sickle cell, analgesic abuse, diabetes)",
+    ],
+    step1Pearls: [
+      "Encircles tip of renal pyramid (renal papilla)",
+      "Urine enters minor calyx from ducts of Bellini at papillary foramina",
+      "Minor calyces → major calyces → renal pelvis → ureter",
+      "vs renal papilla — papilla is parenchymal tip of pyramid; minor calyx is surrounding collecting lumen",
+      "Papillary necrosis → sloughed papillae can obstruct calyx or ureter",
+    ],
+    pediatrics:
+      "Sickle cell disease and childhood UTI/pyelonephritis can injure renal papillae; calyceal anatomy is otherwise established in fetal ureteric bud branching.",
   },
   "urogenital-membrane": {
     functionSummary:

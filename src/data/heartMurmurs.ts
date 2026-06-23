@@ -10,6 +10,65 @@ export interface HeartMurmurEntry {
 
 export const HEART_MURMURS: HeartMurmurEntry[] = [
   {
+    id: "systolic-murmur",
+    name: "Systolic Murmur",
+    etymology:
+      "Greek systole = contraction + Latin murmur = hum — turbulent blood flow audible during ventricular systole (between S1 and S2)",
+    aliases: [
+      "systolic murmur",
+      "systolic murmurs",
+      "systolic heart murmur",
+      "systolic heart murmurs",
+      "systolic cardiac murmur",
+      "systolic cardiac murmurs",
+      "murmur in systole",
+      "murmurs in systole",
+      "systolic phase murmur",
+      "systolic phase murmurs",
+    ],
+    meaning:
+      "Any heart murmur heard during ventricular systole — broadly divided into ejection (crescendo-decrescendo) murmurs from forward flow across stenotic valves or narrowed outflow tracts, and holosystolic (pansystolic) murmurs from regurgitation across AV valves or VSD shunting; timing, location, radiation, and dynamic maneuvers narrow the differential.",
+    conditions: [
+      "Ejection-type — AS (RUSB, carotid radiation), PS (LUSB), HOCM (↑ Valsalva), ASD flow murmur, innocent Still murmur",
+      "Holosystolic — MR (apex → axilla), TR (LLSB, ↑ inspiration), VSD (LLSB)",
+      "Late systolic — MVP with MR (mid-systolic click then late murmur)",
+      "Continuous murmurs span systole and diastole — PDA machinery murmur, not purely systolic",
+      "Maneuvers: HOCM murmur ↑ Valsalva/standing, ↓ squatting; MR ↑ handgrip; AS ↓ Valsalva",
+    ],
+    pediatrics:
+      "Innocent Still murmur and pulmonary flow murmurs are common benign systolic murmurs in children. VSD is the classic pathologic holosystolic murmur at LLSB; ToF causes harsh systolic ejection murmur from RVOT obstruction.",
+  },
+  {
+    id: "diastolic-murmur",
+    name: "Diastolic Murmur",
+    etymology:
+      "Greek diastole = dilation/filling + Latin murmur = hum — turbulent blood flow audible during ventricular diastole (between S2 and the next S1)",
+    aliases: [
+      "diastolic murmur",
+      "diastolic murmurs",
+      "diastolic heart murmur",
+      "diastolic heart murmurs",
+      "diastolic cardiac murmur",
+      "diastolic cardiac murmurs",
+      "murmur in diastole",
+      "murmurs in diastole",
+      "diastolic phase murmur",
+      "diastolic phase murmurs",
+    ],
+    meaning:
+      "Any heart murmur heard during ventricular diastole — broadly divided into early decrescendo murmurs (semilunar valve regurgitation), mid-to-late diastolic rumbles (AV valve stenosis), and continuous murmurs that also span systole; timing, pitch, location, and maneuvers narrow the differential.",
+    conditions: [
+      "Early decrescendo — aortic regurgitation (LSB, leaning forward, exhaling); pulmonic regurgitation (LUSB, Graham Steell in pulmonary HTN)",
+      "Mid-diastolic rumble — mitral stenosis (apex, after opening snap); tricuspid stenosis (LLSB, rare)",
+      "Carey-Coombs murmur — mid-diastolic rumble in acute rheumatic fever with MR",
+      "Austin Flint murmur — low-pitched mid-diastolic murmur at apex from severe AR jet striking anterior mitral leaflet",
+      "Continuous (also systolic) — PDA machinery murmur; not purely diastolic but includes diastolic component",
+      "Pericardial knock — not a murmur; high-pitched early diastolic sound in constrictive pericarditis",
+    ],
+    pediatrics:
+      "PDA continuous murmur is classic in neonates. Rheumatic mitral stenosis rumble still tested worldwide. Bicuspid aortic valve may cause AR diastolic murmur in adolescents before significant AS develops.",
+  },
+  {
     id: "crescendo-decrescendo",
     name: "Systolic Crescendo-Decrescendo Murmur",
     etymology: "Greek systole = contraction + Italian crescendo = growing + decrescendo = decreasing + Latin murmur = hum",
