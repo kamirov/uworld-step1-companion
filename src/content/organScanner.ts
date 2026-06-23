@@ -74,6 +74,7 @@ const SKIP_TAGS = new Set([
   "OPTION",
   "NOSCRIPT",
 ]);
+const LINK_SELECTOR = "a[href], [role='link']";
 
 /** Block containers whose descendant text is matched as one string (handles <br>-split headers). */
 const COALESCE_ROOT_TAGS = new Set([
@@ -445,6 +446,7 @@ function findAllMatches(
 function shouldSkipNode(node: Node): boolean {
   let parent = node.parentElement;
   while (parent) {
+    if (isLinkElement(parent)) return true;
     if (SKIP_TAGS.has(parent.tagName)) return true;
     for (const cls of OUR_CHIP_CLASSES) {
       if (parent.classList.contains(cls)) return true;
@@ -544,6 +546,7 @@ function getCoalesceRoot(textNode: Text): Element | null {
 }
 
 function shouldSkipElement(el: Element): boolean {
+  if (isLinkElement(el)) return true;
   if (SKIP_TAGS.has(el.tagName)) return true;
   for (const cls of OUR_CHIP_CLASSES) {
     if (el.classList.contains(cls)) return true;
@@ -562,6 +565,10 @@ function appendCoalescedSeparator(text: string): string {
   const last = text[text.length - 1];
   if (/\s/.test(last)) return text;
   return `${text} `;
+}
+
+function isLinkElement(el: Element): boolean {
+  return el.matches(LINK_SELECTOR);
 }
 
 function isBlockSeparatorElement(el: Element, root: Element): boolean {
@@ -586,6 +593,10 @@ function buildCoalescedText(root: Element): CoalescedTextView | null {
 
     if (node.nodeType !== Node.ELEMENT_NODE) return;
     const el = node as Element;
+    if (isLinkElement(el)) {
+      text = appendCoalescedSeparator(text);
+      return;
+    }
     if (shouldSkipElement(el)) return;
     if (!isVisibleElement(el)) return;
 
