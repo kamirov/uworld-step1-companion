@@ -1440,6 +1440,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "twelfth cranial nerve",
       "hypoglossal nerve",
       "hypoglossal nerves",
+      "hypoglossal",
       "nervus hypoglossus",
       "cn xii hypoglossal nerve",
     ],
@@ -2172,6 +2173,103 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Midgut malrotation with volvulus twists around SMA — bilious vomiting in neonate is surgical emergency. Necrotizing enterocolitis involves immature mesenteric circulation and mucosa in preterm infants.",
+  },
+  {
+    id: "mesenteric-arteries",
+    name: "Mesenteric Arteries",
+    etymology:
+      "Greek mesenterion = middle intestine + Latin arteria = artery — the three unpaired anterior visceral branches of the abdominal aorta supplying the gastrointestinal tract and associated organs",
+    aliases: [
+      "mesenteric arteries",
+      "mesenteric artery",
+      "visceral branches of abdominal aorta",
+      "splanchnic arteries",
+      "celiac sma ima",
+      "three mesenteric arteries",
+      "abdominal visceral arteries",
+    ],
+    definition:
+      "Collective term for the three unpaired anterior branches of the abdominal aorta — celiac trunk, superior mesenteric artery (SMA), and inferior mesenteric artery (IMA) — that supply the foregut, midgut, and hindgut respectively, with collateral connections at the pancreaticoduodenal arcades and marginal artery of Drummond.",
+    anatomy:
+      "Celiac trunk (T12/L1) — first branch; trifurcates to left gastric, splenic, common hepatic (foregut). SMA (~L1, 1 cm below celiac) — midgut from distal duodenum through proximal two-thirds of transverse colon. IMA (~L3, most distal unpaired branch) — hindgut from distal transverse colon through upper anal canal. Collateral pathways: superior/inferior pancreaticoduodenal arcades (celiac–SMA), marginal artery at splenic flexure (SMA–IMA watershed). Venous counterparts drain via portal circulation.",
+    action: [
+      "Deliver ~25–35% of cardiac output to splanchnic organs after meals (postprandial hyperemia)",
+      "Embryologic foregut/midgut/hindgut arterial framework — gut rotation around SMA axis",
+      "Collateral flow maintains perfusion when one or two branches stenose chronically",
+      "Sympathetic vasoconstriction shunts blood away from gut in stress/hemorrhage",
+    ],
+    innervation:
+      "Sympathetic via celiac and mesenteric ganglia (greater/lesser/least splanchnic nerves T5–L2); parasympathetic via vagus (foregut/midgut) and pelvic splanchnics (hindgut)",
+    clinicalRelevance: [
+      "Chronic mesenteric ischemia — typically requires ≥2 of 3 arterial stenoses → postprandial pain, food fear, weight loss",
+      "Acute mesenteric ischemia — SMA embolus (often AFib) → pain out of proportion to exam, lactic acidosis",
+      "Ischemic colitis at splenic flexure watershed (SMA–IMA junction)",
+      "SMA syndrome — compressed third part of duodenum between SMA and aorta",
+    ],
+    boardsPearls: [
+      "Three mesenteric arteries: celiac (foregut), SMA (midgut), IMA (hindgut)",
+      "Chronic mesenteric ischemia — 2-vessel disease (celiac + SMA most common)",
+      "Acute SMA embolus — AFib, severe pain, metabolic acidosis",
+      "Watershed at splenic flexure — marginal artery connects SMA and IMA",
+      "Pancreaticoduodenal arcades — celiac–SMA collateral pathway",
+      "vs renal arteries — lateral paired branches, not anterior visceral mesenteric branches",
+    ],
+    distinguishFrom: [
+      "Celiac artery alone — only foregut branch; mesenteric arteries refers to all three visceral trunks",
+      "Renal arteries — lateral aortic branches at L1–L2",
+      "Mesenteric veins — drain gut to portal vein, not arterial supply",
+      "Inferior mesenteric vein — drains hindgut to splenic vein, not an artery",
+    ],
+    pediatrics:
+      "Midgut volvulus in malrotation twists around SMA axis — surgical emergency in neonates. Necrotizing enterocolitis involves immature mesenteric perfusion in preterms. Same three-branch anatomy applies; acute embolic mesenteric ischemia rare in children.",
+  },
+  {
+    id: "popliteal-artery",
+    name: "Popliteal Artery",
+    etymology:
+      "Greek poplite = ham/knee hollow + Latin arteria = artery — continuation of femoral artery through the posterior knee",
+    aliases: [
+      "popliteal artery",
+      "popliteal arteries",
+      "popliteal",
+      "popliteal arterial trunk",
+      "arteria poplitea",
+    ],
+    definition:
+      "Continuation of the femoral artery after it passes through the adductor hiatus — the deepest neurovascular structure in the popliteal fossa that bifurcates at the lower border of popliteus into the anterior tibial artery and tibioperoneal (tibiofibular) trunk.",
+    anatomy:
+      "Femoral artery becomes popliteal artery at adductor hiatus (medial thigh). Descends through popliteal fossa superficial to popliteus muscle, deepest to tibial nerve and popliteal vein. Gives genicular branches to knee joint. At lower border of popliteus, divides into anterior tibial artery (passes through interosseous membrane to anterior compartment) and tibioperoneal trunk → posterior tibial and peroneal (fibular) arteries.",
+    action: [
+      "Major arterial supply to knee joint via genicular branches (anastomosis around knee)",
+      "Supplies posterior compartment of leg via posterior tibial artery",
+      "Anterior tibial artery supplies anterior compartment (dorsalis pedis at foot)",
+      "Peroneal artery supplies lateral compartment and contributes to foot perfusion",
+    ],
+    innervation:
+      "Vasomotor sympathetic fibers from lumbar splanchnic chain accompany arterial plexus; tibial nerve is adjacent in fossa but does not innervate the artery",
+    clinicalRelevance: [
+      "Popliteal artery entrapment syndrome — anomalous muscle slip compresses artery with plantar flexion",
+      "Knee dislocation or trauma — popliteal artery injury risk (vascular emergency)",
+      "Popliteal aneurysm — most common peripheral aneurysm; embolic complications to foot",
+      "Baker (popliteal) cyst may compress adjacent artery/vein",
+      "Auscultation site for femoral-popliteal vascular exam; absent dorsalis pedis after injury",
+    ],
+    boardsPearls: [
+      "Popliteal artery = deepest structure in popliteal fossa (nerve most superficial, then vein, then artery)",
+      "Continuation of femoral artery through adductor hiatus",
+      "Bifurcates into anterior tibial + tibioperoneal trunk at lower popliteus border",
+      "Popliteal aneurysm — most common peripheral arterial aneurysm; check bilateral",
+      "Knee dislocation — vascular injury until proven otherwise (angiography)",
+      "vs femoral artery — proximal thigh; popliteal begins at adductor hiatus",
+    ],
+    distinguishFrom: [
+      "Femoral artery — proximal thigh vessel before adductor hiatus",
+      "Anterior tibial artery — branch passing to anterior leg compartment",
+      "Popliteal vein — superficial to artery in fossa",
+      "Tibial nerve — most superficial structure in popliteal fossa, not a vessel",
+    ],
+    pediatrics:
+      "Popliteal entrapment and aneurysm uncommon in children; knee trauma with vascular compromise requires urgent evaluation. Absent pedal pulses after knee injury warrants vascular imaging regardless of age.",
   },
   {
     id: "cavernous-sinus",

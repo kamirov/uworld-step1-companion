@@ -2224,6 +2224,48 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Type 1 diabetes in children requires family-centered carbohydrate counting with weight-based insulin dosing. Type 2 diabetes in adolescents emphasizes weight management and activity alongside metformin when needed. Avoid restrictive fad diets; growth and puberty alter caloric needs.",
   },
   {
+    id: "gluten-free-diet",
+    name: "Gluten-Free Diet",
+    etymology:
+      "Latin gluten = glue (wheat protein) + Old English frēo = not + Latin dieta = way of life — dietary exclusion of gluten-containing grains",
+    aliases: [
+      "gluten-free diet",
+      "gluten free diet",
+      "gluten-free diets",
+      "gluten free diets",
+      "gfd",
+      "gf diet",
+      "gluten exclusion diet",
+      "gluten avoidance diet",
+      "celiac diet",
+      "celiac disease diet",
+      "no gluten diet",
+    ],
+    definition:
+      "Strict lifelong elimination of gluten — storage proteins in wheat, barley, and rye — the cornerstone treatment for celiac disease and dermatitis herpetiformis; restores mucosal healing, reverses malabsorption, and prevents complications when adhered to completely.",
+    details: [
+      "Avoid wheat, barley, rye; use oats only if certified gluten-free (cross-contamination risk)",
+      "Hidden gluten in sauces, processed foods, medications, and communion wafers — label reading essential",
+      "Duodenal biopsy and serology (anti-tTG IgA) monitor response — villous healing over months",
+      "Supplement iron, folate, B12, vitamin D, and calcium during early recovery from malabsorption",
+      "Dermatitis herpetiformis — gluten-free diet plus dapsone for symptomatic skin control",
+      "Non-celiac gluten sensitivity — symptomatic improvement on GFD but without celiac serology/biopsy changes (distinct entity)",
+      "No role in treating unrelated conditions; unnecessary restriction may ↓ fiber and ↑ cost",
+    ],
+    boardsPearls: [
+      "Celiac disease treatment = strict lifelong gluten-free diet — no exceptions",
+      "Check total IgA before tTG IgA — false negative if IgA deficient",
+      "HLA-DQ2/DQ8 associated — diet is treatment regardless of genotype once diagnosed",
+      "vs tropical sprue — antibiotics, not gluten restriction",
+      "vs Crohn disease — anti-inflammatory/immunomodulator therapy, not primary GFD",
+      "Dermatitis herpetiformis — IgA deposits at dermal papillae; GFD is disease-modifying",
+      "Refractory celiac — persistent symptoms despite GFD; rule out contamination before refractory label",
+      "Oats controversy — safe only if certified gluten-free due to cross-contamination",
+    ],
+    pediatrics:
+      "Diagnosed celiac in children requires family education on strict GFD with growth and bone density monitoring. Failure to thrive, iron deficiency, and short stature may improve after gluten withdrawal. School and social settings need contamination awareness.",
+  },
+  {
     id: "hla-antigen-match",
     name: "HLA Antigen Match",
     etymology:

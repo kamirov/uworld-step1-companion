@@ -17446,6 +17446,84 @@ export const CONDITIONS: ConditionEntry[] = [
       "Rheumatic AR still seen globally; bicuspid AV may present in adolescence with exercise intolerance.",
   },
   {
+    id: "mitral-stenosis",
+    name: "Mitral Stenosis",
+    etymology:
+      "Latin mitra = bishop's headdress (valve shape) + Greek stenosis = narrowing",
+    aliases: [
+      "mitral stenosis",
+      "mitral stenoses",
+      "ms",
+      "rheumatic mitral stenosis",
+      "mitral valve stenosis",
+      "severe mitral stenosis",
+      "chronic mitral stenosis",
+    ],
+    definition:
+      "Narrowing of the mitral valve orifice impeding diastolic flow from left atrium to left ventricle — most commonly from rheumatic commissural fusion — causing left atrial pressure overload, pulmonary venous hypertension, and reduced cardiac output.",
+    pathophysiology:
+      "Rheumatic inflammation → commissural fusion and leaflet thickening → fish-mouth/buttonhole orifice → diastolic pressure gradient across valve → ↑ LA pressure → pulmonary venous congestion and pulmonary hypertension; LA dilation predisposes to atrial fibrillation and left atrial thrombus (systemic emboli).",
+    classicPresentation: [
+      "Exertional dyspnea, orthopnea, PND from pulmonary congestion",
+      "Low-pitched diastolic rumble at apex with opening snap after S2",
+      "Loud S1 from forceful valve closure at onset of systole",
+      "Malar flush (mitral facies) in severe pulmonary hypertension",
+      "Hemoptysis from pulmonary venous rupture (rare)",
+      "Young woman from endemic rheumatic fever region with progressive dyspnea",
+    ],
+    keyFindings: [
+      "Diastolic rumble at apex — best heard in left lateral decubitus; ↑ with exercise (↑ flow)",
+      "Opening snap shortly after S2 — high LA pressure snaps stiff valve open",
+      "Loud S1; later stages may have soft S1 if heavily calcified",
+      "Irregularly irregular pulse if atrial fibrillation",
+      "Echocardiography — valve area, mean gradient, pulmonary pressures",
+      "CXR — LA enlargement (straight left heart border), Kerley B lines, pulmonary edema",
+    ],
+    keyLabs: [
+      "Echocardiography — diagnostic; valve area <1.5 cm² moderate, <1.0 cm² severe",
+      "ECG — LA enlargement (P mitrale), AF, RVH if pulmonary HTN",
+      "Elevated PCWP on right heart cath (gradient across mitral valve)",
+    ],
+    associations: [
+      "Rheumatic heart disease — #1 cause worldwide",
+      "Atrial fibrillation and left atrial thrombus",
+      "Pulmonary hypertension and right heart failure",
+      "Ortner syndrome — hoarseness from enlarged LA compressing recurrent laryngeal nerve",
+      "Pregnancy — ↑ cardiac output worsens MS symptoms",
+    ],
+    complications: [
+      "Pulmonary edema and pulmonary hypertension",
+      "Atrial fibrillation and thromboembolic stroke",
+      "Right heart failure (cor pulmonale)",
+      "Hemoptysis",
+      "Infective endocarditis on rheumatic valve",
+    ],
+    distinguishFrom: [
+      "Mitral regurgitation — holosystolic murmur at apex, volume overload not diastolic obstruction",
+      "Aortic stenosis — systolic ejection murmur at RUSB, not diastolic rumble",
+      "Left atrial myxoma — tumor plop, variable murmur, constitutional symptoms",
+      "Carey-Coombs murmur — mid-diastolic murmur in acute rheumatic carditis without established MS",
+      "Opening snap vs S2 split — opening snap follows S2 closely in MS",
+    ],
+    treatment: [
+      "Medical: rate control for AF; diuretics for congestion; anticoagulation if AF or prior embolus",
+      "Percutaneous mitral balloon valvotomy if suitable anatomy (pliable non-calcified valve)",
+      "Mitral valve replacement or repair when severe symptomatic or balloon unsuitable",
+      "Avoid tachycardia — shortened diastolic filling worsens MS hemodynamics",
+    ],
+    boardsPearls: [
+      "MS = diastolic rumble at apex + opening snap + loud S1",
+      "Rheumatic fever → commissural fusion → fish-mouth mitral valve",
+      "AF common — loss of atrial kick worsens symptoms; anticoagulate",
+      "↑ with exercise (more flow across stenosis); lateral decubitus accentuates murmur",
+      "vs MR — holosystolic regurgitant murmur, not diastolic rumble",
+      "Pregnancy and tachycardia precipitate decompensation",
+      "Hemoptysis and pulmonary edema from ↑ pulmonary venous pressure",
+    ],
+    pediatrics:
+      "Rheumatic mitral stenosis develops years after childhood rheumatic fever — rare acute severe MS in children. Prophylaxis against recurrent strep prevents progression. Congenital mitral stenosis is uncommon.",
+  },
+  {
     id: "mitral-regurgitation",
     name: "Mitral Regurgitation",
     etymology:
@@ -17526,6 +17604,156 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Rheumatic fever remains a cause of MR globally in children; congenital mitral valve anomalies and endocarditis occur in pediatrics. Papillary muscle rupture is an adult post-MI complication.",
+  },
+  {
+    id: "tricuspid-regurgitation",
+    name: "Tricuspid Regurgitation",
+    etymology:
+      "Latin tri = three + cuspis = point + Latin re- = back + gurges = flood/whirlpool",
+    aliases: [
+      "tricuspid regurgitation",
+      "tricuspid regurgitations",
+      "tricuspid insufficiency",
+      "tricuspid incompetence",
+      "tr",
+      "functional tricuspid regurgitation",
+      "severe tricuspid regurgitation",
+      "chronic tricuspid regurgitation",
+    ],
+    definition:
+      "Incompetence of the tricuspid valve allowing systolic backflow from the right ventricle into the right atrium — most often functional from RV dilation in pulmonary hypertension, but also primary from endocarditis, carcinoid, or Ebstein anomaly.",
+    pathophysiology:
+      "Regurgitant jet during systole → ↑ RA pressure and prominent v waves in JVP → systemic venous congestion (peripheral edema, ascites, hepatomegaly); chronic severe TR → RV volume overload and failure. Functional TR improves if pulmonary hypertension/RV failure treated.",
+    classicPresentation: [
+      "Peripheral edema, ascites, hepatomegaly (right heart failure)",
+      "Holosystolic murmur at left lower sternal border",
+      "Pulsatile liver and prominent jugular v waves",
+      "Fatigue and reduced exercise tolerance",
+    ],
+    keyFindings: [
+      "Holosystolic murmur at LLSB — ↑ intensity with inspiration (Carvallo sign)",
+      "Large cv waves in JVP — systolic venous pulsation",
+      "Pulsatile hepatomegaly in severe TR",
+      "Echocardiography — TR jet, RA/RV size, estimated pulmonary pressures, valve morphology",
+      "Steep y descent (Friedreich sign) in constrictive pericarditis or severe TR",
+    ],
+    keyLabs: [
+      "Echocardiography — severity grading and etiology",
+      "ECG — RA enlargement, RVH, RBBB",
+      "Elevated CVP and hepatojugular reflux",
+    ],
+    associations: [
+      "Pulmonary hypertension and RV failure — functional TR",
+      "Infective endocarditis — IV drug use (right-sided)",
+      "Carcinoid heart disease — fibrous plaques on tricuspid valve",
+      "Ebstein anomaly — apical displacement of tricuspid leaflets",
+      "Rheumatic heart disease (less common isolated TR)",
+      "Marfan syndrome, trauma, pacemaker leads",
+    ],
+    complications: [
+      "Refractory right heart failure and ascites",
+      "Atrial arrhythmias",
+      "Endocarditis on abnormal valve",
+      "Progressive RV dysfunction",
+    ],
+    distinguishFrom: [
+      "Mitral regurgitation — holosystolic at apex radiating to axilla, not LLSB",
+      "Ventricular septal defect — holosystolic at LLSB but no Carvallo sign or large v waves",
+      "Pulmonic stenosis — systolic ejection murmur, not holosystolic regurgitant",
+      "Mitral stenosis — diastolic rumble at apex",
+      "Constrictive pericarditis — Kussmaul sign, pericardial knock; may have prominent y descent without primary TR murmur",
+    ],
+    treatment: [
+      "Diuretics for volume overload",
+      "Treat underlying pulmonary hypertension or LV failure causing functional TR",
+      "Tricuspid annuloplasty at time of left-sided valve surgery if moderate-severe TR",
+      "Valve replacement/repair for severe symptomatic primary TR",
+      "Treat endocarditis",
+    ],
+    boardsPearls: [
+      "TR murmur ↑ with inspiration — Carvallo sign (only right-sided murmur that increases)",
+      "Large v waves in JVP + holosystolic LLSB murmur = tricuspid regurgitation",
+      "Functional TR from pulmonary HTN — treat underlying cause",
+      "Carcinoid affects right heart valves (tricuspid, pulmonic) — left heart spared unless PFO",
+      "vs MR — apex murmur, handgrip maneuver, no inspiratory increase",
+      "IVDU endocarditis — tricuspid valve common target",
+    ],
+    pediatrics:
+      "Ebstein anomaly causes severe congenital TR with cyanosis and WPW; neonatal presentation. Functional TR accompanies pulmonary HTN from congenital heart disease. Rheumatic TR is less common in pediatrics than mitral involvement.",
+  },
+  {
+    id: "pulmonary-regurgitation",
+    name: "Pulmonary Regurgitation",
+    etymology:
+      "Latin pulmo = lung + Latin re- = back + gurges = flood/whirlpool — diastolic backflow across incompetent pulmonic valve",
+    aliases: [
+      "pulmonary regurgitation",
+      "pulmonary regurgitations",
+      "pulmonic regurgitation",
+      "pulmonic regurgitations",
+      "pulmonary insufficiency",
+      "pulmonic insufficiency",
+      "pr",
+      "pi",
+      "graham steell murmur",
+      "graham steel murmur",
+    ],
+    definition:
+      "Incompetence of the pulmonic valve allowing diastolic backflow from the pulmonary artery into the right ventricle — may be physiologic (mild), post-surgical (tetralogy of Fallot repair), or from pulmonary hypertension (Graham Steell murmur).",
+    pathophysiology:
+      "Regurgitant volume in diastole → RV volume overload → RV dilation and eccentric hypertrophy over time; acute severe PR rare; chronic PR after pulmonary valvotomy or ToF repair → progressive RV dilation, arrhythmias, and right heart failure.",
+    classicPresentation: [
+      "Often asymptomatic with mild PR",
+      "Exercise intolerance and RV failure in chronic severe PR",
+      "Early diastolic decrescendo murmur at left upper sternal border",
+      "Graham Steell murmur — high-pitched PR murmur from pulmonary hypertension",
+    ],
+    keyFindings: [
+      "Early diastolic decrescendo murmur at LUSB (Graham Steell if pulmonary HTN)",
+      "Wide split S2 if PR delays pulmonic component closure",
+      "Echocardiography — PR jet, RV size, pulmonary artery pressure",
+      "RV dilation on echo/CXR in chronic severe disease",
+    ],
+    keyLabs: [
+      "Echocardiography — PR severity and RV function",
+      "ECG — RVH, RBBB in chronic disease",
+      "Elevated PA pressures if pulmonary HTN cause",
+    ],
+    associations: [
+      "Pulmonary hypertension — functional PR (Graham Steell)",
+      "Post-repair tetralogy of Fallot — free pulmonary regurgitation after transannular patch",
+      "Post-balloon valvotomy for pulmonic stenosis",
+      "Carcinoid heart disease",
+      "Infective endocarditis (rare isolated)",
+      "Congenital absent/dysplastic pulmonic valve",
+    ],
+    complications: [
+      "RV dilation and right heart failure",
+      "Ventricular arrhythmias (especially post-ToF repair)",
+      "Sudden cardiac death in severe chronic PR with RV dysfunction",
+    ],
+    distinguishFrom: [
+      "Aortic regurgitation — early diastolic murmur at RUSB/LSB with wide pulse pressure on left side",
+      "Pulmonic stenosis — systolic ejection murmur, not diastolic decrescendo",
+      "Mitral stenosis — diastolic rumble at apex with opening snap",
+      "Graham Steell vs AR — both diastolic; PR associated with pulmonary HTN signs, AR with wide pulse pressure",
+    ],
+    treatment: [
+      "Observe mild asymptomatic PR",
+      "Pulmonary valve replacement when severe PR with RV dilation/dysfunction (especially post-ToF)",
+      "Treat underlying pulmonary hypertension",
+      "Monitor for arrhythmias post-repair",
+    ],
+    boardsPearls: [
+      "Graham Steell murmur — high-pitched early diastolic PR murmur from pulmonary HTN at LUSB",
+      "Post-ToF repair — chronic free PR → RV dilation; pulmonary valve replacement when indicated",
+      "vs AR — AR has wide pulse pressure, bounding pulses, De Musset sign; PR is right-sided",
+      "Mild physiologic PR common on echo — not clinically significant",
+      "Carcinoid affects pulmonic and tricuspid valves",
+      "Inspiration may accentuate right-sided murmurs",
+    ],
+    pediatrics:
+      "Free pulmonary regurgitation after tetralogy of Fallot transannular patch repair is common — long-term RV monitoring required. Balloon valvotomy for congenital PS may cause PR. Pulmonary valve replacement considered when RV dilates.",
   },
   {
     id: "copd",

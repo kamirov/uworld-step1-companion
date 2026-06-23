@@ -404,6 +404,37 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     ],
   },
   {
+    id: "left-ventricular-hypertrophy",
+    name: "Left Ventricular Hypertrophy",
+    etymology:
+      "Latin sinister = left + ventriculus = little belly + Greek hyper = excess + trophe = growth — thickening of left ventricular myocardium",
+    aliases: [
+      "left ventricular hypertrophy",
+      "left ventricle hypertrophy",
+      "lv hypertrophy",
+      "lvh",
+      "concentric lvh",
+      "concentric left ventricular hypertrophy",
+      "eccentric lvh",
+      "eccentric left ventricular hypertrophy",
+      "lv wall thickening",
+      "left ventricular wall thickening",
+    ],
+    definition:
+      "Increased left ventricular myocardial mass from chronic pressure or volume overload — adaptive response to increased wall stress that can progress to diastolic dysfunction, arrhythmia, and heart failure if untreated.",
+    factors: [
+      "Pressure overload → concentric LVH: systemic hypertension, aortic stenosis, HOCM",
+      "Volume overload → eccentric hypertrophy (dilation with wall thickening): aortic regurgitation, mitral regurgitation (chronic)",
+      "Clinical: sustained apical impulse, S4 gallop, laterally displaced PMI",
+      "ECG: Sokolow-Lyon (S V1 + R V5 or V6 ≥35 mm), Cornell criteria (R aVL + S V3 >28 mm men, >20 mm women), left axis deviation, strain pattern (ST-T changes in lateral leads)",
+      "Echo: septal and posterior wall thickness ≥11–13 mm; distinguishes concentric vs eccentric geometry",
+      "CXR: cardiomegaly with left heart prominence in advanced cases",
+      "Athlete's heart — physiologic LVH with normal diastolic function and regression with deconditioning",
+      "Long-standing LVH → diastolic heart failure, ↑ sudden cardiac death risk (especially HOCM)",
+      "vs RVH — right precordial R wave dominance, right axis deviation, parasternal heave",
+    ],
+  },
+  {
     id: "right-ventricular-hypertrophy",
     name: "Right Ventricular Hypertrophy",
     etymology: "right = pulmonary side + ventriculus = little belly + Greek hyper = excess + trophe = growth",
@@ -811,6 +842,31 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "↓ MAP: hemorrhage, sepsis (late), cardiogenic shock, general anesthesia, vasodilators",
       "Cerebral perfusion pressure (CPP) = MAP − ICP — MAP must exceed ICP for brain perfusion",
       "Autoregulation in kidney and brain buffers blood flow across a range of MAP changes",
+    ],
+  },
+  {
+    id: "pulse-pressure",
+    name: "Pulse Pressure",
+    etymology:
+      "Latin pulsus = beat/throb + pressura = pressing force — the systolic–diastolic pressure difference reflecting stroke ejection and arterial wall properties",
+    aliases: [
+      "pulse pressure",
+      "pulse pressures",
+      "pp",
+      "arterial pulse pressure",
+      "systolic diastolic difference",
+      "sbp minus dbp",
+    ],
+    definition:
+      "Difference between systolic and diastolic blood pressure (SBP − DBP) — a hemodynamic index of stroke volume, arterial compliance, and diastolic runoff into the peripheral circulation.",
+    factors: [
+      "Normal adult PP ~30–50 mmHg (varies with age and context)",
+      "Wide pulse pressure: ↑ stroke volume (hyperthyroidism, fever, anemia, high-output states), ↓ arterial compliance (aging, atherosclerosis), rapid diastolic runoff (aortic regurgitation, patent ductus arteriosus)",
+      "Narrow pulse pressure: ↓ stroke volume (cardiogenic shock, severe heart failure), impaired ejection (severe aortic stenosis), ↑ intrapericardial pressure (cardiac tamponade), hypovolemic shock",
+      "MAP ≈ DBP + ⅓(SBP − DBP) — pulse pressure contributes disproportionately to time-averaged perfusion",
+      "Clinical correlates: bounding/water-hammer pulses with wide PP (AR, PDA); pulsus parvus et tardus with narrow PP in severe AS",
+      "Isolated systolic hypertension in elderly — stiff arteries widen PP despite often-normal DBP",
+      "vs pulse rate — pulse pressure is a pressure amplitude, not heart rate",
     ],
   },
   {

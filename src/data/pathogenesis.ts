@@ -6674,6 +6674,46 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Congenital stenoses include aortic/pulmonary valve stenosis, pyloric stenosis (2–8 weeks), and subglottic stenosis; hypertrophic pyloric stenosis shows palpable olive and hypochloremic metabolic alkalosis.",
   },
   {
+    id: "left-ventricular-outflow-obstruction",
+    name: "Left Ventricular Outflow Obstruction",
+    etymology:
+      "Latin sinister = left + ventriculus = little belly + Latin ob = against + fluere = to flow + obstructio = blockage — impedance to LV ejection through the outflow tract",
+    aliases: [
+      "left ventricular outflow obstruction",
+      "left ventricular outflow tract obstruction",
+      "lv outflow obstruction",
+      "lv outflow tract obstruction",
+      "lvot obstruction",
+      "lvot",
+      "dynamic lvot obstruction",
+      "dynamic left ventricular outflow obstruction",
+    ],
+    definition:
+      "Impediment to systolic ejection of blood from the left ventricle through the outflow tract and aortic valve — may be fixed anatomic narrowing or dynamic obstruction that worsens during systole.",
+    examples: [
+      "Aortic stenosis — fixed valvular obstruction → crescendo-decrescendo systolic murmur at RUSB radiating to carotids; pulsus parvus et tardus; syncope/angina/heart failure triad",
+      "Hypertrophic obstructive cardiomyopathy (HOCM) — dynamic LVOT obstruction from asymmetric septal hypertrophy + systolic anterior motion (SAM) of mitral valve → harsh systolic murmur at LLSB",
+      "Subaortic membrane — fixed subvalvular ridge causing AS-like physiology",
+      "Supravalvular aortic stenosis — Williams syndrome (elastin gene defect)",
+    ],
+    boardsPearls: [
+      "Fixed vs dynamic obstruction — key boards discriminator with preload maneuvers",
+      "HOCM murmur ↑ with Valsalva and standing (↓ preload worsens LVOT gradient); ↓ with squatting and handgrip (↑ preload/afterload)",
+      "Aortic stenosis murmur ↓ with Valsalva (↓ stroke volume through fixed stenosis) — opposite of HOCM",
+      "LVOT obstruction → pressure overload → concentric left ventricular hypertrophy",
+      "Bifid (bisferiens) carotid pulse — spike-and-dome pattern classic for dynamic LVOT obstruction in HOCM",
+      "Exertional syncope in young athlete → HOCM until proven otherwise; in elderly → severe AS",
+    ],
+    distinguishFrom: [
+      "Mitral stenosis — diastolic obstruction at mitral valve inlet, not LV outflow tract",
+      "Mitral regurgitation — holosystolic murmur from valve incompetence, not fixed outflow narrowing",
+      "Pulmonary stenosis — right ventricular outflow tract obstruction",
+      "Hypertension — elevated afterload without anatomic outflow tract gradient",
+    ],
+    pediatrics:
+      "Congenital valvular AS (often bicuspid aortic valve), subaortic membrane, HOCM, and Williams syndrome (supravalvular AS) present in children; murmur response to Valsalva/squatting distinguishes dynamic HOCM from fixed AS. Sudden cardiac death risk in HOCM — restrict competitive sports.",
+  },
+  {
     id: "valve-incompetence",
     name: "Valve Incompetence",
     etymology:
@@ -9555,6 +9595,54 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Valproate hepatotoxicity is most dangerous in young children; acetaminophen dosing must be weight-based. Reye syndrome (salicylates during viral illness) is historic pediatric hepatotoxic encephalopathy.",
+  },
+  {
+    id: "centrilobular-congestion",
+    name: "Centrilobular Congestion",
+    etymology:
+      "Latin centrum = center + lobulus = small lobe + Latin congestio = accumulation — blood stasis in hepatic zone 3 around the central vein",
+    aliases: [
+      "centrilobular congestion",
+      "centrilobular congestions",
+      "centrolobular congestion",
+      "hepatic centrilobular congestion",
+      "zone 3 congestion",
+      "zone 3 hepatic congestion",
+      "passive hepatic congestion",
+      "passive congestion of liver",
+      "nutmeg liver",
+      "nutmeg livers",
+      "cardiac hepatopathy",
+      "congestive hepatopathy",
+    ],
+    definition:
+      "Passive venous congestion of hepatic acinar zone 3 (centrilobular region around central veins) from elevated hepatic venous pressure — classically right heart failure — producing sinusoidal dilation, centrilobular erythrocyte accumulation, and nutmeg liver appearance on gross exam.",
+    examples: [
+      "Right heart failure — ↑ central venous pressure → hepatic venous back-pressure → centrilobular sinusoidal dilation",
+      "Constrictive pericarditis and tricuspid regurgitation — chronic passive congestion",
+      "Budd-Chiari syndrome — hepatic vein thrombosis → outflow obstruction and congestion",
+      "Chronic passive congestion — nutmeg liver (dark centrilobular zones, pale portal triads)",
+      "Cardiac cirrhosis — long-standing severe congestion with fibrosis (rare)",
+      "Ascites and tender hepatomegaly in acute RHF decompensation",
+    ],
+    boardsPearls: [
+      "Centrilobular (zone 3) surrounds central vein — farthest from oxygenated portal triad blood",
+      "Passive congestion from ↑ right-sided pressures → nutmeg liver on gross pathology",
+      "Zone 3 also most vulnerable to hypoxic injury and acetaminophen toxicity (centrilobular necrosis — different from congestion)",
+      "RHF — JVD, peripheral edema, hepatomegaly, ascites; liver enzymes may be mildly ↑",
+      "vs centrilobular necrosis — hepatocyte death (APAP, shock liver); congestion is blood stasis without primary necrosis initially",
+      "vs portal hypertension — presinusoidal/sinusoidal/postsinusoidal; congestion is venous outflow/back-pressure pattern",
+      "Budd-Chiari — painful hepatomegaly, ascites, hepatic vein thrombosis",
+    ],
+    distinguishFrom: [
+      "Centrilobular necrosis — zone 3 hepatocyte death from toxins or ischemia; not passive hyperemia alone",
+      "Nutmeg liver — gross descriptive pattern of chronic centrilobular congestion; not a separate disease",
+      "Portal vein thrombosis — presinusoidal portal hypertension; different hemodynamic mechanism",
+      "Hepatic artery thrombosis — ischemic infarction, not venous congestion pattern",
+      "Acute viral hepatitis — panlobular inflammation; not primarily venous stasis",
+    ],
+    pediatrics:
+      "Right heart failure from congenital heart disease can cause congestive hepatopathy in infants — hepatomegaly with cardiac findings. Fontan-associated liver congestion is a chronic pediatric cardiology concern.",
   },
   {
     id: "iatrogenic",

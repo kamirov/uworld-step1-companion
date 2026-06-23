@@ -876,6 +876,51 @@ export const ORGANS: OrganEntry[] = [
       "H. pylori acquisition often in childhood; antral gastritis can present with dyspepsia or iron deficiency. Gastrin physiology is immature in neonates.",
   },
   {
+    id: "pylorus",
+    name: "Pylorus",
+    etymology:
+      "Greek pylōros = gatekeeper — distal gastric outlet regulating passage of chyme into duodenum",
+    aliases: [
+      "pylorus",
+      "pyloric",
+      "pyloric canal",
+      "pyloric sphincter",
+      "pyloric sphincters",
+      "gastric outlet",
+      "gastric outlets",
+      "pyloric region",
+      "pyloric antrum outlet",
+    ],
+    germLayer: "Endoderm (mucosa) + mesoderm (smooth muscle)",
+    origin:
+      "Distal foregut stomach segment developing as antral-pyloric canal with thickened circular smooth muscle forming the pyloric sphincter — physiologic gastric outlet between stomach and duodenum.",
+    derivatives: [
+      "Pyloric sphincter — circular smooth muscle regulating gastric emptying",
+      "Pyloric glands — mucus-secreting glands in pyloric mucosa",
+      "Continuity with gastric antrum proximally and duodenal bulb distally",
+    ],
+    functionSummary:
+      "Regulates gastric emptying — pyloric sphincter tonic contraction between meals; relaxes with antral peristalsis to deliver acid chyme into duodenum at controlled rate; coordinated with duodenal feedback (fat, acid, hyperosmolarity slow emptying).",
+    commonPathologies: [
+      "Hypertrophic pyloric stenosis — congenital muscular hypertrophy → gastric outlet obstruction in infants",
+      "Pyloric stenosis (acquired/peptic) — scarring from ulcer disease (less common)",
+      "Gastroparesis — delayed emptying despite pyloric patency",
+      "Pyloric channel ulcers — peptic ulcer disease at outlet",
+    ],
+    step1Pearls: [
+      "Pylorus = gastric outlet gatekeeper between stomach and duodenum",
+      "Hypertrophic pyloric stenosis — 2–8 week infant, projectile nonbilious vomiting, olive-shaped mass, hypochloremic metabolic alkalosis",
+      "Ultrasound — elongated pylorus, thickened muscle (>3 mm), length >15 mm",
+      "Treatment pyloric stenosis — Ramstedt pyloromyotomy",
+      "vs pyloric antrum — antrum is reservoir proximal to pyloric canal; pylorus is outlet/sphincter region",
+      "vs duodenum — first portion receives chyme from pylorus; ampulla of Vater is distal duodenum",
+      "vs LES — gastroesophageal junction sphincter, not gastric outlet",
+      "H. pylori colonizes antrum near pylorus — antral gastritis",
+    ],
+    pediatrics:
+      "Hypertrophic pyloric stenosis classic at 2–8 weeks — nonbilious projectile emesis, palpable olive, hypochloremic metabolic alkalosis from gastric HCl loss. Surgical pyloromyotomy is curative. Bilious vomiting suggests malrotation, not pyloric stenosis.",
+  },
+  {
     id: "omentum",
     name: "Omentum",
     etymology: "Latin omentum = fatty membrane/apron",

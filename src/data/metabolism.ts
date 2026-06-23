@@ -1248,6 +1248,53 @@ export const METABOLISM: MetabolismEntry[] = [
       "Vitamin A deficiency is a leading preventable cause of childhood blindness globally; WHO recommends vitamin A with measles. Isotretinoin is absolutely contraindicated in pregnancy — teratogenic via excess retinoic acid signaling.",
   },
   {
+    id: "carotene",
+    name: "Carotene",
+    etymology:
+      "Latin carota = carrot + -ene = hydrocarbon suffix — plant pigments including provitamin A carotenoids",
+    aliases: [
+      "carotene",
+      "carotenes",
+      "beta-carotene",
+      "beta carotene",
+      "β-carotene",
+      "β carotene",
+      "provitamin a carotenoid",
+      "provitamin a carotenoids",
+      "carotenoid",
+      "carotenoids",
+      "alpha-carotene",
+      "alpha carotene",
+    ],
+    definition:
+      "Fat-soluble plant pigments (carotenoids) — especially β-carotene — that serve as dietary provitamin A precursors cleaved to retinal in intestinal mucosa and liver; excess accumulation causes harmless carotenemia (orange skin) without vitamin A toxicity.",
+    pathway: [
+      "Dietary β-carotene from plants (carrots, sweet potato, leafy greens) → absorbed with bile micelles → chylomicrons",
+      "β-carotene 15,15′-dioxygenase in enterocytes/hepatocytes cleaves β-carotene → 2 molecules retinal → retinol",
+      "Unconverted carotene stored in adipose and skin — high intake → carotenemia",
+      "α-carotene and β-cryptoxanthin also have provitamin A activity (less efficient than β-carotene)",
+      "Lycopene (tomatoes) — carotenoid without provitamin A activity",
+    ],
+    boardsPearls: [
+      "β-carotene = provitamin A from plants; cleaved to retinal (vitamin A)",
+      "Carotenemia — orange-yellow skin from excess carotene; sclera remains white (vs jaundice)",
+      "Carotene excess is not toxic — unlike preformed retinol overdose",
+      "Vitamin A deficiency treated with retinol or β-carotene supplementation in endemic areas",
+      "vs retinol — preformed vitamin A from liver/dairy; can cause hypervitaminosis A",
+      "vs bilirubin jaundice — scleral icterus in true hyperbilirubinemia; carotenemia spares sclera",
+      "Fat malabsorption (CF, cholestasis) impairs carotene and vitamin A absorption",
+    ],
+    distinguishFrom: [
+      "Retinol — preformed vitamin A alcohol; hepatotoxic/teratogenic in excess",
+      "Carotenemia — clinical orange discoloration from carotene accumulation, not the molecule definition alone",
+      "Bilirubin — heme catabolite causing jaundice with scleral icterus",
+      "Lycopene — red carotenoid in tomatoes; antioxidant, not provitamin A",
+      "Xanthophylls (lutein, zeaxanthin) — macular carotenoids; not vitamin A precursors",
+    ],
+    pediatrics:
+      "Excessive carrot or sweet potato puree in infants causes carotenemia — benign orange skin without liver disease. Vitamin A deficiency remains a global cause of childhood blindness; β-carotene supplementation is safe unlike high-dose retinol in pregnancy.",
+  },
+  {
     id: "cofactor",
     name: "Cofactor",
     etymology: "Latin co- = together + Latin factor = maker/agent",
@@ -1531,6 +1578,47 @@ export const METABOLISM: MetabolismEntry[] = [
     ],
     pediatrics:
       "Rare dihydroorotate dehydrogenase deficiency causes orotic aciduria with megaloblastic anemia but without hyperammonemia — distinguish from OTC deficiency which has both hyperammonemia and orotic aciduria.",
+  },
+  {
+    id: "orotic-acid",
+    name: "Orotic Acid",
+    etymology:
+      "Latin oros = mountain + -ic acid = uracil-related pyrimidine ring carboxylic acid — intermediate in de novo UMP synthesis",
+    aliases: [
+      "orotic acid",
+      "orotic acids",
+      "orotate",
+      "orotates",
+      "uracil-6-carboxylic acid",
+      "orotic aciduria",
+    ],
+    definition:
+      "Pyrimidine synthesis intermediate formed when dihydroorotate is oxidized to orotate, then converted to orotidine-5′-monosphate (OMP) — accumulates in urine when pyrimidine synthesis is blocked downstream or when excess carbamoyl phosphate is diverted from the urea cycle into pyrimidine pathways.",
+    pathway: [
+      "De novo pyrimidine synthesis: CPS II + aspartate → N-carbamoylaspartate → dihydroorotate → orotic acid → OMP (orotate phosphoribosyltransferase) → UMP",
+      "OTC (urea cycle) deficiency — excess mitochondrial carbamoyl phosphate leaks to cytosol → ↑ pyrimidine flux → orotic aciduria + hyperammonemia",
+      "Dihydroorotate dehydrogenase deficiency — orotic aciduria with megaloblastic anemia but normal ammonia",
+      "Orotic acid + PRPP → OMP requires orotate phosphoribosyltransferase",
+      "UMP decarboxylates to UMP → precursor for CTP, dTTP",
+    ],
+    boardsPearls: [
+      "Orotic acid = pyrimidine synthesis intermediate before OMP",
+      "OTC deficiency → hyperammonemia + orotic aciduria (carbamoyl phosphate diverted to pyrimidines)",
+      "vs Lesch-Nyhan — hyperuricemia, no hyperammonemia, no orotic aciduria",
+      "Dihydroorotate dehydrogenase deficiency — orotic aciduria + megaloblastic anemia WITHOUT hyperammonemia",
+      "vs orotic acid crystals in urine — diagnostic finding; orotic acid is the metabolite",
+      "Orotate phosphoribosyltransferase converts orotate + PRPP → OMP",
+      "Do not confuse ornithine transcarbamylase (OTC) with aspartate transcarbamoylase (ATCase) — different pathways",
+    ],
+    distinguishFrom: [
+      "Orotic aciduria — clinical/lab finding of excess urinary orotic acid, not synonymous with molecule in all contexts",
+      "Uric acid — purine catabolism end product; elevated in gout and Lesch-Nyhan",
+      "Dihydroorotate — preceding reduced intermediate before orotic acid",
+      "OMP (orotidine monophosphate) — product after orotate joins PRPP",
+      "Carbamoyl phosphate — shared precursor concept; CPS I (urea cycle) vs CPS II (pyrimidines)",
+    ],
+    pediatrics:
+      "Neonatal OTC deficiency (X-linked) presents with vomiting, lethargy, hyperammonemia, and orotic acid crystals in urine — emergency. Lesch-Nyhan has uric acid stones without orotic aciduria.",
   },
   {
     id: "ribonucleotide-reductase",

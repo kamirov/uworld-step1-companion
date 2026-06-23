@@ -10750,6 +10750,55 @@ export const SYMPTOMS: SymptomEntry[] = [
       "EBV mononucleosis is common in adolescents — splenomegaly risks rupture with contact sports. TORCH infections, storage diseases, and hemolytic anemias cause pediatric splenomegaly; ITP usually has normal spleen size unless secondary hypersplenism.",
   },
   {
+    id: "hepatosplenomegaly",
+    name: "Hepatosplenomegaly",
+    etymology:
+      "Greek hēpar = liver + splen = spleen + Greek megas = large — concurrent enlargement of both liver and spleen",
+    aliases: [
+      "hepatosplenomegaly",
+      "hepatosplenomegalies",
+      "hepato-splenomegaly",
+      "hepatosplenic enlargement",
+      "enlarged liver and spleen",
+      "liver and spleen enlargement",
+      "hepatomegaly and splenomegaly",
+      "hepatomegaly with splenomegaly",
+      "splenomegaly and hepatomegaly",
+    ],
+    definition:
+      "Simultaneous abnormal enlargement of the liver and spleen on physical exam or imaging — narrows the differential toward systemic processes affecting both reticuloendothelial organs rather than isolated hepatic or splenic disease alone.",
+    mechanism:
+      "Shared pathways include portal hypertension (congestive hepatosplenomegaly), reticuloendothelial hyperplasia (infection, immune activation), lysosomal or metabolic storage (Gaucher, Niemann-Pick), hematologic infiltration (leukemia, lymphoma), and extramedullary hematopoiesis (fetal hydrops, severe hemolysis) enlarging both organs concurrently.",
+    thinkOf: [
+      "Portal hypertension / cirrhosis — congestive splenomegaly with hepatomegaly or cirrhotic liver",
+      "Gaucher disease, Niemann-Pick — lysosomal storage with massive hepatosplenomegaly",
+      "TORCH infections (CMV, rubella, toxoplasmosis) — neonatal hepatosplenomegaly",
+      "Acute and chronic leukemia, lymphoma — marrow infiltration and extramedullary disease",
+      "Malaria, visceral leishmaniasis — tropical infections",
+      "Hemolytic anemias — extramedullary hematopoiesis, increased splenic sequestration",
+      "Hemophagocytic lymphohistiocytosis (HLH) — fever, cytopenias, hyperferritin",
+      "Sarcoidosis, amyloidosis — multisystem infiltration",
+    ],
+    pairWith: [
+      "Hepatosplenomegaly + pancytopenia → leukemia, HLH, hypersplenism, marrow failure",
+      "Hepatosplenomegaly + cherry-red macula → Niemann-Pick type A (not Tay-Sachs)",
+      "Hepatosplenomegaly + coarse facies + developmental delay → mucopolysaccharidosis / storage disease",
+      "Neonate with hepatosplenomegaly + thrombocytopenia → TORCH, hemolytic disease, storage disease",
+      "Hepatosplenomegaly + jaundice + ascites → cirrhosis with portal hypertension",
+      "Fever + cytopenias + hyperferritin + hepatosplenomegaly → HLH",
+      "vs isolated hepatomegaly or splenomegaly — combined finding suggests systemic disease",
+    ],
+    distinguishFrom: [
+      "Hepatomegaly alone — liver-specific causes (hepatitis, metastases, Budd-Chiari)",
+      "Splenomegaly alone — EBV, CML, ITP with secondary enlargement",
+      "Right upper quadrant mass — kidney or colon, not hepatosplenomegaly",
+      "Functional asplenia — sickle cell autosplenectomy with small spleen despite liver disease",
+      "Tay-Sachs — cherry-red spot without hepatosplenomegaly (vs Niemann-Pick, Gaucher)",
+    ],
+    pediatrics:
+      "Neonatal hepatosplenomegaly mandates TORCH, hemolytic, metabolic, and cardiac workup. Gaucher and Niemann-Pick present in infancy with growth failure. EBV causes prominent splenomegaly in adolescents — warn against contact sports.",
+  },
+  {
     id: "spasm",
     name: "Spasm",
     etymology: "Greek spasmos = convulsion; spaein = draw/pull",
@@ -13368,6 +13417,52 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Septic arthritis in children requires urgent joint aspiration — most commonly S. aureus; juvenile idiopathic arthritis presents with morning stiffness and joint swelling without infection.",
+  },
+  {
+    id: "deforming-polyarthritis",
+    name: "Deforming Polyarthritis",
+    etymology:
+      "Latin de- = away from + forma = shape + Greek polys = many + arthron = joint + -itis = inflammation — inflammatory arthritis of multiple joints with progressive structural deformity",
+    aliases: [
+      "deforming polyarthritis",
+      "deforming polyarthritides",
+      "deforming arthritis",
+      "deforming arthritides",
+      "destructive polyarthritis",
+      "erosive polyarthritis",
+      "erosive polyarthritides",
+      "joint deformity from arthritis",
+      "chronic deforming arthritis",
+    ],
+    definition:
+      "Chronic inflammatory polyarthritis causing progressive cartilage erosion, bone destruction, and characteristic joint deformities — classic of rheumatoid arthritis and advanced psoriatic arthritis; distinguished from self-limited non-deforming polyarthritides such as rheumatic fever.",
+    mechanism:
+      "Persistent synovitis with pannus invasion → marginal erosions and ligamentous laxity → subluxation and fixed deformities (ulnar deviation, swan-neck, boutonnière in RA); contrast with acute migratory synovitis that resolves without permanent structural damage.",
+    thinkOf: [
+      "Rheumatoid arthritis — symmetric MCP/PIP/wrist deforming polyarthritis",
+      "Psoriatic arthritis — asymmetric, DIP involvement, dactylitis, nail changes",
+      "Advanced juvenile idiopathic arthritis — chronic erosive disease",
+      "vs rheumatic fever — migratory polyarthritis that does NOT cause chronic deformity",
+      "vs osteoarthritis — Heberden/Bouchard nodes, not inflammatory pannus erosions",
+      "vs gout — episodic mono/oligoarthritis with tophi, not symmetric small-joint RA pattern",
+    ],
+    pairWith: [
+      "Deforming polyarthritis + RF/anti-CCP+ → rheumatoid arthritis",
+      "Deforming polyarthritis + nail pitting + DIP → psoriatic arthritis",
+      "Migratory polyarthritis + carditis + ↑ ASO → rheumatic fever (non-deforming)",
+      "Symmetric MCP/PIP swelling + morning stiffness >1 h → RA until proven otherwise",
+      "X-ray marginal erosions + periarticular osteopenia → erosive inflammatory arthritis",
+      "vs SLE arthritis — often non-erosive, Jaccoud arthropathy (reversible subluxation)",
+    ],
+    distinguishFrom: [
+      "Rheumatic fever polyarthritis — migratory, responds to aspirin, resolves without deformity",
+      "Osteoarthritis — degenerative, brief stiffness, osteophytes not erosive pannus",
+      "Arthralgia — pain without synovitis or structural change",
+      "Jaccoud arthropathy (SLE) — reversible subluxation without true erosions",
+      "Gouty arthritis — acute crystal attacks, podagra, not chronic symmetric small-joint pattern",
+    ],
+    pediatrics:
+      "Juvenile idiopathic arthritis can cause chronic erosive deforming disease if untreated — early DMARDs prevent joint destruction. Rheumatic fever polyarthritis in children is migratory and does not cause permanent deformity (key boards contrast).",
   },
   {
     id: "joint-hypermobility",

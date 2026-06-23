@@ -7723,6 +7723,50 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "antimotility-agents",
+    name: "Antimotility Agents",
+    etymology:
+      "Greek anti- = against + Latin motus = movement + agent = substance — drugs that slow intestinal transit and increase fluid absorption",
+    aliases: [
+      "antimotility agents",
+      "antimotility agent",
+      "antimotility drugs",
+      "antimotility drug",
+      "antidiarrheal agents",
+      "antidiarrheal agent",
+      "antidiarrheal drugs",
+      "antidiarrheal drug",
+      "antidiarrheals",
+      "intestinal motility inhibitors",
+      "motility inhibitors",
+    ],
+    drugClass: "Drug class",
+    mechanism:
+      "Activate μ-opioid receptors on myenteric plexus enteric neurons (loperamide, diphenoxylate) → ↓ peristalsis and ↑ intestinal fluid/electrolyte absorption — peripheral action without significant CNS opioid effects at standard doses.",
+    indications: [
+      "Acute nonspecific diarrhea (symptomatic relief)",
+      "Traveler's diarrhea — adjunct when no fever or bloody stools",
+      "Chronic diarrhea in selected settings (e.g., short bowel syndrome under supervision)",
+      "Irritable bowel syndrome with diarrhea (loperamide)",
+    ],
+    adverseEffects: [
+      "Constipation, abdominal distension, nausea",
+      "Toxic megacolon — especially if used in invasive bacterial colitis or C. difficile",
+      "CNS opioid effects with overdose (loperamide abuse at high doses — cardiac arrhythmias)",
+      "Diphenoxylate/atropine (Lomotil) — anticholinergic effects from atropine component at high dose",
+    ],
+    boardsPearls: [
+      "Loperamide — peripheral μ-opioid agonist; slows motility, ↑ absorption",
+      "Diphenoxylate + atropine (Lomotil) — opioid derivative; subtherapeutic atropine deters abuse",
+      "Contraindicated in bloody diarrhea, high fever, suspected invasive bacterial infection, C. difficile — retain toxins and risk toxic megacolon",
+      "Traveler's diarrhea — OK if mild, afebrile, nonbloody; add antibiotics if severe invasive features",
+      "vs bismuth subsalicylate — also antisecretory and antimicrobial (traveler's diarrhea)",
+      "vs metoclopramide — prokinetic (↑ motility); antimotility agents ↓ motility",
+      "vs octreotide — treats secretory diarrhea from VIP/carcinoid; not general antimotility opioid mechanism",
+      "Cholera/severe secretory diarrhea — rehydration primary; antimotility agents not first-line",
+    ],
+  },
+  {
     id: "antiemetics",
     name: "Antiemetics",
     etymology: "Greek anti- = against + emesis = vomiting — drugs that suppress nausea and vomiting",
@@ -7833,6 +7877,87 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
     pediatrics:
       "EPS/dystonia risk in children — use lowest effective dose and shortest duration; diphenhydramine treats acute dystonic reaction.",
+  },
+  {
+    id: "prochlorperazine",
+    name: "Prochlorperazine",
+    etymology:
+      "pro- = propyl substituent + chlor- = chlorine + -azine = phenothiazine ring suffix — phenothiazine antiemetic and antipsychotic",
+    aliases: [
+      "prochlorperazine",
+      "prochlorperazine maleate",
+      "compazine",
+      "prochlorperazines",
+    ],
+    drugClass: "Phenothiazine derivative (D₂ antagonist / antiemetic)",
+    mechanism:
+      "Dopamine D₂ receptor antagonism in chemoreceptor trigger zone and nigrostriatal pathway → antiemetic effect; also anticholinergic and weak H₁ activity — phenothiazine structure shared with antipsychotics.",
+    indications: [
+      "Nausea and vomiting (severe)",
+      "Migraine-associated nausea",
+      "Vertigo-associated nausea (adjunct)",
+      "Antipsychotic use at higher doses (not primary Step 1 focus)",
+    ],
+    adverseEffects: [
+      "Extrapyramidal symptoms — acute dystonia, akathisia, parkinsonism (especially young patients)",
+      "Tardive dyskinesia with prolonged use",
+      "Sedation, hypotension (especially IV)",
+      "Hyperprolactinemia — galactorrhea, amenorrhea",
+      "Anticholinergic effects — dry mouth, urinary retention",
+    ],
+    boardsPearls: [
+      "Phenothiazine D₂ blocker — potent antiemetic with significant EPS risk",
+      "Young patients + prochlorperazine → acute dystonic reaction; treat with diphenhydramine or benztropine",
+      "vs ondansetron — prochlorperazine has D₂ block and EPS; ondansetron is 5-HT₃ without EPS",
+      "vs metoclopramide — both D₂ antiemetics; metoclopramide more prokinetic for gastroparesis",
+      "vs promethazine — prochlorperazine more D₂ antiemetic; promethazine more sedating H₁ antihistamine",
+      "CTZ target — area postrema outside BBB; same class effect as other D₂ antiemetics",
+      "Limit duration — tardive dyskinesia risk with chronic use",
+    ],
+    pediatrics:
+      "Children and adolescents at risk for acute dystonic reactions — use lowest effective dose; diphenhydramine reverses dystonia. Not first-line when ondansetron available for chemotherapy nausea.",
+  },
+  {
+    id: "octreotide",
+    name: "Octreotide",
+    etymology:
+      "octa- = eight amino acids (cyclic analog) + -ide = peptide suffix — synthetic somatostatin analog with prolonged action",
+    aliases: [
+      "octreotide",
+      "octreotide acetate",
+      "sandostatin",
+      "octreotides",
+    ],
+    drugClass: "Somatostatin analog",
+    mechanism:
+      "Synthetic octapeptide somatostatin analog binding somatostatin receptors (especially SSTR2) → inhibits secretion of GH, insulin, glucagon, gastrin, serotonin, VIP, and other GI/peptide hormones; reduces splanchnic blood flow.",
+    indications: [
+      "Acromegaly — suppress GH/IGF-1 when surgery insufficient",
+      "Carcinoid syndrome — flushing and secretory diarrhea",
+      "VIPoma and WDHA syndrome — secretory watery diarrhea",
+      "Esophageal variceal bleeding prophylaxis (adjunct to endoscopic therapy)",
+      "Sulfonylurea-induced hypoglycemia (off-label rescue)",
+      "Chylothorax and some high-output fistulas (specialized use)",
+    ],
+    adverseEffects: [
+      "Gallstones and biliary sludge — ↓ cholecystokinin → gallbladder stasis",
+      "Steatorrhea and malabsorption",
+      "Hyperglycemia or glucose dysregulation — inhibits insulin",
+      "Bradycardia, conduction abnormalities",
+      "Injection site pain; long-acting depot formulations available",
+    ],
+    boardsPearls: [
+      "Octreotide = somatostatin analog — longer half-life than native somatostatin",
+      "Carcinoid syndrome — ↓ serotonin-mediated flush and diarrhea; measure 5-HIAA",
+      "VIPoma/WDHA — octreotide suppresses VIP-driven secretory diarrhea",
+      "Acromegaly — ↓ GH secretion; monitor IGF-1; surgery is definitive when possible",
+      "Variceal bleed — octreotide ↓ splanchnic blood flow as adjunct to endoscopy",
+      "vs loperamide — octreotide for hormone-mediated secretory diarrhea; loperamide for nonspecific motility slowing",
+      "vs lanreotide — both somatostatin analogs; lanreotide longer-acting depot",
+      "Gallstone risk — chronic use impairs gallbladder emptying",
+    ],
+    pediatrics:
+      "Used in neonatal hyperinsulinism and chylothorax in specialized pediatric centers; glucose monitoring required because of insulin suppression.",
   },
   {
     id: "sumatriptan",
