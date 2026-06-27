@@ -3063,7 +3063,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "sepsis",
-    name: "Sepsi",
+    name: "Sepsis",
     etymology: "Greek sēpsis = putrefaction, rotting",
     aliases: [
       "sepsis",
@@ -4621,7 +4621,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "atherosclerosis",
-    name: "Atherosclerosi",
+    name: "Atherosclerosis",
     etymology:
       "Greek athere = gruel + skleros = hard; lipid gruel hardening arteries",
     aliases: [
@@ -5545,7 +5545,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "asplenic-sepsis",
-    name: "Asplenic Sepsi",
+    name: "Asplenic Sepsis",
     etymology:
       "Greek a- = without + Greek splen = spleen + Greek sepsis = putrefaction/infection",
     aliases: [
@@ -5892,7 +5892,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "venous-thrombosis",
-    name: "Venous Thrombosi",
+    name: "Venous Thrombosis",
     etymology: "Latin vena = vein + Greek thrombos = clot + -osis = condition",
     aliases: [
       "venous thrombosis",
@@ -5973,7 +5973,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "atelectasis",
-    name: "Atelectasi",
+    name: "Atelectasis",
     etymology: "Greek a- = without + tele = complete + ektasis = expansion",
     aliases: [
       "atelectasis",
@@ -7583,7 +7583,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "multiple-sclerosis",
-    name: "Multiple Sclerosi",
+    name: "Multiple Sclerosis",
     etymology: "Latin multiplex = many + Greek skleros = hard/scarred",
     aliases: [
       "multiple sclerosis",
@@ -9111,7 +9111,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "hypertensive-nephrosclerosis",
-    name: "Hypertensive Nephrosclerosi",
+    name: "Hypertensive Nephrosclerosis",
     etymology:
       "Greek hyper = over + Latin tensio = stretching + Greek nephros = kidney + Greek sklerosis = hardening",
     aliases: [
@@ -9364,7 +9364,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "diabetic-ketoacidosis",
-    name: "Diabetic Ketoacidosi",
+    name: "Diabetic Ketoacidosis",
     etymology:
       "Greek diabainein = pass through + ketone = acetone-like body + Latin acidus = sour + -osis = condition",
     aliases: ["diabetic ketoacidosis", "dka"],
@@ -9803,7 +9803,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "hypertensive-crisis",
-    name: "Hypertensive Crisi",
+    name: "Hypertensive Crisis",
     etymology:
       "Greek hyper = excess + Latin tensio = stretching + Greek krisis = decisive turning point — severe acute blood pressure elevation with risk of or presence of end-organ injury",
     aliases: [
@@ -10232,7 +10232,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "thyrotoxicosis",
-    name: "Thyrotoxicosi",
+    name: "Thyrotoxicosis",
     etymology:
       "Greek thyreos = shield gland + Latin toxicum = poison + -osis = condition",
     aliases: [
@@ -11792,7 +11792,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "hemochromatosis",
-    name: "Hemochromatosi",
+    name: "Hemochromatosis",
     etymology:
       "Greek haima = blood + Greek chroma = color + -osis = condition (iron overload darkens tissues)",
     aliases: [
@@ -12931,7 +12931,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "osteoporosis",
-    name: "Osteoporosi",
+    name: "Osteoporosis",
     etymology: "Greek osteon = bone + poros = passage/pore + -osis = condition",
     aliases: [
       "osteoporosis",
@@ -13479,7 +13479,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "ochronosis",
-    name: "Ochronosi",
+    name: "Ochronosis",
     etymology:
       "Greek ochros = pale yellow + -osis = condition (pigment appears yellow-brown microscopically)",
     aliases: ["ochronosis", "ochronotic arthritis", "endogenous ochronosis"],
@@ -15284,7 +15284,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "familial-adenomatous-polyposis",
-    name: "Familial Adenomatous Polyposi",
+    name: "Familial Adenomatous Polyposis",
     etymology:
       "Latin familia = family + Greek aden = gland + Greek -oma = mass + Greek polyposis = many growths — autosomal dominant syndrome of innumerable colorectal adenomas from APC mutation",
     aliases: [
@@ -16036,7 +16036,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "spherocytosis",
-    name: "Spherocytosi",
+    name: "Spherocytosis",
     etymology: "Greek sphaira = sphere + kytos = cell + -osis = condition",
     aliases: [
       "spherocytosis",
@@ -17591,7 +17591,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "bronchiectasis",
-    name: "Bronchiectasi",
+    name: "Bronchiectasis",
     etymology: "Greek bronchos = airway + ektasis = stretching/dilation",
     aliases: [
       "bronchiectasis",
@@ -17665,7 +17665,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "cystic-fibrosis",
-    name: "Cystic Fibrosi",
+    name: "Cystic Fibrosis",
     etymology:
       "Greek kystis = bladder/sac + Latin fibra = fiber + -osis = condition",
     aliases: ["cystic fibrosis", "cf"],
@@ -17971,7 +17971,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "seasonal-allergies",
-    name: "Seasonal Allergie",
+    name: "Seasonal Allergy",
     etymology:
       "Latin season = sowing time/period of year + allergy = altered reactivity + -ies = condition — IgE-mediated type I hypersensitivity to airborne pollens and seasonal environmental allergens causing recurrent rhinoconjunctivitis during predictable times of year",
     aliases: [
@@ -18196,7 +18196,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "cavernous-sinus-thrombosis",
-    name: "Cavernous Sinus Thrombosi",
+    name: "Cavernous Sinus Thrombosis",
     etymology:
       "Latin cavernosus = full of hollows + sinus = channel + Greek thrombos = clot — septic thrombosis of the dural cavernous venous sinus",
     aliases: [
@@ -18941,7 +18941,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "psoriasis",
-    name: "Psoriasi",
+    name: "Psoriasis",
     etymology: "Greek psora = itch + -iasis = condition",
     aliases: [
       "psoriasis",
@@ -19194,7 +19194,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "mastocytosis",
-    name: "Mastocytosi",
+    name: "Mastocytosis",
     etymology:
       "German Mastzelle = well-fed cell + Greek kytos = cell + -osis = condition",
     aliases: [
@@ -19460,7 +19460,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "sarcoidosis",
-    name: "Sarcoidosi",
+    name: "Sarcoidosis",
     etymology: "Greek sarx = flesh + -oid = resembling + -osis = condition",
     aliases: [
       "sarcoidosis",
@@ -20411,7 +20411,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "transposition-of-the-great-arteries",
-    name: "Transposition Of The Great Arterie",
+    name: "Transposition Of The Great Artery",
     etymology:
       "Latin trans = across + positio = placement + arteriae = arteries — aorta and pulmonary artery arise from the wrong ventricles (ventriculoarterial discordance)",
     aliases: [
@@ -20876,7 +20876,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "aortic-stenosis",
-    name: "Aortic Stenosi",
+    name: "Aortic Stenosis",
     etymology:
       "Greek aorte = artery + Greek stenosis = narrowing — fixed obstruction to left ventricular outflow at the aortic valve or subvalvular region",
     aliases: [
@@ -21095,7 +21095,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "mitral-stenosis",
-    name: "Mitral Stenosi",
+    name: "Mitral Stenosis",
     etymology:
       "Latin mitra = bishop's headdress (valve shape) + Greek stenosis = narrowing",
     aliases: [
@@ -21658,7 +21658,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "idiopathic-pulmonary-fibrosis",
-    name: "Idiopathic Pulmonary Fibrosi",
+    name: "Idiopathic Pulmonary Fibrosis",
     etymology:
       "Greek idios = one's own + pathos = suffering + Latin pulmo = lung + fibra = fiber + -osis = condition",
     aliases: [
@@ -21740,7 +21740,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "pneumoconiosis",
-    name: "Pneumoconiosi",
+    name: "Pneumoconiosis",
     etymology: "Greek pneuma = air/lung + konis = dust + -osis = condition",
     aliases: [
       "pneumoconiosis",
@@ -21799,7 +21799,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "coal-workers-pneumoconiosis",
-    name: "Coal Workers Pneumoconiosi",
+    name: "Coal Workers Pneumoconiosis",
     etymology:
       "Old English col = charcoal/coal + worker + Greek pneuma = lung/air + konis = dust + -osis = condition",
     aliases: [
@@ -22513,7 +22513,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "focal-segmental-glomerulosclerosis",
-    name: "Focal Segmental Glomerulosclerosi",
+    name: "Focal Segmental Glomerulosclerosis",
     etymology:
       "Latin focalis = pertaining to a focus + segmentalis = in segments + glomerulus = small ball + Greek sklerosis = hardening",
     aliases: [
@@ -22588,7 +22588,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "nephrolithiasis",
-    name: "Nephrolithiasi",
+    name: "Nephrolithiasis",
     etymology: "Greek nephros = kidney + lithos = stone + -iasis = condition",
     aliases: [
       "nephrolithiasis",
@@ -22635,7 +22635,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "calcium-nephrolithiasis",
-    name: "Calcium Nephrolithiasi",
+    name: "Calcium Nephrolithiasis",
     etymology:
       "Latin calx = lime + Greek nephros = kidney + lithos = stone + -iasis = condition",
     aliases: [
@@ -24182,7 +24182,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "systemic-sclerosis",
-    name: "Systemic Sclerosi",
+    name: "Systemic Sclerosis",
     etymology: "Greek syn/systema = whole organized body + skleros = hardening",
     aliases: [
       "systemic sclerosis",
@@ -27080,7 +27080,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "tuberculosis",
-    name: "Tuberculosi",
+    name: "Tuberculosis",
     etymology: "Latin tuberculum = small swelling + -osis = condition",
     aliases: ["tuberculosis", "tb", "pulmonary tuberculosis"],
     definition:
@@ -29605,7 +29605,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "endometriosis",
-    name: "Endometriosi",
+    name: "Endometriosis",
     etymology: "Greek endon = within + metra = uterus + -osis = condition",
     aliases: [
       "endometriosis",
@@ -32282,7 +32282,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "phimosis",
-    name: "Phimosi",
+    name: "Phimosis",
     etymology:
       "Greek phimos = muzzle → tight foreskin unable to retract over glans",
     aliases: [
@@ -32347,7 +32347,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "paraphimosis",
-    name: "Paraphimosi",
+    name: "Paraphimosis",
     etymology:
       "Greek para = beside/beyond + phimos = muzzle → foreskin retracted and trapped proximal to glans",
     aliases: [
@@ -32716,7 +32716,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "urosepsis",
-    name: "Urosepsi",
+    name: "Urosepsis",
     etymology: "Greek ouron = urine + Greek sepsis = putrefaction/infection",
     aliases: [
       "urosepsis",
@@ -32983,7 +32983,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "cholelithiasis",
-    name: "Cholelithiasi",
+    name: "Cholelithiasis",
     etymology: "Greek chole = bile + lithos = stone + -iasis = condition",
     aliases: [
       "cholelithiasis",
@@ -33125,7 +33125,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "choledocholithiasis",
-    name: "Choledocholithiasi",
+    name: "Choledocholithiasis",
     etymology:
       "Greek chole = bile + dochos = receiving duct + lithos = stone + -iasis = condition",
     aliases: [
@@ -33525,7 +33525,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "pyloric-stenosis",
-    name: "Pyloric Stenosi",
+    name: "Pyloric Stenosis",
     etymology: "Greek pyloros = gatekeeper + Greek stenosis = narrowing",
     aliases: [
       "pyloric stenosis",
@@ -34207,7 +34207,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "sporotrichosis",
-    name: "Sporotrichosi",
+    name: "Sporotrichosis",
     etymology: "Greek sporos = seed/spore + thrix = hair + -osis = condition",
     aliases: [
       "sporotrichosis",
@@ -35759,7 +35759,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "anaplasmosis",
-    name: "Anaplasmosi",
+    name: "Anaplasmosis",
     etymology:
       "Greek ana = without + plasma = form + -osis = condition — human granulocytic anaplasmosis from Anaplasma phagocytophilum infecting neutrophils",
     aliases: [
@@ -35829,7 +35829,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "ehrlichiosis",
-    name: "Ehrlichiosi",
+    name: "Ehrlichiosis",
     etymology:
       "eponym: Paul Ehrlich + -osis = condition — tick-borne illness from Ehrlichia species infecting mononuclear phagocytes",
     aliases: [
@@ -38004,7 +38004,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "dental-caries",
-    name: "Dental Carie",
+    name: "Dental Caries",
     etymology: "Latin dens = tooth + caries = decay/rottenness",
     aliases: [
       "dental caries",
@@ -38273,7 +38273,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "oral-candidiasis",
-    name: "Oral Candidiasi",
+    name: "Oral Candidiasis",
     etymology: "Latin candidus = white + Greek -iasis = diseased condition",
     aliases: [
       "oral candidiasis",
@@ -39338,7 +39338,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "hydronephrosis",
-    name: "Hydronephrosi",
+    name: "Hydronephrosis",
     etymology: "Greek hydor = water + nephros = kidney + -osis = condition",
     aliases: [
       "hydronephrosis",
@@ -40659,7 +40659,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "pertussis",
-    name: "Pertussi",
+    name: "Pertussis",
     etymology: "Latin per = thoroughly/intense + tussis = cough",
     aliases: [
       "pertussis",
@@ -41875,7 +41875,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "cirrhosis",
-    name: "Cirrhosi",
+    name: "Cirrhosis",
     etymology: "Greek kirrhos = tawny/orange + -osis = condition",
     aliases: [
       "cirrhosis",
@@ -42001,7 +42001,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "portal-vein-thrombosis",
-    name: "Portal Vein Thrombosi",
+    name: "Portal Vein Thrombosis",
     etymology:
       "Latin porta = gate + Latin vena = vein + Greek thrombos = clot + -osis = condition — thrombotic occlusion of the portal vein",
     aliases: [
@@ -42442,7 +42442,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "rhabdomyolysis",
-    name: "Rhabdomyolysi",
+    name: "Rhabdomyolysis",
     etymology:
       "Greek rhabdos = rod/striated + mys = muscle + -lysis = breakdown",
     aliases: [
@@ -42811,7 +42811,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "acute-tubular-necrosis",
-    name: "Acute Tubular Necrosi",
+    name: "Acute Tubular Necrosis",
     etymology:
       "Latin acutus = sudden + Latin tubulus = little tube + Greek nekros = dead tissue",
     aliases: [
@@ -43601,7 +43601,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "renal-artery-stenosis",
-    name: "Renal Artery Stenosi",
+    name: "Renal Artery Stenosis",
     etymology:
       "Latin ren = kidney + Greek arteria = artery + Greek stenosis = narrowing",
     aliases: [
@@ -44156,7 +44156,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "peritoneal-carcinomatosis",
-    name: "Peritoneal Carcinomatosi",
+    name: "Peritoneal Carcinomatosis",
     etymology:
       "Latin peritoneum = stretched around + Greek karkinos = crab/cancer + -osis = condition",
     aliases: [
@@ -46283,7 +46283,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "amyotrophic-lateral-sclerosis",
-    name: "Amyotrophic Lateral Sclerosi",
+    name: "Amyotrophic Lateral Sclerosis",
     etymology:
       "Greek a- = without + mys = muscle + trophē = nourishment + Latin lateralis = side + sclerosis = hardening",
     aliases: [
@@ -46364,7 +46364,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "amyloidosis",
-    name: "Amyloidosi",
+    name: "Amyloidosis",
     etymology:
       "Greek amylon = starch + -oid = resembling + -osis = condition (misnamed — not starch)",
     aliases: [
@@ -47044,7 +47044,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "sacral-agenesis",
-    name: "Sacral Agenesi",
+    name: "Sacral Agenesis",
     etymology:
       "Latin sacrum = sacred bone + Greek a = without + genesis = origin — congenital absence or hypoplasia of sacral vertebrae",
     aliases: [
@@ -47707,7 +47707,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "histoplasmosis",
-    name: "Histoplasmosi",
+    name: "Histoplasmosis",
     etymology: "Greek histos = tissue + plasma = form + -osis = condition",
     aliases: [
       "histoplasmosis",
@@ -47783,7 +47783,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "blastomycosis",
-    name: "Blastomycosi",
+    name: "Blastomycosis",
     etymology:
       "Greek blastos = bud + mykes = fungus + -osis = condition — dimorphic fungal infection with broad-based budding yeast in tissue",
     aliases: [
@@ -47854,7 +47854,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "coccidioidomycosis",
-    name: "Coccidioidomycosi",
+    name: "Coccidioidomycosis",
     etymology:
       "Greek kokkos = berry + -oides = resembling + mykes = fungus + -osis = condition — dimorphic fungal infection producing spherules with endospores in tissue",
     aliases: [
@@ -47930,7 +47930,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "aspergillosis",
-    name: "Aspergillosi",
+    name: "Aspergillosis",
     etymology:
       "Latin aspergillum = holy-water sprinkler (conidiophore shape) + -osis = condition — spectrum of disease caused by Aspergillus species, most commonly A. fumigatus",
     aliases: [
@@ -48005,7 +48005,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "mucormycosis",
-    name: "Mucormycosi",
+    name: "Mucormycosis",
     etymology:
       "Latin mucor = mold + mykes = fungus + -osis = condition — angioinvasive infection by Mucorales molds (Mucor, Rhizopus, Lichtheimia) in immunocompromised hosts",
     aliases: [
@@ -48083,7 +48083,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "cryptococcosis",
-    name: "Cryptococcosi",
+    name: "Cryptococcosis",
     etymology:
       "Greek kryptos = hidden + kokkos = berry + -osis = condition — infection by encapsulated yeast Cryptococcus species, classically C. neoformans from pigeon droppings and soil",
     aliases: [
@@ -48159,7 +48159,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "vascular-graft-thrombosis",
-    name: "Vascular Graft Thrombosi",
+    name: "Vascular Graft Thrombosis",
     etymology:
       "Latin vasculum = small vessel + graft = transplanted tissue + Greek thrombos = clot + -osis = condition",
     aliases: [
@@ -48930,7 +48930,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "avascular-necrosis",
-    name: "Avascular Necrosi",
+    name: "Avascular Necrosis",
     etymology: "a- = without + Latin vas = vessel + necrosis = cell death",
     aliases: [
       "avascular necrosis",
@@ -50527,7 +50527,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "berylliosis",
-    name: "Berylliosi",
+    name: "Berylliosis",
     etymology: "beryllium element + Greek -osis = condition",
     aliases: [
       "berylliosis",
@@ -50821,7 +50821,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "slipped-capital-femoral-epiphysis",
-    name: "Slipped Capital Femoral Epiphysi",
+    name: "Slipped Capital Femoral Epiphysis",
     etymology:
       "English slipped = displaced + Latin capital = head + femoral + Greek epi = upon + physis = growth — posterior-inferior slip of femoral head epiphysis on femoral neck through growth plate",
     aliases: [
@@ -53149,7 +53149,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "spinal-stenosis",
-    name: "Spinal Stenosi",
+    name: "Spinal Stenosis",
     etymology:
       "Latin spina = spine + Greek stenosis = narrowing — pathologic narrowing of the spinal canal or neural foramina",
     aliases: [
@@ -53284,7 +53284,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "scoliosis",
-    name: "Scoliosi",
+    name: "Scoliosis",
     etymology:
       "Greek skolios = crooked/bent + -osis = condition — lateral curvature of the spine",
     aliases: [
@@ -53352,7 +53352,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "kyphoscoliosis",
-    name: "Kyphoscoliosi",
+    name: "Kyphoscoliosis",
     etymology:
       "Greek kyphos = hump + skolios = crooked + -osis — combined sagittal (kyphosis) and coronal (scoliosis) spinal deformity",
     aliases: [
@@ -54062,7 +54062,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "carotid-stenosis",
-    name: "Carotid Stenosi",
+    name: "Carotid Stenosis",
     etymology:
       "Greek karos = deep sleep (carotid = artery to brain) + Greek stenosis = narrowing",
     aliases: [
@@ -57071,7 +57071,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "hemophagocytic-lymphohistiocytosis",
-    name: "Hemophagocytic Lymphohistiocytosi",
+    name: "Hemophagocytic Lymphohistiocytosis",
     etymology:
       "Greek haima = blood + phagein = to eat + lymph = lymph + histio = tissue + kytos = cell + -osis = condition",
     aliases: [
@@ -57394,7 +57394,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "bacillary-angiomatosis",
-    name: "Bacillary Angiomatosi",
+    name: "Bacillary Angiomatosis",
     etymology:
       "Latin bacillus = small rod + angio = vessel + -oma = tumor + -osis = condition — vascular proliferative lesions from bacillary infection",
     aliases: [
@@ -58963,7 +58963,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "gastroparesis",
-    name: "Gastroparesi",
+    name: "Gastroparesis",
     etymology:
       "Greek gaster = stomach + para = beside/beyond + -esis = condition — partial paralysis of the stomach with delayed emptying",
     aliases: [
@@ -59043,7 +59043,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "infectious-mononucleosis",
-    name: "Infectious Mononucleosi",
+    name: "Infectious Mononucleosis",
     etymology:
       "Latin infectio = staining/contamination + Greek monos = single + nucleus = kernel + -osis = condition — clinical syndrome of fever, pharyngitis, and lymphadenopathy with atypical mononuclear cells on blood smear, classically from EBV",
     aliases: [
@@ -59125,7 +59125,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "leishmaniasis",
-    name: "Leishmaniasi",
+    name: "Leishmaniasis",
     etymology:
       "eponym: William Boog Leishman + Greek -iasis = disease condition — vector-borne protozoal infection caused by Leishmania species transmitted by sandflies",
     aliases: [

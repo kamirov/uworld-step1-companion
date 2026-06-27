@@ -11,7 +11,6 @@ import {
   Gauge,
   GitBranch,
   HeartPulse,
-  ImageOff,
   Layers,
   Lightbulb,
   Microscope,
@@ -94,12 +93,6 @@ export const CATEGORY_LEGEND: CategoryLegendEntry[] = [
   { id: "microbiology", label: "Microbiology", chipClass: "usmle-microbiology-chip", color: "#0f766e", icon: Microscope },
   { id: "musculoskeletal", label: "Musculoskeletal", chipClass: "usmle-musculoskeletal-chip", color: "#475569", icon: Bone },
 ];
-
-export const IMAGE_FLAG_LEGEND = {
-  label: "Mark image for regeneration",
-  color: "#dc2626",
-  icon: ImageOff,
-} as const;
 
 const CATEGORY_LABELS = Object.fromEntries(
   CATEGORY_LEGEND.map((entry) => [entry.id, entry.label]),

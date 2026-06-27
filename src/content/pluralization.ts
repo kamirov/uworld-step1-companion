@@ -151,6 +151,146 @@ const ACRONYM_RE = /^[a-z0-9]{1,6}$/i;
 const ES_SUFFIX_RE = /(?:s|ss|x|z|ch|sh)$/i;
 const CONSONANT_Y_RE = /[^aeiou]y$/i;
 
+/** Greek/Latin medical terms that are singular but end in "s". */
+const LONG_SINGULAR_S_SUFFIX_RE = /(?:osis|iasis|esis|asis|ysis)$/i;
+
+/** Short singular nouns ending in -sis (stem < 4 chars). */
+const SHORT_SIS_SINGULARS = new Set([
+  "sepsis",
+  "crisis",
+  "lysis",
+  "thesis",
+  "gnosis",
+  "ptosis",
+  "miosis",
+  "stasis",
+]);
+
+/** Truncated forms produced by incorrectly stripping one "s". */
+const TRUNCATED_SUFFIX_RE = /(?:si|osi|esi|asi|iasi|ysi)$/i;
+
+/** Truncated -ies plurals where "bodies" became "bodie" instead of "body". */
+const IE_TRUNCATED_SUFFIX_RE = /ie$/i;
+
+function preserveLastWordCasing(originalLast: string, repairedLower: string): string {
+  if (originalLast === originalLast.toUpperCase()) return repairedLower.toUpperCase();
+  if (originalLast[0] === originalLast[0]?.toUpperCase()) {
+    return repairedLower[0]!.toUpperCase() + repairedLower.slice(1);
+  }
+  return repairedLower;
+}
+
+function singularizeLastWord(originalLast: string, lastKey: string): string | null {
+  if (!lastKey.endsWith("s") || lastKey.endsWith("ss")) return null;
+
+  const candidates = [
+    lastKey.endsWith("ies") ? `${lastKey.slice(0, -3)}y` : null,
+    lastKey.endsWith("es") && !lastKey.endsWith("ies") ? lastKey.slice(0, -2) : null,
+    lastKey.slice(0, -1),
+  ].filter((value): value is string => Boolean(value));
+
+  for (const candidate of candidates) {
+    if (shouldSkipPluralization(candidate)) continue;
+    if (isInherentlySingularEndingInS(candidate)) continue;
+    const plurals = getPluralForms(candidate).map(normalizeAlias);
+    if (plurals.includes(lastKey)) {
+      return preserveLastWordCasing(originalLast, candidate);
+    }
+  }
+
+  return null;
+}
+
+export function isInherentlySingularEndingInS(text: string): boolean {
+  const key = normalizeAlias(text);
+  if (!key) return false;
+  if (PLURALIZATION_SKIP.has(key)) return true;
+
+  const lastWord = key.split(" ").pop() ?? key;
+  if (LONG_SINGULAR_S_SUFFIX_RE.test(lastWord)) return true;
+  if (lastWord.endsWith("sis")) {
+    const stem = lastWord.slice(0, -3);
+    return stem.length >= 4 || SHORT_SIS_SINGULARS.has(lastWord);
+  }
+  return false;
+}
+
+function preserveNameCasing(original: string, repairedLower: string): string {
+  const parts = original.split(/\s+/);
+  const repairedParts = repairedLower.split(/\s+/);
+  return parts
+    .map((part, index) => {
+      const repaired = repairedParts[index] ?? part;
+      if (part === part.toUpperCase()) return repaired.toUpperCase();
+      if (part[0] === part[0]?.toUpperCase()) {
+        return repaired[0]!.toUpperCase() + repaired.slice(1);
+      }
+      return repaired;
+    })
+    .join(" ");
+}
+
+/** Undo bad singularization that stripped trailing "s" from -sis/-osis/etc. terms. */
+function repairSTruncatedName(name: string): string | null {
+  const key = normalizeAlias(name);
+  if (!key || isInherentlySingularEndingInS(name)) return null;
+
+  const parts = key.split(" ");
+  const lastPart = parts[parts.length - 1]!;
+  if (!TRUNCATED_SUFFIX_RE.test(lastPart)) return null;
+
+  const nameParts = name.split(/\s+/);
+  const last = nameParts[nameParts.length - 1]!;
+  const repairedLast = `${last}s`;
+  const repaired =
+    nameParts.length === 1
+      ? repairedLast
+      : [...nameParts.slice(0, -1), repairedLast].join(" ");
+
+  if (!isInherentlySingularEndingInS(repaired)) return null;
+  return preserveNameCasing(name, repaired);
+}
+
+function repairIeTruncatedName(name: string): string | null {
+  const key = normalizeAlias(name);
+  if (!key || isInherentlySingularEndingInS(name)) return null;
+
+  const keyParts = key.split(" ");
+  const lastPart = keyParts[keyParts.length - 1]!;
+  if (!IE_TRUNCATED_SUFFIX_RE.test(lastPart)) return null;
+
+  const nameParts = name.split(/\s+/);
+  const last = nameParts[nameParts.length - 1]!;
+  const withS = `${last}s`;
+  const withSKey = normalizeAlias(withS);
+  if (
+    PLURALIZATION_SKIP.has(withSKey) ||
+    NAME_SINGULAR_EXCEPTIONS.has(withSKey) ||
+    isInherentlySingularEndingInS(withS)
+  ) {
+    const repaired =
+      nameParts.length === 1
+        ? withS
+        : [...nameParts.slice(0, -1), withS].join(" ");
+    return preserveNameCasing(name, repaired);
+  }
+
+  const candidate = `${last.slice(0, -2)}y`;
+  const impliedPlural = `${last}s`;
+  if (!isGeneratedPluralOf(impliedPlural, candidate)) return null;
+
+  const repaired =
+    nameParts.length === 1
+      ? candidate
+      : [...nameParts.slice(0, -1), candidate].join(" ");
+
+  return preserveNameCasing(name, repaired);
+}
+
+export function repairTruncatedSingularName(name: string): string | null {
+  return repairIeTruncatedName(name) ?? repairSTruncatedName(name);
+}
+
 function normalizeAlias(alias: string): string {
   return normalizedWordKey(alias);
 }
@@ -164,16 +304,16 @@ function pluralizeToken(token: string): string[] {
 
   if (lower.endsWith("s")) return [];
 
-  if (ACRONYM_RE.test(lower)) {
-    return [`${lower}s`];
+  if (CONSONANT_Y_RE.test(lower)) {
+    return [`${lower.slice(0, -1)}ies`];
   }
 
   if (ES_SUFFIX_RE.test(lower)) {
     return [`${lower}es`];
   }
 
-  if (CONSONANT_Y_RE.test(lower)) {
-    return [`${lower.slice(0, -1)}ies`];
+  if (ACRONYM_RE.test(lower)) {
+    return [`${lower}s`];
   }
 
   return [`${lower}s`];
@@ -300,11 +440,14 @@ export const NAME_SINGULAR_EXCEPTIONS = new Set([
   "ductus venosus",
   "metanephros",
   "mesonephros",
+  "caries",
+  "facies",
 ]);
 
 export function singularizeName(name: string): string | null {
   const key = normalizeAlias(name);
   if (NAME_SINGULAR_EXCEPTIONS.has(key)) return null;
+  if (isInherentlySingularEndingInS(name)) return null;
 
   for (const [singular, plurals] of Object.entries(IRREGULAR_PLURALS)) {
     if (plurals.some((plural) => normalizeAlias(plural) === key)) {
@@ -312,23 +455,16 @@ export function singularizeName(name: string): string | null {
     }
   }
 
-  if (!key.endsWith("s") || key.endsWith("ss")) return null;
+  const nameParts = name.split(/\s+/);
+  const keyParts = key.split(" ");
+  const lastKey = keyParts[keyParts.length - 1]!;
+  const lastName = nameParts[nameParts.length - 1]!;
 
-  const candidates = [
-    key.slice(0, -1),
-    key.endsWith("ies") ? `${key.slice(0, -3)}y` : null,
-    key.endsWith("es") ? key.slice(0, -2) : null,
-  ].filter((value): value is string => Boolean(value));
+  const singularLast = singularizeLastWord(lastName, lastKey);
+  if (!singularLast) return null;
 
-  for (const candidate of candidates) {
-    if (shouldSkipPluralization(candidate)) continue;
-    const plurals = getPluralForms(candidate).map(normalizeAlias);
-    if (plurals.includes(key)) {
-      return titleCase(candidate);
-    }
-  }
-
-  return null;
+  if (nameParts.length === 1) return singularLast;
+  return [...nameParts.slice(0, -1), singularLast].join(" ");
 }
 
 function titleCase(text: string): string {

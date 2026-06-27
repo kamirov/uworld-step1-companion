@@ -367,7 +367,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "lymphocytosis",
-    name: "Lymphocytosi",
+    name: "Lymphocytosis",
     etymology:
       "Latin lympha = water/fluid + Greek kytos = cell + -osis = condition — elevated lymphocyte count in peripheral blood",
     aliases: [
@@ -1971,7 +1971,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "pleural-fluid",
-    name: "Pleural Fluid Analysi",
+    name: "Pleural Fluid Analysis",
     etymology:
       "Greek pleura = side/rib + fluid = liquid + analysis = breaking apart for study",
     aliases: [
@@ -3284,7 +3284,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "serum-protein-electrophoresis",
-    name: "Serum Protein Electrophoresi",
+    name: "Serum Protein Electrophoresis",
     etymology:
       "Latin serum = whey + Latin protein = primary substance + Greek elektron = amber (electric charge) + phoresis = carrying — gel separation of serum proteins by charge and size into albumin and globulin fractions",
     aliases: [
@@ -3511,7 +3511,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "anti-tissue-transglutaminase",
-    name: "Anti-Tissue Transglutaminase Antibodie",
+    name: "Anti-Tissue Transglutaminase Antibody",
     etymology:
       "anti- = against + tissue + transglutaminase = enzyme cross-linking proteins + antibodies = immune globulins — IgA autoantibodies against tissue transglutaminase (tTG)",
     aliases: [
@@ -5019,7 +5019,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "ana",
-    name: "Antinuclear Antibodie",
+    name: "Antinuclear Antibody",
     etymology:
       "anti- = against + nuclear = cell nucleus + anti- = against + body = immune protein",
     aliases: [
@@ -5193,7 +5193,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "lactic-acidosis",
-    name: "Lactic Acidosi",
+    name: "Lactic Acidosis",
     etymology: "Latin lac = milk + Latin acidus = sour + -osis = condition",
     aliases: ["lactic acidosis", "lactate acidosis"],
     measures:
@@ -5978,7 +5978,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "anti-streptococcal-antibodies",
-    name: "Anti-Streptococcal Antibodie",
+    name: "Anti-Streptococcal Antibody",
     etymology:
       "anti- = against + streptococcus = twisted berry (coccus) + antibody = immune globulin — serologic evidence of recent group A Streptococcus infection via antibodies to streptococcal antigens/toxins",
     aliases: [
@@ -6073,7 +6073,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "urinalysis",
-    name: "Urinalysi",
+    name: "Urinalysis",
     etymology: "Latin urina = urine + Greek analysis = breaking apart",
     aliases: [
       "urinalysis",
@@ -6422,6 +6422,56 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Pyuria + urethral discharge → urethritis (gonorrhea/chlamydia)",
       "Pyuria + nitrite− → gram-positive UTI, low colony count, or non-nitrite-producing organism",
       "Febrile infant + pyuria → UTI/pyelonephritis workup with culture",
+    ],
+  },
+  {
+    id: "bacteriuria",
+    name: "Bacteriuria",
+    etymology:
+      "Greek bakterion = small staff + ouron = urine — presence of bacteria in the urine, detected by culture or microscopy",
+    aliases: [
+      "bacteriuria",
+      "bacteria in urine",
+      "bacteria in the urine",
+      "urinary bacteriuria",
+      "significant bacteriuria",
+      "asymptomatic bacteriuria",
+      "symptomatic bacteriuria",
+      "positive urine culture",
+    ],
+    measures:
+      "Detection of bacteria in a properly collected urine specimen — by quantitative culture (CFU/mL) or microscopy — indicating colonization or infection of the urinary tract; significance depends on colony count, collection method, and presence of symptoms.",
+    normalRange:
+      "No significant growth on culture (<10³ CFU/mL typically considered contamination for clean-catch midstream; ≥10⁵ CFU/mL of single organism = significant bacteriuria in symptomatic uncomplicated UTI)",
+    increasedCauses: [
+      "Acute cystitis and urinary tract infection — dysuria, frequency, urgency",
+      "Pyelonephritis — bacteriuria with fever, flank pain, often pyuria and WBC casts",
+      "Asymptomatic bacteriuria — colonization without symptoms (common in elderly women, catheterized patients)",
+      "Catheter-associated bacteriuria — lower threshold for significance with indwelling catheter",
+      "Pregnancy — asymptomatic bacteriuria requires treatment to prevent pyelonephritis and preterm labor",
+      "Contamination from vaginal/perineal flora if clean-catch technique poor",
+    ],
+    decreasedCauses: [
+      "Sterile urine culture — no bacteriuria (normal or prior effective antibiotics)",
+      "Partially treated infection — culture may be negative while symptoms persist",
+      "Fastidious organisms or low colony count below significance threshold",
+    ],
+    boardsPearls: [
+      "Bacteriuria = bacteria in urine; does not always mean symptomatic UTI",
+      "≥10⁵ CFU/mL single organism (clean-catch) — significant bacteriuria for uncomplicated cystitis",
+      "Asymptomatic bacteriuria — treat in pregnancy and before urologic procedures; generally do NOT treat in elderly non-pregnant women or catheterized patients without symptoms",
+      "Pyuria + bacteriuria + symptoms → UTI; pyuria without bacteriuria → sterile pyuria (TB, stones)",
+      "Nitrite+ on dipstick suggests nitrate-reducing bacteriuria (E. coli classic)",
+      "vs pyuria — WBCs in urine; can coexist but are distinct findings",
+      "Catheterized specimen — ≥10² CFU/mL may be significant",
+    ],
+    pairWith: [
+      "Bacteriuria + dysuria + pyuria → acute cystitis",
+      "Bacteriuria + fever + CVA tenderness + pyuria → pyelonephritis",
+      "Asymptomatic bacteriuria in pregnancy → treat with pregnancy-safe antibiotic",
+      "Bacteriuria + indwelling catheter + no symptoms → usually do not treat (except special cases)",
+      "Bacteriuria + nitrite+ + leukocyte esterase+ → strong evidence of bacterial UTI",
+      "Significant bacteriuria + negative nitrite → gram-positive organism or insufficient dwell time",
     ],
   },
   {
@@ -7057,7 +7107,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "anion-gap-metabolic-acidosis",
-    name: "Anion Gap Metabolic Acidosi",
+    name: "Anion Gap Metabolic Acidosis",
     etymology:
       "Greek anion = upward-going ion + gap = difference + metabolic = body chemistry + acidosis = excess acid",
     aliases: [
@@ -7103,7 +7153,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "metabolic-alkalosis",
-    name: "Metabolic Alkalosi",
+    name: "Metabolic Alkalosis",
     etymology:
       "Greek meta = change + ballein = to throw + -osis = condition + alkalosis = base excess",
     aliases: [
@@ -7148,7 +7198,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "metabolic-acidosis",
-    name: "Metabolic Acidosi",
+    name: "Metabolic Acidosis",
     etymology:
       "Greek meta = change + ballein = to throw + -osis = condition + acidosis = excess acid",
     aliases: [
@@ -7190,7 +7240,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "respiratory-acidosis",
-    name: "Respiratory Acidosi",
+    name: "Respiratory Acidosis",
     etymology:
       "Latin respirare = to breathe + acidus = sour + -osis = condition",
     aliases: [
@@ -7235,7 +7285,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "respiratory-alkalosis",
-    name: "Respiratory Alkalosi",
+    name: "Respiratory Alkalosis",
     etymology:
       "Latin respirare = to breathe + Arabic al-qali = ashes (alkali) + -osis = condition",
     aliases: [
@@ -7975,7 +8025,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "pleocytosis",
-    name: "Pleocytosi",
+    name: "Pleocytosis",
     etymology: "Greek pleion = more + kytos = cell + -osis = condition",
     aliases: [
       "pleocytosis",
@@ -8020,7 +8070,7 @@ export const LAB_VALUES: LabValueEntry[] = [
   },
   {
     id: "lymphocytic-pleocytosis",
-    name: "Lymphocytic Pleocytosi",
+    name: "Lymphocytic Pleocytosis",
     etymology:
       "Latin lympha = water + Greek kytos = cell + Greek pleion = more + -osis = condition",
     aliases: [

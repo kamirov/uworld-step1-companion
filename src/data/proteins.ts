@@ -3874,7 +3874,7 @@ export const PROTEINS: ProteinEntry[] = [
   },
   {
     id: "antibodies",
-    name: "Antibodie",
+    name: "Antibody",
     etymology:
       "Anti- = against + body = foreign substance — Y-shaped glycoproteins (immunoglobulins) produced by B cells/plasma cells that bind specific antigens",
     aliases: [
@@ -4800,6 +4800,88 @@ export const PROTEINS: ProteinEntry[] = [
       "Fas ligand — death receptor pathway, not granule exocytosis",
       "Complement membrane attack complex (MAC) — pore-forming but humoral, not lymphocyte granule",
       "Streptolysin O — bacterial pore-forming toxin",
+    ],
+  },
+  {
+    id: "granzyme",
+    name: "Granzyme",
+    etymology:
+      "Granule + Greek zyme = leaven/enzyme — family of serine proteases stored in cytotoxic lymphocyte granules that trigger target cell apoptosis after perforin-mediated entry",
+    aliases: [
+      "granzyme",
+      "granzyme b",
+      "granzyme-B",
+      "gzmb",
+      "granzyme serine protease",
+      "cytotoxic granule granzyme",
+    ],
+    gene: "GZMB (granzyme B most studied; also GZMA, GZMH, others in family)",
+    location:
+      "Cytotoxic granules of CD8⁺ cytotoxic T lymphocytes and natural killer cells; released into immunologic synapse with target cell",
+    function:
+      "Serine proteases (especially granzyme B) enter target cells through perforin pores and cleave caspase-3 directly and via mitochondrial Bid pathway → apoptosis of virus-infected, malignant, or foreign cells; granzyme A activates caspase-independent death pathways.",
+    mutationCauses: [
+      "Granzyme B pathway impairment contributes to familial hemophagocytic lymphohistiocytosis (with perforin or other cytotoxic defects)",
+      "Impaired CTL/NK killing → uncontrolled macrophage activation, hyperferritinemia, cytopenias in HLH",
+    ],
+    boardsPearls: [
+      "CTL and NK kill via perforin pores + granzyme B → caspase-mediated apoptosis",
+      "Granzyme B cleaves caspase-3 and activates intrinsic apoptosis via Bid → cytochrome c release",
+      "vs Fas-FasL pathway — separate extrinsic apoptosis mechanism in CTL killing",
+      "Perforin creates pore; granzymes are the proteolytic executioners inside target cell",
+      "Familial HLH — defective cytotoxic lymphocyte granule pathway (perforin, granzyme, or trafficking genes)",
+      "vs complement MAC — humoral pore formation, not lymphocyte granule exocytosis",
+    ],
+    distinguishFrom: [
+      "Perforin — pore-forming protein enabling granzyme entry; PRF1 gene",
+      "Caspase-3 — executioner protease activated by granzyme B inside target cell",
+      "Fas ligand — death receptor ligand on CTL surface; extrinsic apoptosis pathway",
+      "Trypsin/chymotrypsin — digestive serine proteases, not cytotoxic granule enzymes",
+      "Neutrophil elastase — inflammatory tissue protease; not lymphocyte granule granzyme",
+      "Proteasome — bulk ubiquitin-tagged protein degradation in cytosol",
+    ],
+  },
+  {
+    id: "tissue-transglutaminase",
+    name: "Tissue Transglutaminase",
+    etymology:
+      "Latin trans = across + gluten = glue + -ase = enzyme — calcium-dependent enzyme (tTG2) that cross-links proteins and deamidates gluten peptides in the small intestinal mucosa",
+    aliases: [
+      "tissue transglutaminase",
+      "tissue transglutaminase enzyme",
+      "ttg",
+      "ttg2",
+      "transglutaminase 2",
+      "transglutaminase-2",
+      "tg2",
+      "tissue tg",
+      "celiac autoantigen tTG",
+    ],
+    gene: "TGM2 (encodes tissue transglutaminase 2 / tTG2)",
+    location:
+      "Widely expressed intracellular and extracellular enzyme — prominently in small intestinal subepithelial connective tissue (endomysium), endothelial cells, and many other tissues; released or accessible during tissue injury",
+    function:
+      "Calcium-dependent transglutaminase that catalyzes cross-linking of glutamine and lysine residues on proteins and deamidates glutamine residues on gliadin peptides → creates negatively charged neoepitopes that bind HLA-DQ2/DQ8 and drive CD4⁺ T-cell response in celiac disease; also involved in wound healing, apoptosis, and matrix stabilization.",
+    mutationCauses: [
+      "Not a classic Mendelian disease gene on boards — pathologic role is as autoantigen in celiac disease, not loss-of-function mutation",
+      "Anti-tTG IgA autoantibodies form when immune system targets the enzyme during gluten-driven autoimmunity",
+    ],
+    boardsPearls: [
+      "tTG2 deamidates gliadin → neoepitopes presented on HLA-DQ2/DQ8 → celiac disease pathogenesis",
+      "Anti-tTG IgA = first-line celiac serology (lab test against this enzyme, not the enzyme itself)",
+      "Anti-endomysial antibody (EMA) — older test; targets tTG in endomysial tissue",
+      "Always check total IgA — selective IgA deficiency causes false-negative anti-tTG IgA",
+      "Diagnosis requires duodenal biopsy (villous atrophy + crypt hyperplasia + ↑ IELs) on gluten-containing diet",
+      "vs factor XIII — different transglutaminase; cross-links fibrin in coagulation, not celiac autoantigen",
+      "Strict gluten-free diet → anti-tTG antibodies decline over months",
+    ],
+    distinguishFrom: [
+      "Anti-tissue transglutaminase antibody — serologic test measuring IgA/IgG against tTG, not the enzyme protein",
+      "Factor XIII — coagulation transglutaminase cross-linking fibrin polymers",
+      "Gliadin — gluten peptide substrate deamidated by tTG, not the enzyme",
+      "Anti-endomysial antibody — indirect immunofluorescence on endomysial tissue containing tTG",
+      "Deamidated gliadin peptide (DGP) antibodies — alternative celiac serology marker",
+      "Epidermal transglutaminase (tTG3) — target in dermatitis herpetiformis, not primary celiac serology",
     ],
   },
   {
@@ -7956,7 +8038,7 @@ export const PROTEINS: ProteinEntry[] = [
   },
   {
     id: "anticardiolipin-antibodies",
-    name: "Anticardiolipin Antibodie",
+    name: "Anticardiolipin Antibody",
     etymology:
       "anti- = against + cardiolipin (Greek kardia = heart + lipid) + antibodies — IgG or IgM autoantibodies directed against cardiolipin–β2-glycoprotein I phospholipid complexes",
     aliases: [

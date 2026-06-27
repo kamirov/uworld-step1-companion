@@ -1245,7 +1245,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   },
   {
     id: "mycobacterium-tuberculosis",
-    name: "Mycobacterium Tuberculosi",
+    name: "Mycobacterium Tuberculosis",
     etymology: "Greek mykes = fungus-like (waxy colonies) + bacterion = small rod + Latin tuberculum = small swelling",
     aliases: [
       "mycobacterium tuberculosis",
@@ -2121,7 +2121,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   },
   {
     id: "bordetella-pertussis",
-    name: "Bordetella Pertussi",
+    name: "Bordetella Pertussis",
     etymology: "eponym: Jules Bordet + -ella diminutive + Latin per = intense + tussis = cough",
     aliases: [
       "bordetella pertussis",

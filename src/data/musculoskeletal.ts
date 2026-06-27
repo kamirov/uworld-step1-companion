@@ -386,7 +386,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "latissimus-dorsi",
-    name: "Latissimus Dorsi",
+    name: "Latissimus Dorsis",
     etymology:
       "Latin latissimus = broadest + dorsum = back — broad superficial muscle of the posterior thorax",
     aliases: [
@@ -2732,7 +2732,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "coronary-arteries",
-    name: "Coronary Arterie",
+    name: "Coronary Artery",
     etymology:
       "Latin corona = crown/wreath + Greek arteria = artery — vessels encircling the heart like a crown at the atrioventricular groove",
     aliases: [
@@ -2977,7 +2977,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "mesenteric-arteries",
-    name: "Mesenteric Arterie",
+    name: "Mesenteric Artery",
     etymology:
       "Greek mesenterion = middle intestine + Latin arteria = artery — the three unpaired anterior visceral branches of the abdominal aorta supplying the gastrointestinal tract and associated organs",
     aliases: [
@@ -4305,7 +4305,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "rice-bodies",
-    name: "Rice Bodie",
+    name: "Rice Body",
     etymology:
       "Named for resemblance to grains of rice — fibrin-coated synovial fragments shed into joint effusions",
     aliases: [
@@ -4495,7 +4495,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "femoral-epiphysis",
-    name: "Femoral Epiphysi",
+    name: "Femoral Epiphysis",
     etymology:
       "Latin femur = thigh + Greek epi = upon + physis = growth — ossified end of the femur separated from the shaft by the growth plate",
     aliases: [
@@ -4547,7 +4547,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "epiphysis",
-    name: "Epiphysi",
+    name: "Epiphysis",
     etymology: "Greek epi = upon + physis = growth — ossification center at the end of a long bone",
     aliases: [
       "epiphysis",
@@ -4594,7 +4594,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "metaphysis",
-    name: "Metaphysi",
+    name: "Metaphysis",
     etymology:
       "Greek meta = after/beyond + physis = growth — transitional trabecular bone region between physis and diaphysis",
     aliases: [
@@ -4642,7 +4642,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "apophysis",
-    name: "Apophysi",
+    name: "Apophysis",
     etymology:
       "Greek apo = away/from + physis = growth — secondary ossification center at tendon or ligament insertion site",
     aliases: [
@@ -6665,6 +6665,58 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Infants develop muscle power for milestones (rolling, walking) with increasing type II recruitment; congenital myopathies and neuromuscular disease affect all fiber types. Malignant hyperthermia risk requires avoiding triggering anesthetics in susceptible families.",
+  },
+  {
+    id: "endomysium",
+    name: "Endomysium",
+    etymology:
+      "Greek endon = within + mys = muscle + -ium = tissue layer — delicate connective tissue sheath surrounding each individual skeletal muscle fiber",
+    aliases: [
+      "endomysium",
+      "endomysial",
+      "endomysial connective tissue",
+      "endomysial sheath",
+      "endomysial layer",
+      "endomysial tissue",
+      "interfiber connective tissue",
+    ],
+    definition:
+      "Fine connective tissue layer investing each individual muscle fiber (myofiber) — composed of reticular fibers, collagen, capillaries, and nerve endings — lying internal to the perimysium (which wraps fascicles) and external to the sarcolemma of each fiber.",
+    anatomy:
+      "Each skeletal muscle fiber is enveloped by endomysium containing type III collagen reticular fibers, endomysial capillaries, and intramuscular nerve branches. Fascicles are bound by perimysium; the whole muscle is enclosed by epimysium. Endomysial capillaries are targets of complement-mediated injury in dermatomyositis.",
+    action: [
+      "Provides structural support and lateral force transmission between adjacent muscle fibers",
+      "Houses capillary network supplying individual myofibers with oxygen and nutrients",
+      "Contains satellite cells in niche adjacent to fiber sarcolemma for muscle repair and hypertrophy",
+      "Separates individual fibers while allowing coordinated contraction within fascicles",
+    ],
+    clinicalRelevance: [
+      "Polymyositis — CD8⁺ T cells invade endomysial space and destroy non-necrotic fibers",
+      "Inclusion body myositis — endomysial inflammation with rimmed vacuoles in elderly",
+      "Dermatomyositis — complement (MAC) deposits on endomysial capillaries (microangiopathy)",
+      "Anti-endomysial antibody (EMA) — historical celiac serology; largely replaced by anti-tTG IgA",
+      "Endomysial fibrosis — chronic muscle injury, muscular dystrophy, or denervation",
+      "Muscle biopsy interpretation — endomysial vs perimysial inflammation pattern distinguishes myositis subtypes",
+    ],
+    boardsPearls: [
+      "Endomysium = connective tissue around each individual muscle fiber",
+      "Perimysium = around fascicles; epimysium = around whole muscle",
+      "Polymyositis — endomysial CD8⁺ T-cell invasion of myofibers",
+      "Dermatomyositis — perimysial/perivascular inflammation + MAC on endomysial capillaries",
+      "Anti-endomysial antibody (EMA) IgA — celiac serology; anti-tTG IgA preferred now",
+      "vs perimysial inflammation — dermatomyositis pattern, not polymyositis",
+      "Satellite cells reside in endomysial niche — muscle regeneration after injury",
+    ],
+    distinguishFrom: [
+      "Perimysium — connective tissue between fascicles; perimysial inflammation in dermatomyositis",
+      "Epimysium — dense outer sheath enveloping entire muscle belly",
+      "Sarcolemma — plasma membrane of muscle fiber itself, not connective tissue sheath",
+      "Anti-endomysial antibody — serologic test targeting tTG in endomysial tissue, not the tissue layer itself",
+      "Endosteum — lines bone marrow cavity; unrelated to muscle",
+      "Perifascicular atrophy — fiber size change at fascicle edge in dermatomyositis; distinct histologic finding",
+    ],
+    pediatrics:
+      "Juvenile dermatomyositis shows perimysial/perivascular inflammation with endomysial capillary MAC deposition. Polymyositis is rare in children; distinguish from muscular dystrophy and viral myositis by biopsy pattern and autoantibodies.",
   },
 ];
 

@@ -192,7 +192,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "dysgenesis",
-    name: "Dysgenesi",
+    name: "Dysgenesis",
     etymology:
       "Greek dys- = bad/abnormal + genesis = origin/formation — abnormal embryologic development of an organ or tissue",
     aliases: [
@@ -241,7 +241,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "embryogenesis",
-    name: "Embryogenesi",
+    name: "Embryogenesis",
     etymology:
       "Greek embryon = embryo + genesis = origin/formation — the process of forming the embryo from fertilized zygote through gastrulation, neurulation, and organogenesis",
     aliases: [
@@ -1191,7 +1191,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "autoantibodies",
-    name: "Autoantibodie",
+    name: "Autoantibody",
     etymology: "auto- = self + antibodies = immune proteins",
     aliases: [
       "autoantibody",
@@ -1477,7 +1477,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "phagocytosis",
-    name: "Phagocytosi",
+    name: "Phagocytosis",
     etymology: "Greek phagein = eat + kytos = cell + -osis = process",
     aliases: [
       "phagocytosis",
@@ -1687,7 +1687,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "lysis",
-    name: "Lysi",
+    name: "Lysis",
     etymology:
       "Greek lysis = loosening, dissolution, or breaking apart — general process of cell or tissue breakdown",
     aliases: [
@@ -2152,7 +2152,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "cholestasis",
-    name: "Cholestasi",
+    name: "Cholestasis",
     etymology: "Greek chole = bile + stasis = standing still — impaired bile flow or secretion",
     aliases: [
       "cholestasis",
@@ -2196,7 +2196,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "biliary-stasis",
-    name: "Biliary Stasi",
+    name: "Biliary Stasis",
     etymology:
       "Latin bilis = bile + Greek stasis = standing still — stagnation of bile in the gallbladder or bile ducts from impaired emptying or secretion",
     aliases: [
@@ -2723,7 +2723,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "sclerosis",
-    name: "Sclerosi",
+    name: "Sclerosis",
     etymology: "Greek skleros = hardening",
     aliases: [
       "sclerosis",
@@ -3006,7 +3006,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "arteriolosclerosis",
-    name: "Arteriolosclerosi",
+    name: "Arteriolosclerosis",
     etymology:
       "Latin arteriola = small artery + Greek skleros = hard + -osis = condition",
     aliases: [
@@ -3102,7 +3102,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "hyperkeratosis",
-    name: "Hyperkeratosi",
+    name: "Hyperkeratosis",
     etymology: "Greek hyper = excess + keras = horn/keratin + -osis = condition",
     aliases: [
       "hyperkeratosis",
@@ -3485,7 +3485,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "acantholysis",
-    name: "Acantholysi",
+    name: "Acantholysis",
     etymology: "Greek akantha = thorn/spine + lysis = loosening/breakdown",
     aliases: ["acantholysis", "acantholytic"],
     definition:
@@ -3558,7 +3558,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "fibrinoid-necrosis",
-    name: "Fibrinoid Necrosi",
+    name: "Fibrinoid Necrosis",
     etymology: "Latin fibra = fiber + Greek eidos = resembling + Greek nekrosis = death",
     aliases: [
       "fibrinoid",
@@ -3668,7 +3668,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "allergies",
-    name: "Allergie",
+    name: "Allergy",
     etymology:
       "Greek allos = other + ergon = work — immune reactivity to environmental antigens perceived as foreign, causing clinical allergic disease",
     aliases: [
@@ -3874,7 +3874,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "apoptosis",
-    name: "Apoptosi",
+    name: "Apoptosis",
     etymology: "Greek apo = off/away + ptosis = falling (leaves falling from a tree)",
     aliases: [
       "apoptosis",
@@ -4097,7 +4097,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "necrosis",
-    name: "Necrosi",
+    name: "Necrosis",
     etymology:
       "Greek nekrosis = death, corpse — pathologic cell and tissue death from injury, ischemia, toxins, or infection",
     aliases: [
@@ -4319,7 +4319,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "salt-wasting-crisis",
-    name: "Salt-Wasting Crisi",
+    name: "Salt-Wasting Crisis",
     etymology:
       "Old English sealt + Latin wasting = progressive loss + Greek krisis = turning point — acute life-threatening renal sodium loss with hypovolemia from mineralocorticoid failure",
     aliases: [
@@ -5159,7 +5159,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "anti-a-antibodies",
-    name: "Anti-A Antibodie",
+    name: "Anti-A Antibody",
     etymology:
       "Greek anti = against + A = ABO blood group A antigen + Latin antibody = immune globulin directed at antigen",
     aliases: [
@@ -5273,7 +5273,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "endocytosis",
-    name: "Endocytosi",
+    name: "Endocytosis",
     etymology: "Greek endon = within + kytos = cell + -osis = process",
     aliases: [
       "endocytosis",
@@ -5307,7 +5307,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "transcytosis",
-    name: "Transcytosi",
+    name: "Transcytosis",
     etymology:
       "Latin trans = across + Greek kytos = cell + -osis = process — vesicular transport from one side of a cell to the other",
     aliases: [
@@ -5582,7 +5582,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "osmosis",
-    name: "Osmosi",
+    name: "Osmosis",
     etymology: "Greek osmos = push/thrust + -osis = process — net movement of solvent across a membrane",
     aliases: [
       "osmosis",
@@ -5981,7 +5981,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "pinocytosis",
-    name: "Pinocytosi",
+    name: "Pinocytosis",
     etymology: "Greek pinein = drink + kytos = cell + -osis = process",
     aliases: [
       "pinocytosis",
@@ -6403,7 +6403,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "peristalsis",
-    name: "Peristalsi",
+    name: "Peristalsis",
     etymology:
       "Greek peri = around + stellein = to send/place — coordinated wave of smooth muscle contraction and relaxation propelling luminal contents along a tubular organ",
     aliases: [
@@ -7421,7 +7421,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "monoclonal-antibodies",
-    name: "Monoclonal Antibodie",
+    name: "Monoclonal Antibody",
     etymology: "Greek monos = single + klon = twig/clone + anti- = against + body = immune protein",
     aliases: [
       "monoclonal antibody",
@@ -8228,7 +8228,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "two-hit-hypothesis",
-    name: "Two-Hit Hypothesi",
+    name: "Two-Hit Hypothesis",
     etymology:
       "two + hit = inactivating event + Greek hypothesis = supposition — Knudson model proposing that two separate genetic events must inactivate both alleles of a tumor suppressor gene before cancer develops",
     aliases: [
@@ -8596,7 +8596,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "epistasis",
-    name: "Epistasi",
+    name: "Epistasis",
     etymology:
       "Greek epi = upon + stasis = standing — interaction between genes in which one gene masks, modifies, or alters the phenotypic expression of another gene",
     aliases: [
@@ -10652,7 +10652,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "urinary-stasis",
-    name: "Urinary Stasi",
+    name: "Urinary Stasis",
     etymology: "Latin urina = urine + Greek stasis = standing still",
     aliases: [
       "urinary stasis",
@@ -10687,7 +10687,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "stenosis",
-    name: "Stenosi",
+    name: "Stenosis",
     etymology: "Greek stenosis = narrowing",
     aliases: [
       "stenosis",
@@ -10928,7 +10928,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "antiemesis",
-    name: "Antiemesi",
+    name: "Antiemesis",
     etymology: "Greek anti- = against + emesis = vomiting",
     aliases: [
       "antiemesis",
@@ -11298,7 +11298,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "carotid-artery-atherosclerosis",
-    name: "Carotid Artery Atherosclerosi",
+    name: "Carotid Artery Atherosclerosis",
     etymology:
       "Greek karos = deep sleep + eidos = form + Latin arteria = airway/vessel + Greek athere = gruel + skleros = hard — intimal plaque disease of the carotid artery causing stenosis and embolic/thrombotic stroke risk",
     aliases: [
@@ -11522,7 +11522,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "hypertensive-arteriolar-sclerosis",
-    name: "Hypertensive Arteriolar Sclerosi",
+    name: "Hypertensive Arteriolar Sclerosis",
     etymology:
       "Greek hyper = excess + Latin tensio = pressure + Latin arteriola = small artery + Greek skleros = hard — chronic hypertensive injury thickening cerebral and renal arterioles",
     aliases: [
@@ -12317,7 +12317,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "erythrocytosis",
-    name: "Erythrocytosi",
+    name: "Erythrocytosis",
     etymology: "Greek erythros = red + kytos = cell + -osis = condition",
     aliases: [
       "erythrocytosis",
@@ -12355,7 +12355,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "beta-hemolysis",
-    name: "Beta-Hemolysi",
+    name: "Beta-Hemolysis",
     etymology: "Greek beta = second letter + Greek heme = blood + Greek lysis = loosening",
     aliases: [
       "beta-hemolysis",
@@ -12397,7 +12397,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "gamma-hemolysis",
-    name: "Gamma-Hemolysi",
+    name: "Gamma-Hemolysis",
     etymology:
       "Greek gamma = third letter + Greek heme = blood + Greek lysis = loosening — no visible hemolysis around bacterial colonies on blood agar",
     aliases: [
@@ -13139,7 +13139,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "diuresis",
-    name: "Diuresi",
+    name: "Diuresis",
     etymology: "Greek dia = through + ouresis = urination",
     aliases: [
       "diuresis",
@@ -13217,7 +13217,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "osmotic-diuresis",
-    name: "Osmotic Diuresi",
+    name: "Osmotic Diuresis",
     etymology: "Greek osmos = push/thrust + -tic + Greek dia = through + ouresis = urination",
     aliases: [
       "osmotic diuresis",
@@ -13341,7 +13341,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "renal-ammoniagenesis",
-    name: "Renal Ammoniagenesi",
+    name: "Renal Ammoniagenesis",
     etymology: "Latin ren = kidney + Latin ammonia = salt of Ammon + Greek genesis = origin",
     aliases: [
       "renal ammoniagenesis",
@@ -13516,7 +13516,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "ketoacidosis",
-    name: "Ketoacidosi",
+    name: "Ketoacidosis",
     etymology:
       "German Ketone (acetone-like body) + Latin acidus = sour + Greek -osis = condition",
     aliases: [
@@ -13840,7 +13840,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "natriuresis",
-    name: "Natriuresi",
+    name: "Natriuresis",
     etymology: "Latin natrium = sodium + Greek ouresis = urination",
     aliases: [
       "natriuresis",
@@ -14242,7 +14242,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "pancreatic-fibrosis",
-    name: "Pancreatic Fibrosi",
+    name: "Pancreatic Fibrosis",
     etymology:
       "Greek pan = all + kreas = flesh + Latin fibra = fiber/thread — replacement of pancreatic parenchyma by collagenous scar tissue",
     aliases: [
@@ -14285,7 +14285,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "mallory-denk-bodies",
-    name: "Mallory-Denk Bodie",
+    name: "Mallory-Denk Body",
     etymology: "Eponym: Frank Mallory + Hans Denk + body = intracellular inclusion",
     aliases: [
       "mallory-denk bodies",
@@ -14778,7 +14778,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "granulomatosis",
-    name: "Granulomatosi",
+    name: "Granulomatosis",
     etymology:
       "Latin granulum = small grain + Greek -osis = diseased condition — pathologic process forming granulomas; in clinical shorthand, the first component of granulomatosis with polyangiitis (GPA/Wegener)",
     aliases: [
@@ -14994,6 +14994,52 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Neonatal and infant heart rates are physiologically faster partly from higher intrinsic SA nodal automaticity; congenital complete heart block reflects failure of AV conduction, not loss of funny current alone.",
+  },
+  {
+    id: "calcium-current",
+    name: "Calcium Current",
+    etymology:
+      "Latin calx = lime + currere = to run — inward Ca²⁺ ion flow through voltage-gated L-type (and T-type) calcium channels during cardiac action potentials",
+    aliases: [
+      "calcium current",
+      "l-type calcium current",
+      "l type calcium current",
+      "ica",
+      "i_ca",
+      "ica,l",
+      "calcium ion current",
+      "inward calcium current",
+      "calcium channel current",
+    ],
+    definition:
+      "Inward depolarizing current (I_Ca) carried primarily by L-type voltage-gated Ca²⁺ channels (Cav1.x) — mediates the slow phase 0 upstroke in SA/AV nodal pacemaker cells and the phase 2 plateau in atrial and ventricular myocardium, providing Ca²⁺ influx for excitation-contraction coupling and a target for Class IV antiarrhythmics and dihydropyridine calcium channel blockers.",
+    examples: [
+      "SA/AV node — L-type Ca²⁺ current drives slow phase 0 depolarization (slow-response tissue)",
+      "Ventricular myocardium — phase 2 plateau maintained by Ca²⁺ influx balanced against K⁺ efflux",
+      "Verapamil/diltiazem — nondihydropyridine CCBs block cardiac L-type Ca²⁺ channels → ↓ AV nodal conduction",
+      "Nifedipine/amlodipine — dihydropyridine CCBs preferentially dilate vascular smooth muscle L-type channels",
+      "T-type Ca²⁺ current (I_Ca,T) — contributes to phase 0 in nodal tissue and pacemaker activity",
+      "Long QT and triggered arrhythmias — abnormal Ca²⁺ handling and afterdepolarizations",
+    ],
+    boardsPearls: [
+      "I_Ca (L-type) — phase 0 in nodal cells; phase 2 plateau in ventricular myocardium",
+      "Slow-response tissue (SA/AV node) uses Ca²⁺ phase 0; fast-response uses Na⁺ (I_Na)",
+      "Class IV antiarrhythmics (verapamil, diltiazem) block cardiac L-type Ca²⁺ channels → ↓ AV conduction",
+      "Dihydropyridines (nifedipine, amlodipine) — vascular smooth muscle > heart at usual doses",
+      "Ca²⁺ influx during plateau triggers sarcoplasmic reticulum Ca²⁺ release (CICR) for contraction",
+      "vs funny current (I_f) — drives phase 4 diastolic depolarization in pacemaker cells, not phase 0/2 Ca²⁺ influx",
+      "vs fast sodium current (I_Na) — rapid phase 0 in atrial/ventricular myocardium and His-Purkinje",
+    ],
+    distinguishFrom: [
+      "Funny current (I_f) — HCN channel mixed Na⁺/K⁺ current during phase 4, not Ca²⁺ plateau/phase 0",
+      "Fast sodium current (I_Na) — voltage-gated Na⁺ phase 0 in fast-response cardiac tissue",
+      "Calcium channel blocker — pharmacologic drug class targeting L-type channels, not the current itself",
+      "Calcium-induced calcium release — SR Ca²⁺ release triggered by L-type Ca²⁺ influx; downstream event",
+      "Inward rectifier K⁺ current (I_K1) — stabilizes resting membrane potential, not depolarizing Ca²⁺ influx",
+      "Calcium current in smooth muscle — same L-type channel family; dihydropyridines preferentially affect vascular tone",
+    ],
+    pediatrics:
+      "Same L-type Ca²⁺ channel physiology in pediatric hearts; congenital long QT and channelopathies may alter repolarization. Calcium channel blockers are used less commonly in children but same electrophysiologic principles apply to supraventricular tachycardia and hypertension management.",
   },
   {
     id: "slow-response-tissue",
@@ -16584,7 +16630,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "gliosis",
-    name: "Gliosi",
+    name: "Gliosis",
     etymology:
       "Greek glia = glue + -osis = condition — astrocyte proliferation and hypertrophy forming a glial scar after CNS injury",
     aliases: [
@@ -17136,7 +17182,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "hematopoiesis",
-    name: "Hematopoiesi",
+    name: "Hematopoiesis",
     etymology: "Greek haima = blood + poiesis = making",
     aliases: [
       "hematopoiesis",
@@ -17828,7 +17874,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "macrocytosis",
-    name: "Macrocytosi",
+    name: "Macrocytosis",
     etymology: "Greek makros = large + kytos = cell + -osis = condition",
     aliases: [
       "macrocytosis",
@@ -17865,7 +17911,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "reticulocytosis",
-    name: "Reticulocytosi",
+    name: "Reticulocytosis",
     etymology: "Latin reticulum = little net + Greek kytos = cell + -osis = increased condition",
     aliases: [
       "reticulocytosis",
@@ -19548,7 +19594,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "fibrinolysis",
-    name: "Fibrinolysi",
+    name: "Fibrinolysis",
     etymology: "Latin fibra = fiber + Greek lysis = loosening/dissolution",
     aliases: [
       "fibrinolysis",
@@ -19799,7 +19845,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "meiosis",
-    name: "Meiosi",
+    name: "Meiosis",
     etymology: "Greek meiosis = lessening/diminution",
     aliases: [
       "meiosis",
@@ -20427,7 +20473,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "inclusion-bodies",
-    name: "Inclusion Bodie",
+    name: "Inclusion Body",
     etymology:
       "Latin includere = to shut in + body = discrete intracellular aggregate visible on light or electron microscopy",
     aliases: [
@@ -20472,7 +20518,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "neuronal-inclusion-bodies",
-    name: "Neuronal Inclusion Bodie",
+    name: "Neuronal Inclusion Body",
     etymology:
       "Greek neuron = nerve + Latin includere = to shut in + body = intracellular protein or pathogen aggregate within neurons",
     aliases: [
@@ -20719,7 +20765,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "iliofemoral-thrombosis",
-    name: "Iliofemoral Thrombosi",
+    name: "Iliofemoral Thrombosis",
     etymology:
       "Latin ilium = flank/hip bone + femur = thigh bone + Greek thrombos = clot",
     aliases: [
@@ -20762,6 +20808,50 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Iliofemoral DVT is rare in children; consider May-Thurner anatomy, malignancy, or thrombophilia in adolescents with unprovoked proximal DVT.",
+  },
+  {
+    id: "platelet-aggregation",
+    name: "Platelet Aggregation",
+    etymology:
+      "Latin platea = flat little plate + Latin aggregare = to collect into a flock — binding of activated platelets to one another via fibrinogen bridges on GPIIb/IIIa receptors, forming the primary hemostatic plug",
+    aliases: [
+      "platelet aggregation",
+      "thrombocyte aggregation",
+      "platelet plug formation",
+      "platelet clumping",
+      "gp iib/iiia-mediated aggregation",
+    ],
+    definition:
+      "Second step of primary hemostasis after platelet adhesion — activated platelets change shape, degranulate (ADP, serotonin, thromboxane A₂), and link adjacent platelets through fibrinogen (or vWF) bridging GPIIb/IIIa (αIIbβ3) integrin receptors, amplifying the platelet plug at the site of vascular injury.",
+    examples: [
+      "Collagen/ADP/thrombin activation → inside-out signaling ↑ GPIIb/IIIa affinity → fibrinogen bridges platelets",
+      "Thromboxane A₂ from activated platelets — autocrine/paracrine amplifier of aggregation (aspirin blocks via COX-1)",
+      "Glanzmann thrombasthenia — GPIIb/IIIa defect → impaired aggregation despite normal adhesion",
+      "GPIIb/IIIa inhibitors (abciximab, eptifibatide, tirofiban) — block fibrinogen binding at final common pathway",
+      "P2Y12 inhibitors (clopidogrel, ticagrelor) — block ADP-mediated sustained aggregation",
+      "Type 2B von Willebrand disease — mutant vWF causes spontaneous platelet aggregation → thrombocytopenia",
+      "Ristocetin cofactor assay tests vWF-mediated platelet agglutination (adhesion), not GPIIb/IIIa aggregation",
+    ],
+    boardsPearls: [
+      "Primary hemostasis sequence: vasoconstriction → adhesion (GpIb–vWF) → activation → aggregation (GpIIb/IIIa–fibrinogen)",
+      "GPIIb/IIIa = final common pathway of platelet aggregation — target of abciximab and other IIb/IIIa inhibitors",
+      "ADP (P2Y12) and thromboxane A₂ provide positive feedback amplifying aggregation — DAPT targets both with aspirin + P2Y12 inhibitor",
+      "Glanzmann — aggregation defect; Bernard-Soulier — adhesion defect (GpIb)",
+      "vs platelet adhesion — initial tethering to subendothelial vWF/collagen; aggregation links platelets to each other",
+      "vs clotting cascade — secondary hemostasis converts fibrinogen to fibrin mesh stabilizing the plug",
+      "Arterial clots are platelet-rich; venous clots are fibrin-rich — antiplatelets for arterial, anticoagulants for venous",
+      "Desmopressin contraindicated in type 2B vWD — worsens aggregation and thrombocytopenia",
+    ],
+    distinguishFrom: [
+      "Platelet adhesion — GpIb–vWF binding to subendothelium before inter-platelet linking",
+      "Platelet activation — shape change, granule release, GPIIb/IIIa conformational change; precedes aggregation",
+      "Clotting cascade — soluble factor activation generating thrombin and fibrin (secondary hemostasis)",
+      "Platelet — the cellular fragment itself, not the linking process",
+      "Agglutination — passive clumping (e.g., ristocetin-induced in vitro); distinct from physiologic aggregation signaling",
+      "Fibrin polymerization — thrombin-cleaved fibrin monomer cross-linking, not platelet–platelet bridging",
+    ],
+    pediatrics:
+      "Inherited GPIIb/IIIa (Glanzmann) or GpIb (Bernard-Soulier) defects cause lifelong mucocutaneous bleeding from infancy. Neonatal alloimmune thrombocytopenia reduces platelet number but aggregation testing helps distinguish qualitative disorders. Aspirin antiplatelet effect lasts the platelet lifespan (~7–10 days) in children as in adults.",
   },
   {
     id: "clotting-factors",
@@ -22080,6 +22170,131 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
       "Premature infants have immature lung elastin; mechanical ventilation and oxygen toxicity contribute to bronchopulmonary dysplasia with impaired elastic recoil. α₁-AT deficiency emphysema can present in young adults who smoked.",
   },
   {
+    id: "centriacinar-emphysema",
+    name: "Centriacinar Emphysema",
+    etymology:
+      "Latin centrum = center + acinus = grape cluster + Greek emphysan = inflate — alveolar wall destruction centered on the respiratory bronchiole in the upper lobes, classic for cigarette smoking",
+    aliases: [
+      "centriacinar emphysema",
+      "centroacinar emphysema",
+      "centrilobular emphysema",
+      "central acinar emphysema",
+      "proximal acinar emphysema",
+      "centri-acinar emphysema",
+    ],
+    definition:
+      "Emphysema pattern in which alveolar wall destruction begins at the center of the pulmonary acinus around the respiratory bronchiole and proximal alveolar ducts — spares distal alveoli early — predominantly affecting upper lobes in smokers and associated with chronic bronchitis and COPD.",
+    examples: [
+      "Cigarette smoking — most common cause; upper lobe predominance on imaging",
+      "Chronic bronchitis with COPD — centriacinar pattern with mucus gland hypertrophy",
+      "Coal worker's pneumoconiosis — upper lobe centrilobular emphysema",
+      "Chronic asthma with fixed obstruction — may show centrilobular airspace enlargement",
+      "Contrast with panacinar — distal acinus spared early in centriacinar disease",
+    ],
+    boardsPearls: [
+      "Centriacinar = centrilobular = destruction around respiratory bronchiole (proximal acinus)",
+      "Smoking-related emphysema — upper lobe centriacinar pattern (classic boards association)",
+      "vs panacinar emphysema — entire acinus destroyed; lower lobe predominance in α₁-AT deficiency",
+      "Loss of alveolar walls → ↓ lung recoil → obstructive air trapping and hyperinflation",
+      "PFTs — ↓ FEV₁/FVC, ↑ RV; CXR may show hyperinflation and upper lobe lucency",
+      "Chronic bronchitis (blue bloater) often coexists; emphysema (pink puffer) reflects centriacinar/panacinar destruction",
+    ],
+    distinguishFrom: [
+      "Panacinar emphysema — entire acinus involved; α₁-antitrypsin deficiency, lower lobes",
+      "Paraseptal emphysema — subpleural and along interlobular septa; bullae and pneumothorax risk",
+      "Obstructive air trapping — physiologic consequence, not histologic emphysema subtype",
+      "Chronic bronchitis — airway inflammation and mucus; may coexist but distinct pathology",
+      "Asthma — reversible bronchospasm; fixed centrilobular changes suggest chronic remodeling",
+    ],
+    pediatrics:
+      "Primary centriacinar emphysema from smoking is an adult disease. Secondhand smoke exposure contributes to pediatric respiratory morbidity but emphysematous destruction is not seen in children. Cystic fibrosis causes bronchiectasis and obstructive disease without classic centriacinar emphysema pattern.",
+  },
+  {
+    id: "panacinar-emphysema",
+    name: "Panacinar Emphysema",
+    etymology:
+      "Greek pan = all + acinus = grape cluster + emphysan = inflate — destruction of the entire pulmonary acinus from respiratory bronchiole to terminal alveoli",
+    aliases: [
+      "panacinar emphysema",
+      "panlobular emphysema",
+      "pan-acinar emphysema",
+      "pan lobular emphysema",
+      "diffuse acinar emphysema",
+      "uniform emphysema",
+    ],
+    definition:
+      "Emphysema pattern involving uniform destruction of the entire pulmonary acinus — respiratory bronchiole through terminal and respiratory alveoli — typically affecting lower lobes and basilar regions, classically associated with α₁-antitrypsin deficiency and occasionally with smoking.",
+    examples: [
+      "α₁-Antitrypsin deficiency — unchecked neutrophil elastase destroys alveolar elastin → panacinar lower-lobe emphysema in young adults",
+      "Smoking — may contribute panacinar component in addition to centriacinar disease",
+      "Intravenous Ritalin (methylphenidate) abuse — reported panacinar pattern (boards trivia)",
+      "Severe loss of lung recoil → marked hyperinflation and early dyspnea",
+      "Liver disease in α₁-AT deficiency — misfolded protein accumulation in hepatocytes",
+    ],
+    boardsPearls: [
+      "Panacinar = panlobular = entire acinus destroyed uniformly",
+      "α₁-Antitrypsin deficiency — classic cause; lower lobe panacinar emphysema in young smoker/nonsmoker",
+      "α₁-AT inhibits neutrophil elastase — deficiency → unchecked elastase → lung elastin destruction",
+      "vs centriacinar — proximal acinus only; upper lobe smoking pattern",
+      "PiZZ genotype — severe α₁-AT deficiency; PiMZ heterozygotes at intermediate risk if smokers",
+      "PFTs — severe obstructive pattern with hyperinflation; ↓ DLCO",
+      "Treat α₁-AT deficiency with smoking cessation and IV α₁-antitrypsin augmentation in selected patients",
+    ],
+    distinguishFrom: [
+      "Centriacinar emphysema — proximal acinus destruction; upper lobe smoking pattern",
+      "Paraseptal emphysema — subpleural bullae; distinct distribution along septa",
+      "Asthma — reversible airflow obstruction without alveolar wall destruction",
+      "Bronchiectasis — airway dilation and infection; different pathology",
+      "α₁-Antitrypsin — protein itself; panacinar emphysema is the pulmonary pattern from its deficiency",
+    ],
+    pediatrics:
+      "Neonatal hepatitis and cholestasis from α₁-AT deficiency (PiZZ) may present before lung disease. Panacinar emphysema from α₁-AT deficiency typically manifests in young adulthood (20s–30s) but pediatricians screen liver disease in affected infants.",
+  },
+  {
+    id: "myxomatous-degeneration",
+    name: "Myxomatous Degeneration",
+    etymology:
+      "Greek myxa = mucus + -oma = mass/tumor + Latin degenerare = to decline — pathologic accumulation of proteoglycan-rich ground substance in connective tissue causing loosened, gelatinous, and weakened structural integrity",
+    aliases: [
+      "myxomatous",
+      "myxomatous degeneration",
+      "myxomatous change",
+      "myxoid degeneration",
+      "myxoid change",
+      "myxomatous tissue",
+      "myxomatous connective tissue",
+      "myxomatous valve degeneration",
+    ],
+    definition:
+      "Degenerative connective tissue change characterized by deposition of acid mucopolysaccharides (proteoglycans) in the extracellular matrix — producing thickened, redundant, gelatinous, and mechanically weakened tissue — most classically affecting mitral valve leaflets and chordae in mitral valve prolapse.",
+    examples: [
+      "Mitral valve prolapse — myxomatous thickening and redundancy of leaflets with chordae elongation → mid-systolic click and late systolic murmur",
+      "Marfan syndrome and Ehlers-Danlos — connective tissue disorders predisposing to myxomatous MVP",
+      "Atrial myxoma — gelatinous cardiac tumor (distinct entity; name reflects myxoid histology, not valve degeneration)",
+      "Carpal tunnel / joint tissues — myxoid change in some degenerative conditions",
+      "Myxomatous degeneration weakens valve apparatus → regurgitation and prolapse",
+    ],
+    boardsPearls: [
+      "Myxomatous degeneration — proteoglycan accumulation → redundant floppy mitral valve leaflets",
+      "Mitral valve prolapse (MVP) — mid-systolic click + late systolic murmur; often benign",
+      "MVP complications — mitral regurgitation, infective endocarditis (if significant regurgitation), arrhythmia",
+      "Marfan and other connective tissue disorders ↑ MVP risk",
+      "vs rheumatic mitral stenosis — commissural fusion and fibrosis, not myxomatous leaflet redundancy",
+      "vs atrial myxoma — primary cardiac tumor on interatrial septum; ball-valve obstruction and constitutional symptoms",
+      "Most MVP is isolated and benign; severe regurgitation may need repair",
+    ],
+    distinguishFrom: [
+      "Mitral valve prolapse — clinical valvular syndrome often from myxomatous degeneration",
+      "Atrial myxoma — neoplasm with myxoid stroma; not degenerative valve change",
+      "Rheumatic heart disease — inflammatory scarring and commissural fusion",
+      "Calcific aortic stenosis — calcific degeneration of aortic valve, not myxomatous mitral change",
+      "Mucopolysaccharidoses — lysosomal storage of GAGs systemically; distinct genetic disorders",
+      "Myxedema — thyroid dermopathy with mucin deposition in skin; not cardiac valve degeneration",
+    ],
+    pediatrics:
+      "Isolated MVP may be detected as click/murmur in adolescents; connective tissue disorders (Marfan) warrant echocardiographic screening. Atrial myxoma is rare in children but can mimic mitral valve disease with murmur and constitutional symptoms.",
+  },
+  {
     id: "squamous-metaplasia",
     name: "Squamous Metaplasia",
     etymology:
@@ -22927,7 +23142,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "anastomosis",
-    name: "Anastomosi",
+    name: "Anastomosis",
     etymology:
       "Greek ana = up/through + stoma = mouth + -osis = condition — natural or surgical connection between tubular structures allowing flow between channels",
     aliases: [
@@ -23069,7 +23284,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "ferruginous-bodies",
-    name: "Ferruginous Bodie",
+    name: "Ferruginous Body",
     etymology:
       "Latin ferrugo = rust + -ous = full of + bodies = microscopic structures — iron-coated (rust-colored) asbestos fibers within macrophages",
     aliases: [
@@ -24774,7 +24989,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "enzymatic-lysis",
-    name: "Enzymatic Lysi",
+    name: "Enzymatic Lysis",
     etymology:
       "Greek en = in + zymē = leaven + -atic + Greek lysis = loosening — destruction of biological structures by enzyme-catalyzed cleavage of covalent bonds (proteins, polysaccharides, lipids, nucleic acids)",
     aliases: [
@@ -24824,7 +25039,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "alveolar-septal-fibrosis",
-    name: "Alveolar Septal Fibrosi",
+    name: "Alveolar Septal Fibrosis",
     etymology:
       "Latin alveolus = small cavity + Latin septum = partition + Latin fibra = fiber + -osis = condition — collagen deposition and thickening of the interalveolar septal walls separating adjacent airspaces",
     aliases: [
@@ -24960,7 +25175,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "angiogenesis",
-    name: "Angiogenesi",
+    name: "Angiogenesis",
     etymology:
       "Greek angeion = vessel + genesis = origin/creation — sprouting of new capillaries from pre-existing blood vessels via endothelial proliferation and migration",
     aliases: [
@@ -25203,7 +25418,7 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
   },
   {
     id: "oncogenesis",
-    name: "Oncogenesi",
+    name: "Oncogenesis",
     etymology:
       "Greek onkos = mass/tumor + genesis = origin/creation — process by which normal cells acquire malignant properties and form a neoplasm",
     aliases: [
@@ -26037,6 +26252,50 @@ export const PATHOGENESIS: PathogenesisEntry[] = [
     ],
     pediatrics:
       "Neonatal GABA signaling is developmentally distinct, but NMDA-dependent synaptic plasticity still underlies learning circuits maturing in childhood. Prolonged febrile status epilepticus can cause excitotoxic hippocampal injury — excessive glutamate/NMDA activation beyond physiologic LTP.",
+  },
+  {
+    id: "neuroglycopenia",
+    name: "Neuroglycopenia",
+    etymology:
+      "Greek neuron = nerve + glykys = sweet + penia = deficiency — insufficient glucose delivery to the brain causing neurologic dysfunction",
+    aliases: [
+      "neuroglycopenia",
+      "neuroglycopenic",
+      "neuroglycopenic symptom",
+      "neuroglycopenic symptoms",
+      "neuroglycopenic manifestation",
+      "brain glucose deprivation",
+      "cerebral glucose deficiency",
+    ],
+    definition:
+      "Neurologic dysfunction resulting from inadequate glucose supply to the brain — manifests as confusion, behavioral change, seizures, focal deficits, stupor, or coma — the critical hypoglycemia symptom complex distinct from autonomic (adrenergic) warning signs and the basis of Whipple triad in insulinoma.",
+    examples: [
+      "Hypoglycemia — glucose <70 mg/dL with confusion, irritability, or seizures",
+      "Insulinoma — fasting neuroglycopenic symptoms relieved by glucose (Whipple triad)",
+      "Diabetic on insulin — neuroglycopenia when autonomic warnings missed (especially with β-blockers)",
+      "Neonatal hypoglycemia — jitteriness, lethargy, seizures threatening brain injury",
+      "Alcohol binge with poor intake — neuroglycopenia from impaired gluconeogenesis",
+      "Adrenal insufficiency — hypoglycemia with neuroglycopenic and adrenergic symptoms",
+    ],
+    boardsPearls: [
+      "Neuroglycopenic symptoms = brain glucose lack — confusion, seizures, coma (vs adrenergic: tremor, diaphoresis, palpitations)",
+      "Whipple triad: neuroglycopenic symptoms + low glucose + relief with glucose → insulinoma",
+      "β-blockers mask adrenergic hypoglycemia warning signs — neuroglycopenia may appear without tremor/sweating",
+      "Check glucose in any altered mental status — treat hypoglycemia immediately with dextrose",
+      "Neonatal hypoglycemia threatens brain — treat urgently; causes include hyperinsulinism, prematurity, inborn errors",
+      "vs hyperglycemic hyperosmolar state — high glucose with dehydration and altered mental status, not neuroglycopenia",
+      "Autonomic (adrenergic/cholinergic) symptoms are early warning; neuroglycopenia follows if untreated",
+    ],
+    distinguishFrom: [
+      "Adrenergic hypoglycemia symptoms — tremor, diaphoresis, tachycardia, hunger from catecholamine release",
+      "Hypoglycemia (lab value) — low blood glucose measurement; neuroglycopenia is the neurologic consequence",
+      "Hepatic encephalopathy — ammonia-mediated confusion with often normal glucose",
+      "Stroke — focal neurologic deficit without low glucose; check fingerstick glucose in all acute neuro cases",
+      "Postictal state — confusion after seizure; may follow neuroglycopenic seizure from hypoglycemia",
+      "Hyperosmolar hyperglycemic state — very high glucose causing altered mental status, not low glucose",
+    ],
+    pediatrics:
+      "Neonates and infants have high brain glucose utilization — hypoglycemia causes seizures and permanent injury rapidly. Hyperinsulinism, prematurity, and inborn errors of metabolism are key causes. Always check glucose in a lethargic or seizing infant. Children with type 1 diabetes may present with neuroglycopenia if autonomic symptoms are not recognized.",
   },
 ];
 

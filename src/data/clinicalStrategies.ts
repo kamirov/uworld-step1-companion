@@ -2968,7 +2968,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   },
   {
     id: "independent-in-daily-activities",
-    name: "Independent In Daily Activitie",
+    name: "Independent In Daily Activity",
     etymology:
       "Latin independens = not hanging from another + Latin dies = day + activitas = doing — able to perform routine self-care and household tasks without assistance",
     aliases: [

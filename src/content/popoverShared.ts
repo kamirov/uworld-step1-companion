@@ -1,10 +1,7 @@
-import type { MediaAttribution } from "../data/media";
 import {
   getNephronNavLabel,
   type NephronSegmentEntry,
 } from "../data/nephron";
-import { IMAGE_FLAG_LEGEND } from "../shared/categoryLegend";
-import { createElement, ImageOff } from "lucide";
 import { renderPopoverTitle, type PopoverCategory } from "./popoverIcons";
 
 export function renderListSection(label: string, items: string[]): string {
@@ -24,68 +21,6 @@ export function renderRichPopoverContent(header: string, sections: string): stri
     ? `<div class="usmle-organ-popover__sections">${sections}</div>`
     : "";
   return `${header}${wrappedSections}`;
-}
-
-export function renderMediaAttribution(attribution: MediaAttribution): string {
-  return `
-    <div class="usmle-organ-popover__media-attribution">
-      <a href="${attribution.url}" target="_blank" rel="noopener noreferrer">${attribution.label}</a>
-    </div>
-  `;
-}
-
-function renderImageFlagIcon(): string {
-  const icon = createElement(IMAGE_FLAG_LEGEND.icon, {
-    class: "usmle-organ-popover__media-flag-icon",
-    "stroke-width": 2,
-    width: 14,
-    height: 14,
-    "aria-hidden": "true",
-  });
-  return icon.outerHTML;
-}
-
-export function renderPopoverMediaBlock(options: {
-  src: string;
-  alt: string;
-  caption: string;
-  attribution: MediaAttribution;
-}): string {
-  return `
-    <div class="usmle-organ-popover__media">
-      <div class="usmle-organ-popover__media-image-wrap">
-        <img src="${options.src}" alt="${options.alt}" />
-        <button
-          type="button"
-          class="usmle-organ-popover__media-flag"
-          aria-label="${IMAGE_FLAG_LEGEND.label}"
-          title="${IMAGE_FLAG_LEGEND.label}"
-        >${renderImageFlagIcon()}</button>
-      </div>
-      <div class="usmle-organ-popover__media-caption">${options.caption}</div>
-      ${renderMediaAttribution(options.attribution)}
-    </div>
-  `;
-}
-
-export function renderPopoverAudioBlock(options: {
-  src: string;
-  caption: string;
-  attribution: MediaAttribution;
-}): string {
-  return `
-    <div class="usmle-organ-popover__media">
-      <audio
-        class="usmle-organ-popover__audio"
-        controls
-        autoplay
-        preload="auto"
-        src="${options.src}"
-      ></audio>
-      <div class="usmle-organ-popover__media-caption">${options.caption}</div>
-      ${renderMediaAttribution(options.attribution)}
-    </div>
-  `;
 }
 
 export function renderPediatricsSection(note: string): string {

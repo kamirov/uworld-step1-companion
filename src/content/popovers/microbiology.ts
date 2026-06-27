@@ -1,14 +1,8 @@
 import { getMicrobiologyById } from "../../data/microbiology";
-import {
-  getMicrobiologyImageAttributionForId,
-  getMicrobiologyImageCaptionForId,
-  getMicrobiologyImageForId,
-} from "../../data/microbiologyMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
   renderPediatricsSection,
-  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -26,11 +20,8 @@ export function renderMicrobiologyPopover(
   const entry = getMicrobiologyById(microbiologyId);
   if (!entry || !popover) return false;
 
-  const imageSrc = getMicrobiologyImageForId(microbiologyId);
-  const imageCaption = getMicrobiologyImageCaptionForId(microbiologyId);
-  const imageAttribution = getMicrobiologyImageAttributionForId(microbiologyId);
-
-  const bodyContent = renderRichPopoverContent(
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
     `
     ${renderPopoverTitle(entry.name, "microbiology", entry.etymology)}
     <div class="usmle-organ-popover__layer"><strong>Type:</strong> ${formatMicrobeType(entry.type)}</div>
@@ -50,23 +41,5 @@ export function renderMicrobiologyPopover(
     ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
   `,
   );
-
-  popover.classList.add("usmle-organ-popover--rich");
-  if (imageSrc && imageCaption && imageAttribution) {
-    popover.classList.add("usmle-organ-popover--with-media");
-    popover.innerHTML = `
-      <div class="usmle-organ-popover__layout">
-        <div class="usmle-organ-popover__body">${bodyContent}</div>
-        ${renderPopoverMediaBlock({
-          src: imageSrc,
-          alt: `${entry.name} micrograph`,
-          caption: imageCaption,
-          attribution: imageAttribution,
-        })}
-      </div>
-    `;
-  } else {
-    popover.innerHTML = bodyContent;
-  }
   return true;
 }

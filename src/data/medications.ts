@@ -5354,7 +5354,7 @@ export const MEDICATIONS: MedicationEntry[] = [
   },
   {
     id: "immunomodulating-therapies",
-    name: "Immunomodulating Therapie",
+    name: "Immunomodulating Therapy",
     etymology:
       "Latin immunis = exempt + Latin modulare = to regulate + Greek therapeia = treatment — drugs that alter immune system activity without necessarily causing broad cytotoxic immunosuppression",
     aliases: [

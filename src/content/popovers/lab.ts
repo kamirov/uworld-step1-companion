@@ -1,13 +1,7 @@
 import { getLabValueById } from "../../data/labValues";
-import {
-  getLabValueImageAttributionForId,
-  getLabValueImageCaptionForId,
-  getLabValueImageForId,
-} from "../../data/labValueMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
-  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -15,10 +9,8 @@ export function renderLabValuePopover(labValueId: string, popover: HTMLDivElemen
   const lab = getLabValueById(labValueId);
   if (!lab || !popover) return false;
 
-  const imageSrc = getLabValueImageForId(labValueId);
-  const imageCaption = getLabValueImageCaptionForId(labValueId);
-  const imageAttribution = getLabValueImageAttributionForId(labValueId);
-  const bodyContent = renderRichPopoverContent(
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
     `
     ${renderPopoverTitle(lab.name, "lab", lab.etymology)}
     <div class="usmle-organ-popover__meaning">${lab.measures}</div>
@@ -31,23 +23,5 @@ export function renderLabValuePopover(labValueId: string, popover: HTMLDivElemen
     ${renderListSection("Boards pearls", lab.boardsPearls)}
   `,
   );
-
-  popover.classList.add("usmle-organ-popover--rich");
-  if (imageSrc && imageCaption && imageAttribution) {
-    popover.classList.add("usmle-organ-popover--with-media");
-    popover.innerHTML = `
-      <div class="usmle-organ-popover__layout">
-        <div class="usmle-organ-popover__body">${bodyContent}</div>
-        ${renderPopoverMediaBlock({
-          src: imageSrc,
-          alt: `${lab.name} diagram`,
-          caption: imageCaption,
-          attribution: imageAttribution,
-        })}
-      </div>
-    `;
-  } else {
-    popover.innerHTML = bodyContent;
-  }
   return true;
 }

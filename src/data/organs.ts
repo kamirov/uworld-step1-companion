@@ -3621,7 +3621,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "mammillary-bodies",
-    name: "Mammillary Bodie",
+    name: "Mammillary Body",
     etymology:
       "Latin mamma = breast/nipple + -illary = small + bodies = paired structures (nipple-like gray matter protrusions)",
     aliases: [
@@ -4626,7 +4626,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "lens",
-    name: "Len",
+    name: "Lens",
     etymology: "Latin lens = lentil-shaped glass",
     aliases: ["lens"],
     germLayer: "Ectoderm",

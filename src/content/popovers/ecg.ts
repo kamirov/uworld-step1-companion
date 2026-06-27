@@ -1,14 +1,8 @@
 import { getEcgFindingById } from "../../data/ecgFindings";
-import {
-  getEcgFindingImageAttributionForId,
-  getEcgFindingImageCaptionForId,
-  getEcgFindingImageForId,
-} from "../../data/ecgFindingMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
   renderPediatricsSection,
-  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -19,11 +13,8 @@ export function renderEcgFindingPopover(
   const finding = getEcgFindingById(ecgFindingId);
   if (!finding || !popover) return false;
 
-  const imageSrc = getEcgFindingImageForId(ecgFindingId);
-  const imageCaption = getEcgFindingImageCaptionForId(ecgFindingId);
-  const imageAttribution = getEcgFindingImageAttributionForId(ecgFindingId);
-
-  const bodyContent = renderRichPopoverContent(
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
     `
     ${renderPopoverTitle(finding.name, "ecg", finding.etymology)}
     <div class="usmle-organ-popover__meaning">${finding.interpretation}</div>
@@ -36,23 +27,5 @@ export function renderEcgFindingPopover(
     ${finding.pediatrics ? renderPediatricsSection(finding.pediatrics) : ""}
   `,
   );
-
-  popover.classList.add("usmle-organ-popover--rich");
-  if (imageSrc && imageCaption && imageAttribution) {
-    popover.classList.add("usmle-organ-popover--with-media");
-    popover.innerHTML = `
-      <div class="usmle-organ-popover__layout">
-        <div class="usmle-organ-popover__body">${bodyContent}</div>
-        ${renderPopoverMediaBlock({
-          src: imageSrc,
-          alt: `${finding.name} ECG example`,
-          caption: imageCaption,
-          attribution: imageAttribution,
-        })}
-      </div>
-    `;
-  } else {
-    popover.innerHTML = bodyContent;
-  }
   return true;
 }

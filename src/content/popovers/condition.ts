@@ -1,14 +1,8 @@
 import { getConditionById } from "../../data/conditions";
-import {
-  getConditionImageAttributionForId,
-  getConditionImageCaptionForId,
-  getConditionImageForId,
-} from "../../data/conditionsMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
   renderPediatricsSection,
-  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -19,11 +13,8 @@ export function renderConditionPopover(
   const condition = getConditionById(conditionId);
   if (!condition || !popover) return false;
 
-  const imageSrc = getConditionImageForId(conditionId);
-  const imageCaption = getConditionImageCaptionForId(conditionId);
-  const imageAttribution = getConditionImageAttributionForId(conditionId);
-
-  const bodyContent = renderRichPopoverContent(
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
     `
     ${renderPopoverTitle(condition.name, "condition", condition.etymology)}
     <div class="usmle-organ-popover__meaning">${condition.definition}</div>
@@ -42,23 +33,5 @@ export function renderConditionPopover(
     ${condition.pediatrics ? renderPediatricsSection(condition.pediatrics) : ""}
   `,
   );
-
-  popover.classList.add("usmle-organ-popover--rich");
-  if (imageSrc && imageCaption && imageAttribution) {
-    popover.classList.add("usmle-organ-popover--with-media");
-    popover.innerHTML = `
-      <div class="usmle-organ-popover__layout">
-        <div class="usmle-organ-popover__body">${bodyContent}</div>
-        ${renderPopoverMediaBlock({
-          src: imageSrc,
-          alt: `${condition.name} histology`,
-          caption: imageCaption,
-          attribution: imageAttribution,
-        })}
-      </div>
-    `;
-  } else {
-    popover.innerHTML = bodyContent;
-  }
   return true;
 }

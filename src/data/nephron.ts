@@ -157,7 +157,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   },
   {
     id: "peritubular-capillaries",
-    name: "Peritubular Capillarie",
+    name: "Peritubular Capillary",
     etymology:
       "Latin peri = around + tubulus = little tube + capillaris = hairlike — capillaries encircling renal tubules",
     aliases: [

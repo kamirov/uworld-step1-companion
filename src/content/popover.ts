@@ -1,12 +1,8 @@
-import type { PopoverCategory } from "../shared/categoryLegend";
-import { addItem, removeItem } from "../shared/missingMediaQueue";
-import { isMarked, toggleItem } from "../shared/regenerationQueue";
 import { schedulePopoverRootScan } from "./organScanner";
 import { getChipPopoverTarget, renderChipPopover } from "./popoverLoader";
 
 const CHIP_SELECTOR =
   ".usmle-organ-chip, .usmle-heart-sound-chip, .usmle-heart-murmur-chip, .usmle-hemodynamic-chip, .usmle-symptom-chip, .usmle-medication-chip, .usmle-lab-chip, .usmle-nephron-chip, .usmle-condition-chip, .usmle-protein-chip, .usmle-signaling-chip, .usmle-ecg-chip, .usmle-procedure-chip, .usmle-clinical-strategy-chip, .usmle-cell-chip, .usmle-pathogenesis-chip, .usmle-metabolism-chip, .usmle-microbiology-chip, .usmle-musculoskeletal-chip";
-const POPOVER_AUDIO_SELECTOR = ".usmle-organ-popover__audio";
 const POPOVER_CLASS = "usmle-organ-popover";
 const STACK_OFFSET_PX = 14;
 
@@ -27,24 +23,7 @@ function createPopover(): HTMLDivElement {
   return popover;
 }
 
-function stopPopoverAudio(popover: HTMLDivElement): void {
-  const audio = popover.querySelector<HTMLAudioElement>(POPOVER_AUDIO_SELECTOR);
-  if (!audio) return;
-  audio.pause();
-  audio.currentTime = 0;
-}
-
-function playPopoverAudio(popover: HTMLDivElement): void {
-  const audio = popover.querySelector<HTMLAudioElement>(POPOVER_AUDIO_SELECTOR);
-  if (!audio) return;
-  audio.currentTime = 0;
-  void audio.play().catch(() => {
-    // Autoplay may be blocked until the user has interacted with the page.
-  });
-}
-
 function removePopoverEntry(entry: PopoverEntry): void {
-  stopPopoverAudio(entry.popover);
   entry.popover.remove();
 }
 
@@ -89,10 +68,7 @@ function preparePopoverForDisplay(popover: HTMLDivElement): void {
   popover.scrollTop = 0;
   popover.classList.remove("usmle-organ-popover--wide");
 
-  if (
-    !popover.classList.contains("usmle-organ-popover--rich") ||
-    popover.classList.contains("usmle-organ-popover--with-media")
-  ) {
+  if (!popover.classList.contains("usmle-organ-popover--rich")) {
     return;
   }
 
@@ -187,108 +163,6 @@ function repositionPopoverStackFrom(index: number): void {
   }
 }
 
-function bindPopoverImageReposition(
-  entry: PopoverEntry,
-  popover: HTMLDivElement,
-): void {
-  for (const img of popover.querySelectorAll<HTMLImageElement>("img")) {
-    if (img.complete) continue;
-    img.addEventListener(
-      "load",
-      () => {
-        const index = popoverStack.indexOf(entry);
-        if (index === -1 || popover.hidden) return;
-        repositionPopoverStackFrom(index);
-      },
-      { once: true },
-    );
-  }
-}
-
-
-const MEDIA_FLAG_SELECTOR = ".usmle-organ-popover__media-flag";
-
-async function bindMediaRegenerationButtons(
-  chip: HTMLElement,
-  popover: HTMLDivElement,
-): Promise<void> {
-  const details = getPopoverItemDetails(chip, popover);
-  if (!details) return;
-
-  const { category, id: targetId, name: displayName } = details;
-
-  const buttons = popover.querySelectorAll<HTMLButtonElement>(MEDIA_FLAG_SELECTOR);
-  if (buttons.length === 0) return;
-
-  const marked = await isMarked(category, targetId);
-
-  for (const button of buttons) {
-    button.classList.toggle("usmle-organ-popover__media-flag--marked", marked);
-
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-
-      void toggleItem({
-        category,
-        id: targetId,
-        name: displayName,
-      }).then((isNowMarked) => {
-        for (const btn of popover.querySelectorAll<HTMLButtonElement>(
-          MEDIA_FLAG_SELECTOR,
-        )) {
-          btn.classList.toggle(
-            "usmle-organ-popover__media-flag--marked",
-            isNowMarked,
-          );
-        }
-      });
-    });
-  }
-}
-
-function popoverHasMedia(popover: HTMLDivElement): boolean {
-  return (
-    popover.classList.contains("usmle-organ-popover--with-media") ||
-    popover.querySelector(POPOVER_AUDIO_SELECTOR) !== null
-  );
-}
-
-function getPopoverItemDetails(
-  chip: HTMLElement,
-  popover: HTMLDivElement,
-): { category: PopoverCategory; id: string; name: string } | null {
-  const target = getChipPopoverTarget(chip);
-  if (!target) return null;
-
-  return {
-    category: target.kind as PopoverCategory,
-    id: target.id,
-    name:
-      popover.querySelector(".usmle-organ-popover__title-text")?.textContent?.trim() ??
-      target.id,
-  };
-}
-
-async function trackPopoverMediaState(
-  chip: HTMLElement,
-  popover: HTMLDivElement,
-): Promise<void> {
-  const details = getPopoverItemDetails(chip, popover);
-  if (!details) return;
-
-  if (popoverHasMedia(popover)) {
-    await removeItem(details.category, details.id);
-    return;
-  }
-
-  await addItem({
-    category: details.category,
-    id: details.id,
-    name: details.name,
-  });
-}
-
 function renderLoadingPopover(popover: HTMLDivElement): void {
   popover.innerHTML =
     '<div class="usmle-organ-popover__loading">Loading…</div>';
@@ -318,7 +192,6 @@ async function showPopover(chip: HTMLElement): Promise<void> {
   popover.classList.remove(
     "usmle-organ-popover--rich",
     "usmle-organ-popover--wide",
-    "usmle-organ-popover--with-media",
   );
   renderLoadingPopover(popover);
   preparePopoverForDisplay(popover);
@@ -340,10 +213,6 @@ async function showPopover(chip: HTMLElement): Promise<void> {
 
   preparePopoverForDisplay(popover);
   repositionPopoverStackFrom(popoverStack.length - 1);
-  bindPopoverImageReposition(entry, popover);
-  await bindMediaRegenerationButtons(chip, popover);
-  await trackPopoverMediaState(chip, popover);
-  playPopoverAudio(popover);
   const scanTarget = getChipPopoverTarget(chip);
   if (scanTarget) schedulePopoverRootScan(popover, scanTarget);
 }

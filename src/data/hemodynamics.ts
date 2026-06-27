@@ -1355,7 +1355,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   },
   {
     id: "basal-hypokinesis",
-    name: "Basal Hypokinesi",
+    name: "Basal Hypokinesis",
     etymology:
       "Greek basis = base/foundation + hypo = reduced + kinesis = movement — reduced systolic excursion of basal left ventricular segments",
     aliases: [
@@ -1482,7 +1482,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   },
   {
     id: "orthostasis",
-    name: "Orthostasi",
+    name: "Orthostasis",
     etymology:
       "Greek orthos = straight/upright + stasis = standing — physiologic state and hemodynamic stress of assuming and maintaining upright posture",
     aliases: [

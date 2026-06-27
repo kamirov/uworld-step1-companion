@@ -1,14 +1,8 @@
 import { getMusculoskeletalById } from "../../data/musculoskeletal";
-import {
-  getMusculoskeletalImageAttributionForId,
-  getMusculoskeletalImageCaptionForId,
-  getMusculoskeletalImageForId,
-} from "../../data/musculoskeletalMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
   renderPediatricsSection,
-  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -19,12 +13,8 @@ export function renderMusculoskeletalPopover(
   const entry = getMusculoskeletalById(musculoskeletalId);
   if (!entry || !popover) return false;
 
-  const imageSrc = getMusculoskeletalImageForId(musculoskeletalId);
-  const imageCaption = getMusculoskeletalImageCaptionForId(musculoskeletalId);
-  const imageAttribution =
-    getMusculoskeletalImageAttributionForId(musculoskeletalId);
-
-  const bodyContent = renderRichPopoverContent(
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
     `
     ${renderPopoverTitle(entry.name, "musculoskeletal", entry.etymology)}
     <div class="usmle-organ-popover__meaning">${entry.definition}</div>
@@ -39,23 +29,5 @@ export function renderMusculoskeletalPopover(
     ${entry.pediatrics ? renderPediatricsSection(entry.pediatrics) : ""}
   `,
   );
-
-  popover.classList.add("usmle-organ-popover--rich");
-  if (imageSrc && imageCaption && imageAttribution) {
-    popover.classList.add("usmle-organ-popover--with-media");
-    popover.innerHTML = `
-      <div class="usmle-organ-popover__layout">
-        <div class="usmle-organ-popover__body">${bodyContent}</div>
-        ${renderPopoverMediaBlock({
-          src: imageSrc,
-          alt: `${entry.name} diagram`,
-          caption: imageCaption,
-          attribution: imageAttribution,
-        })}
-      </div>
-    `;
-  } else {
-    popover.innerHTML = bodyContent;
-  }
   return true;
 }

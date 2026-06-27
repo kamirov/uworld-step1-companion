@@ -3,7 +3,10 @@ import {
   getAllMatchForms,
   getPluralForms,
   isGeneratedPluralOf,
+  isInherentlySingularEndingInS,
+  repairTruncatedSingularName,
   shouldSkipPluralization,
+  singularizeName,
 } from "../src/content/pluralization.ts";
 
 function assert(condition: boolean, message: string): void {
@@ -40,6 +43,27 @@ assert(
 assert(
   getAllMatchForms("neutrophil").length >= 2,
   "all match forms include singular and plural",
+);
+assert(singularizeName("Hydrolysis") === null, "do not singularize hydrolysis");
+assert(
+  isInherentlySingularEndingInS("Hydrolysis"),
+  "hydrolysis is inherently singular",
+);
+assert(
+  repairTruncatedSingularName("Hydrolysi") === "Hydrolysis",
+  "repair truncated hydrolysi",
+);
+assert(
+  repairTruncatedSingularName("Latissimus Dorsi") === null,
+  "do not repair latissimus dorsi",
+);
+assert(
+  repairTruncatedSingularName("Heinz Bodie") === "Heinz Body",
+  "repair heinz bodie -> heinz body",
+);
+assert(
+  singularizeName("Heinz Bodies") === "Heinz Body",
+  "singularize heinz bodies -> heinz body",
 );
 
 console.log("Pluralization tests OK");

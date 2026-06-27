@@ -2428,7 +2428,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "proptosis",
-    name: "Proptosi",
+    name: "Proptosis",
     etymology: "Greek pro = forward + ptosis = falling; forward displacement of the globe",
     aliases: [
       "proptosis",
@@ -2826,7 +2826,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cheilosis",
-    name: "Cheilosi",
+    name: "Cheilosis",
     etymology:
       "Greek cheilos = lip + -osis = condition",
     aliases: [
@@ -3967,7 +3967,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cyanosis",
-    name: "Cyanosi",
+    name: "Cyanosis",
     etymology: "Greek kyanos = dark blue + -osis = condition",
     aliases: [
       "cyanosis",
@@ -4011,7 +4011,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "central-cyanosis",
-    name: "Central Cyanosi",
+    name: "Central Cyanosis",
     etymology:
       "Latin centralis = pertaining to the center + Greek kyanos = dark blue + -osis = condition",
     aliases: [
@@ -4058,7 +4058,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "peripheral-cyanosis",
-    name: "Peripheral Cyanosi",
+    name: "Peripheral Cyanosis",
     etymology:
       "Greek peri = around + pherō = to bear/carry + kyanos = dark blue + -osis = condition",
     aliases: [
@@ -4102,7 +4102,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "acrocyanosis",
-    name: "Acrocyanosi",
+    name: "Acrocyanosis",
     etymology:
       "Greek akron = extremity/tip + kyanos = dark blue + -osis = condition",
     aliases: [
@@ -4862,7 +4862,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hemoptysis",
-    name: "Hemoptysi",
+    name: "Hemoptysis",
     etymology: "Greek haima = blood + ptysis = spitting",
     aliases: [
       "hemoptysis",
@@ -5126,6 +5126,51 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "McArdle disease and viral myositis can cause myoglobinuria with reddish-brown urine after exertion in children. Hemolytic uremic syndrome causes hemolysis with dark urine and AKI. Alkaptonuria shows dark urine on standing in infants.",
+  },
+  {
+    id: "dark-urine",
+    name: "Dark Urine",
+    etymology:
+      "Old English deorc = lacking light + Latin urina = urine — abnormally deep-colored urine from excreted pigments rather than fresh red blood",
+    aliases: [
+      "dark urine",
+      "dark-colored urine",
+      "dark colored urine",
+      "deeply colored urine",
+      "bilirubinuria",
+      "conjugated bilirubin in urine",
+      "cholestatic urine discoloration",
+    ],
+    definition:
+      "Abnormal urine that appears dark brown, tea-colored, or cola-colored — most classically from conjugated (direct) bilirubin in cholestasis or obstruction, but also from myoglobin/hemoglobin pigments, porphyrins, or homogentisic acid — often distinguished from bright red gross hematuria by dipstick and microscopy.",
+    mechanism:
+      "Conjugated bilirubin is water-soluble and filtered when serum direct bilirubin rises (hepatocellular disease, intra/extrahepatic cholestasis, obstruction) → dark urine with often pale acholic stools. Myoglobin and hemoglobin produce reddish-brown pigmenturia with dipstick blood-positive and few RBCs. Porphobilinogen oxidizes on standing in acute porphyria; homogentisic acid darkens on air exposure in alkaptonuria.",
+    thinkOf: [
+      "Obstructive jaundice — choledocholithiasis, pancreatic head cancer, primary sclerosing cholangitis",
+      "Conjugated hyperbilirubinemia — hepatitis, cirrhosis, drug-induced cholestasis",
+      "Rhabdomyolysis — dark urine + ↑ CK + muscle pain",
+      "Intravascular hemolysis — ↓ haptoglobin, ↑ LDH, schistocytes",
+      "Acute intermittent porphyria — abdominal pain, neuropsychiatric symptoms, dark urine on standing",
+      "Alkaptonuria — homogentisic acid; dark urine on standing in infants",
+    ],
+    pairWith: [
+      "Dark urine + pale stools + jaundice + ↑ direct bilirubin → obstructive cholestasis",
+      "Dark urine + scleral icterus + ↑ ALP/GGT → cholestatic pattern",
+      "Dark urine + ↑ CK + myalgia → rhabdomyolysis/myoglobinuria",
+      "Dark urine + dipstick blood+ but no RBCs → pigmenturia (myoglobin or hemoglobin)",
+      "Abdominal pain + confusion + dark urine on standing → acute intermittent porphyria",
+      "Dark urine + periorbital edema + RBC casts → glomerulonephritis (tea-colored hematuria)",
+    ],
+    distinguishFrom: [
+      "Bright red urine — gross hematuria from lower urinary tract bleeding",
+      "Reddish-brown urine — overlapping pigmenturia descriptor; dark urine emphasizes cholestatic bilirubinuria on boards",
+      "Orange urine — rifampin, phenazopyridine, carotenemia, dehydration",
+      "Blue-green urine — pseudomonas UTI, propofol, amitriptyline",
+      "Normal concentrated urine — mild yellow-darkening with dehydration alone",
+      "Hematuria — RBCs on microscopy; bilirubinuria has no RBCs and ↑ direct bilirubin",
+    ],
+    pediatrics:
+      "Neonatal cholestasis (conjugated hyperbilirubinemia persisting >2 weeks) presents with dark urine and pale stools — never physiologic; evaluate for biliary atresia urgently. Alkaptonuria may show dark urine on diaper exposure. McArdle disease and viral myositis cause pigmenturia after exertion in children.",
   },
   {
     id: "painless-hematuria",
@@ -7088,7 +7133,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "diaphoresis",
-    name: "Diaphoresi",
+    name: "Diaphoresis",
     etymology:
       "Greek dia = through + phorein = to carry — perspiration carried through the skin; eccrine sweat secretion",
     aliases: [
@@ -7311,7 +7356,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "onycholysis",
-    name: "Onycholysi",
+    name: "Onycholysis",
     etymology:
       "Greek onycho- = nail + lysis = loosening — separation of the nail plate from the underlying nail bed, usually beginning distally",
     aliases: [
@@ -7731,7 +7776,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "calcinosis",
-    name: "Calcinosi",
+    name: "Calcinosis",
     etymology: "Latin calx = lime/calcium + -osis = condition",
     aliases: [
       "calcinosis",
@@ -9040,6 +9085,50 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Acute hematogenous osteomyelitis classically elevates periosteum before cortical breakthrough in children. Ewing sarcoma and osteosarcoma are peak adolescent bone tumors with characteristic periosteal patterns. Caffey disease causes infantile cortical hyperostosis with periosteal new bone.",
+  },
+  {
+    id: "spiculated",
+    name: "Spiculated",
+    etymology:
+      "Latin spica = ear of grain/spike + -ulated = having spikes — radiographic or morphologic descriptor for irregular spiky projections from a margin or surface",
+    aliases: [
+      "spiculated",
+      "spiculated margin",
+      "spiculated border",
+      "spiculated lesion",
+      "spiculated mass",
+      "spiculated nodule",
+      "spiculated periosteal reaction",
+      "sunburst pattern",
+    ],
+    definition:
+      "Descriptive term for a lesion or reaction margin with radiating spiky or needle-like projections — on imaging suggests aggressive biologic behavior (malignancy, rapid bone formation, or abnormal cell morphology) depending on context (pulmonary nodule, bone tumor, or blood smear).",
+    mechanism:
+      "Malignant neoplasms invade surrounding stroma irregularly → spiculated soft-tissue or parenchymal margins on CT/chest radiograph. Rapid periosteal osteoblastic activity (osteosarcoma) produces radiating spicules of new bone (sunburst pattern). Abnormal membrane lipid composition creates spiculated RBC projections (acanthocytes).",
+    thinkOf: [
+      "Lung cancer — spiculated pulmonary nodule on chest imaging (high malignancy suspicion)",
+      "Osteosarcoma — sunburst (spiculated) periosteal reaction in metaphysis of long bone",
+      "Acanthocyte (spur cell) — spiculated RBC in liver disease, abetalipoproteinemia",
+      "Invasive breast carcinoma — spiculated mass on mammography",
+      "Metastatic lesion with desmoplastic reaction — may appear spiculated",
+    ],
+    pairWith: [
+      "Spiculated pulmonary nodule + smoking history → lung cancer workup (CT, biopsy)",
+      "Spiculated periosteal reaction + metaphyseal bone pain in adolescent → osteosarcoma",
+      "Spiculated mass on mammogram + calcifications → BI-RADS suspicious → biopsy",
+      "Spiculated RBCs + neurologic symptoms + malabsorption → abetalipoproteinemia",
+      "Spiculated periosteal reaction + Codman triangle → aggressive bone malignancy",
+    ],
+    distinguishFrom: [
+      "Smooth-walled nodule — more likely benign granuloma or hamartoma",
+      "Lamellated (onion-skin) periosteal reaction — Ewing sarcoma pattern, not spiculated sunburst",
+      "Well-circumscribed round mass — often benign; spiculated margins suggest infiltration",
+      "Echinocyte (burr cell) — uniform membrane projections from uremia, not irregular spicules of acanthocyte",
+      "Periosteal reaction (general) — umbrella term including solid, lamellated, and spiculated subtypes",
+      "Spherocyte — round RBC without spicules; hereditary spherocytosis or immune hemolysis",
+    ],
+    pediatrics:
+      "Osteosarcoma and Ewing sarcoma are peak adolescent bone tumors — spiculated (sunburst) vs onion-skin periosteal patterns help distinguish on plain radiograph. Spiculated pulmonary nodules are rare in children; consider metastatic disease or infection before primary lung cancer.",
   },
   {
     id: "intraperitoneal-air",
@@ -10884,7 +10973,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hyperacusis",
-    name: "Hyperacusi",
+    name: "Hyperacusis",
     etymology:
       "Greek hyper = excess + Greek akousis = hearing — abnormally decreased tolerance to ordinary environmental sounds",
     aliases: [
@@ -11351,7 +11440,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "dysmorphic-facies",
-    name: "Dysmorphic Facie",
+    name: "Dysmorphic Facies",
     etymology: "Greek dys = abnormal + morphe = form + Latin facies = face",
     aliases: [
       "dysmorphic facies",
@@ -11398,7 +11487,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "elfin-facies",
-    name: "Elfin Facie",
+    name: "Elfin Facies",
     etymology:
       "Old English ælf = elf + Latin facies = face — delicate, pixie-like facial appearance",
     aliases: [
@@ -11597,7 +11686,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "ecchymosis",
-    name: "Ecchymosi",
+    name: "Ecchymosis",
     etymology: "Greek ek = out + chymos = juice/fluid",
     aliases: [
       "ecchymosis",
@@ -11691,7 +11780,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hemarthrosis",
-    name: "Hemarthrosi",
+    name: "Hemarthrosis",
     etymology:
       "Greek haima = blood + arthron = joint + -osis = condition — bleeding into a joint cavity causing painful swelling, warmth, and restricted range of motion; hallmark of severe coagulation factor deficiency",
     aliases: [
@@ -12084,7 +12173,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "leukocytosis",
-    name: "Leukocytosi",
+    name: "Leukocytosis",
     etymology: "Greek leukos = white + kytos = cell + -osis = condition",
     aliases: ["leukocytosis", "elevated wbc", "high wbc", "increased white blood cells"],
     definition:
@@ -12959,6 +13048,50 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Infants may appear obtunded with serious infection, metabolic crisis, or nonaccidental head trauma rather than classic adult toxidromes — check glucose, consider meningitis workup, and maintain airway.",
   },
   {
+    id: "stupor",
+    name: "Stupor",
+    etymology:
+      "Latin stupor = numbness, insensibility, or stunned state — severely depressed consciousness requiring vigorous or painful stimulation to elicit brief responsiveness",
+    aliases: [
+      "stupor",
+      "stuporous",
+      "stuporous state",
+      "stuporous patient",
+      "stuporous mental status",
+    ],
+    definition:
+      "Marked depression of consciousness in which the patient is arousable only with repeated vigorous or noxious stimulation, responds minimally (often with moaning or withdrawal only), and quickly relapses into unresponsiveness — intermediate between obtundation and coma on the level-of-consciousness spectrum.",
+    mechanism:
+      "Severe impairment of the reticular activating system and cortical integration from high-dose CNS depressants (opioids, benzodiazepines, alcohol), profound metabolic derangement (severe hypoglycemia, hyperosmolarity, uremia, hepatic encephalopathy), diffuse cerebral edema, bilateral hemispheric injury, or postictal exhaustion → minimal arousal with absent meaningful interaction.",
+    thinkOf: [
+      "Opioid or sedative overdose approaching coma",
+      "Severe hypoglycemia or hyperosmolar hyperglycemic state",
+      "Hepatic encephalopathy or uremic encephalopathy",
+      "Large intracranial hemorrhage or herniation before unarousable coma",
+      "Postictal state after generalized tonic-clonic seizure",
+      "Severe hyponatremia or hypernatremia",
+      "Wernicke encephalopathy (may be obtunded/stuporous)",
+    ],
+    pairWith: [
+      "Stupor + pinpoint pupils + ↓ respirations → opioid overdose; naloxone",
+      "Stupor + low glucose → hypoglycemia — give dextrose immediately",
+      "Stupor + asterixis when briefly arousable → metabolic encephalopathy",
+      "GCS ~7–8 often corresponds to stupor (lethargy ~13, obtundation ~9–12, coma ≤6–7)",
+      "Stupor + fever + nuchal rigidity → meningitis/encephalitis — LP after imaging if indicated",
+      "Stupor after witnessed seizure → postictal; monitor airway and glucose",
+    ],
+    distinguishFrom: [
+      "Obtundation — easier to arouse with less vigorous stimulation",
+      "Coma — unarousable, no purposeful response even to pain",
+      "Lethargy / somnolence — milder decreased alertness; patient more easily awakened",
+      "Delirium — fluctuating attention and awareness; often hyperactive or hypoactive but not deeply stuporous",
+      "Locked-in syndrome — conscious patient with quadriplegia; vertical eye movements preserved",
+      "Psychogenic unresponsiveness — inconsistent exam, normal reflexes, eye resistance",
+    ],
+    pediatrics:
+      "Infants and toddlers with serious infection, metabolic crisis, or nonaccidental head trauma may present as stuporous rather than clearly comatose — check glucose immediately, maintain airway, and evaluate for meningitis. Reye syndrome and inborn errors of metabolism can cause rapid decline in arousal.",
+  },
+  {
     id: "central-adiposity",
     name: "Central Adiposity",
     etymology: "Latin centrum = center + adiposus = fatty",
@@ -13758,7 +13891,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "enuresis",
-    name: "Enuresi",
+    name: "Enuresis",
     etymology: "Greek en = in + ouron = urine + -esis = condition",
     aliases: [
       "enuresis",
@@ -16472,7 +16605,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "psychosis",
-    name: "Psychosi",
+    name: "Psychosis",
     etymology: "Greek psyche = mind + -osis = abnormal condition",
     aliases: ["psychosis", "psychotic", "psychotic episode"],
     definition:
@@ -16587,7 +16720,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "moon-facies",
-    name: "Moon Facie",
+    name: "Moon Facies",
     etymology: "moon = round lunar appearance + Latin facies = face",
     aliases: ["moon facies", "moon face", "cushingoid facies", "cushingoid face"],
     definition:
@@ -16814,7 +16947,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "agranulocytosis",
-    name: "Agranulocytosi",
+    name: "Agranulocytosis",
     etymology:
       "Greek a- = without + Latin granulum = small grain + Greek kytos = cell + -osis = condition — severe absence of circulating neutrophils",
     aliases: [
@@ -17087,7 +17220,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "paresis",
-    name: "Paresi",
+    name: "Paresis",
     etymology: "Greek parienai = to let go / relax + -sis = condition",
     aliases: [
       "paresis",
@@ -17126,7 +17259,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "spastic-paresis",
-    name: "Spastic Paresi",
+    name: "Spastic Paresis",
     etymology: "Greek spastikos = drawing/pulling + paresis = partial weakness",
     aliases: [
       "spastic paresis",
@@ -17684,7 +17817,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "kyphoscoliosis",
-    name: "Kyphoscoliosi",
+    name: "Kyphoscoliosis",
     etymology:
       "Greek kyphos = hump + skolios = crooked — combined anterior (kyphotic) and lateral (scoliotic) spinal deformity",
     aliases: [
@@ -18301,7 +18434,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "sleep-paralysis",
-    name: "Sleep Paralysi",
+    name: "Sleep Paralysis",
     etymology: "Old English slæp = sleep + Latin paralysis = loss of movement",
     aliases: [
       "sleep paralysis",
@@ -19524,7 +19657,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "mydriasis",
-    name: "Mydriasi",
+    name: "Mydriasis",
     etymology: "Greek mydriasis = enlargement (of pupil)",
     aliases: [
       "mydriasis",
@@ -21573,7 +21706,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "ptosis",
-    name: "Ptosi",
+    name: "Ptosis",
     etymology: "Greek ptōsis = fall — drooping of the upper eyelid",
     aliases: [
       "ptosis",

@@ -246,7 +246,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   },
   {
     id: "thoracentesis",
-    name: "Thoracentesi",
+    name: "Thoracentesis",
     etymology: "Greek thorax = chest + kentesis = puncture",
     aliases: [
       "thoracentesis",
@@ -288,7 +288,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   },
   {
     id: "arthrocentesis",
-    name: "Arthrocentesi",
+    name: "Arthrocentesis",
     etymology:
       "Greek arthron = joint + kentesis = puncture — needle aspiration of synovial fluid from a joint space for diagnosis or therapeutic drainage",
     aliases: [
@@ -657,7 +657,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   },
   {
     id: "electrophoresis",
-    name: "Electrophoresi",
+    name: "Electrophoresis",
     etymology:
       "Greek elektron = amber (electricity) + phoresis = carrying — movement of charged particles through a gel matrix under applied electric field, separating by size and charge",
     aliases: [
@@ -3254,7 +3254,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   },
   {
     id: "dialysis",
-    name: "Dialysi",
+    name: "Dialysis",
     etymology: "Greek dia = through + lysis = loosening/separation",
     aliases: [
       "dialysis",
@@ -3357,7 +3357,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   },
   {
     id: "plasmapheresis",
-    name: "Plasmapheresi",
+    name: "Plasmapheresis",
     etymology:
       "Greek plasma = molded/form + aphairesis = taking away — selective removal of plasma (and pathologic plasma constituents) with return of formed elements and replacement fluid",
     aliases: [
@@ -5834,7 +5834,7 @@ export const PROCEDURES: ProcedureEntry[] = [
   },
   {
     id: "amniocentesis",
-    name: "Amniocentesi",
+    name: "Amniocentesis",
     etymology:
       "Latin amnion = fetal membrane + Greek kentesis = pricking — transabdominal needle aspiration of amniotic fluid for prenatal diagnostic testing",
     aliases: [
@@ -6107,6 +6107,55 @@ export const PROCEDURES: ProcedureEntry[] = [
     ],
     pediatrics:
       "Colorectal cancer screening colonoscopy is primarily adult; pediatric colonoscopy used for IBD diagnosis (Crohn, UC), juvenile polyposis syndromes, and GI bleeding workup. Juvenile polyps in rectosigmoid may present with painless hematochezia in toddlers.",
+  },
+  {
+    id: "mammogram",
+    name: "Mammogram",
+    etymology:
+      "Latin mamma = breast + Greek gramma = written record — low-dose X-ray imaging of breast tissue for cancer screening and diagnostic evaluation",
+    aliases: [
+      "mammogram",
+      "mammography",
+      "screening mammogram",
+      "diagnostic mammogram",
+      "breast mammography",
+      "breast x-ray",
+      "breast x ray",
+      "mammographic examination",
+    ],
+    definition:
+      "Radiographic imaging of the breast using dedicated compression and low-dose X-ray technique — primary population screening tool for early breast cancer detection and diagnostic workup of palpable masses, nipple discharge, or abnormal screening findings.",
+    indications: [
+      "Breast cancer screening — average-risk women typically starting age 40–50 (guideline-dependent); biennial or annual",
+      "Diagnostic evaluation of palpable breast lump, skin/nipple changes, or axillary adenopathy",
+      "Follow-up of abnormal screening mammogram (asymmetry, calcifications, mass)",
+      "High-risk surveillance — BRCA1/2 carriers, strong family history, prior chest radiation",
+      "Preoperative localization of nonpalpable lesions (with wire or seed)",
+    ],
+    keyMeasurements: [
+      "BI-RADS category (0–6) — standardized reporting: 0 = incomplete, 4–5 = suspicious/malignant, 6 = proven cancer",
+      "Mass characteristics — shape, margin (circumscribed vs spiculated), density",
+      "Calcifications — fine pleomorphic or linear branching (suspicious) vs coarse/popcorn benign",
+      "Breast density category (A–D) — ↑ density ↓ mammographic sensitivity; may need supplemental ultrasound/MRI",
+    ],
+    complications: [
+      "False-positive results — callbacks, anxiety, benign biopsies",
+      "False-negative in dense breast tissue — interval cancers possible",
+      "Discomfort from breast compression during exam",
+      "Radiation exposure — low dose but cumulative with repeated screening",
+      "Overdiagnosis of indolent DCIS or low-grade lesions (screening debate)",
+    ],
+    boardsPearls: [
+      "Mammogram = breast cancer screening with X-ray; spiculated mass + calcifications → high suspicion",
+      "BI-RADS 4–5 → tissue diagnosis (core needle biopsy)",
+      "Fine pleomorphic microcalcifications — suspicious for DCIS or invasive carcinoma",
+      "Dense breasts ↓ mammographic sensitivity — supplemental ultrasound or MRI in high-risk patients",
+      "BRCA1/2 — enhanced screening with MRI + mammography starting ~25–30 years",
+      "vs breast ultrasound — better for cyst vs solid in young/dense breasts; not primary screening alone in average-risk older women",
+      "vs MRI — highest sensitivity; used for high-risk surveillance, not routine screening",
+    ],
+    pediatrics:
+      "Breast cancer screening mammography is an adult test. Adolescent breast masses are evaluated with ultrasound first (fibroadenoma most common). Juvenile breast imaging rarely uses mammography unless malignancy strongly suspected.",
   },
   {
     id: "polypectomy",

@@ -1207,7 +1207,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "gluconeogenesis",
-    name: "Gluconeogenesi",
+    name: "Gluconeogenesis",
     etymology:
       "Greek glykys = sweet + neo = new + genesis = origin — de novo synthesis of glucose from non-carbohydrate precursors",
     aliases: [
@@ -1253,7 +1253,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "glycogenolysis",
-    name: "Glycogenolysi",
+    name: "Glycogenolysis",
     etymology:
       "Greek glykys = sweet + gen = producing + lysis = breakdown — enzymatic degradation of stored glycogen to glucose-6-phosphate for rapid blood glucose maintenance",
     aliases: [
@@ -1426,7 +1426,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "lipolysis",
-    name: "Lipolysi",
+    name: "Lipolysis",
     etymology: "Greek lipos = fat + Greek lysis = loosening/breakdown",
     aliases: [
       "lipolysis",
@@ -1594,7 +1594,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "steroidogenesis",
-    name: "Steroidogenesi",
+    name: "Steroidogenesis",
     etymology:
       "Greek stereos = solid + Latin genesis = origin — biosynthetic pathway converting cholesterol into steroid hormones in adrenal cortex, gonads, and placenta",
     aliases: [
@@ -1640,7 +1640,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "fatty-acid-synthesis",
-    name: "Fatty Acid Synthesi",
+    name: "Fatty Acid Synthesis",
     etymology:
       "Latin fat + acidus = sour + Latin synthesis = putting together — cytosolic de novo lipogenesis assembling palmitate from acetyl-CoA units",
     aliases: [
@@ -1860,7 +1860,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "hydrolysis",
-    name: "Hydrolysi",
+    name: "Hydrolysis",
     etymology:
       "Greek hydor = water + lysis = loosening/breaking — chemical reaction cleaving a bond by addition of water, yielding two products; fundamental to digestion, metabolism, signal termination, and drug metabolism",
     aliases: [
@@ -2161,7 +2161,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "erythropoiesis",
-    name: "Erythropoiesi",
+    name: "Erythropoiesis",
     etymology:
       "Greek erythros = red + poiesis = making/formation",
     aliases: [
@@ -2202,7 +2202,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "porphyrin-synthesis",
-    name: "Porphyrin Synthesi",
+    name: "Porphyrin Synthesis",
     etymology:
       "Greek porphyra = purple + synthesis = putting together — multistep heme biosynthesis building tetrapyrrole porphyrin rings from glycine and succinyl-CoA for hemoglobin, myoglobin, and cytochromes",
     aliases: [
@@ -2682,6 +2682,47 @@ export const METABOLISM: MetabolismEntry[] = [
     ],
     pediatrics:
       "Premature infants have low vitamin E stores and risk hemolytic anemia. Abetalipoproteinemia presents in infancy with steatorrhea and acanthocytes — early high-dose vitamin E prevents irreversible spinocerebellar degeneration. CF and cholestatic liver disease in children require fat-soluble vitamin monitoring.",
+  },
+  {
+    id: "selenium-deficiency",
+    name: "Selenium Deficiency",
+    etymology:
+      "Greek selene = moon (named for its gray metallic luster) + Latin deficientia = lack — inadequate dietary selenium impairing selenoprotein-dependent antioxidant and thyroid hormone metabolism",
+    aliases: [
+      "selenium deficiency",
+      "selenium-deficiency",
+      "selenoprotein deficiency",
+      "low selenium",
+      "dietary selenium deficiency",
+    ],
+    definition:
+      "Micronutrient deficiency from inadequate dietary selenium — essential cofactor incorporated as selenocysteine into selenoproteins including glutathione peroxidase, thioredoxin reductase, and iodothyronine deiodinases — causing oxidative tissue injury, cardiomyopathy, skeletal myopathy, and immune dysfunction in severe or regional deficiency.",
+    pathway: [
+      "Dietary selenium (Brazil nuts, seafood, organ meats, grains from selenium-rich soil) → absorbed in duodenum → incorporated as selenocysteine (21st amino acid) into selenoproteins during translation",
+      "Glutathione peroxidase — reduces H₂O₂ and lipid peroxides using GSH; major antioxidant defense",
+      "Iodothyronine deiodinases — convert T4 to active T3 and regulate thyroid hormone metabolism",
+      "Thioredoxin reductase — maintains reduced thioredoxin for DNA synthesis and antioxidant cycling",
+      "Deficiency in selenium-poor soil regions, long-term TPN without trace elements, or malabsorption",
+    ],
+    boardsPearls: [
+      "Selenium deficiency → ↓ glutathione peroxidase activity → oxidative tissue damage",
+      "Keshan disease — dilated cardiomyopathy in selenium-deficient regions of China",
+      "Kashin-Beck disease — osteoarthropathy linked to selenium and iodine deficiency",
+      "Myopathy and cardiomyopathy from severe deficiency; immune impairment",
+      "Brazil nuts are extremely selenium-rich — toxicity possible with excess intake",
+      "vs vitamin E deficiency — also causes myopathy/ataxia but fat-soluble antioxidant pathway",
+      "vs iodine deficiency — goiter and hypothyroidism; selenium deiodinases link both micronutrients",
+    ],
+    distinguishFrom: [
+      "Selenium — the trace element itself; deficiency is the clinical syndrome from inadequate intake",
+      "Vitamin E deficiency — fat-soluble antioxidant; spinocerebellar ataxia in abetalipoproteinemia",
+      "Iodine deficiency — primary cause of endemic goiter and cretinism",
+      "Iron deficiency — microcytic anemia; different trace element",
+      "Zinc deficiency — acrodermatitis enteropathica, alopecia, immune dysfunction",
+      "Keshan disease — cardiomyopathy manifestation of selenium deficiency, not separate nutrient",
+    ],
+    pediatrics:
+      "Keshan disease historically affected children in selenium-deficient regions with fulminant cardiomyopathy. Premature infants on selenium-free TPN require trace element supplementation. Kashin-Beck disease (growth plate injury) occurs in iodine- and selenium-deficient areas affecting children.",
   },
   {
     id: "fish-oil",
@@ -3765,7 +3806,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "sphingolipidosis",
-    name: "Sphingolipidosi",
+    name: "Sphingolipidosis",
     etymology:
       "Greek sphingo = sphinx + lipid + -osis = condition — lysosomal storage disorders from impaired degradation of ceramide-based sphingolipids leading to substrate accumulation in tissues",
     aliases: [

@@ -1,13 +1,7 @@
 import { getProteinById } from "../../data/proteins";
-import {
-  getProteinImageAttributionForId,
-  getProteinImageCaptionForId,
-  getProteinImageForId,
-} from "../../data/proteinMedia";
 import { renderPopoverTitle } from "../popoverIcons";
 import {
   renderListSection,
-  renderPopoverMediaBlock,
   renderRichPopoverContent,
 } from "../popoverShared";
 
@@ -15,9 +9,6 @@ export function renderProteinPopover(proteinId: string, popover: HTMLDivElement)
   const protein = getProteinById(proteinId);
   if (!protein || !popover) return false;
 
-  const imageSrc = getProteinImageForId(proteinId);
-  const imageCaption = getProteinImageCaptionForId(proteinId);
-  const imageAttribution = getProteinImageAttributionForId(proteinId);
   const meta = [
     protein.gene ? `<strong>Gene:</strong> ${protein.gene}` : "",
     protein.location ? `<strong>Location:</strong> ${protein.location}` : "",
@@ -25,7 +16,8 @@ export function renderProteinPopover(proteinId: string, popover: HTMLDivElement)
     .filter(Boolean)
     .join(" · ");
 
-  const bodyContent = renderRichPopoverContent(
+  popover.classList.add("usmle-organ-popover--rich");
+  popover.innerHTML = renderRichPopoverContent(
     `
     ${renderPopoverTitle(protein.name, "protein", protein.etymology)}
     ${meta ? `<div class="usmle-organ-popover__layer">${meta}</div>` : ""}
@@ -38,23 +30,5 @@ export function renderProteinPopover(proteinId: string, popover: HTMLDivElement)
     ${renderListSection("Boards pearls", protein.boardsPearls)}
   `,
   );
-
-  popover.classList.add("usmle-organ-popover--rich");
-  if (imageSrc && imageCaption && imageAttribution) {
-    popover.classList.add("usmle-organ-popover--with-media");
-    popover.innerHTML = `
-      <div class="usmle-organ-popover__layout">
-        <div class="usmle-organ-popover__body">${bodyContent}</div>
-        ${renderPopoverMediaBlock({
-          src: imageSrc,
-          alt: `${protein.name} diagram`,
-          caption: imageCaption,
-          attribution: imageAttribution,
-        })}
-      </div>
-    `;
-  } else {
-    popover.innerHTML = bodyContent;
-  }
   return true;
 }

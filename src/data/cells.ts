@@ -11620,17 +11620,15 @@ export const CELLS: CellEntry[] = [
   },
   {
     id: "heinz-bodies",
-    name: "Heinz Bodie",
+    name: "Heinz Body",
     etymology:
       "eponym: Robert Heinz (German physician) + bodies = intracellular inclusions — denatured hemoglobin precipitates within red blood cells",
     aliases: [
       "heinz body",
-      "heinz bodies",
       "heinz body inclusion",
-      "heinz-ehrlich bodies",
+      "heinz-ehrlich body",
       "denatured hemoglobin inclusion",
       "hemoglobin precipitate in rbc",
-      "hemoglobin precipitates in rbc",
     ],
     definition:
       "Intracellular inclusions of oxidized, denatured hemoglobin attached to the inner surface of the red blood cell membrane — not visible on routine Wright-Giemsa stain but detected with supravital stains (crystal violet, brilliant cresyl blue, methyl violet); splenic macrophages remove them producing bite cells.",
@@ -11671,7 +11669,7 @@ export const CELLS: CellEntry[] = [
   },
   {
     id: "howell-jolly-bodies",
-    name: "Howell-Jolly Bodie",
+    name: "Howell-Jolly Body",
     etymology:
       "eponym: William Henry Howell and Justin Marie Jolly (early hematologists) + bodies = intracellular inclusions — nuclear DNA remnant in mature erythrocyte",
     aliases: [
@@ -11916,6 +11914,60 @@ export const CELLS: CellEntry[] = [
     ],
     pediatrics:
       "Prepubertal vaginal mucosa is thin with sparse rugae until estrogen rises at puberty. Estrogen deficiency in children (gonadal dysgenesis, aromatase deficiency) causes atrophic changes. Never attribute loss of rugae to normal prepubertal exam alone without clinical context.",
+  },
+  {
+    id: "platelet",
+    name: "Platelet",
+    etymology:
+      "Latin platea = flat little plate + -let = diminutive suffix — anucleate cytoplasmic fragment shed from megakaryocytes for primary hemostasis",
+    aliases: [
+      "platelet",
+      "thrombocyte",
+      "blood platelet",
+      "platelet cell fragment",
+    ],
+    definition:
+      "Small anucleate discoid cell fragments derived from megakaryocyte cytoplasm in bone marrow — circulate ~7–10 days and mediate primary hemostasis through adhesion, activation, aggregation, and release of granule contents (ADP, serotonin, thromboxane A₂, vWF, PDGF).",
+    characteristics: [
+      "Anucleate — no nucleus; contains α-granules (vWF, fibrinogen, PDGF), dense granules (ADP, serotonin, Ca²⁺), and open canalicular system",
+      "Normal count ~150,000–400,000/µL; lifespan ~7–10 days; removed by splenic macrophages",
+      "Primary hemostasis — adheres to exposed subendothelial collagen via GpIb–vWF, activates, aggregates via GpIIb/IIIa–fibrinogen bridges",
+      "Provides phospholipid surface (platelet factor 3) for coagulation cascade assembly after activation",
+      "Peripheral smear — small purple dot-like bodies between erythrocytes on Wright-Giemsa stain",
+    ],
+    normalLabResults: [
+      "Platelet count: ~150,000–400,000/µL (150–400 × 10³/µL)",
+      "Mean platelet volume (MPV): ~7–11 fL (lab-dependent)",
+      "Bleeding time: prolonged in qualitative or severe quantitative platelet disorders (less used clinically)",
+    ],
+    clinicalRelevance: [
+      "Thrombocytopenia — ITP, TTP/HUS, DIC, marrow failure, hypersplenism, drug-induced",
+      "Thrombocytosis — reactive (inflammation, iron deficiency) or myeloproliferative (essential thrombocythemia)",
+      "Glanzmann thrombasthenia — GpIIb/IIIa defect → defective aggregation",
+      "Bernard-Soulier syndrome — GpIb defect → defective adhesion; large platelets",
+      "Uremia and aspirin — platelet dysfunction with often normal count",
+      "von Willebrand disease — impaired platelet adhesion despite normal count",
+    ],
+    boardsPearls: [
+      "Platelet = thrombocyte = anucleate megakaryocyte fragment for primary hemostasis",
+      "GpIb binds vWF (adhesion); GpIIb/IIIa binds fibrinogen (aggregation) — final common pathway of platelet plug",
+      "ITP — isolated thrombocytopenia, mucocutaneous bleeding, normal PT/aPTT",
+      "TTP — schistocytes + thrombocytopenia + neurologic/renal findings; ADAMTS13 deficiency",
+      "Aspirin irreversibly inhibits platelet COX-1 → ↓ thromboxane A₂ for platelet lifespan (~7–10 days)",
+      "Thrombopoietin (TPO) from liver stimulates megakaryocyte maturation and platelet production",
+      "vs erythrocyte — RBC carries O₂; platelet mediates hemostasis",
+      "vs clotting factors — platelets = primary hemostasis; factors = secondary fibrin formation",
+    ],
+    distinguishFrom: [
+      "Megakaryocyte — bone marrow precursor that produces platelets by cytoplasmic fragmentation",
+      "Platelet count (lab value) — quantitative measurement, not the cell itself",
+      "Platelet aggregation — process of linking activated platelets, not the cell",
+      "Platelet-derived growth factor (PDGF) — growth factor released by platelets",
+      "Clotting factor — soluble plasma protein in coagulation cascade",
+      "Schistocyte — fragmented erythrocyte in MAHA, not a platelet",
+    ],
+    pediatrics:
+      "Neonatal platelet counts may be lower than adult range early in life; neonatal alloimmune thrombocytopenia (NAIT) causes severe thrombocytopenia from maternal anti-platelet IgG crossing placenta. ITP in children often follows viral illness and may resolve spontaneously. Avoid aspirin in children with viral febrile illness (Reye syndrome); aspirin used in Kawasaki disease with IVIG.",
   },
 ];
 

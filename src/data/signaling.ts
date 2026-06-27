@@ -2254,6 +2254,53 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Same aspirin/COX-1 mechanism in children; Reye syndrome risk with aspirin in viral illness — use alternatives for fever in pediatrics.",
   },
   {
+    id: "platelet-activating-factor",
+    name: "Platelet-Activating Factor",
+    etymology:
+      "platelet + activating + factor — phospholipid-derived autacoid (1-O-alkyl-2-acetyl-sn-glycero-3-phosphocholine) that potently activates platelets and mediates inflammation",
+    aliases: [
+      "platelet-activating factor",
+      "platelet activating factor",
+      "paf",
+      "paf-acether",
+      "acetyl glyceryl ether phosphorylcholine",
+      "agepc",
+    ],
+    type: "Metabolite",
+    mnemonic: "PAF = Potent Activator of platelets + Anaphylaxis/asthma Factor — think shock, bronchospasm, and aggregation in acute inflammation",
+    source:
+      "Synthesized by endothelial cells, platelets, neutrophils, macrophages, and mast cells from membrane phospholipids via PLA₂ and PAF acetyltransferase; released during inflammation, anaphylaxis, and tissue injury",
+    receptor: "PAF receptor (PAFR) — GPCR on platelets, leukocytes, and vascular endothelium",
+    function:
+      "Potent pro-inflammatory lipid mediator — activates and aggregates platelets, increases vascular permeability, causes bronchoconstriction and hypotension, recruits and activates neutrophils; central to anaphylaxis, asthma, shock, and ischemia-reperfusion injury.",
+    clinicalRelevance: [
+      "Anaphylaxis — mast cell degranulation releases PAF contributing to bronchospasm, hypotension, and urticaria",
+      "Asthma — PAF bronchoconstriction and airway inflammation",
+      "Sepsis and septic shock — PAF-mediated vasodilation and capillary leak",
+      "Ischemia-reperfusion injury — PAF from activated endothelium and leukocytes",
+      "Gastrointestinal mucosal injury — PAF implicated in NSAID-related ulcer pathogenesis",
+    ],
+    boardsPearls: [
+      "PAF = platelet-activating factor — phospholipid mediator, not peptide cytokine",
+      "Extremely potent at nanomolar concentrations — platelet aggregation, bronchoconstriction, hypotension",
+      "Anaphylaxis triad involves histamine, leukotrienes, and PAF among mediators",
+      "Synthesized from membrane phospholipid via PLA₂ pathway — same arachidonate precursor pool as eicosanoids",
+      "vs thromboxane A₂ — eicosanoid from COX pathway; PAF is separate alkyl-phospholipid mediator",
+      "vs histamine — mast cell vasoactive amine; PAF is lipid with broader inflammatory effects",
+      "PAF receptor antagonists studied in asthma and shock (limited clinical use on boards)",
+    ],
+    distinguishFrom: [
+      "Thromboxane A₂ — COX-derived eicosanoid promoting platelet aggregation",
+      "ADP — nucleotide platelet activator (P2Y12 receptor); separate pathway from PAF",
+      "Histamine — biogenic amine from mast cells in type I hypersensitivity",
+      "Leukotrienes — lipoxygenase pathway eicosanoids; bronchoconstriction in asthma",
+      "Prostacyclin (PGI₂) — anti-aggregatory eicosanoid opposing thromboxane",
+      "Tissue factor — initiates coagulation cascade; not a lipid inflammatory mediator",
+    ],
+    pediatrics:
+      "Anaphylaxis in children involves the same PAF-mediated vascular and bronchial effects; epinephrine remains first-line. Asthma exacerbations share PAF/leukotriene bronchoconstrictive pathways — inhaled corticosteroids and bronchodilators are mainstay therapy.",
+  },
+  {
     id: "p2y12-adp-receptor",
     name: "P2Y12 ADP Receptor",
     etymology: "P = purinergic + 2 = G-protein–coupled purinoceptor family + Y = pyrimidine (ADP/UTP preference) + 12 = subtype number + ADP = adenosine diphosphate",
