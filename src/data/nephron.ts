@@ -18,11 +18,8 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Greek nephros = kidney",
     aliases: [
       "nephron",
-      "nephrons",
       "renal nephron",
-      "renal nephrons",
       "kidney nephron",
-      "kidney nephrons",
     ],
     function:
       "Functional unit of the kidney — each nephron consists of a glomerulus (filtering capillary tuft in Bowman capsule) and a renal tubule (proximal tubule, loop of Henle, distal convoluted tubule) that modifies glomerular ultrafiltrate through reabsorption and secretion; urine from many nephrons drains via collecting ducts (ureteric bud derivative) to the renal pelvis.",
@@ -73,7 +70,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   },
   {
     id: "glomerulus",
-    name: "Glomerulus",
+    name: "Glomerulu",
     etymology: "Latin glomerulus = small ball",
     aliases: ["glomerulus", "glomeruli"],
     function:
@@ -92,11 +89,8 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Latin ultra = beyond + filtrare = to strain + -ate = product",
     aliases: [
       "ultrafiltrate",
-      "ultrafiltrates",
       "glomerular ultrafiltrate",
-      "glomerular ultrafiltrates",
       "glomerular filtrate",
-      "glomerular filtrates",
       "renal ultrafiltrate",
       "plasma ultrafiltrate",
     ],
@@ -125,9 +119,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Latin ad = toward + ferre = to carry + arteriole = small artery",
     aliases: [
       "afferent arteriole",
-      "afferent arterioles",
       "afferent glomerular arteriole",
-      "afferent glomerular arterioles",
       "incoming arteriole",
     ],
     function:
@@ -148,9 +140,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Latin ex = out + ferre = to carry + arteriole = small artery",
     aliases: [
       "efferent arteriole",
-      "efferent arterioles",
       "efferent glomerular arteriole",
-      "efferent glomerular arterioles",
       "outgoing arteriole",
     ],
     function:
@@ -167,22 +157,17 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   },
   {
     id: "peritubular-capillaries",
-    name: "Peritubular Capillaries",
+    name: "Peritubular Capillarie",
     etymology:
       "Latin peri = around + tubulus = little tube + capillaris = hairlike — capillaries encircling renal tubules",
     aliases: [
       "peritubular capillary",
-      "peritubular capillaries",
       "peritubular capillary network",
-      "peritubular capillary networks",
       "cortical peritubular capillaries",
       "peritubular capillary bed",
-      "peritubular capillary beds",
-      "postglomerular capillaries",
       "postglomerular capillary",
       "peri-tubular capillaries",
       "ptc",
-      "ptcs",
     ],
     function:
       "Low-pressure postglomerular capillary network surrounding cortical nephron tubules (proximal and distal convoluted tubules), arising from the efferent arteriole. Delivers O₂ for tubular active transport and receives reabsorbed water and solutes from the peritubular interstitium via Starling forces (low hydrostatic pressure, high plasma oncotic pressure after glomerular filtration) into venous drainage.",
@@ -210,12 +195,10 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Latin vas = vessel + recta = straight (hairpin straight vessels)",
     aliases: [
       "vasa recta",
-      "vasa recta capillaries",
       "vasa recta capillary",
       "medullary vasa recta",
       "juxtamedullary vasa recta",
       "countercurrent exchanger",
-      "countercurrent exchangers",
     ],
     function:
       "Hairpin peritubular capillaries arising from efferent arterioles of juxtamedullary nephrons — descend into the hypertonic renal medulla alongside the loop of Henle and ascend back to cortex, exchanging solutes and water passively to preserve the medullary osmotic gradient while delivering blood to the medulla.",
@@ -242,11 +225,8 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Latin proximus = nearest + Latin tubulus = little tube",
     aliases: [
       "proximal convoluted tubule",
-      "proximal convoluted tubules",
       "proximal tubule",
-      "proximal tubules",
       "proximal renal tubule",
-      "proximal renal tubules",
       "pct",
     ],
     function:
@@ -326,11 +306,8 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
     etymology: "Latin distare = stand apart + Latin convolvere = roll together + Latin tubulus = little tube",
     aliases: [
       "distal convoluted tubule",
-      "distal convoluted tubules",
       "distal tubule",
-      "distal tubules",
       "distal renal tubule",
-      "distal renal tubules",
       "dct",
     ],
     function:
@@ -385,7 +362,7 @@ export const NEPHRON_SEGMENTS: NephronSegmentEntry[] = [
   },
   {
     id: "juxtaglomerular-apparatus",
-    name: "Juxtaglomerular Apparatus",
+    name: "Juxtaglomerular Apparatu",
     etymology: "Latin juxta = near + glomerulus = small ball + Latin apparatus = equipment/structure",
     aliases: [
       "juxtaglomerular apparatus",

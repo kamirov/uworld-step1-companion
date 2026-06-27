@@ -116,22 +116,15 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek a- = without + pnoia = breathing",
     aliases: [
       "apnea",
-      "apneas",
       "apnoea",
-      "apnoeas",
       "apneic",
       "apneic episode",
-      "apneic episodes",
       "apneic spell",
-      "apneic spells",
       "cessation of breathing",
       "stopped breathing",
       "respiratory pause",
-      "respiratory pauses",
       "central apnea",
-      "central apneas",
       "obstructive apnea",
-      "obstructive apneas",
       "sleep apnea episode",
     ],
     definition:
@@ -210,12 +203,10 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "vesicular-breath-sounds",
-    name: "Vesicular Breath Sounds",
+    name: "Vesicular Breath Sound",
     etymology: "Latin vesicula = small sac/bladder (alveoli) + breath + sounds",
     aliases: [
-      "vesicular breath sounds",
       "vesicular breath sound",
-      "vesicular sounds",
       "vesicular sound",
       "normal vesicular breath sounds",
       "normal breath sounds",
@@ -254,14 +245,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "bronchial-breath-sounds",
-    name: "Bronchial Breath Sounds",
+    name: "Bronchial Breath Sound",
     etymology: "Greek bronchos = windpipe/airway + breath + sounds",
     aliases: [
-      "bronchial breath sounds",
       "bronchial breath sound",
-      "bronchial sounds",
       "bronchial sound",
-      "tubular breath sounds",
       "tubular breath sound",
       "bronchial breathing",
       "abnormal bronchial breath sounds",
@@ -303,16 +291,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin lobus = lobe + Latin consolidare = to make firm — replacement of alveolar air with fluid, cells, or tissue throughout an entire pulmonary lobe",
     aliases: [
       "lobar consolidation",
-      "lobar consolidations",
       "lung lobar consolidation",
       "pulmonary lobar consolidation",
       "consolidated lobe",
-      "consolidated lobes",
       "lobar pneumonia consolidation",
       "single lobe consolidation",
       "homogeneous lobar opacity",
       "lobar infiltrate",
-      "lobar infiltrates",
     ],
     definition:
       "Pathologic filling of alveolar spaces within an entire lung lobe — with inflammatory exudate, pus, blood, or cells — producing a dense airless region that conducts airway sounds and appears as homogeneous opacity on chest imaging.",
@@ -346,7 +331,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "tactile-fremitus",
-    name: "Tactile Fremitus",
+    name: "Tactile Fremitu",
     etymology:
       "Latin tactilis = able to be touched + Latin fremitus = murmur/vibration — palpable chest wall vibration during phonation",
     aliases: [
@@ -399,7 +384,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek bronchos = windpipe/airway + Greek phone = voice/sound",
     aliases: [
       "bronchophony",
-      "bronchophonies",
       "increased bronchophony",
       "positive bronchophony",
       "bronchophonic",
@@ -473,15 +457,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old English beorcan = bark (like a dog) + Middle English coughen = expel air",
     aliases: [
       "barking cough",
-      "barking coughs",
       "seal-like cough",
       "seal like cough",
       "seal bark cough",
       "croup cough",
       "croupy cough",
-      "croupy coughs",
       "brassy cough",
-      "brassy coughs",
     ],
     definition:
       "Harsh, seal-like or brassy cough caused by turbulent airflow through an inflamed subglottic airway — pathognomonic clinical sign of viral croup (laryngotracheobronchitis) in young children.",
@@ -518,11 +499,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek paroxysmos = sudden attack + Middle English whopen = cry out + onomatopoeia for inspiratory sound",
     aliases: [
       "paroxysmal whoop",
-      "paroxysmal whoops",
       "inspiratory whoop",
-      "inspiratory whoops",
       "whoop",
-      "whoops",
       "whooping",
       "whooping sound",
       "whooping cough sound",
@@ -564,9 +542,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "English thumb = digit + print = impression/mark + sign = clinical indicator",
     aliases: [
       "thumbprint sign",
-      "thumbprint signs",
       "thumb sign",
-      "thumb signs",
       "thumb sign on lateral neck x-ray",
       "thumb sign on lateral neck xray",
       "thumb sign on neck x-ray",
@@ -610,36 +586,23 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "crackles",
-    name: "Crackles",
+    name: "Crackle",
     etymology:
       "Middle English crakel = to make a sharp sound; rales (French râle = rattling/gurgling) — older synonym still common on boards and in clinical vignettes",
     aliases: [
-      "crackles",
       "crackle",
-      "lung crackles",
       "lung crackle",
-      "pulmonary crackles",
       "pulmonary crackle",
-      "rales",
       "rale",
-      "lung rales",
       "lung rale",
-      "pulmonary rales",
       "pulmonary rale",
-      "fine rales",
       "fine rale",
-      "coarse rales",
       "coarse rale",
-      "moist rales",
       "moist rale",
-      "dry rales",
       "dry rale",
-      "crepitant rales",
       "crepitant rale",
-      "crepitations",
       "crepitation",
       "lung crepitations",
-      "inspiratory rales",
       "inspiratory rale",
       "late inspiratory crackles",
       "early inspiratory crackles",
@@ -697,7 +660,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "rhonchi",
       "rhonchus",
-      "rhonchi breath sounds",
       "rhonchi breath sound",
       "low-pitched rhonchi",
       "sonorous rhonchi",
@@ -783,7 +745,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "difficulty swallowing",
       "difficult swallowing",
       "swallowing difficulty",
-      "swallowing difficulties",
       "impaired swallowing",
       "trouble swallowing",
       "can't swallow",
@@ -834,14 +795,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin globus = ball/sphere + Latin sensatio = perception — subjective feeling of a lump or tightness in the throat without true dysphagia or odynophagia",
     aliases: [
       "globus sensation",
-      "globus sensations",
       "globus",
       "globus pharyngeus",
       "globus hystericus",
       "lump in throat",
       "lump in the throat",
       "throat lump",
-      "throat lumps",
       "sensation of lump in throat",
       "feeling of lump in throat",
       "foreign body sensation in throat",
@@ -884,7 +843,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek odynē = pain + phagein = to eat/swallow — painful swallowing",
     aliases: [
       "odynophagia",
-      "odynophagias",
       "painful swallowing",
       "pain on swallowing",
       "pain with swallowing",
@@ -931,11 +889,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek oisophagos = gullet + dys = abnormal + Latin motus = movement — disordered peristalsis and sphincter function in the esophagus",
     aliases: [
       "esophageal dysmotility",
-      "esophageal dysmotilities",
       "esophageal motility disorder",
-      "esophageal motility disorders",
       "esophageal motility dysfunction",
-      "esophageal motility dysfunctions",
       "disordered esophageal motility",
       "impaired esophageal motility",
       "esophageal peristaltic dysfunction",
@@ -979,13 +934,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin supra = above + sternum = breastbone + retractio = drawn back",
     aliases: [
       "suprasternal retraction",
-      "suprasternal retractions",
       "suprasternal notch retraction",
-      "suprasternal notch retractions",
       "sternal retraction",
-      "sternal retractions",
       "jugular notch retraction",
-      "jugular notch retractions",
       "inspiratory suprasternal retraction",
     ],
     definition:
@@ -1024,7 +975,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin supra = above + pubis = pubic bone + Latin poena/pain = suffering — discomfort in the lower mid-abdomen over the bladder",
     aliases: [
       "suprapubic pain",
-      "suprapubic pains",
       "suprapubic discomfort",
       "suprapubic tenderness",
       "suprapubic cramping",
@@ -1033,7 +983,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "pain above the pubis",
       "pain above pubic bone",
       "bladder pain",
-      "bladder pains",
       "lower midline abdominal pain",
       "suprapubic abdominal pain",
     ],
@@ -1077,7 +1026,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek perinaion = space around the anus + Latin poena/pain = suffering — discomfort in the diamond-shaped region between the thighs encompassing the vulva or scrotum, anus, and surrounding skin",
     aliases: [
       "perineal pain",
-      "perineal pains",
       "perineal discomfort",
       "perineal tenderness",
       "perineal soreness",
@@ -1129,13 +1077,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek hepar = liver + Greek megas = large + -y = condition",
     aliases: [
       "hepatomegaly",
-      "hepatomegalies",
       "enlarged liver",
-      "enlarged livers",
       "liver enlargement",
-      "liver enlargements",
       "hepatic enlargement",
-      "hepatic enlargements",
       "big liver",
       "palpable liver enlargement",
     ],
@@ -1177,14 +1121,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek makros = large + kephalē = head + -y = condition",
     aliases: [
       "macrocephaly",
-      "macrocephalies",
       "macrocephalic",
       "large head",
-      "large heads",
       "enlarged head",
-      "enlarged heads",
       "big head",
-      "big heads",
       "increased head circumference",
       "head too large",
       "megacephaly",
@@ -1228,17 +1168,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin frons = forehead + bossa = bump/protuberance — prominent convex forehead projecting forward beyond the normal facial profile",
     aliases: [
       "frontal bossing",
-      "frontal bossings",
       "forehead bossing",
-      "forehead bossings",
       "prominent forehead",
-      "prominent foreheads",
       "protruding forehead",
-      "protruding foreheads",
       "frontal prominence",
-      "frontal prominences",
       "bossed forehead",
-      "bossed foreheads",
     ],
     definition:
       "Abnormal anterior projection or prominence of the frontal bone/forehead — a craniofacial dysmorphic sign seen in skeletal dysplasias, metabolic bone disease, and endocrine disorders; may occur with or without true macrocephaly.",
@@ -1277,19 +1211,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin bulla = bubble/swelling + fonticulus = small spring — tense or elevated anterior soft spot reflecting raised intracranial pressure or meningeal inflammation",
     aliases: [
       "bulging fontanelle",
-      "bulging fontanelles",
       "bulging fontanel",
-      "bulging fontanels",
       "bulging anterior fontanelle",
-      "bulging anterior fontanelles",
       "bulging soft spot",
-      "bulging soft spots",
       "full fontanelle",
-      "full fontanelles",
       "tense fontanelle",
-      "tense fontanelles",
       "elevated fontanelle",
-      "elevated fontanelles",
       "fontanelle bulging",
       "fontanel bulging",
     ],
@@ -1341,10 +1268,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek mikros = small + kephalē = head + -y = condition",
     aliases: [
       "microcephaly",
-      "microcephalies",
       "microcephalic",
       "small head",
-      "small heads",
       "decreased head circumference",
       "reduced head circumference",
       "head too small",
@@ -1383,17 +1308,13 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "diffuse-intracranial-calcifications",
-    name: "Diffuse Intracranial Calcifications",
+    name: "Diffuse Intracranial Calcification",
     etymology:
       "Latin diffusus = spread out + intra = within + cranium = skull + calcificare = to make lime — widespread calcium deposition throughout the brain parenchyma on neuroimaging",
     aliases: [
-      "diffuse intracranial calcifications",
       "diffuse intracranial calcification",
-      "diffuse brain calcifications",
       "diffuse brain calcification",
-      "diffuse cerebral calcifications",
       "diffuse cerebral calcification",
-      "diffuse cns calcifications",
       "diffuse cns calcification",
       "widespread intracranial calcifications",
       "scattered intracranial calcifications",
@@ -1434,7 +1355,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Middle English coughen = expel air",
     aliases: [
       "cough",
-      "coughs",
       "coughing",
       "chronic cough",
       "productive cough",
@@ -1474,13 +1394,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin non = not + Latin producere = to bring forth + Middle English coughen = expel air",
     aliases: [
       "nonproductive cough",
-      "nonproductive coughs",
       "non-productive cough",
-      "non-productive coughs",
       "dry cough",
-      "dry coughs",
       "unproductive cough",
-      "unproductive coughs",
       "cough without sputum",
       "cough without phlegm",
       "nonproductive dry cough",
@@ -1524,9 +1440,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek phlegma = inflammation/humor; historically one of the four humors — now refers to thick respiratory mucus",
     aliases: [
       "phlegm",
-      "phlegms",
       "thick sputum",
-      "thick sputums",
       "mucous sputum",
       "expectorated phlegm",
       "purulent sputum",
@@ -1570,11 +1484,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old English geolu = yellow + Latin sputum = that which is spit out",
     aliases: [
       "yellow sputum",
-      "yellow sputums",
       "yellow phlegm",
       "yellow expectoration",
       "yellow mucopurulent sputum",
-      "yellow mucopurulent sputums",
       "yellow purulent sputum",
       "yellow pus sputum",
     ],
@@ -1616,11 +1528,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old English grene = green + Latin sputum = that which is spit out",
     aliases: [
       "green sputum",
-      "green sputums",
       "green phlegm",
       "green expectoration",
       "green mucopurulent sputum",
-      "green mucopurulent sputums",
       "green purulent sputum",
       "green pus sputum",
       "greenish sputum",
@@ -1709,23 +1619,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "foul-smelling-stools",
-    name: "Foul-Smelling Stools",
+    name: "Foul-Smelling Stool",
     etymology:
       "Old English ful = rotten/offensive + Latin stilus = stalk/pole (historical stool) + Old English smellan = emit odor",
     aliases: [
-      "foul-smelling stools",
-      "foul smelling stools",
       "foul-smelling stool",
       "foul smelling stool",
       "foul stool",
-      "foul stools",
-      "malodorous stools",
       "malodorous stool",
-      "offensive stools",
       "offensive stool",
-      "bad smelling stools",
       "bad smelling stool",
-      "putrid stools",
       "putrid stool",
     ],
     definition:
@@ -1760,7 +1663,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "flatus",
-    name: "Flatus",
+    name: "Flatu",
     etymology:
       "Latin flatus = blowing, a breaking wind — passage of intestinal gas through the rectum",
     aliases: [
@@ -1773,7 +1676,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "rectal gas",
       "breaking wind",
       "fart",
-      "farts",
       "excessive flatus",
     ],
     definition:
@@ -1823,7 +1725,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "pneumaturia",
       "pneumouria",
-      "pneumourias",
       "air in urine",
       "gas in urine",
       "bubbly urine",
@@ -1915,17 +1816,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "mucus",
-    name: "Mucus",
+    name: "Mucu",
     etymology: "Latin mucus = slime",
     aliases: [
       "mucus",
       "mucous",
       "mucous secretion",
-      "mucous secretions",
       "mucous layer",
-      "mucous layers",
       "mucin secretion",
-      "mucin secretions",
       "airway mucus",
       "gastrointestinal mucus",
       "respiratory mucus secretion",
@@ -1966,9 +1864,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin saliva = spittle — watery oral secretion from major and minor salivary glands",
     aliases: [
       "saliva",
-      "salivas",
       "salivary secretion",
-      "salivary secretions",
       "oral saliva",
       "spit",
       "spittle",
@@ -2183,21 +2079,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "basal-lung-crackles",
-    name: "Basal Lung Crackles",
+    name: "Basal Lung Crackle",
     etymology:
       "Greek basis = base + Latin pulmo = lung + Middle English crakel = to make a sharp sound",
     aliases: [
-      "basal lung crackles",
       "basal lung crackle",
-      "basilar lung crackles",
       "basilar lung crackle",
-      "bibasilar crackles",
       "bibasilar crackle",
       "bibasilar rales",
-      "basilar crackles",
       "basilar crackle",
       "basilar rales",
-      "lung base crackles",
       "lung base crackle",
       "crackles at lung bases",
       "crackles at the lung bases",
@@ -2241,19 +2132,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English swellan = to grow larger + -ing = state — abnormal enlargement of a body part from fluid accumulation, inflammation, bleeding, or mass effect; Latin tumor = swelling (historical cardinal sign of inflammation, not neoplasm)",
     aliases: [
       "swelling",
-      "swellings",
       "swollen",
       "swollenness",
       "localized swelling",
-      "localized swellings",
       "local swelling",
-      "local swellings",
       "area of swelling",
       "areas of swelling",
       "soft tissue swelling",
-      "soft tissue swellings",
       "tissue swelling",
-      "tissue swellings",
     ],
     definition:
       "Enlargement or puffiness of a body region from interstitial fluid (edema), synovial effusion, inflammatory exudate, cellular infiltration, hematoma, lip swelling, lymph node enlargement, or mass — a nonspecific physical finding whose mechanism must be determined from context.",
@@ -2368,8 +2254,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "goiter",
       "goitre",
-      "goiters",
-      "goitres",
       "thyroid enlargement",
       "enlarged thyroid",
       "enlarged thyroid gland",
@@ -2413,15 +2297,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin sub = under + sternum = breastbone + guttur = throat (goiter) — thyroid enlargement extending below the thoracic inlet into the mediastinum",
     aliases: [
       "substernal goiter",
-      "substernal goiters",
       "retrosternal goiter",
-      "retrosternal goiters",
       "mediastinal goiter",
-      "mediastinal goiters",
       "intrathoracic goiter",
-      "intrathoracic goiters",
       "thoracic goiter",
-      "thoracic goiters",
       "retrosternal thyroid",
       "substernal thyroid",
       "mediastinal thyroid extension",
@@ -2462,13 +2341,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek thyreoeidēs = shield-shaped (thyroid) + French bruit = noise — audible vascular turbulence over an enlarged hypervascular thyroid gland",
     aliases: [
       "thyroid bruit",
-      "thyroid bruits",
       "thyroid vascular bruit",
-      "thyroid vascular bruits",
       "cervical thyroid bruit",
-      "cervical thyroid bruits",
       "goiter bruit",
-      "goiter bruits",
       "diffuse thyroid bruit",
     ],
     definition:
@@ -2511,7 +2386,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "lid lag",
       "lid-lag",
-      "lid lags",
       "von graefe sign",
       "von graefe's sign",
       "von Graefe sign",
@@ -2519,7 +2393,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "thyroid lid lag",
       "upper lid lag",
       "eyelid lag",
-      "eyelid lags",
     ],
     definition:
       "Physical sign in which the upper eyelid lags behind the globe during downward gaze — visible white sclera between the iris and upper lid as the eye looks down — classic of thyroid-associated ophthalmopathy and hyperthyroid sympathetic overactivity.",
@@ -2555,7 +2428,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "proptosis",
-    name: "Proptosis",
+    name: "Proptosi",
     etymology: "Greek pro = forward + ptosis = falling; forward displacement of the globe",
     aliases: [
       "proptosis",
@@ -2563,7 +2436,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "exophthalmus",
       "exophthalmia",
       "eye protrusion",
-      "bulging eyes",
       "bulging eye",
       "protruding eyes",
       "graves ophthalmopathy",
@@ -2643,12 +2515,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "periorbital edema",
       "periorbital oedema",
       "periorbital swelling",
-      "periorbital swellings",
       "periorbital puffiness",
       "periorbital puffinesses",
       "puffy eyes",
       "puffy eyelids",
-      "swollen eyelids",
       "swollen eyelid",
       "eye puffiness",
       "periocular edema",
@@ -2694,12 +2564,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English ancleow = ankle joint + swelling = enlargement from fluid accumulation — dependent interstitial edema localized to the ankles and feet",
     aliases: [
       "ankle swelling",
-      "ankle swellings",
-      "swollen ankles",
       "swollen ankle",
       "ankle edema",
       "ankle oedema",
-      "ankle edemas",
       "foot and ankle swelling",
       "feet and ankle swelling",
       "bilateral ankle swelling",
@@ -2775,11 +2642,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek paroxysmos = sudden attack + Latin hyper = over + tension = pressure — episodic severe blood pressure elevation",
     aliases: [
       "paroxysmal hypertension",
-      "paroxysmal hypertensions",
       "episodic hypertension",
-      "episodic hypertensions",
       "hypertensive paroxysm",
-      "hypertensive paroxysms",
       "intermittent hypertension",
       "labile hypertension",
       "catecholamine hypertension",
@@ -2962,7 +2826,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cheilosis",
-    name: "Cheilosis",
+    name: "Cheilosi",
     etymology:
       "Greek cheilos = lip + -osis = condition",
     aliases: [
@@ -3006,7 +2870,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "stomatitis",
-    name: "Stomatitis",
+    name: "Stomatiti",
     etymology:
       "Greek stoma = mouth + -itis = inflammation",
     aliases: [
@@ -3052,9 +2916,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "palpitations",
-    name: "Palpitations",
+    name: "Palpitation",
     etymology: "Latin palpitare = flutter",
-    aliases: ["palpitations", "palpitation"],
+    aliases: ["palpitation"],
     definition:
       "Awareness of one's own heartbeat, described as racing, pounding, fluttering, or skipping beats.",
     mechanism:
@@ -3090,13 +2954,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English fæst = firm/quick + heart + beat — perceived or measured heart rate above expected for age and clinical context",
     aliases: [
       "fast heartbeat",
-      "fast heartbeats",
       "fast heart rate",
-      "fast heart rates",
       "rapid heartbeat",
-      "rapid heartbeats",
       "rapid heart rate",
-      "rapid heart rates",
       "quick heartbeat",
       "quick heart rate",
       "racing heart",
@@ -3105,7 +2965,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "elevated heart rate",
       "increased heart rate",
       "tachycardia",
-      "tachycardias",
     ],
     definition:
       "Heart rate above the normal resting range for age and context — may be physiologic (sinus tachycardia) or pathologic (arrhythmia, hyperthyroidism, sepsis, catecholamine excess) — often described with palpitations but can be detected only on exam or monitor.",
@@ -3178,13 +3037,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "syncopal",
       "syncopal episode",
-      "syncopal episodes",
       "syncopal event",
-      "syncopal events",
       "syncopal attack",
-      "syncopal attacks",
       "syncopal spell",
-      "syncopal spells",
       "syncopal faint",
       "syncopal fainting",
       "syncopal loss of consciousness",
@@ -3229,19 +3084,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "loss of consciousness",
       "losses of consciousness",
       "loc",
-      "locs",
       "loss of conscious",
       "unconsciousness",
       "unconscious episode",
-      "unconscious episodes",
       "unconscious spell",
-      "unconscious spells",
       "passed out",
       "passing out",
       "fainting spell",
-      "fainting spells",
       "blackout",
-      "blackouts",
       "blacked out",
       "blacking out",
     ],
@@ -3300,18 +3150,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "new-onset murmur",
       "new onset murmur",
-      "new onset murmurs",
-      "new-onset murmurs",
       "new murmur",
-      "new murmurs",
       "newly detected murmur",
-      "newly detected murmurs",
       "new cardiac murmur",
-      "new cardiac murmurs",
       "new heart murmur",
-      "new heart murmurs",
       "newly heard murmur",
-      "newly heard murmurs",
       "change in murmur",
       "changing murmur",
     ],
@@ -3352,13 +3195,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin sacire = to take hold of (seize)",
     aliases: [
       "seizure",
-      "seizures",
       "convulsion",
-      "convulsions",
       "fit",
-      "fits",
       "epileptic seizure",
-      "epileptic seizures",
     ],
     definition:
       "Transient episode of abnormal, excessive synchronous neuronal activity in the brain causing altered behavior, sensation, movement, or consciousness.",
@@ -3400,15 +3239,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin genitalis = pertaining to birth/reproduction + Latin laesio = injury/wound",
     aliases: [
       "genital lesion",
-      "genital lesions",
       "genital ulcer",
-      "genital ulcers",
       "genital sore",
-      "genital sores",
       "genital rash",
       "genital rashes",
       "anogenital lesion",
-      "anogenital lesions",
     ],
     definition:
       "Any abnormal cutaneous or mucosal finding on external genitalia or perineum — ulcer, vesicle, papule, plaque, or wart — whose morphology and pain profile narrow the infectious, inflammatory, or neoplastic differential.",
@@ -3451,18 +3286,13 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "generalized tonic-clonic seizure",
       "generalized tonic clonic seizure",
-      "generalized tonic-clonic seizures",
       "gtcs",
       "gtc seizure",
-      "gtc seizures",
       "grand mal seizure",
-      "grand mal seizures",
       "grand mal",
       "tonic-clonic seizure",
       "tonic clonic seizure",
-      "tonic-clonic seizures",
       "generalized convulsion",
-      "generalized convulsions",
     ],
     definition:
       "Generalized epileptic seizure with an initial tonic phase (sustained muscle stiffening, apnea, cyanosis) followed by a clonic phase (rhythmic jerking of all limbs) and postictal confusion — the classic convulsive seizure pattern arising from bilateral cortical or subcortical networks.",
@@ -3505,12 +3335,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "tonic phase",
       "tonic",
       "tonic contraction",
-      "tonic contractions",
       "tonic stiffening",
       "tonic rigidity",
       "seizure tonic phase",
       "tonic seizure",
-      "tonic seizures",
     ],
     definition:
       "Initial phase of a generalized convulsive seizure characterized by sustained bilateral muscle stiffening, loss of consciousness, apnea, and cyanosis — precedes the clonic phase in tonic-clonic seizures.",
@@ -3554,7 +3382,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "clonic movements",
       "seizure clonic phase",
       "clonic seizure",
-      "clonic seizures",
     ],
     definition:
       "Rhythmic, alternating contraction and relaxation of limb muscles following the tonic phase in a generalized tonic-clonic seizure — produces visible convulsive jerking until exhaustion of the seizure discharge.",
@@ -3618,15 +3445,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "prodromal",
       "prodromal phase",
-      "prodromal phases",
       "prodromal period",
-      "prodromal periods",
-      "prodromal symptoms",
       "prodromal symptom",
       "prodromal stage",
-      "prodromal stages",
       "prodrome",
-      "prodromes",
       "prodromic",
     ],
     definition:
@@ -3664,12 +3486,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin febris = fever, heat",
     aliases: [
       "fever",
-      "fevers",
       "febrile",
       "febrile illness",
       "febrile illnesses",
       "pyrexia",
-      "pyrexias",
       "hyperthermia febrile",
       "elevated temperature",
       "high temperature",
@@ -3724,10 +3544,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "toxic-appearing patient",
       "toxic appearing patient",
-      "toxic-appearing patients",
-      "toxic appearing patients",
       "toxic appearance",
-      "toxic appearances",
       "toxic-appearing child",
       "toxic appearing child",
       "toxic-appearing infant",
@@ -3778,7 +3595,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "night-sweats",
-    name: "Night Sweats",
+    name: "Night Sweat",
     etymology: "Old English niht = night + swat = perspiration",
     aliases: [
       "night sweats",
@@ -3858,7 +3675,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old French failir = to miss + Old English gewiht = heaviness — inadequate increase in body weight for age over time, especially in infants and children",
     aliases: [
       "failure to gain weight",
-      "failure to gain weights",
       "poor weight gain",
       "inadequate weight gain",
       "suboptimal weight gain",
@@ -3926,7 +3742,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "difficult latches",
       "unable to latch",
       "latch difficulty",
-      "latch difficulties",
       "poor breastfeeding latch",
       "weak latch",
       "weak latches",
@@ -3967,13 +3782,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin sugere = to suck + poor = inadequate — weak, disorganized, or absent sucking effort during feeding",
     aliases: [
       "poor suck",
-      "poor sucks",
       "weak suck",
-      "weak sucks",
       "weak sucking",
       "poor sucking",
       "ineffective suck",
-      "ineffective sucks",
       "ineffective sucking",
       "decreased suck",
       "decreased sucking",
@@ -4022,11 +3834,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "cachectic",
       "cachexia",
-      "cachexias",
       "cachectic appearance",
-      "cachectic appearances",
       "wasting syndrome",
-      "wasting syndromes",
       "catabolic wasting",
       "severe wasting",
       "emaciated",
@@ -4069,7 +3878,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old English gewiht = heaviness + gain = acquisition/increase",
     aliases: [
       "weight gain",
-      "weight gains",
       "unintentional weight gain",
       "unexplained weight gain",
       "gain in weight",
@@ -4114,10 +3922,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English heafod = head + ache = pain; Greek cephalalgia (kephalē = head + algos = pain)",
     aliases: [
       "headache",
-      "headaches",
       "head pain",
       "cephalalgia",
-      "cephalalgias",
       "cranial pain",
       "severe headache",
       "worst headache of life",
@@ -4161,7 +3967,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cyanosis",
-    name: "Cyanosis",
+    name: "Cyanosi",
     etymology: "Greek kyanos = dark blue + -osis = condition",
     aliases: [
       "cyanosis",
@@ -4205,7 +4011,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "central-cyanosis",
-    name: "Central Cyanosis",
+    name: "Central Cyanosi",
     etymology:
       "Latin centralis = pertaining to the center + Greek kyanos = dark blue + -osis = condition",
     aliases: [
@@ -4252,7 +4058,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "peripheral-cyanosis",
-    name: "Peripheral Cyanosis",
+    name: "Peripheral Cyanosi",
     etymology:
       "Greek peri = around + pherō = to bear/carry + kyanos = dark blue + -osis = condition",
     aliases: [
@@ -4260,7 +4066,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "peripheral cyanoses",
       "peripheral cyanotic",
       "acral cyanosis from low flow",
-      "cyanotic extremities",
       "cyanotic extremity",
       "blue extremities",
       "blue hands and feet from low flow",
@@ -4297,7 +4102,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "acrocyanosis",
-    name: "Acrocyanosis",
+    name: "Acrocyanosi",
     etymology:
       "Greek akron = extremity/tip + kyanos = dark blue + -osis = condition",
     aliases: [
@@ -4382,7 +4187,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "hypercapnia",
       "hypercarbia",
-      "hypercarbias",
       "elevated paco2",
       "increased paco2",
       "high arterial co2",
@@ -4425,7 +4229,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin re- = again + spirare = to breathe + Latin depressio = pressing down — reduced central drive or neuromuscular capacity to maintain adequate alveolar ventilation",
     aliases: [
       "respiratory depression",
-      "respiratory depressions",
       "respiratory depressant effect",
       "depressed respirations",
       "decreased respirations",
@@ -4505,7 +4308,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "cold = low temperature + Latin tolerare = to endure",
     aliases: [
       "cold intolerance",
-      "cold intolerances",
       "intolerance to cold",
       "sensitivity to cold",
       "cold sensitivity",
@@ -4545,7 +4347,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek choreia = dance",
     aliases: [
       "chorea",
-      "choreas",
       "choreic",
       "choreic movements",
       "choreiform",
@@ -4591,17 +4392,15 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hemiballismus",
-    name: "Hemiballismus",
+    name: "Hemiballismu",
     etymology:
       "Greek hēmi = half + ballismos = throwing — violent, flinging involuntary movements of the proximal muscles on one side of the body",
     aliases: [
       "hemiballismus",
       "hemiballism",
-      "hemiballisms",
       "hemi ballismus",
       "hemi-ballismus",
       "unilateral ballismus",
-      "flinging movements",
       "flinging movement",
       "ballismus",
       "ballism",
@@ -4639,14 +4438,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek dys = bad + praxis = action, deed",
     aliases: [
       "dyspraxia",
-      "dyspraxias",
       "developmental dyspraxia",
-      "developmental dyspraxias",
       "developmental coordination disorder",
-      "developmental coordination disorders",
       "dcd",
       "motor dyspraxia",
-      "motor dyspraxias",
       "childhood apraxia",
       "clumsiness",
       "clumsy child syndrome",
@@ -4682,19 +4477,15 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "myoclonus",
-    name: "Myoclonus",
+    name: "Myoclonu",
     etymology: "Greek mys = muscle + klonos = turmoil",
     aliases: [
       "myoclonus",
       "myoclonic",
       "myoclonic jerk",
-      "myoclonic jerks",
       "myoclonic movement",
-      "myoclonic movements",
       "muscle jerk",
-      "muscle jerks",
       "shock-like jerk",
-      "shock-like jerks",
       "startle myoclonus",
     ],
     definition:
@@ -4735,7 +4526,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "brain = cerebral organ + fog = obscuring mist/cloud",
     aliases: [
       "brain fog",
-      "brain fogs",
       "brain-fog",
       "cognitive fog",
       "mental fog",
@@ -4783,15 +4573,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek bradys = slow + kinesis = movement",
     aliases: [
       "bradykinesia",
-      "bradykinesias",
       "bradykinetic",
       "slowness of movement",
-      "slowness of movements",
       "slow movements",
       "poverty of movement",
-      "poverty of movements",
       "hypokinesia",
-      "hypokinesias",
     ],
     definition:
       "Slowness of initiation, execution, and amplitude of voluntary movement — a cardinal feature of parkinsonism and basal ganglia dopamine deficiency.",
@@ -4829,10 +4615,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "cogwheel = toothed gear wheel + Latin rigiditas = stiffness — ratchet-like resistance felt during passive limb movement in parkinsonism",
     aliases: [
       "cogwheel rigidity",
-      "cogwheel rigidities",
       "cog wheel rigidity",
       "ratchet rigidity",
-      "ratchet rigidities",
       "cogwheeling",
       "cogwheel phenomenon",
     ],
@@ -4870,13 +4654,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin intentio = stretching toward + tremor = shaking — tremor whose amplitude increases as a limb approaches a target",
     aliases: [
       "intention tremor",
-      "intention tremors",
       "intentional tremor",
-      "intentional tremors",
       "kinetic tremor",
       "terminal tremor",
       "cerebellar tremor",
-      "cerebellar tremors",
     ],
     definition:
       "Oscillatory tremor that worsens during visually guided movement toward a target — hallmark of cerebellar or cerebellar outflow pathway dysfunction, often accompanied by dysmetria and ataxia.",
@@ -4914,11 +4695,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "pill-rolling tremor",
       "pill rolling tremor",
-      "pill-rolling tremors",
-      "pill rolling tremors",
       "resting tremor",
       "parkinsonian tremor",
-      "parkinsonian tremors",
       "rest tremor",
     ],
     definition:
@@ -4957,7 +4735,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "jaundiced",
       "icterus",
       "hyperbilirubinemia",
-      "hyperbilirubinemias",
       "yellow jaundice",
       "clinical jaundice",
     ],
@@ -4996,7 +4773,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "scleral-icterus",
-    name: "Scleral Icterus",
+    name: "Scleral Icteru",
     etymology:
       "Greek skleros = hard + Latin icterus = jaundice — yellow discoloration of the sclera (white of the eye) from bilirubin deposition",
     aliases: [
@@ -5008,7 +4785,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "ocular icterus",
       "icteric sclera",
       "yellow sclera",
-      "yellow scleras",
       "icteric eyes",
     ],
     definition:
@@ -5042,7 +4818,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "pruritus",
-    name: "Pruritus",
+    name: "Pruritu",
     etymology: "Latin prurire = to itch — unpleasant cutaneous sensation provoking scratch; clinical term synonymous with itching",
     aliases: [
       "pruritus",
@@ -5086,7 +4862,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hemoptysis",
-    name: "Hemoptysis",
+    name: "Hemoptysi",
     etymology: "Greek haima = blood + ptysis = spitting",
     aliases: [
       "hemoptysis",
@@ -5127,19 +4903,15 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "black-colored-stools",
-    name: "Black-Colored Stools",
+    name: "Black-Colored Stool",
     etymology:
       "Old English blæc = dark + Latin color = hue + Old English stol = seat/chair (stool = feces) — feces appearing black on gross inspection",
     aliases: [
       "black-colored stools",
-      "black colored stools",
       "black colored stool",
       "black stool",
-      "black stools",
       "black bowel movement",
-      "black bowel movements",
       "dark stool",
-      "dark stools",
       "black feces",
       "black faeces",
       "melanic stool",
@@ -5175,7 +4947,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "melena",
     name: "Melena",
     etymology: "Greek melas = black",
-    aliases: ["melena", "melenas", "black tarry stool", "black tarry stools", "tarry stool", "tarry stools"],
+    aliases: ["melena", "black tarry stool", "tarry stool", "tarry stools"],
     definition:
       "Black, tarry, malodorous stools from digested blood — the pathologic form of black-colored stool indicating upper GI bleeding (see black-colored stools entry for non-bleeding causes).",
     mechanism:
@@ -5230,19 +5002,15 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "bloody-stools",
-    name: "Bloody Stools",
+    name: "Bloody Stool",
     etymology:
       "Old English blod = blood + Greek stolos = discharge — visible blood in or on stool, encompassing both bright red rectal bleeding (hematochezia) and digested black tarry stool (melena)",
     aliases: [
-      "bloody stools",
       "bloody stool",
       "blood in stool",
-      "blood in stools",
       "blood in the stool",
       "bloody bowel movement",
-      "bloody bowel movements",
       "bloody bm",
-      "bloody bms",
       "bloody diarrhea",
       "bloody diarrhoea",
       "bloody loose stools",
@@ -5325,7 +5093,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "red-brown urine",
       "red brown urine",
       "brown urine",
-      "brown urines",
       "dark brown urine",
       "cola-colored urine",
       "cola colored urine",
@@ -5444,7 +5211,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old English flanc = side of body + Latin poena = penalty/pain",
     aliases: [
       "flank pain",
-      "flank pains",
       "renal colic",
       "loin pain",
       "costovertebral pain",
@@ -5490,11 +5256,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English rudig = reddish + appearance = visible aspect — healthy or pathologic red/pink facial and skin complexion from increased cutaneous blood volume or hemoglobin",
     aliases: [
       "ruddy appearance",
-      "ruddy appearances",
       "ruddy complexion",
-      "ruddy complexions",
       "ruddy face",
-      "ruddy faces",
       "ruddy skin",
       "ruddy",
       "rubicund complexion",
@@ -5589,11 +5352,10 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "dysmorphic-red-blood-cells",
-    name: "Dysmorphic Red Blood Cells",
+    name: "Dysmorphic Red Blood Cell",
     etymology: "Greek dys = abnormal + morphe = form + Old English blod = blood",
     aliases: [
       "dysmorphic red blood cells",
-      "dysmorphic rbcs",
       "dysmorphic rbc",
       "acanthocytes in urine",
       "urinary acanthocytes",
@@ -5666,7 +5428,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "dysuria",
     name: "Dysuria",
     etymology: "Greek dys = painful/difficult + ouron = urine",
-    aliases: ["dysuria", "dysurias", "painful urination", "burning with urination", "burning on urination", "pain on urination"],
+    aliases: ["dysuria", "painful urination", "burning with urination", "burning on urination", "pain on urination"],
     definition: "Painful or burning sensation during urination.",
     mechanism:
       "Inflammation of the urethra or bladder mucosa (infection, chemical irritation, or stones) lowers the threshold for pain with urine flow.",
@@ -5700,7 +5462,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "increased urinary frequency",
       "urinary frequency",
-      "urinary frequencies",
       "frequency of urination",
       "frequent urination",
       "frequent voiding",
@@ -5754,11 +5515,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek ouron = urine + thraúō = to rub/wear + Latin dis- = apart + Old French cargier = to load (fluid exiting the urine canal)",
     aliases: [
       "urethral discharge",
-      "urethral discharges",
       "penile discharge",
-      "penile discharges",
       "urethral secretion",
-      "urethral secretions",
       "discharge from urethra",
       "discharge from the urethra",
       "purulent urethral discharge",
@@ -5802,7 +5560,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin malus = bad + Latin odor = smell + Latin vagina = sheath + Latin dis- = apart + Old French cargier = to load",
     aliases: [
       "malodorous vaginal discharge",
-      "malodorous vaginal discharges",
       "foul-smelling vaginal discharge",
       "foul smelling vaginal discharge",
       "foul vaginal discharge",
@@ -5852,9 +5609,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin haesitare = to stick/hesitate + Latin urina = urine",
     aliases: [
       "urinary hesitancy",
-      "urinary hesitancies",
       "hesitancy",
-      "hesitancies",
       "voiding hesitancy",
       "difficulty starting urination",
       "difficulty initiating urination",
@@ -5954,7 +5709,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin urina = urine + Latin urgentia = pressing need — sudden compelling desire to void immediately",
     aliases: [
       "urinary urgency",
-      "urinary urgencies",
       "urgency",
       "voiding urgency",
       "bladder urgency",
@@ -6182,7 +5936,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "acanthosis-nigricans",
-    name: "Acanthosis Nigricans",
+    name: "Acanthosis Nigrican",
     etymology: "Greek akantha = thorn/prickle + nigricans = becoming black",
     aliases: [
       "acanthosis nigricans",
@@ -6264,12 +6018,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English sealt = salt + craving = strong desire — compulsive appetite for salty foods reflecting volume depletion or mineralocorticoid deficiency",
     aliases: [
       "salt craving",
-      "salt cravings",
       "craving for salt",
       "craving for salty foods",
       "salt hunger",
       "salty food craving",
-      "salty food cravings",
       "desire for salt",
       "salt appetite",
     ],
@@ -6307,14 +6059,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "hyperpigmented",
       "hyperpigmented lesion",
-      "hyperpigmented lesions",
       "hyperpigmented skin",
       "hyperpigmented macule",
-      "hyperpigmented macules",
       "hyperpigmented patch",
       "hyperpigmented patches",
       "hyperpigmented plaque",
-      "hyperpigmented plaques",
       "darkly pigmented",
       "darkly pigmented lesion",
     ],
@@ -6410,21 +6159,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hiccups",
-    name: "Hiccups",
+    name: "Hiccup",
     etymology:
       "Latin hiccup (imitative) + Greek singultus = the catching of breath while sobbing — involuntary spasmodic contractions of the diaphragm with abrupt glottic closure producing the characteristic 'hic' sound",
     aliases: [
-      "hiccups",
       "hiccup",
       "hiccough",
-      "hiccoughs",
       "singultus",
       "singultuses",
-      "chronic hiccups",
       "chronic hiccup",
-      "intractable hiccups",
       "intractable hiccup",
-      "persistent hiccups",
       "persistent hiccup",
     ],
     definition:
@@ -6514,19 +6258,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek epi = upon + gaster = stomach + Latin poena = penalty/pain — discomfort localized to the upper central abdomen over the stomach and proximal duodenum",
     aliases: [
       "epigastric pain",
-      "epigastric pains",
       "epigastric discomfort",
-      "epigastric discomforts",
       "epigastric ache",
-      "epigastric aches",
       "epigastric tenderness",
       "epigastric soreness",
       "upper central abdominal pain",
-      "upper central abdominal pains",
       "pain in epigastrium",
       "pain in the epigastrium",
       "epigastric abdominal pain",
-      "epigastric abdominal pains",
       "stomach pain epigastric",
       "epigastric region pain",
     ],
@@ -6581,16 +6320,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin re- = back + gurgitare = to flood/surge — passive backward flow of swallowed contents into the mouth without forceful retching",
     aliases: [
       "regurgitation",
-      "regurgitations",
       "regurgitate",
-      "regurgitates",
       "regurgitating",
       "gastric regurgitation",
-      "gastric regurgitations",
       "esophageal regurgitation",
-      "esophageal regurgitations",
       "acid regurgitation",
-      "acid regurgitations",
       "gastroesophageal regurgitation",
       "effortless regurgitation",
       "passive regurgitation",
@@ -6678,18 +6412,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek hyper = excessive + Greek phagein = to eat",
     aliases: [
       "hyperphagia",
-      "hyperphagias",
       "polyphagia",
-      "polyphagias",
       "increased appetite",
-      "increased appetites",
       "excessive appetite",
-      "excessive appetites",
       "excessive hunger",
       "voracious appetite",
-      "voracious appetites",
       "ravenous appetite",
-      "ravenous appetites",
       "overeating",
       "compulsive eating",
       "hyperphagic",
@@ -6739,7 +6467,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "eponym: Adolf Kussmaul + English breathing = respiration pattern",
     aliases: [
       "kussmaul breathing",
-      "kussmaul respirations",
       "kussmaul respiration",
       "kussmaul breathing pattern",
       "deep rapid breathing",
@@ -6781,19 +6508,15 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek tachys = swift + pnoia = breathing — abnormally increased respiratory rate",
     aliases: [
       "tachypnea",
-      "tachypneas",
       "tachypnoea",
-      "tachypnoeas",
       "tachypneic",
       "tachypnoeic",
       "rapid breathing",
       "rapid respiration",
-      "rapid respirations",
       "increased respiratory rate",
       "elevated respiratory rate",
       "fast breathing",
       "polypnea",
-      "polypneas",
     ],
     definition:
       "Objective sign of abnormally elevated respiratory rate — faster than age-appropriate normal — reflecting increased ventilatory drive from hypoxemia, hypercapnia, metabolic acidosis, pain, fever, anxiety, or pulmonary/cardiac pathology; may occur with normal, increased, or decreased tidal volume.",
@@ -6838,11 +6561,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English sceald = not deep + Old English bræth = breath — respiration with reduced tidal volume per breath",
     aliases: [
       "shallow breathing",
-      "shallow breathings",
       "shallow breath",
-      "shallow breaths",
       "shallow respiration",
-      "shallow respirations",
       "shalow breathing",
       "shalow breath",
       "rapid shallow breathing",
@@ -6893,7 +6613,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "eponym: John Cheyne + William Stokes (Irish physicians) + English respiration = breathing pattern",
     aliases: [
       "cheyne-stokes respiration",
-      "cheyne-stokes respirations",
       "cheyne-stokes breathing",
       "cheyne-stokes",
       "cheyne stokes",
@@ -6980,10 +6699,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek bradys = slow + kardia = heart — abnormally slow heart rate",
     aliases: [
       "bradycardia",
-      "bradycardias",
       "bradycardic",
       "slow heart rate",
-      "slow heart rates",
       "decreased heart rate",
       "heart rate slow",
       "hr slow",
@@ -7023,7 +6740,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "dry-mucous-membranes",
-    name: "Dry Mucous Membranes",
+    name: "Dry Mucous Membrane",
     etymology: "dry = lacking moisture + Latin mucus = slime + Latin membrana = thin skin",
     aliases: ["dry mucous membranes", "dry mucosa"],
     definition:
@@ -7080,7 +6797,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hyperactive-bowel-sounds",
-    name: "Hyperactive Bowel Sounds",
+    name: "Hyperactive Bowel Sound",
     etymology: "Greek hyper = excessive + active = doing + intestine + audible findings",
     aliases: ["hyperactive bowel sounds", "increased bowel sounds"],
     definition:
@@ -7108,14 +6825,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "decreased-bowel-sounds",
-    name: "Decreased Bowel Sounds",
+    name: "Decreased Bowel Sound",
     etymology: "Latin de = down + creare = grow + intestine + audible findings",
     aliases: [
-      "decreased bowel sounds",
       "decreased bowel sound",
-      "hypoactive bowel sounds",
       "hypoactive bowel sound",
-      "diminished bowel sounds",
       "diminished bowel sound",
       "reduced bowel sounds",
       "quiet bowel sounds",
@@ -7157,9 +6871,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "redness",
       "red",
       "rubor",
-      "rubors",
       "red discoloration",
-      "red discolorations",
       "erythematous redness",
       "localized redness",
       "local redness",
@@ -7238,7 +6950,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin pallere = to be pale + -or = state of",
     aliases: [
       "pallor",
-      "pallors",
       "pallid",
       "pallidness",
       "paleness",
@@ -7246,7 +6957,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "pale skin",
       "pale complexion",
       "circumoral pallor",
-      "circumoral pallors",
     ],
     definition:
       "Abnormal paleness of skin, mucous membranes, or nail beds from reduced cutaneous blood flow or decreased hemoglobin concentration — blanches with pressure when due to vasoconstriction but persists when due to anemia.",
@@ -7287,9 +6997,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "clammy",
       "clammy skin",
-      "clammy skins",
       "clammy extremities",
-      "clammy hands",
       "clammy hand",
       "cool clammy skin",
       "cool and clammy",
@@ -7339,7 +7047,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English cald = low temperature + swætan = to perspire — perspiration accompanied by cutaneous vasoconstriction or fear-mediated sympathetic activation, felt as clammy or chilled sweating",
     aliases: [
       "cold sweat",
-      "cold sweats",
       "breaking out in a cold sweat",
       "broke out in a cold sweat",
       "cold clammy sweat",
@@ -7381,14 +7088,13 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "diaphoresis",
-    name: "Diaphoresis",
+    name: "Diaphoresi",
     etymology:
       "Greek dia = through + phorein = to carry — perspiration carried through the skin; eccrine sweat secretion",
     aliases: [
       "diaphoresis",
       "diaphoretic",
       "diaphoretic episode",
-      "diaphoretic episodes",
       "profuse sweating",
       "profuse perspiration",
       "sweating",
@@ -7443,14 +7149,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin pilus = hair + erection = standing up — contraction of arrector pili muscles causing hairs to stand erect ('goosebumps')",
     aliases: [
       "piloerection",
-      "piloerections",
       "goosebumps",
       "goose bumps",
       "goose flesh",
       "gooseflesh",
       "cutis anserina",
       "horripilation",
-      "horripilations",
       "hair standing on end",
       "bristling of hair",
     ],
@@ -7485,18 +7189,15 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "sweaty-palms",
-    name: "Sweaty Palms",
+    name: "Sweaty Palm",
     etymology:
       "Old English swætan = to perspire + Latin palma = palm of the hand — excess eccrine sweat on the volar hand surfaces",
     aliases: [
-      "sweaty palms",
       "sweaty palm",
       "palmar sweating",
       "palmar hyperhidrosis",
-      "sweaty hands",
       "sweaty hand",
       "clammy palms",
-      "clammy hands",
       "moist palms",
       "wet palms",
       "palmar diaphoresis",
@@ -7534,12 +7235,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "dactylitis",
-    name: "Dactylitis",
+    name: "Dactyliti",
     etymology: "Greek daktylos = finger/toe + -itis = inflammation",
     aliases: [
       "dactylitis",
       "sausage digit",
-      "sausage digits",
       "sausage finger",
       "sausage toe",
     ],
@@ -7573,9 +7273,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin unguis = nail + pitting = small depression — focal defects in the nail plate from abnormal keratinization at the nail matrix",
     aliases: [
       "nail pitting",
-      "nail pits",
       "nail pit",
-      "pitted nails",
       "pitted nail",
       "nail plate pitting",
       "matrix pitting",
@@ -7613,7 +7311,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "onycholysis",
-    name: "Onycholysis",
+    name: "Onycholysi",
     etymology:
       "Greek onycho- = nail + lysis = loosening — separation of the nail plate from the underlying nail bed, usually beginning distally",
     aliases: [
@@ -7664,15 +7362,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek psōra = itch + -iasis = condition + Latin unguis = nail + Greek dys- = bad + trephein = nourish — nail matrix and bed changes in psoriasis reflecting psoriatic inflammation",
     aliases: [
       "psoriatic nail dystrophy",
-      "psoriatic nail dystrophies",
       "psoriatic nail disease",
-      "psoriatic nail changes",
       "psoriatic nail change",
       "nail psoriasis",
       "nail psoriases",
       "psoriatic nails",
       "psoriatic onychodystrophy",
-      "psoriatic onychodystrophies",
     ],
     definition:
       "Characteristic nail plate and matrix abnormalities in psoriasis — including pitting, onycholysis, oil spots (salmon patches), subungual hyperkeratosis, and crumbling — that correlate with psoriatic skin disease and strongly associate with psoriatic arthritis, especially DIP joint involvement.",
@@ -7706,7 +7401,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "dermatitis",
-    name: "Dermatitis",
+    name: "Dermatiti",
     etymology:
       "Greek derma = skin + -itis = inflammation",
     aliases: [
@@ -7717,7 +7412,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eczematous dermatitis",
       "eczematous eruption",
       "inflammatory skin eruption",
-      "inflammatory skin eruptions",
     ],
     definition:
       "Inflammation of the skin producing erythema, pruritus, scaling, vesicles, or lichenification — encompasses eczematous, contact, seborrheic, and nutritional deficiency–related eruptions.",
@@ -7752,16 +7446,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "keratitis",
-    name: "Keratitis",
+    name: "Keratiti",
     etymology:
       "Greek keras = horn (cornea) + -itis = inflammation",
     aliases: [
       "keratitis",
       "keratitides",
       "corneal inflammation",
-      "corneal inflammations",
       "corneal infection",
-      "corneal infections",
       "infectious keratitis",
       "bacterial keratitis",
       "viral keratitis",
@@ -7850,7 +7542,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "circinate-balanitis",
-    name: "Circinate Balanitis",
+    name: "Circinate Balaniti",
     etymology:
       "Latin circinatus = ring-shaped + Greek balanos = acorn/glans penis + -itis = inflammation — annular erosive lesions of the glans in reactive arthritis",
     aliases: [
@@ -7965,7 +7657,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek telos = end + angeion = vessel + ektasis = dilation",
     aliases: [
       "telangiectasia",
-      "telangiectasias",
       "spider telangiectasia",
     ],
     definition:
@@ -7999,19 +7690,14 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "spider angiomata",
       "spider angioma",
-      "spider angiomas",
       "spider angiom",
       "spider nevi",
       "spider nevus",
       "spider telangiectasia",
-      "spider telangiectasias",
       "arterial spider",
-      "arterial spiders",
       "spider hemangioma",
-      "spider hemangiomas",
       "nevus araneus",
       "vascular spider",
-      "vascular spiders",
     ],
     definition:
       "Benign vascular lesion consisting of a central ascending arteriole with radiating dilated capillaries — blanches with pressure on the center then refills centrifugally — classically appears on the face, neck, upper chest, and arms in settings of estrogen excess or impaired hepatic estrogen metabolism.",
@@ -8045,7 +7731,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "calcinosis",
-    name: "Calcinosis",
+    name: "Calcinosi",
     etymology: "Latin calx = lime/calcium + -osis = condition",
     aliases: [
       "calcinosis",
@@ -8078,12 +7764,10 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cannon-a-waves",
-    name: "Cannon A Waves",
+    name: "Cannon A Wave",
     etymology: "English cannon = large gun + Latin unda = wave (jugular venous pulse) = forceful atrial contraction against closed tricuspid valve",
     aliases: [
-      "cannon a waves",
       "cannon a wave",
-      "cannon waves",
       "cannon wave",
       "cannon a",
       "giant a waves",
@@ -8126,15 +7810,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin bis = twice + findere = to split + Greek karotos = deep sleep (artery) + Latin pulsus = beat",
     aliases: [
       "bifid carotid pulse",
-      "bifid carotid pulses",
       "biphasic carotid pulse",
-      "biphasic carotid pulses",
       "double-peaked carotid pulse",
       "double peaked carotid pulse",
       "spike and dome pulse",
       "spike-and-dome pulse",
       "bisferiens pulse",
-      "bisferiens pulses",
       "carotid bisferiens",
     ],
     definition:
@@ -8171,16 +7852,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin bis = twice + findere = to split + Latin uvula = little grape — forked midline soft-palate projection",
     aliases: [
       "bifid uvula",
-      "bifid uvulas",
       "bifid uvulae",
       "split uvula",
-      "split uvulas",
       "forked uvula",
-      "forked uvulas",
       "cleft uvula",
-      "cleft uvulas",
       "bifurcated uvula",
-      "bifurcated uvulas",
     ],
     definition:
       "Uvula divided into two lobes by a midline cleft — a soft marker of incomplete palatal fusion that may indicate submucous cleft palate or 22q11.2 deletion even when overt cleft palate is absent.",
@@ -8217,21 +7893,16 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek karotos = deep sleep (carotid artery) + Old English up + strican = stroke — the rising phase of the arterial pulse felt at the neck during ventricular systole",
     aliases: [
       "carotid upstroke",
-      "carotid upstrokes",
       "carotid pulse upstroke",
-      "carotid pulse upstrokes",
       "carotid upstroke quality",
       "carotid pulse contour",
-      "carotid pulse contours",
       "carotid pulse character",
       "carotid pulse quality",
       "rate of carotid upstroke",
       "carotid arterial upstroke",
       "palpation of carotid upstroke",
       "slow carotid upstroke",
-      "slow carotid upstrokes",
       "delayed carotid upstroke",
-      "delayed carotid upstrokes",
       "weak carotid upstroke",
       "pulsus parvus et tardus",
       "parvus et tardus",
@@ -8276,23 +7947,15 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin rapidus = seizing + Greek anatole = rising + Greek karotos = deep sleep (artery) + Latin pulsus = beat",
     aliases: [
       "rapid upstroke carotid pulse",
-      "rapid upstroke carotid pulses",
       "rapid carotid upstroke",
-      "rapid carotid upstrokes",
       "brisk carotid upstroke",
-      "brisk carotid upstrokes",
       "brisk carotid pulse",
       "water hammer pulse",
       "water-hammer pulse",
-      "water hammer pulses",
       "collapsing pulse",
-      "collapsing pulses",
       "corrigan pulse",
-      "corrigan pulses",
       "bounding pulse",
-      "bounding pulses",
       "hyperdynamic pulse",
-      "hyperdynamic pulses",
     ],
     definition:
       "Abnormally quick systolic rise of the carotid arterial pulse — often followed by a rapid collapse (water-hammer or collapsing pulse) when diastolic runoff is increased; reflects high stroke volume, wide pulse pressure, or reduced arterial compliance.",
@@ -8343,7 +8006,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "pulse-synchronous head bobbing",
       "pulse synchronous head bobbing",
       "bobbing head",
-      "bobbing heads",
       "head nodding with pulse",
       "cardiac head bobbing",
     ],
@@ -8382,11 +8044,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eponym: Alfred de Musset + Latin signum = mark — visible head nod with each heartbeat in aortic regurgitation",
     aliases: [
       "de musset sign",
-      "de musset signs",
       "de musset's sign",
       "demusset sign",
       "musset sign",
-      "musset signs",
       "musset head bob",
       "musset head bobbing",
       "head bobbing sign aortic regurgitation",
@@ -8426,11 +8086,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eponym: Dominic Corrigan + Latin signum = mark — visible bounding and collapsing arterial pulsation in severe aortic regurgitation",
     aliases: [
       "corrigan sign",
-      "corrigan signs",
       "corrigan's sign",
       "corrigan pulse sign",
       "corrigan pulse",
-      "corrigan pulses",
       "corrigan water hammer pulse",
       "water hammer sign",
       "water-hammer sign",
@@ -8473,13 +8131,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eponym: Ludwig Traube + Latin signum = mark — pistol-shot systolic sound heard over the femoral artery in aortic regurgitation",
     aliases: [
       "traube sign",
-      "traube signs",
       "traube's sign",
       "traubes sign",
       "pistol shot sign",
       "pistol-shot sign",
-      "pistol shot signs",
-      "pistol-shot signs",
       "pistol shot femoral sign",
       "pistol-shot femoral sign",
       "pistol shot sound femoral artery",
@@ -8516,16 +8171,12 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "muffled-heart-sounds",
-    name: "Muffled Heart Sounds",
+    name: "Muffled Heart Sound",
     etymology: "Middle English muffle = wrap/deaden + heart + Latin sonus = sound",
     aliases: [
-      "muffled heart sounds",
       "muffled heart sound",
-      "distant heart sounds",
       "distant heart sound",
-      "diminished heart sounds",
       "diminished heart sound",
-      "faint heart sounds",
       "faint heart sound",
       "muffled heart tones",
       "soft heart sounds",
@@ -8566,9 +8217,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin jugulum = throat/collarbone + vena = vein + pressura = pressing force",
     aliases: [
       "jugular venous pressure",
-      "jugular venous pressures",
       "jvp",
-      "jvps",
       "jugular venous distention",
       "jugular venous distension",
       "jvd",
@@ -8614,11 +8263,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "jugular venous pressure + waveform = shape of pressure tracing over cardiac cycle",
     aliases: [
       "jvp waveform",
-      "jvp waveforms",
       "jugular venous pulse",
-      "jugular venous pulses",
       "jugular venous waveform",
-      "jugular venous waveforms",
       "jvp contour",
       "jvp tracing",
       "neck vein waveform",
@@ -8666,14 +8312,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "friedreich sign",
       "friedreich's sign",
-      "friedreich signs",
       "friedreich sign jvp",
       "prominent y descent",
-      "prominent y descents",
       "rapid y descent",
-      "rapid y descents",
       "steep y descent",
-      "steep y descents",
     ],
     definition:
       "Prominent, rapid diastolic collapse (steep y descent) of the jugular venous pulse — reflects abrupt early diastolic ventricular filling when the tricuspid valve opens in constrictive pericarditis or severe tricuspid regurgitation.",
@@ -8712,7 +8354,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "kehr sign",
       "kehr's sign",
-      "kehr signs",
       "kehr phenomenon",
       "left shoulder pain splenic rupture",
       "referred shoulder pain diaphragm",
@@ -8755,7 +8396,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym Adolf Kussmaul + Latin signum = mark — jugular venous finding distinct from Kussmaul respirations",
     aliases: [
       "kussmaul sign",
-      "kussmaul signs",
       "kussmaul's sign",
       "kussmaul jugular sign",
       "kussmaul jvp sign",
@@ -8804,10 +8444,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym José Manuel Rivero-Carvallo (Mexican cardiologist) + Latin signum = mark — inspiratory augmentation of a tricuspid murmur",
     aliases: [
       "carvallo sign",
-      "carvallo signs",
       "carvallo's sign",
       "carvalho sign",
-      "carvalho signs",
       "rivero-carvallo sign",
       "rivero carvallo sign",
       "inspiratory increase in tricuspid murmur",
@@ -8885,8 +8523,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin lympha = clear fluid + Greek aden = gland + -pathy = disease",
     aliases: [
       "lymphadenopathy",
-      "lymphadenopathies",
-      "enlarged lymph nodes",
       "enlarged lymph node",
       "lymph node enlargement",
       "lymph node swelling",
@@ -8927,13 +8563,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "neck mass",
       "neck masses",
       "neck lump",
-      "neck lumps",
       "neck swelling",
-      "neck swellings",
       "cervical mass",
       "cervical masses",
       "cervical lump",
-      "cervical lumps",
       "anterior neck mass",
       "anterior neck masses",
       "lateral neck mass",
@@ -8996,15 +8629,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eponym: Rudolf Virchow (German pathologist) + Latin nodus = knot — enlarged left supraclavicular lymph node from metastatic abdominal or thoracic malignancy (Troisier sign when clinically evident)",
     aliases: [
       "virchow node",
-      "virchow nodes",
       "virchow's node",
       "virchows node",
       "virchow lymph node",
-      "virchow lymph nodes",
       "left supraclavicular lymph node",
-      "left supraclavicular lymph nodes",
       "left supraclavicular node",
-      "left supraclavicular nodes",
       "troisier sign",
       "troisier's sign",
       "troisiers sign",
@@ -9045,15 +8674,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin tonsilla = little tonsil (almond) + Latin ex = out + sudare = to sweat — inflammatory material coating or filling palatine tonsillar crypts",
     aliases: [
       "tonsillar exudate",
-      "tonsillar exudates",
       "tonsillar exudation",
-      "tonsillar exudations",
       "tonsillar pus",
       "tonsillar discharge",
       "exudate on tonsils",
       "exudates on tonsils",
       "tonsillar coating",
-      "tonsillar coatings",
       "white patches on tonsils",
       "white exudate on tonsils",
     ],
@@ -9093,15 +8719,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin cervix = neck + lympha = clear fluid + Greek aden = gland + -pathy = disease",
     aliases: [
       "cervical lymphadenopathy",
-      "cervical lymphadenopathies",
       "cervical lymph node enlargement",
-      "cervical lymph node enlargements",
-      "enlarged cervical lymph nodes",
       "enlarged cervical lymph node",
       "cervical adenopathy",
-      "cervical adenopathies",
       "neck lymphadenopathy",
-      "neck lymphadenopathies",
       "neck lymph node enlargement",
       "swollen cervical lymph nodes",
       "swollen neck lymph nodes",
@@ -9155,9 +8776,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin bi = two + latus = side + Latin hilum = tracheobronchial root + Greek aden = gland + -pathy = disease",
     aliases: [
       "bilateral hilar adenopathy",
-      "bilateral hilar adenopathies",
       "bilateral hilar lymphadenopathy",
-      "bilateral hilar lymphadenopathies",
       "bhl",
       "bilateral hilar lymph node enlargement",
       "bilateral hilar node enlargement",
@@ -9249,15 +8868,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "air-fluid level",
       "air fluid level",
-      "air-fluid levels",
-      "air fluid levels",
       "air and fluid level",
-      "air and fluid levels",
       "hydroaeric level",
-      "hydroaeric levels",
       "gas-fluid level",
       "gas fluid level",
-      "gas-fluid levels",
       "fluid-air level",
       "fluid air level",
     ],
@@ -9301,7 +8915,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "pneumobilia",
       "aerobilia",
-      "aerobilias",
       "air in biliary tree",
       "air in the biliary tree",
       "gas in biliary tree",
@@ -9348,13 +8961,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English hwyrfel = rotating + Latin signum = mark — CT pattern of twisted mesentery and bowel swirling around a vascular axis",
     aliases: [
       "whirl sign",
-      "whirl signs",
       "whirlpool sign",
-      "whirlpool signs",
       "mesenteric whirl sign",
-      "mesenteric whirl signs",
       "swirl sign",
-      "swirl signs",
       "bowel whirl sign",
       "intestinal whirl sign",
     ],
@@ -9394,13 +9003,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek peri = around + osteon = bone + Latin reactio = response — new bone formation along the periosteum visible on radiography",
     aliases: [
       "periosteal reaction",
-      "periosteal reactions",
       "periosteal new bone formation",
       "periosteal response",
       "periosteal bone formation",
       "periosteitis ossificans",
       "periosteal elevation",
-      "periosteal elevations",
     ],
     definition:
       "Radiographic sign of osteoblastic activity along the periosteum — lamellated, spiculated, or solid new bone apposed to the cortex — reflecting infection, trauma, tumor, or systemic disease stimulating the periosteal cambium layer.",
@@ -9446,7 +9053,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "intraperitoneal free air",
       "intraperitoneal gas",
       "pneumoperitoneum",
-      "pneumoperitoneums",
       "free air under diaphragm",
       "free air under the diaphragm",
       "subdiaphragmatic free air",
@@ -9490,28 +9096,21 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin cavitas = hollow space + -ary = relating to + Latin laesio = injury/lesion",
     aliases: [
       "cavitary lesion",
-      "cavitary lesions",
       "cavitary lung lesion",
-      "cavitary lung lesions",
       "cavitary pulmonary lesion",
-      "cavitary pulmonary lesions",
       "pulmonary cavity",
       "pulmonary cavities",
       "lung cavity",
       "lung cavities",
       "cavitary nodule",
-      "cavitary nodules",
       "cavitary mass",
       "cavitary masses",
       "pulmonary cavitation",
       "lung cavitation",
       "cavitating lesion",
-      "cavitating lesions",
       "cavitation",
-      "cavitations",
       "cavitating",
       "cavitating nodule",
-      "cavitating nodules",
     ],
     definition:
       "Air-filled space within consolidated lung parenchyma, a nodule, or a mass — seen on chest imaging as a lucency (often with thick or irregular wall) surrounded by opacity; indicates necrosis, caseation, abscess formation, or destructive neoplastic/inflammatory process.",
@@ -9550,21 +9149,15 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "reticular-pulmonary-infiltrates",
-    name: "Reticular Pulmonary Infiltrates",
+    name: "Reticular Pulmonary Infiltrate",
     etymology:
       "Latin rete = net + -cular = small + Latin pulmo = lung + Latin infiltrare = to penetrate",
     aliases: [
-      "reticular pulmonary infiltrates",
       "reticular pulmonary infiltrate",
-      "reticular pulmonary infultrates",
       "reticular pulmonary infultrate",
-      "reticular infiltrates",
       "reticular infiltrate",
-      "reticular opacities",
       "reticular opacity",
-      "reticular densities",
       "reticular density",
-      "reticular lung densities",
       "reticular lung density",
       "reticular pattern on chest x-ray",
       "reticular pattern on chest x ray",
@@ -9607,27 +9200,18 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "patchy-pulmonary-infiltrates",
-    name: "Patchy Pulmonary Infiltrates",
+    name: "Patchy Pulmonary Infiltrate",
     etymology:
       "English patchy = irregularly distributed spots + Latin pulmo = lung + Latin infiltrare = to penetrate — nonuniform airspace or interstitial opacities scattered through lung fields on chest imaging",
     aliases: [
-      "patchy pulmonary infiltrates",
       "patchy pulmonary infiltrate",
-      "patchy lung infiltrates",
       "patchy lung infiltrate",
-      "patchy pulmonary infultrates",
       "patchy pulmonary infultrate",
-      "patchy lung infultrates",
       "patchy lung infultrate",
-      "patchy infiltrates",
       "patchy infiltrate",
-      "patchy opacities",
       "patchy opacity",
-      "patchy lung opacities",
       "patchy lung opacity",
-      "patchy airspace opacities",
       "patchy airspace opacity",
-      "patchy consolidations",
       "patchy consolidation",
       "patchy chest x-ray infiltrates",
       "patchy cxr infiltrates",
@@ -9680,26 +9264,19 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "segmental-pulmonary-infiltrates",
-    name: "Segmental Pulmonary Infiltrates",
+    name: "Segmental Pulmonary Infiltrate",
     etymology:
       "Latin segmentum = cut-off piece + Latin pulmo = lung + Latin infiltrare = to penetrate — airspace or interstitial opacity confined to one or more bronchopulmonary segments on chest imaging",
     aliases: [
-      "segmental pulmonary infiltrates",
       "segmental pulmonary infiltrate",
-      "segmental infiltrates",
       "segmental infiltrate",
-      "segmental lung infiltrates",
       "segmental lung infiltrate",
-      "segmental opacities",
       "segmental opacity",
       "segmental consolidation",
-      "segmental consolidations",
       "segmental pneumonia pattern",
-      "bronchopneumonia infiltrates",
       "bronchopneumonia infiltrate",
       "patchy segmental infiltrates",
       "wedge-shaped pulmonary infiltrate",
-      "wedge-shaped pulmonary infiltrates",
     ],
     definition:
       "Chest radiograph or CT finding of patchy or wedge-shaped opacity limited to one or more bronchopulmonary segments (not an entire lobe) — classic pattern of bronchopneumonia, aspiration, and some bacterial or atypical pneumonias.",
@@ -9736,7 +9313,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "macule",
     name: "Macule",
     etymology: "Latin macula = spot/stain",
-    aliases: ["macule", "macules", "macular lesion", "flat skin spot"],
+    aliases: ["macule", "macular lesion", "flat skin spot"],
     definition:
       "Flat, non-palpable circumscribed color change ≤1 cm in diameter; no elevation, depression, fluid, or texture change.",
     mechanism:
@@ -9795,7 +9372,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "papule",
     name: "Papule",
     etymology: "Latin papula = pimple",
-    aliases: ["papule", "papules", "papular lesion", "papular rash"],
+    aliases: ["papule", "papular lesion", "papular rash"],
     definition:
       "Solid, elevated skin lesion ≤1 cm in diameter without visible fluid; may be erythematous, violaceous, or flesh-colored.",
     mechanism:
@@ -9829,10 +9406,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "umbilication",
       "umbilicated lesion",
       "umbilicated papule",
-      "umbilicated papules",
       "central umbilication",
       "umbilicated nodule",
-      "umbilicated nodules",
       "dimpled center",
       "central depression",
     ],
@@ -9867,7 +9442,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "plaque",
     name: "Plaque",
     etymology: "French plaque = plate",
-    aliases: ["plaque", "plaques", "skin plaque", "cutaneous plaque"],
+    aliases: ["plaque", "skin plaque", "cutaneous plaque"],
     definition:
       "Solid, elevated skin lesion >1 cm in diameter formed by confluence of papules or broad inflammatory infiltration; may be scaly, indurated, or erythematous.",
     mechanism:
@@ -9898,13 +9473,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek polypous = many-footed (octopus) — pedunculated mucosal growth",
     aliases: [
       "polyp",
-      "polyps",
       "mucosal polyp",
-      "mucosal polyps",
       "pedunculated polyp",
-      "pedunculated polyps",
       "sessile polyp",
-      "sessile polyps",
     ],
     definition:
       "A projecting mass of tissue extending into a hollow organ lumen from the mucosal surface — pedunculated (on a stalk) or sessile (broad-based) — arising from localized hyperplasia, inflammation, or neoplasia.",
@@ -9942,7 +9513,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "vesicle",
     name: "Vesicle",
     etymology: "Latin vesicula = small bladder",
-    aliases: ["vesicle", "vesicles", "vesicular lesion", "vesicular rash"],
+    aliases: ["vesicle", "vesicular lesion", "vesicular rash"],
     definition:
       "Superficial elevated fluid-filled skin lesion ≤1 cm in diameter; fluid may be serous, serosanguineous, or cloudy.",
     mechanism:
@@ -9970,7 +9541,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "bullae",
     name: "Bullae",
     etymology: "Latin bulla = bubble",
-    aliases: ["bulla", "bullae", "blister", "blisters", "bullous lesion"],
+    aliases: ["bulla", "bullae", "blister", "bullous lesion"],
     definition:
       "Fluid-filled skin lesion >1 cm in diameter; may be tense or flaccid depending on level of split and roof integrity.",
     mechanism:
@@ -9998,7 +9569,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "nodule",
     name: "Nodule",
     etymology: "Latin nodulus = little knot",
-    aliases: ["nodule", "nodules", "skin nodule", "cutaneous nodule", "nodular lesion"],
+    aliases: ["nodule", "skin nodule", "cutaneous nodule", "nodular lesion"],
     definition:
       "Solid, palpable lesion usually >1 cm with depth in the dermis or subcutis; may be elevated, firm, tender, or mobile.",
     mechanism:
@@ -10027,7 +9598,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "pustule",
     name: "Pustule",
     etymology: "Latin pustula = blister/pimple filled with pus",
-    aliases: ["pustule", "pustules", "pustular lesion", "pustular rash", "pus-filled lesion"],
+    aliases: ["pustule", "pustular lesion", "pustular rash", "pus-filled lesion"],
     definition:
       "Small elevated lesion containing purulent material; may be sterile inflammatory pus or infectious pus.",
     mechanism:
@@ -10060,16 +9631,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old English hwele = raised welt",
     aliases: [
       "wheal",
-      "wheals",
       "welt",
-      "welts",
       "hive",
-      "hives",
       "urticaria",
       "urticarial rash",
       "urticarial eruption",
       "urticarial wheal",
-      "urticarial wheals",
     ],
     definition:
       "Transient, edematous, raised, often pruritic plaque that usually blanches and changes location or resolves within 24 hours.",
@@ -10104,13 +9671,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "winging of the scapula",
       "winged scapula",
-      "winged scapulas",
       "scapular winging",
-      "scapular wingings",
       "medial winging of the scapula",
       "lateral winging of the scapula",
       "winged shoulder blade",
-      "winged shoulder blades",
     ],
     definition:
       "Visible lifting of the medial or lateral border of the scapula away from the rib cage during shoulder motion — sign of paralysis or weakness of scapular stabilizer muscles or their innervating nerves.",
@@ -10146,7 +9710,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "cyst",
     name: "Cyst",
     etymology: "Greek kystis = bladder/sac",
-    aliases: ["cyst", "cysts", "epidermoid cyst", "sebaceous cyst", "cutaneous cyst"],
+    aliases: ["cyst", "epidermoid cyst", "sebaceous cyst", "cutaneous cyst"],
     definition:
       "Encapsulated, fluid- or keratin-filled cavity in skin or subcutaneous tissue; usually dome-shaped, mobile, and slow-growing.",
     mechanism:
@@ -10204,7 +9768,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "excoriated",
       "excoriation",
-      "excoriations",
       "excoriated skin",
       "excoriated lesions",
       "scratch marks",
@@ -10245,7 +9808,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "erosion",
     name: "Erosion",
     etymology: "Latin erodere = gnaw away",
-    aliases: ["erosion", "erosions", "skin erosion", "mucosal erosion", "eroded lesion"],
+    aliases: ["erosion", "skin erosion", "mucosal erosion", "eroded lesion"],
     definition:
       "Superficial loss of epidermis or mucosal epithelium that does not extend through the basement membrane; heals without scarring.",
     mechanism:
@@ -10273,7 +9836,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "ulcer",
     name: "Ulcer",
     etymology: "Latin ulcus = sore",
-    aliases: ["ulcer", "ulcers", "skin ulcer", "cutaneous ulcer", "mucosal ulcer", "ulceration"],
+    aliases: ["ulcer", "skin ulcer", "cutaneous ulcer", "mucosal ulcer", "ulceration"],
     definition:
       "Full-thickness loss of epidermis with extension into dermis or deeper tissue; often heals with scarring.",
     mechanism:
@@ -10305,7 +9868,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "fissure",
     name: "Fissure",
     etymology: "Latin fissura = cleft/split",
-    aliases: ["fissure", "fissures", "skin fissure", "crack", "cracked skin", "linear crack"],
+    aliases: ["fissure", "skin fissure", "crack", "cracked skin", "linear crack"],
     definition:
       "Linear split or crack in epidermis that may extend into dermis; often painful and located in dry or thickened skin.",
     mechanism:
@@ -10335,16 +9898,13 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Old Norse skal = shell",
     aliases: [
       "scale",
-      "scales",
       "scaling",
       "scaly",
       "scaly skin",
       "scaly lesion",
-      "scaly lesions",
       "scaly patch",
       "scaly patches",
       "scaly plaque",
-      "scaly plaques",
       "flaking skin",
     ],
     definition:
@@ -10375,7 +9935,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "crust",
     name: "Crust",
     etymology: "Latin crusta = shell/scab",
-    aliases: ["crust", "crusts", "crusting", "crusted lesion", "scab", "honey-colored crust"],
+    aliases: ["crust", "crusting", "crusted lesion", "scab", "honey-colored crust"],
     definition:
       "Dried serum, blood, pus, or exudate on the skin surface; often forms after vesicles, pustules, erosions, or ulcers drain.",
     mechanism:
@@ -10433,7 +9993,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "scar",
     name: "Scar",
     etymology: "Greek eschara = scab/hearth, later wound mark",
-    aliases: ["scar", "scars", "cicatrix", "cicatrices", "keloid", "hypertrophic scar"],
+    aliases: ["scar", "cicatrix", "cicatrices", "keloid", "hypertrophic scar"],
     definition:
       "Fibrous tissue replacing normal skin after dermal injury; may be flat, atrophic, hypertrophic, or extend beyond wound margins as a keloid.",
     mechanism:
@@ -10461,7 +10021,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "burrow",
     name: "Burrow",
     etymology: "Old English burg = shelter/dug place",
-    aliases: ["burrow", "burrows", "scabies burrow", "linear burrow", "serpiginous burrow"],
+    aliases: ["burrow", "scabies burrow", "linear burrow", "serpiginous burrow"],
     definition:
       "Thin, short, linear or wavy track in the stratum corneum made by an organism moving through superficial skin.",
     mechanism:
@@ -10489,7 +10049,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "comedo",
     name: "Comedo",
     etymology: "Latin comedere = eat up; historical 'worm-like' plug",
-    aliases: ["comedo", "comedone", "comedones", "blackhead", "blackheads", "whitehead", "whiteheads"],
+    aliases: ["comedo", "comedone", "blackhead", "whitehead", "whiteheads"],
     definition:
       "Keratin and sebum plug within a hair follicle; open comedo is a blackhead, closed comedo is a whitehead.",
     mechanism:
@@ -10522,11 +10082,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "indurated",
       "induration",
-      "indurations",
       "indurated lesion",
-      "indurated lesions",
       "indurated tissue",
-      "indurated tissues",
       "firm induration",
       "skin induration",
       "tissue induration",
@@ -10570,9 +10127,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin in = into + durus = hard + French plaque = plate",
     aliases: [
       "indurated plaque",
-      "indurated plaques",
       "firm plaque",
-      "firm plaques",
     ],
     definition:
       "Raised, well-demarcated skin lesion with increased firmness on palpation from dermal inflammation, infiltration, or sclerosis.",
@@ -10633,7 +10188,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "sacroiliitis",
-    name: "Sacroiliitis",
+    name: "Sacroiliiti",
     etymology:
       "Latin sacrum = sacred bone + Greek ilion = flank/hip + -itis = inflammation — inflammation of the sacroiliac joint",
     aliases: [
@@ -10645,7 +10200,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "si joint inflammation",
       "si jointitis",
       "inflamed sacroiliac joint",
-      "inflamed sacroiliac joints",
       "bilateral sacroiliitis",
     ],
     definition:
@@ -10680,18 +10234,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "enthesitis",
-    name: "Enthesitis",
+    name: "Enthesiti",
     etymology:
       "Greek enthesis = insertion + -itis = inflammation — inflammation at tendon or ligament attachment to bone",
     aliases: [
       "enthesitis",
       "enthesitides",
       "entheseal inflammation",
-      "entheseal inflammations",
       "insertional tendinitis",
       "insertional tendinitides",
       "enthesopathy",
-      "enthesopathies",
       "inflamed enthesis",
       "inflamed entheses",
       "enthesis inflammation",
@@ -10788,7 +10340,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin peripheria = circumference + Latin visio = sight — loss of vision in the outer visual field while central acuity may be preserved",
     aliases: [
       "decreased peripheral vision",
-      "decreased peripheral visions",
       "peripheral vision is decreased",
       "peripheral vision decreased",
       "peripheral vision loss",
@@ -10797,7 +10348,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "peripheral visual field loss",
       "peripheral field loss",
       "peripheral field defect",
-      "peripheral field defects",
       "reduced peripheral vision",
       "impaired peripheral vision",
       "tunnel vision",
@@ -10845,21 +10395,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin focus = hearth/central point + Greek neuron = nerve + Latin deficit = lacking — localized nervous system dysfunction from a lesion in a specific anatomic region",
     aliases: [
       "focal neurological deficit",
-      "focal neurological deficits",
       "focal neurologic deficit",
-      "focal neurologic deficits",
       "focal neurological sign",
-      "focal neurological signs",
       "focal neurologic sign",
-      "focal neurologic signs",
       "focal neurological finding",
-      "focal neurological findings",
       "focal neurologic finding",
-      "focal neurologic findings",
       "focal neuro deficit",
-      "focal neuro deficits",
       "focal cns deficit",
-      "focal cns deficits",
     ],
     definition:
       "Localized abnormality of neurologic function — motor weakness, sensory loss, aphasia, visual field defect, ataxia, or cranial nerve palsy — reflecting injury to a specific region of the CNS or peripheral nerve rather than diffuse global encephalopathy; classic presentation of stroke, tumor, abscess, or focal demyelination.",
@@ -10932,19 +10474,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cortical-signs",
-    name: "Cortical Signs",
+    name: "Cortical Sign",
     etymology:
       "Latin cortex = bark (outer layer) + Latin signum = mark — clinical findings localizing injury to cerebral cortex or cortical association pathways",
     aliases: [
-      "cortical signs",
       "cortical sign",
-      "cortical findings",
       "cortical finding",
       "cortical localization signs",
       "signs of cortical involvement",
       "cortical stroke signs",
       "cortical deficit",
-      "cortical deficits",
       "higher cortical dysfunction signs",
     ],
     definition:
@@ -11025,7 +10564,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "nodular-lymphangitis",
-    name: "Nodular Lymphangitis",
+    name: "Nodular Lymphangiti",
     etymology: "Latin nodulus = little knot + Latin lympha = clear fluid + Greek angeion = vessel + -itis = inflammation",
     aliases: [
       "nodular lymphangitis",
@@ -11069,7 +10608,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin purpura = purple",
     aliases: [
       "purpura",
-      "purpuras",
       "palpable purpura",
       "non-blanching purpura",
       "cutaneous purpura",
@@ -11115,7 +10653,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "neck stiffness",
       "stiff neck",
       "neck rigidity",
-      "neck rigidities",
       "meningeal neck stiffness",
       "cervical rigidity",
     ],
@@ -11148,7 +10685,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Eponym: Vladimir Mikhailovich Kernig (Russian physician, 1840–1917) + Old English sign = mark/indicator",
     aliases: [
       "kernig sign",
-      "kernig signs",
       "kernig's sign",
       "kernigs sign",
       "positive kernig sign",
@@ -11190,7 +10726,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Eponym: Josef Brudzinski (Polish physician, 1874–1917) + Old English sign = mark/indicator",
     aliases: [
       "brudzinski sign",
-      "brudzinski signs",
       "brudzinski's sign",
       "brudzinskis sign",
       "positive brudzinski sign",
@@ -11267,7 +10802,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek phos = light + phobos = fear + -ia = condition",
     aliases: [
       "photophobia",
-      "photophobias",
       "light sensitivity",
       "sensitivity to light",
       "intolerance to light",
@@ -11311,13 +10845,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek phōnē = sound/voice + phobos = fear + -ia = condition — abnormal intolerance to sound causing discomfort or worsening of headache",
     aliases: [
       "phonophobia",
-      "phonophobias",
       "sound sensitivity",
       "sensitivity to sound",
       "intolerance to sound",
       "aversion to sound",
       "noise sensitivity",
-      "noise sensitivities",
     ],
     definition:
       "Abnormal sensitivity or aversion to sound — often perceived as painful or aggravating — commonly accompanying migraine and meningeal irritation alongside photophobia.",
@@ -11352,7 +10884,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hyperacusis",
-    name: "Hyperacusis",
+    name: "Hyperacusi",
     etymology:
       "Greek hyper = excess + Greek akousis = hearing — abnormally decreased tolerance to ordinary environmental sounds",
     aliases: [
@@ -11398,7 +10930,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "uveitis",
-    name: "Uveitis",
+    name: "Uveiti",
     etymology:
       "Latin uva = grape + -itis = inflammation — inflammation of the uveal tract (iris, ciliary body, choroid)",
     aliases: [
@@ -11406,7 +10938,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "uveitides",
       "uveitic",
       "intraocular inflammation",
-      "intraocular inflammations",
       "iritis",
       "iridocyclitis",
       "iridocyclitides",
@@ -11458,14 +10989,13 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "chorioretinitis",
-    name: "Chorioretinitis",
+    name: "Chorioretiniti",
     etymology:
       "Greek chorion = membrane + Latin retina = net + -itis = inflammation — inflammation of the choroid and retina (posterior uveitis involving the fundus)",
     aliases: [
       "chorioretinitis",
       "chorioretinitides",
       "chorioretinal inflammation",
-      "chorioretinal inflammations",
       "posterior uveitis with retinal involvement",
       "retinochoroiditis",
       "retinochoroiditides",
@@ -11591,9 +11121,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "target = circular mark + lesion = injury",
     aliases: [
       "target lesion",
-      "target lesions",
       "iris lesion",
-      "iris lesions",
       "targetoid lesion",
       "targetoid rash",
     ],
@@ -11628,19 +11156,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Middle English tik = small arachnid parasite + bite = puncture wound from mouthparts",
     aliases: [
       "tick bite",
-      "tick bites",
       "tick attachment",
-      "tick attachments",
       "tick exposure",
-      "tick exposures",
       "ixodes tick bite",
-      "ixodes tick bites",
       "deer tick bite",
-      "deer tick bites",
       "dog tick bite",
-      "dog tick bites",
       "lone star tick bite",
-      "lone star tick bites",
     ],
     definition:
       "Attachment and feeding of a hard tick (Ixodidae) on skin — vector for multiple infectious diseases; the bite itself may be unnoticed, with illness manifesting days to weeks later.",
@@ -11755,7 +11276,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek thrombos = clot + kytos = cell + penia = deficiency",
     aliases: [
       "thrombocytopenia",
-      "thrombocytopenias",
       "low platelets",
       "low platelet count",
       "decreased platelets",
@@ -11795,7 +11315,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin coagulare = clot + Greek pathos = suffering/disease",
     aliases: [
       "coagulopathy",
-      "coagulopathies",
       "bleeding diathesis",
       "clotting disorder",
       "coagulation disorder",
@@ -11832,12 +11351,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "dysmorphic-facies",
-    name: "Dysmorphic Facies",
+    name: "Dysmorphic Facie",
     etymology: "Greek dys = abnormal + morphe = form + Latin facies = face",
     aliases: [
       "dysmorphic facies",
       "dysmorphic face",
-      "dysmorphic faces",
       "dysmorphic facial features",
       "distinctive facies",
       "characteristic facies",
@@ -11880,14 +11398,13 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "elfin-facies",
-    name: "Elfin Facies",
+    name: "Elfin Facie",
     etymology:
       "Old English ælf = elf + Latin facies = face — delicate, pixie-like facial appearance",
     aliases: [
       "elfin facies",
       "elfin facieses",
       "elfin face",
-      "elfin faces",
       "elf-like facies",
       "elf-like face",
       "pixie facies",
@@ -11925,10 +11442,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "epicanthal-folds",
-    name: "Epicanthal Folds",
+    name: "Epicanthal Fold",
     etymology: "Greek epi = upon + kanthos = corner of eye + fold = skin crease",
     aliases: [
-      "epicanthal folds",
       "epicanthal fold",
       "epicanthus",
       "inner canthal folds",
@@ -11966,15 +11482,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek philtron = love charm (vertical groove between nose and lip) + smooth = lacking the normal ridged contour of the central upper lip",
     aliases: [
       "smooth philtrum",
-      "smooth philtrums",
       "flattened philtrum",
-      "flattened philtrums",
       "effaced philtrum",
-      "effaced philtrums",
       "indistinct philtrum",
       "absent philtrum groove",
       "flat philtrum",
-      "flat philtrums",
     ],
     definition:
       "Effacement of the normal vertical groove (philtrum) between the nasal septum and upper lip vermillion — the central upper lip appears flat and smooth rather than grooved.",
@@ -12003,17 +11515,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "low-set-ears",
-    name: "Low-Set Ears",
+    name: "Low-Set Ear",
     etymology:
       "Old English lāh = low + settan = placed + Old English ēare = ear — auricles positioned below the normal horizontal plane of the medial canthi",
     aliases: [
-      "low-set ears",
-      "low set ears",
       "low-set ear",
       "low set ear",
       "low set auricles",
       "low-set auricles",
-      "posteriorly rotated ears",
       "posteriorly rotated ear",
       "abnormally positioned ears",
       "dysplastic low-set ears",
@@ -12054,16 +11563,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin palma = palm + crease = skin fold; singulus = one — single transverse flexion line across the palm (simian crease)",
     aliases: [
       "palmar crease",
-      "palmar creases",
       "single palmar crease",
-      "single palmar creases",
       "single transverse palmar crease",
-      "single transverse palmar creases",
       "transverse palmar crease",
       "simian crease",
       "simian line",
-      "simian creases",
-      "simian lines",
       "single simian crease",
       "simian palmar crease",
     ],
@@ -12093,19 +11597,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "ecchymosis",
-    name: "Ecchymosis",
+    name: "Ecchymosi",
     etymology: "Greek ek = out + chymos = juice/fluid",
     aliases: [
       "ecchymosis",
       "ecchymoses",
       "bruise",
-      "bruises",
       "bruising",
       "large bruise",
-      "large bruises",
       "cutaneous ecchymosis",
       "ecchymotic lesion",
-      "ecchymotic lesions",
       "periorbital ecchymosis",
       "periorbital ecchymoses",
     ],
@@ -12149,14 +11650,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek haima = blood + Greek -oma = mass/tumor",
     aliases: [
       "hematoma",
-      "hematomas",
       "haematoma",
-      "haematomas",
       "blood clot collection",
       "localized hemorrhage",
-      "localized hemorrhages",
       "palpable bruise",
-      "palpable bruises",
     ],
     definition:
       "Localized collection of extravasated blood that clots within tissue, fascia, or a potential body space — often palpable or tense, sometimes space-occupying — distinct from flat ecchymosis or pinpoint petechiae.",
@@ -12194,7 +11691,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hemarthrosis",
-    name: "Hemarthrosis",
+    name: "Hemarthrosi",
     etymology:
       "Greek haima = blood + arthron = joint + -osis = condition — bleeding into a joint cavity causing painful swelling, warmth, and restricted range of motion; hallmark of severe coagulation factor deficiency",
     aliases: [
@@ -12205,15 +11702,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "hemarthros",
       "hemarthroses",
       "joint hemorrhage",
-      "joint hemorrhages",
       "intra-articular hemorrhage",
-      "intra-articular hemorrhages",
       "intraarticular hemorrhage",
-      "intraarticular hemorrhages",
       "bleeding into joint",
       "blood in joint",
       "bloody joint effusion",
-      "bloody joint effusions",
     ],
     definition:
       "Hemorrhage into the synovial joint space — typically from coagulation factor deficiency (hemophilia) or trauma — producing acute painful swollen joint with warmth and limited motion; recurrent hemarthroses cause hemophilic arthropathy with synovial inflammation and cartilage destruction.",
@@ -12257,17 +11750,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English cnēo = knee + swellan = grow larger + -ing = state — enlargement of the knee from synovial effusion, prepatellar bursitis, soft-tissue edema, or popliteal mass reflecting intra-articular or periarticular pathology",
     aliases: [
       "knee swelling",
-      "knee swellings",
       "swollen knee",
-      "swollen knees",
       "knee effusion",
-      "knee effusions",
       "swollen knee joint",
-      "swollen knee joints",
       "knee joint swelling",
-      "knee joint swellings",
       "knee joint effusion",
-      "knee joint effusions",
       "water on the knee",
       "fluid on the knee",
       "knee synovitis",
@@ -12315,7 +11802,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek xeros = dry + ophthalmos = eye + -ia = condition",
     aliases: [
       "xerophthalmia",
-      "xerophthalmias",
       "dry eye from vitamin a deficiency",
       "vitamin a deficiency eye disease",
       "vitamin a deficient xerophthalmia",
@@ -12363,14 +11849,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "night blind",
       "night blinded",
       "nyctalopia",
-      "nyctalopias",
       "nyctalopic vision",
       "impaired night vision",
       "poor night vision",
       "difficulty seeing at night",
       "difficulty seeing in the dark",
       "dark adaptation difficulty",
-      "dark adaptation difficulties",
       "reduced vision in dim light",
       "rod vision impairment",
     ],
@@ -12408,17 +11892,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "bitot-spots",
-    name: "Bitot Spots",
+    name: "Bitot Spot",
     etymology:
       "Named for French physician Xavier Bitot (1832–1888) + spot = localized lesion — foamy gray-white patches on the conjunctiva in vitamin A deficiency",
     aliases: [
       "bitot spot",
-      "bitot spots",
       "bitot's spots",
       "bitots spots",
       "bitot spot sign",
-      "bitot spot signs",
-      "foamy conjunctival spots",
       "foamy conjunctival spot",
       "vitamin a deficiency bitot spots",
       "xerophthalmia bitot spots",
@@ -12461,16 +11942,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek keras = horn (cornea) + malakia = softness — pathologic softening and liquefactive necrosis of the cornea",
     aliases: [
       "keratomalacia",
-      "keratomalacias",
       "corneal malacia",
-      "corneal malacias",
       "corneal melting",
       "corneal melt",
-      "corneal melts",
       "vitamin a deficiency keratomalacia",
       "xerophthalmia keratomalacia",
       "corneal liquefaction",
-      "corneal liquefactions",
     ],
     definition:
       "Severe end-stage ocular complication of vitamin A deficiency — full-thickness corneal softening, ulceration, and liquefactive necrosis leading to corneal perforation, scarring, and irreversible blindness if untreated.",
@@ -12607,7 +12084,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "leukocytosis",
-    name: "Leukocytosis",
+    name: "Leukocytosi",
     etymology: "Greek leukos = white + kytos = cell + -osis = condition",
     aliases: ["leukocytosis", "elevated wbc", "high wbc", "increased white blood cells"],
     definition:
@@ -12639,7 +12116,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek leukos = white + kytos = cell + penia = deficiency",
     aliases: [
       "leukopenia",
-      "leukopenias",
       "low wbc",
       "low white blood cell count",
       "low white blood cells",
@@ -12711,7 +12187,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     id: "webbed-neck",
     name: "Webbed Neck",
     etymology: "Old English web = woven fabric + Latin neck = collum",
-    aliases: ["webbed neck", "webbed necks", "pterygium colli", "neck webbing"],
+    aliases: ["webbed neck", "pterygium colli", "neck webbing"],
     definition:
       "Congenital excess lateral neck skin forming a web-like fold from the mastoid region toward the acromion.",
     mechanism:
@@ -12735,7 +12211,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cubitus-valgus",
-    name: "Cubitus Valgus",
+    name: "Cubitus Valgu",
     etymology: "Latin cubitus = elbow + valgus = bent outward",
     aliases: ["cubitus valgus", "increased carrying angle", "cubitus valgus deformity"],
     definition:
@@ -12763,7 +12239,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "high-arched palate",
       "high arched palate",
-      "high arched palates",
       "gothic palate",
       "narrow palate",
     ],
@@ -12795,10 +12270,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek thelē = nipple + arche = beginning",
     aliases: [
       "thelarche",
-      "thelarches",
       "breast budding",
       "breast bud",
-      "breast buds",
       "onset of breast development",
       "beginning of breast development",
       "pubertal breast development",
@@ -12838,7 +12311,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin pubes = adult + Greek arche = beginning",
     aliases: [
       "pubarche",
-      "pubarches",
       "onset of pubic hair",
       "pubic hair development",
       "development of pubic hair",
@@ -12879,10 +12351,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek men = month + arche = beginning",
     aliases: [
       "menarche",
-      "menarches",
       "first menses",
       "first menstrual period",
-      "first menstrual periods",
       "onset of menstruation",
       "menarcheal age",
       "onset of menses",
@@ -12924,10 +12394,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "menstruation",
       "menstrual bleeding",
       "menstrual period",
-      "menstrual periods",
       "menstrual flow",
       "period",
-      "periods",
       "monthly bleeding",
     ],
     definition:
@@ -12964,7 +12432,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "lanugo",
       "lanugo hair",
-      "lanugo hairs",
       "fine downy hair",
     ],
     definition:
@@ -13034,7 +12501,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "microphallus",
-    name: "Microphallus",
+    name: "Microphallu",
     etymology: "Greek mikros = small + phallos = penis",
     aliases: [
       "microphallus",
@@ -13172,7 +12639,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek alopex = fox mange (hair loss) + -ia = condition",
     aliases: [
       "alopecia",
-      "alopecias",
       "hair loss",
       "hair losses",
       "loss of hair",
@@ -13364,7 +12830,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "somnolent",
       "somnolently",
       "somnolence",
-      "somnolences",
       "drowsy",
       "drowsiness",
       "sleepy",
@@ -13412,15 +12877,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "hypersomnolent",
       "hypersomnolence",
-      "hypersomnolences",
       "hypersomnolent state",
       "excessive sleepiness",
       "excessive daytime sleepiness",
       "eds",
       "pathologic hypersomnia",
-      "pathologic hypersomnias",
       "hypersomnia",
-      "hypersomnias",
       "excessive sleeping",
       "sleeping excessively",
     ],
@@ -13463,9 +12925,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "obtunded",
       "obtundation",
-      "obtundations",
       "obtunded patient",
-      "obtunded patients",
       "obtunded mental status",
     ],
     definition:
@@ -13745,14 +13205,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek para = beside + aisthēsis = sensation (abnormal sensation alongside normal feeling)",
     aliases: [
       "paresthesia",
-      "paresthesias",
       "paraesthesia",
-      "paraesthesias",
       "pins and needles",
       "pins-and-needles",
       "tingling",
       "tingling sensation",
-      "tingling sensations",
     ],
     definition:
       "Abnormal spontaneous sensory perception — typically tingling, pins-and-needles, crawling, or burning — without an external stimulus, reflecting irritative or compressive pathology along peripheral or central sensory pathways.",
@@ -13792,10 +13249,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek neuron = nerve + pathos = suffering + Latin poena = penalty/pain",
     aliases: [
       "neuropathic pain",
-      "neuropathic pains",
       "nerve pain",
       "neuralgia",
-      "neuralgias",
       "neuropathy pain",
       "nerve-mediated pain",
       "positive neuropathic symptoms",
@@ -13838,15 +13293,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek dys- = bad/abnormal + aisthēsis = sensation",
     aliases: [
       "dysesthesia",
-      "dysesthesias",
       "dysaesthesia",
-      "dysaesthesias",
       "abnormal sensation",
-      "abnormal sensations",
       "unpleasant sensation",
-      "unpleasant sensations",
       "painful paresthesia",
-      "painful paresthesias",
     ],
     definition:
       "Unpleasant or abnormal sensation — burning, tingling, crawling, electric, or painful — arising spontaneously or from a normally nonnoxious stimulus; a positive neuropathic sensory symptom reflecting nerve irritation or central sensitization.",
@@ -13884,7 +13334,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek allos = other + odynē = pain",
     aliases: [
       "allodynia",
-      "allodynias",
       "allodynic pain",
       "pain to light touch",
       "touch-evoked pain",
@@ -13928,13 +13377,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin formica = ant + -ation = process (sensation of ants crawling)",
     aliases: [
       "formication",
-      "formications",
       "crawling sensation",
-      "crawling sensations",
       "insects crawling on skin",
       "bugs crawling on skin",
       "tactile hallucination",
-      "tactile hallucinations",
       "cocaine bugs",
       "meth mites",
     ],
@@ -13975,7 +13421,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "sneezing",
       "sneeze",
-      "sneezes",
       "paroxysmal sneezing",
     ],
     definition:
@@ -14059,7 +13504,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "hypertonia",
       "hypertonic",
-      "hypertonias",
       "increased muscle tone",
       "increased tone",
       "elevated muscle tone",
@@ -14229,9 +13673,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "involuntary urine leakage",
       "involuntary urinary leakage",
       "urinary leak",
-      "urinary leaks",
       "urine leak",
-      "urine leaks",
       "bladder leakage",
       "bladder leak",
     ],
@@ -14274,11 +13716,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "adnexal mass",
       "adnexal masses",
       "adnexal lesion",
-      "adnexal lesions",
       "adnexal cyst",
-      "adnexal cysts",
       "adnexal tumor",
-      "adnexal tumors",
       "ovarian mass",
       "ovarian masses",
       "pelvic adnexal mass",
@@ -14319,7 +13758,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "enuresis",
-    name: "Enuresis",
+    name: "Enuresi",
     etymology: "Greek en = in + ouron = urine + -esis = condition",
     aliases: [
       "enuresis",
@@ -14524,9 +13963,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "cramping",
       "cramp",
-      "cramps",
       "muscle cramp",
-      "muscle cramps",
       "muscle cramping",
       "crampy pain",
       "crampy",
@@ -14568,12 +14005,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek kolikos = pertaining to the colon + pain — waxing and waning visceral pain from smooth muscle spasm around a hollow organ",
     aliases: [
       "colicky pain",
-      "colicky pains",
       "colicky",
       "colic",
-      "colics",
       "colicky abdominal pain",
-      "colicky abdominal pains",
       "waxing and waning pain",
       "waxing waning pain",
       "visceral colic",
@@ -14615,11 +14049,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin bilis = bile + Greek kolikos = pertaining to the colon (historical term for crampy visceral pain) — episodic RUQ pain from transient gallbladder or cystic duct obstruction",
     aliases: [
       "biliary colic",
-      "biliary colics",
       "gallbladder colic",
-      "gallbladder colics",
       "gallstone colic",
-      "gallstone colics",
       "cholelithiasis pain",
       "symptomatic cholelithiasis pain",
     ],
@@ -14659,13 +14090,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eponym John Benjamin Murphy (1857–1916), American surgeon + Latin signum = mark — inspiratory arrest during deep RUQ palpation indicating gallbladder inflammation",
     aliases: [
       "murphy sign",
-      "murphy signs",
       "murphy's sign",
-      "murphy's signs",
       "positive murphy sign",
       "positive murphy's sign",
       "clinical murphy sign",
-      "clinical murphy signs",
       "ruq murphy sign",
       "murphy sign positive",
       "inspiratory arrest murphy",
@@ -14704,10 +14132,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin sonus = sound + Greek graphē = writing + eponym John Benjamin Murphy + Latin signum = mark — gallbladder tenderness elicited by ultrasound probe pressure",
     aliases: [
       "sonographic murphy sign",
-      "sonographic murphy signs",
       "sonographic murphy's sign",
       "ultrasound murphy sign",
-      "ultrasound murphy signs",
       "murphy sign on ultrasound",
       "positive sonographic murphy",
       "positive sonographic murphy sign",
@@ -14832,7 +14258,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "ascites",
-    name: "Ascites",
+    name: "Ascite",
     etymology: "Greek askites = baglike; askos = wineskin/leather bag",
     aliases: [
       "ascites",
@@ -14921,13 +14347,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek splen = spleen + Greek megas = large + -y = condition",
     aliases: [
       "splenomegaly",
-      "splenomegalies",
       "enlarged spleen",
-      "enlarged spleens",
       "spleen enlargement",
-      "spleen enlargements",
       "splenic enlargement",
-      "splenic enlargements",
       "big spleen",
       "palpable spleen",
     ],
@@ -14972,7 +14394,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek hēpar = liver + splen = spleen + Greek megas = large — concurrent enlargement of both liver and spleen",
     aliases: [
       "hepatosplenomegaly",
-      "hepatosplenomegalies",
       "hepato-splenomegaly",
       "hepatosplenic enlargement",
       "enlarged liver and spleen",
@@ -15020,11 +14441,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek spasmos = convulsion; spaein = draw/pull",
     aliases: [
       "spasm",
-      "spasms",
       "muscle spasm",
-      "muscle spasms",
       "smooth muscle spasm",
-      "smooth muscle spasms",
     ],
     definition:
       "Sudden, involuntary contraction of smooth or skeletal muscle — may be brief (twitch) or sustained, and may affect airways, vessels, hollow organs, or striated muscle.",
@@ -15064,15 +14482,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin tremor = trembling from tremere = to shake",
     aliases: [
       "tremor",
-      "tremors",
       "resting tremor",
-      "resting tremors",
       "postural tremor",
-      "postural tremors",
       "action tremor",
-      "action tremors",
       "intention tremor",
-      "intention tremors",
       "pill-rolling tremor",
       "pill rolling tremor",
     ],
@@ -15122,7 +14535,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "trembling",
       "shakiness",
       "shaking",
-      "tremulous hands",
       "tremulous hand",
     ],
     definition:
@@ -15163,7 +14575,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "trismus",
-    name: "Trismus",
+    name: "Trismu",
     etymology:
       "Greek trismos = a grinding, a gnashing — reduced ability to open the mouth from jaw muscle spasm or inflammation",
     aliases: [
@@ -15173,12 +14585,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "lock jaw",
       "lock-jaw",
       "locked jaw",
-      "locked jaws",
       "jaw lock",
       "jaw locking",
       "jaw trismus",
       "masseter spasm",
-      "masseter spasms",
       "inability to open mouth",
       "difficulty opening mouth",
       "limited mouth opening",
@@ -15217,9 +14627,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin carpus = wrist + Greek spasmos = convulsion",
     aliases: [
       "carpal spasm",
-      "carpal spasms",
       "carpopedal spasm",
-      "carpopedal spasms",
       "carpopedal contraction",
     ],
     definition:
@@ -15257,7 +14665,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "eponym: Armand Trousseau (French physician) + sign = clinical indicator",
     aliases: [
       "trousseau sign",
-      "trousseau signs",
       "trousseau",
       "trousseau's sign",
       "trousseaus sign",
@@ -15300,7 +14707,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "eponym: František Chvostek (Austrian physician) + sign = clinical indicator",
     aliases: [
       "chvostek sign",
-      "chvostek signs",
       "chvostek",
       "chvostek's sign",
       "chvosteks sign",
@@ -15392,7 +14798,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin exercitium = training + Latin tolerare = to endure — inability to sustain customary physical activity without disproportionate symptoms (dyspnea, fatigue, pain, cramping, or presyncope)",
     aliases: [
       "exercise intolerance",
-      "exercise intolerances",
       "exercise intolerance symptom",
       "intolerance to exercise",
       "intolerance of exercise",
@@ -15447,9 +14852,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "friable mass",
       "friable masses",
       "friable lesion",
-      "friable lesions",
       "friable tumor",
-      "friable tumors",
       "friable cervix",
       "friable cervical lesion",
       "bleeds easily on contact",
@@ -15493,13 +14896,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "adrenal mass",
       "adrenal masses",
       "adrenal lesion",
-      "adrenal lesions",
       "adrenal tumor",
-      "adrenal tumors",
       "adrenal incidentaloma",
-      "adrenal incidentalomas",
       "adrenal nodule",
-      "adrenal nodules",
       "adrenal gland mass",
       "adrenal gland masses",
     ],
@@ -15630,7 +15029,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "diarrhea",
       "diarrhoea",
-      "loose stools",
       "loose stool",
       "watery diarrhea",
       "watery diarrhoea",
@@ -15774,21 +15172,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "greasy-stools",
-    name: "Greasy Stools",
+    name: "Greasy Stool",
     etymology:
       "Old English grēs = fat + stool = bowel movement — stools with visible fat or oil indicating steatorrhea",
     aliases: [
-      "greasy stools",
       "greasy stool",
-      "fatty stools",
       "fatty stool",
-      "oily stools",
       "oily stool",
       "steatorrhea",
-      "steatorrheas",
       "fat malabsorption stools",
       "bulky foul stools",
-      "floating stools",
       "floating stool",
       "pale foul-smelling stools",
     ],
@@ -15923,13 +15316,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin abdomin = belly + Greek brachy = short + bruit = noise (originally a short harsh sound)",
     aliases: [
       "abdominal bruit",
-      "abdominal bruits",
       "abdominal vascular bruit",
-      "abdominal vascular bruits",
       "epigastric bruit",
-      "epigastric bruits",
       "renal bruit",
-      "renal bruits",
     ],
     definition:
       "Audible vascular murmur on auscultation over the abdomen — reflects turbulent flow through a stenotic, aneurysmal, or high-flow arterial segment.",
@@ -16001,7 +15390,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "tenesmus",
-    name: "Tenesmus",
+    name: "Tenesmu",
     etymology: "Greek teinesin = to stretch/strain + -mus = condition",
     aliases: [
       "tenesmus",
@@ -16040,10 +15429,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "uremic-symptoms",
-    name: "Uremic Symptoms",
+    name: "Uremic Symptom",
     etymology: "Greek ouron = urine + haima = blood + Latin symptoma = occurrence",
     aliases: [
-      "uremic symptoms",
       "uremic symptom",
       "uremia symptoms",
       "symptoms of uremia",
@@ -16084,7 +15472,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek enkephalos = brain + pathos = suffering",
     aliases: [
       "encephalopathy",
-      "encephalopathies",
       "metabolic encephalopathy",
       "toxic encephalopathy",
       "acute encephalopathy",
@@ -16124,7 +15511,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "asterixis",
-    name: "Asterixis",
+    name: "Asterixi",
     etymology:
       "Greek a- = without + sterixis = fixed position — inability to maintain sustained posture; flapping 'negative myoclonus'",
     aliases: [
@@ -16133,12 +15520,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "negative myoclonus",
       "negative myoclonus sign",
       "flapping tremor",
-      "flapping tremors",
       "flapping hand tremor",
       "liver flap",
-      "liver flaps",
       "hepatic flap",
-      "hepatic flaps",
       "flapping asterixis",
     ],
     definition:
@@ -16177,7 +15561,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "leg bowing",
       "bow legs",
-      "bowed legs",
       "bowed leg",
       "genu varum",
       "tibial bowing",
@@ -16220,9 +15603,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English botl/bowel = intestine + Latin movere = to move — passage of stool through the colon and rectum",
     aliases: [
       "bowel movement",
-      "bowel movements",
       "bm",
-      "bms",
       "defecation",
       "stool passage",
       "passage of stool",
@@ -16312,11 +15693,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin faex = dregs/dung + impaction = wedged/packed in",
     aliases: [
       "fecal impaction",
-      "fecal impactions",
       "faecal impaction",
-      "faecal impactions",
       "impacted stool",
-      "impacted stools",
       "stool impaction",
       "rectal impaction",
     ],
@@ -16354,11 +15732,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin faex = dregs/dung + -oma = mass/tumor-like growth",
     aliases: [
       "fecaloma",
-      "fecalomas",
       "faecaloma",
-      "faecalomas",
       "stercoroma",
-      "stercoromas",
       "fecal mass",
       "fecal tumor",
       "giant fecal mass",
@@ -16393,12 +15768,10 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "rigors",
-    name: "Rigors",
+    name: "Rigor",
     etymology: "Latin rigor = stiffness/shaking",
     aliases: [
-      "rigors",
       "rigor",
-      "shaking chills",
       "shaking chill",
       "shivering rigors",
       "febrile rigors",
@@ -16438,12 +15811,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin ruga = fold/wrinkle + thickening = increased thickness — enlarged gastric mucosal folds seen on endoscopy or imaging",
     aliases: [
       "rugal thickening",
-      "rugal thickenings",
       "thickened rugae",
-      "thickened gastric folds",
       "thickened gastric fold",
       "gastric fold thickening",
-      "gastric fold thickenings",
       "giant rugal folds",
       "giant gastric folds",
       "hypertrophic gastric folds",
@@ -16487,7 +15857,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek hypo = under/below + Greek therme = heat",
     aliases: [
       "hypothermia",
-      "hypothermias",
       "hypothermic",
       "hypothermic state",
       "low body temperature",
@@ -16536,7 +15905,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek hyper = excessive + Greek therme = heat",
     aliases: [
       "hyperthermia",
-      "hyperthermias",
       "hyperthermic state",
       "elevated body temperature without fever",
       "non-pyrogenic hyperthermia",
@@ -16576,16 +15944,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek autos = self + nomos = law + Latin instabilitas = lack of steadiness — fluctuating, poorly regulated autonomic nervous system function affecting heart rate, blood pressure, temperature, sweating, and visceral organs",
     aliases: [
       "autonomic instability",
-      "autonomic instabilities",
       "autonomic dysregulation",
       "autonomic dysfunction",
       "labile autonomic function",
       "autonomic lability",
       "dysautonomia",
-      "dysautonomias",
       "autonomic hyperactivity",
       "autonomic storm",
-      "autonomic storms",
     ],
     definition:
       "Fluctuating or dysregulated sympathetic and parasympathetic output causing labile heart rate, blood pressure, temperature, diaphoresis, pupillary changes, and GI/ bladder dysfunction — a hallmark of several life-threatening toxidromes and neurologic emergencies.",
@@ -16627,7 +15992,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek ophthalmos = eye + plege = stroke/paralysis",
     aliases: [
       "ophthalmoplegia",
-      "ophthalmoplegias",
       "ophthalmoplegic",
       "extraocular muscle palsy",
       "extraocular muscle palsies",
@@ -16673,7 +16037,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin inter = between + nucleus = kernel + Greek ophthalmos = eye + plege = stroke",
     aliases: [
       "internuclear ophthalmoplegia",
-      "internuclear ophthalmoplegias",
       "ino",
       "internuclear ophthalmoplegia syndrome",
     ],
@@ -16709,13 +16072,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek a- = without + phasis = speech — acquired disorder of language processing (comprehension, production, repetition, or naming) from dominant hemisphere brain injury",
     aliases: [
       "aphasia",
-      "aphasias",
       "language disorder",
-      "language disorders",
       "acquired aphasia",
-      "acquired aphasias",
       "cortical aphasia",
-      "cortical aphasias",
     ],
     definition:
       "Acquired impairment of language function — affecting fluency, comprehension, repetition, naming, or reading/writing — with relatively preserved consciousness and non-language cognition; localizes to dominant (usually left) perisylvian cortex or connecting white matter.",
@@ -16754,19 +16113,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym: Pierre Paul Broca + Greek aphasia = speechlessness — nonfluent expressive language disorder from dominant inferior frontal cortex lesion",
     aliases: [
       "broca aphasia",
-      "broca aphasias",
       "broca's aphasia",
-      "broca's aphasias",
       "broca",
       "expressive aphasia",
-      "expressive aphasias",
       "nonfluent aphasia",
-      "nonfluent aphasias",
       "non-fluent aphasia",
       "motor aphasia",
-      "motor aphasias",
       "anterior aphasia",
-      "anterior aphasias",
     ],
     definition:
       "Expressive (nonfluent) aphasia from lesion of Broca area in the dominant inferior frontal gyrus (Brodmann 44/45) — patient understands language but speaks in short, effortful, broken phrases with relatively preserved comprehension.",
@@ -16802,17 +16155,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym: Carl Wernicke + Greek aphasia = speechlessness — fluent receptive language disorder from dominant posterior temporal cortex lesion (distinct from Wernicke encephalopathy)",
     aliases: [
       "wernicke aphasia",
-      "wernicke aphasias",
       "wernicke's aphasia",
-      "wernicke's aphasias",
       "receptive aphasia",
-      "receptive aphasias",
       "fluent aphasia",
-      "fluent aphasias",
       "sensory aphasia",
-      "sensory aphasias",
       "posterior aphasia",
-      "posterior aphasias",
       "wernicke area aphasia",
     ],
     definition:
@@ -16849,11 +16196,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin conductio = connection + Greek aphasia = speechlessness — disconnection aphasia from impaired link between comprehension and speech production areas",
     aliases: [
       "conduction aphasia",
-      "conduction aphasias",
       "associative aphasia",
-      "associative aphasias",
       "disconnection aphasia",
-      "disconnection aphasias",
     ],
     definition:
       "Disconnection aphasia from lesion of the arcuate fasciculus (perisylvian white matter) connecting Wernicke and Broca areas — fluent spontaneous speech and comprehension are relatively preserved, but repetition is markedly impaired with phonemic paraphasias.",
@@ -16890,7 +16234,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "lhermitte sign",
       "lhermitte's sign",
       "lhermitte phenomenon",
-      "lhermitte signs",
     ],
     definition:
       "Brief electric-shock–like sensation radiating down the spine (and sometimes into the limbs) triggered by neck flexion — indicates dorsal column or cervical cord irritation/demyelination.",
@@ -16919,7 +16262,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "nystagmus",
-    name: "Nystagmus",
+    name: "Nystagmu",
     etymology: "Greek nystagmos = drowsiness/nodding (from rapid eye movements resembling nodding)",
     aliases: ["nystagmus", "nystagmuses", "nystagmic eye movements"],
     definition:
@@ -16954,20 +16297,13 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek mania = madness/frenzy",
     aliases: [
       "mania",
-      "manias",
       "manic",
       "manic episode",
-      "manic episodes",
       "manic state",
-      "manic states",
       "manic mood",
-      "manic moods",
       "manic behavior",
-      "manic behaviors",
-      "manic symptoms",
       "manic symptom",
       "manic presentation",
-      "manic presentations",
     ],
     definition:
       "Distinct period of abnormally elevated, expansive, or irritable mood with persistently increased energy and goal-directed activity lasting ≥1 week (or any duration if hospitalization is required) — causing marked functional impairment, possible psychosis, and defining bipolar I disorder when not substance-induced.",
@@ -17005,20 +16341,13 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek hypo = under/below + mania = madness/frenzy",
     aliases: [
       "hypomania",
-      "hypomanias",
       "hypomanic",
       "hypomanic episode",
-      "hypomanic episodes",
       "hypomanic state",
-      "hypomanic states",
       "hypomanic mood",
-      "hypomanic moods",
       "hypomanic behavior",
-      "hypomanic behaviors",
-      "hypomanic symptoms",
       "hypomanic symptom",
       "hypomanic presentation",
-      "hypomanic presentations",
     ],
     definition:
       "Distinct period of abnormally elevated, expansive, or irritable mood with increased energy and activity lasting ≥4 consecutive days — resembling mania but without psychosis, marked functional impairment, or hospitalization — the defining elevated pole of bipolar II disorder when paired with major depression.",
@@ -17058,21 +16387,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek mikros = small + gnathos = jaw; Greek hypo = under + plassein = to form + Latin mandibula = jaw — congenitally small underdeveloped mandible",
     aliases: [
       "micrognathia",
-      "micrognathias",
       "micrognathic jaw",
-      "micrognathic jaws",
       "hypoplastic mandible",
-      "hypoplastic mandibles",
       "small mandible",
-      "small mandibles",
       "small jaw",
-      "small jaws",
       "mandibular hypoplasia",
       "mandibular micrognathia",
       "underdeveloped mandible",
-      "underdeveloped mandibles",
       "receding jaw",
-      "receding jaws",
     ],
     definition:
       "Congenitally small, underdeveloped mandible (micrognathia) — may cause retrognathia, glossoptosis (posterior tongue displacement), airway obstruction, and feeding difficulty, and is a hallmark of several chromosomal and craniofacial syndromes.",
@@ -17110,16 +16432,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek pro = forward + gnathos = jaw + -ism = condition — prominent forward projection of the mandible",
     aliases: [
       "prognathism",
-      "prognathisms",
       "prognathia",
       "mandibular prognathism",
       "mandibular prognathia",
       "prominent jaw",
-      "prominent jaws",
       "protruding jaw",
-      "protruding jaws",
       "protruding mandible",
-      "protruding mandibles",
       "forward jaw",
       "jaw protrusion",
       "class iii jaw",
@@ -17154,9 +16472,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "psychosis",
-    name: "Psychosis",
+    name: "Psychosi",
     etymology: "Greek psyche = mind + -osis = abnormal condition",
-    aliases: ["psychosis", "psychoses", "psychotic", "psychotic episode"],
+    aliases: ["psychosis", "psychotic", "psychotic episode"],
     definition:
       "Loss of contact with reality characterized by hallucinations (perceptions without external stimulus), delusions (fixed false beliefs), and/or disorganized thought and behavior — encompasses positive psychotic symptoms (see dedicated entry) and may coexist with negative symptoms in schizophrenia.",
     mechanism:
@@ -17185,13 +16503,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "positive-symptoms",
-    name: "Positive Symptoms",
+    name: "Positive Symptom",
     etymology:
       "Latin positivus = placed/set + Greek symptōma = occurrence — added abnormal experiences or behaviors in schizophrenia (not electrical charge sense)",
     aliases: [
-      "positive symptoms",
       "positive symptom",
-      "schizophrenia positive symptoms",
       "schizophrenia positive symptom",
       "positive symptoms of schizophrenia",
       "positive symptom of schizophrenia",
@@ -17237,14 +16553,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "tangential speech",
       "tangential speeches",
       "tangentiality",
-      "tangentialities",
       "tangential thought",
-      "tangential thoughts",
       "tangential thinking",
       "tangential response",
-      "tangential responses",
       "tangential answer",
-      "tangential answers",
     ],
     definition:
       "Formal thought disorder in which the patient begins to answer a question but drifts off topic and never returns to the original point — a type of disorganized speech seen in psychotic and manic states.",
@@ -17275,9 +16587,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "moon-facies",
-    name: "Moon facies",
+    name: "Moon Facie",
     etymology: "moon = round lunar appearance + Latin facies = face",
-    aliases: ["moon facies", "moon face", "moon faces", "cushingoid facies", "cushingoid face"],
+    aliases: ["moon facies", "moon face", "cushingoid facies", "cushingoid face"],
     definition:
       "Rounded, puffy facial appearance from fat redistribution and fluid retention — classic cushingoid feature of excess glucocorticoids (endogenous or exogenous).",
     mechanism:
@@ -17307,7 +16619,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "buffalo = bison dorsal fat pad + hump = rounded elevation",
     aliases: [
       "buffalo hump",
-      "buffalo humps",
       "buffalo hump fat pad",
       "dorsocervical fat pad",
       "dorsocervical hump",
@@ -17349,7 +16660,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "striae",
       "stria",
-      "stretch marks",
       "stretch mark",
       "striae distensae",
       "skin striae",
@@ -17396,8 +16706,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "impaired wound healing",
       "poor wound healing",
       "delayed wound healing",
-      "impaired wound healings",
-      "poor wound healings",
     ],
     definition:
       "Delayed or incomplete closure of tissue injury with deficient granulation, re-epithelialization, or collagen deposition — increases infection and dehiscence risk.",
@@ -17430,7 +16738,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek myelos = marrow (spinal cord) + pathos = suffering/disease",
     aliases: [
       "myelopathy",
-      "myelopathies",
       "spinal cord dysfunction",
       "spinal cord disease",
       "spinal cord disorder",
@@ -17470,7 +16777,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin neuter = neither + penia = deficiency",
     aliases: [
       "neutropenia",
-      "neutropenias",
       "low neutrophils",
       "low neutrophil count",
       "decreased neutrophils",
@@ -17508,7 +16814,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "agranulocytosis",
-    name: "Agranulocytosis",
+    name: "Agranulocytosi",
     etymology:
       "Greek a- = without + Latin granulum = small grain + Greek kytos = cell + -osis = condition — severe absence of circulating neutrophils",
     aliases: [
@@ -17516,7 +16822,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "agranulocytoses",
       "agranulocytic",
       "severe neutropenia",
-      "severe neutropenias",
       "drug-induced agranulocytosis",
       "drug induced agranulocytosis",
       "clozapine agranulocytosis",
@@ -17557,7 +16862,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek a = without + taxis = order/arrangement",
     aliases: [
       "ataxia",
-      "ataxias",
       "ataxic gait",
       "cerebellar ataxia",
       "sensory ataxia",
@@ -17597,7 +16901,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "ataxic",
       "ataxically",
-      "ataxic movements",
       "ataxic movement",
       "ataxic coordination",
       "incoordination",
@@ -17685,13 +16988,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English un + steady = stable + Old Norse gata = way/path — unstable walking pattern",
     aliases: [
       "unsteady gait",
-      "unsteady gaits",
       "unsteady walking",
       "gait unsteadiness",
       "gait instability",
-      "gait instabilities",
       "unstable gait",
-      "unstable gaits",
       "wobbly gait",
       "wobbly walking",
       "off balance when walking",
@@ -17740,17 +17040,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek anti = against + algos = pain + gait = way of walking — pain-avoiding limp",
     aliases: [
       "antalgic gait",
-      "antalgic gaits",
       "antalgic",
       "antalgic limp",
-      "antalgic limps",
       "painful gait",
       "pain-limited gait",
       "limp from pain",
       "limping gait",
-      "limping gaits",
       "painful limp",
-      "painful limps",
     ],
     definition:
       "Gait pattern adopted to minimize weight-bearing on a painful lower extremity — shortened stance phase on the affected side, reduced stride length, and often external rotation or guarding of the painful hip or leg.",
@@ -17791,7 +17087,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "paresis",
-    name: "Paresis",
+    name: "Paresi",
     etymology: "Greek parienai = to let go / relax + -sis = condition",
     aliases: [
       "paresis",
@@ -17830,7 +17126,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "spastic-paresis",
-    name: "Spastic Paresis",
+    name: "Spastic Paresi",
     etymology: "Greek spastikos = drawing/pulling + paresis = partial weakness",
     aliases: [
       "spastic paresis",
@@ -17872,7 +17168,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek hypo = under + telos = distance + -ism = condition",
     aliases: [
       "hypotelorism",
-      "hypotelorisms",
       "decreased interocular distance",
       "decreased interpupillary distance",
       "closely spaced eyes",
@@ -17937,10 +17232,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "koplik-spots",
-    name: "Koplik Spots",
+    name: "Koplik Spot",
     etymology: "eponym: Henry Koplik + spots = visible lesions",
     aliases: [
-      "koplik spots",
       "koplik's spots",
       "koplik spot",
       "buccal koplik spots",
@@ -17976,7 +17270,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "confusion",
       "confused",
       "confusional state",
-      "confusional states",
       "mental confusion",
       "disorientation",
       "disoriented",
@@ -18058,9 +17351,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek arthron = joint + algos = pain",
     aliases: [
       "arthralgia",
-      "arthralgias",
       "joint pain",
-      "joint pains",
       "joint ache",
     ],
     definition:
@@ -18090,7 +17381,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "arthritis",
-    name: "Arthritis",
+    name: "Arthriti",
     etymology: "Greek arthron = joint + -itis = inflammation",
     aliases: [
       "arthritis",
@@ -18126,7 +17417,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "deforming-polyarthritis",
-    name: "Deforming Polyarthritis",
+    name: "Deforming Polyarthriti",
     etymology:
       "Latin de- = away from + forma = shape + Greek polys = many + arthron = joint + -itis = inflammation — inflammatory arthritis of multiple joints with progressive structural deformity",
     aliases: [
@@ -18177,15 +17468,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin ulna = elbow bone (forearm medial bone) + Latin deviare = to turn aside — fixed angulation of fingers toward the ulnar (medial) side of the hand at the metacarpophalangeal joints",
     aliases: [
       "ulnar deviation",
-      "ulnar deviations",
       "ulnar drift",
-      "ulnar drifts",
       "ulnar deviation of fingers",
       "ulnar deviation of the fingers",
       "ulnar deviation of hand",
       "ulnar deviation of the hand",
       "ulnar deviation deformity",
-      "ulnar deviation deformities",
       "finger ulnar deviation",
       "fingers ulnar deviation",
       "mcp ulnar deviation",
@@ -18241,24 +17529,18 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek hyper = excess + Latin mobilis = movable + Latin laxitas = looseness — greater-than-normal passive range of joint motion from connective tissue compliance",
     aliases: [
       "joint hypermobility",
-      "joint hypermobilities",
       "hypermobility",
-      "hypermobilities",
       "joint laxity",
       "joint laxities",
       "ligamentous laxity",
       "ligamentous laxities",
-      "hypermobile joints",
       "hypermobile joint",
-      "loose joints",
       "loose joint",
       "double-jointed",
       "double jointed",
       "generalized joint hypermobility",
       "joint hyperlaxity",
-      "joint hyperlaxities",
       "hyperlaxity",
-      "hyperlaxities",
       "generalized joint hyperlaxity",
       "generalized joint laxity",
     ],
@@ -18298,10 +17580,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek arachne = spider + daktylos = finger — unusually long, slender fingers and toes resembling spider legs",
     aliases: [
       "arachnodactyly",
-      "arachnodactylies",
       "arachnodactylous fingers",
       "arachnodactylous digits",
-      "spider fingers",
       "spider finger",
       "spider digits",
       "long slender fingers",
@@ -18357,18 +17637,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "pectus carinatum",
       "pectus carinatum deformity",
-      "pectus carinatum deformities",
       "pigeon breast",
-      "pigeon breasts",
       "pigeon chest",
-      "pigeon chests",
       "keel chest",
-      "keel chests",
       "chicken breast deformity",
       "protruding sternum",
-      "protruding sternums",
       "sternal protrusion",
-      "sternal protrusions",
       "carinate chest",
     ],
     definition:
@@ -18410,16 +17684,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "kyphoscoliosis",
-    name: "Kyphoscoliosis",
+    name: "Kyphoscoliosi",
     etymology:
       "Greek kyphos = hump + skolios = crooked — combined anterior (kyphotic) and lateral (scoliotic) spinal deformity",
     aliases: [
       "kyphoscoliosis",
       "kyphoscolioses",
       "kyphoscoliotic spine",
-      "kyphoscoliotic spines",
       "kyphoscoliotic deformity",
-      "kyphoscoliotic deformities",
       "kyphosis and scoliosis",
       "kyphotic scoliosis",
       "kyphoscoliotic curvature",
@@ -18471,18 +17743,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin dura = hard (mother) + Greek ektasis = dilation — pathologic widening of the dural sac surrounding the spinal cord and nerve roots",
     aliases: [
       "dural ectasia",
-      "dural ectasias",
       "dural ectasia syndrome",
       "ectasia of the dura",
       "ectasia of dura",
       "dural sac ectasia",
-      "dural sac ectasias",
       "dural dilation",
-      "dural dilations",
       "meningeal ectasia",
-      "meningeal ectasias",
       "spinal dural ectasia",
-      "spinal dural ectasias",
       "lumbosacral dural ectasia",
     ],
     definition:
@@ -18525,7 +17792,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "marfanoid-habitus",
-    name: "Marfanoid Habitus",
+    name: "Marfanoid Habitu",
     etymology:
       "eponym Marfan + Greek -oid = resembling — body habitus mimicking Marfan syndrome (tall, long limbs) without necessarily having FBN1 mutation",
     aliases: [
@@ -18567,7 +17834,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "oligoarthritis",
-    name: "Oligoarthritis",
+    name: "Oligoarthriti",
     etymology:
       "Greek oligos = few + arthron = joint + -itis = inflammation — arthritis affecting a small number of joints",
     aliases: [
@@ -18694,9 +17961,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin facies = face + clift = split",
     aliases: [
       "facial cleft",
-      "facial clefts",
       "craniofacial cleft",
-      "craniofacial clefts",
       "midline facial cleft",
     ],
     definition:
@@ -18725,7 +17990,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "vomitus",
-    name: "Vomitus",
+    name: "Vomitu",
     etymology: "Latin vomitus = that which is vomited",
     aliases: [
       "vomitus",
@@ -18762,10 +18027,9 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "agonal-respirations",
-    name: "Agonal Respirations",
+    name: "Agonal Respiration",
     etymology: "Greek agon = struggle/contest + -al = pertaining to + Latin respirare = breathe again",
     aliases: [
-      "agonal respirations",
       "agonal respiration",
       "agonal breathing",
       "agonal breaths",
@@ -18804,7 +18068,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin in- = not + somnus = sleep",
     aliases: [
       "insomnia",
-      "insomnias",
       "difficulty sleeping",
       "difficulty falling asleep",
       "difficulty staying asleep",
@@ -18928,9 +18191,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek kata = down + plēxis = stroke",
     aliases: [
       "cataplexy",
-      "cataplexies",
       "cataplectic attack",
-      "cataplectic attacks",
       "emotion-triggered weakness",
       "sudden loss of muscle tone",
     ],
@@ -18969,7 +18230,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "hypnagogic",
       "hypnagogic state",
-      "hypnagogic states",
       "sleep onset transition",
       "transition to sleep",
       "falling asleep transition",
@@ -19002,13 +18262,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hypnagogic-hallucinations",
-    name: "Hypnagogic Hallucinations",
+    name: "Hypnagogic Hallucination",
     etymology: "Greek hypnos = sleep + agogos = leading + Latin hallucinari = wander in mind",
     aliases: [
       "hypnagogic hallucination",
-      "hypnagogic hallucinations",
       "sleep-onset hallucination",
-      "sleep-onset hallucinations",
       "hypnagogic imagery",
       "vivid hallucinations at sleep onset",
       "hallucinations while falling asleep",
@@ -19043,7 +18301,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "sleep-paralysis",
-    name: "Sleep Paralysis",
+    name: "Sleep Paralysi",
     etymology: "Old English slæp = sleep + Latin paralysis = loss of movement",
     aliases: [
       "sleep paralysis",
@@ -19090,9 +18348,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "delayed sleep-wake phase disorder",
       "delayed sleep wake phase disorder",
       "delayed sleep phase disorder",
-      "delayed sleep phase disorders",
       "delayed sleep phase syndrome",
-      "delayed sleep phase syndromes",
       "dsps",
       "dspd",
       "circadian rhythm sleep-wake disorder delayed sleep phase type",
@@ -19141,7 +18397,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "excessive daytime somnolence",
       "eds",
       "hypersomnolence",
-      "hypersomnolences",
       "sleepiness during the day",
       "sleepy during the day",
       "irresistible sleepiness",
@@ -19188,9 +18443,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek idios = one's own + pathos = suffering + Greek hyper = over + Latin somnus = sleep",
     aliases: [
       "idiopathic hypersomnia",
-      "idiopathic hypersomnias",
       "primary hypersomnia",
-      "primary hypersomnias",
       "ih",
       "hypersomnia of central origin",
       "central hypersomnia",
@@ -19233,7 +18486,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "insufficient sleep",
       "inadequate sleep",
       "sleep deprivation",
-      "sleep deprivations",
       "voluntary sleep curtailment",
       "sleep restriction",
       "sleep restriction syndrome",
@@ -19277,16 +18529,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin obstructio = blockage + Old English slæp = sleep + Greek apnoia = without breathing",
     aliases: [
       "obstructive sleep apnea",
-      "obstructive sleep apneas",
       "obstructive sleep apnea syndrome",
-      "obstructive sleep apnea syndromes",
       "osa",
       "osahs",
       "sleep apnea",
-      "sleep apneas",
       "sleep apnea syndrome",
       "obstructive apnea",
-      "obstructive apneas",
     ],
     definition:
       "Sleep-related breathing disorder characterized by recurrent partial (hypopnea) or complete (apnea) collapse of the upper airway during sleep despite respiratory effort — causing intermittent hypoxemia, hypercapnia, cortical arousals, and fragmented nonrestorative sleep with daytime somnolence and systemic cardiovascular consequences.",
@@ -19325,7 +18573,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "rapid eye movement + Old English slæp = sleep + Latin comportare = to behave + Latin dis- = apart + ordo = order",
     aliases: [
       "rem sleep behavior disorder",
-      "rem sleep behavior disorders",
       "rem sleep behavioural disorder",
       "rbd",
       "rem behavior disorder",
@@ -19410,19 +18657,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "flame shaped hemorrhage",
       "flame-shaped hemorrhage",
-      "flame-shaped hemorrhages",
-      "flame shaped hemorrhages",
       "flame hemorrhage",
-      "flame hemorrhages",
       "flame-shaped retinal hemorrhage",
-      "flame-shaped retinal hemorrhages",
       "flame retinal hemorrhage",
-      "flame retinal hemorrhages",
       "splinter hemorrhage retina",
       "superficial retinal hemorrhage",
-      "superficial retinal hemorrhages",
       "nerve fiber layer hemorrhage",
-      "nerve fiber layer hemorrhages",
       "nfl hemorrhage",
     ],
     definition:
@@ -19463,20 +18703,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym for Moritz Roth (1839–1914), German physician — retinal hemorrhage with a pale white center seen in infective endocarditis and other systemic diseases",
     aliases: [
       "roth spot",
-      "roth spots",
       "rothspot",
-      "rothspots",
       "roth's spot",
-      "roth's spots",
       "roth retinal spot",
-      "roth retinal spots",
       "retinal hemorrhage with pale center",
       "retinal hemorrhage with white center",
       "white-centered retinal hemorrhage",
-      "white-centered retinal hemorrhages",
       "whitish centered retinal hemorrhage",
       "litten spot",
-      "litten spots",
     ],
     definition:
       "Retinal hemorrhage with a pale (white or whitish) center visible on fundoscopy — classically associated with infective endocarditis from septic microemboli or immune-complex–mediated vasculitis, but also seen in anemia, leukemia, and other systemic illnesses.",
@@ -19515,11 +18749,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym for Edward Janeway (1841–1911), American physician — painless erythematous macule on palms or soles from septic microemboli in infective endocarditis",
     aliases: [
       "janeway lesion",
-      "janeway lesions",
       "janeway's lesion",
-      "janeway's lesions",
       "janeway macule",
-      "janeway macules",
       "painless palm macule endocarditis",
       "painless sole macule endocarditis",
       "janeway lesion endocarditis",
@@ -19561,11 +18792,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Eponym for Sir William Osler (1849–1919), Canadian physician — painful subcutaneous nodule on finger or toe pads in subacute infective endocarditis",
     aliases: [
       "osler node",
-      "osler nodes",
       "osler's node",
-      "osler's nodes",
       "osler nodule",
-      "osler nodules",
       "painful finger pad nodule endocarditis",
       "painful toe pad nodule endocarditis",
       "osler node endocarditis",
@@ -19602,16 +18830,12 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "cotton-wool-spots",
-    name: "Cotton-Wool Spots",
+    name: "Cotton-Wool Spot",
     etymology: "English cotton = soft fiber + wool = sheep fleece + spot = mark",
     aliases: [
-      "cotton wool spots",
-      "cotton-wool spots",
       "cotton wool spot",
       "cotton-wool spot",
-      "soft exudates",
       "soft exudate",
-      "nerve fiber layer infarcts",
       "nerve fiber layer infarct",
       "nflis",
     ],
@@ -19652,15 +18876,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "cherry red macula",
       "cherry-red spot",
       "cherry red spot",
-      "cherry-red spots",
-      "cherry red spots",
       "macular cherry-red spot",
       "red fovea centralis",
       "red fovea",
       "fovea centralis red",
       "fovea centralis cherry-red",
       "white macula",
-      "white maculas",
       "pale retina cherry-red spot",
       "milky retina cherry-red macula",
       "opacified retina cherry-red fovea",
@@ -19744,7 +18965,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek papilla = nipple + oedema = swelling",
     aliases: [
       "papilledema",
-      "papilledemas",
       "papilloedema",
       "optic disc edema",
       "optic disc swelling",
@@ -19781,14 +19001,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "optic-disc-margins",
-    name: "Optic Disc Margins",
+    name: "Optic Disc Margin",
     etymology: "Latin opticus = of sight + Latin discus = plate + Latin margo = edge",
     aliases: [
-      "optic disc margins",
       "optic disc margin",
-      "optic disk margins",
       "optic disk margin",
-      "disc margins",
       "disc margin",
       "blurred disc margins",
       "blurred optic disc margins",
@@ -19841,9 +19058,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "exaggerated startle reflex",
       "exaggerated startle reflexes",
       "exaggerated startle response",
-      "exaggerated startle responses",
       "startle response",
-      "startle responses",
       "startle myoclonus",
       "whole-body startle",
     ],
@@ -19888,7 +19103,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "achilles reflexes",
       "achilles jerk",
       "ankle jerk",
-      "ankle jerks",
       "s1 reflex",
       "s1 deep tendon reflex",
       "plantar flexion reflex",
@@ -20018,7 +19232,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "anal wink reflex",
       "anal wink reflexes",
       "anal wink",
-      "anal winks",
       "wink reflex",
       "wink reflexes",
       "anal reflex",
@@ -20114,7 +19327,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "positive babinski sign",
       "babinski positive",
       "upgoing toe",
-      "upgoing toes",
       "extensor plantar response",
       "plantar reflex abnormal",
     ],
@@ -20153,12 +19365,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek meiosis = lessening + -ic = pertaining to",
     aliases: [
       "miotic",
-      "miotics",
       "miosis",
       "miotic pupil",
-      "miotic pupils",
       "constricted pupil",
-      "constricted pupils",
       "pupillary constriction",
       "pupillary miosis",
     ],
@@ -20199,9 +19408,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Named for Scottish ophthalmologist Douglas Argyll Robertson + English physician (pupil) — Greek pupilla = little doll",
     aliases: [
       "argyll robertson pupil",
-      "argyll robertson pupils",
       "argyll-robertson pupil",
-      "argyll-robertson pupils",
       "arp",
       "light-near dissociation",
       "light near dissociation",
@@ -20245,12 +19452,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek tonos = tension/tone + Latin pupilla = little doll; eponym Adie",
     aliases: [
       "tonic pupil",
-      "tonic pupils",
       "adie pupil",
       "adie's pupil",
       "adie tonic pupil",
       "atonic pupil",
-      "atonic pupils",
       "light-near dissociation pupil",
     ],
     definition:
@@ -20278,17 +19483,13 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "pinpoint-pupils",
-    name: "Pinpoint Pupils",
+    name: "Pinpoint Pupil",
     etymology:
       "English pin + point = tiny sharp tip + Latin pupilla = little doll (reflection seen in the eye)",
     aliases: [
-      "pinpoint pupils",
       "pinpoint pupil",
-      "pin point pupils",
       "pin point pupil",
-      "pin-point pupils",
       "pin-point pupil",
-      "miotic pupils",
       "severely miotic pupils",
     ],
     definition:
@@ -20323,16 +19524,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "mydriasis",
-    name: "Mydriasis",
+    name: "Mydriasi",
     etymology: "Greek mydriasis = enlargement (of pupil)",
     aliases: [
       "mydriasis",
       "midriasis",
       "mydriatic",
       "mydriatic pupil",
-      "mydriatic pupils",
       "dilated pupil",
-      "dilated pupils",
       "pupils are dilated",
       "pupils dilated",
       "pupillary dilation",
@@ -20375,14 +19574,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek kyklos = circle + plege = stroke/paralysis — paralysis of the ciliary muscle abolishing lens accommodation",
     aliases: [
       "cycloplegia",
-      "cycloplegias",
       "cycloplegic",
       "cycloplegic paralysis",
       "loss of accommodation",
       "accommodation paralysis",
       "paralysis of accommodation",
       "cycloplegic state",
-      "cycloplegic states",
     ],
     definition:
       "Paralysis of the ciliary muscle preventing change in lens curvature — loss of accommodation (ability to focus on near objects) — produced pharmacologically by antimuscarinic ophthalmic drops or by parasympathetic pathway lesions.",
@@ -20420,7 +19617,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Middle English flusshen = to flow + Old English scinn = hide — visibly erythematous, warm skin from cutaneous vasodilation",
     aliases: [
       "flushed skin",
-      "flushed skins",
       "skin flushing",
       "warm flushed skin",
       "warm red skin",
@@ -20471,12 +19667,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin ad = toward + ferre = carry + pupilla = little doll (pupil) + defectus = failure",
     aliases: [
       "afferent pupillary defect",
-      "afferent pupillary defects",
       "relative afferent pupillary defect",
-      "relative afferent pupillary defects",
       "rapd",
       "marcus gunn pupil",
-      "marcus gunn pupils",
       "afferent pupillary defect (rapd)",
     ],
     definition:
@@ -20565,7 +19758,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "diplopia",
       "double vision",
-      "double visions",
       "binocular diplopia",
       "monocular diplopia",
       "seeing double",
@@ -20610,9 +19802,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek para = beside + Greek sternon = chest/breast + Old English lyft = raise — palpable outward thrust at the left parasternal border",
     aliases: [
       "parasternal lift",
-      "parasternal lifts",
       "parasternal heave",
-      "parasternal heaves",
       "left parasternal lift",
       "left parasternal heave",
       "right ventricular heave",
@@ -20661,12 +19851,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin dis- = apart + positus = placed + Latin apex = tip + Latin impellere = to push + pulsus = beat",
     aliases: [
       "displaced apical impulse",
-      "displaced apical impulses",
       "displaced pmi",
-      "displaced pmis",
       "displaced point of maximal impulse",
       "displaced apex beat",
-      "displaced apex beats",
       "laterally displaced apical impulse",
       "laterally displaced pmi",
       "lateral displacement of apical impulse",
@@ -20709,17 +19896,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "bilateral-cataracts",
-    name: "Bilateral Cataracts",
+    name: "Bilateral Cataract",
     etymology: "Latin bi = two + latus = side + cataracta = waterfall (lens opacity) + Greek -al = pertaining to",
     aliases: [
-      "bilateral cataracts",
       "bilateral cataract",
       "cataracts bilateral",
       "cataract bilateral",
       "bilateral lens opacity",
-      "bilateral lens opacities",
       "bilateral lens opacification",
-      "congenital bilateral cataracts",
       "congenital bilateral cataract",
       "bilateral congenital cataracts",
     ],
@@ -20763,8 +19947,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "blurry vision",
       "blurred vision",
-      "blurry visions",
-      "blurred visions",
       "vision blur",
       "blurred eyesight",
       "blurry eyesight",
@@ -20813,21 +19995,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin visus = sight + Latin disturbare = to throw into disorder — any abnormal visual perception including blur, diplopia, field loss, photopsia, or color change from ocular, optic nerve, or central nervous system pathology",
     aliases: [
       "visual disturbance",
-      "visual disturbances",
       "visual symptom",
-      "visual symptoms",
       "vision disturbance",
-      "vision disturbances",
       "disturbed vision",
       "abnormal vision",
       "visual change",
-      "visual changes",
       "vision change",
-      "vision changes",
       "visual complaint",
-      "visual complaints",
       "ocular visual disturbance",
-      "ocular visual disturbances",
     ],
     definition:
       "Broad category of abnormal visual experiences — decreased acuity, diplopia, scotomas, photopsia, halos, color distortion, or transient monocular blindness — arising anywhere along the visual pathway from cornea to occipital cortex; specific characterization (monocular vs binocular, painful vs painless, sudden vs gradual) localizes pathology.",
@@ -20884,7 +20059,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin verticalis = overhead + Greek diplous = double + ops = eye",
     aliases: [
       "vertical diplopia",
-      "vertical diplopias",
       "vertical double vision",
       "up-down double vision",
       "up and down double vision",
@@ -20926,7 +20100,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek horizein = to bound/limit + diplous = double + ops = eye",
     aliases: [
       "horizontal diplopia",
-      "horizontal diplopias",
       "horizontal double vision",
       "side by side double vision",
       "side-to-side double vision",
@@ -20972,7 +20145,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "pseudobulbar palsy",
       "pseudobulbar palsies",
       "pseudobulbar syndrome",
-      "pseudobulbar syndromes",
       "supranuclear bulbar palsy",
       "supranuclear bulbar palsies",
       "corticobulbar palsy",
@@ -21017,9 +20189,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "slurred speech",
       "slurring of speech",
       "dysarthria",
-      "dysarthrias",
       "motor speech disorder",
-      "motor speech disorders",
       "garbled speech",
     ],
     definition:
@@ -21060,7 +20230,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin vertere = to turn + -igo = condition",
     aliases: [
       "vertigo",
-      "vertigos",
       "true vertigo",
       "rotational vertigo",
       "spinning sensation",
@@ -21105,15 +20274,12 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin fasciculus = small bundle + -ation = process/state",
     aliases: [
       "fasciculation",
-      "fasciculations",
       "muscle fasciculation",
-      "muscle fasciculations",
       "fasciculating",
       "visible muscle twitch",
       "visible muscle twitches",
       "muscle twitching",
       "benign fasciculation",
-      "benign fasciculations",
     ],
     definition:
       "Visible, fine, irregular twitching of a portion of a muscle due to spontaneous firing of a motor unit — a classic lower motor neuron (LMN) sign when persistent and accompanied by weakness, atrophy, or hyporeflexia.",
@@ -21252,13 +20418,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin nasus = nose + labium = lip + fold = skin crease",
     aliases: [
       "nasolabial fold",
-      "nasolabial folds",
       "nasolabial crease",
-      "nasolabial creases",
       "nasolabial sulcus",
       "nasolabial sulci",
       "smile line",
-      "smile lines",
       "laugh lines",
     ],
     definition:
@@ -21339,10 +20502,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "sciatica",
       "sciatic pain",
-      "sciatic pains",
       "sciatic neuralgia",
       "lumbosacral radiculopathy",
-      "lumbosacral radiculopathies",
     ],
     definition:
       "Radicular pain radiating along the distribution of the sciatic nerve — typically from lumbosacral nerve root compression (most often L5 or S1) — causing buttock and leg pain that may worsen with leg elevation.",
@@ -21421,12 +20582,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek dys = abnormal + tonos = tension/tone",
     aliases: [
       "dystonia",
-      "dystonias",
       "dystonic",
       "dystonic posturing",
       "dystonic movements",
       "sustained muscle contraction",
-      "sustained muscle contractions",
     ],
     definition:
       "Movement disorder of sustained or intermittent muscle contractions causing twisting, repetitive movements, or abnormal fixed postures — may be focal, segmental, or generalized.",
@@ -21466,7 +20625,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek a = without + kathisia = sitting (inability to remain seated)",
     aliases: [
       "akathisia",
-      "akathisias",
       "akathisic",
       "akathizeda",
       "restless legs from antipsychotics",
@@ -21510,14 +20668,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin tardus = late/slow + Greek dys = abnormal + kinesis = movement",
     aliases: [
       "tardive dyskinesia",
-      "tardive dyskinesias",
       "td",
       "tardive movement disorder",
-      "tardive movement disorders",
       "antipsychotic-induced tardive dyskinesia",
       "neuroleptic-induced tardive dyskinesia",
       "orobuccolingual dyskinesia",
-      "orobuccolingual dyskinesias",
       "lip-smacking dyskinesia",
     ],
     definition:
@@ -21556,11 +20711,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek autos = self + nomos = law + Latin dis- = apart + Latin functio = performance",
     aliases: [
       "autonomic dysfunction",
-      "autonomic dysfunctions",
       "autonomic neuropathy",
-      "autonomic neuropathies",
       "dysautonomia",
-      "dysautonomias",
       "autonomic failure",
       "autonomic insufficiency",
     ],
@@ -21601,7 +20753,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek a- = without + mnēmē = memory + -ia = condition",
     aliases: [
       "amnesia",
-      "amnesias",
       "memory loss",
       "loss of memory",
       "retrograde amnesia",
@@ -21646,7 +20797,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "anterograde memory loss",
       "anterograde amnesia",
-      "anterograde amnesias",
       "inability to form new memories",
       "failure to encode new memories",
       "short-term memory loss",
@@ -21691,18 +20841,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin executio = carrying out + Latin functio = performance + Greek dys- = impaired — failure of higher-order cognitive control processes",
     aliases: [
       "executive dysfunction",
-      "executive dysfunctions",
       "executive function deficit",
-      "executive function deficits",
       "executive function impairment",
-      "executive function impairments",
       "executive cognitive dysfunction",
       "impaired executive function",
-      "impaired executive functions",
       "frontal lobe dysfunction",
       "frontal-subcortical dysfunction",
       "dysexecutive syndrome",
-      "dysexecutive syndromes",
     ],
     definition:
       "Impairment of higher-order cognitive processes subserved by prefrontal cortex and frontal-subcortical circuits — including planning, organization, sequencing, mental flexibility, working memory, judgment, and behavioral inhibition — causing difficulty with complex tasks, multitasking, and socially appropriate behavior.",
@@ -21745,7 +20890,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek an- = without + hēdonē = pleasure",
     aliases: [
       "anhedonia",
-      "anhedonias",
       "loss of pleasure",
       "loss of interest",
       "inability to experience pleasure",
@@ -21788,12 +20932,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "dysphoric",
       "dysphoria",
-      "dysphorias",
       "dysphoric mood",
-      "dysphoric moods",
       "dysphoric affect",
       "dysphoric state",
-      "dysphoric states",
       "unpleasant mood",
       "restless irritable mood",
       "psychological distress",
@@ -21836,13 +20977,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin libido = desire, lust, will",
     aliases: [
       "libido",
-      "libidos",
       "sex drive",
-      "sex drives",
       "sexual desire",
-      "sexual desires",
       "sexual drive",
-      "sexual drives",
       "decreased libido",
       "loss of libido",
       "low libido",
@@ -21894,7 +21031,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin anxietas = distress of mind from anxius = choking/squeezing",
     aliases: [
       "anxiety",
-      "anxieties",
       "anxious",
       "anxiousness",
       "nervousness",
@@ -21936,7 +21072,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek an- = without + osmē = smell",
     aliases: [
       "anosmia",
-      "anosmias",
       "loss of smell",
       "loss of the sense of smell",
       "absence of smell",
@@ -21985,7 +21120,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "decorticate posturing",
       "decorticate posture",
       "decorticate rigidity",
-      "decorticate postures",
       "abnormal flexion",
       "flexor posturing",
       "decorticate flexion",
@@ -22030,7 +21164,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "decerebrate posturing",
       "decerebrate posture",
       "decerebrate rigidity",
-      "decerebrate postures",
       "abnormal extension",
       "extensor posturing",
       "decerebrate extension",
@@ -22072,7 +21205,6 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek ous = ear + rhoia = flow",
     aliases: [
       "otorrhea",
-      "otorrheas",
       "otorrhoea",
       "ear discharge",
       "ear drainage",
@@ -22115,18 +21247,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "raccoon-eyes",
-    name: "Raccoon Eyes",
+    name: "Raccoon Eye",
     etymology:
       "English raccoon (masked mammal) + eyes — periorbital ecchymosis resembling a raccoon's facial mask",
     aliases: [
-      "raccoon eyes",
       "raccoon eye",
       "raccoon's eyes",
       "periorbital ecchymosis",
       "periorbital ecchymoses",
       "bilateral periorbital ecchymosis",
       "bilateral periorbital ecchymoses",
-      "panda eyes",
       "panda eye",
     ],
     definition:
@@ -22164,11 +21294,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek peri = around + Latin orbita = circular path + Latin poena = penalty/pain",
     aliases: [
       "periorbital pain",
-      "periorbital pains",
       "pain around the eye",
       "pain around eye",
       "orbital pain",
-      "orbital pains",
       "retro-orbital pain",
       "retroorbital pain",
       "eye socket pain",
@@ -22205,14 +21333,11 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "autonomic-symptoms",
-    name: "Autonomic Symptoms",
+    name: "Autonomic Symptom",
     etymology: "Greek autos = self + nomos = law — reflex signs from autonomic nervous system activation",
     aliases: [
-      "autonomic symptoms",
       "autonomic symptom",
-      "cranial autonomic symptoms",
       "cranial autonomic symptom",
-      "ipsilateral autonomic symptoms",
       "ipsilateral autonomic symptom",
       "parasympathetic symptoms",
       "trigeminal autonomic symptoms",
@@ -22252,7 +21377,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "postnasal drip",
       "post-nasal drip",
       "post nasal drip",
-      "postnasal drips",
       "postnasal drainage",
       "post nasal drainage",
       "posterior nasal drip",
@@ -22302,8 +21426,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin sinus = curve/bay (paranasal cavity) + Latin dranare = to flow off — passage of mucus from paranasal sinuses into nasal cavity or posterior pharynx",
     aliases: [
       "sinus drainage",
-      "sinus drainages",
-      "sinus secretions",
       "sinus secretion",
       "paranasal sinus drainage",
       "nasal sinus drainage",
@@ -22311,7 +21433,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "sinus mucus",
       "drainage from sinuses",
       "sinus discharge",
-      "sinus discharges",
     ],
     definition:
       "Flow of mucus from the paranasal sinuses into the nasal cavity (anterior drainage) or along the posterior nasopharynx (posterior drainage) — normal mucociliary clearance becomes clinically apparent when volume increases or drainage is impaired in rhinosinusitis.",
@@ -22354,9 +21475,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "rhinorrhea",
       "rhinorrhoea",
       "runny nose",
-      "runny noses",
       "nasal discharge",
-      "nasal discharges",
       "clear nasal discharge",
       "watery nasal discharge",
       "nasal secretions",
@@ -22398,18 +21517,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin nasus = nose + Latin congerere = to heap together — subjective sensation of blocked nasal passages from mucosal edema, vascular engorgement, or structural obstruction",
     aliases: [
       "nasal congestion",
-      "nasal congestions",
       "nasal stuffiness",
       "stuffy nose",
-      "stuffy noses",
       "blocked nose",
-      "blocked noses",
       "nasal blockage",
-      "nasal blockages",
       "nasal obstruction",
-      "nasal obstructions",
       "congested nose",
-      "congested noses",
       "nasal congestion symptom",
       "rhinal congestion",
     ],
@@ -22460,13 +21573,12 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "ptosis",
-    name: "Ptosis",
+    name: "Ptosi",
     etymology: "Greek ptōsis = fall — drooping of the upper eyelid",
     aliases: [
       "ptosis",
       "ptoses",
       "drooping eyelid",
-      "drooping eyelids",
       "eyelid ptosis",
       "lid ptosis",
       "blepharoptosis",
@@ -22503,7 +21615,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "conjunctivitis",
-    name: "Conjunctivitis",
+    name: "Conjunctiviti",
     etymology:
       "Latin conjunctiva = joined together + -itis = inflammation",
     aliases: [
@@ -22511,9 +21623,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "conjunctivitides",
       "conjunctivities",
       "pink eye",
-      "pink eyes",
       "red eye",
-      "red eyes",
       "inflamed conjunctiva",
       "conjunctival inflammation",
     ],
@@ -22556,13 +21666,10 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin lacrima = tear",
     aliases: [
       "lacrimation",
-      "lacrimations",
       "tearing",
       "excessive tearing",
       "watery eye",
-      "watery eyes",
       "epiphora",
-      "epiphoras",
       "lacrimal discharge",
       "eye watering",
     ],
@@ -22597,19 +21704,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "extrapyramidal-symptoms",
-    name: "Extrapyramidal Symptoms",
+    name: "Extrapyramidal Symptom",
     etymology: "Latin extra = outside + Greek pyramis = pyramid (motor pathway) + symptoms",
     aliases: [
-      "extrapyramidal symptoms",
       "extrapyramidal symptom",
-      "extrapyramidal side effects",
       "extrapyramidal side effect",
       "eps",
       "drug-induced movement disorder",
-      "drug-induced movement disorders",
       "antipsychotic-induced movement disorder",
-      "antipsychotic-induced movement disorders",
-      "neuroleptic side effects",
       "neuroleptic side effect",
     ],
     definition:
@@ -22649,15 +21751,11 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin acutus = sudden + Greek dys = abnormal + tonos = tension + Latin reactio = response",
     aliases: [
       "acute dystonic reaction",
-      "acute dystonic reactions",
       "acute dystonia",
-      "acute dystonias",
       "drug-induced acute dystonia",
-      "drug-induced acute dystonias",
       "oculogyric crisis",
       "oculogyric crises",
       "acute extrapyramidal reaction",
-      "acute extrapyramidal reactions",
       "acute eps dystonia",
     ],
     definition:
@@ -22702,7 +21800,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "percussion dullness",
       "dull percussion",
       "dull percussion note",
-      "dull percussion notes",
       "flat percussion",
       "flat percussion note",
       "flat to percussion",
@@ -22748,9 +21845,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek hyper = over + Latin resonare = to resound — percussion note louder and more hollow than normal due to increased air in the thorax",
     aliases: [
       "hyperresonance",
-      "hyperresonances",
       "hyper-resonance",
-      "hyper-resonances",
       "hyperresonant",
       "hyperresonant percussion",
       "increased resonance",
@@ -22796,12 +21891,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin sub = under + cutis = skin + Greek emphysema = inflation — free air trapped in subcutaneous tissues",
     aliases: [
       "subcutaneous emphysema",
-      "subcutaneous emphysemas",
       "subcutaneous air",
       "subcutaneous crepitus",
       "crepitus subcutaneous",
       "surgical emphysema",
-      "surgical emphysemas",
       "subcutaneous emphysematous crepitus",
       "subcutaneous gas",
       "subcutaneous gas emphysema",
@@ -22839,22 +21932,18 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "hyperinflated-lungs",
-    name: "Hyperinflated Lungs",
+    name: "Hyperinflated Lung",
     etymology:
       "Latin hyper = over + inflare = to blow into + Latin pulmo = lung — lungs containing excess air with increased volumes beyond normal resting capacity",
     aliases: [
-      "hyperinflated lungs",
       "hyperinflated lung",
       "hyperinflated lung fields",
       "lung hyperinflation",
       "pulmonary hyperinflation",
       "hyperinflation",
-      "hyperinflations",
       "hyperinflation of lungs",
       "hyperinflation of the lungs",
-      "overinflated lungs",
       "overinflated lung",
-      "hyperexpanded lungs",
       "hyperexpanded lung",
       "hyperexpanded chest",
       "barrel chest appearance",
@@ -22901,19 +21990,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin lux = light + -ency = state — radiographic darkness on plain film or CT where x-rays pass more easily through less dense tissue (air, gas, fat)",
     aliases: [
       "lucency",
-      "lucencies",
       "lucent",
       "lucent area",
-      "lucent areas",
       "radiographic lucency",
-      "radiographic lucencies",
       "radiolucency",
-      "radiolucencies",
       "radiolucent",
       "radiolucent area",
-      "radiolucent areas",
       "decreased attenuation",
-      "decreased attenuations",
       "dark area on x-ray",
       "dark areas on x-ray",
     ],
@@ -22956,16 +22039,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek hyper = over/excess + Latin lux = light + -ency = state — increased radiographic blackness on chest imaging from greater x-ray transmission through air-filled or air-displaced lung",
     aliases: [
       "hyperlucency",
-      "hyperlucencies",
       "hyperlucent",
       "hyperlucent lung",
-      "hyperlucent lungs",
       "lung hyperlucency",
-      "lung hyperlucencies",
       "pulmonary hyperlucency",
-      "pulmonary hyperlucencies",
       "increased lucency",
-      "increased lucencies",
       "hyperlucent hemithorax",
       "hyperlucent hemithoraces",
     ],
@@ -23010,7 +22088,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin mediastinum = middle partition + Old English sciftan = divide/move — displacement of central thoracic structures (trachea, heart, great vessels) toward one hemithorax on imaging or exam",
     aliases: [
       "mediastinal shift",
-      "mediastinal shifts",
       "mediastinum shift",
       "shifted mediastinum",
       "mediastinal displacement",
@@ -23057,9 +22134,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Named for German dermatologist Heinrich Gottron + Latin papula = small elevation",
     aliases: [
       "gottron papule",
-      "gottron papules",
       "gottron's papule",
-      "gottron's papules",
       "gottron papular eruption",
     ],
     definition:
@@ -23096,21 +22171,13 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Greek xanthos = yellow + -oma = mass — focal collection of lipid-laden macrophages in skin or tendons",
     aliases: [
       "xanthoma",
-      "xanthomas",
       "cutaneous xanthoma",
-      "cutaneous xanthomas",
       "tendon xanthoma",
-      "tendon xanthomas",
       "tendinous xanthoma",
-      "tendinous xanthomas",
       "eruptive xanthoma",
-      "eruptive xanthomas",
       "tuberoeruptive xanthoma",
-      "tuberoeruptive xanthomas",
       "tuberous xanthoma",
-      "tuberous xanthomas",
       "palmar xanthoma",
-      "palmar xanthomas",
       "xanthoma tuberosum",
     ],
     definition:
@@ -23144,17 +22211,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "eruptive-xanthomas",
-    name: "Eruptive Xanthomas",
+    name: "Eruptive Xanthoma",
     etymology:
       "Latin eruptivus = bursting forth + Greek xanthos = yellow + -oma = mass — sudden crops of small yellow papules from severe hypertriglyceridemia",
     aliases: [
       "eruptive xanthoma",
-      "eruptive xanthomas",
       "eruptive xanthomata",
       "eruptive cutaneous xanthoma",
-      "eruptive cutaneous xanthomas",
       "chylomicronemia xanthoma",
-      "chylomicronemia xanthomas",
     ],
     definition:
       "Sudden appearance of multiple small yellow-red papules on extensor surfaces (buttocks, shoulders, elbows, knees) from chylomicron and VLDL infiltration into skin — pathognomonic for severe hypertriglyceridemia, especially type I hyperchylomicronemia.",
@@ -23185,17 +22249,14 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "tendon-xanthomas",
-    name: "Tendon Xanthomas",
+    name: "Tendon Xanthoma",
     etymology:
       "Greek tenon = tendon + xanthos = yellow + -oma = mass — lipid-laden foam cell deposits within tendons, especially weight-bearing extensor tendons",
     aliases: [
       "tendon xanthoma",
-      "tendon xanthomas",
       "tendon xanthomata",
       "tendinous xanthoma",
-      "tendinous xanthomas",
       "achilles xanthoma",
-      "achilles xanthomas",
       "achilles tendon xanthoma",
       "extensor tendon xanthoma",
     ],
@@ -23232,11 +22293,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek xanthos = yellow + Greek elasma = beaten metal plate — yellowish plaque on eyelid",
     aliases: [
       "xanthelasma",
-      "xanthelasmas",
       "xanthelasma palpebrarum",
-      "xanthelasma palpebrarums",
       "eyelid xanthoma",
-      "eyelid xanthomas",
       "xanthoma palpebrarum",
       "xanthomas palpebrarum",
     ],
@@ -23269,13 +22327,12 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "lipemia-retinalis",
-    name: "Lipemia Retinalis",
+    name: "Lipemia Retinali",
     etymology:
       "Greek lipos = fat + haima = blood + Latin retinalis = of the retina — creamy discoloration of retinal vessels from lipoprotein-rich blood",
     aliases: [
       "lipemia retinalis",
       "lipemic retina",
-      "lipemic retinas",
       "creamy retinal vessels",
       "milky retinal vessels",
       "salmon-colored retinal vessels",
@@ -23317,11 +22374,8 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin gingiva = gum + Greek hyper = excess + plasis = formation — overgrowth of gingival tissue",
     aliases: [
       "gingival hyperplasia",
-      "gingival hyperplasias",
       "gingival hypertrophy",
-      "gingival hypertrophies",
       "gingival overgrowth",
-      "gingival overgrowths",
       "gum hyperplasia",
       "gum hypertrophy",
       "drug-induced gingival hyperplasia",
@@ -23360,11 +22414,9 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin delirare = to deviate from a straight track — acute brain failure with disturbed attention and awareness",
     aliases: [
       "delirium",
-      "deliriums",
       "delirious",
       "acute delirium",
       "acute confusional state",
-      "acute confusional states",
       "hospital delirium",
       "icu delirium",
       "hyperactive delirium",
@@ -23451,14 +22503,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek an- = without + orgasmos = swelling/excitement (sexual climax) + -ia = condition",
     aliases: [
       "anorgasmia",
-      "anorgasmias",
       "orgasmic dysfunction",
-      "orgasmic dysfunctions",
       "inability to orgasm",
       "delayed orgasm",
-      "delayed orgasms",
       "orgasm delay",
-      "orgasm delays",
       "failure to orgasm",
       "difficulty reaching orgasm",
       "difficulty achieving orgasm",
@@ -23503,17 +22551,12 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin conjunctiva = membrane joining eyelid to eyeball + injectio = a pouring in — visible dilation of conjunctival and episcleral vessels producing a red eye",
     aliases: [
       "conjunctival injection",
-      "conjunctival injections",
       "conjunctival hyperemia",
-      "conjunctival hyperemias",
       "injected conjunctiva",
-      "injected conjunctivas",
       "red conjunctiva",
       "conjunctival redness",
       "bloodshot eye",
-      "bloodshot eyes",
       "red eye",
-      "red eyes",
     ],
     definition:
       "Visible erythema from dilated superficial conjunctival or episcleral blood vessels — a cardinal sign of ocular surface inflammation, irritation, or autonomic activation; pattern and associated findings distinguish benign conjunctivitis from vision-threatening uveitis or glaucoma.",
@@ -23556,9 +22599,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "vasovagal fainting",
       "vasovagal faint",
-      "vasovagal faints",
       "vasovagal syncope",
-      "vasovagal syncopes",
       "vasovagal reflex",
       "vasovagal reflexes",
       "vaso vagal reflex",
@@ -23566,13 +22607,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "vaso vagal syncope",
       "vaso-vagal syncope",
       "neurally mediated syncope",
-      "neurally mediated syncopes",
       "reflex syncope",
-      "reflex syncopes",
       "common faint",
-      "common faints",
       "simple faint",
-      "simple faints",
     ],
     definition:
       "Most common cause of syncope — a benign neurally mediated episode in which a trigger provokes excessive vagal tone and/or sympathetic withdrawal, causing bradycardia and vasodilation, transient hypotension, and brief loss of consciousness with rapid spontaneous recovery.",
@@ -23612,17 +22649,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "eponym: Bernhard Kayser and Bruno Fleischer + ring = circular deposit — golden-brown copper ring at corneal limbus",
     aliases: [
       "kayser-fleischer ring",
-      "kayser-fleischer rings",
       "kayser fleischer ring",
-      "kayser fleischer rings",
       "kayser-fleischer corneal ring",
-      "kayser-fleischer corneal rings",
       "kf ring",
-      "kf rings",
       "k-f ring",
-      "k-f rings",
       "copper corneal ring",
-      "copper corneal rings",
       "corneal copper deposition",
     ],
     definition:
@@ -23660,23 +22691,16 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin musculus = little mouse + wast = diminished + -ing — progressive loss of skeletal muscle mass and strength from disuse, malnutrition, neurogenic denervation, myopathic injury, or catabolic systemic disease",
     aliases: [
       "muscle wasting",
-      "muscle wastings",
       "wasting of muscle",
       "skeletal muscle wasting",
       "muscle atrophy",
       "muscular atrophy",
-      "muscular atrophies",
       "muscle loss",
       "muscle depletion",
-      "muscle depletions",
       "sarcopenia",
-      "sarcopenias",
       "muscle cachexia",
       "muscular wasting",
-      "muscular wastings",
       "muscular atrophy",
-      "muscular atrophies",
-      "wasting of muscles",
       "wasting of the muscles",
     ],
     definition:
@@ -23774,14 +22798,13 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "atrophic-testes",
-    name: "Atrophic Testes",
+    name: "Atrophic Teste",
     etymology:
       "Greek a- = without + trophē = nourishment + Latin testis = witness (gonad) — shrinkage and loss of functional testicular tissue from disuse, hormonal deficiency, genetic disorders, toxins, or chronic disease",
     aliases: [
       "atrophic testes",
       "atrophic testis",
       "testicular atrophy",
-      "testicular atrophies",
       "small testes",
       "small testis",
       "shrunken testes",
@@ -23834,9 +22857,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin in- = not + voluntarius = of will + jerk = sudden pull — abrupt unintended muscle contractions or movement fragments; clinical descriptor requiring differentiation into specific hyperkinetic movement disorders",
     aliases: [
       "involuntary jerking",
-      "involuntary jerkings",
       "involuntary jerk",
-      "involuntary jerks",
       "involuntary muscle jerking",
       "involuntary muscle jerks",
       "sudden involuntary jerking",
@@ -23884,7 +22905,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "migratory-arthritis",
-    name: "Migratory Arthritis",
+    name: "Migratory Arthriti",
     etymology:
       "Latin migrare = to move + Greek arthron = joint + -itis = inflammation — inflammatory arthritis that shifts from one joint to another over days, resolving in previously involved joints as new ones become affected",
     aliases: [
@@ -23937,7 +22958,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek erythros = red + Latin marginatus = bordered — pink annular rash with serpiginous advancing edge and clear center",
     aliases: [
       "erythema marginatum",
-      "erythema marginatums",
       "erythema marginata",
       "marginatum rash",
       "marginatum rashes",
@@ -23978,22 +22998,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "subcutaneous-nodules",
-    name: "Subcutaneous Nodules",
+    name: "Subcutaneous Nodule",
     etymology:
       "Latin sub = under + cutis = skin + Latin nodus = knot — firm painless nodules in the subcutaneous tissue beneath the skin",
     aliases: [
       "subcutaneous nodule",
-      "subcutaneous nodules",
-      "subcut nodules",
       "subcut nodule",
-      "subq nodules",
       "subq nodule",
-      "subq nodules",
       "subq nodule",
       "subcutaneous node",
-      "subcutaneous nodes",
       "rheumatic subcutaneous nodules",
-      "rheumatic fever nodules",
       "rheumatic fever nodule",
     ],
     definition:
@@ -24035,15 +23049,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek ex = out + anthein = to blossom — outwardly visible skin eruption, especially infectious or drug-related rash",
     aliases: [
       "exanthem",
-      "exanthems",
       "exanthema",
-      "exanthemas",
       "viral exanthem",
-      "viral exanthems",
       "childhood exanthem",
-      "childhood exanthems",
       "skin exanthem",
-      "skin exanthems",
     ],
     definition:
       "A widespread cutaneous eruption — typically macular, maculopapular, or vesicular — arising from systemic infection, immune response, or drug hypersensitivity; classic pediatric viral exanthems follow characteristic distributions and timing relative to fever.",
@@ -24086,14 +23095,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek mys = muscle + algos = pain — aching or soreness arising from skeletal muscle",
     aliases: [
       "myalgia",
-      "myalgias",
       "muscle pain",
-      "muscle pains",
       "muscle ache",
-      "muscle aches",
       "muscle soreness",
       "generalized myalgia",
-      "generalized myalgias",
       "diffuse myalgia",
     ],
     definition:
@@ -24142,7 +23147,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "in respiratory distress",
       "acute respiratory distress",
       "respiratory difficulty",
-      "respiratory difficulties",
       "labored breathing",
       "labored respirations",
       "laboured breathing",
@@ -24193,17 +23197,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "French chancre = ulcer/sore — in medicine the classic painless indurated primary lesion of syphilis at the site of Treponema pallidum inoculation",
     aliases: [
       "chancre",
-      "chancres",
       "syphilitic chancre",
-      "syphilitic chancres",
       "primary syphilis chancre",
-      "primary syphilis chancres",
       "hard chancre",
-      "hard chancres",
       "painless chancre",
-      "painless chancres",
       "genital chancre",
-      "genital chancres",
     ],
     definition:
       "Solitary, painless, indurated ulcer with a clean base and raised borders — the hallmark mucocutaneous lesion of primary syphilis appearing at the site of Treponema pallidum inoculation approximately 3 weeks after exposure, healing spontaneously in weeks even without treatment.",
@@ -24237,19 +23235,16 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "epistaxis",
-    name: "Epistaxis",
+    name: "Epistaxi",
     etymology:
       "Greek epi = upon + stazein = to drip — bleeding from the nasal mucosa, commonly called nosebleed",
     aliases: [
       "epistaxis",
       "epistaxes",
       "nosebleed",
-      "nosebleeds",
       "nasal bleeding",
       "nasal bleed",
-      "nasal bleeds",
       "nasal hemorrhage",
-      "nasal hemorrhages",
       "anterior epistaxis",
       "posterior epistaxis",
       "bloody nose",
@@ -24290,7 +23285,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "tinnitus",
-    name: "Tinnitus",
+    name: "Tinnitu",
     etymology:
       "Latin tinnire = to ring + -itus = condition — perception of sound without external acoustic stimulus, often described as ringing, buzzing, or roaring",
     aliases: [
@@ -24345,17 +23340,11 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek karos = deep sleep (carotid artery) + French bruit = noise — turbulent blood flow sound auscultated over the carotid artery, usually systolic",
     aliases: [
       "carotid bruit",
-      "carotid bruits",
       "carotid artery bruit",
-      "carotid artery bruits",
       "neck bruit",
-      "neck bruits",
       "carotid systolic bruit",
-      "carotid systolic bruits",
       "cervical bruit",
-      "cervical bruits",
       "internal carotid bruit",
-      "internal carotid bruits",
     ],
     definition:
       "Vascular sound heard on auscultation over the carotid artery — typically a systolic bruit from turbulent flow through a stenotic or irregular vessel — a screening physical finding associated with carotid atherosclerosis but neither perfectly sensitive nor specific for hemodynamically significant stenosis.",
@@ -24397,7 +23386,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "sensorineural hearing losses",
       "sensorineural deafness",
       "sensorineural hearing impairment",
-      "sensorineural hearing impairments",
       "snhl",
       "neural hearing loss",
       "neural hearing losses",
@@ -24451,11 +23439,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "hearing loss",
       "hearing losses",
       "hearing impairment",
-      "hearing impairments",
       "deafness",
       "partial deafness",
       "hearing deficit",
-      "hearing deficits",
       "reduced hearing",
       "diminished hearing",
       "conductive hearing loss",
@@ -24509,20 +23495,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English lyft = left + Latin sternum = breastbone + Old French bordure = edge — auscultation zone along the left parasternal chest wall for cardiac exam",
     aliases: [
       "left sternal border",
-      "left sternal borders",
       "lsb",
       "left parasternal border",
-      "left parasternal borders",
       "lower left sternal border",
-      "lower left sternal borders",
       "llsb",
       "left lower sternal border",
-      "left lower sternal borders",
       "upper left sternal border",
-      "upper left sternal borders",
       "lusb",
       "left upper sternal border",
-      "left upper sternal borders",
       "left infraclavicular area",
     ],
     definition:
@@ -24564,19 +23544,14 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin septum = partition + Latin perforare = to bore through — full-thickness defect in the nasal septum connecting right and left nasal cavities",
     aliases: [
       "septal perforation",
-      "septal perforations",
       "nasal septal perforation",
-      "nasal septal perforations",
       "nasal septum perforation",
-      "nasal septum perforations",
       "perforated nasal septum",
       "perforated nasal septums",
       "perforated septum",
       "perforated septums",
       "septal defect",
-      "septal defects",
       "midline septal perforation",
-      "midline septal perforations",
     ],
     definition:
       "Full-thickness hole in the nasal septum — may be asymptomatic or cause whistling, crusting, epistaxis, and altered nasal airflow; visible on anterior rhinoscopy as a defect often in the cartilaginous septum.",
@@ -24629,20 +23604,15 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "saddle-nose deformity",
       "saddle nose deformity",
-      "saddle-nose deformities",
-      "saddle nose deformities",
       "saddle nose",
-      "saddle noses",
       "saddle-nose",
       "saddle shaped nose",
       "saddle-shaped nose",
       "collapsed nasal bridge",
-      "collapsed nasal bridges",
       "nasal dorsum collapse",
       "nasal saddle deformity",
       "concave nasal dorsum",
       "depressed nasal bridge",
-      "depressed nasal bridges",
     ],
     definition:
       "External nasal deformity from loss of septal and dorsal structural support — the nasal bridge sinks centrally while lateral alae may remain relatively prominent, producing a concave saddle profile visible on exam.",
@@ -24694,15 +23664,10 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Latin intra = within + nasus = nose + ulcus = sore/wound — mucosal defect inside the nasal cavity",
     aliases: [
       "intranasal ulcer",
-      "intranasal ulcers",
       "nasal ulcer",
-      "nasal ulcers",
       "intranasal mucosal ulcer",
-      "intranasal mucosal ulcers",
       "nasal mucosal ulcer",
-      "nasal mucosal ulcers",
       "nasal cavity ulcer",
-      "nasal cavity ulcers",
     ],
     definition:
       "Focal mucosal break or non-healing lesion within the nasal cavity — may crust, bleed, or progress to septal perforation and saddle-nose deformity if destructive inflammation continues.",
@@ -24743,9 +23708,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Named for Russian dermatologist Pyotr Nikolsky (1858–1940) + Latin signum = mark — epidermal shearing with lateral tangential pressure indicating superficial loss of keratinocyte adhesion",
     aliases: [
       "positive nikolsky sign",
-      "positive nikolsky signs",
       "nikolsky sign",
-      "nikolsky signs",
       "nikolsky sign positive",
       "nikolsky positive",
       "nikolsky phenomenon",
@@ -24836,7 +23799,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "face plethora",
       "plethoric facies",
       "facial plethoric appearance",
-      "facial plethoric appearances",
       "plethoric facial appearance",
     ],
     definition:
@@ -24919,16 +23881,13 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Old English scinn = hide + Latin pigmentum = paint/color — melanin or other pigment in skin",
     aliases: [
       "skin pigmentation",
-      "skin pigmentations",
       "cutaneous pigmentation",
-      "cutaneous pigmentations",
       "altered skin pigmentation",
       "abnormal skin pigmentation",
       "changes in skin pigmentation",
       "change in skin pigmentation",
       "pigmented skin",
       "skin color change",
-      "skin color changes",
     ],
     definition:
       "Visible change in skin color from melanin or other pigment deposition or loss — may present as hyperpigmentation, hypopigmentation, or patchy dyschromia of skin or mucosa.",
@@ -25016,7 +23975,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Greek angeion = vessel + keras = horn + -oma = mass — hyperkeratotic vascular papule from dilated dermal capillaries with overlying epidermal hyperkeratosis",
     aliases: [
       "angiokeratoma",
-      "angiokeratomas",
       "angiokeratoma corporis diffusum",
       "angiokeratoma of mibelli",
       "mibelli angiokeratoma",
@@ -25061,7 +24019,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "sellar mass",
       "sellar masses",
       "sellar lesion",
-      "sellar lesions",
       "sellar region mass",
       "sellar region masses",
       "pituitary fossa mass",
@@ -25111,10 +24068,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "comatose",
       "comatose state",
-      "comatose states",
       "in coma",
       "comatose patient",
-      "comatose patients",
       "unresponsive coma",
       "deep coma",
     ],
@@ -25162,7 +24117,6 @@ export const SYMPTOMS: SymptomEntry[] = [
       "jittery baby",
       "jittery babies",
       "jittery infant",
-      "jittery infants",
       "neonatal jitteriness",
       "infant jitteriness",
     ],
@@ -25205,9 +24159,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "irritable",
       "irritable mood",
       "irritable infant",
-      "irritable infants",
       "irritable child",
-      "irritable children",
       "fussiness",
       "fussy",
       "fussy baby",

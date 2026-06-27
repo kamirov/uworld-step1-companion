@@ -118,10 +118,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "handgrip",
       "handgrip maneuver",
-      "handgrip maneuvers",
       "hand grip",
       "hand grip maneuver",
-      "hand grip maneuvers",
       "isometric handgrip",
       "isometric handgrip maneuver",
       "sustained handgrip",
@@ -157,14 +155,10 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin passivus = capable of suffering/undergoing + Latin crus = leg + Latin elevatio = lifting",
     aliases: [
       "passive leg elevation",
-      "passive leg elevations",
       "passive leg raise",
-      "passive leg raises",
       "passive leg raising",
       "leg elevation maneuver",
-      "leg elevation maneuvers",
       "leg raise maneuver",
-      "leg raise maneuvers",
       "elevating the legs",
       "raising the legs passively",
       "supine leg elevation",
@@ -197,7 +191,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Latin titulus = measured mark → titrate = adjust in measured steps",
     aliases: [
       "titrate",
-      "titrates",
       "titrating",
       "titrated",
       "titration",
@@ -227,7 +220,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   },
   {
     id: "migraine-prophylaxis",
-    name: "Migraine prophylaxis",
+    name: "Migraine Prophylaxi",
     etymology: "Greek hēmi = half + kranion = skull (migraine) + Greek prophylaxis = guard before",
     aliases: [
       "migraine prophylaxis",
@@ -263,13 +256,9 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin abortivus = born prematurely/stopped early + Greek therapeia = healing — treatment given at attack onset to terminate an acute episode rather than prevent future episodes",
     aliases: [
       "abortive therapy",
-      "abortive therapies",
       "abortive treatment",
-      "abortive treatments",
       "acute therapy",
-      "acute therapies",
       "acute treatment",
-      "acute treatments",
       "acute migraine therapy",
       "acute migraine treatment",
       "acute headache therapy",
@@ -339,7 +328,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Latin fundus = bottom/base (uterine top) + Old English hiehthu = height",
     aliases: [
       "fundal height",
-      "fundal heights",
       "uterine fundal height",
       "symphysis-fundal height",
       "sfh",
@@ -371,7 +359,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "apgar",
       "apgar score",
-      "apgar scores",
       "apgar scoring",
       "apgar assessment",
       "apgar test",
@@ -405,13 +392,10 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology:
       "eponym: Philip Wells + Greek kriterion = standard of judgment — clinical prediction rules for DVT and PE probability",
     aliases: [
-      "wells criteria",
       "wells criterion",
       "wells score",
-      "wells scores",
       "wells scoring",
       "wells rule",
-      "wells rules",
       "wells criteria for dvt",
       "wells criteria for pe",
       "wells dvt criteria",
@@ -447,18 +431,12 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "eponym: James Tanner + Old English stæg = step/degree of development",
     aliases: [
       "tanner stage",
-      "tanner stages",
       "tanner staging",
       "tanner pubertal stage",
-      "tanner pubertal stages",
       "sexual maturity rating",
-      "sexual maturity ratings",
       "smr",
-      "smrs",
       "pubertal tanner stage",
-      "pubertal tanner stages",
       "tanner scale",
-      "tanner scales",
     ],
     definition:
       "Standardized five-stage clinical scale (sexual maturity rating) describing progressive pubertal development — breast stages in girls, genital stages in boys, and pubic hair stages in both sexes scored separately — used to assess normal puberty, precocious puberty, and delayed puberty.",
@@ -487,13 +465,11 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   },
   {
     id: "secondary-sexual-characteristics",
-    name: "Secondary Sexual Characteristics",
+    name: "Secondary Sexual Characteristic",
     etymology:
       "Latin secundarius = following + sexualis = pertaining to sex + Latin character = distinguishing mark — physical traits that differentiate the sexes and emerge at puberty under gonadal steroid influence, distinct from the gonads themselves",
     aliases: [
-      "secondary sexual characteristics",
       "secondary sexual characteristic",
-      "secondary sex characteristics",
       "secondary sex characteristic",
       "sexual secondary characteristics",
       "pubertal secondary sexual characteristics",
@@ -535,7 +511,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Greek neo = new + Latin natus = born",
     aliases: [
       "neonate",
-      "neonates",
       "neonatal",
       "newborn",
       "newborn infant",
@@ -572,11 +547,9 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "deep tendon reflex",
       "deep tendon reflexes",
       "dtr",
-      "dtrs",
       "deep tendon reflex grading",
       "deep tendon reflex grade",
       "reflex grade",
-      "reflex grades",
       "reflex grading",
       "reflex scale",
       "tendon reflex",
@@ -615,9 +588,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin musculus = little mouse (muscle) + Latin potis = able/power + graded strength assessment",
     aliases: [
       "muscle power",
-      "muscle powers",
       "muscle strength",
-      "muscle strengths",
       "motor power",
       "motor strength",
       "motor strength grading",
@@ -699,14 +670,10 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Latin contra = against + conceptio = conception",
     aliases: [
       "contraception",
-      "contraceptions",
       "contraceptive",
-      "contraceptives",
       "contraceptive method",
-      "contraceptive methods",
       "birth control",
       "birth control method",
-      "birth control methods",
       "family planning",
     ],
     definition:
@@ -742,7 +709,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Greek chemeia = alchemy/chemistry + therapeia = healing",
     aliases: [
       "chemotherapy",
-      "chemotherapies",
       "chemo",
       "cytotoxic chemotherapy",
       "antineoplastic chemotherapy",
@@ -784,11 +750,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Latin adjuvare = to help",
     aliases: [
       "adjuvant",
-      "adjuvants",
       "adjuvant therapy",
-      "adjuvant therapies",
       "adjuvant treatment",
-      "adjuvant treatments",
       "adjuvant chemotherapy",
       "adjuvant radiation",
       "adjuvant radiotherapy",
@@ -819,12 +782,9 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "induction",
       "induction therapy",
-      "induction therapies",
       "induction treatment",
-      "induction treatments",
       "induction chemotherapy",
       "induction regimen",
-      "induction regimens",
       "induction phase",
       "remission induction",
       "remission induction therapy",
@@ -867,11 +827,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "palliative",
       "palliation",
       "palliative care",
-      "palliative cares",
       "palliative therapy",
-      "palliative therapies",
       "palliative treatment",
-      "palliative treatments",
       "symptom-directed care",
       "comfort-focused care",
     ],
@@ -971,11 +928,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Greek psyche = soul/mind + dynamis = force + Greek therapeia = healing — insight-oriented therapy exploring unconscious conflicts, defense mechanisms, and past relationships affecting present symptoms",
     aliases: [
       "psychodynamic psychotherapy",
-      "psychodynamic psychotherapies",
       "psychodynamic therapy",
-      "psychodynamic therapies",
       "psychodynamic approach",
-      "psychodynamic approaches",
       "insight-oriented psychotherapy",
       "insight oriented psychotherapy",
       "dynamic psychotherapy",
@@ -1011,9 +965,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin dis- = apart + locare = to place — redirecting an emotion or impulse from its original target to a safer, less threatening substitute",
     aliases: [
       "displacement",
-      "displacements",
       "displacement defense mechanism",
-      "displacement defense mechanisms",
       "defense mechanism displacement",
       "psychological displacement",
       "emotional displacement",
@@ -1045,7 +997,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin intellectus = understanding + -ization = process — using abstract, analytical thinking to avoid experiencing associated emotional distress",
     aliases: [
       "intellectualization",
-      "intellectualizations",
       "intellectualisation",
       "intellectualisation defense mechanism",
       "intellectualization defense mechanism",
@@ -1079,7 +1030,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin isolare = to make into an island + affect = emotional state — unconscious separation of an idea or memory from its associated feeling",
     aliases: [
       "isolation of affect",
-      "isolation of affects",
       "affect isolation",
       "isolated affect",
       "isolation-of-affect",
@@ -1114,9 +1064,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin ratio = reason/account + -ization = process — unconscious construction of plausible logical explanations to justify unacceptable feelings, motives, or behaviors",
     aliases: [
       "rationalization",
-      "rationalizations",
       "rationalisation",
-      "rationalisations",
       "rationalization defense mechanism",
       "rationalization defense",
       "defense mechanism rationalization",
@@ -1149,7 +1097,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin re- = back + premere = to press — unconscious exclusion of unacceptable thoughts, memories, or impulses from conscious awareness (Freudian primary defense)",
     aliases: [
       "repression",
-      "repressions",
       "psychological repression",
       "psychologic repression",
       "repression defense mechanism",
@@ -1184,7 +1131,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin supprimere = to press down from above — conscious, voluntary postponement of unwanted thoughts, feelings, or impulses from immediate awareness",
     aliases: [
       "suppression",
-      "suppressions",
       "conscious suppression",
       "voluntary suppression",
       "suppression defense mechanism",
@@ -1219,7 +1165,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin trans- = across + ferre = to carry — unconscious redirection of feelings, expectations, and relationship patterns from significant past figures onto the therapist (or another current figure)",
     aliases: [
       "transference",
-      "transferences",
       "positive transference",
       "negative transference",
       "psychodynamic transference",
@@ -1253,7 +1198,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Counter- = reciprocal/opposite + transference — therapist's conscious or unconscious emotional reactions to the patient, shaped by the patient's transference and/or the therapist's own unresolved conflicts",
     aliases: [
       "countertransference",
-      "countertransferences",
       "counter transference",
       "therapist countertransference",
       "psychodynamic countertransference",
@@ -1285,10 +1229,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin pro- = forward + jacere = to throw — unconscious attribution of one's own unacceptable thoughts, feelings, or impulses to another person",
     aliases: [
       "projection",
-      "projections",
       "projection defense mechanism",
       "projection defense",
-      "projection defense mechanisms",
       "defense mechanism projection",
       "psychological projection",
     ],
@@ -1319,7 +1261,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Reaction + formation — unconscious adoption of behavior and attitudes opposite to one's true unacceptable impulses, converting them into their contrary expression",
     aliases: [
       "reaction formation",
-      "reaction formations",
       "reaction-formation",
       "reaction formation defense mechanism",
       "reaction formation defense",
@@ -1352,7 +1293,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin re- = back + gradi = to step — reverting to behaviors, coping styles, or developmental stages from an earlier period of life under stress or illness",
     aliases: [
       "regression",
-      "regressions",
       "psychological regression",
       "psychologic regression",
       "regression defense mechanism",
@@ -1387,10 +1327,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin actio = doing/deed + out = external expression — unconscious conversion of internal conflict into impulsive behavior rather than verbal or emotional processing",
     aliases: [
       "acting out",
-      "acting outs",
       "acting-out",
       "acting out defense mechanism",
-      "acting out defense mechanisms",
       "defense mechanism acting out",
       "psychological acting out",
       "act out",
@@ -1423,9 +1361,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin de- = away from + negare = to say no — unconscious refusal to acknowledge painful external reality or internal feeling",
     aliases: [
       "denial",
-      "denials",
       "denial defense mechanism",
-      "denial defense mechanisms",
       "defense mechanism denial",
       "psychological denial",
       "psychologic denial",
@@ -1458,9 +1394,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin split = divide — unconscious separation of people or self into all-good or all-bad extremes without integrated middle ground",
     aliases: [
       "splitting",
-      "splittings",
       "splitting defense mechanism",
-      "splitting defense mechanisms",
       "defense mechanism splitting",
       "psychological splitting",
       "psychologic splitting",
@@ -1496,9 +1430,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin alter = other + -ism = doctrine — mature defense of channeling personal distress into devoted care for others",
     aliases: [
       "altruism",
-      "altruisms",
       "altruism defense mechanism",
-      "altruism defense mechanisms",
       "defense mechanism altruism",
       "psychological altruism",
       "psychologic altruism",
@@ -1531,9 +1463,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin humor = moisture/fluid; medieval temperament theory → modern sense of amusement used to soften distress",
     aliases: [
       "humor",
-      "humors",
       "humor defense mechanism",
-      "humor defense mechanisms",
       "defense mechanism humor",
       "psychological humor",
       "psychologic humor",
@@ -1568,9 +1498,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin sublimare = to raise to a higher level — unconscious redirection of unacceptable impulses into socially valued, constructive activities",
     aliases: [
       "sublimation",
-      "sublimations",
       "sublimation defense mechanism",
-      "sublimation defense mechanisms",
       "defense mechanism sublimation",
       "psychological sublimation",
       "psychologic sublimation",
@@ -1608,8 +1536,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "passive-aggressive",
       "passive aggressive behavior",
       "passive-aggressive behavior",
-      "passive aggressive behaviors",
-      "passive-aggressive behaviors",
       "passive aggressiveness",
       "passive-aggressive personality",
       "passive aggressive personality",
@@ -1642,9 +1568,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin supportare = to carry from below + Greek therapeia = healing — relationship-based therapy strengthening adaptive coping, self-esteem, and reality testing without deep interpretive work",
     aliases: [
       "supportive psychotherapy",
-      "supportive psychotherapies",
       "supportive therapy",
-      "supportive therapies",
       "supportive counseling",
       "supportive counseling therapy",
       "supportive psychotherapeutic approach",
@@ -1678,10 +1602,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "eponym: Graham Teasdale and Bryan Jennett (Glasgow, Scotland) + coma = deep sleep + Latin scala = ladder",
     aliases: [
       "glasgow coma scale",
-      "glasgow coma scales",
       "gcs",
       "glasgow coma score",
-      "glasgow coma scores",
     ],
     definition:
       "Standardized 3–15 point clinical score quantifying level of consciousness after brain injury — sums Eye (1–4), Verbal (1–5), and Motor (1–6) responses; lower scores indicate worse impairment.",
@@ -1709,7 +1631,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "Greek sternon = chest + Middle English rubben = friction applied with pressure",
     aliases: [
       "sternal rub",
-      "sternal rubs",
       "sternal pressure",
       "sternal stimulation",
       "rub on sternum",
@@ -1747,10 +1668,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     etymology: "anti- = against + platelet = small plate + Greek therapeia = healing/treatment",
     aliases: [
       "antiplatelet therapy",
-      "antiplatelet therapies",
       "antiplatelet treatment",
       "antiplatelet agent",
-      "antiplatelet agents",
       "antiplatelet drugs",
       "platelet inhibition therapy",
       "dual antiplatelet therapy",
@@ -1786,7 +1705,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "anti- = against + Latin retro = backward + virus + Greek therapeia = healing — combination drug regimen suppressing HIV replication",
     aliases: [
       "antiretroviral therapy",
-      "antiretroviral therapies",
       "art",
       "haart",
       "highly active antiretroviral therapy",
@@ -1830,7 +1748,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "androgen deprivation",
       "androgen deprivation therapy",
-      "androgen deprivation therapies",
       "adt",
       "hormonal therapy prostate cancer",
       "androgen suppression therapy",
@@ -1875,9 +1792,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Named for leuprorelin/leuprolide synthetic GnRH analog + Greek therapeia = healing — continuous GnRH-receptor agonist therapy that paradoxically suppresses pituitary gonadotropin secretion",
     aliases: [
       "leuprolide therapy",
-      "leuprolide therapies",
       "leuprolide treatment",
-      "leuprolide treatments",
       "leuprolide",
       "leuprolide acetate",
       "lupron therapy",
@@ -1921,7 +1836,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "recumbent",
       "recumbent position",
-      "recumbent positions",
       "lying down",
       "lying flat",
       "horizontal position",
@@ -1953,7 +1867,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "supine",
       "supine position",
-      "supine positions",
       "supine posture",
       "lying supine",
       "on the back",
@@ -1989,7 +1902,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "prone",
       "prone position",
-      "prone positions",
       "prone posture",
       "lying prone",
       "face down",
@@ -2024,7 +1936,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "right lateral decubitus position",
       "right lateral decubitus",
-      "right lateral decubitus positions",
       "right side lying",
       "lying on the right side",
       "right lateral position",
@@ -2065,7 +1976,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "intubated",
       "intubated patient",
-      "intubated patients",
       "endotracheally intubated",
       "orally intubated",
       "orally intubated patient",
@@ -2113,7 +2023,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "extubated",
       "extubated patient",
-      "extubated patients",
       "post-extubation",
       "post extubation",
       "post-extubated",
@@ -2157,15 +2066,12 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin praegnans/praegnare = before birth, carrying offspring",
     aliases: [
       "pregnancy",
-      "pregnancies",
       "pregnant",
       "pregnant patient",
-      "pregnant patients",
       "pregnant woman",
       "pregnant women",
       "gravid",
       "gravid patient",
-      "gravid patients",
       "gravid woman",
       "gravid women",
       "gravid state",
@@ -2210,9 +2116,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "obstetric care",
       "pregnancy care",
       "routine prenatal visits",
-      "prenatal visits",
       "prenatal visit",
-      "antenatal visits",
       "antenatal visit",
       "obstetric prenatal care",
     ],
@@ -2279,7 +2183,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Greek monos = single + therapeia = healing — treatment of a condition with one pharmacologic agent rather than multiple concurrent drugs",
     aliases: [
       "monotherapy",
-      "monotherapies",
       "single-drug therapy",
       "single drug therapy",
       "single-agent therapy",
@@ -2321,11 +2224,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin dieta = way of life + sal = salt + Latin restrictio = limitation",
     aliases: [
       "dietary salt restriction",
-      "dietary salt restrictions",
       "salt restriction",
-      "salt restrictions",
       "sodium restriction",
-      "sodium restrictions",
       "dietary sodium restriction",
       "low salt diet",
       "low-salt diet",
@@ -2365,11 +2265,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Greek diabētēs = siphon/passing through + Latin dieta = way of life — structured nutritional plan to manage blood glucose in diabetes mellitus",
     aliases: [
       "diabetic diet",
-      "diabetic diets",
       "diabetes diet",
-      "diabetes diets",
       "diabetic meal plan",
-      "diabetic meal plans",
       "medical nutrition therapy for diabetes",
       "diabetes medical nutrition therapy",
       "diabetic nutrition therapy",
@@ -2406,8 +2303,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
     aliases: [
       "gluten-free diet",
       "gluten free diet",
-      "gluten-free diets",
-      "gluten free diets",
       "gfd",
       "gf diet",
       "gluten exclusion diet",
@@ -2447,12 +2342,9 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin vegetare = to enliven/grow + -arian = one who follows — dietary pattern excluding meat (and sometimes other animal products); lacto-ovo vegetarian includes dairy and eggs; vegan excludes all animal-derived foods",
     aliases: [
       "vegetarian",
-      "vegetarians",
       "vegetarian diet",
-      "vegetarian diets",
       "vegetarianism",
       "lacto-ovo vegetarian",
-      "lacto-ovo vegetarians",
       "lacto vegetarian",
       "ovo vegetarian",
       "plant-based diet",
@@ -2536,14 +2428,11 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Old English scyran = to separate/sift — testing asymptomatic people to detect disease early",
     aliases: [
       "screening",
-      "screenings",
       "medical screening",
-      "medical screenings",
       "disease screening",
       "health screening",
       "preventive screening",
       "screening test",
-      "screening tests",
       "screening examination",
       "screening program",
     ],
@@ -2574,7 +2463,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin primus = first + praeventio = act of coming before — preventing disease onset in unaffected individuals",
     aliases: [
       "primary prevention",
-      "primary preventions",
       "primary preventive care",
       "primary preventive medicine",
       "disease prevention",
@@ -2607,7 +2495,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin secundus = second + praeventio = act of coming before — early detection and treatment to prevent progression",
     aliases: [
       "secondary prevention",
-      "secondary preventions",
       "secondary preventive care",
       "secondary preventive medicine",
       "early disease prevention",
@@ -2639,7 +2526,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin tertius = third + praeventio = act of coming before — limiting disability and complications from established disease",
     aliases: [
       "tertiary prevention",
-      "tertiary preventions",
       "tertiary preventive care",
       "tertiary preventive medicine",
       "disability prevention",
@@ -2667,7 +2553,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   },
   {
     id: "chemoprophylaxis",
-    name: "Chemoprophylaxis",
+    name: "Chemoprophylaxi",
     etymology:
       "Greek chemeia = chemistry/drug + Greek prophylaxis = guard in advance — use of medications to prevent disease in at-risk individuals before or after exposure",
     aliases: [
@@ -2714,13 +2600,9 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin sensus = feeling/perception + -ivity = quality of — proportion of truly diseased individuals correctly identified as positive by a diagnostic test (true positive rate)",
     aliases: [
       "sensitivity",
-      "sensitivities",
       "test sensitivity",
-      "test sensitivities",
       "diagnostic sensitivity",
-      "diagnostic sensitivities",
       "true positive rate",
-      "true positive rates",
       "tpr",
       "recall",
     ],
@@ -2753,13 +2635,9 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin specificus = particular/distinct + -ity = quality of — proportion of truly disease-free individuals correctly identified as negative by a diagnostic test (true negative rate)",
     aliases: [
       "specificity",
-      "specificities",
       "test specificity",
-      "test specificities",
       "diagnostic specificity",
-      "diagnostic specificities",
       "true negative rate",
-      "true negative rates",
       "tnr",
     ],
     definition:
@@ -2869,7 +2747,6 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "cross-over study",
       "cross-over studies",
       "crossover trial",
-      "crossover trials",
       "cross-over trial",
       "within-subject crossover design",
       "crossover randomized trial",
@@ -3020,11 +2897,8 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Latin relativus = in relation to + Latin risicum = cliff/danger — ratio comparing disease incidence in exposed vs unexposed groups in a cohort study",
     aliases: [
       "relative risk",
-      "relative risks",
       "risk ratio",
-      "risk ratios",
       "rr",
-      "rrs",
       "relative risk ratio",
       "cohort study risk ratio",
     ],
@@ -3094,11 +2968,10 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
   },
   {
     id: "independent-in-daily-activities",
-    name: "Independent in Daily Activities",
+    name: "Independent In Daily Activitie",
     etymology:
       "Latin independens = not hanging from another + Latin dies = day + activitas = doing — able to perform routine self-care and household tasks without assistance",
     aliases: [
-      "independent in daily activities",
       "independent in her daily activities",
       "independent in his daily activities",
       "independent in daily activity",
@@ -3146,9 +3019,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Old English hus = dwelling + Latin securitas = freedom from care + -ity = state — unstable, inadequate, or unaffordable housing that threatens health through exposure, crowding, environmental hazards, and barriers to medical care",
     aliases: [
       "housing insecurity",
-      "housing insecurities",
       "housing instability",
-      "housing instabilities",
       "unstable housing",
       "inadequate housing",
       "homelessness",

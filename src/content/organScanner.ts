@@ -11,9 +11,9 @@ import {
 import {
   buildTermTrie,
   findAllMatchesInTrie,
-  normalizedWordKey,
   type MatchValidationContext,
 } from "./termMatcher";
+import { canonicalAliasKey } from "./pluralization";
 import type { ChipPopoverTarget } from "./popoverLoader";
 import {
   getSiteScanConfig,
@@ -172,8 +172,8 @@ function getTermTrie(): TermTrie {
   return termTrie;
 }
 
-function aliasKeyFromMatch(matchText: string): string {
-  return normalizedWordKey(matchText);
+function aliasKeyFromMatch(_matchText: string, term: TermMatch): string {
+  return canonicalAliasKey(term.alias);
 }
 
 function unwrapAllChips(): void {
@@ -283,7 +283,7 @@ function evictAliasHighlight(aliasKey: string): void {
   for (const chip of document.querySelectorAll(
     chipSelectorForTerm(record.term),
   )) {
-    if (aliasKeyFromMatch(chip.textContent ?? "") === aliasKey) {
+    if (aliasKeyFromMatch(chip.textContent ?? "", record.term) === aliasKey) {
       unwrapChip(chip);
     }
   }
@@ -296,7 +296,7 @@ function isAlreadyHighlighted(
 ): boolean {
   if (suppressedPopoverTermKeys.has(termKey(term))) return true;
 
-  const aliasKey = aliasKeyFromMatch(matchText);
+  const aliasKey = aliasKeyFromMatch(matchText, term);
   const existing = highlightedAliasesOnQuestion.get(aliasKey);
   if (existing && zone < existing.zone) {
     evictAliasHighlight(aliasKey);
@@ -307,7 +307,7 @@ function isAlreadyHighlighted(
 }
 
 function recordHighlight(term: TermMatch, matchText: string, zone: number): void {
-  const aliasKey = aliasKeyFromMatch(matchText);
+  const aliasKey = aliasKeyFromMatch(matchText, term);
   if (!aliasKey) return;
   highlightedAliasesOnQuestion.set(aliasKey, { term, zone });
 }

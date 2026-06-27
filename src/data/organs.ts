@@ -41,7 +41,6 @@ export const ORGANS: OrganEntry[] = [
       "Greek aorte = great artery + Latin bifurcatio = forking into two — point where the abdominal aorta divides into the right and left common iliac arteries",
     aliases: [
       "aortic bifurcation",
-      "aortic bifurcations",
       "bifurcation of the aorta",
       "aortoiliac bifurcation",
       "aorto-iliac bifurcation",
@@ -82,11 +81,8 @@ export const ORGANS: OrganEntry[] = [
       "Latin externus = outward + Latin ilium = flank/hip + Greek arteria = artery",
     aliases: [
       "external iliac artery",
-      "external iliac arteries",
       "external iliac",
-      "external iliacs",
       "eia",
-      "eias",
     ],
     germLayer: "Mesoderm",
     origin:
@@ -104,13 +100,9 @@ export const ORGANS: OrganEntry[] = [
       "Latin internus = within + Latin ilium = flank/hip + Greek arteria = artery",
     aliases: [
       "internal iliac artery",
-      "internal iliac arteries",
       "internal iliac",
-      "internal iliacs",
       "hypogastric artery",
-      "hypogastric arteries",
       "iia",
-      "iias",
     ],
     germLayer: "Mesoderm",
     origin:
@@ -127,10 +119,8 @@ export const ORGANS: OrganEntry[] = [
       "Latin internus = within + Latin pudendum = external genitals + Greek arteria = artery",
     aliases: [
       "internal pudendal artery",
-      "internal pudendal arteries",
       "internal pudendal",
       "pudendal artery",
-      "pudendal arteries",
       "arteria pudenda interna",
     ],
     germLayer: "Mesoderm",
@@ -147,7 +137,7 @@ export const ORGANS: OrganEntry[] = [
     id: "obturator-artery",
     name: "Obturator Artery",
     etymology: "Latin obturare = to close up + Greek arteria = artery",
-    aliases: ["obturator artery", "obturator arteries", "arteria obturatoria"],
+    aliases: ["obturator artery", "arteria obturatoria"],
     germLayer: "Mesoderm",
     origin:
       "Typically arises from the anterior division of the internal iliac artery; courses anteromedially on the lateral pelvic wall and passes through the obturator canal (with the obturator nerve and vein) to enter the medial thigh and supply the obturator externus and adductor compartment.",
@@ -206,9 +196,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin inter = between + atrium = entry hall/chamber + septum = partition",
     aliases: [
       "interatrial septum",
-      "interatrial septa",
       "atrial septum",
-      "atrial septa",
       "ias",
       "inter-atrial septum",
       "interatrial cardiac septum",
@@ -244,9 +232,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin inter = between + ventriculus = little belly/ventricle + septum = partition",
     aliases: [
       "interventricular septum",
-      "interventricular septa",
       "ventricular septum",
-      "ventricular septa",
       "ivs",
       "iv septum",
       "inter-ventricular septum",
@@ -281,14 +267,11 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin pulmo = lung + valva = folding door/valve",
     aliases: [
       "pulmonic valve",
-      "pulmonic valves",
       "pulmonary valve",
-      "pulmonary valves",
       "pulmonic semilunar valve",
       "pulmonary semilunar valve",
       "pv valve",
       "pulmonic cusp",
-      "pulmonic cusps",
     ],
     germLayer: "Mesoderm (endocardial cushions and truncal ridges)",
     origin:
@@ -322,12 +305,10 @@ export const ORGANS: OrganEntry[] = [
       "Latin tri = three + cuspis = point/cusp + valva = folding door/valve",
     aliases: [
       "tricuspid valve",
-      "tricuspid valves",
       "right atrioventricular valve",
       "right av valve",
       "tv valve",
       "tricuspid leaflet",
-      "tricuspid leaflets",
     ],
     germLayer: "Mesoderm (endocardial cushions and ventricular myocardium)",
     origin:
@@ -377,7 +358,6 @@ export const ORGANS: OrganEntry[] = [
       "opening of pulmonary veins",
       "pv ostia",
       "pv ostium",
-      "pulmonary vein openings",
       "pulmonary vein opening",
       "left atrial pulmonary vein openings",
     ],
@@ -394,7 +374,6 @@ export const ORGANS: OrganEntry[] = [
     name: "Common Cardinal Veins",
     etymology: "Latin communis = shared + cardinalis = principal + vena = vein",
     aliases: [
-      "common cardinal veins",
       "common cardinal vein",
       "ducts of cuvier",
       "duct of cuvier",
@@ -427,11 +406,9 @@ export const ORGANS: OrganEntry[] = [
       "Greek a- = without + zygos = yoke/pair — unpaired ascending vein on the right side of the vertebral column (no left counterpart at this level)",
     aliases: [
       "azygos vein",
-      "azygos veins",
       "azygos",
       "vena azygos",
       "azygous vein",
-      "azygous veins",
       "hemiazygos vein",
       "accessory hemiazygos vein",
     ],
@@ -504,7 +481,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "aortic-isthmus",
-    name: "Aortic Isthmus",
+    name: "Aortic Isthmu",
     etymology:
       "Greek aorte = great artery + Latin isthmus = narrow passage — physiologically narrowed segment of the aortic arch just distal to the left subclavian artery and proximal to the ductus arteriosus insertion",
     aliases: [
@@ -513,11 +490,9 @@ export const ORGANS: OrganEntry[] = [
       "isthmus of aorta",
       "isthmus of the aorta",
       "aortic isthmic segment",
-      "aortic isthmic segments",
       "juxtaductal aorta",
       "juxtaductal aortic segment",
       "aortic narrowing",
-      "aortic narrowings",
       "isthmic aorta",
     ],
     germLayer: "Mesoderm",
@@ -587,7 +562,7 @@ export const ORGANS: OrganEntry[] = [
     id: "lungs",
     name: "Lungs",
     etymology: "Old English lungen = lungs",
-    aliases: ["lung", "lungs", "pulmonary"],
+    aliases: ["lung", "pulmonary"],
     germLayer: "Endoderm",
     origin:
       "Respiratory diverticulum buds from the foregut endoderm; branching morphogenesis forms bronchi and alveoli.",
@@ -599,7 +574,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin lingula = little tongue",
     aliases: [
       "lingula",
-      "lingulas",
       "lingula of the lung",
       "lingula of left lung",
       "lingula of the left lung",
@@ -607,7 +581,6 @@ export const ORGANS: OrganEntry[] = [
       "lung lingula",
       "left lung lingula",
       "lingular segment",
-      "lingular segments",
       "lingular pneumonia",
       "left lingula",
     ],
@@ -650,7 +623,6 @@ export const ORGANS: OrganEntry[] = [
       "pharyngeal pouch",
       "pharyngeal pouches",
       "pharyngeal pocket",
-      "pharyngeal pockets",
       "branchial pouch",
       "branchial pouches",
       "pharyngeal endodermal pouch",
@@ -717,11 +689,8 @@ export const ORGANS: OrganEntry[] = [
       "Latin secundus = second + Greek pharynx = throat + Latin clivus = slope/groove — ectodermal groove between second and third pharyngeal arches",
     aliases: [
       "second pharyngeal cleft",
-      "second pharyngeal clefts",
       "2nd pharyngeal cleft",
-      "2nd pharyngeal clefts",
       "second branchial cleft",
-      "second branchial clefts",
       "second branchial groove",
       "second pharyngeal groove",
       "cervical sinus of His",
@@ -759,7 +728,6 @@ export const ORGANS: OrganEntry[] = [
     aliases: [
       "branchial arch",
       "branchial arches",
-      "branchial archs",
       "pharyngeal arch",
       "pharyngeal arches",
       "pharyngeal arch system",
@@ -933,7 +901,6 @@ export const ORGANS: OrganEntry[] = [
     name: "Alveoli",
     etymology: "Latin alveolus = small cavity/cup (diminutive of alveus = trough)",
     aliases: [
-      "alveoli",
       "alveolus",
       "alveoluses",
       "pulmonary alveoli",
@@ -941,9 +908,7 @@ export const ORGANS: OrganEntry[] = [
       "lung alveoli",
       "lung alveolus",
       "air sac",
-      "air sacs",
       "gas exchange unit",
-      "gas exchange units",
       "respiratory alveoli",
     ],
     germLayer: "Endoderm (epithelium) + mesoderm (capillaries and interstitium)",
@@ -1032,7 +997,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "esophagus",
-    name: "Esophagus",
+    name: "Esophagu",
     etymology: "Greek oisophagos = food carrier",
     aliases: ["esophagus", "esophageal", "oesophagus"],
     germLayer: "Endoderm",
@@ -1046,10 +1011,8 @@ export const ORGANS: OrganEntry[] = [
       "Old English lower = inferior + Greek oisophagos = food carrier + Latin sphincter = tight band — physiologic high-pressure zone at the gastroesophageal junction",
     aliases: [
       "lower esophageal sphincter",
-      "lower esophageal sphincters",
       "les",
       "gastroesophageal sphincter",
-      "gastroesophageal sphincters",
       "ge junction sphincter",
       "distal esophageal sphincter",
       "cardiac sphincter",
@@ -1146,12 +1109,11 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "fundus",
-    name: "Fundus",
+    name: "Fundu",
     etymology:
       "Latin fundus = bottom/base — anatomical dome or expanded superior portion of a hollow organ; homonymous term in stomach and uterus (and eye)",
     aliases: [
       "fundus",
-      "fundi",
       "gastric fundus",
       "gastric fundi",
       "fundus of stomach",
@@ -1203,7 +1165,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "pylorus",
-    name: "Pylorus",
+    name: "Pyloru",
     etymology:
       "Greek pylōros = gatekeeper — distal gastric outlet regulating passage of chyme into duodenum",
     aliases: [
@@ -1211,9 +1173,7 @@ export const ORGANS: OrganEntry[] = [
       "pyloric",
       "pyloric canal",
       "pyloric sphincter",
-      "pyloric sphincters",
       "gastric outlet",
-      "gastric outlets",
       "pyloric region",
       "pyloric antrum outlet",
     ],
@@ -1273,18 +1233,12 @@ export const ORGANS: OrganEntry[] = [
       "Greek mesos = middle + enteron = intestine — double layer of peritoneum suspending the intestine from the posterior abdominal wall and containing blood vessels, lymphatics, and nerves",
     aliases: [
       "mesentery",
-      "mesenteries",
       "mesentary",
-      "mesentaries",
       "mesenteric",
       "intestinal mesentery",
-      "intestinal mesenteries",
       "dorsal mesentery",
-      "dorsal mesenteries",
       "ventral mesentery",
-      "ventral mesenteries",
       "mesenteric fold",
-      "mesenteric folds",
       "mesentery proper",
       "small bowel mesentery",
       "small intestinal mesentery",
@@ -1347,12 +1301,10 @@ export const ORGANS: OrganEntry[] = [
     name: "Intestines",
     etymology: "Latin intestinum = internal/gut",
     aliases: [
-      "intestines",
       "intestine",
       "intestinal",
       "intestinal tract",
       "bowel",
-      "bowels",
       "gut",
       "small and large intestine",
     ],
@@ -1400,23 +1352,15 @@ export const ORGANS: OrganEntry[] = [
       "Latin ileum = twisted gut + caecus = blind + Latin valva = folding door — muscular and mucosal structure at the ileum–cecum junction regulating one-way flow into the colon",
     aliases: [
       "ileocecal valve",
-      "ileocecal valves",
       "ileocaecal valve",
-      "ileocaecal valves",
       "ileocolic valve",
-      "ileocolic valves",
       "ileocecal sphincter",
-      "ileocecal sphincters",
       "bauhin valve",
-      "bauhin valves",
       "valve of bauhin",
       "valves of bauhin",
       "gerlach valve",
-      "gerlach valves",
       "ileocecal junction",
-      "ileocecal junctions",
       "ic valve",
-      "ic valves",
     ],
     germLayer: "Endoderm (mucosa) with muscularis propria and submucosal lymphoid tissue",
     origin:
@@ -1457,8 +1401,6 @@ export const ORGANS: OrganEntry[] = [
       "peyer patches",
       "peyer's patches",
       "peyers patches",
-      "peyer patchs",
-      "aggregated lymphoid follicles",
       "aggregated lymphoid follicle",
       "ileal lymphoid aggregates",
       "galt peyer patches",
@@ -1484,28 +1426,18 @@ export const ORGANS: OrganEntry[] = [
       "crypt of lieberkühn",
       "lieberkuhn crypts",
       "lieberkühn crypts",
-      "intestinal crypts",
       "intestinal crypt",
-      "intestinal glands",
       "intestinal gland",
       "crypts of the small intestine",
       "small intestinal crypts",
       "crypt",
-      "crypts",
       "intestinal crypt",
-      "intestinal crypts",
       "duodenal crypt",
-      "duodenal crypts",
       "jejunal crypt",
-      "jejunal crypts",
       "ileal crypt",
-      "ileal crypts",
       "small bowel crypt",
-      "small bowel crypts",
       "colonic crypt",
-      "colonic crypts",
       "colon crypt",
-      "colon crypts",
       "intestinal crypt cell niche",
     ],
     germLayer: "Endoderm",
@@ -1567,7 +1499,7 @@ export const ORGANS: OrganEntry[] = [
     id: "ascending-colon",
     name: "Ascending Colon",
     etymology: "Latin ascendere = to climb + Greek kolon = large intestine",
-    aliases: ["ascending colon", "ascending colons", "right colon"],
+    aliases: ["ascending colon", "right colon"],
     germLayer: "Endoderm",
     origin:
       "Midgut derivative; forms the right-sided vertical segment from cecum to hepatic flexure during intestinal rotation.",
@@ -1586,7 +1518,7 @@ export const ORGANS: OrganEntry[] = [
     id: "descending-colon",
     name: "Descending Colon",
     etymology: "Latin descendere = to go down + Greek kolon = large intestine",
-    aliases: ["descending colon", "descending colons", "left colon"],
+    aliases: ["descending colon", "left colon"],
     germLayer: "Endoderm",
     origin:
       "Hindgut derivative; left-sided vertical segment from splenic flexure to sigmoid colon.",
@@ -1595,7 +1527,7 @@ export const ORGANS: OrganEntry[] = [
     id: "sigmoid-colon",
     name: "Sigmoid Colon",
     etymology: "Greek sigma = S-shaped letter + kolon = large intestine",
-    aliases: ["sigmoid colon", "sigmoid colons", "sigmoid"],
+    aliases: ["sigmoid colon", "sigmoid"],
     germLayer: "Endoderm",
     origin:
       "Hindgut derivative; S-shaped loop between descending colon and rectum, suspended by sigmoid mesocolon.",
@@ -1643,7 +1575,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin bilis = bile + Latin ductus = channel",
     aliases: [
       "bile duct",
-      "bile ducts",
       "biliary tree",
       "biliary tract",
       "common bile duct",
@@ -1651,7 +1582,6 @@ export const ORGANS: OrganEntry[] = [
       "extrahepatic bile duct",
       "common hepatic duct",
       "hepatic duct",
-      "hepatic ducts",
     ],
     germLayer: "Endoderm",
     origin:
@@ -1665,7 +1595,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "pancreas",
-    name: "Pancreas",
+    name: "Pancrea",
     etymology: "Greek pan = all + kreas = flesh",
     aliases: ["pancreas", "pancreatic"],
     germLayer: "Endoderm",
@@ -1680,12 +1610,9 @@ export const ORGANS: OrganEntry[] = [
       "Greek pankreas = all flesh + Latin ductus = channel — main drainage pathway for pancreatic exocrine secretions",
     aliases: [
       "pancreatic duct",
-      "pancreatic ducts",
       "main pancreatic duct",
-      "main pancreatic ducts",
       "duct of wirsung",
       "wirsung duct",
-      "wirsung ducts",
       "pancreatic ductal system",
       "pancreatic drainage duct",
       "mpd",
@@ -1736,13 +1663,10 @@ export const ORGANS: OrganEntry[] = [
       "papilla of vater",
       "papilla of Vater",
       "ampullary region",
-      "ampullary regions",
       "ampullary region of pancreas",
       "ampullary region of the pancreas",
       "pancreatic ampullary region",
-      "pancreatic ampullary regions",
       "periampullary region",
-      "periampullary regions",
       "periampullary region of pancreas",
       "hepatopancreatic ampullary region",
     ],
@@ -1783,12 +1707,9 @@ export const ORGANS: OrganEntry[] = [
       "sphincters of oddi",
       "oddi sphincter",
       "hepatopancreatic sphincter",
-      "hepatopancreatic sphincters",
       "ampullary sphincter",
-      "ampullary sphincters",
       "choledochoduodenal sphincter",
       "biliary sphincter",
-      "biliary sphincters",
       "pancreatic sphincter",
     ],
     germLayer: "Mesoderm (smooth muscle) surrounding foregut-derived ampulla",
@@ -1824,7 +1745,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Old English fore = before + gut = intestine",
     aliases: [
       "foregut",
-      "foreguts",
       "anterior gut",
       "cranial gut",
       "proximal gut",
@@ -1848,7 +1768,7 @@ export const ORGANS: OrganEntry[] = [
     id: "midgut",
     name: "Midgut",
     etymology: "Old English mid = middle + gut = intestine",
-    aliases: ["midgut", "midguts", "middle gut", "mid gut"],
+    aliases: ["midgut", "middle gut", "mid gut"],
     germLayer:
       "Endoderm (with splanchnic mesoderm for mesentery and muscularis)",
     origin:
@@ -1868,9 +1788,7 @@ export const ORGANS: OrganEntry[] = [
       "Old English mid = middle + gut = intestine + Latin rotatio = turning — embryonic 270° counterclockwise rotation of the midgut around the superior mesenteric artery axis",
     aliases: [
       "midgut rotation",
-      "midgut rotations",
       "intestinal rotation",
-      "intestinal rotations",
       "embryonic midgut rotation",
       "270 degree midgut rotation",
       "counterclockwise midgut rotation",
@@ -1912,7 +1830,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Old English hind = rear + gut = intestine",
     aliases: [
       "hindgut",
-      "hindguts",
       "posterior gut",
       "caudal gut",
       "distal gut",
@@ -1942,7 +1859,7 @@ export const ORGANS: OrganEntry[] = [
     id: "kidney",
     name: "Kidney",
     etymology: "Old English cwið + Latin ren = kidney",
-    aliases: ["kidney", "kidneys", "renal"],
+    aliases: ["kidney", "renal"],
     germLayer: "Mesoderm",
     origin:
       "Definitive kidney from metanephros (ureteric bud + metanephric mesenchyme); intermediate mesoderm origin.",
@@ -1955,10 +1872,8 @@ export const ORGANS: OrganEntry[] = [
       "Latin costa = rib + vertebra = joint of spine + Latin angulus = corner",
     aliases: [
       "costovertebral angle",
-      "costovertebral angles",
       "cva",
       "renal angle",
-      "renal angles",
       "costovertebral angle cva",
     ],
     germLayer: "Mesoderm",
@@ -1972,9 +1887,7 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin ren = kidney + Latin capsula = little box/covering",
     aliases: [
       "renal capsule",
-      "renal capsules",
       "kidney capsule",
-      "kidney capsules",
       "fibrous renal capsule",
     ],
     germLayer: "Mesoderm",
@@ -1986,7 +1899,7 @@ export const ORGANS: OrganEntry[] = [
     id: "renal-artery",
     name: "Renal Artery",
     etymology: "Latin ren = kidney + Greek arteria = air-holder/artery",
-    aliases: ["renal artery", "renal arteries", "renal arterial"],
+    aliases: ["renal artery", "renal arterial"],
     germLayer: "Mesoderm",
     origin:
       "Lateral sacral branches of abdominal aorta arise at L1–L2; renal arteries enter the renal hilum and divide into segmental → interlobar → arcuate → interlobular arteries supplying nephrons; afferent arterioles branch from interlobular arteries to glomeruli.",
@@ -2005,13 +1918,10 @@ export const ORGANS: OrganEntry[] = [
       "Greek nephros = kidney + Latin gignere = to produce + Latin chorda = cord/rope — longitudinal strip of intermediate mesoderm that sequentially forms the embryonic kidneys",
     aliases: [
       "nephrogenic cord",
-      "nephrogenic cords",
       "nephrogenic ridge",
-      "nephrogenic ridges",
       "nephrogenic blastema cord",
       "intermediate mesoderm nephrogenic cord",
       "urogenital ridge",
-      "urogenital ridges",
     ],
     germLayer: "Mesoderm (intermediate mesoderm)",
     origin:
@@ -2040,9 +1950,7 @@ export const ORGANS: OrganEntry[] = [
     aliases: [
       "mesonephros",
       "mesonephric kidney",
-      "mesonephric kidneys",
       "intermediate kidney",
-      "intermediate kidneys",
       "wolffian body",
       "wolffian bodies",
     ],
@@ -2091,11 +1999,8 @@ export const ORGANS: OrganEntry[] = [
       "Greek meta = after/change + nephros = kidney + Latin diverticulum = out-pouching/branch",
     aliases: [
       "metanephric diverticulum",
-      "metanephric diverticula",
       "ureteric bud",
-      "ureteric buds",
       "metanephric ureteric bud",
-      "metanephric ureteric buds",
     ],
     germLayer: "Mesoderm",
     origin:
@@ -2109,7 +2014,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "renal-pelvis",
-    name: "Renal Pelvis",
+    name: "Renal Pelvi",
     etymology: "Latin ren = kidney + Latin pelvis = basin/trough",
     aliases: [
       "renal pelvis",
@@ -2194,7 +2099,6 @@ export const ORGANS: OrganEntry[] = [
       "Greek ouron = urine + Latin genitalis = origin/birth + Latin membrana = skin/layer",
     aliases: [
       "urogenital membrane",
-      "urogenital membranes",
       "ug membrane",
       "cloacal membrane urogenital portion",
     ],
@@ -2209,17 +2113,12 @@ export const ORGANS: OrganEntry[] = [
       "Greek ouron = urine + Latin fald = layer/plait + Latin fold = doubled part",
     aliases: [
       "urethral fold",
-      "urethral folds",
       "urethral fold of urogenital sinus",
       "urethral folds of urogenital sinus",
       "urogenital fold",
-      "urogenital folds",
       "genital fold",
-      "genital folds",
       "lateral urogenital fold",
-      "lateral urogenital folds",
       "urethral ridge",
-      "urethral ridges",
     ],
     germLayer:
       "Ectoderm / Mesoderm (surface ectoderm with underlying mesenchyme)",
@@ -2247,9 +2146,7 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin semen = seed + vesica = bladder/pouch",
     aliases: [
       "seminal vesicle",
-      "seminal vesicles",
       "seminal vesicle gland",
-      "seminal vesicle glands",
     ],
     germLayer: "Mesoderm",
     origin:
@@ -2257,9 +2154,9 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "testis",
-    name: "Testis",
+    name: "Testi",
     etymology: "Latin testis = witness",
-    aliases: ["testis", "testes", "testicle", "testicular"],
+    aliases: ["testis", "testicle", "testicular"],
     germLayer: "Mesoderm",
     origin:
       "Gonadal ridge (intermediate mesoderm); primordial germ cells migrate from yolk sac endoderm.",
@@ -2271,13 +2168,11 @@ export const ORGANS: OrganEntry[] = [
       "Latin semen = seed + ferre = to bear + Latin tubulus = small tube",
     aliases: [
       "seminiferous tubule",
-      "seminiferous tubules",
       "seminiferous tubule of testis",
       "seminiferous tubules of testis",
       "seminiferous tubule epithelium",
       "convoluted seminiferous tubules",
       "seminiferous cords",
-      "spermatogenic tubules",
       "spermatogenic tubule",
     ],
     germLayer:
@@ -2313,7 +2208,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "epididymis",
-    name: "Epididymis",
+    name: "Epididymi",
     etymology: "Greek epi = upon + didymos = twin/testis",
     aliases: ["epididymis", "epididymal"],
     germLayer: "Mesoderm",
@@ -2322,7 +2217,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "vas-deferens",
-    name: "Vas Deferens",
+    name: "Vas Deferen",
     etymology: "Latin vas = vessel + deferens = carrying away",
     aliases: [
       "vas deferens",
@@ -2330,9 +2225,7 @@ export const ORGANS: OrganEntry[] = [
       "ductus deferens",
       "ductus deferentia",
       "deferent duct",
-      "deferent ducts",
       "sperm duct",
-      "sperm ducts",
       "vas deferentia",
     ],
     germLayer: "Mesoderm",
@@ -2345,7 +2238,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "pampiniform-plexus",
-    name: "Pampiniform Plexus",
+    name: "Pampiniform Plexu",
     etymology: "Latin pampinus = tendril/vine + forma = shape",
     aliases: [
       "pampiniform plexus",
@@ -2389,14 +2282,10 @@ export const ORGANS: OrganEntry[] = [
       "Greek gonos = seed/offspring + Latin vena = vein — paired veins draining the testis (testicular vein) or ovary (ovarian vein) into the systemic venous circulation",
     aliases: [
       "gonadal vein",
-      "gonadal veins",
       "gonadal venous",
       "testicular vein",
-      "testicular veins",
       "ovarian vein",
-      "ovarian veins",
       "internal spermatic vein",
-      "internal spermatic veins",
       "left gonadal vein",
       "right gonadal vein",
       "left testicular vein",
@@ -2444,14 +2333,14 @@ export const ORGANS: OrganEntry[] = [
     id: "ovary",
     name: "Ovary",
     etymology: "Latin ovum = egg",
-    aliases: ["ovary", "ovaries", "ovarian"],
+    aliases: ["ovary", "ovarian"],
     germLayer: "Mesoderm",
     origin:
       "Gonadal ridge (intermediate mesoderm); primordial germ cells from yolk sac endoderm.",
   },
   {
     id: "uterus",
-    name: "Uterus",
+    name: "Uteru",
     etymology: "Latin uterus = womb",
     aliases: ["uterus", "uterine", "womb"],
     germLayer: "Mesoderm",
@@ -2504,7 +2393,7 @@ export const ORGANS: OrganEntry[] = [
     id: "fallopian-tube",
     name: "Fallopian Tube",
     etymology: "eponym: Gabriele Falloppio + Latin tubus = pipe",
-    aliases: ["fallopian tube", "fallopian tubes", "uterine tube", "oviduct"],
+    aliases: ["fallopian tube", "uterine tube", "oviduct"],
     germLayer: "Mesoderm",
     origin: "Cranial unfused portion of paramesonephric (Müllerian) ducts.",
   },
@@ -2549,11 +2438,8 @@ export const ORGANS: OrganEntry[] = [
       "vestibule of the vagina",
       "vestibule of vagina",
       "vaginal vestibule",
-      "vaginal vestibules",
       "vulvar vestibule",
-      "vulvar vestibules",
       "vestibule",
-      "vestibules",
       "female vestibule",
       "urogenital vestibule",
     ],
@@ -2575,19 +2461,13 @@ export const ORGANS: OrganEntry[] = [
       "Latin vestibulum = entrance hall + Latin glans = acorn/gland + Caspar Bartholin the Younger (Danish anatomist) — paired mucus-secreting glands of the vulvar vestibule",
     aliases: [
       "greater vestibular gland",
-      "greater vestibular glands",
       "bartholin gland",
-      "bartholin glands",
       "bartholin's gland",
-      "bartholin's glands",
       "bartholins gland",
-      "bartholins glands",
       "glands of bartholin",
       "gland of bartholin",
       "vestibular gland",
-      "vestibular glands",
       "major vestibular gland",
-      "major vestibular glands",
     ],
     germLayer: "Endoderm",
     origin:
@@ -2603,9 +2483,7 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Old English breost = breast + Latin mamma = breast",
     aliases: [
       "breast",
-      "breasts",
       "mammary gland",
-      "mammary glands",
       "mammary tissue",
       "mamma",
       "mammary",
@@ -2644,7 +2522,6 @@ export const ORGANS: OrganEntry[] = [
       "Latin ad = near + renal = kidney + Latin cortex = bark/outer layer",
     aliases: [
       "adrenal cortex",
-      "adrenal cortices",
       "cortex of adrenal gland",
       "cortex of the adrenal gland",
       "suprarenal cortex",
@@ -2690,7 +2567,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "zona-reticularis",
-    name: "Zona Reticularis",
+    name: "Zona Reticulari",
     etymology:
       "Latin zona = belt/band + reticulum = network (anastomosing cell cords)",
     aliases: [
@@ -2711,11 +2588,9 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin ad = near + renal = kidney + Latin medulla = marrow",
     aliases: [
       "adrenal medulla",
-      "adrenal medullas",
       "medulla of adrenal gland",
       "medulla of the adrenal gland",
       "suprarenal medulla",
-      "chromaffin cells",
       "chromaffin cell",
       "chromaffin tissue",
     ],
@@ -2786,7 +2661,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "thymus",
-    name: "Thymus",
+    name: "Thymu",
     etymology: "Greek thymos = soul/incense",
     aliases: ["thymus", "thymic"],
     germLayer: "Endoderm",
@@ -2806,7 +2681,7 @@ export const ORGANS: OrganEntry[] = [
     id: "lymph-nodes",
     name: "Lymph Nodes",
     etymology: "Latin lympha = clear fluid + nodus = knot",
-    aliases: ["lymph node", "lymph nodes", "lymphatic"],
+    aliases: ["lymph node", "lymphatic"],
     germLayer: "Mesoderm",
     origin:
       "Develop from lymph sacs (mesoderm) and mesenchymal condensations along lymphatic vessels.",
@@ -2856,9 +2731,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin temporalis = of the temple (side of head) + Latin lobus = lobe — lateral telencephalic lobe beneath the temporal bone housing auditory, memory, and limbic structures",
     aliases: [
       "temporal lobe",
-      "temporal lobes",
       "temporal lobe cortex",
-      "temporal cortices",
       "temporal cortex",
       "temporal lobe brain",
       "temporal lobe of brain",
@@ -2898,7 +2771,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "hippocampus",
-    name: "Hippocampus",
+    name: "Hippocampu",
     etymology:
       "Greek hippokampos = seahorse — curved medial temporal lobe structure resembling a seahorse on coronal section (also called Ammon's horn)",
     aliases: [
@@ -2906,9 +2779,7 @@ export const ORGANS: OrganEntry[] = [
       "hippocampi",
       "hippocampal",
       "hippocampal region",
-      "hippocampal regions",
       "hippocampal formation",
-      "hippocampal formations",
       "ammons horn",
       "ammon's horn",
       "cornu ammonis",
@@ -2953,11 +2824,9 @@ export const ORGANS: OrganEntry[] = [
       "Latin cerebrum = brain + Latin convexitas = curved outward surface — the domed superolateral outer surface of each cerebral hemisphere",
     aliases: [
       "cerebral convexity",
-      "cerebral convexities",
       "convexity of the brain",
       "convexity of brain",
       "cerebral hemisphere convexity",
-      "cerebral hemisphere convexities",
       "convexity meningioma site",
       "cerebral surface convexity",
     ],
@@ -2997,9 +2866,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin cerebrum = brain + Latin fissura = cleft — deep anatomic clefts separating major parts of the cerebrum (distinct from smaller sulci)",
     aliases: [
       "cerebral fissure",
-      "cerebral fissures",
       "brain fissure",
-      "brain fissures",
       "cerebral fissure of brain",
       "fissure of the brain",
       "fissures of the cerebrum",
@@ -3041,14 +2908,11 @@ export const ORGANS: OrganEntry[] = [
     etymology:
       "Latin communicare = to share/connect + arteria = artery — anastomotic vessels linking major branches of the circle of Willis",
     aliases: [
-      "communicating arteries",
       "communicating artery",
       "anterior communicating artery",
-      "anterior communicating arteries",
       "acom",
       "acom artery",
       "posterior communicating artery",
-      "posterior communicating arteries",
       "pcom",
       "pcom artery",
       "circle of willis communicating arteries",
@@ -3081,18 +2945,16 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "carotid-sinus",
-    name: "Carotid Sinus",
+    name: "Carotid Sinu",
     etymology:
       "Greek karos = deep sleep (historical term for carotid region) + Latin sinus = curve/bay — dilated baroreceptor-rich region at the origin of the internal carotid artery at the carotid bifurcation",
     aliases: [
       "carotid sinus",
       "carotid sinuses",
       "carotid sinus baroreceptor",
-      "carotid sinus baroreceptors",
       "carotid sinus region",
       "carotid sinus area",
       "carotid sinus dilation",
-      "carotid sinus dilations",
       "carotid bifurcation sinus",
       "sinus caroticus",
     ],
@@ -3132,14 +2994,11 @@ export const ORGANS: OrganEntry[] = [
       "carotid body",
       "carotid bodies",
       "carotid body chemoreceptor",
-      "carotid body chemoreceptors",
       "carotid glomus",
       "carotid glomus bodies",
       "glomus caroticum",
       "carotid body paraganglion",
-      "carotid body paraganglions",
       "carotid chemoreceptor",
-      "carotid chemoreceptors",
     ],
     germLayer: "Neural crest (paraganglion / neuroectodermal chemoreceptor tissue)",
     origin:
@@ -3173,7 +3032,6 @@ export const ORGANS: OrganEntry[] = [
     name: "Meninges",
     etymology: "Greek meninx = membrane + plural -es",
     aliases: [
-      "meninges",
       "meninx",
       "cranial meninges",
       "spinal meninges",
@@ -3220,7 +3078,6 @@ export const ORGANS: OrganEntry[] = [
       "dural septae",
       "dural septa",
       "dural fold",
-      "dural folds",
       "dural partitions",
       "falx cerebri",
       "tentorium cerebelli",
@@ -3263,9 +3120,7 @@ export const ORGANS: OrganEntry[] = [
     etymology:
       "Latin emissarius = sent out/messenger + vena = vein — valveless veins connecting extracranial venous networks to intracranial dural venous sinuses",
     aliases: [
-      "emissary veins",
       "emissary vein",
-      "cranial emissary veins",
       "cranial emissary vein",
       "emissary venous channels",
     ],
@@ -3300,18 +3155,12 @@ export const ORGANS: OrganEntry[] = [
     etymology:
       "Old English brycg = span + Latin vena = vein — cortical veins that cross the subdural space to drain into dural venous sinuses",
     aliases: [
-      "bridging veins",
       "bridging vein",
-      "cerebral bridging veins",
       "cerebral bridging vein",
-      "bridging cortical veins",
       "bridging cortical vein",
-      "cortical bridging veins",
       "cortical bridging vein",
       "superficial cerebral vein",
-      "superficial cerebral veins",
       "veins of the subdural space",
-      "subdural bridging veins",
       "subdural bridging vein",
     ],
     germLayer: "Mesoderm (endothelium)",
@@ -3347,9 +3196,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin medius = middle + Greek meninx = membrane + Latin arteria = airway/vessel — major meningeal branch supplying dura and skull",
     aliases: [
       "middle meningeal artery",
-      "middle meningeal arteries",
       "middle meningial artery",
-      "middle meningial arteries",
       "meningeal artery middle",
       "middle meningeal arterial branch",
       "middle meningeal arterial branches",
@@ -3390,11 +3237,9 @@ export const ORGANS: OrganEntry[] = [
       "Latin pia = tender/soft + mater = mother — delicate innermost meningeal layer closely investing the brain and spinal cord",
     aliases: [
       "pia mater",
-      "pia maters",
       "pia",
       "pial",
       "pial membrane",
-      "pial membranes",
       "inner meningeal layer",
       "leptomeninges pia",
       "pia mater layer",
@@ -3434,7 +3279,6 @@ export const ORGANS: OrganEntry[] = [
     aliases: [
       "arachnoid villi",
       "arachnoid villus",
-      "arachnoid granulations",
       "arachnoid granulation",
       "arachnoid granulations csf",
       "csf granulations",
@@ -3512,16 +3356,11 @@ export const ORGANS: OrganEntry[] = [
       "Latin sub = under + Greek arachne = spider + -oid = like + Latin spatium = space — CSF-filled compartment between the arachnoid mater and pia mater surrounding the brain and spinal cord",
     aliases: [
       "subarachnoid space",
-      "subarachnoid spaces",
       "subarachnoid cistern",
-      "subarachnoid cisterns",
       "subarachnoid compartment",
       "leptomeningeal space",
-      "leptomeningeal spaces",
       "csf space",
-      "csf spaces",
       "intrathecal space",
-      "intrathecal spaces",
     ],
     germLayer: "Neural crest (leptomeninges — arachnoid and pia)",
     origin:
@@ -3555,7 +3394,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "choroid-plexus",
-    name: "Choroid Plexus",
+    name: "Choroid Plexu",
     etymology:
       "Greek chorion = membrane + eidos = form + Latin plexus = braid/network — vascular frond of ependyma producing CSF",
     aliases: [
@@ -3627,7 +3466,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Greek pros = forward + enkephalos = brain",
     aliases: [
       "prosencephalon",
-      "prosencephalons",
       "forebrain vesicle",
       "anterior neural tube vesicle",
     ],
@@ -3656,7 +3494,6 @@ export const ORGANS: OrganEntry[] = [
     etymology:
       "Latin basis = base + Greek ganglion = knot/swelling — deep gray matter nuclei at the base of the forebrain modulating movement",
     aliases: [
-      "basal ganglia",
       "basal ganglion",
       "basal ganglion nuclei",
       "basal ganglia nuclei",
@@ -3705,16 +3542,12 @@ export const ORGANS: OrganEntry[] = [
       "Latin striatum = striped — alternating myelinated fiber bundles and gray matter create a striped appearance on gross coronal section of basal ganglia",
     aliases: [
       "striatum",
-      "striatums",
       "striata",
       "corpus striatum",
       "corpora striata",
       "dorsal striatum",
-      "dorsal striatums",
       "ventral striatum",
-      "ventral striatums",
       "neostriatum",
-      "neostriatums",
       "striate nucleus",
       "striate nuclei",
     ],
@@ -3750,14 +3583,13 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "caudate",
-    name: "Caudate Nucleus",
+    name: "Caudate Nucleu",
     etymology:
       "Latin cauda = tail + -ate = resembling (tail-like curve around lateral ventricle)",
     aliases: [
       "caudate",
       "caudate nucleus",
       "caudate nuclei",
-      "caudates",
       "head of caudate",
       "caudate head",
       "dorsal striatum caudate",
@@ -3789,7 +3621,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "mammillary-bodies",
-    name: "Mammillary Bodies",
+    name: "Mammillary Bodie",
     etymology:
       "Latin mamma = breast/nipple + -illary = small + bodies = paired structures (nipple-like gray matter protrusions)",
     aliases: [
@@ -3876,7 +3708,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "locus-ceruleus",
-    name: "Locus Ceruleus",
+    name: "Locus Ceruleu",
     etymology:
       "Latin locus = place + caeruleus/ceruleus = blue — brainstem nucleus with blue appearance from neuromelanin in norepinephrine neurons",
     aliases: [
@@ -3971,7 +3803,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin putamen = shell/husk (outer shell of lentiform nucleus)",
     aliases: [
       "putamen",
-      "putamens",
       "lentiform nucleus putamen",
       "dorsal striatum putamen",
     ],
@@ -4032,7 +3863,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "pons",
-    name: "Pons",
+    name: "Pon",
     etymology:
       "Latin pons = bridge — metencephalic segment connecting cerebellum to midbrain and medulla; appears as a broad anterior bulge on brainstem",
     aliases: [
@@ -4081,7 +3912,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "inferior-colliculus",
-    name: "Inferior Colliculus",
+    name: "Inferior Colliculu",
     etymology:
       "Latin inferior = lower + Latin colliculus = small hill — paired eminence on the dorsal midbrain tectum below the superior colliculus",
     aliases: [
@@ -4177,7 +4008,6 @@ export const ORGANS: OrganEntry[] = [
       "medial geniculate nuclei",
       "mgn",
       "medial geniculate",
-      "medial geniculates",
       "geniculate body medial",
       "auditory thalamic nucleus",
     ],
@@ -4213,7 +4043,6 @@ export const ORGANS: OrganEntry[] = [
       "Latin substantia = substance + nigra = black — neuromelanin pigment in dopaminergic neurons darkens the midbrain on gross section",
     aliases: [
       "substantia nigra",
-      "substantia nigras",
       "substantia nigra pars compacta",
       "substantia nigra pars reticulata",
       "sn",
@@ -4262,7 +4091,6 @@ export const ORGANS: OrganEntry[] = [
       "hindbrain",
       "hind brain",
       "rhombencephalon",
-      "rhombencephalons",
       "posterior brain",
     ],
     origin:
@@ -4297,16 +4125,13 @@ export const ORGANS: OrganEntry[] = [
       "Latin cerebellum = little brain — paired infratentorial structure posterior to pons and medulla, connected via cerebellar peduncles",
     aliases: [
       "cerebellum",
-      "cerebellums",
       "cerebella",
       "cerebellar",
       "cerebellar cortex",
-      "cerebellar hemispheres",
       "cerebellar hemisphere",
       "cerebellar vermis",
       "vermis cerebelli",
       "flocculonodular lobe",
-      "flocculonodular lobes",
       "little brain",
     ],
     origin:
@@ -4344,7 +4169,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "lateral-pons",
-    name: "Lateral Pons",
+    name: "Lateral Pon",
     etymology:
       "Latin lateralis = side + Latin pons = bridge — lateral tegmental and peduncular region of the pontine brainstem",
     aliases: [
@@ -4393,10 +4218,9 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "lateral-ventricles",
-    name: "Lateral Ventricles",
+    name: "Lateral Ventricle",
     etymology: "Latin lateralis = side + ventriculus = little belly/cavity",
     aliases: [
-      "lateral ventricles",
       "lateral ventricle",
       "lv",
       "lateral cerebral ventricles",
@@ -4520,7 +4344,6 @@ export const ORGANS: OrganEntry[] = [
       "Latin cauda = horse tail + Latin equina = of a horse (bundle of lumbosacral nerve roots resembling a tail)",
     aliases: [
       "cauda equina",
-      "cauda equinas",
       "cauda equina nerve roots",
       "lumbosacral nerve roots",
       "horse's tail nerves",
@@ -4562,11 +4385,9 @@ export const ORGANS: OrganEntry[] = [
       "Latin rete = net — layered neural tissue lining the posterior globe",
     aliases: [
       "retina",
-      "retinas",
       "retinal",
       "retinal tissue",
       "neural retina",
-      "neural retinas",
       "posterior retina",
       "ocular retina",
     ],
@@ -4610,17 +4431,11 @@ export const ORGANS: OrganEntry[] = [
       "Greek hemi = half + Latin rete = net — one half of the retinal surface",
     aliases: [
       "hemiretina",
-      "hemiretinas",
       "hemi-retina",
-      "hemi-retinas",
       "half retina",
-      "half retinas",
       "retinal hemifield",
-      "retinal hemifields",
       "nasal hemiretina",
-      "nasal hemiretinas",
       "temporal hemiretina",
-      "temporal hemiretinas",
       "superior hemiretina",
       "inferior hemiretina",
     ],
@@ -4656,16 +4471,11 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin opticus = of sight + Latin discus = flat circular plate",
     aliases: [
       "optic disc",
-      "optic discs",
       "optic disk",
-      "optic disks",
       "optic nerve head",
-      "optic nerve heads",
       "onh",
       "optic papilla",
-      "optic papillae",
       "blind spot",
-      "blind spots",
     ],
     germLayer: "Ectoderm",
     origin:
@@ -4680,7 +4490,6 @@ export const ORGANS: OrganEntry[] = [
     aliases: [
       "optic chiasm",
       "optic chiasma",
-      "optic chiasms",
       "chiasm",
       "chiasma",
       "optic decussation",
@@ -4724,7 +4533,6 @@ export const ORGANS: OrganEntry[] = [
       "lateral geniculate nuclei",
       "lgn",
       "lateral geniculate",
-      "lateral geniculates",
       "geniculate body lateral",
       "visual thalamic nucleus",
     ],
@@ -4774,7 +4582,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "iris",
-    name: "Iris",
+    name: "Iri",
     etymology:
       "Greek iris = rainbow — pigmented muscular diaphragm of the eye regulating light entry through the pupil",
     aliases: [
@@ -4818,7 +4626,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "lens",
-    name: "Lens",
+    name: "Len",
     etymology: "Latin lens = lentil-shaped glass",
     aliases: ["lens"],
     germLayer: "Ectoderm",
@@ -4870,11 +4678,8 @@ export const ORGANS: OrganEntry[] = [
       "Greek tympanon = drum + Latin membrana = skin — thin semitransparent membrane separating the external auditory canal from the middle ear; also called the eardrum",
     aliases: [
       "tympanic membrane",
-      "tympanic membranes",
       "eardrum",
-      "eardrums",
       "ear drum",
-      "ear drums",
       "tympanum",
       "myringa",
       "myringae",
@@ -4927,7 +4732,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "epidermis",
-    name: "Epidermis",
+    name: "Epidermi",
     etymology: "Greek epi = upon + derma = skin",
     aliases: ["epidermis", "epidermal", "epidermal layer", "outer skin layer"],
     germLayer: "Ectoderm",
@@ -4963,11 +4768,8 @@ export const ORGANS: OrganEntry[] = [
       "Old English swætan = to perspire + Latin glans = acorn/gland — cutaneous exocrine gland secreting sweat for thermoregulation or scent",
     aliases: [
       "sweat gland",
-      "sweat glands",
       "sudoriferous gland",
-      "sudoriferous glands",
       "cutaneous sweat gland",
-      "cutaneous sweat glands",
     ],
     germLayer: "Ectoderm",
     origin:
@@ -4996,7 +4798,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "dermis",
-    name: "Dermis",
+    name: "Dermi",
     etymology: "Greek derma = skin",
     aliases: ["dermis", "dermal", "dermal layer", "corium"],
     germLayer: "Mesoderm",
@@ -5028,7 +4830,7 @@ export const ORGANS: OrganEntry[] = [
     id: "bone",
     name: "Bone",
     etymology: "Old English ban = bone",
-    aliases: ["bone", "bones", "skeletal", "ossification"],
+    aliases: ["bone", "skeletal", "ossification"],
     germLayer: "Mesoderm",
     origin:
       "Most bones from paraxial mesoderm (somites → sclerotome) or lateral plate mesoderm; skull bones also from neural crest.",
@@ -5045,9 +4847,9 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "teeth",
-    name: "Teeth",
+    name: "Tooth",
     etymology: "Old English toth = tooth",
-    aliases: ["tooth", "teeth", "dental"],
+    aliases: ["tooth", "dental"],
     germLayer: "Ectoderm / Neural crest",
     origin:
       "Enamel from ameloblasts (oral ectoderm); dentin and pulp from neural crest-derived mesenchyme.",
@@ -5059,14 +4861,12 @@ export const ORGANS: OrganEntry[] = [
       "Latin dens = tooth + -ition = state/condition — the number, arrangement, and developmental stage of teeth in the jaws",
     aliases: [
       "dentition",
-      "dentitions",
       "dental dentition",
       "primary dentition",
       "permanent dentition",
       "deciduous dentition",
       "adult dentition",
       "tooth eruption",
-      "tooth eruptions",
       "dental formula",
     ],
     germLayer: "Ectoderm (enamel) / Neural crest mesenchyme (dentin, pulp, cementum, periodontal ligament)",
@@ -5204,7 +5004,6 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin atrium = entrance hall + dexter = right",
     aliases: [
       "right atrium",
-      "right atria",
       "ra",
       "right atrial chamber",
       "right atrial",
@@ -5222,7 +5021,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "crista-terminalis",
-    name: "Crista Terminalis",
+    name: "Crista Terminali",
     etymology: "Latin crista = crest/ridge + terminalis = at the end/boundary",
     aliases: [
       "crista terminalis",
@@ -5236,7 +5035,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "cavotricuspid-isthmus",
-    name: "Cavotricuspid Isthmus",
+    name: "Cavotricuspid Isthmu",
     etymology:
       "Latin cavus = hollow (vena cava) + Latin tri = three + Latin cuspis = point (tricuspid) + Greek isthmos = narrow neck/bridge",
     aliases: [
@@ -5279,9 +5078,7 @@ export const ORGANS: OrganEntry[] = [
       "atrioventricular + Latin nodus = knot = atrioventricular junctional pacemaker tissue",
     aliases: [
       "av node",
-      "av nodes",
       "atrioventricular node",
-      "atrioventricular nodes",
       "a-v node",
       "node of aschoff and tawara",
       "koch node",
@@ -5317,20 +5114,16 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "bundle-of-his",
-    name: "Bundle of His",
+    name: "Bundle Of Hi",
     etymology:
       "eponym: Wilhelm His Jr. + Latin fasciculus = little bundle — specialized atrioventricular bundle connecting the AV node to the right and left bundle branches through the fibrous cardiac skeleton",
     aliases: [
       "bundle of his",
       "bundles of his",
       "his bundle",
-      "his bundles",
       "av bundle",
-      "av bundles",
       "atrioventricular bundle",
-      "atrioventricular bundles",
       "common bundle",
-      "common bundles",
       "bundle of his av junction",
       "his common bundle",
       "penetrating bundle",
@@ -5417,9 +5210,7 @@ export const ORGANS: OrganEntry[] = [
     etymology: "Latin papilla = nipple + Latin musculus = little mouse/muscle",
     aliases: [
       "papillary muscle",
-      "papillary muscles",
       "ventricular papillary muscle",
-      "ventricular papillary muscles",
       "papillary musculature",
     ],
     germLayer: "Mesoderm",
@@ -5450,30 +5241,22 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "valve-commissures",
-    name: "Valve Commissures",
+    name: "Valve Commissure",
     etymology:
       "Latin commissura = a joining together + Latin valva = folding door",
     aliases: [
       "valve commissure",
-      "valve commissures",
       "valvular commissure",
-      "valvular commissures",
       "commissure of valve",
       "commissures of valve",
       "commissures of the valve",
       "commissures of heart valve",
       "heart valve commissure",
-      "heart valve commissures",
       "atrioventricular valve commissure",
-      "atrioventricular valve commissures",
       "av valve commissure",
-      "av valve commissures",
       "semilunar valve commissure",
-      "semilunar valve commissures",
       "mitral commissure",
-      "mitral commissures",
       "aortic commissure",
-      "aortic commissures",
     ],
     germLayer: "Mesoderm",
     origin:
@@ -5513,9 +5296,9 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "tonsils",
-    name: "Tonsils",
+    name: "Tonsil",
     etymology: "Latin tonsillae = tonsils",
-    aliases: ["tonsil", "tonsils", "palatine tonsil"],
+    aliases: ["tonsil", "palatine tonsil"],
     germLayer: "Endoderm",
     origin:
       "Palatine tonsils from second pharyngeal pouch endoderm invading surrounding mesenchyme.",
@@ -5527,9 +5310,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin saliva = spittle + glans = acorn/gland — exocrine gland secreting saliva into the oral cavity for lubrication, digestion, and antimicrobial defense",
     aliases: [
       "salivary gland",
-      "salivary glands",
       "major salivary gland",
-      "major salivary glands",
       "salivary glandular",
     ],
     germLayer: "Ectoderm / Endoderm",
@@ -5586,9 +5367,7 @@ export const ORGANS: OrganEntry[] = [
       "Latin sub = under + lingua = tongue + Latin glans = acorn/gland",
     aliases: [
       "sublingual gland",
-      "sublingual glands",
       "sublingual salivary gland",
-      "sublingual salivary glands",
     ],
     germLayer: "Endoderm",
     origin:
@@ -5604,7 +5383,6 @@ export const ORGANS: OrganEntry[] = [
       "suprarenal gland",
       "adrenal gland",
       "adrenal",
-      "adrenal glands",
     ],
     germLayer: "Mesoderm / Neural crest",
     origin:
@@ -5612,7 +5390,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "clitoris",
-    name: "Clitoris",
+    name: "Clitori",
     etymology: "Greek kleitoris = little hill/key",
     aliases: ["clitoris"],
     germLayer: "Ectoderm",
@@ -5621,7 +5399,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "penis",
-    name: "Penis",
+    name: "Peni",
     etymology: "Latin penis = tail",
     aliases: ["penis", "penile"],
     germLayer: "Ectoderm",
@@ -5644,15 +5422,11 @@ export const ORGANS: OrganEntry[] = [
       "Greek amnion = lamb skin — inner membrane enclosing the amniotic cavity and fluid",
     aliases: [
       "amnion",
-      "amnions",
       "amniotic",
       "amniotic sac",
-      "amniotic sacs",
       "amniotic membrane",
-      "amniotic membranes",
       "amniotic cavity",
       "amniotic fluid",
-      "amniotic fluids",
       "amniotic sac membrane",
     ],
     germLayer: "Extraembryonic ectoderm (amniotic epithelium) + mesoderm",
@@ -5675,15 +5449,11 @@ export const ORGANS: OrganEntry[] = [
       "Old English geoloca = yolk + Old English sæc = bag — extraembryonic endoderm-lined sac providing early embryonic nutrition and the site of first hematopoiesis",
     aliases: [
       "yolk sac",
-      "yolk sacs",
       "umbilical vesicle",
-      "umbilical vesicles",
       "vitelline sac",
-      "vitelline sacs",
       "primary yolk sac",
       "secondary yolk sac",
       "exocoelomic cyst",
-      "exocoelomic cysts",
     ],
     germLayer: "Extraembryonic endoderm (lining) with extraembryonic mesoderm",
     origin:
@@ -5717,7 +5487,7 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "allantois",
-    name: "Allantois",
+    name: "Allantoi",
     etymology: "Greek allantoeides = sausage-shaped",
     aliases: [
       "allantois",
@@ -5736,10 +5506,8 @@ export const ORGANS: OrganEntry[] = [
       "Greek omphalos = navel + mesenterion = middle intestine + Latin ductus = channel — embryonic vitelline duct connecting yolk sac to midgut",
     aliases: [
       "omphalomesenteric duct",
-      "omphalomesenteric ducts",
       "omphalomesenteric duct remnant",
       "yolk stalk",
-      "yolk stalks",
       "vitelloumbilical duct",
       "omphalomesenteric vitelline duct",
     ],
@@ -5775,14 +5543,13 @@ export const ORGANS: OrganEntry[] = [
   },
   {
     id: "urachus",
-    name: "Urachus",
+    name: "Urachu",
     etymology: "Greek oura = tail + Latin -chus = vessel-like structure",
     aliases: [
       "urachus",
       "urachal",
       "urachal remnant",
       "median umbilical ligament",
-      "median umbilical ligaments",
     ],
     germLayer: "Endoderm / Mesoderm",
     origin:
@@ -5796,7 +5563,6 @@ export const ORGANS: OrganEntry[] = [
       "buccal mucosa",
       "buccal mucosae",
       "buccal mucous membrane",
-      "buccal mucous membranes",
       "inner cheek mucosa",
       "cheek mucosa",
       "oral buccal mucosa",
@@ -8613,10 +8379,6 @@ export interface AliasMatch {
   organId: string;
 }
 
-function escapeRegex(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
 export function buildAliasIndex(): AliasMatch[] {
   const matches: AliasMatch[] = [];
   for (const organ of ORGANS) {
@@ -8625,13 +8387,4 @@ export function buildAliasIndex(): AliasMatch[] {
     }
   }
   return matches.sort((a, b) => b.alias.length - a.alias.length);
-}
-
-export function buildMatchPattern(index: AliasMatch[]): RegExp {
-  const parts = index.map(({ alias }) => {
-    const escaped = escapeRegex(alias);
-    const plural = alias.endsWith("s") ? escaped : `${escaped}(?:es|s)?`;
-    return `\\b${plural}\\b`;
-  });
-  return new RegExp(`(${parts.join("|")})`, "gi");
 }

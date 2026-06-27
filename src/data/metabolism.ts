@@ -18,15 +18,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin essentia = being + Latin nutrire = to nourish — dietary substance required for normal physiologic function that the body cannot synthesize in adequate amounts (or at all)",
     aliases: [
       "essential nutrient",
-      "essential nutrients",
       "indispensable nutrient",
-      "indispensable nutrients",
       "dietary essential",
-      "dietary essentials",
       "required nutrient",
-      "required nutrients",
       "nutritional essential",
-      "nutritional essentials",
     ],
     definition:
       "Nutrient that must be obtained from diet because endogenous synthesis is absent or insufficient — includes essential amino acids, essential fatty acids, most vitamins, minerals, and trace elements; deficiency causes characteristic clinical syndromes correctable by dietary replacement.",
@@ -64,18 +59,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin aminus = containing ammonia + Latin acidus = sour — organic molecule with both an amino group (–NH₂) and a carboxyl group (–COOH); polymerized into proteins via peptide bonds",
     aliases: [
       "amino acid",
-      "amino acids",
       "aa",
-      "aas",
       "alpha amino acid",
       "alpha-amino acid",
-      "alpha-amino acids",
       "proteinogenic amino acid",
-      "proteinogenic amino acids",
       "standard amino acid",
-      "standard amino acids",
       "amino acid monomer",
-      "amino acid monomers",
     ],
     definition:
       "Organic monomer building block of proteins — contains an α-amino group, α-carboxyl group, hydrogen, and a variable R side chain — joined by peptide bonds into polypeptides; humans use 20 standard proteinogenic amino acids classified by essentiality, charge, and metabolic fate (glucogenic vs ketogenic).",
@@ -121,21 +110,13 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin aminus = containing ammonia — organic derivative of ammonia (NH₃) in which one or more hydrogen atoms are replaced by alkyl or aryl groups; characterized by a nitrogen lone pair",
     aliases: [
       "amine",
-      "amines",
       "organic amine",
-      "organic amines",
       "primary amine",
-      "primary amines",
       "secondary amine",
-      "secondary amines",
       "tertiary amine",
-      "tertiary amines",
       "biogenic amine",
-      "biogenic amines",
       "monoamine",
-      "monoamines",
       "aromatic amine",
-      "aromatic amines",
       "rnh2",
       "r2nh",
       "r3n",
@@ -180,11 +161,8 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Latin essentia = being + Latin aminus = containing ammonia + Latin acidus = sour",
     aliases: [
       "essential amino acid",
-      "essential amino acids",
       "indispensable amino acid",
-      "indispensable amino acids",
       "eaa",
-      "eaas",
     ],
     definition:
       "Amino acid that humans cannot synthesize de novo in amounts sufficient for normal growth and nitrogen balance — must be obtained from dietary protein. Deficiency limits protein synthesis and can cause negative nitrogen balance.",
@@ -218,13 +196,9 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin essentia = being + fatty + acid = must be obtained from diet because humans lack desaturases to synthesize them",
     aliases: [
       "essential fatty acid",
-      "essential fatty acids",
       "efa",
-      "efas",
       "indispensable fatty acid",
-      "indispensable fatty acids",
       "essential fat",
-      "essential fats",
       "dietary essential fatty acid",
     ],
     definition:
@@ -293,9 +267,7 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Latin propion = first fatty acid (three carbons) + -ic = acid suffix — C3 carboxylic acid; metabolic precursor form of propionyl-CoA",
     aliases: [
       "propionic acid",
-      "propionic acids",
       "propionate",
-      "propionates",
       "propionic",
       "c3 fatty acid",
       "three-carbon fatty acid",
@@ -432,9 +404,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek arachis = peanut (early isolation source) + -ate = anion of arachidonic acid — 20:4 ω-6 polyunsaturated fatty acid (eicosatetraenoic acid) esterified in membrane phospholipids and released for eicosanoid synthesis",
     aliases: [
       "arachidonate",
-      "arachidonates",
       "arachidonic acid",
-      "arachidonic acids",
       "aa",
       "a.a.",
       "eicosatetraenoic acid",
@@ -581,9 +551,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek melas = black + -in = substance — polymer pigment synthesized from tyrosine in melanosomes of melanocytes",
     aliases: [
       "melanin",
-      "melanins",
       "melanin pigment",
-      "melanin pigments",
       "skin melanin",
       "cutaneous melanin",
       "eumelanin",
@@ -624,11 +592,9 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek tryps = worn/rubbed + phainein = to appear + -an = chemical suffix (named for tryptic digestion products)",
     aliases: [
       "tryptophan",
-      "tryptophans",
       "l-tryptophan",
       "trp",
       "triptophan",
-      "triptophans",
       "essential amino acid tryptophan",
     ],
     definition:
@@ -694,12 +660,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek glykys = sweet — simplest amino acid (single hydrogen side chain); sweet-tasting crystalline compound",
     aliases: [
       "glycine",
-      "glycines",
       "gly",
       "aminoacetic acid",
       "amino acetic acid",
       "glycine amino acid",
-      "glycine amino acids",
       "simplest amino acid",
     ],
     definition:
@@ -776,7 +740,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek homo = same + cysteine-related sulfur amino acid — intermediate in methionine cycle and transsulfuration pathway linking one-carbon metabolism to cysteine synthesis",
     aliases: [
       "homocysteine",
-      "homocysteines",
       "hcy",
       "l-homocysteine",
       "total homocysteine",
@@ -899,13 +862,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek allos = other + isoleucine — stereoisomer of isoleucine with altered configuration at a chiral center; accumulates pathologically when branched-chain amino acid catabolism is blocked",
     aliases: [
       "alloisoleucine",
-      "alloisoleucines",
       "allo-isoleucine",
-      "allo-isoleucines",
       "allo isoleucine",
       "l-alloisoleucine",
       "abnormal isoleucine stereoisomer",
-      "abnormal isoleucine stereoisomers",
     ],
     definition:
       "Non-proteinogenic stereoisomer of isoleucine that rises in maple syrup urine disease (MSUD) and related branched-chain α-keto acid dehydrogenase defects — a diagnostic marker elevated alongside leucine, isoleucine, and valine on newborn metabolic screening and MSUD crisis workup.",
@@ -1064,11 +1024,9 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin asparagus (plant source) + -ine = amino acid suffix — amide-containing amino acid; asparagine synthetase forms it from aspartate using glutamine as nitrogen donor",
     aliases: [
       "asparagine",
-      "asparagines",
       "asn",
       "l-asparagine",
       "asparagine amino acid",
-      "asparagine amino acids",
       "amide of aspartate",
     ],
     definition:
@@ -1159,10 +1117,8 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek ouron = urine + Latin cyclus = circle",
     aliases: [
       "urea cycle",
-      "urea cycles",
       "the urea cycle",
       "ornithine cycle",
-      "ornithine cycles",
       "krebs ornithine cycle",
       "krebs-henseleit cycle",
       "krebs henselit cycle",
@@ -1251,7 +1207,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "gluconeogenesis",
-    name: "Gluconeogenesis",
+    name: "Gluconeogenesi",
     etymology:
       "Greek glykys = sweet + neo = new + genesis = origin — de novo synthesis of glucose from non-carbohydrate precursors",
     aliases: [
@@ -1264,7 +1220,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "endogenous glucose production",
       "egp",
       "gluconeogenic pathway",
-      "gluconeogenic pathways",
     ],
     definition:
       "Metabolic pathway synthesizing glucose from lactate, glycerol, glucogenic amino acids, and other precursors — primarily in liver and renal cortex during fasting, with key irreversible glycolysis steps bypassed by distinct enzymes.",
@@ -1298,7 +1253,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "glycogenolysis",
-    name: "Glycogenolysis",
+    name: "Glycogenolysi",
     etymology:
       "Greek glykys = sweet + gen = producing + lysis = breakdown — enzymatic degradation of stored glycogen to glucose-6-phosphate for rapid blood glucose maintenance",
     aliases: [
@@ -1309,7 +1264,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "hepatic glycogenolysis",
       "muscle glycogenolysis",
       "glycogenolytic pathway",
-      "glycogenolytic pathways",
     ],
     definition:
       "Catabolic pathway cleaving glycogen into glucose-1-phosphate via glycogen phosphorylase — liver releases free glucose (after glucose-6-phosphatase) into blood; muscle uses product locally for glycolysis — primary early fasting glucose source before gluconeogenesis predominates.",
@@ -1348,7 +1302,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "phospho- + enol (alkene) + pyruvate + carboxy + kinase — GTP-dependent enzyme decarboxylating mitochondrial/cytosolic oxaloacetate to phosphoenolpyruvate, bypassing irreversible pyruvate kinase in gluconeogenesis",
     aliases: [
       "phosphoenolpyruvate carboxykinase",
-      "phosphoenolpyruvate carboxykinases",
       "pep carboxykinase",
       "pepck",
       "pepck1",
@@ -1434,7 +1387,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "eponym: Otto Warburg (German physiologist, 1883–1970) + effect = observed phenomenon — aerobic glycolysis preference in cancer cells",
     aliases: [
       "warburg effect",
-      "warburg effects",
       "warburg metabolism",
       "aerobic glycolysis in cancer",
       "cancer aerobic glycolysis",
@@ -1474,7 +1426,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "lipolysis",
-    name: "Lipolysis",
+    name: "Lipolysi",
     etymology: "Greek lipos = fat + Greek lysis = loosening/breakdown",
     aliases: [
       "lipolysis",
@@ -1515,18 +1467,14 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "lipids",
-    name: "Lipids",
+    name: "Lipid",
     etymology:
       "Greek lipos = fat + -id = substance class — hydrophobic or amphipathic biological molecules insoluble in water, central to membranes, energy storage, and signaling",
     aliases: [
-      "lipids",
       "lipid",
-      "biological lipids",
       "biological lipid",
       "fat",
-      "fats",
       "fatty substances",
-      "lipid molecules",
       "lipid molecule",
     ],
     definition:
@@ -1560,17 +1508,13 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "phospholipids",
-    name: "Phospholipids",
+    name: "Phospholipid",
     etymology:
       "Greek phos = light + pherein = to carry + Greek lipos = fat — amphipathic lipids with phosphate-containing polar head and hydrophobic fatty acid tails forming membrane bilayers",
     aliases: [
-      "phospholipids",
       "phospholipid",
-      "phospholipid molecules",
       "phospholipid molecule",
-      "phosphoglycerides",
       "phosphoglyceride",
-      "glycerophospholipids",
       "glycerophospholipid",
       "lecithins",
       "lecithin class",
@@ -1612,7 +1556,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin praegnans = before birth + Latin oleum = oil + -one ketone suffix — first steroid hormone cleaved from cholesterol, the common precursor to all steroid hormones",
     aliases: [
       "pregnenolone",
-      "pregnenolones",
       "delta-5-pregnenolone",
       "δ5-pregnenolone",
       "first steroid hormone",
@@ -1651,7 +1594,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "steroidogenesis",
-    name: "Steroidogenesis",
+    name: "Steroidogenesi",
     etymology:
       "Greek stereos = solid + Latin genesis = origin — biosynthetic pathway converting cholesterol into steroid hormones in adrenal cortex, gonads, and placenta",
     aliases: [
@@ -1662,7 +1605,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "adrenal steroidogenesis",
       "gonadal steroidogenesis",
       "steroid hormone pathway",
-      "steroid hormone pathways",
       "cholesterol to steroid pathway",
     ],
     definition:
@@ -1698,7 +1640,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "fatty-acid-synthesis",
-    name: "Fatty Acid Synthesis",
+    name: "Fatty Acid Synthesi",
     etymology:
       "Latin fat + acidus = sour + Latin synthesis = putting together — cytosolic de novo lipogenesis assembling palmitate from acetyl-CoA units",
     aliases: [
@@ -1758,7 +1700,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "ketone biosynthesis",
       "formation of ketone bodies",
       "ketogenic pathway",
-      "ketogenic pathways",
     ],
     definition:
       "Hepatic mitochondrial pathway condensing acetyl-CoA (from β-oxidation or ketogenic amino acids) into ketone bodies — acetoacetate, β-hydroxybutyrate, and acetone — for extrahepatic fuel during prolonged fasting, starvation, or uncontrolled diabetes.",
@@ -1797,15 +1738,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek lipos = fat + Latin proteinus = of protein — amphipathic particles transporting hydrophobic lipids in aqueous plasma",
     aliases: [
       "lipoprotein",
-      "lipoproteins",
       "plasma lipoprotein",
-      "plasma lipoproteins",
       "blood lipoprotein",
-      "blood lipoproteins",
       "circulating lipoprotein",
-      "circulating lipoproteins",
       "lipid transport particle",
-      "lipid transport particles",
     ],
     definition:
       "Spherical or discoidal macromolecular complexes with a hydrophobic core (triglycerides and cholesterol esters) and a hydrophilic surface (phospholipids, free cholesterol, apolipoproteins) that solubilize and transport dietary and endogenous lipids in blood.",
@@ -1841,15 +1777,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek chylos = juice (especially milky lymph) + Greek kronos = grain/small particle — largest triglyceride-rich lipoprotein carrying dietary fat",
     aliases: [
       "chylomicron",
-      "chylomicrons",
       "chylomicron particle",
-      "chylomicron particles",
       "dietary lipoprotein",
-      "dietary lipoproteins",
       "exogenous lipoprotein",
-      "exogenous lipoproteins",
       "intestinal lipoprotein",
-      "intestinal lipoproteins",
       "tg-rich lipoprotein",
       "triglyceride-rich lipoprotein",
     ],
@@ -1887,21 +1818,14 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin ester = compound from acid + alcohol + -ification = process of making — formation of ester bonds between fatty acids and alcohol groups on lipids",
     aliases: [
       "esterification",
-      "esterifications",
       "esterified",
       "esterified cholesterol",
-      "esterified cholesterols",
       "esterified fatty acid",
-      "esterified fatty acids",
       "esterified lipid",
-      "esterified lipids",
       "cholesterol ester",
-      "cholesterol esters",
       "lipid esterification",
       "cholesterol esterification",
-      "cholesterol esterifications",
       "fatty acid esterification",
-      "fatty acid esterifications",
       "triglyceride esterification",
       "acyl esterification",
       "ester bond formation",
@@ -1936,21 +1860,18 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "hydrolysis",
-    name: "Hydrolysis",
+    name: "Hydrolysi",
     etymology:
       "Greek hydor = water + lysis = loosening/breaking — chemical reaction cleaving a bond by addition of water, yielding two products; fundamental to digestion, metabolism, signal termination, and drug metabolism",
     aliases: [
       "hydrolysis",
       "hydrolyses",
       "hydrolyze",
-      "hydrolyzes",
       "hydrolyzed",
       "hydrolysed",
       "hydrolytic",
       "hydrolytic reaction",
-      "hydrolytic reactions",
       "hydrolytic cleavage",
-      "hydrolytic cleavages",
       "water-mediated cleavage",
     ],
     definition:
@@ -1992,13 +1913,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin carnis = flesh + -ine = chemical suffix — quaternary amine first isolated from meat, essential for fatty acid mitochondrial transport",
     aliases: [
       "carnitine",
-      "carnitines",
       "l-carnitine",
       "levocarnitine",
       "carnitine shuttle",
-      "carnitine shuttles",
       "acylcarnitine",
-      "acylcarnitines",
       "carnitine palmitoyltransferase substrate",
     ],
     definition:
@@ -2039,7 +1957,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "beta oxidation",
       "β-oxidation",
       "β oxidation",
-      "beta oxidations",
       "fatty acid beta-oxidation",
       "fatty acid beta oxidation",
       "fatty acid β-oxidation",
@@ -2049,7 +1966,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "mitochondrial fatty acid oxidation",
       "fa oxidation",
       "fatty acid oxidation pathway",
-      "fatty acid oxidation pathways",
     ],
     definition:
       "Mitochondrial metabolic pathway that sequentially shortens activated fatty acyl-CoA molecules by two carbons per round — generating acetyl-CoA, FADH₂, and NADH for the TCA cycle and oxidative phosphorylation — primary route for energy production from stored fat during fasting and prolonged exercise.",
@@ -2089,11 +2005,8 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin longus = long + chain + fatty acid — saturated fatty acids typically with ≥22 carbon atoms requiring peroxisomal shortening before mitochondrial β-oxidation",
     aliases: [
       "very long chain fatty acid",
-      "very long chain fatty acids",
       "very-long-chain fatty acid",
-      "very-long-chain fatty acids",
       "vlcfa",
-      "vlcfas",
       "long chain fatty acid peroxisomal",
       "elevated very long chain fatty acids",
       "elevated vlcfas",
@@ -2137,13 +2050,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek phyton = plant + -anic acid — branched-chain fatty acid derived from dietary chlorophyll (phytol side chain) in ruminant products and green vegetables",
     aliases: [
       "phytanic acid",
-      "phytanic acids",
       "phytanate",
-      "phytanates",
       "phytol-derived fatty acid",
       "branched chain phytanic acid",
       "elevated phytanic acid",
-      "elevated phytanic acids",
       "increased phytanic acid",
     ],
     definition:
@@ -2251,7 +2161,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "erythropoiesis",
-    name: "Erythropoiesis",
+    name: "Erythropoiesi",
     etymology:
       "Greek erythros = red + poiesis = making/formation",
     aliases: [
@@ -2292,7 +2202,7 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "porphyrin-synthesis",
-    name: "Porphyrin Synthesis",
+    name: "Porphyrin Synthesi",
     etymology:
       "Greek porphyra = purple + synthesis = putting together — multistep heme biosynthesis building tetrapyrrole porphyrin rings from glycine and succinyl-CoA for hemoglobin, myoglobin, and cytochromes",
     aliases: [
@@ -2346,11 +2256,8 @@ export const METABOLISM: MetabolismEntry[] = [
       "h⁺",
       "h +",
       "hydrogen ion",
-      "hydrogen ions",
       "proton",
-      "protons",
       "hydrogen cation",
-      "hydrogen cations",
     ],
     definition:
       "Hydrogen ion (proton) — the chemical species whose concentration defines acid-base status; freely dissociated H⁺ in aqueous body fluids determines pH and drives enzymatic, transport, and buffering reactions.",
@@ -2429,7 +2336,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek bios = life + -in = substance — vitamin B₇; also called vitamin H (German Haar und Haut = hair and skin)",
     aliases: [
       "biotin",
-      "biotins",
       "vitamin b7",
       "vitamin b-7",
       "vitamin b 7",
@@ -2479,15 +2385,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "udp-glucoronosyltransferase",
       "udp glucoronosyltransferase",
       "ugt",
-      "ugts",
       "ugt1a1",
       "ugt 1a1",
       "bilirubin udp-glucuronosyltransferase",
       "bilirubin glucuronosyltransferase",
       "glucuronosyltransferase",
-      "glucuronosyltransferases",
       "glucuronyl transferase",
-      "glucuronyl transferases",
     ],
     definition:
       "Family of hepatic (and extrahepatic) phase II enzymes that conjugate glucuronic acid from UDP-glucuronic acid to lipophilic substrates — UGT1A1 is the key isoform converting unconjugated bilirubin to water-soluble bilirubin diglucuronide for biliary excretion; also conjugates drugs, estrogens, and bile acids.",
@@ -2533,7 +2436,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "b glucuronidase",
       "beta glucuronidase",
       "glucuronidase",
-      "glucuronidases",
       "lysosomal beta-glucuronidase",
       "bacterial beta-glucuronidase",
     ],
@@ -2571,9 +2473,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek pantos = everywhere + -ol + -ic acid — vitamin B₅ found widely in foods; essential precursor of coenzyme A",
     aliases: [
       "pantothenic acid",
-      "pantothenic acids",
       "pantothenate",
-      "pantothenates",
       "vitamin b5",
       "vitamin b-5",
       "vitamin b 5",
@@ -2614,9 +2514,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin a- = without + scorbutus = scurvy + acidus = sour (vitamin that prevents scurvy)",
     aliases: [
       "ascorbic acid",
-      "ascorbic acids",
       "ascorbate",
-      "ascorbates",
       "l-ascorbic acid",
       "l ascorbic acid",
       "vitamin c",
@@ -2658,7 +2556,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin retina = net (anatomical layer of the eye) + -ol = alcohol (vitamin A alcohol form)",
     aliases: [
       "retinol",
-      "retinols",
       "vitamin a",
       "vitamin-a",
       "vitamin a alcohol",
@@ -2701,15 +2598,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin carota = carrot + -ene = hydrocarbon suffix — plant pigments including provitamin A carotenoids",
     aliases: [
       "carotene",
-      "carotenes",
       "beta-carotene",
       "beta carotene",
       "β-carotene",
       "β carotene",
       "provitamin a carotenoid",
-      "provitamin a carotenoids",
       "carotenoid",
-      "carotenoids",
       "alpha-carotene",
       "alpha carotene",
     ],
@@ -2755,7 +2649,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "α-tocopherol",
       "α tocopherol",
       "tocopherol",
-      "tocopherols",
       "tocopherol vitamin",
       "fat-soluble vitamin e",
       "antioxidant vitamin e",
@@ -2797,20 +2690,15 @@ export const METABOLISM: MetabolismEntry[] = [
       "Old English fisc = fish + Latin oleum = oil — dietary oil rich in long-chain ω-3 polyunsaturated fatty acids (eicosapentaenoic acid EPA and docosahexaenoic acid DHA) derived from fatty fish and marine sources",
     aliases: [
       "fish oil",
-      "fish oils",
       "fish-oil",
-      "fish-oils",
       "omega-3 fish oil",
       "omega 3 fish oil",
       "ω-3 fish oil",
       "marine oil",
-      "marine oils",
       "cod liver oil",
       "cod-liver oil",
       "fish oil supplement",
-      "fish oil supplements",
       "fish oil capsule",
-      "fish oil capsules",
       "epa dha supplement",
       "epa/dha supplement",
       "long-chain omega-3",
@@ -2852,11 +2740,8 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Latin co- = together + Latin factor = maker/agent",
     aliases: [
       "cofactor",
-      "cofactors",
       "enzyme cofactor",
-      "enzyme cofactors",
       "coenzyme",
-      "coenzymes",
     ],
     definition:
       "Non-protein chemical helper required for full enzymatic activity — organic coenzymes (often vitamin-derived) or inorganic metal ions that participate in catalysis but are not consumed as substrate.",
@@ -2889,11 +2774,8 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Latin purum = pure + -ine = chemical suffix (originally from uric acid in urine)",
     aliases: [
       "purine",
-      "purines",
       "purine base",
-      "purine bases",
       "purine nucleotide",
-      "purine nucleotides",
     ],
     definition:
       "Heterocyclic aromatic organic compound base (adenine, guanine) used to build nucleotides for DNA, RNA, ATP, GTP, and cyclic nucleotide signaling.",
@@ -2973,13 +2855,9 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek pyramis = pyramid (shape of fused ring) + -idine = chemical suffix — six-membered heterocyclic nitrogenous base class in nucleic acids",
     aliases: [
       "pyrimidine",
-      "pyrimidines",
       "pyrimidine base",
-      "pyrimidine bases",
       "pyrimidine nucleotide",
-      "pyrimidine nucleotides",
       "pyrimidine ring",
-      "pyrimidine rings",
       "pyrimidine synthesis",
       "pyrimidine pathway",
     ],
@@ -3238,7 +3116,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Di- + hydro- + orotate + -ase = enzyme acting on dihydroorotic acid intermediate in pyrimidine synthesis",
     aliases: [
       "dihydroorotase",
-      "dihydroorotases",
       "dhoase",
       "dho",
       "cad dihydroorotase",
@@ -3278,9 +3155,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin oros = mountain + -ic acid = uracil-related pyrimidine ring carboxylic acid — intermediate in de novo UMP synthesis",
     aliases: [
       "orotic acid",
-      "orotic acids",
       "orotate",
-      "orotates",
       "uracil-6-carboxylic acid",
       "orotic aciduria",
     ],
@@ -3319,7 +3194,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Ribonucleotide + reductase = enzyme reducing ribonucleotides to deoxyribonucleotides for DNA synthesis",
     aliases: [
       "ribonucleotide reductase",
-      "ribonucleotide reductases",
       "rnr",
       "rr",
       "nucleotide reductase",
@@ -3360,17 +3234,11 @@ export const METABOLISM: MetabolismEntry[] = [
       "deoxy = lacking 2′-OH on sugar + nucleotide = base + sugar + phosphate — monomer building block of DNA with deoxyribose instead of ribose",
     aliases: [
       "deoxynucleotide",
-      "deoxynucleotides",
       "deoxyribonucleotide",
-      "deoxyribonucleotides",
       "dntp",
-      "dntps",
       "deoxynucleoside triphosphate",
-      "deoxynucleoside triphosphates",
       "dna nucleotide",
-      "dna nucleotides",
       "dndp",
-      "dndps",
       "dntp pool",
       "deoxyribonucleoside triphosphate",
     ],
@@ -3410,7 +3278,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "thiol = sulfur-containing (CoA thioester) + -ase = enzyme — acyl-CoA thioesterase cleaving 3-ketoacyl-CoA in β-oxidation and acetyl-CoA acetyltransferase in ketone body metabolism",
     aliases: [
       "thiolase",
-      "thiolases",
       "beta-ketothiolase",
       "β-ketothiolase",
       "b-ketothiolase",
@@ -3454,7 +3321,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Thymidylate (thymine nucleotide) + synthase = enzyme synthesizing dTMP from dUMP using folate one-carbon unit",
     aliases: [
       "thymidylate synthase",
-      "thymidylate synthases",
       "ts",
       "tyms",
       "thymidylate synthetase",
@@ -3496,7 +3362,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "di- = two + hydro- = water + folate = folic acid derivative + reductase = enzyme reducing a chemical bond — converts dihydrofolate to active tetrahydrofolate",
     aliases: [
       "dihydrofolate reductase",
-      "dihydrofolate reductases",
       "dhfr",
       "dhfr enzyme",
       "folate reductase",
@@ -3533,13 +3398,11 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "nucleic-acid-precursors",
-    name: "Nucleic Acid Precursors",
+    name: "Nucleic Acid Precursor",
     etymology:
       "Latin nucleus = kernel + acidus = sour + Latin praecursor = forerunner — building blocks for DNA and RNA synthesis",
     aliases: [
-      "nucleic acid precursors",
       "nucleic acid precursor",
-      "nucleotide precursors",
       "nucleotide precursor",
       "dna precursors",
       "rna precursors",
@@ -3623,9 +3486,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "nad +",
       "nad plus",
       "oxidized nad",
-      "oxidized nads",
       "nicotinamide adenine dinucleotide",
-      "nicotinamide adenine dinucleotides",
       "nad oxidized",
       "nad oxidized form",
       "diphosphopyridine nucleotide",
@@ -3712,11 +3573,8 @@ export const METABOLISM: MetabolismEntry[] = [
       "nadp +",
       "nadp plus",
       "oxidized nadp",
-      "oxidized nadps",
       "nicotinamide adenine dinucleotide phosphate",
-      "nicotinamide adenine dinucleotide phosphates",
       "nad phosphate",
-      "nad phosphates",
       "triphosphopyridine nucleotide oxidized",
       "tpn",
     ],
@@ -3796,7 +3654,6 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek mykes = fungus + Latin acidus = sour",
     aliases: [
       "mycolic acid",
-      "mycolic acids",
       "alpha mycolic acid",
       "α-mycolic acid",
       "mycobacterial mycolic acid",
@@ -3835,7 +3692,6 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek tetra = four + hydro = water + biopterin = bicyclic pterin compound",
     aliases: [
       "tetrahydrobiopterin",
-      "tetrahydrobiopterins",
       "bh4",
       "bh₄",
       "thb",
@@ -3874,12 +3730,9 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek sphingo = sphinx (mysterious lipid) + lipid = fat — ceramide-based membrane lipids with variable head groups",
     aliases: [
       "sphingolipid",
-      "sphingolipids",
       "sphingolipid class",
       "sphingolipid molecule",
-      "sphingolipid molecules",
       "glycosphingolipid",
-      "glycosphingolipids",
     ],
     definition:
       "Class of lipids built on a ceramide backbone (sphingosine + fatty acid) with phosphate or sugar head groups — major structural components of neuronal and myelin membranes and substrates for lysosomal degradation; accumulation causes sphingolipidoses.",
@@ -3912,19 +3765,16 @@ export const METABOLISM: MetabolismEntry[] = [
   },
   {
     id: "sphingolipidosis",
-    name: "Sphingolipidosis",
+    name: "Sphingolipidosi",
     etymology:
       "Greek sphingo = sphinx + lipid + -osis = condition — lysosomal storage disorders from impaired degradation of ceramide-based sphingolipids leading to substrate accumulation in tissues",
     aliases: [
       "sphingolipidosis",
-      "sphingolipidoses",
       "sphingolipidose",
       "sphingolipid storage disease",
-      "sphingolipid storage diseases",
       "lysosomal sphingolipidosis",
       "lysosomal sphingolipidoses",
       "sphingolipid lysosomal storage disorder",
-      "sphingolipid lysosomal storage disorders",
     ],
     definition:
       "Group of inherited lysosomal storage disorders caused by deficiency of specific hydrolases or activator proteins required for stepwise sphingolipid catabolism — undegraded ceramide-based lipids (gangliosides, glucocerebroside, sphingomyelin, sulfatides, globotriaosylceramide) accumulate in macrophages, neurons, and other cells → progressive organomegaly, neurodegeneration, and/or peripheral neuropathy depending on substrate and enzyme.",
@@ -3966,17 +3816,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek glykys = sweet + lipid = fat — lipid molecule with covalently attached oligosaccharide, without a protein core",
     aliases: [
       "glycolipid",
-      "glycolipids",
       "glyco lipid",
-      "glyco lipids",
       "carbohydrate-containing lipid",
       "carbohydrate containing lipids",
       "glycosphingolipid",
-      "glycosphingolipids",
       "neutral glycolipid",
-      "neutral glycolipids",
       "acidic glycolipid",
-      "acidic glycolipids",
     ],
     definition:
       "Lipid–carbohydrate conjugate in which one or more sugar residues attach to a lipid anchor (usually ceramide in mammals) — major components of cell membranes, especially in nervous tissue and lipid rafts; includes cerebrosides, globosides, and gangliosides; bacterial glycolipids include lipopolysaccharide (LPS) and cord factor.",
@@ -4016,11 +3861,8 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek gala = milk + Latin cerebrum = brain + -oside = sugar derivative — galactose-containing glycosphingolipid of myelin",
     aliases: [
       "galactocerebroside",
-      "galactocerebrosides",
       "galactosylceramide",
-      "galactosylceramides",
       "galactocerebroside lipid",
-      "galactocerebroside lipids",
     ],
     definition:
       "Major glycosphingolipid of myelin (ceramide + galactose) — abundant in oligodendrocyte membranes and Schwann cell myelin sheaths; degraded by lysosomal galactocerebrosidase (β-galactocerebrosidase, GALC); accumulation causes Krabbe disease (globoid cell leukodystrophy).",
@@ -4054,11 +3896,8 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek glykys = sweet (glucose) + Latin cerebrum = brain + -oside = sugar derivative — glucose-containing glycosphingolipid",
     aliases: [
       "glucocerebroside",
-      "glucocerebrosides",
       "glucosylceramide",
-      "glucosylceramides",
       "glucocerebroside lipid",
-      "glucocerebroside lipids",
     ],
     definition:
       "Glycosphingolipid (ceramide + glucose) formed when glucosylceramidase transfers glucose to ceramide — normally degraded by lysosomal β-glucocerebrosidase (glucocerebrosidase, GBA) in macrophages; accumulation causes Gaucher disease with characteristic lipid-laden Gaucher cells.",
@@ -4093,13 +3932,10 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "G ganglioside series + M monosialo (one sialic acid) + 2 = second migratory band on TLC — sialylated glycosphingolipid",
     aliases: [
       "gm2 ganglioside",
-      "gm2 gangliosides",
       "gm2",
       "gm2 glycolipid",
-      "gm2 glycolipids",
       "gm2 storage",
       "ganglioside gm2",
-      "ganglioside gm2s",
     ],
     definition:
       "Sialic acid–containing ganglioside (ceramide + oligosaccharide with terminal N-acetylgalactosamine and sialic acid) concentrated in neuronal plasma membranes — degraded by β-hexosaminidase A (with GM2 activator protein); accumulation in Tay-Sachs and Sandhoff diseases causes neurodegeneration and cherry-red macula.",
@@ -4137,15 +3973,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek lysis = loosening/dissolution + ganglion = nerve cell cluster + -oside = glycoside — deacylated ganglioside lacking the ceramide fatty acyl chain, or ganglioside stored/accumulated within lysosomes",
     aliases: [
       "lysoganglioside",
-      "lysogangliosides",
       "lyso ganglioside",
-      "lyso gangliosides",
       "lyso-ganglioside",
-      "lyso-gangliosides",
       "lysosomal ganglioside",
-      "lysosomal gangliosides",
       "deacylated ganglioside",
-      "deacylated gangliosides",
     ],
     definition:
       "Ganglioside species lacking the N-acyl fatty acid on ceramide (lyso-form) or ganglioside accumulating within neuronal lysosomes when degradative enzymes are deficient — in Tay-Sachs and Sandhoff diseases, failure of β-hexosaminidase–mediated GM2 catabolism leads to lysosomal GM2 ganglioside storage with meganeurites and onion-skin lysosomes.",
@@ -4183,17 +4014,11 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek glykys = sweet + Latin amino + Greek glykys (again via glucosamine) + -an polysaccharide suffix — long unbranched repeating disaccharide chains formerly called mucopolysaccharides",
     aliases: [
       "glycosaminoglycan",
-      "glycosaminoglycans",
       "gag",
-      "gags",
       "mucopolysaccharide",
-      "mucopolysaccharides",
       "glycosaminoglycan chain",
-      "glycosaminoglycan chains",
       "sulfated glycosaminoglycan",
-      "sulfated glycosaminoglycans",
       "acid mucopolysaccharide",
-      "acid mucopolysaccharides",
     ],
     definition:
       "Long unbranched heteropolysaccharide chains of repeating disaccharide units (amino sugar + uronic acid) often sulfated — major component of proteoglycans in extracellular matrix, cartilage, and basement membranes; degraded by lysosomal hydrolases; accumulation causes mucopolysaccharidoses (MPS); hyaluronic acid is the nonsulfated GAG in myxedema and synovial fluid.",
@@ -4234,13 +4059,10 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek hepar = liver + -an (polysaccharide suffix) + Latin sulfur = sulfur — sulfated glycosaminoglycan",
     aliases: [
       "heparan sulfate",
-      "heparan sulfates",
       "heparan sulfate gag",
       "heparan sulfate glycosaminoglycan",
       "heparan sulfate proteoglycan",
-      "heparan sulfate proteoglycans",
       "hspg",
-      "hspgs",
     ],
     definition:
       "Linear sulfated glycosaminoglycan (GAG) chain attached to core proteins as heparan sulfate proteoglycans (HSPGs) in basement membranes and cell surfaces — degraded by lysosomal hydrolases along with dermatan sulfate; accumulation in mucopolysaccharidoses (MPS) causes coarse facies, skeletal dysplasia, corneal clouding, and organomegaly.",
@@ -4277,9 +4099,7 @@ export const METABOLISM: MetabolismEntry[] = [
     etymology: "Greek sphingo = sphinx + myelin = marrow — phosphorylcholine-containing sphingolipid abundant in myelin membranes",
     aliases: [
       "sphingomyelin",
-      "sphingomyelins",
       "sphingomyelin lipid",
-      "sphingomyelin lipids",
       "ceramide phosphorylcholine",
     ],
     definition:
@@ -4318,13 +4138,10 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek glykys = sweet + haima = blood + Latin index = pointer — ranking of carbohydrate foods by postprandial glycemic response relative to a reference",
     aliases: [
       "glycemic index",
-      "glycemic indices",
       "glycaemic index",
-      "glycaemic indices",
       "gi",
       "food glycemic index",
       "glycemic index value",
-      "glycemic index values",
       "high glycemic index",
       "low glycemic index",
     ],
@@ -4362,15 +4179,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek glykys = sweet + haima = blood + Old English lād = carrying — glycemic effect of a realistic food portion combining index and carbohydrate amount",
     aliases: [
       "glycemic load",
-      "glycemic loads",
       "glycemic loading",
       "glycaemic load",
-      "glycaemic loads",
       "glycaemic loading",
       "gl",
       "food glycemic load",
       "glycemic load value",
-      "glycemic load values",
     ],
     definition:
       "Measure of expected glycemic impact of a typical serving of food — calculated as (glycemic index × grams of available carbohydrate per serving) ÷ 100 — better reflects real-world postprandial glucose than GI alone.",
@@ -4406,7 +4220,6 @@ export const METABOLISM: MetabolismEntry[] = [
     aliases: [
       "lactose",
       "milk sugar",
-      "milk sugars",
       "lactose disaccharide",
       "lactose sugar",
     ],
@@ -4452,10 +4265,8 @@ export const METABOLISM: MetabolismEntry[] = [
       "nacetylglucosamine",
       "glucosamine n-acetyl",
       "nag",
-      "nags",
       "n-acetyl-d-glucosamine",
       "n-acetylglucosamine monomer",
-      "n-acetylglucosamine monomers",
     ],
     definition:
       "Acetylated amino sugar monomer — one of the two alternating sugar subunits of bacterial peptidoglycan (paired with N-acetylmuramic acid) and a building block of glycosaminoglycans (hyaluronic acid, heparan sulfate, chondroitin sulfate).",
@@ -4497,10 +4308,8 @@ export const METABOLISM: MetabolismEntry[] = [
       "nacetylmuramic acid",
       "muramic acid n-acetyl",
       "nam",
-      "nams",
       "n-acetylmuramate",
       "n-acetylmuramic acid monomer",
-      "n-acetylmuramic acid monomers",
       "muramic acid",
       "murein monomer",
     ],
@@ -4539,15 +4348,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "Named for Sorbus (mountain ash) berries + -ol (alcohol suffix) — sugar alcohol (polyol) derived from glucose reduction",
     aliases: [
       "sorbitol",
-      "sorbitols",
       "d-sorbitol",
       "d glucitol",
       "d-glucitol",
       "glucitol",
       "sugar alcohol",
-      "sugar alcohols",
       "polyol",
-      "polyols",
     ],
     definition:
       "Six-carbon sugar alcohol (polyol) formed when aldose reductase reduces glucose to sorbitol, then sorbitol dehydrogenase converts sorbitol to fructose — central intermediate in the polyol pathway implicated in hyperglycemic tissue injury and also a poorly absorbed dietary osmotic agent.",
@@ -4583,7 +4389,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek kreas = flesh + -ine = chemical suffix — nitrogenous organic acid stored in skeletal and cardiac muscle as phosphocreatine for rapid ATP regeneration",
     aliases: [
       "creatine",
-      "creatines",
       "l-creatine",
       "muscle creatine",
       "phosphocreatine precursor",
@@ -4629,7 +4434,6 @@ export const METABOLISM: MetabolismEntry[] = [
     aliases: [
       "atp",
       "adenosine triphosphate",
-      "adenosine triphosphates",
       "adenosine 5 triphosphate",
       "adenosine 5-triphosphate",
       "triphosphate adenosine",
@@ -4677,7 +4481,6 @@ export const METABOLISM: MetabolismEntry[] = [
     aliases: [
       "adp",
       "adenosine diphosphate",
-      "adenosine diphosphates",
       "adenosine 5 diphosphate",
       "adenosine 5-diphosphate",
       "diphosphate adenosine",
@@ -4720,11 +4523,9 @@ export const METABOLISM: MetabolismEntry[] = [
     aliases: [
       "amp",
       "adenosine monophosphate",
-      "adenosine monophosphates",
       "adenosine 5 monophosphate",
       "adenosine 5-monophosphate",
       "adenylic acid",
-      "adenylic acids",
       "5 amp",
       "5-amp",
     ],
@@ -4775,7 +4576,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "sulfur-containing",
       "sulfur containing",
       "sulfur amino acid",
-      "sulfur amino acids",
     ],
     definition:
       "Essential element (S) incorporated into cysteine, methionine, coenzyme A, thiamine, biotin, lipoic acid, and glutathione — participates in transsulfuration, disulfide bond formation, sulfate conjugation (PAPS), and defines pharmacophores in sulfonamide and thiazide drugs.",
@@ -4818,18 +4618,12 @@ export const METABOLISM: MetabolismEntry[] = [
       "bis- = two + phospho- = phosphate + glycerate = three-carbon acid + mutase = enzyme relocating functional groups — catalyzes conversion of 1,3-bisphosphoglycerate to 2,3-bisphosphoglycerate in erythrocyte glycolysis",
     aliases: [
       "bisphosphoglycerate mutase",
-      "bisphosphoglycerate mutases",
       "bpg mutase",
-      "bpg mutases",
       "2,3-bpg mutase",
-      "2,3-bpg mutases",
       "2,3-bisphosphoglycerate mutase",
-      "2,3-bisphosphoglycerate mutases",
       "dpg mutase",
-      "dpg mutases",
       "erythrocyte bisphosphoglycerate mutase",
       "bpgm",
-      "bpgms",
     ],
     definition:
       "Erythrocyte-specific glycolytic enzyme that shunts 1,3-bisphosphoglycerate to 2,3-bisphosphoglycerate (2,3-BPG) rather than directly to 3-phosphoglycerate — generating the allosteric modulator that decreases hemoglobin oxygen affinity and facilitates O₂ unloading in tissues.",
@@ -4866,9 +4660,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin gluten = glue + Greek theion = sulfur + Latin reductase = reducing enzyme — NADPH-dependent flavoprotein that regenerates reduced glutathione (GSH) from oxidized glutathione (GSSG)",
     aliases: [
       "glutathione reductase",
-      "glutathione reductases",
       "gssg reductase",
-      "gssg reductases",
       "gr",
       "gr enzyme",
       "nadph glutathione reductase",
@@ -4910,9 +4702,7 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek hex = six + kinase = enzyme transferring phosphate — phosphorylates six-carbon sugars (chiefly glucose) to trap them intracellularly at the start of glycolysis",
     aliases: [
       "hexokinase",
-      "hexokinases",
       "hexokinase enzyme",
-      "hexokinase enzymes",
       "glucose hexokinase",
       "hk",
       "hk1",
@@ -4920,7 +4710,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "hk3",
       "hk4",
       "glucokinase",
-      "glucokinases",
       "hexokinase iv",
       "liver glucokinase",
     ],
@@ -4959,7 +4748,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Greek pyruvate (fire + vinegar salt) + kinase = phosphate-transferring enzyme — catalyzes final ATP-generating step of glycolysis converting phosphoenolpyruvate to pyruvate",
     aliases: [
       "pyruvate kinase",
-      "pyruvate kinases",
       "pk",
       "pk enzyme",
       "pk1",
@@ -5007,7 +4795,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "phosphorylase + kinase — serine/threonine kinase that phosphorylates and activates glycogen phosphorylase (and glycogen synthase inhibition) in the hormone-stimulated glycogenolysis cascade",
     aliases: [
       "phosphorylase kinase",
-      "phosphorylase kinases",
       "phk",
       "phosphorylase b kinase",
       "glycogen phosphorylase kinase",
@@ -5050,7 +4837,6 @@ export const METABOLISM: MetabolismEntry[] = [
       "Latin trans = across + Greek ketos = ketone + -olase = cleavage enzyme — thiamine pyrophosphate (TPP)–dependent enzyme of the nonoxidative pentose phosphate pathway transferring two-carbon ketol units between sugar phosphates",
     aliases: [
       "transketolase",
-      "transketolases",
       "erythrocyte transketolase",
       "rbc transketolase",
       "tk",

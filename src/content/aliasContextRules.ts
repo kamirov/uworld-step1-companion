@@ -57,7 +57,6 @@ const ALIAS_CONTEXT_RULES: Record<string, readonly AliasContextRule[]> = {
   "condition:ards:respiratory distress syndrome": [hasNeonatalContext],
   "protein:amyloid-precursor-protein:app": [isNotAllCapsMatch],
   "symptom:menses:period": [hasTemporalPeriodLeftContext],
-  "symptom:menses:periods": [hasTemporalPeriodLeftContext],
 };
 
 export function shouldRejectAliasByContext(ctx: AliasContextRuleContext): boolean {

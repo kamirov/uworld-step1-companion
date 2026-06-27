@@ -21,22 +21,14 @@ import { buildProcedureAliasIndex } from "../src/data/procedures.ts";
 import { buildProteinAliasIndex } from "../src/data/proteins.ts";
 import { buildSignalingAliasIndex } from "../src/data/signaling.ts";
 import { buildSymptomAliasIndex } from "../src/data/symptoms.ts";
+import {
+  canonicalAliasKey,
+  getAllMatchForms,
+} from "../src/content/pluralization.ts";
 import type { TermKind, TermMatch } from "../src/content/termTypes.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = join(__dirname, "../src/generated/aliasIndex.ts");
-
-function normalizeForComparison(text: string): string {
-  return text
-    .normalize("NFKC")
-    .toLowerCase()
-    .replace(/[\u00AD\u200B-\u200D\u2060\uFEFF]/g, "")
-    .replace(/[\u2212\u207B\uFE63]/g, "-");
-}
-
-function normalizedWordKey(matchText: string): string {
-  return normalizeForComparison(matchText).replace(/\s+/g, " ").trim();
-}
 
 function termKey(term: Pick<TermMatch, "kind" | "id">): string {
   return `${term.kind}:${term.id.toLowerCase()}`;
@@ -172,8 +164,7 @@ function buildTermIndex(): TermMatch[] {
     }),
   );
 
-  const expanded: TermMatch[] = [];
-  for (const entry of [
+  const allMatches: TermMatch[] = [
     ...organMatches,
     ...heartSoundMatches,
     ...heartMurmurMatches,
@@ -193,15 +184,9 @@ function buildTermIndex(): TermMatch[] {
     ...metabolismMatches,
     ...microbiologyMatches,
     ...musculoskeletalMatches,
-  ]) {
-    expanded.push(entry);
-    if (entry.kind === "organ" && !entry.alias.endsWith("s")) {
-      expanded.push({ ...entry, alias: `${entry.alias}s` });
-      expanded.push({ ...entry, alias: `${entry.alias}es` });
-    }
-  }
+  ];
 
-  return expanded.sort(
+  return allMatches.sort(
     (a, b) => b.alias.length - a.alias.length || a.alias.localeCompare(b.alias),
   );
 }
@@ -212,10 +197,8 @@ function buildAliasesByTermKey(entries: TermMatch[]): Record<string, string[]> {
     const key = termKey(entry);
     if (!map.has(key)) map.set(key, new Set());
     const aliases = map.get(key)!;
-    aliases.add(normalizedWordKey(entry.alias));
-    if (entry.kind === "organ" && !entry.alias.endsWith("s")) {
-      aliases.add(normalizedWordKey(`${entry.alias}s`));
-      aliases.add(normalizedWordKey(`${entry.alias}es`));
+    for (const form of getAllMatchForms(entry.alias)) {
+      aliases.add(canonicalAliasKey(form));
     }
   }
 

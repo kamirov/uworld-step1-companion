@@ -10,10 +10,9 @@ export interface HemodynamicEntry {
 export const HEMODYNAMICS: HemodynamicEntry[] = [
   {
     id: "hemodynamics",
-    name: "Hemodynamics",
+    name: "Hemodynamic",
     etymology: "Greek haima = blood + dynamis = power/force",
     aliases: [
-      "hemodynamics",
       "hemodynamic",
       "haemodynamics",
       "cardiovascular hemodynamics",
@@ -52,7 +51,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     etymology: "Latin vena = vein + Latin re = back + turnus = turning",
     aliases: [
       "venous return",
-      "venous returns",
       "systemic venous return",
       "vr",
       "return of blood to the heart",
@@ -75,10 +73,8 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin medius = middle + systemicus = whole body + filling + pressura = pressure — equilibrium vascular pressure when inflow equals outflow",
     aliases: [
       "mean systemic filling pressure",
-      "mean systemic filling pressures",
       "msfp",
       "systemic filling pressure",
-      "systemic filling pressures",
       "mean circulatory filling pressure",
       "equilibrium venous pressure",
       "mean systemic pressure",
@@ -102,7 +98,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin rectus = right + atrium = hall/entry chamber + pressura = pressure",
     aliases: [
       "right atrial pressure",
-      "right atrial pressures",
       "rap",
       "ra pressure",
       "right atrium pressure",
@@ -129,11 +124,8 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin vena = vein + Latin complire = fill + -ance = capacity to yield — change in venous volume per unit change in venous pressure",
     aliases: [
       "venous compliance",
-      "venous compliances",
       "venous capacitance",
-      "venous capacitances",
       "capacitance vein",
-      "capacitance veins",
       "vascular compliance venous",
       "high venous compliance",
       "venous reservoir",
@@ -160,11 +152,8 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin arteria = airway/artery + Latin complire = to fill + -ance = capacity to yield — distensibility of the arterial system (ΔV/ΔP); inverse of arterial elastance/stiffness",
     aliases: [
       "arterial compliance",
-      "arterial compliances",
       "arterial distensibility",
-      "arterial distensibilities",
       "aortic compliance",
-      "aortic compliances",
       "vascular compliance arterial",
       "arterial elastance",
       "arterial stiffness",
@@ -193,11 +182,8 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin complire = to fill + -ance = capacity to yield — change in volume per unit change in distending pressure (ΔV/ΔP)",
     aliases: [
       "compliance",
-      "compliances",
       "lung compliance",
-      "lung compliances",
       "pulmonary compliance",
-      "pulmonary compliances",
       "chest wall compliance",
       "respiratory compliance",
       "static compliance",
@@ -276,7 +262,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "inotropic",
       "inotropic state",
       "inotropic effect",
-      "inotropic effects",
       "positive inotropy",
       "negative inotropy",
       "contractility",
@@ -304,10 +289,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     aliases: [
       "pressure-volume loop",
       "pressure volume loop",
-      "pressure-volume loops",
-      "pressure volume loops",
       "pv loop",
-      "pv loops",
       "ventricular pressure-volume loop",
       "left ventricular pressure-volume loop",
       "lv pressure-volume loop",
@@ -345,7 +327,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek kardia = heart + Latin index = pointer/indicator",
     aliases: [
       "cardiac index",
-      "cardiac indices",
       "ci",
       "cardiac index measurement",
       "indexed cardiac output",
@@ -408,9 +389,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin centralis = in the middle + vena = vein + pressura = pressing force",
     aliases: [
       "central venous pressure",
-      "central venous pressures",
       "cvp",
-      "cvps",
       "central venous pressure measurement",
       "right atrial filling pressure",
       "right-sided filling pressure",
@@ -534,7 +513,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "RV = right ventricle + Old English strēon = tightening/overload — echocardiographic and clinical pattern of acute right ventricular pressure overload",
     aliases: [
       "rv strain",
-      "rv strains",
       "right ventricular strain",
       "right ventricle strain",
       "right heart strain",
@@ -587,7 +565,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   },
   {
     id: "pulsus-paradoxus",
-    name: "Pulsus Paradoxus",
+    name: "Pulsus Paradoxu",
     etymology: "Latin pulsus = beat/pulse + paradoxus = contrary to expectation",
     aliases: [
       "pulsus paradoxus",
@@ -612,9 +590,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin rapidus = seizing + Latin ventriculus = little belly + Latin responsum = answer/reply",
     aliases: [
       "rapid ventricular response",
-      "rapid ventricular responses",
       "rapid ventricular rate",
-      "rapid ventricular rates",
       "fast ventricular response",
       "fast ventricular rate",
       "rvr",
@@ -624,7 +600,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "atrial fibrillation with rvr",
       "a-fib with rvr",
       "uncontrolled ventricular rate",
-      "uncontrolled ventricular rates",
       "tachycardic ventricular response",
     ],
     definition:
@@ -666,19 +641,13 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin serum = whey (watery part of milk) — acellular liquid fraction of blood remaining after coagulation removes fibrinogen and formed elements; used clinically as the standard specimen for many chemistry and serologic tests",
     aliases: [
       "serum",
-      "serums",
       "blood serum",
       "patient serum",
       "serum sample",
-      "serum samples",
       "serum specimen",
-      "serum specimens",
       "serum chemistry",
-      "serum chemistries",
       "serum level",
-      "serum levels",
       "serum test",
-      "serum tests",
       "serum laboratory",
     ],
     definition:
@@ -732,14 +701,11 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek splanchna = viscera/internal organs + Latin circulatio = circular flow — blood supply to abdominal digestive organs and related viscera",
     aliases: [
       "splanchnic circulation",
-      "splanchnic circulations",
       "splanchnic blood flow",
       "splanchnic perfusion",
       "mesenteric circulation",
-      "mesenteric circulations",
       "portal circulation",
       "hepatosplanchnic circulation",
-      "hepatosplanchnic circulations",
       "abdominal visceral circulation",
       "gastrointestinal circulation",
       "gi circulation",
@@ -814,14 +780,11 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     etymology: "Latin intra = within + glomerulus = small ball + pressura = pressing force",
     aliases: [
       "intraglomerular pressure",
-      "intraglomerular pressures",
       "intraglomerular capillary pressure",
       "glomerular capillary pressure",
-      "glomerular capillary pressures",
       "glomerular hydrostatic pressure",
       "glomerular capillary hydrostatic pressure",
       "pgc",
-      "glomerular capillary hydrostatic pressures",
     ],
     definition:
       "Glomerular capillary hydrostatic pressure (PGC) — also called intraglomerular pressure — the primary driving force for ultrafiltration across the glomerular filtration barrier; balanced against Bowman space hydrostatic pressure (PBS), glomerular capillary oncotic pressure (πGC), and negligible Bowman oncotic pressure (πBS).",
@@ -844,11 +807,8 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     etymology: "Greek onkos = mass/bulk + -otic = relating to + pressura = pressing force",
     aliases: [
       "oncotic pressure",
-      "oncotic pressures",
       "colloid osmotic pressure",
-      "colloid osmotic pressures",
       "plasma oncotic pressure",
-      "plasma oncotic pressures",
       "colloid osmotic pressure gradient",
       "oncotic pressure gradient",
     ],
@@ -894,9 +854,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek systole = contraction + Latin sanguis = blood + pressura = pressing force",
     aliases: [
       "systolic blood pressure",
-      "systolic blood pressures",
       "systolic pressure",
-      "systolic pressures",
       "sbp",
       "systolic bp",
       "peak arterial pressure",
@@ -920,9 +878,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek diastole = dilation/relaxation + Latin sanguis = blood + pressura = pressing force",
     aliases: [
       "diastolic blood pressure",
-      "diastolic blood pressures",
       "diastolic pressure",
-      "diastolic pressures",
       "dbp",
       "diastolic bp",
       "minimum arterial pressure",
@@ -971,7 +927,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "decreased blood pressure",
       "decreased bp",
       "hypotensive state",
-      "hypotensive states",
       "arterial hypotension",
     ],
     definition:
@@ -999,7 +954,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin pulsus = beat/throb + pressura = pressing force — the systolic–diastolic pressure difference reflecting stroke ejection and arterial wall properties",
     aliases: [
       "pulse pressure",
-      "pulse pressures",
       "pp",
       "arterial pulse pressure",
       "systolic diastolic difference",
@@ -1098,9 +1052,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin corona = crown/wreath + perfundere = to pour through + pressura = pressing force",
     aliases: [
       "coronary perfusion pressure",
-      "coronary perfusion pressures",
       "myocardial perfusion pressure",
-      "myocardial perfusion pressures",
       "coronary perfusion gradient",
       "diastolic coronary perfusion pressure",
       "coronary diastolic perfusion pressure",
@@ -1126,7 +1078,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     etymology: "Latin perfundere = pour through + pressura = pressing force",
     aliases: [
       "perfusion pressure",
-      "perfusion pressures",
       "tissue perfusion pressure",
       "organ perfusion pressure",
       "capillary perfusion pressure",
@@ -1174,7 +1125,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     etymology: "Greek autos = self + Latin regulare = to rule/control = intrinsic stabilization of blood flow",
     aliases: [
       "autoregulation",
-      "autoregulations",
       "blood flow autoregulation",
       "vascular autoregulation",
       "cerebral autoregulation",
@@ -1269,7 +1219,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Latin intra = within + cranium = skull + Latin pressura = pressing force",
     aliases: [
       "intracranial pressure",
-      "intracranial pressures",
       "icp",
       "raised intracranial pressure",
       "increased intracranial pressure",
@@ -1300,9 +1249,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "swan ganz",
       "swan-ganz catheter",
       "swan ganz catheter",
-      "swan-ganz catheters",
       "pulmonary artery catheter",
-      "pulmonary artery catheters",
       "pac",
       "right heart catheter",
       "flow-directed catheter",
@@ -1384,9 +1331,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek hyper = excess + kinesis = movement + Latin apex = tip/summit — excessive systolic excursion at the left ventricular apex",
     aliases: [
       "hyperkinetic apex",
-      "hyperkinetic apices",
       "hyperdynamic apex",
-      "hyperdynamic apices",
       "apical hyperkinesis",
       "apical hyperkineses",
       "apical sparing",
@@ -1410,7 +1355,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   },
   {
     id: "basal-hypokinesis",
-    name: "Basal Hypokinesis",
+    name: "Basal Hypokinesi",
     etymology:
       "Greek basis = base/foundation + hypo = reduced + kinesis = movement — reduced systolic excursion of basal left ventricular segments",
     aliases: [
@@ -1420,7 +1365,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "basal akinesis",
       "basal akineses",
       "basal wall motion abnormality",
-      "basal wall motion abnormalities",
       "basal segment hypokinesis",
       "basal lv hypokinesis",
       "basal left ventricular hypokinesis",
@@ -1481,11 +1425,9 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek haima = blood + dynamis = force + Latin instabilitas = lack of steadiness — cardiovascular parameters inadequate to maintain organ perfusion",
     aliases: [
       "hemodynamic instability",
-      "hemodynamic instabilities",
       "hemodynamically unstable",
       "hemodynamically instability",
       "cardiovascular instability",
-      "cardiovascular instabilities",
       "circulatory instability",
       "circulatory collapse",
       "unstable hemodynamics",
@@ -1511,24 +1453,17 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   },
   {
     id: "vascular-beds",
-    name: "Vascular Beds",
+    name: "Vascular Bed",
     etymology:
       "Latin vasculum = small vessel + Old English bedd = resting place — regional circulations supplied by arteries and drained by veins that differ in resistance, autoregulation, and metabolic control",
     aliases: [
       "vascular bed",
-      "vascular beds",
       "vascular bed circulation",
-      "vascular bed circulations",
       "regional circulation",
-      "regional circulations",
       "regional vascular bed",
-      "regional vascular beds",
       "organ circulation",
-      "organ circulations",
       "capillary bed",
-      "capillary beds",
       "microcirculatory bed",
-      "microcirculatory beds",
     ],
     definition:
       "Discrete regional circulations (e.g., cerebral, coronary, renal, skeletal muscle, splanchnic, cutaneous, pulmonary) whose arterioles independently regulate blood flow to match local metabolic demand — integrated by sympathetic tone, local metabolites, and autoregulatory myogenic responses.",
@@ -1547,7 +1482,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
   },
   {
     id: "orthostasis",
-    name: "Orthostasis",
+    name: "Orthostasi",
     etymology:
       "Greek orthos = straight/upright + stasis = standing — physiologic state and hemodynamic stress of assuming and maintaining upright posture",
     aliases: [
@@ -1556,9 +1491,7 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "upright posture",
       "standing posture",
       "postural change",
-      "postural changes",
       "positional change",
-      "positional changes",
       "orthostatic stress",
       "orthostatic challenge",
     ],
@@ -1582,21 +1515,14 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek baros = weight/pressure + Latin receptor = receiver — stretch-sensitive mechanoreceptors in arterial walls that transduce changes in blood pressure into afferent neural signals for reflex cardiovascular control",
     aliases: [
       "baroreceptor",
-      "baroreceptors",
       "baroreceptor reflex",
       "baroreceptor reflexes",
       "baroreflex",
-      "baroreflexes",
       "arterial baroreceptor",
-      "arterial baroreceptors",
       "carotid sinus baroreceptor",
-      "carotid sinus baroreceptors",
       "aortic arch baroreceptor",
-      "aortic arch baroreceptors",
       "stretch receptor",
-      "stretch receptors",
       "pressure receptor",
-      "pressure receptors",
     ],
     definition:
       "Mechanoreceptors in the carotid sinus (CN IX afferent) and aortic arch (CN X afferent) that increase firing when arterial walls stretch during ↑ blood pressure — medullary integration decreases sympathetic outflow and increases vagal tone to lower heart rate and vascular resistance; firing decreases when pressure falls, producing reflex tachycardia and vasoconstriction.",
@@ -1623,7 +1549,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "vaso vagal reflex",
       "vaso-vagal reflex",
       "vasovagal response",
-      "vasovagal responses",
       "vasodepressor reflex",
       "vasodepressor reflexes",
       "bezold-jarisch reflex",
@@ -1655,19 +1580,13 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Greek chemeia = chemistry + Latin receptor = receiver — sensory cells that detect chemical changes in blood (O₂, CO₂, H⁺) and modulate ventilation and sympathetic tone",
     aliases: [
       "chemoreceptor",
-      "chemoreceptors",
       "chemoreceptor reflex",
       "chemoreceptor reflexes",
       "peripheral chemoreceptor",
-      "peripheral chemoreceptors",
       "central chemoreceptor",
-      "central chemoreceptors",
       "carotid body chemoreceptor",
-      "carotid body chemoreceptors",
       "aortic body chemoreceptor",
-      "aortic body chemoreceptors",
       "chemoreceptor trigger zone",
-      "chemoreceptor trigger zones",
       "ctz",
     ],
     definition:

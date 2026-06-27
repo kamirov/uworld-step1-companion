@@ -34,7 +34,7 @@ assertRejected("during this period", "period");
 assertRejected("in this period", "period");
 assertRejected("over that period", "period");
 assertRejected("within the current period", "period");
-assertRejected("previous periods", "periods");
+assertRejected("previous periods", "periods", "period");
 
 assertAllowed("menstrual period", "menstrual period");
 assertAllowed("first menstrual period", "first menstrual period");

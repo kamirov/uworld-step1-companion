@@ -57,7 +57,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "supraspinatus",
-    name: "Supraspinatus",
+    name: "Supraspinatu",
     etymology: "Latin supra = above + spina = spine",
     aliases: ["supraspinatus", "supraspinatus muscle", "supraspinatus tendon"],
     definition:
@@ -92,7 +92,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "infraspinatus",
-    name: "Infraspinatus",
+    name: "Infraspinatu",
     etymology: "Latin infra = below + spina = spine",
     aliases: ["infraspinatus", "infraspinatus muscle", "infraspinatus tendon"],
     definition:
@@ -160,7 +160,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "subscapularis",
-    name: "Subscapularis",
+    name: "Subscapulari",
     etymology: "Latin sub = under + scapula = shoulder blade",
     aliases: ["subscapularis", "subscapularis muscle", "subscapularis tendon"],
     definition:
@@ -202,10 +202,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "biceps brachii",
       "biceps brachii muscle",
-      "biceps brachii muscles",
       "biceps",
       "biceps muscle",
-      "biceps muscles",
       "biceps brachialis",
       "biceps of arm",
       "bb muscle",
@@ -253,8 +251,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "deltoid",
       "deltoid muscle",
-      "deltoid muscles",
-      "deltoids",
       "deltoideus",
       "shoulder deltoid",
     ],
@@ -301,10 +297,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "levator scapulae",
       "levator scapulae muscle",
-      "levator scapulae muscles",
       "levator scapula",
       "levator scapula muscle",
-      "levator scapula muscles",
       "levator scapulae muscle group",
     ],
     definition:
@@ -349,7 +343,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "serratus anterior",
       "serratus anterior muscle",
-      "serratus anterior muscles",
       "serratus anterior muscle group",
       "serratus",
       "boxer's muscle",
@@ -399,14 +392,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "latissimus dorsi",
       "latissimus dorsi muscle",
-      "latissimus dorsi muscles",
       "latissimus",
       "lats",
       "lat muscle",
-      "lat muscles",
       "latissimus dorsi muscle group",
       "broadest back muscle",
-      "broadest back muscles",
     ],
     definition:
       "Large, fan-shaped superficial muscle of the posterior trunk arising from the thoracolumbar fascia, spinous processes, iliac crest, and inferior ribs — inserting on the floor of the intertubercular (bicipital) groove of the humerus — powerful adductor, extensor, and internal rotator of the arm.",
@@ -454,12 +444,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "pectoralis minor",
       "pectoralis minor muscle",
-      "pectoralis minor muscles",
       "pec minor",
-      "pec minors",
       "pectoralis minor muscle group",
       "smaller pectoral muscle",
-      "smaller pectoral muscles",
     ],
     definition:
       "Thin, triangular muscle deep to pectoralis major — arising from the anterior surfaces of ribs 3–5 and inserting on the coracoid process of the scapula — protracting, depressing, and downwardly rotating the scapula and stabilizing the scapulothoracic articulation.",
@@ -501,17 +488,15 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "trapezius",
-    name: "Trapezius",
+    name: "Trapeziu",
     etymology:
       "Greek trapezoeides = table-shaped (trapezoid) — large superficial muscle spanning neck and upper back with upper, middle, and lower fiber groups",
     aliases: [
       "trapezius",
       "trapezius muscle",
-      "trapezius muscles",
       "trapezius muscle group",
       "traps",
       "trap muscle",
-      "trap muscles",
       "upper trapezius",
       "middle trapezius",
       "lower trapezius",
@@ -630,12 +615,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin accessorius = additional/helper + Greek neuron = sinew/nerve",
     aliases: [
       "accessory nerve",
-      "accessory nerves",
       "cranial nerve xi",
       "cn xi",
       "cn11",
       "spinal accessory nerve",
-      "spinal accessory nerves",
       "nervus accessorius",
       "eleventh cranial nerve",
     ],
@@ -677,7 +660,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin longus = long + Greek thorax = chest + neuron = sinew/nerve",
     aliases: [
       "long thoracic nerve",
-      "long thoracic nerves",
       "long thoracic",
       "lateral thoracic nerve",
       "external respiratory nerve of bell",
@@ -722,7 +704,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek phren = diaphragm/mind + neuron = sinew/nerve",
     aliases: [
       "phrenic nerve",
-      "phrenic nerves",
       "phrenic",
       "nervus phrenicus",
       "c3-c5 phrenic",
@@ -767,17 +748,13 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin inter = between + costa = rib + Greek neuron = sinew/nerve",
     aliases: [
       "intercostal nerve",
-      "intercostal nerves",
       "intercostal",
-      "intercostals",
       "thoracic intercostal nerve",
-      "thoracic intercostal nerves",
       "anterior ramus intercostal",
       "anterior rami intercostal",
       "ventral ramus intercostal",
       "ventral rami intercostal",
       "intercostal neurovascular bundle",
-      "intercostal neurovascular bundles",
     ],
     definition:
       "Segmental spinal nerves formed by the ventral rami of thoracic spinal roots T1–T12 — each courses in the costal groove beneath its rib to supply intercostal and some abdominal wall muscles, overlying skin, and parietal pleura/peritoneum in a dermatomal band around the chest and upper abdomen.",
@@ -824,17 +801,13 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin costa = rib + Latin margo = edge/border — inferior border of the thoracic cage formed by the costal cartilages of ribs 7–10 and the xiphisternal junction",
     aliases: [
       "costal margin",
-      "costal margins",
       "costal arch",
       "costal arches",
       "costal border",
-      "costal borders",
       "costal angle",
       "subcostal margin",
-      "subcostal margins",
       "inferior costal margin",
       "rib cage margin",
-      "rib cage margins",
       "thoracic costal margin",
     ],
     definition:
@@ -880,11 +853,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin recurrere = to run back + laryngeal = of the larynx + Greek neuron = sinew/nerve",
     aliases: [
       "recurrent laryngeal nerve",
-      "recurrent laryngeal nerves",
       "rln",
-      "rlns",
       "inferior laryngeal nerve",
-      "inferior laryngeal nerves",
       "nervus laryngeus recurrens",
     ],
     definition:
@@ -926,7 +896,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin tri = three + geminus = twin/double + Greek neuron = sinew/nerve",
     aliases: [
       "trigeminal nerve",
-      "trigeminal nerves",
       "trigeminal",
       "cn v",
       "cn5",
@@ -977,9 +946,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin maxilla = jaw (upper jaw) + Latin divisio = division",
     aliases: [
       "maxillary division",
-      "maxillary divisions",
       "maxillary nerve",
-      "maxillary nerves",
       "v2",
       "cn v2",
       "second division trigeminal",
@@ -1027,9 +994,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin mandibula = jaw (lower jaw) + Latin divisio = division",
     aliases: [
       "mandibular division",
-      "mandibular divisions",
       "mandibular nerve",
-      "mandibular nerves",
       "v3",
       "cn v3",
       "third division trigeminal",
@@ -1077,7 +1042,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin medius = middle + Greek neuron = sinew/nerve",
     aliases: [
       "median nerve",
-      "median nerves",
       "nervus medianus",
       "median n",
     ],
@@ -1126,7 +1090,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "musculocutaneous",
       "musculocutaneous nerve",
-      "musculocutaneous nerves",
       "musculocutaneous n",
       "nervus musculocutaneus",
       "lateral antebrachial cutaneous nerve origin",
@@ -1172,7 +1135,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin ulna = elbow bone + Greek neuron = sinew/nerve — nerve coursing along the medial forearm with the ulna",
     aliases: [
       "ulnar nerve",
-      "ulnar nerves",
       "nervus ulnaris",
       "ulnar n",
       "cubital tunnel nerve",
@@ -1223,12 +1185,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek thenar = palm of the hand + Latin eminentia = projection — fleshy muscular prominence at the radial base of the palm overlying the thumb's intrinsic muscles",
     aliases: [
       "thenar eminence",
-      "thenar eminences",
       "thenar muscles",
       "thenar muscle group",
-      "thenar muscle groups",
       "thenar prominence",
-      "thenar prominences",
       "ball of thumb",
       "thumb eminence",
       "thenar region",
@@ -1321,7 +1280,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek glossa = tongue + pharynx = throat + Greek neuron = sinew/nerve",
     aliases: [
       "glossopharyngeal nerve",
-      "glossopharyngeal nerves",
       "glossopharyngeal",
       "cn ix",
       "cn9",
@@ -1370,7 +1328,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin vagus = wandering (extensive course through thorax and abdomen)",
     aliases: [
       "vagus nerve",
-      "vagus nerves",
       "vagus",
       "cn x",
       "cn10",
@@ -1379,7 +1336,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "tenth cranial nerve",
       "nervus vagus",
       "pneumogastric nerve",
-      "pneumogastric nerves",
     ],
     definition:
       "Cranial nerve X — the principal parasympathetic nerve of the thorax and abdomen and major motor nerve of the palate, pharynx, and larynx (via superior laryngeal and recurrent laryngeal branches) — with sensory fibers to the external ear, larynx, trachea, bronchi, and abdominal viscera.",
@@ -1422,9 +1378,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek sympathein = to feel with + Latin truncus = trunk/stem",
     aliases: [
       "sympathetic trunk",
-      "sympathetic trunks",
       "sympathetic chain",
-      "sympathetic chains",
       "paravertebral ganglia",
       "paravertebral ganglion chain",
       "sympathetic ganglion chain",
@@ -1473,7 +1427,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 1",
       "first cranial nerve",
       "olfactory nerve",
-      "olfactory nerves",
       "nervus olfactorius",
       "cn i olfactory nerve",
     ],
@@ -1522,7 +1475,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 2",
       "second cranial nerve",
       "optic nerve",
-      "optic nerves",
       "nervus opticus",
       "cn ii optic nerve",
     ],
@@ -1571,7 +1523,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 3",
       "third cranial nerve",
       "oculomotor nerve",
-      "oculomotor nerves",
       "nervus oculomotorius",
       "cn iii oculomotor nerve",
     ],
@@ -1616,15 +1567,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek iris = rainbow + Latin sphincter = that which binds tight — circular smooth muscle of the iris (sphincter pupillae) constricting the pupil",
     aliases: [
       "iris sphincter",
-      "iris sphincters",
       "sphincter pupillae",
-      "sphincter pupillaes",
       "pupillary sphincter",
-      "pupillary sphincters",
       "iris sphincter muscle",
-      "iris sphincter muscles",
       "pupil sphincter",
-      "pupil sphincters",
     ],
     definition:
       "Circular smooth muscle encircling the pupillary margin of the iris — contraction reduces pupillary diameter (miosis) to limit light entry and sharpen near vision depth of field.",
@@ -1671,12 +1617,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin ciliaris = pertaining to eyelashes/hairlike processes + musculus = little mouse (muscle) — smooth muscle of the ciliary body controlling lens accommodation",
     aliases: [
       "ciliary muscle",
-      "ciliary muscles",
       "musculus ciliaris",
       "ciliary body muscle",
-      "ciliary body muscles",
       "accommodation muscle",
-      "accommodation muscles",
     ],
     definition:
       "Ring of smooth muscle within the ciliary body — contraction relaxes zonular fibers suspending the lens, allowing the lens to become more convex for near vision (accommodation); also influences trabecular meshwork tone and aqueous outflow.",
@@ -1727,7 +1670,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 4",
       "fourth cranial nerve",
       "trochlear nerve",
-      "trochlear nerves",
       "nervus trochlearis",
       "cn iv trochlear nerve",
     ],
@@ -1769,9 +1711,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek ophthalmos = eye + Latin divisio = division",
     aliases: [
       "ophthalmic division",
-      "ophthalmic divisions",
       "ophthalmic nerve",
-      "ophthalmic nerves",
       "v1",
       "cn v1",
       "first division trigeminal",
@@ -1824,7 +1764,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 6",
       "sixth cranial nerve",
       "abducens nerve",
-      "abducens nerves",
       "nervus abducens",
       "cn vi abducens nerve",
     ],
@@ -1872,7 +1811,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 7",
       "seventh cranial nerve",
       "facial nerve",
-      "facial nerves",
       "nervus facialis",
       "cn vii facial nerve",
     ],
@@ -1924,11 +1862,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 8",
       "eighth cranial nerve",
       "vestibulocochlear nerve",
-      "vestibulocochlear nerves",
       "vestibular nerve",
       "cochlear nerve",
       "acoustic nerve",
-      "acoustic nerves",
       "nervus vestibulocochlearis",
       "cn viii vestibulocochlear nerve",
     ],
@@ -1977,7 +1913,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "cranial nerve 12",
       "twelfth cranial nerve",
       "hypoglossal nerve",
-      "hypoglossal nerves",
       "hypoglossal",
       "nervus hypoglossus",
       "cn xii hypoglossal nerve",
@@ -2023,12 +1958,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin cerebellum = little brain + pons = bridge + angulus = corner — cistern at the junction of pons, cerebellum, and medulla",
     aliases: [
       "cerebellopontine angle",
-      "cerebellopontine angles",
       "cerebello-pontine angle",
-      "cerebello-pontine angles",
       "cpa",
       "cp angle",
-      "cp angles",
       "cerebellopontine angle cistern",
       "cerebellopontine cistern",
     ],
@@ -2071,7 +2003,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin foramen = opening + magnum = great — largest skull opening transmitting medulla and upper cervical structures",
     aliases: [
       "foramen magnum",
-      "foramen magnums",
       "occipital foramen",
       "great foramen",
       "cranial foramen magnum",
@@ -2117,7 +2048,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin foramen = opening + ovale = oval — oval foramen in sphenoid bone of middle cranial fossa",
     aliases: [
       "foramen ovale",
-      "foramen ovales",
       "skull foramen ovale",
       "cranial foramen ovale",
       "sphenoid foramen ovale",
@@ -2162,7 +2092,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin foramen = opening + rotundum = round — round foramen in sphenoid bone for maxillary nerve passage",
     aliases: [
       "foramen rotundum",
-      "foramen rotundums",
       "rotundum foramen",
       "sphenoid foramen rotundum",
       "maxillary foramen",
@@ -2206,7 +2135,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin infra = below + orbita = eye socket + foramen = opening",
     aliases: [
       "infraorbital foramen",
-      "infraorbital foramina",
       "infra-orbital foramen",
       "infra orbital foramen",
       "io foramen",
@@ -2250,7 +2178,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin mandibula = jaw + foramen = opening",
     aliases: [
       "mandibular foramen",
-      "mandibular foramina",
       "mandible foramen",
       "inferior alveolar foramen",
     ],
@@ -2293,7 +2220,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin mentum = chin + foramen = opening",
     aliases: [
       "mental foramen",
-      "mental foramina",
       "mental nerve foramen",
     ],
     definition:
@@ -2335,7 +2261,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek stylos = pillar + mastos = breast (mastoid) + Latin foramen = opening — between styloid and mastoid processes",
     aliases: [
       "stylomastoid foramen",
-      "stylomastoid foramina",
       "stylomastoid opening",
       "facial nerve foramen",
       "cn vii foramen",
@@ -2381,7 +2306,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin superior = above + orbita = eye socket + fissura = cleft — gap between sphenoid wings leading to orbit",
     aliases: [
       "superior orbital fissure",
-      "superior orbital fissures",
       "superior orbital fissure of sphenoid",
       "so fissure",
       "orbital fissure superior",
@@ -2428,13 +2352,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Old English brād = wide + Latin ligamentum = band — wide double fold of peritoneum extending from the lateral uterus to the pelvic sidewalls, suspending the uterus, fallopian tubes, and ovaries",
     aliases: [
       "broad ligament",
-      "broad ligaments",
       "broad ligament of uterus",
       "broad ligament of the uterus",
       "broad ligaments of uterus",
       "ligamentum latum uteri",
       "uterine broad ligament",
-      "uterine broad ligaments",
     ],
     definition:
       "Paired peritoneal folds that extend from the lateral margins of the uterus to the pelvic sidewalls — a mesentery-like structure that encloses the uterus, fallopian tubes, and ovaries and transmits the uterine vessels, ureter, and ligamentous supports of the female reproductive tract.",
@@ -2486,7 +2408,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "gubernaculum testis",
       "gubernaculum ovarii",
       "gubernacular ligament",
-      "gubernacular ligaments",
     ],
     definition:
       "Embryonic mesenchymal band connecting the developing gonad to the future scrotum or labia majora region — guides testicular descent in males and ovarian positioning in females, then differentiates into distinct adult ligaments in each sex.",
@@ -2528,18 +2449,16 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "round-ligament",
-    name: "Round Ligament of the Uterus",
+    name: "Round Ligament Of The Uteru",
     etymology:
       "Latin ligamentum = band + rotundus = round — fibromuscular remnant of the embryonic gubernaculum extending from the uterine horn through the inguinal canal to the labia majora",
     aliases: [
       "round ligament",
-      "round ligaments",
       "round ligament of uterus",
       "round ligament of the uterus",
       "round ligaments of uterus",
       "ligamentum teres uteri",
       "uterine round ligament",
-      "uterine round ligaments",
     ],
     definition:
       "Paired fibromuscular bands arising from the uterine horns (cornua) that course anterolaterally in the broad ligament, enter the deep inguinal ring, traverse the inguinal canal, and insert into the labia majora — embryologic remnant of the gubernaculum that guided ovarian descent (not testicular descent in males).",
@@ -2587,11 +2506,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "suspensory ligaments of the ovary",
       "suspensory ligaments of ovary",
       "infundibulopelvic ligament",
-      "infundibulopelvic ligaments",
       "ip ligament",
-      "ip ligaments",
       "ovarian suspensory ligament",
-      "ovarian suspensory ligaments",
       "ligamentum suspensorium ovarii",
     ],
     definition:
@@ -2640,7 +2556,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin falciformis = sickle-shaped + ligamentum = band — sickle-shaped peritoneal fold attaching liver to anterior abdominal wall",
     aliases: [
       "falciform ligament",
-      "falciform ligaments",
       "falciform ligament of liver",
       "sickle-shaped ligament",
       "anterior hepatic ligament",
@@ -2685,11 +2600,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek gaster = stomach + kolon = colon + Latin ligamentum = band — peritoneal fold connecting greater curvature of stomach to transverse colon",
     aliases: [
       "gastrocolic ligament",
-      "gastrocolic ligaments",
       "gastrocolic omentum",
       "gastrocolic portion of greater omentum",
       "gastrocolic fold",
-      "gastrocolic folds",
     ],
     definition:
       "Inferior portion of the greater omentum — peritoneal fold extending from the greater curvature of the stomach to the anterior surface of the transverse colon; part of the greater omentum along with the gastrophrenic and gastrosplenic components.",
@@ -2732,9 +2645,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin splen = spleen + ren = kidney + ligamentum = band — peritoneal fold connecting spleen to left kidney",
     aliases: [
       "splenorenal ligament",
-      "splenorenal ligaments",
       "lienorenal ligament",
-      "lienorenal ligaments",
       "splenorenal ligament of peritoneum",
       "phrenicosplenic ligament",
       "splenorenal fold",
@@ -2779,7 +2690,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek hēpar = liver + Latin duodenum = twelve fingers (length) + Latin ligamentum = band — free edge of lesser omentum connecting liver to duodenum",
     aliases: [
       "hepatoduodenal ligament",
-      "hepatoduodenal ligaments",
       "hepatoduodenal ligament of lesser omentum",
       "free edge of lesser omentum",
       "free edge lesser omentum",
@@ -2822,11 +2732,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "coronary-arteries",
-    name: "Coronary Arteries",
+    name: "Coronary Arterie",
     etymology:
       "Latin corona = crown/wreath + Greek arteria = artery — vessels encircling the heart like a crown at the atrioventricular groove",
     aliases: [
-      "coronary arteries",
       "coronary artery",
       "coronary arterial circulation",
       "coronary circulation",
@@ -2876,15 +2785,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin internus = within + Greek thorax = chest + Greek arteria = artery — also called internal mammary artery from Latin mamma = breast",
     aliases: [
       "internal thoracic artery",
-      "internal thoracic arteries",
       "internal thoracic",
       "internal mammary artery",
-      "internal mammary arteries",
       "internal mammary",
       "ita",
-      "itas",
       "mammary artery",
-      "mammary arteries",
     ],
     definition:
       "Paired artery arising from the subclavian artery (first part) that descends vertically behind the costal cartilages ~1–2 cm lateral to the sternum — supplying anterior chest wall, sternum, mediastinal pleura, pericardium, and upper abdominal wall via musculophrenic and superior epigastric terminal branches.",
@@ -2928,9 +2833,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek koilia = belly + Latin arteria = artery — first major unpaired visceral branch of the abdominal aorta supplying the foregut",
     aliases: [
       "celiac artery",
-      "celiac arteries",
       "celiac trunk",
-      "celiac trunks",
       "celiac axis",
       "celiac axes",
       "truncus celiacus",
@@ -2980,9 +2883,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin superior = above + Greek mesenterion = middle intestine + Latin arteria = artery — major arterial supply of the midgut",
     aliases: [
       "superior mesenteric artery",
-      "superior mesenteric arteries",
       "sma",
-      "smas",
       "superior mesenteric trunk",
       "superior mesenteric arterial supply",
     ],
@@ -3032,7 +2933,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin uterus = womb + Greek arteria = artery — branch of the anterior division of the internal iliac artery supplying the uterus, cervix, and upper vagina",
     aliases: [
       "uterine artery",
-      "uterine arteries",
       "uterine arterial",
       "uterine arterial supply",
       "arteria uterina",
@@ -3077,11 +2977,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "mesenteric-arteries",
-    name: "Mesenteric Arteries",
+    name: "Mesenteric Arterie",
     etymology:
       "Greek mesenterion = middle intestine + Latin arteria = artery — the three unpaired anterior visceral branches of the abdominal aorta supplying the gastrointestinal tract and associated organs",
     aliases: [
-      "mesenteric arteries",
       "mesenteric artery",
       "visceral branches of abdominal aorta",
       "splanchnic arteries",
@@ -3131,7 +3030,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek poplite = ham/knee hollow + Latin arteria = artery — continuation of femoral artery through the posterior knee",
     aliases: [
       "popliteal artery",
-      "popliteal arteries",
       "popliteal",
       "popliteal arterial trunk",
       "arteria poplitea",
@@ -3174,7 +3072,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "cavernous-sinus",
-    name: "Cavernous Sinus",
+    name: "Cavernous Sinu",
     etymology: "Latin cavernosus = full of hollows/caves + Latin sinus = bay/channel",
     aliases: [
       "cavernous sinus",
@@ -3224,7 +3122,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "sagittal-sinus",
-    name: "Sagittal Sinus",
+    name: "Sagittal Sinu",
     etymology:
       "Latin sagitta = arrow + sinus = bay/channel — midline dural venous channels running along the falx cerebri in the sagittal plane",
     aliases: [
@@ -3284,7 +3182,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek hypo = under + glossa = tongue + Latin canalis = channel — bony canal for hypoglossal nerve exit",
     aliases: [
       "hypoglossal canal",
-      "hypoglossal canals",
       "canalis hypoglossi",
       "hypoglossal foramen",
       "cn xii canal",
@@ -3329,7 +3226,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin jugularis = of the throat/yoke + foramen = opening — gap between temporal and occipital bones for jugular vein and lower cranial nerves",
     aliases: [
       "jugular foramen",
-      "jugular foramina",
       "jugular foramen syndrome",
       "posterolateral foramen",
     ],
@@ -3404,7 +3300,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "humerus",
-    name: "Humerus",
+    name: "Humeru",
     etymology: "Latin humerus = upper arm",
     aliases: ["humerus", "humeral", "upper arm bone"],
     definition:
@@ -3446,9 +3342,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin brachium = arm + Greek arteria = artery — major arterial supply of the upper arm",
     aliases: [
       "brachial artery",
-      "brachial arteries",
       "brachial trunk",
-      "brachial trunks",
       "arm brachial artery",
     ],
     definition:
@@ -3493,13 +3387,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin profundus = deep + brachium = arm + arteria = artery — also called profunda brachii",
     aliases: [
       "deep brachial artery",
-      "deep brachial arteries",
       "profunda brachii",
       "profunda brachii artery",
-      "profunda brachii arteries",
       "deep brachial",
       "profunda brachial artery",
-      "profunda brachial arteries",
     ],
     definition:
       "Largest branch of the brachial artery — arising proximally in the arm and accompanying the radial nerve in the radial (spiral) groove — supplying posterior arm muscles and forming collateral anastomoses around the elbow.",
@@ -3541,9 +3432,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin radius = spoke/ray + arteria = artery — lateral forearm artery toward the radius side of the wrist",
     aliases: [
       "radial artery",
-      "radial arteries",
       "radial trunk",
-      "radial trunks",
       "arteria radialis",
     ],
     definition:
@@ -3588,9 +3477,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin ulna = elbow bone + arteria = artery — medial forearm artery toward the ulna side of the wrist",
     aliases: [
       "ulnar artery",
-      "ulnar arteries",
       "ulnar trunk",
-      "ulnar trunks",
       "arteria ulnaris",
     ],
     definition:
@@ -3634,7 +3521,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin anterior = front + inter = between + os = bone + arteria = artery — artery on anterior surface of interosseous membrane",
     aliases: [
       "anterior interosseous artery",
-      "anterior interosseous arteries",
       "aia",
       "anterior interosseous",
       "anterior interosseous branch",
@@ -3680,12 +3566,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin recurrere = to run back + radius = ray + arteria = artery — ascending branch of radial artery near elbow",
     aliases: [
       "radial recurrent artery",
-      "radial recurrent arteries",
       "radial recurrent",
       "radial recurrent branch",
       "radial recurrent branches",
       "recurrent radial artery",
-      "recurrent radial arteries",
     ],
     definition:
       "Ascending branch of the radial artery near the elbow that anastomoses with the radial collateral artery from the deep brachial (profunda brachii) — forming an important collateral pathway around the lateral elbow.",
@@ -3725,10 +3609,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin sub = partial + luxare = dislocate",
     aliases: [
       "subluxation",
-      "subluxations",
       "joint subluxation",
       "partial dislocation",
-      "partial dislocations",
     ],
     definition:
       "Partial displacement of articulating joint surfaces with incomplete loss of congruity — more than normal joint play but less than full dislocation; may spontaneously reduce or remain malaligned.",
@@ -3764,7 +3646,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "anterior-humerus-dislocation",
-    name: "Anterior Dislocation of the Humerus",
+    name: "Anterior Dislocation Of The Humeru",
     etymology: "Latin anterior = before + dislocare = displace from place + Latin humerus = upper arm",
     aliases: [
       "anterior dislocation of the humerus",
@@ -3772,9 +3654,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "anterior humerus dislocation",
       "anterior humeral dislocation",
       "anterior shoulder dislocation",
-      "anterior shoulder dislocations",
       "anterior glenohumeral dislocation",
-      "anterior glenohumeral dislocations",
       "glenohumeral dislocation anterior",
     ],
     definition:
@@ -3821,19 +3701,13 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin patella = small pan/shield + dislocare = displace from place — complete loss of patellofemoral articulation with patella displaced from the trochlear groove, usually laterally",
     aliases: [
       "patellar dislocation",
-      "patellar dislocations",
       "patella dislocation",
-      "patella dislocations",
       "dislocation of patella",
       "dislocation of the patella",
       "lateral patellar dislocation",
-      "lateral patellar dislocations",
       "lateral patella dislocation",
-      "lateral patella dislocations",
       "patellofemoral dislocation",
-      "patellofemoral dislocations",
       "kneecap dislocation",
-      "kneecap dislocations",
       "dislocated patella",
       "dislocated kneecap",
     ],
@@ -3933,7 +3807,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek sarx = flesh + meros = part",
     aliases: [
       "sarcomere",
-      "sarcomeres",
       "muscle sarcomere",
       "contractile unit",
       "sarcomere structure",
@@ -3979,16 +3852,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin motor = mover + end + plate = flat structure — specialized postsynaptic region of the skeletal muscle fiber membrane at the neuromuscular junction where acetylcholine receptors cluster",
     aliases: [
       "motor end plate",
-      "motor end plates",
       "motor endplate",
-      "motor endplates",
       "motor end-plate",
-      "motor end-plates",
       "myoneural junction end plate",
       "postsynaptic motor end plate",
-      "postsynaptic motor end plates",
       "muscle end plate",
-      "muscle end plates",
       "end plate region",
       "end-plate region",
       "nmj postsynaptic membrane",
@@ -4040,7 +3908,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin musculus = little mouse + Latin contractio = drawing together — ATP-dependent sliding of actin and myosin filaments shortening the sarcomere",
     aliases: [
       "muscle contraction",
-      "muscle contractions",
       "skeletal muscle contraction",
       "striated muscle contraction",
       "excitation-contraction coupling",
@@ -4097,13 +3964,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "trabeculae",
       "trabecula",
       "trabecular bone",
-      "trabecular bones",
       "trabecular structure",
-      "trabecular structures",
       "bone trabeculae",
       "bone trabecula",
       "trabecular lattice",
-      "trabecular lattices",
       "cancellous trabeculae",
     ],
     definition:
@@ -4148,13 +4012,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "spongiosa",
       "spongiosa bone",
-      "spongiosa bones",
       "spongy bone",
-      "spongy bones",
       "cancellous bone",
-      "cancellous bones",
       "trabecular bone",
-      "trabecular bones",
       "os spongiosum",
       "spongiosa osseous tissue",
     ],
@@ -4200,9 +4060,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "periosteum",
       "periostea",
       "periosteal membrane",
-      "periosteal membranes",
       "periosteal layer",
-      "periosteal layers",
       "bone periosteum",
       "periosteal covering",
     ],
@@ -4254,14 +4112,12 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "fasciae",
       "fascial",
       "fascial tissue",
-      "fascial tissues",
       "deep fascia",
       "deep fasciae",
       "superficial fascia",
       "superficial fasciae",
       "muscle fascia",
       "fascial plane",
-      "fascial planes",
     ],
     definition:
       "Continuous network of collagen-rich connective tissue that separates and binds muscles, vessels, nerves, and organs into functional compartments — superficial fascia (subcutaneous adipose and loose connective tissue) lies beneath skin; deep fascia (dense irregular connective tissue) invests muscles and forms intermuscular septa and aponeuroses.",
@@ -4307,13 +4163,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin fractura = a breaking — disruption of bone continuity from mechanical force exceeding bone strength or from pathologic weakening of bone",
     aliases: [
       "fracture",
-      "fractures",
       "bone fracture",
-      "bone fractures",
       "broken bone",
-      "broken bones",
       "fx",
-      "fxs",
     ],
     definition:
       "Break in the structural continuity of bone — complete or incomplete — from trauma, repetitive stress, or pathologic processes (tumor, osteoporosis, infection) that weaken the skeleton.",
@@ -4355,13 +4207,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "subperiosteal-blood-vessels",
-    name: "Subperiosteal Blood Vessels",
+    name: "Subperiosteal Blood Vessel",
     etymology:
       "Latin sub = under + Greek peri = around + osteon = bone + Latin vas = vessel — vascular plexus between periosteum and cortical bone surface",
     aliases: [
-      "subperiosteal blood vessels",
       "subperiosteal blood vessel",
-      "subperiosteal vessels",
       "subperiosteal vessel",
       "subperiosteal vascular plexus",
       "periosteal blood vessels",
@@ -4414,12 +4264,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "synovium",
       "synovia",
       "synovial membrane",
-      "synovial membranes",
       "synovial lining",
-      "synovial linings",
       "joint synovium",
       "synovial tissue",
-      "synovial tissues",
     ],
     definition:
       "Specialized connective tissue membrane lining the inner surface of the joint capsule (except where articular cartilage covers bone) — secreting viscous synovial fluid rich in hyaluronan and lubricating diarthrodial joints while providing nourishment to avascular articular cartilage.",
@@ -4458,7 +4305,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "rice-bodies",
-    name: "Rice Bodies",
+    name: "Rice Bodie",
     etymology:
       "Named for resemblance to grains of rice — fibrin-coated synovial fragments shed into joint effusions",
     aliases: [
@@ -4511,19 +4358,12 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek osteon = bone + phyton = plant/outgrowth — bony spur projecting from joint margin",
     aliases: [
       "osteophyte",
-      "osteophytes",
       "bone spur",
-      "bone spurs",
       "bony spur",
-      "bony spurs",
       "marginal osteophyte",
-      "marginal osteophytes",
       "periarticular osteophyte",
-      "periarticular osteophytes",
       "heberden node",
-      "heberden nodes",
       "bouchard node",
-      "bouchard nodes",
     ],
     definition:
       "Reactive bony outgrowth at the articular margin from endochondral ossification — hallmark radiographic and pathologic feature of osteoarthritis representing failed repair of stressed cartilage.",
@@ -4565,9 +4405,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin cartilago = gristle — avascular connective tissue with chondrocytes in extracellular matrix rich in collagen and proteoglycans",
     aliases: [
       "cartilage",
-      "cartilages",
       "cartilaginous tissue",
-      "cartilaginous tissues",
       "cartilaginous matrix",
     ],
     definition:
@@ -4614,12 +4452,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin junctura = joint + Latin cartilago = gristle — articular hyaline cartilage covering bone ends in synovial joints",
     aliases: [
       "joint cartilage",
-      "joint cartilages",
       "articular cartilage",
-      "articular cartilages",
       "hyaline joint cartilage",
       "cartilage of joint",
-      "cartilage of joints",
       "articular hyaline cartilage",
       "joint surface cartilage",
     ],
@@ -4660,7 +4495,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "femoral-epiphysis",
-    name: "Femoral Epiphysis",
+    name: "Femoral Epiphysi",
     etymology:
       "Latin femur = thigh + Greek epi = upon + physis = growth — ossified end of the femur separated from the shaft by the growth plate",
     aliases: [
@@ -4712,16 +4547,14 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "epiphysis",
-    name: "Epiphysis",
+    name: "Epiphysi",
     etymology: "Greek epi = upon + physis = growth — ossification center at the end of a long bone",
     aliases: [
       "epiphysis",
       "epiphyses",
       "epiphysial",
       "epiphyseal bone",
-      "epiphyseal bones",
       "secondary ossification center",
-      "secondary ossification centers",
       "bone epiphysis",
       "bone epiphyses",
     ],
@@ -4761,7 +4594,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "metaphysis",
-    name: "Metaphysis",
+    name: "Metaphysi",
     etymology:
       "Greek meta = after/beyond + physis = growth — transitional trabecular bone region between physis and diaphysis",
     aliases: [
@@ -4769,9 +4602,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "metaphyses",
       "metaphyseal",
       "metaphyseal bone",
-      "metaphyseal bones",
       "metaphyseal region",
-      "metaphyseal regions",
     ],
     definition:
       "Flared trabecular bone region between the epiphyseal growth plate (physis) and the cortical diaphysis (shaft) — site of active remodeling, vascular invasion from growth plate, and common location for pediatric bone pathology.",
@@ -4811,7 +4642,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "apophysis",
-    name: "Apophysis",
+    name: "Apophysi",
     etymology:
       "Greek apo = away/from + physis = growth — secondary ossification center at tendon or ligament insertion site",
     aliases: [
@@ -4821,7 +4652,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "traction epiphysis",
       "traction epiphyses",
       "apophyseal ossification center",
-      "apophyseal ossification centers",
     ],
     definition:
       "Secondary ossification center that forms at a site of tendon or ligament attachment on a bone — undergoes endochondral ossification under traction stress but does not contribute to longitudinal limb length like the epiphyseal growth plate.",
@@ -4865,19 +4695,13 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek epi = upon + physis = growth + Latin plate = flat layer — cartilaginous growth plate (physis) between epiphysis and metaphysis",
     aliases: [
       "epiphyseal plate",
-      "epiphyseal plates",
       "epiphysial plate",
-      "epiphysial plates",
       "epiphesial plate",
-      "epiphesial plates",
       "growth plate",
-      "growth plates",
       "physis",
       "physes",
       "physeal plate",
-      "physeal plates",
       "epiphyseal growth plate",
-      "epiphyseal growth plates",
       "cartilaginous growth plate",
     ],
     definition:
@@ -4925,11 +4749,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "salter-harris",
       "salter harris",
       "salter-harris classification",
-      "salter-harris classifications",
       "salter-harris fracture",
-      "salter-harris fractures",
       "salter harris fracture",
-      "salter harris fractures",
       "salter-harris types",
       "salter harris types",
       "physeal fracture classification",
@@ -5032,9 +4853,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin cortex = bark/shell + Old English ban = bone — dense compact bone forming the outer shell of most bones",
     aliases: [
       "cortical bone",
-      "cortical bones",
       "compact bone",
-      "compact bones",
       "cortical bone tissue",
       "cortical osseous tissue",
       "compact osseous tissue",
@@ -5083,7 +4902,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek tenon = tendon + pathos = suffering — chronic tendon disorder from overuse and degenerative change",
     aliases: [
       "tendinopathy",
-      "tendinopathies",
       "tendinitis",
       "tendinitides",
       "tendonitis",
@@ -5135,13 +4953,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek meta = after + karpos = wrist + phalanx = finger bone + joint = articulation",
     aliases: [
       "metacarpophalangeal joint",
-      "metacarpophalangeal joints",
       "metacarpophalangeal",
       "mcp joint",
-      "mcp joints",
       "metacarpal phalangeal joint",
       "knuckle joint",
-      "knuckle joints",
     ],
     definition:
       "Synovial hinge-condyloid joints between the metacarpal heads and proximal phalanges of the fingers — the \"knuckles\" — allowing flexion/extension and limited abduction/adduction.",
@@ -5181,18 +4996,12 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin inter = between + Greek phalanx = finger bone + joint = articulation",
     aliases: [
       "interphalangeal joint",
-      "interphalangeal joints",
       "interphalangeal",
       "ip joint",
-      "ip joints",
       "proximal interphalangeal joint",
-      "proximal interphalangeal joints",
       "distal interphalangeal joint",
-      "distal interphalangeal joints",
       "pip joint",
-      "pip joints",
       "dip joint",
-      "dip joints",
       "pip",
       "dip",
     ],
@@ -5235,14 +5044,12 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin pelvis = basin + Old English flor = floor",
     aliases: [
       "pelvic floor",
-      "pelvic floors",
       "pelvic floor muscles",
       "pelvic floor musculature",
       "pelvic diaphragm",
       "pelvic diaphragm muscles",
       "levator ani",
       "levator ani muscle",
-      "levator ani muscles",
     ],
     definition:
       "Muscular sling at the base of the pelvis — primarily levator ani and coccygeus — that supports the bladder, uterus/prostate, and rectum and contributes to urinary and fecal continence.",
@@ -5285,17 +5092,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Greek sphinktēr = that which binds tight — circular muscle (smooth or skeletal) forming a ring that maintains closure of a tubular lumen or regulates passage of contents",
     aliases: [
       "sphincter",
-      "sphincters",
       "anatomical sphincter",
-      "anatomical sphincters",
       "smooth muscle sphincter",
-      "smooth muscle sphincters",
       "skeletal muscle sphincter",
-      "skeletal muscle sphincters",
       "muscular sphincter",
-      "muscular sphincters",
       "sphincter muscle",
-      "sphincter muscles",
     ],
     definition:
       "Ring-like arrangement of muscle fibers encircling an orifice or tubular organ — maintains tonic closure during storage and relaxes coordinately during passage of contents; may be smooth muscle (autonomic/involuntary) or skeletal muscle (somatic/voluntary) depending on location.",
@@ -5344,14 +5145,10 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin externus = outward + Greek ouron = urine + thraúō = to rub/wear + Greek sphinktēr = that which binds tight",
     aliases: [
       "external urethral sphincter",
-      "external urethral sphincters",
       "eus",
       "external sphincter",
-      "external sphincters",
       "urethral rhabdosphincter",
-      "urethral rhabdosphincters",
       "rhabdosphincter",
-      "rhabdosphincters",
       "striated urethral sphincter",
     ],
     definition:
@@ -5394,7 +5191,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "s2-s4-sacral-segments",
-    name: "S2–S4 Sacral Segments",
+    name: "S2–S4 Sacral Segment",
     etymology: "S = sacral + 2–4 = second through fourth sacral spinal cord segments",
     aliases: [
       "s2-s4",
@@ -5408,7 +5205,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "s2-s4 sacral segments",
       "s2-s4 spinal segments",
       "s2-s4 spinal level",
-      "s2-s4 spinal levels",
       "s2, s3, s4",
       "s2 s3 s4",
       "pelvic splanchnic nerves s2-s4",
@@ -5450,18 +5246,15 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "pelvic-splanchnic-nerves",
-    name: "Pelvic Splanchnic Nerves",
+    name: "Pelvic Splanchnic Nerve",
     etymology:
       "Greek splanchnon = viscus + Greek neuron = nerve + Latin pelvis = basin — parasympathetic preganglionic fibers from S2–S4 sacral ventral rami to pelvic viscera",
     aliases: [
       "pelvic splanchnic",
       "pelvic splanchnic nerve",
-      "pelvic splanchnic nerves",
-      "pelvic splanchnics",
       "nervi erigentes",
       "nervi erigentis",
       "nervi erigentes",
-      "pelvic parasympathetic nerves",
       "pelvic parasympathetic nerve",
       "s2-s4 pelvic splanchnic nerves",
       "sacral splanchnic nerves",
@@ -5510,7 +5303,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin pudendum = external genitals + Latin nervus = nerve",
     aliases: [
       "pudendal nerve",
-      "pudendal nerves",
       "nervus pudendus",
       "pudendal canal nerve",
       "alcock nerve",
@@ -5555,16 +5347,14 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "bulbospongiosus",
-    name: "Bulbospongiosus",
+    name: "Bulbospongiosu",
     etymology: "Latin bulbus = bulb + spongiosus = sponge-like + Latin musculus = little mouse/muscle",
     aliases: [
       "bulbospongiosus",
       "bulbospongiosus muscle",
-      "bulbospongiosus muscles",
       "bulbospongiosi",
       "bulbocavernosus",
       "bulbocavernosus muscle",
-      "bulbocavernosus muscles",
       "bulbocavernosi",
       "bulbo-spongiosus",
       "bulbo-cavernosus",
@@ -5606,7 +5396,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "prostatic-plexus",
-    name: "Prostatic Plexus",
+    name: "Prostatic Plexu",
     etymology: "Greek prostatēs = one standing before + Latin plexus = braid/network",
     aliases: [
       "prostatic plexus",
@@ -5655,7 +5445,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "tunica-vaginalis",
-    name: "Tunica Vaginalis",
+    name: "Tunica Vaginali",
     etymology: "Latin tunica = coat + Latin vagina = sheath (covering)",
     aliases: [
       "tunica vaginalis",
@@ -5667,7 +5457,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "visceral tunica vaginalis",
       "parietal tunica vaginalis",
       "processus vaginalis remnant",
-      "processus vaginalis remnants",
     ],
     definition:
       "Serous membrane investing the testis — with visceral and parietal layers derived from the processus vaginalis of the peritoneum during testicular descent — enclosing a potential cavity where hydrocele fluid can accumulate between the layers external to the fibrous tunica albuginea.",
@@ -5713,7 +5502,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin tunica = coat + Latin albus = white",
     aliases: [
       "tunica albuginea",
-      "tunica albugineas",
       "testicular tunica albuginea",
       "penile tunica albuginea",
       "fibrous tunica albuginea",
@@ -5772,7 +5560,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "penile corpus cavernosum",
       "crura of corpora cavernosa",
       "cavernosal tissue",
-      "cavernosal tissues",
     ],
     definition:
       "Paired cylindrical erectile tissues in the penis (and homologous erectile bodies in the clitoris) composed of trabecular smooth muscle and endothelial-lined cavernous sinusoids surrounded by the tough tunica albuginea — the primary structures that engorge with blood to produce penile erection.",
@@ -5880,14 +5667,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "fontanelle",
       "fontanel",
-      "fontanelles",
-      "fontanels",
       "anterior fontanelle",
       "anterior fontanel",
       "posterior fontanelle",
       "posterior fontanel",
       "soft spot",
-      "soft spots",
       "cranial fontanelle",
       "cranial fontanel",
     ],
@@ -5932,19 +5716,12 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin naris = nostril — external opening of the nasal cavity through which air enters and exits the respiratory tract",
     aliases: [
       "nare",
-      "nares",
       "nostril",
-      "nostrils",
       "anterior nare",
-      "anterior nares",
       "external nare",
-      "external nares",
       "nasal nare",
-      "nasal nares",
       "nostril opening",
-      "nostril openings",
       "nasal opening",
-      "nasal openings",
       "naris",
       "narises",
     ],
@@ -6002,13 +5779,9 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "l1 l2",
       "l1, l2",
       "l1-l2 level",
-      "l1-l2 levels",
       "l1-l2 spinal level",
-      "l1-l2 spinal levels",
       "l1-l2 vertebral level",
-      "l1-l2 vertebral levels",
       "l1-l2 segment",
-      "l1-l2 segments",
       "first and second lumbar vertebrae",
       "lumbar 1-2",
       "lumbar 1–2",
@@ -6049,7 +5822,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "plexus",
-    name: "Plexus",
+    name: "Plexu",
     etymology: "Latin plexus = braid/network (intertwining nerve fibers forming a mesh)",
     aliases: [
       "plexus",
@@ -6113,7 +5886,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "lumbosacral-spinal-nerve-roots",
-    name: "Lumbosacral Spinal Nerve Roots",
+    name: "Lumbosacral Spinal Nerve Root",
     etymology:
       "Latin lumbus = loin + sacrum = sacred bone + Latin radix = root — ventral and dorsal nerve rootlets forming lumbar and sacral spinal nerves",
     aliases: [
@@ -6167,7 +5940,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin femur = thigh + Greek neuron = sinew/nerve",
     aliases: [
       "femoral nerve",
-      "femoral nerves",
       "nervus femoralis",
       "femoral n",
     ],
@@ -6212,9 +5984,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "ilioinguinal",
       "ilioinguinal nerve",
-      "ilioinguinal nerves",
       "ilio-inguinal nerve",
-      "ilio-inguinal nerves",
       "nervus ilioinguinalis",
       "ilioinguinal n",
     ],
@@ -6257,7 +6027,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "lateral femoral cutaneous",
       "lateral femoral cutaneous nerve",
-      "lateral femoral cutaneous nerves",
       "lateral femoral cutaneous n",
       "lfc nerve",
       "lfcn",
@@ -6305,7 +6074,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     aliases: [
       "obturator",
       "obturator nerve",
-      "obturator nerves",
       "obturator n",
       "nervus obturatorius",
     ],
@@ -6347,7 +6115,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Greek ischion = hip + Latin -aticus = pertaining to + Greek neuron = nerve",
     aliases: [
       "sciatic nerve",
-      "sciatic nerves",
       "sciatic",
       "nervus ischiadicus",
       "ischiadic nerve",
@@ -6392,9 +6159,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin fibula = clasp/brooch (the bone) + Greek koinos = common + Greek neuron = nerve — lateral terminal branch of the sciatic nerve",
     aliases: [
       "common fibular nerve",
-      "common fibular nerves",
       "common peroneal nerve",
-      "common peroneal nerves",
       "common fibular n",
       "common peroneal n",
       "lateral popliteal nerve",
@@ -6440,9 +6205,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin fibula + Latin profundus = deep + Greek neuron = nerve — anterior compartment branch of the common fibular nerve",
     aliases: [
       "deep fibular nerve",
-      "deep fibular nerves",
       "deep peroneal nerve",
-      "deep peroneal nerves",
       "anterior tibial nerve",
       "deep fibular n",
       "deep peroneal n",
@@ -6485,7 +6248,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     etymology: "Latin tibia = shin/flute bone + Greek neuron = nerve — medial terminal branch of the sciatic nerve",
     aliases: [
       "tibial nerve",
-      "tibial nerves",
       "nervus tibialis",
       "medial popliteal nerve",
       "posterior tibial nerve",
@@ -6530,7 +6292,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Latin lateralis = side + sura = calf + Latin cutis = skin + Greek neuron = nerve — sensory branch from the common fibular nerve",
     aliases: [
       "lateral sural cutaneous nerve",
-      "lateral sural cutaneous nerves",
       "lateral cutaneous nerve of calf",
       "lateral cutaneous nerves of calf",
       "sural communicating branch",
@@ -6572,12 +6333,11 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
   },
   {
     id: "piriformis",
-    name: "Piriformis",
+    name: "Piriformi",
     etymology: "Latin pirum = pear + forma = shape — pear-shaped muscle",
     aliases: [
       "piriformis",
       "piriformis muscle",
-      "piriformis muscles",
       "musculus piriformis",
     ],
     definition:
@@ -6622,7 +6382,6 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "sciatic nerve palsy",
       "sciatic nerve palsies",
       "sciatic neuropathy",
-      "sciatic neuropathies",
       "sciatic nerve damage",
     ],
     definition:
@@ -6673,9 +6432,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "fibular nerve palsy",
       "fibular nerve palsies",
       "foot drop",
-      "foot drops",
       "peroneal neuropathy",
-      "peroneal neuropathies",
     ],
     definition:
       "Compression or injury of the common peroneal (fibular) nerve as it wraps around the fibular neck — the most common mononeuropathy of the lower extremity — causing foot drop and sensory loss over the dorsum of the foot.",
@@ -6720,11 +6477,8 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Old English hype = hip + Old French girdle = belt — pelvic ring and proximal hip musculature linking trunk to lower limbs",
     aliases: [
       "hip girdle",
-      "hip girdles",
       "pelvic girdle",
-      "pelvic girdles",
       "lower limb girdle",
-      "lower limb girdles",
       "pelvic girdle muscles",
       "hip girdle muscles",
       "hip girdle musculature",
@@ -6776,9 +6530,7 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "hip acetabulum",
       "hip acetabula",
       "acetabular socket",
-      "acetabular sockets",
       "hip socket",
-      "hip sockets",
       "cotyloid cavity",
     ],
     definition:
@@ -6824,23 +6576,14 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "slow = prolonged contraction cycle + twitch = brief muscle contraction + fiber = thread-like myocyte",
     aliases: [
       "slow-twitch muscle fiber",
-      "slow-twitch muscle fibers",
       "slow twitch muscle fiber",
-      "slow twitch muscle fibers",
       "type i muscle fiber",
-      "type i muscle fibers",
       "type 1 muscle fiber",
-      "type 1 muscle fibers",
       "slow oxidative fiber",
-      "slow oxidative fibers",
       "slow oxidative muscle fiber",
-      "slow oxidative muscle fibers",
       "so fiber",
-      "so fibers",
       "red muscle fiber",
-      "red muscle fibers",
       "type i fiber",
-      "type i fibers",
     ],
     definition:
       "Skeletal muscle fiber subtype (type I) specialized for aerobic, fatigue-resistant contractions via abundant mitochondria, myoglobin, and oxidative metabolism — predominates in postural and endurance muscles.",
@@ -6880,27 +6623,16 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "fast = rapid contraction cycle + twitch = brief muscle contraction + fiber = thread-like myocyte",
     aliases: [
       "fast-twitch muscle fiber",
-      "fast-twitch muscle fibers",
       "fast twitch muscle fiber",
-      "fast twitch muscle fibers",
       "type ii muscle fiber",
-      "type ii muscle fibers",
       "type 2 muscle fiber",
-      "type 2 muscle fibers",
       "type iia muscle fiber",
-      "type iia muscle fibers",
       "type iix muscle fiber",
-      "type iix muscle fibers",
       "fast glycolytic fiber",
-      "fast glycolytic fibers",
       "fast glycolytic muscle fiber",
-      "fast glycolytic muscle fibers",
       "fg fiber",
-      "fg fibers",
       "white muscle fiber",
-      "white muscle fibers",
       "type ii fiber",
-      "type ii fibers",
     ],
     definition:
       "Skeletal muscle fiber subtype (type II) specialized for rapid, high-force contractions via glycolytic ATP production — fatigues quickly compared with slow-twitch fibers; includes type IIa (fast oxidative-glycolytic) and type IIx/IIb (fast glycolytic) subtypes.",

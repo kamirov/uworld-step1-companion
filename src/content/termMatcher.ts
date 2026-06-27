@@ -1,5 +1,6 @@
 import type { TermMatch } from "./termTypes";
 import { shouldRejectAliasByContext } from "./aliasContextRules";
+import { getAllMatchForms } from "./pluralization";
 
 /** Strip styling/invisible chars so bold, Unicode styled, and plain text dedupe together. */
 export function normalizeForComparison(text: string): string {
@@ -41,8 +42,9 @@ function insertIntoTrie(root: TrieNode, normalizedAlias: string, term: TermMatch
 export function buildTermTrie(entries: TermMatch[]): TrieNode {
   const root = createTrieNode();
   for (const entry of entries) {
-    const normalized = normalizedWordKey(entry.alias);
-    insertIntoTrie(root, normalized, entry);
+    for (const form of getAllMatchForms(entry.alias)) {
+      insertIntoTrie(root, normalizedWordKey(form), entry);
+    }
   }
   return root;
 }

@@ -18,7 +18,7 @@ All data added should include an etymology section, including a very concise lin
 
 Avoid clustering data. If you're asked to add new data items, prefer to add new items, or match them as aliases to existing data. Do not cluster multiple findings under grouped headings. For example, if I ask you to add "hydrochlorothiazide, spironolactone, furosemide". Then add 3 separate entries; do not create a single entry called "diuretics" for these 3. If I ask you to create an entry for "diuretics" however, do that.
 
-Where relevant, include the plural of a term and common acronyms in the alias. For example "red blood cell" should include "red blood cells" and "rbcs" as aliases.
+Where relevant, include common acronyms in aliases (e.g. `rbc`, `wbc`). Store aliases in singular form only — plural forms are matched automatically at scan time.
 
 ## Data Types
 
