@@ -6718,6 +6718,102 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     pediatrics:
       "Juvenile dermatomyositis shows perimysial/perivascular inflammation with endomysial capillary MAC deposition. Polymyositis is rare in children; distinguish from muscular dystrophy and viral myositis by biopsy pattern and autoantibodies.",
   },
+  {
+    id: "malar-bone",
+    name: "Malar Bone",
+    etymology:
+      "Latin mala = cheek + -ar = relating to — paired facial bone forming the cheek prominence; synonymous with zygomatic bone (Greek zygon = yoke, bridge)",
+    aliases: [
+      "malar bone",
+      "zygomatic bone",
+      "cheekbone",
+      "zygoma",
+      "os zygomaticum",
+    ],
+    definition:
+      "Paired irregular facial bones (zygomatic bones) forming the malar eminence of the cheek and the lateral orbital rim — articulating with the maxilla, frontal, temporal, and sphenoid bones at four sutures.",
+    anatomy:
+      "Each zygomatic bone has a temporal process (zygomatic arch), frontal process (lateral orbital rim), maxillary process (infraorbital rim and anterior maxillary wall), and orbital surface. Zygomaticofacial and zygomaticotemporal foramina transmit V2 branches. Zygomatic arch = temporal process of zygomatic + zygomatic process of temporal bone.",
+    action: [
+      "Forms lateral orbital wall and cheek contour (malar eminence)",
+      "Contributes to zygomatic arch for masseter and temporalis muscle attachment",
+      "Protects orbital contents laterally and supports midface structure",
+    ],
+    clinicalRelevance: [
+      "Zygomaticomaxillary complex (tripod) fracture — blowout of malar eminence with infraorbital nerve injury",
+      "Zygomatic arch fracture — trismus from masseter entrapment or pain",
+      "Orbital floor blowout fracture often accompanies zygomatic fracture",
+      "Infraorbital nerve (V2) runs through infraorbital groove — cheek/upper lip numbness after fracture",
+      "Le Fort fractures involve zygomatic-maxillary buttress",
+    ],
+    boardsPearls: [
+      "Malar bone = zygomatic bone — cheek prominence and lateral orbit",
+      "Tripod fracture — zygomatic bone displaced at three articulations (maxilla, frontal, sphenoid)",
+      "Zygomatic arch — masseter origin; arch fracture → facial widening, trismus",
+      "Infraorbital nerve (V2) — cheek and upper lip numbness with zygomatic fracture",
+      "vs maxilla — zygomatic is lateral cheek bone; maxilla forms upper jaw and orbital floor",
+    ],
+    distinguishFrom: [
+      "Maxilla — upper jaw bone; infraorbital foramen on maxilla, not zygomatic",
+      "Temporal bone — zygomatic process forms posterior zygomatic arch only",
+      "Malar rash — cutaneous butterfly rash of SLE over cheeks; not a bone",
+      "Malar eminence — surface landmark of zygomatic bone prominence",
+      "Zygomaticus major muscle — facial expression muscle on zygomatic bone surface",
+    ],
+    pediatrics:
+      "Pediatric midface fractures are less common than adult trauma due to greater cranial-to-facial ratio and bone elasticity; zygomatic fractures still occur with direct cheek impact. Growth centers in zygomatic-maxillary complex — orbital asymmetry if malunited.",
+  },
+  {
+    id: "c7-spinal-cord",
+    name: "C7 Spinal Cord",
+    etymology:
+      "C = seventh cervical spinal cord segment + Latin spina = spine + chorda = string — spinal cord level giving rise to the C7 spinal nerve",
+    aliases: [
+      "c7 spinal cord",
+      "c7 spinal cord segment",
+      "c7 cord segment",
+      "c7 cord level",
+      "c7 spinal level",
+      "cervical 7 spinal cord",
+    ],
+    definition:
+      "Seventh cervical segment of the spinal cord — located approximately at the C6 vertebral body level (cord segments lie cephalad to their exiting nerve roots) — containing lower motor neuron pools and ascending/descending tracts for the middle finger dermatome, triceps myotome, and upper limb function.",
+    anatomy:
+      "C7 spinal nerve exits above the C7 vertebra (between C6 and C7); the C7 cord segment lies rostral to this exit (~C6 vertebral level). Gray matter contains LMNs for triceps (C7), wrist flexors, and finger extensors; white matter carries corticospinal, spinothalamic, and dorsal column tracts. Cervical enlargement (C4–T1) is maximal around C7–C8 for hand/upper limb innervation.",
+    action: [
+      "Origin of C7 spinal nerve — mixed motor and sensory fibers to posterior arm, posterior forearm, and middle finger",
+      "C7 myotome — triceps (elbow extension), wrist flexion (partial)",
+      "C7 dermatome — middle finger and adjacent hand/forearm skin",
+      "C7 reflex arc — triceps reflex (C7–C8, primarily C7)",
+      "Relay of UMN corticospinal fibers synapsing on C7 LMNs for arm motor control",
+    ],
+    innervation:
+      "C7 spinal nerve — motor to triceps brachii, anconeus, flexor carpi radialis/ulnaris (partial); sensory to middle finger and posterior forearm (not a muscle — segmental cord level)",
+    clinicalRelevance: [
+      "C7 radiculopathy — compression of C7 nerve root (not cord) → unilateral middle finger numbness, triceps weakness, ↓ triceps reflex; C6–C7 disc most common",
+      "Central cord syndrome — hyperextension injury in stenotic cervical spine → disproportionate upper limb weakness with sacral sparing",
+      "Complete transection at C7 cord level → flaccid paralysis below lesion acutely, then spastic paraplegia with hand involvement; phrenic (C3–C5) spared",
+      "Brown-Séquard hemisection — ipsilateral motor/proprioception loss, contralateral pain/temp loss below lesion",
+      "Cervical myelopathy from stenosis — UMN signs in legs with hand clumsiness",
+    ],
+    boardsPearls: [
+      "C7 spinal cord segment ≠ C7 radiculopathy — cord lesion = bilateral UMN signs below level; root lesion = unilateral dermatomal/myotomal deficit",
+      "C7 root — middle finger numbness + triceps weakness + ↓ triceps reflex (most common cervical radiculopathy)",
+      "C7 nerve exits above C7 vertebra; cord segment is ~1 level cephalad",
+      "Triceps reflex tests primarily C7 (C7–C8 arc)",
+      "Phrenic nerve (C3–C5) spared with isolated C7 cord injury — breathing preserved",
+      "vs C6 — thumb/index, biceps; vs C8 — ring/little finger, finger flexors",
+    ],
+    distinguishFrom: [
+      "C7 radiculopathy — peripheral nerve root compression; unilateral; see dedicated condition entry",
+      "C7 vertebra — bony landmark; not the neural segment itself",
+      "C8 spinal cord — caudal segment; ring/little finger dermatome",
+      "Brachial plexus — peripheral nerve network distal to roots; different injury pattern",
+      "Cervical spinal cord (general) — entire cervical cord C1–C8 segments",
+    ],
+    pediatrics:
+      "Cervical cord injury in children — atlantoaxial instability (Down syndrome, RA), diving accidents, or birth trauma. C7 radiculopathy is rare in children; congenital stenosis or trauma more common than disc herniation.",
+  },
 ];
 
 const musculoskeletalById = new Map(

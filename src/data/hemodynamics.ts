@@ -1385,6 +1385,36 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     ],
   },
   {
+    id: "hypokinesis",
+    name: "Hypokinesis",
+    etymology:
+      "Greek hypo = reduced + kinesis = movement — diminished systolic wall thickening and excursion on echocardiography",
+    aliases: [
+      "hypokinesis",
+      "hypokinetic",
+      "hypokinetic segment",
+      "reduced wall motion",
+      "decreased wall motion",
+      "regional wall motion abnormality",
+      "rwma",
+    ],
+    definition:
+      "Reduced systolic wall motion of a myocardial segment on echocardiography — less severe than akinesis (no motion) or dyskinesis (paradoxical outward motion during systole) — indicating regional contractile dysfunction from ischemia, stunning, cardiomyopathy, or acute stress-induced stunning.",
+    factors: [
+      "Acute myocardial infarction — territorial hypokinesis matching coronary distribution",
+      "Myocardial stunning — transient post-ischemic hypokinesis after reperfusion or nonocclusive ischemia",
+      "Takotsubo cardiomyopathy — apical hypokinesis/akinesis with basal hyperkinesis (classic form)",
+      "Reverse Takotsubo — basal/mid hypokinesis with hyperkinetic apex",
+      "Pulmonary embolism — RV free wall hypokinesis; McConnell sign (RV free wall akinesis with apical sparing)",
+      "Diffuse cardiomyopathy — global hypokinesis with reduced ejection fraction",
+      "Hibernating myocardium — chronic hypokinesis with viable but dysfunctional tissue; may improve after revascularization",
+      "vs akinesis — akinesis = no systolic thickening; hypokinesis = reduced but present motion",
+      "vs dyskinesis — dyskinesis = paradoxical outward bulging during systole (aneurysm, severe ischemia)",
+      "Echo grading — normal, hypokinetic, akinetic, dyskinetic; assess in multiple views (PLAX, A4C, A2C)",
+      "Peds: regional hypokinesis in chest pain → myocarditis, anomalous coronaries, or Kawasaki MI before Takotsubo",
+    ],
+  },
+  {
     id: "platypnea-orthodeoxia",
     name: "Platypnea-Orthodeoxia",
     etymology:

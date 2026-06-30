@@ -1186,6 +1186,75 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "streptokinase",
+    name: "Streptokinase",
+    etymology:
+      "Strepto- = Streptococcus bacterial genus + -kinase = enzyme that activates kinases — bacterial protein that activates plasminogen",
+    aliases: ["streptokinase", "sk", "streptase"],
+    drugClass: "Thrombolytic (indirect plasminogen activator)",
+    mechanism:
+      "Bacterial protein that binds plasminogen nonenzymatically → conformational change exposes active site → plasminogen converted to plasmin → fibrinolysis and clot dissolution; not fibrin-specific (systemic plasmin generation).",
+    indications: [
+      "STEMI — fibrinolysis when primary PCI unavailable within time window",
+      "Massive pulmonary embolism with hemodynamic instability (selected settings)",
+      "Deep vein thrombosis / arterial thrombosis (historical; largely replaced by direct tPAs)",
+    ],
+    adverseEffects: [
+      "Intracranial hemorrhage",
+      "Systemic bleeding (surgical sites, GI)",
+      "Allergic reactions — antigenic bacterial protein; fever, hypotension, anaphylaxis",
+      "Reperfusion arrhythmias after coronary recanalization",
+      "Cannot reuse after prior streptokinase exposure — antibody formation",
+    ],
+    boardsPearls: [
+      "Indirect plasminogen activator — forms complex with plasminogen to generate plasmin",
+      "Antigenic — prior streptokinase exposure → antibodies; do not readminister",
+      "vs alteplase/tPA — streptokinase is non-fibrin-specific, more systemic fibrinolysis",
+      "STEMI fibrinolysis when PCI unavailable — door-to-needle time matters",
+      "Major contraindication: active bleeding, recent stroke, intracranial pathology",
+      "Produced by streptococci — same organism class that makes streptokinase as virulence factor for spread",
+    ],
+  },
+  {
+    id: "fibrinolytic",
+    name: "Fibrinolytic",
+    etymology:
+      "Latin fibra = fiber + Greek lysis = loosening + -ic = relating to — drug class that promotes enzymatic breakdown of fibrin clots",
+    aliases: [
+      "fibrinolytic",
+      "fibrinolytic agent",
+      "fibrinolytic drug",
+      "thrombolytic",
+      "thrombolytic agent",
+      "thrombolytic drug",
+      "clot buster",
+    ],
+    drugClass: "Thrombolytic / fibrinolytic drug class",
+    mechanism:
+      "Activate plasminogen → plasmin → cleavage of fibrin and fibrinogen → clot dissolution; direct tPAs (alteplase, tenecteplase) preferentially act on fibrin-bound plasminogen; streptokinase forms indirect activator complex.",
+    indications: [
+      "STEMI — when primary PCI unavailable within reperfusion window",
+      "Acute ischemic stroke — IV alteplase within 4.5 hours (selected patients)",
+      "Massive pulmonary embolism with hemodynamic instability",
+      "Loculated parapneumonic effusion/empyema — intrapleural tPA (often with DNase)",
+    ],
+    adverseEffects: [
+      "Intracranial hemorrhage — most feared complication",
+      "Systemic bleeding (GI, surgical sites, retroperitoneal)",
+      "Reperfusion arrhythmias after coronary recanalization",
+      "Allergic reactions (streptokinase — antigenic bacterial protein)",
+    ],
+    boardsPearls: [
+      "Fibrinolytic = thrombolytic — amplifies plasmin generation to dissolve clots",
+      "Agents: alteplase (tPA), tenecteplase, streptokinase, reteplase",
+      "STEMI: PCI preferred; fibrinolysis if PCI unavailable",
+      "Contraindications: hemorrhagic stroke, active bleeding, recent major surgery/trauma",
+      "vs anticoagulation — anticoagulants prevent new clot; fibrinolytics actively lyse existing thrombus",
+      "vs antifibrinolytic (tranexamic acid) — opposite effect; stabilizes fibrin clot",
+      "Streptokinase antigenic — do not readminister after prior exposure",
+    ],
+  },
+  {
     id: "anticholinergics",
     name: "Anticholinergic",
     etymology: "Greek anti- = against + chole = bile (historical) + ergon = work + -ic = relating to",
@@ -3847,6 +3916,60 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Eclampsia: magnesium sulfate is anticonvulsant of choice — not diazepam first-line",
       "Flumazenil for acute overdose reversal",
       "Peds: rectal diazepam for febrile seizures (selected cases); caution respiratory depression",
+    ],
+  },
+  {
+    id: "oxazepam",
+    name: "Oxazepam",
+    etymology:
+      "oxa- = oxazepine ring oxygen substituent + -zepam = benzodiazepine suffix",
+    aliases: ["oxazepam", "serax"],
+    drugClass: "Benzodiazepine (intermediate acting)",
+    mechanism:
+      "Enhances GABA-A receptor chloride conductance → CNS depression; 3-hydroxy benzodiazepine with no active metabolites — conjugated and renally excreted.",
+    indications: [
+      "Anxiety (short-term)",
+      "Alcohol withdrawal",
+      "Adjunct sedation",
+    ],
+    adverseEffects: [
+      "Sedation, ataxia, confusion (especially elderly)",
+      "Dependence and withdrawal with chronic use",
+      "Respiratory depression with opioids or alcohol",
+    ],
+    boardsPearls: [
+      "Active metabolite of diazepam and chlordiazepoxide — also used as parent drug",
+      "No active metabolites — preferred in hepatic failure (with lorazepam)",
+      "Less lipophilic than diazepam — slower onset, lower abuse potential than short-acting agents",
+      "Alcohol withdrawal: benzos are treatment of choice",
+      "vs diazepam — oxazepam is a metabolite; safer in liver disease",
+    ],
+  },
+  {
+    id: "temazepam",
+    name: "Temazepam",
+    etymology:
+      "tema- = methylated benzodiazepine naming element + -zepam = benzodiazepine suffix",
+    aliases: ["temazepam", "restoril"],
+    drugClass: "Benzodiazepine hypnotic (intermediate acting)",
+    mechanism:
+      "Binds benzodiazepine site on GABA-A receptor → ↑ Cl⁻ channel opening → CNS depression and sleep promotion; metabolized to oxazepam (active metabolite).",
+    indications: [
+      "Insomnia (short-term)",
+      "Preprocedure sedation (selected settings)",
+    ],
+    adverseEffects: [
+      "Sedation, hangover, anterograde amnesia",
+      "Dependence and rebound insomnia on withdrawal",
+      "Respiratory depression with opioids or alcohol",
+      "Falls and cognitive impairment in elderly",
+    ],
+    boardsPearls: [
+      "Benzodiazepine hypnotic — intermediate acting; metabolized to oxazepam",
+      "Short-term insomnia only — tolerance and dependence with chronic use",
+      "Flumazenil reverses overdose; avoid in chronic benzo users (withdrawal seizures)",
+      "Beers criteria — avoid chronic hypnotic benzos in elderly (falls, delirium)",
+      "vs zolpidem (Z-drug) — temazepam is full benzodiazepine with broader CNS effects",
     ],
   },
   {
@@ -8842,6 +8965,39 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "polyene",
+    name: "Polyene",
+    etymology:
+      "Greek poly = many + -ene = hydrocarbon double-bond suffix — antifungal class with multiple conjugated double bonds in a macrolide ring structure",
+    aliases: [
+      "polyene",
+      "polyene antifungal",
+      "polyene antifungal agent",
+      "polyene macrolide",
+    ],
+    drugClass: "Antifungal subclass (polyene macrolides)",
+    mechanism:
+      "Bind ergosterol in fungal cell membrane (not human cholesterol at therapeutic concentrations) → form transmembrane pores → leakage of intracellular contents → fungicidal activity.",
+    indications: [
+      "Severe systemic mycoses — amphotericin B (cryptococcal meningitis, invasive aspergillosis, mucormycosis)",
+      "Mucocutaneous candidiasis — nystatin (topical/oral, not absorbed systemically)",
+      "Empiric antifungal therapy in febrile neutropenia (amphotericin B)",
+    ],
+    adverseEffects: [
+      "Amphotericin B — nephrotoxicity, hypokalemia, hypomagnesemia, infusion reactions (\"shake and bake\")",
+      "Nystatin — oral GI upset; topical irritation; no systemic toxicity (not absorbed)",
+      "Anemia with prolonged amphotericin B therapy",
+    ],
+    boardsPearls: [
+      "Polyenes bind ergosterol → membrane pores → fungicidal",
+      "Amphotericin B — broadest spectrum systemic polyene; \"amphoterrible\" nephrotoxicity",
+      "Nystatin — polyene for topical/oral Candida only; too toxic for IV use",
+      "vs azoles — polyenes bind ergosterol directly; azoles inhibit ergosterol synthesis",
+      "Liposomal amphotericin (AmBisome) ↓ nephrotoxicity",
+      "No significant CYP450 interactions (unlike azoles)",
+    ],
+  },
+  {
     id: "amphotericin-b",
     name: "Amphotericin B",
     etymology: "ampho- = both + -tericin = amphoteric antifungal polyene + B = compound variant",
@@ -8870,6 +9026,70 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Liposomal formulation (AmBisome) ↓ nephrotoxicity",
       "vs azoles — amphotericin B binds ergosterol; azoles inhibit ergosterol synthesis",
       "Peds: same nephrotoxicity; liposomal preferred in pediatric systemic mycoses",
+    ],
+  },
+  {
+    id: "griseofulvin",
+    name: "Griseofulvin",
+    etymology:
+      "Latin griseus = gray + fulvus = tawny/yellowish — grayish antifungal metabolite from Penicillium species",
+    aliases: ["griseofulvin", "grifulvin", "gris-peg"],
+    drugClass: "Antifungal (fungistatic; dermatophyte tinea)",
+    mechanism:
+      "Interferes with fungal microtubule function and mitosis (disrupts spindle formation) → fungistatic; deposits in keratin precursor tissues → new uninfected keratin gradually replaces infected stratum corneum.",
+    indications: [
+      "Dermatophyte tinea capitis (especially in children)",
+      "Tinea corporis, tinea pedis, tinea unguium (onychomycosis — prolonged course)",
+      "Tinea barbae",
+    ],
+    adverseEffects: [
+      "Hepatotoxicity — monitor LFTs",
+      "Teratogenic — contraindicated in pregnancy (category X)",
+      "Headache, GI upset, fatigue",
+      "Disulfiram-like reaction with alcohol",
+      "Induces cytochrome P450 — accelerates metabolism of warfarin and other drugs",
+    ],
+    boardsPearls: [
+      "Oral fungistatic agent for dermatophyte tinea — deposits in keratin, treats from within",
+      "Tinea capitis in children — griseofulvin or terbinafine; must treat systemically (topicals insufficient for scalp)",
+      "Teratogenic — avoid in pregnancy; effective contraception required",
+      "Microtubule disruption — similar concept to colchicine/vinca alkaloids but antifungal selectivity",
+      "vs terbinafine — allylamine inhibits squalene epoxidase; often preferred for onychomycosis now",
+      "vs azoles/polyenes — griseofulvin only for dermatophytes, not Candida or systemic molds",
+      "Long treatment course — weeks for skin, months for nails",
+    ],
+  },
+  {
+    id: "nystatin",
+    name: "Nystatin",
+    etymology:
+      "New York State + -in = antibiotic suffix — polyene antifungal first isolated from Streptomyces noursei in New York State soil",
+    aliases: [
+      "nystatin",
+      "mycostatin",
+      "nilstat",
+    ],
+    drugClass: "Polyene antifungal (topical/oral, not systemically absorbed)",
+    mechanism:
+      "Binds ergosterol in fungal cell membrane → forms pores → leakage of intracellular contents → fungicidal; poor absorption from GI tract and skin limits use to mucocutaneous Candida infections.",
+    indications: [
+      "Oral candidiasis (thrush) — suspension or lozenges",
+      "Cutaneous candidiasis — topical cream/ointment",
+      "Vulvovaginal candidiasis — topical vaginal preparations",
+      "Candidal diaper dermatitis — topical",
+    ],
+    adverseEffects: [
+      "Oral — nausea, vomiting, diarrhea (swallowed suspension)",
+      "Topical — local irritation",
+      "No systemic toxicity at standard doses (not absorbed)",
+    ],
+    boardsPearls: [
+      "Polyene antifungal for mucocutaneous Candida only — not absorbed systemically",
+      "Oral thrush and cutaneous/vaginal candidiasis — nystatin or topical azoles",
+      "Too toxic for IV use — systemic candidiasis requires fluconazole or echinocandins",
+      "vs fluconazole — nystatin topical/oral for superficial; fluconazole for esophageal/invasive disease",
+      "vs amphotericin B — both polyenes bind ergosterol; nystatin only for local Candida",
+      "Swish and swallow for oral thrush; treat concurrent vaginal/oral candidiasis in infants with diaper rash",
     ],
   },
   {

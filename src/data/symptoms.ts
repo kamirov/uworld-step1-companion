@@ -10562,6 +10562,50 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
   },
   {
+    id: "paraplegia",
+    name: "Paraplegia",
+    etymology:
+      "Greek para = beside + plege = stroke/paralysis — impairment of motor function in both lower extremities",
+    aliases: [
+      "paraplegia",
+      "paraplegic",
+      "paralysis of both legs",
+      "lower limb paralysis",
+      "bilateral leg paralysis",
+    ],
+    definition:
+      "Paralysis or severe weakness of both lower extremities — typically from bilateral corticospinal tract interruption in the spinal cord below the cervical level, sparing upper limbs.",
+    mechanism:
+      "Spinal cord lesion at thoracic, lumbar, or sacral level → interruption of descending UMN fibers to both legs → flaccid paralysis acutely (spinal shock), then spastic paraplegia with hyperreflexia, clonus, and bilateral Babinski signs below the lesion; sensory level and bladder/bowel dysfunction localize the cord level.",
+    thinkOf: [
+      "Traumatic spinal cord injury — MVA, fall, gunshot; level determines deficit",
+      "Transverse myelitis — acute bilateral leg weakness with sensory level",
+      "Multiple sclerosis — spinal cord demyelinating plaque",
+      "Anterior spinal artery syndrome — bilateral leg paralysis with dissociated sensory loss (pain/temp lost, proprioception spared)",
+      "Spinal cord tumor or epidural abscess/hematoma — progressive or acute deficit",
+      "Spina bifida / myelomeningocele — congenital paraplegia with bladder dysfunction",
+      "Hereditary spastic paraplegia — progressive UMN paraplegia",
+    ],
+    pairWith: [
+      "Bilateral leg paralysis + sensory level on trunk → spinal cord lesion at that dermatome",
+      "Acute paraplegia + back pain + bladder retention → cauda equina or cord compression emergency",
+      "Paraplegia + dissociated sensory loss (pain/temp gone, vibration intact) → anterior spinal artery",
+      "Paraplegia + upper limb sparing → lesion below cervical cord (T1 and below)",
+      "Spinal shock acutely → flaccid paraplegia areflexia; converts to spastic over days",
+      "Paraplegia + Horner syndrome + ipsilateral face → Brown-Séquard hemisection",
+    ],
+    distinguishFrom: [
+      "Hemiplegia — one side face/arm/leg; brain or high cord lesion",
+      "Quadriplegia (tetraplegia) — all four limbs; cervical cord injury",
+      "Paraparesis — weakness without complete paralysis; same localization",
+      "Cauda equina syndrome — LMN flaccid paralysis, saddle anesthesia, areflexic; nerve roots not cord",
+      "Peripheral neuropathy — stocking distribution, LMN pattern, no sensory level",
+      "Functional weakness — inconsistent exam, give-way strength",
+    ],
+    pediatrics:
+      "Myelomeningocele and spinal dysraphism cause congenital paraplegia with neurogenic bladder. Acute transverse myelitis post-viral infection can cause pediatric paraplegia. Spinal cord injury in children — same UMN pattern below lesion after spinal shock resolves.",
+  },
+  {
     id: "cortical-signs",
     name: "Cortical Sign",
     etymology:

@@ -2903,6 +2903,52 @@ export const ORGANS: OrganEntry[] = [
       "Alobar holoprosencephaly — failed cleavage of interhemispheric fissure with fused hemispheres and monoventricle. Sylvian fissure arachnoid cysts may present in childhood with seizures or mass effect.",
   },
   {
+    id: "circle-of-willis",
+    name: "Circle of Willis",
+    etymology:
+      "Named for English physician Thomas Willis (1621–1675) + Latin circulus = ring — anastomotic ring of arteries at the base of the brain",
+    aliases: [
+      "circle of willis",
+      "cerebral arterial circle",
+      "arterial circle of willis",
+      "willis circle",
+      "circulus arteriosus cerebri",
+    ],
+    germLayer: "Mesoderm (endothelium from pharyngeal arch and vertebral artery derivatives)",
+    origin:
+      "Formed by anastomosis of the internal carotid system (anterior circulation) and vertebrobasilar system (posterior circulation) at the base of the brain within the interpeduncular cistern — completed by anterior communicating artery (ACom) and paired posterior communicating arteries (PCom).",
+    derivatives: [
+      "Paired anterior cerebral arteries (ACA) — medial frontal/parietal lobes, corpus callosum",
+      "Anterior communicating artery (ACom) — joins A1 segments",
+      "Paired internal carotid arteries (ICA) — terminal branches MCA and ACA",
+      "Paired middle cerebral arteries (MCA) — lateral hemispheres, basal ganglia, internal capsule",
+      "Paired posterior cerebral arteries (PCA) — occipital lobes, inferior temporal lobes",
+      "Paired posterior communicating arteries (PCom) — ICA to PCA",
+      "Basilar artery — from fused vertebral arteries; gives rise to PCAs",
+    ],
+    functionSummary:
+      "Collateral cerebral blood flow between carotid and vertebrobasilar territories — redistribution of flow if a major vessel occludes; anatomic template for saccular aneurysm formation at branch points and bifurcations.",
+    commonPathologies: [
+      "Saccular (berry) aneurysm — ACom most common site overall; PCom classic for CN III palsy",
+      "Subarachnoid hemorrhage from ruptured circle of Willis aneurysm",
+      "MCA aneurysm at bifurcation — lateral Sylvian fissure SAH",
+      "ACom aneurysm — compresses optic chiasm → bitemporal hemianopia",
+      "PCom aneurysm — painful oculomotor (CN III) palsy with pupil involvement",
+      "Incomplete circle — hypoplastic ACom or PCom limits collateral flow in stroke",
+    ],
+    step1Pearls: [
+      "Circle of Willis = anterior (carotid) + posterior (vertebrobasilar) circulation anastomosis",
+      "ACom — most common intracranial aneurysm location; SAH risk",
+      "PCom aneurysm — CN III palsy (down-and-out eye, ptosis, dilated pupil)",
+      "MCA bifurcation — common aneurysm site; Sylvian fissure SAH",
+      "Incomplete circle common — collateral failure in watershed stroke",
+      "vs communicating arteries — ACom and PCom are components of the full circle",
+      "Lateral striate arteries (Charcot-Bouchard) arise from MCA — lacunar stroke, not aneurysm site",
+    ],
+    pediatrics:
+      "Pediatric intracranial aneurysms are rare and may occur at atypical locations. Moyamoya disease and sickle cell vasculopathy are more common pediatric stroke etiologies than circle of Willis aneurysms.",
+  },
+  {
     id: "communicating-arteries",
     name: "Communicating Arteries",
     etymology:
@@ -3188,6 +3234,48 @@ export const ORGANS: OrganEntry[] = [
     ],
     pediatrics:
       "Infants have large head-to-body ratio and weak neck support — acceleration-deceleration during abusive head trauma shears bridging veins causing subdural hematoma. Fontanelle may bulge with rising ICP before sutures fuse.",
+  },
+  {
+    id: "meningeal-arteries",
+    name: "Meningeal Arteries",
+    etymology:
+      "Greek meninx = membrane + Latin arteria = vessel — arteries supplying the dura mater and calvaria, not the brain parenchyma",
+    aliases: [
+      "meningeal artery",
+      "meningeal arteries",
+      "dural arteries",
+      "dural arterial supply",
+      "cranial meningeal arteries",
+    ],
+    germLayer: "Mesoderm (pharyngeal arch and vertebral artery derivatives)",
+    origin:
+      "Branches from the external carotid (middle meningeal), internal carotid/ophthalmic (anterior meningeal via ethmoidal arteries), and vertebral/occipital systems (posterior meningeal) — course between skull and dura mater in the epidural/epi-dural space, grooving the inner calvaria.",
+    derivatives: [
+      "Middle meningeal artery — branch of maxillary artery; enters foramen spinosum",
+      "Anterior meningeal arteries — anterior and posterior ethmoidal artery branches through cribriform region",
+      "Posterior meningeal artery — typically from vertebral artery or occipital artery (variable)",
+      "Accessory meningeal artery — may enter via foramen ovale region",
+    ],
+    functionSummary:
+      "Supply dura mater, skull periosteum, and adjacent meninges; clinically important because meningeal vessel injury causes epidural or subdural hemorrhage and because dural arteriovenous fistulas can involve these vessels.",
+    commonPathologies: [
+      "Epidural hematoma — middle meningeal artery laceration after temporal skull fracture",
+      "Lucid interval — classic presentation before neurologic decline from expanding epidural collection",
+      "Pterion fracture — thin skull overlying middle meningeal artery",
+      "Dural arteriovenous fistula — abnormal meningeal artery-to-sinus connection",
+      "Meningeal artery embolization — treatment for refractory epidural or dural AV fistula (Step 2 context)",
+    ],
+    step1Pearls: [
+      "Meningeal arteries supply dura — NOT brain parenchyma (parenchyma supplied by ICA/vertebral branches)",
+      "Middle meningeal artery — branch of maxillary artery; foramen spinosum; epidural hematoma",
+      "Epidural hematoma — arterial (middle meningeal); biconvex on CT; does not cross sutures",
+      "vs bridging veins — venous subdural hematoma; crescentic; crosses sutures",
+      "Anterior meningeal — ethmoidal branches; posterior meningeal — vertebral/occipital",
+      "Pterion — weakest skull point; middle meningeal artery underneath",
+      "vs middle meningeal artery — single most clinically important meningeal branch",
+    ],
+    pediatrics:
+      "Epidural hematoma from middle meningeal artery tear occurs in children after head trauma. Abusive head trauma more commonly causes subdural hematoma from bridging vein rupture. Teen athletes with temporal impact and lucid interval need emergent CT.",
   },
   {
     id: "middle-meningeal-artery",

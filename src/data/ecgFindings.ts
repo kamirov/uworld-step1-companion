@@ -663,6 +663,187 @@ export const ECG_FINDINGS: EcgFindingEntry[] = [
     pediatrics:
       "MI with Q waves is rare in children (Kawasaki, anomalous coronaries); pediatric ECG has smaller Q waves normally. New pathologic Q waves in adolescent with chest pain warrant urgent evaluation.",
   },
+  {
+    id: "t-wave-inversion",
+    name: "T-Wave Inversion",
+    etymology:
+      "T = ECG repolarization wave + Latin inversio = turning upside down — T wave deflection below baseline",
+    aliases: [
+      "t-wave inversion",
+      "t wave inversion",
+      "inverted t wave",
+      "negative t wave",
+      "t-wave inversion pattern",
+    ],
+    interpretation:
+      "T wave deflection below the baseline in a lead where it is normally upright — indicates repolarization abnormality; territorial deep symmetric inversions suggest ischemia, while diffuse or right precordial inversions may reflect strain, PE, or benign variants depending on clinical context.",
+    territory:
+      "Territorial when contiguous — anterior (V1–V4), inferior (II, III, aVF), lateral (I, aVL, V5–V6); right precordial (V1–V3) in PE, RV strain, or pediatric normal variant.",
+    thinkOf: [
+      "Ischemia / NSTEMI / evolving MI — deep symmetric inversions in coronary territory",
+      "Wellens syndrome — biphasic or deep T inversions in V2–V3 (critical LAD stenosis)",
+      "Hypertrophic cardiomyopathy — deep lateral T inversions with LVH voltage",
+      "Pulmonary embolism — S1Q3T3 pattern; T inversions V1–V4 from RV strain",
+      "CNS events (subarachnoid hemorrhage, stroke) — diffuse deep T inversions (neurogenic)",
+      "Post-repolarization after STEMI — persistent T inversions during healing",
+      "Pediatric normal variant — isolated T inversions in V1–V3",
+    ],
+    distinguishFrom: [
+      "Peaked T waves — hyperkalemia; tall narrow upright T, not inverted",
+      "ST elevation — acute STEMI; may coexist before T inversions develop",
+      "U waves — separate deflection after T in hypokalemia, not baseline T inversion",
+      "Biphasic T wave — initial positive then negative deflection; Wellens pattern",
+      "J-point elevation with upsloping ST — benign early repolarization, not deep T inversion",
+      "QT prolongation — prolonged repolarization interval; T may be inverted but focus is QT measurement",
+    ],
+    boardsPearls: [
+      "Deep symmetric T inversions in contiguous leads → ischemia until proven otherwise",
+      "Wellens — biphasic/deep T inversions V2–V3 + recent angina → critical proximal LAD",
+      "S1Q3T3 + right heart strain + hypoxia → pulmonary embolism",
+      "HCM — LVH voltage + deep lateral T inversions in young athlete with syncope",
+      "Neurogenic T inversions — diffuse deep inversions after SAH or intracranial catastrophe",
+      "Pediatric: T inversions V1–V3 often normal; invert with age toward adult pattern",
+    ],
+    pediatrics:
+      "T-wave inversions in V1–V3 are a common benign pediatric ECG variant and may persist into adolescence. New deep territorial inversions with chest pain in adolescents warrant evaluation for anomalous coronaries, myocarditis, or HCM. Kawasaki with coronary involvement may show ischemic T-wave changes.",
+  },
+  {
+    id: "precordial-leads",
+    name: "Precordial Leads",
+    etymology:
+      "Latin praecordium = area in front of the heart + lead = ECG electrode placement",
+    aliases: [
+      "precordial lead",
+      "chest lead",
+      "v lead",
+      "v1",
+      "v2",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "lead v1",
+      "lead v2",
+      "lead v3",
+      "lead v4",
+      "lead v5",
+      "lead v6",
+    ],
+    interpretation:
+      "Six unipolar chest leads (V1–V6) placed sequentially across the precordium — record ventricular electrical activity in the horizontal plane from right sternal border (V1) to left midaxillary line (V6).",
+    territory:
+      "V1–V2: septal and right ventricular anterior views; V3–V4: anterior LV; V5–V6: lateral LV — each precordial position samples a different myocardial territory.",
+    thinkOf: [
+      "RBBB — rsR' pattern in V1 (M-shaped QRS)",
+      "LBBB — broad notched R in V5–V6",
+      "Anterior MI — ST elevation or Q waves V1–V4",
+      "LVH voltage criteria — S in V1 + R in V5 or V6",
+      "Brugada syndrome — ST elevation V1–V3 with RBBB-like morphology",
+      "Benign early repolarization — concave ST elevation in mid-lateral precordial leads",
+    ],
+    distinguishFrom: [
+      "Limb leads — I, II, III, aVR, aVL, aVF; vertical/frontal plane, not chest placement",
+      "Anterior leads — subset V1–V4 viewing anterior wall; not all precordial leads",
+      "Posterior MI — tall R and ST depression in V1–V2 (reciprocal), not primary ST elevation",
+      "Right-sided leads (V4R) — RV territory; separate placement for RV infarction",
+    ],
+    boardsPearls: [
+      "Precordial leads = V1–V6 chest leads in horizontal plane",
+      "V1–V2 septal/RV; V3–V4 anterior; V5–V6 lateral",
+      "R wave progression — R should increase V1→V6; loss suggests anterior MI",
+      "Transition zone — where R ≈ S, usually V3–V4",
+      "Posterior MI — reciprocal ST depression and tall R in V1–V2",
+    ],
+    pediatrics:
+      "Pediatric ECG has right ventricular dominance — taller R in V1 and right axis are normal in infants. R-wave progression matures with age. Incomplete RBBB pattern (rsR' in V1) is a common benign variant.",
+  },
+  {
+    id: "anterior-leads",
+    name: "Anterior Leads (ECG)",
+    etymology:
+      "Latin anterior = in front + lead = ECG electrode — precordial leads viewing the anterior left ventricular wall",
+    aliases: [
+      "anterior lead",
+      "anterior ecg lead",
+      "anterior precordial lead",
+      "v1-v4",
+      "v1 through v4",
+      "leads v1-v4",
+    ],
+    interpretation:
+      "Precordial leads V1–V4 that electrically view the anterior wall of the left ventricle — contiguous ST-segment elevation, Q waves, or T-wave inversions in these leads localize ischemia or infarction to the left anterior descending (LAD) coronary territory.",
+    territory:
+      "Anterior wall of the left ventricle — supplied primarily by the left anterior descending (LAD) artery; septal contribution from V1–V2.",
+    thinkOf: [
+      "Anterior STEMI — ST elevation in V1–V4 (contiguous)",
+      "LAD occlusion — most common culprit for anterior territory",
+      "Wellens syndrome — biphasic or deep T inversions V2–V3 (critical proximal LAD)",
+      "Loss of R-wave progression — anterior MI or prior infarct",
+      "Anterior wall motion abnormality on echo — correlates with V1–V4 ECG changes",
+    ],
+    distinguishFrom: [
+      "Lateral leads — I, aVL, V5–V6; circumflex territory, not anterior",
+      "Inferior leads — II, III, aVF; RCA/circumflex inferior wall",
+      "All precordial leads — anterior is V1–V4 subset; V5–V6 are lateral precordial",
+      "Right ventricular leads — V4R for RV infarction, not standard anterior LV territory",
+      "Brugada — V1–V3 ST elevation with RBBB pattern, not ischemic anterior MI",
+    ],
+    boardsPearls: [
+      "Anterior leads = V1–V4 → LAD territory",
+      "Contiguous ST elevation V1–V4 = anterior STEMI — urgent reperfusion",
+      "Wellens T inversions V2–V3 → critical proximal LAD stenosis",
+      "Loss of R-wave progression in anterior leads → prior or evolving anterior MI",
+      "Reciprocal ST depression in inferior leads may accompany anterior STEMI",
+    ],
+    pediatrics:
+      "Anterior MI patterns in children are rare — consider Kawasaki with coronary aneurysm, anomalous left coronary from pulmonary artery (ALCAPA), or myocarditis. Normal pediatric right ventricular dominance affects V1–V2 morphology.",
+  },
+  {
+    id: "st-elevation",
+    name: "ST Elevation",
+    etymology:
+      "S = ECG ST segment (between QRS end and T wave onset) + elevation = displacement above baseline",
+    aliases: [
+      "st elevation",
+      "st-segment elevation",
+      "st segment elevation",
+      "ste",
+      "elevated st segment",
+      "st elevation pattern",
+    ],
+    interpretation:
+      "Upward displacement of the ST segment above the baseline — when present in ≥2 contiguous leads with appropriate morphology, defines STEMI (acute transmural ischemia); diffuse ST elevation with PR depression suggests pericarditis; territorial patterns localize culprit coronary artery.",
+    territory:
+      "Territorial by contiguous lead groups — anterior (V1–V4, LAD), inferior (II, III, aVF, RCA/circumflex), lateral (I, aVL, V5–V6, circumflex); diffuse nonterritorial pattern in pericarditis.",
+    thinkOf: [
+      "STEMI — acute transmural MI; contiguous ST elevation → urgent reperfusion (PCI or fibrinolysis)",
+      "Pericarditis — diffuse ST elevation with PR depression; no reciprocal changes",
+      "Prinzmetal (vasospastic) angina — transient ST elevation at rest, resolves with nitrates",
+      "Early repolarization — concave ST elevation in young patients, benign variant",
+      "Hyperacute phase of ischemia — peaked T waves evolving to ST elevation",
+      "Brugada syndrome — ST elevation V1–V3 with RBBB-like morphology",
+      "LV aneurysm — persistent ST elevation after old MI (weeks later)",
+    ],
+    distinguishFrom: [
+      "ST depression — subendocardial ischemia; NSTEMI/unstable angina pattern",
+      "T-wave inversion — repolarization abnormality; may follow or precede ST changes",
+      "J-point elevation — early repolarization; concave upsloping ST, not ischemic convexity",
+      "Bundle branch block — widened QRS; use Sgarbossa criteria to detect MI in LBBB",
+      "Hyperkalemia — peaked T waves and widened QRS, not primary ST elevation pattern",
+      "Posterior MI — reciprocal ST depression in V1–V2 with tall R waves, not anterior ST elevation",
+    ],
+    boardsPearls: [
+      "Contiguous ST elevation in ≥2 leads = STEMI — emergent reperfusion",
+      "Anterior V1–V4 → LAD; Inferior II, III, aVF → RCA; Lateral I, aVL, V5–V6 → circumflex",
+      "Diffuse ST elevation + PR depression = pericarditis, not regional MI",
+      "Reciprocal ST depression in opposite leads supports true ischemic ST elevation",
+      "New LBBB + ischemic symptoms = STEMI equivalent — urgent evaluation",
+      "Prinzmetal — rest angina + transient ST elevation + normal coronaries",
+      "STEMI reperfusion: PCI preferred; fibrinolysis (alteplase, streptokinase) if PCI unavailable",
+    ],
+    pediatrics:
+      "STEMI is rare in children — consider Kawasaki with coronary aneurysm, ALCAPA, or myocarditis. Benign early repolarization with concave ST elevation is common in adolescents. Same territorial lead mapping applies when ischemic ST elevation is present.",
+  },
 ];
 
 const ecgFindingById = new Map(ECG_FINDINGS.map((entry) => [entry.id, entry]));
