@@ -167,7 +167,7 @@ const SHORT_SIS_SINGULARS = new Set([
 ]);
 
 /** Truncated forms produced by incorrectly stripping one "s". */
-const TRUNCATED_SUFFIX_RE = /(?:si|osi|esi|asi|iasi|ysi)$/i;
+const TRUNCATED_SUFFIX_RE = /(?:si|osi|esi|asi|iasi|ysi|ili)$/i;
 
 /** Truncated -ies plurals where "bodies" became "bodie" instead of "body". */
 const IE_TRUNCATED_SUFFIX_RE = /ie$/i;
@@ -208,6 +208,7 @@ export function isInherentlySingularEndingInS(text: string): boolean {
 
   const lastWord = key.split(" ").pop() ?? key;
   if (LONG_SINGULAR_S_SUFFIX_RE.test(lastWord)) return true;
+  if (lastWord.endsWith("ilis")) return true;
   if (lastWord.endsWith("sis")) {
     const stem = lastWord.slice(0, -3);
     return stem.length >= 4 || SHORT_SIS_SINGULARS.has(lastWord);

@@ -831,6 +831,48 @@ export const ORGANS: OrganEntry[] = [
       "Strep pharyngitis common in school-age children; peritonsillar abscess presents with trismus and uvular deviation. Tonsillectomy for recurrent GAS or obstructive sleep apnea.",
   },
   {
+    id: "labial-commissure",
+    name: "Labial Commissure",
+    etymology:
+      "Latin labium = lip + Latin commissura = joining together — bilateral corner where the upper and lower lips meet at the oral aperture (angle of the mouth)",
+    aliases: [
+      "labial commissure",
+      "lip commissure",
+      "oral commissure",
+      "angle of the mouth",
+      "corner of the mouth",
+      "mouth corner",
+      "angular commissure",
+    ],
+    germLayer: "Ectoderm (surface ectoderm / stomodeum) with mesenchyme",
+    origin:
+      "Forms at the lateral boundaries of the primitive oral aperture (stomodeum) where maxillary and mandibular processes fuse during facial development — lined by vermillion (red lip) and oral mucosa meeting at the commissure.",
+    derivatives: [
+      "Vermillion border transition zone",
+      "Orbicularis oris muscle fibers at lip corners",
+      "Minor salivary glands and mucocutaneous junction",
+    ],
+    functionSummary:
+      "Anatomic landmark at the mouth corners where saliva pools, lip motion is greatest, and moisture-associated dermatitis or infection commonly localizes — site of angular cheilitis and commissural candidiasis.",
+    commonPathologies: [
+      "Angular cheilitis (perlèche) — fissuring, maceration, erythema at commissures",
+      "Candida superinfection in moist commissural folds",
+      "Riboflavin (B₂) and iron deficiency — nutritional cheilosis at commissures",
+      "Herpes labialis — vesicles may involve vermillion border near commissure",
+      "Down syndrome — everted commissures (upslanting palpebral fissures are separate finding)",
+    ],
+    step1Pearls: [
+      "Labial commissure = angle of the mouth where upper and lower lips meet",
+      "Angular cheilitis localizes to commissures — B₂, iron deficiency, Candida",
+      "Saliva pooling at commissures promotes maceration and fungal overgrowth",
+      "vs philtrum — midline vertical groove of upper lip, not lateral commissure",
+      "vs vermillion border — red lip margin; commissure is the lateral junction point",
+      "Cheilosis + glossitis + corneal vascularization → riboflavin deficiency",
+    ],
+    pediatrics:
+      "Angular fissures at labial commissures in malnourished children suggest B-vitamin or iron deficiency; celiac disease and restrictive diets increase risk. Oral candidiasis in infants may extend to commissures during thrush.",
+  },
+  {
     id: "hypopharyngeal-mucosa",
     name: "Hypopharyngeal Mucosa",
     etymology:
@@ -1344,6 +1386,50 @@ export const ORGANS: OrganEntry[] = [
     germLayer: "Endoderm",
     origin:
       "Distal midgut derivative; forms the lower portion of the small intestine before the cecum.",
+  },
+  {
+    id: "terminal-ileum",
+    name: "Terminal Ileum",
+    etymology:
+      "Latin terminalis = at the end + Greek eileos = twisted gut — distal ileum just proximal to the ileocecal valve, specialized for bile acid and vitamin B12 absorption",
+    aliases: [
+      "terminal ileum",
+      "terminal ileal",
+      "distal ileum",
+      "ileal terminal segment",
+      "ileocecal ileum",
+    ],
+    germLayer: "Endoderm (mucosa) with splanchnic mesoderm (muscularis, serosa)",
+    origin:
+      "Distal segment of midgut-derived ileum forming the final portion of small intestine before the cecum — contains highest density of Peyer's patches and specialized enterocytes for bile acid and cobalamin uptake.",
+    derivatives: [
+      "Peyer patches (aggregated lymphoid follicles with M cells)",
+      "Ileal enterocytes with apical sodium-dependent bile acid transporter (ASBT)",
+      "Intrinsic factor–cobalamin absorption complex in terminal ileal mucosa",
+    ],
+    functionSummary:
+      "Reabsorbs ~95% of bile acids via enterohepatic circulation; absorbs vitamin B12 bound to intrinsic factor; participates in mucosal immunity via Peyer's patches — resection causes bile acid diarrhea, fat malabsorption, and B12 deficiency.",
+    commonPathologies: [
+      "Crohn disease — classic terminal ileitis with skip lesions",
+      "Tuberculosis — ileocecal involvement",
+      "Carcinoid tumor (serotonin-secreting)",
+      "Meckel diverticulum (~60 cm proximal to ileocecal valve)",
+      "Burkitt lymphoma — ileocecal mass in children",
+      "B12 deficiency after ileal resection or Crohn",
+      "Bile acid malabsorption diarrhea after resection",
+    ],
+    step1Pearls: [
+      "Terminal ileum = bile acid + B12 absorption site",
+      "Enterohepatic circulation — bile acids reabsorbed here via ASBT",
+      "Intrinsic factor–B12 complex absorbed only in terminal ileum",
+      "Crohn disease classically affects terminal ileum and ileocecal valve",
+      "Ileal resection → B12 deficiency + bile acid diarrhea (not steatorrhea alone)",
+      "Meckel diverticulum ~2 feet (60 cm) from ileocecal valve — rule of 2s",
+      "vs jejunum — more folate absorption proximally; terminal ileum specialized for B12/bile acids",
+      "vs colon — ileum completes nutrient absorption; colon reabsorbs water/electrolytes",
+    ],
+    pediatrics:
+      "Ileocolic intussusception and Meckel diverticulum bleeding present in children near ileocecal region. Crohn terminal ileitis may present in adolescents. Short bowel syndrome after extensive ileal resection causes growth failure, B12 deficiency, and chronic diarrhea in pediatric patients.",
   },
   {
     id: "ileocecal-valve",
@@ -4256,6 +4342,47 @@ export const ORGANS: OrganEntry[] = [
       "Medulloblastoma peaks in early childhood; Dandy-Walker and Joubert syndromes involve cerebellar vermis hypoplasia. Acute cerebellar ataxia of childhood follows viral illness — usually self-limited.",
   },
   {
+    id: "area-postrema",
+    name: "Area Postrema",
+    etymology:
+      "Latin postrema = hindmost + area = region — hindmost circumventricular structure on the dorsal medulla at the floor of the fourth ventricle",
+    aliases: [
+      "area postrema",
+      "chemoreceptor trigger zone",
+      "ctz",
+      "chemoreceptor trigger zone area postrema",
+      "ap",
+      "circumventricular organ area postrema",
+    ],
+    germLayer: "Ectoderm (neural tube — dorsal medulla alar plate)",
+    origin:
+      "Develops from the dorsal medulla at the caudal end of the fourth ventricle as one of the circumventricular organs — specialized ependymal cells and fenestrated capillaries create a blood–brain barrier–deficient zone where bloodborne molecules can access neurons.",
+    derivatives: [
+      "Chemoreceptor trigger zone (CTZ) neurons — detect bloodborne emetogenic stimuli",
+      "Connections to nucleus tractus solitarius (NTS) and vomiting center in medulla",
+      "Fenestrated capillaries permitting access of drugs and toxins from circulation",
+    ],
+    functionSummary:
+      "Circumventricular organ outside the blood–brain barrier that senses bloodborne toxins, uremia, chemotherapy agents, and drugs — triggering nausea and vomiting via projections to the nucleus tractus solitarius and medullary vomiting center; major pharmacologic target for antiemetics (5-HT₃, D₂, NK₁ antagonists).",
+    commonPathologies: [
+      "Chemotherapy-induced nausea — CTZ activation by cisplatin and other emetogenic agents",
+      "Uremic nausea in chronic kidney disease — CTZ stimulation by blood toxins",
+      "Digitalis toxicity — CTZ-mediated nausea and anorexia",
+      "Opioid-induced nausea — μ-receptor effects at CTZ",
+      "Hyperemesis gravidarum — multifactorial; CTZ is one emetic pathway",
+    ],
+    step1Pearls: [
+      "Area postrema = chemoreceptor trigger zone (CTZ) — outside blood–brain barrier",
+      "Circumventricular organ — fenestrated capillaries allow bloodborne drugs/toxins to trigger emesis",
+      "Ondansetron (5-HT₃), metoclopramide/prochlorperazine (D₂), aprepitant (NK₁) — CTZ targets",
+      "vs respiratory chemoreceptors — carotid/aortic bodies and medullary CO₂ sensors regulate ventilation, not vomiting",
+      "Motion sickness — vestibular pathway, not primary CTZ mechanism; H₁ antihistamines (meclizine, scopolamine)",
+      "Area postrema is NOT the vomiting center itself — it triggers NTS/vomiting center downstream",
+    ],
+    pediatrics:
+      "Pediatric chemotherapy antiemesis uses weight-based ondansetron targeting CTZ pathways; metoclopramide limited by EPS risk in children. Same circumventricular anatomy at all ages — explains why IV opioids and toxins cause nausea across age groups.",
+  },
+  {
     id: "lateral-pons",
     name: "Lateral Pon",
     etymology:
@@ -5680,6 +5807,50 @@ export const ORGANS: OrganEntry[] = [
       "Lamina propria over alveolar bone",
     ],
   },
+  {
+    id: "perineum",
+    name: "Perineum",
+    etymology:
+      "Greek perinaion = space around the anus — diamond-shaped anatomic region between pubic symphysis anteriorly, ischial tuberosities laterally, and coccyx posteriorly",
+    aliases: [
+      "perineum",
+      "perineal region",
+      "perineal body",
+      "urogenital triangle",
+      "anal triangle",
+      "pelvic outlet",
+    ],
+    germLayer: "Mesoderm / ectoderm (skin) with endoderm-derived urogenital structures",
+    origin:
+      "Formed at the pelvic outlet between the thighs — divided by an imaginary line between ischial tuberosities into anterior urogenital triangle (urogenital diaphragm, external genitalia) and posterior anal triangle (anal verge, ischioanal fossae); perineal body is central fibromuscular mass between vagina/scrotum and anus.",
+    derivatives: [
+      "External genitalia — vulva or scrotum/penis base",
+      "Perineal muscles — bulbospongiosus, ischiocavernosus, external anal sphincter (via pudendal innervation)",
+      "Perineal skin and fascia",
+      "Anal verge and ischioanal fossae posteriorly",
+    ],
+    functionSummary:
+      "Supports pelvic floor and pelvic viscera — contains muscles of continence (external urethral and anal sphincters), structures of sexual function, and birth canal outlet; pudendal nerve (S2–S4) provides somatic motor and sensory innervation.",
+    commonPathologies: [
+      "Obstetric perineal laceration or episiotomy — childbirth trauma",
+      "Perianal/abscess fistula — ischioanal fossa infection",
+      "Fournier gangrene — necrotizing infection of perineal soft tissues",
+      "Pudendal neuralgia — neuropathic perineal pain",
+      "Bartholin gland abscess — lateral vulvar perineum",
+      "Hemorrhoids and anal fissure — posterior perineal triangle",
+    ],
+    step1Pearls: [
+      "Perineum = diamond between pubis, ischia, coccyx — urogenital triangle anterior, anal triangle posterior",
+      "Pudendal nerve (S2–S4) — motor to external sphincters; sensory to perineum and genitalia",
+      "Pudendal block — anesthetic for childbirth perineal pain",
+      "E. coli UTI in women — ascends from perineal/rectal flora",
+      "Saddle anesthesia — S2–S4 cauda equina compression affects perineum",
+      "vs vulva — external female genitalia within anterior perineum",
+      "Perineal body — central tendon between vagina and anus; tears in delivery",
+    ],
+    pediatrics:
+      "Neonatal perineal care and diaper dermatitis affect this region. Congenital anomalies include hypospadias/epispadias (anterior perineum) and imperforate anus (posterior perineum). Straddle injuries in children may cause perineal hematoma or urethral trauma.",
+  },
 ];
 
 const ORGAN_DETAILS: Record<
@@ -6260,6 +6431,22 @@ const ORGAN_DETAILS: Record<
     ],
     pediatrics:
       "Meckel diverticulum classically causes painless lower GI bleeding in children.",
+  },
+  "terminal-ileum": {
+    functionSummary:
+      "Distal ileal segment specialized for bile acid reabsorption (enterohepatic circulation) and intrinsic factor–mediated vitamin B12 absorption; rich Peyer's patch lymphoid tissue.",
+    commonPathologies: [
+      "Terminal ileitis in Crohn disease",
+      "Ileocecal tuberculosis",
+      "Carcinoid tumor",
+      "Post-resection B12 deficiency and bile acid diarrhea",
+    ],
+    step1Pearls: [
+      "Terminal ileum — B12 + bile acids; see terminal ileum entry",
+      "ASBT reabsorbs bile acids; IF-B12 complex uptake is ileal-specific",
+    ],
+    pediatrics:
+      "Pediatric ileal disease (Crohn, resection) causes B12 deficiency and growth issues — monitor cobalamin and fat-soluble vitamin status.",
   },
   "peyer-patches": {
     functionSummary:

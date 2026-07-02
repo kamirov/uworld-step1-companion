@@ -39,6 +39,46 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "cardiac-glycosides",
+    name: "Cardiac Glycoside",
+    etymology:
+      "Greek kardia = heart + glycos = sweet + -ide = compound class — plant-derived steroids (digitalis) that inhibit the Na⁺/K⁺-ATPase in cardiac myocytes",
+    aliases: [
+      "cardiac glycoside",
+      "cardiac glycosides",
+      "digitalis",
+      "digitalis glycoside",
+      "cardiac glycoside drug",
+      "cardiac glycoside drugs",
+      "digoxin class",
+      "na+/k+-atpase inhibitor",
+    ],
+    drugClass: "Cardiac glycoside drug class",
+    mechanism:
+      "Inhibit Na⁺/K⁺-ATPase on cardiac myocytes → ↑ intracellular Na⁺ → reduced forward-mode Na⁺/Ca²⁺ exchanger (NCX) activity → ↑ intracellular Ca²⁺ → enhanced sarcomere contraction (positive inotropy); also ↑ parasympathetic (vagal) tone → slowed AV nodal conduction.",
+    indications: [
+      "Symptomatic heart failure with reduced ejection fraction (digoxin)",
+      "Rate control in atrial fibrillation/flutter (especially with concurrent heart failure)",
+      "Historical/digitalis toxicity vignettes on boards (narrow therapeutic index)",
+    ],
+    adverseEffects: [
+      "Nausea, vomiting, anorexia, abdominal pain",
+      "Visual disturbances — yellow-green halos, blurred vision, photophobia",
+      "Arrhythmias — PVCs, bradycardia, AV block, bidirectional VT, any arrhythmia in toxicity",
+      "Narrow therapeutic window — toxicity worsened by hypokalemia, hypomagnesemia, hypercalcemia, renal failure",
+    ],
+    boardsPearls: [
+      "Cardiac glycosides = digoxin, digitoxin, ouabain — Na⁺/K⁺-ATPase inhibitors",
+      "Mechanism chain: inhibit pump → ↑ Na⁺ᵢ → ↓ NCX Ca²⁺ export → ↑ Ca²⁺ᵢ → ↑ contractility",
+      "Also ↑ vagal tone → ↓ AV conduction (rate control in AF)",
+      "Hypokalemia worsens toxicity — K⁺ competes at ATPase binding site",
+      "Toxicity: GI + visual + any arrhythmia; treat with digoxin-specific Fab",
+      "WPW + AF — avoid AV nodal blockers including digoxin alone (prefer procainamide/cardioversion)",
+      "vs β-blockers/CCBs — glycosides ↑ inotropy; AV nodal agents do not increase contractility",
+      "Amiodarone, verapamil, quinidine — ↑ digoxin levels",
+    ],
+  },
+  {
     id: "loop-diuretics",
     name: "Loop Diuretic",
     etymology: "Latin di- = apart + urina = urine + Latin loop = nephron loop of Henle site of action",
@@ -4926,6 +4966,44 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "capsaicin",
+    name: "Capsaicin",
+    etymology:
+      "Latin capsa = box + -icin = compound suffix — active pungent alkaloid from Capsicum (chili pepper) peppers",
+    aliases: [
+      "capsaicin",
+      "capsaicin cream",
+      "capsaicin patch",
+      "capsaicin topical",
+      "zostrix",
+      "qutenza",
+      "trpv1 agonist",
+    ],
+    drugClass: "Topical TRPV1 agonist (neuropathic pain)",
+    mechanism:
+      "Activates transient receptor potential vanilloid 1 (TRPV1) on nociceptive C-fibers → initial depolarization and burning sensation → with repeated application, substance P depletion and defunctionalization of sensory nerve terminals → reduced pain transmission.",
+    indications: [
+      "Postherpetic neuralgia (topical cream or high-concentration patch)",
+      "Diabetic peripheral neuropathy pain (topical)",
+      "Osteoarthritis joint pain (topical adjunct)",
+    ],
+    adverseEffects: [
+      "Local burning, stinging, erythema on application (often transient)",
+      "Cough reflex if inhaled during application — caution with aerosolized capsaicin",
+      "Must wash hands after application; avoid contact with eyes and mucous membranes",
+    ],
+    boardsPearls: [
+      "Capsaicin — TRPV1 agonist; repeated use depletes substance P from nociceptors",
+      "Initial burning then analgesia — counsel patients on expected transient irritation",
+      "vs aprepitant — aprepitant blocks NK₁/substance P receptor centrally for CINV; capsaicin depletes substance P peripherally for neuropathic pain",
+      "vs gabapentin/pregabalin — systemic α2δ ligands; capsaicin is topical peripheral desensitization",
+      "vs lidocaine patch — sodium channel block; capsaicin works via TRPV1/substance P depletion",
+      "High-concentration patch (Qutenza) — single application for postherpetic neuralgia by clinician",
+    ],
+    pediatrics:
+      "Topical capsaicin is primarily used in adults for neuropathic pain; pediatric neuropathic pain more often managed with gabapentinoids or amitriptyline per specialist guidance.",
+  },
+  {
     id: "pregabalin",
     name: "Pregabalin",
     etymology: "pre- = before + gaba- from GABA analog parent + -lin = drug suffix",
@@ -5293,6 +5371,48 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Avoid in third trimester and near term (kernicterus risk)",
       "Classic cause of hyperkalemia in elderly",
       "Increase warfarin effect",
+    ],
+  },
+  {
+    id: "sulfamethoxazole",
+    name: "Sulfamethoxazole",
+    etymology:
+      "sulfa = sulfonamide pharmacophore + methoxy = OCH₃ substituent + oxazole = five-membered heterocycle containing N and O — sulfonamide antibiotic combined with trimethoprim as TMP-SMX",
+    aliases: [
+      "sulfamethoxazole",
+      "sulphamethoxazole",
+      "methoxazole",
+      "smx",
+      "sulfamethoxazole antibiotic",
+      "sulfamethoxazole drug",
+    ],
+    drugClass: "Sulfonamide antibacterial (dihydropteroate synthase inhibitor)",
+    mechanism:
+      "Structural analog of para-aminobenzoic acid (PABA) → competitive inhibition of bacterial dihydropteroate synthase → blocks synthesis of dihydropteroic acid and downstream tetrahydrofolate → impairs bacterial DNA and RNA production; human cells use dietary folate rather than de novo synthesis, providing selective bacterial toxicity.",
+    indications: [
+      "Uncomplicated UTI — almost always prescribed with trimethoprim as TMP-SMX (Bactrim, Septra)",
+      "Pneumocystis jirovecii pneumonia — with trimethoprim (TMP-SMX is first-line treatment and prophylaxis)",
+      "Nocardia infections — TMP-SMX or sulfonamide-based regimens",
+      "Toxoplasmosis — sulfadiazine preferred historically; TMP-SMX used in some prophylaxis contexts",
+      "MRSA skin infections — TMP-SMX combination in community settings",
+    ],
+    adverseEffects: [
+      "Hypersensitivity rash — Stevens-Johnson syndrome / toxic epidermal necrolysis",
+      "Hemolytic anemia in G6PD deficiency",
+      "Kernicterus risk in neonates and third-trimester pregnancy (displaces bilirubin from albumin)",
+      "Crystalluria and nephrotoxicity — maintain hydration",
+      "Megaloblastic anemia when combined with trimethoprim (dual folate pathway blockade)",
+      "Hyperkalemia when combined with trimethoprim (TMP blocks ENaC in collecting duct)",
+    ],
+    boardsPearls: [
+      "Sulfamethoxazole = sulfa component of TMP-SMX — inhibits dihydropteroate synthase (PABA analog)",
+      "TMP-SMX = sequential folate blockade: SMX (dihydropteroate synthase) + trimethoprim (DHFR)",
+      "Avoid in third trimester and neonates — kernicterus from bilirubin displacement",
+      "G6PD deficiency → sulfonamide hemolytic anemia",
+      "Nocardia — weakly acid-fast branching filaments; sulfonamide/TMP-SMX treatment",
+      "vs trimethoprim alone — SMX blocks upstream folate step; combination synergistic",
+      "vs sulfasalazine — same sulfonamide class but used for IBD, not primarily as antibiotic",
+      "Mnemonic: Sulfa Stops folate Synthesis at dihydropteroate synthase",
     ],
   },
   {
@@ -5670,6 +5790,7 @@ export const MEDICATIONS: MedicationEntry[] = [
       "empagliflozin",
       "dapagliflozin",
       "canagliflozin",
+      "ertugliflozin",
     ],
     drugClass: "SGLT2 inhibitor (gliflozin) class",
     mechanism:
@@ -5687,7 +5808,7 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Fournier gangrene (rare)",
     ],
     boardsPearls: [
-      "Gliflozins — empagliflozin, dapagliflozin, canagliflozin",
+      "Gliflozins — empagliflozin, dapagliflozin, canagliflozin, ertugliflozin",
       "Act at proximal tubule SGLT2 → glucosuria; do not cause hypoglycemia alone",
       "HFrEF and CKD mortality/renal benefit beyond glycemic control",
       "Euglycemic DKA risk — hold perioperatively; ensure insulin not stopped abruptly in T1DM",
@@ -8934,6 +9055,12 @@ export const MEDICATIONS: MedicationEntry[] = [
       "antifungal medication",
       "antifungal therapy",
       "systemic antifungal",
+      "antimycotic",
+      "antimycotic agent",
+      "antimycotic drug",
+      "antimycotic therapy",
+      "antimycotic medication",
+      "antimycotics",
     ],
     drugClass: "Antifungal drug class (multiple mechanistic subclasses)",
     mechanism:
@@ -8962,6 +9089,44 @@ export const MEDICATIONS: MedicationEntry[] = [
       "vs antibiotics — bacteria lack nucleus/ergosterol; antifungals exploit eukaryotic fungal differences",
       "Immunocompromised (HIV, neutropenia) — need systemic antifungals for invasive disease",
       "Mnemonic: Antifungals Attack ergosterol And glucan — fungal Achilles heels",
+      "Antimycotic = antifungal — same drug class (European/lab synonym)",
+    ],
+  },
+  {
+    id: "fluconazole",
+    name: "Fluconazole",
+    etymology:
+      "flu- (triazole scaffold prefix) + -conazole = azole antifungal suffix — triazole that inhibits fungal ergosterol synthesis",
+    aliases: [
+      "fluconazole",
+      "diflucan",
+      "triazole antifungal fluconazole",
+    ],
+    drugClass: "Triazole antifungal (azole)",
+    mechanism:
+      "Inhibits fungal cytochrome P450 lanosterol 14α-demethylase (CYP51) → blocks ergosterol synthesis → disrupts fungal cell membrane — fungistatic at standard doses; well absorbed orally with excellent CNS penetration compared with many azoles.",
+    indications: [
+      "Candidiasis — esophageal, vulvovaginal, and invasive (mild-moderate; echinocandin if severe or azole-resistant)",
+      "Cryptococcal meningitis — maintenance/consolidation after amphotericin B + flucytosine induction",
+      "Coccidioidomycosis — especially meningitis (lifelong therapy)",
+      "Prophylaxis in select high-risk neutropenia (resistance concerns with routine use)",
+    ],
+    adverseEffects: [
+      "Hepatotoxicity (monitor LFTs)",
+      "QT prolongation (usually less than itraconazole/voriconazole)",
+      "GI upset, headache",
+      "CYP450 inhibition — ↑ levels of warfarin, phenytoin, and other substrates (CYP2C9, CYP3A4)",
+      "Teratogenic — avoid in pregnancy",
+    ],
+    boardsPearls: [
+      "Fluconazole — azole; inhibits fungal ergosterol synthesis (CYP51)",
+      "Good yeast coverage (Candida, cryptococcal maintenance); poor mold coverage (NOT aspergillosis first-line)",
+      "Crypto meningitis: ampho B + flucytosine induction → fluconazole maintenance",
+      "Inhibits human CYP450 — ↑ warfarin INR (CYP2C9); classic drug interaction",
+      "vs amphotericin B — fluconazole oral, less nephrotoxic; ampho B for severe induction",
+      "vs voriconazole — voriconazole for invasive aspergillosis; fluconazole mainly yeasts",
+      "vs nystatin — nystatin topical/oral superficial Candida only; fluconazole systemic",
+      "Mucormycosis — azoles ineffective; use amphotericin B",
     ],
   },
   {
@@ -9524,6 +9689,50 @@ export const MEDICATIONS: MedicationEntry[] = [
       "ANCA vasculitis induction — alternative to rituximab",
       "Teratogenic — contraception mandatory during and after therapy",
       "Peds: used in severe pediatric vasculitis and nephritis; same hemorrhagic cystitis prevention",
+    ],
+  },
+  {
+    id: "alkylating-agents",
+    name: "Alkylating Agent",
+    etymology:
+      "alkyl = hydrocarbon radical + -ating = forming + agent = substance — class of drugs that donate alkyl groups to DNA, forming covalent cross-links that prevent replication",
+    aliases: [
+      "alkylating agent",
+      "alkylating agents",
+      "alkylating chemotherapy",
+      "alkylating drug",
+      "alkylating drugs",
+      "dna alkylating agent",
+      "nitrogen mustard",
+      "nitrogen mustards",
+    ],
+    drugClass: "Alkylating agent drug class (anticancer / immunosuppressant)",
+    mechanism:
+      "Transfer alkyl groups to DNA bases (especially guanine N7) → intrastrand and interstrand cross-links → block DNA replication and transcription — cell cycle–nonspecific cytotoxicity; at lower doses suppress lymphocyte proliferation (immunosuppression).",
+    indications: [
+      "Lymphomas and leukemias (cyclophosphamide, ifosfamide, bendamustine)",
+      "Solid tumors (cyclophosphamide, temozolomide for brain tumors)",
+      "ANCA-associated vasculitis and severe lupus nephritis (cyclophosphamide induction)",
+      "Bone marrow ablation before stem cell transplant (busulfan, cyclophosphamide)",
+      "CNS tumors — nitrosoureas (carmustine, lomustine) cross blood–brain barrier",
+    ],
+    adverseEffects: [
+      "Myelosuppression — dose-limiting for most agents",
+      "Hemorrhagic cystitis — cyclophosphamide/ifosfamide (acrolein metabolite; prevent with mesna + hydration)",
+      "Infertility and teratogenicity — alkylate germ cells and developing fetus",
+      "Secondary malignancies (AML, bladder cancer) — especially with prolonged exposure",
+      "Pulmonary fibrosis — busulfan; nausea — common class effect",
+      "SIADH — cyclophosphamide",
+    ],
+    boardsPearls: [
+      "Alkylating agents cross-link DNA — cell cycle NONSPECIFIC (work in all phases)",
+      "Cyclophosphamide/ifosfamide — hemorrhagic cystitis; mesna + high urine output prevent acrolein injury",
+      "Nitrosoureas (carmustine, lomustine) — cross BBB for CNS tumors",
+      "Busulfan — bone marrow transplant conditioning; pulmonary fibrosis risk",
+      "vs antimetabolites — antimetabolites are S-phase specific; alkylators are nonspecific",
+      "vs platinum agents — platinum forms DNA adducts; often grouped separately but similar DNA damage concept",
+      "Teratogenic — contraception required during therapy",
+      "ANCA vasculitis — cyclophosphamide or rituximab for induction",
     ],
   },
   {
@@ -10113,6 +10322,144 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "aprepitant",
+    name: "Aprepitant",
+    etymology:
+      "a- = antagonist + prep- = substance P–related naming element + -pitant = NK₁ antagonist suffix (fosaprepitant = IV prodrug)",
+    aliases: [
+      "aprepitant",
+      "emend",
+      "nk1 antagonist",
+      "nk-1 antagonist",
+      "substance p antagonist",
+      "neurokinin 1 antagonist",
+    ],
+    drugClass: "NK₁ receptor antagonist (antiemetic)",
+    mechanism:
+      "Selective neurokinin-1 (NK₁) receptor antagonist → blocks substance P at the chemoreceptor trigger zone and vomiting center → prevents delayed-phase chemotherapy-induced nausea and vomiting.",
+    indications: [
+      "Highly and moderately emetogenic chemotherapy — combined with 5-HT₃ antagonist and dexamethasone",
+      "Delayed-phase chemotherapy-induced nausea and vomiting (primary NK₁ role)",
+      "Postoperative nausea and vomiting (selected regimens)",
+    ],
+    adverseEffects: [
+      "Fatigue, hiccups, dizziness",
+      "Drug interactions — CYP3A4 substrate and moderate inhibitor (affects warfarin, oral contraceptives, some chemotherapies)",
+      "Headache, diarrhea",
+    ],
+    boardsPearls: [
+      "Aprepitant — NK₁ antagonist; blocks substance P at CTZ for delayed CINV",
+      "Triple antiemetic for highly emetogenic chemo: aprepitant + ondansetron + dexamethasone",
+      "NK₁ antagonists target delayed-phase emesis; 5-HT₃ antagonists target acute phase",
+      "vs ondansetron — 5-HT₃ block (acute CINV); aprepitant is NK₁/substance P block (delayed phase)",
+      "vs metoclopramide — D₂ prokinetic antiemetic with EPS risk; aprepitant no D₂ block",
+      "CYP3A4 interactions — check concomitant medications",
+      "vs fosaprepitant — oral aprepitant; fosaprepitant is IV prodrug",
+      "vs rolapitant/netupitant — other NK₁ antagonists with longer half-life or combination formulations",
+    ],
+    pediatrics:
+      "Weight-based aprepitant dosing used in pediatric chemotherapy antiemetic regimens; combine with ondansetron and dexamethasone per oncology protocols.",
+  },
+  {
+    id: "fosaprepitant",
+    name: "Fosaprepitant",
+    etymology:
+      "fos- = phosphono (phosphate) prodrug prefix + aprepitant — IV phosphorylated prodrug converted to active aprepitant by phosphatases",
+    aliases: [
+      "fosaprepitant",
+      "emend iv",
+      "iv aprepitant",
+      "fosaprepitant dimeglumine",
+    ],
+    drugClass: "NK₁ receptor antagonist prodrug (antiemetic)",
+    mechanism:
+      "IV prodrug rapidly converted to aprepitant after administration → selective NK₁ receptor antagonism → blocks substance P at chemoreceptor trigger zone and vomiting center → prevents delayed-phase chemotherapy-induced nausea and vomiting.",
+    indications: [
+      "Highly and moderately emetogenic chemotherapy when IV administration preferred",
+      "Delayed-phase chemotherapy-induced nausea and vomiting (same NK₁ mechanism as oral aprepitant)",
+      "Substitute for oral aprepitant on day 1 of antiemetic regimens",
+    ],
+    adverseEffects: [
+      "Same class effects as aprepitant — fatigue, hiccups, headache, dizziness",
+      "Infusion-site reactions (phlebitis, pain) with IV administration",
+      "CYP3A4 substrate/inhibitor interactions — warfarin, oral contraceptives, some chemotherapies",
+    ],
+    boardsPearls: [
+      "Fosaprepitant — IV prodrug converted to aprepitant; same NK₁/substance P mechanism",
+      "Used when oral aprepitant not feasible on chemotherapy day 1",
+      "Triple antiemetic: fosaprepitant/aprepitant + ondansetron + dexamethasone for highly emetogenic chemo",
+      "vs aprepitant — fosaprepitant IV prodrug; aprepitant oral active drug",
+      "Delayed-phase CINV — NK₁ antagonist class effect (not 5-HT₃ acute phase)",
+    ],
+    pediatrics:
+      "IV NK₁ prodrug used in pediatric oncology protocols when oral intake unreliable; same substance P blockade as aprepitant with weight-based dosing per regimen.",
+  },
+  {
+    id: "rolapitant",
+    name: "Rolapitant",
+    etymology:
+      "rola- = rolapitant stem + -pitant = NK₁ antagonist suffix — long-acting neurokinin-1 receptor antagonist",
+    aliases: [
+      "rolapitant",
+      "varubi",
+      "rolapitant hydrochloride",
+    ],
+    drugClass: "NK₁ receptor antagonist (antiemetic)",
+    mechanism:
+      "Selective NK₁ receptor antagonist with long half-life (~7 days) → blocks substance P at CTZ and vomiting center → prevents delayed-phase chemotherapy-induced nausea and vomiting over multiple days from a single dose.",
+    indications: [
+      "Highly and moderately emetogenic chemotherapy — combined with 5-HT₃ antagonist and dexamethasone",
+      "Delayed-phase chemotherapy-induced nausea and vomiting",
+    ],
+    adverseEffects: [
+      "Fatigue, hiccups, decreased appetite",
+      "Headache, dizziness",
+      "CYP2D6 substrate — drug interaction considerations",
+    ],
+    boardsPearls: [
+      "Rolapitant — NK₁ antagonist; long half-life allows single-dose delayed CINV prophylaxis",
+      "Same class as aprepitant — blocks substance P, not 5-HT₃ or D₂",
+      "Varubi = rolapitant brand",
+      "vs ondansetron — acute-phase 5-HT₃ block; rolapitant targets delayed NK₁-mediated emesis",
+      "vs aprepitant — both NK₁ antagonists; rolapitant distinguished by prolonged duration",
+    ],
+    pediatrics:
+      "Primarily studied in adult chemotherapy regimens; pediatric CINV more commonly uses aprepitant or ondansetron per oncology protocols.",
+  },
+  {
+    id: "netupitant",
+    name: "Netupitant",
+    etymology:
+      "netu- = netupitant stem + -pitant = NK₁ antagonist suffix — NK₁ antagonist often combined with palonosetron",
+    aliases: [
+      "netupitant",
+      "akynzeo",
+      "netupitant palonosetron",
+      "netupitant-palonosetron",
+    ],
+    drugClass: "NK₁ receptor antagonist (antiemetic)",
+    mechanism:
+      "Selective NK₁ receptor antagonist → blocks substance P at chemoreceptor trigger zone and vomiting center for delayed-phase emesis; fixed-dose combination with palonosetron (5-HT₃ antagonist) provides dual antiemetic mechanism in one capsule.",
+    indications: [
+      "Highly and moderately emetogenic chemotherapy — netupitant/palonosetron combination (Akynzeo)",
+      "Delayed-phase chemotherapy-induced nausea and vomiting (NK₁ component)",
+    ],
+    adverseEffects: [
+      "Fatigue, headache, constipation",
+      "Palonosetron component — headache, constipation, QT prolongation risk (class effect)",
+      "CYP3A4 interactions — similar considerations as aprepitant class",
+    ],
+    boardsPearls: [
+      "Netupitant — NK₁ antagonist; often paired with palonosetron in Akynzeo",
+      "Combination covers NK₁ (delayed) + 5-HT₃ (acute/extended) pathways in one dose",
+      "vs aprepitant + ondansetron — same dual-pathway concept, different drug pairing",
+      "Substance P block at CTZ — class effect of all -pitant drugs",
+      "Delayed-phase CINV — NK₁ antagonist role identical to aprepitant class",
+    ],
+    pediatrics:
+      "Adult chemotherapy combination product; pediatric antiemesis typically uses separate weight-based ondansetron and aprepitant rather than fixed netupitant/palonosetron capsules.",
+  },
+  {
     id: "metoclopramide",
     name: "Metoclopramide",
     etymology: "meto- = substituted benzamide naming element + -clopramide = prokinetic/antiemetic suffix",
@@ -10144,6 +10491,115 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
     pediatrics:
       "EPS/dystonia risk in children — use lowest effective dose and shortest duration; diphenhydramine treats acute dystonic reaction.",
+  },
+  {
+    id: "domperidone",
+    name: "Domperidone",
+    etymology:
+      "dom- = domperidone stem + -peridone = benzimidazole dopamine antagonist suffix — peripheral D₂ antagonist prokinetic",
+    aliases: [
+      "domperidone",
+      "motilium",
+    ],
+    drugClass: "Prokinetic / antiemetic (peripheral D₂ antagonist)",
+    mechanism:
+      "Peripheral dopamine D₂ receptor antagonism in the gut and chemoreceptor trigger zone → ↑ gastric emptying and coordinated upper GI motility with minimal blood–brain barrier penetration → less central EPS than metoclopramide; still can cause hyperprolactinemia (pituitary lactotrophs outside BBB).",
+    indications: [
+      "Gastroparesis and delayed gastric emptying",
+      "Nausea and vomiting (especially when CNS side effects of metoclopramide are limiting)",
+      "Functional dyspepsia with delayed emptying (selected cases)",
+    ],
+    adverseEffects: [
+      "Hyperprolactinemia — galactorrhea, amenorrhea, gynecomastia",
+      "QT prolongation and arrhythmia risk (especially with CYP3A4 inhibitors)",
+      "Headache, dry mouth",
+      "Less EPS than metoclopramide due to poor CNS penetration",
+    ],
+    boardsPearls: [
+      "Domperidone — peripheral D₂ antagonist prokinetic; does not cross BBB well → less EPS than metoclopramide",
+      "Still causes galactorrhea — pituitary is outside BBB",
+      "vs metoclopramide — domperidone less CNS penetration and EPS; both prokinetic D₂ blockers",
+      "QT prolongation — avoid with QT-prolonging drugs and strong CYP3A4 inhibitors",
+      "Contraindicated in GI obstruction — same as other prokinetics",
+      "Not FDA-approved in US but high-yield boards comparison to metoclopramide",
+    ],
+    pediatrics:
+      "Used cautiously for pediatric gastroparesis in some settings; QT monitoring important. Prefer ondansetron for chemotherapy nausea when prokinetic not needed; domperidone chosen when prokinetic effect desired with lower EPS risk than metoclopramide.",
+  },
+  {
+    id: "prucalopride",
+    name: "Prucalopride",
+    etymology:
+      "pruca- = prucalopride stem + -lopride = benzofuran carboxamide prokinetic suffix — selective 5-HT₄ agonist",
+    aliases: [
+      "prucalopride",
+      "resolor",
+      "motegrity",
+    ],
+    drugClass: "Prokinetic (selective 5-HT₄ receptor agonist)",
+    mechanism:
+      "Selective serotonin 5-HT₄ receptor agonism on enteric neurons → ↑ acetylcholine release from myenteric plexus → enhanced colonic peristalsis and transit; prokinetic effect primarily on lower GI tract.",
+    indications: [
+      "Chronic idiopathic constipation (inadequate response to laxatives)",
+      "Selected motility disorders with slow colonic transit",
+    ],
+    adverseEffects: [
+      "Headache, abdominal pain, nausea, diarrhea",
+      "Fatigue, dizziness",
+      "Lower cardiovascular risk than withdrawn older 5-HT₄ agonists (cisapride, tegaserod) but still use caution",
+    ],
+    boardsPearls: [
+      "Prucalopride — selective 5-HT₄ agonist prokinetic for chronic constipation",
+      "5-HT₄ agonism → ↑ ACh release from enteric neurons → ↑ colonic motility",
+      "vs metoclopramide/domperidone — D₂ antagonists with upper GI prokinetic effect; prucalopride targets colonic transit",
+      "vs osmotic/bulk laxatives — prucalopride ↑ coordinated motility; fiber/PEG change stool water/bulk",
+      "Cisapride/tegaserod withdrawn — QT/cardiac concerns; prucalopride more selective with better safety profile",
+      "Contraindicated in intestinal obstruction, perforation, and severe inflammatory bowel disease",
+    ],
+    pediatrics:
+      "Primarily studied in adults for chronic idiopathic constipation; pediatric chronic constipation usually managed with fiber, fluids, and polyethylene glycol before prokinetic agents.",
+  },
+  {
+    id: "prokinetics",
+    name: "Prokinetic",
+    etymology:
+      "Greek pro- = forward + kinēsis = movement — drugs that enhance coordinated gastrointestinal motility and gastric emptying",
+    aliases: [
+      "prokinetic",
+      "prokinetics",
+      "prokinetic drug",
+      "prokinetic agent",
+      "prokinetic drugs",
+      "prokinetic medication",
+      "gi prokinetic",
+      "gastrointestinal prokinetic",
+    ],
+    drugClass: "Prokinetic drug class",
+    mechanism:
+      "Enhance coordinated GI motility via dopamine D₂ antagonism (metoclopramide, domperidone), motilin receptor agonism (erythromycin), or selective 5-HT₄ agonism (prucalopride) → ↑ gastric emptying, LES tone, and/or colonic transit depending on agent.",
+    indications: [
+      "Gastroparesis and delayed gastric emptying (especially diabetic)",
+      "Functional dyspepsia with delayed emptying",
+      "Chronic idiopathic constipation refractory to laxatives (prucalopride)",
+      "Postoperative ileus and acute colonic pseudo-obstruction (neostigmine — specialized use)",
+      "Nausea and vomiting when prokinetic effect desired (metoclopramide, domperidone)",
+    ],
+    adverseEffects: [
+      "D₂ antagonists — EPS, tardive dyskinesia (metoclopramide), galactorrhea, hyperprolactinemia",
+      "Domperidone — QT prolongation; less EPS than metoclopramide (poor BBB penetration)",
+      "Erythromycin — motilin agonist prokinetic at low dose; antibiotic effects and QT prolongation at full dose",
+      "Prucalopride — headache, diarrhea, abdominal pain",
+    ],
+    boardsPearls: [
+      "Prokinetics ↑ GI motility — distinct from antiemetics without motility effect (ondansetron)",
+      "Metoclopramide — D₂ antagonist; antiemetic + prokinetic; EPS and tardive dyskinesia limit duration",
+      "Domperidone — peripheral D₂ antagonist; less EPS; galactorrhea still possible",
+      "Erythromycin — motilin receptor agonist at low doses for gastroparesis",
+      "Prucalopride — 5-HT₄ agonist for chronic constipation",
+      "Contraindicated in GI obstruction — can worsen obstruction/perforation",
+      "vs laxatives — prokinetics ↑ coordinated motility; osmotic/bulk agents change stool water/bulk",
+      "vs antimotility agents (loperamide) — opposite effect on intestinal transit",
+    ],
   },
   {
     id: "antitussive-agent",
@@ -10589,6 +11045,41 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "meclizine",
+    name: "Meclizine",
+    etymology:
+      "me- = methyl + -clizine = piperazine antihistamine suffix — first-generation H1 antihistamine with antiemetic activity",
+    aliases: [
+      "meclizine",
+      "meclizine hcl",
+      "meclizine hydrochloride",
+      "bonine",
+      "antivert",
+      "dramamine less drowsy",
+    ],
+    drugClass: "First-generation H1 antihistamine (antiemetic / antivertigo)",
+    mechanism:
+      "Competitive H1 receptor antagonist with anticholinergic (antimuscarinic) activity → blocks vestibular input to the vomiting center and reduces motion-induced nausea; central sedative effect less pronounced than diphenhydramine or dimenhydrinate.",
+    indications: [
+      "Motion sickness prophylaxis and treatment",
+      "Vestibular vertigo (Ménière disease, labyrinthitis)",
+      "Nausea associated with vestibular disorders",
+    ],
+    adverseEffects: [
+      "Mild sedation and drowsiness (less than diphenhydramine)",
+      "Anticholinergic effects — dry mouth, blurred vision, urinary retention, constipation",
+      "Caution in elderly (Beers criteria anticholinergic burden), glaucoma, and BPH",
+    ],
+    boardsPearls: [
+      "H1 antihistamine for motion sickness and vertigo — blocks vestibular pathway, not CTZ 5-HT₃",
+      "vs ondansetron — meclizine for vestibular/motion sickness; ondansetron for chemotherapy CTZ/vagal emesis",
+      "vs scopolamine — both antimuscarinic vestibular antiemetics; scopolamine is transdermal patch",
+      "vs promethazine — meclizine less sedating; promethazine has more D₂ and EPS risk",
+      "Less sedating than diphenhydramine/dimenhydrinate — OTC motion sickness option (Bonine)",
+      "Peds: used for motion sickness in older children; weight-based dosing; anticholinergic caution as with other first-generation H1 blockers",
+    ],
+  },
+  {
     id: "psyllium",
     name: "Psyllium",
     etymology:
@@ -10625,6 +11116,47 @@ export const MEDICATIONS: MedicationEntry[] = [
       "vs stimulant laxatives (senna, bisacodyl) — psyllium is bulk-forming, gentler for maintenance",
       "Inadequate fluid with psyllium → bezoar/obstruction risk",
       "Modest LDL reduction — soluble fiber mechanism",
+    ],
+  },
+  {
+    id: "cathartic-agents",
+    name: "Cathartic Agent",
+    etymology:
+      "Greek kathairein = to cleanse/purge + agent = substance — drug that promotes rapid bowel evacuation by increasing stool water, bulk, or colonic motility",
+    aliases: [
+      "cathartic agent",
+      "cathartic",
+      "cathartics",
+      "cathartic drug",
+      "cathartic drugs",
+      "cathartic laxative",
+      "bowel cathartic",
+      "purgative",
+    ],
+    drugClass: "Cathartic / laxative drug class",
+    mechanism:
+      "Accelerate bowel evacuation through osmotic water retention in the lumen (magnesium citrate, sodium phosphate, PEG), direct colonic stimulation (bisacodyl, senna), or bulk distention (psyllium) — cathartic often implies more vigorous or rapid evacuation than gentle maintenance laxatives.",
+    indications: [
+      "Bowel preparation before colonoscopy or surgery",
+      "Acute constipation requiring prompt evacuation",
+      "Drug overdose decontamination (selected agents — e.g., whole-bowel irrigation with PEG in some poisonings)",
+      "Opioid-induced constipation (adjunct regimen with stool softener/osmotic agent)",
+    ],
+    adverseEffects: [
+      "Diarrhea, abdominal cramping, dehydration",
+      "Electrolyte disturbances — hypokalemia, hypermagnesemia (magnesium cathartics), hyperphosphatemia (phosphate enemas)",
+      "Dependency with chronic stimulant cathartic overuse",
+      "Contraindicated in bowel obstruction, toxic megacolon, and acute surgical abdomen",
+    ],
+    boardsPearls: [
+      "Cathartic = drug promoting bowel evacuation — overlaps with laxatives; often implies stronger/prompt effect",
+      "Osmotic cathartics — Mg citrate, PEG, lactulose; retain water in lumen",
+      "Stimulant cathartics — bisacodyl, senna; ↑ colonic motility",
+      "Bulk cathartics — psyllium; gentler, needs water",
+      "Bowel prep — PEG-electrolyte solution (GoLYTELY) for colonoscopy",
+      "vs antiemetics/prokinetics — cathartics evacuate bowel; do not treat nausea via CTZ",
+      "Chronic stimulant cathartic abuse → melanosis coli, dependency",
+      "Magnesium cathartics contraindicated in renal failure — hypermagnesemia",
     ],
   },
   {
@@ -10962,6 +11494,7 @@ export const MEDICATIONS: MedicationEntry[] = [
     boardsPearls: [
       "INH depletes B6 → peripheral neuropathy — always give pyridoxine with isoniazid",
       "PLP cofactor for transaminases, decarboxylases, and ALA synthase (heme synthesis)",
+      "PLP = pyridoxal phosphate — active B6 coenzyme; see PLP metabolism entry",
       "Isoniazid overdose treated with pyridoxine (replenishes depleted B6)",
       "Pyridoxine-dependent epilepsy — seizures respond to B6, not standard anticonvulsants alone",
       "vs thiamine (B1) — Wernicke; vs B12 — subacute combined degeneration",
@@ -11790,6 +12323,45 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Onset ~6–12 h — often given at bedtime",
       "Chronic stimulant laxative use → melanosis coli on colonoscopy",
     ],
+  },
+  {
+    id: "bisacodyl",
+    name: "Bisacodyl",
+    etymology:
+      "bis- = two + acetyl + -oxyl + -yl diphenylmethane laxative stem — diphenylmethane stimulant laxative (Dulcolax)",
+    aliases: [
+      "bisacodyl",
+      "dulcolax",
+      "bisacodyl laxative",
+      "stimulant laxative bisacodyl",
+      "bisacodyl suppository",
+      "bisacodyl tablet",
+    ],
+    drugClass: "Stimulant laxative (diphenylmethane derivative)",
+    mechanism:
+      "Direct stimulation of colonic myenteric plexus and inhibition of water/electrolyte absorption in colon → ↑ peristalsis and stool water content; oral enteric-coated tablets resist gastric acid and act in colon; rectal suppository acts locally with faster onset.",
+    indications: [
+      "Acute constipation",
+      "Bowel preparation before colonoscopy or surgery (with other agents)",
+      "Opioid-induced constipation regimen (adjunct to stool softener/osmotic laxative)",
+    ],
+    adverseEffects: [
+      "Abdominal cramping and diarrhea",
+      "Hypokalemia with chronic overuse",
+      "Rectal irritation with suppository use",
+      "Dependency with chronic stimulant laxative overuse",
+    ],
+    boardsPearls: [
+      "Dulcolax = bisacodyl — stimulant laxative; direct colonic nerve stimulation",
+      "vs senna — both stimulant; senna requires colonic bacterial activation of sennosides; bisacodyl acts directly",
+      "vs PEG/Miralax — osmotic laxative preferred for pediatric maintenance constipation",
+      "vs psyllium — bulk-forming fiber, gentler for long-term use",
+      "Oral onset ~6–12 h; rectal suppository faster (~15–60 min)",
+      "Enteric-coated — do not crush/chew (gastric irritation)",
+      "Chronic stimulant laxative overuse → dependency; use fiber/PEG first when possible",
+    ],
+    pediatrics:
+      "Stimulant laxatives used short-term in pediatric constipation when osmotic agents (PEG) and fiber insufficient; bisacodyl rectal suppository occasionally used for disimpaction under guidance — PEG remains first-line maintenance.",
   },
   {
     id: "sevoflurane",
@@ -12628,6 +13200,134 @@ export const MEDICATIONS: MedicationEntry[] = [
     ],
   },
   {
+    id: "acarbose",
+    name: "Acarbose",
+    etymology:
+      "a- = inhibitory prefix + carbo- = carbohydrate + -ose sugar suffix — oligosaccharide that inhibits intestinal carbohydrate-digesting enzymes",
+    aliases: ["acarbose", "precose", "glucobay"],
+    drugClass: "α-Glucosidase inhibitor",
+    mechanism:
+      "Reversible inhibition of brush-border α-glucosidases in the small intestine → delays hydrolysis and absorption of complex carbohydrates and disaccharides → blunts postprandial glucose excursion without increasing insulin secretion.",
+    indications: [
+      "Type 2 diabetes mellitus — adjunct to diet (often combined with metformin or sulfonylureas)",
+      "Postprandial hyperglycemia control when other agents insufficient or as add-on",
+    ],
+    adverseEffects: [
+      "Flatulence, bloating, abdominal cramping, diarrhea (most common — osmotic from undigested carbs in colon)",
+      "Elevated transaminases (rare)",
+      "Does not cause hypoglycemia as monotherapy",
+      "If hypoglycemia occurs on combination therapy — treat with glucose (not sucrose; acarbose blocks sucrose breakdown)",
+    ],
+    boardsPearls: [
+      "α-Glucosidase inhibitor — delays carb absorption in gut; take with first bite of meals",
+      "No hypoglycemia alone — does not ↑ insulin",
+      "GI side effects (gas, diarrhea) are classic",
+      "Hypoglycemia rescue = glucose tablets, not table sugar (sucrose)",
+      "vs metformin — acarbose acts in intestine; metformin ↓ hepatic gluconeogenesis",
+      "vs sulfonylureas — no insulin secretion; no hypoglycemia risk as monotherapy",
+    ],
+  },
+  {
+    id: "glyburide",
+    name: "Glyburide",
+    etymology:
+      "gly- = glucose-related + bur- (sulfonylurea stem) + -ide = drug suffix — second-generation sulfonylurea insulin secretagogue",
+    aliases: [
+      "glyburide",
+      "glibenclamide",
+      "diabeta",
+      "micronase",
+    ],
+    drugClass: "Sulfonylurea (second generation)",
+    mechanism:
+      "Binds sulfonylurea receptor (SUR1) subunit of pancreatic β-cell ATP-sensitive K⁺ (K_ATP) channels → channel closure → membrane depolarization → Ca²⁺ influx → insulin granule exocytosis — increases insulin release independent of meals.",
+    indications: [
+      "Type 2 diabetes mellitus when diet and metformin insufficient",
+      "Historically used as oral hypoglycemic before newer agents; still appears on boards",
+    ],
+    adverseEffects: [
+      "Hypoglycemia — prolonged and severe (especially elderly, renal impairment, skipped meals, alcohol)",
+      "Weight gain",
+      "Cholestatic jaundice (rare)",
+      "SIADH/hyponatremia (rare)",
+      "Higher hypoglycemia risk than glipizide among sulfonylureas",
+    ],
+    boardsPearls: [
+      "Sulfonylurea — closes β-cell K_ATP channel → ↑ insulin release",
+      "Glyburide = high hypoglycemia risk among sulfonylureas (long action, active metabolites)",
+      "Hypoglycemia risk: glyburide > glipizide",
+      "Contraindicated caution in renal failure and elderly",
+      "vs metformin — sulfonylureas secrete insulin; can cause hypoglycemia and weight gain",
+      "vs meglitinides (repaglinide) — sulfonylureas longer acting; meglitinides pre-meal shorter burst",
+      "Type 1 DM — ineffective without endogenous insulin reserve",
+    ],
+  },
+  {
+    id: "pioglitazone",
+    name: "Pioglitazone",
+    etymology:
+      "pio- (proprietary stem) + glitazone = glu(cose) + t(h)ia(zolidinedione) class suffix — thiazolidinedione PPARγ agonist",
+    aliases: [
+      "pioglitazone",
+      "actos",
+      "pio",
+    ],
+    drugClass: "Thiazolidinedione (TZD / glitazone)",
+    mechanism:
+      "Selective agonist of peroxisome proliferator-activated receptor γ (PPARγ) in adipose tissue and liver → ↑ insulin sensitivity, ↑ adipocyte differentiation (peripheral fat storage), and altered adipokine signaling — does not directly stimulate insulin secretion.",
+    indications: [
+      "Type 2 diabetes mellitus — adjunct when metformin alone insufficient",
+      "Often combined with metformin or sulfonylureas (historical combinations)",
+    ],
+    adverseEffects: [
+      "Fluid retention, peripheral edema, and heart failure exacerbation",
+      "Weight gain (adipogenesis)",
+      "Increased fracture risk in women",
+      "Hepatotoxicity (monitor LFTs)",
+      "Possible ↑ bladder cancer risk debated (rosiglitazone had more cardiovascular scrutiny)",
+      "Does not cause hypoglycemia as monotherapy",
+    ],
+    boardsPearls: [
+      "TZD = PPARγ agonist → ↑ insulin sensitivity; pioglitazone is boards-favorite TZD",
+      "Edema and heart failure exacerbation — avoid in NYHA class III–IV HF",
+      "Weight gain from ↑ adipocyte differentiation (preadipocyte → adipocyte)",
+      "No hypoglycemia alone — does not ↑ insulin secretion",
+      "vs metformin — TZDs cause weight gain/edema; metformin weight-neutral/loss",
+      "vs rosiglitazone — same class; rosiglitazone had more CV concern historically",
+      "Rosiglitazone/pioglitazone — memorize PPARγ mechanism for TZD class",
+    ],
+  },
+  {
+    id: "repaglinide",
+    name: "Repaglinide",
+    etymology:
+      "repa- (proprietary stem) + -glinide = meglitinide class suffix — non-sulfonylurea insulin secretagogue with rapid onset",
+    aliases: [
+      "repaglinide",
+      "prandin",
+    ],
+    drugClass: "Meglitinide (glinide)",
+    mechanism:
+      "Binds SUR1 on pancreatic β-cell K_ATP channels (like sulfonylureas) → insulin release — but shorter duration and meal-stimulated dosing profile → predominantly reduces postprandial glucose with less basal hyperinsulinemia than long-acting sulfonylureas.",
+    indications: [
+      "Type 2 diabetes mellitus — especially postprandial hyperglycemia control",
+      "Taken before meals when meal timing predictable",
+    ],
+    adverseEffects: [
+      "Hypoglycemia — especially if meal skipped or delayed after dose",
+      "Weight gain (less than some sulfonylureas but still possible)",
+      "Headache, upper respiratory symptoms",
+    ],
+    boardsPearls: [
+      "Meglitinide — K_ATP channel closer like sulfonylureas but rapid, short action",
+      "Take before meals — postprandial glucose control",
+      "Hypoglycemia if meal skipped after dose",
+      "vs glyburide — repaglinide shorter acting; less prolonged hypoglycemia",
+      "vs metformin — repaglinide ↑ insulin; hypoglycemia and weight gain risk",
+      "Sulfonylureas + meglitinides both secretagogues — memorize K_ATP mechanism",
+    ],
+  },
+  {
     id: "hypoglycemic-agents",
     name: "Hypoglycemic Agent",
     etymology:
@@ -12674,6 +13374,163 @@ export const MEDICATIONS: MedicationEntry[] = [
       "Insulin + glucose — drives K⁺ intracellularly for hyperkalemia",
       "Mnemonic hypoglycemia culprits — Sulfonylureas, Insulin, Skipped meals (SIS)",
       "Peds: T1DM always insulin; adolescent T2DM may use metformin ± insulin; neonatal hypoglycemia is a separate entity (hyperinsulinism, GA, sepsis)",
+    ],
+  },
+  {
+    id: "ertugliflozin",
+    name: "Ertugliflozin",
+    etymology:
+      "ert- = proprietary stem + gliflozin = glu(cose) + i(f) + floz(in) SGLT2 inhibitor suffix — sodium-glucose cotransporter 2 inhibitor causing renal glucosuria",
+    aliases: ["ertugliflozin", "steglatro"],
+    drugClass: "SGLT2 inhibitor (gliflozin)",
+    mechanism:
+      "Selectively inhibits SGLT2 in proximal convoluted tubule → ↓ glucose reabsorption → glucosuria and osmotic diuresis → ↓ blood glucose, mild natriuresis, and ↓ intraglomerular pressure (same class mechanism as other gliflozins).",
+    indications: [
+      "Type 2 diabetes mellitus (adjunct to diet and exercise)",
+      "Cardiovascular risk reduction in T2DM with established atherosclerotic cardiovascular disease (class effect context)",
+      "Often combined with metformin or sitagliptin in fixed-dose combinations",
+    ],
+    adverseEffects: [
+      "Genital mycotic infections (glucosuria)",
+      "Urinary tract infections",
+      "Euglycemic diabetic ketoacidosis (peri-surgery, illness, insulin omission — especially T1DM or insulin-deficient states)",
+      "Volume depletion, hypotension, acute kidney injury",
+      "Fournier gangrene (rare)",
+    ],
+    boardsPearls: [
+      "Ertugliflozin = gliflozin SGLT2 inhibitor — proximal tubule glucosuria",
+      "Same class as empagliflozin/dapagliflozin — memorize mechanism, not every brand name",
+      "Does not cause hypoglycemia as monotherapy",
+      "Euglycemic DKA risk — hold perioperatively; never stop insulin abruptly in T1DM on SGLT2i",
+      "vs metformin — ertugliflozin causes renal glucose loss; metformin ↓ hepatic gluconeogenesis",
+      "vs DPP-4 inhibitors — gliflozins act in kidney; gliptins prolong incretin signaling",
+    ],
+  },
+  {
+    id: "danazol",
+    name: "Danazol",
+    etymology:
+      "Dan + azole heterocycle — synthetic 17α-ethinyl testosterone derivative with partial androgen agonist activity",
+    aliases: [
+      "danazol",
+      "danocrine",
+      "danazol drug",
+    ],
+    drugClass: "Synthetic androgen / partial androgen receptor agonist",
+    mechanism:
+      "Synthetic androgen that suppresses pituitary LH and FSH → ↓ ovarian estrogen production; also increases hepatic synthesis of C1 esterase inhibitor — used for hereditary angioedema prophylaxis; partial androgen receptor agonism causes virilizing effects.",
+    indications: [
+      "Hereditary angioedema prophylaxis — ↑ C1 esterase inhibitor levels",
+      "Endometriosis — suppresses endometrial growth",
+      "Fibrocystic breast disease (historical)",
+      "Short-term bridging in some HAE settings when other prophylaxis unavailable",
+    ],
+    adverseEffects: [
+      "Virilization — acne, hirsutism, deepening voice, clitoromegaly",
+      "Hepatotoxicity — transaminase elevation, peliosis hepatis, rare hepatocellular adenoma",
+      "Weight gain, edema, mood changes",
+      "Teratogenic — contraindicated in pregnancy",
+      "Lipid abnormalities — ↓ HDL, ↑ LDL",
+      "Menstrual irregularities and amenorrhea",
+    ],
+    boardsPearls: [
+      "Danazol = synthetic androgen for HAE prophylaxis — ↑ C1 inhibitor synthesis",
+      "HAE acute attacks — icatibant (bradykinin B2 antagonist) or C1-INH concentrate; danazol is prophylaxis",
+      "Endometriosis — danazol suppresses estrogen-driven endometrial implants",
+      "Virilization side effects limit long-term use in women",
+      "vs ACE inhibitor angioedema — bradykinin-mediated; stop ACE-I, not danazol",
+      "Monitor LFTs — hepatotoxicity risk",
+      "Teratogenic — reliable contraception required",
+    ],
+  },
+  {
+    id: "ocps",
+    name: "Oral Contraceptive Pills",
+    etymology:
+      "Latin oralis = by mouth + Latin contra = against + conceptio = conception + Latin pilula = little ball — combined estrogen-progestin tablets for hormonal contraception",
+    aliases: [
+      "ocps",
+      "ocp",
+      "oral contraceptive pills",
+      "oral contraceptive pill",
+      "oral contraceptives",
+      "oral contraceptive",
+      "combined oral contraceptive",
+      "combined oral contraceptives",
+      "combined oral contraceptive pill",
+      "combined oral contraceptive pills",
+      "cocs",
+      "coc",
+      "birth control pills",
+      "birth control pill",
+      "the pill",
+    ],
+    drugClass: "Combined hormonal contraceptive (ethinyl estradiol + progestin)",
+    mechanism:
+      "Ethinyl estradiol and progestin exert negative feedback on hypothalamic-pituitary axis → inhibit LH surge and ovulation; progestin also thickens cervical mucus (↓ sperm penetration) and induces endometrial atrophy (↓ implantation).",
+    indications: [
+      "Contraception",
+      "PCOS — cycle regulation and endometrial protection",
+      "Dysmenorrhea and menorrhagia",
+      "Endometriosis symptom control",
+      "Acne/hirsutism in selected patients (antiandrogenic progestins)",
+      "Ovarian and endometrial cancer risk reduction with long-term use",
+    ],
+    adverseEffects: [
+      "Venous thromboembolism — especially with smoking, age >35, thrombophilia",
+      "Hypertension",
+      "Gallbladder disease (cholelithiasis)",
+      "Breakthrough bleeding",
+      "Hepatic adenoma (rare with long-term use)",
+      "Mood changes",
+      "Nausea, breast tenderness",
+    ],
+    boardsPearls: [
+      "OCP mechanism — ↓ LH surge → anovulation + cervical mucus + endometrial changes",
+      "Smoking + age >35 + combined OCPs → ↑ VTE and cardiovascular risk",
+      "Rifampin, phenytoin, carbamazepine, St. John's wort induce CYP450 → ↓ ethinyl estradiol → contraceptive failure",
+      "Estrogen contraindicated with migraine with aura, thrombophilia, active VTE — use progestin-only methods",
+      "OCPs do not prevent STIs — condoms needed for STI protection",
+      "Therapeutic uses beyond contraception — PCOS, endometriosis, dysmenorrhea",
+      "vs progestin-only pill/IUD — combined OCPs contain estrogen; different contraindication profile",
+      "Teratogenic drug counseling — reliable contraception mandatory with isotretinoin, valproate, methotrexate",
+    ],
+  },
+  {
+    id: "broad-spectrum-antibiotics",
+    name: "Broad-Spectrum Antibiotic",
+    etymology:
+      "Old English brād = wide + Latin spectrum = image/band + Greek anti = against + bios = life — antimicrobial agents active against multiple bacterial classes (Gram-positive, Gram-negative, and often anaerobes)",
+    aliases: [
+      "broad-spectrum antibiotic",
+      "broad spectrum antibiotic",
+      "wide-spectrum antibiotic",
+      "empiric broad-spectrum antibiotic",
+    ],
+    drugClass: "Antibiotic class (spectrum descriptor)",
+    mechanism:
+      "No single mechanism — term describes antibacterial coverage spanning multiple organism groups; agents inhibit cell wall synthesis (carbapenems, piperacillin-tazobactam), DNA gyrase/topoisomerase (fluoroquinolones), protein synthesis (tetracyclines, chloramphenicol), or combined pathways depending on specific drug.",
+    indications: [
+      "Empiric treatment of serious infection before culture results (sepsis, neutropenic fever, intra-abdominal infection)",
+      "Polymicrobial infections (aspiration pneumonia, diabetic foot, peritonitis)",
+      "Healthcare-associated infections with multidrug-resistant organism risk",
+      "Surgical prophylaxis when bowel flora coverage needed (cefazolin narrower; piperacillin-tazobactam or carbapenem broader)",
+    ],
+    adverseEffects: [
+      "Clostridioides difficile colitis — disruption of normal colonic flora (classic board association)",
+      "Fungal superinfection (oral thrush, Candida vulvovaginitis)",
+      "Selection of multidrug-resistant organisms (MRSA, ESBL, Pseudomonas)",
+      "Drug-specific toxicities — aminoglycoside nephrotoxicity, fluoroquinolone tendinopathy, linezolid serotonin syndrome",
+      "Allergic reactions depending on β-lactam class",
+    ],
+    boardsPearls: [
+      "Broad-spectrum = covers Gram+ and Gram− (often anaerobes too) — not one drug, a concept",
+      "Examples: piperacillin-tazobactam, carbapenems, ceftriaxone/cefepime, fluoroquinolones, doxycycline",
+      "C. difficile colitis classic after broad-spectrum antibiotics — toxin-mediated pseudomembranous colitis",
+      "vs narrow-spectrum — penicillin G (mostly streptococci), aztreonam (aerobic Gram− only)",
+      "De-escalate to narrowest effective spectrum once cultures return",
+      "Vancomycin is broad for Gram+ (including MRSA) but lacks Gram− coverage alone",
+      "Empiric sepsis bundles often include broad β-lactam + consider MRSA coverage",
     ],
   },
 ];

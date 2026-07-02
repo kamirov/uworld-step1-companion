@@ -5283,8 +5283,6 @@ export const LAB_VALUES: LabValueEntry[] = [
       "beta hcg",
       "b-hcg",
       "b hcg",
-      "human chorionic gonadotropin",
-      "chorionic gonadotropin",
       "hcg",
       "serum hcg",
       "quantitative hcg",
@@ -6605,6 +6603,54 @@ export const LAB_VALUES: LabValueEntry[] = [
       "Glucosuria + ketonuria + AG acidosis → DKA",
       "Glucosuria + normal serum glucose → renal glucosuria or SGLT2 inhibitor",
       "Glucosuria + phosphaturia + RTA → Fanconi syndrome",
+    ],
+  },
+  {
+    id: "aminoaciduria",
+    name: "Aminoaciduria",
+    etymology:
+      "Latin amino = containing ammonia + acidus = sour + Greek ouron = urine + -ia = condition — excess amino acids excreted in urine",
+    aliases: [
+      "aminoaciduria",
+      "amino aciduria",
+      "amino acids in urine",
+      "urinary amino acids",
+      "generalized aminoaciduria",
+      "renal aminoaciduria",
+    ],
+    measures:
+      "Excess free amino acids in urine — reflects impaired renal proximal tubular reabsorption (Fanconi syndrome, Hartnup disease, cystinuria) or overflow from markedly elevated serum amino acids in some inborn errors of metabolism.",
+    normalRange:
+      "Minimal amino acid excretion on routine urinalysis; quantitative urine amino acid screen negative or trace in healthy individuals",
+    increasedCauses: [
+      "Fanconi syndrome — generalized proximal tubule dysfunction → glucosuria, phosphaturia, bicarbonaturia, and aminoaciduria",
+      "Hartnup disease — neutral aminoaciduria (tryptophan, alanine, etc.) from SLC6A19 defect",
+      "Cystinuria — dibasic aminoaciduria (lysine, arginine, ornithine) with cystine stone formation",
+      "Proximal renal tubular acidosis (type 2) — often accompanies Fanconi aminoaciduria",
+      "Multiple myeloma light chain injury — proximal tubulopathy",
+      "Tenofovir disoproxil fumarate (TDF) — drug-induced Fanconi syndrome",
+      "Maple syrup urine disease — branched-chain aminoaciduria with characteristic urine odor",
+      "Phenylketonuria — phenylalanine elevation (blood test primary; not classic renal aminoaciduria pattern)",
+    ],
+    decreasedCauses: [
+      "Not a deficiency state — low urinary amino acid excretion is expected in normal renal reabsorption",
+      "False reassurance if only dipstick used — aminoaciduria requires specific amino acid assay",
+    ],
+    boardsPearls: [
+      "Aminoaciduria = amino acids in urine — think proximal tubule reabsorption defect",
+      "Fanconi syndrome — glucosuria + phosphaturia + aminoaciduria + RTA (generalized pattern)",
+      "Hartnup — neutral aminoaciduria → ↓ tryptophan → pellagra-like rash + ataxia",
+      "Cystinuria — dibasic aminoaciduria + hexagonal cystine stones",
+      "vs proteinuria — proteins (albumin); aminoaciduria is free amino acids",
+      "Urine amino acid screen distinguishes neutral (Hartnup) vs dibasic (cystinuria) vs generalized (Fanconi)",
+      "MSUD — branched-chain aminoaciduria + maple syrup urine odor + neurologic crisis",
+    ],
+    pairWith: [
+      "Aminoaciduria + glucosuria + phosphaturia + RTA → Fanconi syndrome",
+      "Neutral aminoaciduria + photosensitive rash + ataxia → Hartnup disease",
+      "Dibasic aminoaciduria + recurrent stones → cystinuria",
+      "Growth failure + rickets + proximal tubule wasting → Fanconi syndrome workup",
+      "Maple syrup odor + lethargy in infant → MSUD emergency",
     ],
   },
   {

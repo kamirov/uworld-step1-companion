@@ -3071,6 +3071,57 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
       "Popliteal entrapment and aneurysm uncommon in children; knee trauma with vascular compromise requires urgent evaluation. Absent pedal pulses after knee injury warrants vascular imaging regardless of age.",
   },
   {
+    id: "dorsalis-pedis",
+    name: "Dorsalis Pedis",
+    etymology:
+      "Latin dorsalis = of the back (dorsum) + Latin pes = foot — dorsal artery of the foot; distal continuation of the anterior tibial artery",
+    aliases: [
+      "dorsalis pedis",
+      "dorsalis pedis artery",
+      "dorsalis pedis pulse",
+      "dp pulse",
+      "dp artery",
+      "arteria dorsalis pedis",
+      "dorsal pedal artery",
+      "dorsal pedal pulse",
+    ],
+    definition:
+      "Distal continuation of the anterior tibial artery after it crosses the ankle — courses over the dorsum of the foot between the first and second metatarsal bases and is the standard clinical site for palpating the pedal pulse.",
+    anatomy:
+      "Anterior tibial artery passes anterior to ankle joint, becomes dorsalis pedis artery on dorsum of foot. Runs lateral to extensor hallucis longus tendon, between first and second metatarsals. Gives arcuate artery and first dorsal metatarsal artery. Contributes to plantar arch anastomosis with deep plantar branch and lateral plantar artery from posterior tibial artery.",
+    action: [
+      "Arterial perfusion of dorsum of foot and digits via dorsal metatarsal arteries",
+      "Forms part of foot arterial arcade with plantar circulation",
+      "Clinical pulse palpation site for peripheral perfusion assessment",
+    ],
+    innervation:
+      "Vasomotor sympathetic fibers accompany artery; deep fibular nerve runs nearby in anterior compartment but does not innervate vessel",
+    clinicalRelevance: [
+      "Pedal pulse palpation — compare bilaterally for symmetry",
+      "Absent dorsalis pedis after knee dislocation or popliteal injury — vascular emergency",
+      "Diabetic foot exam (PEDIS) — pulse, edema, deformity, insensitivity, skin",
+      "Peripheral arterial disease — diminished or absent dorsalis pedis pulse",
+      "Anatomical variant — absent or diminutive in ~8–10% of population (check posterior tibial pulse)",
+    ],
+    boardsPearls: [
+      "Dorsalis pedis = anterior tibial artery on dorsum of foot — pulse between 1st/2nd metatarsals",
+      "Knee dislocation / popliteal injury — check dorsalis pedis AND posterior tibial pulses",
+      "Absent DP alone may be normal variant — always compare posterior tibial pulse",
+      "Anterior compartment = anterior tibial artery + deep fibular nerve → foot drop if injured",
+      "vs posterior tibial pulse — medial ankle behind medial malleolus; check both for foot perfusion",
+      "vs popliteal artery — proximal; bifurcates into anterior tibial + tibioperoneal trunk",
+    ],
+    distinguishFrom: [
+      "Posterior tibial artery — medial ankle pulse; plantar arch supply",
+      "Anterior tibial artery — proximal leg segment before ankle",
+      "Popliteal artery — knee fossa vessel; parent trunk before bifurcation",
+      "Radial artery — upper extremity pulse at wrist",
+      "Peroneal (fibular) artery — lateral leg branch; does not form dorsalis pedis",
+    ],
+    pediatrics:
+      "Supracondylar fracture threatens brachial/radial perfusion in arm; knee dislocation threatens popliteal → dorsalis pedis perfusion in leg. Pediatric pedal pulses may be harder to palpate — use Doppler if trauma and perfusion concern. Absent pulse after knee injury requires urgent vascular imaging regardless of age.",
+  },
+  {
     id: "cavernous-sinus",
     name: "Cavernous Sinu",
     etymology: "Latin cavernosus = full of hollows/caves + Latin sinus = bay/channel",
@@ -6813,6 +6864,354 @@ export const MUSCULOSKELETAL: MusculoskeletalEntry[] = [
     ],
     pediatrics:
       "Cervical cord injury in children — atlantoaxial instability (Down syndrome, RA), diving accidents, or birth trauma. C7 radiculopathy is rare in children; congenital stenosis or trauma more common than disc herniation.",
+  },
+  {
+    id: "flexor-retinaculum",
+    name: "Flexor Retinaculum",
+    etymology:
+      "Latin flexor = bending + retinaculum = holding band — transverse fibrous band retaining flexor tendons at the wrist",
+    aliases: [
+      "flexor retinaculum",
+      "transverse carpal ligament",
+      "carpal ligament",
+      "anterior annular ligament of wrist",
+      "flexor retinaculum of wrist",
+    ],
+    definition:
+      "Thick transverse fibrous band spanning the carpal arch at the wrist — forming the roof of the carpal tunnel and retaining the flexor tendons and median nerve within the osseofibrous canal.",
+    anatomy:
+      "Attachments: radial side — scaphoid tubercle and ridge of trapezium; ulnar side — pisiform and hook of hamate. Forms carpal tunnel with carpal bones as floor and sides. Contents: four FDS tendons, four FDP tendons, flexor pollicis longus tendon, and median nerve. Ulnar nerve and ulnar artery pass superficial to the retinaculum in Guyon canal (between pisiform and hook of hamate). Synonymous with transverse carpal ligament.",
+    action: [
+      "Prevents bowstringing of flexor tendons during wrist and finger flexion",
+      "Defines carpal tunnel boundaries — compression site in carpal tunnel syndrome",
+      "Separates deep carpal tunnel contents from superficial Guyon canal structures (ulnar nerve/artery)",
+    ],
+    clinicalRelevance: [
+      "Carpal tunnel syndrome — median nerve compression beneath flexor retinaculum",
+      "Carpal tunnel release — surgical division of flexor retinaculum for refractory CTS",
+      "Thickened retinaculum or tenosynovitis of flexor tendons narrows tunnel volume",
+      "Hook of hamate fracture — Guyon canal injury superficial to retinaculum (ulnar nerve/artery)",
+      "Palmar cutaneous branch of median nerve arises proximal to retinaculum — spared in CTS",
+    ],
+    boardsPearls: [
+      "Flexor retinaculum = transverse carpal ligament — roof of carpal tunnel",
+      "Carpal tunnel contents: FDS + FDP + FPL tendons + median nerve",
+      "Ulnar nerve passes superficial to flexor retinaculum in Guyon canal — not in carpal tunnel",
+      "CTS — compression of median nerve under retinaculum; Phalen and Tinel at wrist",
+      "Tarsal tunnel is the foot analogue — tibial nerve under flexor retinaculum of ankle",
+    ],
+    distinguishFrom: [
+      "Extensor retinaculum — dorsal wrist; retains extensor tendons in six compartments",
+      "Guyon canal — ulnar nerve and artery superficial to flexor retinaculum",
+      "Carpal tunnel syndrome — clinical entrapment neuropathy, not the ligament itself",
+      "Osborne ligament — cubital tunnel roof at elbow for ulnar nerve",
+      "Palmar aponeurosis — superficial fascia distal to retinaculum in palm",
+    ],
+    pediatrics:
+      "Carpal tunnel syndrome is uncommon in children; consider hereditary neuropathy or metabolic disease if bilateral wrist numbness. Supracondylar fracture can injure median nerve proximal to the retinaculum.",
+  },
+  {
+    id: "flexor-digitorum-superficialis",
+    name: "Flexor Digitorum Superficialis",
+    etymology:
+      "Latin flexor = bending + digitus = finger + superficialis = nearer the surface — superficial finger flexor of the forearm",
+    aliases: [
+      "flexor digitorum superficialis",
+      "flexor digitorum superficialis muscle",
+      "fds",
+      "fds muscle",
+      "superficial flexor of fingers",
+      "flexor digitorum superficialis tendon",
+    ],
+    definition:
+      "Superficial forearm flexor muscle with four tendons to digits 2–5 — each tendon splitting at the middle phalanx to allow the flexor digitorum profundus tendon to pass through en route to the distal phalanx.",
+    anatomy:
+      "Humeroulnar head: medial epicondyle (common flexor origin) and coronoid process of ulna. Radial head: anterior shaft of radius. Four tendons enter carpal tunnel, then diverge to digits 2–5. Each inserts on the sides of the middle phalanx after splitting around the FDP tendon (Camper chiasm). Lies superficial to FDP in forearm; median nerve passes between its two heads at the elbow.",
+    action: [
+      "Primary flexor of proximal interphalangeal (PIP) joints of digits 2–5",
+      "Assists flexion at metacarpophalangeal (MCP) joints",
+      "Does not flex distal interphalangeal (DIP) joints — that is FDP",
+    ],
+    innervation: "Median nerve (C7–T1)",
+    clinicalRelevance: [
+      "Isolated FDS testing — hold non-tested fingers extended while patient flexes tested finger at PIP (blocks FDP contribution)",
+      "Flexor tendon laceration at wrist/palm — FDS and FDP function must be assessed separately",
+      "Tenosynovitis of FDS tendons contributes to carpal tunnel narrowing",
+      "Anterior interosseous nerve palsy spares FDS to index/middle in some presentations but FPL/FDP index affected",
+    ],
+    boardsPearls: [
+      "FDS — flexes PIP; FDP — flexes DIP",
+      "FDS tendons split at middle phalanx — FDP passes through to distal phalanx",
+      "Median nerve passes between two heads of FDS at elbow",
+      "FDS + FDP + FPL pass through carpal tunnel under flexor retinaculum",
+      "Test FDS — block other fingers extended, flex one finger at PIP",
+      "vs FDP — deeper muscle; flexes DIP; split innervation (median lateral, ulnar medial)",
+    ],
+    distinguishFrom: [
+      "Flexor digitorum profundus — deeper; flexes DIP; lumbrical origin",
+      "Flexor carpi radialis — wrist flexor; does not flex fingers",
+      "Flexor pollicis longus — thumb flexor; anterior interosseous nerve",
+      "Flexor digitorum brevis — intrinsic foot muscle; tibial nerve",
+      "Flexor carpi ulnaris — ulnar wrist flexor; ulnar nerve",
+    ],
+    pediatrics:
+      "Flexor tendon injuries in children require specialized repair — zone II (no man's land) has poor outcomes if delayed. Supracondylar fracture can injure median nerve before FDS motor branches.",
+  },
+  {
+    id: "dorsiflexion",
+    name: "Dorsiflexion",
+    etymology:
+      "Latin dorsum = back (of foot) + flexio = bending — movement lifting the dorsum of the foot toward the anterior leg (shin)",
+    aliases: [
+      "dorsiflexion",
+      "dorsiflex",
+      "ankle dorsiflexion",
+      "foot dorsiflexion",
+      "dorsiflexion of ankle",
+      "dorsiflexion of foot",
+      "dorsiflexor movement",
+    ],
+    definition:
+      "Sagittal-plane ankle motion decreasing the angle between the dorsum of the foot and the anterior leg — the opposite of plantarflexion — produced primarily by anterior compartment muscles (tibialis anterior, extensor digitorum longus, extensor hallucis longus).",
+    anatomy:
+      "Primary dorsiflexors lie in the anterior compartment of the leg — tibialis anterior (ankle dorsiflexion and inversion), EDL (toe extension), EHL (great toe extension). Ankle joint: talocrural articulation. Deep fibular (peroneal) nerve innervates anterior compartment.",
+    action: [
+      "Lifts foot dorsum toward shin — clears toes during swing phase of gait",
+      "Assists foot clearance in walking — loss causes steppage gait (foot drop)",
+      "Tibialis anterior — primary ankle dorsiflexor; also weak inverter",
+      "EDL/EHL — extend toes while dorsiflexing ankle",
+    ],
+    innervation: "Deep fibular (peroneal) nerve (L4–L5, predominantly L5) — branch of common fibular nerve",
+    clinicalRelevance: [
+      "Foot drop — inability to dorsiflex; patient hikes hip (steppage gait) to clear foot",
+      "Common fibular nerve injury at fibular neck — classic dorsiflexion weakness + first web space sensory loss",
+      "L5 radiculopathy — weak dorsiflexion and great toe extension (EHL)",
+      "Anterior compartment syndrome — pain with passive plantarflexion; dorsiflexors ischemic",
+      "Babinski sign — pathologic great toe dorsiflexion with fanning of other toes (UMN lesion in adults)",
+      "Straight leg raise (Braggard) — passive ankle dorsiflexion increases nerve root tension",
+    ],
+    boardsPearls: [
+      "Dorsiflexion = anterior compartment = deep fibular nerve (L5)",
+      "Plantarflexion = posterior compartment = tibial nerve (S1) — opposite motion",
+      "Foot drop → steppage gait → think common fibular nerve or L5 root",
+      "L5 motor check — dorsiflexion at ankle and extension of great toe",
+      "Babinski — dorsiflexion of big toe in adult = UMN sign",
+      "vs eversion — frontal plane motion; superficial fibular nerve",
+      "Ankle jerk (Achilles) tests S1 plantarflexion — not dorsiflexion",
+    ],
+    distinguishFrom: [
+      "Plantarflexion — points foot downward; tibial nerve (S1); posterior compartment",
+      "Eversion — sole turns laterally; superficial fibular nerve",
+      "Inversion — sole turns medially; tibialis anterior (dorsiflexion) and tibialis posterior (plantarflexion)",
+      "Hip flexion — thigh toward abdomen; different joint and nerve roots (L1–L3)",
+      "Toe flexion — flexor digitorum/hallucis longus; not dorsiflexion",
+    ],
+    pediatrics:
+      "Foot drop in child is uncommon — consider L5 radiculopathy from discitis, tethered cord, or fibular fracture. Babinski may be physiologically upgoing until ~12–24 months (immature pyramidal tracts). Common fibular injury after leg cast or fibular fracture in active adolescents.",
+  },
+  {
+    id: "flexor-digitorum-profundus",
+    name: "Flexor Digitorum Profundus",
+    etymology:
+      "Latin flexor = bending + digitus = finger + profundus = deep — deep finger flexor of the forearm",
+    aliases: [
+      "flexor digitorum profundus",
+      "flexor digitorum profundus muscle",
+      "fdp",
+      "fdp muscle",
+      "deep flexor of fingers",
+      "flexor digitorum profundus tendon",
+    ],
+    definition:
+      "Deep forearm flexor with four tendons inserting on the distal phalanges of digits 2–5 — the sole muscle capable of independent DIP joint flexion — and giving rise to the lumbrical muscles in the hand.",
+    anatomy:
+      "Origin: proximal ulna, interosseous membrane, and coronoid process. Four tendons pass through carpal tunnel and through the split in each FDS tendon (Camper chiasm) to insert on the palmar base of the distal phalanx. Lumbricals 1–4 arise from the FDP tendons in the palm. Lies deep to FDS in the forearm.",
+    action: [
+      "Primary flexor of distal interphalangeal (DIP) joints of digits 2–5",
+      "Assists PIP and MCP flexion when FDS contracts",
+      "Lumbricals (from FDP tendons) flex MCP and extend IP joints",
+    ],
+    innervation:
+      "Median nerve — lateral half (index and middle); ulnar nerve — medial half (ring and little)",
+    clinicalRelevance: [
+      "Jersey finger — avulsion of FDP tendon from ring finger distal phalanx (zone 1 flexor tendon injury)",
+      "Cannot flex DIP with isolated FDP laceration — hold PIP extended and test DIP flexion",
+      "Anterior interosseous nerve palsy — cannot flex DIP of index (and IP of thumb via FPL)",
+      "Ulnar nerve injury — weakness of FDP to ring and little fingers",
+      "Flexor tendon zone II injury (no man's land) — both FDS and FDP involved; guarded prognosis",
+    ],
+    boardsPearls: [
+      "FDP flexes DIP — FDS flexes PIP",
+      "Split innervation: 2 median (index/middle), 2 ulnar (ring/little) — '2ME 2U'",
+      "Jersey finger — FDP avulsion from ring finger distal phalanx; cannot flex DIP",
+      "Lumbricals arise from FDP tendons — median (lateral two) and ulnar (medial two) innervation",
+      "Anterior interosseous palsy — OK sign failed (FDP index + FPL)",
+      "vs FDS — superficial; PIP flexion only; all median nerve",
+    ],
+    distinguishFrom: [
+      "Flexor digitorum superficialis — superficial; PIP flexion; all median nerve",
+      "Flexor pollicis longus — thumb DIP flexion; anterior interosseous nerve",
+      "Lumbricals — intrinsic hand muscles arising from FDP tendons; MCP flexion + IP extension",
+      "Flexor digitorum longus — posterior leg/foot toe flexor; tibial nerve",
+      "Flexor digiti minimi brevis — hypothenar muscle; ulnar nerve",
+    ],
+    pediatrics:
+      "Jersey finger can occur in adolescent athletes catching a finger in a jersey. Pediatric flexor tendon repair in zone II requires hand surgery referral — outcomes worse than adult if delayed.",
+  },
+  {
+    id: "dentin",
+    name: "Dentin",
+    etymology:
+      "Latin dens = tooth + -in = substance — mineralized connective tissue forming the bulk of the tooth beneath enamel and surrounding the pulp",
+    aliases: [
+      "dentin",
+      "dentine",
+      "dental dentin",
+      "tooth dentin",
+      "dentin tissue",
+      "primary dentin",
+      "secondary dentin",
+    ],
+    definition:
+      "Avascular mineralized connective tissue produced by odontoblasts that constitutes the main mass of the tooth — lying between the enamel cap (crown) and cementum (root) and enclosing the dental pulp — composed of type I collagen matrix permeated with hydroxyapatite and traversed by dentinal tubules.",
+    anatomy:
+      "Odontoblasts (neural crest–derived) line the pulp and extend cytoplasmic processes into dentinal tubules. Mantle dentin near DEJ; circumpulpal dentin forms bulk. Peritubular dentin lines tubules. Secondary dentin laid throughout life; tertiary (reparative) dentin after injury. Richer in type I collagen than enamel; less mineralized than enamel but more than bone proportionally in organic matrix.",
+    action: [
+      "Provides structural bulk and resilience to the tooth",
+      "Transmits occlusal forces from enamel to periodontal ligament and alveolar bone",
+      "Dentinal tubules conduct fluid movement and nociception when exposed (sensitivity)",
+      "Forms throughout life as secondary dentin narrows pulp chamber",
+    ],
+    clinicalRelevance: [
+      "Dental caries — bacteria penetrate enamel then spread through dentin toward pulp",
+      "Dentin hypersensitivity — exposed tubules (recession, erosion, abfraction)",
+      "Dentinogenesis imperfecta — opalescent/brittle teeth in osteogenesis imperfecta (type I collagen defect)",
+      "Pulpitis — caries reaching dentin-pulp interface triggers inflammation",
+      "Odontoblast injury — tertiary dentin/reparative dentin formation",
+    ],
+    boardsPearls: [
+      "Dentin = odontoblast-produced, type I collagen, mineralized with hydroxyapatite",
+      "Neural crest origin — odontoblasts like other dental mesenchyme (vs enamel from ectoderm)",
+      "Dentinogenesis imperfecta + blue sclerae + fractures → osteogenesis imperfecta",
+      "Enamel ectoderm; dentin/pulp/cementum neural crest mesenchyme",
+      "Dentinal tubules — explain sensitivity when enamel lost",
+      "vs enamel — dentin softer, more organic, contains tubules; enamel is hardest, acellular",
+      "vs cementum — covers root surface; both support tooth but dentin forms crown/root core",
+    ],
+    distinguishFrom: [
+      "Enamel — ectodermal, acellular, hardest tissue; caps crown only",
+      "Cementum — covers root; anchors periodontal ligament fibers",
+      "Dental pulp — neurovascular core surrounded by dentin",
+      "Bone — remodels via osteocytes; dentin formed only by odontoblasts with tubules",
+      "Osteoid — unmineralized bone matrix; dentin is mineralized dental tissue",
+    ],
+    pediatrics:
+      "Primary teeth have thinner dentin and enamel than permanent teeth. Dentinogenesis imperfecta in osteogenesis imperfecta causes opalescent gray-brown teeth and early wear — clue to COL1A1/COL1A2 mutation alongside blue sclerae and fractures.",
+  },
+  {
+    id: "tendon",
+    name: "Tendon",
+    etymology:
+      "Greek tenon = sinew — dense regular connective tissue cord attaching muscle to bone (or muscle to muscle)",
+    aliases: [
+      "tendon",
+      "tendons",
+      "tendinous tissue",
+      "sinew",
+      "muscle tendon",
+      "tendon tissue",
+    ],
+    definition:
+      "Cord- or strap-like dense regular connective tissue that transmits contractile force from skeletal muscle to bone — composed primarily of parallel type I collagen fascicles with sparse fibroblasts (tenocytes) and interfascicular endotenon/epitenon sheaths.",
+    anatomy:
+      "Musculotendinous junction — collagen fibers interdigitate with muscle endomysium/perimysium. Tendon body — parallel type I collagen aligned along tension axis. Osteotendinous (enthesis) insertion — fibrocartilaginous transition to bone (Sharpey fibers). Synovial sheath around some tendons (flexor tendons in hand). Blood supply from surrounding paratenon and vincula; relatively avascular mid-substance slows healing.",
+    action: [
+      "Transmits muscle contraction force to bone for joint movement",
+      "Stores elastic energy in some tendons (Achilles during gait)",
+      "Maintains joint stability via passive tension when muscle relaxed (patellar tendon, rotator cuff)",
+      "Aponeurosis — flat sheet tendon (external oblique, plantar fascia)",
+    ],
+    clinicalRelevance: [
+      "Tendinopathy/tendinitis — overuse degeneration (Achilles, patellar, lateral epicondyle)",
+      "Tendon rupture — Achilles (fluoroquinolones, steroids), quadriceps, biceps, rotator cuff",
+      "Tendon xanthomas — familial hypercholesterolemia (Achilles, extensor tendons)",
+      "Flexor tendon laceration — zone II 'no man's land' guarded prognosis",
+      "Golgi tendon organ — proprioceptor at muscle-tendon junction senses tension",
+      "Enthesitis — inflammation at tendon-bone insertion (spondyloarthritis)",
+    ],
+    boardsPearls: [
+      "Tendon = muscle to bone; ligament = bone to bone",
+      "Dense regular connective tissue — parallel type I collagen",
+      "Tendon xanthomas → familial hypercholesterolemia (LDLR/APOB/PCSK9)",
+      "Achilles rupture — sudden plantarflexion weakness, positive Thompson test",
+      "Golgi tendon organ — series tension receptor; inverse stretch reflex",
+      "vs ligament — tendon transmits muscle force; ligament stabilizes joint between bones",
+      "vs aponeurosis — flat tendon sheet (plantar fascia is aponeurosis)",
+      "Fluoroquinolones ↑ tendon rupture risk (especially Achilles)",
+    ],
+    distinguishFrom: [
+      "Ligament — bone-to-bone joint stabilizer; not primary force transmission from muscle",
+      "Fascia — sheet-like connective tissue envelope; tendon is cord-like force transmitter",
+      "Aponeurosis — flat tendinous expansion; functionally tendon variant",
+      "Enthesis — tendon/ligament insertion site on bone; not the tendon body itself",
+      "Muscle — contractile tissue; tendon is noncontractile collagen extension",
+      "Ligamentum — anatomical term for some ligaments (e.g., ligamentum flavum); distinct from tendon",
+    ],
+    pediatrics:
+      "Osgood-Schlatter disease — traction apophysitis at patellar tendon tibial insertion in active adolescents. Tendon xanthomas in familial hypercholesterolemia may appear in childhood. Pediatric flexor tendon injuries need specialized repair.",
+  },
+  {
+    id: "ligament",
+    name: "Ligament",
+    etymology:
+      "Latin ligare = to bind — dense connective tissue band stabilizing joints by connecting bone to bone (or holding organs in place)",
+    aliases: [
+      "ligament",
+      "ligaments",
+      "ligamentous tissue",
+      "fibrous ligament",
+      "articular ligament",
+      "joint ligament",
+    ],
+    definition:
+      "Band of dense regular (or in some cases dense irregular) connective tissue that connects bone to bone across a joint — or stabilizes visceral structures — providing passive joint stability and limiting excessive motion while allowing physiologic movement.",
+    anatomy:
+      "Primarily type I collagen fibers oriented along lines of stress; some ligaments (ACL) have mixed collagen and proteoglycan with fibroblast-like cells. Intracapsular (ACL, PCL) vs extracapsular (MCL, LCL). Periodontal ligament — specialized ligament between cementum and alveolar bone. Ligamentum flavum — elastic ligament between laminae (yellow, elastin-rich). Cruciate ligaments cross within knee joint; collateral ligaments along medial/lateral aspects.",
+    action: [
+      "Stabilizes joints by restricting excessive or abnormal motion",
+      "Guides arthrokinematics with capsule and muscles",
+      "Periodontal ligament suspends tooth in alveolar socket and absorbs occlusal force",
+      "Ligamentum flavum contributes to spinal column stability and assists extension",
+    ],
+    clinicalRelevance: [
+      "Sprain — ligamentous injury from joint stress (ankle inversion, knee valgus)",
+      "ACL tear — noncontact pivoting injury, positive Lachman/anterior drawer",
+      "MCL injury — valgus blow to knee",
+      "Shoulder instability — glenohumeral ligament/capsule laxity or Bankart lesion",
+      "Anterior talofibular ligament — most commonly injured in ankle sprain",
+      "Enthesitis — inflammation at ligament/tendon bone insertion in spondyloarthritis",
+      "Relaxin-mediated ligamentous laxity in pregnancy — pubic symphysis dysfunction",
+    ],
+    boardsPearls: [
+      "Ligament = bone to bone; tendon = muscle to bone",
+      "ACL prevents anterior tibial translation; PCL prevents posterior",
+      "MCL — medial knee; resists valgus; LCL — lateral; resists varus",
+      "Ankle sprain — ATFL most common",
+      "Sprain = ligament; strain = muscle/tendon",
+      "Periodontal ligament — tooth support; not synovial joint ligament",
+      "Ligamentum flavum — elastin-rich; hypertrophy narrows spinal canal in stenosis",
+      "vs tendon — ligament stabilizes joints; tendon transmits muscle force",
+    ],
+    distinguishFrom: [
+      "Tendon — muscle to bone force transmission; ligament is passive stabilizer bone to bone",
+      "Joint capsule — fibrous sleeve enclosing synovial joint; ligaments are thickened capsular bands or distinct structures",
+      "Fascia — compartment envelope; not primary intra-articular stabilizer",
+      "Meniscus — fibrocartilage shock absorber within knee; not ligament",
+      "Syndesmosis — fibrous joint with interosseous ligament (tibiofibular); subtype of ligamentous connection",
+      "Aponeurosis — tendinous sheet; not classic joint ligament",
+    ],
+    pediatrics:
+      "Physeal (growth plate) injuries often occur instead of ligament tears in skeletally immature children — ligaments are relatively stronger than open physis. ACL tears increasing in adolescent athletes. Nursemaid's elbow is annular ligament subluxation over radial head in toddlers.",
   },
 ];
 

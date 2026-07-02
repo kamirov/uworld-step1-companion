@@ -2860,6 +2860,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Painful lip fissures + malnutrition → B-complex deficiency workup",
     ],
     distinguishFrom: [
+      "Labial commissure — anatomic corner of the mouth where angular lesions localize; cheilosis is the inflammatory finding",
       "Angular stomatitis — inflammation localized to mouth corners; often overlaps with cheilosis",
       "Herpes labialis — grouped vesicles on vermillion border, not nutritional fissuring",
       "Actinic cheilitis — chronic sun damage in older adults, not acute deficiency",
@@ -2870,7 +2871,7 @@ export const SYMPTOMS: SymptomEntry[] = [
   },
   {
     id: "stomatitis",
-    name: "Stomatiti",
+    name: "Stomatitis",
     etymology:
       "Greek stoma = mouth + -itis = inflammation",
     aliases: [
@@ -4648,6 +4649,133 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Drug-induced parkinsonism from antiemetics or antipsychotics causes rigidity in children. Wilson disease should be considered with rigidity plus liver or psychiatric symptoms in adolescents.",
   },
   {
+    id: "resting-tremor",
+    name: "Resting Tremor",
+    etymology:
+      "Latin restare = to remain + tremor = shaking — rhythmic oscillation maximal when the limb is relaxed and supported, diminishing with voluntary movement",
+    aliases: [
+      "resting tremor",
+      "rest tremor",
+      "resting tremor of parkinsonism",
+      "parkinsonian resting tremor",
+      "tremor at rest",
+    ],
+    definition:
+      "Low-frequency (typically 4–6 Hz) tremor occurring when a limb is at rest and supported against gravity — classic extrapyramidal sign of nigrostriatal dopamine deficiency, most characteristically pill-rolling of the thumb and index finger in Parkinson disease.",
+    mechanism:
+      "Loss of substantia nigra pars compacta dopaminergic input → impaired basal ganglia filtering of thalamocortical motor circuits → rhythmic alternating contraction of antagonist muscles when voluntary movement is not suppressing oscillation; amplitude decreases with intentional movement and increases with stress or walking.",
+    thinkOf: [
+      "Parkinson disease — asymmetric onset, bradykinesia, cogwheel rigidity, masked facies",
+      "Drug-induced parkinsonism — antipsychotics, metoclopramide blocking D₂ receptors",
+      "Atypical parkinsonian syndromes — PSP, MSA, corticobasal degeneration (less classic pill-rolling)",
+      "Essential tremor — action/postural tremor, not maximal at rest",
+      "Enhanced physiologic tremor — faster (8–12 Hz), bilateral, no rigidity or bradykinesia",
+    ],
+    pairWith: [
+      "Resting tremor + bradykinesia + cogwheel rigidity → Parkinson disease",
+      "Unilateral rest tremor spreading to contralateral side → typical PD onset",
+      "Rest tremor that improves with voluntary movement → parkinsonian pattern",
+      "Resting tremor after starting antipsychotic → drug-induced parkinsonism",
+      "Rest tremor + pill-rolling + micrographia → nigrostriatal dopamine deficiency",
+    ],
+    distinguishFrom: [
+      "Essential tremor — bilateral postural/action tremor; worsens with movement, not rest",
+      "Physiologic tremor — fine 8–12 Hz; enhanced by caffeine/anxiety without parkinsonian signs",
+      "Intention tremor — worsens approaching target with cerebellar dysmetria",
+      "Postural tremor — maximal while holding posture against gravity (hyperthyroidism, essential tremor)",
+      "Asterixis — irregular flapping negative myoclonus in metabolic encephalopathy, not rhythmic rest tremor",
+      "Functional tremor — variable, distractible, inconsistent with organic pattern",
+    ],
+    pediatrics:
+      "Classic parkinsonian resting tremor is rare in children; juvenile parkinsonism or drug-induced parkinsonism should be considered. Wilson disease causes different tremor phenomenology (wing-beating) with hepatic and psychiatric features.",
+  },
+  {
+    id: "physiologic-tremor",
+    name: "Physiologic Tremor",
+    etymology:
+      "Greek physis = nature + logos = study + tremor = shaking — normal low-amplitude high-frequency oscillation present in all healthy individuals, occasionally amplified by reversible triggers",
+    aliases: [
+      "physiologic tremor",
+      "physiological tremor",
+      "normal tremor",
+      "enhanced physiologic tremor",
+      "enhanced physiological tremor",
+      "benign tremor",
+      "fine tremor",
+    ],
+    definition:
+      "Normal 8–12 Hz low-amplitude oscillatory movement of the hands visible on careful inspection or when amplified — becomes clinically apparent as enhanced physiologic tremor when sympathetic tone rises or mechanical/cardiac factors increase oscillation.",
+    mechanism:
+      "Physiologic tremor arises from mechanical reflex loops and cardiac pulsation transmitted to outstretched limbs; ↑ sympathetic catecholamines (anxiety, hypoglycemia, hyperthyroidism), β-adrenergic agonists, caffeine, and fatigue lower the threshold for visible oscillation without underlying basal ganglia or cerebellar disease.",
+    thinkOf: [
+      "Anxiety or stress — fine bilateral hand tremor with palpitations",
+      "Hyperthyroidism — fine rapid postural tremor with heat intolerance, weight loss",
+      "Hypoglycemia — adrenergic tremor with diaphoresis in diabetes",
+      "Caffeine excess or β-agonists (albuterol) — reversible enhancement",
+      "Fatigue, sleep deprivation, exercise — transient physiologic amplification",
+      "Essential tremor — pathologic action tremor when enhancement is persistent and familial",
+    ],
+    pairWith: [
+      "Fine bilateral tremor + anxiety/palpitations → enhanced physiologic tremor",
+      "Tremor + weight loss + heat intolerance + ↑ TSH → hyperthyroidism",
+      "Tremor + diaphoresis + confusion + diabetes → hypoglycemia",
+      "Tremor after albuterol or caffeine → reversible physiologic enhancement",
+      "Normal exam except tremor, resolves when trigger removed → physiologic not parkinsonian",
+    ],
+    distinguishFrom: [
+      "Essential tremor — persistent bilateral action/postural tremor, often familial, alcohol-responsive",
+      "Resting tremor — 4–6 Hz pill-rolling at rest with bradykinesia/rigidity (Parkinson disease)",
+      "Intention tremor — cerebellar; worsens near target with dysmetria",
+      "Parkinson disease — rest tremor plus extrapyramidal signs, not isolated fine tremor",
+      "Functional tremor — distractible, entrainable, inconsistent frequency",
+      "Orthostatic tremor — high-frequency leg tremor on standing (14–16 Hz)",
+    ],
+    pediatrics:
+      "Children commonly show fine physiologic tremor with anxiety, fever, or hypoglycemia. Check glucose in a tremulous irritable child. Hyperthyroidism in adolescents causes fine tremor with menstrual changes. Persistent action tremor with family history suggests essential tremor rather than physiologic enhancement.",
+  },
+  {
+    id: "functional-tremor",
+    name: "Functional Tremor",
+    etymology:
+      "Latin functio = performance + tremor = shaking — tremor from abnormal nervous system function without fixed structural neurodegenerative or lesional pathology (psychogenic/conversion tremor)",
+    aliases: [
+      "functional tremor",
+      "psychogenic tremor",
+      "conversion tremor",
+      "nonorganic tremor",
+      "dissociative tremor",
+    ],
+    definition:
+      "Involuntary tremor attributed to a functional neurologic disorder (psychogenic/conversion mechanism) — characterized by clinical features inconsistent with organic tremor syndromes, including distractibility, entrainment, variable frequency, and abrupt onset.",
+    mechanism:
+      "Believed to reflect abnormal motor control and attentional modulation rather than fixed dopaminergic, cerebellar, or peripheral pathology — tremor characteristics may change with distraction, suggestion, or contralateral rhythmic task (entrainment); often associated with psychiatric comorbidity or prior stressor but diagnosis is clinical, not by exclusion alone.",
+    thinkOf: [
+      "Sudden onset tremor with maximal disability early — atypical for slow neurodegeneration",
+      "Tremor that disappears or changes with distraction or alternate task",
+      "Entrainment — tremor frequency shifts to match examiner's rhythmic tapping",
+      "Inconsistent tremor amplitude or anatomic spread (whole-limb shaking at rest and with action)",
+      "Multiple functional neurologic signs (weakness, gait disorder, nonorganic sensory loss)",
+      "History of psychiatric illness, recent stress, or litigation — supportive but not diagnostic alone",
+    ],
+    pairWith: [
+      "Tremor + distractibility + normal neuroimaging → consider functional tremor",
+      "Entrainment on exam + inconsistent phenomenology → functional over organic",
+      "Tremor disproportionate to exam findings + psychiatric comorbidity → functional disorder workup",
+      "vs Parkinson — functional tremor lacks true bradykinesia, rigidity, and dopamine-responsive rest tremor pattern",
+      "Rehabilitation and CBT — treatment approach differs from levodopa or propranolol",
+    ],
+    distinguishFrom: [
+      "Essential tremor — consistent bilateral action/postural tremor, familial, alcohol-responsive",
+      "Parkinson disease — asymmetric resting tremor, bradykinesia, rigidity, levodopa-responsive",
+      "Physiologic tremor — fine 8–12 Hz with identifiable sympathetic trigger",
+      "Intention tremor — cerebellar dysmetria, worsens at target",
+      "Wilson disease — organic wing-beating tremor with liver disease and Kayser-Fleischer rings",
+      "Drug-induced tremor — temporal relation to medication, resolves on withdrawal",
+    ],
+    pediatrics:
+      "Functional neurologic disorders including tremor occur in adolescents, often with comorbid anxiety or bullying history. Diagnose carefully — Wilson disease and hyperthyroidism must be excluded in teens with new tremor. Avoid unnecessary dopaminergic therapy when phenomenology is functional.",
+  },
+  {
     id: "intention-tremor",
     name: "Intention Tremor",
     etymology:
@@ -4695,9 +4823,7 @@ export const SYMPTOMS: SymptomEntry[] = [
     aliases: [
       "pill-rolling tremor",
       "pill rolling tremor",
-      "resting tremor",
       "parkinsonian tremor",
-      "rest tremor",
     ],
     definition:
       "Low-frequency (4–6 Hz) resting tremor of the hands in which the thumb and index finger move in opposition resembling pill-rolling — classic but not universal sign of Parkinson disease and nigrostriatal dopamine deficiency.",
@@ -4815,6 +4941,49 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Assess neonatal jaundice in daylight; scleral icterus in first 24 hours suggests hemolytic disease or sepsis rather than physiologic jaundice. Bilirubin nomograms guide phototherapy based on age in hours.",
+  },
+  {
+    id: "blue-sclerae",
+    name: "Blue Sclerae",
+    etymology:
+      "Old English blāw + Greek skleros = hard — bluish hue of the sclera from thinning of collagen-rich connective tissue allowing underlying uveal pigment to show through",
+    aliases: [
+      "blue sclerae",
+      "blue sclera",
+      "bluish sclera",
+      "bluish sclerae",
+      "scleral blueness",
+      "blue-tinged sclera",
+      "blue tinted sclera",
+      "blue whites of eyes",
+    ],
+    definition:
+      "Abnormal bluish discoloration of the sclera caused by reduced scleral thickness or defective type I collagen — permitting the underlying choroidal vasculature and uveal pigment to be visible through the thinned opaque collagen layer.",
+    mechanism:
+      "Sclera is dense type I collagen; when collagen synthesis or structure is impaired (osteogenesis imperfecta) or sclera is abnormally thin, light transmission reveals the dark uveal layer beneath → blue-gray appearance. Normal infants have relatively thin sclerae that may appear mildly bluish transiently.",
+    thinkOf: [
+      "Osteogenesis imperfecta — type I collagen defect; fractures, hearing loss, dentinogenesis imperfecta",
+      "COL1A1/COL1A2 mutations — autosomal dominant OI types I–IV",
+      "Physiologic in neonates — thin sclera; resolves as collagen thickens",
+      "Iron deficiency anemia — occasionally cited; less specific than OI on boards",
+      "Connective tissue disorders with scleral thinning",
+    ],
+    pairWith: [
+      "Blue sclerae + recurrent fractures in child → osteogenesis imperfecta",
+      "Blue sclerae + opalescent teeth + hearing loss → OI with dentinogenesis imperfecta",
+      "Blue sclerae + family history of brittle bones → COL1A1 testing",
+      "Blue sclerae + normal fracture history in infant → may be physiologic thin sclera",
+      "vs scleral icterus — yellow from bilirubin, not blue from thinning",
+    ],
+    distinguishFrom: [
+      "Scleral icterus — yellow from hyperbilirubinemia; elastin binds bilirubin",
+      "Normal dark iris showing through limbus — localized at corneoscleral junction, not diffuse scleral blue",
+      "Conjunctival injection — red vessels, not blue structural hue",
+      "Ocular melanocytosis — patchy scleral/episcleral pigmentation, not OI collagen defect",
+      "Café-au-lait macules — skin finding in NF1; not scleral color change",
+    ],
+    pediatrics:
+      "Blue sclerae with multiple fractures and dentin abnormalities strongly suggests osteogenesis imperfecta — distinguish from non-accidental trauma with family history, genetic testing, and skeletal survey. Mild bluish sclera common in normal newborns from thin sclera; pathologic when persistent with fragility fractures.",
   },
   {
     id: "pruritus",
@@ -6739,6 +6908,47 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Bilious vomiting in neonate is malrotation/volvulus until proven otherwise; projectile nonbilious vomiting at 2–8 weeks suggests pyloric stenosis. Infants may vomit with UTI, meningitis, or ↑ ICP without localizing GI symptoms.",
   },
   {
+    id: "hyperemesis",
+    name: "Hyperemesis",
+    etymology:
+      "Greek hyper- = excessive + emesis = vomiting — pathologic degree of vomiting beyond expected physiologic nausea, causing dehydration, electrolyte disturbance, or inability to maintain oral intake",
+    aliases: [
+      "hyperemesis",
+      "excessive vomiting",
+      "intractable vomiting",
+      "severe vomiting",
+      "persistent vomiting",
+    ],
+    definition:
+      "Excessive or protracted vomiting that impairs hydration and nutrition — a severity descriptor applied to several distinct syndromes (pregnancy, cannabis use, metabolic disease) rather than a single disease entity.",
+    mechanism:
+      "Chemoreceptor trigger zone and vomiting center activation exceeds compensatory intake — from ↑ hCG/estrogen (pregnancy), cannabinoid effects on GI and hypothalamic thermoregulation, toxins, ↑ ICP, or metabolic acidosis — leading to volume depletion, ketosis, and electrolyte loss.",
+    thinkOf: [
+      "Hyperemesis gravidarum — severe first-trimester pregnancy vomiting with ketosis and weight loss",
+      "Cannabinoid hyperemesis syndrome — chronic cannabis use, cyclic vomiting, relief with hot showers",
+      "Wernicke encephalopathy risk — thiamine depletion from prolonged vomiting (pregnancy, alcoholism, refeeding)",
+      "Bowel obstruction, DKA, uremia — vomiting with distinct primary diagnoses",
+      "Pyloric stenosis — projectile vomiting in infant (not labeled hyperemesis clinically)",
+    ],
+    pairWith: [
+      "First-trimester pregnancy + ketonuria + weight loss → hyperemesis gravidarum",
+      "Chronic cannabis + cyclic vomiting + hot bathing → cannabinoid hyperemesis syndrome",
+      "Vomiting + confusion + ataxia + alcoholism → Wernicke — thiamine before glucose",
+      "Vomiting + Kussmaul + hyperglycemia → DKA",
+      "Projectile nonbilious vomiting at 2–8 weeks → pyloric stenosis",
+    ],
+    distinguishFrom: [
+      "Vomiting — general symptom; hyperemesis implies excessive severity or specific syndromes",
+      "Hyperemesis gravidarum — pregnancy-specific severe form with defined criteria",
+      "Morning sickness — mild nausea/vomiting of pregnancy without dehydration or ketosis",
+      "Cannabinoid hyperemesis syndrome — chronic cannabis-associated cyclic vomiting",
+      "Nausea — urge to vomit without necessarily emesis",
+      "Regurgitation — passive reflux without coordinated emesis",
+    ],
+    pediatrics:
+      "Hyperemesis gravidarum in adolescent pregnancy carries same Wernicke risk — replete thiamine before IV dextrose. Cyclic vomiting in children prompts metabolic, neurologic, and cannabinoid exposure evaluation.",
+  },
+  {
     id: "bradycardia",
     name: "Bradycardia",
     etymology: "Greek bradys = slow + kardia = heart — abnormally slow heart rate",
@@ -8135,6 +8345,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "corrigan pulse sign",
       "corrigan pulse",
       "corrigan water hammer pulse",
+      "aortic regurgitation corrigan pulse",
+      "corrigan pulse aortic regurgitation",
+      "corrigan sign aortic regurgitation",
       "water hammer sign",
       "water-hammer sign",
       "collapsing pulse sign",
@@ -8213,6 +8426,89 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Traube sign may be present with significant PDA or AR in infants with wide pulse pressure. Evaluate with echocardiography if bounding femoral pulses and hyperdynamic signs are unexplained.",
+  },
+  {
+    id: "quincke-pulse",
+    name: "Quincke Pulse",
+    etymology:
+      "eponym: Heinrich Quincke + Latin pulsus = beat — visible pulsation of nail-bed capillaries in chronic severe aortic regurgitation",
+    aliases: [
+      "quincke pulse",
+      "quincke's pulse",
+      "quincke sign",
+      "quincke's sign",
+      "quincke capillary pulse",
+      "capillary pulsation",
+      "nail bed capillary pulsation",
+      "nail-bed pulsation",
+      "visible capillary pulse",
+    ],
+    definition:
+      "Visible alternating blanching and flushing of the nail-bed capillaries with each arterial pulse — peripheral sign of wide pulse pressure and hyperdynamic circulation in chronic severe aortic regurgitation.",
+    mechanism:
+      "Wide systolic-diastolic pressure swings transmit to subpapillary capillaries — systolic distension causes visible pulsatile filling (red) and rapid diastolic runoff causes blanching; same hyperdynamic hemodynamics as Corrigan and water-hammer pulses.",
+    thinkOf: [
+      "Chronic severe aortic regurgitation — part of peripheral AR sign cluster",
+      "Wide pulse pressure with bounding circulation",
+      "Patent ductus arteriosus — hyperdynamic pulses (continuous murmur distinguishes)",
+      "Hyperthyroidism, anemia, fever — nonspecific bounding circulation",
+    ],
+    pairWith: [
+      "Quincke pulse + Corrigan pulse + de Musset sign → aortic regurgitation",
+      "Quincke + Traube sign (femoral pistol-shot) + Hill sign → AR peripheral signs",
+      "Quincke + early diastolic decrescendo murmur at LSB → AR",
+      "Quincke + wide pulse pressure on BP cuff",
+    ],
+    distinguishFrom: [
+      "Corrigan sign — bounding/collapsing arterial pulse at carotid or radial, not nail-bed capillary",
+      "Traube sign — audible pistol-shot over femoral artery",
+      "Duroziez sign — systolic and diastolic femoral murmurs with compression",
+      "Clubbing — chronic structural nail change, not pulsatile capillary blanching",
+      "Normal nail bed — no visible pulse-synchronous capillary pulsation",
+    ],
+    pediatrics:
+      "May be seen with significant PDA or AR in infants with wide pulse pressure. Distinguish from normal brisk perfusion in febrile infants — pair with murmur and echocardiography.",
+  },
+  {
+    id: "duroziez-sign",
+    name: "Duroziez Sign",
+    etymology:
+      "eponym: Paul Louis Duroziez + Latin signum = mark — to-and-fro double murmur over the femoral artery with compression in aortic regurgitation",
+    aliases: [
+      "duroziez sign",
+      "duroziez's sign",
+      "duroziez murmur",
+      "duroziez double murmur",
+      "femoral double murmur sign",
+      "to-and-fro femoral murmur",
+      "duroziez femoral sign",
+    ],
+    definition:
+      "Maneuver in which partial compression of the femoral artery with a stethoscope produces both a systolic and a diastolic murmur — classic peripheral hyperdynamic sign of chronic severe aortic regurgitation with wide pulse pressure.",
+    mechanism:
+      "High-velocity systolic antegrade flow and rapid retrograde diastolic runoff through the incompetent aortic valve create turbulent to-and-fro flow in the femoral artery; gentle compression with the stethoscope bell accentuates both components into audible systolic and diastolic murmurs.",
+    thinkOf: [
+      "Chronic severe aortic regurgitation — femoral hyperdynamic sign",
+      "Wide pulse pressure and bounding circulation",
+      "Part of AR peripheral sign cluster with Corrigan, Quincke, Traube, Hill signs",
+      "Patent ductus arteriosus — continuous murmur differs (not classic Duroziez double murmur)",
+    ],
+    pairWith: [
+      "Duroziez sign + Corrigan pulse + Quincke pulse → aortic regurgitation",
+      "Duroziez + Traube pistol-shot femoral sign + early diastolic murmur → AR",
+      "Duroziez + de Musset sign (head bobbing) + wide pulse pressure",
+      "Femoral compression maneuver + auscultate LSB for diastolic blow",
+    ],
+    distinguishFrom: [
+      "Traube sign — pistol-shot systolic sound without classic diastolic component",
+      "Femoral bruit from atherosclerosis — often systolic; not hyperdynamic to-and-fro AR pattern",
+      "Continuous murmur of PDA — machinery murmur, not femoral compression double murmur",
+      "Corrigan sign — palpable bounding pulse, not femoral auscultatory maneuver",
+      "Quincke pulse — nail-bed capillary pulsation",
+      "Hill sign — popliteal systolic BP exceeds brachial; pressure gradient not murmur maneuver",
+    ],
+    pediatrics:
+      "Uncommon as a formal bedside maneuver in infants but reflects same wide-pulse-pressure physiology seen with PDA or significant AR. Echocardiography confirms structural disease when hyperdynamic femoral signs are present.",
   },
   {
     id: "muffled-heart-sounds",
@@ -8905,6 +9201,51 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Primary TB in children classically shows hilar/mediastinal lymphadenopathy appearing as hilar fullness without parenchymal cavity. Prominent thymus causes anterior mediastinal fullness — distinguish from true hilar lymphadenopathy. Hodgkin lymphoma peaks in adolescence with mediastinal-hilar bulk.",
+  },
+  {
+    id: "endobronchial-mass",
+    name: "Endobronchial Mass",
+    etymology:
+      "Greek endon = within + bronchos = windpipe + Latin massa = lump — intraluminal lesion projecting into or obstructing the bronchial airway",
+    aliases: [
+      "endobronchial mass",
+      "endobronchial lesion",
+      "endobronchial tumor",
+      "endobronchial neoplasm",
+      "intrabronchial mass",
+      "bronchial mass",
+      "endobronchial obstruction",
+    ],
+    definition:
+      "Focal lesion arising within or projecting into the bronchial lumen — visible on bronchoscopy or suggested by postobstructive atelectasis, recurrent pneumonia, or central hilar opacity on imaging — most often primary lung cancer in adults.",
+    mechanism:
+      "Central airway tumor (squamous cell carcinoma, small cell lung cancer, carcinoid) or less commonly metastasis, granuloma, or foreign body grows within bronchus → luminal narrowing or occlusion → distal atelectasis, postobstructive pneumonitis, hemoptysis, wheeze, or recurrent infections.",
+    thinkOf: [
+      "Squamous cell lung carcinoma — central endobronchial mass in smoker; cavitation; PTHrP hypercalcemia",
+      "Small cell lung cancer — central hilar/endobronchial mass; paraneoplastic SIADH, ectopic ACTH",
+      "Carcinoid tumor — central endobronchial polypoid mass; indolent; carcinoid syndrome if metastatic",
+      "Foreign body — unilateral wheeze, history of aspiration (especially child)",
+      "Endobronchial metastasis — breast, colon, kidney to airways (less common)",
+      "Tuberculosis — endobronchial granulomatous disease in endemic settings",
+    ],
+    pairWith: [
+      "Smoker + hemoptysis + central mass → squamous cell lung cancer",
+      "Hyponatremia + central lung mass → SCLC with SIADH",
+      "Hypercalcemia + suppressed PTH + lung mass → PTHrP from squamous carcinoma",
+      "Recurrent postobstructive pneumonia same lobe → suspect endobronchial obstruction",
+      "Wheeze unilateral + treatment-resistant → endobronchial lesion until proven otherwise",
+      "Bronchoscopy — direct visualization and biopsy of endobronchial mass",
+    ],
+    distinguishFrom: [
+      "Peripheral lung nodule — parenchymal lesion without primary endobronchial component (adenocarcinoma)",
+      "Hilar lymphadenopathy — extrabronchial nodal enlargement; may compress but not intraluminal mass",
+      "Mediastinal mass — outside bronchial lumen (thymoma, lymphoma bulk)",
+      "Mucus plugging — reversible airway occlusion without neoplasm",
+      "Bronchial stenosis — scar or inflammation narrowing lumen without discrete mass",
+      "Cavitary lesion — parenchymal necrosis with air-fluid level; may coexist with endobronchial tumor",
+    ],
+    pediatrics:
+      "Endobronchial foreign body is classic cause of unilateral wheeze in toddlers — chest X-ray may show hyperinflation or atelectasis. Primary lung tumors are rare in children; carcinoid and inflammatory myofibroblastic tumor occur. Always consider aspirated peanut or toy part before malignancy in young child with unilateral airway symptoms.",
   },
   {
     id: "air-fluid-level",
@@ -11929,6 +12270,56 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Septic arthritis of the knee requires urgent arthrocentesis — S. aureus and Kingella kingae common. Transient synovitis more often affects hip but knee can swell after viral illness. Hemophilia presents with knee hemarthrosis when child begins walking. Juvenile idiopathic arthritis causes chronic knee effusion with morning stiffness.",
   },
   {
+    id: "knee-pain",
+    name: "Knee Pain",
+    etymology:
+      "Old English cnēo = knee + Latin poena = penalty/suffering — discomfort localized to the knee joint or periarticular structures",
+    aliases: [
+      "knee pain",
+      "painful knee",
+      "anterior knee pain",
+      "medial knee pain",
+      "lateral knee pain",
+      "posterior knee pain",
+      "knee ache",
+    ],
+    definition:
+      "Symptom of discomfort arising from the knee joint (synovium, cartilage, menisci, ligaments) or periarticular structures (patellar tendon, prepatellar bursa, popliteal fossa) — one of the most common musculoskeletal complaints across age groups.",
+    mechanism:
+      "Pain generated by synovial inflammation, cartilage wear, ligamentous injury, meniscal tear, bursitis, tendinopathy, fracture, infection, crystal deposition, or referred hip/lumbar pathology — effusion distends capsule and worsens pain with motion.",
+    thinkOf: [
+      "Osteoarthritis — older adult, activity-related pain, crepitus, morning stiffness <30 min",
+      "ACL tear — sports pivot injury, pop, immediate effusion, instability",
+      "Meniscal tear — twisting injury, joint line pain, locking/catching",
+      "Patellofemoral pain syndrome — anterior knee pain in adolescents/young adults, stairs/squatting",
+      "Septic arthritis — acute hot swollen knee, fever, cannot bear weight",
+      "Gout/pseudogout — acute monoarticular inflammatory knee pain",
+      "Prepatellar bursitis — superficial anterior pain over kneecap (housemaid's knee)",
+      "Baker cyst — posterior knee fullness with underlying effusion",
+      "Referred hip pain — SCFE, slipped epiphysis, AVN; adolescent with knee pain needs hip exam",
+    ],
+    pairWith: [
+      "Swelling + fever → septic arthritis — emergent arthrocentesis",
+      "Pop + effusion after sports → ACL tear",
+      "Locking/catching → meniscal tear",
+      "Anterior pain with stairs → patellofemoral syndrome or Osgood-Schlatter (tibial tubercle)",
+      "Adolescent + knee pain + limited hip internal rotation → SCFE (referred pain)",
+      "Monoarticular acute pain + tophi → gout",
+      "Chronic bilateral pain + morning stiffness >1 h → rheumatoid arthritis",
+      "Young boy + hemarthrosis + prolonged aPTT → hemophilia",
+    ],
+    distinguishFrom: [
+      "Knee swelling — effusion sign; may accompany knee pain but distinct finding",
+      "Hip pain — groin or thigh; SCFE often presents as knee pain",
+      "Shin splints — lower leg pain along tibia, not joint line",
+      "Cellulitis — skin infection without deep joint pain on passive motion",
+      "Lumbar radiculopathy — L3–L4 radicular pain may refer to anterior thigh/knee region",
+      "Deep vein thrombosis — calf pain and swelling; knee joint pain absent",
+    ],
+    pediatrics:
+      "Always examine the hip in a limping child or adolescent with knee pain — SCFE presents with referred knee pain and limited internal rotation. Osgood-Schlatter disease causes tibial tubercle tenderness in active adolescents. Septic arthritis is surgical emergency. JIA causes chronic knee pain with morning stiffness. Hemophilia hemarthrosis common when child begins walking.",
+  },
+  {
     id: "xerophthalmia",
     name: "Xerophthalmia",
     etymology:
@@ -13465,6 +13856,51 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Neuropathic pain occurs in children with hereditary neuropathies, chemotherapy, and complex regional pain syndrome; gabapentinoids and physical therapy are used with specialist guidance.",
   },
   {
+    id: "chronic-pain",
+    name: "Chronic Pain",
+    etymology:
+      "Greek chronos = time + Latin poena = penalty/pain — persistent pain lasting beyond normal tissue healing time (classically >3 months)",
+    aliases: [
+      "chronic pain",
+      "persistent pain",
+      "long-term pain",
+      "chronic pain syndrome",
+      "chronic pain condition",
+    ],
+    definition:
+      "Pain that persists or recurs beyond the expected period of tissue healing — often >3 months — and may arise from ongoing nociceptive input, nerve injury (neuropathic), or altered pain processing without clear ongoing tissue damage (nociplastic).",
+    mechanism:
+      "Peripheral sensitization (ongoing inflammation or nerve injury) and/or central sensitization (dorsal horn wind-up, ↓ descending inhibition, cortical reorganization) maintain pain after acute injury resolves — maladaptive plasticity in nociceptive pathways amplifies and prolongs pain perception.",
+    thinkOf: [
+      "Low back pain — most common chronic pain condition",
+      "Fibromyalgia — widespread pain with nociplastic features",
+      "Diabetic neuropathy — chronic neuropathic pain",
+      "Postherpetic neuralgia",
+      "Osteoarthritis — chronic nociceptive joint pain",
+      "Complex regional pain syndrome (CRPS)",
+      "Chronic postsurgical or post-traumatic pain",
+      "Central sensitization after prolonged nociceptive input",
+    ],
+    pairWith: [
+      "Pain >3 months after injury with normal imaging → chronic pain syndrome",
+      "Widespread pain + fatigue + tender points → fibromyalgia (chronic nociplastic pain)",
+      "Burning neuropathic quality + sensory loss → chronic neuropathic pain",
+      "Chronic pain + opioid use → risk tolerance, hyperalgesia, and dependence",
+      "Multimodal therapy (PT, gabapentinoid, SNRI) → appropriate chronic pain management",
+      "Allodynia + hyperalgesia without ongoing injury → central sensitization",
+    ],
+    distinguishFrom: [
+      "Acute pain — adaptive alarm signaling tissue injury; resolves with healing",
+      "Nociceptive pain — ongoing tissue injury mechanism; may be acute or chronic if injury persists",
+      "Neuropathic pain — nerve injury subtype of chronic pain, not synonymous with all chronic pain",
+      "Nociplastic pain — altered pain processing (e.g., fibromyalgia) without clear peripheral nociceptor driver",
+      "Psychogenic pain — diagnosis of exclusion after thorough evaluation",
+      "Malingering — intentional symptom fabrication for external gain",
+    ],
+    pediatrics:
+      "Chronic pain occurs in children (abdominal pain, headaches, CRPS, juvenile fibromyalgia) — avoid opioid monotherapy; multidisciplinary care with physical therapy and cognitive-behavioral therapy is first-line.",
+  },
+  {
     id: "dysesthesia",
     name: "Dysesthesia",
     etymology: "Greek dys- = bad/abnormal + aisthēsis = sensation",
@@ -14518,6 +14954,96 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Nephrotic syndrome is a common pediatric cause of ascites with shifting dullness. Neonatal ascites warrants workup for urinary ascites, hydrops, or liver disease. Exam technique same as adults; large-volume ascites may be easier to detect in thin children.",
   },
   {
+    id: "fluid-wave-test",
+    name: "Fluid Wave Test",
+    etymology:
+      "Latin fluidus = flowing + Old English wafian = to move to and fro + Latin testum = earthen pot (trial) — palpation of a transmitted impulse across the abdomen when free fluid is tapped",
+    aliases: [
+      "fluid wave test",
+      "fluid wave",
+      "fluid wave sign",
+      "abdominal fluid wave",
+      "ascitic fluid wave",
+      "fluid thrill test",
+      "fluid thrill",
+      "fluid wave maneuver",
+    ],
+    definition:
+      "Physical exam maneuver for ascites — with the patient supine, the examiner places the ulnar edge of one hand on the patient's midabdomen (often with the patient's hand or a towel interposed to dampen skin/fat transmission) and taps one flank with the other hand; a palpable impulse felt on the opposite flank suggests free intraperitoneal fluid transmitting the tap.",
+    mechanism:
+      "Free ascitic fluid forms a continuous fluid column in the peritoneal cavity → tapping one flank sends a pressure wave through fluid → impulse palpated on the opposite flank; typically requires large-volume ascites (often ≥~1500 mL) and is less reliable in obesity than shifting dullness.",
+    thinkOf: [
+      "Cirrhotic ascites — portal hypertension with fluid wave and shifting dullness",
+      "Nephrotic syndrome — hypoalbuminemia with ascites and peripheral edema",
+      "Right heart failure — ascites with JVD and peripheral edema",
+      "Peritoneal carcinomatosis — malignant ascites",
+      "Spontaneous bacterial peritonitis — complication of cirrhotic ascites",
+    ],
+    pairWith: [
+      "Fluid wave + shifting dullness + jaundice + spider angiomata → cirrhotic ascites",
+      "Fluid wave + shifting dullness + hypoalbuminemia + foamy urine → nephrotic ascites",
+      "Fluid wave + shifting dullness + JVD + peripheral edema → cardiac ascites",
+      "Fluid wave + SAAG ≥1.1 → portal hypertension cause",
+      "Fluid wave + SAAG <1.1 → peritoneal malignancy or TB peritonitis",
+      "Negative fluid wave + negative shifting dullness → obesity, gas, or pregnancy more likely than significant ascites",
+    ],
+    distinguishFrom: [
+      "Shifting dullness — percussion sign; fluid redistributes with position change",
+      "Generalized tympany — gas distension; no transmitted fluid impulse",
+      "Skin/fat transmission — false positive without interposed hand dampening impulse through abdominal wall",
+      "Localized dullness — solid organ or mass; does not transmit tap across abdomen",
+      "Puddle sign — patient prone; detects smaller ascites volumes than classic fluid wave",
+    ],
+    pediatrics:
+      "Nephrotic syndrome is a common pediatric cause of ascites with a positive fluid wave. Neonatal ascites warrants workup for urinary ascites, hydrops, or liver disease. Technique same as adults; large-volume ascites may be easier to detect in thin children.",
+  },
+  {
+    id: "cobblestone-mucosa",
+    name: "Cobblestone Mucosa",
+    etymology:
+      "Old English cob = rounded lump + stone + Latin mucosa = mucous membrane — endoscopic appearance of nodular mucosal islands separated by linear ulcerations or fissures resembling cobblestones",
+    aliases: [
+      "cobblestone mucosa",
+      "cobblestone mucosae",
+      "cobblestoning",
+      "cobblestone appearance",
+      "cobblestone pattern",
+      "cobblestone mucosal pattern",
+      "mucosal cobblestoning",
+      "cobblestone ileum",
+      "cobblestone mucosa of bowel",
+    ],
+    definition:
+      "Endoscopic or gross pathologic appearance of raised nodular mucosal areas alternating with deep linear ulcers or fissures — creating a cobblestone-like surface — classically seen in transmural intestinal inflammation where edematous mucosal islands survive between ulcerated troughs.",
+    mechanism:
+      "Transmural inflammation with deep linear fissures and ulcers through edematous mucosa → surviving islands of swollen mucosa bulge between ulcer beds → cobblestone pattern; submucosal edema and granulation tissue accentuate nodularity on barium studies.",
+    thinkOf: [
+      "Crohn disease — terminal ileum and colon; transmural inflammation with skip lesions",
+      "Severe ulcerative colitis — mucosal granularity and pseudopolyps in fulminant disease (less classic cobblestone than Crohn)",
+      "Ischemic colitis — segmental ulceration with edematous intervening mucosa in severe cases",
+      "Allergic conjunctivitis — cobblestone papillae on tarsal conjunctiva (distinct anatomic site)",
+      "Chronic granulomatous inflammation with deep ulceration and mucosal edema",
+    ],
+    pairWith: [
+      "Cobblestone mucosa + skip lesions + noncaseating granulomas → Crohn disease",
+      "Cobblestone mucosa + perianal fistula + terminal ileum involvement → Crohn disease",
+      "Cobblestone mucosa + continuous colonic involvement + bloody diarrhea → UC more likely than Crohn",
+      "Cobblestone mucosa + string sign on small bowel imaging → Crohn terminal ileitis",
+      "Cobblestone mucosa + B12 deficiency → terminal ileum Crohn disease",
+      "Cobblestone papillae on conjunctiva + itching + seasonal symptoms → allergic conjunctivitis",
+    ],
+    distinguishFrom: [
+      "Pseudopolyps — regenerating mucosal tags in UC; continuous colitis, not skip cobblestone ileum",
+      "Lymphoid nodular hyperplasia — diffuse small nodules in terminal ileum of children; benign",
+      "Mucosal granularity — fine sandpaper texture in mild UC; not deep fissured cobblestone",
+      "Candida esophagitis — white plaques that scrape off; not transmural cobblestone bowel pattern",
+      "Skip lesions alone — discontinuous disease supports Crohn but cobblestone is specific mucosal morphology",
+      "Thumbprinting on X-ray — submucosal edema haustral pattern in ischemic colitis, not cobblestone endoscopy",
+    ],
+    pediatrics:
+      "Crohn disease may present in adolescents with cobblestone terminal ileum on endoscopy before classic diarrhea history; growth failure and perianal disease are pediatric clues. Benign lymphoid nodular hyperplasia of terminal ileum can mimic nodularity but lacks deep fissures and transmural Crohn features.",
+  },
+  {
     id: "splenomegaly",
     name: "Splenomegaly",
     etymology:
@@ -14659,10 +15185,8 @@ export const SYMPTOMS: SymptomEntry[] = [
     etymology: "Latin tremor = trembling from tremere = to shake",
     aliases: [
       "tremor",
-      "resting tremor",
       "postural tremor",
       "action tremor",
-      "intention tremor",
       "pill-rolling tremor",
       "pill rolling tremor",
     ],
@@ -15701,6 +16225,7 @@ export const SYMPTOMS: SymptomEntry[] = [
       "liver flap",
       "hepatic flap",
       "flapping asterixis",
+      "flapping tremor asterixis",
     ],
     definition:
       "Brief, irregular loss of muscle tone causing sudden flapping/dropping of outstretched hands (and sometimes feet or tongue) when posture is held — a sign of metabolic encephalopathy, not a rhythmic tremor.",
@@ -19894,12 +20419,9 @@ export const SYMPTOMS: SymptomEntry[] = [
       "fundus red reflex",
       "absent red reflex",
       "abnormal red reflex",
-      "leukocoria",
-      "white pupillary reflex",
-      "white reflex",
     ],
     definition:
-      "Orange-red glow seen when light reflects from the vascular retina through a clear ocular media on ophthalmoscopic or Brückner red reflex examination — symmetric, bright reflex is normal; absent, asymmetric, or white (leukocoria) reflex signals media opacity or intraocular pathology.",
+      "Orange-red glow seen when light reflects from the vascular retina through a clear ocular media on ophthalmoscopic or Brückner red reflex examination — symmetric, bright reflex is normal; absent, asymmetric, or white reflex signals media opacity or intraocular pathology (see leukocoria entry).",
     mechanism:
       "Light from ophthalmoscope traverses cornea, aqueous, lens, and vitreous → reflects from choroidal/retinal vasculature producing red-orange glow. Cataract, vitreous hemorrhage, or retinoblastoma blocks or whitens reflex; strabismus or anisometropia may show asymmetric reflex intensity on Brückner test.",
     thinkOf: [
@@ -19927,6 +20449,58 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Red reflex screening is standard in newborn and well-child exams; leukocoria demands immediate evaluation for retinoblastoma (most common intraocular malignancy of childhood). Congenital cataracts require surgery within weeks to months to prevent deprivation amblyopia. Asymmetric reflex with esotropia suggests amblyogenic strabismus.",
+  },
+  {
+    id: "leukocoria",
+    name: "Leukocoria",
+    etymology:
+      "Greek leukos = white + kore = pupil — abnormal white pupillary reflex instead of the normal red reflex from retinal vasculature",
+    aliases: [
+      "leukocoria",
+      "leukocorias",
+      "leukokoria",
+      "white pupillary reflex",
+      "white pupil",
+      "white pupil reflex",
+      "cat's eye reflex",
+      "cats eye reflex",
+      "cat eye reflex",
+      "amaurotic cat's eye",
+      "white reflex in pupil",
+      "abnormal white reflex",
+    ],
+    definition:
+      "White or pale pupillary light reflex seen on penlight exam or flash photography — indicates opacity in ocular media or an intraocular mass blocking the normal red reflex from the retina — a pediatric emergency sign until retinoblastoma is excluded.",
+    mechanism:
+      "Normal red reflex requires transparent cornea, lens, and vitreous plus vascular retina reflecting light. Leukocoria occurs when a retinal tumor (retinoblastoma), cataract, vitreous opacity, or vascular malformation scatters or blocks transmitted light → white pupillary appearance ('cat's eye reflex').",
+    thinkOf: [
+      "Retinoblastoma — most urgent diagnosis; embryonal retinal tumor, RB1 two-hit",
+      "Congenital cataract — lens opacity; TORCH, galactosemia, rubella",
+      "Persistent fetal vasculature (PFV) — unilateral leukocoria in infant",
+      "Coats disease — retinal telangiectasia with exudate; unilateral in older children",
+      "Retinopathy of prematurity — advanced disease with retinal detachment",
+      "Vitreous hemorrhage — trauma, retinopathy of prematurity",
+      "Coloboma or other structural anomaly — less common",
+    ],
+    pairWith: [
+      "Leukocoria in infant/child → retinoblastoma until proven otherwise — urgent ophthalmology/oncology",
+      "Leukocoria + family history → germline RB1; screen siblings",
+      "Unilateral leukocoria + age <1 year → retinoblastoma or PFV",
+      "Leukocoria + strabismus → retinoblastoma common presentation",
+      "Leukocoria on flash photography ('cat's eye' in photos) → retinoblastoma red flag",
+      "Bilateral leukocoria → germline RB1 retinoblastoma or bilateral cataracts",
+      "Leukocoria + calcification on CT → retinoblastoma (do not biopsy — risk of seeding)",
+    ],
+    distinguishFrom: [
+      "Normal red reflex — symmetric orange-red glow through pupil",
+      "Absent red reflex — dull or no reflex from dense cataract or hemorrhage; may overlap with leukocoria",
+      "Brushfield spots — iris speckling in Down syndrome; not pupillary white reflex",
+      "Corneal leukoma — white corneal scar; opacity anterior to pupil not intravitreal",
+      "Strabismus alone — misalignment without white pupillary reflex",
+      "Red reflex entry — screening test; leukocoria is the pathologic white finding",
+    ],
+    pediatrics:
+      "Leukocoria is a cardinal sign of retinoblastoma — most common primary intraocular malignancy of childhood. Red reflex screening at birth and well-child visits detects leukocoria early. Never biopsy an intraocular mass suspected to be retinoblastoma — enucleation or chemoreduction per oncology protocol. Congenital cataract also causes leukocoria and needs urgent surgery to prevent amblyopia.",
   },
   {
     id: "diplopia",
@@ -20960,11 +21534,53 @@ export const SYMPTOMS: SymptomEntry[] = [
       "Dementia — global cognitive decline beyond isolated memory (executive function, language, visuospatial)",
       "Delirium — acute fluctuating attention and awareness with memory impairment",
       "Psychogenic/dissociative amnesia — lacks consistent anatomic lesion pattern",
-      "Confabulation — fabricated filling of memory gaps; seen with Korsakoff, not all amnesia",
+      "Confabulation — fabricated filling of memory gaps; see confabulation entry",
       "Anterograde memory loss — inability to form new memories; see anterograde-memory-loss entry",
     ],
     pediatrics:
       "Pediatric head trauma can cause post-concussive memory complaints. HSV encephalitis in children causes fever, behavioral change, and temporal lobe seizures with memory deficits — acyclovir urgency.",
+  },
+  {
+    id: "confabulation",
+    name: "Confabulation",
+    etymology:
+      "Latin con- = together + fabula = story + -ation = act of — unconscious fabrication or distortion of memories to fill gaps in recall, without intent to deceive",
+    aliases: [
+      "confabulation",
+      "confabulate",
+      "confabulating",
+      "memory confabulation",
+      "fabricated memory",
+    ],
+    definition:
+      "Production of false or distorted memories — often plausible and detailed — to compensate for anterograde amnesia; patient believes the recollection is real; classically associated with diencephalic injury from thiamine deficiency (Korsakoff syndrome), not malingering.",
+    mechanism:
+      "Damage to mammillary bodies and medial dorsal thalamus (diencephalic memory circuit) or bilateral hippocampal injury disrupts memory encoding/consolidation → patient unconsciously invents narratives to answer questions rather than saying 'I don't know' — contrasts with cortical dementias where patients more often admit memory loss.",
+    thinkOf: [
+      "Korsakoff syndrome — chronic thiamine deficiency after Wernicke encephalopathy",
+      "Chronic alcohol use disorder — classic setting for Wernicke-Korsakoff",
+      "Wernicke encephalopathy — acute thiamine deficiency precursor if untreated",
+      "Bilateral medial temporal lobe disease — severe anterograde amnesia (less classic confabulation pattern than Korsakoff)",
+      "Hyperemesis gravidarum or malnutrition — thiamine depletion risk before glucose repletion",
+    ],
+    pairWith: [
+      "Anterograde amnesia + alcoholism → Korsakoff syndrome with confabulation",
+      "Confusion + ataxia + ophthalmoplegia → Wernicke — give thiamine urgently",
+      "Amnesia + 'I don't know' answers → Alzheimer or depression more than Korsakoff",
+      "Prolonged vomiting + confusion → thiamine deficiency workup",
+      "Mammillary body atrophy on MRI + amnesia → Korsakoff",
+    ],
+    distinguishFrom: [
+      "Amnesia — broader memory loss; confabulation is specific false recall behavior",
+      "Anterograde memory loss — inability to form new memories; confabulation fills the gap",
+      "Malingering — intentional deception for external gain; confabulation is unconscious",
+      "Delusion — fixed false belief; confabulation is memory reconstruction not psychotic belief",
+      "Hallucination — perceptual experience without stimulus; confabulation is memory narrative",
+      "Alzheimer disease — patients often acknowledge memory difficulty; less prominent confabulation than Korsakoff",
+      "Transient global amnesia — repetitive questioning without lasting confabulation pattern",
+    ],
+    pediatrics:
+      "Korsakoff confabulation is uncommon in children but thiamine deficiency from hyperemesis gravidarum in adolescents, malignancy, or eating disorders can cause Wernicke-Korsakoff — always give thiamine before glucose in at-risk patients.",
   },
   {
     id: "anterograde-memory-loss",
@@ -21921,6 +22537,99 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "Children and adolescents on antiemetics or antipsychotics are at risk for acute dystonic reactions — treat promptly with diphenhydramine; use lowest effective dose and shortest duration of dopamine-blocking agents.",
+  },
+  {
+    id: "parkinsonian",
+    name: "Parkinsonian",
+    etymology:
+      "Eponym for James Parkinson + -ian = relating to — clinical features resembling Parkinson disease from nigrostriatal dopamine deficiency or basal ganglia dysfunction",
+    aliases: [
+      "parkinsonian",
+      "parkinsonian features",
+      "parkinsonian signs",
+      "parkinsonian syndrome",
+      "parkinsonism",
+      "parkinsonian presentation",
+      "parkinsonian gait",
+      "parkinsonian rigidity",
+    ],
+    definition:
+      "Descriptive term for the motor syndrome of bradykinesia plus at least one of resting tremor, rigidity, or postural instability — the clinical phenotype of Parkinson disease and many secondary causes of basal ganglia dopamine deficiency.",
+    mechanism:
+      "Loss or blockade of nigrostriatal dopaminergic input → impaired basal ganglia facilitation of cortical motor programs → bradykinesia, increased tone (lead-pipe or cogwheel rigidity), 4–6 Hz resting tremor, reduced facial expression, and postural reflex failure; drug-induced parkinsonism results from D₂ receptor blockade in the striatum.",
+    thinkOf: [
+      "Parkinson disease — asymmetric onset, pill-rolling tremor, progressive course",
+      "Drug-induced parkinsonism — antipsychotics, metoclopramide, prochlorperazine",
+      "Vascular parkinsonism — lower-body predominance, stepwise course, vascular risk factors",
+      "Normal pressure hydrocephalus — parkinsonian gait with dementia and urinary incontinence",
+      "Multiple system atrophy, progressive supranuclear palsy — atypical parkinsonism",
+      "Wilson disease — younger patient with hepatic and psychiatric features",
+    ],
+    pairWith: [
+      "Parkinsonian + pill-rolling tremor + bradykinesia + cogwheel rigidity → Parkinson disease",
+      "Parkinsonian after starting haloperidol → drug-induced parkinsonism; review D₂-blocking drugs",
+      "Parkinsonian gait + dementia + incontinence → normal pressure hydrocephalus (wet, wobbly, wacky)",
+      "Masked facies + reduced arm swing + micrographia → parkinsonian hypomimia and bradykinesia",
+      "Rest tremor that decreases with movement → parkinsonian vs essential (action) tremor",
+      "Levodopa/carbidopa response → supports idiopathic Parkinson disease",
+    ],
+    distinguishFrom: [
+      "Essential tremor — action/postural tremor without bradykinesia or rigidity",
+      "Cerebellar ataxia — intention tremor, dysmetria, wide-based gait, not bradykinesia",
+      "Spasticity — UMN velocity-dependent tone with hyperreflexia, not cogwheel rigidity",
+      "Akathisia — inner restlessness from D₂ blockade, not true bradykinesia",
+      "Catatonia — waxy flexibility, mutism, psychotic context",
+      "Extrapyramidal symptoms (EPS) — broader term including dystonia and tardive dyskinesia",
+      "Huntington disease — chorea, not parkinsonian bradykinesia",
+    ],
+    pediatrics:
+      "Juvenile parkinsonism is rare — consider Wilson disease, genetic parkinsonism, or drug exposure. Classic idiopathic Parkinson disease onset is in older adults; parkinsonian features in a child warrant metabolic and genetic workup.",
+  },
+  {
+    id: "rigidity",
+    name: "Rigidity",
+    etymology:
+      "Latin rigidus = stiff, inflexible — increased muscle tone that resists passive movement throughout the range of motion",
+    aliases: [
+      "rigidity",
+      "muscle rigidity",
+      "lead-pipe rigidity",
+      "cogwheel rigidity",
+      "extrapyramidal rigidity",
+      "parkinsonian rigidity",
+      "nms rigidity",
+    ],
+    definition:
+      "Increased muscle tone present throughout passive joint movement — classically uniform (lead-pipe) or with superimposed ratchet-like catches during movement at another joint (cogwheel) — reflecting extrapyramidal or upper motor neuron hypertonia rather than velocity-dependent spasticity.",
+    mechanism:
+      "Basal ganglia dopamine deficiency or D₂ receptor blockade → impaired inhibitory modulation of motor tone → uniform resistance to passive movement (lead-pipe); superimposed tremor causes cogwheel catch-and-release; in NMS, central dopamine blockade plus peripheral hyperthermia produces severe generalized rigidity.",
+    thinkOf: [
+      "Parkinson disease — cogwheel rigidity with resting tremor and bradykinesia",
+      "Drug-induced parkinsonism — antipsychotics, metoclopramide",
+      "Neuroleptic malignant syndrome — severe rigidity + fever + autonomic instability + ↑ CK",
+      "Decorticate posturing — flexor rigidity of upper extremities (cortex lesion)",
+      "Decerebrate posturing — extensor rigidity (brainstem lesion)",
+      "Tetanus — sustained muscle spasms and opisthotonus",
+      "Stiff-person syndrome — axial and limb rigidity with superimposed spasms",
+    ],
+    pairWith: [
+      "Rigidity + resting tremor + bradykinesia → Parkinson disease or drug-induced parkinsonism",
+      "Rigidity + fever + autonomic instability + elevated CK after antipsychotic → NMS",
+      "Cogwheel rigidity on passive ROM → extrapyramidal (parkinsonian) hypertonia",
+      "Lead-pipe rigidity without velocity dependence → distinguish from UMN spasticity",
+      "Rigidity + opisthotonus + trismus → tetanus or severe dystonic reaction",
+      "Flexor posturing (arms flexed, legs extended) → decorticate rigidity",
+    ],
+    distinguishFrom: [
+      "Spasticity — velocity-dependent increase in tone with hyperreflexia and UMN signs",
+      "Rigidity vs spasticity — rigidity is constant through ROM; spasticity increases with faster stretch",
+      "Akathisia — inner restlessness without sustained increased tone",
+      "Dystonia — sustained abnormal posturing of specific muscle groups, not generalized rigidity",
+      "Catatonic rigidity — waxy flexibility and psychotic context",
+      "Muscular rigor (postmortem) — biochemical stiffening after death, not neurologic hypertonia",
+    ],
+    pediatrics:
+      "Children on dopamine-blocking antiemetics or antipsychotics can develop drug-induced rigidity; tetanus presents with trismus and opisthotonus in unvaccinated patients. Severe rigidity with fever after neuroleptics warrants NMS evaluation.",
   },
   {
     id: "acute-dystonic-reaction",
@@ -24374,6 +25083,171 @@ export const SYMPTOMS: SymptomEntry[] = [
     ],
     pediatrics:
       "In infants, irritability is a red-flag symptom for occult infection, meningitis, and metabolic crisis when fever or localizing signs are absent. NAS presents with irritability, tremor, and poor feeding. Adolescent depression often presents with irritability rather than classic depressed mood. APGAR 'grimace' component assesses reflex irritability at birth.",
+  },
+  {
+    id: "thin-sclerae",
+    name: "Thin Sclerae",
+    etymology:
+      "Old English þynne = not thick + Latin sclera = hard covering (white of eye) — abnormally reduced thickness of the collagen-rich scleral coat",
+    aliases: [
+      "thin sclerae",
+      "thin sclera",
+      "scleral thinning",
+      "thinning of sclera",
+    ],
+    definition:
+      "Physical finding of reduced scleral collagen thickness — may appear clinically as blue-gray sclerae when underlying uveal pigment shows through, or as increased globe fragility in connective tissue disorders.",
+    mechanism:
+      "Defective type I collagen synthesis or connective tissue matrix (OI, some EDS types) or acquired scleral thinning → less opaque scleral stroma → choroidal hue visible; severe thinning increases risk of globe rupture with minor trauma.",
+    thinkOf: [
+      "Osteogenesis imperfecta — type I collagen defect; blue sclerae + fractures",
+      "Ehlers-Danlos syndrome — connective tissue fragility",
+      "Marfan syndrome — ocular connective tissue abnormalities",
+      "Iron deficiency anemia — occasionally associated blue sclerae",
+      "Normal variant in neonates — transiently thinner sclera",
+    ],
+    pairWith: [
+      "Recurrent fractures + short stature → osteogenesis imperfecta",
+      "Blue sclerae → thin sclera showing underlying choroid",
+      "Joint hypermobility + skin hyperextensibility → EDS",
+      "Tall stature + lens dislocation + aortic root dilation → Marfan",
+      "Kinky hair + hypotonia + ↓ copper → Menkes (connective tissue fragility, not classic thin sclera pearl)",
+    ],
+    distinguishFrom: [
+      "Blue sclerae — clinical color from thin/translucent sclera; thin sclerae is structural finding",
+      "Scleral icterus — yellow from bilirubin deposition; sclera thickness normal",
+      "Conjunctival injection — vascular redness, not scleral thinning",
+      "Kayser-Fleischer ring — copper in corneal limbus (Descemet membrane), not scleral thinning",
+      "Scleritis — inflammatory painful red sclera; thickened/edematous, not thin",
+    ],
+    pediatrics:
+      "Blue-gray sclerae with fractures in infancy strongly suggests osteogenesis imperfecta — distinguish from non-accidental trauma with family history and genetic testing. Neonatal sclera may appear bluish normally. OI type II is lethal perinatally; type I presents with fractures and thin/blue sclerae in childhood.",
+  },
+  {
+    id: "burning-feet-syndrome",
+    name: "Burning Feet Syndrome",
+    etymology:
+      "Old English bærnan = to burn + fet = extremity + Greek syn = together + dromos = running course — painful burning dysesthesia localized to the feet, historically described with nutritional neuropathies",
+    aliases: [
+      "burning feet syndrome",
+      "burning foot syndrome",
+      "grierson-gopalan syndrome",
+      "grierson gopalan syndrome",
+      "burning soles",
+      "burning feet",
+      "feet burning at night",
+    ],
+    definition:
+      "Symptom complex of burning, tingling, or painful dysesthesia predominantly affecting the soles and feet — often worse at night — reflecting small-fiber peripheral neuropathy from metabolic, toxic, or nutritional causes.",
+    mechanism:
+      "Small-fiber sensory neuropathy from thiamine (B₁), pyridoxine (B₆), pantothenate (B₅), or other nutritional deficiencies; diabetes; uremia; or toxic exposures → damaged Aδ and C fibers → spontaneous ectopic firing and central sensitization → burning pain often in stocking distribution starting at feet.",
+    thinkOf: [
+      "Pyridoxine (B6) deficiency — isoniazid, alcoholism, sideroblastic anemia association",
+      "Dry beriberi (thiamine deficiency) — symmetric ascending neuropathy with burning feet",
+      "Pantothenic acid deficiency — historical burning feet syndrome association",
+      "Diabetic peripheral neuropathy — classic burning feet at night",
+      "Uremic neuropathy — chronic kidney disease",
+      "Erythromelalgia — burning red feet with warmth (different vasomotor syndrome)",
+      "Vitamin B12 deficiency — paresthesias but often posterior column signs predominate",
+    ],
+    pairWith: [
+      "Burning feet + isoniazid → B6 deficiency neuropathy — give pyridoxine",
+      "Burning feet + alcoholism → thiamine and B6 deficiency",
+      "Burning feet + ring sideroblasts → sideroblastic anemia from B6 or copper deficiency",
+      "Burning feet + hyperglycemia → diabetic neuropathy",
+      "Nocturnal burning feet worsening at rest → small-fiber neuropathy pattern",
+      "Stocking-glove progression feet → hands → length-dependent polyneuropathy",
+    ],
+    distinguishFrom: [
+      "Erythromelalgia — episodic burning with red, warm extremities; vasomotor dysregulation",
+      "Peripheral arterial disease — ischemic rest pain with absent pulses, not primary dysesthesia",
+      "Plantar fasciitis — mechanical heel/arch pain worse with first steps, not burning dysesthesia",
+      "Tinea pedis — itching/scaling rash, not neuropathic burning without skin findings",
+      "Complex regional pain syndrome — usually follows trauma; regional autonomic changes",
+      "Restless legs syndrome — urge to move legs, not primarily burning pain",
+    ],
+    pediatrics:
+      "Nutritional neuropathies are uncommon in well-nourished children but occur with malabsorption, restrictive diets, and isoniazid therapy for TB — co-administer pyridoxine. Fabry disease causes episodic acroparesthesias in childhood, not classic burning feet syndrome.",
+  },
+  {
+    id: "perifollicular-hemorrhage",
+    name: "Perifollicular Hemorrhage",
+    etymology:
+      "Latin peri- = around + Latin folliculus = small sac (hair follicle) + Greek haima = blood + -rrhage = bursting forth — bleeding into skin around hair follicle openings",
+    aliases: [
+      "perifollicular hemorrhage",
+      "perifollicular haemorrhage",
+      "perifollicular bleeding",
+      "perifollicular petechiae",
+      "perifollicular purpura",
+      "hair follicle hemorrhage",
+    ],
+    definition:
+      "Petechiae, purpura, or ecchymoses localized to the perifollicular skin — red to purple non-blanching hemorrhage encircling hair follicle ostia — classic cutaneous sign of defective perifollicular collagen and capillary fragility in vitamin C deficiency (scurvy).",
+    mechanism:
+      "Vitamin C required for prolyl and lysyl hydroxylase during collagen synthesis — deficiency weakens perifollicular connective tissue support around follicular vessels → capillary rupture with minor trauma; corkscrew hairs reflect concurrent defective follicular collagen.",
+    thinkOf: [
+      "Vitamin C deficiency (scurvy) — pathognomonic association with bleeding gums and poor wound healing",
+      "Infantile scurvy (Barlow disease) — restrictive diet, malabsorption, or breastfed infant of deficient mother",
+      "Alcoholism or elderly poor nutrition — scurvy at any age",
+      "Thrombocytopenia or coagulopathy — can cause diffuse petechiae but lacks classic perifollicular clustering with corkscrew hairs",
+    ],
+    pairWith: [
+      "Corkscrew hairs + bleeding gums → scurvy",
+      "Poor wound healing + bone pain (subperiosteal hemorrhage) → vitamin C deficiency",
+      "Ecchymoses with normal platelet count and coagulation studies → structural collagen/vessel defect",
+      "Restrictive diet in child → nutritional deficiency workup",
+      "Diffuse petechiae + mucosal bleeding + low platelets → thrombocytopenia, not isolated scurvy pattern",
+    ],
+    distinguishFrom: [
+      "Diffuse petechiae — generalized thrombocytopenia or DIC without perifollicular clustering",
+      "Ecchymosis — larger bruise; perifollicular hemorrhage is often petechial/purpuric around follicles",
+      "Folliculitis — inflammatory erythema/pustule centered on follicle, usually blanching or suppurative not hemorrhagic",
+      "Corkscrew hairs — structural hair shaft defect co-occurring in scurvy, not hemorrhage itself",
+      "Schonlein-Henoch purpura — palpable purpura on extensor surfaces, vasculitis not nutritional collagen defect",
+      "Traumatic bruising — lacks perifollicular pattern and scurvy systemic features",
+    ],
+    pediatrics:
+      "Infantile scurvy presents with perifollicular hemorrhage, irritability, pseudo-paralysis from bone pain, and subperiosteal hemorrhage — consider in breastfed infants without supplementation or children on restrictive diets. Oral vitamin C produces rapid improvement.",
+  },
+  {
+    id: "corkscrew-hair",
+    name: "Corkscrew Hairs",
+    etymology:
+      "English corkscrew = spiral twisting tool + hair — coiled, spiraled hair shafts seen in severe vitamin C deficiency",
+    aliases: [
+      "corkscrew hair",
+      "coiled hair",
+      "spiral hair scurvy",
+      "swirled hair shaft",
+    ],
+    definition:
+      "Abnormally coiled, spiraled, or bent hair shafts that break easily — a cutaneous sign of defective collagen in the hair follicle from impaired prolyl/lysyl hydroxylase activity in vitamin C (ascorbic acid) deficiency.",
+    mechanism:
+      "Vitamin C is required for prolyl and lysyl hydroxylase — enzymes that hydroxylate collagen — deficiency weakens perifollicular connective tissue and distorts growing hair into corkscrew morphology; hairs are brittle and may fracture.",
+    thinkOf: [
+      "Vitamin C deficiency (scurvy) — classic association with perifollicular hemorrhage and bleeding gums",
+      "Infantile scurvy (Barlow disease) — malnutrition, restrictive diets, or food faddism",
+      "Elderly or alcoholism with poor dietary intake — scurvy can occur at any age",
+      "Malabsorption — inflammatory bowel disease, bariatric surgery without supplementation",
+    ],
+    pairWith: [
+      "Perifollicular petechiae/purpura + bleeding gums → scurvy",
+      "Poor wound healing + bone pain (subperiosteal hemorrhage) → vitamin C deficiency",
+      "Ecchymoses with normal platelets/coagulation studies → scurvy or structural vessel defect",
+      "Restrictive diet in child + failure to thrive → nutritional deficiency workup",
+    ],
+    distinguishFrom: [
+      "Perifollicular hemorrhage — hemorrhagic skin sign co-occurring in scurvy; corkscrew hairs are shaft deformity",
+      "Trichorrhexis nodosa — nodes along hair shaft with brush-like fracture, not spiral coiling",
+      "Monilethrix — beaded hair shaft with elliptical nodes and constrictions",
+      "Pili torti — flattened twisted hair shaft 180° along axis; genetic or acquired",
+      "Woolly hair — tightly curled fine hair; genetic syndromes, not nutritional",
+      "Alopecia — hair loss; corkscrew hairs are structural shaft deformity with retained hair",
+      "Perifollicular hemorrhage alone — may occur in other coagulopathies without corkscrew morphology",
+    ],
+    pediatrics:
+      "Infantile scurvy (Barlow disease) presents with irritability, pseudo-paralysis from bone pain, subperiosteal hemorrhage, and corkscrew hairs — consider in breastfed infants of vitamin C–deficient mothers or children on restrictive diets. Treat with oral vitamin C; response is rapid.",
   },
 ];
 

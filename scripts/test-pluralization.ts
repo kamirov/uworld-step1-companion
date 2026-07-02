@@ -66,4 +66,13 @@ assert(
   "singularize heinz bodies -> heinz body",
 );
 
+assert(
+  singularizeName("Neurosyphilis") === null,
+  "do not singularize neurosyphilis",
+);
+assert(
+  repairTruncatedSingularName("Neurosyphili") === "Neurosyphilis",
+  "repair neurosyphili",
+);
+
 console.log("Pluralization tests OK");

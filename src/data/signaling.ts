@@ -462,6 +462,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     distinguishFrom: [
       "Fibroblast growth factor — specific FGF family entry",
       "Vascular endothelial growth factor — angiogenesis-specialized growth factor",
+      "Growth factor — umbrella category; peptide growth factor is polypeptide subset",
       "Cytokine — immune signaling peptides (ILs, IFNs); functional overlap but distinct context",
       "Peptide hormone — endocrine signaling (insulin, GH); many growth factors act paracrine",
       "Steroid hormone — lipophilic, nuclear receptor, not membrane RTK peptide ligand",
@@ -1191,6 +1192,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "IL-1 — more endothelial/leukocyte activation; anakinra target; inflammasome-driven IL-1β in autoinflammatory disease",
       "TNF-α — granuloma formation, anti-TNF biologics for IBD/psoriasis; NF-κB upstream of IL-6",
       "CRP — downstream acute-phase protein, not the cytokine itself",
+      "Acute-phase protein — hepatic protein products (CRP, fibrinogen); IL-6 is upstream cytokine signal",
       "IL-4 — Th2/IgE axis, not acute-phase or pyrogenic driver",
     ],
     pediatrics:
@@ -1985,6 +1987,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "NOS requires O₂, NADPH, and arginine — inhibited by asymmetric dimethylarginine (ADMA)",
     ],
     distinguishFrom: [
+      "Nitric oxide synthase (NOS) — enzyme that synthesizes NO from L-arginine; NO is the product",
       "Nitrous oxide (N₂O) — inhaled anesthetic, not the endogenous vasodilator NO",
       "Nitroglycerin — prodrug that releases NO; not the same as endogenous NO signaling molecule",
     ],
@@ -2855,6 +2858,140 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Adolescent anovulatory cycles may lack robust luteal progesterone → irregular menses; congenital absence of progesterone effect is not a typical isolated pediatric presentation — CAH presents with androgen excess from steroid pathway blocks.",
+  },
+  {
+    id: "human-chorionic-gonadotropin",
+    name: "Human Chorionic Gonadotropin",
+    etymology:
+      "Greek chorion = membrane surrounding fetus + gonad = reproductive gland + tropos = turning + -in = protein hormone suffix",
+    aliases: [
+      "human chorionic gonadotropin",
+      "chorionic gonadotropin",
+      "hcg hormone",
+      "placental gonadotropin",
+      "pregnancy hormone",
+    ],
+    type: "Hormone",
+    source:
+      "Syncytiotrophoblast of placenta (primary in pregnancy); also produced by gestational trophoblastic disease (hydatidiform mole, choriocarcinoma) and some germ cell tumors",
+    receptor:
+      "LH/hCG receptor (LHCGR) — Gs-coupled GPCR on corpus luteum, Leydig cells, and (at very high levels) TSH receptor cross-stimulation",
+    function:
+      "Maintains corpus luteum progesterone secretion in early pregnancy until placental progesterone takeover (~8–10 weeks); structural mimic of LH via shared α subunit and unique β subunit; supports Leydig cell testosterone in male fetus.",
+    mnemonic:
+      "hCG structure — Same Alpha (shared with LH, FSH, TSH), Beta unique (β-hCG detected on pregnancy tests)",
+    clinicalRelevance: [
+      "Rising hCG confirms pregnancy; β subunit assays distinguish pregnancy from other gonadotropins",
+      "Maintains corpus luteum → progesterone until ~8–10 weeks gestation",
+      "Markedly elevated in hydatidiform mole and choriocarcinoma — tumor marker for trophoblastic neoplasia",
+      "Very high hCG cross-stimulates TSH receptor → hyperthyroidism in molar pregnancy",
+      "Stimulates theca lutein cysts in ovaries with extreme hCG levels",
+      "Used clinically as LH trigger in fertility treatment (recombinant hCG)",
+      "Ectopic pregnancy — positive hCG with abnormal rise pattern and empty uterus on ultrasound",
+    ],
+    boardsPearls: [
+      "α subunit shared with LH, FSH, TSH — β subunit is unique; pregnancy tests detect β-hCG",
+      "hCG mimics LH at LHCGR — maintains corpus luteum early pregnancy",
+      "Very high hCG → mole, choriocarcinoma, theca lutein cysts, hyperthyroidism",
+      "Normal early pregnancy: β-hCG roughly doubles every 48–72 hours until ~10 weeks",
+      "vs LH — same receptor; hCG has longer half-life and is placental/trophoblastic in pregnancy",
+      "vs β-hCG lab value — this is the hormone; quantitative β-hCG is the clinical assay",
+      "Testicular tumor markers: AFP + β-hCG in nonseminomatous germ cell tumors",
+    ],
+    distinguishFrom: [
+      "LH — pituitary gonadotropin; same α subunit and LHCGR; hCG is placental with longer half-life",
+      "FSH — shared α subunit; acts on FSH receptor for folliculogenesis, not corpus luteum maintenance",
+      "TSH — shared α subunit; hCG cross-reacts only at pathologically high levels",
+      "β-hCG (lab) — quantitative measurement of the β subunit, not the hormone mechanism itself",
+      "Progesterone — steroid hormone maintained by hCG-stimulated corpus luteum",
+    ],
+    pediatrics:
+      "Physiologic hCG is maternal/placental in pregnancy — not a pediatric endocrine hormone. Elevated β-hCG in a male child or adolescent suggests testicular germ cell tumor. Neonatal TSH screening is unrelated to hCG; maternal hCG does not cause neonatal thyrotoxicosis except in rare transplacental transfer at extreme levels.",
+  },
+  {
+    id: "relaxin",
+    name: "Relaxin",
+    etymology: "Latin relaxare = to loosen + -in = protein suffix",
+    aliases: ["relaxin", "relaxin hormone", "relaxin-2"],
+    type: "Peptide hormone",
+    source:
+      "Corpus luteum (ovary) and placenta (syncytiotrophoblast/decidua) in pregnancy; also secreted by prostate and endometrium at lower levels",
+    receptor:
+      "Relaxin family peptide receptors (RXFP1/RXFP2; Gs-coupled GPCRs) on myometrium, cervix, pelvic ligaments, and renal vasculature",
+    function:
+      "Softens and ripens the cervix; relaxes pelvic ligaments and pubic symphysis for parturition; inhibits uterine contractility early in pregnancy; promotes renal vasodilation and ↑ GFR in pregnancy; remodels extracellular matrix via collagen breakdown.",
+    clinicalRelevance: [
+      "Rising relaxin with estrogen and progesterone prepares birth canal for delivery",
+      "Contributes to ligamentous laxity in pregnancy — back pain, pubic symphysis dysfunction",
+      "Renal vasodilation in pregnancy partly driven by relaxin — ↑ GFR and mild physiologic creatinine ↓",
+      "Early-pregnancy uterine quiescence — relaxin (with progesterone) opposes premature contractions",
+      "Investigated in heart failure and fibrotic disease (antifibrotic signaling) — not primary Step 1 therapy",
+    ],
+    boardsPearls: [
+      "Relaxin — pregnancy hormone that loosens pelvic connective tissue for childbirth",
+      "Works with estrogen and progesterone — cervical ripening and symphyseal relaxation",
+      "vs oxytocin — oxytocin contracts uterus at labor; relaxin relaxes pelvic structures",
+      "vs progesterone — progesterone maintains uterine quiescence; relaxin remodels connective tissue",
+      "Pregnancy renal physiology — relaxin contributes to afferent arteriolar vasodilation and ↑ GFR",
+    ],
+    distinguishFrom: [
+      "Oxytocin — uterotonic at labor and milk ejection; posterior pituitary peptide",
+      "Progesterone — maintains early pregnancy and secretory endometrium; does not primarily soften cervix",
+      "Prostaglandins — cervical ripening and uterine contractions at labor; arachidonic acid derivatives",
+      "Estrogen — proliferative endometrium and breast development; not primary pelvic ligament relaxer",
+      "Nitric oxide — endothelium-derived relaxing factor; vasodilator via cGMP, not a peptide hormone",
+    ],
+    pediatrics:
+      "Relaxin is not a pediatric endocrine axis target on Step 1; maternal relaxin during pregnancy does not require separate neonatal management. Pubic symphysis laxity in pregnancy resolves postpartum.",
+  },
+  {
+    id: "androgen",
+    name: "Androgen",
+    etymology:
+      "Greek andro- = man/male + Greek -gen = producing — steroid hormones that promote male sexual development and androgenic effects via the androgen receptor",
+    aliases: [
+      "androgen",
+      "androgenic hormone",
+      "adrenal androgen",
+      "male sex hormone",
+    ],
+    type: "Hormone",
+    mnemonic:
+      "Androgens = Andro-gen (male-making) — testosterone (T) for Wolffian ducts, DHT for external genitalia/prostate, DHEA as weak adrenal precursor",
+    source:
+      "Testicular Leydig cells (testosterone); adrenal zona reticularis (DHEA, androstenedione); ovarian theca interna (androstenedione); peripheral 5α-reduction (testosterone → DHT) and aromatization (testosterone → estradiol)",
+    receptor:
+      "Androgen receptor (AR) — intracellular nuclear receptor; DHT binds with highest affinity; testosterone and weaker adrenal androgens also activate AR",
+    function:
+      "Drive male internal genitalia (Wolffian/mesonephric duct differentiation via testosterone), external genitalia and prostate growth (via DHT), secondary sex characteristics (muscle, bone, libido, erythropoiesis), and fetal sexual differentiation; adrenal androgens contribute to pubic/axillary hair and serve as precursors.",
+    clinicalRelevance: [
+      "Congenital adrenal hyperplasia — enzyme blocks shunt precursors to androgen pathway → virilization",
+      "Polycystic ovary syndrome — ovarian and adrenal androgen excess → hirsutism, acne, oligomenorrhea",
+      "Androgen insensitivity syndrome — functional androgen excess (↑ testosterone/LH) with female external phenotype (AR defect)",
+      "5α-reductase deficiency — androgens present but ↓ DHT → ambiguous external genitalia in 46,XY",
+      "Androgen deprivation therapy — prostate cancer (GnRH agonists, antiandrogens, CYP17 inhibitors)",
+      "Anabolic androgen abuse — exogenous androgens suppress HPG axis and spermatogenesis",
+    ],
+    boardsPearls: [
+      "Androgens = testosterone, DHT, DHEA, androstenedione — all signal via androgen receptor (DHT strongest)",
+      "Testosterone → Wolffian ducts; DHT → external male genitalia and prostate",
+      "CAH virilization = androgen excess from shunted steroid precursors",
+      "PCOS — ↑ free androgens (insulin resistance, ovarian theca hyperactivity)",
+      "AIS — ↑ androgens but defective AR → female external phenotype, no uterus (AMH from testes)",
+      "vs estrogen — feminizing hormones; aromatase converts androgens to estrogens peripherally",
+      "vs anabolic steroids — synthetic androgen analogs with variable anabolic:androgenic ratios",
+    ],
+    distinguishFrom: [
+      "Testosterone — primary circulating gonadal androgen; one specific androgen, not the class",
+      "Dihydrotestosterone (DHT) — most potent androgen for prostate and external genitalia",
+      "Dehydroepiandrosterone (DHEA) — weak adrenal androgen precursor",
+      "Estrogen — feminizing steroid; aromatized from androgens",
+      "Androgen receptor — intracellular receptor protein, not the hormone class",
+      "Androgen deprivation therapy — clinical strategy blocking androgen signaling",
+      "Progesterone — steroid hormone with progestogenic not androgenic primary effects",
+    ],
+    pediatrics:
+      "Fetal androgens from testicular Leydig cells (hCG then LH) drive male differentiation; CAH causes 46,XX virilization or 46,XY excess androgen effects. Precocious puberty from adrenal or gonadal androgen excess causes early secondary sexual characteristics.",
   },
   {
     id: "testosterone",
@@ -4248,6 +4385,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Phorbol ester = DAG mimic → persistent PKC activation",
       "vs triglyceride intermediate — metabolic DAG in lipid synthesis is not primarily a signaling molecule",
       "Full cascade = diacylglycerol–PKC pathway entry; DAG is the lipid second messenger",
+      "Inositol 1,4,5-trisphosphate (IP₃) — soluble co-product from same PIP₂ cleavage; see ip3 entry",
     ],
     distinguishFrom: [
       "Diacylglycerol–PKC pathway — full Gq → PLC → DAG → PKC signaling cascade",
@@ -4259,6 +4397,106 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Same Gq–PLC–DAG–PKC physiology in children; M3-mediated bronchoconstriction in asthma uses this signaling axis.",
+  },
+  {
+    id: "ip3",
+    name: "Inositol 1,4,5-Trisphosphate (IP₃)",
+    etymology:
+      "inositol = cyclic six-carbon sugar alcohol + triphosphate = three phosphate groups — soluble second messenger released when phospholipase C cleaves PIP₂",
+    aliases: [
+      "ip3",
+      "ip₃",
+      "ip 3",
+      "inositol trisphosphate",
+      "inositol triphosphate",
+      "inositol 1,4,5-trisphosphate",
+      "inositol 1 4 5 trisphosphate",
+      "1,4,5-inositol trisphosphate",
+      "ip3 second messenger",
+    ],
+    type: "Second messenger",
+    source:
+      "Generated in cytosol when phospholipase C (PLCβ via Gq, or PLCγ via RTKs) hydrolyzes membrane phosphatidylinositol 4,5-bisphosphate (PIP₂) — released concurrently with DAG from the same cleavage reaction",
+    receptor:
+      "IP₃ receptor (IP₃R) on endoplasmic reticulum (and sarcoplasmic reticulum in some cells) — ligand-gated Ca²⁺ release channel; Ca²⁺ binds calmodulin → activates MLCK, CaM kinases, and other effectors",
+    function:
+      "Water-soluble second messenger that diffuses through cytosol to ER → opens IP₃ receptors → releases Ca²⁺ from intracellular stores into cytosol — mediating smooth muscle contraction, exocrine secretion, platelet activation, and many Gq-coupled hormone responses without direct membrane Ca²⁺ influx.",
+    clinicalRelevance: [
+      "Gq-coupled receptors (α1, M1/M3, H1, V1, AT1, GnRH, oxytocin) → PLC → IP₃ → Ca²⁺ release",
+      "Smooth muscle contraction — vascular, bronchial, GI via Ca²⁺–calmodulin–MLCK",
+      "α1-blockers and antimuscarinics reduce Gq–IP₃–Ca²⁺ signaling",
+      "Ryanodine receptor on SR releases Ca²⁺ in muscle — related but distinct from IP₃R on ER",
+    ],
+    boardsPearls: [
+      "PLC cleaves PIP₂ → IP₃ + DAG — twin second messengers",
+      "IP₃ → ER Ca²⁺ release via IP₃ receptor; DAG activates PKC at membrane",
+      "Gq GPCRs: α1, M3, H1, V1, GnRH, oxytocin, AT1",
+      "Ca²⁺–calmodulin → MLCK → smooth muscle contraction",
+      "vs DAG — lipid membrane messenger activating PKC; IP₃ is soluble Ca²⁺ mobilizer",
+      "vs voltage-gated Ca²⁺ channel — membrane depolarization entry, not IP₃-mediated store release",
+      "Full pathway — see IP₃–Ca²⁺–calmodulin pathway and phosphatidylinositol/IP₃ pathway entries",
+    ],
+    distinguishFrom: [
+      "DAG — lipid second messenger from same PIP₂ cleavage; activates PKC",
+      "PIP₂ — membrane phospholipid substrate for PLC, not active messenger",
+      "cAMP — adenylyl cyclase second messenger from Gs/Gi, not Gq PLC",
+      "Calcium — ionic effector released by IP₃; not the messenger molecule itself",
+      "IP₃–Ca²⁺–calmodulin pathway — full signaling cascade; IP₃ is the soluble second messenger",
+      "Ryanodine receptor — SR Ca²⁺ release in skeletal/cardiac muscle; IP₃R is on ER",
+      "Inositol trisphosphate receptor — channel activated by IP₃; not synonymous with IP₃ ligand",
+    ],
+    pediatrics:
+      "Same Gq–IP₃–Ca²⁺ physiology in children; ipratropium blocks M3 → ↓ PLC → ↓ IP₃ in asthma. Malignant hyperthermia involves ryanodine receptor Ca²⁺ release, not IP₃ pathway defect.",
+  },
+  {
+    id: "pkc",
+    name: "Protein Kinase C (PKC)",
+    etymology:
+      "protein = polypeptide substrate + Greek kinein = to move + -ase = enzyme + C = third named Ca²⁺-sensitive isoform family — serine/threonine kinase activated by diacylglycerol and Ca²⁺",
+    aliases: [
+      "pkc",
+      "protein kinase c",
+      "protein kinase c (pkc)",
+      "protein kinase-c",
+      "dag-activated protein kinase",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Inactive cytosolic/membrane-associated kinase recruited to inner leaflet of plasma membrane when DAG is generated by PLC cleavage of PIP₂; conventional PKC isoforms (α, β, γ) also require Ca²⁺ binding to C2 domain; novel isoforms (δ, ε, η, θ) need DAG only; atypical (ζ, ι/λ) are DAG-independent",
+    receptor:
+      "Activated by DAG binding to C1 domain (and Ca²⁺ for conventional isoforms) — not a membrane receptor itself; downstream effector of Gq/PLC signaling",
+    function:
+      "Serine/threonine kinase that phosphorylates substrates controlling smooth muscle contraction, hormone secretion, gene expression, platelet activation, and cell proliferation — parallel arm to IP₃/Ca²⁺ signaling from the same Gq-coupled receptor activation.",
+    clinicalRelevance: [
+      "Gq-coupled hormones (α1, M3, V1, AT1) → DAG → PKC → vascular and bronchial smooth muscle contraction",
+      "Phorbol esters (TPA) mimic DAG → chronic PKC activation — experimental tumor promoter",
+      "α1-blockers reduce Gq–DAG–PKC signaling in hypertension and BPH",
+      "PKC inhibitors studied in cancer and diabetic complications (limited clinical use on boards)",
+    ],
+    boardsPearls: [
+      "Gq → PLC → PIP₂ → DAG + IP₃; DAG activates PKC, IP₃ releases Ca²⁺",
+      "Conventional PKC needs DAG + Ca²⁺; novel PKC needs DAG only",
+      "Phorbol ester = DAG mimic → persistent PKC activation",
+      "vs PKA — PKA activated by cAMP (Gs pathway), not DAG",
+      "vs PKG — cGMP-dependent kinase (NO, ANP)",
+      "PKC phosphorylates serine/threonine — not tyrosine (RTKs)",
+      "Full cascade — see diacylglycerol–PKC pathway entry",
+      "Mnemonic: PKC = Phosphorylates after Ca²⁺ and DAG (conventional isoforms)",
+    ],
+    distinguishFrom: [
+      "Calmodulin — Ca²⁺-binding sensor that activates MLCK and CaM kinases; not the kinase itself",
+      "MLCK — Ca²⁺/calmodulin-activated kinase phosphorylating myosin light chain in smooth muscle",
+      "CaM kinase — Ca²⁺/calmodulin-dependent kinase family (e.g., CaMKII in LTP)",
+      "Protein Kinase A (PKA) — cAMP-activated; Gs/adenylyl cyclase pathway",
+      "Protein Kinase G (PKG) — cGMP-activated; NO and natriuretic peptides",
+      "DAG — lipid second messenger that activates PKC, not the kinase itself",
+      "Diacylglycerol–PKC pathway — full Gq → PLC → DAG → PKC cascade",
+      "Tyrosine kinase — phosphorylates tyrosine on RTK/JAK substrates",
+      "Calmodulin-dependent kinase — activated by Ca²⁺–calmodulin from IP₃ arm, not DAG/PKC",
+      "Phorbol ester — exogenous DAG mimic; not endogenous PKC",
+    ],
+    pediatrics:
+      "Same Gq–DAG–PKC signaling in children; α1 and M3 pathways mediate vascular and bronchial tone relevant to pediatric asthma and shock physiology.",
   },
   {
     id: "pka",
@@ -4297,6 +4535,7 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Gs → adenylyl cyclase → cAMP → PKA — classic GPCR second-messenger cascade",
       "PKA phosphorylates serine/threonine residues (not tyrosine — that's RTKs/JAKs)",
       "vs PKC — PKC activated by DAG + Ca²⁺ from Gq/PLC pathway, not cAMP",
+      "Protein Kinase C (PKC) — see pkc entry; DAG-activated serine/threonine kinase",
       "PKA activates glycogen phosphorylase kinase → glycogenolysis in liver",
       "PKA phosphorylates CREB → gene transcription (long-term signaling)",
       "cAMP binds PKA regulatory subunits → releases active catalytic subunits",
@@ -4424,6 +4663,9 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "Same Gq receptor often activates both PKC (DAG) and Ca²⁺ (IP3) arms",
     ],
     distinguishFrom: [
+      "Calmodulin — Ca²⁺ sensor activating MLCK, CaM kinases, calcineurin, and NOS",
+      "MLCK — smooth muscle contraction kinase downstream of Ca²⁺–calmodulin",
+      "CaM kinase — Ca²⁺/calmodulin-dependent kinases (LTP, cardiac signaling)",
       "cAMP/PKA pathway — no IP3 or ER Ca²⁺ release",
       "DAG/PKC pathway — lipid second messenger from same PLC step, different downstream kinase",
       "Voltage-gated Ca²⁺ channels — membrane depolarization entry, not IP3 receptor",
@@ -5115,6 +5357,54 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "SSRIs used cautiously in pediatric depression; serotonergic drug combinations increase serotonin syndrome risk at any age.",
+  },
+  {
+    id: "serotonin-5-ht3-receptor",
+    name: "Serotonin 5-HT3 Receptor",
+    etymology:
+      "5-hydroxytryptamine (5-HT) + 3 = third receptor family + receptor = receiver",
+    aliases: [
+      "serotonin 5-ht3 receptor",
+      "5-ht3 receptor",
+      "5ht3 receptor",
+      "5-ht-3 receptor",
+      "5-ht₃ receptor",
+      "ht3 receptor",
+      "serotonin type 3 receptor",
+    ],
+    type: "Signaling pathway",
+    source:
+      "Vagal and enteric afferent neurons in GI tract, area postrema (chemoreceptor trigger zone), nucleus tractus solitarius, and central emetic pathways",
+    receptor:
+      "Ligand-gated cation channel (ionotropic) — serotonin binding opens Na⁺/K⁺ channel → neuronal depolarization in emetic reflex arc",
+    function:
+      "Mediates fast serotonergic excitatory signaling in vagal afferents and brainstem emesis centers — activation by serotonin released from enterochromaffin cells (chemotherapy, GI irritation) or central serotonergic input triggers nausea and vomiting reflex.",
+    mnemonic:
+      "5-HT3 = ion channel (not GPCR) — '3' rhymes with 'free' ion flow; ondansetron blocks the channel",
+    clinicalRelevance: [
+      "Ondansetron, granisetron, palonosetron — selective 5-HT₃ antagonists for chemotherapy-induced and postoperative nausea",
+      "Chemotherapy (cisplatin) damages GI enterochromaffin cells → ↑ serotonin → 5-HT₃ activation at CTZ and vagal afferents",
+      "QT prolongation risk with 5-HT₃ antagonists at high doses",
+      "Serotonin syndrome — excess serotonergic activity (primarily SSRI + MAOI); 5-HT₃ blockers are not treatment",
+      "Alosetron — 5-HT₃ antagonist for severe IBS-D (restricted use; ischemic colitis risk)",
+    ],
+    boardsPearls: [
+      "5-HT₃ = ligand-gated ion channel (ionotropic) — NOT a GPCR",
+      "Ondansetron (-setron suffix) — 5-HT₃ antagonist; first-line chemotherapy antiemetic",
+      "Target sites: area postrema (CTZ) + vagal afferents in gut",
+      "5-HT₃ vs 5-HT2A: 5-HT₃ is ion channel (nausea); 5-HT2A is Gq GPCR (psychedelics, atypical antipsychotics)",
+      "5-HT₃ vs D₂ antiemetics: ondansetron has no EPS; metoclopramide blocks D₂ with EPS risk",
+      "vs muscarinic/H₁ pathways — motion sickness uses vestibular antihistamines (meclizine), not 5-HT₃",
+    ],
+    distinguishFrom: [
+      "Serotonin 5-HT2A receptor — Gq-coupled GPCR; psychedelics and atypical antipsychotic target",
+      "Serotonin 5-HT1B/1D receptors — Gi/Gq subtypes; triptan targets for migraine",
+      "Serotonin — neurotransmitter ligand from tryptophan; not the receptor",
+      "SERT — serotonin transporter reuptake pump; SSRI target, not receptor blockade",
+      "Dopamine D2 receptor — CTZ target of metoclopramide and prochlorperazine antiemetics",
+    ],
+    pediatrics:
+      "Weight-based ondansetron is standard for pediatric chemotherapy and postoperative nausea; 5-HT₃ antagonists preferred over D₂ blockers in children due to lower EPS risk.",
   },
   {
     id: "adrenergic-receptors",
@@ -6723,8 +7013,6 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
       "phosphatidylinositol",
       "inositol trisphosphate",
       "inositol triphosphate",
-      "ip3",
-      "ip₃",
       "pip2",
       "pip₂",
       "phosphatidylinositol 4,5-bisphosphate",
@@ -7017,6 +7305,110 @@ export const SIGNALING_MOLECULES: SignalingEntry[] = [
     ],
     pediatrics:
       "Neonatal myasthenia causes hypotonia and feeding difficulty from maternal anti-nicotinic receptor antibodies. Congenital myasthenic syndromes include nicotinic receptor subunit mutations. Succinylcholine caution in children with undiagnosed pseudocholinesterase deficiency.",
+  },
+  {
+    id: "msh",
+    name: "Melanocyte-Stimulating Hormone (α-MSH)",
+    etymology:
+      "Greek melas = black + kytos = cell + Latin stimulans = goading + hormone = Greek horman = to set in motion — POMC-derived peptide that stimulates melanogenesis via melanocortin receptors",
+    aliases: [
+      "msh",
+      "melanocyte-stimulating hormone",
+      "melanocyte stimulating hormone",
+      "alpha-msh",
+      "α-msh",
+      "alpha msh",
+      "melanocortin",
+      "melanotropin",
+    ],
+    type: "Peptide hormone",
+    source:
+      "Cleaved from proopiomelanocortin (POMC) in anterior pituitary corticotrophs and hypothalamic arcuate POMC neurons — released with ACTH from pituitary; hypothalamic α-MSH acts on MC3R/MC4R for satiety",
+    receptor:
+      "Melanocortin receptors (GPCRs) — MC1R on melanocytes (↑ melanogenesis); MC3R/MC4R in hypothalamus (anorexigenic, oppose NPY/AgRP); MC2R is ACTH receptor, not primary α-MSH target",
+    function:
+      "Stimulates melanin synthesis in skin melanocytes (MC1R), promotes satiety and energy expenditure via hypothalamic melanocortin signaling (MC3R/MC4R), and contributes to skin pigmentation responses to UV and inflammation.",
+    mnemonic:
+      "MSH from POMC — Makes Skin Hue; opposes NPY appetite (Melanocortin = Makes you Cut calories).",
+    clinicalRelevance: [
+      "Addison disease — ↑ ACTH from POMC → excess MSH fragments → diffuse hyperpigmentation (palmar creases, buccal mucosa)",
+      "Primary adrenal insufficiency vignette — hyperpigmentation links POMC/MSH to low cortisol",
+      "MC4R loss-of-function mutations — common genetic obesity (impaired anorexigenic melanocortin signaling)",
+      "Afamelanotide — synthetic α-MSH analog for erythropoietic protoporphyria (photoprotection)",
+      "UV exposure and inflammation stimulate local melanogenesis via MC1R",
+    ],
+    boardsPearls: [
+      "α-MSH from POMC — same precursor as ACTH and β-endorphin",
+      "Addison: ↓ cortisol → ↑ ACTH/POMC → ↑ MSH → hyperpigmentation",
+      "Hypothalamic α-MSH → MC4R → satiety; NPY/AgRP oppose melanocortin pathway",
+      "MC1R — skin melanogenesis; red hair/fair skin polymorphisms",
+      "vs ACTH — both POMC products; ACTH acts on adrenal MC2R, MSH on melanocytes/MC4R",
+      "vs melanin — pigment product; MSH is hormone stimulating its synthesis",
+    ],
+    distinguishFrom: [
+      "ACTH — POMC peptide acting on adrenal MC2R to stimulate cortisol",
+      "Melanin — pigment synthesized in melanocytes, not the hormone",
+      "NPY — orexigenic neuropeptide opposing α-MSH satiety signaling",
+      "Melanoma — malignant melanocyte tumor; unrelated to MSH hormone physiology",
+      "MSH2 — mismatch repair protein (Lynch syndrome); homonym only",
+      "POMC — prohormone precursor giving ACTH, MSH, and β-endorphin",
+    ],
+    pediatrics:
+      "Congenital adrenal hyperplasia and other causes of primary adrenal insufficiency in children cause hyperpigmentation from elevated POMC/MSH. MC4R mutations are a recognized monogenic obesity cause in pediatric patients.",
+  },
+  {
+    id: "growth-factor",
+    name: "Growth Factor",
+    etymology:
+      "Latin factor = agent + growth = increase in size — secreted signaling molecule that stimulates cell proliferation, differentiation, migration, or survival in target tissues",
+    aliases: [
+      "growth factor",
+      "growth factors",
+      "cell growth factor",
+      "cell growth factors",
+      "mitogenic factor",
+      "mitogenic factors",
+      "trophic factor",
+      "trophic factors",
+    ],
+    type: "Growth factor",
+    source:
+      "Paracrine, autocrine, and sometimes endocrine secretion from epithelial cells, fibroblasts, platelets, endothelial cells, stromal cells, neurons, and tumors — major families include EGF, FGF, PDGF, VEGF, TGF-β, and IGF-1",
+    receptor:
+      "Most bind receptor tyrosine kinases (RTKs) — ligand-induced dimerization → autophosphorylation → Ras-MAPK, PI3K-Akt, and PLCγ cascades; TGF-β family uses serine/threonine kinase receptors with Smad signaling; IGF-1 binds IGF-1 receptor (RTK)",
+    function:
+      "Regulate embryonic development, tissue repair, angiogenesis, hematopoiesis, and organ homeostasis — coordinate cell division and survival in response to injury, growth demands, or local microenvironment signals.",
+    mnemonic:
+      "Growth factors Grow cells via RTKs — EGF, FGF, PDGF, VEGF (EFPV) are boards favorites.",
+    clinicalRelevance: [
+      "Oncogenesis — constitutive growth factor/RTK signaling (EGFR mutations, RAS, BCR-ABL)",
+      "Targeted cancer therapy — erlotinib/gefitinib (EGFR), bevacizumab (VEGF), imatinib (BCR-ABL tyrosine kinase)",
+      "Wound healing — PDGF and VEGF recruit fibroblasts and endothelial cells",
+      "Achondroplasia — constitutive FGFR3 signaling inhibits endochondral bone growth",
+      "Pulmonary fibrosis — TGF-β drives fibroblast activation and collagen deposition",
+      "GH–IGF-1 axis — growth hormone stimulates hepatic IGF-1, a key growth factor for linear growth",
+    ],
+    boardsPearls: [
+      "Growth factor → usually RTK → MAPK and PI3K pathways → proliferation/survival",
+      "EGF/EGFR, FGF/FGFR, PDGF/PDGFR, VEGF/VEGFR — memorize ligand–receptor pairs",
+      "Ligand binding → receptor dimerization → autophosphorylation → signal transduction",
+      "vs cytokine — overlap; growth factors emphasize mitogenesis and tissue remodeling",
+      "vs peptide hormone — hormones often endocrine (insulin, GH); growth factors often paracrine",
+      "vs steroid hormone — lipophilic nuclear receptor signaling, not membrane RTK",
+      "TGF-β — growth factor superfamily using Smad pathway, not classic RTK",
+      "vs peptide growth factor — growth factor is umbrella concept; peptide growth factor specifies polypeptide ligands",
+    ],
+    distinguishFrom: [
+      "Peptide growth factor — subset of secreted polypeptide mitogens (EGF, FGF family)",
+      "Cytokine — immune/inflammatory signaling peptides (ILs, TNF); functional overlap",
+      "Peptide hormone — endocrine regulators (insulin, TSH); many act systemically",
+      "Steroid hormone — intracellular/nuclear receptor, not RTK ligand",
+      "Second messenger — intracellular signal (cAMP), not extracellular growth factor",
+      "Growth hormone — pituitary hormone stimulating IGF-1; not synonymous with all growth factors",
+      "IGF-1 — specific growth factor downstream of GH; growth factor is broader category",
+    ],
+    pediatrics:
+      "FGFR3 mutations cause achondroplasia presenting at birth. GH deficiency lowers IGF-1 growth factor signaling → short stature treatable with recombinant GH. Pediatric cancers may exploit growth factor/RTK pathways.",
   },
 ];
 

@@ -1699,6 +1699,46 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Aspirin avoided for fever in children (Reye syndrome); aspirin used in Kawasaki disease with IVIG. Pediatric stroke secondary prevention is specialist-guided — antiplatelet therapy may be used but differs from adult DAPT protocols.",
   },
   {
+    id: "anticoagulation",
+    name: "Anticoagulation",
+    etymology:
+      "anti- = against + Latin coagulare = to drive together (clot) + -ation = act of — pharmacologic inhibition of the coagulation cascade to prevent or treat thrombosis",
+    aliases: [
+      "anticoagulation",
+      "anticoagulant therapy",
+      "anticoagulant treatment",
+      "therapeutic anticoagulation",
+      "systemic anticoagulation",
+      "long-term anticoagulation",
+      "oral anticoagulation",
+      "parenteral anticoagulation",
+    ],
+    definition:
+      "Pharmacologic strategy that inhibits thrombin and/or factor Xa (and upstream coagulation steps) to prevent fibrin-rich clot formation and extension — used for venous thromboembolism, atrial fibrillation–related cardioembolic stroke prevention, mechanical heart valves, and selected arterial thrombotic disorders.",
+    details: [
+      "Parenteral agents — unfractionated heparin (UFH, monitors aPTT), low-molecular-weight heparin (enoxaparin, dalteparin — anti-Xa levels), fondaparinux (synthetic anti-Xa)",
+      "Oral vitamin K antagonist — warfarin (monitors INR; many drug and dietary interactions; bridge with heparin when initiating)",
+      "Direct oral anticoagulants (DOACs) — dabigatran (direct thrombin inhibitor); rivaroxaban, apixaban, edoxaban (direct factor Xa inhibitors)",
+      "Indications — DVT/PE treatment and prophylaxis, nonvalvular AF stroke prevention (CHA₂DS₂-VASc), mechanical prosthetic valves (warfarin), acute limb/mesenteric ischemia, LV thrombus, antiphospholipid syndrome (often warfarin preferred)",
+      "Duration — provoked VTE often 3 months; unprovoked or recurrent VTE may require indefinite anticoagulation; AF typically lifelong when indicated",
+      "Reversal — protamine for heparin; vitamin K ± PCC for warfarin; idarucizumab for dabigatran; andexanet alfa for factor Xa inhibitors (selected settings)",
+      "Bleeding risk assessment — HAS-BLED for AF; balance thrombosis vs hemorrhage in each patient",
+    ],
+    boardsPearls: [
+      "Venous thrombosis and LA thrombus → anticoagulation; arterial platelet-rich clots → antiplatelet",
+      "AF stroke prevention — CHA₂DS₂-VASc guides anticoagulation; DOACs or warfarin (not aspirin alone when high risk)",
+      "Mechanical heart valve — warfarin required (DOACs contraindicated)",
+      "Heparin/LMWH immediately for acute VTE; overlap warfarin until INR therapeutic ≥2 days",
+      "DOACs — fewer food interactions than warfarin; renal dosing matters (dabigatran, rivaroxaban)",
+      "Warfarin teratogenic in first trimester — LMWH in pregnancy when anticoagulation needed",
+      "IVC filter does not treat clot — use when anticoagulation contraindicated",
+      "vs antiplatelet therapy — fibrin-rich venous/LA clots need anticoagulation, not aspirin alone",
+      "HIT — stop heparin; use non-heparin anticoagulant (argatroban, fondaparinux)",
+    ],
+    pediatrics:
+      "Pediatric VTE is uncommon but treated with weight-based LMWH or warfarin per hematology protocols. Neonatal renal vein thrombosis may be anticoagulated selectively. Warfarin avoided in pregnancy; LMWH is standard for pregnant patients needing anticoagulation. DOACs not routinely used in young children.",
+  },
+  {
     id: "antiretroviral-therapy",
     name: "Antiretroviral Therapy",
     etymology:
@@ -2663,6 +2703,75 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Confirmatory testing after positive newborn screen (e.g., second-tier metabolic assay, genetic sequencing) uses higher specificity to avoid unnecessary treatment for false-positive screens.",
   },
   {
+    id: "npv",
+    name: "Negative Predictive Value",
+    etymology:
+      "Latin negativus = denying + Latin praedictus = foretold + Latin valor = worth — probability that a person with a negative test result truly does not have the disease",
+    aliases: [
+      "npv",
+      "negative predictive value",
+      "-pv",
+      "neg predictive value",
+    ],
+    definition:
+      "Proportion of people with a negative test who truly do not have disease — NPV = TN / (TN + FN); reflects how trustworthy a negative result is for ruling out disease; unlike sensitivity and specificity, NPV depends strongly on disease prevalence.",
+    details: [
+      "Formula: NPV = true negatives / (true negatives + false negatives)",
+      "High NPV — most negative tests are true negatives; negative result effectively rules out disease in the tested population",
+      "↑ disease prevalence ↓ NPV (more false negatives among negatives)",
+      "High-sensitivity test → fewer false negatives → higher NPV when prevalence is low",
+      "SNOUT mnemonic — Sensitive test, Negative rules OUT — relies on high sensitivity and low pretest probability",
+      "Example: negative high-sensitivity D-dimer in low Wells-score patient effectively excludes PE/DVT",
+      "Low NPV — negative test does not reliably exclude disease; common when prevalence is high or sensitivity is low",
+    ],
+    boardsPearls: [
+      "NPV = TN / (TN + FN) — probability disease absent given negative test",
+      "NPV depends on prevalence — unlike sensitivity/specificity",
+      "High prevalence ↓ NPV; low prevalence + high sensitivity → high NPV",
+      "SNOUT — Sensitive test, Negative rules OUT",
+      "vs PPV — PPV = TP/(TP+FP) for positive predictive value when test is positive",
+      "vs sensitivity — sensitivity is test property; NPV is post-test probability after negative result",
+      "Screening in low-prevalence population — even good test may have low PPV but high NPV if sensitive",
+    ],
+    pediatrics:
+      "Newborn screening uses highly sensitive tests — a negative screen has high NPV for treatable disorders in the screened population, though confirmatory testing follows any positive screen.",
+  },
+  {
+    id: "odds-ratio",
+    name: "Odds Ratio",
+    etymology:
+      "Latin odda = point/unit + Latin ratio = reckoning — ratio of odds of exposure in cases vs odds of exposure in controls; primary measure of association in case-control studies",
+    aliases: [
+      "odds ratio",
+      "or",
+      "case-control odds ratio",
+      "cross-product ratio",
+    ],
+    definition:
+      "Measure of association comparing odds of exposure among cases to odds of exposure among controls — OR = (a/c) / (b/d) = ad/bc from a 2×2 table; OR = 1 no association, OR > 1 exposure more common in cases, OR < 1 exposure protective; approximates relative risk when disease is rare.",
+    details: [
+      "Formula (2×2): OR = (a×d) / (b×c) where a = exposed cases, b = unexposed cases, c = exposed controls, d = unexposed controls",
+      "Primary statistic for case-control studies (cannot calculate incidence → cannot calculate RR directly)",
+      "OR = 1 — no association between exposure and disease",
+      "OR > 1 — exposure associated with higher odds of disease",
+      "OR < 1 — exposure associated with lower odds (protective association)",
+      "When disease is rare (<10%), OR approximates relative risk",
+      "Confidence interval excluding 1.0 → statistically significant at chosen α",
+      "Logistic regression outputs adjusted odds ratios for multiple covariates",
+    ],
+    boardsPearls: [
+      "Odds ratio (OR) = ad/bc — case-control studies",
+      "OR = 1 no association; OR > 1 ↑ odds in cases; OR < 1 protective",
+      "vs relative risk (RR) — RR for cohort/RCT; OR when disease is rare ≈ RR",
+      "Case-control → OR; cohort → RR",
+      "OR always further from 1 than RR when disease is common — do not equate blindly",
+      "Cross-sectional studies may report OR or prevalence ratios depending on design",
+      "Smoking and lung cancer historical case-control data framed with OR",
+    ],
+    pediatrics:
+      "Case-control studies of rare birth defects and pediatric cancers report OR for maternal exposures. In low-prevalence pediatric outcomes, OR and RR are often numerically similar.",
+  },
+  {
     id: "case-control-study",
     name: "Case-Control Study",
     etymology:
@@ -2924,6 +3033,7 @@ export const CLINICAL_STRATEGIES: ClinicalStrategyEntry[] = [
       "Attributable risk = risk difference (exposed − unexposed); population attributable risk incorporates prevalence",
       "Smoking RR for lung cancer >> 1 — strong association vignette clue",
       "IUD and PID — historical cohort data used RR framing for infection risk context",
+      "vs odds ratio (OR) — see odds ratio entry; OR used in case-control; OR ≈ RR when disease rare",
     ],
     pediatrics:
       "Pediatric cohort studies (e.g., vaccine efficacy, environmental exposures) report RR for incident outcomes. Low baseline disease prevalence in children means OR and RR are often similar. Neonatal outcomes in exposed vs unexposed pregnancies may use RR for complications like preterm birth.",

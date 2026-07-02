@@ -451,6 +451,35 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
     ],
   },
   {
+    id: "shunting",
+    name: "Shunting",
+    etymology:
+      "Old English scunian = to move aside + -ing = process — diversion of blood flow through an abnormal or alternative pathway",
+    aliases: [
+      "shunting",
+      "shunt",
+      "blood shunting",
+      "vascular shunting",
+      "cardiac shunting",
+      "intracardiac shunting",
+      "anatomic shunt",
+    ],
+    definition:
+      "Abnormal diversion of blood from its normal circulatory pathway through an alternative channel — most commonly intracardiac congenital communications on Step 1, but also intrapulmonary, portosystemic, and arteriovenous shunts.",
+    factors: [
+      "Direction depends on relative chamber/vessel pressures — left-to-right (acyanotic) vs right-to-left (cyanotic)",
+      "Left-to-right shunt — VSD, ASD, PDA → ↑ pulmonary blood flow, volume overload, eventual Eisenmenger reversal",
+      "Right-to-left shunt — ToF, TGA, Eisenmenger end-stage → deoxygenated blood enters systemic circulation → cyanosis",
+      "Shunt fraction (Qp/Qs) quantifies pulmonary-to-systemic flow ratio in congenital heart disease",
+      "Hypoxemia from fixed anatomic right-to-left shunt poorly responsive to supplemental O₂",
+      "Intrapulmonary shunting — hepatopulmonary syndrome (AV dilations), ARDS (non-cardiogenic V/Q mismatch)",
+      "Portosystemic shunting — cirrhosis with collateral vessels → hepatic encephalopathy (NH₃ bypasses liver)",
+      "Arteriovenous shunting — thyroid bruit, hemangioma, dialysis fistula steal syndrome",
+      "vs physiologic dead space — shunting is perfusion without ventilation (or blood bypassing oxygenation)",
+      "Peds: acyanotic L→R shunts present with murmur, CHF, failure to thrive; cyanotic R→L with early cyanosis and clubbing",
+    ],
+  },
+  {
     id: "left-ventricular-hypertrophy",
     name: "Left Ventricular Hypertrophy",
     etymology:
@@ -1616,8 +1645,6 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "central chemoreceptor",
       "carotid body chemoreceptor",
       "aortic body chemoreceptor",
-      "chemoreceptor trigger zone",
-      "ctz",
     ],
     definition:
       "Oxygen, carbon dioxide, and pH sensors that regulate respiration and cardiovascular reflexes — peripheral chemoreceptors (carotid and aortic bodies, CN IX/X) respond primarily to hypoxemia and also to hypercapnia and acidosis; central chemoreceptors in the medulla respond primarily to changes in cerebrospinal fluid H⁺ from CO₂ diffusion across the blood–brain barrier.",
@@ -1632,6 +1659,36 @@ export const HEMODYNAMICS: HemodynamicEntry[] = [
       "Chemoreceptor trigger zone (area postrema) — outside BBB; bloodborne toxins trigger vomiting (not respiratory)",
       "vs baroreceptors — chemoreceptors sense blood gases/pH, not arterial stretch/pressure",
       "Carotid body tumor (paraganglioma) — chemoreceptor origin at carotid bifurcation",
+    ],
+  },
+  {
+    id: "hyperdynamic-circulation",
+    name: "Hyperdynamic Circulation",
+    etymology:
+      "Greek hyper = excess + dynamis = power + Latin circulatio = movement in a circle — cardiovascular state of elevated cardiac output with often reduced systemic vascular resistance and bounding arterial pulsations",
+    aliases: [
+      "hyperdynamic circulation",
+      "hyperdynamic circulatory state",
+      "hyperdynamic cardiovascular state",
+      "high-output circulation",
+      "high output circulation",
+      "hyperdynamic heart",
+      "hyperdynamic cardiac state",
+      "bounding circulation",
+    ],
+    definition:
+      "Hemodynamic pattern characterized by increased cardiac output and often decreased systemic vascular resistance — producing warm extremities, wide pulse pressure, and brisk or bounding peripheral pulses — seen in high-output states and chronic severe aortic regurgitation.",
+    factors: [
+      "↑ stroke volume and/or ↑ heart rate → elevated cardiac output",
+      "↓ systemic vascular resistance from vasodilation (sepsis early, cirrhosis, beriberi, pregnancy, AV fistula)",
+      "Anemia and hyperthyroidism — ↑ CO to meet metabolic demand",
+      "Chronic severe aortic regurgitation — large regurgitant volume with rapid diastolic runoff → wide pulse pressure",
+      "Patent ductus arteriosus — left-to-right shunt with bounding pulses",
+      "Cirrhosis/portal hypertension — splanchnic vasodilation with high-output hemodynamics",
+      "Wet beriberi — thiamine deficiency with high-output heart failure",
+      "Peripheral signs in AR — Corrigan pulse, Quincke pulse, Traube sign, Duroziez sign",
+      "vs shock/hypodynamic state — low CO, cold extremities, narrow pulse pressure",
+      "Febrile illness — physiologic mild hyperdynamic response in children and adults",
     ],
   },
 ];

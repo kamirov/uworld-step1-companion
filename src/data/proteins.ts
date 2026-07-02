@@ -105,6 +105,94 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "mlck",
+    name: "Myosin Light-Chain Kinase (MLCK)",
+    etymology:
+      "Greek myos = muscle + light chain = small regulatory subunit of myosin + Greek kinein = to move + -ase = enzyme — Ca²⁺/calmodulin-activated kinase that phosphorylates myosin regulatory light chain",
+    aliases: [
+      "mlck",
+      "myosin light-chain kinase",
+      "myosin light chain kinase",
+      "myosin light-chain kinase (mlck)",
+      "smooth muscle mlck",
+      "myosin regulatory light chain kinase",
+    ],
+    gene: "MYLK (smooth muscle isoform); MYLK2 (skeletal/cardiac)",
+    location:
+      "Smooth muscle cells (primary Step 1 context); also nonmuscle myosin II regulation in some cell types",
+    function:
+      "When cytosolic Ca²⁺ rises and binds calmodulin, the Ca²⁺–calmodulin complex activates MLCK → MLCK phosphorylates the regulatory light chain of myosin II → increased actin–myosin cross-bridge cycling → smooth muscle contraction (vascular, bronchial, GI, uterine).",
+    mutationCauses: [
+      "Pharmacologic smooth muscle relaxation — ↓ intracellular Ca²⁺ or MLCK pathway activity (e.g., nifedipine blocks Ca²⁺ entry; β-agonists relax via cAMP/PKA, not MLCK)",
+      "Impaired MLCK signaling contributes conceptually to hypotension when Gq–IP₃–Ca²⁺ pathway is blocked",
+    ],
+    boardsPearls: [
+      "Smooth muscle contraction: Gq → PLC → IP₃ → ER Ca²⁺ release → Ca²⁺–calmodulin → MLCK → phosphorylate myosin light chain → contraction",
+      "vs striated muscle — uses troponin–tropomyosin (not MLCK) to expose actin when Ca²⁺ binds troponin C",
+      "Same Ca²⁺ signal activates MLCK (contraction) and calcineurin (T cells) via calmodulin — different target enzymes",
+      "α1 and M3 agonists → Gq → IP₃ → Ca²⁺ → MLCK → vasoconstriction and bronchoconstriction",
+      "MLCK phosphorylates myosin regulatory light chain — does not phosphorylate actin",
+      "vs PKC — parallel DAG arm from same PLC reaction; PKC does not directly phosphorylate myosin light chain in classic teaching",
+    ],
+    distinguishFrom: [
+      "Myosin — motor protein substrate of MLCK phosphorylation, not the kinase",
+      "Myosin light chain — regulatory subunit phosphorylated by MLCK; MLCK is the enzyme",
+      "Calmodulin — Ca²⁺ sensor that activates MLCK; not the kinase itself",
+      "Troponin C — Ca²⁺ binding in striated muscle; smooth muscle lacks troponin system",
+      "Protein kinase C (PKC) — DAG-activated kinase from same Gq pathway, different substrates",
+      "Myosin light-chain phosphatase (MLCP) — dephosphorylates myosin light chain → relaxation",
+      "Calcineurin — Ca²⁺/calmodulin-activated phosphatase in T cells, not smooth muscle contraction kinase",
+    ],
+    pediatrics:
+      "Neonatal pulmonary vascular tone and bronchial reactivity use the same Gq–IP₃–Ca²⁺–MLCK smooth muscle pathway; inhaled β-agonists bypass MLCK via cAMP-mediated relaxation in asthma.",
+  },
+  {
+    id: "myosin-light-chain",
+    name: "Myosin Light Chain",
+    etymology:
+      "Greek myos = muscle + light = smaller subunit + chain = polypeptide — low-molecular-weight subunits of the myosin II hexamer that regulate motor activity, distinct from the heavy chain ATPase domain",
+    aliases: [
+      "myosin light chain",
+      "myosin light-chain",
+      "myosin regulatory light chain",
+      "regulatory light chain",
+      "rlc",
+      "mlc",
+      "myosin lc",
+      "myosin essential light chain",
+      "essential light chain",
+    ],
+    gene: "MYL9 (smooth muscle RLC); MYL2 (cardiac ventricular RLC); MYL3 (cardiac atrial/slow skeletal); MYL1/MYL6 (essential light chains)",
+    location:
+      "Bound to the neck region of myosin II heavy chains in smooth, cardiac, and skeletal muscle — two essential light chains and two regulatory light chains per myosin hexamer",
+    function:
+      "Regulatory light chain modulates myosin ATPase activity and actin binding — in smooth muscle, MLCK phosphorylates the regulatory light chain (classically Ser19) to activate cross-bridge cycling; in striated muscle, Ca²⁺ binding to troponin C (not MLCK phosphorylation of RLC in classic model) regulates contraction via thin-filament proteins.",
+    mutationCauses: [
+      "MYL2/MYL3 mutations — familial hypertrophic cardiomyopathy (cardiac regulatory/essential light chain defects)",
+      "Impaired regulatory light-chain phosphorylation — reduced smooth muscle contractility when Gq–IP₃–Ca²⁺–MLCK pathway blocked",
+      "Myosin light-chain phosphatase (MLCP) activity — dephosphorylation of RLC promotes smooth muscle relaxation",
+    ],
+    boardsPearls: [
+      "Myosin II = 2 heavy chains + 2 essential light chains + 2 regulatory light chains",
+      "Smooth muscle: Ca²⁺–calmodulin → MLCK → phosphorylate regulatory myosin light chain → contraction",
+      "Striated muscle: Ca²⁺ → troponin C (not MLCK on RLC in classic teaching) → tropomyosin shift exposes actin",
+      "MLCP dephosphorylates myosin light chain → smooth muscle relaxation",
+      "vs myosin heavy chain — contains ATPase motor domain; light chains regulate activity at neck",
+      "vs MLCK — kinase that phosphorylates myosin light chain, not the subunit itself",
+      "Cardiac myosin light-chain mutations — rare HCM cause on boards differential",
+    ],
+    distinguishFrom: [
+      "Myosin heavy chain — large ATPase motor subunit (MYH7 in cardiac β-myosin); not the light chain",
+      "MLCK — kinase phosphorylating regulatory light chain in smooth muscle",
+      "Myosin light-chain phosphatase (MLCP) — dephosphorylates regulatory light chain",
+      "Troponin — striated muscle Ca²⁺ sensor on thin filament; smooth muscle lacks troponin",
+      "Actin — thin filament protein; myosin light chain is part of thick filament myosin complex",
+      "Tropomyosin — thin-filament regulatory protein, not myosin subunit",
+    ],
+    pediatrics:
+      "Same smooth-muscle myosin light-chain phosphorylation pathway mediates bronchial and vascular tone in children. Rare MYL2/MYL3 cardiomyopathy mutations may present with hypertrophy in childhood or adolescence.",
+  },
+  {
     id: "tropomyosin",
     name: "Tropomyosin",
     etymology:
@@ -651,8 +739,9 @@ export const PROTEINS: ProteinEntry[] = [
       "Excessive deposition — systemic sclerosis (scleroderma), pulmonary/liver fibrosis",
     ],
     boardsPearls: [
+      "SCAB mnemonic — S = Skin (type I), C = Cartilage (type II), A = Arteries/blood vessels (type III), B = Basement membrane (type IV)",
       "Synthesis requires vitamin C for proline/lysine hydroxylation — scurvy = defective collagen",
-      "Collagen types: I — bone/skin/tendon (OI); II — cartilage (COL2A1); III — vessels/reticulin (vEDS); IV — basement membrane (Alport, Goodpasture)",
+      "Type I (S) — bone/skin/tendon (OI); Type II (C) — cartilage (COL2A1); Type III (A) — vessels/reticulin (vEDS); Type IV (B) — basement membrane (Alport, Goodpasture)",
       "Goodpasture — antibodies against type IV collagen in GBM and alveolar basement membrane",
       "Alport — X-linked COL4A5 mutation → hematuria, sensorineural hearing loss, ocular changes",
       "Osteogenesis imperfecta — type I collagen; blue sclerae, fractures, hearing loss",
@@ -686,6 +775,7 @@ export const PROTEINS: ProteinEntry[] = [
       "Bone fragility, blue sclerae, hearing loss, dental abnormalities",
     ],
     boardsPearls: [
+      "SCAB — S = Skin (type I); also bone, tendon, dentin",
       "OI types I–IV by severity; type II lethal in utero",
       "Blue sclerae + recurrent fractures in child → collagen type I",
       "Peds: often diagnosed after minimal trauma fracture; distinguish non-accidental trauma",
@@ -720,6 +810,7 @@ export const PROTEINS: ProteinEntry[] = [
       "Degeneration in osteoarthritis — cartilage matrix breakdown (acquired, not germline mutation vignette)",
     ],
     boardsPearls: [
+      "SCAB — C = Cartilage (type II)",
       "Type II = cartilage; Type I = bone/skin/tendon — do not confuse on boards",
       "Articular hyaline cartilage is type II collagen + proteoglycans",
       "RA and other inflammatory arthritides destroy cartilage rich in type II collagen",
@@ -757,6 +848,7 @@ export const PROTEINS: ProteinEntry[] = [
       "Characteristic facial features (thin nose/lips, small chin) in vEDS",
     ],
     boardsPearls: [
+      "SCAB — A = Arteries/blood vessels (type III); also reticulin fibers",
       "Type III — vessels and reticulin; vascular EDS = COL3A1 deficiency",
       "vEDS: arterial or bowel rupture — avoid invasive procedures/colonoscopy unless essential",
       "Reticulin fibers (liver/spleen/lymph node scaffolding) = type III collagen",
@@ -794,6 +886,7 @@ export const PROTEINS: ProteinEntry[] = [
       "Goodpasture syndrome target — autoantibodies against α3(IV) NC1 domain in GBM and lung BM → pulmonary hemorrhage + RPGN",
     ],
     boardsPearls: [
+      "SCAB — B = Basement membrane (type IV)",
       "Type IV = basement membrane; Goodpasture attacks α3(IV) in kidney and lung",
       "Alport: hematuria → proteinuria → renal failure + hearing loss + eye changes (X-linked COL4A5)",
       "Goodpasture: linear IgG deposition on GBM biopsy; plasmapheresis + immunosuppression",
@@ -1179,6 +1272,51 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "nitric-oxide-synthase",
+    name: "Nitric Oxide Synthase (NOS)",
+    etymology:
+      "Latin nitrum = saltpeter (nitrogen) + oxide + Greek synthesis = putting together + -ase = enzyme — family of enzymes converting L-arginine to nitric oxide (NO) and L-citrulline",
+    aliases: [
+      "nitric oxide synthase",
+      "nitric oxide synthase (nos)",
+      "nos",
+      "nos enzyme",
+      "no synthase",
+      "arginine no synthase",
+    ],
+    gene: "NOS1 (nNOS); NOS2 (iNOS); NOS3 (eNOS)",
+    location:
+      "eNOS (NOS3) — endothelial cells; nNOS (NOS1) — neurons; iNOS (NOS2) — macrophages and other cells after cytokine induction",
+    function:
+      "Oxidizes L-arginine to NO and citrulline using O₂, NADPH, and tetrahydrobiopterin (BH₄) as cofactor; constitutive isoforms (eNOS, nNOS) release low amounts of NO in response to Ca²⁺/calmodulin; inducible iNOS produces high-output NO in inflammation and sepsis.",
+    mutationCauses: [
+      "Impaired eNOS function / endothelial dysfunction — hypertension, atherosclerosis, preeclampsia (boards concept)",
+      "Uncoupled NOS (↓ BH₄) — produces superoxide instead of NO, worsening oxidative stress",
+      "High-output iNOS in sepsis — vasodilatory shock from excessive NO",
+    ],
+    boardsPearls: [
+      "NOS isoforms: eNOS (NOS3) endothelial; nNOS (NOS1) neuronal; iNOS (NOS2) inducible macrophage",
+      "Substrate L-arginine → products NO + citrulline; requires BH₄, NADPH, O₂",
+      "eNOS activated by Ca²⁺/calmodulin (shear stress, ACh) → NO → soluble guanylyl cyclase → cGMP → vasodilation",
+      "iNOS — high-output NO in sepsis, inflammation; not Ca²⁺-dependent once induced",
+      "ADMA — endogenous NOS inhibitor (↑ in cardiovascular disease)",
+      "vs nitric oxide (NO) — gaseous product/signaling molecule, not the synthase enzyme",
+      "Nitrates donate NO downstream; sildenafil ↑ cGMP (PDE-5 inhibitor) — contraindicated with nitrates",
+      "Mnemonic: NOS = Needs O₂, NADPH, Substrate (arginine)",
+    ],
+    distinguishFrom: [
+      "Nitric oxide (NO) — diffusible gasotransmitter product, not the enzyme",
+      "Endothelial nitric oxide synthase (eNOS) — specific constitutive endothelial isoform (NOS3)",
+      "Guanylyl cyclase — NO effector enzyme producing cGMP downstream",
+      "Nitroglycerin — exogenous NO donor prodrug, not endogenous NOS",
+      "Nitrous oxide (N₂O) — inhaled anesthetic gas, unrelated to endogenous NO pathway",
+      "Arginase — converts arginine to ornithine (urea cycle), competes with NOS for substrate",
+      "Calmodulin — activates constitutive NOS isoforms; not the synthase itself",
+    ],
+    pediatrics:
+      "Inhaled NO for persistent pulmonary hypertension of the newborn (PPHN) — selective pulmonary vasodilation via eNOS/NO–cGMP pathway. iNOS-driven NO contributes to septic shock physiology in critically ill children.",
+  },
+  {
     id: "endothelial-nitric-oxide-synthase",
     name: "Endothelial Nitric Oxide Synthase (eNOS)",
     etymology:
@@ -1214,6 +1352,7 @@ export const PROTEINS: ProteinEntry[] = [
     ],
     distinguishFrom: [
       "Nitric oxide (NO) — gaseous signaling molecule product, not the synthase enzyme",
+      "Nitric oxide synthase (NOS) — enzyme family (eNOS, iNOS, nNOS); eNOS is one isoform",
       "Inducible NOS (iNOS, NOS2) — macrophage inducible isoform in inflammation",
       "Neuronal NOS (nNOS, NOS1) — synaptic signaling in neurons",
       "Guanylyl cyclase — NO receptor/effector enzyme downstream of eNOS",
@@ -2920,6 +3059,52 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "11-beta-hydroxylase",
+    name: "11β-Hydroxylase",
+    etymology:
+      "Carbon-11 beta hydroxylation step + Greek hydroxys = water + -yl + -ase = enzyme — adrenal cytochrome P450 enzyme (CYP11B1) in final glucocorticoid synthesis step",
+    aliases: [
+      "11β-hydroxylase",
+      "11-beta-hydroxylase",
+      "11 beta hydroxylase",
+      "11β hydroxylase",
+      "cyp11b1",
+      "p450c11",
+      "p450 c11",
+      "11β-hydroxylase enzyme",
+      "11-ohase",
+    ],
+    gene: "CYP11B1 (chromosome 8q21)",
+    location:
+      "Adrenal cortex — zona fasciculata (glucocorticoid pathway); smooth endoplasmic reticulum cytochrome P450; also expressed in brain (neurosteroid metabolism)",
+    function:
+      "Hydroxylates 11-deoxycortisol to cortisol and 11-deoxycorticosterone (DOC) to corticosterone — final step in active glucocorticoid and mineralocorticoid synthesis from upstream precursors; deficiency blocks cortisol synthesis and accumulates DOC (mineralocorticoid excess) and adrenal androgens.",
+    mutationCauses: [
+      "11β-hydroxylase deficiency — second most common congenital adrenal hyperplasia (~5–8%); virilization plus hypertension and hypokalemia from DOC excess",
+      "Salt retention and HTN — accumulated DOC acts as mineralocorticoid despite ↓ aldosterone synthesis",
+      "Metyrapone inhibition — blocks 11β-hydroxylase pharmacologically → ↑ 11-deoxycortisol (diagnostic stimulation test)",
+    ],
+    boardsPearls: [
+      "11β-hydroxylase = CYP11B1 — converts 11-deoxycortisol → cortisol and DOC → corticosterone",
+      "Deficiency → ↑ 11-deoxycortisol and ↑ DOC → virilization + hypertension + hypokalemia",
+      "vs 21-hydroxylase deficiency — salt wasting and hyperkalemia, not mineralocorticoid excess HTN",
+      "vs 17α-hydroxylase deficiency — sexual infantilism with HTN, not virilization",
+      "Metyrapone blocks 11β-hydroxylase — used in dexamethasone suppression and ACTH stimulation testing",
+      "CAH enzyme order mnemonic: cholesterol → … → 17-OHP → 11-deoxycortisol → cortisol (21 then 11β steps)",
+      "Treat 11β-hydroxylase deficiency with glucocorticoids (suppress ACTH/androgens); mineralocorticoid antagonists if HTN persists",
+    ],
+    distinguishFrom: [
+      "21-hydroxylase (CYP21A2) — earlier step converting 17-OHP → 11-deoxycortisol; most common CAH defect",
+      "17α-hydroxylase (CYP17A1) — earlier step in androgen and cortisol synthesis",
+      "11-deoxycortisol — substrate that accumulates when 11β-hydroxylase is deficient",
+      "Aldosterone synthase (CYP11B2) — zona glomerulosa enzyme converting corticosterone → aldosterone; same gene family",
+      "Metyrapone — drug that inhibits 11β-hydroxylase, not the enzyme itself",
+      "Aromatase — converts androgens to estrogens; different steroid pathway",
+    ],
+    pediatrics:
+      "11β-hydroxylase deficiency CAH presents in infancy or childhood with ambiguous genitalia/virilization (46,XX) and early hypertension from DOC — distinguish from 21-hydroxylase salt-wasting crisis. Glucocorticoid replacement suppresses ACTH-driven androgen excess.",
+  },
+  {
     id: "5-alpha-reductase",
     name: "5-Alpha Reductase",
     etymology: "5 = carbon-5 position + alpha stereochemistry + reductase = enzyme that reduces a bond",
@@ -3160,6 +3345,49 @@ export const PROTEINS: ProteinEntry[] = [
     ],
   },
   {
+    id: "cyp2c9",
+    name: "CYP2C9",
+    etymology:
+      "Cytochrome P450 family 2 subfamily C polypeptide 9 — hepatic CYP isoform metabolizing many weakly acidic drugs including S-warfarin and phenytoin",
+    aliases: [
+      "cyp2c9",
+      "cyp 2c9",
+      "cyp2c9 enzyme",
+      "cytochrome p450 2c9",
+      "cytochrome p450 family 2 subfamily c member 9",
+      "cyp2c9 polymorphism",
+      "cyp2c9 variant",
+    ],
+    gene: "CYP2C9 (10q23.33) — highly polymorphic; common variant alleles *2 and *3 reduce enzyme activity",
+    location:
+      "Smooth endoplasmic reticulum of hepatocytes — phase I drug-metabolizing monooxygenase",
+    function:
+      "Cytochrome P450 isoform that oxidizes numerous clinically important drugs — notably S-warfarin (with VKORC1 genotype determining dose), phenytoin, many NSAIDs, losartan, and some sulfonylureas — genetic variants and drug inhibitors alter clearance and toxicity risk.",
+    mutationCauses: [
+      "CYP2C9 *2/*3 loss-of-function alleles — ↓ warfarin dose requirement and ↑ bleeding risk if standard dosing used",
+      "Drug interactions — amiodarone, metronidazole, fluconazole, sulfonamides inhibit CYP2C9 → ↑ warfarin/phenytoin levels",
+      "Rifampin induction — ↑ CYP2C9 activity → ↓ warfarin effect",
+      "Pharmacogenomic dosing — CYP2C9 + VKORC1 guide initial warfarin dose",
+    ],
+    boardsPearls: [
+      "CYP2C9 metabolizes S-warfarin and phenytoin — key boards interaction enzyme",
+      "CYP2C9 *2/*3 variants → ↑ warfarin sensitivity; lower dose needed",
+      "Warfarin interactions: amiodarone, metronidazole, fluconazole inhibit CYP2C9 → ↑ INR",
+      "Rifampin induces CYP2C9 → ↓ warfarin effect",
+      "vs CYP2C19 — clopidogrel activation, PPIs; not primary warfarin pathway",
+      "vs CYP3A4 — metabolizes most drugs; statins, cyclosporine, many CCBs",
+      "vs VKORC1 — warfarin pharmacodynamics target; both genes affect warfarin dosing",
+    ],
+    distinguishFrom: [
+      "Cytochrome P450 (general) — enzyme superfamily; CYP2C9 is one isoform",
+      "CYP2C19 — different isoform; clopidogrel prodrug activation",
+      "CYP3A4 — broadest substrate profile; azole/macrolide inhibitors",
+      "CYP2D6 — codeine, tamoxifen, many psychotropics",
+      "VKORC1 — vitamin K epoxide reductase; warfarin target, not metabolizing enzyme",
+      "Vitamin K — warfarin antagonizes VKORC1 pathway, not CYP2C9 directly",
+    ],
+  },
+  {
     id: "huntingtin",
     name: "Huntingtin",
     etymology: "Huntington disease protein name + -in protein suffix",
@@ -3296,6 +3524,94 @@ export const PROTEINS: ProteinEntry[] = [
       "Claudin/occludin — tight junction proteins, paracellular seal",
       "Cadherin — adherens junction/desmosome adhesion, not cytoplasmic channels",
     ],
+  },
+  {
+    id: "calmodulin",
+    name: "Calmodulin",
+    etymology:
+      "calcium + modulate + -in protein suffix — small ubiquitous Ca²⁺-binding regulatory protein that activates target enzymes when intracellular Ca²⁺ rises",
+    aliases: [
+      "calmodulin",
+      "calcium modulated protein",
+      "calcium-modulated protein",
+      "ca2+ calmodulin",
+      "calcium calmodulin complex",
+    ],
+    gene: "CALM1 / CALM2 / CALM3 (ubiquitous isoforms)",
+    location:
+      "Cytosol of virtually all eukaryotic cells — translocates to bind partners when Ca²⁺ concentration rises after IP₃-mediated ER release, voltage-gated Ca²⁺ entry, or receptor-operated channels",
+    function:
+      "EF-hand Ca²⁺-binding protein; when four Ca²⁺ ions bind, calmodulin undergoes conformational change and activates enzymes including MLCK (smooth muscle contraction), Ca²⁺/calmodulin-dependent kinases (CaMK), calcineurin (T-cell activation), and constitutive nitric oxide synthase (eNOS/nNOS).",
+    mutationCauses: [
+      "Calmodulinopathies (CALM1/2/3 gain-of-function mutations) — congenital long QT syndrome and catecholaminergic polymorphic VT (arrhythmia boards pearl)",
+      "↓ Ca²⁺–calmodulin signaling impairs smooth muscle contraction and eNOS activation conceptually in endothelial dysfunction",
+    ],
+    boardsPearls: [
+      "Calmodulin = universal Ca²⁺ sensor — activated when cytosolic Ca²⁺ rises after IP₃ releases ER stores",
+      "Ca²⁺–calmodulin activates MLCK → smooth muscle contraction",
+      "Ca²⁺–calmodulin activates calcineurin → NFAT dephosphorylation → IL-2 in T cells",
+      "Ca²⁺–calmodulin activates CaM kinases (e.g., CaMKII in LTP) and constitutive NOS",
+      "vs troponin C — striated muscle Ca²⁺ sensor on thin filament; smooth muscle uses calmodulin–MLCK",
+      "vs calbindin — Ca²⁺ buffer protein, not primary enzymatic activator",
+      "Gq → PLC → IP₃ → Ca²⁺ → calmodulin is central second-messenger arm parallel to DAG–PKC",
+    ],
+    distinguishFrom: [
+      "Troponin C — skeletal/cardiac muscle Ca²⁺ binding on thin filament; not smooth muscle primary sensor",
+      "Calbindin — intracellular Ca²⁺ buffer, not broad enzyme activator",
+      "Calcineurin — Ca²⁺/calmodulin-activated phosphatase substrate partner, not calmodulin itself",
+      "MLCK — kinase activated by Ca²⁺–calmodulin; calmodulin is the sensor",
+      "CaM kinase — kinase family activated by Ca²⁺–calmodulin",
+      "IP₃ — soluble messenger releasing Ca²⁺; calmodulin senses Ca²⁺ after release",
+      "S100 proteins — another EF-hand Ca²⁺-binding family with more tissue-specific roles",
+    ],
+    pediatrics:
+      "Calmodulin gene mutations cause severe inherited arrhythmias presenting in infancy or childhood. Same Ca²⁺–calmodulin–MLCK pathway mediates bronchial and vascular tone relevant to pediatric asthma and shock.",
+  },
+  {
+    id: "cam-kinase",
+    name: "Ca²⁺/Calmodulin-Dependent Protein Kinase (CaM Kinase)",
+    etymology:
+      "calcium + calmodulin + Greek kinein = to move + -ase = enzyme — serine/threonine kinase family activated when Ca²⁺ binds calmodulin and the complex binds the kinase regulatory domain",
+    aliases: [
+      "cam kinase",
+      "cam-kinase",
+      "cam kinase ii",
+      "camk",
+      "camkii",
+      "ca2+/calmodulin-dependent protein kinase",
+      "calcium calmodulin dependent kinase",
+      "calmodulin-dependent protein kinase",
+      "calmodulin dependent kinase",
+    ],
+    gene: "CAMK1, CAMK2 (CaMKII), CAMK4, CAMK2D (cardiac), etc.",
+    location:
+      "Postsynaptic density (CaMKII in neurons); cardiac myocytes (CaMKII); cytosol and nucleus depending on isoform",
+    function:
+      "Phosphorylates serine/threonine residues on ion channels, receptors, and transcription factors after Ca²⁺–calmodulin binding — mediates synaptic plasticity (LTP via AMPA receptor trafficking), cardiac excitation–contraction coupling feedback, and gene transcription (CaMKIV → CREB).",
+    mutationCauses: [
+      "Excessive CaMKII activity implicated in cardiac arrhythmias and heart failure (boards concept)",
+      "CaMKII required for NMDA receptor–dependent long-term potentiation (LTP) in hippocampus",
+    ],
+    boardsPearls: [
+      "CaM kinase = Ca²⁺/calmodulin-dependent serine/threonine kinase — distinct from DAG-activated PKC",
+      "CaMKII — memory/LTP: NMDA receptor Ca²⁺ influx → calmodulin → CaMKII autophosphorylation → persistent activation → AMPA insertion",
+      "CaMKII in heart — amplifies Ca²⁺ handling and arrhythmia risk when overactive",
+      "vs MLCK — phosphorylates myosin light chain for smooth muscle contraction, not CaMK family",
+      "vs calcineurin — Ca²⁺/calmodulin-activated phosphatase (dephosphorylates NFAT), not kinase",
+      "vs PKC — activated by DAG (+ Ca²⁺ for conventional isoforms), not primarily calmodulin",
+      "Gq → IP₃ → Ca²⁺ → calmodulin → CaMK or MLCK depending on cell type",
+    ],
+    distinguishFrom: [
+      "Protein kinase C (PKC) — DAG-activated from same Gq pathway; different activation mechanism",
+      "MLCK — specific Ca²⁺/calmodulin kinase for myosin light chain in smooth muscle",
+      "Calcineurin — Ca²⁺/calmodulin-activated phosphatase, reciprocal to kinases",
+      "Calmodulin — Ca²⁺ sensor that activates CaM kinases; not the kinase itself",
+      "NMDA receptor — source of postsynaptic Ca²⁺ for CaMKII in LTP, not the kinase",
+      "Protein kinase A (PKA) — cAMP-activated, not Ca²⁺/calmodulin",
+      "MAP kinase — downstream of Ras, not primary Ca²⁺/calmodulin effector",
+    ],
+    pediatrics:
+      "Hippocampal LTP and memory formation use CaMKII from early development. CaMKII-linked cardiac arrhythmia mechanisms apply to congenital heart disease and catecholaminergic VT workups in adolescents.",
   },
   {
     id: "calcineurin",
@@ -5291,6 +5607,8 @@ export const PROTEINS: ProteinEntry[] = [
       "retinoblastoma tumor suppressor",
       "rb gene",
       "rb protein gene",
+      "rb",
+      "r b",
       "p105-rb",
       "prb",
       "retinoblastoma protein",
@@ -7072,6 +7390,94 @@ export const PROTEINS: ProteinEntry[] = [
       "ATP1A3 mutations cause alternating hemiplegia of childhood. Digoxin toxicity in children presents with arrhythmias and GI symptoms — hypokalemia from diuretics or diarrhea worsens toxicity. Maintains ion gradients essential for neuronal and cardiac function from fetal life onward.",
   },
   {
+    id: "sodium-calcium-exchanger",
+    name: "Na⁺/Ca²⁺ Exchanger",
+    etymology:
+      "Na⁺ = sodium + Ca²⁺ = calcium + exchanger = antiporter — electrogenic counter-transporter exchanging intracellular Ca²⁺ for extracellular Na⁺",
+    aliases: [
+      "sodium-calcium exchanger",
+      "sodium calcium exchanger",
+      "na+/ca2+ exchanger",
+      "na ca exchanger",
+      "na-ca exchanger",
+      "ncx",
+      "ncx1",
+      "slc8a1",
+      "sodium calcium antiporter",
+      "na ca antiporter",
+    ],
+    gene: "SLC8A1 (NCX1 — cardiac predominant); SLC8A2, SLC8A3 — tissue-specific isoforms",
+    location:
+      "Plasma membrane of cardiac myocytes, neurons, and other excitable cells — especially abundant on sarcolemma where it extrudes Ca²⁺ during diastolic relaxation",
+    function:
+      "Electrogenic antiporter exchanging 3 Na⁺ into the cell for 1 Ca²⁺ out (forward mode) — uses the low intracellular Na⁺ gradient established by Na⁺/K⁺-ATPase to remove Ca²⁺ after contraction; reverse mode (Ca²⁺ influx) occurs when intracellular Na⁺ rises (digoxin toxicity, ischemia).",
+    mutationCauses: [
+      "Pharmacologic modulation — cardiac glycoside inhibition of Na⁺/K⁺-ATPase → ↑ Na⁺ᵢ → impaired forward NCX → ↑ Ca²⁺ᵢ (therapeutic inotropy or toxic arrhythmia)",
+      "Ischemia/reperfusion — reverse-mode NCX can import damaging Ca²⁺ load",
+    ],
+    boardsPearls: [
+      "NCX = Na⁺/Ca²⁺ exchanger — antiporter; 3 Na⁺ in, 1 Ca²⁺ out (forward mode)",
+      "Secondary active transport — uses Na⁺ gradient from Na⁺/K⁺-ATPase",
+      "Cardiac glycoside mechanism: inhibit Na⁺/K⁺-ATPase → ↑ Na⁺ᵢ → less Ca²⁺ export via NCX → ↑ Ca²⁺ᵢ → ↑ contractility",
+      "Forward mode removes Ca²⁺ during relaxation; reverse mode imports Ca²⁺ when Na⁺ᵢ high",
+      "vs Na⁺/K⁺-ATPase — primary active pump; NCX is gradient-coupled exchanger",
+      "vs L-type Ca²⁺ channel — brings Ca²⁺ in during plateau; NCX mainly extrudes Ca²⁺",
+      "vs SERCA — sarcoplasmic reticulum Ca²⁺-ATPase sequesters Ca²⁺ into SR",
+    ],
+    distinguishFrom: [
+      "Na⁺/K⁺-ATPase — primary active pump inhibited by digoxin; upstream of NCX physiology",
+      "Na⁺/H⁺ exchanger (NHE) — exchanges H⁺ for Na⁺; renal acid-base, not primary cardiac Ca²⁺ extrusion",
+      "L-type voltage-gated Ca²⁺ channel — depolarization-triggered Ca²⁺ influx",
+      "SERCA (Ca²⁺-ATPase) — pumps Ca²⁺ into sarcoplasmic reticulum",
+      "Cotransporter (symporter) — coupled transport same direction, not exchange",
+    ],
+  },
+  {
+    id: "sodium-hydrogen-exchanger",
+    name: "Na⁺/H⁺ Exchanger",
+    etymology:
+      "Na⁺ = sodium + H⁺ = hydrogen ion + exchanger = antiporter — electroneutral counter-transporter exchanging extracellular Na⁺ for intracellular H⁺",
+    aliases: [
+      "sodium-hydrogen exchanger",
+      "sodium hydrogen exchanger",
+      "na+/h+ exchanger",
+      "na h exchanger",
+      "na-h exchanger",
+      "nhe",
+      "nhe3",
+      "slc9a3",
+      "sodium hydrogen antiporter",
+      "na h antiporter",
+    ],
+    gene: "SLC9A family — SLC9A3 (NHE3) predominant in renal proximal tubule; SLC9A1 (NHE1) ubiquitous housekeeping isoform",
+    location:
+      "Apical membrane of renal proximal tubule epithelium (NHE3) — reabsorbs filtered Na⁺ while secreting H⁺; also present on basolateral/apical membranes of other epithelia for pH and volume regulation",
+    function:
+      "Electroneutral antiporter importing 1 extracellular Na⁺ in exchange for 1 intracellular H⁺ — couples Na⁺ reabsorption to luminal H⁺ secretion in proximal tubule, supporting bicarbonate reclamation and acid-base balance; driven by low intracellular Na⁺ from basolateral Na⁺/K⁺-ATPase (secondary active transport).",
+    mutationCauses: [
+      "Congenital isolated proximal renal tubular acidosis — rare NHE3/CA II pathway defects impair H⁺ secretion",
+      "Pharmacologic context — carbonic anhydrase inhibitors ↓ H⁺ supply for exchanger; loop/thiazide diuretics alter delivery and enhance downstream H⁺ secretion",
+    ],
+    boardsPearls: [
+      "NHE = Na⁺/H⁺ exchanger — antiporter; 1 Na⁺ in, 1 H⁺ out (into lumen in kidney)",
+      "Proximal tubule apical NHE3 — key for Na⁺ reabsorption and H⁺ secretion",
+      "Works with carbonic anhydrase — intracellular H⁺ from H₂CO₃ → HCO₃⁻ reabsorbed, H⁺ secreted",
+      "Secondary active transport — uses Na⁺ gradient from Na⁺/K⁺-ATPase",
+      "vs Na⁺/Ca²⁺ exchanger (NCX) — cardiac Ca²⁺ handling, not renal acid secretion",
+      "vs Na⁺/K⁺-ATPase — primary active pump on basolateral side",
+      "vs H⁺/K⁺-ATPase — gastric proton pump (PPI target), not luminal NHE",
+      "Metabolic alkalosis with volume contraction — ↑ proximal Na⁺/H⁺ activity reabsorbs Na⁺ and secretes H⁺",
+    ],
+    distinguishFrom: [
+      "Na⁺/Ca²⁺ exchanger (NCX) — 3 Na⁺ for 1 Ca²⁺; cardiac excitation-contraction coupling",
+      "Na⁺/K⁺-ATPase — electrogenic pump hydrolyzing ATP; establishes Na⁺ gradient",
+      "H⁺/K⁺-ATPase — gastric parietal cell proton pump; PPI target",
+      "Carbonic anhydrase — catalyzes H₂CO₃ ↔ CO₂ + H₂O; supplies H⁺ for NHE but is not the exchanger",
+      "ENaC — epithelial Na⁺ channel in collecting duct; amiloride-sensitive channel, not exchanger",
+      "Na⁺/HCO₃⁻ cotransporter (NBC) — coupled symport, not H⁺ exchange",
+    ],
+  },
+  {
     id: "na-k-2cl-cotransporter",
     name: "Na⁺/K⁺/2Cl⁻ Cotransporter",
     etymology:
@@ -8402,6 +8808,577 @@ export const PROTEINS: ProteinEntry[] = [
     ],
     pediatrics:
       "Fragile X is a leading inherited cause of intellectual disability and autism in boys. DNA testing with CGG repeat sizing and methylation analysis is diagnostic. Early developmental intervention improves outcomes.",
+  },
+  {
+    id: "copper-transporter",
+    name: "Copper Transporter",
+    etymology:
+      "Latin cuprum = copper + Latin trans = across + ferre = to carry — P-type ATPase membrane proteins that traffic copper across cellular membranes",
+    aliases: [
+      "copper transporter",
+      "copper transporting atpase",
+      "copper-transporting atpase",
+      "p-type copper atpase",
+      "cu-atpase",
+      "atp7a",
+      "atp7b",
+      "menkes protein",
+      "wilson disease protein",
+    ],
+    gene: "ATP7A (Menkes) / ATP7B (Wilson)",
+    location:
+      "ATP7A — intestinal enterocytes, blood-brain barrier, systemic tissues; ATP7B — hepatocytes (biliary copper excretion into bile)",
+    function:
+      "P-type ATPases that absorb dietary copper (ATP7A), deliver copper to cuproenzymes and ceruloplasmin, and export excess copper into bile (ATP7B) — maintain copper homeostasis and prevent toxic accumulation or deficiency.",
+    mutationCauses: [
+      "ATP7A loss-of-function (X-linked) — Menkes disease: impaired intestinal copper absorption → systemic copper deficiency, kinky hair, infantile neurodegeneration",
+      "ATP7B loss-of-function (autosomal recessive) — Wilson disease: impaired hepatocellular copper excretion → copper overload, hepatitis, basal ganglia degeneration, Kayser-Fleischer rings",
+      "Occipital horn syndrome — milder ATP7A allelic variant",
+    ],
+    boardsPearls: [
+      "Menkes (ATP7A) = cannot absorb/export copper → ↓ copper, ↓ ceruloplasmin, kinky hair, infant death",
+      "Wilson (ATP7B) = cannot excrete copper in bile → copper overload, ↓ ceruloplasmin, K-F rings, liver + brain",
+      "Both can show ↓ ceruloplasmin — Menkes is deficiency; Wilson is failed holoceruloplasmin assembly/export",
+      "Ceruloplasmin carries ~95% serum copper — made in liver using copper from transporter pathways",
+      "Wilson treatment — chelation (penicillamine/trientine) + zinc blocks absorption",
+      "vs ceruloplasmin — serum carrier protein; copper transporter is membrane pump (ATP7A/B)",
+    ],
+    distinguishFrom: [
+      "Ceruloplasmin — plasma multicopper ferroxidase and copper carrier; low in both Menkes and Wilson",
+      "CTR1 (SLC31A1) — intestinal copper importer; upstream of ATP7A trafficking",
+      "Transferrin — iron transport protein, not copper",
+      "Hephaestin — intestinal ferroxidase for iron absorption",
+      "Lysyl oxidase — cuproenzyme requiring copper; defective cross-linking in Menkes",
+    ],
+  },
+  {
+    id: "ampk",
+    name: "AMP-Activated Protein Kinase (AMPK)",
+    etymology:
+      "Adenosine monophosphate + activated + protein kinase — energy-sensing serine/threonine kinase switched on when cellular AMP rises relative to ATP, signaling low energy charge",
+    aliases: [
+      "ampk",
+      "amp-activated protein kinase",
+      "amp activated protein kinase",
+      "amp-dependent protein kinase",
+      "5' amp-activated protein kinase",
+      "master metabolic regulator",
+      "cellular energy sensor",
+    ],
+    gene: "PRKAA1, PRKAA2 (catalytic α subunits); PRKAB1/2 (β); PRKAG1/2/3 (γ) — heterotrimeric complex",
+    location:
+      "Ubiquitous cytoplasmic enzyme in liver, skeletal muscle, adipose tissue, and heart — activated when AMP/ATP ratio rises during energy stress",
+    function:
+      "Master cellular energy sensor — AMP binding promotes phosphorylation by upstream LKB1 (and CaMKKβ) → active AMPK phosphorylates metabolic enzymes and transcriptional regulators to restore ATP: stimulates fatty acid oxidation and glucose uptake, inhibits anabolic pathways (gluconeogenesis, lipogenesis, protein synthesis, mTORC1).",
+    mutationCauses: [
+      "LKB1 (STK11) germline mutations — Peutz-Jeghers syndrome (hamartomatous GI polyps, cancer risk); LKB1 is major upstream AMPK kinase",
+      "No common isolated AMPK germline disease on boards — pathway dysregulation implicated in metabolic syndrome, obesity, and cancer metabolism",
+    ],
+    boardsPearls: [
+      "AMPK = AMP-activated protein kinase — turned on when AMP/ATP ratio ↑ (low energy)",
+      "Restores ATP: ↑ fatty acid oxidation, ↑ glucose uptake; ↓ gluconeogenesis, ↓ lipogenesis",
+      "Metformin partly activates AMPK → ↓ hepatic gluconeogenesis",
+      "LKB1 phosphorylates and activates AMPK — Peutz-Jeghers link",
+      "Inhibits mTORC1 — coordinates growth with nutrient/energy status",
+      "vs PKA — PKA activated by cAMP (Gs hormones); AMPK by AMP (energy depletion)",
+      "Exercise and metformin converge on AMPK — ↑ insulin sensitivity",
+      "Mnemonic: AMPK = Amped when ATP is low (AMP high)",
+    ],
+    distinguishFrom: [
+      "AMP — adenine nucleotide that activates AMPK when energy charge falls; not the kinase itself",
+      "ATP — high energy charge inhibits AMPK; opposite regulatory signal",
+      "Protein kinase A (PKA) — cAMP-activated; hormone second-messenger kinase",
+      "mTOR — growth/anabolic kinase inhibited by AMPK",
+      "LKB1 — upstream tumor suppressor kinase activating AMPK; not the effector kinase",
+      "Adenylate kinase — 2 ADP ⇌ ATP + AMP; generates AMP signal for AMPK",
+    ],
+  },
+  {
+    id: "cyclin-d1",
+    name: "Cyclin D1",
+    etymology:
+      "Greek kyklos = circle + -in protein suffix + D1 = type D cyclin isoform 1 — G1-phase cyclin that partners cyclin-dependent kinases to drive cell cycle progression",
+    aliases: [
+      "cyclin d1",
+      "cyclin d 1",
+      "ccnd1",
+      "ccn d1",
+      "bcl 1",
+      "bcl-1",
+      "prad1",
+    ],
+    gene: "CCND1 (11q13)",
+    location:
+      "Nucleus — D-type G1 cyclin forming active complexes with CDK4 and CDK6 to phosphorylate retinoblastoma protein (pRb)",
+    function:
+      "G1 cyclin that activates CDK4/6 → phosphorylates and inactivates pRb → releases E2F transcription factors → promotes G1→S transition and DNA replication; mitogenic signals (growth factors, Ras pathway) induce cyclin D1 expression.",
+    mutationCauses: [
+      "Mantle cell lymphoma — t(11;14)(q13;q32) juxtaposes CCND1 with IgH enhancer → cyclin D1 overexpression",
+      "Parathyroid adenoma — CCND1 (PRAD1) rearrangement/overexpression in primary hyperparathyroidism",
+      "Breast and other carcinomas — CCND1 amplification or overexpression",
+      "CDK4/6 amplification — alternative route to pRb inactivation in melanoma and other tumors",
+    ],
+    boardsPearls: [
+      "Cyclin D1 + CDK4/6 → phosphorylate pRb → E2F release → S phase entry",
+      "Mantle cell lymphoma — t(11;14) cyclin D1/IgH; CD5+ B-cell neoplasm",
+      "CCND1 on 11q13 — PRAD1 in parathyroid adenoma",
+      "vs cyclin E — later G1/S cyclin with CDK2; different checkpoint step",
+      "CDK4/6 inhibitors (palbociclib) — block cyclin D–CDK4/6 axis in HR+ breast cancer",
+      "HPV E7 inactivates pRb — parallel pathway bypassing need for cyclin D amplification",
+    ],
+    distinguishFrom: [
+      "Cyclin E — partners CDK2 at G1/S boundary; different cyclin family member",
+      "CDK4/CDK6 — catalytic kinase subunit; cyclin D is regulatory partner",
+      "RB1/pRb — tumor suppressor phosphorylated by cyclin D–CDK4/6",
+      "E2F — transcription factor released when pRb phosphorylated",
+      "Cyclin B — M-phase cyclin with CDK1",
+      "BCL1 — historical name for CCND1 locus; not BCL2 anti-apoptotic protein",
+    ],
+  },
+  {
+    id: "msh2",
+    name: "MSH2",
+    etymology:
+      "MutS Homolog 2 — bacterial MutS mismatch repair homolog; MSH2 protein forms MMR complex that recognizes and initiates repair of DNA base-pair mismatches and insertion-deletion loops",
+    aliases: [
+      "msh2",
+      "msh 2",
+      "muts homolog 2",
+      "mismatch repair protein msh2",
+    ],
+    gene: "MSH2 (2p21) — Lynch syndrome / HNPCC gene",
+    location:
+      "Nucleus — heterodimerizes with MSH6 (MutSα) or MSH3 (MutSβ) to bind mismatched DNA at replication errors",
+    function:
+      "DNA mismatch repair (MMR) protein — recognizes post-replicative base mismatches and small insertion-deletion loops → recruits MLH1–PMS2 (MutLα) complex → excision and resynthesis → maintains microsatellite stability and prevents accumulation of replication errors.",
+    mutationCauses: [
+      "Lynch syndrome (hereditary nonpolyposis colorectal cancer, HNPCC) — germline MSH2 loss → ↑ colorectal and endometrial cancer, ovarian and other Lynch-associated tumors",
+      "Microsatellite instability (MSI-high) — somatic or germline MMR defect → unstable repetitive DNA",
+      "Muir-Torre syndrome — Lynch variant with sebaceous skin tumors",
+      "Sporadic colorectal cancer — MLH1 promoter methylation more common than MSH2 somatic loss",
+    ],
+    boardsPearls: [
+      "MSH2 = mismatch repair gene; Lynch syndrome when germline mutated",
+      "Lynch genes: MLH1, MSH2, MSH6, PMS2, EPCAM — MSH2 and MLH1 most common",
+      "MSI-high tumors — MMR deficiency; better prognosis in some settings; checkpoint inhibitor responsive",
+      "Lynch cancer spectrum — colorectal (right-sided), endometrial, ovarian, gastric, urothelial",
+      "vs BRCA — homologous recombination repair of double-strand breaks, not mismatch repair",
+      "vs MSH6 — partner in MutSα complex; separate Lynch gene",
+      "Autosomal dominant inheritance — Amsterdam criteria / genetic testing for Lynch",
+    ],
+    distinguishFrom: [
+      "MLH1 — MutLα partner; most common Lynch gene with MSH2",
+      "MSH6 — heterodimer partner of MSH2 in MutSα",
+      "PMS2 — MutLα component with MLH1",
+      "BRCA1/2 — double-strand break homologous recombination repair",
+      "TP53 — tumor suppressor checkpoint; not MMR pathway",
+      "Microsatellite instability — molecular consequence of MMR loss, not the protein",
+    ],
+  },
+  {
+    id: "myc",
+    name: "MYC",
+    etymology:
+      "Myelocytomatosis viral oncogene homolog — cellular homolog of avian retroviral v-myc; proto-oncogene transcription factor regulating proliferation, metabolism, and apoptosis",
+    aliases: [
+      "myc",
+      "c-myc",
+      "c myc",
+      "myc proto-oncogene",
+      "myc oncogene",
+      "nmyc",
+      "n-myc",
+      "n myc",
+    ],
+    gene: "MYC (8q24); N-MYC = MYCN (2p24)",
+    location:
+      "Nucleus — basic helix-loop-helix leucine zipper (bHLH-Zip) transcription factor binding E-box DNA motifs",
+    function:
+      "Proto-oncogene transcription factor promoting cell growth, ribosome biogenesis, glycolysis, and cell cycle entry — tightly regulated in normal cells; overexpression or translocation drives uncontrolled proliferation and metabolic reprogramming (Warburg effect).",
+    mutationCauses: [
+      "Burkitt lymphoma — t(8;14)(q24;q32) translocates MYC to IgH enhancer → constitutive overexpression; endemic (EBV+) and sporadic forms",
+      "Diffuse large B-cell lymphoma — MYC rearrangements with BCL2 (double-hit lymphoma) → aggressive disease",
+      "Neuroblastoma — MYCN amplification → poor prognosis in pediatric tumors",
+      "Multiple myeloma and carcinomas — MYC amplification or translocation",
+    ],
+    boardsPearls: [
+      "MYC = proto-oncogene transcription factor; overexpression drives proliferation",
+      "Burkitt lymphoma — t(8;14) MYC/IgH; starry sky macrophages; jaw lesion in endemic African (EBV)",
+      "Double-hit lymphoma — MYC + BCL2 rearrangements; very aggressive",
+      "N-MYC (MYCN) amplification — neuroblastoma prognostic marker",
+      "vs BCL2 — anti-apoptotic; MYC drives proliferation (different oncogene class)",
+      "vs RAS — GTPase signal transducer upstream of MYC induction",
+      "EBV — associated with endemic Burkitt lymphoma, not all MYC-driven tumors",
+    ],
+    distinguishFrom: [
+      "BCL2 — anti-apoptotic oncogene; t(14;18) in follicular lymphoma",
+      "RAS — small GTPase upstream signaling; not transcription factor",
+      "MYC translocation vs amplification — both increase expression; Burkitt = translocation classic",
+      "MYCN — related family member; neuroblastoma not Burkitt",
+      "TP53 — tumor suppressor; opposes uncontrolled proliferation",
+      "IgH — immunoglobulin heavy chain locus; partner in t(8;14)",
+    ],
+  },
+  {
+    id: "p53",
+    name: "p53",
+    etymology:
+      "Protein 53 kDa — TP53 gene product; named for apparent molecular weight on early SDS-PAGE; master tumor suppressor called guardian of the genome",
+    aliases: [
+      "p53",
+      "p 53",
+      "tp53",
+      "tp 53",
+      "p53 protein",
+      "tumor protein p53",
+      "guardian of the genome",
+    ],
+    gene: "TP53 (17p13.1)",
+    location:
+      "Nucleus — sequence-specific transcription factor activated by DNA damage, oncogenic stress, and hypoxia",
+    function:
+      "Tumor suppressor that senses genomic stress → transcriptionally activates CDKN1A (p21) to halt G1/S progression, DNA repair genes, and pro-apoptotic targets (BAX, PUMA) when damage is irreparable — central hub of cell cycle checkpoint and apoptosis.",
+    mutationCauses: [
+      "Li-Fraumeni syndrome — germline TP53 mutation → early sarcomas, breast cancer, brain tumors, adrenocortical carcinoma, leukemia",
+      "Sporadic cancers — TP53 somatic mutation in >50% of human carcinomas (lung, colon, pancreas, etc.)",
+      "HPV-related cervical cancer — viral E6 promotes p53 ubiquitination and degradation",
+      "Loss of G1/S and G2/M checkpoints → genomic instability and aneuploidy",
+    ],
+    boardsPearls: [
+      "p53 = TP53 tumor suppressor; guardian of the genome",
+      "DNA damage → p53 ↑ → p21 → CDK inhibition → G1 arrest OR apoptosis",
+      "Li-Fraumeni — germline TP53; diverse early malignancies in families",
+      "HPV E6 degrades p53 — cervical carcinogenesis (E7 hits pRb)",
+      "Most commonly mutated gene in human cancer overall",
+      "vs RB1 — G1/S gatekeeper via E2F; p53 is damage sensor upstream of p21",
+      "vs BRCA — DNA repair defect; p53 is checkpoint/apoptosis hub",
+    ],
+    distinguishFrom: [
+      "RB1/pRb — pocket protein inhibiting E2F; parallel G1/S control, different mechanism",
+      "p21 (CDKN1A) — CDK inhibitor transcriptionally induced by p53",
+      "MDM2 — negative regulator that ubiquitinates p53",
+      "HPV E6 — viral oncoprotein that degrades p53",
+      "BAX — pro-apoptotic effector downstream of p53",
+      "Li-Fraumeni syndrome — clinical syndrome from TP53 germline mutation",
+    ],
+  },
+  {
+    id: "ras",
+    name: "Ras",
+    etymology:
+      "Rat sarcoma virus — name from transforming retrovirus isolate; RAS genes encode small GTP-binding proteins switching between active GTP-bound and inactive GDP-bound states",
+    aliases: [
+      "ras",
+      "ras protein",
+      "ras oncogene",
+      "ras proto-oncogene",
+      "kras",
+      "k-ras",
+      "nras",
+      "n-ras",
+      "hras",
+      "h-ras",
+      "small gtpase ras",
+    ],
+    gene: "KRAS (12p12), NRAS (1p13), HRAS (11p15) — related isoforms",
+    location:
+      "Inner leaflet of plasma membrane (farnesylated/prenylated) — signal transducer downstream of growth factor receptors (EGFR, etc.)",
+    function:
+      "Small monomeric GTPase molecular switch — active Ras-GTP recruits RAF → MEK → ERK MAP kinase cascade and PI3K-AKT pathway → promotes proliferation, survival, and metabolism; intrinsic GTPase activity and GAP proteins (e.g., NF1) terminate signal; oncogenic point mutations impair GTP hydrolysis → constitutively active Ras-GTP.",
+    mutationCauses: [
+      "KRAS mutations — pancreatic adenocarcinoma (~90%), colorectal cancer, lung adenocarcinoma; anti-EGFR therapy ineffective if KRAS mutant",
+      "NRAS mutations — melanoma, hematologic malignancies",
+      "HRAS germline activating mutations — Costello syndrome (developmental disorder, tumor predisposition)",
+      "Somatic RAS activation — among most common oncogenic drivers across human cancers",
+    ],
+    boardsPearls: [
+      "Ras = small GTPase; GTP = ON, GDP = OFF; mutation locks ON",
+      "KRAS — pancreatic, colorectal, lung cancer boards favorite",
+      "KRAS mutant colon cancer — cetuximab/panitumumab (anti-EGFR) do not work",
+      "RAS → RAF → MEK → ERK MAPK pathway",
+      "NF1 encodes Ras-GAP — neurofibromatosis type 1 when mutated (increased Ras signaling)",
+      "vs RAF/MEK — downstream kinases; RAS is GTPase switch at membrane",
+      "Costello syndrome — germline HRAS activation; Noonan often PTPN11/SOS1 (upstream of Ras)",
+      "Mnemonic: Ras Rat sarcoma — GTPase stuck ON when oncogenic",
+    ],
+    distinguishFrom: [
+      "RAF (BRAF) — serine/threonine kinase downstream of Ras; V600E in melanoma",
+      "EGFR — receptor tyrosine kinase upstream of Ras",
+      "NF1 — Ras GTPase-activating protein (GAP); loss increases Ras signaling",
+      "MYC — nuclear transcription factor downstream of Ras/MAPK",
+      "G proteins (Gα) — heterotrimeric GPCR transducers; Ras is monomeric small GTPase",
+      "HRAS vs KRAS vs NRAS — isoforms with distinct cancer associations",
+    ],
+  },
+  {
+    id: "parathyroid-hormone-related-peptide",
+    name: "Parathyroid Hormone-Related Peptide",
+    etymology:
+      "Greek para = beside + thyreos = shield + hormone + Latin re = again + par = equal + peptide = small protein — PTH-related protein (PTHrP) shares N-terminal homology with PTH and activates the same receptor family",
+    aliases: [
+      "parathyroid hormone-related peptide",
+      "parathyroid hormone related peptide",
+      "pth related peptide",
+      "pth-related peptide",
+      "pthrp",
+      "pth-rp",
+      "pth related protein",
+      "pth-related protein",
+      "pthrp protein",
+      "pthlh",
+    ],
+    gene: "PTHLH (12p11.22) — encodes PTH-related protein (PTHrP)",
+    location:
+      "Secreted paracrine/humoral peptide — physiologic roles in cartilage, mammary development, and tooth eruption; ectopic secretion by malignancies (especially squamous epithelial tumors)",
+    function:
+      "Binds PTH1 receptor (same family as PTH) on osteoblasts and renal tubule → ↑ bone resorption (via RANKL), ↑ renal calcium reabsorption, ↓ phosphate reabsorption → raises serum calcium; in malignancy acts as humoral mediator of hypercalcemia with suppressed endogenous PTH.",
+    mutationCauses: [
+      "Ectopic PTHrP secretion — squamous cell carcinoma of lung (classic boards), head/neck SCC, renal cell carcinoma, ovarian cancer → humoral hypercalcemia of malignancy",
+      "Not a typical germline mutation disease — paraneoplastic peptide overproduction",
+      "Physiologic PTHrP — fetal cartilage growth plate regulation; lactation-related mammary signaling",
+    ],
+    boardsPearls: [
+      "PTHrP → ↑ Ca²⁺ with ↓ PTH (suppressed) — humoral hypercalcemia of malignancy",
+      "Squamous cell lung cancer — central smoker, PTHrP hypercalcemia classic vignette",
+      "vs primary hyperparathyroidism — ↑ PTH + ↑ Ca; PTHrP shows ↓ PTH",
+      "vs osteolytic metastases — local bone destruction; PTHrP is humoral systemic mediator",
+      "PTH and PTHrP both use PTH1 receptor — labs distinguish by PTH level",
+      "Confusion, constipation, stones, polyuria with lung mass → SCC + PTHrP",
+    ],
+    distinguishFrom: [
+      "Parathyroid hormone (PTH) — from parathyroid chief cells; ↑ in primary hyperparathyroidism",
+      "Calcitonin — lowers calcium; from thyroid C cells",
+      "1,25-dihydroxyvitamin D — granulomatous or lymphoma hypercalcemia; PTH often suppressed",
+      "Osteolytic metastases — local cytokine bone resorption without necessarily high PTHrP",
+      "Hypercalcemia of malignancy — clinical syndrome; PTHrP is one major mechanism",
+    ],
+  },
+  {
+    id: "chromogranin",
+    name: "Chromogranin",
+    etymology:
+      "Greek chroma = color + Latin granum = grain + -in protein suffix — acidic glycoprotein stored in neuroendocrine secretory granules that binds chromaffin and stains with chromium salts",
+    aliases: [
+      "chromogranin",
+      "chromogranin a",
+      "chromogranin-a",
+      "chga",
+      "chromogranin protein",
+      "secretory granule protein chromogranin",
+    ],
+    gene: "CHGA (chromogranin A); related family members CHGB, CHGC",
+    location:
+      "Neuroendocrine secretory granules — adrenal medulla chromaffin cells, pancreatic islet cells, GI enterochromaffin cells, pulmonary neuroendocrine cells; released into circulation (chromogranin A measurable in serum)",
+    function:
+      "Major soluble protein of dense-core secretory granules — facilitates packaging and processing of hormones/neurotransmitters (catecholamines, serotonin, insulin, gastrin); proteolytic fragments have regulatory roles; widely used immunohistochemical marker of neuroendocrine differentiation.",
+    mutationCauses: [
+      "Not a primary disease gene on Step 1 — used diagnostically when overexpressed in tumors",
+      "Elevated serum chromogranin A — neuroendocrine tumors (carcinoid, pheochromocytoma, SCLC) but nonspecific (also PPI use, renal failure)",
+      "Tumor IHC chromogranin positivity — supports neuroendocrine lineage (with synaptophysin, CD56)",
+    ],
+    boardsPearls: [
+      "Chromogranin A — neuroendocrine granule protein; IHC marker for NET, SCLC, carcinoid",
+      "Co-stain with synaptophysin and CD56 for neuroendocrine tumors",
+      "Small cell lung cancer — chromogranin⁺, synaptophysin⁺, CD56⁺",
+      "Serum chromogranin A — tumor marker in NET but nonspecific",
+      "vs synaptophysin — vesicle membrane protein; chromogranin is granule core protein; both NET markers",
+      "vs cytokeratin — epithelial carcinoma marker; neuroendocrine tumors may be CK+ but need NE markers",
+    ],
+    distinguishFrom: [
+      "Synaptophysin — presynaptic vesicle membrane protein; complementary neuroendocrine IHC marker",
+      "CD56 (NCAM) — adhesion molecule; neuroendocrine and NK cell marker",
+      "Cytokeratin — epithelial marker; carcinomas not necessarily neuroendocrine",
+      "S100 — neural crest/melanocytic marker; not specific neuroendocrine granule protein",
+      "Serotonin — neuroendocrine secretory product; chromogranin is granule storage protein",
+      "Catecholamines — secreted hormones; chromogranin packages them in granules",
+    ],
+  },
+  {
+    id: "synaptophysin",
+    name: "Synaptophysin",
+    etymology:
+      "Greek syn = together + haptein = to join + Greek physa = bladder/pouch + -in — transmembrane glycoprotein of synaptic and neuroendocrine vesicle membranes",
+    aliases: [
+      "synaptophysin",
+      "synaptophysin protein",
+      "syp",
+      "vesicle membrane protein synaptophysin",
+      "syn",
+    ],
+    gene: "SYP (Xp11.23)",
+    location:
+      "Synaptic vesicles of neurons and dense-core secretory granules of neuroendocrine cells — presynaptic/neuroendocrine vesicle membrane",
+    function:
+      "Major integral membrane protein of neurosecretory vesicles — involved in vesicle biogenesis, docking, and regulated exocytosis; highly expressed in neurons and neuroendocrine cells — standard immunohistochemical marker of neuroendocrine differentiation alongside chromogranin.",
+    mutationCauses: [
+      "Not a classic germline disease gene on Step 1 — diagnostic utility in tumor pathology",
+      "Synaptophysin immunoreactivity in tumors — small cell lung cancer, carcinoid, neuroblastoma, Merkel cell carcinoma, pancreatic NET",
+      "X-linked gene — mutations rare; IHC expression pattern used in oncology",
+    ],
+    boardsPearls: [
+      "Synaptophysin — neuroendocrine/synaptic vesicle membrane marker on IHC",
+      "SCLC panel: synaptophysin⁺, chromogranin⁺, CD56⁺ (± TTF-1⁺)",
+      "Neuroblastoma — synaptophysin⁺ pediatric neuroendocrine tumor",
+      "vs chromogranin — granule core protein; synaptophysin is vesicle membrane protein",
+      "vs GFAP — astrocytic marker; not neuroendocrine",
+      "vs cytokeratin 20 — Merkel cell (CK20 dot + synaptophysin⁺)",
+    ],
+    distinguishFrom: [
+      "Chromogranin — secretory granule core protein; co-expressed in NET IHC panels",
+      "CD56 — NCAM adhesion molecule; neuroendocrine marker but not vesicle-specific",
+      "Neuron-specific enolase (NSE) — less specific neuroendocrine marker than synaptophysin",
+      "GFAP — glial fibrillary acidic protein; CNS glial tumors",
+      "Synapsin — different synaptic vesicle-associated phosphoprotein family",
+      "Cytokeratin — epithelial lineage; neuroendocrine tumors may co-express keratins",
+    ],
+  },
+  {
+    id: "eif4",
+    name: "eIF4",
+    etymology:
+      "Eukaryotic initiation Factor 4 — multi-subunit protein complex mediating cap-dependent translation initiation at the 5′ end of mRNA",
+    aliases: [
+      "eif4",
+      "eif-4",
+      "eukaryotic initiation factor 4",
+      "eif4 complex",
+      "eif4f",
+      "eif4e",
+      "eif4g",
+      "eif4a",
+    ],
+    gene: "EIF4E, EIF4G, EIF4A (and associated factors EIF4B, EIF4H) — components of initiation complex",
+    location:
+      "Cytoplasm — assembles at 5′ mRNA cap during translation initiation; recruits 43S preinitiation complex (40S subunit + Met-tRNA + other eIFs)",
+    function:
+      "Cap-binding initiation factor complex — eIF4E recognizes 7-methylguanosine 5′ cap; eIF4G acts as scaffold linking cap to 43S ribosomal preinitiation complex; eIF4A is ATP-dependent RNA helicase unwinding 5′ UTR secondary structure — together enable 40S ribosome scanning to start codon (Kozak context).",
+    mutationCauses: [
+      "Not a classic germline disease gene — dysregulated eIF4E activity linked to oncogenic cap-dependent translation in some cancers",
+      "mTOR pathway activation → ↑ eIF4E phosphorylation/availability → enhanced protein synthesis (rapamycin/sirolimus inhibits mTOR)",
+      "Picornavirus infection — viral protease cleaves eIF4G → shuts off host cap-dependent translation; virus uses IRES",
+    ],
+    boardsPearls: [
+      "eIF4 = eukaryotic initiation factor 4 — cap-dependent translation initiation",
+      "eIF4E binds 5′ cap; eIF4G scaffold; eIF4A helicase unwinds 5′ UTR",
+      "Cap → eIF4 → 43S scanning → Kozak AUG → 80S assembly → elongation",
+      "vs Shine-Dalgarno — prokaryotic 30S positioning; no cap or eIF4",
+      "Picornaviruses (polio, HAV) — IRES bypasses cap/eIF4 requirement",
+      "mTOR → eIF4E axis — rapamycin inhibits cap-dependent translation",
+      "Diphtheria/Pseudomonas toxin — ADP-ribosylate EF-2 (elongation), not eIF4 (initiation)",
+    ],
+    distinguishFrom: [
+      "eIF2 — binds Met-tRNA to 40S; regulated by phosphorylation (integrated stress response)",
+      "EF-2 (eEF2) — elongation factor moving ribosome along mRNA; toxin target",
+      "5′ cap — mRNA modification recognized by eIF4E, not the factor itself",
+      "Kozak sequence — nucleotide context at AUG; eIF4 enables scanning to reach it",
+      "Shine-Dalgarno — prokaryotic initiation; no eIF4 homolog",
+      "43S preinitiation complex — 40S + eIFs + Met-tRNA; eIF4 recruits it to cap",
+    ],
+  },
+  {
+    id: "glucose-transporter",
+    name: "Glucose Transporter (GLUT)",
+    etymology:
+      "Glucose + Latin trans = across + ferre = carry + -er — facilitative diffusion carrier proteins (SLC2 family) moving glucose down its concentration gradient across cell membranes",
+    aliases: [
+      "glucose transporter",
+      "glucose transporters",
+      "glut",
+      "glut1",
+      "glut 1",
+      "glut2",
+      "glut 2",
+      "glut3",
+      "glut 3",
+      "glut4",
+      "glut 4",
+      "glucose transporter 1",
+      "glucose transporter 2",
+      "glucose transporter 3",
+      "glucose transporter 4",
+      "glucose transporter-4",
+      "slc2a1",
+      "slc2a2",
+      "slc2a3",
+      "slc2a4",
+      "facilitative glucose transporter",
+    ],
+    gene: "SLC2A1 (GLUT1), SLC2A2 (GLUT2), SLC2A3 (GLUT3), SLC2A4 (GLUT4)",
+    location:
+      "GLUT1 — RBCs, BBB endothelia, placenta; GLUT2 — liver, pancreatic β cells, kidney, intestine; GLUT3 — neurons; GLUT4 — skeletal muscle, cardiac muscle, adipocytes (insulin-responsive vesicular pool)",
+    function:
+      "Facilitative glucose carriers (uniport) — GLUT1 provides basal uptake (especially BBB and RBCs); GLUT2 low-affinity/high-capacity sensor in liver and β cells paired with glucokinase; GLUT3 high-affinity neuronal uptake; GLUT4 translocates from intracellular vesicles to plasma membrane in response to insulin in muscle and adipose for postprandial glucose disposal.",
+    mutationCauses: [
+      "GLUT1 deficiency syndrome — SLC2A1 mutations → impaired brain glucose transport → seizures, developmental delay, low CSF glucose",
+      "GLUT2 deficiency (Fanconi-Bickel syndrome) — hepatorenal glycogenosis with glucosuria and galactose intolerance",
+      "Type 2 diabetes / insulin resistance — impaired insulin-stimulated GLUT4 translocation in muscle and adipose",
+      "Type 1 diabetes — absolute insulin deficiency → no GLUT4 translocation → hyperglycemia",
+    ],
+    boardsPearls: [
+      "GLUT4 = insulin-responsive transporter in muscle and adipose — vesicle translocation to membrane",
+      "GLUT1 — BBB glucose transport; deficiency → neuroglycopenia/seizures",
+      "GLUT2 — liver/β cell; low Km paired with glucokinase; renal glucosuria if saturated",
+      "GLUT3 — neurons (high affinity)",
+      "Insulin resistance = ↓ GLUT4 translocation → hyperglycemia despite insulin",
+      "Exercise can recruit GLUT4 via insulin-independent AMPK pathway",
+      "vs SGLT — sodium-glucose cotransporter in kidney/intestine; active transport",
+      "vs GLUT5 — fructose transporter, not glucose",
+    ],
+    distinguishFrom: [
+      "SGLT2 — sodium-coupled glucose reabsorption in proximal tubule; SGLT2 inhibitor drugs",
+      "Insulin — hormone triggering GLUT4 translocation; not the transporter",
+      "Glucokinase — phosphorylates glucose in liver/β cells; functionally paired with GLUT2",
+      "Hexokinase — traps glucose in most tissues after GLUT-mediated entry",
+      "GLUT5 — fructose facilitative transporter in intestine and liver",
+      "Glycogen — storage polymer; transporters move free glucose, not glycogen",
+    ],
+  },
+  {
+    id: "pyruvate-dehydrogenase",
+    name: "Pyruvate Dehydrogenase",
+    etymology:
+      "Greek pyrouvate (fire + vinegar salt) + Latin de- = removal + hydrogen = hydrogen + -ase = enzyme — mitochondrial multienzyme complex (E1 component) catalyzing oxidative decarboxylation of pyruvate to acetyl-CoA",
+    aliases: [
+      "pyruvate dehydrogenase",
+      "pyruvate dehydrogenase complex",
+      "pdh",
+      "pdh complex",
+      "pdc",
+      "pyruvate dehydrogenase enzyme",
+      "pyruvate decarboxylase complex",
+    ],
+    gene: "PDHA1 / PDHB (E1); DLAT (E2 dihydrolipoyl transacetylase); DLD (E3 dihydrolipoyl dehydrogenase)",
+    location:
+      "Mitochondrial matrix — pyruvate dehydrogenase complex (PDC) on inner mitochondrial membrane matrix side; requires transport of cytosolic pyruvate via mitochondrial pyruvate carrier",
+    function:
+      "Irreversibly converts pyruvate to acetyl-CoA + CO₂ + NADH — commits carbohydrate-derived carbon to the TCA cycle and away from gluconeogenesis/lactate; requires cofactors thiamine pyrophosphate (B₁/TPP on E1), lipoic acid (E2), CoA, FAD and NAD⁺ (E3), and Mg²⁺.",
+    mutationCauses: [
+      "Pyruvate dehydrogenase complex deficiency (X-linked PDHA1 most common) — neurologic disease, lactic acidosis, cannot rely on glucose oxidation — treated with ketogenic diet",
+      "Thiamine (B₁) deficiency — impaired E1 TPP cofactor → Wernicke encephalopathy and ↓ PDH activity",
+      "Arsenic poisoning — binds lipoic acid on E2 → ↓ PDH and α-ketoglutarate dehydrogenase → lactic acidosis",
+      "Primary biliary cholangitis — antimitochondrial antibodies (anti-M2) against PDC E2 (dihydrolipoyl transacetylase) in cholangiocytes",
+    ],
+    boardsPearls: [
+      "PDH = pyruvate → acetyl-CoA + CO₂ + NADH — irreversible link glycolysis to TCA cycle",
+      "Cofactors: TPP (B₁), lipoic acid, CoA, FAD, NAD⁺ — same TPP/lipoic acid family as α-KG dehydrogenase",
+      "PDH deficiency → ↑ pyruvate → lactate (LDH) and alanine; neurologic disease; ketogenic diet provides acetyl-CoA from fats",
+      "Arsenic inhibits lipoic acid-dependent enzymes (PDH, α-KG dehydrogenase) → lactic acidosis",
+      "vs pyruvate kinase — glycolytic PEP → pyruvate step; PK deficiency causes hemolytic anemia not lactic acidosis",
+      "vs pyruvate carboxylase — pyruvate → oxaloacetate for gluconeogenesis (biotin-dependent), not PDH",
+      "PBC anti-M2 targets PDC E2 — not the same as anti-smooth muscle in autoimmune hepatitis",
+      "Mnemonic: PDH Needs TPP, Lipoic acid, CoA, FAD, NAD⁺",
+    ],
+    distinguishFrom: [
+      "Pyruvate kinase — glycolytic enzyme; PEP → pyruvate + ATP; RBC hemolysis when deficient",
+      "Pyruvate carboxylase — anaplerotic enzyme; pyruvate → oxaloacetate (biotin)",
+      "α-Ketoglutarate dehydrogenase — TCA cycle dehydrogenase sharing TPP/lipoic acid cofactor pattern",
+      "Lactate dehydrogenase — reduces pyruvate to lactate when PDH capacity exceeded",
+      "Acetyl-CoA — product of PDH reaction, not the enzyme",
+      "Anti-mitochondrial antibody (AMA) — serologic marker in PBC targeting PDC; not the enzyme itself",
+      "Thiamine pyrophosphate — B₁-derived cofactor for E1; not the complex",
+    ],
+    pediatrics:
+      "PDH complex deficiency presents in infancy with lactic acidosis, developmental delay, and structural brain abnormalities — ketogenic diet bypasses glucose-dependent acetyl-CoA production. Always give thiamine before dextrose in at-risk neonates and children with malnutrition.",
   },
 ];
 

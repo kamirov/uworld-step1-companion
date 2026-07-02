@@ -7607,7 +7607,7 @@ export const MICROBIOLOGY: MicrobiologyEntry[] = [
   },
   {
     id: "bacteroides-fragilis",
-    name: "Bacteroides Fragili",
+    name: "Bacteroides Fragilis",
     etymology: "Greek bakterion = rod + eidos = form + Latin fragilis = easily broken (colony morphology)",
     aliases: [
       "bacteroides fragilis",

@@ -6798,6 +6798,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Eponym: Adolf Wallenberg + syndrome = concurrent sign cluster — lateral medullary infarction syndrome from PICA territory ischemia",
     aliases: [
       "wallenberg syndrome",
+      "wallenberg",
       "wallenburg syndrome",
       "lateral medullary syndrome",
       "lateral medullary infarction",
@@ -9391,6 +9392,7 @@ export const CONDITIONS: ConditionEntry[] = [
     distinguishFrom: [
       "Hyperosmolar hyperglycemic state — minimal ketosis, extreme hyperglycemia, T2DM",
       "Starvation ketosis — euglycemic or mild hyperglycemia",
+      "Euglycemic diabetic ketoacidosis — ketosis with glucose <250 mg/dL, often SGLT2 inhibitors",
     ],
     treatment: [
       "IV fluids first, then IV insulin infusion",
@@ -11732,6 +11734,91 @@ export const CONDITIONS: ConditionEntry[] = [
       "GH deficiency presents with growth failure and delayed bone age; congenital hypopituitarism may include midline defects (septo-optic dysplasia); neonatal ACTH deficiency can cause hypoglycemia and jaundice.",
   },
   {
+    id: "uterine-atony",
+    name: "Uterine Atony",
+    etymology:
+      "Latin uterus = womb + Greek a- = without + tonos = tension — failure of the postpartum myometrium to contract and compress placental bed spiral arteries",
+    aliases: [
+      "uterine atony",
+      "atonic uterus",
+      "atonic postpartum uterus",
+      "postpartum uterine atony",
+      "uterine atonia",
+      "boggy uterus",
+      "soft postpartum uterus",
+      "hypotonic uterus postpartum",
+      "uterine hypotonia postpartum",
+    ],
+    definition:
+      "Obstetric emergency in which the uterine myometrium fails to contract effectively after delivery of the placenta — leaving spiral arteries open and causing heavy postpartum hemorrhage from the placental implantation site; the most common cause of postpartum hemorrhage.",
+    pathophysiology:
+      "Normal postpartum hemostasis depends on myometrial contraction compressing uteroplacental vessels (living ligatures). Atony from uterine overdistension, prolonged labor, infection, tocolytics/magnesium, or exhaustion → inadequate vasoconstriction → ongoing bleeding; can progress to hypovolemic shock, DIC, and Sheehan syndrome.",
+    classicPresentation: [
+      "Heavy vaginal bleeding within minutes to hours after delivery",
+      "Soft, boggy, enlarged uterus on abdominal exam (above umbilicus)",
+      "Tachycardia, hypotension, pallor with significant blood loss",
+      "Risk context — twins, polyhydramnios, macrosomia, prolonged labor, chorioamnionitis, magnesium sulfate",
+      "Uterus may transiently firm with massage then become boggy again",
+    ],
+    keyFindings: [
+      "Boggy uterus palpable abdominally or on bimanual exam",
+      "Ongoing bleeding despite apparent complete placental delivery",
+      "Uterus larger and softer than expected for immediate postpartum state",
+      "No firm fundus at or below umbilicus after delivery",
+    ],
+    keyLabs: [
+      "Declining hemoglobin/hematocrit with active bleeding",
+      "Coagulation studies if DIC suspected from massive hemorrhage",
+      "Type and crossmatch for transfusion",
+      "Fibrinogen may fall in severe PPH/DIC",
+    ],
+    associations: [
+      "Postpartum hemorrhage — uterine atony is leading cause",
+      "Sheehan syndrome — pituitary infarction after severe hemorrhagic shock",
+      "Overdistended uterus — multifetal gestation, polyhydramnios, macrosomia",
+      "Prolonged labor and uterine exhaustion",
+      "Magnesium sulfate and β-agonist tocolysis",
+      "Chorioamnionitis and uterine infection",
+    ],
+    complications: [
+      "Massive postpartum hemorrhage and hypovolemic shock",
+      "Need for blood transfusion, hysterectomy, or arterial embolization",
+      "DIC from consumptive coagulopathy",
+      "Sheehan syndrome from prolonged hypotension",
+      "Maternal death in untreated severe hemorrhage",
+    ],
+    distinguishFrom: [
+      "Retained placental products — firm uterus, incomplete placenta on exam; ultrasound may show tissue",
+      "Genital tract laceration — firm uterus with bleeding from cervix/vagina/perineum",
+      "Placenta accreta spectrum — adherent placenta; bleeding when attempting removal",
+      "Uterine inversion — cup-shaped fundus, shock out of proportion",
+      "Coagulopathy (DIC, vWD) — bleeding from multiple sites; may complicate atony",
+      "Atonic bladder — different organ; urinary retention, not postpartum uterine bleeding",
+    ],
+    treatment: [
+      "Uterine massage (fundal rub) and bimanual compression first-line",
+      "Oxytocin IV/IM — first-line uterotonic",
+      "Methylergonovine (avoid if hypertension) or carboprost (15-methyl PGF2α; avoid asthma)",
+      "Misoprostol (PGE1) — especially if other uterotonics unavailable",
+      "Tranexamic acid within 3 hours of birth for PPH",
+      "Intrauterine balloon tamponade if medications fail",
+      "Surgical — B-Lynch suture, uterine artery ligation/embolization, hysterectomy as last resort",
+      "Volume resuscitation and blood products",
+    ],
+    boardsPearls: [
+      "Uterine atony = #1 cause of postpartum hemorrhage",
+      "Boggy uterus + heavy bleeding postpartum → uterine atony",
+      "4 T's mnemonic for PPH — Tone (atony), Trauma (laceration), Tissue (retained placenta), Thrombin (coagulopathy)",
+      "Oxytocin first-line uterotonic after delivery",
+      "Methylergonovine contraindicated in hypertension",
+      "Carboprost contraindicated in asthma",
+      "vs retained placenta — atony has soft uterus; retained products often firm uterus",
+      "Prevent with active management of third stage (oxytocin after delivery)",
+    ],
+    pediatrics:
+      "Uterine atony affects the mother immediately after childbirth, not the neonate. Severe hemorrhage can impair maternal perfusion and subsequent lactation (Sheehan syndrome). Macrosomia and multifetal pregnancy increase atony risk.",
+  },
+  {
     id: "sheehan-syndrome",
     name: "Sheehan Syndrome",
     etymology:
@@ -12403,6 +12490,82 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Rare in children; familial forms (e.g., glucocorticoid-remediable aldosteronism) should be considered in pediatric hypertension workup.",
+  },
+  {
+    id: "aldosteronoma",
+    name: "Aldosteronoma",
+    etymology:
+      "Aldosterone hormone + Greek -oma = tumor — benign aldosterone-secreting adenoma of the adrenal zona glomerulosa causing primary hyperaldosteronism",
+    aliases: [
+      "aldosteronoma",
+      "aldosteronomas",
+      "aldosterone-producing adenoma",
+      "aldosterone producing adenoma",
+      "aldosterone-secreting adenoma",
+      "aldosterone secreting adenoma",
+      "apa",
+      "adrenal aldosteronoma",
+      "conn adenoma",
+    ],
+    definition:
+      "Benign unilateral adrenal cortical adenoma that autonomously secretes aldosterone — the most common surgically curable cause of primary hyperaldosteronism (Conn syndrome) — producing hypertension with suppressed renin and often hypokalemia with metabolic alkalosis.",
+    pathophysiology:
+      "Neoplastic zona glomerulosa cells constitutively produce aldosterone independent of renin-angiotensin and potassium feedback → ENaC-mediated renal Na⁺ retention and K⁺/H⁺ wasting → volume-mediated hypertension with suppressed plasma renin; chronic hypokalemia and metabolic alkalosis when disease is advanced.",
+    classicPresentation: [
+      "Middle-aged adult with resistant or new-onset hypertension",
+      "Muscle weakness, cramps, or palpitations from hypokalemia (may be absent)",
+      "Polyuria/polydipsia from hypokalemia-induced concentrating defect",
+      "Often clinically silent except elevated blood pressure",
+      "No catecholamine spells (vs pheochromocytoma)",
+    ],
+    keyFindings: [
+      "Unilateral adrenal nodule on CT/MRI adrenal protocol",
+      "Hypertension without edema (aldosterone escape)",
+      "Normal or small contralateral adrenal gland if unilateral adenoma",
+    ],
+    keyLabs: [
+      "↑ plasma aldosterone with ↓ plasma renin activity (primary hyperaldosteronism pattern)",
+      "Elevated aldosterone-to-renin ratio on screening",
+      "Hypokalemia and metabolic alkalosis (supportive, not required)",
+      "Adrenal vein sampling — lateralized aldosterone secretion confirms unilateral source before surgery",
+      "Saline suppression test — failure to suppress aldosterone in primary hyperaldosteronism",
+    ],
+    associations: [
+      "Conn syndrome — clinical syndrome of primary hyperaldosteronism; aldosteronoma is common cause",
+      "Bilateral idiopathic hyperplasia — alternative primary cause; not adenoma",
+      "Familial hyperaldosteronism types — germline causes, not typical sporadic adenoma",
+    ],
+    complications: [
+      "Resistant hypertension and cardiovascular target-organ damage",
+      "Severe hypokalemia — weakness, arrhythmias",
+      "Persistent hyperaldosteronism if bilateral disease mistaken for unilateral adenoma",
+    ],
+    distinguishFrom: [
+      "Bilateral adrenal hyperplasia — bilateral disease; medical therapy with MRA often preferred",
+      "Secondary hyperaldosteronism — ↑ renin (renal artery stenosis, heart failure, diuretics)",
+      "Pheochromocytoma — catecholamine excess; ↑ metanephrines, paroxysmal spells",
+      "Adrenocortical carcinoma — large heterogeneous adrenal mass; may secrete multiple hormones",
+      "Essential hypertension — normal aldosterone-renin ratio",
+      "Conn syndrome (eponym) — broader clinical label; aldosteronoma is the anatomic tumor",
+      "Hyperaldosteronism — umbrella term including hyperplasia and secondary causes",
+    ],
+    treatment: [
+      "Laparoscopic adrenalectomy after confirming unilateral aldosterone excess (adrenal vein sampling when imaging equivocal)",
+      "Correct hypokalemia and hypertension preoperatively",
+      "Mineralocorticoid receptor antagonist (spironolactone/eplerenone) if surgery deferred or contraindicated",
+      "Postoperative monitoring — hypertension may resolve; hypokalemia typically corrects",
+    ],
+    boardsPearls: [
+      "Aldosteronoma = aldosterone-producing adenoma = classic Conn syndrome tumor",
+      "↓ renin + ↑ aldosterone + hypertension → screen with aldosterone-renin ratio",
+      "Unilateral adenoma → adrenalectomy cures hyperaldosteronism",
+      "Adrenal vein sampling localizes unilateral vs bilateral disease before surgery",
+      "Hypokalemia supports diagnosis but normokalemia does not exclude",
+      "vs pheochromocytoma — aldosteronoma: mineralocorticoid not catecholamines",
+      "vs bilateral hyperplasia — treat with spironolactone if not unilateral adenoma",
+    ],
+    pediatrics:
+      "Sporadic aldosteronoma is rare in children; consider familial hyperaldosteronism (especially glucocorticoid-remediable aldosteronism) in young hypertensive patients. Adrenalectomy principles similar when unilateral adenoma confirmed.",
   },
   {
     id: "gastrinoma",
@@ -15281,6 +15444,171 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Lynch-associated colorectal cancer is usually adult-onset; surveillance begins in young adulthood (not childhood). Adolescent colorectal cancer is rare — when it occurs, consider Lynch, FAP, or IBD. Genetic counseling for minors follows family testing protocols after an affected parent is identified.",
+  },
+  {
+    id: "li-fraumeni-syndrome",
+    name: "Li-Fraumeni Syndrome",
+    etymology:
+      "Eponym Frederick Li and Joseph Fraumeni + Latin syn = together + Greek dromos = running course — autosomal dominant cancer predisposition from germline TP53 tumor suppressor mutation",
+    aliases: [
+      "li-fraumeni syndrome",
+      "li fraumeni syndrome",
+      "li-fraumeni",
+      "li fraumeni",
+      "lfs",
+      "tp53 cancer syndrome",
+      "tp53 mutation syndrome",
+      "germline tp53 syndrome",
+      "sbla syndrome",
+      "sarcoma breast leukemia adrenal syndrome",
+    ],
+    definition:
+      "Autosomal dominant hereditary cancer syndrome caused by germline loss-of-function mutations in TP53 (tumor protein p53) — the 'guardian of the genome' — leading to early-onset and multiple primary malignancies across diverse tissue types, often before age 45.",
+    pathophysiology:
+      "Germline TP53 mutation (17p13.1) → loss of p53-mediated cell-cycle arrest, DNA repair, and apoptosis after genotoxic stress → second somatic hit in target tissue → uncontrolled proliferation → diverse early cancers; survivors of first malignancy have high risk of second primary tumors and therapy-related malignancies.",
+    classicPresentation: [
+      "Young patient (<45 years) with sarcoma, premenopausal breast cancer, brain tumor, adrenocortical carcinoma, or leukemia",
+      "Multiple primary cancers in one individual or across generations",
+      "Family history of diverse early-onset malignancies in autosomal dominant pattern",
+      "Childhood adrenocortical carcinoma or choroid plexus carcinoma — highly suggestive",
+      "Breast cancer in woman before age 30 with family history of other TP53-associated tumors",
+    ],
+    keyFindings: [
+      "Germline TP53 sequencing confirms diagnosis",
+      "Tumor may show somatic TP53 loss or overexpression on immunohistochemistry (context-dependent)",
+      "Family pedigree with sarcoma, breast cancer, brain tumors, leukemia, adrenal carcinoma at young ages",
+      "No single organ predominance — hallmark is tumor diversity and early onset",
+    ],
+    keyLabs: [
+      "Germline TP53 genetic testing in proband and at-risk relatives",
+      "Tumor sequencing may show biallelic TP53 inactivation",
+      "Screening protocols individualized — breast MRI, whole-body MRI debated; no universal standard like BRCA mammography intervals alone",
+    ],
+    associations: [
+      "TP53 gene on chromosome 17p13.1 — most commonly mutated gene in human cancer (somatic or germline)",
+      "SBLA spectrum — Sarcoma, Breast, Leukemia, Adrenal (adrenocortical carcinoma)",
+      "Brain tumors — gliomas, medulloblastoma, choroid plexus carcinoma",
+      "Osteosarcoma and soft tissue sarcomas",
+      "Therapy-related second malignancies after radiation or alkylating chemotherapy",
+      "Over 50% de novo germline mutation — may lack family history",
+    ],
+    complications: [
+      "Multiple metachronous primary cancers",
+      "Therapy-related malignancy in cancer survivors",
+      "Psychosocial burden of intensive surveillance and cascade family testing",
+      "Aggressive tumors at young age with significant morbidity and mortality",
+    ],
+    distinguishFrom: [
+      "BRCA1/BRCA2 — primarily breast, ovarian, prostate; DNA repair not p53 gatekeeper",
+      "Lynch syndrome — mismatch repair defect; colorectal and endometrial predominance; MSI-high",
+      "Familial adenomatous polyposis — APC mutation; hundreds of colonic polyps",
+      "Neurofibromatosis type 1 — NF1 gene; café-au-lait, neurofibromas, optic glioma",
+      "Hereditary retinoblastoma — RB1; leukocoria, bilateral retinal tumors",
+      "Sporadic early cancer without germline TP53 — single tumor without syndrome pattern",
+    ],
+    treatment: [
+      "Cancer-specific oncologic treatment per tumor type (surgery, chemo, radiation — balance second-cancer risk)",
+      "Avoid radiation when feasible in TP53 carriers — ↑ second malignancy risk",
+      "Genetic counseling and cascade testing for at-risk relatives",
+      "Individualized surveillance — breast MRI, dermatologic exam, whole-body MRI in selected centers",
+      "Risk-modifying lifestyle and avoidance of unnecessary genotoxic exposures",
+    ],
+    boardsPearls: [
+      "Li-Fraumeni = germline TP53 mutation → diverse early cancers",
+      "Mnemonic SBLA — Sarcoma, Breast, Leukemia, Adrenal (adrenocortical carcinoma)",
+      "p53 = guardian of the genome; G1/S checkpoint, apoptosis after DNA damage",
+      "Childhood adrenocortical carcinoma or choroid plexus tumor → think Li-Fraumeni",
+      "vs BRCA — breast/ovarian pattern; Li-Fraumeni is multi-tumor and younger",
+      "vs Lynch — colon/endometrial MSI cancers; different gene (MMR vs TP53)",
+      "Over 50% new mutations — negative family history does not exclude",
+      "Radiation avoidance important — therapy-induced second cancers",
+    ],
+    pediatrics:
+      "Childhood adrenocortical carcinoma, choroid plexus carcinoma, rhabdomyosarcoma, and osteosarcoma in young children with family history should prompt TP53 testing. Surveillance in TP53-positive children is specialized and center-dependent. De novo germline mutations are common — index case may be a child without parental history.",
+  },
+  {
+    id: "von-hippel-lindau-syndrome",
+    name: "Von Hippel-Lindau Syndrome",
+    etymology:
+      "Eponym Eugen von Hippel and Arvid Lindau + Latin syn = together + Greek dromos = running course — autosomal dominant cancer syndrome from germline VHL tumor suppressor mutation with angiogenic tumors and clear cell renal carcinoma",
+    aliases: [
+      "von hippel-lindau syndrome",
+      "von hippel lindau syndrome",
+      "von hippel-lindau disease",
+      "von hippel lindau disease",
+      "vhl syndrome",
+      "vhl disease",
+      "vhl",
+      "hippel-lindau syndrome",
+      "hippel lindau syndrome",
+      "familial cerebelloretinal angiomatosis",
+    ],
+    definition:
+      "Autosomal dominant hereditary cancer syndrome caused by germline loss-of-function mutations in the VHL tumor suppressor gene — predisposing to highly vascular tumors including retinal and CNS hemangioblastomas, clear cell renal cell carcinoma, pheochromocytoma, pancreatic neuroendocrine tumors, and endolymphatic sac tumors.",
+    pathophysiology:
+      "VHL protein (pVHL) is part of an E3 ubiquitin ligase complex that targets hypoxia-inducible factor-alpha (HIF-α) for degradation under normoxia — germline VHL mutation → somatic second hit → constitutive HIF stabilization → ↑ VEGF, erythropoietin, and other hypoxia-response genes → angiogenesis, polycythemia, and tumor growth in susceptible tissues.",
+    classicPresentation: [
+      "Young adult with cerebellar hemangioblastoma — headache, ataxia, nausea",
+      "Retinal hemangioblastoma — vision loss, retinal angioma on exam",
+      "Bilateral or multifocal clear cell renal cell carcinoma",
+      "Paroxysmal hypertension with pheochromocytoma",
+      "Pancreatic cysts or neuroendocrine tumors",
+      "Family history of RCC, brain tumor, or retinal angioma",
+    ],
+    keyFindings: [
+      "Cerebellar or spinal hemangioblastoma on MRI",
+      "Retinal capillary hemangioblastoma on fundoscopy",
+      "Solid or cystic renal mass — clear cell RCC histology",
+      "Adrenal pheochromocytoma (may be bilateral)",
+      "Pancreatic serous cystadenomas or NETs",
+    ],
+    keyLabs: [
+      "Germline VHL sequencing confirms syndrome",
+      "Elevated plasma/urine metanephrines if pheochromocytoma suspected",
+      "Polycythemia from ↑ erythropoietin (some hemangioblastomas)",
+      "Tumor tissue may show 3p loss of heterozygosity at VHL locus",
+    ],
+    associations: [
+      "VHL gene on chromosome 3p25 — classic tumor suppressor two-hit model",
+      "Clear cell RCC — VHL loss → HIF → VEGF (sunitinib/pazopanib target pathway)",
+      "Hemangioblastoma — highly vascular CNS/retinal tumors",
+      "Pheochromocytoma and paraganglioma (subset of families)",
+      "Endolymphatic sac tumor — hearing loss",
+      "Pancreatic cysts and neuroendocrine tumors",
+    ],
+    complications: [
+      "Metastatic renal cell carcinoma",
+      "CNS mass effect from hemangioblastoma",
+      "Blindness from retinal hemangioblastoma",
+      "Hypertensive crisis from undiagnosed pheochromocytoma before surgery",
+      "Multiple primary tumors over lifetime",
+    ],
+    distinguishFrom: [
+      "Sporadic clear cell RCC — unilateral, older age; no germline VHL",
+      "MEN2 — RET mutation; medullary thyroid carcinoma + pheochromocytoma, not hemangioblastoma/RCC pattern",
+      "NF1 — pheochromocytoma + neurofibromas; different genetics",
+      "Sporadic hemangioblastoma — isolated tumor without RCC/retinal multifocality",
+      "Polycythemia vera — JAK2 mutation; not VHL-driven EPO from tumor",
+      "Li-Fraumeni — TP53; diverse malignancies without VHL angioma/RCC triad",
+    ],
+    treatment: [
+      "Lifelong surveillance — brain/spine MRI, retinal exams, abdominal imaging, metanephrines",
+      "Surgical resection of symptomatic or growing hemangioblastomas and RCC when feasible",
+      "Alpha blockade before pheochromocytoma resection",
+      "Advanced RCC — VEGF pathway inhibitors (sunitinib, pazopanib) exploit VHL/HIF biology",
+      "Genetic counseling and cascade testing for at-risk relatives",
+    ],
+    boardsPearls: [
+      "VHL = VHL tumor suppressor on 3p → HIF degradation defect → ↑ VEGF",
+      "Classic triad thinking: hemangioblastoma (cerebellum/retina) + clear cell RCC + pheochromocytoma",
+      "Bilateral/multifocal RCC in young patient → VHL until proven otherwise",
+      "Clear cell RCC linked to VHL — sunitinib targets VEGF pathway",
+      "Screen metanephrines before abdominal surgery in VHL (pheo risk)",
+      "vs MEN2 — medullary thyroid cancer, not RCC/hemangioblastoma",
+      "Two-hit tumor suppressor — same framework as RB1, NF1, APC",
+    ],
+    pediatrics:
+      "VHL surveillance often begins in adolescence for at-risk carriers. Pediatric RCC is rare — when it occurs, consider VHL. Pheochromocytoma in children with VHL requires genetic testing and alpha blockade before adrenalectomy.",
   },
   {
     id: "familial-adenomatous-polyposis",
@@ -19080,6 +19408,77 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Plaque psoriasis occurs in children; guttate form common after streptococcal infection in school-age kids. Topical therapy first-line; systemic biologics used in severe pediatric psoriasis with specialist guidance.",
+  },
+  {
+    id: "seborrheic-dermatitis",
+    name: "Seborrheic Dermatiti",
+    etymology:
+      "Latin sebum = tallow/grease + Greek rhoia = flow + derma = skin + -itis = inflammation",
+    aliases: [
+      "seborrheic dermatitis",
+      "seborrhoeic dermatitis",
+      "seborrheic eczema",
+      "seborrheic dermatosis",
+      "sd",
+      "dandruff",
+      "cradle cap",
+    ],
+    definition:
+      "Chronic, relapsing inflammatory dermatosis of sebum-rich areas (scalp, face, central chest) characterized by erythema with greasy yellow-white scale, often linked to Malassezia yeast colonization and host immune response.",
+    pathophysiology:
+      "Malassezia (lipophilic yeast) colonizes sebaceous skin → breakdown of sebum lipids → inflammatory response (IL-6, IL-8, keratinocyte activation). ↑ sebum, immunosuppression (HIV), and neurologic disease (Parkinson) predispose. Histology: spongiosis, parakeratosis, superficial perivascular lymphocytic infiltrate — 'coffee-and-milk' scale appearance clinically.",
+    classicPresentation: [
+      "Greasy yellow-white scales on erythematous base",
+      "Scalp — dandruff; may extend to hairline and postauricular areas",
+      "Face — eyebrows, glabella, nasolabial folds, beard area",
+      "Central chest and intertriginous areas (less common)",
+      "Mild pruritus or burning; chronic relapsing course",
+      "Infants — 'cradle cap' on scalp with thick adherent scale",
+    ],
+    keyFindings: [
+      "Greasy scale in sebaceous distribution (not silvery like psoriasis)",
+      "Nasolabial fold and eyebrow involvement — classic facial pattern",
+      "KOH may show yeast but diagnosis is usually clinical",
+      "Worsens with stress, cold/dry weather, immunosuppression",
+    ],
+    associations: [
+      "HIV/AIDS and other immunosuppression — severe or treatment-resistant disease",
+      "Parkinson disease and other neurologic disorders",
+      "Depression and psychiatric illness",
+      "Pyridoxine (vitamin B6) deficiency — can cause seborrheic-like dermatitis",
+      "Malassezia (Pityrosporum) yeast — implicated, not sole cause",
+    ],
+    complications: [
+      "Secondary bacterial infection (uncommon)",
+      "Erythroderma in severe immunosuppression (rare)",
+      "Psychosocial impact from visible facial/scalp disease",
+    ],
+    distinguishFrom: [
+      "Psoriasis — silvery scale on extensor surfaces; nail pitting; Auspitz sign",
+      "Atopic dermatitis — flexural distribution, intense pruritus, eczematous morphology",
+      "Tinea capitis/corporis — annular, KOH-positive hyphae; hair loss in tinea capitis",
+      "Rosacea — centrofacial erythema, papulopustules without greasy scale",
+      "Contact dermatitis — sharp demarcation at allergen exposure site",
+      "Pityriasis rosea — herald patch, Christmas-tree trunk distribution",
+    ],
+    treatment: [
+      "Topical antifungals — ketoconazole, ciclopirox shampoo/cream (first-line for scalp/face)",
+      "Topical low-potency corticosteroids — hydrocortisone, desonide for acute flares",
+      "Selenium sulfide or zinc pyrithione shampoos",
+      "Calcineurin inhibitors — tacrolimus/pimecrolimus for face (steroid-sparing)",
+      "Severe/refractory — oral antifungals (itraconazole, fluconazole); treat underlying HIV if present",
+    ],
+    boardsPearls: [
+      "Seborrheic = greasy yellow scale on scalp, face (nasolabial folds), central chest",
+      "Malassezia yeast + sebum-rich skin + inflammation — ketoconazole shampoo is classic treatment",
+      "Psoriasis = extensor + silvery scale; seborrheic = sebaceous + greasy scale",
+      "Cradle cap in infants — often self-limited; mineral oil + gentle removal; ketoconazole if persistent",
+      "Severe seborrheic dermatitis → think HIV or Parkinson disease",
+      "B6 deficiency can mimic seborrheic dermatitis — check nutrition in atypical cases",
+      "vs atopic dermatitis — flexural eczema vs sebaceous distribution with greasy scale",
+    ],
+    pediatrics:
+      "Cradle cap (infantile seborrheic dermatitis) is common in first months — thick greasy scale on scalp, sometimes erythema in diaper area overlap. Usually benign and self-limited. Avoid aggressive scraping; emollients, mild antifungal shampoo, low-potency topical steroid if inflamed. Less pruritic than atopic dermatitis in infants.",
   },
   {
     id: "psoriatic-arthritis",
@@ -24615,6 +25014,80 @@ export const CONDITIONS: ConditionEntry[] = [
       "Diagnosed in infancy (lymphedema, webbed neck) or adolescence (short stature, absent puberty); growth hormone and estrogen replacement.",
   },
   {
+    id: "cystic-hygroma",
+    name: "Cystic Hygroma",
+    etymology:
+      "Greek kystis = bladder/sac + hygros = moist/watery + -oma = mass — cystic lymphatic malformation filled with lymph fluid",
+    aliases: [
+      "cystic hygroma",
+      "cystic lymphangioma",
+      "lymphatic malformation",
+      "nuchal cystic hygroma",
+      "nuchal hygroma",
+      "cystic hygroma colli",
+      "hygroma colli",
+    ],
+    definition:
+      "Congenital lymphatic malformation presenting as a multiloculated, fluid-filled neck mass (classically posterior triangle) from failed lymphatic-venous connection — often detected as increased nuchal translucency on prenatal ultrasound and strongly associated with chromosomal aneuploidy.",
+    pathophysiology:
+      "Embryologic failure of lymphatic sacs to connect with the venous system → sequestration and dilation of lymphatic channels → thin-walled cystic spaces lined by endothelium without communication to normal lymphatic drainage; posterior cervical location common; large lesions may cause airway compression or fetal hydrops.",
+    classicPresentation: [
+      "Prenatal ultrasound — increased nuchal translucency or discrete cystic neck mass",
+      "Neonatal/infantile soft, compressible, transilluminant neck or axillary mass",
+      "Posterior triangle of neck most common site",
+      "May partially regress leaving webbed neck or redundant skin folds",
+      "Large lesions — airway obstruction, dysphagia, or fetal hydrops",
+    ],
+    keyFindings: [
+      "Prenatal increased nuchal translucency (NT) on first-trimester ultrasound",
+      "Cystic, septated neck mass on ultrasound or MRI",
+      "Histology — dilated endothelial-lined lymphatic spaces with lymph fluid",
+      "Karyotype often obtained when detected prenatally (Turner, trisomies)",
+    ],
+    keyLabs: [
+      "Prenatal karyotype (amniocentesis/CVS) if cystic hygroma or increased NT detected",
+      "Fetal echocardiography — associated cardiac anomalies common with aneuploidy",
+    ],
+    associations: [
+      "Turner syndrome (45,X) — classic association with cystic hygroma / increased NT",
+      "Trisomy 21, 18, and 13",
+      "Noonan syndrome and other RASopathy syndromes",
+      "Fetal hydrops and cardiac malformations",
+      "Webbed neck — may result from resolved fetal cystic hygroma",
+    ],
+    complications: [
+      "Fetal hydrops and intrauterine demise with large lesions or aneuploidy",
+      "Airway compromise at birth (difficult intubation)",
+      "Recurrence or persistence requiring surgical or sclerotherapy management",
+      "Cosmetic deformity and residual neck webbing",
+    ],
+    distinguishFrom: [
+      "Webbed neck (pterygium colli) — skin fold without discrete cystic mass; Turner stigmata",
+      "Branchial cleft cyst — lateral neck along anterior border of SCM; not typically prenatal NT finding",
+      "Teratoma — solid/cystic complex mass; may have calcifications",
+      "Encephalocele — midline defect with brain tissue; not transilluminant lymphatic fluid",
+      "Thyroglossal duct cyst — midline, moves with tongue protrusion",
+      "Normal nuchal fold thickening — context and karyotype distinguish",
+    ],
+    treatment: [
+      "Small asymptomatic lesions — observation; many partially involute",
+      "Airway-threatening or large symptomatic lesions — surgical excision or sclerotherapy",
+      "Prenatal counseling and karyotype if detected on ultrasound",
+      "Treat associated chromosomal or cardiac anomalies per diagnosis",
+    ],
+    boardsPearls: [
+      "Cystic hygroma = lymphatic malformation; ↑ nuchal translucency on prenatal US",
+      "Turner syndrome (45,X) — classic association with cystic hygroma",
+      "Also linked to trisomy 21/18/13 and Noonan syndrome",
+      "Resolved hygroma can leave webbed neck in Turner",
+      "Histology — dilated lymphatic channels; not vascular hemangioma",
+      "vs branchial cleft cyst — lateral SCM border, usually older child presentation",
+      "Large prenatal hygroma + hydrops → poor prognosis; evaluate karyotype and heart",
+    ],
+    pediatrics:
+      "Most often identified prenatally as increased NT or neck cyst; karyotype essential. Neonatal airway management critical for large cervical lesions. Partial regression common — residual webbing seen in Turner. Surgical excision or sclerotherapy for symptomatic or enlarging masses after birth.",
+  },
+  {
     id: "klinefelter-syndrome",
     name: "Klinefelter Syndrome",
     etymology: "eponym: Harry Klinefelter + syndrome = grouped findings",
@@ -26122,6 +26595,7 @@ export const CONDITIONS: ConditionEntry[] = [
     etymology:
       "Latin bi = two + polus = pole + disorder = disturbed order — episodic mood illness oscillating between elevated (manic/hypomanic) and depressed poles",
     aliases: [
+      "bipolar",
       "bipolar disorder",
       "bipolar affective disorder",
       "bipolar mood disorder",
@@ -37394,7 +37868,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "neurosyphilis",
-    name: "Neurosyphili",
+    name: "Neurosyphilis",
     etymology:
       "Greek neuron = nerve + syphilis (poem character) + -is = disease state",
     aliases: [
@@ -41172,6 +41646,7 @@ export const CONDITIONS: ConditionEntry[] = [
       "Central pontine myelinolysis if sodium corrected too rapidly",
     ],
     distinguishFrom: [
+      "Hyperemesis — general excessive vomiting descriptor; hyperemesis gravidarum is the pregnancy-specific syndrome",
       "Morning sickness — mild nausea without dehydration, ketosis, or significant weight loss",
       "Gastroenteritis — acute diarrhea, sick contacts, not limited to pregnancy",
       "Preeclampsia with HELLP — hypertension, proteinuria, thrombocytopenia after 20 weeks",
@@ -41470,6 +41945,74 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
   },
   {
+    id: "vasa-previa",
+    name: "Vasa Previa",
+    etymology:
+      "Latin vas = vessel + Latin prae = before + via = road — fetal vessels coursing unprotected across the internal cervical os ahead of the presenting part",
+    aliases: [
+      "vasa previa",
+      "vasa praevia",
+      "velamentous vasa previa",
+      "fetal vessel previa",
+    ],
+    definition:
+      "Obstetric emergency in which fetal umbilical vessels (unsupported by Wharton's jelly or placental tissue) traverse the membranes over the internal cervical os — rupture of membranes or labor causes rapid fetal hemorrhage and exsanguination.",
+    pathophysiology:
+      "Velamentous cord insertion or succenturiate placental lobe → fetal vessels run through fetal membranes across the cervix without placental or cord cushion → ROM or cervical dilation tears vessels → catastrophic fetal blood loss (not maternal hemorrhage) → fetal bradycardia, anemia, and death within minutes if undelivered.",
+    classicPresentation: [
+      "Vaginal bleeding at ROM — often scant but with sudden fetal bradycardia",
+      "Bleeding is fetal (not maternal) — mother may be hemodynamically stable initially",
+      "Antenatal diagnosis on transvaginal ultrasound with color Doppler — vessels over internal os",
+      "Risk context: velamentous cord insertion, bilobed/succenturiate placenta, IVF pregnancy",
+    ],
+    keyFindings: [
+      "Fetal vessels visualized crossing internal os on ultrasound with color Doppler",
+      "Sudden fetal bradycardia after membrane rupture",
+      "Minimal maternal distress despite fetal exsanguination",
+      "Palpable fetal vessels on digital exam if undiagnosed (avoid if suspected)",
+    ],
+    keyLabs: [
+      "Transvaginal ultrasound with color Doppler — antenatal diagnosis",
+      "Fetal heart rate monitoring — abrupt bradycardia at ROM",
+      "Neonatal hemoglobin and hematocrit if delivery achieved",
+      "Kleihauer-Betke if fetomaternal hemorrhage suspected",
+    ],
+    associations: [
+      "Velamentous cord insertion",
+      "Succenturiate or bilobed placenta",
+      "Low-lying placenta (not same as placenta previa)",
+      "IVF and multiple gestation",
+      "In vitro fertilization pregnancies",
+    ],
+    complications: [
+      "Fetal exsanguination and death",
+      "Neonatal anemia and hypovolemic shock",
+      "Emergency cesarean required at ROM if undiagnosed antenatally",
+    ],
+    distinguishFrom: [
+      "Placenta previa — maternal placental tissue over os; painless maternal bleeding; fetal vessels protected",
+      "Placental abruption — painful maternal bleeding, rigid uterus",
+      "Normal cord insertion — vessels insert centrally into placenta, not across os",
+      "Bloody show — mucous plug with streaks of blood at labor onset; reassuring fetal tracing",
+    ],
+    treatment: [
+      "Antenatal diagnosis → scheduled cesarean before labor/ROM (typically 34–37 weeks)",
+      "Hospitalization and bed rest if previable with diagnosed vasa previa",
+      "Emergency cesarean if ROM with fetal bradycardia — do not delay",
+      "Neonatal resuscitation and transfusion if live birth achieved",
+    ],
+    boardsPearls: [
+      "Vasa previa = fetal vessels over internal os — fetal bleed at ROM, not maternal",
+      "Sudden fetal bradycardia + bleeding at ROM → vasa previa until proven otherwise",
+      "Diagnose antenatally with transvaginal ultrasound + color Doppler",
+      "vs placenta previa — previa is maternal placental bleeding; vasa previa is fetal vessel rupture",
+      "Velamentous cord insertion is major risk factor",
+      "Avoid vaginal delivery when diagnosed — planned cesarean",
+    ],
+    pediatrics:
+      "Surviving neonates may need immediate transfusion for fetal hemorrhage; long-term outcome depends on speed of delivery after vessel rupture. Antenatal diagnosis dramatically improves survival.",
+  },
+  {
     id: "placental-abruption",
     name: "Placental Abruption",
     etymology:
@@ -41528,33 +42071,273 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
   },
   {
+    id: "uterine-rupture",
+    name: "Uterine Rupture",
+    etymology:
+      "Latin uterus = womb + Latin ruptura = breaking — full-thickness tear of the uterine wall, usually at a prior cesarean scar during labor",
+    aliases: [
+      "uterine rupture",
+      "ruptured uterus",
+      "uterine scar rupture",
+      "cesarean scar rupture",
+      "scar dehiscence",
+      "complete uterine rupture",
+    ],
+    definition:
+      "Catastrophic obstetric event in which the uterine wall tears completely through the myometrium and serosa — most often at a prior low transverse cesarean scar during trial of labor — causing maternal hemorrhage, fetal extrusion into the peritoneal cavity, and fetal demise if not emergently delivered.",
+    pathophysiology:
+      "Weakened uterine scar (prior cesarean, myomectomy, classical incision) or trauma → repetitive contractions and fetal descent during labor → progressive scar dehiscence → full-thickness rupture → maternal hemorrhage into peritoneal cavity, loss of fetal station, umbilical cord prolapse or placental separation → fetal hypoxia and death; incomplete dehiscence (uterine window) may be asymptomatic until complete rupture.",
+    classicPresentation: [
+      "Sudden severe abdominal pain during labor (often TOLAC)",
+      "Loss of fetal station — previously engaged fetus retracts",
+      "Nonreassuring fetal tracing — prolonged bradycardia",
+      "Cessation of contractions or abnormal contraction pattern",
+      "Maternal hypotension and tachycardia from hemorrhage",
+      "Palpable fetal parts through abdominal wall (rare)",
+      "History of prior cesarean delivery with trial of labor after cesarean (TOLAC)",
+    ],
+    keyFindings: [
+      "Fetal heart rate abnormalities — sudden prolonged deceleration or bradycardia",
+      "Loss of fetal station on vaginal exam",
+      "Abdominal tenderness; hemoperitoneum",
+      "Maternal hemodynamic instability",
+      "Intrauterine pressure catheter loss of pressure tracing (if placed)",
+    ],
+    keyLabs: [
+      "Clinical diagnosis — do not delay surgery for imaging",
+      "CBC and type/crossmatch for hemorrhage",
+      "Ultrasound may show free fluid or abnormal fetal lie but sensitivity limited intrapartum",
+      "Fetal heart rate monitoring — abrupt deterioration",
+    ],
+    associations: [
+      "Prior cesarean delivery — #1 risk factor (especially classical or T-incision)",
+      "Trial of labor after cesarean (TOLAC/VBAC attempt)",
+      "Prostaglandin or oxytocin induction on scarred uterus",
+      "Grand multiparity, uterine overdistension (polyhydramnios, macrosomia)",
+      "Prior myomectomy entering endometrial cavity",
+      "Trauma or congenital uterine anomaly (bicornuate)",
+    ],
+    complications: [
+      "Maternal hemorrhagic shock and death",
+      "Fetal hypoxia, brain injury, or death",
+      "Hysterectomy for hemostasis",
+      "Bladder injury (adherent to lower uterine segment scar)",
+      "Disseminated intravascular coagulation",
+    ],
+    distinguishFrom: [
+      "Placental abruption — painful bleeding, rigid uterus; fetal station usually maintained",
+      "Uterine rupture vs abruption — rupture has loss of station and prior scar history",
+      "Scar dehiscence (incomplete) — uterine wall defect without serosal breach; may be silent",
+      "Placenta previa — painless bleeding; no loss of station",
+      "Uterine inversion — rare postpartum prolapse of fundus through cervix after traction on cord",
+      "Normal labor pain — progressive cervical dilation without hemodynamic collapse",
+    ],
+    treatment: [
+      "Emergent laparotomy and delivery — do not delay for confirmatory imaging",
+      "Maternal resuscitation — IV fluids, blood products",
+      "Repair uterus if feasible and future fertility desired; hysterectomy if uncontrolled bleeding",
+      "Neonatal resuscitation team; expect fetal compromise",
+      "Avoid TOLAC in high-risk scars (classical incision, prior rupture)",
+    ],
+    boardsPearls: [
+      "Prior C-section + sudden pain + fetal bradycardia + loss of station → uterine rupture",
+      "Classical (vertical) uterine incision — VBAC contraindicated; high rupture risk",
+      "Low transverse scar — safest for TOLAC but rupture still possible (~0.5–1%)",
+      "vs placental abruption — both painful; rupture loses fetal station and has scar history",
+      "Oxytocin augmentation on scarred uterus increases rupture risk",
+      "Emergent laparotomy — time-critical for fetal survival",
+    ],
+    pediatrics:
+      "Fetal outcome depends on minutes from rupture to delivery — neonatal encephalopathy if prolonged hypoxia. Prior classical cesarean (often preterm deliveries) contraindicates future vaginal birth; adolescent mothers with prior cesarean face same TOLAC risk calculus.",
+  },
+  {
+    id: "fetal-distress",
+    name: "Fetal Distress",
+    etymology:
+      "Latin fetus = offspring + Latin distringere = to draw apart/afflict — nonreassuring fetal status indicating inadequate oxygenation or acidemia during pregnancy or labor",
+    aliases: [
+      "fetal distress",
+      "nonreassuring fetal status",
+      "fetal compromise",
+      "fetal hypoxia",
+      "nonreassuring fetal heart tracing",
+      "nrfs",
+    ],
+    definition:
+      "Clinical syndrome of suspected fetal hypoxia or acidemia during antepartum or intrapartum period — signaled by abnormal fetal heart rate patterns, decreased fetal movement, or meconium-stained amniotic fluid — prompting urgent evaluation and often expedited delivery.",
+    pathophysiology:
+      "Uteroplacental insufficiency, cord compression, placental abruption, maternal hypotension, uterine tachysystole, or prolonged labor → ↓ uteroplacental blood flow and fetal O₂ delivery → fetal hypoxia → anaerobic metabolism and lactic acidosis → compensatory fetal heart rate changes (tachycardia, decelerations, loss of variability) progressing to bradycardia and fetal demise if uncorrected.",
+    classicPresentation: [
+      "Late decelerations on fetal heart monitoring (gradual nadir after contraction peak)",
+      "Minimal or absent beat-to-beat variability",
+      "Prolonged decelerations or sustained fetal bradycardia",
+      "Decreased fetal movement reported by mother",
+      "Meconium-stained amniotic fluid (especially thick meconium)",
+      "Context: labor with oxytocin, epidural hypotension, abruption, or cord prolapse",
+    ],
+    keyFindings: [
+      "Nonreassuring fetal heart tracing — late decels, variable decels with poor recovery, minimal variability",
+      "Fetal tachycardia (>160 bpm) may reflect early hypoxia or infection",
+      "Sinusoidal pattern — rare, ominous; consider severe anemia or hypoxia",
+      "Scalp pH or lactate (if available) supports acidemia",
+    ],
+    keyLabs: [
+      "Continuous electronic fetal monitoring during labor",
+      "Ultrasound — biophysical profile (BPP) antepartum; assess amniotic fluid and movement",
+      "Fetal scalp pH or lactate if intrapartum testing available",
+      "Umbilical cord blood gas at delivery — confirms intrapartum acidemia",
+    ],
+    associations: [
+      "Placental abruption — painful bleeding, rigid uterus, fetal compromise",
+      "Umbilical cord prolapse or compression",
+      "Uterine tachysystole from oxytocin or placental abruption",
+      "Maternal hypotension (epidural, hemorrhage, sepsis)",
+      "Post-term pregnancy and oligohydramnios",
+      "Preeclampsia and uteroplacental insufficiency",
+      "Chorioamnionitis — fetal tachycardia with maternal fever",
+    ],
+    complications: [
+      "Fetal acidemia and hypoxic-ischemic encephalopathy (HIE)",
+      "Neonatal seizures and long-term neurologic disability",
+      "Emergency cesarean delivery",
+      "Stillbirth if uncorrected",
+    ],
+    distinguishFrom: [
+      "Reassuring fetal heart tracing — moderate variability, accelerations, no recurrent late decelerations",
+      "Early decelerations — mirror fetal head compression; benign",
+      "Variable decelerations with good variability — cord compression; often resolve with position change",
+      "Maternal tachycardia — maternal, not fetal, heart rate on monitor misinterpretation",
+      "Fetal sleep cycles — brief decreased variability without decelerations",
+    ],
+    treatment: [
+      "Intrapartum resuscitation — maternal position change (left lateral), O₂, IV fluids, stop oxytocin, treat hypotension",
+      "Amnioinfusion for recurrent variable decelerations with oligohydramnios",
+      "Expedited vaginal delivery or emergent cesarean when nonreassuring tracing persists",
+      "Neonatal resuscitation team at delivery if severe distress",
+      "Treat underlying cause — abruption, cord prolapse, uterine hyperstimulation",
+    ],
+    boardsPearls: [
+      "Late decelerations = uteroplacental insufficiency → fetal hypoxia until proven otherwise",
+      "Minimal variability + late decels → nonreassuring tracing → prepare for delivery",
+      "Variable decels = cord compression; position change and amnioinfusion may help",
+      "Early decels = head compression — benign mirror image of contraction",
+      "Meconium + nonreassuring tracing → risk of meconium aspiration; neonatal team ready",
+      "Treat reversible causes first (stop pitocin, left lateral, fluids) before emergent delivery",
+    ],
+    pediatrics:
+      "Neonatal outcome depends on duration and severity of intrapartum hypoxia — umbilical artery pH <7.0 or base deficit ≥12 supports metabolic acidemia. Therapeutic hypothermia for moderate-severe HIE in term infants reduces neurologic injury.",
+  },
+  {
+    id: "maternal-shock",
+    name: "Maternal Shock",
+    etymology:
+      "Latin maternus = of a mother + French choc = violent blow — life-threatening circulatory failure during pregnancy, labor, or postpartum from obstetric hemorrhage or other obstetric catastrophe",
+    aliases: [
+      "maternal shock",
+      "obstetric shock",
+      "postpartum hemorrhagic shock",
+      "obstetric hemorrhagic shock",
+      "peripartum shock",
+    ],
+    definition:
+      "Acute circulatory collapse in a pregnant or postpartum patient from massive obstetric hemorrhage, sepsis, amniotic fluid embolism, or other peripartum catastrophe — presenting with hypotension, tachycardia, altered mental status, and end-organ hypoperfusion requiring immediate resuscitation.",
+    pathophysiology:
+      "Obstetric blood loss (uterine atony, placental abruption, previa, uterine rupture, lacerations, retained products) or nonhemorrhagic catastrophe (AFE, septic abortion, severe preeclampsia/HELLP) → ↓ effective circulating volume or distributive vasodilation → ↓ preload and CO → hypotension, tissue hypoperfusion, lactic acidosis; pregnancy physiologic ↑ blood volume can mask early hemorrhage until sudden decompensation.",
+    classicPresentation: [
+      "Hypotension and tachycardia during labor, delivery, or postpartum",
+      "Heavy vaginal bleeding — uterine atony (boggy uterus), lacerations, retained placenta",
+      "Concealed hemorrhage — painful rigid uterus (abruption) with shock out of proportion to visible blood",
+      "Sudden cardiovascular collapse with dyspnea and coagulopathy (amniotic fluid embolism)",
+      "Fever, uterine tenderness, purulent discharge (septic abortion or chorioamnionitis with sepsis)",
+      "Altered mental status, cool clammy skin, oliguria",
+    ],
+    keyFindings: [
+      "Systolic BP <90 mmHg or ↓ >40 mmHg from baseline",
+      "Tachycardia >100–120 bpm",
+      "Pale, diaphoretic, anxious or confused",
+      "Boggy uterus after delivery — uterine atony (most common postpartum cause)",
+      "Nonreassuring fetal status if shock occurs antepartum",
+      "Elevated lactate; ↓ urine output",
+    ],
+    keyLabs: [
+      "CBC — falling hemoglobin (may lag behind acute loss)",
+      "Type and crossmatch; activate massive transfusion protocol if needed",
+      "Coagulation studies — DIC with abruption, AFE, sepsis",
+      "Fibrinogen — low in obstetric hemorrhage/DIC",
+      "Blood cultures if sepsis suspected",
+      "β-hCG if ectopic rupture or septic abortion",
+    ],
+    associations: [
+      "Postpartum hemorrhage — uterine atony (#1 postpartum cause)",
+      "Placental abruption — concealed hemorrhage and DIC",
+      "Placenta previa or accreta spectrum — massive antepartum/postpartum bleeding",
+      "Uterine rupture — prior cesarean scar, trauma",
+      "Amniotic fluid embolism — sudden DIC and cardiorespiratory collapse",
+      "Ectopic pregnancy rupture — first-trimester hemoperitoneum",
+      "Septic abortion or chorioamnionitis with sepsis",
+    ],
+    complications: [
+      "Maternal death",
+      "Disseminated intravascular coagulation",
+      "Sheehan syndrome (pituitary necrosis from hemorrhagic shock)",
+      "Acute kidney injury and multiorgan failure",
+      "Fetal demise if antepartum",
+      "Hysterectomy for uncontrolled hemorrhage",
+    ],
+    distinguishFrom: [
+      "Normal postpartum vital signs — mild tachycardia without hypotension",
+      "Vasovagal syncope — transient, resolves with positioning",
+      "Preeclampsia without shock — hypertension predominant, not hypotensive collapse",
+      "Cardiogenic shock — pulmonary edema, JVD; rare primary obstetric cause",
+      "Neurogenic shock — spinal anesthesia high block with bradycardia and hypotension",
+      "Hypovolemic shock from nonobstetric trauma",
+    ],
+    treatment: [
+      "ABCs — two large-bore IVs, crystalloid and blood products",
+      "Massive transfusion protocol — PRBCs, FFP, platelets; 1:1:1 ratio in severe hemorrhage",
+      "Control bleeding source — uterine massage, oxytocin/methylergonovine/carboprost for atony, repair lacerations, manual removal of retained placenta",
+      "Surgical — B-Lynch suture, uterine artery ligation, hysterectomy if refractory",
+      "Treat DIC — blood products; deliver if abruption with live fetus in distress",
+      "AFE — supportive ICU care, CPR, treat coagulopathy; no specific cure",
+    ],
+    boardsPearls: [
+      "Postpartum hemorrhage + boggy uterus → uterine atony — massage + oxytocin first",
+      "Shock with minimal visible bleeding → think concealed abruption or ruptured ectopic",
+      "Obstetric hemorrhage can exceed 30–50% blood volume before hypotension — tachycardia is early sign",
+      "4 T's of postpartum hemorrhage: Tone (atony), Trauma (laceration), Tissue (retained placenta), Thrombin (coagulopathy)",
+      "AFE = sudden dyspnea + hypotension + DIC during labor/delivery — supportive care",
+      "Always type and crossmatch early; don't wait for hemoglobin to drop",
+    ],
+    pediatrics:
+      "Maternal shock directly threatens fetal oxygen delivery — emergent delivery when fetus is viable and maternal resuscitation underway. Neonatal team should be present for perimortem cesarean if indicated. Adolescent pregnancy carries same hemorrhagic risks with often delayed prenatal care.",
+  },
+  {
     id: "placenta-accreta",
     name: "Placenta Accreta",
-    etymology: "Latin placenta = flat cake + accretus = grown to",
+    etymology: "Latin placenta = flat cake + accretus = grown onto",
     aliases: [
       "placenta accreta",
       "placenta accreta spectrum",
-      "placenta increta",
-      "placenta percreta",
       "morbidly adherent placenta",
       "accreta",
+      "map",
     ],
     definition:
-      "Abnormally adherent placenta due to defective decidua, ranging from accreta (attached to myometrium) to increta (invades myometrium) and percreta (penetrates serosa/adjacent organs).",
+      "Morbidly adherent placenta in which trophoblastic villi attach directly to the myometrium without an intervening decidual layer — the mildest depth of placenta accreta spectrum (villi on myometrium, not invading it).",
     pathophysiology:
-      "Prior uterine scar or placenta previa → endometrial/decidual deficiency → trophoblast attaches directly to myometrium → placenta fails to separate at delivery → massive postpartum hemorrhage.",
+      "Prior uterine scar or placenta previa → defective endometrial/decidual basalis → villi implant on myometrium instead of decidua → placenta fails to separate at delivery → massive postpartum hemorrhage if forcibly removed.",
     classicPresentation: [
       "Often discovered at delivery when placenta does not detach",
       "History of prior cesarean with current placenta previa",
-      "Antepartum bleeding possible with previa overlap",
+      "Antepartum bleeding possible when overlapping placenta previa",
     ],
     keyFindings: [
       "Placenta previa over prior cesarean scar on ultrasound/MRI",
-      "Loss of retroplacental clear space or bladder wall interruption (percreta)",
+      "Loss of retroplacental clear space (accreta spectrum sign)",
       "Failure of placental separation with life-threatening hemorrhage at delivery",
     ],
     keyLabs: [
-      "Prenatal ultrasound/MRI for accreta suspicion",
+      "Prenatal ultrasound/MRI for accreta spectrum suspicion",
       "Type and screen; massive transfusion planning",
     ],
     associations: [
@@ -41565,12 +42348,13 @@ export const CONDITIONS: ConditionEntry[] = [
     complications: [
       "Massive obstetric hemorrhage",
       "Need for hysterectomy",
-      "Bladder invasion with percreta",
       "Maternal death",
     ],
     distinguishFrom: [
-      "Retained placenta — adherent fragments without deep invasion",
-      "Placenta previa alone — abnormal location without myometrial invasion",
+      "Placenta increta — villi invade into myometrium, not just attach to surface",
+      "Placenta percreta — villi penetrate serosa and may invade bladder/adjacent organs",
+      "Retained placenta — adherent fragments without deep myometrial invasion",
+      "Placenta previa alone — abnormal location without morbid adherence",
       "Uterine atony — soft boggy uterus after delivery, not adherent placenta",
     ],
     treatment: [
@@ -41581,7 +42365,113 @@ export const CONDITIONS: ConditionEntry[] = [
     boardsPearls: [
       "Prior C-section + placenta previa = high risk for accreta spectrum",
       "Do not forcefully remove abnormally adherent placenta",
-      "Accreta = myometrium attachment; increta = invasion; percreta = through uterine wall",
+      "Accreta = villi attach to myometrium (no decidua); increta = into myometrium; percreta = through uterine wall",
+      "MAP = morbidly adherent placenta — umbrella for accreta, increta, percreta",
+    ],
+  },
+  {
+    id: "placenta-increta",
+    name: "Placenta Increta",
+    etymology: "Latin placenta = flat cake + incretus = grown into",
+    aliases: ["placenta increta", "increta"],
+    definition:
+      "Morbidly adherent placenta in which trophoblastic villi invade into the myometrium — intermediate depth of placenta accreta spectrum (deeper than accreta, not through serosa).",
+    pathophysiology:
+      "Defective decidua from prior uterine scar or placenta previa → villi penetrate myometrial muscle fibers → placenta anchored within uterine wall → failure to separate at delivery with severe hemorrhage if manual removal attempted.",
+    classicPresentation: [
+      "Same high-risk obstetric profile as accreta — prior C-section and placenta previa",
+      "Often diagnosed at delivery when placenta will not separate",
+      "Prenatal imaging may show myometrial thinning without serosal breach",
+    ],
+    keyFindings: [
+      "Placenta previa over uterine scar on ultrasound/MRI",
+      "Myometrial thinning and loss of retroplacental clear space",
+      "Placental lacunae and increased vascularity on Doppler (accreta spectrum)",
+      "Non-separating placenta with hemorrhage at attempted delivery of placenta",
+    ],
+    keyLabs: [
+      "Prenatal ultrasound/MRI — assess depth of invasion",
+      "Type and screen; massive transfusion planning",
+    ],
+    associations: [
+      "Prior cesarean delivery",
+      "Placenta previa",
+      "Uterine curettage, myomectomy, or Asherman syndrome",
+    ],
+    complications: [
+      "Massive obstetric hemorrhage",
+      "Cesarean hysterectomy often required",
+      "Uterine rupture risk if labor attempted",
+      "Maternal death",
+    ],
+    distinguishFrom: [
+      "Placenta accreta — villi attach to myometrium surface without invading muscle",
+      "Placenta percreta — invasion through full uterine wall into serosa/bladder",
+      "Placenta previa alone — low implantation without myometrial invasion",
+      "Placental abruption — premature separation, not morbid adherence",
+    ],
+    treatment: [
+      "Planned cesarean delivery with hysterectomy at accreta center when prenatally suspected",
+      "Do not attempt manual placental removal",
+      "Interventional radiology and massive transfusion protocols on standby",
+    ],
+    boardsPearls: [
+      "Increta = villi into myometrium (between accreta and percreta on spectrum)",
+      "Prior C-section + previa → think accreta spectrum; depth often surgical/pathologic diagnosis",
+      "Never forcibly extract morbidly adherent placenta — hemorrhage",
+    ],
+  },
+  {
+    id: "placenta-percreta",
+    name: "Placenta Percreta",
+    etymology: "Latin placenta = flat cake + per = through + crescere = to grow",
+    aliases: ["placenta percreta", "percreta"],
+    definition:
+      "Morbidly adherent placenta in which trophoblastic villi penetrate through the full thickness of the uterine wall into the serosa and may invade adjacent organs — deepest form of placenta accreta spectrum.",
+    pathophysiology:
+      "Severe decidual deficiency over prior scar → villi breach myometrium and serosa → placental tissue may extend into bladder, broad ligament, or other structures → catastrophic hemorrhage at delivery and risk of urologic injury.",
+    classicPresentation: [
+      "Prior cesarean with placenta previa over scar — highest accreta spectrum risk",
+      "Prenatal hematuria if bladder invasion",
+      "Planned cesarean hysterectomy at tertiary center when diagnosed antenatally",
+    ],
+    keyFindings: [
+      "Ultrasound/MRI — loss of retroplacental clear space, myometrial discontinuity, bladder wall interruption",
+      "Placental tissue extending beyond uterine contour on imaging",
+      "Hematuria with bladder invasion",
+      "Massive hemorrhage if placenta manually removed",
+    ],
+    keyLabs: [
+      "MRI for depth of invasion and bladder involvement",
+      "Type and crossmatch; massive transfusion preparation",
+      "Urinalysis if bladder invasion suspected",
+    ],
+    associations: [
+      "Multiple prior cesarean deliveries",
+      "Placenta previa over lower uterine segment scar",
+      "Prior uterine surgery",
+    ],
+    complications: [
+      "Life-threatening hemorrhage",
+      "Cesarean hysterectomy with possible cystectomy",
+      "Ureteral and bladder injury",
+      "Maternal death",
+    ],
+    distinguishFrom: [
+      "Placenta accreta — villi on myometrium, not through wall",
+      "Placenta increta — invades myometrium but not through serosa",
+      "Bladder cancer — not pregnancy-associated; no previa/C-section context",
+      "Uterine rupture — full-thickness tear in labor, not trophoblastic invasion",
+    ],
+    treatment: [
+      "Antenatal diagnosis → planned cesarean hysterectomy at specialized center",
+      "Urology consultation if bladder invasion on MRI",
+      "Avoid manual placental removal; interventional radiology and cell-saver when available",
+    ],
+    boardsPearls: [
+      "Percreta = through uterine wall; bladder invasion most classic adjacent organ",
+      "MRI bladder wall interruption + previa over C-section scar → percreta until proven otherwise",
+      "Most severe MAP depth — often requires cesarean hysterectomy ± cystectomy",
     ],
   },
   {
@@ -44322,6 +45212,81 @@ export const CONDITIONS: ConditionEntry[] = [
       "Peak incidence ~2 years; congenital neuroblastoma detected prenatally may regress. Stage 4S in infants (skin/liver/marrow limited) can spontaneously differentiate. Screen urine catecholamine metabolites in suspected abdominal mass.",
   },
   {
+    id: "wilms-tumor",
+    name: "Wilms Tumor",
+    etymology:
+      "Eponym for Max Wilms, German surgeon + Latin tumor = swelling — embryonal renal neoplasm (nephroblastoma)",
+    aliases: [
+      "wilms tumor",
+      "wilms tumour",
+      "nephroblastoma",
+      "renal nephroblastoma",
+      "wilms nephroblastoma",
+      "wt",
+    ],
+    definition:
+      "Malignant embryonal renal tumor (nephroblastoma) arising from metanephric blastema — the most common renal malignancy of childhood, typically presenting as a painless abdominal mass.",
+    pathophysiology:
+      "Failure of normal metanephric blastema regression/differentiation → triphasic tumor (blastemal, epithelial, stromal elements) → expansile renal mass that usually does not cross midline; WT1 tumor suppressor loss (11p13) or WT2/11p15 imprinting defects (Beckwith-Wiedemann) predispose; hematogenous spread to lung and liver; lymphatic spread to regional nodes.",
+    classicPresentation: [
+      "Painless flank or abdominal mass in toddler (peak ~3–4 years)",
+      "Hematuria (gross or microscopic)",
+      "Hypertension from renin secretion (occasional)",
+      "Abdominal pain if large or traumatized",
+      "Fever, weight loss in advanced disease",
+    ],
+    keyFindings: [
+      "Smooth, unilateral renal mass on imaging — classically does not cross midline",
+      "Triphasic histology — blastemal, epithelial (glomeruloid), and stromal components",
+      "Normal urine catecholamine metabolites (HVA/VMA) — distinguishes from neuroblastoma",
+      "WT1 deletion/mutation in WAGR syndrome; 11p15 imprinting defects in Beckwith-Wiedemann",
+      "Pulmonary metastases on staging imaging",
+    ],
+    keyLabs: [
+      "Urinalysis — hematuria",
+      "Urine HVA/VMA — normal (vs ↑ in neuroblastoma)",
+      "Genetic testing — WT1 (WAGR), 11p15 methylation (Beckwith-Wiedemann) when syndromic features",
+    ],
+    associations: [
+      "WAGR syndrome — WT1 deletion: Wilms, Aniridia, Genitourinary anomalies, intellectual disability",
+      "Beckwith-Wiedemann syndrome — 11p15 imprinting defect; macrosomia, omphalocele, hemihyperplasia",
+      "Denys-Drash syndrome — WT1 mutation; nephropathy, gonadal dysgenesis, Wilms risk",
+      "Aniridia — screen for WT1 deletion and Wilms tumor",
+      "Hemihypertrophy — increased Wilms tumor risk; screen with serial abdominal ultrasound",
+    ],
+    complications: [
+      "Pulmonary and hepatic metastases",
+      "Tumor rupture with peritoneal seeding (avoid preoperative biopsy)",
+      "Hypertension and renin-mediated effects",
+      "Treatment-related nephrotoxicity and second malignancy (long-term survivors)",
+      "Bilateral Wilms tumor — nephron-sparing approach when possible",
+    ],
+    distinguishFrom: [
+      "Neuroblastoma — crosses midline, adrenal/paraspinal origin, ↑ urine HVA/VMA, Homer Wright rosettes",
+      "Renal cell carcinoma — adult tumor; clear cells; rare in young children",
+      "Mesoblastic nephroma — congenital benign renal tumor in neonates",
+      "Polycystic kidney disease — bilateral cystic kidneys, not solitary solid mass",
+      "Hydronephrosis — dilated collecting system without solid neoplasm",
+    ],
+    treatment: [
+      "Radical nephrectomy with lymph node sampling (standard for unilateral localized disease)",
+      "Chemotherapy (vincristine, actinomycin D, doxorubicin) ± radiation by stage",
+      "Nephron-sparing surgery for bilateral disease or solitary kidney",
+      "Avoid preoperative biopsy — risk of tumor spill and upstaging",
+    ],
+    boardsPearls: [
+      "Most common pediatric renal malignancy — painless abdominal mass ~3–4 years",
+      "Nephroblastoma = Wilms tumor; triphasic histology (blastemal, epithelial, stromal)",
+      "Does NOT cross midline (vs neuroblastoma)",
+      "Normal HVA/VMA — key distinction from neuroblastoma",
+      "WAGR — WT1 on 11p13; Beckwith-Wiedemann — 11p15 imprinting",
+      "Do not biopsy Wilms pre-op — nephrectomy is diagnostic and therapeutic",
+      "Pulmonary metastases common; liver also",
+    ],
+    pediatrics:
+      "Peak age 2–5 years; screen children with aniridia, WAGR, Beckwith-Wiedemann, or hemihypertrophy with serial abdominal ultrasound. Bilateral Wilms requires nephron-sparing when feasible. Mesoblastic nephroma is the main neonatal renal tumor differential — congenital and usually benign.",
+  },
+  {
     id: "peritonitis",
     name: "Peritoniti",
     etymology: "Greek peri = around + teinein = stretch + -itis = inflammation",
@@ -46517,6 +47482,82 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "Children are at higher risk for hypoglycemia and CNS toxicity; Reye syndrome historically linked to aspirin during varicella/influenza — use acetaminophen instead. Salicylate levels may not correlate with severity in chronic pediatric exposure.",
+  },
+  {
+    id: "digitalis-toxicity",
+    name: "Digitalis Toxicity",
+    etymology:
+      "Digitalis = foxglove genus + Latin toxicus = poison — overdose or adverse effects from cardiac glycosides (digoxin, digitoxin) inhibiting Na⁺/K⁺-ATPase",
+    aliases: [
+      "digitalis toxicity",
+      "digoxin toxicity",
+      "digoxin poisoning",
+      "digoxin intoxication",
+      "cardiac glycoside toxicity",
+      "cardiac glycoside poisoning",
+      "digitalis poisoning",
+      "lanoxin toxicity",
+    ],
+    definition:
+      "Adverse effects from excessive cardiac glycoside levels (most commonly digoxin) — narrow therapeutic index drug causing GI, visual, and cardiac toxicity through Na⁺/K⁺-ATPase inhibition and altered intracellular Ca²⁺ handling.",
+    pathophysiology:
+      "Excess digoxin inhibits Na⁺/K⁺-ATPase → ↑ intracellular Na⁺ → impaired forward Na⁺/Ca²⁺ exchanger (NCX) activity → ↑ intracellular Ca²⁺ → enhanced automaticity and delayed afterdepolarizations → virtually any arrhythmia; ↑ vagal tone contributes to bradycardia and AV block; hypokalemia, hypomagnesemia, and hypercalcemia worsen binding and toxicity; renal failure ↓ clearance.",
+    classicPresentation: [
+      "Nausea, vomiting, anorexia, abdominal pain",
+      "Confusion, fatigue, weakness",
+      "Visual disturbances — blurred vision, yellow-green halos (xanthopsia), photophobia",
+      "Palpitations, syncope, or asymptomatic arrhythmia on ECG",
+      "Bradycardia, PVCs, AV block, atrial tachycardia with block, bidirectional VT",
+    ],
+    keyFindings: [
+      "GI symptoms + visual changes + arrhythmia — classic triad",
+      "ECG — PVCs (often multifocal), bradycardia, AV block, ST scooping ('Salvador Dali' sagging ST), atrial tachycardia with block",
+      "Bidirectional ventricular tachycardia — highly suggestive of digoxin toxicity",
+      "Hyperkalemia in acute severe overdose (cell membrane pump failure)",
+    ],
+    keyLabs: [
+      "Serum digoxin level — elevated (chronic toxicity may occur at therapeutic levels if K⁺ low)",
+      "Potassium — hypokalemia predisposes; severe acute toxicity may show hyperkalemia",
+      "Magnesium, calcium, BUN/creatinine — risk factors and renal clearance",
+    ],
+    associations: [
+      "Therapeutic digoxin use in heart failure or atrial fibrillation",
+      "Hypokalemia from diuretics, diarrhea, or vomiting",
+      "Drug interactions — amiodarone, verapamil, quinidine, macrolides, itraconazole (↑ digoxin levels)",
+      "Renal insufficiency — reduced digoxin excretion",
+      "Elderly with polypharmacy and low lean body mass",
+    ],
+    complications: [
+      "Life-threatening arrhythmias and cardiac arrest",
+      "High-grade AV block",
+      "Bidirectional ventricular tachycardia",
+      "Death if untreated",
+    ],
+    distinguishFrom: [
+      "Acute coronary syndrome — chest pain and ischemic ECG without xanthopsia or GI prodrome of digoxin",
+      "β-blocker or CCB overdose — bradycardia without glycoside visual symptoms or scooping ST",
+      "Hyperkalemia alone — peaked T waves; may coexist with digoxin toxicity",
+      "Primary GI illness — vomiting without arrhythmia or elevated digoxin level",
+      "Heart failure decompensation — may coexist; digoxin toxicity can worsen HF",
+    ],
+    treatment: [
+      "Stop digoxin immediately",
+      "Correct hypokalemia and hypomagnesemia cautiously",
+      "Digoxin-specific antibody fragments (Fab) for serious toxicity, life-threatening arrhythmia, or hyperkalemia",
+      "Treat arrhythmias — avoid cardioversion if possible until Fab given; phenytoin or lidocaine for ventricular arrhythmias; atropine for symptomatic bradycardia",
+      "Avoid routine magnesium unless deficient; avoid calcium in severe toxicity",
+    ],
+    boardsPearls: [
+      "Digoxin toxicity = GI + visual (yellow-green halos) + ANY arrhythmia",
+      "Hypokalemia worsens toxicity — K⁺ competes at Na⁺/K⁺-ATPase binding site",
+      "Bidirectional VT — classic digoxin toxicity rhythm",
+      "Antidote: digoxin-specific Fab fragments",
+      "Amiodarone, verapamil, quinidine — ↑ digoxin levels",
+      "Atrial tachycardia with block — highly suggestive",
+      "vs therapeutic digoxin — narrow window; elderly and renal failure high risk",
+    ],
+    pediatrics:
+      "Children are susceptible to digoxin toxicity from dosing errors; hypokalemia from gastroenteritis worsens toxicity. Fab fragments used for severe pediatric digoxin poisoning. Visual symptoms may be hard to elicit in young children — rely on vomiting and arrhythmia.",
   },
   {
     id: "amyotrophic-lateral-sclerosis",
@@ -50909,6 +51950,8 @@ export const CONDITIONS: ConditionEntry[] = [
       "sideroblastic anaemia",
       "ringed sideroblast anemia",
       "ring sideroblast anemia",
+      "microcytic sideroblastic anemia",
+      "sideroblastic microcytic anemia",
     ],
     definition:
       "Anemia with defective heme synthesis causing iron accumulation in mitochondria of erythroid precursors — ringed sideroblasts on bone marrow Prussian blue stain; often microcytic or dimorphic RBC population.",
@@ -56656,6 +57699,87 @@ export const CONDITIONS: ConditionEntry[] = [
       "Abetalipoproteinemia presents in infancy with steatorrhea, failure to thrive, and neurologic decline without lifelong high-dose vitamin E. Premature infants are at risk for hemolytic anemia. CF patients need fat-soluble vitamin monitoring including vitamin E.",
   },
   {
+    id: "albright-hereditary-osteodystrophy",
+    name: "Albright Hereditary Osteodystrophy",
+    etymology:
+      "Named for Fuller Albright + Latin hereditarius = inherited + Greek osteon = bone + dys = bad + trophe = nourishment — germline GNAS disorder with skeletal dysmorphism and (when maternally inherited) hormone resistance",
+    aliases: [
+      "albright hereditary osteodystrophy",
+      "albright's hereditary osteodystrophy",
+      "albright hereditary osteodystrophy syndrome",
+      "aho",
+      "a.h.o.",
+      "hereditary osteodystrophy of albright",
+      "pseudohypoparathyroidism type 1a",
+      "php1a",
+      "php 1a",
+      "pseudohypoparathyroidism with albright hereditary osteodystrophy",
+    ],
+    definition:
+      "Autosomal dominant disorder from inactivating mutations in GNAS (Gαs) — when inherited from the mother causes PTH and other G protein–coupled hormone resistance (pseudohypoparathyroidism type 1a) plus characteristic skeletal and ectopic ossification findings; paternal transmission of the same mutation causes pseudopseudohypoparathyroidism (skeletal phenotype without hormone resistance) due to genomic imprinting.",
+    pathophysiology:
+      "Loss-of-function GNAS (chromosome 20q13) → impaired Gαs-mediated cAMP signaling in renal proximal tubule and other target tissues when maternal allele affected (imprinted) → renal resistance to PTH → hypocalcemia, hyperphosphatemia, and elevated PTH despite low calcitriol response; skeletal features from abnormal bone/cartilage development and ectopic ossification independent of hormone resistance pattern.",
+    classicPresentation: [
+      "Short stature, round face, and obesity in childhood or adolescence",
+      "Brachydactyly — short 4th and 5th metacarpals/metatarsals (Archibald sign)",
+      "Subcutaneous ossifications (osteoma cutis) — hard dermal nodules",
+      "If PHP1a (maternal inheritance) — tetany, seizures, or cataracts from hypocalcemia",
+      "Developmental delay or learning difficulties in some patients",
+      "Normal calcium with same skeletal features if paternal inheritance (pseudopseudohypoparathyroidism)",
+    ],
+    keyFindings: [
+      "Shortened 4th/5th metacarpals on hand X-ray — knock-knee appearance of knuckles when fist clenched",
+      "Ectopic soft-tissue ossification on exam or imaging",
+      "Round face, short neck, and central obesity",
+      "Trousseau/Chvostek signs if hypocalcemic (PHP1a)",
+    ],
+    keyLabs: [
+      "PHP1a — hypocalcemia, hyperphosphatemia, ↑ PTH, low urinary cAMP response to PTH",
+      "Elevated PTH with low calcium despite normal vitamin D if hormone resistance present",
+      "GNAS mutation testing — correlate with parental origin for PHP vs pseudo-PHP",
+      "Normal calcium/phosphate/PTH in pseudopseudohypoparathyroidism (paternal transmission)",
+    ],
+    associations: [
+      "Pseudohypoparathyroidism type 1a — AHO plus hormone resistance (maternal GNAS mutation)",
+      "Pseudopseudohypoparathyroidism — AHO phenotype without hormone resistance (paternal GNAS mutation)",
+      "Resistance to TSH, GnRH, and other Gαs-coupled hormones in some PHP1a patients",
+      "McCune-Albright syndrome — same GNAS gene but somatic activating mosaic mutation (opposite mechanism)",
+      "Chondrocalcinosis from chronic hypocalcemia/hyperphosphatemia",
+    ],
+    complications: [
+      "Hypocalcemic seizures and cataracts (PHP1a)",
+      "Short adult stature and obesity-related metabolic disease",
+      "Cognitive/behavioral difficulties in subset",
+      "Progressive ectopic ossification limiting joint mobility",
+    ],
+    distinguishFrom: [
+      "McCune-Albright syndrome — somatic activating GNAS; café-au-lait, fibrous dysplasia, precocious puberty; not inherited",
+      "Hypoparathyroidism — low PTH, not elevated PTH with resistance",
+      "Turner syndrome — short 4th metacarpal possible but webbed neck, streak gonads, 45,X",
+      "Pseudohypoparathyroidism type 1b — renal PTH resistance without AHO skeletal features",
+      "Pseudopseudohypoparathyroidism — identical skeletal features, normal calcium/PTH",
+      "Primary hypothyroidism — low T4, not GNAS-related hormone resistance pattern",
+    ],
+    treatment: [
+      "Calcium and active vitamin D (calcitriol) supplementation for hypocalcemia in PHP1a",
+      "PTH analogs not effective when receptor pathway downstream of Gαs is defective",
+      "Monitor phosphate, calcium, PTH, and TSH",
+      "Orthopedic management of brachydactyly/ectopic ossification as needed",
+      "Genetic counseling — imprinting determines hormone resistance phenotype in offspring",
+    ],
+    boardsPearls: [
+      "AHO = short 4th/5th digits + round face + short stature + obesity ± osteoma cutis",
+      "GNAS imprinting — maternal mutation → PHP1a (hypocalcemia, ↑ PTH); paternal → pseudo-PHP (normal labs)",
+      "PTH resistance — hypocalcemia + hyperphosphatemia + ↑ PTH (vs hypoparathyroidism: low PTH)",
+      "Archibald sign — shortened 4th metacarpal when making fist",
+      "vs McCune-Albright — activating somatic GNAS; precocious puberty and fibrous dysplasia triad",
+      "Gαs/cAMP pathway — same gene family as cholera toxin target and McCune-Albright",
+      "Pseudopseudohypoparathyroidism — looks like PHP but normal calcium because paternal allele expressed in kidney",
+    ],
+    pediatrics:
+      "Often presents in childhood with short stature, obesity, and brachydactyly; hypocalcemic seizures may be neonatal or early childhood in PHP1a. Differentiate from nutritional rickets (vitamin D deficiency) and true hypoparathyroidism (DiGeorge). Genetic testing with parental studies clarifies imprinting and recurrence risk.",
+  },
+  {
     id: "mccune-albright-syndrome",
     name: "McCune-Albright Syndrome",
     etymology:
@@ -59607,7 +60731,7 @@ export const CONDITIONS: ConditionEntry[] = [
   },
   {
     id: "primary-syphilis",
-    name: "Primary Syphili",
+    name: "Primary Syphilis",
     etymology:
       "Latin primarius = first + syphilis = sexually transmitted spirochetal disease — initial stage of Treponema pallidum infection at the site of inoculation",
     aliases: [
@@ -61065,6 +62189,377 @@ export const CONDITIONS: ConditionEntry[] = [
     ],
     pediatrics:
       "NF2 may present in adolescence with unilateral hearing loss before contralateral tumor detected — earlier onset than sporadic schwannoma. Pediatric NF2 warrants MRI surveillance and genetic counseling. Bilateral vestibular schwannomas in a teenager is essentially diagnostic.",
+  },
+  {
+    id: "familial-mediterranean-fever",
+    name: "Familial Mediterranean Fever",
+    etymology:
+      "Latin familia = household + Mediterranean = sea between Europe and Africa + Latin febris = fever — autosomal recessive autoinflammatory disorder with recurrent febrile attacks classically in Mediterranean populations",
+    aliases: [
+      "familial mediterranean fever",
+      "familial mediterranean fevers",
+      "fmf",
+      "periodic fever mediterranean",
+      "armenian disease",
+      "benign paroxysmal peritonitis",
+      "mefv mutation disease",
+    ],
+    definition:
+      "Autosomal recessive autoinflammatory disease from MEFV (pyrin) mutations causing episodic fever with serositis — recurrent short attacks of fever, peritonitis, pleuritis, or synovitis, classically in patients of Armenian, Sephardic Jewish, Arab, or Turkish ancestry.",
+    pathophysiology:
+      "MEFV encodes pyrin, which regulates inflammasome activity — loss-of-function mutations impair control of IL-1β processing → episodic uncontrolled innate inflammation with fever and serosal inflammation; chronic untreated disease predisposes to AA amyloidosis (serum amyloid A deposition in kidneys).",
+    classicPresentation: [
+      "Recurrent 1–3 day febrile attacks beginning in childhood or adolescence",
+      "Severe abdominal pain mimicking acute abdomen (peritonitis) — may prompt unnecessary laparotomy",
+      "Chest pain from pleuritis or pericarditis",
+      "Monoarticular arthritis (often large joints)",
+      "Erysipelas-like erythematous rash on lower extremities",
+      "Mediterranean/Middle Eastern ancestry; family history of similar attacks",
+    ],
+    keyFindings: [
+      "Normal between attacks — key to autoinflammatory pattern",
+      "↑ ESR/CRP and leukocytosis during attacks",
+      "Serositis on imaging during flares",
+      "Renal amyloidosis — proteinuria, nephrotic syndrome in long-standing untreated disease",
+    ],
+    keyLabs: [
+      "Clinical diagnosis supported by MEFV genetic testing",
+      "↑ acute-phase reactants during attacks",
+      "Proteinuria/renal dysfunction if AA amyloidosis develops",
+      "Synovial fluid inflammatory during arthritis attacks",
+    ],
+    associations: [
+      "MEFV gene on chromosome 16p — most common M694V mutation",
+      "AA amyloidosis — leading complication without prophylaxis",
+      "Erysipelas-like skin lesions",
+      "Mediterranean and Middle Eastern ethnic predisposition",
+    ],
+    complications: [
+      "AA amyloidosis — renal failure",
+      "Infertility (pelvic adhesions from recurrent peritonitis in some patients)",
+      "Growth delay if attacks frequent in childhood",
+    ],
+    distinguishFrom: [
+      "Acute appendicitis — continuous surgical abdomen; FMF attacks resolve spontaneously",
+      "CAPS — NLRP3 mutations; urticaria-like rash, cold trigger (FCAS); IL-1 blockade not colchicine-first",
+      "HSP — palpable purpura, IgA vasculitis; not episodic serositis with Mediterranean genetics",
+      "Acute rheumatic fever — follows strep; migratory polyarthritis with carditis",
+      "TRAPS — TNFRSF1A mutation; longer febrile episodes (weeks)",
+    ],
+    treatment: [
+      "Colchicine daily — prevents attacks and amyloidosis (cornerstone prophylaxis)",
+      "NSAIDs for acute attack symptom relief",
+      "IL-1 blockade (anakinra, canakinumab) if colchicine-resistant",
+      "Renal monitoring for amyloidosis — proteinuria screening",
+    ],
+    boardsPearls: [
+      "FMF = MEFV (pyrin) + episodic fever/serositis + Mediterranean ancestry",
+      "Colchicine prevents attacks AND amyloidosis — must continue lifelong",
+      "Abdominal pain so severe it mimics surgical abdomen — resolves in 1–3 days",
+      "AA amyloidosis complication — proteinuria in untreated disease",
+      "vs CAPS — NLRP3/cryopyrin; urticaria rash; anakinra/canakinumab",
+      "Autoinflammatory (innate) — not autoantibody-mediated like SLE",
+    ],
+    pediatrics:
+      "FMF often presents in childhood with recurrent fever and abdominal pain — colchicine started early prevents amyloidosis. MEFV testing confirms diagnosis in pediatric patients with classic episodic serositis pattern.",
+  },
+  {
+    id: "cryopyrin-associated-periodic-syndromes",
+    name: "Cryopyrin-Associated Periodic Syndromes",
+    etymology:
+      "Greek kryos = cold + pyr = fire + associated + periodic + syndrome — spectrum of autoinflammatory diseases from NLRP3 (cryopyrin) gain-of-function mutations causing episodic inflammation",
+    aliases: [
+      "cryopyrin-associated periodic syndromes",
+      "cryopyrin associated periodic syndromes",
+      "cryopyrin-associated periodic syndrome",
+      "cryopyrin associated periodic syndrome",
+      "caps",
+      "nlrp3-associated periodic fever",
+      "cryopyrinopathy",
+      "cryopyrinopathies",
+    ],
+    definition:
+      "Spectrum of autosomal dominant autoinflammatory disorders from NLRP3 (cryopyrin) gain-of-function mutations causing constitutive inflammasome activation — ranges from mild cold-induced urticaria (FCAS) to severe neonatal-onset systemic inflammation (NOMID/CINCA).",
+    pathophysiology:
+      "NLRP3 encodes cryopyrin, the sensor protein of the NLRP3 inflammasome — gain-of-function mutations cause spontaneous inflammasome assembly → caspase-1 activation → excessive IL-1β and IL-18 release → episodic or continuous fever, rash, and systemic inflammation without infection or autoantibodies.",
+    classicPresentation: [
+      "FCAS (familial cold autoinflammatory syndrome) — urticaria-like rash, fever, arthralgia after cold exposure; shortest attacks",
+      "MWS (Muckle-Wells syndrome) — episodic fever, urticaria, progressive sensorineural hearing loss, risk of amyloidosis",
+      "NOMID/CINCA — neonatal/infant onset chronic meningitis, bony overgrowth, distinctive facies, persistent inflammation",
+      "Non-pruritic urticaria-like rash (not true allergic urticaria)",
+      "Conjunctivitis and headache during flares",
+    ],
+    keyFindings: [
+      "Urticaria-like rash with fever — hallmark across spectrum",
+      "Sensorineural hearing loss in MWS and NOMID",
+      "Chronic aseptic meningitis in NOMID — papilledema, headache",
+      "Bony lesions and knee overgrowth in severe NOMID",
+    ],
+    keyLabs: [
+      "NLRP3 genetic testing confirms diagnosis",
+      "↑ ESR/CRP, leukocytosis during flares; may be chronically elevated in NOMID",
+      "CSF pleocytosis in NOMID (aseptic meningitis)",
+    ],
+    associations: [
+      "NLRP3 gene — autosomal dominant with variable expressivity",
+      "IL-1β-driven autoinflammation — anakinra, canakinumab, rilonacept effective",
+      "AA amyloidosis risk in MWS without treatment",
+      "Cold exposure trigger in FCAS",
+    ],
+    complications: [
+      "Sensorineural deafness (MWS, NOMID)",
+      "AA amyloidosis (MWS)",
+      "Intellectual disability and limb deformity (severe NOMID)",
+      "Blindness from chronic papilledema (NOMID)",
+    ],
+    distinguishFrom: [
+      "FMF — MEFV recessive; serositis without urticaria rash; colchicine-first",
+      "Allergic urticaria — pruritic, IgE-mediated; not periodic fever syndrome",
+      "TRAPS — TNFRSF1A; longer attacks, migratory myalgia, periorbital edema",
+      "SLE — autoantibodies, immune complex disease; not monogenic inflammasome disorder",
+      "HIDS/MVK deficiency — mevalonate kinase; lymphadenopathy, oral ulcers",
+    ],
+    treatment: [
+      "IL-1 blockade — anakinra, canakinumab, or rilonacept (first-line for CAPS)",
+      "NSAIDs for mild symptoms in FCAS",
+      "Colchicine generally ineffective (unlike FMF)",
+      "Hearing aids and supportive care for deafness; monitor amyloidosis",
+    ],
+    boardsPearls: [
+      "CAPS = NLRP3 (cryopyrin) gain-of-function → ↑ inflammasome → ↑ IL-1β",
+      "Spectrum: FCAS (cold) → MWS (hearing loss, amyloid) → NOMID/CINCA (neonatal severe)",
+      "Urticaria-like rash + fever — think CAPS, not allergy",
+      "Anakinra/canakinumab — IL-1 blockade is disease-modifying",
+      "vs FMF — colchicine works in FMF; CAPS needs anti–IL-1",
+      "NOMID = worst end — neonatal meningitis, bony overgrowth, facies",
+    ],
+    pediatrics:
+      "NOMID/CINCA presents in infancy with chronic inflammation — early IL-1 blockade prevents deafness and developmental injury. FCAS and MWS also begin in childhood; CAPS is a core pediatric autoinflammatory board topic.",
+  },
+  {
+    id: "still-disease",
+    name: "Still Disease",
+    etymology:
+      "Named for George Frederic Still (1861–1941), English pediatrician who described juvenile chronic arthritis — applied to systemic inflammatory arthritis with quotidian fever and evanescent rash in children and adults",
+    aliases: [
+      "still disease",
+      "still's disease",
+      "stills disease",
+      "systemic-onset still disease",
+      "systemic onset still disease",
+      "adult-onset still disease",
+      "adult onset still disease",
+      "aosd",
+      "systemic juvenile idiopathic arthritis",
+      "systemic jia",
+      "sjia",
+    ],
+    definition:
+      "Systemic inflammatory arthritis characterized by quotidian spiking fevers, evanescent salmon-pink rash, and polyarthritis — systemic-onset juvenile idiopathic arthritis (sJIA) in children and adult-onset Still disease (AOSD) in adults share the same clinical spectrum.",
+    pathophysiology:
+      "Multifactorial autoinflammatory/autoimmune dysregulation with prominent innate immunity — IL-1, IL-6, and IL-18 drive fever and systemic inflammation; macrophage activation syndrome (MAS) reflects uncontrolled cytokine storm from activated macrophages and T cells in a subset of patients.",
+    classicPresentation: [
+      "Quotidian fever — daily spikes, often evening, with return to normal/baseline between spikes",
+      "Evanescent salmon-pink macular rash — appears with fever, spares nasolabial folds",
+      "Polyarthritis or arthralgia",
+      "Sore throat and lymphadenopathy common",
+      "Hepatosplenomegaly",
+      "Young adult (AOSD) or child <16 years (systemic-onset JIA)",
+    ],
+    keyFindings: [
+      "Quotidian fever pattern — highly suggestive",
+      "Salmon-pink evanescent rash with fever spikes",
+      "Arthritis (may develop after systemic symptoms)",
+      "Serositis — pleuritis, pericarditis",
+    ],
+    keyLabs: [
+      "Very high ferritin — often >1000 ng/mL; may exceed 10,000 in MAS",
+      "↑ ESR/CRP, leukocytosis, thrombocytosis",
+      "↑ IL-6 and IL-18 (research/clinical context)",
+      "Negative RF and anti-CCP (distinguishes from RA)",
+      "Hypertriglyceridemia, hypofibrinogenemia in MAS",
+    ],
+    associations: [
+      "Macrophage activation syndrome (MAS) — life-threatening complication",
+      "Systemic-onset JIA — pediatric equivalent",
+      "Hemophagocytic lymphohistiocytosis spectrum overlap with MAS",
+      "Pericarditis and pleuritis",
+    ],
+    complications: [
+      "Macrophage activation syndrome — multiorgan failure, coagulopathy, death",
+      "Chronic arthritis and joint damage",
+      "Amyloidosis (rare with modern therapy)",
+      "Growth delay in pediatric systemic-onset JIA",
+    ],
+    distinguishFrom: [
+      "Septicemia — toxic appearance, positive cultures; Still has quotidian pattern and high ferritin",
+      "SLE — ANA, anti-dsDNA, malar rash fixed not evanescent",
+      "Leukemia/lymphoma — cytopenias, blasts; Still has thrombocytosis and very high ferritin",
+      "FMF/CAPS — monogenic periodic fevers; genetic testing distinguishes",
+      "Rheumatoid arthritis — RF/anti-CCP positive, insidious symmetric polyarthritis without quotidian fever",
+    ],
+    treatment: [
+      "NSAIDs first-line for mild disease",
+      "Glucocorticoids for moderate/severe systemic features",
+      "Methotrexate for persistent arthritis",
+      "IL-1 blockade (anakinra, canakinumab) or tocilizumab (anti–IL-6) for refractory disease and sJIA",
+      "Treat MAS urgently — high-dose steroids, cyclosporine, anakinra",
+    ],
+    boardsPearls: [
+      "Still triad — quotidian fever + evanescent salmon rash + arthritis",
+      "Ferritin sky-high — especially MAS (>10,000 ng/mL)",
+      "sJIA in kids = Still disease; AOSD in adults — same spectrum",
+      "MAS emergency — fever, cytopenias, ↑ ferritin, ↓ fibrinogen, hepatosplenomegaly",
+      "RF/anti-CCP negative — not seropositive RA",
+      "Anakinra/canakinumab or tocilizumab for refractory systemic-onset disease",
+    ],
+    pediatrics:
+      "Systemic-onset JIA is the pediatric Still disease subtype — quotidian fever and evanescent rash in a child with very high ferritin should prompt MAS vigilance. IL-1 or IL-6 blockade is standard for refractory sJIA.",
+  },
+  {
+    id: "euglycemic-diabetic-ketoacidosis",
+    name: "Euglycemic Diabetic Ketoacidosis",
+    etymology:
+      "Greek eu = good/normal + glykys = sweet + diabainein = pass through + ketone + acidosis — ketoacidosis with near-normal blood glucose, classically from glucosuria masking hyperglycemia",
+    aliases: [
+      "euglycemic diabetic ketoacidosis",
+      "euglycemic dka",
+      "eu dka",
+      "normoglycemic diabetic ketoacidosis",
+      "normoglycemic dka",
+      "ketoacidosis with normal glucose",
+      "sglt2 inhibitor associated dka",
+      "sglt2-associated dka",
+    ],
+    definition:
+      "Metabolic acidosis from ketosis with anion gap and ketonemia/ketonuria but glucose normal or only mildly elevated (<250 mg/dL) — occurs when urinary glucose loss (especially SGLT2 inhibitors) or partial insulin delivery masks hyperglycemia while insulin deficiency still drives lipolysis and ketogenesis.",
+    pathophysiology:
+      "Relative or absolute insulin deficiency → unrestrained lipolysis → hepatic ketogenesis → anion gap metabolic acidosis; concurrent SGLT2 inhibition or glucosuria lowers serum glucose into normal range despite ongoing ketone production — delayed recognition is common because classic hyperglycemic DKA threshold is not met.",
+    classicPresentation: [
+      "Nausea, vomiting, abdominal pain, Kussmaul respirations — same as classic DKA",
+      "Glucose normal or modestly elevated (<250 mg/dL) despite ketosis",
+      "Patient on SGLT2 inhibitor (ertugliflozin, empagliflozin, dapagliflozin, canagliflozin)",
+      "Precipitants: perioperative insulin omission, intercurrent illness, reduced oral intake, T1DM on SGLT2i",
+      "Fruity breath, dehydration, altered mental status possible",
+    ],
+    keyLabs: [
+      "Anion gap metabolic acidosis",
+      "↑ serum β-hydroxybutyrate and urine ketones",
+      "Glucose <250 mg/dL (often 100–200 mg/dL or normal)",
+      "↓ serum bicarbonate",
+      "May have normal or low potassium initially — still replete carefully with insulin",
+    ],
+    associations: [
+      "SGLT2 inhibitors — most common board association",
+      "Type 1 diabetes or insulin-deficient type 2 on SGLT2i",
+      "Perioperative fasting with held or reduced insulin",
+      "Pregnancy (partial insulin deficiency with ketosis risk)",
+      "Starvation or very low carbohydrate intake with inadequate insulin",
+    ],
+    complications: [
+      "Same as classic DKA — dehydration, cerebral edema (children), arrhythmias from electrolyte shifts",
+      "Delayed diagnosis because glucose not markedly elevated",
+    ],
+    distinguishFrom: [
+      "Classic DKA — glucose typically >250 mg/dL with ketosis",
+      "Starvation ketosis — mild ketosis without significant anion gap acidosis or systemic toxicity",
+      "Alcoholic ketoacidosis — history of binge drinking, vomiting; may be euglycemic but different context",
+      "Lactic acidosis — ↑ lactate driver (metformin, sepsis), not primary ketonemia",
+      "Hyperosmolar hyperglycemic state — extreme hyperglycemia, minimal ketosis",
+    ],
+    treatment: [
+      "IV fluids for dehydration — same resuscitation principles as DKA",
+      "IV insulin infusion to halt ketogenesis — do not withhold because glucose is normal",
+      "Dextrose-containing fluids once glucose <200 mg/dL to allow continued insulin until anion gap closes",
+      "Potassium replacement per standard DKA protocol",
+      "Hold SGLT2 inhibitor; treat precipitant (infection, insulin omission)",
+    ],
+    boardsPearls: [
+      "Euglycemic DKA = ketosis + anion gap acidosis + glucose <250 (often normal)",
+      "Think SGLT2 inhibitors — glucosuria masks hyperglycemia",
+      "Still treat with insulin — normal glucose does not mean no DKA",
+      "Hold gliflozins perioperatively; continue basal insulin in T1DM",
+      "Ketonuria + euglycemia on SGLT2 inhibitor → euglycemic DKA",
+      "vs classic DKA — same treatment; different glucose presentation",
+    ],
+    pediatrics:
+      "SGLT2 inhibitors are not routine in pediatric diabetes but euglycemic DKA principles apply if used off-label or in older adolescents with T2DM. Cerebral edema risk during DKA treatment remains in children — avoid overly rapid correction.",
+  },
+  {
+    id: "pseudohypoparathyroidism-type-1a",
+    name: "Pseudohypoparathyroidism Type 1A",
+    etymology:
+      "Greek pseudes = false + hypo = under + parathyroid + -ism + type 1A — end-organ resistance to parathyroid hormone from maternal GNAS mutation with Albright hereditary osteodystrophy phenotype",
+    aliases: [
+      "pseudohypoparathyroidism type 1a",
+      "pseudohypoparathyroidism type 1A",
+      "php1a",
+      "php 1a",
+      "php type 1a",
+      "pseudohypoparathyroidism 1a",
+      "gnas-related pseudohypoparathyroidism",
+      "maternal gnas pseudohypoparathyroidism",
+    ],
+    definition:
+      "Autosomal dominant form of pseudohypoparathyroidism caused by maternally inherited inactivating GNAS (Gαs) mutations — renal and target-tissue resistance to PTH and often other G protein–coupled hormones, combined with Albright hereditary osteodystrophy skeletal features (brachydactyly, short stature, round face, ectopic ossification).",
+    pathophysiology:
+      "GNAS imprinting — maternal allele normally expressed in renal proximal tubule → loss-of-function Gαs impairs PTH1 receptor–coupled cAMP signaling → failed phosphaturia and calcitriol generation despite elevated PTH → hypocalcemia and hyperphosphatemia; skeletal dysmorphism from abnormal cartilage/bone development independent of hormone resistance mechanism.",
+    classicPresentation: [
+      "Hypocalcemia — tetany, seizures, paresthesias, Chvostek/Trousseau signs",
+      "Elevated PTH with low calcium (PTH resistance, not deficiency)",
+      "Short stature, obesity, round face, brachydactyly (4th/5th digits)",
+      "Subcutaneous ossifications (osteoma cutis)",
+      "Developmental delay in some patients",
+    ],
+    keyFindings: [
+      "Hypocalcemia + hyperphosphatemia + ↑ PTH",
+      "Shortened 4th/5th metacarpals — Archibald sign",
+      "Blunted urinary cAMP response to exogenous PTH (historical diagnostic test)",
+      "Ectopic soft-tissue calcification/ossification",
+    ],
+    keyLabs: [
+      "↓ Serum calcium, ↑ phosphate, ↑ PTH, inappropriately low calcitriol",
+      "GNAS mutation with maternal inheritance pattern",
+      "May have TSH elevation from TSH resistance",
+      "Normal calcium if paternal transmission — pseudopseudohypoparathyroidism (same mutation, no hormone resistance)",
+    ],
+    associations: [
+      "Albright hereditary osteodystrophy — inseparable skeletal phenotype in PHP1a",
+      "Pseudopseudohypoparathyroidism — paternal GNAS mutation; AHO without hypocalcemia",
+      "McCune-Albright — somatic activating GNAS (opposite mutation mechanism)",
+      "PHP type 1b — PTH resistance without AHO features",
+      "Chondrocalcinosis from chronic hyperphosphatemia",
+    ],
+    complications: [
+      "Hypocalcemic seizures and basal ganglia calcification",
+      "Cataracts from chronic hypocalcemia",
+      "Short adult stature and obesity-related metabolic disease",
+      "Cognitive/behavioral difficulties in subset",
+    ],
+    distinguishFrom: [
+      "Hypoparathyroidism — low PTH, not elevated PTH with resistance",
+      "Vitamin D deficiency — low calcitriol with secondary ↑ PTH but corrects with vitamin D",
+      "Pseudopseudohypoparathyroidism — AHO phenotype, normal calcium (paternal GNAS)",
+      "PHP type 1b — renal PTH resistance without brachydactyly/AHO",
+      "McCune-Albright — mosaic activating GNAS; café-au-lait, fibrous dysplasia, precocious puberty",
+      "Albright hereditary osteodystrophy — overlapping term; PHP1a is AHO plus maternal hormone resistance",
+    ],
+    treatment: [
+      "Calcium and calcitriol (active vitamin D) supplementation — PTH replacement ineffective",
+      "Monitor calcium, phosphate, PTH, and TSH",
+      "Genetic counseling — imprinting determines offspring risk pattern",
+      "Treat seizures acutely with IV calcium if symptomatic hypocalcemia",
+    ],
+    boardsPearls: [
+      "PHP1a = ↑ PTH + ↓ Ca + ↑ PO₄ — end-organ resistance, not low PTH",
+      "Maternal GNAS mutation → PHP1a; paternal → pseudopseudohypoparathyroidism (normal labs)",
+      "Brachydactyly + short stature + round face = AHO skeletal phenotype",
+      "Archibald sign — shortened 4th metacarpal on clenched fist",
+      "vs hypoparathyroidism — low PTH in true deficiency",
+      "Gαs/cAMP defect — same pathway affected by cholera toxin concept and McCune-Albright (activating)",
+    ],
+    pediatrics:
+      "May present in infancy with hypocalcemic seizures or in childhood with short stature and brachydactyly. Differentiate from DiGeorge hypoparathyroidism (low PTH) and nutritional rickets. Genetic testing with parental studies clarifies imprinting.",
   },
 ];
 
