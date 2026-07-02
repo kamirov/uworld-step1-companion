@@ -54,4 +54,4 @@ Any media fetched should have their URLs in SOURCES.txt. Any media used should s
 
 ## Building
 
-After every AI change, please run the package's build command
+Do not run the build command unless explicitly told to
