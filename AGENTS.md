@@ -54,4 +54,4 @@ Any media fetched should have their URLs in SOURCES.txt. Any media used should s
 
 ## Building
 
-Do not run the build command unless explicitly told to
+Before finalizing any AI action, run the build command
